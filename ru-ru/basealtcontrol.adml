@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  (c) 2019 BaseALT, Ltd.  -->
+<policyDefinitionResources xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.microsoft.com/GroupPolicy/2006/07/PolicyDefinitions" revision="1.0" schemaVersion="1.0">
+  <displayName>Определения политик безопасности операционной системы Альт</displayName>
+  <description>Этот файл содержит определения политик безопасности операционной системы Альт.</description>
+
+  <resources>
+    <stringTable>
+      <string id="SecurityControl">Политики безопасности</string>
+      <string id="ExecuteSuProgram">Запуск программы /bin/su</string>
+      <string id="ExecuteSuProgram_Help">Политика позволяет контролировать права доступа на запуск программы /bin/su</string>
+      <string id="ExecuteSuProgram_Public">Всем пользователям разрешено</string>
+      <string id="ExecuteSuProgram_Wheel">Всем пользователям разрешено, но только члены группы "wheel" могут переключиться в суперпользователя</string>
+      <string id="ExecuteSuProgram_WheelOnly">Только члены группы "wheel"</string>
+      <string id="ExecuteSuProgram_Restricted">Только суперпользователю</string>
+    </stringTable>
+    <presentationTable>
+      <presentation id="ExecuteSuProgram">
+        <dropdownList refId="ExecuteSuProgramSetter" defaultItem="2">Запуск программы /bin/su разрешён</dropdownList>
+      </presentation>
+    </presentationTable>
+  </resources>
+</policyDefinitionResources>

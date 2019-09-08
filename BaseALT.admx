@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<!--  (c) 2019 ALT Linux Team, BaseALT Ltd.  -->
+<!--  (c) 2019 BaseALT, Ltd.  -->
 <policyDefinitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                    revision="1.1" schemaVersion="1.0" xmlns="http://schemas.microsoft.com/GroupPolicy/2006/07/PolicyDefinitions">
   <policyNamespaces>
@@ -58,11 +58,8 @@
   </supportedOn>
   <categories>
     <category name="BaseALT" displayName="$(string.BaseALT)" explainText="$(string.BaseALT_Help)" />
-    <category name="Basesystem" displayName="$(string.Basesystem)" explainText="$(string.Basesystem_Help)">
+    <category name="Base" displayName="$(string.Basesystem)" explainText="$(string.Basesystem_Help)">
       <parentCategory ref="BaseALT" />
-    </category>
-    <category name="SecurityControl" displayName="$(string.SecurityControl)">
-      <parentCategory ref="Basesystem" />
     </category>
     <category name="LinuxComponents" displayName="$(string.LinuxComponents)" explainText="$(string.LinuxComponents_Help)" />
   </categories>

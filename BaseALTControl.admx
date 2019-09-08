@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--  (c) 2019 BaseALT, Ltd.  -->
+<policyDefinitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" revision="1.0" schemaVersion="1.0" xmlns="http://schemas.microsoft.com/GroupPolicy/2006/07/PolicyDefinitions">
+  <policyNamespaces>
+    <target prefix="control" namespace="BaseALT.Policies.Control" />
+    <using prefix="system" namespace="BaseALT.Policies.System" />
+  </policyNamespaces>
+  <resources minRequiredRevision="1.0" />
+  <categories>
+    <category name="Control" displayName="$(string.SecurityControl)">
+      <parentCategory ref="system:Base" />
+    </category>
+  </categories>
+  <policies>
+    <policy name="ExecuteSuProgram" class="Machine" displayName="$(string.ExecuteSuProgram)" explainText="$(string.ExecuteSuProgram_Help)" presentation="$(presentation.ExecuteSuProgram)" key="Software\BaseALT\Policies\Control">
+      <parentCategory ref="Control" />
+      <supportedOn ref="system:SUPPORTED_Sisyphus" />
+      <elements>
+        <enum id="ExecuteSuProgramSetter" valueName="ExecuteSuProgram" required="true">
+          <item displayName="$(string.ExecuteSuProgram_Public)">
+            <value>
+              <decimal value="0" />
+            </value>
+          </item>
+          <item displayName="$(string.ExecuteSuProgram_Wheel)">
+            <value>
+              <decimal value="1" />
+            </value>
+          </item>
+          <item displayName="$(string.ExecuteSuProgram_WheelOnly)">
+            <value>
+              <decimal value="2" />
+            </value>
+          </item>
+          <item displayName="$(string.ExecuteSuProgram_Restricted)">
+            <value>
+              <decimal value="3" />
+            </value>
+          </item>
+        </enum>
+      </elements>
+    </policy>
+  </policies>
+</policyDefinitions>

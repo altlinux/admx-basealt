@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  (c) 2019 BaseALT, Ltd.  -->
+<policyDefinitionResources xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.microsoft.com/GroupPolicy/2006/07/PolicyDefinitions" revision="1.0" schemaVersion="1.0">
+  <displayName>ALT security policies definitions</displayName>
+  <description>This file contains the security policies definitions used by ALT operating system.</description>
+
+  <resources>
+    <stringTable>
+      <string id="SecurityControl">Security policies</string>
+      <string id="ExecuteSuProgram">Execution of program /bin/su</string>
+      <string id="ExecuteSuProgram_Help">Policy allows to control access to execute program /bin/su</string>
+      <string id="ExecuteSuProgram_Public">Any user</string>
+      <string id="ExecuteSuProgram_Wheel">Any user, but only "wheel" group members can switch to superuser</string>
+      <string id="ExecuteSuProgram_WheelOnly">Only "wheel" group members</string>
+      <string id="ExecuteSuProgram_Restricted">Only root</string>
+    </stringTable>
+    <presentationTable>
+      <presentation id="ExecuteSuProgram">
+        <dropdownList refId="ExecuteSuProgramSetter" defaultItem="2">Execution of program /bin/su allows</dropdownList>
+      </presentation>
+    </presentationTable>
+  </resources>
+</policyDefinitionResources>
