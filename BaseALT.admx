@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--  (c) 2019 ALT Linux Team, BaseALT Ltd.  -->
+<policyDefinitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   revision="1.1" schemaVersion="1.0" xmlns="http://schemas.microsoft.com/GroupPolicy/2006/07/PolicyDefinitions">
+  <policyNamespaces>
+    <target prefix="system" namespace="BaseALT.Policies.System" />
+    <using prefix="products" namespace="BaseALT.Policies.Products" />
+  </policyNamespaces>
+  <resources minRequiredRevision="1.0" />
+  <supportedOn>
+    <definitions>
+      <!--ALT Sisyphus-->
+      <definition name="SUPPORTED_Sisyphus" displayName="$(string.SUPPORTED_Sisyphus)">
+        <or>
+          <reference ref="products:Branch"/>
+        </or>
+      </definition>
+
+      <!--ALT Sisyphus only-->
+      <definition name="SUPPORTED_SisyphusOnly" displayName="$(string.SUPPORTED_SisyphusOnly)">
+        <or>
+          <reference ref="products:Sisyphus"/>
+        </or>
+      </definition>
+
+      <!--ALT Platform 8-->
+      <definition name="SUPPORTED_AltP8" displayName="$(string.SUPPORTED_AltP8)">
+        <or>
+          <reference ref="products:BranchP8"/>
+          <reference ref="products:Branch" minVersionIndex="1"/>
+        </or>
+      </definition>
+
+      <!--ALT Platform 8 only-->
+      <definition name="SUPPORTED_AltP8_Only" displayName="$(string.SUPPORTED_AltP8_Only)">
+        <or>
+          <reference ref="products:BranchP8"/>
+          <reference ref="products:Branch" minVersionIndex="1" maxVersionIndex="1"/>
+        </or>
+      </definition>
+
+      <!--ALT Platform 9-->
+      <definition name="SUPPORTED_AltP9" displayName="$(string.SUPPORTED_AltP9)">
+        <or>
+          <reference ref="products:BranchP9"/>
+          <reference ref="products:Branch" minVersionIndex="2"/>
+        </or>
+      </definition>
+
+      <!--ALT Platform 9 only-->
+      <definition name="SUPPORTED_AltP9_Only" displayName="$(string.SUPPORTED_AltP9_Only)">
+        <or>
+          <reference ref="products:BranchP9"/>
+          <reference ref="products:Branch" minVersionIndex="2" maxVersionIndex="2"/>
+        </or>
+      </definition>
+    </definitions>
+  </supportedOn>
+  <categories>
+    <category name="BaseALT" displayName="$(string.BaseALT)" explainText="$(string.BaseALT_Help)" />
+    <category name="Basesystem" displayName="$(string.Basesystem)" explainText="$(string.Basesystem_Help)">
+      <parentCategory ref="BaseALT" />
+    </category>
+    <category name="SecurityControl" displayName="$(string.SecurityControl)">
+      <parentCategory ref="Basesystem" />
+    </category>
+    <category name="LinuxComponents" displayName="$(string.LinuxComponents)" explainText="$(string.LinuxComponents_Help)" />
+  </categories>
+</policyDefinitions>

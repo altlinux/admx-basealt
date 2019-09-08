@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  (c) 2006 Microsoft Corporation  -->
+<policyDefinitionResources xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.microsoft.com/GroupPolicy/2006/07/PolicyDefinitions" revision="1.0" schemaVersion="1.0">
+  <displayName>Sisyphus based products table</displayName>
+  <description>This file contains all the product definitions used in supported on definitions.</description>
+
+  <resources>
+    <stringTable>
+      <!-- BaseALT Sisyphus Solutions -->
+      <string id="Sisyphus">Решения на базе Сизифа</string>
+      <string id="Branch">Стабильные ветки Сизифа</string>
+      <string id="BranchP7">Ветка Седьмой Платформы</string>
+      <string id="BranchP8">Ветка Восьмой Платформы</string>
+      <string id="BranchP9">Ветка Девятой Платформы</string>
+
+      <string id="ALTWorkstation8">Семейство Альт Рабочая Станция 8</string>
+      <string id="ALTWorkstation8_8">Альт Рабочая Станция 8</string>
+      <string id="ALTWorkstation8_81">Альт Рабочая Станция 8.1</string>
+      <string id="ALTWorkstation8_82">Альт Рабочая Станция 8.2</string>
+      <string id="ALTWorkstation8_821">Альт Рабочая Станция 8.21</string>
+
+      <string id="ALTWorkstationK8">Семейство Альт Рабочая Станция K 8</string>
+      <string id="ALTWorkstationK8_8">Альт Рабочая Станция K 8</string>
+      <string id="ALTWorkstationK8_81">Альт Рабочая Станция K 8.1</string>
+      <string id="ALTWorkstationK8_82">Альт Рабочая Станция K 8.2</string>
+      <string id="ALTWorkstationK8_83">Альт Рабочая Станция K 8.3</string>
+
+      <string id="ALTEducation8">Семейство Альт Образование 8</string>
+      <string id="ALTEducation8_8">Альт Образование 8</string>
+      <string id="ALTEducation8_81">Альт Образование 8.1</string>
+      <string id="ALTEducation8_82">Альт Образование 8.2</string>
+      <string id="ALTEducation8_821">Альт Образование 8.21</string>
+
+      <string id="ALTServer8">Семейство Альт Сервер 8</string>
+      <string id="ALTServer8_8">Альт Сервер 8</string>
+      <string id="ALTServer8_82">Альт Сервер 8.2</string>
+      <string id="ALTServer8_821">Альт Сервер 8.21</string>
+
+      <string id="ALTWorkstation9">Семейство Альт Рабочая Станция 9</string>
+      <string id="ALTWorkstation9_9">Альт Рабочая 9</string>
+
+      <string id="ALTWorkstationK9">Семейство Альт Рабочая Станция K 9</string>
+      <string id="ALTWorkstationK9_9">Альт Рабочая Станция K 9</string>
+
+      <string id="ALTEducation9">Семейство Альт Образование 9</string>
+      <string id="ALTEducation9_9">Альт Образование 9</string>
+
+      <string id="ALTServer9">Семейство Альт Сервер 9</string>
+      <string id="ALTServer9_9">Альт Сервер 9</string>
+
+      <string id="ALTServerV9">Семейство Альт Сервер Виртуализация 9</string>
+      <string id="ALTServerV9_9">Альт Сервер Виртуализация 9</string>
+    </stringTable>
+  </resources>
+</policyDefinitionResources>
