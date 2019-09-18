@@ -74,6 +74,24 @@ class control:
 
         return prepare_xml_str(stringtable)
 
+    def adml_xml_stringtable(self):
+        '''
+        Return stringTable (XML as a string) for ADML file.
+        '''
+        stringtable = ET.Element('stringTable')
+        main_string = ET.SubElement(stringtable, 'string')
+        main_string.set('id', self.name)
+        help_string = ET.SubElement(stringtable, 'string')
+        help_string.set('id', '{}_help'.format(self.name))
+        help_string.text = ' '
+
+        for val in self.variants:
+            string = ET.SubElement(stringtable, 'string')
+            string.set('id', '{}_{}'.format(self.name, val))
+            string.text = ' '
+
+        return stringtable
+
     def adml_xml_presentation_str(self):
         '''
         Return presentation (XML as a string) for ADML file.
@@ -87,6 +105,15 @@ class control:
         dropdown_list.set('defaultItem', '{}'.format(self.variants.index(self.value)))
 
         return prepare_xml_str(presentation)
+
+def get_descriptions(stringtable, lang):
+    '''
+    Get descriptions for ADML's stringTable
+    '''
+    for string in stringtable.iter('string'):
+        string.text = input('Please input {} text value for {}: '.format(lang, string.attrib['id']))
+
+    print(prepare_xml_str(stringtable))
 
 def parse_values(values_str):
     '''
@@ -110,8 +137,10 @@ def parse_control(proc):
     for cnt in controls:
         print('--------------------------------')
         print(cnt.admx_xml_str())
-        print(cnt.adml_xml_stringtable_str())
+    #    print(cnt.adml_xml_stringtable_str())
         print(cnt.adml_xml_presentation_str())
+        get_descriptions(cnt.adml_xml_stringtable(), 'en-us')
+        get_descriptions(cnt.adml_xml_stringtable(), 'ru-ru')
 
 def read_controls():
     '''
