@@ -3,7 +3,6 @@
 <policyDefinitionResources xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.microsoft.com/GroupPolicy/2006/07/PolicyDefinitions" revision="1.0" schemaVersion="1.0">
   <displayName>Определения политик безопасности операционной системы Альт</displayName>
   <description>Этот файл содержит определения политик безопасности операционной системы Альт.</description>
-
   <resources>
     <stringTable>
       <string id="SecurityControl">Политики безопасности</string>
@@ -14,9 +13,20 @@
       <string id="ExecuteSuProgram_WheelOnly">Только члены группы "wheel"</string>
       <string id="ExecuteSuProgram_Restricted">Только суперпользователю</string>
     </stringTable>
+    <stringTable>
+      <string id="SecurityControl">Политики безопасности</string>
+      <string id="ControlSystem">Системные</string>
+      <string id="chage">Выполнение программы</string>
+      <string id="chage_help">Политика позволяет контролировать доступ для выполнения программы /usr/bin/chage</string>
+      <string id="chage_public">Любой пользователь может определить, когда ему необходимо сменить пароль, с помощью команды "chage"</string>
+      <string id="chage_restricted">Только суперпользователь может выполнить /usr/bin/chage</string>
+    </stringTable> 
     <presentationTable>
       <presentation id="ExecuteSuProgram">
         <dropdownList refId="ExecuteSuProgramSetter" defaultItem="2">Запуск программы /bin/su разрешён</dropdownList>
+      </presentation>
+      <presentation id="chage">
+        <dropdownList defaultItem="1" refId="chage_setter">Только суперпользователь /usr/bin/chage</dropdownList>
       </presentation>
     </presentationTable>
   </resources>

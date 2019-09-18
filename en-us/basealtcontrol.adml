@@ -14,9 +14,31 @@
       <string id="ExecuteSuProgram_WheelOnly">Only "wheel" group members</string>
       <string id="ExecuteSuProgram_Restricted">Only root</string>
     </stringTable>
+    <stringTable>
+      <string id="SecurityControl">Security policies</string>
+      <string id="ControlSystem">System Control</string>
+      <string id="chage">Execution of program /usr/bin/chage</string>
+      <string id="chage_help">Policy allows to control access to execute program /usr/bin/chage</string>
+      <string id="chage_public">Any user can determine when he should change his/her password using the "chage" command</string>
+      <string id="chage_restricted">Only root can execute /usr/bin/chage</string>
+    </stringTable>
+    <stringTable>
+      <string id="SecurityControl">Security policies</string>
+      <string id="ControlSystem">System Control</string>
+      <string id="chfn"/>Execution of program /usr/bin/chfn</string>
+      <string id="chfn_help"></string>
+      <string id="chfn_public">Any (normal) user using the chfn command can change the fields (full name, cabinet number, office number and home phone number for the user account) for his account, subject to the restrictions in /etc/login.defs, (Default configuration prevents users from changing their full name.)</string>
+      <string id="chfn_restricted">Only root can execute /usr/bin/chfn. Additionally, only the superuser may use the -o option to change the undefined portions of the GECOS field.</string>
+    </stringTable>
     <presentationTable>
       <presentation id="ExecuteSuProgram">
         <dropdownList refId="ExecuteSuProgramSetter" defaultItem="2">Execution of program /bin/su allows</dropdownList>
+      </presentation>
+      <presentation id="chage">
+        <dropdownList defaultItem="1" refId="chage_setter">Only root can execute /usr/bin/chage</dropdownList>
+      </presentation>
+      <presentation id="chfn">
+        <dropdownList defaultItem="1" refId="chfn_setter">Only root can execute /usr/bin/chfn</dropdownList>
       </presentation>
     </presentationTable>
   </resources>

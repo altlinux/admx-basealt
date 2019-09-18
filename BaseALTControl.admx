@@ -10,6 +10,9 @@
     <category name="Control" displayName="$(string.SecurityControl)">
       <parentCategory ref="system:Base" />
     </category>
+    <category name="ControlSystem" displayName="$(string.ControlSystem)">
+      <parentCategory ref="Control" />
+    </category>
   </categories>
   <policies>
     <policy name="ExecuteSuProgram" class="Machine" displayName="$(string.ExecuteSuProgram)" explainText="$(string.ExecuteSuProgram_Help)" presentation="$(presentation.ExecuteSuProgram)" key="Software\BaseALT\Policies\Control">
@@ -41,4 +44,40 @@
       </elements>
     </policy>
   </policies>
+  <policy class="Machine" displayName="$(string.chage)" explainText="$(string.chage_help)" key="Software\BaseALT\Policies\Control" name="chage" presentation="$(presentation.chage)">
+    <parentCategory ref="ControlSystem"/>
+    <supportedOn ref="system:SUPPORTED_AltP8"/>
+    <elements>
+        <enum id="chage_setter" required="true" valueName="chage">
+            <enum displayName="$(string.chage_public)">
+                <value>
+                    <decimal value="0"/>
+                </value>
+            </enum>
+            <enum displayName="$(string.chage_restricted)">
+                <value>
+                    <decimal value="1"/>
+                </value>
+            </enum>
+        </enum>
+    </elements>
+ </policy>
+ <policy class="Machine" displayName="$(string.chfn)" explainText="$(string.chfn_help)" key="Software\BaseALT\Policies\Control" name="chfn" presentation="$(presentation.chfn)">
+    <parentCategory ref="ControlSystem"/>
+    <supportedOn ref="system:SUPPORTED_AltP8"/>
+    <elements>
+        <enum id="chfn_setter" required="true" valueName="chfn">
+            <enum displayName="$(string.chfn_public)">
+                <value>
+                    <decimal value="0"/>
+                </value>
+            </enum>
+            <enum displayName="$(string.chfn_restricted)">
+                <value>
+                    <decimal value="1"/>
+                </value>
+            </enum>
+        </enum>
+    </elements>
+ </policy>
 </policyDefinitions>
