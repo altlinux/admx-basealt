@@ -13,21 +13,68 @@
       <string id="ExecuteSuProgram_WheelOnly">Только члены группы "wheel"</string>
       <string id="ExecuteSuProgram_Restricted">Только суперпользователю</string>
     </stringTable>
+    <!-- Новые политики, экспортировано из дисрибутива семейства p8  -->
+    <stringTable>
+      <string id="SecurityControl">Политики безопасности</string>
+      <string id="ControlServices">Системные Сервисы (фоновые)</string>
+      <string id="at">Права доступа на использование очереди заданий at</string>
+      <string id="at_help">Политика позволяет контролировать поведение и права доступа на запуск очереди заданий at</string>
+      <string id="at_public">Всем пользователям разрешен запуск /usr/bin/at</string>
+      <string id="at_restricted">Только root может запускать /usr/bin/at</string>
+      <string id="at_atdaemon">Режим совместимости, не должен использоваться</string>
+    </stringTable>
     <stringTable>
       <string id="SecurityControl">Политики безопасности</string>
       <string id="ControlSystem">Системные</string>
-      <string id="chage">Выполнение программы</string>
+      <string id="chage">Выполнение программы /usr/bin/chage</string>
       <string id="chage_help">Политика позволяет контролировать доступ для выполнения программы /usr/bin/chage</string>
       <string id="chage_public">Любой пользователь может определить, когда ему необходимо сменить пароль, с помощью команды "chage"</string>
       <string id="chage_restricted">Только суперпользователь может выполнить /usr/bin/chage</string>
-    </stringTable> 
+    </stringTable>
+    <stringTable>
+      <string id="SecurityControl">Политики безопасности</string>
+      <string id="ControlSystem">Системные</string>
+      <string id="chfn">Выполнение программы /usr/bin/chfn</string>
+      <string id="chfn_help">Политика позволяет контролировать поведение и права доступа команды chfn, которая может изменять поля (полное имя, номер кабинета, номер офиса и домашний телефон для учетной записи пользователя) для своей учетной записи с учетом ограничений в /etc/login.defs (конфигурация по умолчанию не позволяет пользователям изменять свое полное имя.); Кроме того, только суперпользователь может использовать опцию -o для изменения неопределенных частей поля GECOS</string>
+      <string id="chfn_public">Любой (обычный) пользователь может использовать команду /usr/bin/chfn</string>
+      <string id="chfn_restricted">Только root может выполнить /usr/bin/chfn</string>
+    </stringTable>
+    <stringTable>
+      <string id="SecurityControl">Политики безопасности</string>
+      <string id="ControlSystem">Системные</string>
+      <string id="chfn">Права использование /usr/bin/chsh</string>
+      <string id="chfn_help">Политика позволяет контролировать права доступа к команде chsh, которая изменяет оболочку входа пользователя: это определяет имя начальной команды входа пользователя; обычный пользователь может изменить оболочку входа только для своей учетной записи; суперпользователь может изменить оболочку входа для любой учетной записи</string>
+      <string id="chfn_public">Всем пользователям разрешено использовать /usr/bin/chsh</string>
+      <string id="chfn_restricted">Только root может использовать /usr/bin/chsh</string>
+    </stringTable>
+    <stringTable>
+      <string id="SecurityControl">Политики безопасности</string>
+      <string id="ControlSystem">Системные</string>
+      <string id="consolehelper">Разрешения на использование consolehelper</string>
+      <string id="consolehelper_help">Эта политика определяет права доступа к инструменту consolehelper, который позволяет пользователям консоли запускать системные программы, выполняя проверку подлинности через PAM (которую можно настроить для доверия всем пользователям консоли или для запроса пароля по усмотрению системный администратор). Когда это возможно, аутентификация выполняется графически; в противном случае это делается в текстовой консоли, из которой был запущен consolehelper</string>
+      <string id="consolehelper_public">Любой пользователь может использовать consolehelper</string>
+      <string id="consolehelper_wheelonly">Только члены группы wheel могут использовать consolehelper</string>
+      <string id="consolehelper_restricted">Только root может использовать consolehelper</string>
+    </stringTable>
     <presentationTable>
       <presentation id="ExecuteSuProgram">
         <dropdownList refId="ExecuteSuProgramSetter" defaultItem="2">Запуск программы /bin/su разрешён</dropdownList>
       </presentation>
-      <presentation id="chage">
-        <dropdownList defaultItem="1" refId="chage_setter">Только суперпользователь /usr/bin/chage</dropdownList>
+      <presentation id="at">
+        <dropdownList defaultItem="0" refId="at_setter">Всем пользователям разрешен запуск /usr/bin/at</dropdownList>
       </presentation>
+      <presentation id="chage">
+        <dropdownList defaultItem="1" refId="chage_setter">Только суперпользователь может использовать /usr/bin/chage</dropdownList>
+    </presentation>
+    <presentation id="chfn">
+        <dropdownList defaultItem="1" refId="chfn_setter">Только root может выполнить /usr/bin/chfn</dropdownList>
+    </presentation>
+    <presentation id="chsh">
+        <dropdownList defaultItem="1" refId="chsh_setter">Только root может использовать /usr/bin/chsh</dropdownList>
+    </presentation>
+    <presentation id="consolehelper">
+       <dropdownList defaultItem="0" refId="consolehelper_setter">Любой пользователь может использовать consolehelper</dropdownList>
+    </presentation>
     </presentationTable>
   </resources>
 </policyDefinitionResources>

@@ -13,6 +13,9 @@
     <category name="ControlSystem" displayName="$(string.ControlSystem)">
       <parentCategory ref="Control" />
     </category>
+    <category name="ControlServices" displayName="$(string.ControlSystem)">
+      <parentCategory ref="Control" />
+    </category>
   </categories>
   <policies>
     <policy name="ExecuteSuProgram" class="Machine" displayName="$(string.ExecuteSuProgram)" explainText="$(string.ExecuteSuProgram_Help)" presentation="$(presentation.ExecuteSuProgram)" key="Software\BaseALT\Policies\Control">
@@ -44,6 +47,30 @@
       </elements>
     </policy>
   </policies>
+  <!-- New policies exported from family distribution p8 -->
+  <policy class="Machine" displayName="$(string.at)" explainText="$(string.at_help)" key="Software\BaseALT\Policies\Control" name="at" presentation="$(presentation.at)">
+    <parentCategory ref="ControlServices"/>
+    <supportedOn ref="system:SUPPORTED_AltP8"/>
+    <elements>
+        <enum id="at_setter" required="true" valueName="at">
+            <enum displayName="$(string.at_public)">
+                <value>
+                    <decimal value="0"/>
+                </value>
+            </enum>
+            <enum displayName="$(string.at_restricted)">
+                <value>
+                    <decimal value="1"/>
+                </value>
+            </enum>
+            <enum displayName="$(string.at_atdaemon)">
+                <value>
+                    <decimal value="2"/>
+                </value>
+            </enum>
+        </enum>
+    </elements>
+  </policy>
   <policy class="Machine" displayName="$(string.chage)" explainText="$(string.chage_help)" key="Software\BaseALT\Policies\Control" name="chage" presentation="$(presentation.chage)">
     <parentCategory ref="ControlSystem"/>
     <supportedOn ref="system:SUPPORTED_AltP8"/>
@@ -75,6 +102,47 @@
             <enum displayName="$(string.chfn_restricted)">
                 <value>
                     <decimal value="1"/>
+                </value>
+            </enum>
+        </enum>
+    </elements>
+ </policy>
+ <policy class="Machine" displayName="$(string.chsh)" explainText="$(string.chsh_help)" key="Software\BaseALT\Policies\Control" name="chsh" presentation="$(presentation.chsh)">
+    <parentCategory ref="ControlSystem"/>
+    <supportedOn ref="system:SUPPORTED_AltP8"/>
+    <elements>
+        <enum id="chsh_setter" required="true" valueName="chsh">
+            <enum displayName="$(string.chsh_public)">
+                <value>
+                    <decimal value="0"/>
+                </value>
+            </enum>
+            <enum displayName="$(string.chsh_restricted)">
+                <value>
+                    <decimal value="1"/>
+                </value>
+            </enum>
+        </enum>
+    </elements>
+ </policy>
+ <policy class="Machine" displayName="$(string.consolehelper)" explainText="$(string.consolehelper_help)" key="Software\BaseALT\Policies\Control" name="consolehelper" presentation="$(presentation.consolehelper)">
+    <parentCategory ref="ControlSystem"/>
+    <supportedOn ref="system:SUPPORTED_AltP8"/>
+    <elements>
+        <enum id="consolehelper_setter" required="true" valueName="consolehelper">
+            <enum displayName="$(string.consolehelper_public)">
+                <value>
+                    <decimal value="0"/>
+                </value>
+            </enum>
+            <enum displayName="$(string.consolehelper_wheelonly)">
+                <value>
+                    <decimal value="1"/>
+                </value>
+            </enum>
+            <enum displayName="$(string.consolehelper_restricted)">
+                <value>
+                    <decimal value="2"/>
                 </value>
             </enum>
         </enum>
