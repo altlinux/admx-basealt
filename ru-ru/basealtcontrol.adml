@@ -56,6 +56,58 @@
       <string id="consolehelper_wheelonly">Только члены группы wheel могут использовать consolehelper</string>
       <string id="consolehelper_restricted">Только root может использовать consolehelper</string>
     </stringTable>
+    <stringTable>
+      <string id="SecurityControl">Политики безопасности</string>
+      <string id="ControlServices">Системные Сервисы (фоновые)</string>
+      <string id="crontab">Разрешения на использование crontab</string>
+      <string id="crontab_help">Эта политика определяет права доступа к инструменту crontab</string>
+      <string id="crontab_public">Любой пользователь может использовать crontab</string>
+      <string id="crontab_restricted">Только root может использовать crontab</string>
+    </stringTable>
+    <stringTable>
+      <string id="SecurityControl">Политики безопасности</string>
+      <string id="ControlServices">Системные Сервисы (фоновые)</string>
+      <string id="cups">Режим работы cpus</string>
+      <string id="cups_help">Эта политика определяет режим работы cups (Внешний интерфейс IPP или только локально)</string>
+      <string id="cups_server">Внешний интерфейс IPP доступен для пользователя</string>
+      <string id="cups_local">Только локальные утилиты могут работать с сups</string>
+    </stringTable>
+    <stringTable>
+      <string id="SecurityControl">Политики безопасности</string>
+      <string id="ControlAppCD_DVD">CD/DVD приложения</string>
+      <string id="dvd-ram-control">Разрешение на использование dvd-ram-control</string>
+      <string id="dvd-ram-control_help">Эта политика определяет права доступа к /usr/bin/dvd-ram-control</string>
+      <string id="dvd-ram-control_public">Только члены группы cdwriter могут выполнять /usr/bin/dvd-ram-control</string>
+      <string id="dvd-ram-control_restricted">Только root может выполнять /usr/bin/dvd-ram-control</string>
+      <string id="dvd-ram-control_legacy">Устаревший режим, не должен использоваться</string>
+    </stringTable>
+    <stringTable>
+      <string id="SecurityControl">Политики безопасности</string>
+      <string id="ControlAppCD_DVD">CD/DVD приложения</string>
+      <string id="dvd+rw-booktype">Разрешение на использование dvd+rw-booktype</string>
+      <string id="dvd+rw-booktype_help">Эта политика определяет права доступа к /usr/bin/dvd+rw-booktype</string>
+      <string id="dvd+rw-booktype_public">Только члены группы cdwriter могут выполнять /usr/bin/dvd+rw-booktype</string>
+      <string id="dvd+rw-booktype_restricted">Только root может выполнять /usr/bin/dvd+rw-booktype</string>
+      <string id="dvd+rw-booktype_legacy">Устаревший режим, не должен использоваться</string>
+    </stringTable>
+    <stringTable>
+      <string id="SecurityControl">Политики безопасности</string>
+      <string id="ControlAppCD_DVD">CD/DVD приложения</string>
+      <string id="dvd+rw-format">Разрешение на использование dvd+rw-format</string>
+      <string id="dvd+rw-format_help">Эта политика определяет права доступа к /usr/bin/dvd+rw-format</string>
+      <string id="dvd+rw-format_public">Только члены группы cdwriter могут выполнять /usr/bin/dvd+rw-format</string>
+      <string id="dvd+rw-format_restricted">Только root может выполнять /usr/bin/dvd+rw-format</string>
+      <string id="dvd+rw-format_legacy">Устаревший режим, не должен использоваться</string>
+    </stringTable>
+    <stringTable>
+      <string id="SecurityControl">Политики безопасности</string>
+      <string id="ControlAppCD_DVD">CD/DVD приложения</string>
+      <string id="dvd+rw-mediainfo">Разрешение на использование dvd+rw-mediainfo</string>
+      <string id="dvd+rw-mediainfo_help">Эта политика определяет права доступа к /usr/bin/dvd+rw-mediainfo</string>
+      <string id="dvd+rw-mediainfo_public">Только члены группы cdwriter могут выполнять /usr/bin/dvd+rw-mediainfo</string>
+      <string id="dvd+rw-mediainfo_restricted">Только root может выполнять /usr/bin/dvd+rw-mediainfo</string>
+      <string id="dvd+rw-mediainfo_legacy">Устаревший режим, не должен использоваться</string>
+    </stringTable>
     <presentationTable>
       <presentation id="ExecuteSuProgram">
         <dropdownList refId="ExecuteSuProgramSetter" defaultItem="2">Запуск программы /bin/su разрешён</dropdownList>
@@ -65,16 +117,34 @@
       </presentation>
       <presentation id="chage">
         <dropdownList defaultItem="1" refId="chage_setter">Только суперпользователь может использовать /usr/bin/chage</dropdownList>
-    </presentation>
-    <presentation id="chfn">
+      </presentation>
+      <presentation id="chfn">
         <dropdownList defaultItem="1" refId="chfn_setter">Только root может выполнить /usr/bin/chfn</dropdownList>
-    </presentation>
-    <presentation id="chsh">
+      </presentation>
+      <presentation id="chsh">
         <dropdownList defaultItem="1" refId="chsh_setter">Только root может использовать /usr/bin/chsh</dropdownList>
-    </presentation>
-    <presentation id="consolehelper">
-       <dropdownList defaultItem="0" refId="consolehelper_setter">Любой пользователь может использовать consolehelper</dropdownList>
-    </presentation>
+      </presentation>
+      <presentation id="consolehelper">
+        <dropdownList defaultItem="0" refId="consolehelper_setter">Любой пользователь может использовать consolehelper</dropdownList>
+      </presentation>
+      <presentation id="crontab">
+        <dropdownList defaultItem="0" refId="crontab_setter">Любой пользователь может использовать crontab</dropdownList>
+      </presentation>
+      <presentation id="cups">
+        <dropdownList defaultItem="0" refId="cups_setter">Внешний интерфейс IPP доступен для пользователя</dropdownList>
+      </presentation>
+      <presentation id="dvd-ram-control">
+        <dropdownList defaultItem="0" refId="dvd-ram-control_setter">Только члены группы cdwriter могут выполнять /usr/bin/dvd-ram-control</dropdownList>
+      </presentation>
+      <presentation id="dvd+rw-booktype">
+        <dropdownList defaultItem="0" refId="dvd+rw-booktype_setter">Только члены группы cdwriter могут выполнять /usr/bin/dvd+rw-booktype</dropdownList>
+      </presentation>
+      <presentation id="dvd+rw-format">
+        <dropdownList defaultItem="0" refId="dvd+rw-format_setter">Только члены группы cdwriter могут выполнять /usr/bin/dvd+rw-format</dropdownList>
+      </presentation>
+      <presentation id="dvd+rw-mediainfo">
+        <dropdownList defaultItem="0" refId="dvd+rw-mediainfo_setter">Только члены группы cdwriter могут выполнять /usr/bin/dvd+rw-mediainfo</dropdownList>
+      </presentation>
     </presentationTable>
   </resources>
 </policyDefinitionResources>

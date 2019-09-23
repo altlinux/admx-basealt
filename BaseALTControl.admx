@@ -16,6 +16,9 @@
     <category name="ControlServices" displayName="$(string.ControlSystem)">
       <parentCategory ref="Control" />
     </category>
+    <category name="ControlAppCD_DVD" displayName="$(string.ControlSystem)">
+      <parentCategory ref="Control" />
+    </category>
   </categories>
   <policies>
     <policy name="ExecuteSuProgram" class="Machine" displayName="$(string.ExecuteSuProgram)" explainText="$(string.ExecuteSuProgram_Help)" presentation="$(presentation.ExecuteSuProgram)" key="Software\BaseALT\Policies\Control">
@@ -141,6 +144,116 @@
                 </value>
             </enum>
             <enum displayName="$(string.consolehelper_restricted)">
+                <value>
+                    <decimal value="2"/>
+                </value>
+            </enum>
+        </enum>
+    </elements>
+ </policy>
+ <policy class="Machine" displayName="$(string.crontab)" explainText="$(string.crontab_help)" key="Software\BaseALT\Policies\Control" name="crontab" presentation="$(presentation.crontab)">
+    <parentCategory ref="ControlService"/>
+    <supportedOn ref="system:SUPPORTED_AltP8"/>
+    <elements>
+        <enum id="crontab_setter" required="true" valueName="crontab">
+            <enum displayName="$(string.crontab_public)">
+                <value>
+                    <decimal value="0"/>
+                </value>
+            </enum>
+            <enum displayName="$(string.crontab_restricted)">
+                <value>
+                    <decimal value="1"/>
+                </value>
+            </enum>
+        </enum>
+    </elements>
+ </policy>
+ <policy class="Machine" displayName="$(string.dvd-ram-control)" explainText="$(string.dvd-ram-control_help)" key="Software\BaseALT\Policies\Control" name="dvd-ram-control" presentation="$(presentation.dvd-ram-control)">
+    <parentCategory ref="ControlAppCD_DVD"/>
+    <supportedOn ref="system:SUPPORTED_AltP8"/>
+    <elements>
+        <enum id="dvd-ram-control_setter" required="true" valueName="dvd-ram-control">
+            <enum displayName="$(string.dvd-ram-control_public)">
+                <value>
+                    <decimal value="0"/>
+                </value>
+            </enum>
+            <enum displayName="$(string.dvd-ram-control_restricted)">
+                <value>
+                    <decimal value="1"/>
+                </value>
+            </enum>
+            <enum displayName="$(string.dvd-ram-control_legacy)">
+                <value>
+                    <decimal value="2"/>
+                </value>
+            </enum>
+        </enum>
+    </elements>
+ </policy>
+ <policy class="Machine" displayName="$(string.dvd+rw-booktype)" explainText="$(string.dvd+rw-booktype_help)" key="Software\BaseALT\Policies\Control" name="dvd+rw-booktype" presentation="$(presentation.dvd+rw-booktype)">
+    <parentCategory ref="ControlAppCD_DVD"/>
+    <supportedOn ref="system:SUPPORTED_AltP8"/>
+    <elements>
+        <enum id="dvd+rw-booktype_setter" required="true" valueName="dvd+rw-booktype">
+            <enum displayName="$(string.dvd+rw-booktype_public)">
+                <value>
+                    <decimal value="0"/>
+                </value>
+            </enum>
+            <enum displayName="$(string.dvd+rw-booktype_restricted)">
+                <value>
+                    <decimal value="1"/>
+                </value>
+            </enum>
+            <enum displayName="$(string.dvd+rw-booktype_legacy)">
+                <value>
+                    <decimal value="2"/>
+                </value>
+            </enum>
+        </enum>
+    </elements>
+ </policy>
+ <policy class="Machine" displayName="$(string.dvd+rw-format)" explainText="$(string.dvd+rw-format_help)" key="Software\BaseALT\Policies\Control" name="dvd+rw-format" presentation="$(presentation.dvd+rw-format)">
+    <parentCategory ref="ControlAppCD_DVD"/>
+    <supportedOn ref="system:SUPPORTED_AltP8"/>
+    <elements>
+        <enum id="dvd+rw-format_setter" required="true" valueName="dvd+rw-format">
+            <enum displayName="$(string.dvd+rw-format_public)">
+                <value>
+                    <decimal value="0"/>
+                </value>
+            </enum>
+            <enum displayName="$(string.dvd+rw-format_restricted)">
+                <value>
+                    <decimal value="1"/>
+                </value>
+            </enum>
+            <enum displayName="$(string.dvd+rw-format_legacy)">
+                <value>
+                    <decimal value="2"/>
+                </value>
+            </enum>
+        </enum>
+    </elements>
+ </policy>
+ <policy class="Machine" displayName="$(string.dvd+rw-mediainfo)" explainText="$(string.dvd+rw-mediainfo_help)" key="Software\BaseALT\Policies\Control" name="dvd+rw-mediainfo" presentation="$(presentation.dvd+rw-mediainfo)">
+    <parentCategory ref="ControlAppCD_DVD"/>
+    <supportedOn ref="system:SUPPORTED_AltP8"/>
+    <elements>
+        <enum id="dvd+rw-mediainfo_setter" required="true" valueName="dvd+rw-mediainfo">
+            <enum displayName="$(string.dvd+rw-mediainfo_public)">
+                <value>
+                    <decimal value="0"/>
+                </value>
+            </enum>
+            <enum displayName="$(string.dvd+rw-mediainfo_restricted)">
+                <value>
+                    <decimal value="1"/>
+                </value>
+            </enum>
+            <enum displayName="$(string.dvd+rw-mediainfo_legacy)">
                 <value>
                     <decimal value="2"/>
                 </value>

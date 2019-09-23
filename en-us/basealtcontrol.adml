@@ -2,8 +2,7 @@
 <!--  (c) 2019 BaseALT, Ltd.  -->
 <policyDefinitionResources xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.microsoft.com/GroupPolicy/2006/07/PolicyDefinitions" revision="1.0" schemaVersion="1.0">
   <displayName>ALT security policies definitions</displayName>
-  <description>This file contains the security policies definitions used by ALT operating system.</description>
-
+  <description>This file contains the security policies definitions used by ALT operating system</description>
   <resources>
     <stringTable>
       <string id="SecurityControl">Security policies</string>
@@ -57,6 +56,58 @@
       <string id="consolehelper_wheelonly">Only members of the wheel group can use consolehelper</string>
       <string id="consolehelper_restricted">Only root can use consolehelper</string>
     </stringTable>
+    <stringTable>
+       <string id="SecurityControl">Security policies</string>
+      <string id="ControlServices">Services (daemons) Control</string>
+      <string id="crontab">Permission to use crontab</string>
+      <string id="crontab_help">This policy defines access rights to the crontab tool</string>
+      <string id="crontab_public">Any user can use crontab</string>
+      <string id="crontab_restricted">Only root can use crantab</string>
+    </stringTable>
+    <stringTable>
+      <string id="SecurityControl">Security policies</string>
+      <string id="ControlServices">Services (daemons) Control</string>
+      <string id="cups">Cpus mode</string>
+      <string id="cups_help">This policy defines the behavior of cups</string>
+      <string id="cups_server">External IPP interface are available for user</string>
+      <string id="cups_local">Only local utilities can work with cups</string>
+    </stringTable>
+    <stringTable>
+      <string id="SecurityControl">Security policies</string>
+      <string id="ControlAppCD_DVD">Control CD/DVD Applications</string>
+      <string id="dvd-ram-control">Permission to use /usr/bin/dvd-ram-control</string>
+      <string id="dvd-ram-control_help">This policy defines access rights to the /usr/bin/dvd-ram-control</string>
+      <string id="dvd-ram-control_public">Only cdwriter group members can execute /usr/bin/dvd-ram-control</string>
+      <string id="dvd-ram-control_restricted">Only root can execute /usr/bin/dvd-ram-control</string>
+      <string id="dvd-ram-control_legacy">Compatibility mode, should not be used</string>
+    </stringTable>
+    <stringTable>
+      <string id="SecurityControl">Security policies</string>
+      <string id="ControlAppCD_DVD">Control CD/DVD Applications</string>
+      <string id="dvd+rw-booktype">Permission to use /usr/bin/dvd+rw-booktype</string>
+      <string id="dvd+rw-booktype_help">This policy defines access rights to the /usr/bin/dvd+rw-booktype</string>
+      <string id="dvd+rw-booktype_public">Only cdwriter group members can execute /usr/bin/dvd+rw-booktype</string>
+      <string id="dvd+rw-booktype_restricted">Only root can execute /usr/bin/dvd+rw-booktype</string>
+      <string id="dvd+rw-booktype_legacy">Compatibility mode, should not be used</string>
+    </stringTable>
+    <stringTable>
+      <string id="SecurityControl">Security policies</string>
+      <string id="ControlAppCD_DVD">Control CD/DVD Applications</string>
+      <string id="dvd+rw-format">Permission to use /usr/bin/dvd+rw-format</string>
+      <string id="dvd+rw-format_help">This policy defines access rights to the /usr/bin/dvd+rw-format</string>
+      <string id="dvd+rw-format_public">Only cdwriter group members can execute /usr/bin/dvd+rw-format</string>
+      <string id="dvd+rw-format_restricted">Only root can execute /usr/bin/dvd+rw-format</string>
+      <string id="dvd+rw-format_legacy">Compatibility mode, should not be used</string>
+    </stringTable>
+    <stringTable>
+      <string id="SecurityControl">Security policies</string>
+      <string id="ControlAppCD_DVD">Control CD/DVD Applications</string>
+      <string id="dvd+rw-mediainfo">Permission to use /usr/bin/dvd+rw-mediainfo</string>
+      <string id="dvd+rw-mediainfo_help">This policy defines access rights to the /usr/bin/dvd+rw-mediainfo</string>
+      <string id="dvd+rw-mediainfo_public">Only cdwriter group members can execute /usr/bin/dvd+rw-mediainfo</string>
+      <string id="dvd+rw-mediainfo_restricted">Only root can execute /usr/bin/dvd+rw-mediainfo</string>
+      <string id="dvd+rw-mediainfo_legacy">Compatibility mode, should not be used</string>
+    </stringTable>
     <presentationTable>
       <presentation id="ExecuteSuProgram">
         <dropdownList refId="ExecuteSuProgramSetter" defaultItem="2">Execution of program /bin/su allows</dropdownList>
@@ -75,6 +126,24 @@
       </presentation>
       <presentation id="consolehelper">
         <dropdownList defaultItem="0" refId="consolehelper_setter">Any user can use consolehelper</dropdownList>
+      </presentation>
+      <presentation id="crontab">
+        <dropdownList defaultItem="0" refId="crontab_setter">Any user can use crontab</dropdownList>
+      </presentation>
+      <presentation id="cups">
+        <dropdownList defaultItem="0" refId="cups_setter">External IPP interface are available for user</dropdownList>
+      </presentation>
+      <presentation id="dvd-ram-control">
+        <dropdownList defaultItem="0" refId="dvd-ram-control_setter">Only cdwriter group members can execute /usr/bin/dvd-ram-control</dropdownList>
+      </presentation>
+      <presentation id="dvd+rw-booktype">
+        <dropdownList defaultItem="0" refId="dvd+rw-booktype_setter">Only cdwriter group members can execute /usr/bin/dvd+rw-booktype</dropdownList>
+      </presentation>
+      <presentation id="dvd+rw-format">
+        <dropdownList defaultItem="0" refId="dvd+rw-format_setter">Only cdwriter group members can execute /usr/bin/dvd+rw-format</dropdownList>
+      </presentation>
+      <presentation id="dvd+rw-mediainfo">
+        <dropdownList defaultItem="0" refId="dvd+rw-mediainfo_setter">Only cdwriter group members can execute /usr/bin/dvd+rw-mediainfo</dropdownList>
       </presentation>
     </presentationTable>
   </resources>
