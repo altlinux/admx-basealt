@@ -13,10 +13,16 @@
     <category name="ControlSystem" displayName="$(string.ControlSystem)">
       <parentCategory ref="Control" />
     </category>
-    <category name="ControlServices" displayName="$(string.ControlSystem)">
+    <category name="ControlServices" displayName="$(string.ControlServices)">
       <parentCategory ref="Control" />
     </category>
-    <category name="ControlAppCD_DVD" displayName="$(string.ControlSystem)">
+    <category name="ControlAppCD_DVD" displayName="$(string.ControlAppCD_DVD)">
+      <parentCategory ref="Control" />
+    </category>
+    <category name="ControlMounting" displayName="$(string.ControlMounting)">
+      <parentCategory ref="Control" />
+    </category>
+    <category name="ControlAppTools" displayName="$(string.ControlAppTools)">
       <parentCategory ref="Control" />
     </category>
   </categories>
@@ -254,6 +260,126 @@
                 </value>
             </enum>
             <enum displayName="$(string.dvd+rw-mediainfo_legacy)">
+                <value>
+                    <decimal value="2"/>
+                </value>
+            </enum>
+        </enum>
+    </elements>
+ </policy>
+ <policy class="Machine" displayName="$(string.fusermount)" explainText="$(string.fusermount_help)" key="Software\BaseALT\Policies\Control" name="fusermount" presentation="$(presentation.fusermount)">
+    <parentCategory ref="ControlMounting"/>
+    <supportedOn ref="system:SUPPORTED_AltP8"/>
+    <elements>
+        <enum id="fusermount_setter" required="true" valueName="fusermount">
+            <enum displayName="$(string.fusermount_public)">
+                <value>
+                    <decimal value="0"/>
+                </value>
+            </enum>
+            <enum displayName="$(string.fusermount_fuseonly)">
+                <value>
+                    <decimal value="1"/>
+                </value>
+            </enum>
+            <enum displayName="$(string.fusermount_wheelonly)">
+                <value>
+                    <decimal value="2"/>
+                </value>
+            </enum>
+            <enum displayName="$(string.fusermount_restricted)">
+                <value>
+                    <decimal value="3"/>
+                </value>
+            </enum>
+        </enum>
+    </elements>
+ </policy>
+ <policy class="Machine" displayName="$(string.gpasswd)" explainText="$(string.gpasswd_help)" key="Software\BaseALT\Policies\Control" name="gpasswd" presentation="$(presentation.gpasswd)">
+    <parentCategory ref="ControlSystem"/>
+    <supportedOn ref="system:SUPPORTED_AltP8"/>
+    <elements>
+        <enum id="gpasswd_setter" required="true" valueName="gpasswd">
+            <enum displayName="$(string.gpasswd_public)">
+                <value>
+                    <decimal value="0"/>
+                </value>
+            </enum>
+            <enum displayName="$(string.gpasswd_wheelonly)">
+                <value>
+                    <decimal value="1"/>
+                </value>
+            </enum>
+            <enum displayName="$(string.gpasswd_restricted)">
+                <value>
+                    <decimal value="2"/>
+                </value>
+            </enum>
+        </enum>
+    </elements>
+ </policy>
+ <policy class="Machine" displayName="$(string.groupmems)" explainText="$(string.groupmems_help)" key="Software\BaseALT\Policies\Control" name="groupmems" presentation="$(presentation.groupmems)">
+    <parentCategory ref="ControlSystem"/>
+    <supportedOn ref="system:SUPPORTED_AltP8"/>
+    <elements>
+        <enum id="groupmems_setter" required="true" valueName="groupmems">
+            <enum displayName="$(string.groupmems_public)">
+                <value>
+                    <decimal value="0"/>
+                </value>
+            </enum>
+            <enum displayName="$(string.groupmems_wheelonly)">
+                <value>
+                    <decimal value="1"/>
+                </value>
+            </enum>
+            <enum displayName="$(string.groupmems_restricted)">
+                <value>
+                    <decimal value="2"/>
+                </value>
+            </enum>
+        </enum>
+    </elements>
+ </policy>
+ <policy class="Machine" displayName="$(string.growisofs)" explainText="$(string.growisofs_help)" key="Software\BaseALT\Policies\Control" name="growisofs" presentation="$(presentation.growisofs)">
+    <parentCategory ref="ControlAppCD_DVD"/>
+    <supportedOn ref="system:SUPPORTED_AltP8"/>
+    <elements>
+        <enum id="growisofs_setter" required="true" valueName="growisofs">
+            <enum displayName="$(string.growisofs_public)">
+                <value>
+                    <decimal value="0"/>
+                </value>
+            </enum>
+            <enum displayName="$(string.growisofs_restricted)">
+                <value>
+                    <decimal value="1"/>
+                </value>
+            </enum>
+            <enum displayName="$(string.growisofs_legacy)">
+                <value>
+                    <decimal value="2"/>
+                </value>
+            </enum>
+        </enum>
+    </elements>
+ </policy>
+ <policy class="Machine" displayName="$(string.hddtemp)" explainText="$(string.hddtemp_help)" key="Software\BaseALT\Policies\Control" name="hddtemp" presentation="$(presentation.hddtemp)">
+    <parentCategory ref="ControlAppTools"/>
+    <supportedOn ref="system:SUPPORTED_AltP8"/>
+    <elements>
+        <enum id="hddtemp_setter" required="true" valueName="hddtemp">
+            <enum displayName="$(string.hddtemp_public)">
+                <value>
+                    <decimal value="0"/>
+                </value>
+            </enum>
+            <enum displayName="$(string.hddtemp_wheelonly)">
+                <value>
+                    <decimal value="1"/>
+                </value>
+            </enum>
+            <enum displayName="$(string.hddtemp_restricted)">
                 <value>
                     <decimal value="2"/>
                 </value>

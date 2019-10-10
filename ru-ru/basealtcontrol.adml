@@ -108,6 +108,52 @@
       <string id="dvd+rw-mediainfo_restricted">Только root может выполнять /usr/bin/dvd+rw-mediainfo</string>
       <string id="dvd+rw-mediainfo_legacy">Устаревший режим, не должен использоваться</string>
     </stringTable>
+    <stringTable>
+      <string id="SecurityControl">Политики безопасности</string>
+      <string id="ControlMounting">Ограничения монтирования</string>
+      <string id="fusermount">Права доступа к средствам монтирования файловых систем FUSE</string>
+      <string id="fusermount_help">Определяет права на кзапуск /usr/bin/fusermount и /usr/bin/fusermount3</string>
+      <string id="fusermount_public">Любой пользователь может выполнить /usr/bin/fusermount и /usr/bin/fusermount3</string>
+      <string id="fusermount_fuseonly">Только члены группы fuse могут выполнять /usr/bin/fusermount и /usr/bin/fusermount3</string>
+      <string id="fusermount_wheelonly">Только члены группы wheel могут выполнять /usr/bin/fusermount и /usr/bin/fusermount3</string>
+      <string id="fusermount_restricted">Только root может выполнять /usr/bin/fusermount и /usr/bin/fusermount3</string>
+     </stringTable>
+     <stringTable>
+      <string id="SecurityControl">Политики безопасности</string>
+      <string id="ControlSystem">Системные</string>
+      <string id="gpasswd">Выполнение программы /usr/bin/gpasswd</string>
+      <string id="gpasswd_help">Политика определяет права на запуск инструмента /usr/bin/gpasswd</string>
+      <string id="gpasswd_public">Любой пользователь может выполнить /usr/bin/gpasswd</string>
+      <string id="gpasswd_wheelonly">Только члены группы колес могут выполнять /usr/bin/gpasswd</string>
+      <string id="gpasswd_restricted">Только root может выполнить /usr/bin/gpasswd</string>
+    </stringTable>
+    <stringTable>
+      <string id="SecurityControl">Политики безопасности</string>
+      <string id="ControlSystem">Системные</string>
+      <string id="groupmems">Использование инструмента /usr/bin/groupmems</string>
+      <string id="groupmems_help">Политика определяет права на выполнение использование  инструмента /usr/bin/groupmems</string>
+      <string id="groupmems_public">Любой пользователь может выполнить /usr/bin/groupmems</string>
+      <string id="groupmems_wheelonly">Только члены группы колес могут выполнять /usr/bin/groupmems</string>
+      <string id="groupmems_restricted">Только root может выполнять /usr/bin/groupmems</string>
+    </stringTable>
+    <stringTable>
+      <string id="SecurityControl">Политики безопасности</string>
+      <string id="ControlAppCD_DVD">CD/DVD приложения</string>
+      <string id="growisofs">Разрешение на использование /usr/bin/growisofs</string>
+      <string id="growisofs_help">Политика определяет права на использование инструмента /usr/bin/growisofs</string>
+      <string id="growisofs_public">Только члены группы cdwriter могут выполнять /usr/bin/growisofs</string>
+      <string id="growisofs_restricted">Только root может выполнить /usr/bin/growisofs</string>
+      <string id="growisofs_legacy">Режим совместимости не должен использоваться</string>
+    </stringTable>
+    <stringTable>
+      <string id="SecurityControl">Политики безопасности</string>
+      <string id="ControlAppTools">Инструменты</string>
+      <string id="hddtemp">Разрешение на использование /usr/sbin/hddtemp</string>
+      <string id="hddtemp_help">Разрешение на использование инструмента /usr/sbin/hddtemp</string>
+      <string id="hddtemp_public">Любой пользователь может выполнить /usr/sbin/hddtemp</string>
+      <string id="hddtemp_wheelonly">Только члены группы wheel могут выполнять /usr/sbin/hddtemp</string>
+      <string id="hddtemp_restricted">Только root может выполнить /usr/sbin/hddtemp</string>
+    </stringTable>
     <presentationTable>
       <presentation id="ExecuteSuProgram">
         <dropdownList refId="ExecuteSuProgramSetter" defaultItem="2">Запуск программы /bin/su разрешён</dropdownList>
@@ -144,6 +190,21 @@
       </presentation>
       <presentation id="dvd+rw-mediainfo">
         <dropdownList defaultItem="0" refId="dvd+rw-mediainfo_setter">Только члены группы cdwriter могут выполнять /usr/bin/dvd+rw-mediainfo</dropdownList>
+      </presentation>
+      <presentation id="fusermount">
+        <dropdownList defaultItem="1" refId="fusermount_setter">Только члены группы fuse могут выполнять /usr/bin/fusermount и /usr/bin/fusermount3</dropdownList>
+      </presentation>
+      <presentation id="gpasswd">
+        <dropdownList defaultItem="2" refId="gpasswd_setter">Только root может выполнить /usr/bin/gpasswd</dropdownList>
+      </presentation>
+      <presentation id="groupmems">
+        <dropdownList defaultItem="2" refId="groupmems_setter">Только root может выполнять /usr/bin/groupmems</dropdownList>
+      </presentation>
+      <presentation id="growisofs">
+        <dropdownList defaultItem="0" refId="growisofs_setter">Только члены группы cdwriter могут выполнять /usr/bin/growisofs</dropdownList>
+      </presentation>
+      <presentation id="hddtemp">
+	<dropdownList defaultItem="1" refId="hddtemp_setter">Только члены группы wheel могут выполнять /usr/sbin/hddtemp</dropdownList>
       </presentation>
     </presentationTable>
   </resources>

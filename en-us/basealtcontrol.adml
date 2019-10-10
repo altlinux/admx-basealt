@@ -108,6 +108,52 @@
       <string id="dvd+rw-mediainfo_restricted">Only root can execute /usr/bin/dvd+rw-mediainfo</string>
       <string id="dvd+rw-mediainfo_legacy">Compatibility mode, should not be used</string>
     </stringTable>
+    <stringTable>
+      <string id="SecurityControl">Security policies</string>
+      <string id="ControlMounting">Mount restrictions</string>
+      <string id="fusermount">Access rights to FUSE filesystems mount tools</string>
+      <string id="fusermount_help">Execution of program  /usr/bin/fusermount and /usr/bin/fusermount3</string>
+      <string id="fusermount_public">Any user can execute /usr/bin/fusermount and /usr/bin/fusermount3</string>
+      <string id="fusermount_fuseonly">Only fuse group members can execute /usr/bin/fusermount and /usr/bin/fusermount3</string>
+      <string id="fusermount_wheelonly">Only wheel group members can execute /usr/bin/fusermount and /usr/bin/fusermount3</string>
+      <string id="fusermount_restricted">Only root can execute /usr/bin/fusermount and /usr/bin/fusermount3</string>
+    </stringTable>
+    <stringTable>
+      <string id="SecurityControl">Security policies</string>
+      <string id="ControlSystem">System Control</string>
+      <string id="gpasswd">Execution of program /usr/bin/gpasswd</string>
+      <string id="gpasswd_help">The policy defines the rights to run the tool /usr/bin/gpasswd</string>
+      <string id="gpasswd_public">Any user can execute /usr/bin/gpasswd</string>
+      <string id="gpasswd_wheelonly">Only wheel group members can execute /usr/bin/gpasswd</string>
+      <string id="gpasswd_restricted">Only root can execute /usr/bin/gpasswd</string>
+    </stringTable>
+    <stringTable>
+      <string id="SecurityControl">Security policies</string>
+      <string id="ControlSystem">System Control</string>	    
+      <string id="groupmems">Execution of program /usr/bin/groupmems</string>
+      <string id="groupmems_help">The policy defines the rights to execution of program /usr/bin/groupmems</string>
+      <string id="groupmems_public">Any user can execute /usr/bin/groupmems</string>
+      <string id="groupmems_wheelonly">Only wheel group members can execute /usr/bin/groupmems</string>
+      <string id="groupmems_restricted">Only root can execute /usr/bin/groupmems</string>
+     </stringTable>
+     <stringTable>
+       <string id="SecurityControl">Security policies</string>
+       <string id="ControlAppCD_DVD">Control CD/DVD Applications</string>
+       <string id="growisofs"/>Permission to use /usr/bin/growisofs</string>
+       <string id="growisofs_help">he policy defines the rights to use the tool /usr/bin/growisofs</string>
+       <string id="growisofs_public">Only cdwriter group members can execute /usr/bin/growisofs</string>
+       <string id="growisofs_restricted">Only root can execute /usr/bin/growisofs</string>
+       <string id="growisofs_legacy">Compatibility mode, should not be used</string>
+      </stringTable>
+      <stringTable>
+        <string id="SecurityControl">Security policies</string>
+        <string id="ControlAppTools">Tools</string>
+        <string id="hddtemp">Permission to use /usr/sbin/hddtemp</string>
+        <string id="hddtemp_help">Permission to use the tool /usr/sbin/hddtemp - monitor hard drive temperature</string>
+        <string id="hddtemp_public">Any user can execute /usr/sbin/hddtemp</string>
+        <string id="hddtemp_wheelonly">Only wheel group members can execute /usr/sbin/hddtemp</string>
+        <string id="hddtemp_restricted">Only root can execute /usr/sbin/hddtemp</string>
+       </stringTable>
     <presentationTable>
       <presentation id="ExecuteSuProgram">
         <dropdownList refId="ExecuteSuProgramSetter" defaultItem="2">Execution of program /bin/su allows</dropdownList>
@@ -144,6 +190,21 @@
       </presentation>
       <presentation id="dvd+rw-mediainfo">
         <dropdownList defaultItem="0" refId="dvd+rw-mediainfo_setter">Only cdwriter group members can execute /usr/bin/dvd+rw-mediainfo</dropdownList>
+      </presentation>
+      <presentation id="fusermount">
+        <dropdownList defaultItem="1" refId="fusermount_setter">Only fuse group members can execute /usr/bin/fusermount and /usr/bin/fusermount3</dropdownList>
+      </presentation>
+      <presentation id="gpasswd">
+        <dropdownList defaultItem="2" refId="gpasswd_setter">Only root can execute /usr/bin/gpasswd</dropdownList>
+      </presentation>
+      <presentation id="groupmems">
+        <dropdownList defaultItem="2" refId="groupmems_setter">Only root can execute /usr/bin/groupmems</dropdownList>
+      </presentation>
+      <presentation id="growisofs">
+        <dropdownList defaultItem="0" refId="growisofs_setter">Only cdwriter group members can execute /usr/bin/growisofs</dropdownList>
+      </presentation>
+      <presentation id="hddtemp">
+        <dropdownList defaultItem="1" refId="hddtemp_setter">Only wheel group members can execute /usr/sbin/hddtemp</dropdownList>
       </presentation>
     </presentationTable>
   </resources>
