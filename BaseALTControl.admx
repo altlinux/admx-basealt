@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <!--  (c) 2019 BaseALT, Ltd.  -->
 <policyDefinitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" revision="1.0" schemaVersion="1.0" xmlns="http://schemas.microsoft.com/GroupPolicy/2006/07/PolicyDefinitions">
   <policyNamespaces>
@@ -55,46 +55,44 @@
         </enum>
       </elements>
     </policy>
-  </policies>
-  <!-- New policies exported from family distribution p8 -->
-  <policy class="Machine" displayName="$(string.at)" explainText="$(string.at_help)" key="Software\BaseALT\Policies\Control" name="at" presentation="$(presentation.at)">
+   <policy class="Machine" displayName="$(string.at)" explainText="$(string.at_help)" key="Software\BaseALT\Policies\Control" name="at" presentation="$(presentation.at)">
     <parentCategory ref="ControlServices"/>
     <supportedOn ref="system:SUPPORTED_AltP8"/>
     <elements>
         <enum id="at_setter" required="true" valueName="at">
-            <enum displayName="$(string.at_public)">
+            <item displayName="$(string.at_public)">
                 <value>
                     <decimal value="0"/>
                 </value>
-            </enum>
-            <enum displayName="$(string.at_restricted)">
+          </item>
+            <item displayName="$(string.at_restricted)">
                 <value>
                     <decimal value="1"/>
                 </value>
-            </enum>
-            <enum displayName="$(string.at_atdaemon)">
+          </item>
+            <item displayName="$(string.at_atdaemon)">
                 <value>
                     <decimal value="2"/>
                 </value>
-            </enum>
+          </item>
         </enum>
     </elements>
-  </policy>
-  <policy class="Machine" displayName="$(string.chage)" explainText="$(string.chage_help)" key="Software\BaseALT\Policies\Control" name="chage" presentation="$(presentation.chage)">
+   </policy>
+   <policy class="Machine" displayName="$(string.chage)" explainText="$(string.chage_help)" key="Software\BaseALT\Policies\Control" name="chage" presentation="$(presentation.chage)">
     <parentCategory ref="ControlSystem"/>
     <supportedOn ref="system:SUPPORTED_AltP8"/>
     <elements>
         <enum id="chage_setter" required="true" valueName="chage">
-            <enum displayName="$(string.chage_public)">
+            <item displayName="$(string.chage_public)">
                 <value>
                     <decimal value="0"/>
                 </value>
-            </enum>
-            <enum displayName="$(string.chage_restricted)">
+          </item>
+            <item displayName="$(string.chage_restricted)">
                 <value>
                     <decimal value="1"/>
                 </value>
-            </enum>
+          </item>
         </enum>
     </elements>
  </policy>
@@ -103,16 +101,16 @@
     <supportedOn ref="system:SUPPORTED_AltP8"/>
     <elements>
         <enum id="chfn_setter" required="true" valueName="chfn">
-            <enum displayName="$(string.chfn_public)">
+            <item displayName="$(string.chfn_public)">
                 <value>
                     <decimal value="0"/>
                 </value>
-            </enum>
-            <enum displayName="$(string.chfn_restricted)">
+          </item>
+            <item displayName="$(string.chfn_restricted)">
                 <value>
                     <decimal value="1"/>
                 </value>
-            </enum>
+          </item>
         </enum>
     </elements>
  </policy>
@@ -121,16 +119,16 @@
     <supportedOn ref="system:SUPPORTED_AltP8"/>
     <elements>
         <enum id="chsh_setter" required="true" valueName="chsh">
-            <enum displayName="$(string.chsh_public)">
+            <item displayName="$(string.chsh_public)">
                 <value>
                     <decimal value="0"/>
                 </value>
-            </enum>
-            <enum displayName="$(string.chsh_restricted)">
+          </item>
+            <item displayName="$(string.chsh_restricted)">
                 <value>
                     <decimal value="1"/>
                 </value>
-            </enum>
+          </item>
         </enum>
     </elements>
  </policy>
@@ -139,21 +137,21 @@
     <supportedOn ref="system:SUPPORTED_AltP8"/>
     <elements>
         <enum id="consolehelper_setter" required="true" valueName="consolehelper">
-            <enum displayName="$(string.consolehelper_public)">
+            <item displayName="$(string.consolehelper_public)">
                 <value>
                     <decimal value="0"/>
                 </value>
-            </enum>
-            <enum displayName="$(string.consolehelper_wheelonly)">
+          </item>
+            <item displayName="$(string.consolehelper_wheelonly)">
                 <value>
                     <decimal value="1"/>
                 </value>
-            </enum>
-            <enum displayName="$(string.consolehelper_restricted)">
+          </item>
+            <item displayName="$(string.consolehelper_restricted)">
                 <value>
                     <decimal value="2"/>
                 </value>
-            </enum>
+          </item>
         </enum>
     </elements>
  </policy>
@@ -162,16 +160,16 @@
     <supportedOn ref="system:SUPPORTED_AltP8"/>
     <elements>
         <enum id="crontab_setter" required="true" valueName="crontab">
-            <enum displayName="$(string.crontab_public)">
+            <item displayName="$(string.crontab_public)">
                 <value>
                     <decimal value="0"/>
                 </value>
-            </enum>
-            <enum displayName="$(string.crontab_restricted)">
+          </item>
+            <item displayName="$(string.crontab_restricted)">
                 <value>
                     <decimal value="1"/>
                 </value>
-            </enum>
+          </item>
         </enum>
     </elements>
  </policy>
@@ -180,90 +178,90 @@
     <supportedOn ref="system:SUPPORTED_AltP8"/>
     <elements>
         <enum id="dvd-ram-control_setter" required="true" valueName="dvd-ram-control">
-            <enum displayName="$(string.dvd-ram-control_public)">
+            <item displayName="$(string.dvd-ram-control_public)">
                 <value>
                     <decimal value="0"/>
                 </value>
-            </enum>
-            <enum displayName="$(string.dvd-ram-control_restricted)">
+          </item>
+            <item displayName="$(string.dvd-ram-control_restricted)">
                 <value>
                     <decimal value="1"/>
                 </value>
-            </enum>
-            <enum displayName="$(string.dvd-ram-control_legacy)">
+          </item>
+            <item displayName="$(string.dvd-ram-control_legacy)">
                 <value>
                     <decimal value="2"/>
                 </value>
-            </enum>
+          </item>
         </enum>
     </elements>
  </policy>
- <policy class="Machine" displayName="$(string.dvd+rw-booktype)" explainText="$(string.dvd+rw-booktype_help)" key="Software\BaseALT\Policies\Control" name="dvd+rw-booktype" presentation="$(presentation.dvd+rw-booktype)">
+ <policy class="Machine" displayName="$(string.dvd_rw-booktype)" explainText="$(string.dvd_rw-booktype_help)" key="Software\BaseALT\Policies\Control" name="dvd_rw-booktype" presentation="$(presentation.dvd_rw-booktype)">
     <parentCategory ref="ControlAppCD_DVD"/>
     <supportedOn ref="system:SUPPORTED_AltP8"/>
     <elements>
-        <enum id="dvd+rw-booktype_setter" required="true" valueName="dvd+rw-booktype">
-            <enum displayName="$(string.dvd+rw-booktype_public)">
+        <enum id="dvd_rw-booktype_setter" required="true" valueName="dvd_rw-booktype">
+            <item displayName="$(string.dvd_rw-booktype_public)">
                 <value>
                     <decimal value="0"/>
                 </value>
-            </enum>
-            <enum displayName="$(string.dvd+rw-booktype_restricted)">
+          </item>
+            <item displayName="$(string.dvd_rw-booktype_restricted)">
                 <value>
                     <decimal value="1"/>
                 </value>
-            </enum>
-            <enum displayName="$(string.dvd+rw-booktype_legacy)">
+          </item>
+            <item displayName="$(string.dvd_rw-booktype_legacy)">
                 <value>
                     <decimal value="2"/>
                 </value>
-            </enum>
+          </item>
         </enum>
     </elements>
  </policy>
- <policy class="Machine" displayName="$(string.dvd+rw-format)" explainText="$(string.dvd+rw-format_help)" key="Software\BaseALT\Policies\Control" name="dvd+rw-format" presentation="$(presentation.dvd+rw-format)">
+ <policy class="Machine" displayName="$(string.dvd_rw-format)" explainText="$(string.dvd_rw-format_help)" key="Software\BaseALT\Policies\Control" name="dvd_rw-format" presentation="$(presentation.dvd_rw-format)">
     <parentCategory ref="ControlAppCD_DVD"/>
     <supportedOn ref="system:SUPPORTED_AltP8"/>
     <elements>
-        <enum id="dvd+rw-format_setter" required="true" valueName="dvd+rw-format">
-            <enum displayName="$(string.dvd+rw-format_public)">
+        <enum id="dvd_rw-format_setter" required="true" valueName="dvd_rw-format">
+            <item displayName="$(string.dvd_rw-format_public)">
                 <value>
                     <decimal value="0"/>
                 </value>
-            </enum>
-            <enum displayName="$(string.dvd+rw-format_restricted)">
+          </item>
+            <item displayName="$(string.dvd_rw-format_restricted)">
                 <value>
                     <decimal value="1"/>
                 </value>
-            </enum>
-            <enum displayName="$(string.dvd+rw-format_legacy)">
+          </item>
+            <item displayName="$(string.dvd_rw-format_legacy)">
                 <value>
                     <decimal value="2"/>
                 </value>
-            </enum>
+          </item>
         </enum>
     </elements>
  </policy>
- <policy class="Machine" displayName="$(string.dvd+rw-mediainfo)" explainText="$(string.dvd+rw-mediainfo_help)" key="Software\BaseALT\Policies\Control" name="dvd+rw-mediainfo" presentation="$(presentation.dvd+rw-mediainfo)">
+ <policy class="Machine" displayName="$(string.dvd_rw-mediainfo)" explainText="$(string.dvd_rw-mediainfo_help)" key="Software\BaseALT\Policies\Control" name="dvd_rw-mediainfo" presentation="$(presentation.dvd_rw-mediainfo)">
     <parentCategory ref="ControlAppCD_DVD"/>
     <supportedOn ref="system:SUPPORTED_AltP8"/>
     <elements>
-        <enum id="dvd+rw-mediainfo_setter" required="true" valueName="dvd+rw-mediainfo">
-            <enum displayName="$(string.dvd+rw-mediainfo_public)">
+        <enum id="dvd_rw-mediainfo_setter" required="true" valueName="dvd_rw-mediainfo">
+            <item displayName="$(string.dvd_rw-mediainfo_public)">
                 <value>
                     <decimal value="0"/>
                 </value>
-            </enum>
-            <enum displayName="$(string.dvd+rw-mediainfo_restricted)">
+          </item>
+            <item displayName="$(string.dvd_rw-mediainfo_restricted)">
                 <value>
                     <decimal value="1"/>
                 </value>
-            </enum>
-            <enum displayName="$(string.dvd+rw-mediainfo_legacy)">
+          </item>
+            <item displayName="$(string.dvd_rw-mediainfo_legacy)">
                 <value>
                     <decimal value="2"/>
                 </value>
-            </enum>
+          </item>
         </enum>
     </elements>
  </policy>
@@ -272,26 +270,26 @@
     <supportedOn ref="system:SUPPORTED_AltP8"/>
     <elements>
         <enum id="fusermount_setter" required="true" valueName="fusermount">
-            <enum displayName="$(string.fusermount_public)">
+            <item displayName="$(string.fusermount_public)">
                 <value>
                     <decimal value="0"/>
                 </value>
-            </enum>
-            <enum displayName="$(string.fusermount_fuseonly)">
+          </item>
+            <item displayName="$(string.fusermount_fuseonly)">
                 <value>
                     <decimal value="1"/>
                 </value>
-            </enum>
-            <enum displayName="$(string.fusermount_wheelonly)">
+          </item>
+            <item displayName="$(string.fusermount_wheelonly)">
                 <value>
                     <decimal value="2"/>
                 </value>
-            </enum>
-            <enum displayName="$(string.fusermount_restricted)">
+          </item>
+            <item displayName="$(string.fusermount_restricted)">
                 <value>
                     <decimal value="3"/>
                 </value>
-            </enum>
+          </item>
         </enum>
     </elements>
  </policy>
@@ -300,21 +298,21 @@
     <supportedOn ref="system:SUPPORTED_AltP8"/>
     <elements>
         <enum id="gpasswd_setter" required="true" valueName="gpasswd">
-            <enum displayName="$(string.gpasswd_public)">
+            <item displayName="$(string.gpasswd_public)">
                 <value>
                     <decimal value="0"/>
                 </value>
-            </enum>
-            <enum displayName="$(string.gpasswd_wheelonly)">
+          </item>
+            <item displayName="$(string.gpasswd_wheelonly)">
                 <value>
                     <decimal value="1"/>
                 </value>
-            </enum>
-            <enum displayName="$(string.gpasswd_restricted)">
+          </item>
+            <item displayName="$(string.gpasswd_restricted)">
                 <value>
                     <decimal value="2"/>
                 </value>
-            </enum>
+          </item>
         </enum>
     </elements>
  </policy>
@@ -323,21 +321,21 @@
     <supportedOn ref="system:SUPPORTED_AltP8"/>
     <elements>
         <enum id="groupmems_setter" required="true" valueName="groupmems">
-            <enum displayName="$(string.groupmems_public)">
+            <item displayName="$(string.groupmems_public)">
                 <value>
                     <decimal value="0"/>
                 </value>
-            </enum>
-            <enum displayName="$(string.groupmems_wheelonly)">
+          </item>
+            <item displayName="$(string.groupmems_wheelonly)">
                 <value>
                     <decimal value="1"/>
                 </value>
-            </enum>
-            <enum displayName="$(string.groupmems_restricted)">
+          </item>
+            <item displayName="$(string.groupmems_restricted)">
                 <value>
                     <decimal value="2"/>
                 </value>
-            </enum>
+          </item>
         </enum>
     </elements>
  </policy>
@@ -346,21 +344,21 @@
     <supportedOn ref="system:SUPPORTED_AltP8"/>
     <elements>
         <enum id="growisofs_setter" required="true" valueName="growisofs">
-            <enum displayName="$(string.growisofs_public)">
+            <item displayName="$(string.growisofs_public)">
                 <value>
                     <decimal value="0"/>
                 </value>
-            </enum>
-            <enum displayName="$(string.growisofs_restricted)">
+          </item>
+            <item displayName="$(string.growisofs_restricted)">
                 <value>
                     <decimal value="1"/>
                 </value>
-            </enum>
-            <enum displayName="$(string.growisofs_legacy)">
+          </item>
+            <item displayName="$(string.growisofs_legacy)">
                 <value>
                     <decimal value="2"/>
                 </value>
-            </enum>
+          </item>
         </enum>
     </elements>
  </policy>
@@ -369,22 +367,24 @@
     <supportedOn ref="system:SUPPORTED_AltP8"/>
     <elements>
         <enum id="hddtemp_setter" required="true" valueName="hddtemp">
-            <enum displayName="$(string.hddtemp_public)">
+            <item displayName="$(string.hddtemp_public)">
                 <value>
                     <decimal value="0"/>
                 </value>
-            </enum>
-            <enum displayName="$(string.hddtemp_wheelonly)">
+          </item>
+            <item displayName="$(string.hddtemp_wheelonly)">
                 <value>
                     <decimal value="1"/>
                 </value>
-            </enum>
-            <enum displayName="$(string.hddtemp_restricted)">
+          </item>
+            <item displayName="$(string.hddtemp_restricted)">
                 <value>
                     <decimal value="2"/>
                 </value>
-            </enum>
+          </item>
         </enum>
     </elements>
  </policy>
+</policies>
 </policyDefinitions>
+

@@ -1,211 +1,170 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--  (c) 2019 BaseALT, Ltd.  -->
 <policyDefinitionResources xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.microsoft.com/GroupPolicy/2006/07/PolicyDefinitions" revision="1.0" schemaVersion="1.0">
-  <displayName>ALT security policies definitions</displayName>
-  <description>This file contains the security policies definitions used by ALT operating system</description>
-  <resources>
-    <stringTable>
-      <string id="SecurityControl">Security policies</string>
-      <string id="ExecuteSuProgram">Execution of program /bin/su</string>
-      <string id="ExecuteSuProgram_Help">Policy allows to control access to execute program /bin/su</string>
-      <string id="ExecuteSuProgram_Public">Any user</string>
-      <string id="ExecuteSuProgram_Wheel">Any user, but only "wheel" group members can switch to superuser</string>
-      <string id="ExecuteSuProgram_WheelOnly">Only "wheel" group members</string>
-      <string id="ExecuteSuProgram_Restricted">Only root</string>
-    </stringTable>
-    <!-- New policies exported from family distribution p8 -->
-    <stringTable>
-      <string id="SecurityControl">Security policies</string>
-      <string id="ControlServices">Services (daemons) Control</string>
-      <string id="at">Access rights and behavior of the job queue /usr/bin/at</string>
-      <string id="at_help">The policy allows you to control the behavior and access rights to run the job queue at</string>
-      <string id="at_public">All users are allowed to run /usr/bin/at</string>
-      <string id="at_restricted">Only root allowed to run /usr/bin/at</string>
-      <string id="at_atdaemon">Compatibility mode, should not be used</string>
-    </stringTable>
-    <stringTable>
-      <string id="SecurityControl">Security policies</string>
-      <string id="ControlSystem">System Control</string>
-      <string id="chage">Execution of program /usr/bin/chage</string>
-      <string id="chage_help">Policy allows to control access to execute program /usr/bin/chage</string>
-      <string id="chage_public">Any user can determine when he should change his/her password using the "chage" command</string>
-      <string id="chage_restricted">Only root can execute /usr/bin/chage</string>
-    </stringTable>
-    <stringTable>
-      <string id="SecurityControl">Security policies</string>
-      <string id="ControlSystem">System Control</string>
-      <string id="chfn"/>Execution of program /usr/bin/chfn</string>
-      <string id="chfn_help">The policy allows you to control behavior and access rights. the chfn command, which can change the fields (full name, cabinet number, office number and home phone number for the user account) for your account, subject to the restrictions in /etc/login.defs. (The default configuration does not allow users to change their full name.). In addition, only the superuser can use the -o option to change the undefined parts of the GECOS field</string>
-      <string id="chfn_public">Any user can use the command /usr/bin/chfn</string>
-      <string id="chfn_restricted">Only root can execute /usr/bin/chfn</string>
-    </stringTable>
-    <stringTable>
-      <string id="SecurityControl">Security policies</string>
-      <string id="ControlSystem">System Control</string>
-      <string id="chsh">Permission to use /usr/bin/chsh</string>
-      <string id="chsh_help">The policy allows you to control access rights to the chsh command, which changes the user login shell: this defines the name of the initial user login command; an ordinary user can change the login shell only for his account; superuser can change login shell for any account</string>
-      <string id="chsh_public">All users are allowed to use /usr/bin/chsh</string>
-      <string id="chsh_restricted">Only root can use /usr/bin/chsh</string>
-    </stringTable>
-    <stringTable>
-      <string id="SecurityControl">Security policies</string>
-      <string id="ControlSystem">System Control</string>
-      <string id="consolehelper">Permission to use consolehelper</string>
-      <string id="consolehelper_help">This policy defines access rights to the consolehelper tool, which allows console users to run system programs by performing authentication through PAM (which can be configured to trust all console users or to request a password at the discretion of the system administrator). When possible, authentication is performed graphically; otherwise, this is done in the text console from which consolehelper was started.</string>
-      <string id="consolehelper_public">Any user can use consolehelper</string>
-      <string id="consolehelper_wheelonly">Only members of the wheel group can use consolehelper</string>
-      <string id="consolehelper_restricted">Only root can use consolehelper</string>
-    </stringTable>
-    <stringTable>
-       <string id="SecurityControl">Security policies</string>
-      <string id="ControlServices">Services (daemons) Control</string>
-      <string id="crontab">Permission to use crontab</string>
-      <string id="crontab_help">This policy defines access rights to the crontab tool</string>
-      <string id="crontab_public">Any user can use crontab</string>
-      <string id="crontab_restricted">Only root can use crantab</string>
-    </stringTable>
-    <stringTable>
-      <string id="SecurityControl">Security policies</string>
-      <string id="ControlServices">Services (daemons) Control</string>
-      <string id="cups">Cpus mode</string>
-      <string id="cups_help">This policy defines the behavior of cups</string>
-      <string id="cups_server">External IPP interface are available for user</string>
-      <string id="cups_local">Only local utilities can work with cups</string>
-    </stringTable>
-    <stringTable>
-      <string id="SecurityControl">Security policies</string>
-      <string id="ControlAppCD_DVD">Control CD/DVD Applications</string>
-      <string id="dvd-ram-control">Permission to use /usr/bin/dvd-ram-control</string>
-      <string id="dvd-ram-control_help">This policy defines access rights to the /usr/bin/dvd-ram-control</string>
-      <string id="dvd-ram-control_public">Only cdwriter group members can execute /usr/bin/dvd-ram-control</string>
-      <string id="dvd-ram-control_restricted">Only root can execute /usr/bin/dvd-ram-control</string>
-      <string id="dvd-ram-control_legacy">Compatibility mode, should not be used</string>
-    </stringTable>
-    <stringTable>
-      <string id="SecurityControl">Security policies</string>
-      <string id="ControlAppCD_DVD">Control CD/DVD Applications</string>
-      <string id="dvd+rw-booktype">Permission to use /usr/bin/dvd+rw-booktype</string>
-      <string id="dvd+rw-booktype_help">This policy defines access rights to the /usr/bin/dvd+rw-booktype</string>
-      <string id="dvd+rw-booktype_public">Only cdwriter group members can execute /usr/bin/dvd+rw-booktype</string>
-      <string id="dvd+rw-booktype_restricted">Only root can execute /usr/bin/dvd+rw-booktype</string>
-      <string id="dvd+rw-booktype_legacy">Compatibility mode, should not be used</string>
-    </stringTable>
-    <stringTable>
-      <string id="SecurityControl">Security policies</string>
-      <string id="ControlAppCD_DVD">Control CD/DVD Applications</string>
-      <string id="dvd+rw-format">Permission to use /usr/bin/dvd+rw-format</string>
-      <string id="dvd+rw-format_help">This policy defines access rights to the /usr/bin/dvd+rw-format</string>
-      <string id="dvd+rw-format_public">Only cdwriter group members can execute /usr/bin/dvd+rw-format</string>
-      <string id="dvd+rw-format_restricted">Only root can execute /usr/bin/dvd+rw-format</string>
-      <string id="dvd+rw-format_legacy">Compatibility mode, should not be used</string>
-    </stringTable>
-    <stringTable>
-      <string id="SecurityControl">Security policies</string>
-      <string id="ControlAppCD_DVD">Control CD/DVD Applications</string>
-      <string id="dvd+rw-mediainfo">Permission to use /usr/bin/dvd+rw-mediainfo</string>
-      <string id="dvd+rw-mediainfo_help">This policy defines access rights to the /usr/bin/dvd+rw-mediainfo</string>
-      <string id="dvd+rw-mediainfo_public">Only cdwriter group members can execute /usr/bin/dvd+rw-mediainfo</string>
-      <string id="dvd+rw-mediainfo_restricted">Only root can execute /usr/bin/dvd+rw-mediainfo</string>
-      <string id="dvd+rw-mediainfo_legacy">Compatibility mode, should not be used</string>
-    </stringTable>
-    <stringTable>
-      <string id="SecurityControl">Security policies</string>
-      <string id="ControlMounting">Mount restrictions</string>
-      <string id="fusermount">Access rights to FUSE filesystems mount tools</string>
-      <string id="fusermount_help">Execution of program  /usr/bin/fusermount and /usr/bin/fusermount3</string>
-      <string id="fusermount_public">Any user can execute /usr/bin/fusermount and /usr/bin/fusermount3</string>
-      <string id="fusermount_fuseonly">Only fuse group members can execute /usr/bin/fusermount and /usr/bin/fusermount3</string>
-      <string id="fusermount_wheelonly">Only wheel group members can execute /usr/bin/fusermount and /usr/bin/fusermount3</string>
-      <string id="fusermount_restricted">Only root can execute /usr/bin/fusermount and /usr/bin/fusermount3</string>
-    </stringTable>
-    <stringTable>
-      <string id="SecurityControl">Security policies</string>
-      <string id="ControlSystem">System Control</string>
-      <string id="gpasswd">Execution of program /usr/bin/gpasswd</string>
-      <string id="gpasswd_help">The policy defines the rights to run the tool /usr/bin/gpasswd</string>
-      <string id="gpasswd_public">Any user can execute /usr/bin/gpasswd</string>
-      <string id="gpasswd_wheelonly">Only wheel group members can execute /usr/bin/gpasswd</string>
-      <string id="gpasswd_restricted">Only root can execute /usr/bin/gpasswd</string>
-    </stringTable>
-    <stringTable>
-      <string id="SecurityControl">Security policies</string>
-      <string id="ControlSystem">System Control</string>	    
-      <string id="groupmems">Execution of program /usr/bin/groupmems</string>
-      <string id="groupmems_help">The policy defines the rights to execution of program /usr/bin/groupmems</string>
-      <string id="groupmems_public">Any user can execute /usr/bin/groupmems</string>
-      <string id="groupmems_wheelonly">Only wheel group members can execute /usr/bin/groupmems</string>
-      <string id="groupmems_restricted">Only root can execute /usr/bin/groupmems</string>
-     </stringTable>
-     <stringTable>
-       <string id="SecurityControl">Security policies</string>
-       <string id="ControlAppCD_DVD">Control CD/DVD Applications</string>
-       <string id="growisofs"/>Permission to use /usr/bin/growisofs</string>
-       <string id="growisofs_help">he policy defines the rights to use the tool /usr/bin/growisofs</string>
-       <string id="growisofs_public">Only cdwriter group members can execute /usr/bin/growisofs</string>
-       <string id="growisofs_restricted">Only root can execute /usr/bin/growisofs</string>
-       <string id="growisofs_legacy">Compatibility mode, should not be used</string>
-      </stringTable>
-      <stringTable>
-        <string id="SecurityControl">Security policies</string>
-        <string id="ControlAppTools">Tools</string>
-        <string id="hddtemp">Permission to use /usr/sbin/hddtemp</string>
-        <string id="hddtemp_help">Permission to use the tool /usr/sbin/hddtemp - monitor hard drive temperature</string>
-        <string id="hddtemp_public">Any user can execute /usr/sbin/hddtemp</string>
-        <string id="hddtemp_wheelonly">Only wheel group members can execute /usr/sbin/hddtemp</string>
-        <string id="hddtemp_restricted">Only root can execute /usr/sbin/hddtemp</string>
-       </stringTable>
-    <presentationTable>
-      <presentation id="ExecuteSuProgram">
-        <dropdownList refId="ExecuteSuProgramSetter" defaultItem="2">Execution of program /bin/su allows</dropdownList>
-      </presentation>
-      <presentation id="at">
-        <dropdownList defaultItem="0" refId="at_setter">Any user is allowed to use /usr/bin/at</dropdownList>
-      </presentation>
-      <presentation id="chage">
-        <dropdownList defaultItem="1" refId="chage_setter">Only root can execute /usr/bin/chage</dropdownList>
-      </presentation>
-      <presentation id="chfn">
-        <dropdownList defaultItem="1" refId="chfn_setter">Only root can execute /usr/bin/chfn</dropdownList>
-      </presentation>
-      <presentation id="chsh">
-        <dropdownList defaultItem="1" refId="chsh_setter">Only root allowed to run /usr/bin/chsh</dropdownList>
-      </presentation>
-      <presentation id="consolehelper">
-        <dropdownList defaultItem="0" refId="consolehelper_setter">Any user can use consolehelper</dropdownList>
-      </presentation>
-      <presentation id="crontab">
-        <dropdownList defaultItem="0" refId="crontab_setter">Any user can use crontab</dropdownList>
-      </presentation>
-      <presentation id="cups">
-        <dropdownList defaultItem="0" refId="cups_setter">External IPP interface are available for user</dropdownList>
-      </presentation>
-      <presentation id="dvd-ram-control">
-        <dropdownList defaultItem="0" refId="dvd-ram-control_setter">Only cdwriter group members can execute /usr/bin/dvd-ram-control</dropdownList>
-      </presentation>
-      <presentation id="dvd+rw-booktype">
-        <dropdownList defaultItem="0" refId="dvd+rw-booktype_setter">Only cdwriter group members can execute /usr/bin/dvd+rw-booktype</dropdownList>
-      </presentation>
-      <presentation id="dvd+rw-format">
-        <dropdownList defaultItem="0" refId="dvd+rw-format_setter">Only cdwriter group members can execute /usr/bin/dvd+rw-format</dropdownList>
-      </presentation>
-      <presentation id="dvd+rw-mediainfo">
-        <dropdownList defaultItem="0" refId="dvd+rw-mediainfo_setter">Only cdwriter group members can execute /usr/bin/dvd+rw-mediainfo</dropdownList>
-      </presentation>
-      <presentation id="fusermount">
-        <dropdownList defaultItem="1" refId="fusermount_setter">Only fuse group members can execute /usr/bin/fusermount and /usr/bin/fusermount3</dropdownList>
-      </presentation>
-      <presentation id="gpasswd">
-        <dropdownList defaultItem="2" refId="gpasswd_setter">Only root can execute /usr/bin/gpasswd</dropdownList>
-      </presentation>
-      <presentation id="groupmems">
-        <dropdownList defaultItem="2" refId="groupmems_setter">Only root can execute /usr/bin/groupmems</dropdownList>
-      </presentation>
-      <presentation id="growisofs">
-        <dropdownList defaultItem="0" refId="growisofs_setter">Only cdwriter group members can execute /usr/bin/growisofs</dropdownList>
-      </presentation>
-      <presentation id="hddtemp">
-        <dropdownList defaultItem="1" refId="hddtemp_setter">Only wheel group members can execute /usr/sbin/hddtemp</dropdownList>
-      </presentation>
-    </presentationTable>
-  </resources>
+<displayName>ALT security policies definitions</displayName>
+<description>This file contains the security policies definitions used by ALT operating system</description>
+<resources>
+ <stringTable>  
+  <string id="SecurityControl">Security policies</string>
+  <string id="ControlServices">Services (daemons) Control</string>
+  <string id="ControlSystem">System Control</string>
+  <string id="ControlAppCD_DVD">Control CD/DVD Applications</string>
+  <string id="ControlMounting">Mount restrictions</string>
+  <string id="ControlAppTools">Tools</string>
+
+  <string id="ExecuteSuProgram">Execution of program /bin/su</string>
+  <string id="ExecuteSuProgram_Help">Policy allows to control access to execute program /bin/su</string>
+  <string id="ExecuteSuProgram_Public">Any user</string>
+  <string id="ExecuteSuProgram_Wheel">Any user, but only "wheel" group members can switch to superuser</string>
+  <string id="ExecuteSuProgram_WheelOnly">Only "wheel" group members</string>
+  <string id="ExecuteSuProgram_Restricted">Only root</string>
+
+  <string id="at">Access rights and behavior of the job queue /usr/bin/at</string>
+  <string id="at_help">The policy allows you to control the behavior and access rights to run the job queue at</string>
+  <string id="at_public">All users are allowed to run /usr/bin/at</string>
+  <string id="at_restricted">Only root allowed to run /usr/bin/at</string>
+  <string id="at_atdaemon">Compatibility mode, should not be used</string>
+
+  <string id="chage">Execution of program /usr/bin/chage</string>
+  <string id="chage_help">Policy allows to control access to execute program /usr/bin/chage</string>
+  <string id="chage_public">Any user can determine when he should change his/her password using the "chage" command</string>
+  <string id="chage_restricted">Only root can execute /usr/bin/chage</string>
+
+
+  <string id="chfn">Execution of program /usr/bin/chfn</string>
+  <string id="chfn_help">The policy allows you to control behavior and access rights. the chfn command, which can change the fields (full name, cabinet number, office number and home phone number for the user account) for your account, subject to the restrictions in /etc/login.defs. (The default configuration does not allow users to change their full name.). In addition, only the superuser can use the -o option to change the undefined parts of the GECOS field</string>
+  <string id="chfn_public">Any user can use the command /usr/bin/chfn</string>
+  <string id="chfn_restricted">Only root can execute /usr/bin/chfn</string>
+
+  <string id="chsh">Permission to use /usr/bin/chsh</string>
+  <string id="chsh_help">The policy allows you to control access rights to the chsh command, which changes the user login shell: this defines the name of the initial user login command; an ordinary user can change the login shell only for his account; superuser can change login shell for any account</string>
+  <string id="chsh_public">All users are allowed to use /usr/bin/chsh</string>
+  <string id="chsh_restricted">Only root can use /usr/bin/chsh</string>
+
+  <string id="consolehelper">Permission to use consolehelper</string>
+  <string id="consolehelper_help">This policy defines access rights to the consolehelper tool, which allows console users to run system programs by performing authentication through PAM (which can be configured to trust all console users or to request a password at the discretion of the system administrator). When possible, authentication is performed graphically; otherwise, this is done in the text console from which consolehelper was started.</string>
+  <string id="consolehelper_public">Any user can use consolehelper</string>
+  <string id="consolehelper_wheelonly">Only members of the wheel group can use consolehelper</string>
+  <string id="consolehelper_restricted">Only root can use consolehelper</string>
+
+  <string id="crontab">Permission to use crontab</string>
+  <string id="crontab_help">This policy defines access rights to the crontab tool</string>
+  <string id="crontab_public">Any user can use crontab</string>
+  <string id="crontab_restricted">Only root can use crantab</string>
+
+  <string id="cups">Cpus mode</string>
+  <string id="cups_help">This policy defines the behavior of cups</string>
+  <string id="cups_server">External IPP interface are available for user</string>
+  <string id="cups_local">Only local utilities can work with cups</string>
+
+  <string id="dvd-ram-control">Permission to use /usr/bin/dvd-ram-control</string>
+  <string id="dvd-ram-control_help">This policy defines access rights to the /usr/bin/dvd-ram-control</string>
+  <string id="dvd-ram-control_public">Only cdwriter group members can execute /usr/bin/dvd-ram-control</string>
+  <string id="dvd-ram-control_restricted">Only root can execute /usr/bin/dvd-ram-control</string>
+  <string id="dvd-ram-control_legacy">Compatibility mode, should not be used</string>
+
+  <string id="dvd_rw-booktype">Permission to use /usr/bin/dvd+rw-booktype</string>
+  <string id="dvd_rw-booktype_help">This policy defines access rights to the /usr/bin/dvd+rw-booktype</string>
+  <string id="dvd_rw-booktype_public">Only cdwriter group members can execute /usr/bin/dvd+rw-booktype</string>
+  <string id="dvd_rw-booktype_restricted">Only root can execute /usr/bin/dvd+rw-booktype</string>
+  <string id="dvd_rw-booktype_legacy">Compatibility mode, should not be used</string>
+
+  <string id="dvd_rw-format">Permission to use /usr/bin/dvd+rw-format</string>
+  <string id="dvd_rw-format_help">This policy defines access rights to the /usr/bin/dvd+rw-format</string>
+  <string id="dvd_rw-format_public">Only cdwriter group members can execute /usr/bin/dvd+rw-format</string>
+  <string id="dvd_rw-format_restricted">Only root can execute /usr/bin/dvd+rw-format</string>
+  <string id="dvd_rw-format_legacy">Compatibility mode, should not be used</string>
+
+  <string id="dvd_rw-mediainfo">Permission to use /usr/bin/dvd+rw-mediainfo</string>
+  <string id="dvd_rw-mediainfo_help">This policy defines access rights to the /usr/bin/dvd+rw-mediainfo</string>
+  <string id="dvd_rw-mediainfo_public">Only cdwriter group members can execute /usr/bin/dvd+rw-mediainfo</string>
+  <string id="dvd_rw-mediainfo_restricted">Only root can execute /usr/bin/dvd+rw-mediainfo</string>
+  <string id="dvd_rw-mediainfo_legacy">Compatibility mode, should not be used</string>
+
+  <string id="fusermount">Access rights to FUSE filesystems mount tools</string>
+  <string id="fusermount_help">Execution of program  /usr/bin/fusermount and /usr/bin/fusermount3</string>
+  <string id="fusermount_public">Any user can execute /usr/bin/fusermount and /usr/bin/fusermount3</string>
+  <string id="fusermount_fuseonly">Only fuse group members can execute /usr/bin/fusermount and /usr/bin/fusermount3</string>
+  <string id="fusermount_wheelonly">Only wheel group members can execute /usr/bin/fusermount and /usr/bin/fusermount3</string>
+  <string id="fusermount_restricted">Only root can execute /usr/bin/fusermount and /usr/bin/fusermount3</string>
+
+  <string id="gpasswd">Execution of program /usr/bin/gpasswd</string>
+  <string id="gpasswd_help">The policy defines the rights to run the tool /usr/bin/gpasswd</string>
+  <string id="gpasswd_public">Any user can execute /usr/bin/gpasswd</string>
+  <string id="gpasswd_wheelonly">Only wheel group members can execute /usr/bin/gpasswd</string>
+  <string id="gpasswd_restricted">Only root can execute /usr/bin/gpasswd</string>
+
+  <string id="groupmems">Execution of program /usr/bin/groupmems</string>
+  <string id="groupmems_help">The policy defines the rights to execution of program /usr/bin/groupmems</string>
+  <string id="groupmems_public">Any user can execute /usr/bin/groupmems</string>
+  <string id="groupmems_wheelonly">Only wheel group members can execute /usr/bin/groupmems</string>
+  <string id="groupmems_restricted">Only root can execute /usr/bin/groupmems</string>
+ 
+  <string id="growisofs">Permission to use /usr/bin/growisofs</string>
+  <string id="growisofs_help">he policy defines the rights to use the tool /usr/bin/growisofs</string>
+  <string id="growisofs_public">Only cdwriter group members can execute /usr/bin/growisofs</string>
+  <string id="growisofs_restricted">Only root can execute /usr/bin/growisofs</string>
+  <string id="growisofs_legacy">Compatibility mode, should not be used</string>
+  
+  <string id="hddtemp">Permission to use /usr/sbin/hddtemp</string>
+  <string id="hddtemp_help">Permission to use the tool /usr/sbin/hddtemp - monitor hard drive temperature</string>
+  <string id="hddtemp_public">Any user can execute /usr/sbin/hddtemp</string>
+  <string id="hddtemp_wheelonly">Only wheel group members can execute /usr/sbin/hddtemp</string>
+  <string id="hddtemp_restricted">Only root can execute /usr/sbin/hddtemp</string>
+ </stringTable>
+ <presentationTable>
+  <presentation id="ExecuteSuProgram">
+    <dropdownList refId="ExecuteSuProgramSetter" defaultItem="2">Execution of program /bin/su allows</dropdownList>
+  </presentation>
+  <presentation id="at">
+    <dropdownList defaultItem="0" refId="at_setter">Any user is allowed to use /usr/bin/at</dropdownList>
+  </presentation>
+  <presentation id="chage">
+    <dropdownList defaultItem="1" refId="chage_setter">Only root can execute /usr/bin/chage</dropdownList>
+  </presentation>
+  <presentation id="chfn">
+    <dropdownList defaultItem="1" refId="chfn_setter">Only root can execute /usr/bin/chfn</dropdownList>
+  </presentation>
+  <presentation id="chsh">
+    <dropdownList defaultItem="1" refId="chsh_setter">Only root allowed to run /usr/bin/chsh</dropdownList>
+  </presentation>
+  <presentation id="consolehelper">
+    <dropdownList defaultItem="0" refId="consolehelper_setter">Any user can use consolehelper</dropdownList>
+  </presentation>
+  <presentation id="crontab">
+    <dropdownList defaultItem="0" refId="crontab_setter">Any user can use crontab</dropdownList>
+  </presentation>
+  <presentation id="cups">
+    <dropdownList defaultItem="0" refId="cups_setter">External IPP interface are available for user</dropdownList>
+  </presentation>
+  <presentation id="dvd-ram-control">
+    <dropdownList defaultItem="0" refId="dvd-ram-control_setter">Only cdwriter group members can execute /usr/bin/dvd-ram-control</dropdownList>
+  </presentation>
+  <presentation id="dvd_rw-booktype">
+    <dropdownList defaultItem="0" refId="dvd_rw-booktype_setter">Only cdwriter group members can execute /usr/bin/dvd+rw-booktype</dropdownList>
+  </presentation>
+  <presentation id="dvd_rw-format">
+    <dropdownList defaultItem="0" refId="dvd_rw-format_setter">Only cdwriter group members can execute /usr/bin/dvd+rw-format</dropdownList>
+  </presentation>
+  <presentation id="dvd_rw-mediainfo">
+    <dropdownList defaultItem="0" refId="dvd_rw-mediainfo_setter">Only cdwriter group members can execute /usr/bin/dvd+rw-mediainfo</dropdownList>
+  </presentation>
+  <presentation id="fusermount">
+    <dropdownList defaultItem="1" refId="fusermount_setter">Only fuse group members can execute /usr/bin/fusermount and /usr/bin/fusermount3</dropdownList>
+  </presentation>
+  <presentation id="gpasswd">
+    <dropdownList defaultItem="2" refId="gpasswd_setter">Only root can execute /usr/bin/gpasswd</dropdownList>
+  </presentation>
+  <presentation id="groupmems">
+    <dropdownList defaultItem="2" refId="groupmems_setter">Only root can execute /usr/bin/groupmems</dropdownList>
+  </presentation>
+  <presentation id="growisofs">
+    <dropdownList defaultItem="0" refId="growisofs_setter">Only cdwriter group members can execute /usr/bin/growisofs</dropdownList>
+  </presentation>
+  <presentation id="hddtemp">
+    <dropdownList defaultItem="1" refId="hddtemp_setter">Only wheel group members can execute /usr/sbin/hddtemp</dropdownList>
+  </presentation>
+ </presentationTable>
+</resources>
 </policyDefinitionResources>
+

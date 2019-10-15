@@ -6,148 +6,105 @@
   <resources>
     <stringTable>
       <string id="SecurityControl">Политики безопасности</string>
+      <string id="ControlServices">Системные Сервисы (фоновые)</string>
+      <string id="ControlSystem">Системные</string>
+      <string id="ControlAppCD_DVD">CD/DVD приложения</string>
+      <string id="ControlMounting">Ограничения монтирования</string>
+      <string id="ControlAppTools">Инструменты</string>
+
       <string id="ExecuteSuProgram">Запуск программы /bin/su</string>
       <string id="ExecuteSuProgram_Help">Политика позволяет контролировать права доступа на запуск программы /bin/su</string>
       <string id="ExecuteSuProgram_Public">Всем пользователям разрешено</string>
       <string id="ExecuteSuProgram_Wheel">Всем пользователям разрешено, но только члены группы "wheel" могут переключиться в суперпользователя</string>
       <string id="ExecuteSuProgram_WheelOnly">Только члены группы "wheel"</string>
       <string id="ExecuteSuProgram_Restricted">Только суперпользователю</string>
-    </stringTable>
-    <!-- Новые политики, экспортировано из дисрибутива семейства p8  -->
-    <stringTable>
-      <string id="SecurityControl">Политики безопасности</string>
-      <string id="ControlServices">Системные Сервисы (фоновые)</string>
+
       <string id="at">Права доступа на использование очереди заданий at</string>
       <string id="at_help">Политика позволяет контролировать поведение и права доступа на запуск очереди заданий at</string>
       <string id="at_public">Всем пользователям разрешен запуск /usr/bin/at</string>
       <string id="at_restricted">Только root может запускать /usr/bin/at</string>
       <string id="at_atdaemon">Режим совместимости, не должен использоваться</string>
-    </stringTable>
-    <stringTable>
-      <string id="SecurityControl">Политики безопасности</string>
-      <string id="ControlSystem">Системные</string>
+
       <string id="chage">Выполнение программы /usr/bin/chage</string>
       <string id="chage_help">Политика позволяет контролировать доступ для выполнения программы /usr/bin/chage</string>
       <string id="chage_public">Любой пользователь может определить, когда ему необходимо сменить пароль, с помощью команды "chage"</string>
       <string id="chage_restricted">Только суперпользователь может выполнить /usr/bin/chage</string>
-    </stringTable>
-    <stringTable>
-      <string id="SecurityControl">Политики безопасности</string>
-      <string id="ControlSystem">Системные</string>
+
       <string id="chfn">Выполнение программы /usr/bin/chfn</string>
       <string id="chfn_help">Политика позволяет контролировать поведение и права доступа команды chfn, которая может изменять поля (полное имя, номер кабинета, номер офиса и домашний телефон для учетной записи пользователя) для своей учетной записи с учетом ограничений в /etc/login.defs (конфигурация по умолчанию не позволяет пользователям изменять свое полное имя.); Кроме того, только суперпользователь может использовать опцию -o для изменения неопределенных частей поля GECOS</string>
       <string id="chfn_public">Любой (обычный) пользователь может использовать команду /usr/bin/chfn</string>
       <string id="chfn_restricted">Только root может выполнить /usr/bin/chfn</string>
-    </stringTable>
-    <stringTable>
-      <string id="SecurityControl">Политики безопасности</string>
-      <string id="ControlSystem">Системные</string>
+
       <string id="chfn">Права использование /usr/bin/chsh</string>
       <string id="chfn_help">Политика позволяет контролировать права доступа к команде chsh, которая изменяет оболочку входа пользователя: это определяет имя начальной команды входа пользователя; обычный пользователь может изменить оболочку входа только для своей учетной записи; суперпользователь может изменить оболочку входа для любой учетной записи</string>
       <string id="chfn_public">Всем пользователям разрешено использовать /usr/bin/chsh</string>
       <string id="chfn_restricted">Только root может использовать /usr/bin/chsh</string>
-    </stringTable>
-    <stringTable>
-      <string id="SecurityControl">Политики безопасности</string>
-      <string id="ControlSystem">Системные</string>
+
       <string id="consolehelper">Разрешения на использование consolehelper</string>
       <string id="consolehelper_help">Эта политика определяет права доступа к инструменту consolehelper, который позволяет пользователям консоли запускать системные программы, выполняя проверку подлинности через PAM (которую можно настроить для доверия всем пользователям консоли или для запроса пароля по усмотрению системный администратор). Когда это возможно, аутентификация выполняется графически; в противном случае это делается в текстовой консоли, из которой был запущен consolehelper</string>
       <string id="consolehelper_public">Любой пользователь может использовать consolehelper</string>
       <string id="consolehelper_wheelonly">Только члены группы wheel могут использовать consolehelper</string>
       <string id="consolehelper_restricted">Только root может использовать consolehelper</string>
-    </stringTable>
-    <stringTable>
-      <string id="SecurityControl">Политики безопасности</string>
-      <string id="ControlServices">Системные Сервисы (фоновые)</string>
+
       <string id="crontab">Разрешения на использование crontab</string>
       <string id="crontab_help">Эта политика определяет права доступа к инструменту crontab</string>
       <string id="crontab_public">Любой пользователь может использовать crontab</string>
       <string id="crontab_restricted">Только root может использовать crontab</string>
-    </stringTable>
-    <stringTable>
-      <string id="SecurityControl">Политики безопасности</string>
-      <string id="ControlServices">Системные Сервисы (фоновые)</string>
+
       <string id="cups">Режим работы cpus</string>
       <string id="cups_help">Эта политика определяет режим работы cups (Внешний интерфейс IPP или только локально)</string>
       <string id="cups_server">Внешний интерфейс IPP доступен для пользователя</string>
       <string id="cups_local">Только локальные утилиты могут работать с сups</string>
-    </stringTable>
-    <stringTable>
-      <string id="SecurityControl">Политики безопасности</string>
-      <string id="ControlAppCD_DVD">CD/DVD приложения</string>
+
       <string id="dvd-ram-control">Разрешение на использование dvd-ram-control</string>
       <string id="dvd-ram-control_help">Эта политика определяет права доступа к /usr/bin/dvd-ram-control</string>
       <string id="dvd-ram-control_public">Только члены группы cdwriter могут выполнять /usr/bin/dvd-ram-control</string>
       <string id="dvd-ram-control_restricted">Только root может выполнять /usr/bin/dvd-ram-control</string>
       <string id="dvd-ram-control_legacy">Устаревший режим, не должен использоваться</string>
-    </stringTable>
-    <stringTable>
-      <string id="SecurityControl">Политики безопасности</string>
-      <string id="ControlAppCD_DVD">CD/DVD приложения</string>
-      <string id="dvd+rw-booktype">Разрешение на использование dvd+rw-booktype</string>
-      <string id="dvd+rw-booktype_help">Эта политика определяет права доступа к /usr/bin/dvd+rw-booktype</string>
-      <string id="dvd+rw-booktype_public">Только члены группы cdwriter могут выполнять /usr/bin/dvd+rw-booktype</string>
-      <string id="dvd+rw-booktype_restricted">Только root может выполнять /usr/bin/dvd+rw-booktype</string>
-      <string id="dvd+rw-booktype_legacy">Устаревший режим, не должен использоваться</string>
-    </stringTable>
-    <stringTable>
-      <string id="SecurityControl">Политики безопасности</string>
-      <string id="ControlAppCD_DVD">CD/DVD приложения</string>
-      <string id="dvd+rw-format">Разрешение на использование dvd+rw-format</string>
-      <string id="dvd+rw-format_help">Эта политика определяет права доступа к /usr/bin/dvd+rw-format</string>
-      <string id="dvd+rw-format_public">Только члены группы cdwriter могут выполнять /usr/bin/dvd+rw-format</string>
-      <string id="dvd+rw-format_restricted">Только root может выполнять /usr/bin/dvd+rw-format</string>
-      <string id="dvd+rw-format_legacy">Устаревший режим, не должен использоваться</string>
-    </stringTable>
-    <stringTable>
-      <string id="SecurityControl">Политики безопасности</string>
-      <string id="ControlAppCD_DVD">CD/DVD приложения</string>
-      <string id="dvd+rw-mediainfo">Разрешение на использование dvd+rw-mediainfo</string>
-      <string id="dvd+rw-mediainfo_help">Эта политика определяет права доступа к /usr/bin/dvd+rw-mediainfo</string>
-      <string id="dvd+rw-mediainfo_public">Только члены группы cdwriter могут выполнять /usr/bin/dvd+rw-mediainfo</string>
-      <string id="dvd+rw-mediainfo_restricted">Только root может выполнять /usr/bin/dvd+rw-mediainfo</string>
-      <string id="dvd+rw-mediainfo_legacy">Устаревший режим, не должен использоваться</string>
-    </stringTable>
-    <stringTable>
-      <string id="SecurityControl">Политики безопасности</string>
-      <string id="ControlMounting">Ограничения монтирования</string>
+
+      <string id="dvd_rw-booktype">Разрешение на использование dvd+rw-booktype</string>
+      <string id="dvd_rw-booktype_help">Эта политика определяет права доступа к /usr/bin/dvd+rw-booktype</string>
+      <string id="dvd_rw-booktype_public">Только члены группы cdwriter могут выполнять /usr/bin/dvd+rw-booktype</string>
+      <string id="dvd_rw-booktype_restricted">Только root может выполнять /usr/bin/dvd+rw-booktype</string>
+      <string id="dvd_rw-booktype_legacy">Устаревший режим, не должен использоваться</string>
+
+      <string id="dvd_rw-format">Разрешение на использование dvd+rw-format</string>
+      <string id="dvd_rw-format_help">Эта политика определяет права доступа к /usr/bin/dvd+rw-format</string>
+      <string id="dvd_rw-format_public">Только члены группы cdwriter могут выполнять /usr/bin/dvd+rw-format</string>
+      <string id="dvd_rw-format_restricted">Только root может выполнять /usr/bin/dvd+rw-format</string>
+      <string id="dvd_rw-format_legacy">Устаревший режим, не должен использоваться</string>
+
+      <string id="dvd_rw-mediainfo">Разрешение на использование dvd+rw-mediainfo</string>
+      <string id="dvd_rw-mediainfo_help">Эта политика определяет права доступа к /usr/bin/dvd+rw-mediainfo</string>
+      <string id="dvd_rw-mediainfo_public">Только члены группы cdwriter могут выполнять /usr/bin/dvd+rw-mediainfo</string>
+      <string id="dvd_rw-mediainfo_restricted">Только root может выполнять /usr/bin/dvd+rw-mediainfo</string>
+      <string id="dvd_rw-mediainfo_legacy">Устаревший режим, не должен использоваться</string>
+
       <string id="fusermount">Права доступа к средствам монтирования файловых систем FUSE</string>
       <string id="fusermount_help">Определяет права на кзапуск /usr/bin/fusermount и /usr/bin/fusermount3</string>
       <string id="fusermount_public">Любой пользователь может выполнить /usr/bin/fusermount и /usr/bin/fusermount3</string>
       <string id="fusermount_fuseonly">Только члены группы fuse могут выполнять /usr/bin/fusermount и /usr/bin/fusermount3</string>
       <string id="fusermount_wheelonly">Только члены группы wheel могут выполнять /usr/bin/fusermount и /usr/bin/fusermount3</string>
       <string id="fusermount_restricted">Только root может выполнять /usr/bin/fusermount и /usr/bin/fusermount3</string>
-     </stringTable>
-     <stringTable>
-      <string id="SecurityControl">Политики безопасности</string>
-      <string id="ControlSystem">Системные</string>
+
       <string id="gpasswd">Выполнение программы /usr/bin/gpasswd</string>
       <string id="gpasswd_help">Политика определяет права на запуск инструмента /usr/bin/gpasswd</string>
       <string id="gpasswd_public">Любой пользователь может выполнить /usr/bin/gpasswd</string>
       <string id="gpasswd_wheelonly">Только члены группы колес могут выполнять /usr/bin/gpasswd</string>
       <string id="gpasswd_restricted">Только root может выполнить /usr/bin/gpasswd</string>
-    </stringTable>
-    <stringTable>
-      <string id="SecurityControl">Политики безопасности</string>
-      <string id="ControlSystem">Системные</string>
+
       <string id="groupmems">Использование инструмента /usr/bin/groupmems</string>
       <string id="groupmems_help">Политика определяет права на выполнение использование  инструмента /usr/bin/groupmems</string>
       <string id="groupmems_public">Любой пользователь может выполнить /usr/bin/groupmems</string>
       <string id="groupmems_wheelonly">Только члены группы колес могут выполнять /usr/bin/groupmems</string>
       <string id="groupmems_restricted">Только root может выполнять /usr/bin/groupmems</string>
-    </stringTable>
-    <stringTable>
-      <string id="SecurityControl">Политики безопасности</string>
-      <string id="ControlAppCD_DVD">CD/DVD приложения</string>
+
       <string id="growisofs">Разрешение на использование /usr/bin/growisofs</string>
       <string id="growisofs_help">Политика определяет права на использование инструмента /usr/bin/growisofs</string>
       <string id="growisofs_public">Только члены группы cdwriter могут выполнять /usr/bin/growisofs</string>
       <string id="growisofs_restricted">Только root может выполнить /usr/bin/growisofs</string>
       <string id="growisofs_legacy">Режим совместимости не должен использоваться</string>
-    </stringTable>
-    <stringTable>
-      <string id="SecurityControl">Политики безопасности</string>
-      <string id="ControlAppTools">Инструменты</string>
+
       <string id="hddtemp">Разрешение на использование /usr/sbin/hddtemp</string>
       <string id="hddtemp_help">Разрешение на использование инструмента /usr/sbin/hddtemp</string>
       <string id="hddtemp_public">Любой пользователь может выполнить /usr/sbin/hddtemp</string>
@@ -204,7 +161,7 @@
         <dropdownList defaultItem="0" refId="growisofs_setter">Только члены группы cdwriter могут выполнять /usr/bin/growisofs</dropdownList>
       </presentation>
       <presentation id="hddtemp">
-	<dropdownList defaultItem="1" refId="hddtemp_setter">Только члены группы wheel могут выполнять /usr/sbin/hddtemp</dropdownList>
+        <dropdownList defaultItem="1" refId="hddtemp_setter">Только члены группы wheel могут выполнять /usr/sbin/hddtemp</dropdownList>
       </presentation>
     </presentationTable>
   </resources>
