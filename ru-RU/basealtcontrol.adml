@@ -113,55 +113,55 @@
     </stringTable>
     <presentationTable>
       <presentation id="ExecuteSuProgram">
-        <dropdownList refId="ExecuteSuProgramSetter" defaultItem="2">Запуск программы /bin/su разрешён</dropdownList>
+        <dropdownList refId="ExecuteSuProgramSetter" defaultItem="2">Запуск программы /bin/su разрешён:</dropdownList>
       </presentation>
       <presentation id="at">
-        <dropdownList defaultItem="0" refId="at_setter">Всем пользователям разрешен запуск /usr/bin/at</dropdownList>
+        <dropdownList defaultItem="0" refId="at_setter">Кто может использовать /usr/bin/at:</dropdownList>
       </presentation>
       <presentation id="chage">
-        <dropdownList defaultItem="1" refId="chage_setter">Только суперпользователь может использовать /usr/bin/chage</dropdownList>
+        <dropdownList defaultItem="1" refId="chage_setter">Кто может использовать /usr/bin/chage:</dropdownList>
       </presentation>
       <presentation id="chfn">
-        <dropdownList defaultItem="1" refId="chfn_setter">Только root может выполнить /usr/bin/chfn</dropdownList>
+        <dropdownList defaultItem="1" refId="chfn_setter">Кто может использовать /usr/bin/chfn:</dropdownList>
       </presentation>
       <presentation id="chsh">
-        <dropdownList defaultItem="1" refId="chsh_setter">Только root может использовать /usr/bin/chsh</dropdownList>
+        <dropdownList defaultItem="1" refId="chsh_setter">Кто может использовать /usr/bin/chsh:</dropdownList>
       </presentation>
       <presentation id="consolehelper">
-        <dropdownList defaultItem="0" refId="consolehelper_setter">Любой пользователь может использовать consolehelper</dropdownList>
+        <dropdownList defaultItem="0" refId="consolehelper_setter">Кто может использовать /usr/lib/consolehelper/priv/auth:</dropdownList>
       </presentation>
       <presentation id="crontab">
-        <dropdownList defaultItem="0" refId="crontab_setter">Любой пользователь может использовать crontab</dropdownList>
+        <dropdownList defaultItem="0" refId="crontab_setter">Кто может использовать /usr/bin/crontab:</dropdownList>
       </presentation>
       <presentation id="cups">
-        <dropdownList defaultItem="0" refId="cups_setter">Внешний интерфейс IPP доступен для пользователя</dropdownList>
+        <dropdownList defaultItem="0" refId="cups_setter">Режим работы CUPS:</dropdownList>
       </presentation>
       <presentation id="dvd-ram-control">
-        <dropdownList defaultItem="0" refId="dvd-ram-control_setter">Только члены группы cdwriter могут выполнять /usr/bin/dvd-ram-control</dropdownList>
+        <dropdownList defaultItem="0" refId="dvd-ram-control_setter">Кто может использовать /usr/bin/dvd-ram-control:</dropdownList>
       </presentation>
       <presentation id="dvd+rw-booktype">
-        <dropdownList defaultItem="0" refId="dvd+rw-booktype_setter">Только члены группы cdwriter могут выполнять /usr/bin/dvd+rw-booktype</dropdownList>
+        <dropdownList defaultItem="0" refId="dvd+rw-booktype_setter">Кто может использовать /usr/bin/dvd+rw-booktype:</dropdownList>
       </presentation>
       <presentation id="dvd+rw-format">
-        <dropdownList defaultItem="0" refId="dvd+rw-format_setter">Только члены группы cdwriter могут выполнять /usr/bin/dvd+rw-format</dropdownList>
+        <dropdownList defaultItem="0" refId="dvd+rw-format_setter">Кто может использовать /usr/bin/dvd+rw-format:</dropdownList>
       </presentation>
       <presentation id="dvd+rw-mediainfo">
-        <dropdownList defaultItem="0" refId="dvd+rw-mediainfo_setter">Только члены группы cdwriter могут выполнять /usr/bin/dvd+rw-mediainfo</dropdownList>
+        <dropdownList defaultItem="0" refId="dvd+rw-mediainfo_setter">Кто может использовать /usr/bin/dvd+rw-mediainfo:</dropdownList>
       </presentation>
       <presentation id="fusermount">
-        <dropdownList defaultItem="1" refId="fusermount_setter">Только члены группы fuse могут выполнять /usr/bin/fusermount и /usr/bin/fusermount3</dropdownList>
+        <dropdownList defaultItem="1" refId="fusermount_setter">Кто может использовать /usr/bin/fusermount и /usr/bin/fusermount3:</dropdownList>
       </presentation>
       <presentation id="gpasswd">
-        <dropdownList defaultItem="2" refId="gpasswd_setter">Только root может выполнить /usr/bin/gpasswd</dropdownList>
+        <dropdownList defaultItem="2" refId="gpasswd_setter">Кто может использовать /usr/bin/gpasswd:</dropdownList>
       </presentation>
       <presentation id="groupmems">
-        <dropdownList defaultItem="2" refId="groupmems_setter">Только root может выполнять /usr/bin/groupmems</dropdownList>
+        <dropdownList defaultItem="2" refId="groupmems_setter">Кто может использовать /usr/bin/groupmems:</dropdownList>
       </presentation>
       <presentation id="growisofs">
-        <dropdownList defaultItem="0" refId="growisofs_setter">Только члены группы cdwriter могут выполнять /usr/bin/growisofs</dropdownList>
+        <dropdownList defaultItem="0" refId="growisofs_setter">Кто может использовать /usr/bin/growisofs:</dropdownList>
       </presentation>
       <presentation id="hddtemp">
-        <dropdownList defaultItem="1" refId="hddtemp_setter">Только члены группы wheel могут выполнять /usr/sbin/hddtemp</dropdownList>
+        <dropdownList defaultItem="1" refId="hddtemp_setter">Кто может использовать /usr/sbin/hddtemp:</dropdownList>
       </presentation>
     </presentationTable>
   </resources>

@@ -42,7 +42,7 @@
   <string id="chsh_restricted">Only root can use /usr/bin/chsh</string>
 
   <string id="consolehelper">Permission to use consolehelper</string>
-  <string id="consolehelper_help">This policy defines access rights to the consolehelper tool, which allows console users to run system programs by performing authentication through PAM (which can be configured to trust all console users or to request a password at the discretion of the system administrator). When possible, authentication is performed graphically; otherwise, this is done in the text console from which consolehelper was started.</string>
+  <string id="consolehelper_help">This policy defines access rights to the consolehelper tool (execution of program /usr/lib/consolehelper/priv/auth), which allows console users to run system programs by performing authentication through PAM (which can be configured to trust all console users or to request a password at the discretion of the system administrator). When possible, authentication is performed graphically; otherwise, this is done in the text console from which consolehelper was started.</string>
   <string id="consolehelper_public">Any user can use consolehelper</string>
   <string id="consolehelper_wheelonly">Only members of the wheel group can use consolehelper</string>
   <string id="consolehelper_restricted">Only root can use consolehelper</string>
@@ -114,55 +114,55 @@
  </stringTable>
  <presentationTable>
   <presentation id="ExecuteSuProgram">
-    <dropdownList refId="ExecuteSuProgramSetter" defaultItem="2">Execution of program /bin/su allows</dropdownList>
+    <dropdownList refId="ExecuteSuProgramSetter" defaultItem="2">Execution of program /bin/su allows:</dropdownList>
   </presentation>
   <presentation id="at">
-    <dropdownList defaultItem="0" refId="at_setter">Any user is allowed to use /usr/bin/at</dropdownList>
+    <dropdownList defaultItem="0" refId="at_setter">Who can use /usr/bin/at:</dropdownList>
   </presentation>
   <presentation id="chage">
-    <dropdownList defaultItem="1" refId="chage_setter">Only root can execute /usr/bin/chage</dropdownList>
+    <dropdownList defaultItem="1" refId="chage_setter">Who can use /usr/bin/chage:</dropdownList>
   </presentation>
   <presentation id="chfn">
-    <dropdownList defaultItem="1" refId="chfn_setter">Only root can execute /usr/bin/chfn</dropdownList>
+    <dropdownList defaultItem="1" refId="chfn_setter">Who can use /usr/bin/chfn:</dropdownList>
   </presentation>
   <presentation id="chsh">
-    <dropdownList defaultItem="1" refId="chsh_setter">Only root allowed to run /usr/bin/chsh</dropdownList>
+    <dropdownList defaultItem="1" refId="chsh_setter">Who can use /usr/bin/chsh:</dropdownList>
   </presentation>
   <presentation id="consolehelper">
-    <dropdownList defaultItem="0" refId="consolehelper_setter">Any user can use consolehelper</dropdownList>
+    <dropdownList defaultItem="0" refId="consolehelper_setter">Who can use /usr/lib/consolehelper/priv/auth:</dropdownList>
   </presentation>
   <presentation id="crontab">
-    <dropdownList defaultItem="0" refId="crontab_setter">Any user can use crontab</dropdownList>
+    <dropdownList defaultItem="0" refId="crontab_setter">Who can use /usr/bin/crontab:</dropdownList>
   </presentation>
   <presentation id="cups">
-    <dropdownList defaultItem="0" refId="cups_setter">External IPP interface are available for user</dropdownList>
+    <dropdownList defaultItem="0" refId="cups_setter">CUPS operating mode:</dropdownList>
   </presentation>
   <presentation id="dvd-ram-control">
-    <dropdownList defaultItem="0" refId="dvd-ram-control_setter">Only cdwriter group members can execute /usr/bin/dvd-ram-control</dropdownList>
+    <dropdownList defaultItem="0" refId="dvd-ram-control_setter">Who can use /usr/bin/dvd-ram-control:</dropdownList>
   </presentation>
   <presentation id="dvd_rw-booktype">
-    <dropdownList defaultItem="0" refId="dvd_rw-booktype_setter">Only cdwriter group members can execute /usr/bin/dvd+rw-booktype</dropdownList>
+    <dropdownList defaultItem="0" refId="dvd_rw-booktype_setter">Who can use /usr/bin/dvd+rw-booktype:</dropdownList>
   </presentation>
   <presentation id="dvd_rw-format">
-    <dropdownList defaultItem="0" refId="dvd_rw-format_setter">Only cdwriter group members can execute /usr/bin/dvd+rw-format</dropdownList>
+    <dropdownList defaultItem="0" refId="dvd_rw-format_setter">Who can use /usr/bin/dvd+rw-format:</dropdownList>
   </presentation>
   <presentation id="dvd_rw-mediainfo">
-    <dropdownList defaultItem="0" refId="dvd_rw-mediainfo_setter">Only cdwriter group members can execute /usr/bin/dvd+rw-mediainfo</dropdownList>
+    <dropdownList defaultItem="0" refId="dvd_rw-mediainfo_setter">Who can use /usr/bin/dvd+rw-mediainfo:</dropdownList>
   </presentation>
   <presentation id="fusermount">
-    <dropdownList defaultItem="1" refId="fusermount_setter">Only fuse group members can execute /usr/bin/fusermount and /usr/bin/fusermount3</dropdownList>
+    <dropdownList defaultItem="1" refId="fusermount_setter">Who can use /usr/bin/fusermount and /usr/bin/fusermount3:</dropdownList>
   </presentation>
   <presentation id="gpasswd">
-    <dropdownList defaultItem="2" refId="gpasswd_setter">Only root can execute /usr/bin/gpasswd</dropdownList>
+    <dropdownList defaultItem="2" refId="gpasswd_setter">Who can use /usr/bin/gpasswd:</dropdownList>
   </presentation>
   <presentation id="groupmems">
-    <dropdownList defaultItem="2" refId="groupmems_setter">Only root can execute /usr/bin/groupmems</dropdownList>
+    <dropdownList defaultItem="2" refId="groupmems_setter">Who can use /usr/bin/groupmems:</dropdownList>
   </presentation>
   <presentation id="growisofs">
-    <dropdownList defaultItem="0" refId="growisofs_setter">Only cdwriter group members can execute /usr/bin/growisofs</dropdownList>
+    <dropdownList defaultItem="0" refId="growisofs_setter">Who can use /usr/bin/growisofs:</dropdownList>
   </presentation>
   <presentation id="hddtemp">
-    <dropdownList defaultItem="1" refId="hddtemp_setter">Only wheel group members can execute /usr/sbin/hddtemp</dropdownList>
+    <dropdownList defaultItem="1" refId="hddtemp_setter">Who can use /usr/sbin/hddtemp:</dropdownList>
   </presentation>
  </presentationTable>
 </resources>

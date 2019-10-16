@@ -105,8 +105,9 @@ class control:
         dropdown_list.set('defaultItem', '{}'.format(self.variants.index(self.value)))
 
         return prepare_xml_str(presentation)
+        #return presentation
 
-def get_descriptions(stringtable, lang):
+def get_descriptions_stringtable(stringtable, lang):
     '''
     Get descriptions for ADML's stringTable
     '''
@@ -114,6 +115,15 @@ def get_descriptions(stringtable, lang):
         string.text = input('Please input {} text value for {}: '.format(lang, string.attrib['id']))
 
     print(prepare_xml_str(stringtable))
+
+#def get_descriptions_presentation(presentation, lang):
+#    '''
+#    Get descriptions for ADML's presentation_str
+#    '''
+#    #for string in stringtable.iter('string'):
+#        string.text = input('Please input {} text value for {}: '.format(lang, string.attrib['id']))
+#
+#    print(prepare_xml_str(presentation))
 
 def parse_values(values_str):
     '''
@@ -137,10 +147,16 @@ def parse_control(proc):
     for cnt in controls:
         print('--------------------------------')
         print(cnt.admx_xml_str())
+
     #    print(cnt.adml_xml_stringtable_str())
+
+        get_descriptions_stringtable(cnt.adml_xml_stringtable(), 'en-us')
+        get_descriptions_stringtable(cnt.adml_xml_stringtable(), 'ru-ru')
+
         print(cnt.adml_xml_presentation_str())
-        get_descriptions(cnt.adml_xml_stringtable(), 'en-us')
-        get_descriptions(cnt.adml_xml_stringtable(), 'ru-ru')
+
+    #    get_descriptions_presentation(cnt.adml_xml_presentation(), 'en-us')
+    #    get_descriptions_presentation(cnt.adml_xml_presentation(), 'ru-ru')
 
 def read_controls():
     '''
