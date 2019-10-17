@@ -285,7 +285,7 @@
 
       <string id="write">Режим работы /usr/bin/write</string>
       <string id="write_help">Режим работы /usr/bin/write</string>
-      <string id="write_public">Любой пользователь имеет правов на запуск /usr/bin/write</string>
+      <string id="write_public">Любой пользователь имеет право на запуск /usr/bin/write</string>
       <string id="write_restricted">Только суперпользователь имеет право на запуск /usr/bin/write</string>
 
       <string id="xdg-user-dirs">Функция сохранения списка пользовательских директорий</string>
