@@ -1,0 +1,453 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  (c) 2019 BaseALT, Ltd.  -->
+<policyDefinitionResources xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.microsoft.com/GroupPolicy/2006/07/PolicyDefinitions" revision="1.0" schemaVersion="1.0">
+  <displayName>Определения политик безопасности операционной системы Альт</displayName>
+  <description>Описания политик безопасности операционной системы Альт.</description>
+
+  <resources>
+    <stringTable>
+      <string id="SecurityControl">Политики безопасности</string>
+
+      <string id="at">Режимы запуска программы /usr/bin/at</string>
+      <string id="at_help">Режимы запуска программы /usr/bin/at</string>
+      <string id="at_public">Любой пользователь может запускать /usr/bin/at</string>
+      <string id="at_restricted">Только суперпользователь может запускать /usr/bin/at</string>
+      <string id="at_atdaemon">Режим совместимости</string>
+
+      <string id="chage">Режимы запуска программы /usr/bin/chage</string>
+      <string id="chage_help">Режимы запуска программы /usr/bin/chage</string>
+      <string id="chage_public">Любой пользователь может запускать /usr/bin/chage</string>
+      <string id="chage_restricted">Только суперпользователь может запускать /usr/bin/chage</string>
+
+      <string id="chfn">Режимы запуска программы /usr/bin/chfn</string>
+      <string id="chfn_help">Режимы запуска программы /usr/bin/chfn</string>
+      <string id="chfn_public">Любой пользователь может запускать /usr/bin/chfn</string>
+      <string id="chfn_restricted">Только суперпользователь может запускать /usr/bin/chfn</string>
+
+      <string id="chrony">Разрешить chrony работать как сервер, или только как клиент</string>
+      <string id="chrony_help">Разрешить chrony работать как сервер, или только как клиент</string>
+      <string id="chrony_server">Разрешить входящие подключения к chrony</string>
+      <string id="chrony_client">Запретить входящие подключения к chrony</string>
+
+      <string id="chsh">Режимы запуска программы /usr/bin/chsh</string>
+      <string id="chsh_help">Режимы запуска программы /usr/bin/chsh</string>
+      <string id="chsh_public">Любой пользователь может запускать /usr/bin/chsh</string>
+      <string id="chsh_restricted">Только суперпользователь может запускать /usr/bin/chsh</string>
+
+      <string id="consolehelper">Разрешения на запуск программы /usr/bin/consolehelper</string>
+      <string id="consolehelper_help">Разрешения на запуск программы /usr/bin/consolehelper</string>
+      <string id="consolehelper_public">Любой пользователь имеет право запускать /usr/bin/consolehelper</string>
+      <string id="consolehelper_wheelonly">Пользователи группы "wheel" имеют право запускать /usr/bin/consolehelper</string>
+      <string id="consolehelper_restricted">Только суперпользователь имеет право запускать /usr/bin/consolhelper</string>
+
+      <string id="crontab">Разрешения на запуск программы /usr/bin/crontab</string>
+      <string id="crontab_help">Разрешения на запуск программы /usr/bin/crontab</string>
+      <string id="crontab_public">Любой пользователь имеет право на запуск программы /usr/bin/consolehelper</string>
+      <string id="crontab_restricted">Только суперпользователь имеет право на запуск программы /usr/bin/consolehelper</string>
+
+      <string id="cups">Режим работы CUPS (Common UNIX Printing System)</string>
+      <string id="cups_help">Режим работы CUPS (Common UNIX Printing System)</string>
+      <string id="cups_server">Работать в режиме сервера (CUPS будет слушать на порту 631)</string>
+      <string id="cups_local">Работать изолированно (CUPS не будет слушать порт 631)</string>
+
+      <string id="dvd-ram-control">Права на запуск /usr/bin/dvd-ram-control</string>
+      <string id="dvd-ram-control_help">Права на запуск /usr/bin/dvd-ram-control</string>
+      <string id="dvd-ram-control_public">Члены группы "cdwriter" имеют право запускать /usr/bin/dvd-ram-control</string>
+      <string id="dvd-ram-control_restricted">Только суперпользователь имеет право запускать /usr/bin/dvd-ram-control</string>
+      <string id="dvd-ram-control_legacy">Режим совместимости (устаревший)</string>
+
+      <string id="dvd+rw-booktype">Права на запуск /usr/bin/dvd+rw-booktype</string>
+      <string id="dvd+rw-booktype_help">Права на запуск /usr/bin/dvd+rw-booktype</string>
+      <string id="dvd+rw-booktype_public">Члены группы "cdwriter" имеют право запускать /usr/bin/dvd+rw-booktype</string>
+      <string id="dvd+rw-booktype_restricted">Только суперпользователь имеет право запускать /usr/bin/dvd+rw-booktype</string>
+      <string id="dvd+rw-booktype_legacy">Режим совместимости (устаревший)</string>
+
+      <string id="dvd+rw-format">Права на запуск /usr/bin/dvd+rw-format</string>
+      <string id="dvd+rw-format_help">Права на запуск /usr/bin/dvd+rw-format</string>
+      <string id="dvd+rw-format_public">Члены группы "cdwriter" имеют право запускать /usr/bin/dvd+rw-format</string>
+      <string id="dvd+rw-format_restricted">Только суперпользователь имеет право запускать /usr/bin/dvd+rw-format</string>
+      <string id="dvd+rw-format_legacy">Режим совместимости (устаревший)</string>
+
+      <string id="dvd+rw-mediainfo">Права на запуск /usr/bin/dvd+rw-mediainfo</string>
+      <string id="dvd+rw-mediainfo_help">Права на запуск /usr/bin/dvd+rw-mediainfo</string>
+      <string id="dvd+rw-mediainfo_public">Члены группы "cdwriter" имеют право запускать /usr/bin/dvd+rw-mediainfo</string>
+      <string id="dvd+rw-mediainfo_restricted">Только суперпользователь имеет право запускать /usr/bin/dvd+rw-mediainfo</string>
+      <string id="dvd+rw-mediainfo_legacy">Режим совместимости (устаревший)</string>
+
+      <string id="fusermount">Права на запуск утилит /usr/bin/fusermount и /usr/bin/fusermount3</string>
+      <string id="fusermount_help">Права на запуск утилит /usr/bin/fusermount и /usr/bin/fusermount3</string>
+      <string id="fusermount_public">Любой пользователь имеет право запускать /usr/bin/fusermount и /usr/bin/fusermount3</string>
+      <string id="fusermount_fuseonly">Пользователи группы "fuse" имеют право запускать /usr/bin/fusermount и /usr/bin/fusermount3</string>
+      <string id="fusermount_wheelonly">Пользователи группы "wheel" имеют право запускать /usr/bin/fusermount и /usr/bin/fusermount3</string>
+      <string id="fusermount_restricted">Только суперпользователь имеет право запускать /usr/bin/fusermount и /usr/bin/fusermount3</string>
+
+      <string id="gpasswd">Права на запуск утилиты /usr/bin/gpasswd</string>
+      <string id="gpasswd_help">Права на запуск утилиты /usr/bin/gpasswd</string>
+      <string id="gpasswd_public">Любой пользователь имеет право на запуск /usr/bin/gpasswd</string>
+      <string id="gpasswd_wheelonly">Пользователи группы "wheel" имеют право на запуск /usr/bin/gpasswd</string>
+      <string id="gpasswd_restricted">Только суперпользователь имеет право на запуск /usr/bin/gpasswd</string>
+
+      <string id="groupmems">Права на запуск утилиты /usr/bin/groupmems</string>
+      <string id="groupmems_help">Права на запуск утилиты /usr/bin/groupmems</string>
+      <string id="groupmems_public">Любой пользователь имеет право на запуск /usr/bin/groupmems</string>
+      <string id="groupmems_wheelonly">Пользователи группы "wheel" имеют право на запуск /usr/bin/groupmems</string>
+      <string id="groupmems_restricted">Только суперпользователь имеет право на запуск /usr/bin/groupmems</string>
+
+      <string id="growisofs">Права на запуск утилиты /usr/bin/growisofs</string>
+      <string id="growisofs_help">Права на запуск утилиты /usr/bin/growisofs</string>
+      <string id="growisofs_public">Пользователи группы "cdwriter" имеют право на запуск /usr/bin/growisofs</string>
+      <string id="growisofs_restricted">Только суперпользователь имеет право на запуск /usr/bin/growisofs</string>
+      <string id="growisofs_legacy">Режим совместимости (устаревший)</string>
+
+      <string id="hddtemp">Права на запуск утилиты /usr/sbin/hddtemp</string>
+      <string id="hddtemp_help">Права на запуск утилиты /usr/sbin/hddtemp</string>
+      <string id="hddtemp_public">Любой пользователь имеет право на запуск /usr/sbin/hddtemp</string>
+      <string id="hddtemp_wheelonly">Пользователи группы "wheel" имеют право на запуск /usr/sbin/hddtemp</string>
+      <string id="hddtemp_restricted">Только суперпользователь имеет право на запуск /usr/sbin/hddtemp</string>
+
+      <string id="kvm">Права на устройства QEMU KVM</string>
+      <string id="kvm_help">Права на устройства QEMU KVM</string>
+      <string id="kvm_public">Любой пользователь имеет право использовать KVM</string>
+      <string id="kvm_vmusers">Пользователи группы "vmusers" имеют право использовать KVM</string>
+      <string id="kvm_restricted">Только суперпользователь имеет право использовать KVM</string>
+
+      <string id="ldap-reverse-dns-lookup">Выполнение reverse DNS lookup при запросах OpenLDAP</string>
+      <string id="ldap-reverse-dns-lookup_help">Выполнение reverse DNS lookup при запросах OpenLDAP</string>
+      <string id="ldap-reverse-dns-lookup_allow">Выполнять reverse DNS lookup при запросах OpenLDAP</string>
+      <string id="ldap-reverse-dns-lookup_deny">Не выполнять reverse DNS lookup при запросах OpenLDAP</string>
+      <string id="ldap-reverse-dns-lookup_default">Выполнять reverse DNS lookup при запросах OpenLDAP</string>
+
+      <string id="ldap-tls-cert-check">Выполнение проверки сертификатов при установлении TLS соединений OpenLDAP</string>
+      <string id="ldap-tls-cert-check_help">Выполнение проверки сертификатов при установлении TLS соединений OpenLDAP</string>
+      <string id="ldap-tls-cert-check_default">Устанавливать соединение только при наличии корректного сертификата</string>
+      <string id="ldap-tls-cert-check_never">Не выполнять никаких проверок</string>
+      <string id="ldap-tls-cert-check_allow">Устанавливать соединение даже при отсутствии или некорректном сертификате</string>
+      <string id="ldap-tls-cert-check_try">Устанавливать соединение при отсутствии или при корректном сертификате</string>
+      <string id="ldap-tls-cert-check_demand">Устанавливать соединение только при наличии корректного сертификата</string>
+
+      <string id="mount">Права на запуск /bin/mount и /bin/umount</string>
+      <string id="mount_help">Права на запуск /bin/mount и /bin/umount</string>
+      <string id="mount_public">Любой пользователь имеет право на запуск /bin/mount и /bin/umount</string>
+      <string id="mount_wheelonly">Пользователи группы "wheel" имеют право на запуск /bin/mount и /bin/umount</string>
+      <string id="mount_unprivileged">Любой пользователь имеет право на запуск /bin/mount и /bin/umount для непривилегированных операций</string>
+      <string id="mount_restricted">Только суперпользователь имеет право на запуск /bin/mount и /bin/umount</string>
+
+      <string id="newgrp">Права на запуск /usr/bin/newgrp</string>
+      <string id="newgrp_help">Права на запуск /usr/bin/newgrp</string>
+      <string id="newgrp_public">Любой пользователь имеет право на запуск /usr/bin/newgrp</string>
+      <string id="newgrp_wheelonly">Пользователи группы "wheel" имеют право на запуск /usr/bin/newgrp</string>
+      <string id="newgrp_restricted">Только суперпользователь имеет право на запуск /usr/bin/newgrp</string>
+
+      <string id="nfsmount">Права на запуск /sbin/mount.nfs</string>
+      <string id="nfsmount_help">Права на запуск /sbin/mount.nfs</string>
+      <string id="nfsmount_public">Любой пользователь имеет право запускать /sbin/mount.nfs</string>
+      <string id="nfsmount_wheelonly">Пользователи группы "wheel" имеют право запускать /sbin/mount.nfs</string>
+      <string id="nfsmount_restricted">Только суперпользователь имеет право запускать /sbin/mount.nfs</string>
+
+      <string id="pam_mktemp">Создание индивидуальных временных каталогов для пользователей</string>
+      <string id="pam_mktemp_help">Создание индивидуальных временных каталогов для пользователей</string>
+      <string id="pam_mktemp_enabled">Включить создание индивидуальных временных каталогов для пользователей</string>
+      <string id="pam_mktemp_disabled">Отключить создание индивидуальных временных каталогов для пользователей</string>
+
+      <string id="passwd">Управление паролями с помощью /usr/bin/passwd</string>
+      <string id="passwd_help">Управление паролями с помощью /usr/bin/passwd</string>
+      <string id="passwd_tcb">Любой пользователь имеет право изменить свой пароль с помощью /usr/bin/passwd при включенной схеме tcb</string>
+      <string id="passwd_traditional">Любой пользователь имеет право изменить свой пароль с помощью /usr/bin/passwd при включенной схеме tcb</string>
+      <string id="passwd_restricted">Только суперпользователь имеет право изменять пароли пользователей</string>
+
+      <string id="passwdqc-enforce">Управление проверками на сложность паролей</string>
+      <string id="passwdqc-enforce_help">Управление проверками на сложность паролей</string>
+      <string id="passwdqc-enforce_everyone">Включить проверки на достаточную сложность пароля для всех пользователей</string>
+      <string id="passwdqc-enforce_users">Включить проверки на достаточную сложность пароля для всех, кроме суперпользователей</string>
+
+      <string id="ping">Права на запуск /usr/bin/ping</string>
+      <string id="ping_help">Права на запуск /usr/bin/ping</string>
+      <string id="ping_public">Любой пользователь имеет право на запуск /usr/bin/ping</string>
+      <string id="ping_netadmin">Пользователи группы "netadmin" имеют право на запуск /usr/bin/ping</string>
+      <string id="ping_restricted">Только суперпользователь имеет право запускать /usr/bin/ping</string>
+      <string id="ping_public_caps">Все пользователи имеют право на запуск /usr/bin/ping (в контейнерах)</string>
+      <string id="ping_netadmin_caps">Пользователи группы "netadmin" имеют право на запуск /usr/bin/ping (в контейнерах)</string>
+
+      <string id="postfix">Режим работы MTA (почтового транспортного агента) Postfix</string>
+      <string id="postfix_help">Режим работы MTA (почтового транспортного агента) Postfix</string>
+      <string id="postfix_local">Postfix MTA отключен</string>
+      <string id="postfix_server">Postfix MTA включен без фильтров почты</string>
+      <string id="postfix_filter">Postfix MTA включен с фильтрами почты</string>
+
+      <string id="postqueue">Права на запуск /usr/bin/postqueue</string>
+      <string id="postqueue_help">Права на запуск /usr/bin/postqueue</string>
+      <string id="postqueue_public">Любой пользователь имеет право на запуск /usr/bin/postqueue</string>
+      <string id="postqueue_mailadm">Пользователи группы "mailadm" имеют право на запуск /usr/bin/postqueue</string>
+      <string id="postqueue_restricted">Только суперпользователь имеет право на запуск /usr/bin/postqueue</string>
+
+      <string id="ppp">Права на запуск /usr/sbin/pppd</string>
+      <string id="ppp_help">Права на запуск /usr/sbin/pppd</string>
+      <string id="ppp_restricted">Только суперпользователь имеет право на запуск /usr/sbin/pppd</string>
+      <string id="ppp_traditional">Любой пользователь имеет право запускать /usr/sbin/pppd без повышения уровня привилегий</string>
+      <string id="ppp_uucp">Пользователи группы "uucp" имеют право запускать /usr/sbin/pppd с правами суперпользователя</string>
+      <string id="ppp_public">Любой пользователь имеет право запускать /usr/sbin/pppd с правами суперпользователя</string>
+
+      <string id="rpcbind">Режим работы /sbin/rpcbind</string>
+      <string id="rpcbind_help">Режим работы /sbin/rpcbind</string>
+      <string id="rpcbind_server">/sbin/rpcbind будет слушать входящие подключения из сети</string>
+      <string id="rpcbind_local">/sbin/rpcbind будет принимать только локальные запросы</string>
+
+      <string id="sftp">Поддержка SFTP на сервере OpenSSH</string>
+      <string id="sftp_help">Поддержка SFTP на сервере OpenSSH</string>
+      <string id="sftp_enabled">Включить поддержку SFTP на сервере OpenSSH</string>
+      <string id="sftp_disabled">Отключить поддержку SFTP на сервере OpenSSH</string>
+
+      <string id="sshd-allow-groups">Функциональность белого списка допустимых групп пользователей sshd</string>
+      <string id="sshd-allow-groups_help">Функциональность белого списка допустимых групп пользователей sshd</string>
+      <string id="sshd-allow-groups_enabled">Белый список допустимых групп пользователей sshd включен</string>
+      <string id="sshd-allow-groups_disabled">Белый список допустимых групп пользователей sshd выключен</string>
+
+      <string id="sshd-gssapi-auth">Поддержка авторизации с использованием GSS API на сервере sshd</string>
+      <string id="sshd-gssapi-auth_help">Поддержка авторизации с использованием GSS API на сервере sshd</string>
+      <string id="sshd-gssapi-auth_disabled">Поддержка GSS API для sshd отключена</string>
+      <string id="sshd-gssapi-auth_enabled">Поддержка GSS API для sshd включена</string>
+      <string id="sshd-gssapi-auth_default">Поддержка GSS API для sshd отключена</string>
+
+      <string id="sshd-password-auth">Поддержка авторизации по паролю на сервере sshd</string>
+      <string id="sshd-password-auth_help">Поддержка авторизации по паролю на сервере sshd</string>
+      <string id="sshd-password-auth_enabled">Поддержка авторизации по паролю для sshd включена</string>
+      <string id="sshd-password-auth_disabled">Поддержка авторизации по паролю для sshd отключена</string>
+      <string id="sshd-password-auth_default">Поддержка авторизации по паролю для sshd включена</string>
+
+      <string id="ssh-gssapi-auth">Поддержка авторизации с использованием GSS API на клиенте SSH</string>
+      <string id="ssh-gssapi-auth_help">Поддержка авторизации с использованием GSS API на клиенте SSH</string>
+      <string id="ssh-gssapi-auth_disabled">Поддержка авторизации с использованием GSS API на клиенте SSH отключена</string>
+      <string id="ssh-gssapi-auth_enabled">Поддержка авторизации с использованием GSS API на клиенте SSH включена</string>
+      <string id="ssh-gssapi-auth_default">Поддержка авторизации с использованием GSS API на клиенте SSH отключена</string>
+
+      <string id="su">Режим работы /bin/su</string>
+      <string id="su_help">Режим работы /bin/su</string>
+      <string id="su_public">Любой пользователь имеет право на запуск /bin/su</string>
+      <string id="su_wheel">Любой пользователь имеет право на запуск /bin/su, но только пользователи группы "wheel" могут повышать уровень привилегий до суперпользователя</string>
+      <string id="su_wheelonly">Только пользователи группы "wheel" имеют право на запуск /bin/su</string>
+      <string id="su_restricted">Только суперпользователь имеет право на запуск /bin/su</string>
+
+      <string id="sudo">Режим работы /usr/bin/sudo</string>
+      <string id="sudo_help">Режим работы /usr/bin/sudo</string>
+      <string id="sudo_public">Любой пользователь имеет право на запуск /usr/bin/sudo</string>
+      <string id="sudo_wheelonly">Пользователи группы "wheel" имеют право на запуск /usr/bin/sudo</string>
+      <string id="sudo_restricted">Только суперпользователь имеет право на запуск /usr/bin/sudo</string>
+
+      <string id="sudoers">Передача родительского окружения в sudo</string>
+      <string id="sudoers_help">Передача родительского окружения в sudo</string>
+      <string id="sudoers_strict">Не передавать дочернему процессу переменные окружения</string>
+      <string id="sudoers_relaxed">Передавать дочернему процессу переменные окружения</string>
+
+      <string id="sudoreplay">Режим работы /usr/bin/sudoreplay</string>
+      <string id="sudoreplay_help">Режим работы /usr/bin/sudoreplay</string>
+      <string id="sudoreplay_public">Любой пользователь имеет право на запуск /usr/bin/sudoreplay</string>
+      <string id="sudoreplay_wheelonly">Пользователи группы "wheel" имеют право на запуск /usr/bin/sudoreplay</string>
+      <string id="sudoreplay_restricted">Только суперпользователь имеет право на запуск /usr/bin/sudoreplay</string>
+
+      <string id="sudowheel">Запрос пароля sudo для пользователей группы "wheel"</string>
+      <string id="sudowheel_help">Запрос пароля sudo для пользователей группы "wheel"</string>
+      <string id="sudowheel_disabled">Включить запрос пароля sudo для пользователей группы "wheel"</string>
+      <string id="sudowheel_enabled">Отключить запрос пароля sudo для пользователей группы "wheel"</string>
+
+      <string id="system-auth">Методы аутентификации в системе</string>
+      <string id="system-auth_help">Методы аутентификации в системе</string>
+      <string id="system-auth_krb5">Использовать Kerberos 5 для аутентификации</string>
+      <string id="system-auth_krb5_ccreds">Использовать Kerberos 5 с локальным кэшем для аутентификации</string>
+      <string id="system-auth_ldap">Использовать LDAP для аутентификации</string>
+      <string id="system-auth_local">Использовать локальную базу данных для аутентификации</string>
+      <string id="system-auth_multi">Использовать все доступные методы аутентификации</string>
+      <string id="system-auth_pkcs11">Использовать PKCS11 для аутентификации</string>
+      <string id="system-auth_winbind">Использовать WInbind для аутентификации</string>
+
+      <string id="tcb_chkpwd">Режим работы /usr/lib/chkpwd/tcb_chkpwd</string>
+      <string id="tcb_chkpwd_help">Режим работы /usr/lib/chkpwd/tcb_chkpwd</string>
+      <string id="tcb_chkpwd_traditional">Любой пользователь может быть аутентифицирован с помощью /usr/lib/chkpwd/tcb_chkpwd при отключенном tcb</string>
+      <string id="tcb_chkpwd_tcb">Любой пользователь может быть аутентифицирован с помощью /usr/lib/chkpwd/tcb_chkpwd при включенном tcb</string>
+      <string id="tcb_chkpwd_restricted">Только суперпользователь может быть аутентифицирован с помощью /usr/lib/chkpwd/tcb_chkpwd</string>
+
+      <string id="udisks2">Правила подключения носителей данных</string>
+      <string id="udisks2_help">Правила подключения носителей данных</string>
+      <string id="udisks2_default">Подключать носители данных индивидуально для каждого пользователя</string>
+      <string id="udisks2_shared">Подключать носители данных в общедоступную точку</string>
+
+      <string id="virtualbox">Права доступа к VirtualBox</string>
+      <string id="virtualbox_help">Права доступа к VirtualBox</string>
+      <string id="virtualbox_public">Любой пользователь может использовать VirtualBox</string>
+      <string id="virtualbox_vboxusers">Пользователи группы "vboxusers" могут использовать VirtualBox</string>
+      <string id="virtualbox_restricted">Только суперпользователь может использовать VirtualBox</string>
+
+      <string id="wireshark-capture">Режим работы /usr/bin/dumpcap</string>
+      <string id="wireshark-capture_help">Режим работы /usr/bin/dumpcap</string>
+      <string id="wireshark-capture_public">Любой пользователь имеет право на запуск /usr/bin/dumpcap, захват трафика включен</string>
+      <string id="wireshark-capture_relaxed">Любой пользователь имеет право на запуск /usr/bin/dumpcap, захват трафика отключен</string>
+      <string id="wireshark-capture_netadmin">Пользователи группы "netadmin" имеют право на запуск /usr/bin/dumpcap</string>
+      <string id="wireshark-capture_restricted">Только суперпользователь имеет право на запуск /usr/bin/dumpcap</string>
+
+      <string id="write">Режим работы /usr/bin/write</string>
+      <string id="write_help">Режим работы /usr/bin/write</string>
+      <string id="write_public">Любой пользователь имеет право на запуск /usr/bin/write</string>
+      <string id="write_restricted">Только суперпользователь имеет право на запуск /usr/bin/write</string>
+
+      <string id="xdg-user-dirs">Функция сохранения списка пользовательских директорий</string>
+      <string id="xdg-user-dirs_help">Функция сохранения списка пользовательских директорий</string>
+      <string id="xdg-user-dirs_enabled">Функция сохранения списка пользовательских директорий включена</string>
+      <string id="xdg-user-dirs_disabled">Функция сохранения списка пользовательских директорий отключена</string>
+
+      <string id="xorg-server">Режим работы Xorg</string>
+      <string id="xorg-server_help">Режим работы Xorg</string>
+      <string id="xorg-server_public">Любой пользователь имеет право на запуск /usr/bin/Xorg</string>
+      <string id="xorg-server_xgrp">Пользователи группы "xgrp" имеют право на запуск /usr/bin/Xorg</string>
+      <string id="xorg-server_restricted">Только суперпользователь имеет право на запуск /usr/bin/Xorg</string>
+    </stringTable>
+    <presentationTable>
+      <presentation id="at">
+        <dropdownList defaultItem="0" refId="at_setter">Любой пользователь может запускать /usr/bin/at</dropdownList>
+      </presentation>
+      <presentation id="chage">
+        <dropdownList defaultItem="1" refId="chage_setter">Только суперпользователь может запускать /usr/bin/chage</dropdownList>
+      </presentation>
+      <presentation id="chfn">
+        <dropdownList defaultItem="1" refId="chfn_setter">Только суперпользователь может запускать /usr/bin/chfn</dropdownList>
+      </presentation>
+      <presentation id="chrony">
+        <dropdownList defaultItem="1" refId="chrony_setter">Запретить входящие подключения к chrony</dropdownList>
+      </presentation>
+      <presentation id="chsh">
+        <dropdownList defaultItem="1" refId="chsh_setter">Только суперпользователь может запускать /usr/bin/chsh</dropdownList>
+      </presentation>
+      <presentation id="consolehelper">
+        <dropdownList defaultItem="0" refId="consolehelper_setter">Любой пользователь имеет право запускать /usr/bin/consolehelper</dropdownList>
+      </presentation>
+      <presentation id="crontab">
+        <dropdownList defaultItem="0" refId="crontab_setter">Любой пользователь имеет право на запуск программы /usr/bin/consolehelper</dropdownList>
+      </presentation>
+      <presentation id="cups">
+        <dropdownList defaultItem="0" refId="cups_setter">Работать в режиме сервера (CUPS будет слушать на порту 631)</dropdownList>
+      </presentation>
+      <presentation id="dvd-ram-control">
+        <dropdownList defaultItem="0" refId="dvd-ram-control_setter">Члены группы "cdwriter" имеют право запускать /usr/bin/dvd-ram-control</dropdownList>
+      </presentation>
+      <presentation id="dvd+rw-booktype">
+        <dropdownList defaultItem="0" refId="dvd+rw-booktype_setter">Члены группы "cdwriter" имеют право запускать /usr/bin/dvd+rw-booktype</dropdownList>
+      </presentation>
+      <presentation id="dvd+rw-format">
+        <dropdownList defaultItem="0" refId="dvd+rw-format_setter">Члены группы "cdwriter" имеют право запускать /usr/bin/dvd+rw-format</dropdownList>
+      </presentation>
+      <presentation id="dvd+rw-mediainfo">
+        <dropdownList defaultItem="0" refId="dvd+rw-mediainfo_setter">Члены группы "cdwriter" имеют право запускать /usr/bin/dvd+rw-mediainfo</dropdownList>
+      </presentation>
+      <presentation id="fusermount">
+        <dropdownList defaultItem="1" refId="fusermount_setter">Пользователи группы "fuse" имеют право запускать /usr/bin/fusermount и /usr/bin/fusermount3</dropdownList>
+      </presentation>
+      <presentation id="gpasswd">
+        <dropdownList defaultItem="2" refId="gpasswd_setter">Только суперпользователь имеет право на запуск /usr/bin/gpasswd</dropdownList>
+      </presentation>
+      <presentation id="groupmems">
+        <dropdownList defaultItem="2" refId="groupmems_setter">Только суперпользователь имеет право на запуск /usr/bin/groupmems</dropdownList>
+      </presentation>
+      <presentation id="growisofs">
+        <dropdownList defaultItem="0" refId="growisofs_setter">Пользователи группы "cdwriter" имеют право на запуск /usr/bin/growisofs</dropdownList>
+      </presentation>
+      <presentation id="hddtemp">
+        <dropdownList defaultItem="1" refId="hddtemp_setter">Пользователи группы "wheel" имеют право на запуск /usr/sbin/hddtemp</dropdownList>
+      </presentation>
+      <presentation id="kvm">
+        <dropdownList defaultItem="1" refId="kvm_setter">Пользователи группы "vmusers" имеют право использовать KVM</dropdownList>
+      </presentation>
+      <presentation id="ldap-reverse-dns-lookup">
+        <dropdownList defaultItem="0" refId="ldap-reverse-dns-lookup_setter">Выполнять reverse DNS lookup при запросах OpenLDAP</dropdownList>
+      </presentation>
+      <presentation id="ldap-tls-cert-check">
+        <dropdownList defaultItem="4" refId="ldap-tls-cert-check_setter">Устанавливать соединение только при наличии корректного сертификата</dropdownList>
+      </presentation>
+      <presentation id="mount">
+        <dropdownList defaultItem="0" refId="mount_setter">Любой пользователь имеет право на запуск /bin/mount и /bin/umount</dropdownList>
+      </presentation>
+      <presentation id="newgrp">
+        <dropdownList defaultItem="2" refId="newgrp_setter">Только суперпользователь имеет право на запуск /usr/bin/newgrp</dropdownList>
+      </presentation>
+      <presentation id="nfsmount">
+        <dropdownList defaultItem="2" refId="nfsmount_setter">Только суперпользователь имеет право запускать /sbin/mount.nfs</dropdownList>
+      </presentation>
+      <presentation id="pam_mktemp">
+        <dropdownList defaultItem="0" refId="pam_mktemp_setter">Включить создание индивидуальных временных каталогов для пользователей</dropdownList>
+      </presentation>
+      <presentation id="passwd">
+        <dropdownList defaultItem="0" refId="passwd_setter">Любой пользователь имеет право изменить свой пароль с помощью /usr/bin/passwd при включенной схеме tcb</dropdownList>
+      </presentation>
+      <presentation id="passwdqc-enforce">
+        <dropdownList defaultItem="1" refId="passwdqc-enforce_setter">Включить проверки на достаточную сложность пароля для всех, кроме суперпользователей</dropdownList>
+      </presentation>
+      <presentation id="ping">
+        <dropdownList defaultItem="0" refId="ping_setter">Любой пользователь имеет право на запуск /usr/bin/ping</dropdownList>
+      </presentation>
+      <presentation id="postfix">
+        <dropdownList defaultItem="0" refId="postfix_setter">Postfix MTA отключен</dropdownList>
+      </presentation>
+      <presentation id="postqueue">
+        <dropdownList defaultItem="0" refId="postqueue_setter">Любой пользователь имеет право на запуск /usr/bin/postqueue</dropdownList>
+      </presentation>
+      <presentation id="ppp">
+        <dropdownList defaultItem="1" refId="ppp_setter">Любой пользователь имеет право запускать /usr/sbin/pppd без повышения уровня привилегий</dropdownList>
+      </presentation>
+      <presentation id="rpcbind">
+        <dropdownList defaultItem="1" refId="rpcbind_setter">/sbin/rpcbind будет принимать только локальные запросы</dropdownList>
+      </presentation>
+      <presentation id="sftp">
+        <dropdownList defaultItem="0" refId="sftp_setter">Включить поддержку SFTP на сервере OpenSSH</dropdownList>
+      </presentation>
+      <presentation id="sshd-allow-groups">
+        <dropdownList defaultItem="1" refId="sshd-allow-groups_setter">Белый список допустимых групп пользователей sshd выключен</dropdownList>
+      </presentation>
+      <presentation id="sshd-gssapi-auth">
+        <dropdownList defaultItem="2" refId="sshd-gssapi-auth_setter">Поддержка GSS API для sshd включена</dropdownList>
+      </presentation>
+      <presentation id="sshd-password-auth">
+        <dropdownList defaultItem="2" refId="sshd-password-auth_setter">Поддержка авторизации по паролю для sshd включена</dropdownList>
+      </presentation>
+      <presentation id="ssh-gssapi-auth">
+        <dropdownList defaultItem="2" refId="ssh-gssapi-auth_setter">Поддержка авторизации с использованием GSS API на клиенте SSH отключена</dropdownList>
+      </presentation>
+      <presentation id="su">
+        <dropdownList defaultItem="2" refId="su_setter">Только пользователи группы "wheel" имеют право на запуск /bin/su</dropdownList>
+      </presentation>
+      <presentation id="sudo">
+        <dropdownList defaultItem="1" refId="sudo_setter">Пользователи группы "wheel" имеют право на запуск /usr/bin/sudo</dropdownList>
+      </presentation>
+      <presentation id="sudoers">
+        <dropdownList defaultItem="0" refId="sudoers_setter">Не передавать дочернему процессу переменные окружения</dropdownList>
+      </presentation>
+      <presentation id="sudoreplay">
+        <dropdownList defaultItem="1" refId="sudoreplay_setter">Пользователи группы "wheel" имеют право на запуск /usr/bin/sudoreplay</dropdownList>
+      </presentation>
+      <presentation id="sudowheel">
+        <dropdownList defaultItem="0" refId="sudowheel_setter">Включить запрос пароля sudo для пользователей группы "wheel"</dropdownList>
+      </presentation>
+      <presentation id="system-auth">
+        <dropdownList defaultItem="3" refId="system-auth_setter">Использовать локальную базу данных для аутентификации</dropdownList>
+      </presentation>
+      <presentation id="tcb_chkpwd">
+        <dropdownList defaultItem="1" refId="tcb_chkpwd_setter">Любой пользователь может быть аутентифицирован с помощью /usr/lib/chkpwd/tcb_chkpwd при включенном tcb</dropdownList>
+      </presentation>
+      <presentation id="udisks2">
+        <dropdownList defaultItem="0" refId="udisks2_setter">Подключать носители данных индивидуально для каждого пользователя</dropdownList>
+      </presentation>
+      <presentation id="virtualbox">
+        <dropdownList defaultItem="1" refId="virtualbox_setter">Пользователи группы "vboxusers" могут использовать VirtualBox</dropdownList>
+      </presentation>
+      <presentation id="wireshark-capture">
+        <dropdownList defaultItem="1" refId="wireshark-capture_setter">Любой пользователь имеет право на запуск /usr/bin/dumpcap, захват трафика отключен</dropdownList>
+      </presentation>
+      <presentation id="write">
+        <dropdownList defaultItem="0" refId="write_setter">Любой пользователь имеет правов на запуск /usr/bin/write</dropdownList>
+      </presentation>
+      <presentation id="xdg-user-dirs">
+        <dropdownList defaultItem="0" refId="xdg-user-dirs_setter">Функция сохранения списка пользовательских директорий включена</dropdownList>
+      </presentation>
+      <presentation id="xorg-server">
+        <dropdownList defaultItem="0" refId="xorg-server_setter">Любой пользователь имеет право на запуск /usr/bin/Xorg</dropdownList>
+      </presentation>
+    </presentationTable>
+  </resources>
+</policyDefinitionResources>
+
