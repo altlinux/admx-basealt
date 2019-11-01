@@ -1,0 +1,159 @@
+#! /usr/bin/env python3
+
+import subprocess
+import threading
+import xml.etree.ElementTree as ET
+import xml.dom.minidom
+
+def prepare_xml_str(xmldoc):
+    return xml.dom.minidom.parseString(ET.tostring(xmldoc)).toprettyxml(indent="    ").split('\n', 1)[1]
+
+class control:
+    def __init__(self, name, value, variants):
+        self.name = name
+        self.value = value
+        self.variants = variants
+
+    def __str__(self):
+        return '{}, {}, {}'.format(self.name, self.value, self.variants)
+
+    def __repr__(self):
+        return '{}, {}, {}'.format(self.name, self.value, self.variants)
+
+    def admx_xml_str(self):
+        '''
+        Return XML string part for ADMX template.
+        '''
+        policy = ET.Element('policy')
+        policy.set('name', self.name)
+        policy.set('class', 'Machine')
+        policy.set('displayName', '$(string.{})'.format(self.name))
+        policy.set('explainText', '$(string.{}_help)'.format(self.name))
+        policy.set('presentation', '$(presentation.{})'.format(self.name))
+        policy.set('key', 'Software\BaseALT\Policies\Control')
+
+        parent_category = ET.SubElement(policy, 'parentCategory')
+        parent_category.set('ref', 'Control')
+
+        supported_on = ET.SubElement(policy, 'supportedOn')
+        supported_on.set('ref', 'system:SUPPORTED_Sisyphus')
+
+        elements = ET.SubElement(policy, 'elements')
+
+        enum = ET.SubElement(elements, 'enum')
+        enum.set('id', '{}_setter'.format(self.name))
+        enum.set('valueName', self.name)
+        enum.set('required', 'true')
+
+        for num, val in enumerate(self.variants):
+            item = ET.SubElement(enum, 'enum')
+            item.set('displayName', '$(string.{}_{})'.format(self.name, val))
+
+            value = ET.SubElement(item, 'value')
+
+            decimal = ET.SubElement(value, 'decimal')
+            decimal.set('value', '{}'.format(num))
+
+        return prepare_xml_str(policy)
+
+    def adml_xml_stringtable_str(self):
+        '''
+        Return stringTable (XML as a string) for ADML file.
+        '''
+        stringtable = ET.Element('stringTable')
+        main_string = ET.SubElement(stringtable, 'string')
+        main_string.set('id', self.name)
+        help_string = ET.SubElement(stringtable, 'string')
+        help_string.set('id', '{}_help'.format(self.name))
+        help_string.text = ' '
+
+        for val in self.variants:
+            string = ET.SubElement(stringtable, 'string')
+            string.set('id', '{}_{}'.format(self.name, val))
+            string.text = ' '
+
+        return prepare_xml_str(stringtable)
+
+    def adml_xml_stringtable(self):
+        '''
+        Return stringTable (XML as a string) for ADML file.
+        '''
+        stringtable = ET.Element('stringTable')
+        main_string = ET.SubElement(stringtable, 'string')
+        main_string.set('id', self.name)
+        help_string = ET.SubElement(stringtable, 'string')
+        help_string.set('id', '{}_help'.format(self.name))
+        help_string.text = ' '
+
+        for val in self.variants:
+            string = ET.SubElement(stringtable, 'string')
+            string.set('id', '{}_{}'.format(self.name, val))
+            string.text = ' '
+
+        return stringtable
+
+    def adml_xml_presentation_str(self):
+        '''
+        Return presentation (XML as a string) for ADML file.
+        '''
+        presentation = ET.Element('presentation')
+        presentation.set('id', self.name)
+
+        dropdown_list = ET.SubElement(presentation, 'dropdownList')
+        dropdown_list.set('refId', '{}_setter'.format(self.name))
+        dropdown_list.text = ' '
+        dropdown_list.set('defaultItem', '{}'.format(self.variants.index(self.value)))
+
+        return prepare_xml_str(presentation)
+
+def get_descriptions(stringtable, lang):
+    '''
+    Get descriptions for ADML's stringTable
+    '''
+    for string in stringtable.iter('string'):
+        string.text = input('Please input {} text value for {}: '.format(lang, string.attrib['id']))
+
+    print(prepare_xml_str(stringtable))
+
+def parse_values(values_str):
+    '''
+    Strip '(' and ')' symbols from 3rd column of control utility
+    output - list of possible control values.
+    '''
+    line = values_str.translate({ ord('('): None, ord(')'): None})
+    values = line.split()
+    return values
+
+def parse_control(proc):
+    '''
+    Split 'control' utility output into three columns and create
+    objects representing single 'control' then print each object's
+    ADMX and ADML parts.
+    '''
+    controls = []
+    for line in iter(proc.stdout.readline, b''):
+        splits = line.decode('utf-8').rstrip('\n\r').split(None, 2)
+        controls.append(control(splits[0], splits[1], parse_values(splits[2])))
+    for cnt in controls:
+        print('--------------------------------')
+        print(cnt.admx_xml_str())
+    #    print(cnt.adml_xml_stringtable_str())
+        print(cnt.adml_xml_presentation_str())
+        get_descriptions(cnt.adml_xml_stringtable(), 'en-us')
+        get_descriptions(cnt.adml_xml_stringtable(), 'ru-ru')
+
+def read_controls():
+    '''
+    Read output of 'control' utility.
+    '''
+    proc = subprocess.Popen(['sudo', 'control'], stdout=subprocess.PIPE)
+    thr = threading.Thread(target=parse_control, args=(proc,))
+    thr.start()
+    thr.join()
+
+def main():
+    read_controls()
+
+if __name__ == '__main__':
+    main()
+
