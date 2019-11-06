@@ -165,8 +165,8 @@ Only root - Only root can execute /usr/bin/gpasswd
   <string id="groupmems">Execution of program /usr/bin/groupmems</string>
   <string id="groupmems_help">The policy defines the rights to execution of program /usr/bin/groupmems
 
-Any user - Any user can execute /usr/bin/groupmems</string>
-Only wheel - Only wheel group members can execute /usr/bin/groupmems</string>
+Any user - Any user can execute /usr/bin/groupmems
+Only wheel - Only wheel group members can execute /usr/bin/groupmems
 Only root - Only root can execute /usr/bin/groupmems
   </string>
   <string id="groupmems_public">Any user</string>
