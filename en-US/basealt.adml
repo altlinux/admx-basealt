@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  (c) 2019 BaseALT, Ltd.  -->
+<policyDefinitionResources xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.microsoft.com/GroupPolicy/2006/07/PolicyDefinitions" revision="1.0" schemaVersion="1.0">
+  <displayName>ALT base categories and supported component definitions</displayName>
+  <description>This file contains all the base categories and supported component definitions used by operating system components.</description>
+
+  <resources>
+    <stringTable>
+      <string id="BaseALT">BaseALT</string>
+      <string id="BaseALT_Help">Configuration of solutions based on ALT operating system</string>
+      <string id="SUPPORTED_Sisyphus">ALT Sisyphus</string>
+      <string id="SUPPORTED_SisyphusOnly">ALT Sisyphus only</string>
+      <string id="SUPPORTED_AltP8">At least ALT Platform 8</string>
+      <string id="SUPPORTED_AltP8_Only">ALT Platform 8 only</string>
+      <string id="SUPPORTED_AltP9">At least ALT Platform 9</string>
+      <string id="SUPPORTED_AltP9_Only">ALT Platform 9 only</string>
+      <string id="Basesystem">Base System</string>
+      <string id="Basesystem_Help">Configuration of basic system component settings.</string>
+      <string id="SecurityControl">Security policies</string>
+      <string id="LinuxComponents">Linux Components</string>
+      <string id="LinuxComponents_Help">Contains settings for Kernel components.</string>
+    </stringTable>
+  </resources>
+</policyDefinitionResources>

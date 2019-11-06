@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  (c) 2019 BaseALT, Ltd.  -->
+<policyDefinitionResources xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.microsoft.com/GroupPolicy/2006/07/PolicyDefinitions" revision="1.0" schemaVersion="1.0">
+  <displayName>Определения базовых категорий и поддерживаемых компонентов операционной системы Альт</displayName>
+  <description>Этот файл содержит определения базовых категорий и поддерживаемых компонентов операционной системы.</description>
+
+  <resources>
+    <stringTable>
+      <string id="BaseALT">BaseALT</string>
+      <string id="BaseALT_Help">Настройки решений на базе операционной системы Альт</string>
+      <string id="SUPPORTED_Sisyphus">ALT Сизиф</string>
+      <string id="SUPPORTED_SisyphusOnly">Только ALT Сизиф</string>
+      <string id="SUPPORTED_AltP8">Восьмая Платформа ALT как минимум</string>
+      <string id="SUPPORTED_AltP8_Only">Только Восьмая Платформа ALT</string>
+      <string id="SUPPORTED_AltP9">Девятая Платформа ALT как минмум</string>
+      <string id="SUPPORTED_AltP9_Only">Только Девятая Платформа ALT</string>
+      <string id="Base">Базовая система</string>
+      <string id="Base_Help">Настройка базовых параметров различных компонентов системы.</string>
+      <string id="SecurityControl">Политики безопасности</string>
+      <string id="LinuxComponents">Компоненты Linux</string>
+      <string id="LinuxComponents_Help">Содержит настройки ядра операционной системы.</string>
+    </stringTable>
+  </resources>
+</policyDefinitionResources>
