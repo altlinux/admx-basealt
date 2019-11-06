@@ -111,24 +111,6 @@
         </enum>
       </elements>
     </policy>
-    <policy class="Machine" displayName="$(string.chrony)" explainText="$(string.chrony_help)" key="Software\BaseALT\Policies\Control" name="chrony" presentation="$(presentation.chrony)">
-      <parentCategory ref="Control"/>
-      <supportedOn ref="system:SUPPORTED_Sisyphus"/>
-      <elements>
-        <enum id="chrony_setter" required="true" valueName="chrony">
-          <item displayName="$(string.chrony_server)">
-            <value>
-              <decimal value="0"/>
-            </value>
-          </item>
-          <item displayName="$(string.chrony_client)">
-            <value>
-              <decimal value="1"/>
-            </value>
-          </item>
-        </enum>
-      </elements>
-    </policy>
     <policy class="Machine" displayName="$(string.chsh)" explainText="$(string.chsh_help)" key="Software\BaseALT\Policies\Control" name="chsh" presentation="$(presentation.chsh)">
       <parentCategory ref="Control"/>
       <supportedOn ref="system:SUPPORTED_Sisyphus"/>
