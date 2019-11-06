@@ -211,22 +211,22 @@
         </enum>
       </elements>
     </policy>
-    <policy class="Machine" displayName="$(string.dvd+rw-booktype)" explainText="$(string.dvd+rw-booktype_help)" key="Software\BaseALT\Policies\Control" name="dvd+rw-booktype" presentation="$(presentation.dvd+rw-booktype)">
+    <policy class="Machine" displayName="$(string.dvd_rw-booktype)" explainText="$(string.dvd_rw-booktype_help)" key="Software\BaseALT\Policies\Control" name="dvd_rw-booktype" presentation="$(presentation.dvd_rw-booktype)">
       <parentCategory ref="Control"/>
       <supportedOn ref="system:SUPPORTED_Sisyphus"/>
       <elements>
-        <enum id="dvd+rw-booktype_setter" required="true" valueName="dvd+rw-booktype">
-          <item displayName="$(string.dvd+rw-booktype_public)">
+        <enum id="dvd_rw-booktype_setter" required="true" valueName="dvd_rw-booktype">
+          <item displayName="$(string.dvd_rw-booktype_public)">
             <value>
               <decimal value="0"/>
             </value>
           </item>
-          <item displayName="$(string.dvd+rw-booktype_restricted)">
+          <item displayName="$(string.dvd_rw-booktype_restricted)">
             <value>
               <decimal value="1"/>
             </value>
           </item>
-          <item displayName="$(string.dvd+rw-booktype_legacy)">
+          <item displayName="$(string.dvd_rw-booktype_legacy)">
             <value>
               <decimal value="2"/>
             </value>
@@ -234,22 +234,22 @@
         </enum>
       </elements>
     </policy>
-    <policy class="Machine" displayName="$(string.dvd+rw-format)" explainText="$(string.dvd+rw-format_help)" key="Software\BaseALT\Policies\Control" name="dvd+rw-format" presentation="$(presentation.dvd+rw-format)">
+    <policy class="Machine" displayName="$(string.dvd_rw-format)" explainText="$(string.dvd_rw-format_help)" key="Software\BaseALT\Policies\Control" name="dvd_rw-format" presentation="$(presentation.dvd_rw-format)">
       <parentCategory ref="Control"/>
       <supportedOn ref="system:SUPPORTED_Sisyphus"/>
       <elements>
-        <enum id="dvd+rw-format_setter" required="true" valueName="dvd+rw-format">
-          <item displayName="$(string.dvd+rw-format_public)">
+        <enum id="dvd_rw-format_setter" required="true" valueName="dvd_rw-format">
+          <item displayName="$(string.dvd_rw-format_public)">
             <value>
               <decimal value="0"/>
             </value>
           </item>
-          <item displayName="$(string.dvd+rw-format_restricted)">
+          <item displayName="$(string.dvd_rw-format_restricted)">
             <value>
               <decimal value="1"/>
             </value>
           </item>
-          <item displayName="$(string.dvd+rw-format_legacy)">
+          <item displayName="$(string.dvd_rw-format_legacy)">
             <value>
               <decimal value="2"/>
             </value>
@@ -257,22 +257,22 @@
         </enum>
       </elements>
     </policy>
-    <policy class="Machine" displayName="$(string.dvd+rw-mediainfo)" explainText="$(string.dvd+rw-mediainfo_help)" key="Software\BaseALT\Policies\Control" name="dvd+rw-mediainfo" presentation="$(presentation.dvd+rw-mediainfo)">
+    <policy class="Machine" displayName="$(string.dvd_rw-mediainfo)" explainText="$(string.dvd_rw-mediainfo_help)" key="Software\BaseALT\Policies\Control" name="dvd_rw-mediainfo" presentation="$(presentation.dvd_rw-mediainfo)">
       <parentCategory ref="Control"/>
       <supportedOn ref="system:SUPPORTED_Sisyphus"/>
       <elements>
-        <enum id="dvd+rw-mediainfo_setter" required="true" valueName="dvd+rw-mediainfo">
-          <item displayName="$(string.dvd+rw-mediainfo_public)">
+        <enum id="dvd_rw-mediainfo_setter" required="true" valueName="dvd_rw-mediainfo">
+          <item displayName="$(string.dvd_rw-mediainfo_public)">
             <value>
               <decimal value="0"/>
             </value>
           </item>
-          <item displayName="$(string.dvd+rw-mediainfo_restricted)">
+          <item displayName="$(string.dvd_rw-mediainfo_restricted)">
             <value>
               <decimal value="1"/>
             </value>
           </item>
-          <item displayName="$(string.dvd+rw-mediainfo_legacy)">
+          <item displayName="$(string.dvd_rw-mediainfo_legacy)">
             <value>
               <decimal value="2"/>
             </value>
