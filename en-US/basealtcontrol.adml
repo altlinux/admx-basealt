@@ -528,16 +528,25 @@ Only root - Only root is permitted to run /usr/bin/write
   <string id="write_public">Any user</string>
   <string id="write_restricted">Only root</string>
 
-  <string id="xdg-user-dirs">Функция сохранения списка пользовательских директорий</string>
-  <string id="xdg-user-dirs_help">Функция сохранения списка пользовательских директорий</string>
-  <string id="xdg-user-dirs_enabled">Функция сохранения списка пользовательских директорий включена</string>
-  <string id="xdg-user-dirs_disabled">Функция сохранения списка пользовательских директорий отключена</string>
+  <string id="xdg-user-dirs">Function for saving the list of user directories</string>
+  <string id="xdg-user-dirs_help">This policy determines whether the function to save the list of user directories works (xdg-user-dirs)
+  
+Enable - The option to save the list of user directories is enabled
+Disable - The function to save the list of user directories is disabled
+  </string>
+  <string id="xdg-user-dirs_enabled">Enable</string>
+  <string id="xdg-user-dirs_disabled">Disable</string>
 
   <string id="xorg-server">Permissions for Xorg</string>
-  <string id="xorg-server_help">This policy defines Permissions for Xorg</string>
-  <string id="xorg-server_public">Any user is permitted to run /usr/bin/Xorg</string>
-  <string id="xorg-server_xgrp">Users of the "xgrp" group are permitted to run /usr/bin/Xorg</string>
-  <string id="xorg-server_restricted">Only root is permitted to run /usr/bin/Xorg</string>
+  <string id="xorg-server_help">This policy defines Permissions for Xorg (/usr/bin/Xorg)
+
+Any user - Any user is permitted to run /usr/bin/Xorg
+Group xgrp - Users of the "xgrp" group are permitted to run /usr/bin/Xorg
+Only root - Only root is permitted to run /usr/bin/Xorg
+  </string>
+  <string id="xorg-server_public">Any user</string>
+  <string id="xorg-server_xgrp">Group xgrp</string>
+  <string id="xorg-server_restricted">Only root</string>
  </stringTable>
  <presentationTable>
   <presentation id="ExecuteSuProgram">
