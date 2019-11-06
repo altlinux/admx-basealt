@@ -16,13 +16,13 @@
   <string id="ExecuteSuProgram">Execution of program /bin/su</string>
   <string id="ExecuteSuProgram_Help">Policy allows to control access to execute program /bin/su
 
-Wheel - Any user, but only "wheel" group members can switch to superuser
-Wheel Only - Only "wheel" group members
+Wheel superusers - Any user, but only "wheel" group members can switch to superuser
+Only wheel - Only "wheel" group members
 Only root - Only to superuser
   </string>
   <string id="ExecuteSuProgram_Public">Any user</string>
-  <string id="ExecuteSuProgram_Wheel">Wheel</string>
-  <string id="ExecuteSuProgram_WheelOnly">Wheel Only</string>
+  <string id="ExecuteSuProgram_Wheel">Wheel superusers</string>
+  <string id="ExecuteSuProgram_WheelOnly">Only wheel</string>
   <string id="ExecuteSuProgram_Restricted">Only root</string>
 
 
@@ -266,10 +266,14 @@ Only root - Only root is permitted to run /sbin/mount.nfs
   <string id="nfsmount_wheelonly">Only wheel</string>
   <string id="nfsmount_restricted">Only root</string>
 
-  <string id="pam_mktemp">Создание индивидуальных временных каталогов для пользователей</string>
-  <string id="pam_mktemp_help">Создание индивидуальных временных каталогов для пользователей</string>
-  <string id="pam_mktemp_enabled">Включить создание индивидуальных временных каталогов для пользователей</string>
-  <string id="pam_mktemp_disabled">Отключить создание индивидуальных временных каталогов для пользователей</string>
+  <string id="pam_mktemp">Create individual temporary directories for users</string>
+  <string id="pam_mktemp_help">This policy determines whether to create individual temporary directories for users
+
+Enable - Enable the creation of individual temporary directories for users
+Disable - Disable the creation of individual temporary directories for users
+  </string>
+  <string id="pam_mktemp_enabled">Enable</string>
+  <string id="pam_mktemp_disabled">Disable</string>
 
   <string id="passwd">Managing passwords with passwd</string>
   <string id="passwd_help">Define a password management policy using the command /usr/bin/passwd
@@ -306,125 +310,223 @@ Group netadmin (in containers) - Users from the "netadmin" group are permitted t
   <string id="ping_public_caps">Any user (in containers)</string>
   <string id="ping_netadmin_caps">Group netadmin (in containers)</string>
 
-  <string id="postfix">Режим работы MTA (почтового транспортного агента) Postfix</string>
-  <string id="postfix_help">Режим работы MTA (почтового транспортного агента) Postfix</string>
-  <string id="postfix_local">Postfix MTA отключен</string>
-  <string id="postfix_server">Postfix MTA включен без фильтров почты</string>
-  <string id="postfix_filter">Postfix MTA включен с фильтрами почты</string>
+  <string id="postfix">Postfix MTA operating mode</string>
+  <string id="postfix_help">This policy defines the Postfix (Post Transport Agent) MTA operating mode
+
+Local (disabled) - Postfix MTA is disabled
+Server (filters off) - Postfix MTA enabled without mail filters
+Filter - Postfix MTA is enabled with mail filters
+  </string>
+  <string id="postfix_local">Local (disabled)</string>
+  <string id="postfix_server">Server (filters off)</string>
+  <string id="postfix_filter">Filter</string>
 
   <string id="postqueue">Permissions for /usr/bin/postqueue</string>
-  <string id="postqueue_help">This policy defines Permissions for /usr/bin/postqueue</string>
-  <string id="postqueue_public">Любой пользователь имеет право на запуск /usr/bin/postqueue</string>
-  <string id="postqueue_mailadm">Пользователи группы "mailadm" имеют право на запуск /usr/bin/postqueue</string>
-  <string id="postqueue_restricted">Только суперпользователь имеет право на запуск /usr/bin/postqueue</string>
+  <string id="postqueue_help">This policy defines Permissions for /usr/bin/postqueue
+
+Any user - Any user is permitted to run /usr/bin/postqueue
+Group mailadm - Users from the "mailadm" group are permitted to run /usr/bin/postqueue
+Only root - Only root is permitted to run /usr/bin/postqueue
+  </string>
+  <string id="postqueue_public">Any user</string>
+  <string id="postqueue_mailadm">Group mailadm</string>
+  <string id="postqueue_restricted">Only root</string>
 
   <string id="ppp">Permissions for /usr/sbin/pppd</string>
-  <string id="ppp_help">This policy defines Permissions for /usr/sbin/pppd</string>
+  <string id="ppp_help">This policy defines Permissions for /usr/sbin/pppd
+
+Only root - Only root is permitted to run /usr/sbin/pppd
+Traditional - Any user has the right to run /usr/sbin/pppd without elevating privileges 
+Group uucp -  Users of the "uucp" group have the right to run /usr/sbin/pppd with superuser rights
+Public - Any user has the right to run /usr/sbin/pppd with superuser rights
+  </string>
   <string id="ppp_restricted">Only root is permitted to run /usr/sbin/pppd</string>
-  <string id="ppp_traditional">Любой пользователь имеет право запускать /usr/sbin/pppd без повышения уровня привилегий</string>
-  <string id="ppp_uucp">Пользователи группы "uucp" имеют право запускать /usr/sbin/pppd с правами суперпользователя</string>
-  <string id="ppp_public">Любой пользователь имеет право запускать /usr/sbin/pppd с правами суперпользователя</string>
+  <string id="ppp_traditional">Traditional</string>
+  <string id="ppp_uucp">Group uucp</string>
+  <string id="ppp_public">Public</string>
 
-  <string id="rpcbind">Permissions for /sbin/rpcbind</string>
-  <string id="rpcbind_help">This policy defines Permissions for /sbin/rpcbind</string>
-  <string id="rpcbind_server">/sbin/rpcbind будет слушать входящие подключения из сети</string>
-  <string id="rpcbind_local">/sbin/rpcbind будет принимать только локальные запросы</string>
+  <string id="rpcbind">Rpcbind operating mode</string>
+  <string id="rpcbind_help">This policy defines the mode of operation of rpcbind (/sbin/rpcbind)
 
-  <string id="sftp">Поддержка SFTP на сервере OpenSSH</string>
-  <string id="sftp_help">Поддержка SFTP на сервере OpenSSH</string>
-  <string id="sftp_enabled">Включить поддержку SFTP на сервере OpenSSH</string>
-  <string id="sftp_disabled">Отключить поддержку SFTP на сервере OpenSSH</string>
+Server - rpcbind will listen for incoming connections from the network
+Local - rpcbind will only accept local requests
+  </string>
+  <string id="rpcbind_server">Server</string>
+  <string id="rpcbind_local">Local</string>
 
-  <string id="sshd-allow-groups">Функциональность белого списка допустимых групп пользователей sshd</string>
-  <string id="sshd-allow-groups_help">Функциональность белого списка допустимых групп пользователей sshd</string>
-  <string id="sshd-allow-groups_enabled">Белый список допустимых групп пользователей sshd включен</string>
-  <string id="sshd-allow-groups_disabled">Белый список допустимых групп пользователей sshd выключен</string>
+  <string id="sftp">SFTP support on OpenSSH server</string>
+  <string id="sftp_help">This policy defines SFTP support on OpenSSH server
 
-  <string id="sshd-gssapi-auth">Поддержка авторизации с использованием GSS API на сервере sshd</string>
-  <string id="sshd-gssapi-auth_help">Поддержка авторизации с использованием GSS API на сервере sshd</string>
-  <string id="sshd-gssapi-auth_disabled">Поддержка GSS API для sshd отключена</string>
-  <string id="sshd-gssapi-auth_enabled">Поддержка GSS API для sshd включена</string>
-  <string id="sshd-gssapi-auth_default">Поддержка GSS API для sshd отключена</string>
+Enable - Enable SFTP support on the OpenSSH server
+Disable - Disable SFTP support on the OpenSSH server 
+  </string>
+  <string id="sftp_enabled">Enable</string>
+  <string id="sftp_disabled">Disable</string>
 
-  <string id="sshd-password-auth">Поддержка авторизации по паролю на сервере sshd</string>
-  <string id="sshd-password-auth_help">Поддержка авторизации по паролю на сервере sshd</string>
-  <string id="sshd-password-auth_enabled">Поддержка авторизации по паролю для sshd включена</string>
-  <string id="sshd-password-auth_disabled">Поддержка авторизации по паролю для sshd отключена</string>
-  <string id="sshd-password-auth_default">Поддержка авторизации по паролю для sshd включена</string>
+  <string id="sshd-allow-groups">Valid sshd user group whitelist</string>
+  <string id="sshd-allow-groups_help">This policy defines the functionality of the whitelist of valid sshd user groups
 
-  <string id="ssh-gssapi-auth">Поддержка авторизации с использованием GSS API на клиенте SSH</string>
-  <string id="ssh-gssapi-auth_help">Поддержка авторизации с использованием GSS API на клиенте SSH</string>
-  <string id="ssh-gssapi-auth_disabled">Поддержка авторизации с использованием GSS API на клиенте SSH отключена</string>
-  <string id="ssh-gssapi-auth_enabled">Поддержка авторизации с использованием GSS API на клиенте SSH включена</string>
-  <string id="ssh-gssapi-auth_default">Поддержка авторизации с использованием GSS API на клиенте SSH отключена</string>
+Enable - The white list of valid sshd user groups is enabled
+Disable - The white list of valid sshd user groups is disabled
+  </string>
+  <string id="sshd-allow-groups_enabled">Enable</string>
+  <string id="sshd-allow-groups_disabled">Disable</string>
+
+  <string id="sshd-gssapi-auth">GSS API authorization support on sshd server</string>
+  <string id="sshd-gssapi-auth_help">This policy defines the functionality of authorization support using the GSS API on the sshd server
+
+Disable, Default - GSS API support on sshd server is disabled
+Enable - GSS API support on sshd server is enabled
+  </string>
+  <string id="sshd-gssapi-auth_disabled">Disable</string>
+  <string id="sshd-gssapi-auth_enabled">Enable</string>
+  <string id="sshd-gssapi-auth_default">Default</string>
+
+  <string id="sshd-password-auth">Password authorization support on sshd server</string>
+  <string id="sshd-password-auth_help">This policy defines the functionality of password authorization support on the sshd server
+
+Enable, Default - Password authorization support for sshd is enabled
+Disable - Password authorization support for sshd client is disabled 
+  </string>
+  <string id="sshd-password-auth_enabled">Enable</string>
+  <string id="sshd-password-auth_disabled">Disable</string>
+  <string id="sshd-password-auth_default">Default</string>
+
+  <string id="ssh-gssapi-auth">GSS API authorization support on SSH client</string>
+  <string id="ssh-gssapi-auth_help">This policy defines the functionality of authorization support using the GSS API on the sshd client
+
+Disable, Default - GSS API support on sshd client is disabled
+Enable - GSS API support on sshd client is disabled
+  </string>
+  <string id="ssh-gssapi-auth_disabled">Disable</string>
+  <string id="ssh-gssapi-auth_enabled">Enable</string>
+  <string id="ssh-gssapi-auth_default">Default</string>
+
 
   <string id="su">Permissions for /bin/su</string>
-  <string id="su_help">This policy defines Permissions for /bin/su</string>
+  <string id="su_help">This policy defines permissions for /bin/su
+
+Any user - Any user is permitted to run /bin/su
+Wheel superusers - Any user has the right to run /bin/su, but only users of the "wheel" group can elevate privileges to the superuser
+Only wheel - Only users of the "wheel" group are allowed to run /bin/su
+Only root - Only root is permitted to run /bin/su
+  </string>
   <string id="su_public">Any user is permitted to run /bin/su</string>
-  <string id="su_wheel">Любой пользователь имеет право на запуск /bin/su, но только пользователи группы "wheel" могут повышать уровень привилегий до суперпользователя</string>
-  <string id="su_wheelonly">Только пользователи группы "wheel" имеют право на запуск /bin/su</string>
-  <string id="su_restricted">Only root is permitted to run /bin/su</string>
+  <string id="su_wheel">Wheel superusers</string>
+  <string id="su_wheelonly">Only wheel</string>
+  <string id="su_restricted">Only root</string>
 
   <string id="sudo">Permissions for /usr/bin/sudo</string>
-  <string id="sudo_help">This policy defines Permissions for /usr/bin/sudo</string>
-  <string id="sudo_public">Any user is permitted to run /usr/bin/sudo</string>
-  <string id="sudo_wheelonly">Users from the "wheel" group are permitted to run /usr/bin/sudo</string>
-  <string id="sudo_restricted">Only root is permitted to run /usr/bin/sudo</string>
+  <string id="sudo_help">This policy defines Permissions for /usr/bin/sudo
 
-  <string id="sudoers">Передача родительского окружения в sudo</string>
-  <string id="sudoers_help">Передача родительского окружения в sudo</string>
-  <string id="sudoers_strict">Не передавать дочернему процессу переменные окружения</string>
-  <string id="sudoers_relaxed">Передавать дочернему процессу переменные окружения</string>
+Any user - Any user is permitted to run /usr/bin/sudo
+Only wheel - Users from the "wheel" group are permitted to run /usr/bin/sudo
+Only root - Only root is permitted to run /usr/bin/sudo
+  </string>
+  <string id="sudo_public">Any user</string>
+  <string id="sudo_wheelonly">Only wheel</string>
+  <string id="sudo_restricted">Only root</string>
+
+  <string id="sudoers">Passing the parent environment to sudo</string>
+  <string id="sudoers_help">This policy determines whether the parent environment (environment variables) is passed to sudo
+
+Disable - Do not pass environment variables to the child process
+Enable - Pass environment variables to the child process
+  </string>
+  <string id="sudoers_strict">Disable</string>
+  <string id="sudoers_relaxed">Enable</string>
 
   <string id="sudoreplay">Permissions for /usr/bin/sudoreplay</string>
-  <string id="sudoreplay_help">This policy defines Permissions for /usr/bin/sudoreplay</string>
-  <string id="sudoreplay_public">Any user is permitted to run /usr/bin/sudoreplay</string>
-  <string id="sudoreplay_wheelonly">Users from the "wheel" group are permitted to run /usr/bin/sudoreplay</string>
-  <string id="sudoreplay_restricted">Only root is permitted to run /usr/bin/sudoreplay</string>
+  <string id="sudoreplay_help">This policy defines Permissions for /usr/bin/sudoreplay
 
-  <string id="sudowheel">Запрос пароля sudo для пользователей группы "wheel"</string>
-  <string id="sudowheel_help">Запрос пароля sudo для пользователей группы "wheel"</string>
-  <string id="sudowheel_disabled">Включить запрос пароля sudo для пользователей группы "wheel"</string>
-  <string id="sudowheel_enabled">Отключить запрос пароля sudo для пользователей группы "wheel"</string>
+Any user - Any user is permitted to run /usr/bin/sudoreplay
+Only wheel - Users from the "wheel" group are permitted to run /usr/bin/sudoreplay
+Only root - Only root is permitted to run /usr/bin/sudoreplay
+  </string>
+  <string id="sudoreplay_public">Any user</string>
+  <string id="sudoreplay_wheelonly">Only wheel</string>
+  <string id="sudoreplay_restricted">Only root</string>
+
+  <string id="sudowheel">Request sudo password for users of the "wheel" group</string>
+  <string id="sudowheel_help">This policy determines whether to make a sudo password request for users of the "wheel" group
+
+Enable - Enable sudo password request for users of the "wheel" group
+Disable - Disable sudo password request for users of the "wheel" group
+  </string>
+  <string id="sudowheel_enabled">Enable</string>
+  <string id="sudowheel_disabled">Disable</string>
 
   <string id="system-auth">Authentication method</string>
-  <string id="system-auth_help">Authentication method</string>
-  <string id="system-auth_krb5">Использовать Kerberos 5 для аутентификации</string>
-  <string id="system-auth_krb5_ccreds">Использовать Kerberos 5 с локальным кэшем для аутентификации</string>
-  <string id="system-auth_ldap">Использовать LDAP для аутентификации</string>
-  <string id="system-auth_local">Использовать локальную базу данных для аутентификации</string>
-  <string id="system-auth_multi">Использовать все доступные методы аутентификации</string>
-  <string id="system-auth_pkcs11">Использовать PKCS11 для аутентификации</string>
-  <string id="system-auth_winbind">Использовать WInbind для аутентификации</string>
+  <string id="system-auth_help">This policy defines the method of user authentication
+
+Kerberos 5 - Use Kerberos 5 for authentication
+Krb5 local cache - Use Kerberos 5 with a local cache for authentication
+LDAP - Use LDAP for authentication 
+Local - Use local database for authentication
+Multi (use all) - Use all available authentication methods 
+PKCS11 - Use PKCS11 for authentication
+Winbind - Use Winbind for authentication
+  </string>
+  <string id="system-auth_krb5">Kerberos 5</string>
+  <string id="system-auth_krb5_ccreds">Krb5 local cache</string>
+  <string id="system-auth_ldap">LDAP</string>
+  <string id="system-auth_local">Local</string>
+  <string id="system-auth_multi">Multi (use all)</string>
+  <string id="system-auth_pkcs11">PKCS11</string>
+  <string id="system-auth_winbind">Winbind</string>
 
   <string id="tcb_chkpwd">Permissions for /usr/lib/chkpwd/tcb_chkpwd</string>
-  <string id="tcb_chkpwd_help">This policy defines Permissions for /usr/lib/chkpwd/tcb_chkpwd</string>
-  <string id="tcb_chkpwd_traditional">Любой пользователь может быть аутентифицирован с помощью /usr/lib/chkpwd/tcb_chkpwd при отключенном tcb</string>
-  <string id="tcb_chkpwd_tcb">Любой пользователь может быть аутентифицирован с помощью /usr/lib/chkpwd/tcb_chkpwd при включенном tcb</string>
-  <string id="tcb_chkpwd_restricted">Только суперпользователь может быть аутентифицирован с помощью /usr/lib/chkpwd/tcb_chkpwd</string>
+  <string id="tcb_chkpwd_help">This policy defines permissions for privileged helper /usr/lib/chkpwd/tcb_chkpwd
 
-  <string id="udisks2">Правила подключения носителей данных</string>
-  <string id="udisks2_help">Правила подключения носителей данных</string>
-  <string id="udisks2_default">Подключать носители данных индивидуально для каждого пользователя</string>
-  <string id="udisks2_shared">Подключать носители данных в общедоступную точку</string>
+Any user with scheme tcb disabled - Any user can be authenticated using /usr/lib/chkpwd/tcb_chkpwd privileged helper when tcb scheme is disabled
+Any user with scheme tcb enabled - Any user can be authenticated using /usr/lib/chkpwd/tcb_chkpwd privileged helper when tcb scheme is enabled
+Only root - Only the superuser can be authenticated with /usr/lib/chkpwd/tcb_chkpwd
+  </string>
+  <string id="tcb_chkpwd_traditional">Any user with tcb disabled</string>
+  <string id="tcb_chkpwd_tcb">Any user with tcb enabled</string>
+  <string id="tcb_chkpwd_restricted">Only root</string>
+
+  <string id="udisks2">Rules for connecting USB storage media</string>
+  <string id="udisks2_help">This policy defines the rules for connecting USB? storage media
+
+Default - Connect storage media individually (/run/media/$user/) for each user
+Shared - Connect storage media to a public point (/media/)
+  </string>
+  <string id="udisks2_default">Default</string>
+  <string id="udisks2_shared">Shared</string>
 
   <string id="virtualbox">Permissions for VirtualBox</string>
-  <string id="virtualbox_help">This policy defines Permissions for VirtualBox</string>
-  <string id="virtualbox_public">Any user is permitted to use VirtualBox</string>
-  <string id="virtualbox_vboxusers">Users of the "vboxusers" group are permitted to use VirtualBox</string>
-  <string id="virtualbox_restricted">Only root is permitted to use VirtualBox</string>
+  <string id="virtualbox_help">This policy defines permissions for VirtualBox
 
-  <string id="wireshark-capture">Permissions for /usr/bin/dumpcap</string>
-  <string id="wireshark-capture_help">This policy defines Permissions for /usr/bin/dumpcap</string>
-  <string id="wireshark-capture_public">Любой пользователь имеет право на запуск /usr/bin/dumpcap, захват трафика включен</string>
-  <string id="wireshark-capture_relaxed">Любой пользователь имеет право на запуск /usr/bin/dumpcap, захват трафика отключен</string>
-  <string id="wireshark-capture_netadmin">Пользователи группы "netadmin" имеют право на запуск /usr/bin/dumpcap</string>
-  <string id="wireshark-capture_restricted">Только суперпользователь имеет право на запуск /usr/bin/dumpcap</string>
+Any user - Any user is permitted to use VirtualBox
+Group vboxusers - Users of the "vboxusers" group are permitted to use VirtualBox
+Only root - Only root is permitted to use VirtualBox
+  </string>
+  <string id="virtualbox_public">Any user</string>
+  <string id="virtualbox_vboxusers">Group vboxusers</string>
+  <string id="virtualbox_restricted">Only root</string>
+
+  <string id="wireshark-capture">Functionality and permissions for wireshark-capture (dumpcap)</string>
+  <string id="wireshark-capture_help">This policy defines the functionality (modes) of permission for wireshark-capture (/usr/bin/dumpcap)
+
+Any user - Any user has the right to run /usr/bin/dumpcap, traffic capture is enabled
+Any user, no traffic capture - Any user has the right to run /usr/bin/dumpcap, traffic capture is disabled
+Group netadmin - Users of the group "netadmin" have the right to run /usr/bin/dumpcap
+Only root - Only the superuser has the right to run /usr/bin/dumpcap
+  </string>
+  <string id="wireshark-capture_public">Any user</string>
+  <string id="wireshark-capture_relaxed">Any user, no traffic capture</string>
+  <string id="wireshark-capture_netadmin">Group netadmin</string>
+  <string id="wireshark-capture_restricted">Only root</string>
 
   <string id="write">Permissions for /usr/bin/write</string>
-  <string id="write_help">This policy defines Permissions for /usr/bin/write</string>
-  <string id="write_public">Any user is permitted to run /usr/bin/write</string>
-  <string id="write_restricted">Only root is permitted to run /usr/bin/write</string>
+  <string id="write_help">This policy defines permissions for /usr/bin/write
+
+Any user - Any user is permitted to run /usr/bin/write
+Only root - Only root is permitted to run /usr/bin/write
+  </string>
+  <string id="write_public">Any user</string>
+  <string id="write_restricted">Only root</string>
 
   <string id="xdg-user-dirs">Функция сохранения списка пользовательских директорий</string>
   <string id="xdg-user-dirs_help">Функция сохранения списка пользовательских директорий</string>
@@ -543,7 +645,9 @@ Group netadmin (in containers) - Users from the "netadmin" group are permitted t
     <dropdownList defaultItem="1" refId="rpcbind_setter">/sbin/rpcbind будет принимать только локальные запросы</dropdownList>
   </presentation>
   <presentation id="sftp">
-    <dropdownList defaultItem="0" refId="sftp_setter">Включить поддержку SFTP на сервере OpenSSH</dropdownList>
+    <dropdownList defaultItem="0" refId="sftp_setter">SFTP support on OpenSSH server:
+
+    </dropdownList>
   </presentation>
   <presentation id="sshd-allow-groups">
     <dropdownList defaultItem="1" refId="sshd-allow-groups_setter">Белый список допустимых групп пользователей sshd выключен</dropdownList>
