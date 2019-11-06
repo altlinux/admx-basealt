@@ -10,6 +10,18 @@
     <category name="Control" displayName="$(string.SecurityControl)">
       <parentCategory ref="system:Base" />
     </category>
+     <category name="ControlServices" displayName="$(string.ControlServices)">
+       <parentCategory ref="Control" />
+     </category>
+     <category name="ControlAppCD_DVD" displayName="$(string.ControlAppCD_DVD)">
+       <parentCategory ref="Control" />
+     </category>
+     <category name="ControlMounting" displayName="$(string.ControlMounting)">
+       <parentCategory ref="Control" />
+     </category>
+     <category name="ControlAppTools" displayName="$(string.ControlAppTools)">
+       <parentCategory ref="Control" />
+     </category>
   </categories>
   <policies>
     <policy name="ExecuteSuProgram" class="Machine" displayName="$(string.ExecuteSuProgram)" explainText="$(string.ExecuteSuProgram_Help)" presentation="$(presentation.ExecuteSuProgram)" key="Software\BaseALT\Policies\Control">
