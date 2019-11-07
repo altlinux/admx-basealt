@@ -46,7 +46,7 @@ class control:
         enum.set('required', 'true')
 
         for num, val in enumerate(self.variants):
-            item = ET.SubElement(enum, 'enum')
+            item = ET.SubElement(enum, 'item')
             item.set('displayName', '$(string.{}_{})'.format(self.name, val))
 
             value = ET.SubElement(item, 'value')
@@ -137,7 +137,6 @@ def parse_control(proc):
     for cnt in controls:
         print('--------------------------------')
         print(cnt.admx_xml_str())
-    #    print(cnt.adml_xml_stringtable_str())
         print(cnt.adml_xml_presentation_str())
         get_descriptions(cnt.adml_xml_stringtable(), 'en-us')
         get_descriptions(cnt.adml_xml_stringtable(), 'ru-ru')
