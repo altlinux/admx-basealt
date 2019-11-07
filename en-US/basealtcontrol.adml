@@ -18,7 +18,9 @@
       <string id="ExecuteSuProgram_Help">Policy allows to control access to execute program /bin/su
 
 Wheel superusers - Any user, but only "wheel" group members can switch to superuser
+
 Only wheel - Only "wheel" group members
+
 Only root - Only to superuser
       </string>
       <string id="ExecuteSuProgram_Public">Any user</string>
@@ -31,7 +33,9 @@ Only root - Only to superuser
       <string id="at_help">The policy allows you to control the behavior and access rights to run the job queue at (access rights to run /usr/bin/at)
 
 All users - All users are allowed to run /usr/bin/at
+
 Only root - Only root allowed to run /usr/bin/at
+
 Compatibility mode - mode "atdaemon", should not be used
       </string>
       <string id="at_public">All users</string>
@@ -42,6 +46,7 @@ Compatibility mode - mode "atdaemon", should not be used
       <string id="chage_help">Policy allows to control access to execute program /usr/bin/chage
 
 Any user - Any user can determine when he should change his/her password using the "chage" command
+
 Only root - Only root can execute /usr/bin/chage
       </string>
       <string id="chage_public">Any user</string>
@@ -51,6 +56,7 @@ Only root - Only root can execute /usr/bin/chage
       <string id="chfn_help">The policy allows you to control behavior and access rights. the chfn command (/usr/bin/chfn), which can change the fields (full name, cabinet number, office number and home phone number for the user account) for your account, subject to the restrictions in /etc/login.defs. (The default configuration does not allow users to change their full name.). In addition, only the superuser can use the -o option to change the undefined parts of the GECOS field
 
 Any user - Any user can use the command /usr/bin/chfn
+
 Only root - Only root can execute /usr/bin/chfn
       </string>  
       <string id="chfn_public">Any user</string>
@@ -60,6 +66,7 @@ Only root - Only root can execute /usr/bin/chfn
       <string id="chsh_help">The policy allows you to control access rights to the chsh command (/usr/bin/chsh), which changes the user login shell: this defines the name of the initial user login command; an ordinary user can change the login shell only for his account; superuser can change login shell for any account
 
 All users - All users are allowed to use /usr/bin/chsh
+
 Only root - Only root can use /usr/bin/chsh
       </string>
       <string id="chsh_public">All users</string>
@@ -69,6 +76,7 @@ Only root - Only root can use /usr/bin/chsh
       <string id="chrony_help">This policy will determine the operation mode (configuration) of the Chrony daemon that implements the functions of the Network Time Protocol
 
 Server - If selected, uncomment or add the “allow all” directive to daemon configuration file, see documentation for details
+
 Client - if selected, it will comment out the “allow” directive in the daemon configuration file, see the documentation for details
       </string>
       <string id="chrony_server">Server</string>
@@ -78,7 +86,9 @@ Client - if selected, it will comment out the “allow” directive in the daemo
       <string id="consolehelper_help">This policy defines access rights to the consolehelper tool (/usr/lib/consolehelper/priv/auth), which allows console users to run system programs by performing authentication through PAM (which can be configured to trust all console users or to request a password at the discretion of the system administrator). When possible, authentication is performed graphically; otherwise, this is done in the text console from which consolehelper was started.
 
 Any user - Any user can use consolehelper
+
 Only wheel - Only members of the wheel group can use consolehelper
+
 Only root - Only root can use consolehelper
       </string>
 
@@ -90,6 +100,7 @@ Only root - Only root can use consolehelper
       <string id="crontab_help">This policy defines access rights to the crontab tool (/usr/bin/crontab)
 
 Any user - Any user can use crontab
+
 Only root - Only root can use crantab
       </string>
       <string id="crontab_public">Any user</string>
@@ -99,6 +110,7 @@ Only root - Only root can use crantab
       <string id="cups_help">This policy defines the behavior of CUPS
 
 External IPP interface - External IPP interface are available for user
+
 Only local utilities - Only local utilities can work with CUPS
       </string>
       <string id="cups_server">External IPP interface</string>
@@ -108,7 +120,9 @@ Only local utilities - Only local utilities can work with CUPS
       <string id="dvd-ram-control_help">This policy defines access rights to the /usr/bin/dvd-ram-control
 
 Only cdwriter - Only cdwriter group members can execute /usr/bin/dvd-ram-control
+
 Only root - Only root can execute /usr/bin/dvd-ram-control
+
 Compatibility mode - Compatibility mode, should not be used
       </string>
       <string id="dvd-ram-control_public">Only cdwriter</string>
@@ -119,7 +133,9 @@ Compatibility mode - Compatibility mode, should not be used
       <string id="dvd_rw-booktype_help">This policy defines access rights to the /usr/bin/dvd+rw-booktype
 
 Only cdwriter - Only cdwriter group members can execute /usr/bin/dvd+rw-booktype
+
 Only root - Only root can execute /usr/bin/dvd+rw-booktype
+
 Compatibility mode - Compatibility mode, should not be used
       </string>
       <string id="dvd_rw-booktype_public">Only cdwriter</string>
@@ -130,7 +146,9 @@ Compatibility mode - Compatibility mode, should not be used
       <string id="dvd_rw-format_help">This policy defines access rights to the /usr/bin/dvd+rw-format
 
 Only cdwriter - Only cdwriter group members can execute /usr/bin/dvd+rw-format
+
 Only root - Only root can execute /usr/bin/dvd+rw-format
+
 Compatibility mode - Compatibility mode, should not be used
       </string>
       <string id="dvd_rw-format_public">Only cdwriter</string>
@@ -141,7 +159,9 @@ Compatibility mode - Compatibility mode, should not be used
       <string id="dvd_rw-mediainfo_help">This policy defines access rights to the /usr/bin/dvd+rw-mediainfo
 
 Only cdwriter - Only cdwriter group members can execute /usr/bin/dvd+rw-mediainfo
+
 Only root - Only root can execute /usr/bin/dvd+rw-mediainfo
+
 Compatibility mode - Compatibility mode, should not be used
       </string>
       <string id="dvd_rw-mediainfo_public">Only cdwriter</string>
@@ -152,8 +172,11 @@ Compatibility mode - Compatibility mode, should not be used
       <string id="fusermount_help">This policy defines access permissions for FUSE file system mounts (execution of programs  /usr/bin/fusermount and /usr/bin/fusermount3)
 
 Any user - Any user can execute /usr/bin/fusermount and /usr/bin/fusermount3
+
 Only fuse - Only "fuse" group members can execute /usr/bin/fusermount and /usr/bin/fusermount3
+
 Only wheel - Only "wheel" group members can execute /usr/bin/fusermount and /usr/bin/fusermount3
+
 Only root _ Only root can execute /usr/bin/fusermount and /usr/bin/fusermount3
       </string>
       <string id="fusermount_public">Any user</string>
@@ -165,7 +188,9 @@ Only root _ Only root can execute /usr/bin/fusermount and /usr/bin/fusermount3
       <string id="gpasswd_help">The policy defines the rights to run the tool /usr/bin/gpasswd
 
 Any user - Any user can execute /usr/bin/gpasswd
+
 Only wheel - Only wheel group members can execute /usr/bin/gpasswd
+
 Only root - Only root can execute /usr/bin/gpasswd
       </string>
       <string id="gpasswd_public">Any user</string>
@@ -176,7 +201,9 @@ Only root - Only root can execute /usr/bin/gpasswd
       <string id="groupmems_help">The policy defines the rights to execution of program /usr/bin/groupmems
 
 Any user - Any user can execute /usr/bin/groupmems
+
 Only wheel - Only wheel group members can execute /usr/bin/groupmems
+
 Only root - Only root can execute /usr/bin/groupmems
       </string>
       <string id="groupmems_public">Any user</string>
@@ -187,7 +214,9 @@ Only root - Only root can execute /usr/bin/groupmems
       <string id="growisofs_help">The policy defines the rights to use the tool /usr/bin/growisofs
 
 Only cdwriter - Only "cdwriter" group members can execute /usr/bin/growisofs
+
 Only root - Only root can execute /usr/bin/growisofs
+
 Compatibility mode - Compatibility mode, should not be used
       </string>
       <string id="growisofs_public">Only cdwriter</string>
@@ -198,7 +227,9 @@ Compatibility mode - Compatibility mode, should not be used
       <string id="hddtemp_help">Permission to use the tool /usr/sbin/hddtemp - monitor hard drive temperature
 
 Any user - Any user can execute /usr/sbin/hddtemp
+
 Only wheel - Only wheel group members can execute /usr/sbin/hddtemp
+
 Only root - Only root can execute /usr/sbin/hddtemp
       </string>
       <string id="hddtemp_public">Any user</string>
@@ -209,7 +240,9 @@ Only root - Only root can execute /usr/sbin/hddtemp
       <string id="kvm_help">The policy determines the rights to QEMU KVM devices
 
 Any user - Any user has the right to use KVM
+
 Group vmusers - Users of the "vmusers" group have the right to use KVM
+
 Only root - Only superuser (root) has the right to use KVM
       </string>
       <string id="kvm_public">Any user</string>
@@ -220,6 +253,7 @@ Only root - Only superuser (root) has the right to use KVM
       <string id="ldap-reverse-dns-lookup_help">The policy determines whether reverse DNS lookups are allowed for OpenLDAP queries
 
 Default, Allow - Perform reverse DNS lookup on OpenLDAP queries
+
 Not allow - Do not perform reverse DNS lookups on OpenLDAP queries
       </string>
       <string id="ldap-reverse-dns-lookup_allow">Allow</string>
@@ -230,9 +264,13 @@ Not allow - Do not perform reverse DNS lookups on OpenLDAP queries
       <string id="ldap-tls-cert-check_help">The policy defines the mode of certificate verification when installing TLS of connections OpenLDAP
 
 Default - Only establish a connection with the correct certificate
+
 Never - Do not perform any checks
+
 Allow - Establish a connection even if there is no or incorrect certificate
+
 Try - Establish a connection if there is no or with a valid certificate
+
 Demand - Only establish a connection with the correct certificate
       </string>
       <string id="ldap-tls-cert-check_default">Default</string>
@@ -245,8 +283,11 @@ Demand - Only establish a connection with the correct certificate
       <string id="mount_help">This policy defines Permissions for /bin/mount and /bin/umount
 
 Any user - Any user is permitted to run /bin/mount and /bin/umount
+
 Only wheel - Users from the "wheel" group are permitted to run /bin/mount and /bin/umount
+
 Unprivileged user - Any user is permitted to run /bin/mount and /bin/umount for unprivileged actions
+
 Only root - Only root is permitted to run /bin/mount and /bin/umount
       </string>
       <string id="mount_public">Any user</string>
@@ -258,7 +299,9 @@ Only root - Only root is permitted to run /bin/mount and /bin/umount
       <string id="newgrp_help">This policy defines Permissions for /usr/bin/newgrp
 
 Any user - Any user is permitted to run /usr/bin/newgrp
+
 Only wheel - Users from the "wheel" group are permitted to run /usr/bin/newgrp
+
 Only root - Only root is permitted to run /usr/bin/newgrp
       </string>
       <string id="newgrp_public">Any user</string>
@@ -269,7 +312,9 @@ Only root - Only root is permitted to run /usr/bin/newgrp
       <string id="nfsmount_help">This policy defines Permissions for /sbin/mount.nfs
 
 Any user - Any user is permitted to run /sbin/mount.nfs
+
 Only wheel - Users from the "wheel" group are permitted to run /sbin/mount.nfs
+
 Only root - Only root is permitted to run /sbin/mount.nfs
       </string>
       <string id="nfsmount_public">Any user</string>
@@ -280,6 +325,7 @@ Only root - Only root is permitted to run /sbin/mount.nfs
       <string id="pam_mktemp_help">This policy determines whether to create individual temporary directories for users
 
 Disabled - Disable the creation of individual temporary directories for users
+
 Enabled - Enable the creation of individual temporary directories for users
       </string>
 
@@ -287,7 +333,9 @@ Enabled - Enable the creation of individual temporary directories for users
       <string id="passwd_help">Define a password management policy using the command /usr/bin/passwd
 
 TCB - Any user can change his own password using /usr/bin/passwd when tcb scheme is enabled
+
 Traditional - Any user can change his own password using /usr/bin/passwd when tcb scheme is disabled
+
 Only root - Only superuser (root) has the right to change user passwords
       </string>
       <string id="passwd_tcb">TCB</string>
@@ -298,6 +346,7 @@ Only root - Only superuser (root) has the right to change user passwords
       <string id="passwdqc-enforce_help">Policy manages passwords for sufficient password strength
 
 Everyone - Enable password complexity checks for all users
+
 Users only - Enable password complexity checks for all but superusers
       </string>
       <string id="passwdqc-enforce_everyone">Everyone</string>
@@ -307,9 +356,13 @@ Users only - Enable password complexity checks for all but superusers
       <string id="ping_help">This policy defines Permissions for /usr/bin/ping
 
 Any user - Any user is permitted to run /usr/bin/ping
+
 Group netadmin - Users from the "netadmin" group are permitted to run /usr/bin/ping
+
 Only root - Only root is permitted to run /usr/bin/ping
+
 Any user (in containers) - Any user is permitted to run /usr/bin/ping (in containers)
+
 Group netadmin (in containers) - Users from the "netadmin" group are permitted to run /usr/bin/ping (in containers)
       </string>
       <string id="ping_public">Any user</string>
@@ -322,7 +375,9 @@ Group netadmin (in containers) - Users from the "netadmin" group are permitted t
       <string id="postfix_help">This policy defines the Postfix (Post Transport Agent) MTA operating mode
 
 Local (disabled) - Postfix MTA is disabled
+
 Server (filters off) - Postfix MTA enabled without mail filters
+
 Filter - Postfix MTA is enabled with mail filters
       </string>
       <string id="postfix_local">Local (disabled)</string>
@@ -333,7 +388,9 @@ Filter - Postfix MTA is enabled with mail filters
       <string id="postqueue_help">This policy defines Permissions for /usr/bin/postqueue
 
 Any user - Any user is permitted to run /usr/bin/postqueue
+
 Group mailadm - Users from the "mailadm" group are permitted to run /usr/bin/postqueue
+
 Only root - Only root is permitted to run /usr/bin/postqueue
       </string>
       <string id="postqueue_public">Any user</string>
@@ -344,8 +401,11 @@ Only root - Only root is permitted to run /usr/bin/postqueue
       <string id="ppp_help">This policy defines Permissions for /usr/sbin/pppd
 
 Only root - Only root is permitted to run /usr/sbin/pppd
-Traditional - Any user has the right to run /usr/sbin/pppd without elevating privileges 
+
+Traditional - Any user has the right to run /usr/sbin/pppd without elevating privileges
+
 Group uucp -  Users of the "uucp" group have the right to run /usr/sbin/pppd with superuser rights
+
 Public - Any user has the right to run /usr/sbin/pppd with superuser rights
       </string>
       <string id="ppp_restricted">Only root is permitted to run /usr/sbin/pppd</string>
@@ -357,6 +417,7 @@ Public - Any user has the right to run /usr/sbin/pppd with superuser rights
       <string id="rpcbind_help">This policy defines the mode of operation of rpcbind (/sbin/rpcbind)
 
 Server - rpcbind will listen for incoming connections from the network
+
 Local - rpcbind will only accept local requests
       </string>
       <string id="rpcbind_server">Server</string>
@@ -366,6 +427,7 @@ Local - rpcbind will only accept local requests
       <string id="sftp_help">This policy defines SFTP support on OpenSSH server
 
 Disabled - Disable SFTP support on the OpenSSH server
+
 Enabled - Enable SFTP support on the OpenSSH server
       </string>
 
@@ -373,6 +435,7 @@ Enabled - Enable SFTP support on the OpenSSH server
       <string id="sshd-allow-groups_help">This policy defines the functionality of the whitelist of valid sshd user groups
 
 Disabled - The white list of valid sshd user groups is disabled
+
 Enabled - The white list of valid sshd user groups is enabled
       </string>
 
@@ -380,6 +443,7 @@ Enabled - The white list of valid sshd user groups is enabled
       <string id="sshd-gssapi-auth_help">This policy defines the functionality of authorization support using the GSS API on the sshd server
 
 Disable, Default - GSS API support on sshd server is disabled
+
 Enable - GSS API support on sshd server is enabled
        </string>
       <string id="sshd-gssapi-auth_disabled">Disable</string>
@@ -391,6 +455,7 @@ Enable - GSS API support on sshd server is enabled
 
 
 Enable, Default - Password authorization support for sshd is enabled
+
 Disable - Password authorization support for sshd client is disabled
       </string>
       <string id="sshd-password-auth_enabled">Enable</string>
@@ -401,6 +466,7 @@ Disable - Password authorization support for sshd client is disabled
       <string id="ssh-gssapi-auth_help">This policy defines the functionality of authorization support using the GSS API on the sshd client
 
 Disable, Default - GSS API support on sshd client is disabled
+
 Enable - GSS API support on sshd client is disabled
       </string>
       <string id="ssh-gssapi-auth_disabled">Disable</string>
@@ -411,8 +477,11 @@ Enable - GSS API support on sshd client is disabled
       <string id="su_help">This policy defines permissions for /bin/su
 
 Any user - Any user is permitted to run /bin/su
+
 Wheel superusers - Any user has the right to run /bin/su, but only users of the "wheel" group can elevate privileges to the superuser
+
 Only wheel - Only users of the "wheel" group are allowed to run /bin/su
+
 Only root - Only root is permitted to run /bin/su
       </string>
       <string id="su_public">Any user is permitted to run /bin/su</string>
@@ -424,7 +493,9 @@ Only root - Only root is permitted to run /bin/su
       <string id="sudo_help">This policy defines Permissions for /usr/bin/sudo
 
 Any user - Any user is permitted to run /usr/bin/sudo
+
 Only wheel - Users from the "wheel" group are permitted to run /usr/bin/sudo
+
 Only root - Only root is permitted to run /usr/bin/sudo
       </string>
       <string id="sudo_public">Any user</string>
@@ -435,6 +506,7 @@ Only root - Only root is permitted to run /usr/bin/sudo
       <string id="sudoers_help">This policy determines whether the parent environment (environment variables) is passed to sudo
 
 Strict - Do not pass environment variables to the child process
+
 Relaxed - Pass environment variables to the child process
       </string>
       <string id="sudoers_strict">Strict</string>
@@ -444,7 +516,9 @@ Relaxed - Pass environment variables to the child process
       <string id="sudoreplay_help">This policy defines Permissions for /usr/bin/sudoreplay
 
 Any user - Any user is permitted to run /usr/bin/sudoreplay
+
 Only wheel - Users from the "wheel" group are permitted to run /usr/bin/sudoreplay
+
 Only root - Only root is permitted to run /usr/bin/sudoreplay
       </string>
       <string id="sudoreplay_public">Any user</string>
@@ -455,6 +529,7 @@ Only root - Only root is permitted to run /usr/bin/sudoreplay
       <string id="sudowheel_help">This policy determines whether to make a sudo password request for users of the "wheel" group
 
 Disabled - Disable sudo password request for users of the "wheel" group
+
 Enabled - Enable sudo password request for users of the "wheel" group
       </string>
 
@@ -462,12 +537,19 @@ Enabled - Enable sudo password request for users of the "wheel" group
       <string id="system-auth_help">This policy defines the method of user authentication
 
 Kerberos 5 - Use Kerberos 5 for authentication
+
 Krb5 local cache - Use Kerberos 5 with a local cache for authentication
+
 LDAP - Use LDAP for authentication 
+
 Local - Use local database for authentication
-Multi (use all) - Use all available authentication methods 
+
+Multi (use all) - Use all available authentication methods
+
 PKCS11 - Use PKCS11 for authentication
+
 Winbind - Use Winbind for authentication
+
 SSSD - Use System Security Services Daemon authentication method
       </string>
       <string id="system-auth_krb5">Kerberos 5</string>
@@ -483,7 +565,9 @@ SSSD - Use System Security Services Daemon authentication method
       <string id="tcb_chkpwd_help">This policy defines permissions for privileged helper /usr/lib/chkpwd/tcb_chkpwd
 
 Any user with scheme tcb disabled - Any user can be authenticated using /usr/lib/chkpwd/tcb_chkpwd privileged helper when tcb scheme is disabled
+
 Any user with scheme tcb enabled - Any user can be authenticated using /usr/lib/chkpwd/tcb_chkpwd privileged helper when tcb scheme is enabled
+
 Only root - Only the superuser can be authenticated with /usr/lib/chkpwd/tcb_chkpwd
       </string>
       <string id="tcb_chkpwd_traditional">Any user with tcb disabled</string>
@@ -494,6 +578,7 @@ Only root - Only the superuser can be authenticated with /usr/lib/chkpwd/tcb_chk
       <string id="udisks2_help">This policy defines the rules for connecting USB? storage media
 
 Default - Connect storage media individually (/run/media/$user/) for each user
+
 Shared - Connect storage media to a public point (/media/)
       </string>
       <string id="udisks2_default">Default</string>
@@ -503,7 +588,9 @@ Shared - Connect storage media to a public point (/media/)
       <string id="virtualbox_help">This policy defines permissions for VirtualBox
 
 Any user - Any user is permitted to use VirtualBox
+
 Group vboxusers - Users of the "vboxusers" group are permitted to use VirtualBox
+
 Only root - Only root is permitted to use VirtualBox
       </string>
       <string id="virtualbox_public">Any user</string>
@@ -514,8 +601,11 @@ Only root - Only root is permitted to use VirtualBox
       <string id="wireshark-capture_help">This policy defines the functionality (modes) of permission for wireshark-capture (/usr/bin/dumpcap)
 
 Any user - Any user has the right to run /usr/bin/dumpcap, traffic capture is enabled
+
 Any user, no traffic capture - Any user has the right to run /usr/bin/dumpcap, traffic capture is disabled
+
 Group netadmin - Users of the group "netadmin" have the right to run /usr/bin/dumpcap
+
 Only root - Only the superuser has the right to run /usr/bin/dumpcap
       </string>
       <string id="wireshark-capture_public">Any user</string>
@@ -527,6 +617,7 @@ Only root - Only the superuser has the right to run /usr/bin/dumpcap
       <string id="write_help">This policy defines permissions for /usr/bin/write
 
 Any user - Any user is permitted to run /usr/bin/write
+
 Only root - Only root is permitted to run /usr/bin/write
       </string>
       <string id="write_public">Any user</string>
@@ -536,6 +627,7 @@ Only root - Only root is permitted to run /usr/bin/write
       <string id="xdg-user-dirs_help">This policy determines whether the function to save the list of user directories works (xdg-user-dirs)
 
 Disabled - The function to save the list of user directories is disabled
+
 Enabled - The option to save the list of user directories is enabled
       </string>
 
@@ -545,7 +637,9 @@ Enabled - The option to save the list of user directories is enabled
 Not Configured - Any user is permitted to run /usr/bin/Xorg
 
 Any user - Any user is permitted to run /usr/bin/Xorg
+
 Group xgrp - Users of the "xgrp" group are permitted to run /usr/bin/Xorg
+
 Only root - Only root is permitted to run /usr/bin/Xorg
       </string>
       <string id="xorg-server_public">Any user</string>
