@@ -28,7 +28,7 @@ Only root - Only to superuser
 
 
       <string id="at">Access rights and behavior of the job queue /usr/bin/at</string>
-      <string id="at_help">The policy allows you to control the behavior and access rights to run the job queue at (run /usr/bin/at)
+      <string id="at_help">The policy allows you to control the behavior and access rights to run the job queue at (access rights to run /usr/bin/at)
 
 All users - All users are allowed to run /usr/bin/at
 Only root - Only root allowed to run /usr/bin/at
@@ -46,7 +46,6 @@ Only root - Only root can execute /usr/bin/chage
       </string>
       <string id="chage_public">Any user</string>
       <string id="chage_restricted">Only root</string>
-
 
       <string id="chfn">Execution of command /usr/bin/chfn</string>
       <string id="chfn_help">The policy allows you to control behavior and access rights. the chfn command (/usr/bin/chfn), which can change the fields (full name, cabinet number, office number and home phone number for the user account) for your account, subject to the restrictions in /etc/login.defs. (The default configuration does not allow users to change their full name.). In addition, only the superuser can use the -o option to change the undefined parts of the GECOS field
@@ -66,6 +65,15 @@ Only root - Only root can use /usr/bin/chsh
       <string id="chsh_public">All users</string>
       <string id="chsh_restricted">Only root</string>
 
+      <string id="chrony">Chrony NTP daemon mode</string>
+      <string id="chrony_help">This policy will determine the operation mode (configuration) of the Chrony daemon that implements the functions of the Network Time Protocol
+
+Server - If selected, uncomment or add the “allow all” directive to daemon configuration file, see documentation for details
+Client - if selected, it will comment out the “allow” directive in the daemon configuration file, see the documentation for details
+      </string>
+      <string id="chrony_server">Server</string>
+      <string id="chrony_client">Client</string>
+
       <string id="consolehelper">Permission to use consolehelper</string>
       <string id="consolehelper_help">This policy defines access rights to the consolehelper tool (/usr/lib/consolehelper/priv/auth), which allows console users to run system programs by performing authentication through PAM (which can be configured to trust all console users or to request a password at the discretion of the system administrator). When possible, authentication is performed graphically; otherwise, this is done in the text console from which consolehelper was started.
 
@@ -73,6 +81,7 @@ Any user - Any user can use consolehelper
 Only wheel - Only members of the wheel group can use consolehelper
 Only root - Only root can use consolehelper
       </string>
+
       <string id="consolehelper_public">Any user</string>
       <string id="consolehelper_wheelonly">Only wheel</string>
       <string id="consolehelper_restricted">Only root can use consolehelper</string>
@@ -86,7 +95,7 @@ Only root - Only root can use crantab
       <string id="crontab_public">Any user</string>
       <string id="crontab_restricted">Only root</string>
 
-      <string id="cups">CPUS mode</string>
+      <string id="cups">CUPS mode</string>
       <string id="cups_help">This policy defines the behavior of CUPS
 
 External IPP interface - External IPP interface are available for user
@@ -140,11 +149,11 @@ Compatibility mode - Compatibility mode, should not be used
       <string id="dvd_rw-mediainfo_legacy">Compatibility mode</string>
 
       <string id="fusermount">Access rights to FUSE filesystems mount tools</string>
-      <string id="fusermount_help">Execution of program  /usr/bin/fusermount and /usr/bin/fusermount3
+      <string id="fusermount_help">This policy defines access permissions for FUSE file system mounts (execution of programs  /usr/bin/fusermount and /usr/bin/fusermount3)
 
 Any user - Any user can execute /usr/bin/fusermount and /usr/bin/fusermount3
-Only fuse - Only fuse group members can execute /usr/bin/fusermount and /usr/bin/fusermount3
-Only wheel - Only wheel group members can execute /usr/bin/fusermount and /usr/bin/fusermount3
+Only fuse - Only "fuse" group members can execute /usr/bin/fusermount and /usr/bin/fusermount3
+Only wheel - Only "wheel" group members can execute /usr/bin/fusermount and /usr/bin/fusermount3
 Only root _ Only root can execute /usr/bin/fusermount and /usr/bin/fusermount3
       </string>
       <string id="fusermount_public">Any user</string>
@@ -177,7 +186,7 @@ Only root - Only root can execute /usr/bin/groupmems
       <string id="growisofs">Permission to use /usr/bin/growisofs</string>
       <string id="growisofs_help">The policy defines the rights to use the tool /usr/bin/growisofs
 
-Only cdwriter - Only cdwriter group members can execute /usr/bin/growisofs
+Only cdwriter - Only "cdwriter" group members can execute /usr/bin/growisofs
 Only root - Only root can execute /usr/bin/growisofs
 Compatibility mode - Compatibility mode, should not be used
       </string>
@@ -211,7 +220,7 @@ Only root - Only superuser (root) has the right to use KVM
       <string id="ldap-reverse-dns-lookup_help">The policy determines whether reverse DNS lookups are allowed for OpenLDAP queries
 
 Default, Allow - Perform reverse DNS lookup on OpenLDAP queries
-Not allow - Perform reverse DNS lookup on OpenLDAP queries
+Not allow - Do not perform reverse DNS lookups on OpenLDAP queries
       </string>
       <string id="ldap-reverse-dns-lookup_allow">Allow</string>
       <string id="ldap-reverse-dns-lookup_deny">Not allow</string>
@@ -237,7 +246,7 @@ Demand - Only establish a connection with the correct certificate
 
 Any user - Any user is permitted to run /bin/mount and /bin/umount
 Only wheel - Users from the "wheel" group are permitted to run /bin/mount and /bin/umount
-Unprivileged - Any user is permitted to run /bin/mount and /bin/umount for unprivileged actions
+Unprivileged user - Any user is permitted to run /bin/mount and /bin/umount for unprivileged actions
 Only root - Only root is permitted to run /bin/mount and /bin/umount
       </string>
       <string id="mount_public">Any user</string>
@@ -270,11 +279,9 @@ Only root - Only root is permitted to run /sbin/mount.nfs
       <string id="pam_mktemp">Create individual temporary directories for users</string>
       <string id="pam_mktemp_help">This policy determines whether to create individual temporary directories for users
 
-Enable - Enable the creation of individual temporary directories for users
-Disable - Disable the creation of individual temporary directories for users
+Disabled - Disable the creation of individual temporary directories for users
+Enabled - Enable the creation of individual temporary directories for users
       </string>
-      <string id="pam_mktemp_enabled">Enable</string>
-      <string id="pam_mktemp_disabled">Disable</string>
 
       <string id="passwd">Managing passwords with passwd</string>
       <string id="passwd_help">Define a password management policy using the command /usr/bin/passwd
@@ -358,27 +365,23 @@ Local - rpcbind will only accept local requests
       <string id="sftp">SFTP support on OpenSSH server</string>
       <string id="sftp_help">This policy defines SFTP support on OpenSSH server
 
-Enable - Enable SFTP support on the OpenSSH server
-Disable - Disable SFTP support on the OpenSSH server 
+Disabled - Disable SFTP support on the OpenSSH server
+Enabled - Enable SFTP support on the OpenSSH server
       </string>
-      <string id="sftp_enabled">Enable</string>
-      <string id="sftp_disabled">Disable</string>
 
       <string id="sshd-allow-groups">Valid sshd user group whitelist</string>
       <string id="sshd-allow-groups_help">This policy defines the functionality of the whitelist of valid sshd user groups
 
-Enable - The white list of valid sshd user groups is enabled
-Disable - The white list of valid sshd user groups is disabled
+Disabled - The white list of valid sshd user groups is disabled
+Enabled - The white list of valid sshd user groups is enabled
       </string>
-      <string id="sshd-allow-groups_enabled">Enable</string>
-      <string id="sshd-allow-groups_disabled">Disable</string>
 
       <string id="sshd-gssapi-auth">GSS API authorization support on sshd server</string>
       <string id="sshd-gssapi-auth_help">This policy defines the functionality of authorization support using the GSS API on the sshd server
 
 Disable, Default - GSS API support on sshd server is disabled
 Enable - GSS API support on sshd server is enabled
-      </string>
+       </string>
       <string id="sshd-gssapi-auth_disabled">Disable</string>
       <string id="sshd-gssapi-auth_enabled">Enable</string>
       <string id="sshd-gssapi-auth_default">Default</string>
@@ -386,8 +389,9 @@ Enable - GSS API support on sshd server is enabled
       <string id="sshd-password-auth">Password authorization support on sshd server</string>
       <string id="sshd-password-auth_help">This policy defines the functionality of password authorization support on the sshd server
 
+
 Enable, Default - Password authorization support for sshd is enabled
-Disable - Password authorization support for sshd client is disabled 
+Disable - Password authorization support for sshd client is disabled
       </string>
       <string id="sshd-password-auth_enabled">Enable</string>
       <string id="sshd-password-auth_disabled">Disable</string>
@@ -402,7 +406,6 @@ Enable - GSS API support on sshd client is disabled
       <string id="ssh-gssapi-auth_disabled">Disable</string>
       <string id="ssh-gssapi-auth_enabled">Enable</string>
       <string id="ssh-gssapi-auth_default">Default</string>
-
 
       <string id="su">Permissions for /bin/su</string>
       <string id="su_help">This policy defines permissions for /bin/su
@@ -431,11 +434,11 @@ Only root - Only root is permitted to run /usr/bin/sudo
       <string id="sudoers">Passing the parent environment to sudo</string>
       <string id="sudoers_help">This policy determines whether the parent environment (environment variables) is passed to sudo
 
-Disable - Do not pass environment variables to the child process
-Enable - Pass environment variables to the child process
+Strict - Do not pass environment variables to the child process
+Relaxed - Pass environment variables to the child process
       </string>
-      <string id="sudoers_strict">Disable</string>
-      <string id="sudoers_relaxed">Enable</string>
+      <string id="sudoers_strict">Strict</string>
+      <string id="sudoers_relaxed">Relaxed</string>
 
       <string id="sudoreplay">Permissions for /usr/bin/sudoreplay</string>
       <string id="sudoreplay_help">This policy defines Permissions for /usr/bin/sudoreplay
@@ -451,11 +454,9 @@ Only root - Only root is permitted to run /usr/bin/sudoreplay
       <string id="sudowheel">Request sudo password for users of the "wheel" group</string>
       <string id="sudowheel_help">This policy determines whether to make a sudo password request for users of the "wheel" group
 
-Enable - Enable sudo password request for users of the "wheel" group
-Disable - Disable sudo password request for users of the "wheel" group
+Disabled - Disable sudo password request for users of the "wheel" group
+Enabled - Enable sudo password request for users of the "wheel" group
       </string>
-      <string id="sudowheel_enabled">Enable</string>
-      <string id="sudowheel_disabled">Disable</string>
 
       <string id="system-auth">Authentication method</string>
       <string id="system-auth_help">This policy defines the method of user authentication
@@ -533,15 +534,15 @@ Only root - Only root is permitted to run /usr/bin/write
 
       <string id="xdg-user-dirs">Function for saving the list of user directories</string>
       <string id="xdg-user-dirs_help">This policy determines whether the function to save the list of user directories works (xdg-user-dirs)
-  
-Enable - The option to save the list of user directories is enabled
-Disable - The function to save the list of user directories is disabled
+
+Disabled - The function to save the list of user directories is disabled
+Enabled - The option to save the list of user directories is enabled
       </string>
-      <string id="xdg-user-dirs_enabled">Enable</string>
-      <string id="xdg-user-dirs_disabled">Disable</string>
 
       <string id="xorg-server">Permissions for Xorg</string>
       <string id="xorg-server_help">This policy defines Permissions for Xorg (/usr/bin/Xorg)
+
+Not Configured - Any user is permitted to run /usr/bin/Xorg
 
 Any user - Any user is permitted to run /usr/bin/Xorg
 Group xgrp - Users of the "xgrp" group are permitted to run /usr/bin/Xorg
@@ -557,160 +558,184 @@ Only root - Only root is permitted to run /usr/bin/Xorg
          /bin/su allows:</dropdownList>
       </presentation>
       <presentation id="at">
-        <dropdownList defaultItem="0" refId="at_setter">Who can use /usr/bin/at:</dropdownList>
-      </presentation>
-      <presentation id="chage">
-        <dropdownList defaultItem="1" refId="chage_setter">Who can use /usr/bin/chage:</dropdownList>
-      </presentation>
-      <presentation id="chfn">
-        <dropdownList defaultItem="1" refId="chfn_setter">Who can use /usr/bin/chfn:</dropdownList>
-      </presentation>
-      <presentation id="chsh">
-        <dropdownList defaultItem="1" refId="chsh_setter">Who can use /usr/bin/chsh:</dropdownList>
-      </presentation>
-      <presentation id="consolehelper">
-        <dropdownList defaultItem="0" refId="consolehelper_setter">Who can use
-         /usr/lib/consolehelper/priv/auth:</dropdownList>
-      </presentation>
-      <presentation id="crontab">
-        <dropdownList defaultItem="0" refId="crontab_setter">Who can use /usr/bin/crontab:</dropdownList>
-      </presentation>
-      <presentation id="cups">
-        <dropdownList defaultItem="0" refId="cups_setter">CUPS operating mode:</dropdownList>
-      </presentation>
-      <presentation id="dvd-ram-control">
-        <dropdownList defaultItem="0" refId="dvd-ram-control_setter">Who can use 
-         /usr/bin/dvd-ram-control:</dropdownList>
-      </presentation>
-      <presentation id="dvd_rw-booktype">
-        <dropdownList defaultItem="0" refId="dvd_rw-booktype_setter">Who can use 
-         /usr/bin/dvd+rw-booktype:</dropdownList>
-      </presentation>
-      <presentation id="dvd_rw-format">
-        <dropdownList defaultItem="0" refId="dvd_rw-format_setter">Who can use 
-         /usr/bin/dvd+rw-format:</dropdownList>
-      </presentation>
-      <presentation id="dvd_rw-mediainfo">
-        <dropdownList defaultItem="0" refId="dvd_rw-mediainfo_setter">Who can use 
-         /usr/bin/dvd+rw-mediainfo:</dropdownList>
-      </presentation>
-      <presentation id="fusermount">
-        <dropdownList defaultItem="1" refId="fusermount_setter">Who can use 
-         /usr/bin/fusermount and 
-         /usr/bin/fusermount3:</dropdownList>
-      </presentation>
-      <presentation id="gpasswd">
-        <dropdownList defaultItem="2" refId="gpasswd_setter">Who can use /usr/bin/gpasswd:</dropdownList>
-      </presentation>
-      <presentation id="groupmems">
-        <dropdownList defaultItem="2" refId="groupmems_setter">Who can use 
-         /usr/bin/groupmems:</dropdownList>
-      </presentation>
-      <presentation id="growisofs">
-        <dropdownList defaultItem="0" refId="growisofs_setter">Who can use 
-         /usr/bin/growisofs:</dropdownList>
-      </presentation>
-      <presentation id="hddtemp">
-        <dropdownList defaultItem="1" refId="hddtemp_setter">Who can use 
-         /usr/sbin/hddtemp:</dropdownList>
-      </presentation>
-      <presentation id="kvm">
-        <dropdownList defaultItem="1" refId="kvm_setter">Пользователи группы "vmusers" имеют право использовать KVM</dropdownList>
-      </presentation>
-      <presentation id="ldap-reverse-dns-lookup">
-        <dropdownList defaultItem="0" refId="ldap-reverse-dns-lookup_setter">Выполнять reverse DNS lookup при запросах OpenLDAP</dropdownList>
-      </presentation>
-      <presentation id="ldap-tls-cert-check">
-        <dropdownList defaultItem="4" refId="ldap-tls-cert-check_setter">Устанавливать соединение только при наличии корректного сертификата</dropdownList>
-      </presentation>
-      <presentation id="mount">
-        <dropdownList defaultItem="0" refId="mount_setter">Любой пользователь имеет право на запуск /bin/mount и /bin/umount</dropdownList>
-      </presentation>
-      <presentation id="newgrp">
-        <dropdownList defaultItem="2" refId="newgrp_setter">Только суперпользователь имеет право на запуск /usr/bin/newgrp</dropdownList>
-      </presentation>
-      <presentation id="nfsmount">
-        <dropdownList defaultItem="2" refId="nfsmount_setter">Только суперпользователь имеет право запускать /sbin/mount.nfs</dropdownList>
-      </presentation>
-      <presentation id="pam_mktemp">
-        <dropdownList defaultItem="0" refId="pam_mktemp_setter">Включить создание индивидуальных временных каталогов для пользователей</dropdownList>
-      </presentation>
-      <presentation id="passwd">
-        <dropdownList defaultItem="0" refId="passwd_setter">Любой пользователь имеет право изменить свой пароль с помощью /usr/bin/passwd при включенной схеме tcb</dropdownList>
-      </presentation>
-      <presentation id="passwdqc-enforce">
-        <dropdownList defaultItem="1" refId="passwdqc-enforce_setter">Включить проверки на достаточную сложность пароля для всех, кроме суперпользователей</dropdownList>
-      </presentation>
-      <presentation id="ping">
-        <dropdownList defaultItem="0" refId="ping_setter">Любой пользователь имеет право на запуск /usr/bin/ping</dropdownList>
-      </presentation>
-      <presentation id="postfix">
-        <dropdownList defaultItem="0" refId="postfix_setter">Postfix MTA отключен</dropdownList>
-      </presentation>
-      <presentation id="postqueue">
-        <dropdownList defaultItem="0" refId="postqueue_setter">Любой пользователь имеет право на запуск /usr/bin/postqueue</dropdownList>
-      </presentation>
-      <presentation id="ppp">
-        <dropdownList defaultItem="1" refId="ppp_setter">Любой пользователь имеет право запускать /usr/sbin/pppd без повышения уровня привилегий</dropdownList>
-      </presentation>
-      <presentation id="rpcbind">
-        <dropdownList defaultItem="1" refId="rpcbind_setter">/sbin/rpcbind будет принимать только локальные запросы</dropdownList>
-      </presentation>
-      <presentation id="sftp">
-        <dropdownList defaultItem="0" refId="sftp_setter">SFTP support on OpenSSH server:
-
+        <dropdownList defaultItem="0" refId="at_setter">Who is allowed to run:
         </dropdownList>
       </presentation>
-      <presentation id="sshd-allow-groups">
-        <dropdownList defaultItem="1" refId="sshd-allow-groups_setter">Белый список допустимых групп пользователей sshd выключен</dropdownList>
+      <presentation id="chage">
+        <dropdownList defaultItem="1" refId="chage_setter">Who is allowed to execute:
+        </dropdownList>
+      </presentation>
+      <presentation id="chfn">
+        <dropdownList defaultItem="1" refId="chfn_setter">Who can use:
+        </dropdownList>
+      </presentation>
+      <presentation id="chsh">
+        <dropdownList defaultItem="1" refId="chsh_setter">Who can use:
+        </dropdownList>
+      </presentation>
+      <presentation id="chrony_setter">
+        <dropdownList defaultItem="1" refId="chrony_setter">Select an operating mode:
+        </dropdownList>
+      </presentation>
+      <presentation id="chrony">
+        <dropdownList defaultItem="1" refId="chrony_setter">Select an operating mode:
+        </dropdownList>
+      </presentation>
+      <presentation id="consolehelper">
+        <dropdownList defaultItem="0" refId="consolehelper_setter">Who can use:
+        </dropdownList>
+      </presentation>
+      <presentation id="crontab">
+        <dropdownList defaultItem="0" refId="crontab_setter">Who can use:
+        </dropdownList>
+      </presentation>
+      <presentation id="cups">
+        <dropdownList defaultItem="0" refId="cups_setter">CUPS operating mode:
+        </dropdownList>
+      </presentation>
+      <presentation id="dvd-ram-control">
+        <dropdownList defaultItem="0" refId="dvd-ram-control_setter">Who is allowed to run:
+         </dropdownList>
+      </presentation>
+      <presentation id="dvd_rw-booktype">
+        <dropdownList defaultItem="0" refId="dvd_rw-booktype_setter">Who is allowed to run:
+        </dropdownList>
+      </presentation>
+      <presentation id="dvd_rw-format">
+        <dropdownList defaultItem="0" refId="dvd_rw-format_setter">Who is allowed to run:
+        </dropdownList>
+      </presentation>
+      <presentation id="dvd_rw-mediainfo">
+        <dropdownList defaultItem="0" refId="dvd_rw-mediainfo_setter">Who is allowed to run:
+        </dropdownList>
+      </presentation>
+      <presentation id="fusermount">
+        <dropdownList defaultItem="1" refId="fusermount_setter">Who can use:
+        </dropdownList>
+      </presentation>
+      <presentation id="gpasswd">
+        <dropdownList defaultItem="2" refId="gpasswd_setter">Who is allowed to execute:
+        </dropdownList>
+      </presentation>
+      <presentation id="groupmems">
+        <dropdownList defaultItem="2" refId="groupmems_setter">Who can use:
+        </dropdownList>
+      </presentation>
+      <presentation id="growisofs">
+        <dropdownList defaultItem="0" refId="growisofs_setter">Who can use:
+        </dropdownList>
+      </presentation>
+      <presentation id="hddtemp">
+        <dropdownList defaultItem="1" refId="hddtemp_setter">Who can use:
+        </dropdownList>
+      </presentation>
+      <presentation id="kvm">
+        <dropdownList defaultItem="1" refId="kvm_setter">Who has the right to use:
+        </dropdownList>
+      </presentation>
+      <presentation id="ldap-reverse-dns-lookup">
+        <dropdownList defaultItem="0" refId="ldap-reverse-dns-lookup_setter">Reverse Search:
+        </dropdownList>
+      </presentation>
+      <presentation id="ldap-tls-cert-check">
+        <dropdownList defaultItem="4" refId="ldap-tls-cert-check_setter">Select an operating mode:
+        </dropdownList>
+      </presentation>
+      <presentation id="mount">
+        <dropdownList defaultItem="0" refId="mount_setter">Who is allowed to execute:
+        </dropdownList>
+      </presentation>
+      <presentation id="newgrp">
+        <dropdownList defaultItem="2" refId="newgrp_setter">Who has the right to use:
+        </dropdownList>
+      </presentation>
+      <presentation id="nfsmount">
+        <dropdownList defaultItem="2" refId="nfsmount_setter">Who has the right to use:
+        </dropdownList>
+      </presentation>
+      <presentation id="passwd">
+        <dropdownList defaultItem="0" refId="passwd_setter">Select an operating mode:
+        </dropdownList>
+      </presentation>
+      <presentation id="passwdqc-enforce">
+        <dropdownList defaultItem="1" refId="passwdqc-enforce_setter">Select an operating mode:
+        </dropdownList>
+      </presentation>
+      <presentation id="ping">
+        <dropdownList defaultItem="0" refId="ping_setter">Who is allowed to execute:
+        </dropdownList>
+      </presentation>
+      <presentation id="postfix">
+        <dropdownList defaultItem="0" refId="postfix_setter">Select an operating mode:
+        </dropdownList>
+      </presentation>
+      <presentation id="postqueue">
+        <dropdownList defaultItem="0" refId="postqueue_setter">Who is allowed to execute:
+        </dropdownList>
+      </presentation>
+      <presentation id="ppp">
+        <dropdownList defaultItem="1" refId="ppp_setter">Choose an operating mode and who has the right to start:
+        </dropdownList>
+      </presentation>
+      <presentation id="rpcbind">
+        <dropdownList defaultItem="1" refId="rpcbind_setter">Select an operating mode:
+        </dropdownList>
       </presentation>
       <presentation id="sshd-gssapi-auth">
-        <dropdownList defaultItem="2" refId="sshd-gssapi-auth_setter">Поддержка GSS API для sshd включена</dropdownList>
+        <dropdownList defaultItem="2" refId="sshd-gssapi-auth_setter">Select an operating mode:
+        </dropdownList>
       </presentation>
       <presentation id="sshd-password-auth">
-        <dropdownList defaultItem="2" refId="sshd-password-auth_setter">Поддержка авторизации по паролю для sshd включена</dropdownList>
+        <dropdownList defaultItem="2" refId="sshd-password-auth_setter">Select an operating mode:
+        </dropdownList>
       </presentation>
       <presentation id="ssh-gssapi-auth">
-        <dropdownList defaultItem="2" refId="ssh-gssapi-auth_setter">Поддержка авторизации с использованием GSS API на клиенте SSH отключена</dropdownList>
+        <dropdownList defaultItem="2" refId="ssh-gssapi-auth_setter">Select an operating mode:
+        </dropdownList>
       </presentation>
       <presentation id="su">
-        <dropdownList defaultItem="2" refId="su_setter">Только пользователи группы "wheel" имеют право на запуск /bin/su</dropdownList>
+        <dropdownList defaultItem="2" refId="su_setter">Who has the right to use:
+        </dropdownList>
       </presentation>
       <presentation id="sudo">
-        <dropdownList defaultItem="1" refId="sudo_setter">Пользователи группы "wheel" имеют право на запуск /usr/bin/sudo</dropdownList>
+        <dropdownList defaultItem="1" refId="sudo_setter">Who has the right to use:
+        </dropdownList>
       </presentation>
       <presentation id="sudoers">
-        <dropdownList defaultItem="0" refId="sudoers_setter">Не передавать дочернему процессу переменные окружения</dropdownList>
+        <dropdownList defaultItem="0" refId="sudoers_setter">Select an operating mode:
+        </dropdownList>
       </presentation>
       <presentation id="sudoreplay">
-        <dropdownList defaultItem="1" refId="sudoreplay_setter">Пользователи группы "wheel" имеют право на запуск /usr/bin/sudoreplay</dropdownList>
-      </presentation>
-      <presentation id="sudowheel">
-        <dropdownList defaultItem="0" refId="sudowheel_setter">Включить запрос пароля sudo для пользователей группы "wheel"</dropdownList>
+        <dropdownList defaultItem="1" refId="sudoreplay_setter">Who has the right to use:
+        </dropdownList>
       </presentation>
       <presentation id="system-auth">
-        <dropdownList defaultItem="3" refId="system-auth_setter">Использовать локальную базу данных для аутентификации</dropdownList>
+        <dropdownList defaultItem="3" refId="system-auth_setter">Select an operating mode:
+        </dropdownList>
       </presentation>
       <presentation id="tcb_chkpwd">
-        <dropdownList defaultItem="1" refId="tcb_chkpwd_setter">Любой пользователь может быть аутентифицирован с помощью /usr/lib/chkpwd/tcb_chkpwd при включенном tcb</dropdownList>
+        <dropdownList defaultItem="1" refId="tcb_chkpwd_setter">Select an operating mode:
+        </dropdownList>
       </presentation>
       <presentation id="udisks2">
-        <dropdownList defaultItem="0" refId="udisks2_setter">Подключать носители данных индивидуально для каждого пользователя</dropdownList>
+        <dropdownList defaultItem="0" refId="udisks2_setter">Select an operating mode:
+        </dropdownList>
       </presentation>
       <presentation id="virtualbox">
-        <dropdownList defaultItem="1" refId="virtualbox_setter">Пользователи группы "vboxusers" могут использовать VirtualBox</dropdownList>
+        <dropdownList defaultItem="1" refId="virtualbox_setter">Who has the right to use:
+        </dropdownList>
       </presentation>
       <presentation id="wireshark-capture">
-        <dropdownList defaultItem="1" refId="wireshark-capture_setter">Любой пользователь имеет право на запуск /usr/bin/dumpcap, захват трафика отключен</dropdownList>
+        <dropdownList defaultItem="1" refId="wireshark-capture_setter">Choose an operating mode and who has the right to start:
+        </dropdownList>
       </presentation>
       <presentation id="write">
-        <dropdownList defaultItem="0" refId="write_setter">Любой пользователь имеет правов на запуск /usr/bin/write</dropdownList>
-      </presentation>
-      <presentation id="xdg-user-dirs">
-        <dropdownList defaultItem="0" refId="xdg-user-dirs_setter">Функция сохранения списка пользовательских директорий включена</dropdownList>
+        <dropdownList defaultItem="0" refId="write_setter">Who is allowed to run:
+        </dropdownList>
       </presentation>
       <presentation id="xorg-server">
-        <dropdownList defaultItem="0" refId="xorg-server_setter">Любой пользователь имеет право на запуск /usr/bin/Xorg</dropdownList>
+        <dropdownList defaultItem="0" refId="xorg-server_setter">Who is allowed to run:
+        </dropdownList>
       </presentation>
     </presentationTable>
   </resources>

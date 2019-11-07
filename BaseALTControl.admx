@@ -111,6 +111,24 @@
         </enum>
       </elements>
     </policy>
+    <policy class="Machine" displayName="$(string.chrony)" explainText="$(string.chrony_help)" key="Software\BaseALT\Policies\Control" name="chrony" presentation="$(presentation.chrony)">
+      <parentCategory ref="Control"/>
+      <supportedOn ref="system:SUPPORTED_AltP9"/>
+      <elements>
+        <enum id="chrony_setter" required="true" valueName="chrony">
+          <item displayName="$(string.chrony_server)">
+            <value>
+              <decimal value="0"/>
+            </value>
+          </item>
+          <item displayName="$(string.chrony_client)">
+            <value>
+              <decimal value="1"/>
+            </value>
+          </item>
+        </enum>
+      </elements>
+    </policy>
     <policy class="Machine" displayName="$(string.chsh)" explainText="$(string.chsh_help)" key="Software\BaseALT\Policies\Control" name="chsh" presentation="$(presentation.chsh)">
       <parentCategory ref="Control"/>
       <supportedOn ref="system:SUPPORTED_Sisyphus"/>
@@ -553,23 +571,15 @@
         </enum>
       </elements>
     </policy>
-    <policy class="Machine" displayName="$(string.pam_mktemp)" explainText="$(string.pam_mktemp_help)" key="Software\BaseALT\Policies\Control" name="pam_mktemp" presentation="$(presentation.pam_mktemp)">
+    <policy class="Machine" displayName="$(string.pam_mktemp)" explainText="$(string.pam_mktemp_help)" key="Software\BaseALT\Policies\Control" name="pam_mktemp">
       <parentCategory ref="Control"/>
       <supportedOn ref="system:SUPPORTED_Sisyphus"/>
-      <elements>
-        <enum id="pam_mktemp_setter" required="true" valueName="pam_mktemp">
-          <item displayName="$(string.pam_mktemp_enabled)">
-            <value>
-              <decimal value="0"/>
-            </value>
-          </item>
-          <item displayName="$(string.pam_mktemp_disabled)">
-            <value>
-              <decimal value="1"/>
-            </value>
-          </item>
-        </enum>
-      </elements>
+      <enabledValue>
+        <decimal value="0"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="1"/>
+      </disabledValue>
     </policy>
     <policy class="Machine" displayName="$(string.passwd)" explainText="$(string.passwd_help)" key="Software\BaseALT\Policies\Control" name="passwd" presentation="$(presentation.passwd)">
       <parentCategory ref="Control"/>
@@ -737,41 +747,25 @@
         </enum>
       </elements>
     </policy>
-    <policy class="Machine" displayName="$(string.sftp)" explainText="$(string.sftp_help)" key="Software\BaseALT\Policies\Control" name="sftp" presentation="$(presentation.sftp)">
+    <policy class="Machine" displayName="$(string.sftp)" explainText="$(string.sftp_help)" key="Software\BaseALT\Policies\Control" name="sftp">
       <parentCategory ref="Control"/>
       <supportedOn ref="system:SUPPORTED_Sisyphus"/>
-      <elements>
-        <enum id="sftp_setter" required="true" valueName="sftp">
-          <item displayName="$(string.sftp_enabled)">
-            <value>
-              <decimal value="0"/>
-            </value>
-          </item>
-          <item displayName="$(string.sftp_disabled)">
-            <value>
-              <decimal value="1"/>
-            </value>
-          </item>
-        </enum>
-      </elements>
+      <enabledValue>
+        <decimal value="0"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="1"/>
+      </disabledValue>
     </policy>
-    <policy class="Machine" displayName="$(string.sshd-allow-groups)" explainText="$(string.sshd-allow-groups_help)" key="Software\BaseALT\Policies\Control" name="sshd-allow-groups" presentation="$(presentation.sshd-allow-groups)">
+    <policy class="Machine" displayName="$(string.sshd-allow-groups)" explainText="$(string.sshd-allow-groups_help)" key="Software\BaseALT\Policies\Control" name="sshd-allow-groups">
       <parentCategory ref="Control"/>
       <supportedOn ref="system:SUPPORTED_Sisyphus"/>
-      <elements>
-        <enum id="sshd-allow-groups_setter" required="true" valueName="sshd-allow-groups">
-          <item displayName="$(string.sshd-allow-groups_enabled)">
-            <value>
-              <decimal value="0"/>
-            </value>
-          </item>
-          <item displayName="$(string.sshd-allow-groups_disabled)">
-            <value>
-              <decimal value="1"/>
-            </value>
-          </item>
-        </enum>
-      </elements>
+      <enabledValue>
+        <decimal value="0"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="1"/>
+      </disabledValue>
     </policy>
     <policy class="Machine" displayName="$(string.sshd-gssapi-auth)" explainText="$(string.sshd-gssapi-auth_help)" key="Software\BaseALT\Policies\Control" name="sshd-gssapi-auth" presentation="$(presentation.sshd-gssapi-auth)">
       <parentCategory ref="Control"/>
@@ -934,23 +928,15 @@
         </enum>
       </elements>
     </policy>
-    <policy class="Machine" displayName="$(string.sudowheel)" explainText="$(string.sudowheel_help)" key="Software\BaseALT\Policies\Control" name="sudowheel" presentation="$(presentation.sudowheel)">
+    <policy class="Machine" displayName="$(string.sudowheel)" explainText="$(string.sudowheel_help)" key="Software\BaseALT\Policies\Control" name="sudowheel">
       <parentCategory ref="Control"/>
       <supportedOn ref="system:SUPPORTED_Sisyphus"/>
-      <elements>
-        <enum id="sudowheel_setter" required="true" valueName="sudowheel">
-          <item displayName="$(string.sudowheel_disabled)">
-            <value>
-              <decimal value="0"/>
-            </value>
-          </item>
-          <item displayName="$(string.sudowheel_enabled)">
-            <value>
-              <decimal value="1"/>
-            </value>
-          </item>
-        </enum>
-      </elements>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
     </policy>
     <policy class="Machine" displayName="$(string.system-auth)" explainText="$(string.system-auth_help)" key="Software\BaseALT\Policies\Control" name="system-auth" presentation="$(presentation.system-auth)">
       <parentCategory ref="Control"/>
@@ -1105,23 +1091,15 @@
         </enum>
       </elements>
     </policy>
-    <policy class="Machine" displayName="$(string.xdg-user-dirs)" explainText="$(string.xdg-user-dirs_help)" key="Software\BaseALT\Policies\Control" name="xdg-user-dirs" presentation="$(presentation.xdg-user-dirs)">
+    <policy class="Machine" displayName="$(string.xdg-user-dirs)" explainText="$(string.xdg-user-dirs_help)" key="Software\BaseALT\Policies\Control" name="xdg-user-dirs">
       <parentCategory ref="Control"/>
       <supportedOn ref="system:SUPPORTED_Sisyphus"/>
-      <elements>
-        <enum id="xdg-user-dirs_setter" required="true" valueName="xdg-user-dirs">
-          <item displayName="$(string.xdg-user-dirs_enabled)">
-            <value>
-              <decimal value="0"/>
-            </value>
-          </item>
-          <item displayName="$(string.xdg-user-dirs_disabled)">
-            <value>
-              <decimal value="1"/>
-            </value>
-          </item>
-        </enum>
-      </elements>
+      <enabledValue>
+        <decimal value="0"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="1"/>
+      </disabledValue>
     </policy>
     <policy class="Machine" displayName="$(string.xorg-server)" explainText="$(string.xorg-server_help)" key="Software\BaseALT\Policies\Control" name="xorg-server" presentation="$(presentation.xorg-server)">
       <parentCategory ref="Control"/>
