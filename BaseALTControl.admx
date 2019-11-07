@@ -571,7 +571,7 @@
         </enum>
       </elements>
     </policy>
-    <policy class="Machine" displayName="$(string.pam_mktemp)" explainText="$(string.pam_mktemp_help)" key="Software\BaseALT\Policies\Control" name="pam_mktemp">
+    <policy class="Machine" displayName="$(string.pam_mktemp)" explainText="$(string.pam_mktemp_help)" key="Software\BaseALT\Policies\Control" valueName="pam_mktemp" name="pam_mktemp">
       <parentCategory ref="Control"/>
       <supportedOn ref="system:SUPPORTED_Sisyphus"/>
       <enabledValue>
@@ -747,7 +747,7 @@
         </enum>
       </elements>
     </policy>
-    <policy class="Machine" displayName="$(string.sftp)" explainText="$(string.sftp_help)" key="Software\BaseALT\Policies\Control" name="sftp">
+    <policy class="Machine" displayName="$(string.sftp)" explainText="$(string.sftp_help)" key="Software\BaseALT\Policies\Control" valueName="sftp" name="sftp">
       <parentCategory ref="Control"/>
       <supportedOn ref="system:SUPPORTED_Sisyphus"/>
       <enabledValue>
@@ -757,7 +757,7 @@
         <decimal value="1"/>
       </disabledValue>
     </policy>
-    <policy class="Machine" displayName="$(string.sshd-allow-groups)" explainText="$(string.sshd-allow-groups_help)" key="Software\BaseALT\Policies\Control" name="sshd-allow-groups">
+    <policy class="Machine" displayName="$(string.sshd-allow-groups)" explainText="$(string.sshd-allow-groups_help)" key="Software\BaseALT\Policies\Control" valueName="sshd-allow-groups" name="sshd-allow-groups">
       <parentCategory ref="Control"/>
       <supportedOn ref="system:SUPPORTED_Sisyphus"/>
       <enabledValue>
@@ -928,7 +928,7 @@
         </enum>
       </elements>
     </policy>
-    <policy class="Machine" displayName="$(string.sudowheel)" explainText="$(string.sudowheel_help)" key="Software\BaseALT\Policies\Control" name="sudowheel">
+    <policy class="Machine" displayName="$(string.sudowheel)" explainText="$(string.sudowheel_help)" key="Software\BaseALT\Policies\Control" valueName="sudowheel" name="sudowheel">
       <parentCategory ref="Control"/>
       <supportedOn ref="system:SUPPORTED_Sisyphus"/>
       <enabledValue>
@@ -1091,7 +1091,7 @@
         </enum>
       </elements>
     </policy>
-    <policy class="Machine" displayName="$(string.xdg-user-dirs)" explainText="$(string.xdg-user-dirs_help)" key="Software\BaseALT\Policies\Control" name="xdg-user-dirs">
+    <policy class="Machine" displayName="$(string.xdg-user-dirs)" explainText="$(string.xdg-user-dirs_help)" key="Software\BaseALT\Policies\Control" valueName="xdg-user-dirs" name="xdg-user-dirs">
       <parentCategory ref="Control"/>
       <supportedOn ref="system:SUPPORTED_Sisyphus"/>
       <enabledValue>
