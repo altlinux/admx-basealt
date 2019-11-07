@@ -246,6 +246,19 @@ Hide - Don't list all users in greeter
       <string id="lightdm-greeter-hide-users_show">Show</string>
       <string id="lightdm-greeter-hide-users_hide">Hide</string>
 
+      <string id="mtr">Permission to use /usr/bin/mtr</string>
+      <string id="mtr_help">Permission to use the network tool /usr/bin/mtr
+
+Any user - Any user can execute /usr/bin/mtr
+
+Group netadmin - Only "netadmin" group members can execute /usr/bin/mtr
+
+Only root - Only root can execute /usr/bin/mtr
+      </string>
+      <string id="mtr_public">Any user</string>
+      <string id="mtr_netadmin">Group netadmin</string>
+      <string id="mtr_restricted">Only root</string>
+
       <string id="kvm">Rights to QEMU KVM devices</string>
       <string id="kvm_help">The policy determines the rights to QEMU KVM devices
 
@@ -740,6 +753,10 @@ Only root - Only root is permitted to run /usr/bin/Xorg
       </presentation>
       <presentation id="lightdm-greeter-hide-users">
         <dropdownList defaultItem="0" refId="lightdm-greeter-hide-users_setter">Select a mode:
+        </dropdownList>
+      </presentation>
+      <presentation id="mtr">
+        <dropdownList defaultItem="1" refId="mtr_setter">Who is allowed to execute:
         </dropdownList>
       </presentation>
       <presentation id="kvm">

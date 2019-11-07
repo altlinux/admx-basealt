@@ -436,6 +436,29 @@
         </enum>
       </elements>
     </policy>
+    <policy class="Machine" displayName="$(string.mtr)" explainText="$(string.mtr_help)" key="Software\BaseALT\Policies\Control" name="mtr" presentation="$(presentation.mtr)">
+      <parentCategory ref="Control"/>
+      <supportedOn ref="system:SUPPORTED_AltP9"/>
+      <elements>
+        <enum id="mtr_setter" required="true" valueName="mtr">
+          <item displayName="$(string.mtr_public)">
+            <value>
+              <decimal value="0"/>
+            </value>
+          </item>
+          <item displayName="$(string.mtr_netadmin)">
+            <value>
+              <decimal value="1"/>
+            </value>
+          </item>
+          <item displayName="$(string.mtr_restricted)">
+            <value>
+              <decimal value="2"/>
+            </value>
+          </item>
+        </enum>
+      </elements>
+    </policy>
     <policy class="Machine" displayName="$(string.kvm)" explainText="$(string.kvm_help)" key="Software\BaseALT\Policies\Control" name="kvm" presentation="$(presentation.kvm)">
       <parentCategory ref="Control"/>
       <supportedOn ref="system:SUPPORTED_Sisyphus"/>
