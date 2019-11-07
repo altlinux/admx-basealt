@@ -546,6 +546,11 @@ Enabled - Enable sudo password request for users of the "wheel" group
       <string id="system-auth">Authentication method</string>
       <string id="system-auth_help">This policy defines the method of user authentication
 
+WARNING!!!
+When switching to modes other than SSSD and Winbind, group policies will cease to work, enable this policy and select a mode other than those listed above only if you are sure!
+
+Mode:
+
 Kerberos 5 - Use Kerberos 5 for authentication
 
 Krb5 local cache - Use Kerberos 5 with a local cache for authentication
@@ -568,8 +573,8 @@ SSSD - Use System Security Services Daemon authentication method
       <string id="system-auth_local">Local</string>
       <string id="system-auth_multi">Multi (use all)</string>
       <string id="system-auth_pkcs11">PKCS11</string>
-      <string id="system-auth_winbind">Winbind</string>
       <string id="system-auth_sss">SSSD</string>
+      <string id="system-auth_winbind">Winbind</string>
 
       <string id="tcb_chkpwd">Permissions for /usr/lib/chkpwd/tcb_chkpwd</string>
       <string id="tcb_chkpwd_help">This policy defines permissions for privileged helper /usr/lib/chkpwd/tcb_chkpwd
