@@ -418,6 +418,24 @@
         </enum>
       </elements>
     </policy>
+    <policy class="Machine" displayName="$(string.lightdm-greeter-hide-users)" explainText="$(string.lightdm-greeter-hide-users_help)" key="Software\BaseALT\Policies\Control" name="lightdm-greeter-hide-users" presentation="$(presentation.lightdm-greeter-hide-users)">
+      <parentCategory ref="Control"/>
+      <supportedOn ref="system:SUPPORTED_AltP9"/>
+      <elements>
+        <enum id="lightdm-greeter-hide-users_setter" required="true" valueName="lightdm-greeter-hide-users">
+          <item displayName="$(string.lightdm-greeter-hide-users_show)">
+            <value>
+              <decimal value="0"/>
+            </value>
+          </item>
+          <item displayName="$(string.lightdm-greeter-hide-users_hide)">
+            <value>
+              <decimal value="1"/>
+            </value>
+          </item>
+        </enum>
+      </elements>
+    </policy>
     <policy class="Machine" displayName="$(string.kvm)" explainText="$(string.kvm_help)" key="Software\BaseALT\Policies\Control" name="kvm" presentation="$(presentation.kvm)">
       <parentCategory ref="Control"/>
       <supportedOn ref="system:SUPPORTED_Sisyphus"/>
