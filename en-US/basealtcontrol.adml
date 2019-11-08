@@ -6,7 +6,7 @@
 
   <resources>
     <stringTable>
-      <string id="SecurityControl">Security policies</string>
+      <string id="SecurityControl">Control</string>
       <string id="ControlServices">Services (daemons) Control</string>
       <string id="ControlSystem">System Control</string>
       <string id="ControlAppCD_DVD">Control CD/DVD Applications</string>

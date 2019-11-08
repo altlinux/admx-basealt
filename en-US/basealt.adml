@@ -6,7 +6,7 @@
 
   <resources>
     <stringTable>
-      <string id="BaseALT">BaseALT</string>
+      <string id="BaseALT">ALT System</string>
       <string id="BaseALT_Help">Configuration of solutions based on ALT operating system</string>
       <string id="SUPPORTED_Sisyphus">ALT Sisyphus</string>
       <string id="SUPPORTED_SisyphusOnly">ALT Sisyphus only</string>
@@ -16,7 +16,7 @@
       <string id="SUPPORTED_AltP9_Only">ALT Platform 9 only</string>
       <string id="Basesystem">Base System</string>
       <string id="Basesystem_Help">Configuration of basic system component settings.</string>
-      <string id="SecurityControl">Security policies</string>
+      <string id="SecurityControl">Control</string>
       <string id="LinuxComponents">Linux Components</string>
       <string id="LinuxComponents_Help">Contains settings for Kernel components.</string>
     </stringTable>
