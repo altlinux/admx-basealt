@@ -75,9 +75,9 @@ Only root - Only root can use /usr/bin/chsh
       <string id="chrony">Chrony NTP daemon mode</string>
       <string id="chrony_help">This policy will determine the operation mode (configuration) of the Chrony daemon that implements the functions of the Network Time Protocol
 
-Server - If selected, uncomment or add the “allow all” directive to daemon configuration file, see documentation for details
+Server - If selected, uncomment or add the "allow all" directive to daemon configuration file, see documentation for details
 
-Client - if selected, it will comment out the “allow” directive in the daemon configuration file, see the documentation for details
+Client - if selected, it will comment out the "allow" directive in the daemon configuration file, see the documentation for details
       </string>
       <string id="chrony_server">Server</string>
       <string id="chrony_client">Client</string>
@@ -94,7 +94,7 @@ Only root - Only root can use consolehelper
 
       <string id="consolehelper_public">Any user</string>
       <string id="consolehelper_wheelonly">Only wheel</string>
-      <string id="consolehelper_restricted">Only root can use consolehelper</string>
+      <string id="consolehelper_restricted">Only root</string>
 
       <string id="crontab">Permission to use crontab</string>
       <string id="crontab_help">This policy defines access rights to the crontab tool (/usr/bin/crontab)
