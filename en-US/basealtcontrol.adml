@@ -564,28 +564,10 @@ When switching to modes other than SSSD and Winbind, group policies will cease t
 
 Mode:
 
-Kerberos 5 - Use Kerberos 5 for authentication
-
-Krb5 local cache - Use Kerberos 5 with a local cache for authentication
-
-LDAP - Use LDAP for authentication 
-
-Local - Use local database for authentication
-
-Multi (use all) - Use all available authentication methods
-
-PKCS11 - Use PKCS11 for authentication
-
 Winbind - Use Winbind for authentication
 
 SSSD - Use System Security Services Daemon authentication method
-      </string>
-      <string id="system-auth_krb5">Kerberos 5</string>
-      <string id="system-auth_krb5_ccreds">Krb5 local cache</string>
-      <string id="system-auth_ldap">LDAP</string>
-      <string id="system-auth_local">Local</string>
-      <string id="system-auth_multi">Multi (use all)</string>
-      <string id="system-auth_pkcs11">PKCS11</string>
+      </string>>
       <string id="system-auth_sss">SSSD</string>
       <string id="system-auth_winbind">Winbind</string>
 

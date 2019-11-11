@@ -984,36 +984,6 @@
       <supportedOn ref="system:SUPPORTED_AltP9"/>
       <elements>
         <enum id="system-auth_setter" required="true" valueName="system-auth">
-          <item displayName="$(string.system-auth_krb5)">
-            <value>
-              <decimal value="0"/>
-            </value>
-          </item>
-          <item displayName="$(string.system-auth_krb5_ccreds)">
-            <value>
-              <decimal value="1"/>
-            </value>
-          </item>
-          <item displayName="$(string.system-auth_ldap)">
-            <value>
-              <decimal value="2"/>
-            </value>
-          </item>
-          <item displayName="$(string.system-auth_local)">
-            <value>
-              <decimal value="3"/>
-            </value>
-          </item>
-          <item displayName="$(string.system-auth_multi)">
-            <value>
-              <decimal value="4"/>
-            </value>
-          </item>
-          <item displayName="$(string.system-auth_pkcs11)">
-            <value>
-              <decimal value="5"/>
-            </value>
-          </item>
           <item displayName="$(string.system-auth_sss)">
             <value>
               <decimal value="6"/>
