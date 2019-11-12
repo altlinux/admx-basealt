@@ -6,29 +6,6 @@
 
   <resources>
     <stringTable>
-      <string id="SecurityControl">Control</string>
-      <string id="ControlServices">Services (daemons) Control</string>
-      <string id="ControlSystem">System Control</string>
-      <string id="ControlAppCD_DVD">Control CD/DVD Applications</string>
-      <string id="ControlMounting">Mount restrictions</string>
-      <string id="ControlAppTools">Tools</string>
-
-
-      <string id="ExecuteSuProgram">Execution of program /bin/su</string>
-      <string id="ExecuteSuProgram_Help">Policy allows to control access to execute program /bin/su
-
-Wheel superusers - Any user, but only "wheel" group members can switch to superuser
-
-Only wheel - Only "wheel" group members
-
-Only root - Only to superuser
-      </string>
-      <string id="ExecuteSuProgram_Public">Any user</string>
-      <string id="ExecuteSuProgram_Wheel">Wheel superusers</string>
-      <string id="ExecuteSuProgram_WheelOnly">Only wheel</string>
-      <string id="ExecuteSuProgram_Restricted">Only root</string>
-
-
       <string id="at">Access rights and behavior of the job queue /usr/bin/at</string>
       <string id="at_help">The policy allows you to control the behavior and access rights to run the job queue at (access rights to run /usr/bin/at)
 
@@ -648,10 +625,6 @@ Only root - Only root is permitted to run /usr/bin/Xorg
       <string id="xorg-server_restricted">Only root</string>
     </stringTable>
     <presentationTable>
-      <presentation id="ExecuteSuProgram">
-        <dropdownList refId="ExecuteSuProgramSetter" defaultItem="2">Execution of program
-         /bin/su allows:</dropdownList>
-      </presentation>
       <presentation id="at">
         <dropdownList defaultItem="0" refId="at_setter">Who is allowed to run:
         </dropdownList>

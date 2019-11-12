@@ -6,21 +6,6 @@
 
   <resources>
     <stringTable>
-      <string id="ExecuteSuProgram">Выполнение программы /bin/su</string>
-      <string id="ExecuteSuProgram_Help">Политика позволяет контролировать доступ для выполнения программы /bin/su
-
-Wheel суперпользователи - любой пользователь, но только члены группы "wheel" могут переключаться в суперпользователя.
-
-Только wheel - Только члены группы "wheel"
-
-Только root - только суперпользователю
-      </string>
-      <string id="ExecuteSuProgram_Public">Любой пользователь</string>
-      <string id="ExecuteSuProgram_Wheel">Wheel суперпользователи</string>
-      <string id="ExecuteSuProgram_WheelOnly">Только wheel</string>
-      <string id="ExecuteSuProgram_Restricted">Только root</string>
-
-
       <string id="at">Права доступа и поведение очереди заданий /usr/bin/at</string>
       <string id="at_help">Политика позволяет контролировать поведение и права доступа для запуска очереди заданий (права доступа для запуска /usr/bin/at)
 
@@ -357,15 +342,15 @@ TCB - любой пользователь может изменить свой �
       <string id="passwd_traditional">Традиционный (схема tcb отключена)</string>
       <string id="passwd_restricted">Только root</string>
 
-      <string id="passwdqc-force">Управление проверками сложности пароля</string>
-      <string id="passwdqc-force_help">Политика управляет паролями для достаточной надежности пароля
+      <string id="passwdqc-enforce">Управление проверками сложности пароля</string>
+      <string id="passwdqc-enforce_help">Политика управляет паролями для достаточной надежности пароля
 
 Все - Включите проверку сложности пароля для всех пользователей.
 
 Только для пользователей - включить проверку сложности пароля для всех, кроме суперпользователей
       </string>
-      <string id="passwdqc-force_everyone">Все</string>
-      <string id="passwdqc-force_users">Только для пользователей</string>
+      <string id="passwdqc-enforce_everyone">Все</string>
+      <string id="passwdqc-enforce_users">Только для пользователей</string>
 
       <string id="ping">Разрешения для /usr/usr/ping</string>
       <string id="ping_help">Эта политика определяет разрешения для /usr/usr/ping
@@ -635,184 +620,180 @@ SSSD - использовать метод проверки подлинност
       <string id="xorg-server_restricted">Только root</string>
     </stringTable>
     <presentationTable>
-      <presentation id="ExecuteSuProgram">
-        <dropdownList refid="ExecuteSuProgramSetter" defaultItem="2">Выполнение su разрешено: 
-      </dropdownList>
-      </presentation>
       <presentation id="at">
-        <dropdownList defaultItem="0" refid="at_setter">Кому разрешено запускать:
+        <dropdownList defaultItem="0" refId="at_setter">Кому разрешено запускать:
         </dropdownList>
       </presentation>
       <presentation id="chage">
-        <dropdownList defaultItem="1" refid="chage_setter">Кому разрешено выполнять:
+        <dropdownList defaultItem="1" refId="chage_setter">Кому разрешено выполнять:
         </dropdownList>
       </presentation>
       <presentation id="chfn">
-        <dropdownList defaultItem="1" refid="chfn_setter">Кто может использовать:
+        <dropdownList defaultItem="1" refId="chfn_setter">Кто может использовать:
         </dropdownList>
       </presentation>
       <presentation id="chsh">
-        <dropdownList defaultItem="1" refid="chsh_setter">Кто может использовать:
+        <dropdownList defaultItem="1" refId="chsh_setter">Кто может использовать:
         </dropdownList>
       </presentation>
       <presentation id="chrony_setter">
-        <dropdownList defaultItem="1" refid="chrony_setter">Выберите режим работы:
+        <dropdownList defaultItem="1" refId="chrony_setter">Выберите режим работы:
         </dropdownList>
       </presentation>
       <presentation id="chrony">
-        <dropdownList defaultItem="1" refid="chrony_setter">Выберите режим работы:
+        <dropdownList defaultItem="1" refId="chrony_setter">Выберите режим работы:
         </dropdownList>
       </presentation>
       <presentation id="consolehelper">
-        <dropdownList defaultItem="0" refid="consolehelper_setter">Кто может использовать:
+        <dropdownList defaultItem="0" refId="consolehelper_setter">Кто может использовать:
         </dropdownList>
       </presentation>
       <presentation id="crontab">
-        <dropdownList defaultItem="0" refid="crontab_setter">Кто может использовать:
+        <dropdownList defaultItem="0" refId="crontab_setter">Кто может использовать:
         </dropdownList>
       </presentation>
       <presentation id="cups">
-        <dropdownList defaultItem="0" refid="cups_setter">Режим работы CUPS:
+        <dropdownList defaultItem="0" refId="cups_setter">Режим работы CUPS:
         </dropdownList>
       </presentation>
       <presentation id="dvd-ram-control">
-        <dropdownList defaultItem="0" refid="dvd-ram-control_setter">Кому разрешено запускать:
+        <dropdownList defaultItem="0" refId="dvd-ram-control_setter">Кому разрешено запускать:
          </dropdownList>
       </presentation>
       <presentation id="dvd_rw-booktype">
-        <dropdownList defaultItem="0" refid="dvd_rw-booktype_setter">Кому разрешено запускать:
+        <dropdownList defaultItem="0" refId="dvd_rw-booktype_setter">Кому разрешено запускать:
         </dropdownList>
       </presentation>
       <presentation id="dvd_rw-format">
-        <dropdownList defaultItem="0" refid="dvd_rw-format_setter">Кому разрешено запускать:
+        <dropdownList defaultItem="0" refId="dvd_rw-format_setter">Кому разрешено запускать:
         </dropdownList>
       </presentation>
       <presentation id="dvd_rw-mediainfo">
-        <dropdownList defaultItem="0" refid="dvd_rw-mediainfo_setter">Кому разрешено запускать:
+        <dropdownList defaultItem="0" refId="dvd_rw-mediainfo_setter">Кому разрешено запускать:
         </dropdownList>
       </presentation>
       <presentation id="fusermount">
-        <dropdownList defaultItem="1" refid="fusermount_setter">Кто может использовать:
+        <dropdownList defaultItem="1" refId="fusermount_setter">Кто может использовать:
         </dropdownList>
       </presentation>
       <presentation id="gpasswd">
-        <dropdownList defaultItem="2" refid="gpasswd_setter">Кому разрешено выполнять:
+        <dropdownList defaultItem="2" refId="gpasswd_setter">Кому разрешено выполнять:
         </dropdownList>
       </presentation>
       <presentation id="groupmems">
-        <dropdownList defaultItem="2" refid="groupmems_setter">Кто может использовать:
+        <dropdownList defaultItem="2" refId="groupmems_setter">Кто может использовать:
         </dropdownList>
       </presentation>
       <presentation id="growisofs">
-        <dropdownList defaultItem="0" refid="growisofs_setter">Кто может использовать:
+        <dropdownList defaultItem="0" refId="growisofs_setter">Кто может использовать:
         </dropdownList>
       </presentation>
       <presentation id="hddtemp">
-        <dropdownList defaultItem="1" refid="hddtemp_setter">Кто может использовать:
+        <dropdownList defaultItem="1" refId="hddtemp_setter">Кто может использовать:
         </dropdownList>
       </presentation>
       <presentation id="lightdm-greeter-hide-users">
-        <dropdownList defaultItem="0" refid="lightdm-greeter-hide-users_setter">Выберите режим:
+        <dropdownList defaultItem="0" refId="lightdm-greeter-hide-users_setter">Выберите режим:
         </dropdownList>
       </presentation>
       <presentation id="mtr">
-        <dropdownList defaultItem="1" refid="mtr_setter">Кому разрешено выполнять:
+        <dropdownList defaultItem="1" refId="mtr_setter">Кому разрешено выполнять:
         </dropdownList>
       </presentation>
       <presentation id="kvm">
-        <dropdownList defaultItem="1" refid="kvm_setter">Кто имеет право использовать:
+        <dropdownList defaultItem="1" refId="kvm_setter">Кто имеет право использовать:
         </dropdownList>
       </presentation>
       <presentation id="ldap-reverse-dns-lookup">
-        <dropdownList defaultItem="0" refid="ldap-reverse-dns-lookup_setter">Поиск в обратном направлении:
+        <dropdownList defaultItem="0" refId="ldap-reverse-dns-lookup_setter">Поиск в обратном направлении:
         </dropdownList>
       </presentation>
       <presentation id="ldap-tls-cert-check">
-        <dropdownList defaultItem="4" refid="ldap-tls-cert-check_setter">Выберите режим работы:
+        <dropdownList defaultItem="4" refId="ldap-tls-cert-check_setter">Выберите режим работы:
         </dropdownList>
       </presentation>
       <presentation id="mount">
-        <dropdownList defaultItem="0" refid="mount_setter">Кому разрешено выполнять:
+        <dropdownList defaultItem="0" refId="mount_setter">Кому разрешено выполнять:
         </dropdownList>
       </presentation>
       <presentation id="newgrp">
-        <dropdownList defaultItem="2" refid="newgrp_setter">Кто имеет право использовать:
+        <dropdownList defaultItem="2" refId="newgrp_setter">Кто имеет право использовать:
         </dropdownList>
       </presentation>
       <presentation id="nfsmount">
-        <dropdownList defaultItem="2" refid="nfsmount_setter">Кто имеет право использовать:
+        <dropdownList defaultItem="2" refId="nfsmount_setter">Кто имеет право использовать:
         </dropdownList>
       </presentation>
       <presentation id="passwd">
-        <dropdownList defaultItem="0" refid="passwd_setter">Выберите режим работы:
+        <dropdownList defaultItem="0" refId="passwd_setter">Выберите режим работы:
         </dropdownList>
       </presentation>
-      <presentation id="passwdqc -force">
-        <dropdownList defaultItem="1" refid="passwdqc -force_setter">Выберите режим работы:
+      <presentation id="passwdqc-enforce">
+        <dropdownList defaultItem="1" refId="passwdqc-enforce_setter">Выберите режим работы:
         </dropdownList>
       </presentation>
       <presentation id="ping">
-        <dropdownList defaultItem="0" refid="ping_setter">Кому разрешено выполнять:
+        <dropdownList defaultItem="0" refId="ping_setter">Кому разрешено выполнять:
         </dropdownList>
       </presentation>
       <presentation id="postfix">
-        <dropdownList defaultItem="0" refid="postfix_setter">Выберите режим работы:
+        <dropdownList defaultItem="0" refId="postfix_setter">Выберите режим работы:
         </dropdownList>
       </presentation>
       <presentation id="postqueue">
-        <dropdownList defaultItem="0" refid="postqueue_setter">Кому разрешено выполнять:
+        <dropdownList defaultItem="0" refId="postqueue_setter">Кому разрешено выполнять:
         </dropdownList>
       </presentation>
       <presentation id="ppp">
-        <dropdownList defaultItem="1" refid="ppp_setter">Выберите режим работы и кто имеет право на запуск:
+        <dropdownList defaultItem="1" refId="ppp_setter">Выберите режим работы и кто имеет право на запуск:
         </dropdownList>
       </presentation>
       <presentation id="rpcbind">
-        <dropdownList defaultItem="1" refid="rpcbind_setter">Выберите режим работы:
+        <dropdownList defaultItem="1" refId="rpcbind_setter">Выберите режим работы:
         </dropdownList>
       </presentation>
       <presentation id="su">
-        <dropdownList defaultItem="2" refid="su_setter">Кто имеет право использовать:
+        <dropdownList defaultItem="2" refId="su_setter">Кто имеет право использовать:
         </dropdownList>
       </presentation>
       <presentation id="sudo">
-        <dropdownList defaultItem="1" refid="sudo_setter">Кто имеет право использовать:
+        <dropdownList defaultItem="1" refId="sudo_setter">Кто имеет право использовать:
         </dropdownList>
       </presentation>
       <presentation id="sudoers">
-        <dropdownList defaultItem="0" refid="sudoers_setter">Выберите режим работы:
+        <dropdownList defaultItem="0" refId="sudoers_setter">Выберите режим работы:
         </dropdownList>
       </presentation>
       <presentation id="sudoreplay">
-        <dropdownList defaultItem="1" refid="sudoreplay_setter">Кто имеет право использовать:
+        <dropdownList defaultItem="1" refId="sudoreplay_setter">Кто имеет право использовать:
         </dropdownList>
       </presentation>
       <presentation id="system-auth">
-        <dropdownList defaultItem="3" refid="system-auth_setter">Выберите режим работы:
+        <dropdownList defaultItem="3" refId="system-auth_setter">Выберите режим работы:
         </dropdownList>
       </presentation>
       <presentation id="tcb_chkpwd">
-        <dropdownList defaultItem="1" refid="tcb_chkpwd_setter">Выберите режим работы:
+        <dropdownList defaultItem="1" refId="tcb_chkpwd_setter">Выберите режим работы:
         </dropdownList>
       </presentation>
       <presentation id="udisks2">
-        <dropdownList defaultItem="0" refid="udisks2_setter">Выберите режим работы:
+        <dropdownList defaultItem="0" refId="udisks2_setter">Выберите режим работы:
         </dropdownList>
       </presentation>
       <presentation id="virtualbox">
-        <dropdownList defaultItem="1" refid="virtualbox_setter">Кто имеет право использовать:
+        <dropdownList defaultItem="1" refId="virtualbox_setter">Кто имеет право использовать:
         </dropdownList>
       </presentation>
       <presentation id="wireshark-capture">
-        <dropdownList defaultItem="1" refid="wireshark-capture_setter">Выберите режим работы и кто имеет право на запуск:
+        <dropdownList defaultItem="1" refId="wireshark-capture_setter">Выберите режим работы и кто имеет право на запуск:
         </dropdownList>
       </presentation>
       <presentation id="write">
-        <dropdownList defaultItem="0" refid="write_setter">Кому разрешено запускать:
+        <dropdownList defaultItem="0" refId="write_setter">Кому разрешено запускать:
         </dropdownList>
       </presentation>
       <presentation id="xorg-server">
-        <dropdownList defaultItem="0" refid="xorg-server_setter">Кому разрешено запускать:
+        <dropdownList defaultItem="0" refId="xorg-server_setter">Кому разрешено запускать:
         </dropdownList>
       </presentation>
     </presentationTable>
