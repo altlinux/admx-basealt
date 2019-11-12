@@ -14,13 +14,13 @@
       <string id="SUPPORTED_AltP9_Only">ALT Platform 9 only</string>
 
       <string id="ALT_System">ALT System</string>
-      <string id="ALT_System_Help">Configuration of solutions based on ALT operating system</string>
+      <string id="ALT_System_Help">Configuration of solutions based on ALT operating system.</string>
       <string id="ALT_Security">Security</string>
       <string id="ALT_Security_Help">Configuration of security components settings.</string>
       <string id="ALT_Services">Services</string>
       <string id="ALT_Services_Help">Configuration of system services settings.</string>
       <string id="ALT_Network">Network Applications</string>
-      <string id="ALT_Network_Help">Configuration of system .</string>
+      <string id="ALT_Network_Help">Configuration of system.</string>
       <string id="ALT_CD_DVD">CD/DVD Applications</string>
       <string id="ALT_CD_DVD_Help">Configuration of CD/DVD applications settings.</string>
       <string id="ALT_Mounting">Mounting</string>

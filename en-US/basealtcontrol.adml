@@ -6,13 +6,6 @@
 
   <resources>
     <stringTable>
-      <string id="SecurityControl">Control</string>
-      <string id="ControlServices">Services (daemons) Control</string>
-      <string id="ControlSystem">System Control</string>
-      <string id="ControlAppCD_DVD">Control CD/DVD Applications</string>
-      <string id="ControlMounting">Mount restrictions</string>
-      <string id="ControlAppTools">Tools</string>
-
       <string id="at">Access rights and behavior of the job queue /usr/bin/at</string>
       <string id="at_help">The policy allows you to control the behavior and access rights to run the job queue at (access rights to run /usr/bin/at)
 
