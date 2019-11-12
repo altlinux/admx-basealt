@@ -808,74 +808,35 @@
         <decimal value="1"/>
       </disabledValue>
     </policy>
-    <policy class="Machine" displayName="$(string.sshd-gssapi-auth)" explainText="$(string.sshd-gssapi-auth_help)" key="Software\BaseALT\Policies\Control" name="sshd-gssapi-auth" presentation="$(presentation.sshd-gssapi-auth)">
+    <policy class="Machine" displayName="$(string.sshd-gssapi-auth)" explainText="$(string.sshd-gssapi-auth_help)" key="Software\BaseALT\Policies\Control" valueName="sshd-gssapi-auth" name="sshd-gssapi-auth">
       <parentCategory ref="Control"/>
       <supportedOn ref="system:SUPPORTED_Sisyphus"/>
-      <elements>
-        <enum id="sshd-gssapi-auth_setter" required="true" valueName="sshd-gssapi-auth">
-          <item displayName="$(string.sshd-gssapi-auth_disabled)">
-            <value>
-              <decimal value="0"/>
-            </value>
-          </item>
-          <item displayName="$(string.sshd-gssapi-auth_enabled)">
-            <value>
-              <decimal value="1"/>
-            </value>
-          </item>
-          <item displayName="$(string.sshd-gssapi-auth_default)">
-            <value>
-              <decimal value="2"/>
-            </value>
-          </item>
-        </enum>
-      </elements>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
     </policy>
-    <policy class="Machine" displayName="$(string.sshd-password-auth)" explainText="$(string.sshd-password-auth_help)" key="Software\BaseALT\Policies\Control" name="sshd-password-auth" presentation="$(presentation.sshd-password-auth)">
+    <policy class="Machine" displayName="$(string.sshd-password-auth)" explainText="$(string.sshd-password-auth_help)" key="Software\BaseALT\Policies\Control" valueName="sshd-password-auth" name="sshd-password-auth">
       <parentCategory ref="Control"/>
       <supportedOn ref="system:SUPPORTED_AltP9"/>
-      <elements>
-        <enum id="sshd-password-auth_setter" required="true" valueName="sshd-password-auth">
-          <item displayName="$(string.sshd-password-auth_enabled)">
-            <value>
-              <decimal value="0"/>
-            </value>
-          </item>
-          <item displayName="$(string.sshd-password-auth_disabled)">
-            <value>
-              <decimal value="1"/>
-            </value>
-          </item>
-          <item displayName="$(string.sshd-password-auth_default)">
-            <value>
-              <decimal value="2"/>
-            </value>
-          </item>
-        </enum>
-      </elements>
+      <enabledValue>
+        <decimal value="0"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="1"/>
+      </disabledValue>
     </policy>
-    <policy class="Machine" displayName="$(string.ssh-gssapi-auth)" explainText="$(string.ssh-gssapi-auth_help)" key="Software\BaseALT\Policies\Control" name="ssh-gssapi-auth" presentation="$(presentation.ssh-gssapi-auth)">
+    <policy class="Machine" displayName="$(string.ssh-gssapi-auth)" explainText="$(string.ssh-gssapi-auth_help)" key="Software\BaseALT\Policies\Control" valueName="ssh-gssapi-auth" name="ssh-gssapi-auth">
       <parentCategory ref="Control"/>
       <supportedOn ref="system:SUPPORTED_Sisyphus"/>
-      <elements>
-        <enum id="ssh-gssapi-auth_setter" required="true" valueName="ssh-gssapi-auth">
-          <item displayName="$(string.ssh-gssapi-auth_disabled)">
-            <value>
-              <decimal value="0"/>
-            </value>
-          </item>
-          <item displayName="$(string.ssh-gssapi-auth_enabled)">
-            <value>
-              <decimal value="1"/>
-            </value>
-          </item>
-          <item displayName="$(string.ssh-gssapi-auth_default)">
-            <value>
-              <decimal value="2"/>
-            </value>
-          </item>
-        </enum>
-      </elements>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
     </policy>
     <policy class="Machine" displayName="$(string.su)" explainText="$(string.su_help)" key="Software\BaseALT\Policies\Control" name="su" presentation="$(presentation.su)">
       <parentCategory ref="Control"/>

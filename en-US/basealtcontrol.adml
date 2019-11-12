@@ -465,36 +465,27 @@ Enabled - The white list of valid sshd user groups is enabled
       <string id="sshd-gssapi-auth">GSS API authorization support on sshd server</string>
       <string id="sshd-gssapi-auth_help">This policy defines the functionality of authorization support using the GSS API on the sshd server
 
-Disable, Default - GSS API support on sshd server is disabled
-
 Enable - GSS API support on sshd server is enabled
+
+Disable - GSS API support on sshd server is disabled
        </string>
-      <string id="sshd-gssapi-auth_disabled">Disable</string>
-      <string id="sshd-gssapi-auth_enabled">Enable</string>
-      <string id="sshd-gssapi-auth_default">Default</string>
 
       <string id="sshd-password-auth">Password authorization support on sshd server</string>
       <string id="sshd-password-auth_help">This policy defines the functionality of password authorization support on the sshd server
 
 
-Enable, Default - Password authorization support for sshd is enabled
+Enable - Password authorization support for sshd is enabled
 
 Disable - Password authorization support for sshd client is disabled
       </string>
-      <string id="sshd-password-auth_enabled">Enable</string>
-      <string id="sshd-password-auth_disabled">Disable</string>
-      <string id="sshd-password-auth_default">Default</string>
 
       <string id="ssh-gssapi-auth">GSS API authorization support on SSH client</string>
       <string id="ssh-gssapi-auth_help">This policy defines the functionality of authorization support using the GSS API on the sshd client
 
-Disable, Default - GSS API support on sshd client is disabled
-
 Enable - GSS API support on sshd client is disabled
+
+Disable - GSS API support on sshd client is disabled
       </string>
-      <string id="ssh-gssapi-auth_disabled">Disable</string>
-      <string id="ssh-gssapi-auth_enabled">Enable</string>
-      <string id="ssh-gssapi-auth_default">Default</string>
 
       <string id="su">Permissions for /bin/su</string>
       <string id="su_help">This policy defines permissions for /bin/su
@@ -791,18 +782,6 @@ Only root - Only root is permitted to run /usr/bin/Xorg
       </presentation>
       <presentation id="rpcbind">
         <dropdownList defaultItem="1" refId="rpcbind_setter">Select an operating mode:
-        </dropdownList>
-      </presentation>
-      <presentation id="sshd-gssapi-auth">
-        <dropdownList defaultItem="2" refId="sshd-gssapi-auth_setter">Select an operating mode:
-        </dropdownList>
-      </presentation>
-      <presentation id="sshd-password-auth">
-        <dropdownList defaultItem="2" refId="sshd-password-auth_setter">Select an operating mode:
-        </dropdownList>
-      </presentation>
-      <presentation id="ssh-gssapi-auth">
-        <dropdownList defaultItem="2" refId="ssh-gssapi-auth_setter">Select an operating mode:
         </dropdownList>
       </presentation>
       <presentation id="su">
