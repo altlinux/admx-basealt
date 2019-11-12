@@ -6,21 +6,6 @@
 
   <resources>
     <stringTable>
-      <string id="ExecuteSuProgram">Выполнение программы /bin/su</string>
-      <string id="ExecuteSuProgram_Help">Политика позволяет контролировать доступ для выполнения программы /bin/su
-
-Wheel суперпользователи - любой пользователь, но только члены группы "wheel" могут переключаться в суперпользователя.
-
-Только wheel - Только члены группы "wheel"
-
-Только root - только суперпользователю
-      </string>
-      <string id="ExecuteSuProgram_Public">Любой пользователь</string>
-      <string id="ExecuteSuProgram_Wheel">Wheel суперпользователи</string>
-      <string id="ExecuteSuProgram_WheelOnly">Только wheel</string>
-      <string id="ExecuteSuProgram_Restricted">Только root</string>
-
-
       <string id="at">Права доступа и поведение очереди заданий /usr/bin/at</string>
       <string id="at_help">Политика позволяет контролировать поведение и права доступа для запуска очереди заданий (права доступа для запуска /usr/bin/at)
 
@@ -635,10 +620,6 @@ SSSD - использовать метод проверки подлинност
       <string id="xorg-server_restricted">Только root</string>
     </stringTable>
     <presentationTable>
-      <presentation id="ExecuteSuProgram">
-        <dropdownList refid="ExecuteSuProgramSetter" defaultItem="2">Выполнение su разрешено: 
-      </dropdownList>
-      </presentation>
       <presentation id="at">
         <dropdownList defaultItem="0" refid="at_setter">Кому разрешено запускать:
         </dropdownList>

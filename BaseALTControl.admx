@@ -7,34 +7,6 @@
   </policyNamespaces>
   <resources minRequiredRevision="1.0" />
   <policies>
-    <policy name="ExecuteSuProgram" class="Machine" displayName="$(string.ExecuteSuProgram)" explainText="$(string.ExecuteSuProgram_Help)" presentation="$(presentation.ExecuteSuProgram)" key="Software\BaseALT\Policies\Control">
-      <parentCategory ref="system:ALT_Security" />
-      <supportedOn ref="system:SUPPORTED_AltP8" />
-      <elements>
-        <enum id="ExecuteSuProgramSetter" valueName="ExecuteSuProgram" required="true">
-          <item displayName="$(string.ExecuteSuProgram_Public)">
-            <value>
-              <decimal value="0" />
-            </value>
-          </item>
-          <item displayName="$(string.ExecuteSuProgram_Wheel)">
-            <value>
-              <decimal value="1" />
-            </value>
-          </item>
-          <item displayName="$(string.ExecuteSuProgram_WheelOnly)">
-            <value>
-              <decimal value="2" />
-            </value>
-          </item>
-          <item displayName="$(string.ExecuteSuProgram_Restricted)">
-            <value>
-              <decimal value="3" />
-            </value>
-          </item>
-        </enum>
-      </elements>
-    </policy>
     <policy class="Machine" displayName="$(string.at)" explainText="$(string.at_help)" key="Software\BaseALT\Policies\Control" name="at" presentation="$(presentation.at)">
       <parentCategory ref="system:ALT_Services"/>
       <supportedOn ref="system:SUPPORTED_AltP8"/>
