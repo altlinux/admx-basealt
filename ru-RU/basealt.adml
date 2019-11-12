@@ -10,13 +10,13 @@
       <string id="BaseALT_Help">Настройки решений на базе операционной системы Альт</string>
       <string id="SUPPORTED_Sisyphus">ALT Сизиф</string>
       <string id="SUPPORTED_SisyphusOnly">Только ALT Сизиф</string>
-      <string id="SUPPORTED_AltP8">Восьмая Платформа ALT как минимум</string>
-      <string id="SUPPORTED_AltP8_Only">Только Восьмая Платформа ALT</string>
-      <string id="SUPPORTED_AltP9">Девятая Платформа ALT как минмум</string>
-      <string id="SUPPORTED_AltP9_Only">Только Девятая Платформа ALT</string>
+      <string id="SUPPORTED_AltP8">8 Платформа ALT как минимум</string>
+      <string id="SUPPORTED_AltP8_Only">Только 8 Платформа ALT</string>
+      <string id="SUPPORTED_AltP9">9 Платформа ALT как минмум</string>
+      <string id="SUPPORTED_AltP9_Only">Только 9 Платформа ALT</string>
       <string id="Base">Базовая система</string>
       <string id="Base_Help">Настройка базовых параметров различных компонентов системы.</string>
-      <string id="SecurityControl">Политики безопасности</string>
+      <string id="SecurityControl">Политики control</string>
       <string id="LinuxComponents">Компоненты Linux</string>
       <string id="LinuxComponents_Help">Содержит настройки ядра операционной системы.</string>
     </stringTable>
