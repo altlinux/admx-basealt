@@ -6,17 +6,34 @@
 
   <resources>
     <stringTable>
-      <string id="BaseALT">BaseALT</string>
-      <string id="BaseALT_Help">Настройки решений на базе операционной системы Альт</string>
       <string id="SUPPORTED_Sisyphus">ALT Сизиф</string>
       <string id="SUPPORTED_SisyphusOnly">Только ALT Сизиф</string>
       <string id="SUPPORTED_AltP8">8 Платформа ALT как минимум</string>
       <string id="SUPPORTED_AltP8_Only">Только 8 Платформа ALT</string>
       <string id="SUPPORTED_AltP9">9 Платформа ALT как минмум</string>
       <string id="SUPPORTED_AltP9_Only">Только 9 Платформа ALT</string>
-      <string id="Base">Базовая система</string>
-      <string id="Base_Help">Настройка базовых параметров различных компонентов системы.</string>
-      <string id="SecurityControl">Политики control</string>
+
+      <string id="ALT_System">Система ALT</string>
+      <string id="ALT_System_Help">Настройки решений на базе операционной системы Альт</string>
+      <string id="ALT_Security">Безопасность</string>
+      <string id="ALT_Security_Help">Настройка параметров безопасности различных компонентов системы.</string>
+      <string id="ALT_Services">Службы</string>
+      <string id="ALT_Services_Help">Настройка параметров базовых системных служб.</string>
+      <string id="ALT_Network">Сетевые приложения</string>
+      <string id="ALT_Network_Help">Настройка параметров сетевых приложений.</string>
+      <string id="ALT_CD_DVD">Приложения для CD/DVD</string>
+      <string id="ALT_CD_DVD_Help">Настройка параметров системных приложений для CD/DVD.</string>
+      <string id="ALT_Mounting">Монтирование</string>
+      <string id="ALT_Mounting_Help">Настройка доступа для монтирования.</string>
+      <string id="ALT_Virtualization">Виртуализация</string>
+      <string id="ALT_Virtualization_Help">Настройка параметров виртуализации.</string>
+      <string id="ALT_Graphics">Графическая подсистема</string>
+      <string id="ALT_Graphics_Help">Настройка параметров графической подсистемы.</string>
+      <string id="ALT_Hardware">Аппаратные средства</string>
+      <string id="ALT_Hardware_Help">Настройка параметров аппаратных средств.</string>
+      <string id="ALT_Databases">СУБД</string>
+      <string id="ALT_Databases_Help">Настройка параметров различных СУБД.</string>
+
       <string id="LinuxComponents">Компоненты Linux</string>
       <string id="LinuxComponents_Help">Содержит настройки ядра операционной системы.</string>
     </stringTable>

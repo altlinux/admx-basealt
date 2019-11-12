@@ -6,27 +6,10 @@
     <using prefix="system" namespace="BaseALT.Policies.System" />
   </policyNamespaces>
   <resources minRequiredRevision="1.0" />
-  <categories>
-    <category name="Control" displayName="$(string.SecurityControl)">
-      <parentCategory ref="system:Base" />
-    </category>
-     <category name="ControlServices" displayName="$(string.ControlServices)">
-       <parentCategory ref="Control" />
-     </category>
-     <category name="ControlAppCD_DVD" displayName="$(string.ControlAppCD_DVD)">
-       <parentCategory ref="Control" />
-     </category>
-     <category name="ControlMounting" displayName="$(string.ControlMounting)">
-       <parentCategory ref="Control" />
-     </category>
-     <category name="ControlAppTools" displayName="$(string.ControlAppTools)">
-       <parentCategory ref="Control" />
-     </category>
-  </categories>
   <policies>
     <policy name="ExecuteSuProgram" class="Machine" displayName="$(string.ExecuteSuProgram)" explainText="$(string.ExecuteSuProgram_Help)" presentation="$(presentation.ExecuteSuProgram)" key="Software\BaseALT\Policies\Control">
-      <parentCategory ref="Control" />
-      <supportedOn ref="system:SUPPORTED_Sisyphus" />
+      <parentCategory ref="system:ALT_Security" />
+      <supportedOn ref="system:SUPPORTED_AltP8" />
       <elements>
         <enum id="ExecuteSuProgramSetter" valueName="ExecuteSuProgram" required="true">
           <item displayName="$(string.ExecuteSuProgram_Public)">
@@ -53,8 +36,8 @@
       </elements>
     </policy>
     <policy class="Machine" displayName="$(string.at)" explainText="$(string.at_help)" key="Software\BaseALT\Policies\Control" name="at" presentation="$(presentation.at)">
-      <parentCategory ref="Control"/>
-      <supportedOn ref="system:SUPPORTED_AltP9"/>
+      <parentCategory ref="system:ALT_Services"/>
+      <supportedOn ref="system:SUPPORTED_AltP8"/>
       <elements>
         <enum id="at_setter" required="true" valueName="at">
           <item displayName="$(string.at_public)">
@@ -76,8 +59,8 @@
       </elements>
     </policy>
     <policy class="Machine" displayName="$(string.chage)" explainText="$(string.chage_help)" key="Software\BaseALT\Policies\Control" name="chage" presentation="$(presentation.chage)">
-      <parentCategory ref="Control"/>
-      <supportedOn ref="system:SUPPORTED_AltP9"/>
+      <parentCategory ref="system:ALT_Security"/>
+      <supportedOn ref="system:SUPPORTED_AltP8"/>
       <elements>
         <enum id="chage_setter" required="true" valueName="chage">
           <item displayName="$(string.chage_public)">
@@ -94,8 +77,8 @@
       </elements>
     </policy>
     <policy class="Machine" displayName="$(string.chfn)" explainText="$(string.chfn_help)" key="Software\BaseALT\Policies\Control" name="chfn" presentation="$(presentation.chfn)">
-      <parentCategory ref="Control"/>
-      <supportedOn ref="system:SUPPORTED_AltP9"/>
+      <parentCategory ref="system:ALT_Security"/>
+      <supportedOn ref="system:SUPPORTED_AltP8"/>
       <elements>
         <enum id="chfn_setter" required="true" valueName="chfn">
           <item displayName="$(string.chfn_public)">
@@ -112,8 +95,8 @@
       </elements>
     </policy>
     <policy class="Machine" displayName="$(string.chrony)" explainText="$(string.chrony_help)" key="Software\BaseALT\Policies\Control" name="chrony" presentation="$(presentation.chrony)">
-      <parentCategory ref="Control"/>
-      <supportedOn ref="system:SUPPORTED_AltP9"/>
+      <parentCategory ref="system:ALT_Services"/>
+      <supportedOn ref="system:SUPPORTED_AltP8"/>
       <elements>
         <enum id="chrony_setter" required="true" valueName="chrony">
           <item displayName="$(string.chrony_server)">
@@ -130,8 +113,8 @@
       </elements>
     </policy>
     <policy class="Machine" displayName="$(string.chsh)" explainText="$(string.chsh_help)" key="Software\BaseALT\Policies\Control" name="chsh" presentation="$(presentation.chsh)">
-      <parentCategory ref="Control"/>
-      <supportedOn ref="system:SUPPORTED_AltP9"/>
+      <parentCategory ref="system:ALT_Security"/>
+      <supportedOn ref="system:SUPPORTED_AltP8"/>
       <elements>
         <enum id="chsh_setter" required="true" valueName="chsh">
           <item displayName="$(string.chsh_public)">
@@ -148,8 +131,8 @@
       </elements>
     </policy>
     <policy class="Machine" displayName="$(string.consolehelper)" explainText="$(string.consolehelper_help)" key="Software\BaseALT\Policies\Control" name="consolehelper" presentation="$(presentation.consolehelper)">
-      <parentCategory ref="Control"/>
-      <supportedOn ref="system:SUPPORTED_AltP9"/>
+      <parentCategory ref="system:ALT_Security"/>
+      <supportedOn ref="system:SUPPORTED_AltP8"/>
       <elements>
         <enum id="consolehelper_setter" required="true" valueName="consolehelper">
           <item displayName="$(string.consolehelper_public)">
@@ -171,8 +154,8 @@
       </elements>
     </policy>
     <policy class="Machine" displayName="$(string.crontab)" explainText="$(string.crontab_help)" key="Software\BaseALT\Policies\Control" name="crontab" presentation="$(presentation.crontab)">
-      <parentCategory ref="Control"/>
-      <supportedOn ref="system:SUPPORTED_AltP9"/>
+      <parentCategory ref="system:ALT_Services"/>
+      <supportedOn ref="system:SUPPORTED_AltP8"/>
       <elements>
         <enum id="crontab_setter" required="true" valueName="crontab">
           <item displayName="$(string.crontab_public)">
@@ -189,8 +172,8 @@
       </elements>
     </policy>
     <policy class="Machine" displayName="$(string.cups)" explainText="$(string.cups_help)" key="Software\BaseALT\Policies\Control" name="cups" presentation="$(presentation.cups)">
-      <parentCategory ref="Control"/>
-      <supportedOn ref="system:SUPPORTED_AltP9"/>
+      <parentCategory ref="system:ALT_Services"/>
+      <supportedOn ref="system:SUPPORTED_AltP8"/>
       <elements>
         <enum id="cups_setter" required="true" valueName="cups">
           <item displayName="$(string.cups_server)">
@@ -207,8 +190,8 @@
       </elements>
     </policy>
     <policy class="Machine" displayName="$(string.dvd-ram-control)" explainText="$(string.dvd-ram-control_help)" key="Software\BaseALT\Policies\Control" name="dvd-ram-control" presentation="$(presentation.dvd-ram-control)">
-      <parentCategory ref="Control"/>
-      <supportedOn ref="system:SUPPORTED_AltP9"/>
+      <parentCategory ref="system:ALT_CD_DVD"/>
+      <supportedOn ref="system:SUPPORTED_AltP8"/>
       <elements>
         <enum id="dvd-ram-control_setter" required="true" valueName="dvd-ram-control">
           <item displayName="$(string.dvd-ram-control_public)">
@@ -230,8 +213,8 @@
       </elements>
     </policy>
     <policy class="Machine" displayName="$(string.dvd_rw-booktype)" explainText="$(string.dvd_rw-booktype_help)" key="Software\BaseALT\Policies\Control" name="dvd_rw-booktype" presentation="$(presentation.dvd_rw-booktype)">
-      <parentCategory ref="Control"/>
-      <supportedOn ref="system:SUPPORTED_AltP9"/>
+      <parentCategory ref="system:ALT_CD_DVD"/>
+      <supportedOn ref="system:SUPPORTED_AltP8"/>
       <elements>
         <enum id="dvd_rw-booktype_setter" required="true" valueName="dvd_rw-booktype">
           <item displayName="$(string.dvd_rw-booktype_public)">
@@ -253,8 +236,8 @@
       </elements>
     </policy>
     <policy class="Machine" displayName="$(string.dvd_rw-format)" explainText="$(string.dvd_rw-format_help)" key="Software\BaseALT\Policies\Control" name="dvd_rw-format" presentation="$(presentation.dvd_rw-format)">
-      <parentCategory ref="Control"/>
-      <supportedOn ref="system:SUPPORTED_AltP9"/>
+      <parentCategory ref="system:ALT_CD_DVD"/>
+      <supportedOn ref="system:SUPPORTED_AltP8"/>
       <elements>
         <enum id="dvd_rw-format_setter" required="true" valueName="dvd_rw-format">
           <item displayName="$(string.dvd_rw-format_public)">
@@ -276,8 +259,8 @@
       </elements>
     </policy>
     <policy class="Machine" displayName="$(string.dvd_rw-mediainfo)" explainText="$(string.dvd_rw-mediainfo_help)" key="Software\BaseALT\Policies\Control" name="dvd_rw-mediainfo" presentation="$(presentation.dvd_rw-mediainfo)">
-      <parentCategory ref="Control"/>
-      <supportedOn ref="system:SUPPORTED_AltP9"/>
+      <parentCategory ref="system:ALT_CD_DVD"/>
+      <supportedOn ref="system:SUPPORTED_AltP8"/>
       <elements>
         <enum id="dvd_rw-mediainfo_setter" required="true" valueName="dvd_rw-mediainfo">
           <item displayName="$(string.dvd_rw-mediainfo_public)">
@@ -299,8 +282,8 @@
       </elements>
     </policy>
     <policy class="Machine" displayName="$(string.fusermount)" explainText="$(string.fusermount_help)" key="Software\BaseALT\Policies\Control" name="fusermount" presentation="$(presentation.fusermount)">
-      <parentCategory ref="Control"/>
-      <supportedOn ref="system:SUPPORTED_AltP9"/>
+      <parentCategory ref="system:ALT_Mounting"/>
+      <supportedOn ref="system:SUPPORTED_AltP8"/>
       <elements>
         <enum id="fusermount_setter" required="true" valueName="fusermount">
           <item displayName="$(string.fusermount_public)">
@@ -327,8 +310,8 @@
       </elements>
     </policy>
     <policy class="Machine" displayName="$(string.gpasswd)" explainText="$(string.gpasswd_help)" key="Software\BaseALT\Policies\Control" name="gpasswd" presentation="$(presentation.gpasswd)">
-      <parentCategory ref="Control"/>
-      <supportedOn ref="system:SUPPORTED_AltP9"/>
+      <parentCategory ref="system:ALT_Security"/>
+      <supportedOn ref="system:SUPPORTED_AltP8"/>
       <elements>
         <enum id="gpasswd_setter" required="true" valueName="gpasswd">
           <item displayName="$(string.gpasswd_public)">
@@ -350,8 +333,8 @@
       </elements>
     </policy>
     <policy class="Machine" displayName="$(string.groupmems)" explainText="$(string.groupmems_help)" key="Software\BaseALT\Policies\Control" name="groupmems" presentation="$(presentation.groupmems)">
-      <parentCategory ref="Control"/>
-      <supportedOn ref="system:SUPPORTED_AltP9"/>
+      <parentCategory ref="system:ALT_Security"/>
+      <supportedOn ref="system:SUPPORTED_AltP8"/>
       <elements>
         <enum id="groupmems_setter" required="true" valueName="groupmems">
           <item displayName="$(string.groupmems_public)">
@@ -373,8 +356,8 @@
       </elements>
     </policy>
     <policy class="Machine" displayName="$(string.growisofs)" explainText="$(string.growisofs_help)" key="Software\BaseALT\Policies\Control" name="growisofs" presentation="$(presentation.growisofs)">
-      <parentCategory ref="Control"/>
-      <supportedOn ref="system:SUPPORTED_AltP9"/>
+      <parentCategory ref="system:ALT_CD_DVD"/>
+      <supportedOn ref="system:SUPPORTED_AltP8"/>
       <elements>
         <enum id="growisofs_setter" required="true" valueName="growisofs">
           <item displayName="$(string.growisofs_public)">
@@ -396,8 +379,8 @@
       </elements>
     </policy>
     <policy class="Machine" displayName="$(string.hddtemp)" explainText="$(string.hddtemp_help)" key="Software\BaseALT\Policies\Control" name="hddtemp" presentation="$(presentation.hddtemp)">
-      <parentCategory ref="Control"/>
-      <supportedOn ref="system:SUPPORTED_AltP9"/>
+      <parentCategory ref="system:ALT_Security"/>
+      <supportedOn ref="system:SUPPORTED_AltP8"/>
       <elements>
         <enum id="hddtemp_setter" required="true" valueName="hddtemp">
           <item displayName="$(string.hddtemp_public)">
@@ -419,8 +402,8 @@
       </elements>
     </policy>
     <policy class="Machine" displayName="$(string.lightdm-greeter-hide-users)" explainText="$(string.lightdm-greeter-hide-users_help)" key="Software\BaseALT\Policies\Control" name="lightdm-greeter-hide-users" presentation="$(presentation.lightdm-greeter-hide-users)">
-      <parentCategory ref="Control"/>
-      <supportedOn ref="system:SUPPORTED_AltP9"/>
+      <parentCategory ref="system:ALT_Graphics"/>
+      <supportedOn ref="system:SUPPORTED_AltP8"/>
       <elements>
         <enum id="lightdm-greeter-hide-users_setter" required="true" valueName="lightdm-greeter-hide-users">
           <item displayName="$(string.lightdm-greeter-hide-users_show)">
@@ -437,8 +420,8 @@
       </elements>
     </policy>
     <policy class="Machine" displayName="$(string.mtr)" explainText="$(string.mtr_help)" key="Software\BaseALT\Policies\Control" name="mtr" presentation="$(presentation.mtr)">
-      <parentCategory ref="Control"/>
-      <supportedOn ref="system:SUPPORTED_AltP9"/>
+      <parentCategory ref="system:ALT_Network"/>
+      <supportedOn ref="system:SUPPORTED_AltP8"/>
       <elements>
         <enum id="mtr_setter" required="true" valueName="mtr">
           <item displayName="$(string.mtr_public)">
@@ -460,8 +443,8 @@
       </elements>
     </policy>
     <policy class="Machine" displayName="$(string.kvm)" explainText="$(string.kvm_help)" key="Software\BaseALT\Policies\Control" name="kvm" presentation="$(presentation.kvm)">
-      <parentCategory ref="Control"/>
-      <supportedOn ref="system:SUPPORTED_Sisyphus"/>
+      <parentCategory ref="system:ALT_Virtualization"/>
+      <supportedOn ref="system:SUPPORTED_AltP8"/>
       <elements>
         <enum id="kvm_setter" required="true" valueName="kvm">
           <item displayName="$(string.kvm_public)">
@@ -483,8 +466,8 @@
       </elements>
     </policy>
     <policy class="Machine" displayName="$(string.ldap-reverse-dns-lookup)" explainText="$(string.ldap-reverse-dns-lookup_help)" key="Software\BaseALT\Policies\Control" name="ldap-reverse-dns-lookup" presentation="$(presentation.ldap-reverse-dns-lookup)">
-      <parentCategory ref="Control"/>
-      <supportedOn ref="system:SUPPORTED_Sisyphus"/>
+      <parentCategory ref="system:ALT_Services"/>
+      <supportedOn ref="system:SUPPORTED_AltP9"/>
       <elements>
         <enum id="ldap-reverse-dns-lookup_setter" required="true" valueName="ldap-reverse-dns-lookup">
           <item displayName="$(string.ldap-reverse-dns-lookup_allow)">
@@ -506,8 +489,8 @@
       </elements>
     </policy>
     <policy class="Machine" displayName="$(string.ldap-tls-cert-check)" explainText="$(string.ldap-tls-cert-check_help)" key="Software\BaseALT\Policies\Control" name="ldap-tls-cert-check" presentation="$(presentation.ldap-tls-cert-check)">
-      <parentCategory ref="Control"/>
-      <supportedOn ref="system:SUPPORTED_Sisyphus"/>
+      <parentCategory ref="system:ALT_Services"/>
+      <supportedOn ref="system:SUPPORTED_AltP9"/>
       <elements>
         <enum id="ldap-tls-cert-check_setter" required="true" valueName="ldap-tls-cert-check">
           <item displayName="$(string.ldap-tls-cert-check_default)">
@@ -539,8 +522,8 @@
       </elements>
     </policy>
     <policy class="Machine" displayName="$(string.mount)" explainText="$(string.mount_help)" key="Software\BaseALT\Policies\Control" name="mount" presentation="$(presentation.mount)">
-      <parentCategory ref="Control"/>
-      <supportedOn ref="system:SUPPORTED_AltP9"/>
+      <parentCategory ref="system:ALT_Mounting"/>
+      <supportedOn ref="system:SUPPORTED_AltP8"/>
       <elements>
         <enum id="mount_setter" required="true" valueName="mount">
           <item displayName="$(string.mount_public)">
@@ -567,8 +550,8 @@
       </elements>
     </policy>
     <policy class="Machine" displayName="$(string.newgrp)" explainText="$(string.newgrp_help)" key="Software\BaseALT\Policies\Control" name="newgrp" presentation="$(presentation.newgrp)">
-      <parentCategory ref="Control"/>
-      <supportedOn ref="system:SUPPORTED_AltP9"/>
+      <parentCategory ref="system:ALT_Security"/>
+      <supportedOn ref="system:SUPPORTED_AltP8"/>
       <elements>
         <enum id="newgrp_setter" required="true" valueName="newgrp">
           <item displayName="$(string.newgrp_public)">
@@ -590,8 +573,8 @@
       </elements>
     </policy>
     <policy class="Machine" displayName="$(string.nfsmount)" explainText="$(string.nfsmount_help)" key="Software\BaseALT\Policies\Control" name="nfsmount" presentation="$(presentation.nfsmount)">
-      <parentCategory ref="Control"/>
-      <supportedOn ref="system:SUPPORTED_AltP9"/>
+      <parentCategory ref="system:ALT_Mounting"/>
+      <supportedOn ref="system:SUPPORTED_AltP8"/>
       <elements>
         <enum id="nfsmount_setter" required="true" valueName="nfsmount">
           <item displayName="$(string.nfsmount_public)">
@@ -613,8 +596,8 @@
       </elements>
     </policy>
     <policy class="Machine" displayName="$(string.pam_mktemp)" explainText="$(string.pam_mktemp_help)" key="Software\BaseALT\Policies\Control" valueName="pam_mktemp" name="pam_mktemp">
-      <parentCategory ref="Control"/>
-      <supportedOn ref="system:SUPPORTED_AltP9"/>
+      <parentCategory ref="system:ALT_Security"/>
+      <supportedOn ref="system:SUPPORTED_AltP8"/>
       <enabledValue>
         <decimal value="0"/>
       </enabledValue>
@@ -623,8 +606,8 @@
       </disabledValue>
     </policy>
     <policy class="Machine" displayName="$(string.passwd)" explainText="$(string.passwd_help)" key="Software\BaseALT\Policies\Control" name="passwd" presentation="$(presentation.passwd)">
-      <parentCategory ref="Control"/>
-      <supportedOn ref="system:SUPPORTED_AltP9"/>
+      <parentCategory ref="system:ALT_Security"/>
+      <supportedOn ref="system:SUPPORTED_AltP8"/>
       <elements>
         <enum id="passwd_setter" required="true" valueName="passwd">
           <item displayName="$(string.passwd_tcb)">
@@ -646,8 +629,8 @@
       </elements>
     </policy>
     <policy class="Machine" displayName="$(string.passwdqc-enforce)" explainText="$(string.passwdqc-enforce_help)" key="Software\BaseALT\Policies\Control" name="passwdqc-enforce" presentation="$(presentation.passwdqc-enforce)">
-      <parentCategory ref="Control"/>
-      <supportedOn ref="system:SUPPORTED_AltP9"/>
+      <parentCategory ref="system:ALT_Security"/>
+      <supportedOn ref="system:SUPPORTED_AltP8"/>
       <elements>
         <enum id="passwdqc-enforce_setter" required="true" valueName="passwdqc-enforce">
           <item displayName="$(string.passwdqc-enforce_everyone)">
@@ -664,8 +647,8 @@
       </elements>
     </policy>
     <policy class="Machine" displayName="$(string.ping)" explainText="$(string.ping_help)" key="Software\BaseALT\Policies\Control" name="ping" presentation="$(presentation.ping)">
-      <parentCategory ref="Control"/>
-      <supportedOn ref="system:SUPPORTED_AltP9"/>
+      <parentCategory ref="system:ALT_Network"/>
+      <supportedOn ref="system:SUPPORTED_AltP8"/>
       <elements>
         <enum id="ping_setter" required="true" valueName="ping">
           <item displayName="$(string.ping_public)">
@@ -697,8 +680,8 @@
       </elements>
     </policy>
     <policy class="Machine" displayName="$(string.postfix)" explainText="$(string.postfix_help)" key="Software\BaseALT\Policies\Control" name="postfix" presentation="$(presentation.postfix)">
-      <parentCategory ref="Control"/>
-      <supportedOn ref="system:SUPPORTED_Sisyphus"/>
+      <parentCategory ref="system:ALT_Services"/>
+      <supportedOn ref="system:SUPPORTED_AltP8"/>
       <elements>
         <enum id="postfix_setter" required="true" valueName="postfix">
           <item displayName="$(string.postfix_local)">
@@ -720,8 +703,8 @@
       </elements>
     </policy>
     <policy class="Machine" displayName="$(string.postqueue)" explainText="$(string.postqueue_help)" key="Software\BaseALT\Policies\Control" name="postqueue" presentation="$(presentation.postqueue)">
-      <parentCategory ref="Control"/>
-      <supportedOn ref="system:SUPPORTED_Sisyphus"/>
+      <parentCategory ref="system:ALT_Services"/>
+      <supportedOn ref="system:SUPPORTED_AltP8"/>
       <elements>
         <enum id="postqueue_setter" required="true" valueName="postqueue">
           <item displayName="$(string.postqueue_public)">
@@ -743,8 +726,8 @@
       </elements>
     </policy>
     <policy class="Machine" displayName="$(string.ppp)" explainText="$(string.ppp_help)" key="Software\BaseALT\Policies\Control" name="ppp" presentation="$(presentation.ppp)">
-      <parentCategory ref="Control"/>
-      <supportedOn ref="system:SUPPORTED_AltP9"/>
+      <parentCategory ref="system:ALT_Network"/>
+      <supportedOn ref="system:SUPPORTED_AltP8"/>
       <elements>
         <enum id="ppp_setter" required="true" valueName="ppp">
           <item displayName="$(string.ppp_restricted)">
@@ -771,8 +754,8 @@
       </elements>
     </policy>
     <policy class="Machine" displayName="$(string.rpcbind)" explainText="$(string.rpcbind_help)" key="Software\BaseALT\Policies\Control" name="rpcbind" presentation="$(presentation.rpcbind)">
-      <parentCategory ref="Control"/>
-      <supportedOn ref="system:SUPPORTED_AltP9"/>
+      <parentCategory ref="system:ALT_Services"/>
+      <supportedOn ref="system:SUPPORTED_AltP8"/>
       <elements>
         <enum id="rpcbind_setter" required="true" valueName="rpcbind">
           <item displayName="$(string.rpcbind_server)">
@@ -789,8 +772,8 @@
       </elements>
     </policy>
     <policy class="Machine" displayName="$(string.sftp)" explainText="$(string.sftp_help)" key="Software\BaseALT\Policies\Control" valueName="sftp" name="sftp">
-      <parentCategory ref="Control"/>
-      <supportedOn ref="system:SUPPORTED_AltP9"/>
+      <parentCategory ref="system:ALT_Services"/>
+      <supportedOn ref="system:SUPPORTED_AltP8"/>
       <enabledValue>
         <decimal value="0"/>
       </enabledValue>
@@ -799,8 +782,8 @@
       </disabledValue>
     </policy>
     <policy class="Machine" displayName="$(string.sshd-allow-groups)" explainText="$(string.sshd-allow-groups_help)" key="Software\BaseALT\Policies\Control" valueName="sshd-allow-groups" name="sshd-allow-groups">
-      <parentCategory ref="Control"/>
-      <supportedOn ref="system:SUPPORTED_AltP9"/>
+      <parentCategory ref="system:ALT_Services"/>
+      <supportedOn ref="system:SUPPORTED_AltP8"/>
       <enabledValue>
         <decimal value="0"/>
       </enabledValue>
@@ -809,8 +792,8 @@
       </disabledValue>
     </policy>
     <policy class="Machine" displayName="$(string.sshd-gssapi-auth)" explainText="$(string.sshd-gssapi-auth_help)" key="Software\BaseALT\Policies\Control" valueName="sshd-gssapi-auth" name="sshd-gssapi-auth">
-      <parentCategory ref="Control"/>
-      <supportedOn ref="system:SUPPORTED_Sisyphus"/>
+      <parentCategory ref="system:ALT_Services"/>
+      <supportedOn ref="system:SUPPORTED_AltP9"/>
       <enabledValue>
         <decimal value="1"/>
       </enabledValue>
@@ -819,8 +802,8 @@
       </disabledValue>
     </policy>
     <policy class="Machine" displayName="$(string.sshd-password-auth)" explainText="$(string.sshd-password-auth_help)" key="Software\BaseALT\Policies\Control" valueName="sshd-password-auth" name="sshd-password-auth">
-      <parentCategory ref="Control"/>
-      <supportedOn ref="system:SUPPORTED_AltP9"/>
+      <parentCategory ref="system:ALT_Services"/>
+      <supportedOn ref="system:SUPPORTED_AltP8"/>
       <enabledValue>
         <decimal value="0"/>
       </enabledValue>
@@ -829,8 +812,8 @@
       </disabledValue>
     </policy>
     <policy class="Machine" displayName="$(string.ssh-gssapi-auth)" explainText="$(string.ssh-gssapi-auth_help)" key="Software\BaseALT\Policies\Control" valueName="ssh-gssapi-auth" name="ssh-gssapi-auth">
-      <parentCategory ref="Control"/>
-      <supportedOn ref="system:SUPPORTED_Sisyphus"/>
+      <parentCategory ref="system:ALT_Services"/>
+      <supportedOn ref="system:SUPPORTED_AltP9"/>
       <enabledValue>
         <decimal value="1"/>
       </enabledValue>
@@ -839,8 +822,8 @@
       </disabledValue>
     </policy>
     <policy class="Machine" displayName="$(string.su)" explainText="$(string.su_help)" key="Software\BaseALT\Policies\Control" name="su" presentation="$(presentation.su)">
-      <parentCategory ref="Control"/>
-      <supportedOn ref="system:SUPPORTED_AltP9"/>
+      <parentCategory ref="system:ALT_Security"/>
+      <supportedOn ref="system:SUPPORTED_AltP8"/>
       <elements>
         <enum id="su_setter" required="true" valueName="su">
           <item displayName="$(string.su_public)">
@@ -867,8 +850,8 @@
       </elements>
     </policy>
     <policy class="Machine" displayName="$(string.sudo)" explainText="$(string.sudo_help)" key="Software\BaseALT\Policies\Control" name="sudo" presentation="$(presentation.sudo)">
-      <parentCategory ref="Control"/>
-      <supportedOn ref="system:SUPPORTED_AltP9"/>
+      <parentCategory ref="system:ALT_Security"/>
+      <supportedOn ref="system:SUPPORTED_AltP8"/>
       <elements>
         <enum id="sudo_setter" required="true" valueName="sudo">
           <item displayName="$(string.sudo_public)">
@@ -890,8 +873,8 @@
       </elements>
     </policy>
     <policy class="Machine" displayName="$(string.sudoers)" explainText="$(string.sudoers_help)" key="Software\BaseALT\Policies\Control" name="sudoers" presentation="$(presentation.sudoers)">
-      <parentCategory ref="Control"/>
-      <supportedOn ref="system:SUPPORTED_AltP9"/>
+      <parentCategory ref="system:ALT_Security"/>
+      <supportedOn ref="system:SUPPORTED_AltP8"/>
       <elements>
         <enum id="sudoers_setter" required="true" valueName="sudoers">
           <item displayName="$(string.sudoers_strict)">
@@ -908,8 +891,8 @@
       </elements>
     </policy>
     <policy class="Machine" displayName="$(string.sudoreplay)" explainText="$(string.sudoreplay_help)" key="Software\BaseALT\Policies\Control" name="sudoreplay" presentation="$(presentation.sudoreplay)">
-      <parentCategory ref="Control"/>
-      <supportedOn ref="system:SUPPORTED_AltP9"/>
+      <parentCategory ref="system:ALT_Security"/>
+      <supportedOn ref="system:SUPPORTED_AltP8"/>
       <elements>
         <enum id="sudoreplay_setter" required="true" valueName="sudoreplay">
           <item displayName="$(string.sudoreplay_public)">
@@ -931,7 +914,7 @@
       </elements>
     </policy>
     <policy class="Machine" displayName="$(string.sudowheel)" explainText="$(string.sudowheel_help)" key="Software\BaseALT\Policies\Control" valueName="sudowheel" name="sudowheel">
-      <parentCategory ref="Control"/>
+      <parentCategory ref="system:ALT_Security"/>
       <supportedOn ref="system:SUPPORTED_AltP9"/>
       <enabledValue>
         <decimal value="1"/>
@@ -941,7 +924,7 @@
       </disabledValue>
     </policy>
     <policy class="Machine" displayName="$(string.system-auth)" explainText="$(string.system-auth_help)" key="Software\BaseALT\Policies\Control" name="system-auth" presentation="$(presentation.system-auth)">
-      <parentCategory ref="Control"/>
+      <parentCategory ref="system:ALT_Security"/>
       <supportedOn ref="system:SUPPORTED_AltP9"/>
       <elements>
         <enum id="system-auth_setter" required="true" valueName="system-auth">
@@ -959,8 +942,8 @@
       </elements>
     </policy>
     <policy class="Machine" displayName="$(string.tcb_chkpwd)" explainText="$(string.tcb_chkpwd_help)" key="Software\BaseALT\Policies\Control" name="tcb_chkpwd" presentation="$(presentation.tcb_chkpwd)">
-      <parentCategory ref="Control"/>
-      <supportedOn ref="system:SUPPORTED_AltP9"/>
+      <parentCategory ref="system:ALT_Security"/>
+      <supportedOn ref="system:SUPPORTED_AltP8"/>
       <elements>
         <enum id="tcb_chkpwd_setter" required="true" valueName="tcb_chkpwd">
           <item displayName="$(string.tcb_chkpwd_traditional)">
@@ -982,8 +965,8 @@
       </elements>
     </policy>
     <policy class="Machine" displayName="$(string.udisks2)" explainText="$(string.udisks2_help)" key="Software\BaseALT\Policies\Control" name="udisks2" presentation="$(presentation.udisks2)">
-      <parentCategory ref="Control"/>
-      <supportedOn ref="system:SUPPORTED_AltP9"/>
+      <parentCategory ref="system:ALT_Mounting"/>
+      <supportedOn ref="system:SUPPORTED_AltP8"/>
       <elements>
         <enum id="udisks2_setter" required="true" valueName="udisks2">
           <item displayName="$(string.udisks2_default)">
@@ -1000,8 +983,8 @@
       </elements>
     </policy>
     <policy class="Machine" displayName="$(string.virtualbox)" explainText="$(string.virtualbox_help)" key="Software\BaseALT\Policies\Control" name="virtualbox" presentation="$(presentation.virtualbox)">
-      <parentCategory ref="Control"/>
-      <supportedOn ref="system:SUPPORTED_AltP9"/>
+      <parentCategory ref="system:ALT_Virtualization"/>
+      <supportedOn ref="system:SUPPORTED_AltP8"/>
       <elements>
         <enum id="virtualbox_setter" required="true" valueName="virtualbox">
           <item displayName="$(string.virtualbox_public)">
@@ -1023,8 +1006,8 @@
       </elements>
     </policy>
     <policy class="Machine" displayName="$(string.wireshark-capture)" explainText="$(string.wireshark-capture_help)" key="Software\BaseALT\Policies\Control" name="wireshark-capture" presentation="$(presentation.wireshark-capture)">
-      <parentCategory ref="Control"/>
-      <supportedOn ref="system:SUPPORTED_Sisyphus"/>
+      <parentCategory ref="system:ALT_Network"/>
+      <supportedOn ref="system:SUPPORTED_AltP8"/>
       <elements>
         <enum id="wireshark-capture_setter" required="true" valueName="wireshark-capture">
           <item displayName="$(string.wireshark-capture_public)">
@@ -1051,8 +1034,8 @@
       </elements>
     </policy>
     <policy class="Machine" displayName="$(string.write)" explainText="$(string.write_help)" key="Software\BaseALT\Policies\Control" name="write" presentation="$(presentation.write)">
-      <parentCategory ref="Control"/>
-      <supportedOn ref="system:SUPPORTED_AltP9"/>
+      <parentCategory ref="system:ALT_Security"/>
+      <supportedOn ref="system:SUPPORTED_AltP8"/>
       <elements>
         <enum id="write_setter" required="true" valueName="write">
           <item displayName="$(string.write_public)">
@@ -1069,8 +1052,8 @@
       </elements>
     </policy>
     <policy class="Machine" displayName="$(string.xdg-user-dirs)" explainText="$(string.xdg-user-dirs_help)" key="Software\BaseALT\Policies\Control" valueName="xdg-user-dirs" name="xdg-user-dirs">
-      <parentCategory ref="Control"/>
-      <supportedOn ref="system:SUPPORTED_AltP9"/>
+      <parentCategory ref="system:ALT_Graphics"/>
+      <supportedOn ref="system:SUPPORTED_AltP8"/>
       <enabledValue>
         <decimal value="0"/>
       </enabledValue>
@@ -1079,8 +1062,8 @@
       </disabledValue>
     </policy>
     <policy class="Machine" displayName="$(string.xorg-server)" explainText="$(string.xorg-server_help)" key="Software\BaseALT\Policies\Control" name="xorg-server" presentation="$(presentation.xorg-server)">
-      <parentCategory ref="Control"/>
-      <supportedOn ref="system:SUPPORTED_AltP9"/>
+      <parentCategory ref="system:ALT_Graphics"/>
+      <supportedOn ref="system:SUPPORTED_AltP8"/>
       <elements>
         <enum id="xorg-server_setter" required="true" valueName="xorg-server">
           <item displayName="$(string.xorg-server_public)">

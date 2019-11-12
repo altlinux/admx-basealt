@@ -6,14 +6,6 @@
 
   <resources>
     <stringTable>
-      <string id="SecurityControl">Политики Control</string>
-      <string id="ControlServices">Системные Сервисы (фоновые)</string>
-      <string id="ControlSystem">Системные</string>
-      <string id="ControlAppCD_DVD">CD/DVD приложения</string>
-      <string id="ControlMounting">Ограничения монтирования</string>
-      <string id="ControlAppTools">Инструменты</string>
-
-
       <string id="ExecuteSuProgram">Выполнение программы /bin/su</string>
       <string id="ExecuteSuProgram_Help">Политика позволяет контролировать доступ для выполнения программы /bin/su
 

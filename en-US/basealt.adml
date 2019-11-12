@@ -6,17 +6,34 @@
 
   <resources>
     <stringTable>
-      <string id="BaseALT">ALT System</string>
-      <string id="BaseALT_Help">Configuration of solutions based on ALT operating system</string>
       <string id="SUPPORTED_Sisyphus">ALT Sisyphus</string>
       <string id="SUPPORTED_SisyphusOnly">ALT Sisyphus only</string>
       <string id="SUPPORTED_AltP8">At least ALT Platform 8</string>
       <string id="SUPPORTED_AltP8_Only">ALT Platform 8 only</string>
       <string id="SUPPORTED_AltP9">At least ALT Platform 9</string>
       <string id="SUPPORTED_AltP9_Only">ALT Platform 9 only</string>
-      <string id="Basesystem">Base System</string>
-      <string id="Basesystem_Help">Configuration of basic system component settings.</string>
-      <string id="SecurityControl">Control</string>
+
+      <string id="ALT_System">ALT System</string>
+      <string id="ALT_System_Help">Configuration of solutions based on ALT operating system</string>
+      <string id="ALT_Security">Security</string>
+      <string id="ALT_Security_Help">Configuration of security components settings.</string>
+      <string id="ALT_Services">Services</string>
+      <string id="ALT_Services_Help">Configuration of system services settings.</string>
+      <string id="ALT_Network">Network Applications</string>
+      <string id="ALT_Network_Help">Configuration of system .</string>
+      <string id="ALT_CD_DVD">CD/DVD Applications</string>
+      <string id="ALT_CD_DVD_Help">Configuration of CD/DVD applications settings.</string>
+      <string id="ALT_Mounting">Mounting</string>
+      <string id="ALT_Mounting_Help">Configuration of mounting access settings.</string>
+      <string id="ALT_Virtualization">Virtualization</string>
+      <string id="ALT_Virtualization_Help">Configuration of virtualization access settings.</string>
+      <string id="ALT_Graphics">Graphics</string>
+      <string id="ALT_Graphics_Help">Configuration of graphic subsystem settings.</string>
+      <string id="ALT_Hardware">Hardware</string>
+      <string id="ALT_Hardware_Help">Configuration of hardware settings.</string>
+      <string id="ALT_Databases">Databases</string>
+      <string id="ALT_Databases_Help">Configuration of database settings.</string>
+
       <string id="LinuxComponents">Linux Components</string>
       <string id="LinuxComponents_Help">Contains settings for Kernel components.</string>
     </stringTable>
