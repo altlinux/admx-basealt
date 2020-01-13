@@ -14,17 +14,17 @@
         <enum id="at_setter" required="true" valueName="at">
           <item displayName="$(string.at_public)">
             <value>
-              <decimal value="0"/>
+              <string value="public"/>
             </value>
           </item>
           <item displayName="$(string.at_restricted)">
             <value>
-              <decimal value="1"/>
+              <string value="restricted"/>
             </value>
           </item>
           <item displayName="$(string.at_atdaemon)">
             <value>
-              <decimal value="2"/>
+              <string value="atdaemon"/>
             </value>
           </item>
         </enum>
@@ -37,12 +37,12 @@
         <enum id="chage_setter" required="true" valueName="chage">
           <item displayName="$(string.chage_public)">
             <value>
-              <decimal value="0"/>
+              <string value="public"/>
             </value>
           </item>
           <item displayName="$(string.chage_restricted)">
             <value>
-              <decimal value="1"/>
+              <string value="restricted"/>
             </value>
           </item>
         </enum>
@@ -55,12 +55,12 @@
         <enum id="chfn_setter" required="true" valueName="chfn">
           <item displayName="$(string.chfn_public)">
             <value>
-              <decimal value="0"/>
+              <string value="public"/>
             </value>
           </item>
           <item displayName="$(string.chfn_restricted)">
             <value>
-              <decimal value="1"/>
+              <string value="restricted"/>
             </value>
           </item>
         </enum>
@@ -73,12 +73,12 @@
         <enum id="chrony_setter" required="true" valueName="chrony">
           <item displayName="$(string.chrony_server)">
             <value>
-              <decimal value="0"/>
+              <string value="server"/>
             </value>
           </item>
           <item displayName="$(string.chrony_client)">
             <value>
-              <decimal value="1"/>
+              <string value="client"/>
             </value>
           </item>
         </enum>
@@ -91,12 +91,12 @@
         <enum id="chsh_setter" required="true" valueName="chsh">
           <item displayName="$(string.chsh_public)">
             <value>
-              <decimal value="0"/>
+              <string value="public"/>
             </value>
           </item>
           <item displayName="$(string.chsh_restricted)">
             <value>
-              <decimal value="1"/>
+              <string value="restricted"/>
             </value>
           </item>
         </enum>
@@ -109,17 +109,17 @@
         <enum id="consolehelper_setter" required="true" valueName="consolehelper">
           <item displayName="$(string.consolehelper_public)">
             <value>
-              <decimal value="0"/>
+              <string value="public"/>
             </value>
           </item>
           <item displayName="$(string.consolehelper_wheelonly)">
             <value>
-              <decimal value="1"/>
+              <string value="wheelonly"/>
             </value>
           </item>
           <item displayName="$(string.consolehelper_restricted)">
             <value>
-              <decimal value="2"/>
+              <string value="restricted"/>
             </value>
           </item>
         </enum>
@@ -132,12 +132,12 @@
         <enum id="crontab_setter" required="true" valueName="crontab">
           <item displayName="$(string.crontab_public)">
             <value>
-              <decimal value="0"/>
+              <string value="public"/>
             </value>
           </item>
           <item displayName="$(string.crontab_restricted)">
             <value>
-              <decimal value="1"/>
+              <string value="restricted"/>
             </value>
           </item>
         </enum>
@@ -150,12 +150,12 @@
         <enum id="cups_setter" required="true" valueName="cups">
           <item displayName="$(string.cups_server)">
             <value>
-              <decimal value="0"/>
+              <string value="server"/>
             </value>
           </item>
           <item displayName="$(string.cups_local)">
             <value>
-              <decimal value="1"/>
+              <string value="local"/>
             </value>
           </item>
         </enum>
@@ -168,17 +168,17 @@
         <enum id="dvd-ram-control_setter" required="true" valueName="dvd-ram-control">
           <item displayName="$(string.dvd-ram-control_public)">
             <value>
-              <decimal value="0"/>
+              <string value="public"/>
             </value>
           </item>
           <item displayName="$(string.dvd-ram-control_restricted)">
             <value>
-              <decimal value="1"/>
+              <string value="restricted"/>
             </value>
           </item>
           <item displayName="$(string.dvd-ram-control_legacy)">
             <value>
-              <decimal value="2"/>
+              <string value="legacy"/>
             </value>
           </item>
         </enum>
@@ -191,17 +191,17 @@
         <enum id="dvd_rw-booktype_setter" required="true" valueName="dvd_rw-booktype">
           <item displayName="$(string.dvd_rw-booktype_public)">
             <value>
-              <decimal value="0"/>
+              <string value="public"/>
             </value>
           </item>
           <item displayName="$(string.dvd_rw-booktype_restricted)">
             <value>
-              <decimal value="1"/>
+              <string value="restricted"/>
             </value>
           </item>
           <item displayName="$(string.dvd_rw-booktype_legacy)">
             <value>
-              <decimal value="2"/>
+              <string value="legacy"/>
             </value>
           </item>
         </enum>
@@ -214,17 +214,17 @@
         <enum id="dvd_rw-format_setter" required="true" valueName="dvd_rw-format">
           <item displayName="$(string.dvd_rw-format_public)">
             <value>
-              <decimal value="0"/>
+              <string value="public"/>
             </value>
           </item>
           <item displayName="$(string.dvd_rw-format_restricted)">
             <value>
-              <decimal value="1"/>
+              <string value="restricted"/>
             </value>
           </item>
           <item displayName="$(string.dvd_rw-format_legacy)">
             <value>
-              <decimal value="2"/>
+              <string value="legacy"/>
             </value>
           </item>
         </enum>
@@ -237,17 +237,17 @@
         <enum id="dvd_rw-mediainfo_setter" required="true" valueName="dvd_rw-mediainfo">
           <item displayName="$(string.dvd_rw-mediainfo_public)">
             <value>
-              <decimal value="0"/>
+              <string value="public"/>
             </value>
           </item>
           <item displayName="$(string.dvd_rw-mediainfo_restricted)">
             <value>
-              <decimal value="1"/>
+              <string value="restricted"/>
             </value>
           </item>
           <item displayName="$(string.dvd_rw-mediainfo_legacy)">
             <value>
-              <decimal value="2"/>
+              <string value="legacy"/>
             </value>
           </item>
         </enum>
@@ -260,22 +260,22 @@
         <enum id="fusermount_setter" required="true" valueName="fusermount">
           <item displayName="$(string.fusermount_public)">
             <value>
-              <decimal value="0"/>
+              <string value="public"/>
             </value>
           </item>
           <item displayName="$(string.fusermount_fuseonly)">
             <value>
-              <decimal value="1"/>
+              <string value="fuseonly"/>
             </value>
           </item>
           <item displayName="$(string.fusermount_wheelonly)">
             <value>
-              <decimal value="2"/>
+              <string value="wheelonly"/>
             </value>
           </item>
           <item displayName="$(string.fusermount_restricted)">
             <value>
-              <decimal value="3"/>
+              <string value="restricted"/>
             </value>
           </item>
         </enum>
@@ -288,17 +288,17 @@
         <enum id="gpasswd_setter" required="true" valueName="gpasswd">
           <item displayName="$(string.gpasswd_public)">
             <value>
-              <decimal value="0"/>
+              <string value="public"/>
             </value>
           </item>
           <item displayName="$(string.gpasswd_wheelonly)">
             <value>
-              <decimal value="1"/>
+              <string value="wheelonly"/>
             </value>
           </item>
           <item displayName="$(string.gpasswd_restricted)">
             <value>
-              <decimal value="2"/>
+              <string value="restricted"/>
             </value>
           </item>
         </enum>
@@ -311,17 +311,17 @@
         <enum id="groupmems_setter" required="true" valueName="groupmems">
           <item displayName="$(string.groupmems_public)">
             <value>
-              <decimal value="0"/>
+              <string value="public"/>
             </value>
           </item>
           <item displayName="$(string.groupmems_wheelonly)">
             <value>
-              <decimal value="1"/>
+              <string value="wheelonly"/>
             </value>
           </item>
           <item displayName="$(string.groupmems_restricted)">
             <value>
-              <decimal value="2"/>
+              <string value="restricted"/>
             </value>
           </item>
         </enum>
@@ -334,17 +334,17 @@
         <enum id="growisofs_setter" required="true" valueName="growisofs">
           <item displayName="$(string.growisofs_public)">
             <value>
-              <decimal value="0"/>
+              <string value="public"/>
             </value>
           </item>
           <item displayName="$(string.growisofs_restricted)">
             <value>
-              <decimal value="1"/>
+              <string value="restricted"/>
             </value>
           </item>
           <item displayName="$(string.growisofs_legacy)">
             <value>
-              <decimal value="2"/>
+              <string value="legacy"/>
             </value>
           </item>
         </enum>
@@ -357,17 +357,17 @@
         <enum id="hddtemp_setter" required="true" valueName="hddtemp">
           <item displayName="$(string.hddtemp_public)">
             <value>
-              <decimal value="0"/>
+              <string value="public"/>
             </value>
           </item>
           <item displayName="$(string.hddtemp_wheelonly)">
             <value>
-              <decimal value="1"/>
+              <string value="wheelonly"/>
             </value>
           </item>
           <item displayName="$(string.hddtemp_restricted)">
             <value>
-              <decimal value="2"/>
+              <string value="restricted"/>
             </value>
           </item>
         </enum>
@@ -380,12 +380,12 @@
         <enum id="lightdm-greeter-hide-users_setter" required="true" valueName="lightdm-greeter-hide-users">
           <item displayName="$(string.lightdm-greeter-hide-users_show)">
             <value>
-              <decimal value="0"/>
+              <string value="show"/>
             </value>
           </item>
           <item displayName="$(string.lightdm-greeter-hide-users_hide)">
             <value>
-              <decimal value="1"/>
+              <string value="hide"/>
             </value>
           </item>
         </enum>
@@ -398,17 +398,17 @@
         <enum id="mtr_setter" required="true" valueName="mtr">
           <item displayName="$(string.mtr_public)">
             <value>
-              <decimal value="0"/>
+              <string value="public"/>
             </value>
           </item>
           <item displayName="$(string.mtr_netadmin)">
             <value>
-              <decimal value="1"/>
+              <string value="netadmin"/>
             </value>
           </item>
           <item displayName="$(string.mtr_restricted)">
             <value>
-              <decimal value="2"/>
+              <string value="restricted"/>
             </value>
           </item>
         </enum>
@@ -421,17 +421,17 @@
         <enum id="kvm_setter" required="true" valueName="kvm">
           <item displayName="$(string.kvm_public)">
             <value>
-              <decimal value="0"/>
+              <string value="public"/>
             </value>
           </item>
           <item displayName="$(string.kvm_vmusers)">
             <value>
-              <decimal value="1"/>
+              <string value="vmusers"/>
             </value>
           </item>
           <item displayName="$(string.kvm_restricted)">
             <value>
-              <decimal value="2"/>
+              <string value="restricted"/>
             </value>
           </item>
         </enum>
@@ -444,17 +444,17 @@
         <enum id="ldap-reverse-dns-lookup_setter" required="true" valueName="ldap-reverse-dns-lookup">
           <item displayName="$(string.ldap-reverse-dns-lookup_allow)">
             <value>
-              <decimal value="0"/>
+              <string value="allow"/>
             </value>
           </item>
           <item displayName="$(string.ldap-reverse-dns-lookup_deny)">
             <value>
-              <decimal value="1"/>
+              <string value="deny"/>
             </value>
           </item>
           <item displayName="$(string.ldap-reverse-dns-lookup_default)">
             <value>
-              <decimal value="2"/>
+              <string value="default"/>
             </value>
           </item>
         </enum>
@@ -467,27 +467,27 @@
         <enum id="ldap-tls-cert-check_setter" required="true" valueName="ldap-tls-cert-check">
           <item displayName="$(string.ldap-tls-cert-check_default)">
             <value>
-              <decimal value="0"/>
+              <string value="default"/>
             </value>
           </item>
           <item displayName="$(string.ldap-tls-cert-check_never)">
             <value>
-              <decimal value="1"/>
+              <string value="never"/>
             </value>
           </item>
           <item displayName="$(string.ldap-tls-cert-check_allow)">
             <value>
-              <decimal value="2"/>
+              <string value="allow"/>
             </value>
           </item>
           <item displayName="$(string.ldap-tls-cert-check_try)">
             <value>
-              <decimal value="3"/>
+              <string value="try"/>
             </value>
           </item>
           <item displayName="$(string.ldap-tls-cert-check_demand)">
             <value>
-              <decimal value="4"/>
+              <string value="demand"/>
             </value>
           </item>
         </enum>
@@ -500,22 +500,22 @@
         <enum id="mount_setter" required="true" valueName="mount">
           <item displayName="$(string.mount_public)">
             <value>
-              <decimal value="0"/>
+              <string value="public"/>
             </value>
           </item>
           <item displayName="$(string.mount_wheelonly)">
             <value>
-              <decimal value="1"/>
+              <string value="wheelonly"/>
             </value>
           </item>
           <item displayName="$(string.mount_unprivileged)">
             <value>
-              <decimal value="2"/>
+              <string value="unprivileged"/>
             </value>
           </item>
           <item displayName="$(string.mount_restricted)">
             <value>
-              <decimal value="3"/>
+              <string value="restricted"/>
             </value>
           </item>
         </enum>
@@ -528,17 +528,17 @@
         <enum id="newgrp_setter" required="true" valueName="newgrp">
           <item displayName="$(string.newgrp_public)">
             <value>
-              <decimal value="0"/>
+              <string value="public"/>
             </value>
           </item>
           <item displayName="$(string.newgrp_wheelonly)">
             <value>
-              <decimal value="1"/>
+              <string value="wheelonly"/>
             </value>
           </item>
           <item displayName="$(string.newgrp_restricted)">
             <value>
-              <decimal value="2"/>
+              <string value="restricted"/>
             </value>
           </item>
         </enum>
@@ -551,17 +551,17 @@
         <enum id="nfsmount_setter" required="true" valueName="nfsmount">
           <item displayName="$(string.nfsmount_public)">
             <value>
-              <decimal value="0"/>
+              <string value="public"/>
             </value>
           </item>
           <item displayName="$(string.nfsmount_wheelonly)">
             <value>
-              <decimal value="1"/>
+              <string value="wheelonly"/>
             </value>
           </item>
           <item displayName="$(string.nfsmount_restricted)">
             <value>
-              <decimal value="2"/>
+              <string value="restricted"/>
             </value>
           </item>
         </enum>
@@ -571,10 +571,10 @@
       <parentCategory ref="system:ALT_Security"/>
       <supportedOn ref="system:SUPPORTED_AltP8"/>
       <enabledValue>
-        <decimal value="0"/>
+        <string value="enabled"/>
       </enabledValue>
       <disabledValue>
-        <decimal value="1"/>
+        <string value="disabled"/>
       </disabledValue>
     </policy>
     <policy class="Machine" displayName="$(string.passwd)" explainText="$(string.passwd_help)" key="Software\BaseALT\Policies\Control" name="passwd" presentation="$(presentation.passwd)">
@@ -584,17 +584,17 @@
         <enum id="passwd_setter" required="true" valueName="passwd">
           <item displayName="$(string.passwd_tcb)">
             <value>
-              <decimal value="0"/>
+              <string value="tcb"/>
             </value>
           </item>
           <item displayName="$(string.passwd_traditional)">
             <value>
-              <decimal value="1"/>
+              <string value="traditional"/>
             </value>
           </item>
           <item displayName="$(string.passwd_restricted)">
             <value>
-              <decimal value="2"/>
+              <string value="restricted"/>
             </value>
           </item>
         </enum>
@@ -607,12 +607,12 @@
         <enum id="passwdqc-enforce_setter" required="true" valueName="passwdqc-enforce">
           <item displayName="$(string.passwdqc-enforce_everyone)">
             <value>
-              <decimal value="0"/>
+              <string value="everyone"/>
             </value>
           </item>
           <item displayName="$(string.passwdqc-enforce_users)">
             <value>
-              <decimal value="1"/>
+              <string value="users"/>
             </value>
           </item>
         </enum>
@@ -625,27 +625,27 @@
         <enum id="ping_setter" required="true" valueName="ping">
           <item displayName="$(string.ping_public)">
             <value>
-              <decimal value="0"/>
+              <string value="public"/>
             </value>
           </item>
           <item displayName="$(string.ping_netadmin)">
             <value>
-              <decimal value="1"/>
+              <string value="netadmin"/>
             </value>
           </item>
           <item displayName="$(string.ping_restricted)">
             <value>
-              <decimal value="2"/>
+              <string value="restricted"/>
             </value>
           </item>
           <item displayName="$(string.ping_public_caps)">
             <value>
-              <decimal value="3"/>
+              <string value="public_caps"/>
             </value>
           </item>
           <item displayName="$(string.ping_netadmin_caps)">
             <value>
-              <decimal value="4"/>
+              <string value="netadmin_caps"/>
             </value>
           </item>
         </enum>
@@ -658,17 +658,17 @@
         <enum id="postfix_setter" required="true" valueName="postfix">
           <item displayName="$(string.postfix_local)">
             <value>
-              <decimal value="0"/>
+              <string value="local"/>
             </value>
           </item>
           <item displayName="$(string.postfix_server)">
             <value>
-              <decimal value="1"/>
+              <string value="server"/>
             </value>
           </item>
           <item displayName="$(string.postfix_filter)">
             <value>
-              <decimal value="2"/>
+              <string value="filter"/>
                 </value>
           </item>
         </enum>
@@ -681,17 +681,17 @@
         <enum id="postqueue_setter" required="true" valueName="postqueue">
           <item displayName="$(string.postqueue_public)">
             <value>
-              <decimal value="0"/>
+              <string value="public"/>
             </value>
           </item>
           <item displayName="$(string.postqueue_mailadm)">
             <value>
-              <decimal value="1"/>
+              <string value="mailadm"/>
             </value>
           </item>
           <item displayName="$(string.postqueue_restricted)">
             <value>
-              <decimal value="2"/>
+              <string value="restricted"/>
             </value>
           </item>
         </enum>
@@ -704,22 +704,22 @@
         <enum id="ppp_setter" required="true" valueName="ppp">
           <item displayName="$(string.ppp_restricted)">
             <value>
-              <decimal value="0"/>
+              <string value="restricted"/>
             </value>
           </item>
           <item displayName="$(string.ppp_traditional)">
             <value>
-              <decimal value="1"/>
+              <string value="traditional"/>
             </value>
           </item>
           <item displayName="$(string.ppp_uucp)">
             <value>
-              <decimal value="2"/>
+              <string value="uucp"/>
             </value>
           </item>
           <item displayName="$(string.ppp_public)">
             <value>
-              <decimal value="3"/>
+              <string value="public"/>
             </value>
           </item>
         </enum>
@@ -732,12 +732,12 @@
         <enum id="rpcbind_setter" required="true" valueName="rpcbind">
           <item displayName="$(string.rpcbind_server)">
             <value>
-              <decimal value="0"/>
+              <string value="server"/>
             </value>
           </item>
           <item displayName="$(string.rpcbind_local)">
             <value>
-              <decimal value="1"/>
+              <string value="local"/>
             </value>
           </item>
         </enum>
@@ -747,50 +747,50 @@
       <parentCategory ref="system:ALT_Services"/>
       <supportedOn ref="system:SUPPORTED_AltP8"/>
       <enabledValue>
-        <decimal value="0"/>
+        <string value="enabled"/>
       </enabledValue>
       <disabledValue>
-        <decimal value="1"/>
+        <string value="disabled"/>
       </disabledValue>
     </policy>
     <policy class="Machine" displayName="$(string.sshd-allow-groups)" explainText="$(string.sshd-allow-groups_help)" key="Software\BaseALT\Policies\Control" valueName="sshd-allow-groups" name="sshd-allow-groups">
       <parentCategory ref="system:ALT_Services"/>
       <supportedOn ref="system:SUPPORTED_AltP8"/>
       <enabledValue>
-        <decimal value="0"/>
+        <string value="enabled"/>
       </enabledValue>
       <disabledValue>
-        <decimal value="1"/>
+        <string value="disabled"/>
       </disabledValue>
     </policy>
     <policy class="Machine" displayName="$(string.sshd-gssapi-auth)" explainText="$(string.sshd-gssapi-auth_help)" key="Software\BaseALT\Policies\Control" valueName="sshd-gssapi-auth" name="sshd-gssapi-auth">
       <parentCategory ref="system:ALT_Services"/>
       <supportedOn ref="system:SUPPORTED_AltP9"/>
       <enabledValue>
-        <decimal value="1"/>
+        <string value="enabled"/>
       </enabledValue>
       <disabledValue>
-        <decimal value="0"/>
+        <string value="disabled"/>
       </disabledValue>
     </policy>
     <policy class="Machine" displayName="$(string.sshd-password-auth)" explainText="$(string.sshd-password-auth_help)" key="Software\BaseALT\Policies\Control" valueName="sshd-password-auth" name="sshd-password-auth">
       <parentCategory ref="system:ALT_Services"/>
       <supportedOn ref="system:SUPPORTED_AltP8"/>
       <enabledValue>
-        <decimal value="0"/>
+        <string value="enabled"/>
       </enabledValue>
       <disabledValue>
-        <decimal value="1"/>
+        <string value="disabled"/>
       </disabledValue>
     </policy>
     <policy class="Machine" displayName="$(string.ssh-gssapi-auth)" explainText="$(string.ssh-gssapi-auth_help)" key="Software\BaseALT\Policies\Control" valueName="ssh-gssapi-auth" name="ssh-gssapi-auth">
       <parentCategory ref="system:ALT_Services"/>
       <supportedOn ref="system:SUPPORTED_AltP9"/>
       <enabledValue>
-        <decimal value="1"/>
+        <string value="enabled"/>
       </enabledValue>
       <disabledValue>
-        <decimal value="0"/>
+        <string value="disabled"/>
       </disabledValue>
     </policy>
     <policy class="Machine" displayName="$(string.su)" explainText="$(string.su_help)" key="Software\BaseALT\Policies\Control" name="su" presentation="$(presentation.su)">
@@ -800,22 +800,22 @@
         <enum id="su_setter" required="true" valueName="su">
           <item displayName="$(string.su_public)">
             <value>
-              <decimal value="0"/>
+              <string value="public"/>
             </value>
           </item>
           <item displayName="$(string.su_wheel)">
             <value>
-              <decimal value="1"/>
+              <string value="wheel"/>
             </value>
           </item>
           <item displayName="$(string.su_wheelonly)">
             <value>
-              <decimal value="2"/>
+              <string value="wheelonly"/>
             </value>
           </item>
           <item displayName="$(string.su_restricted)">
             <value>
-              <decimal value="3"/>
+              <string value="restricted"/>
             </value>
           </item>
         </enum>
@@ -828,17 +828,17 @@
         <enum id="sudo_setter" required="true" valueName="sudo">
           <item displayName="$(string.sudo_public)">
             <value>
-              <decimal value="0"/>
+              <string value="public"/>
             </value>
           </item>
           <item displayName="$(string.sudo_wheelonly)">
             <value>
-              <decimal value="1"/>
+              <string value="wheelonly"/>
             </value>
           </item>
           <item displayName="$(string.sudo_restricted)">
             <value>
-              <decimal value="2"/>
+              <string value="restricted"/>
             </value>
           </item>
         </enum>
@@ -851,12 +851,12 @@
         <enum id="sudoers_setter" required="true" valueName="sudoers">
           <item displayName="$(string.sudoers_strict)">
             <value>
-              <decimal value="0"/>
+              <string value="strict"/>
             </value>
           </item>
           <item displayName="$(string.sudoers_relaxed)">
             <value>
-              <decimal value="1"/>
+              <string value="relaxed"/>
             </value>
           </item>
         </enum>
@@ -869,17 +869,17 @@
         <enum id="sudoreplay_setter" required="true" valueName="sudoreplay">
           <item displayName="$(string.sudoreplay_public)">
             <value>
-              <decimal value="0"/>
+              <string value="public"/>
             </value>
           </item>
           <item displayName="$(string.sudoreplay_wheelonly)">
             <value>
-              <decimal value="1"/>
+              <string value="wheelonly"/>
             </value>
           </item>
           <item displayName="$(string.sudoreplay_restricted)">
             <value>
-              <decimal value="2"/>
+              <string value="restricted"/>
             </value>
           </item>
         </enum>
@@ -889,10 +889,10 @@
       <parentCategory ref="system:ALT_Security"/>
       <supportedOn ref="system:SUPPORTED_AltP9"/>
       <enabledValue>
-        <decimal value="1"/>
+        <string value="enabled"/>
       </enabledValue>
       <disabledValue>
-        <decimal value="0"/>
+        <string value="disabled"/>
       </disabledValue>
     </policy>
     <policy class="Machine" displayName="$(string.system-auth)" explainText="$(string.system-auth_help)" key="Software\BaseALT\Policies\Control" name="system-auth" presentation="$(presentation.system-auth)">
@@ -902,12 +902,12 @@
         <enum id="system-auth_setter" required="true" valueName="system-auth">
           <item displayName="$(string.system-auth_sss)">
             <value>
-              <decimal value="6"/>
+              <string value="sss"/>
             </value>
           </item>
           <item displayName="$(string.system-auth_winbind)">
             <value>
-              <decimal value="7"/>
+              <string value="winbind"/>
             </value>
           </item>
         </enum>
@@ -920,17 +920,17 @@
         <enum id="tcb_chkpwd_setter" required="true" valueName="tcb_chkpwd">
           <item displayName="$(string.tcb_chkpwd_traditional)">
             <value>
-              <decimal value="0"/>
+              <string value="traditional"/>
             </value>
           </item>
           <item displayName="$(string.tcb_chkpwd_tcb)">
             <value>
-              <decimal value="1"/>
+              <string value="tcb"/>
             </value>
           </item>
           <item displayName="$(string.tcb_chkpwd_restricted)">
             <value>
-              <decimal value="2"/>
+              <string value="restricted"/>
             </value>
           </item>
         </enum>
@@ -943,12 +943,12 @@
         <enum id="udisks2_setter" required="true" valueName="udisks2">
           <item displayName="$(string.udisks2_default)">
             <value>
-              <decimal value="0"/>
+              <string value="default"/>
             </value>
           </item>
           <item displayName="$(string.udisks2_shared)">
             <value>
-              <decimal value="1"/>
+              <string value="shared"/>
             </value>
           </item>
         </enum>
@@ -961,17 +961,17 @@
         <enum id="virtualbox_setter" required="true" valueName="virtualbox">
           <item displayName="$(string.virtualbox_public)">
             <value>
-              <decimal value="0"/>
+              <string value="public"/>
             </value>
           </item>
           <item displayName="$(string.virtualbox_vboxusers)">
             <value>
-              <decimal value="1"/>
+              <string value="vboxusers"/>
             </value>
           </item>
           <item displayName="$(string.virtualbox_restricted)">
             <value>
-              <decimal value="2"/>
+              <string value="restricted"/>
             </value>
           </item>
         </enum>
@@ -984,22 +984,22 @@
         <enum id="wireshark-capture_setter" required="true" valueName="wireshark-capture">
           <item displayName="$(string.wireshark-capture_public)">
             <value>
-              <decimal value="0"/>
+              <string value="public"/>
             </value>
           </item>
           <item displayName="$(string.wireshark-capture_relaxed)">
             <value>
-              <decimal value="1"/>
+              <string value="relaxed"/>
             </value>
           </item>
           <item displayName="$(string.wireshark-capture_netadmin)">
             <value>
-              <decimal value="2"/>
+              <string value="netadmin"/>
             </value>
           </item>
           <item displayName="$(string.wireshark-capture_restricted)">
             <value>
-              <decimal value="3"/>
+              <string value="restricted"/>
             </value>
           </item>
         </enum>
@@ -1012,12 +1012,12 @@
         <enum id="write_setter" required="true" valueName="write">
           <item displayName="$(string.write_public)">
             <value>
-              <decimal value="0"/>
+              <string value="public"/>
             </value>
           </item>
           <item displayName="$(string.write_restricted)">
             <value>
-              <decimal value="1"/>
+              <string value="restricted"/>
             </value>
           </item>
         </enum>
@@ -1027,10 +1027,10 @@
       <parentCategory ref="system:ALT_Graphics"/>
       <supportedOn ref="system:SUPPORTED_AltP8"/>
       <enabledValue>
-        <decimal value="0"/>
+        <string value="enabled"/>
       </enabledValue>
       <disabledValue>
-        <decimal value="1"/>
+        <string value="disabled"/>
       </disabledValue>
     </policy>
     <policy class="Machine" displayName="$(string.xorg-server)" explainText="$(string.xorg-server_help)" key="Software\BaseALT\Policies\Control" name="xorg-server" presentation="$(presentation.xorg-server)">
@@ -1040,17 +1040,17 @@
         <enum id="xorg-server_setter" required="true" valueName="xorg-server">
           <item displayName="$(string.xorg-server_public)">
             <value>
-              <decimal value="0"/>
+              <string value="public"/>
             </value>
           </item>
           <item displayName="$(string.xorg-server_xgrp)">
             <value>
-              <decimal value="1"/>
+              <string value="xgrp"/>
             </value>
           </item>
           <item displayName="$(string.xorg-server_restricted)">
             <value>
-              <decimal value="2"/>
+              <string value="restricted"/>
             </value>
           </item>
         </enum>
