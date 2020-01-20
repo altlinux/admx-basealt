@@ -1,0 +1,371 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--  (c) 2019 BaseALT, Ltd.  -->
+<policyDefinitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" revision="1.0" schemaVersion="1.0" xmlns="http://schemas.microsoft.com/GroupPolicy/2006/07/PolicyDefinitions">
+  <policyNamespaces>
+    <target prefix="systemdunits" namespace="BaseALT.Policies.SystemdUnits" />
+    <using prefix="system" namespace="BaseALT.Policies.System" />
+  </policyNamespaces>
+  <resources minRequiredRevision="1.0" />
+  <policies>
+    <policy class="Machine" displayName="$(string.accounts-daemon.service)" explainText="$(string.accounts-daemon.service_help)" key="Software\BaseALT\Policies\SystemdUnits" valueName="accounts-daemon.service" name="accounts-daemon.service">
+      <parentCategory ref="system:ALT_Services"/>
+      <supportedOn ref="system:SUPPORTED_AltP9"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+    <policy class="Machine" displayName="$(string.acpid.service)" explainText="$(string.acpid.service_help)" key="Software\BaseALT\Policies\SystemdUnits" valueName="acpid.service" name="acpid.service">
+      <parentCategory ref="system:ALT_Services"/>
+      <supportedOn ref="system:SUPPORTED_AltP9"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+    <policy class="Machine" displayName="$(string.ahttpd.service)" explainText="$(string.ahttpd.service_help)" key="Software\BaseALT\Policies\SystemdUnits" valueName="ahttpd.service" name="ahttpd.service">
+      <parentCategory ref="system:ALT_Services"/>
+      <supportedOn ref="system:SUPPORTED_AltP9"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+    <policy class="Machine" displayName="$(string.alteratord.service)" explainText="$(string.alteratord.service_help)" key="Software\BaseALT\Policies\SystemdUnits" valueName="alteratord.service" name="alteratord.service">
+      <parentCategory ref="system:ALT_Services"/>
+      <supportedOn ref="system:SUPPORTED_AltP9"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+    <policy class="Machine" displayName="$(string.auditd.service)" explainText="$(string.auditd.service_help)" key="Software\BaseALT\Policies\SystemdUnits" valueName="auditd.service" name="auditd.service">
+      <parentCategory ref="system:ALT_Services"/>
+      <supportedOn ref="system:SUPPORTED_AltP9"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+    <policy class="Machine" displayName="$(string.avahi-daemon.service)" explainText="$(string.avahi-daemon.service_help)" key="Software\BaseALT\Policies\SystemdUnits" valueName="avahi-daemon.service" name="avahi-daemon.service">
+      <parentCategory ref="system:ALT_Services"/>
+      <supportedOn ref="system:SUPPORTED_AltP9"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+    <policy class="Machine" displayName="$(string.chronyd.service)" explainText="$(string.chronyd.service_help)" key="Software\BaseALT\Policies\SystemdUnits" valueName="chronyd.service" name="chronyd.service">
+      <parentCategory ref="system:ALT_Services"/>
+      <supportedOn ref="system:SUPPORTED_AltP9"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+    <policy class="Machine" displayName="$(string.bind.service)" explainText="$(string.bind.service_help)" key="Software\BaseALT\Policies\SystemdUnits" valueName="bind.service" name="bind.service">
+      <parentCategory ref="system:ALT_Services"/>
+      <supportedOn ref="system:SUPPORTED_AltP9"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+    <policy class="Machine" displayName="$(string.colord.service)" explainText="$(string.colord.service_help)" key="Software\BaseALT\Policies\SystemdUnits" valueName="colord.service" name="colord.service">
+      <parentCategory ref="system:ALT_Services"/>
+      <supportedOn ref="system:SUPPORTED_AltP9"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+    <policy class="Machine" displayName="$(string.consolesaver.service)" explainText="$(string.consolesaver.service_help)" key="Software\BaseALT\Policies\SystemdUnits" valueName="consolesaver.service" name="consolesaver.service">
+      <parentCategory ref="system:ALT_Services"/>
+      <supportedOn ref="system:SUPPORTED_AltP9"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+    <policy class="Machine" displayName="$(string.cpufreq-simple.service)" explainText="$(string.cpufreq-simple.service_help)" key="Software\BaseALT\Policies\SystemdUnits" valueName="cpufreq-simple.service" name="cpufreq-simple.service">
+      <parentCategory ref="system:ALT_Services"/>
+      <supportedOn ref="system:SUPPORTED_AltP9"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+    <policy class="Machine" displayName="$(string.crond.service)" explainText="$(string.crond.service_help)" key="Software\BaseALT\Policies\SystemdUnits" valueName="crond.service" name="crond.service">
+      <parentCategory ref="system:ALT_Services"/>
+      <supportedOn ref="system:SUPPORTED_AltP9"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+    <policy class="Machine" displayName="$(string.dbus.service)" explainText="$(string.dbus.service_help)" key="Software\BaseALT\Policies\SystemdUnits" valueName="dbus.service" name="dbus.service">
+      <parentCategory ref="system:ALT_Services"/>
+      <supportedOn ref="system:SUPPORTED_AltP9"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+    <policy class="Machine" displayName="$(string.dnsmasq.service)" explainText="$(string.dnsmasq.service_help)" key="Software\BaseALT\Policies\SystemdUnits" valueName="dnsmasq.service" name="dnsmasq.service">
+      <parentCategory ref="system:ALT_Services"/>
+      <supportedOn ref="system:SUPPORTED_AltP9"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+    <policy class="Machine" displayName="$(string.gpm.service)" explainText="$(string.gpm.service_help)" key="Software\BaseALT\Policies\SystemdUnits" valueName="gpm.service" name="gpm.service">
+      <parentCategory ref="system:ALT_Services"/>
+      <supportedOn ref="system:SUPPORTED_AltP9"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+    <policy class="Machine" displayName="$(string.kmod-static-nodes.service)" explainText="$(string.kmod-static-nodes.service_help)" key="Software\BaseALT\Policies\SystemdUnits" valueName="kmod-static-nodes.service" name="kmod-static-nodes.service">
+      <parentCategory ref="system:ALT_Services"/>
+      <supportedOn ref="system:SUPPORTED_AltP9"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+    <policy class="Machine" displayName="$(string.krb5kdc.service)" explainText="$(string.krb5kdc.service_help)" key="Software\BaseALT\Policies\SystemdUnits" valueName="krb5kdc.service" name="krb5kdc.service">
+      <parentCategory ref="system:ALT_Services"/>
+      <supportedOn ref="system:SUPPORTED_AltP9"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+    <policy class="Machine" displayName="$(string.lightdm.service)" explainText="$(string.lightdm.service_help)" key="Software\BaseALT\Policies\SystemdUnits" valueName="lightdm.service" name="lightdm.service">
+      <parentCategory ref="system:ALT_Services"/>
+      <supportedOn ref="system:SUPPORTED_AltP9"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+    <policy class="Machine" displayName="$(string.ModemManager.service)" explainText="$(string.ModemManager.service_help)" key="Software\BaseALT\Policies\SystemdUnits" valueName="ModemManager.service" name="ModemManager.service">
+      <parentCategory ref="system:ALT_Services"/>
+      <supportedOn ref="system:SUPPORTED_AltP9"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+    <policy class="Machine" displayName="$(string.network.service)" explainText="$(string.network.service_help)" key="Software\BaseALT\Policies\SystemdUnits" valueName="network.service" name="network.service">
+      <parentCategory ref="system:ALT_Services"/>
+      <supportedOn ref="system:SUPPORTED_AltP9"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+    <policy class="Machine" displayName="$(string.NetworkManager-wait-online.service)" explainText="$(string.NetworkManager-wait-online.service_help)" key="Software\BaseALT\Policies\SystemdUnits" valueName="NetworkManager-wait-online.service" name="NetworkManager-wait-online.service">
+      <parentCategory ref="system:ALT_Services"/>
+      <supportedOn ref="system:SUPPORTED_AltP9"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+    <policy class="Machine" displayName="$(string.NetworkManager.service)" explainText="$(string.NetworkManager.service_help)" key="Software\BaseALT\Policies\SystemdUnits" valueName="NetworkManager.service" name="NetworkManager.service">
+      <parentCategory ref="system:ALT_Services"/>
+      <supportedOn ref="system:SUPPORTED_AltP9"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+    <policy class="Machine" displayName="$(string.nmb.service)" explainText="$(string.nmb.service_help)" key="Software\BaseALT\Policies\SystemdUnits" valueName="nmb.service" name="nmb.service">
+      <parentCategory ref="system:ALT_Services"/>
+      <supportedOn ref="system:SUPPORTED_AltP9"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+    <policy class="Machine" displayName="$(string.nscd.service)" explainText="$(string.nscd.service_help)" key="Software\BaseALT\Policies\SystemdUnits" valueName="nscd.service" name="nscd.service">
+      <parentCategory ref="system:ALT_Services"/>
+      <supportedOn ref="system:SUPPORTED_AltP9"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+    <policy class="Machine" displayName="$(string.nslcd.service)" explainText="$(string.nslcd.service_help)" key="Software\BaseALT\Policies\SystemdUnits" valueName="nslcd.service" name="nslcd.service">
+      <parentCategory ref="system:ALT_Services"/>
+      <supportedOn ref="system:SUPPORTED_AltP9"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+    <policy class="Machine" displayName="$(string.oddjobd.service)" explainText="$(string.oddjobd.service_help)" key="Software\BaseALT\Policies\SystemdUnits" valueName="oddjobd.service" name="oddjobd.service">
+      <parentCategory ref="system:ALT_Services"/>
+      <supportedOn ref="system:SUPPORTED_AltP9"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+    <policy class="Machine" displayName="$(string.openct.service)" explainText="$(string.openct.service_help)" key="Software\BaseALT\Policies\SystemdUnits" valueName="openct.service" name="openct.service">
+      <parentCategory ref="system:ALT_Services"/>
+      <supportedOn ref="system:SUPPORTED_AltP9"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+    <policy class="Machine" displayName="$(string.org.cups.cupsd.service)" explainText="$(string.org.cups.cupsd.service_help)" key="Software\BaseALT\Policies\SystemdUnits" valueName="org.cups.cupsd.service" name="org.cups.cupsd.service">
+      <parentCategory ref="system:ALT_Services"/>
+      <supportedOn ref="system:SUPPORTED_AltP9"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+    <policy class="Machine" displayName="$(string.polkit.service)" explainText="$(string.polkit.service_help)" key="Software\BaseALT\Policies\SystemdUnits" valueName="polkit.service" name="polkit.service">
+      <parentCategory ref="system:ALT_Services"/>
+      <supportedOn ref="system:SUPPORTED_AltP9"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+    <policy class="Machine" displayName="$(string.pcscd.service)" explainText="$(string.pcscd.service_help)" key="Software\BaseALT\Policies\SystemdUnits" valueName="pcscd.service" name="pcscd.service">
+      <parentCategory ref="system:ALT_Services"/>
+      <supportedOn ref="system:SUPPORTED_AltP9"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+    <policy class="Machine" displayName="$(string.postfix.service)" explainText="$(string.postfix.service_help)" key="Software\BaseALT\Policies\SystemdUnits" valueName="postfix.service" name="postfix.service">
+      <parentCategory ref="system:ALT_Services"/>
+      <supportedOn ref="system:SUPPORTED_AltP9"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+    <policy class="Machine" displayName="$(string.rpcbind.service)" explainText="$(string.rpcbind.service_help)" key="Software\BaseALT\Policies\SystemdUnits" valueName="rpcbind.service" name="rpcbind.service">
+      <parentCategory ref="system:ALT_Services"/>
+      <supportedOn ref="system:SUPPORTED_AltP9"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+    <policy class="Machine" displayName="$(string.smb.service)" explainText="$(string.smb.service_help)" key="Software\BaseALT\Policies\SystemdUnits" valueName="smb.service" name="smb.service">
+      <parentCategory ref="system:ALT_Services"/>
+      <supportedOn ref="system:SUPPORTED_AltP9"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+    <policy class="Machine" displayName="$(string.sshd.service)" explainText="$(string.sshd.service_help)" key="Software\BaseALT\Policies\SystemdUnits" valueName="sshd.service" name="sshd.service">
+      <parentCategory ref="system:ALT_Services"/>
+      <supportedOn ref="system:SUPPORTED_AltP9"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+    <policy class="Machine" displayName="$(string.upower.service)" explainText="$(string.upower.service_help)" key="Software\BaseALT\Policies\SystemdUnits" valueName="upower.service" name="upower.service">
+      <parentCategory ref="system:ALT_Services"/>
+      <supportedOn ref="system:SUPPORTED_AltP9"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+    <policy class="Machine" displayName="$(string.winbind.service)" explainText="$(string.winbind.service_help)" key="Software\BaseALT\Policies\SystemdUnits" valueName="winbind.service" name="winbind.service">
+      <parentCategory ref="system:ALT_Services"/>
+      <supportedOn ref="system:SUPPORTED_AltP9"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+  </policies>
+</policyDefinitions>
