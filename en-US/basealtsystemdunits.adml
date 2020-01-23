@@ -6,8 +6,8 @@
 
   <resources>
     <stringTable>
-      <string id="accounts-daemon.service">Accounts Service</string>
-      <string id="accounts-daemon.service_help">This policy determines whether the systemd unit of the Accounts Service is enabled
+      <string id="accounts-daemon_service">Accounts Service</string>
+      <string id="accounts-daemon_service_help">This policy determines whether the systemd unit of the Accounts Service is enabled
 
 Not Configuration - Do not change unit systemd state
 
@@ -16,8 +16,8 @@ Enabled - Turn the unit into enabled (execute the command systemctl enable accou
 Disabled - Turn the unit into off state (execute the command systemctl disable accounts-daemon.service)
       </string>
 
-      <string id="acpid.service">ACPI Event Daemon</string>
-      <string id="acpid.service_help">This policy determines whether the systemd unit of the ACPI Event Daemon is enabled
+      <string id="acpid_service">ACPI Event Daemon</string>
+      <string id="acpid_service_help">This policy determines whether the systemd unit of the ACPI Event Daemon is enabled
 
 Not Configuration - Do not change unit systemd state
 
@@ -26,8 +26,8 @@ Enabled - Turn the unit into enabled (execute the command systemctl enable acpid
 Disabled - Turn the unit into off state (execute the command systemctl disable acpid.service)
       </string>
 
-      <string id="ahttpd.service">Alterator Web frontend server</string>
-      <string id="ahttpd.service_help">This policy determines whether the systemd unit of the Alterator WWW (Web) frontend server is enabled
+      <string id="ahttpd_service">Alterator Web frontend server</string>
+      <string id="ahttpd_service_help">This policy determines whether the systemd unit of the Alterator WWW (Web) frontend server is enabled
 
 Not Configuration - Do not change unit systemd state
 
@@ -36,8 +36,8 @@ Enabled - Turn the unit into enabled (execute the command systemctl enable ahttp
 Disabled - Turn the unit into off state (execute the command systemctl disable ahttpd.service)
       </string>
 
-      <string id="alteratord.service">Alterator backend</string>
-      <string id="alteratord.service_help">This policy determines whether the systemd unit of the Alterator backend server is enabled
+      <string id="alteratord_service">Alterator backend</string>
+      <string id="alteratord_service_help">This policy determines whether the systemd unit of the Alterator backend server is enabled
 
 Not Configuration - Do not change unit systemd state
 
@@ -46,8 +46,8 @@ Enabled - Turn the unit into enabled (execute the command systemctl enable alter
 Disabled - Turn the unit into off state (execute the command systemctl disable alteratord.service)
       </string>
 
-      <string id="auditd.service">Security Auditing Service</string>
-      <string id="auditd.service_help">This policy determines whether the systemd unit of the Security Auditing Service is enabled
+      <string id="auditd_service">Security Auditing Service</string>
+      <string id="auditd_service_help">This policy determines whether the systemd unit of the Security Auditing Service is enabled
 
 Not Configuration - Do not change unit systemd state
 
@@ -56,8 +56,8 @@ Enabled - Turn the unit into enabled (execute the command systemctl enable audit
 Disabled - Turn the unit into off state (execute the command systemctl disable auditd.service)
       </string>
 
-      <string id="avahi-daemon.service">Avahi mDNS/DNS-SD Stack</string>
-      <string id="avahi-daemon.service_help">This policy determines whether the systemd unit of the Avahi mDNS/DNS-SD Stack is enabled
+      <string id="avahi-daemon_service">Avahi mDNS/DNS-SD Stack</string>
+      <string id="avahi-daemon_service_help">This policy determines whether the systemd unit of the Avahi mDNS/DNS-SD Stack is enabled
 
 Not Configuration - Do not change unit systemd state
 
@@ -66,8 +66,8 @@ Enabled - Turn the unit into enabled (execute the command systemctl enable avahi
 Disabled - Turn the unit into off state (execute the command systemctl disable avahi-daemon.service)
       </string>
 
-      <string id="bind.service">DNS Server BIND</string>
-      <string id="bind.service_help">This policy determines whether the systemd unit of the DNS server BIND (Berkeley Internet Name Domain) is enabled
+      <string id="bind_service">DNS Server BIND</string>
+      <string id="bind_service_help">This policy determines whether the systemd unit of the DNS server BIND (Berkeley Internet Name Domain) is enabled
 
 Not Configuration - Do not change unit systemd state
 
@@ -76,8 +76,8 @@ Enabled - Turn the unit into enabled (execute the command systemctl enable bind.
 Disabled - Turn the unit into off state (execute the command systemctl disable bind.service)
       </string>
 
-      <string id="chronyd.service">Chronyd (NTP Service)</string>
-      <string id="chronyd.service_help">This policy determines whether the systemd unit of the NTP client/server Chronyd is enabled
+      <string id="chronyd_service">Chronyd (NTP Service)</string>
+      <string id="chronyd_service_help">This policy determines whether the systemd unit of the NTP client/server Chronyd is enabled
 
 Not Configuration - Do not change unit systemd state
 
@@ -86,8 +86,8 @@ Enabled - Turn the unit into enabled (execute the command systemctl enable chron
 Disabled - Turn the unit into off state (execute the command systemctl disable chronyd.service)
       </string>
 
-      <string id="colord.service">Service colord</string>
-      <string id="colord.service_help">This policy determines whether the systemd unit of the Service for manage, Install and generate color profiles is enabled
+      <string id="colord_service">Service colord</string>
+      <string id="colord_service_help">This policy determines whether the systemd unit of the Service for manage, Install and generate color profiles is enabled
 
 Not Configuration - Do not change unit systemd state
 
@@ -96,8 +96,8 @@ Enabled - Turn the unit into enabled (execute the command systemctl enable color
 Disabled - Turn the unit into off state (execute the command systemctl disable colord.service)
       </string>
 
-      <string id="consolesaver.service">Сonsolesaver Service SYSV</string>
-      <string id="consolesaver.service_help">This policy determines whether the systemd unit of the Сonsolesaver (SYSV: This package loads console powersaver configuration) is enabled
+      <string id="consolesaver_service">Сonsolesaver Service SYSV</string>
+      <string id="consolesaver_service_help">This policy determines whether the systemd unit of the Сonsolesaver (SYSV: This package loads console powersaver configuration) is enabled
 
 Not Configuration - Do not change unit systemd state
 
@@ -106,8 +106,8 @@ Enabled - Turn the unit into enabled (execute the command systemctl enable conso
 Disabled - Turn the unit into off state (execute the command systemctl disable consolesaver.service)
       </string>
 
-      <string id="cpufreq-simple.service">Cpufreq-simple service</string>
-      <string id="cpufreq-simple.service_help">This policy determines whether the systemd unit of the Cpufreq-simple service (loads kernel modules needed to scale cpufreq) is enabled
+      <string id="cpufreq-simple_service">Cpufreq-simple service</string>
+      <string id="cpufreq-simple_service_help">This policy determines whether the systemd unit of the Cpufreq-simple service (loads kernel modules needed to scale cpufreq) is enabled
 
 Not Configuration - Do not change unit systemd state
 
@@ -116,8 +116,8 @@ Enabled - Turn the unit into enabled (execute the command systemctl enable cpufr
 Disabled - Turn the unit into off state (execute the command systemctl disable cpufreq-simple.service)
       </string>
 
-      <string id="crond.service">Crond Service</string>
-      <string id="crond.service_help">This policy determines whether the systemd unit of the Cron Demon is enabled
+      <string id="crond_service">Crond Service</string>
+      <string id="crond_service_help">This policy determines whether the systemd unit of the Cron Demon is enabled
 
 Not Configuration - Do not change unit systemd state
 
@@ -126,8 +126,8 @@ Enabled - Turn the unit into enabled (execute the command systemctl enable crond
 Disabled - Turn the unit into off state (execute the command systemctl disable crond.service)
       </string>
 
-      <string id="dbus.service">D-Bus System Message Bus</string>
-      <string id="dbus.service_help">This policy determines whether the systemd unit of the D-Bus System Message Bus is enabled
+      <string id="dbus_service">D-Bus System Message Bus</string>
+      <string id="dbus_service_help">This policy determines whether the systemd unit of the D-Bus System Message Bus is enabled
 
 Not Configuration - Do not change unit systemd state
 
@@ -136,8 +136,8 @@ Enabled - Turn the unit into enabled (execute the command systemctl enable dbus.
 Disabled - Turn the unit into off state (execute the command systemctl disable dbus.service)
       </string>
 
-      <string id="dnsmasq.service">Service Dnsmasq</string>
-      <string id="dnsmasq.service_help">This policy determines whether the systemd unit of the Service Dnsmasq (lightweight DHCP and caching DNS server, as well as TFTP server to support netboot) is enabled
+      <string id="dnsmasq_service">Service Dnsmasq</string>
+      <string id="dnsmasq_service_help">This policy determines whether the systemd unit of the Service Dnsmasq (lightweight DHCP and caching DNS server, as well as TFTP server to support netboot) is enabled
 
 Not Configuration - Do not change unit systemd state
 
@@ -146,8 +146,8 @@ Enabled - Turn the unit into enabled (execute the command systemctl enable dnsma
 Disabled - Turn the unit into off state (execute the command systemctl disable dnsmasq.service)
       </string>
 
-      <string id="gpm.service">Console Mouse manager</string>
-      <string id="gpm.service_help">This policy determines whether the systemd unit of the Console Mouse manager is enabled
+      <string id="gpm_service">Console Mouse manager</string>
+      <string id="gpm_service_help">This policy determines whether the systemd unit of the Console Mouse manager is enabled
 
 Not Configuration - Do not change unit systemd state
 
@@ -156,8 +156,8 @@ Enabled - Turn the unit into enabled (execute the command systemctl enable gpm.s
 Disabled - Turn the unit into off state (execute the command systemctl disable gpm.service)
       </string>
 
-      <string id="kmod-static-nodes.service">Systemd Unit kmod-static-nodes</string>
-      <string id="kmod-static-nodes.service_help">This policy determines whether the systemd unit of the Systemd Unit kmod-static-nodes (сreates a list of required static device nodes for the current kernel) is enabled
+      <string id="kmod-static-nodes_service">Systemd Unit kmod-static-nodes</string>
+      <string id="kmod-static-nodes_service_help">This policy determines whether the systemd unit of the Systemd Unit kmod-static-nodes (сreates a list of required static device nodes for the current kernel) is enabled
 
 Not Configuration - Do not change unit systemd state
 
@@ -166,8 +166,8 @@ Enabled - Turn the unit into enabled (execute the command systemctl enable kmod-
 Disabled - Turn the unit into off state (execute the command systemctl disable kmod-static-nodes.service)
       </string>
 
-      <string id="krb5kdc.service">Kerberos 5 KDC</string>
-      <string id="krb5kdc.service_help">This policy determines whether the systemd unit of the systemd unit of the Kerberos 5 KDC is enabled
+      <string id="krb5kdc_service">Kerberos 5 KDC</string>
+      <string id="krb5kdc_service_help">This policy determines whether the systemd unit of the systemd unit of the Kerberos 5 KDC is enabled
 
 Not Configuration - Do not change unit systemd state
 
@@ -176,8 +176,8 @@ Enabled - Turn the unit into enabled (execute the command systemctl enable krb5k
 Disabled - Turn the unit into off state (execute the command systemctl disable krb5kdc.service)
       </string>
 
-      <string id="lightdm.service">Accounts Service</string>
-      <string id="lightdm.service_help">This policy determines whether the systemd unit of the Accounts Service is enabled
+      <string id="lightdm_service">Accounts Service</string>
+      <string id="lightdm_service_help">This policy determines whether the systemd unit of the Accounts Service is enabled
 
 Not Configuration - Do not change unit systemd state
 
@@ -186,8 +186,8 @@ Enabled - Turn the unit into enabled (execute the command systemctl enable light
 Disabled - Turn the unit into off state (execute the command systemctl disable lightdm.service)
       </string>
 
-      <string id="ModemManager.service">Modem Manager</string>
-      <string id="ModemManager.service_help">This policy determines whether the systemd unit of the Modem Manager is enabled
+      <string id="ModemManager_service">Modem Manager</string>
+      <string id="ModemManager_service_help">This policy determines whether the systemd unit of the Modem Manager is enabled
 
 Not Configuration - Do not change unit systemd state
 
@@ -196,8 +196,8 @@ Enabled - Turn the unit into enabled (execute the command systemctl enable Modem
 Disabled - Turn the unit into off state (execute the command systemctl disable ModemManager.service)
       </string>
 
-      <string id="network.service">Network Connectivity Service</string>
-      <string id="network.service_help">This policy determines whether the systemd unit of the Network Connectivity Service is enabled
+      <string id="network_service">Network Connectivity Service</string>
+      <string id="network_service_help">This policy determines whether the systemd unit of the Network Connectivity Service is enabled
 
 Not Configuration - Do not change unit systemd state
 
@@ -206,8 +206,8 @@ Enabled - Turn the unit into enabled (execute the command systemctl enable netwo
 Disabled - Turn the unit into off state (execute the command systemctl disable network.service)
       </string>
 
-      <string id="NetworkManager-wait-online.service">Network Manager Wait Online</string>
-      <string id="NetworkManager-wait-online.service_help">This policy determines whether the systemd unit of the Network Manager Wait Online is enabled
+      <string id="NetworkManager-wait-online_service">Network Manager Wait Online</string>
+      <string id="NetworkManager-wait-online_service_help">This policy determines whether the systemd unit of the Network Manager Wait Online is enabled
 
 Not Configuration - Do not change unit systemd state
 
@@ -216,8 +216,8 @@ Enabled - Turn the unit into enabled (execute the command systemctl enable Netwo
 Disabled - Turn the unit into off state (execute the command systemctl disable NetworkManager-wait-online.service)
       </string>
 
-      <string id="NetworkManager.service">Network Manager</string>
-      <string id="NetworkManager.service_help">This policy determines whether the systemd unit of the Network Manager is enabled
+      <string id="NetworkManager_service">Network Manager</string>
+      <string id="NetworkManager_service_help">This policy determines whether the systemd unit of the Network Manager is enabled
 
 Not Configuration - Do not change unit systemd state
 
@@ -226,8 +226,8 @@ Enabled - Turn the unit into enabled (execute the command systemctl enable Netwo
 Disabled - Turn the unit into off state (execute the command systemctl disable NetworkManager.service)
       </string>
 
-      <string id="nmb.service">Samba NMB Daemon</string>
-      <string id="nmb.service_help">This policy determines whether the systemd unit of the Samba NMB Daemon is enabled
+      <string id="nmb_service">Samba NMB Daemon</string>
+      <string id="nmb_service_help">This policy determines whether the systemd unit of the Samba NMB Daemon is enabled
 
 Not Configuration - Do not change unit systemd state
 
@@ -236,8 +236,8 @@ Enabled - Turn the unit into enabled (execute the command systemctl enable nmb.s
 Disabled - Turn the unit into off state (execute the command systemctl disable nmb.service)
       </string>
 
-      <string id="nscd.service">Name Service Cache Daemon</string>
-      <string id="nscd.service_help">This policy determines whether the systemd unit of the Name Service Cache Daemon is enabled
+      <string id="nscd_service">Name Service Cache Daemon</string>
+      <string id="nscd_service_help">This policy determines whether the systemd unit of the Name Service Cache Daemon is enabled
 
 Not Configuration - Do not change unit systemd state
 
@@ -246,8 +246,8 @@ Enabled - Turn the unit into enabled (execute the command systemctl enable nscd.
 Disabled - Turn the unit into off state (execute the command systemctl disable nscd.service)
       </string>
 
-      <string id="nslcd.service">Naming services LDAP client daemon</string>
-      <string id="nslcd.service_help">This policy determines whether the systemd unit of the Naming services LDAP client daemon is enabled
+      <string id="nslcd_service">Naming services LDAP client daemon</string>
+      <string id="nslcd_service_help">This policy determines whether the systemd unit of the Naming services LDAP client daemon is enabled
 
 Not Configuration - Do not change unit systemd state
 
@@ -256,8 +256,8 @@ Enabled - Turn the unit into enabled (execute the command systemctl enable nslcd
 Disabled - Turn the unit into off state (execute the command systemctl disable nslcd.service)
       </string>
 
-     <string id="oddjobd.service">System module oddjobd</string>
-     <string id="oddjobd.service_help">This policy determines whether the systemd unit of the oddjobd (used for run privileged operations for unprivileged processes) is enabled
+     <string id="oddjobd_service">System module oddjobd</string>
+     <string id="oddjobd_service_help">This policy determines whether the systemd unit of the oddjobd (used for run privileged operations for unprivileged processes) is enabled
 
 Not Configuration - Do not change unit systemd state
 
@@ -266,8 +266,8 @@ Enabled - Turn the unit into enabled (execute the command systemctl enable oddjo
 Disabled - Turn the unit into off state (execute the command systemctl disable oddjobd.service)
       </string>
 
-      <string id="openct.service">SYSV: Smartcard Terminal Tnterface</string>
-      <string id="openct.service_help">This policy determines whether the systemd unit of the Openct (SYSV: Smartcard Terminal Tnterface) is enabled
+      <string id="openct_service">SYSV: Smartcard Terminal Tnterface</string>
+      <string id="openct_service_help">This policy determines whether the systemd unit of the Openct (SYSV: Smartcard Terminal Tnterface) is enabled
 
 Not Configuration - Do not change unit systemd state
 
@@ -276,8 +276,8 @@ Enabled - Turn the unit into enabled (execute the command systemctl enable openc
 Disabled - Turn the unit into off state (execute the command systemctl disable openct.service)
       </string>
 
-      <string id="org.cups.cupsd.service">CUPS Scheduler</string>
-      <string id="org.cups.cupsd.service_help">This policy determines whether the systemd unit of the Service CUPS (Scheduler) is enabled
+      <string id="org_cups_cupsd_service">CUPS Scheduler</string>
+      <string id="org_cups_cupsd_service_help">This policy determines whether the systemd unit of the Service CUPS (Scheduler) is enabled
 
 Not Configuration - Do not change unit systemd state
 
@@ -286,8 +286,8 @@ Enabled - Turn the unit into enabled (execute the command systemctl enable org.c
 Disabled - Turn the unit into off state (execute the command systemctl disable org.cups.cupsd.service)
       </string>
 
-      <string id="pcscd.service">PC/SC Smart Card Daemon</string>
-      <string id="pcscd.service_help">This policy determines whether the systemd unit of the PC/SC Smart Card Daemon is enabled
+      <string id="pcscd_service">PC/SC Smart Card Daemon</string>
+      <string id="pcscd_service_help">This policy determines whether the systemd unit of the PC/SC Smart Card Daemon is enabled
 
 Not Configuration - Do not change unit systemd state
 
@@ -296,8 +296,8 @@ Enabled - Turn the unit into enabled (execute the command systemctl enable pcscd
 Disabled - Turn the unit into off state (execute the command systemctl disable pcscd.service)
       </string>
 
-      <string id="polkit.service">Authorization Manager</string>
-      <string id="polkit.service_help">This policy determines whether the systemd unit of the Authorization Manager (polkit) is enabled
+      <string id="polkit_service">Authorization Manager</string>
+      <string id="polkit_service_help">This policy determines whether the systemd unit of the Authorization Manager (polkit) is enabled
 
 Not Configuration - Do not change unit systemd state
 
@@ -306,8 +306,8 @@ Enabled - Turn the unit into enabled (execute the command systemctl enable polki
 Disabled - Turn the unit into off state (execute the command systemctl disable polkit.service)
       </string>
 
-      <string id="smb.service">Samba SMB Daemon</string>
-      <string id="smb.service_help">This policy determines whether the systemd unit of the Samba SMB Daemon is enabled
+      <string id="smb_service">Samba SMB Daemon</string>
+      <string id="smb_service_help">This policy determines whether the systemd unit of the Samba SMB Daemon is enabled
 
 Not Configuration - Do not change unit systemd state
 
@@ -316,8 +316,8 @@ Enabled - Turn the unit into enabled (execute the command systemctl enable smb.s
 Disabled - Turn the unit into off state (execute the command systemctl disable smb.service)
       </string>
 
-      <string id="sshd.service">Accounts Service</string>
-      <string id="sshd.service_help">This policy determines whether the systemd unit of the OpenSSH server daemon is enabled
+      <string id="sshd_service">Accounts Service</string>
+      <string id="sshd_service_help">This policy determines whether the systemd unit of the OpenSSH server daemon is enabled
 
 Not Configuration - Do not change unit systemd state
 
@@ -326,8 +326,8 @@ Enabled - Turn the unit into enabled (execute the command systemctl enable sshd.
 Disabled - Turn the unit into off state (execute the command systemctl disable sshd.service)
       </string>
 
-      <string id="upower.service">Daemon Upower</string>
-      <string id="upower.service_help">This policy determines whether the systemd unit of the Daemon Upower (power management) is enabled
+      <string id="upower_service">Daemon Upower</string>
+      <string id="upower_service_help">This policy determines whether the systemd unit of the Daemon Upower (power management) is enabled
 
 Not Configuration - Do not change unit systemd state
 
@@ -336,8 +336,8 @@ Enabled - Turn the unit into enabled (execute the command systemctl enable upowe
 Disabled - Turn the unit into off state (execute the command systemctl disable upower.service)
       </string>
 
-      <string id="winbind.service">Samba Winbind Daemon</string>
-      <string id="winbind.service_help">This policy determines whether the systemd unit of the Samba Winbind Daemon is enabled
+      <string id="winbind_service">Samba Winbind Daemon</string>
+      <string id="winbind_service_help">This policy determines whether the systemd unit of the Samba Winbind Daemon is enabled
 
 Not Configuration - Do not change unit systemd state
 
@@ -345,6 +345,26 @@ Enabled - Turn the unit into enabled (execute the command systemctl enable winbi
 
 Disabled - Turn the unit into off state (execute the command systemctl disable winbind.service)
       </string>
+
+       <string id="postfix_service">Postfix Mail Transport Agent</string>
+       <string id="postfix_service_help">This policy determines whether the systemd unit of the Postfix Mail Transport Agent is enabled
+
+Not Configuration - Do not change unit systemd state
+
+Enabled - Turn the unit into enabled (execute the command systemctl enable postfix.service)
+
+Disabled - Turn the unit into off state (execute the command systemctl disable postfix.service)
+       </string>
+
+       <string id="rpcbind_service">RPC bind Service</string>
+       <string id="rpcbind_service_help">This policy determines whether the systemd unit RPC bind Service is enabled
+
+Not Configuration - Do not change unit systemd state
+
+Enabled - Turn the unit into enabled (execute the command systemctl enable rpcbind.service)
+
+Disabled - Turn the unit into off state (execute the command systemctl disable rpcbind.service)
+       </string>
     </stringTable>
   </resources>
 </policyDefinitionResources>
