@@ -345,6 +345,26 @@ Enabled - Turn the unit into enabled (execute the command systemctl enable winbi
 
 Disabled - Turn the unit into off state (execute the command systemctl disable winbind.service)
       </string>
+
+       <string id="postfix_service">Postfix Mail Transport Agent</string>
+       <string id="postfix_service_help">This policy determines whether the systemd unit of the Postfix Mail Transport Agent is enabled
+
+Not Configuration - Do not change unit systemd state
+
+Enabled - Turn the unit into enabled (execute the command systemctl enable postfix.service)
+
+Disabled - Turn the unit into off state (execute the command systemctl disable postfix.service)
+       </string>
+
+       <string id="rpcbind_service">RPC bind Service</string>
+       <string id="rpcbind_service_help">This policy determines whether the systemd unit RPC bind Service is enabled
+
+Not Configuration - Do not change unit systemd state
+
+Enabled - Turn the unit into enabled (execute the command systemctl enable rpcbind.service)
+
+Disabled - Turn the unit into off state (execute the command systemctl disable rpcbind.service)
+       </string>
     </stringTable>
   </resources>
 </policyDefinitionResources>
