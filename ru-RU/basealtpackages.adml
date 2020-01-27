@@ -6,6 +6,9 @@
 
   <resources>
     <stringTable>
+      <string id="ALT_Packages">Пакеты</string>
+      <string id="ALT_Packages_Help">Настройка установки программного обеспечения из репозитория пакетов.</string>
+
       <string id="packages_install">Установка пакетов</string>
       <string id="packages_install_help">Эта политика определяет список пакетов, которые должны быть установлены при отсутствии
 
@@ -18,30 +21,34 @@
       </string>
 
       <string id="packages_upgrade">Обновление пакетов</string>
-      <string id="packages_upgrade_help">Эта политика определяет, обновить ли пакетную базу
+      <string id="packages_upgrade_help">Эта политика определяет автоматическое обновление пакетной базы
 
-Не задано / Отключено - не обновлять
+Не задано - не изменять установленное состояние
 
-Включено - обновить
+Отключено - не обновлять операционную систему автоматически
+
+Включено - обновлять операционную систему автоматически
       </string>
 
       <string id="kernel_upgrade">Обновление ядра</string>
-      <string id="kernel_upgrade_help">Эта политика определяет, обновить ли ядро Linux
+      <string id="kernel_upgrade_help">Эта политика определяет автоматическое обновление ядра операционной системы
 
-Не задано / Отключено - не обновлять
+Не задано - не изменять установленное состояние
 
-Включено - обновить
+Отключено - не обновлять ядро Linux автоматически
+
+Включено - обновлять ядро Linux автоматически
       </string>
     </stringTable>
-	<presentationTable>
-      <presentation id="packages_install">
-		<text>Список пакетов для установки:</text>
-        <textBox refId="PackagesForInstall">
-          <label/>
-        </textBox>
-      </presentation>
+      <presentationTable>
+        <presentation id="packages_install">
+          <text>Список пакетов для установки:</text>
+          <textBox refId="PackagesForInstall">
+            <label/>
+          </textBox>
+        </presentation>
       <presentation id="packages_remove">
-		<text>Список пакетов для удаления:</text>
+        <text>Список пакетов для удаления:</text>
         <textBox refId="PackagesForRemove">
           <label/>
         </textBox>

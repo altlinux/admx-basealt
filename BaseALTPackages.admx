@@ -6,25 +6,30 @@
     <using prefix="system" namespace="BaseALT.Policies.System" />
   </policyNamespaces>
   <resources minRequiredRevision="1.0" />
+
+  <categories>
+    <category name="ALT_Packages" displayName="$(string.ALT_Packages)" explainText="$(string.ALT_Packages_Help)">
+      <parentCategory ref="system:ALT_System" />
+    </category>
+  </categories>
+
   <policies>
     <policy class="Machine" displayName="$(string.packages_install)" explainText="$(string.packages_install_help)" key="Software\BaseALT\Policies\Packages" name="PackagesForInstall" presentation="$(presentation.packages_install)">
-      <parentCategory ref="system:ALT_Packages"/>
+      <parentCategory ref="ALT_Packages"/>
       <supportedOn ref="system:SUPPORTED_AltP8"/>
       <elements>
         <text id="PackagesForInstall" valueName="PackagesForInstall" required="true" />
       </elements>
     </policy>
-	<policy class="Machine" displayName="$(string.packages_remove)" explainText="$(string.packages_remove_help)" key=
-	"Software\BaseALT\Policies\Packages" name="PackagesForRemove" presentation="$(presentation.packages_remove)">
-      <parentCategory ref="system:ALT_Packages"/>
+      <policy class="Machine" displayName="$(string.packages_remove)" explainText="$(string.packages_remove_help)" key="Software\BaseALT\Policies\Packages" name="PackagesForRemove" presentation="$(presentation.packages_remove)">
+      <parentCategory ref="ALT_Packages"/>
       <supportedOn ref="system:SUPPORTED_AltP8"/>
       <elements>
         <text id="PackagesForRemove" valueName="PackagesForRemove" required="true" />
       </elements>
     </policy>
-	<policy class="Machine" displayName="$(string.packages_upgrade)" explainText="$(string.packages_upgrade_help)" key=
-	"Software\BaseALT\Policies\Packages" name="PackagesUpgrade" valueName="PackagesUpgrade">
-      <parentCategory ref="system:ALT_Packages"/>
+      <policy class="Machine" displayName="$(string.packages_upgrade)" explainText="$(string.packages_upgrade_help)" key="Software\BaseALT\Policies\Packages" name="PackagesUpgrade" valueName="PackagesUpgrade">
+      <parentCategory ref="ALT_Packages"/>
       <supportedOn ref="system:SUPPORTED_AltP8"/>
       <enabledValue>
         <decimal value="1"/>
@@ -33,9 +38,8 @@
         <decimal value="0"/>
       </disabledValue>
     </policy>
-		<policy class="Machine" displayName="$(string.kernel_upgrade)" explainText="$(string.kernel_upgrade_help)" key=
-	"Software\BaseALT\Policies\Packages" name="KernelUpgrade" valueName="KernelUpgrade">
-      <parentCategory ref="system:ALT_Packages"/>
+      <policy class="Machine" displayName="$(string.kernel_upgrade)" explainText="$(string.kernel_upgrade_help)" key="Software\BaseALT\Policies\Packages" name="KernelUpgrade" valueName="KernelUpgrade">
+      <parentCategory ref="ALT_Packages"/>
       <supportedOn ref="system:SUPPORTED_AltP8"/>
       <enabledValue>
         <decimal value="1"/>
