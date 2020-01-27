@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--  (c) 2019 BaseALT, Ltd.  -->
+<policyDefinitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" revision="1.0" schemaVersion="1.0" xmlns="http://schemas.microsoft.com/GroupPolicy/2006/07/PolicyDefinitions">
+  <policyNamespaces>
+    <target prefix="packages" namespace="BaseALT.Policies.Packages" />
+    <using prefix="system" namespace="BaseALT.Policies.System" />
+  </policyNamespaces>
+  <resources minRequiredRevision="1.0" />
+  <policies>
+    <policy class="Machine" displayName="$(string.packages_install)" explainText="$(string.packages_install_help)" key="Software\BaseALT\Policies\Packages" name="PackagesForInstall" presentation="$(presentation.packages_install)">
+      <parentCategory ref="system:ALT_Packages"/>
+      <supportedOn ref="system:SUPPORTED_AltP8"/>
+      <elements>
+        <text id="PackagesForInstall" valueName="PackagesForInstall" required="true" />
+      </elements>
+    </policy>
+	<policy class="Machine" displayName="$(string.packages_remove)" explainText="$(string.packages_remove_help)" key=
+	"Software\BaseALT\Policies\Packages" name="PackagesForRemove" presentation="$(presentation.packages_remove)">
+      <parentCategory ref="system:ALT_Packages"/>
+      <supportedOn ref="system:SUPPORTED_AltP8"/>
+      <elements>
+        <text id="PackagesForRemove" valueName="PackagesForRemove" required="true" />
+      </elements>
+    </policy>
+	<policy class="Machine" displayName="$(string.packages_upgrade)" explainText="$(string.packages_upgrade_help)" key=
+	"Software\BaseALT\Policies\Packages" name="PackagesUpgrade" valueName="PackagesUpgrade">
+      <parentCategory ref="system:ALT_Packages"/>
+      <supportedOn ref="system:SUPPORTED_AltP8"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+		<policy class="Machine" displayName="$(string.kernel_upgrade)" explainText="$(string.kernel_upgrade_help)" key=
+	"Software\BaseALT\Policies\Packages" name="KernelUpgrade" valueName="KernelUpgrade">
+      <parentCategory ref="system:ALT_Packages"/>
+      <supportedOn ref="system:SUPPORTED_AltP8"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+  </policies>
+</policyDefinitions>

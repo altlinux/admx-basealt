@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  (c) 2019 BaseALT, Ltd.  -->
+<policyDefinitionResources xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.microsoft.com/GroupPolicy/2006/07/PolicyDefinitions" revision="1.0" schemaVersion="1.0">
+  <displayName>Определения списка ПО операционной системы Альт</displayName>
+  <description>Этот файл содержит определения политик для установки и удаления ПО в операционной системе Альт</description>
+
+  <resources>
+    <stringTable>
+      <string id="packages_install">Установка пакетов</string>
+      <string id="packages_install_help">Эта политика определяет список пакетов, которые должны быть установлены при отсутствии
+
+Укажите список пакетов через пробел
+      </string>
+      <string id="packages_remove">Удаление пакетов</string>
+      <string id="packages_remove_help">Эта политика определяет список пакетов, которые должны быть удалены при наличии
+
+Укажите список пакетов через пробел
+      </string>
+
+      <string id="packages_upgrade">Обновление пакетов</string>
+      <string id="packages_upgrade_help">Эта политика определяет, обновить ли пакетную базу
+
+Не задано / Отключено - не обновлять
+
+Включено - обновить
+      </string>
+
+      <string id="kernel_upgrade">Обновление ядра</string>
+      <string id="kernel_upgrade_help">Эта политика определяет, обновить ли ядро Linux
+
+Не задано / Отключено - не обновлять
+
+Включено - обновить
+      </string>
+    </stringTable>
+	<presentationTable>
+      <presentation id="packages_install">
+		<text>Список пакетов для установки:</text>
+        <textBox refId="PackagesForInstall">
+          <label/>
+        </textBox>
+      </presentation>
+      <presentation id="packages_remove">
+		<text>Список пакетов для удаления:</text>
+        <textBox refId="PackagesForRemove">
+          <label/>
+        </textBox>
+      </presentation>
+    </presentationTable>
+  </resources>
+</policyDefinitionResources>
