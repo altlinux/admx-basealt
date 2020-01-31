@@ -431,13 +431,28 @@ Disabled - Disable SFTP support on the OpenSSH server
 Enabled - Enable SFTP support on the OpenSSH server
       </string>
 
-      <string id="sshd-allow-groups">Valid sshd user group whitelist</string>
+      <string id="sshd-allow-groups">Restricting access to sshd users according to the list of valid groups</string>
       <string id="sshd-allow-groups_help">This policy defines the functionality of the whitelist of valid sshd user groups
 
 Disabled - The white list of valid sshd user groups is disabled
 
 Enabled - The white list of valid sshd user groups is enabled
       </string>
+      <string id="sshd-allow-groups-list">The whitelist of valid sshd user groups</string>
+      <string id="sshd-allow-groups-list_help">This policy defines the list of groups that will be accessible by sshd
+
+users - Allow SSH Access to groups wheel and users
+
+remote - Allow SSH Access to groups wheel and remote
+
+wheelonly - Allow SSH Access to group wheel only
+
+remoteonly - Allow SSH Access to group remote only
+      </string>
+      <string id="sshd-allow-groups-list_users">wheel and users</string>
+      <string id="sshd-allow-groups-list_remote">wheel and remote</string>
+      <string id="sshd-allow-groups-list_wheelonly">wheel only</string>
+      <string id="sshd-allow-groups-list_remoteonly">remote only</string>
 
       <string id="sshd-gssapi-auth">GSS API authorization support on sshd server</string>
       <string id="sshd-gssapi-auth_help">This policy defines the functionality of authorization support using the GSS API on the sshd server
@@ -755,6 +770,10 @@ Only root - Only root is permitted to run /usr/bin/Xorg
       </presentation>
       <presentation id="rpcbind">
         <dropdownList defaultItem="1" refId="rpcbind_setter">Select an operating mode:
+        </dropdownList>
+      </presentation>
+      <presentation id="sshd-allow-groups-list">
+        <dropdownList defaultItem="1" refId="sshd-allow-groups-list_setter">Select an operating mode:
         </dropdownList>
       </presentation>
       <presentation id="su">
