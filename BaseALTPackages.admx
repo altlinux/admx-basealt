@@ -21,14 +21,14 @@
         <text id="PackagesForInstall" valueName="PackagesForInstall" required="true" />
       </elements>
     </policy>
-      <policy class="Machine" displayName="$(string.packages_remove)" explainText="$(string.packages_remove_help)" key="Software\BaseALT\Policies\Packages" name="PackagesForRemove" presentation="$(presentation.packages_remove)">
+    <policy class="Machine" displayName="$(string.packages_remove)" explainText="$(string.packages_remove_help)" key="Software\BaseALT\Policies\Packages" name="PackagesForRemove" presentation="$(presentation.packages_remove)">
       <parentCategory ref="ALT_Packages"/>
       <supportedOn ref="system:SUPPORTED_AltP8"/>
       <elements>
         <text id="PackagesForRemove" valueName="PackagesForRemove" required="true" />
       </elements>
     </policy>
-      <policy class="Machine" displayName="$(string.packages_upgrade)" explainText="$(string.packages_upgrade_help)" key="Software\BaseALT\Policies\Packages" name="PackagesUpgrade" valueName="PackagesUpgrade">
+    <policy class="Machine" displayName="$(string.packages_upgrade)" explainText="$(string.packages_upgrade_help)" key="Software\BaseALT\Policies\Packages" name="PackagesUpgrade" valueName="PackagesUpgrade">
       <parentCategory ref="ALT_Packages"/>
       <supportedOn ref="system:SUPPORTED_AltP8"/>
       <enabledValue>
@@ -38,7 +38,7 @@
         <decimal value="0"/>
       </disabledValue>
     </policy>
-      <policy class="Machine" displayName="$(string.kernel_upgrade)" explainText="$(string.kernel_upgrade_help)" key="Software\BaseALT\Policies\Packages" name="KernelUpgrade" valueName="KernelUpgrade">
+    <policy class="Machine" displayName="$(string.kernel_upgrade)" explainText="$(string.kernel_upgrade_help)" key="Software\BaseALT\Policies\Packages" name="KernelUpgrade" valueName="KernelUpgrade">
       <parentCategory ref="ALT_Packages"/>
       <supportedOn ref="system:SUPPORTED_AltP8"/>
       <enabledValue>

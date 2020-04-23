@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  (c) 2020 BaseALT, Ltd.  -->
+<policyDefinitionResources xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.microsoft.com/GroupPolicy/2006/07/PolicyDefinitions" revision="1.0" schemaVersion="1.0">
+  <displayName>ALT packages definitions</displayName>
+  <description>This file contains the install and remove packages definitions used by ALT operating system.</description>
+
+  <resources>
+    <stringTable>
+      <string id="ALT_Packages">Packages</string>
+      <string id="ALT_Packages_Help">Configuration of software installation from packages repository.</string>
+
+      <string id="packages_install">Install packages</string>
+      <string id="packages_install_help">This policy defines the list of packages that should be installed if not available.
+
+Specify a list of packages with a space
+      </string>
+      <string id="packages_remove">Remove packages</string>
+      <string id="packages_remove_help">This policy defines the list of packages that should be removed if available.
+
+Specify a list of packages with a space
+      </string>
+
+      <string id="packages_upgrade">Upgrade packages</string>
+      <string id="packages_upgrade_help">This policy defines automatic upgrading of the ALT operating system.
+
+Not Configuration - Do not change automatic upgrading state
+
+Enabled - Turn on the automatic upgrading
+
+Disabled - Turn off the automatic upgrading
+      </string>
+
+      <string id="kernel_upgrade">Upgrade kernel</string>
+      <string id="kernel_upgrade_help">This policy defines automatic upgrading of the Linux kernel
+
+Not Configuration - Do not change automatic upgrading state
+
+Enabled - Turn on the automatic kernel upgrading
+
+Disabled - Turn off the automatic kernel upgrading
+      </string>
+    </stringTable>
+      <presentationTable>
+        <presentation id="packages_install">
+          <text>List of packages to install:</text>
+          <textBox refId="PackagesForInstall">
+            <label/>
+          </textBox>
+        </presentation>
+      <presentation id="packages_remove">
+        <text>List of packages to remove:</text>
+        <textBox refId="PackagesForRemove">
+          <label/>
+        </textBox>
+      </presentation>
+    </presentationTable>
+  </resources>
+</policyDefinitionResources>
