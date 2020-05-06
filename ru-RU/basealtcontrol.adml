@@ -618,6 +618,22 @@ SSSD - использовать метод проверки подлинност
       <string id="xorg-server_public">Любой пользователь</string>
       <string id="xorg-server_xgrp">Группа xgrp</string>
       <string id="xorg-server_restricted">Только root</string>
+      <string id="autofs-autosmb">Навигация по общим ресурсам с помощью /mnt/smb</string>
+      <string id="autofs-autosmb_help">
+Данная политика включает навигацию по общим сетевым ресурсам с помощью
+каталога /mnt/smb.
+      </string>
+      <string id="autofs-autosmb_default">Отключено по умолчанию</string>
+      <string id="autofs-autosmb_enabled">Включено</string>
+      <string id="autofs-autosmb_disabled">Отключено</string>
+      <string id="autofs-browse">Отображение точек монтирования</string>
+      <string id="autofs-browse_help">
+Данная политика включает отображение точек монтирования общих сетевых
+ресурсов.
+      </string>
+      <string id="autofs-browse_default">Отключено по умолчанию</string>
+      <string id="autofs-browse_enabled">Включено</string>
+      <string id="autofs-browse_disabled">Отключено</string>
     </stringTable>
     <presentationTable>
       <presentation id="at">
@@ -794,6 +810,14 @@ SSSD - использовать метод проверки подлинност
       </presentation>
       <presentation id="xorg-server">
         <dropdownList defaultItem="0" refId="xorg-server_setter">Кому разрешено запускать:
+        </dropdownList>
+      </presentation>
+      <presentation id="autofs-autosmb">
+        <dropdownList defaultItem="0" refId="autofs-autosmb_setter">Навигация по общим директориям с помощью /mnt/smb:
+        </dropdownList>
+      </presentation>
+      <presentation id="autofs-browse">
+        <dropdownList defaultItem="0" refId="autofs-browse_setter">Показывать точки монтирования всегда:
         </dropdownList>
       </presentation>
     </presentationTable>

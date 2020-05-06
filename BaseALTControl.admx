@@ -1056,5 +1056,51 @@
         </enum>
       </elements>
     </policy>
+    <policy class="Machine" displayName="$(string.autofs-autosmb)" explainText="$(string.autofs-autosmb_help)" key="Software\BaseALT\Policies\Control" name="autofs-autosmb" presentation="$(presentation.autofs-autosmb)">
+      <parentCategory ref="system:ALT_Graphics"/>
+      <supportedOn ref="system:SUPPORTED_AltP8"/>
+      <elements>
+        <enum id="autofs-autosmb_setter" required="true" valueName="autofs-autosmb">
+          <item displayName="$(string.autofs-autosmb_default)">
+            <value>
+              <decimal value="0"/>
+            </value>
+          </item>
+          <item displayName="$(string.autofs-autosmb_enabled)">
+            <value>
+              <decimal value="1"/>
+            </value>
+          </item>
+          <item displayName="$(string.autofs-autosmb_disabled)">
+            <value>
+              <decimal value="2"/>
+            </value>
+          </item>
+        </enum>
+      </elements>
+    </policy>
+    <policy class="Machine" displayName="$(string.autofs-browse)" explainText="$(string.autofs-browse_help)" key="Software\BaseALT\Policies\Control" name="autofs-browse" presentation="$(presentation.autofs-browse)">
+      <parentCategory ref="system:ALT_Graphics"/>
+      <supportedOn ref="system:SUPPORTED_AltP8"/>
+      <elements>
+        <enum id="autofs-browse_setter" required="true" valueName="autofs-browse">
+          <item displayName="$(string.autofs-browse_default)">
+            <value>
+              <decimal value="0"/>
+            </value>
+          </item>
+          <item displayName="$(string.autofs-browse_enabled)">
+            <value>
+              <decimal value="1"/>
+            </value>
+          </item>
+          <item displayName="$(string.autofs-browse_disabled)">
+            <value>
+              <decimal value="2"/>
+            </value>
+          </item>
+        </enum>
+      </elements>
+    </policy>
   </policies>
 </policyDefinitions>
