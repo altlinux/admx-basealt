@@ -7,49 +7,39 @@
   <resources>
     <stringTable>
       <string id="ALT_Packages">Packages</string>
-      <string id="ALT_Packages_Help">Configuration of software installation from packages repository.</string>
+      <string id="ALT_Packages_Help">Software installation settings</string>
 
-      <string id="packages_install">Install packages</string>
-      <string id="packages_install_help">This policy defines the list of packages that should be installed if not available.
+      <string id="packages_install">Software install</string>
+      <string id="packages_install_help">This policy defines the list of packages to be installed
 
-Specify a list of packages with a space
+Space-separated list of packages:
       </string>
-      <string id="packages_remove">Remove packages</string>
-      <string id="packages_remove_help">This policy defines the list of packages that should be removed if available.
+      <string id="packages_remove">Software removal</string>
+      <string id="packages_remove_help">This policy defines the list of packages to be removed
 
-Specify a list of packages with a space
-      </string>
-
-      <string id="packages_upgrade">Upgrade packages</string>
-      <string id="packages_upgrade_help">This policy defines automatic upgrading of the ALT operating system.
-
-Not Configuration - Do not change automatic upgrading state
-
-Enabled - Turn on the automatic upgrading
-
-Disabled - Turn off the automatic upgrading
+Space-separated list of packages:
       </string>
 
-      <string id="kernel_upgrade">Upgrade kernel</string>
-      <string id="kernel_upgrade_help">This policy defines automatic upgrading of the Linux kernel
+      <string id="packages_upgrade">Software upgrade</string>
+      <string id="packages_upgrade_help">This policy defines automatic update behavior
 
-Not Configuration - Do not change automatic upgrading state
+Undefined - Do nothing
 
-Enabled - Turn on the automatic kernel upgrading
+Disabled - Don't update OS automatically
 
-Disabled - Turn off the automatic kernel upgrading
+Enabled - Update OS automatically
       </string>
     </stringTable>
       <presentationTable>
         <presentation id="packages_install">
           <text>List of packages to install:</text>
-          <textBox refId="PackagesForInstall">
+          <textBox refId="InstallPackages">
             <label/>
           </textBox>
         </presentation>
       <presentation id="packages_remove">
         <text>List of packages to remove:</text>
-        <textBox refId="PackagesForRemove">
+        <textBox refId="RemovePackages">
           <label/>
         </textBox>
       </presentation>

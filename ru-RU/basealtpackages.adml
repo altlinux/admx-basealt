@@ -33,13 +33,13 @@
       <presentationTable>
         <presentation id="packages_install">
           <text>Список пакетов для установки:</text>
-          <textBox refId="PackagesForInstall">
+          <textBox refId="InstallPackages">
             <label/>
           </textBox>
         </presentation>
       <presentation id="packages_remove">
         <text>Список пакетов для удаления:</text>
-        <textBox refId="PackagesForRemove">
+        <textBox refId="RemovePackages">
           <label/>
         </textBox>
       </presentation>
