@@ -29,16 +29,6 @@
 
 Включено - обновлять операционную систему автоматически
       </string>
-
-      <string id="kernel_upgrade">Обновление ядра</string>
-      <string id="kernel_upgrade_help">Эта политика определяет автоматическое обновление ядра операционной системы
-
-Не задано - не изменять установленное состояние
-
-Отключено - не обновлять ядро Linux автоматически
-
-Включено - обновлять ядро Linux автоматически
-      </string>
     </stringTable>
       <presentationTable>
         <presentation id="packages_install">
