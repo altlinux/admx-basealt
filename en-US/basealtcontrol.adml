@@ -626,179 +626,179 @@ Only root - Only root is permitted to run /usr/bin/Xorg
     </stringTable>
     <presentationTable>
       <presentation id="at">
-        <dropdownList defaultItem="0" refId="at_setter">Who is allowed to run:
+        <dropdownList noSort="true" defaultItem="0" refId="at_setter">Who is allowed to run:
         </dropdownList>
       </presentation>
       <presentation id="chage">
-        <dropdownList defaultItem="1" refId="chage_setter">Who is allowed to execute:
+        <dropdownList noSort="true" defaultItem="1" refId="chage_setter">Who is allowed to execute:
         </dropdownList>
       </presentation>
       <presentation id="chfn">
-        <dropdownList defaultItem="1" refId="chfn_setter">Who can use:
+        <dropdownList noSort="true" defaultItem="1" refId="chfn_setter">Who can use:
         </dropdownList>
       </presentation>
       <presentation id="chsh">
-        <dropdownList defaultItem="1" refId="chsh_setter">Who can use:
+        <dropdownList noSort="true" defaultItem="1" refId="chsh_setter">Who can use:
         </dropdownList>
       </presentation>
       <presentation id="chrony_setter">
-        <dropdownList defaultItem="1" refId="chrony_setter">Select an operating mode:
+        <dropdownList noSort="true" defaultItem="1" refId="chrony_setter">Select an operating mode:
         </dropdownList>
       </presentation>
       <presentation id="chrony">
-        <dropdownList defaultItem="1" refId="chrony_setter">Select an operating mode:
+        <dropdownList noSort="true" defaultItem="1" refId="chrony_setter">Select an operating mode:
         </dropdownList>
       </presentation>
       <presentation id="consolehelper">
-        <dropdownList defaultItem="0" refId="consolehelper_setter">Who can use:
+        <dropdownList noSort="true" defaultItem="0" refId="consolehelper_setter">Who can use:
         </dropdownList>
       </presentation>
       <presentation id="crontab">
-        <dropdownList defaultItem="0" refId="crontab_setter">Who can use:
+        <dropdownList noSort="true" defaultItem="0" refId="crontab_setter">Who can use:
         </dropdownList>
       </presentation>
       <presentation id="cups">
-        <dropdownList defaultItem="0" refId="cups_setter">CUPS operating mode:
+        <dropdownList noSort="true" defaultItem="0" refId="cups_setter">CUPS operating mode:
         </dropdownList>
       </presentation>
       <presentation id="dvd-ram-control">
-        <dropdownList defaultItem="0" refId="dvd-ram-control_setter">Who is allowed to run:
+        <dropdownList noSort="true" defaultItem="0" refId="dvd-ram-control_setter">Who is allowed to run:
          </dropdownList>
       </presentation>
       <presentation id="dvd_rw-booktype">
-        <dropdownList defaultItem="0" refId="dvd_rw-booktype_setter">Who is allowed to run:
+        <dropdownList noSort="true" defaultItem="0" refId="dvd_rw-booktype_setter">Who is allowed to run:
         </dropdownList>
       </presentation>
       <presentation id="dvd_rw-format">
-        <dropdownList defaultItem="0" refId="dvd_rw-format_setter">Who is allowed to run:
+        <dropdownList noSort="true" defaultItem="0" refId="dvd_rw-format_setter">Who is allowed to run:
         </dropdownList>
       </presentation>
       <presentation id="dvd_rw-mediainfo">
-        <dropdownList defaultItem="0" refId="dvd_rw-mediainfo_setter">Who is allowed to run:
+        <dropdownList noSort="true" defaultItem="0" refId="dvd_rw-mediainfo_setter">Who is allowed to run:
         </dropdownList>
       </presentation>
       <presentation id="fusermount">
-        <dropdownList defaultItem="1" refId="fusermount_setter">Who can use:
+        <dropdownList noSort="true" defaultItem="1" refId="fusermount_setter">Who can use:
         </dropdownList>
       </presentation>
       <presentation id="gpasswd">
-        <dropdownList defaultItem="2" refId="gpasswd_setter">Who is allowed to execute:
+        <dropdownList noSort="true" defaultItem="2" refId="gpasswd_setter">Who is allowed to execute:
         </dropdownList>
       </presentation>
       <presentation id="groupmems">
-        <dropdownList defaultItem="2" refId="groupmems_setter">Who can use:
+        <dropdownList noSort="true" defaultItem="2" refId="groupmems_setter">Who can use:
         </dropdownList>
       </presentation>
       <presentation id="growisofs">
-        <dropdownList defaultItem="0" refId="growisofs_setter">Who can use:
+        <dropdownList noSort="true" defaultItem="0" refId="growisofs_setter">Who can use:
         </dropdownList>
       </presentation>
       <presentation id="hddtemp">
-        <dropdownList defaultItem="1" refId="hddtemp_setter">Who can use:
+        <dropdownList noSort="true" defaultItem="1" refId="hddtemp_setter">Who can use:
         </dropdownList>
       </presentation>
       <presentation id="lightdm-greeter-hide-users">
-        <dropdownList defaultItem="0" refId="lightdm-greeter-hide-users_setter">Select a mode:
+        <dropdownList noSort="true" defaultItem="0" refId="lightdm-greeter-hide-users_setter">Select a mode:
         </dropdownList>
       </presentation>
       <presentation id="mtr">
-        <dropdownList defaultItem="1" refId="mtr_setter">Who is allowed to execute:
+        <dropdownList noSort="true" defaultItem="1" refId="mtr_setter">Who is allowed to execute:
         </dropdownList>
       </presentation>
       <presentation id="kvm">
-        <dropdownList defaultItem="1" refId="kvm_setter">Who has the right to use:
+        <dropdownList noSort="true" defaultItem="1" refId="kvm_setter">Who has the right to use:
         </dropdownList>
       </presentation>
       <presentation id="ldap-reverse-dns-lookup">
-        <dropdownList defaultItem="0" refId="ldap-reverse-dns-lookup_setter">Reverse Search:
+        <dropdownList noSort="true" defaultItem="0" refId="ldap-reverse-dns-lookup_setter">Reverse Search:
         </dropdownList>
       </presentation>
       <presentation id="ldap-tls-cert-check">
-        <dropdownList defaultItem="4" refId="ldap-tls-cert-check_setter">Select an operating mode:
+        <dropdownList noSort="true" defaultItem="4" refId="ldap-tls-cert-check_setter">Select an operating mode:
         </dropdownList>
       </presentation>
       <presentation id="mount">
-        <dropdownList defaultItem="0" refId="mount_setter">Who is allowed to execute:
+        <dropdownList noSort="true" defaultItem="0" refId="mount_setter">Who is allowed to execute:
         </dropdownList>
       </presentation>
       <presentation id="newgrp">
-        <dropdownList defaultItem="2" refId="newgrp_setter">Who has the right to use:
+        <dropdownList noSort="true" defaultItem="2" refId="newgrp_setter">Who has the right to use:
         </dropdownList>
       </presentation>
       <presentation id="nfsmount">
-        <dropdownList defaultItem="2" refId="nfsmount_setter">Who has the right to use:
+        <dropdownList noSort="true" defaultItem="2" refId="nfsmount_setter">Who has the right to use:
         </dropdownList>
       </presentation>
       <presentation id="passwd">
-        <dropdownList defaultItem="0" refId="passwd_setter">Select an operating mode:
+        <dropdownList noSort="true" defaultItem="0" refId="passwd_setter">Select an operating mode:
         </dropdownList>
       </presentation>
       <presentation id="passwdqc-enforce">
-        <dropdownList defaultItem="1" refId="passwdqc-enforce_setter">Select an operating mode:
+        <dropdownList noSort="true" defaultItem="1" refId="passwdqc-enforce_setter">Select an operating mode:
         </dropdownList>
       </presentation>
       <presentation id="ping">
-        <dropdownList defaultItem="0" refId="ping_setter">Who is allowed to execute:
+        <dropdownList noSort="true" defaultItem="0" refId="ping_setter">Who is allowed to execute:
         </dropdownList>
       </presentation>
       <presentation id="postfix">
-        <dropdownList defaultItem="0" refId="postfix_setter">Select an operating mode:
+        <dropdownList noSort="true" defaultItem="0" refId="postfix_setter">Select an operating mode:
         </dropdownList>
       </presentation>
       <presentation id="postqueue">
-        <dropdownList defaultItem="0" refId="postqueue_setter">Who is allowed to execute:
+        <dropdownList noSort="true" defaultItem="0" refId="postqueue_setter">Who is allowed to execute:
         </dropdownList>
       </presentation>
       <presentation id="ppp">
-        <dropdownList defaultItem="1" refId="ppp_setter">Choose an operating mode and who has the right to start:
+        <dropdownList noSort="true" defaultItem="1" refId="ppp_setter">Choose an operating mode and who has the right to start:
         </dropdownList>
       </presentation>
       <presentation id="rpcbind">
-        <dropdownList defaultItem="1" refId="rpcbind_setter">Select an operating mode:
+        <dropdownList noSort="true" defaultItem="1" refId="rpcbind_setter">Select an operating mode:
         </dropdownList>
       </presentation>
       <presentation id="su">
-        <dropdownList defaultItem="2" refId="su_setter">Who has the right to use:
+        <dropdownList noSort="true" defaultItem="2" refId="su_setter">Who has the right to use:
         </dropdownList>
       </presentation>
       <presentation id="sudo">
-        <dropdownList defaultItem="1" refId="sudo_setter">Who has the right to use:
+        <dropdownList noSort="true" defaultItem="1" refId="sudo_setter">Who has the right to use:
         </dropdownList>
       </presentation>
       <presentation id="sudoers">
-        <dropdownList defaultItem="0" refId="sudoers_setter">Select an operating mode:
+        <dropdownList noSort="true" defaultItem="0" refId="sudoers_setter">Select an operating mode:
         </dropdownList>
       </presentation>
       <presentation id="sudoreplay">
-        <dropdownList defaultItem="1" refId="sudoreplay_setter">Who has the right to use:
+        <dropdownList noSort="true" defaultItem="1" refId="sudoreplay_setter">Who has the right to use:
         </dropdownList>
       </presentation>
       <presentation id="system-auth">
-        <dropdownList defaultItem="3" refId="system-auth_setter">Select an operating mode:
+        <dropdownList noSort="true" defaultItem="3" refId="system-auth_setter">Select an operating mode:
         </dropdownList>
       </presentation>
       <presentation id="tcb_chkpwd">
-        <dropdownList defaultItem="1" refId="tcb_chkpwd_setter">Select an operating mode:
+        <dropdownList noSort="true" defaultItem="1" refId="tcb_chkpwd_setter">Select an operating mode:
         </dropdownList>
       </presentation>
       <presentation id="udisks2">
-        <dropdownList defaultItem="0" refId="udisks2_setter">Select an operating mode:
+        <dropdownList noSort="true" defaultItem="0" refId="udisks2_setter">Select an operating mode:
         </dropdownList>
       </presentation>
       <presentation id="virtualbox">
-        <dropdownList defaultItem="1" refId="virtualbox_setter">Who has the right to use:
+        <dropdownList noSort="true" defaultItem="1" refId="virtualbox_setter">Who has the right to use:
         </dropdownList>
       </presentation>
       <presentation id="wireshark-capture">
-        <dropdownList defaultItem="1" refId="wireshark-capture_setter">Choose an operating mode and who has the right to start:
+        <dropdownList noSort="true" defaultItem="1" refId="wireshark-capture_setter">Choose an operating mode and who has the right to start:
         </dropdownList>
       </presentation>
       <presentation id="write">
-        <dropdownList defaultItem="0" refId="write_setter">Who is allowed to run:
+        <dropdownList noSort="true" defaultItem="0" refId="write_setter">Who is allowed to run:
         </dropdownList>
       </presentation>
       <presentation id="xorg-server">
-        <dropdownList defaultItem="0" refId="xorg-server_setter">Who is allowed to run:
+        <dropdownList noSort="true" defaultItem="0" refId="xorg-server_setter">Who is allowed to run:
         </dropdownList>
       </presentation>
     </presentationTable>
