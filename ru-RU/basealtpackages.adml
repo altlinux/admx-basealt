@@ -6,7 +6,7 @@
 
   <resources>
     <stringTable>
-      <string id="ALT_Packages">Пакеты</string>
+      <string id="ALT_Packages">Управление пакетами</string>
       <string id="ALT_Packages_Help">Настройка установки программного обеспечения из репозитория пакетов.</string>
 
       <string id="packages_install">Установка пакетов</string>
@@ -20,7 +20,7 @@
 Укажите список пакетов через пробел
       </string>
 
-      <string id="packages_upgrade">Обновление пакетов</string>
+      <string id="packages_upgrade">Автоматическое обновление пакетов</string>
       <string id="packages_upgrade_help">Эта политика определяет автоматическое обновление пакетной базы
 
 Не задано - не изменять установленное состояние
