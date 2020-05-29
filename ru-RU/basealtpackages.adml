@@ -6,7 +6,7 @@
 
   <resources>
     <stringTable>
-      <string id="ALT_Packages">Пакеты</string>
+      <string id="ALT_Packages">Управление пакетами</string>
       <string id="ALT_Packages_Help">Настройка установки программного обеспечения из репозитория пакетов.</string>
 
       <string id="packages_install">Установка пакетов</string>
@@ -20,7 +20,7 @@
 Укажите список пакетов через пробел
       </string>
 
-      <string id="packages_upgrade">Обновление пакетов</string>
+      <string id="packages_upgrade">Автоматическое обновление пакетов</string>
       <string id="packages_upgrade_help">Эта политика определяет автоматическое обновление пакетной базы
 
 Не задано - не изменять установленное состояние
@@ -29,27 +29,17 @@
 
 Включено - обновлять операционную систему автоматически
       </string>
-
-      <string id="kernel_upgrade">Обновление ядра</string>
-      <string id="kernel_upgrade_help">Эта политика определяет автоматическое обновление ядра операционной системы
-
-Не задано - не изменять установленное состояние
-
-Отключено - не обновлять ядро Linux автоматически
-
-Включено - обновлять ядро Linux автоматически
-      </string>
     </stringTable>
       <presentationTable>
         <presentation id="packages_install">
           <text>Список пакетов для установки:</text>
-          <textBox refId="PackagesForInstall">
+          <textBox refId="InstallPackages">
             <label/>
           </textBox>
         </presentation>
       <presentation id="packages_remove">
         <text>Список пакетов для удаления:</text>
-        <textBox refId="PackagesForRemove">
+        <textBox refId="RemovePackages">
           <label/>
         </textBox>
       </presentation>
