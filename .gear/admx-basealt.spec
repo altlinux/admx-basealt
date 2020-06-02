@@ -5,7 +5,7 @@ Version: 0.1.0
 Release: alt1
 
 Summary: Altlinux-specific admx files
-License: GPLv3+
+License: AGPLv3+
 Group: System/Configuration/Other
 Url: https://github.com/altlinux/admx-basealt
 BuildArch: noarch
