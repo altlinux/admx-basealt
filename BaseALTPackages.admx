@@ -14,18 +14,18 @@
   </categories>
 
   <policies>
-    <policy class="Machine" displayName="$(string.packages_install)" explainText="$(string.packages_install_help)" key="Software\BaseALT\Policies\Packages" name="InstallPackages" presentation="$(presentation.packages_install)">
+    <policy class="Machine" displayName="$(string.packages_install)" explainText="$(string.packages_install_help)" key="Software\BaseALT\Policies\Packages" name="InstallPackages" presentation="$(presentation.InstallPackages)">
       <parentCategory ref="ALT_Packages"/>
       <supportedOn ref="system:SUPPORTED_AltP8"/>
       <elements>
-        <text id="InstallPackages" valueName="InstallPackages" required="true" />
+        <list id="InstallPackagesList" key="Software\BaseALT\Policies\Packages\Install" valuePrefix="" />
       </elements>
     </policy>
-    <policy class="Machine" displayName="$(string.packages_remove)" explainText="$(string.packages_remove_help)" key="Software\BaseALT\Policies\Packages" name="RemovePackages" presentation="$(presentation.packages_remove)">
+    <policy class="Machine" displayName="$(string.packages_remove)" explainText="$(string.packages_remove_help)" key="Software\BaseALT\Policies\Packages" name="RemovePackages" presentation="$(presentation.RemovePackages)">
       <parentCategory ref="ALT_Packages"/>
       <supportedOn ref="system:SUPPORTED_AltP8"/>
       <elements>
-        <text id="RemovePackages" valueName="RemovePackages" required="true" />
+        <list id="RemovePackagesList" key="Software\BaseALT\Policies\Packages\Remove" valuePrefix="" />
       </elements>
     </policy>
     <policy class="Machine" displayName="$(string.packages_upgrade)" explainText="$(string.packages_upgrade_help)" key="Software\BaseALT\Policies\Packages" name="UpgradePackages" valueName="UpgradePackages">

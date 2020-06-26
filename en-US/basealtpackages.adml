@@ -12,12 +12,12 @@
       <string id="packages_install">Software install</string>
       <string id="packages_install_help">This policy defines the list of packages to be installed
 
-Space-separated list of packages:
+List of packages to install:
       </string>
       <string id="packages_remove">Software removal</string>
       <string id="packages_remove_help">This policy defines the list of packages to be removed
 
-Space-separated list of packages:
+List of packages to remove:
       </string>
 
       <string id="packages_upgrade">Automatic software upgrade</string>
@@ -30,18 +30,12 @@ Disabled - Don't update OS automatically
 Enabled - Update OS automatically
       </string>
     </stringTable>
-      <presentationTable>
-        <presentation id="packages_install">
-          <text>List of packages to install:</text>
-          <textBox refId="InstallPackages">
-            <label/>
-          </textBox>
-        </presentation>
-      <presentation id="packages_remove">
-        <text>List of packages to remove:</text>
-        <textBox refId="RemovePackages">
-          <label/>
-        </textBox>
+    <presentationTable>
+      <presentation id="InstallPackages">
+        <listBox refId="InstallPackagesList">List of packages to install</listBox>
+      </presentation>
+      <presentation id="RemovePackages">
+        <listBox refId="RemovePackagesList">List of packages to remove</listBox>
       </presentation>
     </presentationTable>
   </resources>
