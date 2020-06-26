@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--  (c) 2019 BaseALT, Ltd.  -->
+<!--  (c) 2019-2020 BaseALT, Ltd.  -->
 <policyDefinitionResources xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.microsoft.com/GroupPolicy/2006/07/PolicyDefinitions" revision="1.0" schemaVersion="1.0">
   <displayName>Sisyphus based products table</displayName>
   <description>This file contains all the product definitions used in supported on definitions.</description>
@@ -38,18 +38,23 @@
 
       <string id="ALTWorkstation9">ALT Workstation 9 family</string>
       <string id="ALTWorkstation9_9">ALT Workstation 9</string>
+      <string id="ALTWorkstation9_91">ALT Workstation 9.1</string>
 
       <string id="ALTWorkstationK9">ALT Workstation K 9 family</string>
       <string id="ALTWorkstationK9_9">ALT Workstation K 9</string>
+      <string id="ALTWorkstationK9_91">ALT Workstation K 9.1</string>
 
       <string id="ALTEducation9">ALT Education 9 family</string>
       <string id="ALTEducation9_9">ALT Education 9</string>
+      <string id="ALTEducation9_91">ALT Education 9.1</string>
 
       <string id="ALTServer9">ALT Server 9 family</string>
       <string id="ALTServer9_9">ALT Server 9</string>
+      <string id="ALTServer9_91">ALT Server 9.1</string>
 
       <string id="ALTServerV9">ALT Server Virtualization 9 family</string>
       <string id="ALTServerV9_9">ALT Server Virtualization 9</string>
+      <string id="ALTServerV9_91">ALT Server Virtualization 9.1</string>
     </stringTable>
   </resources>
 </policyDefinitionResources>
