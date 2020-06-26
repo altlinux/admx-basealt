@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  (c) 2020 BaseALT, Ltd.  -->
+<policyDefinitionResources xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.microsoft.com/GroupPolicy/2006/07/PolicyDefinitions" revision="1.0" schemaVersion="1.0">
+  <displayName>ALT Group Policies definitions</displayName>
+  <description>This file contains the Group Policy appliers definitions used by ALT operating system.</description>
+
+  <resources>
+    <stringTable>
+      <string id="ALT_GroupPolicies">Group Policies</string>
+      <string id="ALT_GroupPolicies_Help">Group Policy settings.</string>
+
+      <string id="ALT_GPUpdateAppliers">GPUpdate Mechanisms</string>
+      <string id="ALT_GPUpdateAppliers_Help">Group Policy update appliers settings.</string>
+
+      <string id="gpupdate_global_experimental">Experimental Group Policies</string>
+      <string id="gpupdate_global_experimental_help">This policy enables experimental group policy appliers features globally.</string>
+
+      <string id="gpupdate_control_applier">Control system facilities</string>
+      <string id="gpupdate_control_applier_help">This policy enables group policy Control applier features.</string>
+
+      <string id="gpupdate_chromium_applier">Chromium browser</string>
+      <string id="gpupdate_chromium_applier_help">This policy enables group policy Chromium applier feature.</string>
+
+      <string id="gpupdate_firefox_applier">Firefox browser</string>
+      <string id="gpupdate_firefox_applier_help">This policy enables group policy Firefox applier feature.</string>
+
+      <string id="gpupdate_cups_applier">Printer settings</string>
+      <string id="gpupdate_cups_applier_help">This policy enables group policy CUPS applier feature.</string>
+
+      <string id="gpupdate_cups_user_applier">Printer settings for users</string>
+      <string id="gpupdate_cups_user_applier_help">This policy enables group policy CUPS applier for users feature.</string>
+
+      <string id="gpupdate_folders_applier">Local folders control</string>
+      <string id="gpupdate_folders_applier_help">This policy enables group policy Folders applier feature.</string>
+
+      <string id="gpupdate_folders_user_applier">Local folders control for users</string>
+      <string id="gpupdate_folders_user_applier_help">This policy enables group policy Folders applier for users feature.</string>
+
+      <string id="gpupdate_cifs_user_applier">Network drives mounting for users</string>
+      <string id="gpupdate_cifs_user_applier_help">This policy enables group policy CIFS applier for users feature.</string>
+
+      <string id="gpupdate_gsettings_applier">GSettings configuration</string>
+      <string id="gpupdate_gsettings_applier_help">This policy enables group policy GSettings applier feature.</string>
+
+      <string id="gpupdate_gsettings_user_applier">GSettings mechanisms for users</string>
+      <string id="gpupdate_gsettings_user_applier_help">This policy enables group policy GSettings applier for users feature.</string>
+
+      <string id="gpupdate_polkit_applier">PolicyKit authorization</string>
+      <string id="gpupdate_polkit_applier_help">This policy enables group policy PolicyKit applier feature.</string>
+
+      <string id="gpupdate_polkit_user_applier">PolicyKit authorization for users</string>
+      <string id="gpupdate_polkit_user_applier_help">This policy enables group policy PolicyKit applier for users feature.</string>
+
+      <string id="gpupdate_packages_applier">Install and remove packages</string>
+      <string id="gpupdate_packages_applier_help">This policy enables group policy Packages applier feature.</string>
+
+      <string id="gpupdate_packages_user_applier">Install and remove for users</string>
+      <string id="gpupdate_packages_user_applier_help">This policy enables group policy Packages applier for users feature.</string>
+
+      <string id="gpupdate_shortcuts_applier">Shortcuts control</string>
+      <string id="gpupdate_shortcuts_applier_help">This policy enables group policy Shortcuts applier feature.</string>
+
+      <string id="gpupdate_shortcuts_user_applier">Shortcuts control for users</string>
+      <string id="gpupdate_shortcuts_user_applier_help">This policy enables group policy Shortcuts applier for users feature.</string>
+
+      <string id="gpupdate_systemd_applier">Systemd services</string>
+      <string id="gpupdate_systemd_applier_help">This policy enables group policy Systemd applier feature.</string>
+    </stringTable>
+  </resources>
+</policyDefinitionResources>
