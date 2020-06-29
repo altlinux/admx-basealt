@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<!--  (c) 2019 BaseALT, Ltd.  -->
+<!--  (c) 2019-2020 BaseALT, Ltd.  -->
 <policyDefinitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                    revision="1.0" schemaVersion="1.0" xmlns="http://schemas.microsoft.com/GroupPolicy/2006/07/PolicyDefinitions">
   <policyNamespaces>
@@ -42,18 +42,23 @@
         </majorVersion>
         <majorVersion name="ALTWorkstation9" displayName="$(string.ALTWorkstation9)" versionIndex="6">
           <minorVersion name="ALTWorkstation9_9" displayName="$(string.ALTWorkstation9_9)" versionIndex="0"/>
+          <minorVersion name="ALTWorkstation9_91" displayName="$(string.ALTWorkstation9_91)" versionIndex="1"/>
         </majorVersion>
         <majorVersion name="ALTWorkstationK9" displayName="$(string.ALTWorkstationK9)" versionIndex="7">
           <minorVersion name="ALTWorkstationK9_9" displayName="$(string.ALTWorkstationK9_9)" versionIndex="0"/>
+          <minorVersion name="ALTWorkstationK9_91" displayName="$(string.ALTWorkstationK9_91)" versionIndex="1"/>
         </majorVersion>
         <majorVersion name="ALTEducation9" displayName="$(string.ALTEducation9)" versionIndex="8">
           <minorVersion name="ALTEducation9_9" displayName="$(string.ALTEducation9_9)" versionIndex="0"/>
+          <minorVersion name="ALTEducation9_91" displayName="$(string.ALTEducation9_91)" versionIndex="1"/>
         </majorVersion>
         <majorVersion name="ALTServer9" displayName="$(string.ALTServer9)" versionIndex="9">
           <minorVersion name="ALTServer9_9" displayName="$(string.ALTServer9_9)" versionIndex="0"/>
+          <minorVersion name="ALTServer9_91" displayName="$(string.ALTServer9_91)" versionIndex="1"/>
         </majorVersion>
         <majorVersion name="ALTServerV9" displayName="$(string.ALTServerV9)" versionIndex="10">
           <minorVersion name="ALTServerV9_9" displayName="$(string.ALTServerV9_9)" versionIndex="0"/>
+          <minorVersion name="ALTServerV9_91" displayName="$(string.ALTServerV9_91)" versionIndex="1"/>
         </majorVersion>
       </product>
     </products>

@@ -1,0 +1,201 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--  (c) 2020 BaseALT, Ltd.  -->
+<policyDefinitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" revision="1.0" schemaVersion="1.0" xmlns="http://schemas.microsoft.com/GroupPolicy/2006/07/PolicyDefinitions">
+  <policyNamespaces>
+    <target prefix="gpupdate" namespace="BaseALT.Policies.GroupPolicies" />
+    <using prefix="system" namespace="BaseALT.Policies.System" />
+  </policyNamespaces>
+  <resources minRequiredRevision="1.0" />
+
+  <categories>
+    <category name="ALT_GroupPolicies" displayName="$(string.ALT_GroupPolicies)" explainText="$(string.ALT_GroupPolicies_Help)">
+      <parentCategory ref="system:ALT_System" />
+    </category>
+    <category name="ALT_GPUpdateAppliers" displayName="$(string.ALT_GPUpdateAppliers)" explainText="$(string.ALT_GPUpdateAppliers_Help)">
+      <parentCategory ref="ALT_GroupPolicies" />
+    </category>
+  </categories>
+
+  <policies>
+    <policy class="Machine" displayName="$(string.gpupdate_global_experimental)" explainText="$(string.gpupdate_global_experimental_help)" key="Software\BaseALT\Policies\GPUpdate" name="GlobalExperimental" valueName="GlobalExperimental">
+      <parentCategory ref="ALT_GroupPolicies"/>
+      <supportedOn ref="system:SUPPORTED_AltP9"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+    <policy class="Machine" displayName="$(string.gpupdate_control_applier)" explainText="$(string.gpupdate_control_applier_help)" key="Software\BaseALT\Policies\GPUpdate" name="ControlApplier" valueName="ControlApplier">
+      <parentCategory ref="ALT_GPUpdateAppliers"/>
+      <supportedOn ref="system:SUPPORTED_AltP9"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+    <policy class="Machine" displayName="$(string.gpupdate_chromium_applier)" explainText="$(string.gpupdate_chromium_applier_help)" key="Software\BaseALT\Policies\GPUpdate" name="ChromiumApplier" valueName="ChromiumApplier">
+      <parentCategory ref="ALT_GPUpdateAppliers"/>
+      <supportedOn ref="system:SUPPORTED_AltP9"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+    <policy class="Machine" displayName="$(string.gpupdate_cups_applier)" explainText="$(string.gpupdate_cups_applier_help)" key="Software\BaseALT\Policies\GPUpdate" name="CUPSApplier" valueName="CUPSApplier">
+      <parentCategory ref="ALT_GPUpdateAppliers"/>
+      <supportedOn ref="system:SUPPORTED_AltP9"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+    <policy class="Machine" displayName="$(string.gpupdate_cups_user_applier)" explainText="$(string.gpupdate_cups_user_applier_help)" key="Software\BaseALT\Policies\GPUpdate" name="CUPSApplierUser" valueName="CUPSApplierUser">
+      <parentCategory ref="ALT_GPUpdateAppliers"/>
+      <supportedOn ref="system:SUPPORTED_AltP9"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+    <policy class="Machine" displayName="$(string.gpupdate_cifs_user_applier)" explainText="$(string.gpupdate_cifs_user_applier_help)" key="Software\BaseALT\Policies\GPUpdate" name="CIFSApplierUser" valueName="CIFSApplierUser">
+      <parentCategory ref="ALT_GPUpdateAppliers"/>
+      <supportedOn ref="system:SUPPORTED_AltP9"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+    <policy class="Machine" displayName="$(string.gpupdate_firefox_applier)" explainText="$(string.gpupdate_firefox_applier_help)" key="Software\BaseALT\Policies\GPUpdate" name="FirefoxApplier" valueName="FirefoxApplier">
+      <parentCategory ref="ALT_GPUpdateAppliers"/>
+      <supportedOn ref="system:SUPPORTED_AltP9"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+    <policy class="Machine" displayName="$(string.gpupdate_folders_applier)" explainText="$(string.gpupdate_folders_applier_help)" key="Software\BaseALT\Policies\GPUpdate" name="FoldersApplier" valueName="FoldersApplier">
+      <parentCategory ref="ALT_GPUpdateAppliers"/>
+      <supportedOn ref="system:SUPPORTED_AltP9"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+    <policy class="Machine" displayName="$(string.gpupdate_folders_user_applier)" explainText="$(string.gpupdate_folders_user_applier_help)" key="Software\BaseALT\Policies\GPUpdate" name="FoldersApplierUser" valueName="FoldersApplierUser">
+      <parentCategory ref="ALT_GPUpdateAppliers"/>
+      <supportedOn ref="system:SUPPORTED_AltP9"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+    <policy class="Machine" displayName="$(string.gpupdate_gsettings_applier)" explainText="$(string.gpupdate_gsettings_applier_help)" key="Software\BaseALT\Policies\GPUpdate" name="GSettingsApplier" valueName="GSettingsApplier">
+      <parentCategory ref="ALT_GPUpdateAppliers"/>
+      <supportedOn ref="system:SUPPORTED_AltP9"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+    <policy class="Machine" displayName="$(string.gpupdate_gsettings_user_applier)" explainText="$(string.gpupdate_gsettings_user_applier_help)" key="Software\BaseALT\Policies\GPUpdate" name="GSettingsApplierUser" valueName="GSettingsApplierUser">
+      <parentCategory ref="ALT_GPUpdateAppliers"/>
+      <supportedOn ref="system:SUPPORTED_AltP9"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+    <policy class="Machine" displayName="$(string.gpupdate_polkit_applier)" explainText="$(string.gpupdate_polkit_applier_help)" key="Software\BaseALT\Policies\GPUpdate" name="PolkitApplier" valueName="PolkitApplier">
+      <parentCategory ref="ALT_GPUpdateAppliers"/>
+      <supportedOn ref="system:SUPPORTED_AltP9"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+    <policy class="Machine" displayName="$(string.gpupdate_polkit_user_applier)" explainText="$(string.gpupdate_polkit_user_applier_help)" key="Software\BaseALT\Policies\GPUpdate" name="PolkitApplierUser" valueName="PolkitApplierUser">
+      <parentCategory ref="ALT_GPUpdateAppliers"/>
+      <supportedOn ref="system:SUPPORTED_AltP9"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+    <policy class="Machine" displayName="$(string.gpupdate_packages_applier)" explainText="$(string.gpupdate_packages_applier_help)" key="Software\BaseALT\Policies\GPUpdate" name="PackagesApplier" valueName="PackagesApplier">
+      <parentCategory ref="ALT_GPUpdateAppliers"/>
+      <supportedOn ref="system:SUPPORTED_AltP9"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+    <policy class="Machine" displayName="$(string.gpupdate_packages_user_applier)" explainText="$(string.gpupdate_packages_user_applier_help)" key="Software\BaseALT\Policies\GPUpdate" name="PackagesApplierUser" valueName="PackagesApplierUser">
+      <parentCategory ref="ALT_GPUpdateAppliers"/>
+      <supportedOn ref="system:SUPPORTED_AltP9"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+    <policy class="Machine" displayName="$(string.gpupdate_shortcuts_applier)" explainText="$(string.gpupdate_shortcuts_applier_help)" key="Software\BaseALT\Policies\GPUpdate" name="ShortcutsApplier" valueName="ShortcutsApplier">
+      <parentCategory ref="ALT_GPUpdateAppliers"/>
+      <supportedOn ref="system:SUPPORTED_AltP9"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+    <policy class="Machine" displayName="$(string.gpupdate_shortcuts_user_applier)" explainText="$(string.gpupdate_shortcuts_user_applier_help)" key="Software\BaseALT\Policies\GPUpdate" name="ShortcutsApplierUser" valueName="ShortcutsApplierUser">
+      <parentCategory ref="ALT_GPUpdateAppliers"/>
+      <supportedOn ref="system:SUPPORTED_AltP9"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+    <policy class="Machine" displayName="$(string.gpupdate_systemd_applier)" explainText="$(string.gpupdate_systemd_applier_help)" key="Software\BaseALT\Policies\GPUpdate" name="SystemdApplier" valueName="SystemdApplier">
+      <parentCategory ref="ALT_GPUpdateAppliers"/>
+      <supportedOn ref="system:SUPPORTED_AltP9"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+  </policies>
+</policyDefinitions>
