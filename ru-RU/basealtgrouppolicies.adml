@@ -65,6 +65,9 @@
 
       <string id="gpupdate_systemd_applier">Службы Systemd</string>
       <string id="gpupdate_systemd_applier_help">Эта политика включает применения механизма групповых политик Systemd.</string>
+
+      <string id="gpupdate_firewall_applier">Поддержка конфигурации брандмауэра</string>
+      <string id="gpupdate_firewall_applier_help">Эта политика включает поддержку конфигурирования брандмауэра.</string>
     </stringTable>
   </resources>
 </policyDefinitionResources>
