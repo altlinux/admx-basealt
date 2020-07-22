@@ -545,7 +545,7 @@ SSSD - использовать метод проверки подлинност
       </string>
       <string id="tcb_chkpwd_traditional">Любой пользователь с отключенным tcb</string>
       <string id="tcb_chkpwd_tcb">Любой пользователь с включенным tcb</string>
-      <string id="tcb_chkpwd_restricted">Только wheel</string>
+      <string id="tcb_chkpwd_restricted">Только root</string>
 
       <string id="udisks2">Правила подключения USB-накопителей</string>
       <string id="udisks2_help">Эта политика определяет правила подключения USB? медиа хранилище
