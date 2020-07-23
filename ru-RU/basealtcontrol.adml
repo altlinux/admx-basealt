@@ -120,7 +120,7 @@
       <string id="dvd_rw-booktype_legacy">Режим совместимости</string>
 
       <string id="dvd_rw-format">Разрешение на использование /usr/bin/dvd+rw-format</string>
-      <string id="dvd_rw-format_help">Эта политика определяет права доступа к /usr/bin/dvd+rw-формату
+      <string id="dvd_rw-format_help">Эта политика определяет права доступа к /usr/bin/dvd+rw-format
 
 Только cdwriter — только члены группы «cdwriter» могут выполнять /usr/bin/dvd+rw-format
 
@@ -297,14 +297,14 @@
       <string id="mount_unprivileged">Непривилегированный</string>
       <string id="mount_restricted">Только root</string>
 
-      <string id="newgrp">Разрешения для /usr/usr/newgrp</string>
-      <string id="newgrp_help">Эта политика определяет разрешения для /usr/usr/newgrp
+      <string id="newgrp">Разрешения для /usr/bin/newgrp</string>
+      <string id="newgrp_help">Эта политика определяет разрешения для /usr/bin/newgrp
 
-Любой пользователь — любой пользователь может запускать /usr/usr/newgrp
+Любой пользователь — любой пользователь может запускать /usr/bin/newgrp
 
-Только wheel — пользователям из группы «wheel» разрешено запускать /usr/usr/newgrp
+Только wheel — пользователям из группы «wheel» разрешено запускать /usr/bin/newgrp
 
-Только root — только суперпользователь (root) может запускать /usr/usr/newgrp
+Только root — только суперпользователь (root) может запускать /usr/bin/newgrp
       </string>
       <string id="newgrp_public">Любой пользователь</string>
       <string id="newgrp_wheelonly">Только wheel</string>
@@ -332,11 +332,11 @@
       </string>
 
       <string id="passwd">Управление паролями с помощью passwd</string>
-      <string id="passwd_help">Определяет политику управления паролями с помощью команды /usr/usr/passwd
+      <string id="passwd_help">Определяет политику управления паролями с помощью команды /usr/bin/passwd
 
-TCB — любой пользователь может изменить свой пароль, используя /usr/usr/passwd, когда включена схема tcb
+TCB — любой пользователь может изменить свой пароль, используя /usr/bin/passwd, когда включена схема tcb
 
-Традиционный — любой пользователь может изменить свой пароль, используя /usr/usr/passwd, когда схема tcb отключена
+Традиционный — любой пользователь может изменить свой пароль, используя /usr/bin/passwd, когда схема tcb отключена
 
 Только root — только суперпользователь (root) имеет право изменять пароли пользователей
       </string>
@@ -354,18 +354,18 @@ TCB — любой пользователь может изменить свой
       <string id="passwdqc-enforce_everyone">Все</string>
       <string id="passwdqc-enforce_users">Только для пользователей</string>
 
-      <string id="ping">Разрешения для /usr/usr/ping</string>
-      <string id="ping_help">Эта политика определяет разрешения для /usr/usr/ping
+      <string id="ping">Разрешения для /usr/bin/ping</string>
+      <string id="ping_help">Эта политика определяет разрешения для /usr/bin/ping
 
-Любой пользователь — любой пользователь может запускать /usr/usr/ping
+Любой пользователь — любой пользователь может запускать /usr/bin/ping
 
-Группа netadmin — пользователям из группы «netadmin» разрешено запускать /usr/usr/ping
+Группа netadmin — пользователям из группы «netadmin» разрешено запускать /usr/bin/ping
 
-Только root — только суперпользователь (root) может запускать /usr/usr/ping
+Только root — только суперпользователь (root) может запускать /usr/bin/ping
 
-Любой пользователь (в контейнерах) — любой пользователь может запускать /usr/usr/ping (в контейнерах)
+Любой пользователь (в контейнерах) — любой пользователь может запускать /usr/bin/ping (в контейнерах)
 
-Группа netadmin (в контейнерах) — пользователям из группы «netadmin» разрешено запускать /usr/usr/ping (в контейнерах)
+Группа netadmin (в контейнерах) — пользователям из группы «netadmin» разрешено запускать /usr/bin/ping (в контейнерах)
       </string>
       <string id="ping_public">Любой пользователь</string>
       <string id="ping_netadmin">Группа netadmin</string>
@@ -386,14 +386,14 @@ TCB — любой пользователь может изменить свой
       <string id="postfix_server">Сервер (фильтры отключены)</string>
       <string id="postfix_filter">Фильтр</string>
 
-      <string id="postqueue">Разрешения для /usr/usr/postqueue</string>
-      <string id="postqueue_help">Эта политика определяет разрешения для /usr/usr/postqueue
+      <string id="postqueue">Разрешения для /usr/bin/postqueue</string>
+      <string id="postqueue_help">Эта политика определяет разрешения для /usr/bin/postqueue
 
-Любой пользователь — любому пользователю разрешено запускать /usr/usr/postqueue
+Любой пользователь — любому пользователю разрешено запускать /usr/bin/postqueue
 
-Группа mailadm — пользователям из группы «mailadm» разрешено запускать /usr/usr/postqueue
+Группа mailadm — пользователям из группы «mailadm» разрешено запускать /usr/bin/postqueue
 
-Только root — только суперпользователю (root) разрешено запускать /usr/usr/postqueue
+Только root — только суперпользователю (root) разрешено запускать /usr/bin/postqueue
       </string>
       <string id="postqueue_public">Любой пользователь</string>
       <string id="postqueue_mailadm">Группа mailadm</string>
@@ -494,7 +494,7 @@ TCB — любой пользователь может изменить свой
       <string id="ssh-gssapi-auth">Поддержка авторизации API GSS на клиенте SSH</string>
       <string id="ssh-gssapi-auth_help">Эта политика определяет функциональные возможности поддержки авторизации с использованием GSS API на клиенте SSH
 
-Включить — поддержка API GSS на клиенте sshd отключена
+Включить — поддержка API GSS на клиенте sshd включена
 
 Отключить — поддержка API GSS на клиенте sshd отключена
       </string>

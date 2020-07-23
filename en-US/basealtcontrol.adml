@@ -492,7 +492,7 @@ Default — Reset root login setting to the package default
       <string id="ssh-gssapi-auth">GSS API authorization support on SSH client</string>
       <string id="ssh-gssapi-auth_help">This policy defines the functionality of authorization support using the GSS API on the sshd client
 
-Enable — GSS API support on sshd client is disabled
+Enable — GSS API support on sshd client is enabled
 
 Disable — GSS API support on sshd client is disabled
       </string>
@@ -586,7 +586,7 @@ Only root — Only the superuser can be authenticated with /usr/lib/chkpwd/tcb_c
       <string id="tcb_chkpwd_restricted">Only root</string>
 
       <string id="udisks2">Rules for connecting USB storage media</string>
-      <string id="udisks2_help">This policy defines the rules for connecting USB? storage media
+      <string id="udisks2_help">This policy defines the rules for connecting USB storage media
 
 Default — Connect storage media individually (/run/media/$user/) for each user
 
