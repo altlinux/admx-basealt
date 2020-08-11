@@ -16,55 +16,55 @@
       <string id="gpupdate_global_experimental_help">Эта политика глобально включает экспериментальные механизмы применения групповых политик.</string>
 
       <string id="gpupdate_control_applier">Системные средства Control</string>
-      <string id="gpupdate_control_applier_help">Эта политика включает применения механизма групповых политик Control.</string>
+      <string id="gpupdate_control_applier_help">Эта политика включает применение механизма групповых политик Control.</string>
 
       <string id="gpupdate_chromium_applier">Настройка браузера Chromium</string>
-      <string id="gpupdate_chromium_applier_help">Эта политика включает применения механизма групповых политик Chromium.</string>
+      <string id="gpupdate_chromium_applier_help">Эта политика включает применение механизма групповых политик Chromium.</string>
 
       <string id="gpupdate_firefox_applier">Настройка браузера Firefox</string>
-      <string id="gpupdate_firefox_applier_help">Эта политика включает применения механизма групповых политик Firefox.</string>
+      <string id="gpupdate_firefox_applier_help">Эта политика включает применение механизма групповых политик Firefox.</string>
 
       <string id="gpupdate_cups_applier">Настройка принтеров</string>
-      <string id="gpupdate_cups_applier_help">Эта политика включает применения механизма групповых политик CUPS.</string>
+      <string id="gpupdate_cups_applier_help">Эта политика включает применение механизма групповых политик CUPS.</string>
 
       <string id="gpupdate_cups_user_applier">Настройка принтеров для пользователей</string>
-      <string id="gpupdate_cups_user_applier_help">Эта политика включает применения механизма групповых политик CUPS для пользователей.</string>
+      <string id="gpupdate_cups_user_applier_help">Эта политика включает применение механизма групповых политик CUPS для пользователей.</string>
 
       <string id="gpupdate_folders_applier">Управление локальными каталогами</string>
-      <string id="gpupdate_folders_applier_help">Эта политика включает применения механизма групповых политик Folders.</string>
+      <string id="gpupdate_folders_applier_help">Эта политика включает применение механизма групповых политик Folders.</string>
 
       <string id="gpupdate_folders_user_applier">Управление локальными каталогами для пользователей</string>
-      <string id="gpupdate_folders_user_applier_help">Эта политика включает применения механизма групповых политик Folders для пользователей.</string>
+      <string id="gpupdate_folders_user_applier_help">Эта политика включает применение механизма групповых политик Folders для пользователей.</string>
 
       <string id="gpupdate_cifs_user_applier">Подключение сетевых каталогов для пользователей</string>
-      <string id="gpupdate_cifs_user_applier_help">Эта политика включает применения механизма групповых политик CIFS для пользователей.</string>
+      <string id="gpupdate_cifs_user_applier_help">Эта политика включает применение механизма групповых политик CIFS для пользователей.</string>
 
       <string id="gpupdate_gsettings_applier">Настройки GSettings</string>
-      <string id="gpupdate_gsettings_applier_help">Эта политика включает применения механизма групповых политик GSettings.</string>
+      <string id="gpupdate_gsettings_applier_help">Эта политика включает применение механизма групповых политик GSettings.</string>
 
       <string id="gpupdate_gsettings_user_applier">Настройки GSettings для пользователей</string>
-      <string id="gpupdate_gsettings_user_applier_help">Эта политика включает применения механизма групповых политик GSettings для пользователей.</string>
+      <string id="gpupdate_gsettings_user_applier_help">Эта политика включает применение механизма групповых политик GSettings для пользователей.</string>
 
       <string id="gpupdate_polkit_applier">Авторизация PolicyKit</string>
-      <string id="gpupdate_polkit_applier_help">Эта политика включает применения механизма групповых политик PolicyKit.</string>
+      <string id="gpupdate_polkit_applier_help">Эта политика включает применение механизма групповых политик PolicyKit.</string>
 
       <string id="gpupdate_polkit_user_applier">Авторизация PolicyKit для пользователей</string>
-      <string id="gpupdate_polkit_user_applier_help">Эта политика включает применения механизма групповых политик PolicyKit для пользователей.</string>
+      <string id="gpupdate_polkit_user_applier_help">Эта политика включает применение механизма групповых политик PolicyKit для пользователей.</string>
 
       <string id="gpupdate_packages_applier">Установка и удаление программ</string>
-      <string id="gpupdate_packages_applier_help">Эта политика включает применения механизма групповых политик Packages.</string>
+      <string id="gpupdate_packages_applier_help">Эта политика включает применение механизма групповых политик Packages.</string>
 
       <string id="gpupdate_packages_user_applier">Установка и удаление программ для пользователей</string>
-      <string id="gpupdate_packages_user_applier_help">Эта политика включает применения механизма групповых политик Packages для пользователей.</string>
+      <string id="gpupdate_packages_user_applier_help">Эта политика включает применение механизма групповых политик Packages для пользователей.</string>
 
       <string id="gpupdate_shortcuts_applier">Управление ярлычками</string>
-      <string id="gpupdate_shortcuts_applier_help">Эта политика включает применения механизма групповых политик Shortcuts.</string>
+      <string id="gpupdate_shortcuts_applier_help">Эта политика включает применение механизма групповых политик Shortcuts.</string>
 
       <string id="gpupdate_shortcuts_user_applier">Управление ярлычками для пользователей</string>
-      <string id="gpupdate_shortcuts_user_applier_help">Эта политика включает применения механизма групповых политик Shortcuts для пользователей.</string>
+      <string id="gpupdate_shortcuts_user_applier_help">Эта политика включает применение механизма групповых политик Shortcuts для пользователей.</string>
 
       <string id="gpupdate_systemd_applier">Службы Systemd</string>
-      <string id="gpupdate_systemd_applier_help">Эта политика включает применения механизма групповых политик Systemd.</string>
+      <string id="gpupdate_systemd_applier_help">Эта политика включает применение механизма групповых политик Systemd.</string>
 
       <string id="gpupdate_firewall_applier">Поддержка конфигурации брандмауэра</string>
       <string id="gpupdate_firewall_applier_help">Эта политика включает поддержку конфигурирования брандмауэра.</string>
