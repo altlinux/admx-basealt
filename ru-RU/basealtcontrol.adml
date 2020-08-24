@@ -458,6 +458,22 @@ TCB — любой пользователь может изменить свой
 Отключено — поддержка авторизации по паролю для клиента sshd отключена
       </string>
 
+      <string id="sshd-permit-root-login">Аутентификация по паролю для суперпользователя на сервере OpenSSH</string>
+      <string id="sshd-permit-root-login_help">Эта политика определяет, разрешена ли и каким образом для суперпользователя аутентификация на сервере SSHd
+
+Без пароля — суперпользователю разрешена только беспарольная аутентификация на сервере SSHd
+
+Разрешено — суперпользователю разрешена аутентификация на сервере SSHd
+
+Запрещено — суперпользователю запрещена аутентификация на сервере SSHd
+
+По-умолчанию — сбросить на значение по-умолчанию в пакете
+      </string>
+      <string id="sshd-permit-root-login_without_password">Только без пароля</string>
+      <string id="sshd-permit-root-login_enabled">Разрешено</string>
+      <string id="sshd-permit-root-login_disabled">Запрещено</string>
+      <string id="sshd-permit-root-login_default">По-умолчанию</string>
+
       <string id="ssh-gssapi-auth">Поддержка авторизации API GSS на клиенте SSH</string>
       <string id="ssh-gssapi-auth_help">Эта политика определяет функциональные возможности поддержки авторизации с использованием GSS API на клиенте SSH
 
@@ -752,6 +768,10 @@ SSSD — использовать метод проверки подлиннос
       </presentation>
       <presentation id="rpcbind">
         <dropdownList noSort="true" defaultItem="1" refId="rpcbind_setter">Выберите режим работы:
+        </dropdownList>
+      </presentation>
+      <presentation id="sshd-permit-root-login">
+        <dropdownList noSort="true" defaultItem="3" refId="sshd-permit-root-login_setter">Выберите режим работы:
         </dropdownList>
       </presentation>
       <presentation id="su">
