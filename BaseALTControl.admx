@@ -783,6 +783,34 @@
         <string>disabled</string>
       </disabledValue>
     </policy>
+    <policy class="Machine" displayName="$(string.sshd-permit-root-login)" explainText="$(string.sshd-permit-root-login_help)" key="Software\BaseALT\Policies\Control" name="sshd-permit-root-login" presentation="$(presentation.sshd-permit-root-login)">
+      <parentCategory ref="system:ALT_Services"/>
+      <supportedOn ref="system:SUPPORTED_AltP8"/>
+      <elements>
+        <enum id="sshd-permit-root-login_setter" required="true" valueName="sshd-permit-root-login">
+          <item displayName="$(string.sshd-permit-root-login_without_password)">
+            <value>
+              <string>without_password</string>
+            </value>
+          </item>
+          <item displayName="$(string.sshd-permit-root-login_enabled)">
+            <value>
+              <string>enabled</string>
+            </value>
+          </item>
+          <item displayName="$(string.sshd-permit-root-login_disabled)">
+            <value>
+              <string>disabled</string>
+            </value>
+          </item>
+          <item displayName="$(string.sshd-permit-root-login_default)">
+            <value>
+              <string>default</string>
+            </value>
+          </item>
+        </enum>
+      </elements>
+    </policy>
     <policy class="Machine" displayName="$(string.ssh-gssapi-auth)" explainText="$(string.ssh-gssapi-auth_help)" key="Software\BaseALT\Policies\Control" valueName="ssh-gssapi-auth" name="ssh-gssapi-auth">
       <parentCategory ref="system:ALT_Services"/>
       <supportedOn ref="system:SUPPORTED_AltP9"/>

@@ -456,6 +456,22 @@ Enable — Password authorization support for sshd is enabled
 Disable — Password authorization support for sshd client is disabled
       </string>
 
+      <string id="sshd-permit-root-login">Password authorization support on sshd server for root</string>
+      <string id="sshd-permit-root-login_help">This policy defines the functionality of password authorization support for root on the sshd server
+
+Without password — Only non password login for root via SSH is enabled
+
+Enabled — Login for root via SSH is enabled
+
+Disabled — Login for root via SSH is disabled
+
+Default — Reset root login setting to the package default
+      </string>
+      <string id="sshd-permit-root-login_without_password">Only without password</string>
+      <string id="sshd-permit-root-login_enabled">Enabled</string>
+      <string id="sshd-permit-root-login_disabled">Disabled</string>
+      <string id="sshd-permit-root-login_default">Default</string>
+
       <string id="ssh-gssapi-auth">GSS API authorization support on SSH client</string>
       <string id="ssh-gssapi-auth_help">This policy defines the functionality of authorization support using the GSS API on the sshd client
 
@@ -755,6 +771,10 @@ Only root — Only superuser (root) is permitted to run /usr/bin/Xorg
       </presentation>
       <presentation id="rpcbind">
         <dropdownList noSort="true" defaultItem="1" refId="rpcbind_setter">Select an operating mode:
+        </dropdownList>
+      </presentation>
+      <presentation id="sshd-permit-root-login">
+        <dropdownList noSort="true" defaultItem="3" refId="sshd-permit-root-login_setter">Select an operating mode:
         </dropdownList>
       </presentation>
       <presentation id="su">
