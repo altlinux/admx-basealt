@@ -6,8 +6,8 @@
 
   <resources>
     <stringTable>
-      <string id="accounts-daemon_service">Accounts Service</string>
-      <string id="accounts-daemon_service_help">This policy determines whether the systemd unit of the Accounts Service is enabled
+      <string id="accounts-daemon_service">Accounts Service (accounts-daemon)</string>
+      <string id="accounts-daemon_service_help">This policy determines whether the systemd unit of the Accounts Service (accounts-daemon)  is enabled
 
 Not Configuration - Do not change unit systemd state
 
@@ -176,8 +176,8 @@ Enabled - Turn the unit into enabled (execute the command systemctl enable krb5k
 Disabled - Turn the unit into off state (execute the command systemctl disable krb5kdc.service)
       </string>
 
-      <string id="lightdm_service">Accounts Service</string>
-      <string id="lightdm_service_help">This policy determines whether the systemd unit of the Accounts Service is enabled
+      <string id="lightdm_service">Graphical display manager (lihgtdm)</string>
+      <string id="lightdm_service_help">This policy determines whether the systemd unit of the lightdm is enabled
 
 Not Configuration - Do not change unit systemd state
 
@@ -316,7 +316,7 @@ Enabled - Turn the unit into enabled (execute the command systemctl enable smb.s
 Disabled - Turn the unit into off state (execute the command systemctl disable smb.service)
       </string>
 
-      <string id="sshd_service">Accounts Service</string>
+      <string id="sshd_service">Secure access daemon (sshd)</string>
       <string id="sshd_service_help">This policy determines whether the systemd unit of the OpenSSH server daemon is enabled
 
 Not Configuration - Do not change unit systemd state
