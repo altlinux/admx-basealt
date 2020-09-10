@@ -316,7 +316,7 @@ Enabled - Turn the unit into enabled (execute the command systemctl enable smb.s
 Disabled - Turn the unit into off state (execute the command systemctl disable smb.service)
       </string>
 
-      <string id="sshd_service">Secure access daemon (sshd)</string>
+      <string id="sshd_service">Secure shell daemon (sshd)</string>
       <string id="sshd_service_help">This policy determines whether the systemd unit of the OpenSSH server daemon is enabled
 
 Not Configuration - Do not change unit systemd state
