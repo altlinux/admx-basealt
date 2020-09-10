@@ -68,6 +68,9 @@
 
       <string id="gpupdate_firewall_applier">Firewall configuration support</string>
       <string id="gpupdate_firewall_applier_help">This policy enables group policy Firewall applier feature.</string>
+
+      <string id="gpupdate_ntp_applier">NTP configuration support</string>
+      <string id="gpupdate_ntp_applier_help">This policy enables group policy NTP applier feature.</string>
     </stringTable>
   </resources>
 </policyDefinitionResources>

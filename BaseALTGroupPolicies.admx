@@ -207,5 +207,15 @@
         <decimal value="0"/>
       </disabledValue>
     </policy>
+    <policy class="Machine" displayName="$(string.gpupdate_ntp_applier)" explainText="$(string.gpupdate_ntp_applier_help)" key="Software\BaseALT\Policies\GPUpdate" name="NTPApplier" valueName="NTPApplier">
+      <parentCategory ref="ALT_GPUpdateAppliers"/>
+      <supportedOn ref="system:SUPPORTED_AltP9"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
   </policies>
 </policyDefinitions>
