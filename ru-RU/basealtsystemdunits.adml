@@ -6,8 +6,8 @@
 
   <resources>
     <stringTable>
-      <string id="accounts-daemon_service">Служба учетных записей</string>
-      <string id="accounts-daemon_service_help">Эта политика определяет, включен ли systemd юнит службы учетных записей
+      <string id="accounts-daemon_service">Служба учетных записей (accounts-daemon)</string>
+      <string id="accounts-daemon_service_help">Эта политика определяет, включен ли systemd юнит службы учетных записей (accounts-daemon)
 
 Не задана — не изменять системное состояние юнита
 
@@ -177,8 +177,8 @@
 Отключено — перевести юнит в состояние «выключено» (выполнить команду systemctl disable krb5kdc.service)
       </string>
 
-      <string id="lightdm_service">Служба учетных записей</string>
-      <string id="lightdm_service_help">Эта политика определяет, включен ли systemd юнит службы учетных записей
+      <string id="lightdm_service">Графический менеджер входа в систему (lightdm)</string>
+      <string id="lightdm_service_help">Эта политика определяет, включен ли systemd юнит lightdm
 
 Не задана — не изменять системное состояние юнита
 
@@ -317,7 +317,7 @@
 Отключено — перевести юнит в состояние «выключено» (выполнить команду systemctl disable smb.service)
       </string>
 
-      <string id="sshd_service">Служба учетных записей</string>
+      <string id="sshd_service">Служба защищённого доступа к ресурсам (sshd)</string>
       <string id="sshd_service_help">Эта политика определяет, включен ли systemd юнит демона сервера OpenSSH
 
 Не задана — не изменять системное состояние юнита
