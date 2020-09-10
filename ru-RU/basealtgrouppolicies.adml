@@ -68,6 +68,9 @@
 
       <string id="gpupdate_firewall_applier">Поддержка конфигурации брандмауэра</string>
       <string id="gpupdate_firewall_applier_help">Эта политика включает поддержку конфигурирования брандмауэра.</string>
+
+      <string id="gpupdate_ntp_applier">Поддержка конфигурации NTP</string>
+      <string id="gpupdate_ntp_applier_help">Эта политика включает поддержку конфигурирования NTP.</string>
     </stringTable>
   </resources>
 </policyDefinitionResources>
