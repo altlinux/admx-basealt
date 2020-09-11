@@ -433,13 +433,30 @@ TCB — любой пользователь может изменить свой
 Отключено — отключить поддержку SFTP на сервере OpenSSH
       </string>
 
-      <string id="sshd-allow-groups">Белый список допустимых групп пользователей SSHd</string>
-      <string id="sshd-allow-groups_help">Эта политика определяет функциональность белого списка действительных групп пользователей SSHd
+      <string id="sshd-allow-groups">Включение списка разрешенных групп для службы удаленного доступа SSH</string>
+      <string id="sshd-allow-groups_help">Эта политика включает в службе удаленного доступа SSH список разрешенных групп 
 
-Включено — белый список допустимых групп пользователей SSHd включен
+Включено — список разрешенных групп пользователей для службы удаленного доступа SSH включен
 
-Отключено — белый список допустимых групп пользователей SSHd отключен
+Отключено — список разрешенных групп пользователей для службы удаленного доступа SSH отключен 
       </string>
+
+      <string id="sshd-allow-groups-list">Переключение вариантов разрешенных групп для службы удаленного доступа SSH</string>
+      <string id="sshd-allow-groups-list_help">Эта политика определяет, какие группы входят в список разрешенных групп для службы удаленного доступа SSH
+
+Все пользователи — Разрешить доступ к службе удаленного доступа SSH для групп wheel и users
+
+Администраторы и пользователи удалённого доступа — Разрешить доступ к службе удаленного доступа SSH для групп «wheel» и «remote»
+
+Только администраторы — Разрешить доступ к службе удаленного доступа SSH только для группы «wheel»
+
+Только пользователи удалённого доступа — Разрешить доступ к службе удаленного доступа SSH только для группы «remote»
+      </string>
+
+      <string id="sshd-allow-groups-list_users">Все пользователи</string>
+      <string id="sshd-allow-groups-list_remote">Администраторы и пользователи удалённого доступа</string>
+      <string id="sshd-allow-groups-list_wheelonly">Только администраторы</string>
+      <string id="sshd-allow-groups-list_remoteonly">Только пользователи удалённого доступа</string>
 
       <string id="sshd-gssapi-auth">Поддержка авторизации API GSS на сервере OpenSSH</string>
       <string id="sshd-gssapi-auth_help">Эта политика определяет функциональные возможности поддержки авторизации с использованием GSS API на сервере SSHd
@@ -770,6 +787,10 @@ SSSD — использовать метод проверки подлиннос
         <dropdownList noSort="true" defaultItem="1" refId="rpcbind_setter">Выберите режим работы:
         </dropdownList>
       </presentation>
+      <presentation id="sshd-allow-groups-list">
+        <dropdownList noSort="true" defaultItem="0" refId="sshd-allow-groups-list_setter">Выберите режим работы:
+        </dropdownList>
+      </presentation>
       <presentation id="sshd-permit-root-login">
         <dropdownList noSort="true" defaultItem="3" refId="sshd-permit-root-login_setter">Выберите режим работы:
         </dropdownList>
@@ -791,7 +812,7 @@ SSSD — использовать метод проверки подлиннос
         </dropdownList>
       </presentation>
       <presentation id="system-auth">
-        <dropdownList noSort="true" defaultItem="3" refId="system-auth_setter">Выберите режим работы:
+        <dropdownList noSort="true" defaultItem="0" refId="system-auth_setter">Выберите режим работы:
         </dropdownList>
       </presentation>
       <presentation id="tcb_chkpwd">

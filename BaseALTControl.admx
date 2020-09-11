@@ -763,6 +763,34 @@
         <string>disabled</string>
       </disabledValue>
     </policy>
+    <policy class="Machine" displayName="$(string.sshd-allow-groups-list)" explainText="$(string.sshd-allow-groups-list_help)" key="Software\BaseALT\Policies\Control" name="sshd-allow-groups-list" presentation="$(presentation.sshd-allow-groups-list)">
+      <parentCategory ref="system:ALT_Services"/>
+      <supportedOn ref="system:SUPPORTED_AltP8"/>
+      <elements>
+        <enum id="sshd-allow-groups-list_setter" required="true" valueName="sshd-allow-groups-list">
+          <item displayName="$(string.sshd-allow-groups-list_users)">
+            <value>
+              <string>users</string>
+            </value>
+          </item>
+          <item displayName="$(string.sshd-allow-groups-list_remote)">
+            <value>
+              <string>remote</string>
+            </value>
+          </item>
+          <item displayName="$(string.sshd-allow-groups-list_wheelonly)">
+            <value>
+              <string>wheelonly</string>
+            </value>
+          </item>
+          <item displayName="$(string.sshd-allow-groups-list_remoteonly)">
+            <value>
+              <string>remoteonly</string>
+            </value>
+          </item>
+        </enum>
+      </elements>
+    </policy>
     <policy class="Machine" displayName="$(string.sshd-gssapi-auth)" explainText="$(string.sshd-gssapi-auth_help)" key="Software\BaseALT\Policies\Control" valueName="sshd-gssapi-auth" name="sshd-gssapi-auth">
       <parentCategory ref="system:ALT_Services"/>
       <supportedOn ref="system:SUPPORTED_AltP9"/>
