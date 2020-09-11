@@ -442,11 +442,19 @@ Enabled — The list of allowed groups for SSH Remote Access is enabled
       <string id="sshd-allow-groups-list">Switching Allowed Groups variants for SSH Remote Access</string>
       <string id="sshd-allow-groups-list_help">This policy determines which groups are included in the list of allowed groups for SSH Remote Access
 
-Users - Allow SSH Access to groups wheel and users
-Remote - Allow SSH Access to groups wheel and remote
-Wheelonly - Allow SSH Access to group wheel only
-Remoteonly - Allow SSH Access to group remote only
+All users - Allow SSH Access to groups wheel and users
+
+Administrators and remote users - Allow SSH Access to groups wheel and remote
+
+Administrators only - Allow SSH Access to group wheel only
+
+Remote users only - Allow SSH Access to group remote only
       </string>
+
+      <string id="sshd-allow-groups-list_users">All users</string>
+      <string id="sshd-allow-groups-list_remote">Administrators and remote users</string>
+      <string id="sshd-allow-groups-list_wheelonly">Administrators only</string>
+      <string id="sshd-allow-groups-list_remoteonly">Remote users only</string>
 
       <string id="sshd-gssapi-auth">GSS API authorization support on sshd server</string>
       <string id="sshd-gssapi-auth_help">This policy defines the functionality of authorization support using the GSS API on the sshd server
