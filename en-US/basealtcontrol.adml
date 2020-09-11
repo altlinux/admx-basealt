@@ -431,12 +431,21 @@ Disabled — Disable SFTP support on the OpenSSH server
 Enabled — Enable SFTP support on the OpenSSH server
       </string>
 
-      <string id="sshd-allow-groups">Valid sshd user group whitelist</string>
-      <string id="sshd-allow-groups_help">This policy defines the functionality of the whitelist of valid sshd user groups
+      <string id="sshd-allow-groups">Enabling Allowed Groups for SSH Remote Access</string>
+      <string id="sshd-allow-groups_help">This policy enables list of allowed groups for SSH Remote Access
 
-Disabled — The white list of valid sshd user groups is disabled
+Disabled — The list of allowed groups for SSH Remote Access is disabled
 
-Enabled — The white list of valid sshd user groups is enabled
+Enabled — The list of allowed groups for SSH Remote Access is enabled
+      </string>
+
+      <string id="sshd-allow-groups-list">Switching Allowed Groups variants for SSH Remote Access</string>
+      <string id="sshd-allow-groups-list_help">This policy determines which groups are included in the list of allowed groups for SSH Remote Access
+
+Users - Allow SSH Access to groups wheel and users
+Remote - Allow SSH Access to groups wheel and remote
+Wheelonly - Allow SSH Access to group wheel only
+Remoteonly - Allow SSH Access to group remote only
       </string>
 
       <string id="sshd-gssapi-auth">GSS API authorization support on sshd server</string>
@@ -773,6 +782,10 @@ Only root — Only superuser (root) is permitted to run /usr/bin/Xorg
         <dropdownList noSort="true" defaultItem="1" refId="rpcbind_setter">Select an operating mode:
         </dropdownList>
       </presentation>
+      <presentation id="sshd-allow-groups-list">
+        <dropdownList noSort="true" defaultItem="0" refId="sshd-allow-groups-list_setter">Select an operating mode:
+        </dropdownList>
+      </presentation>
       <presentation id="sshd-permit-root-login">
         <dropdownList noSort="true" defaultItem="3" refId="sshd-permit-root-login_setter">Select an operating mode:
         </dropdownList>
@@ -794,7 +807,7 @@ Only root — Only superuser (root) is permitted to run /usr/bin/Xorg
         </dropdownList>
       </presentation>
       <presentation id="system-auth">
-        <dropdownList noSort="true" defaultItem="3" refId="system-auth_setter">Select an operating mode:
+        <dropdownList noSort="true" defaultItem="0" refId="system-auth_setter">Select an operating mode:
         </dropdownList>
       </presentation>
       <presentation id="tcb_chkpwd">
