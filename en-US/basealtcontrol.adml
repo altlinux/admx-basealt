@@ -492,10 +492,82 @@ Default — Reset root login setting to the package default
       <string id="ssh-gssapi-auth">GSS API authorization support on SSH client</string>
       <string id="ssh-gssapi-auth_help">This policy defines the functionality of authorization support using the GSS API on the sshd client
 
-Enable — GSS API support on sshd client is disabled
+Enabled — GSS API support on sshd client is disabled
 
-Disable — GSS API support on sshd client is disabled
+Disabled — GSS API support on sshd client is disabled
       </string>
+
+      <string id="sssd-ad-gpo-access-control">SSSD option for GPO-based access control</string>
+      <string id="sssd-ad-gpo-access-control_help">This policy defines SSSD option specifies the operation mode for GPO-based access control functionality
+
+Enforcing — SSSD GPO-based access control rules are evaluated and enforced
+
+Permissive — SSSD GPO-based access control rules are evaluated, but not enforced
+
+Disabled — SSSD GPO-based access control rules are neither evaluated nor enforced
+
+Default — SSSD GPO-based access control rules are evaluated and enforced
+      </string>
+      <string id="sssd-ad-gpo-access-control_enforcing">Enforcing</string>
+      <string id="sssd-ad-gpo-access-control_permissive">Permissive</string>
+      <string id="sssd-ad-gpo-access-control_disabled">Disabled</string>
+      <string id="sssd-ad-gpo-access-control_default">Default</string>
+
+      <string id="sssd-ad-gpo-ignore-unreadable">SSSD if GPO (group policy AD object) templates (GPT) are not readable for SSSD</string>
+      <string id="sssd-ad-gpo-ignore-unreadable_help">This policy defines ignore policy for SSSD if GPO (group policy AD object) templates (GPT) are not readable for SSSD
+
+Enabled — Ignore group policies if theirs attributes in GPT are not readable for SSSD
+
+Disabled — Deny access SSSD AD users when group policy templates are not readable
+
+Default — Deny access SSSD AD users when group policy templates are not readable
+
+      </string>
+      <string id="sssd-ad-gpo-ignore-unreadable_enabled">Enabled</string>
+      <string id="sssd-ad-gpo-ignore-unreadable_disabled">Disabled</string>
+      <string id="sssd-ad-gpo-ignore-unreadable_default">Default</string>
+
+      <string id="sssd-cache-credentials">SSSD user credentials are also cached in the local LDB cache</string>
+      <string id="sssd-cache-credentials_help">This policy determines SSSD user credentials are also cached in the local LDB cache
+
+Enabled — SSSD users credentials cached in the local LDB cache is enabled
+
+Disabled — SSSD users credentials cached in the local LDB cache is disabled
+
+Default — SSSD users credentials cached in the local LDB cache is disabled
+
+      </string>
+      <string id="sssd-cache-credentials_enabled">Enabled</string>
+      <string id="sssd-cache-credentials_disabled">Disabled</string>
+      <string id="sssd-cache-credentials_default">Default</string>
+
+      <string id="sssd-dyndns-update">SSSD option specifies the automatically update DNS server with the IP address of this client</string>
+      <string id="sssd-dyndns-update_help">This policy defines SSSD option specifies the automatically update DNS server (secured using GSS-TSIG) with the IP address of this client
+
+Enabled — Automatically update DNS server with the IP address using SSSD is enabled
+
+Disabled — Automatically update DNS server with the IP address using SSSD is disabled
+
+Default — Automatically update DNS server with the IP address using SSSD by default is disabled
+
+      </string>
+      <string id="sssd-dyndns-update_enabled">Enabled</string>
+      <string id="sssd-dyndns-update_disabled">Disabled</string>
+      <string id="sssd-dyndns-update_default">Default</string>
+
+      <string id="sssd-dyndns-update-ptr">SSSD option specifies the automatically update DNS server with the PTR record of this client</string>
+      <string id="sssd-dyndns-update-ptr_help">This policy defines SSSD option specifies the automatically update DNS server (secured using GSS-TSIG) with the PTR record of this client, when dyndns update in enabled only
+
+Enabled — Automatically update DNS server with the PTR record using SSSD is enabled
+
+Disabled — Automatically update DNS server with the PTR record using SSSD is disabled
+
+Default — Automatically update DNS server with the PTR record using SSSD by default is enabled
+
+      </string>
+      <string id="sssd-dyndns-update-ptr_enabled">Enabled</string>
+      <string id="sssd-dyndns-update-ptr_disabled">Disabled</string>
+      <string id="sssd-dyndns-update-ptr_default">Default</string>
 
       <string id="su">Permissions for /bin/su</string>
       <string id="su_help">This policy defines permissions for /bin/su
@@ -796,6 +868,26 @@ Only root — Only superuser (root) is permitted to run /usr/bin/Xorg
       </presentation>
       <presentation id="sshd-permit-root-login">
         <dropdownList noSort="true" defaultItem="3" refId="sshd-permit-root-login_setter">Select an operating mode:
+        </dropdownList>
+      </presentation>
+      <presentation id="sssd-ad-gpo-access-control">
+        <dropdownList noSort="true" defaultItem="3" refId="sssd-ad-gpo-access-control_setter">Select an operating mode:
+        </dropdownList>
+      </presentation>
+      <presentation id="sssd-ad-gpo-ignore-unreadable">
+        <dropdownList noSort="true" defaultItem="2" refId="sssd-ad-gpo-ignore-unreadable_setter">Select an operating mode:
+        </dropdownList>
+      </presentation>
+      <presentation id="sssd-cache-credentials">
+        <dropdownList noSort="true" defaultItem="2" refId="sssd-cache-credentials_setter">Select an operating mode:
+        </dropdownList>
+      </presentation>
+      <presentation id="sssd-dyndns-update">
+        <dropdownList noSort="true" defaultItem="2" refId="sssd-dyndns-update_setter">Select an operating mode:
+        </dropdownList>
+      </presentation>
+      <presentation id="sssd-dyndns-update-ptr">
+        <dropdownList noSort="true" defaultItem="2" refId="sssd-dyndns-update-ptr_setter">Select an operating mode:
         </dropdownList>
       </presentation>
       <presentation id="su">

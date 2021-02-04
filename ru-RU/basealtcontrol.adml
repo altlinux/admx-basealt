@@ -499,6 +499,74 @@ TCB — любой пользователь может изменить свой
 Отключить — поддержка API GSS на клиенте sshd отключена
       </string>
 
+      <string id="sssd-ad-gpo-access-control">Режимы контроля доступа в SSSD для контроля доступа основанного на GPO</string>
+      <string id="sssd-ad-gpo-access-control_help">Эта политика определяет с помощью какого режима будет осуществляться контроль доступа в SSSD основанный на GPO
+
+Принудительный режим — Правила управления доступом в SSSD основанные на GPO исполняются и принудительны
+
+Разрешающий режим — Правила управления доступом в SSSD основанные на GPO исполняются, но не принудительны
+
+Отключить — Правила управления доступом в SSSD основанные на GPO не исполняются или не принудительны
+
+По умолчанию — Правила управления доступом в SSSD основанные на GPO исполняются и принудительны
+      </string>
+      <string id="sssd-ad-gpo-access-control_enforcing">Принудительный режим</string>
+      <string id="sssd-ad-gpo-access-control_permissive">Разрешающий режим</string>
+      <string id="sssd-ad-gpo-access-control_disabled">Отключить</string>
+      <string id="sssd-ad-gpo-access-control_default">По умолчанию</string>
+
+      <string id="sssd-ad-gpo-ignore-unreadable">Параметр SSSD для игнорирования управления доступом на основе GPO, если они не доступны для исправления</string>
+      <string id="sssd-ad-gpo-ignore-unreadable_help">Эта политика определяет политику игнорирования для SSSD, если шаблоны (GPT) групповой политики (GPO) не читаются для SSSD.
+Включить - игнорировать групповые политики, если их атрибуты в GPT не читаются для SSSD.
+
+Отключить - запретить доступ пользователям SSSD AD, когда шаблоны групповой политики не читаются.
+
+По умолчанию - запретить доступ пользователям SSSD AD, когда шаблоны групповой политики не читаются.
+      </string>
+      <string id="sssd-ad-gpo-ignore-unreadable_enabled">Включить</string>
+      <string id="sssd-ad-gpo-ignore-unreadable_disabled">Отключить</string>
+      <string id="sssd-ad-gpo-ignore-unreadable_default">По умолчанию</string>
+
+      <string id="sssd-cache-credentials">Учетные данные пользователя SSSD также кэшируются в локальном кэше LDB</string>
+      <string id="sssd-cache-credentials_help">Эта политика определяет, что учетные данные пользователя SSSD также кэшируются в локальном кэше LDB.
+
+Включено - учетные данные пользователей SSSD, кэшированные в локальном кэше LDB, включены.
+
+Отключено - учетные данные пользователей SSSD, кэшированные в локальном кэше LDB, отключены.
+
+По умолчанию - учетные данные пользователей SSSD, кэшированные в локальном кэше LDB, отключены.
+
+      </string>
+      <string id="sssd-cache-credentials_enabled">Включить</string>
+      <string id="sssd-cache-credentials_disabled">Отключить</string>
+      <string id="sssd-cache-credentials_default">По умолчанию</string>
+
+      <string id="sssd-dyndns-update">Опция SSSD указывает, что DNS-сервер автоматически обновляется с IP-адресом этого клиента</string>
+      <string id="sssd-dyndns-update_help">Эта политика определяет параметр SSSD, указывающий автоматически обновляемый DNS-сервер (защищенный с помощью GSS-TSIG) с IP-адресом этого клиента.
+
+Включить - включено автоматическое обновление DNS-сервера IP-адресом с помощью SSSD.
+
+Отключить - автоматическое обновление DNS-сервера IP-адресом с помощью SSSD отключено.
+
+По умолчанию - автоматическое обновление DNS-сервера IP-адресом с помощью SSSD по умолчанию отключено.
+      </string>
+      <string id="sssd-dyndns-update_enabled">Включить</string>
+      <string id="sssd-dyndns-update_disabled">Отключить</string>
+      <string id="sssd-dyndns-update_default">По умолчанию</string>
+
+      <string id="sssd-dyndns-update-ptr">Параметр SSSD указывает, что DNS-сервер автоматически обновляется записью PTR этого клиента</string>
+      <string id="sssd-dyndns-update-ptr_help">Эта политика определяет параметр SSSD, указывающий автоматически обновляемый DNS-сервер (защищенный с помощью GSS-TSIG) с записью PTR этого клиента, когда обновление dyndns включено только
+
+Включить - автоматическое обновление DNS-сервера записью PTR с помощью SSSD включено.
+
+Отключить - автоматическое обновление DNS-сервера записью PTR с помощью SSSD отключено.
+
+По умолчанию - автоматическое обновление DNS-сервера записью PTR с использованием SSSD по умолчанию включено.
+      </string>
+      <string id="sssd-dyndns-update-ptr_enabled">Включить</string>
+      <string id="sssd-dyndns-update-ptr_disabled">Отключить</string>
+      <string id="sssd-dyndns-update-ptr_default">По умолчанию</string>
+
       <string id="su">Разрешения для /bin/su</string>
       <string id="su_help">Эта политика определяет разрешения для /bin/su
 
@@ -795,6 +863,26 @@ SSSD — использовать метод проверки подлиннос
         <dropdownList noSort="true" defaultItem="3" refId="sshd-permit-root-login_setter">Выберите режим работы:
         </dropdownList>
       </presentation>
+      <presentation id="sssd-ad-gpo-access-control">
+        <dropdownList noSort="true" defaultItem="3" refId="sssd-ad-gpo-access-control_setter">Выберите режим работы:
+        </dropdownList>
+      </presentation>
+      <presentation id="sssd-ad-gpo-ignore-unreadable">
+        <dropdownList noSort="true" defaultItem="2" refId="sssd-ad-gpo-ignore-unreadable_setter">Выберите режим работы:
+        </dropdownList>
+      </presentation>
+      <presentation id="sssd-cache-credentials">
+        <dropdownList noSort="true" defaultItem="2" refId="sssd-cache-credentials_setter">Выберите режим работы:
+        </dropdownList>
+      </presentation>
+      <presentation id="sssd-dyndns-update">
+        <dropdownList noSort="true" defaultItem="2" refId="sssd-dyndns-update_setter">Выберите режим работы:
+        </dropdownList>
+      </presentation>
+      <presentation id="sssd-dyndns-update-ptr">
+        <dropdownList noSort="true" defaultItem="2" refId="sssd-dyndns-update-ptr_setter">Выберите режим работы:
+        </dropdownList>
+      </presentation>
       <presentation id="su">
         <dropdownList noSort="true" defaultItem="2" refId="su_setter">Кто имеет право использовать:
         </dropdownList>
