@@ -849,6 +849,149 @@
         <string>disabled</string>
       </disabledValue>
     </policy>
+    <policy class="Machine" displayName="$(string.sssd-ad-gpo-access-control)" explainText="$(string.sssd-ad-gpo-access-control_help)" key="Software\BaseALT\Policies\Control" name="sssd-ad-gpo-access-control" presentation="$(presentation.sssd-ad-gpo-access-control)">
+      <parentCategory ref="system:ALT_SSSD"/>
+      <supportedOn ref="system:SUPPORTED_AltP9"/>
+      <elements>
+        <enum id="sssd-ad-gpo-access-control_setter" required="true" valueName="sssd-ad-gpo-access-control">
+          <item displayName="$(string.sssd-ad-gpo-access-control_enforced)">
+            <value>
+              <string>enforced</string>
+            </value>
+          </item>
+          <item displayName="$(string.sssd-ad-gpo-access-control_permissived)">
+            <value>
+              <string>permissived</string>
+            </value>
+          </item>
+          <item displayName="$(string.sssd-ad-gpo-access-control_disabled)">
+            <value>
+              <string>disabled</string>
+            </value>
+          </item>
+          <item displayName="$(string.sssd-ad-gpo-access-control_default)">
+            <value>
+              <string>default</string>
+            </value>
+          </item>
+        </enum>
+      </elements>
+    </policy>
+    <policy class="Machine" displayName="$(string.sssd-ad-gpo-ignore-unreadable)" explainText="$(string.sssd-ad-gpo-ignore-unreadable_help)" key="Software\BaseALT\Policies\Control" name="sssd-ad-gpo-ignore-unreadable" presentation="$(presentation.sssd-ad-gpo-ignore-unreadable)">
+      <parentCategory ref="system:ALT_SSSD"/>
+      <supportedOn ref="system:SUPPORTED_AltP9"/>
+      <elements>
+        <enum id="sssd-ad-gpo-ignore-unreadable_setter" required="true" valueName="sssd-ad-gpo-ignore-unreadable">
+          <item displayName="$(string.sssd-ad-gpo-ignore-unreadable_enabled)">
+            <value>
+              <string>enabled</string>
+            </value>
+          </item>
+          <item displayName="$(string.sssd-ad-gpo-ignore-unreadable_disabled)">
+            <value>
+              <string>disabled</string>
+            </value>
+          </item>
+          <item displayName="$(string.sssd-ad-gpo-ignore-unreadable_default)">
+            <value>
+              <string>default</string>
+            </value>
+          </item>
+        </enum>
+      </elements>
+    </policy>
+    <policy class="Machine" displayName="$(string.sssd-cache-credentials)" explainText="$(string.sssd-cache-credentials_help)" key="Software\BaseALT\Policies\Control" name="sssd-cache-credentials" presentation="$(presentation.sssd-cache-credentials)">
+      <parentCategory ref="system:ALT_SSSD"/>
+      <supportedOn ref="system:SUPPORTED_AltP9"/>
+      <elements>
+        <enum id="sssd-cache-credentials_setter" required="true" valueName="sssd-cache-credentials">
+          <item displayName="$(string.sssd-cache-credentials_enabled)">
+            <value>
+              <string>enabled</string>
+            </value>
+          </item>
+          <item displayName="$(string.sssd-cache-credentials_disabled)">
+            <value>
+              <string>disabled</string>
+            </value>
+          </item>
+          <item displayName="$(string.sssd-cache-credentials_default)">
+            <value>
+              <string>default</string>
+            </value>
+          </item>
+        </enum>
+      </elements>
+    </policy>
+    <policy class="Machine" displayName="$(string.sssd-drop-privileges)" explainText="$(string.sssd-drop-privileges_help)" key="Software\BaseALT\Policies\Control" name="sssd-drop-privileges" presentation="$(presentation.sssd-drop-privileges)">
+      <parentCategory ref="system:ALT_SSSD"/>
+      <supportedOn ref="system:SUPPORTED_AltP9"/>
+      <elements>
+        <enum id="sssd-drop-privileges_setter" required="true" valueName="sssd-drop-privileges">
+          <item displayName="$(string.sssd-drop-privileges_privileged)">
+            <value>
+              <string>privileged</string>
+            </value>
+          </item>
+          <item displayName="$(string.sssd-drop-privileges_unprivileged)">
+            <value>
+              <string>unprivileged</string>
+            </value>
+          </item>
+          <item displayName="$(string.sssd-drop-privileges_default)">
+            <value>
+              <string>default</string>
+            </value>
+          </item>
+        </enum>
+      </elements>
+    </policy>
+    <policy class="Machine" displayName="$(string.sssd-dyndns-update)" explainText="$(string.sssd-dyndns-update_help)" key="Software\BaseALT\Policies\Control" name="sssd-dyndns-upudate" presentation="$(presentation.sssd-dyndns-update)">
+      <parentCategory ref="system:ALT_SSSD"/>
+      <supportedOn ref="system:SUPPORTED_AltP9"/>
+      <elements>
+        <enum id="sssd-dyndns-update_setter" required="true" valueName="sssd-dyndns-update">
+          <item displayName="$(string.sssd-dyndns-update_enabled)">
+            <value>
+              <string>enabled</string>
+            </value>
+          </item>
+          <item displayName="$(string.sssd-dyndns-update_disabled)">
+            <value>
+              <string>disabled</string>
+            </value>
+          </item>
+          <item displayName="$(string.sssd-dyndns-update_default)">
+            <value>
+              <string>default</string>
+            </value>
+          </item>
+        </enum>
+      </elements>
+    </policy>
+    <policy class="Machine" displayName="$(string.sssd-dyndns-update-ptr)" explainText="$(string.sssd-dyndns-update-ptr_help)" key="Software\BaseALT\Policies\Control" name="sssd-dyndns-upudate-ptr" presentation="$(presentation.sssd-dyndns-update)">
+      <parentCategory ref="system:ALT_SSSD"/>
+      <supportedOn ref="system:SUPPORTED_AltP9"/>
+      <elements>
+        <enum id="sssd-dyndns-update_setter" required="true" valueName="sssd-dyndns-update-ptr">
+          <item displayName="$(string.sssd-dyndns-update-ptr_enabled)">
+            <value>
+              <string>enabled</string>
+            </value>
+          </item>
+          <item displayName="$(string.sssd-dyndns-update-ptr_disabled)">
+            <value>
+              <string>disabled</string>
+            </value>
+          </item>
+          <item displayName="$(string.sssd-dyndns-update-ptr_default)">
+            <value>
+              <string>default</string>
+            </value>
+          </item>
+        </enum>
+      </elements>
+    </policy>
     <policy class="Machine" displayName="$(string.su)" explainText="$(string.su_help)" key="Software\BaseALT\Policies\Control" name="su" presentation="$(presentation.su)">
       <parentCategory ref="system:ALT_Security"/>
       <supportedOn ref="system:SUPPORTED_AltP8"/>

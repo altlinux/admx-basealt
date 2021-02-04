@@ -499,6 +499,88 @@ TCB — любой пользователь может изменить свой
 Отключить — поддержка API GSS на клиенте sshd отключена
       </string>
 
+      <string id="sssd-ad-gpo-access-control">Режимы контроля доступа в SSSD для контроля политик</string>
+      <string id="sssd-ad-gpo-access-control_help">Эта политика определяет в каком режиме будет осуществляться контроль доступа в SSSD основанный на GPO
+
+Принудительный режим — Правила управления доступом в SSSD основанные на GPO выполняются и ведётся логирование
+
+Разрешающий режим — Такой режим необходим администратору, чтобы оценить как срабатывают новые правила. В таком режиме ведётся логирование срабатывания новых правил, но сами правила ещё не выполняются
+
+Отключить — Правила управления доступом в SSSD основанные на GPO не логируются и не выполняются
+
+По умолчанию — Разрешающий режим, когда правила управления доступом в SSSD основанные на GPO логируются, но не выполняются
+      </string>
+      <string id="sssd-ad-gpo-access-control_enforced">Принудительный режим</string>
+      <string id="sssd-ad-gpo-access-control_permissived">Разрешающий режим</string>
+      <string id="sssd-ad-gpo-access-control_disabled">Отключить</string>
+      <string id="sssd-ad-gpo-access-control_default">По умолчанию</string>
+
+      <string id="sssd-ad-gpo-ignore-unreadable">Опция игнорирования политик, если они не доступны для чтения</string>
+      <string id="sssd-ad-gpo-ignore-unreadable_help">Эта политика определяет политику будут ли проигнорированы шаблоны (GPT)  для SSSD групповой политики (GPO), если они не читаются.
+Включить - игнорировать групповые политики, если их атрибуты в GPT не читаются для SSSD
+
+Отключить - запретить доступ пользователям SSSD AD, когда шаблоны групповой политики не читаются
+
+По умолчанию - запретить доступ пользователям SSSD AD, когда шаблоны групповой политики не читаются
+      </string>
+      <string id="sssd-ad-gpo-ignore-unreadable_enabled">Включить</string>
+      <string id="sssd-ad-gpo-ignore-unreadable_disabled">Отключить</string>
+      <string id="sssd-ad-gpo-ignore-unreadable_default">По умолчанию</string>
+
+      <string id="sssd-cache-credentials">Кэширование в локальном кэше LDB учетных данных пользователей для SSSD</string>
+      <string id="sssd-cache-credentials_help">Эта политика определяет будут ли учетные данные пользователя SSSD кэшироваться в локальном кэше LDB.
+
+Включить - кэширование в локальном кэше LDB учетных данных пользователей для SSSD включено
+
+Отключить - кэширование в локальном кэше LDB учетных данных пользователей для SSSD отключено
+
+По умолчанию - кэширование в локальном кэше LDB учетных данных пользователей для SSSD отключено
+
+      </string>
+      <string id="sssd-cache-credentials_enabled">Включить</string>
+      <string id="sssd-cache-credentials_disabled">Отключить</string>
+      <string id="sssd-cache-credentials_default">По умолчанию</string>
+
+      <string id="sssd-drop-privileges">Удалить привилегии пользователя</string>
+      <string id="sssd-drop-privileges_help">Опция SSSD сбрасывает права пользователя там, где это необходимо, чтобы избежать работы от имени пользователя root.
+
+Привилегированный — SSSD запущен от привилегированного пользователя (как пользователь root)
+
+Непривилегированный — SSSD запущен от непривилегированного пользователя (как пользователь _sssd)
+
+По умолчанию — SSSD запущен от пользователя по умолчанию (в разных версиях различается)
+
+      </string>
+      <string id="sssd-drop-privileges_privileged">Привилегированный</string>
+      <string id="sssd-drop-privileges_unprivileged">Непривилегированный</string>
+      <string id="sssd-drop-privileges_default">По умолчанию</string>
+
+      <string id="sssd-dyndns-update">Обновление DNS-записей прямой зоны</string>
+      <string id="sssd-dyndns-update_help">Эта политика определяет параметр SSSD, указывающий на автоматическое обновление DNS-записей (защищенных с помощью GSS-TSIG) вместе с IP-адресом этого клиента. Клиент по умолчанию каждые 24 часа обновляет информацию о себе на DNS-сервере, отправляя имя и ip-адрес для прямой зоны.
+
+Включить - включено автоматическое обновление DNS-записей.
+
+Отключить - автоматическое обновление DNS-записей отключено.
+
+По умолчанию - автоматическое обновление DNS-записей по умолчанию отключено.
+      </string>
+      <string id="sssd-dyndns-update_enabled">Включить</string>
+      <string id="sssd-dyndns-update_disabled">Отключить</string>
+      <string id="sssd-dyndns-update_default">По умолчанию</string>
+
+      <string id="sssd-dyndns-update-ptr">Обновление DNS-записей обратной зоны</string>
+      <string id="sssd-dyndns-update-ptr_help">Эта политика работает только если включена "Опция SSSD включает режим автоматического обновления DNS-записи самого клиента". Данная политика определяет будет ли обновляться вместе с записями прямой зоны также запись PTR для обратной зоны этого клиента.
+
+Включить - автоматическое обновление DNS-записи обратной зоны включено.
+
+Отключить - автоматическое обновление DNS-записи обратной зоны отключено.
+
+По умолчанию - автоматическое обновление DNS-записи обратной зоны по умолчанию включено.
+      </string>
+      <string id="sssd-dyndns-update-ptr_enabled">Включить</string>
+      <string id="sssd-dyndns-update-ptr_disabled">Отключить</string>
+      <string id="sssd-dyndns-update-ptr_default">По умолчанию</string>
+
       <string id="su">Разрешения для /bin/su</string>
       <string id="su_help">Эта политика определяет разрешения для /bin/su
 
@@ -795,6 +877,30 @@ SSSD — использовать метод проверки подлиннос
         <dropdownList noSort="true" defaultItem="3" refId="sshd-permit-root-login_setter">Выберите режим работы:
         </dropdownList>
       </presentation>
+      <presentation id="sssd-ad-gpo-access-control">
+        <dropdownList noSort="true" defaultItem="0" refId="sssd-ad-gpo-access-control_setter">Выберите режим работы:
+        </dropdownList>
+      </presentation>
+      <presentation id="sssd-ad-gpo-ignore-unreadable">
+        <dropdownList noSort="true" defaultItem="0" refId="sssd-ad-gpo-ignore-unreadable_setter">Выберите режим работы:
+        </dropdownList>
+      </presentation>
+      <presentation id="sssd-cache-credentials">
+        <dropdownList noSort="true" defaultItem="0" refId="sssd-cache-credentials_setter">Выберите режим работы:
+        </dropdownList>
+      </presentation>
+      <presentation id="sssd-drop-privileges">
+        <dropdownList noSort="true" defaultItem="0" refId="sssd-drop-privileges_setter">Выберите режим работы:
+        </dropdownList>
+      </presentation>
+      <presentation id="sssd-dyndns-update">
+        <dropdownList noSort="true" defaultItem="0" refId="sssd-dyndns-update_setter">Выберите режим работы:
+        </dropdownList>
+      </presentation>
+      <presentation id="sssd-dyndns-update-ptr">
+        <dropdownList noSort="true" defaultItem="1" refId="sssd-dyndns-update-ptr_setter">Выберите режим работы:
+        </dropdownList>
+      </presentation>
       <presentation id="su">
         <dropdownList noSort="true" defaultItem="2" refId="su_setter">Кто имеет право использовать:
         </dropdownList>

@@ -497,6 +497,92 @@ Enable — GSS API support on sshd client is disabled
 Disable — GSS API support on sshd client is disabled
       </string>
 
+      <string id="sssd-ad-gpo-access-control">SSSD option for GPO-based access control</string>
+      <string id="sssd-ad-gpo-access-control_help">This policy defines SSSD option specifies the operation mode for GPO-based access control functionality
+
+Enforced — SSSD GPO-based access control rules are evaluated and enforced
+
+Permissived — SSSD GPO-based access control rules are evaluated, but not enforced
+
+Disabled — SSSD GPO-based access control rules are neither evaluated nor enforced
+
+Default — SSSD GPO-based access control rules are evaluated and enforced
+      </string>
+      <string id="sssd-ad-gpo-access-control_enforced">Enforced</string>
+      <string id="sssd-ad-gpo-access-control_permissived">Permissived</string>
+      <string id="sssd-ad-gpo-access-control_disabled">Disabled</string>
+      <string id="sssd-ad-gpo-access-control_default">Default</string>
+
+      <string id="sssd-ad-gpo-ignore-unreadable">SSSD option for ignore unreadable GPO's</string>
+      <string id="sssd-ad-gpo-ignore-unreadable_help">This policy defines ignore policy for SSSD if GPO (group policy AD object) templates (GPT) are not readable for SSSD
+
+Enabled — Ignore group policies if theirs attributes in GPT are not readable for SSSD
+
+Disabled — Deny access SSSD AD users when group policy templates are not readable
+
+Default — Deny access SSSD AD users when group policy templates are not readable
+
+      </string>
+      <string id="sssd-ad-gpo-ignore-unreadable_enabled">Enabled</string>
+      <string id="sssd-ad-gpo-ignore-unreadable_disabled">Disabled</string>
+      <string id="sssd-ad-gpo-ignore-unreadable_default">Default</string>
+
+      <string id="sssd-cache-credentials">SSSD option for user password is cached</string>
+      <string id="sssd-cache-credentials_help">This policy determines SSSD user credentials are also cached in the local LDB cache
+
+Enabled — SSSD users credentials cached in the local LDB cache is enabled
+
+Disabled — SSSD users credentials cached in the local LDB cache is disabled
+
+Default — SSSD users credentials cached in the local LDB cache is disabled
+
+      </string>
+      <string id="sssd-cache-credentials_enabled">Enabled</string>
+      <string id="sssd-cache-credentials_disabled">Disabled</string>
+      <string id="sssd-cache-credentials_default">Default</string>
+
+      <string id="sssd-drop-privileges">Drop the user's privileges</string>
+      <string id="sssd-drop-privileges_help">SSSD option drops the user's privileges to where appropriate to avoid running as the root user.
+
+Privileged — SSSD running from privileged user (as the root user)
+
+Unprivileged — SSSD running from unprivileged user (as the _sssd user)
+
+Default — SSSD running from default user (different in various versions)
+
+      </string>
+      <string id="sssd-drop-privileges_privileged">Privileged</string>
+      <string id="sssd-drop-privileges_unprivileged">Unprivileged</string>
+      <string id="sssd-drop-privileges_default">Default</string>
+
+      <string id="sssd-dyndns-update">Update forward DNS record</string>
+      <string id="sssd-dyndns-update_help">This policy defines SSSD option specifies the automatically update DNS record (secured using GSS-TSIG) together with the IP address of this client
+
+Enabled — Automatically update DNS record together with the IP address using SSSD is enabled
+
+Disabled — Automatically update DNS record together with the IP address using SSSD is disabled
+
+Default — Automatically update DNS record together with the IP address using SSSD by default is disabled
+
+      </string>
+      <string id="sssd-dyndns-update_enabled">Enabled</string>
+      <string id="sssd-dyndns-update_disabled">Disabled</string>
+      <string id="sssd-dyndns-update_default">Default</string>
+
+      <string id="sssd-dyndns-update-ptr">Update reverse DNS record</string>
+      <string id="sssd-dyndns-update-ptr_help">This policy defines SSSD option specifies the automatically update DNS record for forward zone (secured using GSS-TSIG) together with the PTR record for reverse zone of this client, when dyndns update in enabled only
+
+Enabled — Automatically update DNS record together with the PTR record for reverse zone using SSSD is enabled
+
+Disabled — Automatically update DNS record together with the PTR record for reverse zone using SSSD is disabled
+
+Default — Automatically update DNS record together with the PTR record for reverse zone using SSSD by default is enabled
+
+      </string>
+      <string id="sssd-dyndns-update-ptr_enabled">Enabled</string>
+      <string id="sssd-dyndns-update-ptr_disabled">Disabled</string>
+      <string id="sssd-dyndns-update-ptr_default">Default</string>
+
       <string id="su">Permissions for /bin/su</string>
       <string id="su_help">This policy defines permissions for /bin/su
 
@@ -796,6 +882,30 @@ Only root — Only superuser (root) is permitted to run /usr/bin/Xorg
       </presentation>
       <presentation id="sshd-permit-root-login">
         <dropdownList noSort="true" defaultItem="3" refId="sshd-permit-root-login_setter">Select an operating mode:
+        </dropdownList>
+      </presentation>
+      <presentation id="sssd-ad-gpo-access-control">
+        <dropdownList noSort="true" defaultItem="0" refId="sssd-ad-gpo-access-control_setter">Select an operating mode:
+        </dropdownList>
+      </presentation>
+      <presentation id="sssd-ad-gpo-ignore-unreadable">
+        <dropdownList noSort="true" defaultItem="0" refId="sssd-ad-gpo-ignore-unreadable_setter">Select an operating mode:
+        </dropdownList>
+      </presentation>
+      <presentation id="sssd-cache-credentials">
+        <dropdownList noSort="true" defaultItem="0" refId="sssd-cache-credentials_setter">Select an operating mode:
+        </dropdownList>
+      </presentation>
+      <presentation id="sssd-drop-privileges">
+        <dropdownList noSort="true" defaultItem="0" refId="sssd-drop-privileges_setter">Select an operating mode:
+        </dropdownList>
+      </presentation>
+      <presentation id="sssd-dyndns-update">
+        <dropdownList noSort="true" defaultItem="0" refId="sssd-dyndns-update_setter">Select an operating mode:
+        </dropdownList>
+      </presentation>
+      <presentation id="sssd-dyndns-update-ptr">
+        <dropdownList noSort="true" defaultItem="1" refId="sssd-dyndns-update-ptr_setter">Select an operating mode:
         </dropdownList>
       </presentation>
       <presentation id="su">
