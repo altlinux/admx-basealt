@@ -946,6 +946,29 @@
         </enum>
       </elements>
     </policy>
+
+    <policy name="sssd-dyndns-refresh-interval" 
+            class="Machine" displayName="$(string.sssd-dyndns-refresh-interval)"  
+            explainText="$(string.sssd-dyndns-refresh-interval_help)" 
+            presentation="$(presentation.sssd-dyndns-refresh-interval_DecimalTextBox)" 
+            key="Software\BaseALT\Policies\Control">
+      <parentCategory ref="system:ALT_SSSD" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <elements>
+        <decimal id="sssd-dyndns-refresh-interval_DecimalTextBox" 
+                 valueName="sssd-dyndns-refresh-interval_DecimalTextBox" 
+                 maxValue="4294967200" />
+      </elements>
+    </policy>
+
+    <policy name="sssd-dyndns-ttl" class="Machine" displayName="$(string.sssd-dyndns-ttl)" explainText="$(string.sssd-dyndns-ttl_help)" presentation="$(presentation.sssd-dyndns-ttl_DecimalTextBox)" key="Software\BaseALT\Policies\Control">
+      <parentCategory ref="system:ALT_SSSD" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <elements>
+        <decimal id="sssd-dyndns-ttl_DecimalTextBox" valueName="sssd-dyndns-ttl_DecimalTextBox" maxValue="4294967200" />
+      </elements>
+    </policy>
+
     <policy class="Machine" displayName="$(string.sssd-dyndns-update)" explainText="$(string.sssd-dyndns-update_help)" key="Software\BaseALT\Policies\Control" name="sssd-dyndns-upudate" presentation="$(presentation.sssd-dyndns-update)">
       <parentCategory ref="system:ALT_SSSD"/>
       <supportedOn ref="system:SUPPORTED_AltP9"/>

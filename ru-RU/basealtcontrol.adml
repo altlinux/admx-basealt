@@ -555,6 +555,28 @@ TCB — любой пользователь может изменить свой
       <string id="sssd-drop-privileges_unprivileged">Непривилегированный</string>
       <string id="sssd-drop-privileges_default">По умолчанию</string>
 
+
+
+
+
+      <string id="sssd-dyndns-refresh-interval">sssd-dyndns-refresh-interval</string>
+      <string id="sssd-dyndns-refresh-interval_help">Определяет, как часто серверная часть должна выполнять периодическое обновление записей DNS, когда обновление dyndns с помощью SSSD включено
+
+ИНТЕРВАЛ - установите значение интервала обновления DNS-записей, обновляемых SSSD, в секундах (минимально возможное значение - 60, по умолчанию - 86400 = 24 часа)
+Отключено - отключение настройки дополнительного интервала обновления клиентских DNS-записей
+      </string>
+
+      <string id="sssd-dyndns-ttl">sssd-dyndns-ttl</string>
+      <string id="sssd-dyndns-ttl_help">Определяет TTL клиентской DNS-записи при включенном обновлении dyndns по SSSD
+
+TTL - установите значение TTL клиентской DNS-записи, обновляемой с помощью SSSD, в секундах (по умолчанию 1200 или 3600 для Active Directory).
+Отключено - отключите установку значения TTL клиентской DNS-записи, обновленной SSSD (с использованием значений по умолчанию).
+      </string>
+
+
+
+
+
       <string id="sssd-dyndns-update">Обновление DNS-записей прямой зоны</string>
       <string id="sssd-dyndns-update_help">Эта политика определяет параметр SSSD, указывающий на автоматическое обновление DNS-записей (защищенных с помощью GSS-TSIG) вместе с IP-адресом этого клиента. Клиент по умолчанию каждые 24 часа обновляет информацию о себе на DNS-сервере, отправляя имя и ip-адрес для прямой зоны.
 
@@ -893,6 +915,22 @@ SSSD — использовать метод проверки подлиннос
         <dropdownList noSort="true" defaultItem="0" refId="sssd-drop-privileges_setter">Выберите режим работы:
         </dropdownList>
       </presentation>
+
+
+      <presentation id="sssd-dyndns-refresh-interval_DecimalTextBox">
+         <text>Установите значение интервала обновления DNS-записей в секундах (минимально возможное значение - 60, по умолчанию - 86400 = 24 часа).</text>  
+         <decimalTextBox refId="sssd-dyndns-refresh-interval_DecimalTextBox" defaultValue="86400" spinStep="1">
+         </decimalTextBox>
+       </presentation>
+       <presentation id="sssd-dyndns-ttl_DecimalTextBox">
+         <text>Установите значение TTL клиентской DNS-записи, обновляемой SSSD в секундах (по умолчанию 1200 или 3600 для Active Directory)</text>  
+         <decimalTextBox refId="sssd-dyndns-ttl_DecimalTextBox" defaultValue="86400" spinStep="1">
+         </decimalTextBox>
+        </presentation>
+
+
+
+
       <presentation id="sssd-dyndns-update">
         <dropdownList noSort="true" defaultItem="0" refId="sssd-dyndns-update_setter">Выберите режим работы:
         </dropdownList>

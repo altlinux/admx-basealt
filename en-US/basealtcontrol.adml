@@ -555,6 +555,26 @@ Default — SSSD running from default user (different in various versions)
       <string id="sssd-drop-privileges_unprivileged">Unprivileged</string>
       <string id="sssd-drop-privileges_default">Default</string>
 
+
+
+      <string id="sssd-dyndns-refresh-interval">sssd-dyndns-refresh-interval</string>
+      <string id="sssd-dyndns-refresh-interval_help">Determines how often should the back end perform periodic DNS records update, when dyndns update by SSSD in enabled
+
+INTERVAL - Set the value of refresh interval DNS records updated by SSSD in seconds (the lowest possible value is 60, default is 86400 - 24 hours)
+Disabled - Disable setting additional refresh interval of client DNS records updated by SSSD
+      </string>
+      <string id="sssd-dyndns-ttl">sssd-dyndns-ttl</string>
+      <string id="sssd-dyndns-ttl_help">Determines the TTL of client DNS record, when dyndns update by SSSD in enabled
+
+TTL — Set the TTL value of client DNS record updated by SSSD in seconds (default is 1200 or 3600 for Active Directory)
+Disabled — Disable setting the TTL value of client DNS record updated by SSSD (using serveside defaults)
+      </string>
+
+
+
+
+
+
       <string id="sssd-dyndns-update">Update forward DNS record</string>
       <string id="sssd-dyndns-update_help">This policy defines SSSD option specifies the automatically update DNS record (secured using GSS-TSIG) together with the IP address of this client
 
@@ -900,6 +920,23 @@ Only root — Only superuser (root) is permitted to run /usr/bin/Xorg
         <dropdownList noSort="true" defaultItem="0" refId="sssd-drop-privileges_setter">Select an operating mode:
         </dropdownList>
       </presentation>
+
+
+
+      <presentation id="sssd-dyndns-refresh-interval_DecimalTextBox">
+         <text>Set the value of refresh interval DNS records updated by SSSD in seconds (the lowest possible value is 60, default is 86400 - 24 hours)</text>  
+         <decimalTextBox refId="sssd-dyndns-refresh-interval_DecimalTextBox" defaultValue="86400" spinStep="1">
+         </decimalTextBox>
+       </presentation>
+       <presentation id="sssd-dyndns-ttl_DecimalTextBox">
+         <text>Set the TTL value of client DNS record updated by SSSD in seconds (default is 1200 or 3600 for Active Directory)</text>  
+         <decimalTextBox refId="sssd-dyndns-ttl_DecimalTextBox" defaultValue="1200" spinStep="1">
+         </decimalTextBox>
+        </presentation>
+
+
+
+
       <presentation id="sssd-dyndns-update">
         <dropdownList noSort="true" defaultItem="0" refId="sssd-dyndns-update_setter">Select an operating mode:
         </dropdownList>
