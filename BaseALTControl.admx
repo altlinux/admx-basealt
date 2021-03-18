@@ -373,6 +373,81 @@
         </enum>
       </elements>
     </policy>
+    <policy name="idle-activation-enabled" class="User"
+            displayName="$(string.idle-activation-enabled)"
+            explainText="$(string.idle-activation-enabled_help)"
+            key="Software\Policies\Microsoft\Windows\Control Panel\Desktop"
+            valueName="ScreenSaveActive">
+      <parentCategory ref="system:ALT_Graphics" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <enabledValue>
+        <string>1</string>
+      </enabledValue>
+      <disabledValue>
+        <string>0</string>
+      </disabledValue>
+    </policy>
+    <policy name="idle-delay" class="User"
+            displayName="$(string.idle-delay)"
+            explainText="$(string.idle-delay_help)"
+            presentation="$(presentation.idle-delay)"
+            key="Software\Policies\Microsoft\Windows\Control Panel\Desktop">
+      <parentCategory ref="system:ALT_Graphics" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+        <elements>
+        <decimal id="ScreenSaverTimeOutFreqSpin" valueName="ScreenSaveTimeOut" maxValue="599940" storeAsText="true" />
+      </elements>
+    </policy>
+    <policy name="lock-enabled" class="User"
+            displayName="$(string.lock-enabled)"
+            explainText="$(string.lock-enabled_help)"
+            key="Software\Policies\Microsoft\Windows\Control Panel\Desktop"
+            valueName="ScreenSaverIsSecure">
+      <parentCategory ref="system:ALT_Graphics" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <enabledValue>
+        <string>1</string>
+      </enabledValue>
+      <disabledValue>
+        <string>0</string>
+      </disabledValue>
+    </policy>
+
+	    <policy name="Wallpaper" class="User" displayName="$(string.Wallpaper)" explainText="$(string.Wallpaper_Help)" presentation="$(presentation.Wallpaper)" key="Software\Microsoft\Windows\CurrentVersion\Policies\System">
+      <parentCategory ref="system:ALT_Graphics" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <elements>
+        <text id="WallpaperName" valueName="Wallpaper" required="true" />
+        <enum id="WallpaperStyle" valueName="WallpaperStyle" required="true">
+          <item displayName="$(string.WallpaperStyle_Center)">
+            <value>
+              <string>0</string>
+            </value>
+          </item>
+          <item displayName="$(string.WallpaperStyle_Tile)">
+            <value>
+              <string>1</string>
+            </value>
+          </item>
+          <item displayName="$(string.WallpaperStyle_Stretch)">
+            <value>
+              <string>2</string>
+            </value>
+          </item>
+          <item displayName="$(string.WallpaperStyle_KeepAspect)">
+            <value>
+              <string>3</string>
+            </value>
+          </item>
+          <item displayName="$(string.WallpaperStyle_CropToFit)">
+            <value>
+              <string>4</string>
+            </value>
+          </item>
+        </enum>
+      </elements>
+    </policy>
+
     <policy class="Machine" displayName="$(string.lightdm-greeter-hide-users)" explainText="$(string.lightdm-greeter-hide-users_help)" key="Software\BaseALT\Policies\Control" name="lightdm-greeter-hide-users" presentation="$(presentation.lightdm-greeter-hide-users)">
       <parentCategory ref="system:ALT_Graphics"/>
       <supportedOn ref="system:SUPPORTED_AltP8"/>
