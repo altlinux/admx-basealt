@@ -19,6 +19,8 @@
       <string id="ALT_Security_Help">Configuration of security components settings.</string>
       <string id="ALT_Services">Services</string>
       <string id="ALT_Services_Help">Configuration of system services settings.</string>
+      <string id="ALT_SSHD">SSHD</string>
+      <string id="ALT_SSHD_Help">SSHD options configuration.</string>
       <string id="ALT_SSSD">SSSD</string>
       <string id="ALT_SSSD_Help">SSSD options configuration.</string>
       <string id="ALT_Network">Network Applications</string>
