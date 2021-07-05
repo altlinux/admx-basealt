@@ -19,8 +19,12 @@
       <string id="ALT_Security_Help">Настройка параметров безопасности различных компонентов системы.</string>
       <string id="ALT_Services">Службы</string>
       <string id="ALT_Services_Help">Настройка параметров базовых системных служб.</string>
+      <string id="ALT_SSHD">SSHD опции</string>
+      <string id="ALT_SSHD_Help">Настройка опций SSHD.</string>
       <string id="ALT_SSSD">SSSD опции</string>
       <string id="ALT_SSSD_Help">Настройка опций SSSD.</string>
+      <string id="ALT_Systemd">Systemd</string>
+      <string id="ALT_Systemd_Help">Настройка опций Systemd.</string>
       <string id="ALT_Network">Сетевые приложения</string>
       <string id="ALT_Network_Help">Настройка параметров сетевых приложений.</string>
       <string id="ALT_CD_DVD">Приложения для CD/DVD</string>

@@ -754,7 +754,7 @@
       </disabledValue>
     </policy>
     <policy class="Machine" displayName="$(string.sshd-allow-groups)" explainText="$(string.sshd-allow-groups_help)" key="Software\BaseALT\Policies\Control" valueName="sshd-allow-groups" name="sshd-allow-groups">
-      <parentCategory ref="system:ALT_Services"/>
+      <parentCategory ref="system:ALT_SSHD"/>
       <supportedOn ref="system:SUPPORTED_AltP8"/>
       <enabledValue>
         <string>enabled</string>
@@ -764,7 +764,7 @@
       </disabledValue>
     </policy>
     <policy class="Machine" displayName="$(string.sshd-allow-groups-list)" explainText="$(string.sshd-allow-groups-list_help)" key="Software\BaseALT\Policies\Control" name="sshd-allow-groups-list" presentation="$(presentation.sshd-allow-groups-list)">
-      <parentCategory ref="system:ALT_Services"/>
+      <parentCategory ref="system:ALT_SSHD"/>
       <supportedOn ref="system:SUPPORTED_AltP8"/>
       <elements>
         <enum id="sshd-allow-groups-list_setter" required="true" valueName="sshd-allow-groups-list">
@@ -792,7 +792,7 @@
       </elements>
     </policy>
     <policy class="Machine" displayName="$(string.sshd-gssapi-auth)" explainText="$(string.sshd-gssapi-auth_help)" key="Software\BaseALT\Policies\Control" valueName="sshd-gssapi-auth" name="sshd-gssapi-auth">
-      <parentCategory ref="system:ALT_Services"/>
+      <parentCategory ref="system:ALT_SSHD"/>
       <supportedOn ref="system:SUPPORTED_AltP9"/>
       <enabledValue>
         <string>enabled</string>
@@ -802,7 +802,7 @@
       </disabledValue>
     </policy>
     <policy class="Machine" displayName="$(string.sshd-password-auth)" explainText="$(string.sshd-password-auth_help)" key="Software\BaseALT\Policies\Control" valueName="sshd-password-auth" name="sshd-password-auth">
-      <parentCategory ref="system:ALT_Services"/>
+      <parentCategory ref="system:ALT_SSHD"/>
       <supportedOn ref="system:SUPPORTED_AltP8"/>
       <enabledValue>
         <string>enabled</string>
@@ -812,7 +812,7 @@
       </disabledValue>
     </policy>
     <policy class="Machine" displayName="$(string.sshd-permit-root-login)" explainText="$(string.sshd-permit-root-login_help)" key="Software\BaseALT\Policies\Control" name="sshd-permit-root-login" presentation="$(presentation.sshd-permit-root-login)">
-      <parentCategory ref="system:ALT_Services"/>
+      <parentCategory ref="system:ALT_SSHD"/>
       <supportedOn ref="system:SUPPORTED_AltP8"/>
       <elements>
         <enum id="sshd-permit-root-login_setter" required="true" valueName="sshd-permit-root-login">
