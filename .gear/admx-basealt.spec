@@ -10,6 +10,8 @@ Group: System/Configuration/Other
 Url: https://github.com/altlinux/admx-basealt
 BuildArch: noarch
 
+BuildRequires: admx-lint
+
 Source0: %name-%version.tar
 
 %description
@@ -23,6 +25,11 @@ policy settings in the Group Policy Object Editor.
 %install
 mkdir -p %buildroot%_destdir
 cp -r ru-RU/ en-US/ BaseALT*.admx %buildroot%_destdir/
+
+%check
+for file in *.admx *-*/*.adml; do
+    admx-lint --input_file "$file"
+done
 
 %files
 %dir %_destdir
