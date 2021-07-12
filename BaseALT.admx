@@ -89,5 +89,11 @@
       <parentCategory ref="ALT_System" />
     </category>
     <category name="LinuxComponents" displayName="$(string.LinuxComponents)" explainText="$(string.LinuxComponents_Help)" />
+    <category name="ALT_Mate" displayName="$(string.ALT_Mate)" explainText="$(string.ALT_Mate_Help)">
+	<parentCategory ref="ALT_System"/>
+    </category>
+    <category name="ALT_Screensaver" displayName="$(string.ALT_Screensaver)" explainText="$(string.ALT_Screensaver_Help)">
+	<parentCategory ref="ALT_Mate" />
+    </category>
   </categories>
 </policyDefinitions>

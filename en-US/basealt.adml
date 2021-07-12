@@ -38,6 +38,10 @@
 
       <string id="LinuxComponents">Linux Components</string>
       <string id="LinuxComponents_Help">Contains settings for Kernel components.</string>
+      <string id="ALT_Mate">mate</string>
+      <string id="ALT_Mate_Help">org.mate</string>
+      <string id="ALT_Screensaver">Screensaver</string>
+      <string id="ALT_Screensaver_Help">Screensaver options</string>
     </stringTable>
   </resources>
 </policyDefinitionResources>
