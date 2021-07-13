@@ -53,6 +53,9 @@
 			<string id="icon-policy_charge">charge</string>
 			<string id="icon-policy_present">present</string>
 			<string id="icon-policy_always">always</string>
+
+			<string id="sleep-display-ac">Время бездействия компьютера, по истечении которого, дисплей будет отключен при питании от сети.</string>
+			<string id="sleep-display-ac_help">Установите время бездействия в секундах, по истечении которого дисплей будет отключен при питании от сети.</string>
 		</stringTable>
 
 		<presentationTable>
@@ -100,6 +103,12 @@
 			<presentation id="OrgMatePowerManagerIconPolicy-pr">
 				<dropdownList noSort="true" defaultItem="0" refId="OrgMatePowerManagerIconPolicy_setter">Выберите действие:</dropdownList>
 			</presentation>
+
+			<presentation id="OrgMatePowerManagerSleepDisplayAc-pr">
+				<text>Какое время в секундах компьютер должен простаивать при питании от сети перед передотключением дисплея</text>
+				<decimalTextBox refId="OrgMatePowerManagerSleepDisplayAc_setter" defaultValue="600">Время в cекундах</decimalTextBox>
+			</presentation>
+
 		</presentationTable>
 	</resources>
 </policyDefinitionResources>
