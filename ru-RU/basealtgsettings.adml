@@ -44,6 +44,15 @@
 			<string id="button-suspend_hibernate">hibernate</string>
 			<string id="button-suspend_interactive">interactive</string>
 			<string id="button-suspend_nothing">nothing</string>
+
+			<string id="icon-policy">Опции для иконки уведомления о состоянии питания</string>
+			<string id="icon-policy_help">В каких случаях показать уведомление о состоянии питания: always - показывать уведомление всегда, present - показывать уведомление при питании от сети, charge - показывать уведомление при зарядке батареи, low - показывать уведомление при низком заряде батареи, critical - показывать уведомление при критическом заряде батареи, never - никогда не показывать уведмление</string>
+			<string id="icon-policy_never">never</string>
+			<string id="icon-policy_critical">critical</string>
+			<string id="icon-policy_low">low</string>
+			<string id="icon-policy_charge">charge</string>
+			<string id="icon-policy_present">present</string>
+			<string id="icon-policy_always">always</string>
 		</stringTable>
 
 		<presentationTable>
@@ -86,6 +95,10 @@
 
 			<presentation id="OrgMatePowerManagerButtonSuspend-pr">
 				<dropdownList noSort="true" defaultItem="0" refId="OrgMatePowerManagerButtonSuspend_setter">Выберите действие:</dropdownList>
+			</presentation>
+
+			<presentation id="OrgMatePowerManagerIconPolicy-pr">
+				<dropdownList noSort="true" defaultItem="0" refId="OrgMatePowerManagerIconPolicy_setter">Выберите действие:</dropdownList>
 			</presentation>
 		</presentationTable>
 	</resources>
