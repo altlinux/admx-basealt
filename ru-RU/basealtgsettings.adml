@@ -65,6 +65,9 @@
 			<string id="button-power_shutdown">shutdown</string>
 			<string id="button-power_interactive">interactive</string>
 			<string id="button-power_nothing">nothing</string>
+
+			<string id="sleep-computer-ac">Время бездействия в секундах, по истечении которого компьютер переходит в спящий режим при питании от сети.</string>
+			<string id="sleep-computer-ac_help">Установите время бездействия компьютера, по истечении которого компьютер переходит в спящий режим при питании от сети.</string>
 		</stringTable>
 
 		<presentationTable>
@@ -120,6 +123,11 @@
 
 			<presentation id="OrgMatePowerManagerButtonPower-pr">
 				<dropdownList noSort="true" defaultItem="0" refId="OrgMatePowerManagerButtonPower_setter">Выберите действие:</dropdownList>
+			</presentation>
+
+			<presentation id="OrgMatePowerManagerSleepComputerAc-pr">
+				<text>Какое время в секундах компьютер должен простаивать при питании от сети перед приостановкой.</text>
+				<decimalTextBox refId="OrgMatePowerManagerSleepComputerAc_setter" defaultValue="300">Время в cекундах</decimalTextBox>
 			</presentation>
 
 		</presentationTable>
