@@ -46,6 +46,8 @@
       <string id="ALT_Mate_Help">org.mate</string>
       <string id="ALT_Screensaver">screensaver</string>
       <string id="ALT_Screensaver_Help">screensaver options</string>
+      <string id="ALT_PowerManager">power-manager</string>
+      <string id="ALT_PowerManager_Help">power-manager options</string>
     </stringTable>
   </resources>
 </policyDefinitionResources>

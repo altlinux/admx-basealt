@@ -101,5 +101,8 @@
     <category name="ALT_Screensaver" displayName="$(string.ALT_Screensaver)" explainText="$(string.ALT_Screensaver_Help)">
 	<parentCategory ref="ALT_Mate" />
     </category>
+    <category name="ALT_PowerManager" displayName="$(string.ALT_PowerManager)" explainText="$(string.ALT_PowerManager_Help)">
+	<parentCategory ref="ALT_Mate" />
+    </category>
   </categories>
 </policyDefinitions>
