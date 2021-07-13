@@ -127,6 +127,19 @@
 	</elements>
 	</policy>
 
+	<policy name="OrgMateScreensaverEmbeddedKeyboardCommandUser" class="User"
+		displayName="$(string.embedded-keyboard-command)"
+		explainText="$(string.embedded-keyboard-command_help)"
+		key="Software\BaseALT\Policies\gsettings"
+		valueName="org.mate.screensaver.embedded-keyboard-command" 
+		presentation="$(presentation.OrgMateScreensaverEmbeddedKeyboardCommand-pr)">
+	<parentCategory ref="system:ALT_Screensaver" />
+	<supportedOn ref="system:SUPPORTED_AltP9" />
+	<elements>
+		<text id="EmbeddedKeyboardCommand_setter" valueName="org.mate.screensaver.embedded-keyboard-command" />
+	</elements>
+	</policy>
+
 <!--         class="Machine"         -->
 <!--         org.mate.screensaver         -->
 
@@ -244,6 +257,19 @@
 	<supportedOn ref="system:SUPPORTED_AltP9" />
 	<elements>
 		<decimal id="ScreenSaverCycleDelay_setter" valueName="org.mate.screensaver.cycle-delay" minValue="0" maxValue="2147483647" storeAsText="true" />
+	</elements>
+	</policy>
+
+	<policy name="OrgMateScreensaverEmbeddedKeyboardCommandMachine" class="Machine"
+		displayName="$(string.embedded-keyboard-command)"
+		explainText="$(string.embedded-keyboard-command_help)"
+		key="Software\BaseALT\Policies\gsettings"
+		valueName="org.mate.screensaver.embedded-keyboard-command" 
+		presentation="$(presentation.OrgMateScreensaverEmbeddedKeyboardCommand-pr)">
+	<parentCategory ref="system:ALT_Screensaver" />
+	<supportedOn ref="system:SUPPORTED_AltP9" />
+	<elements>
+		<text id="EmbeddedKeyboardCommand_setter" valueName="org.mate.screensaver.embedded-keyboard-command" />
 	</elements>
 	</policy>
 
