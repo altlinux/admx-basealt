@@ -35,6 +35,15 @@
 
 			<string id="power-management-delay">Промежуток времени в секундах, по истечении которого система управления питанием получает сигнал о бездейcтвии пользователя в сеансе.</string>
 			<string id="power-management-delay_help">Этот ключ устанавливается и управляется агентом по управлению питанием</string>
+
+			<string id="button-suspend">Действие, выполняемое при нажатой кнопке ждущего режима.</string>
+			<string id="button-suspend_help">Установите действие, выполняемое при нажатии кнопки ждущего режима: blank - ничего не устанавливать, suspend - переход в спящий режим, shutdown - выключение компьютера, hibernate - переход в режим гибернации, interactive - спросить, что необходимо сделать, nothing - ничего не делать</string>
+			<string id="button-suspend_blank">blank</string>
+			<string id="button-suspend_suspend">suspend</string>
+			<string id="button-suspend_shutdown">shutdown</string>
+			<string id="button-suspend_hibernate">hibernate</string>
+			<string id="button-suspend_interactive">interactive</string>
+			<string id="button-suspend_nothing">nothing</string>
 		</stringTable>
 
 		<presentationTable>
@@ -73,6 +82,10 @@
 			<presentation id="OrgMateScreensaverPowerManagementDelay-pr">
 				<text>Время в секундах, по прошествии которого система управления питанием получает сигнал о бездействии пользователя</text>
 				<decimalTextBox refId="OrgMateScreensaverPowerManagementDelay_setter" defaultValue="180">Время в секундах</decimalTextBox>
+			</presentation>
+
+			<presentation id="OrgMatePowerManagerButtonSuspend-pr">
+				<dropdownList noSort="true" defaultItem="0" refId="OrgMatePowerManagerButtonSuspend_setter">Выберите действие:</dropdownList>
 			</presentation>
 		</presentationTable>
 	</resources>

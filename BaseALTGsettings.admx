@@ -153,6 +153,52 @@
 	</elements>	
 	</policy>
 
+<!--         org.mate.power-manager  -->
+
+	<policy name="OrgMatePowerManagerButtonSuspendUser" class="User"
+		displayName="$(string.button-suspend)"
+		explainText="$(string.button-suspend_help)"
+		key="Software\BaseALT\Policies\gsettings"
+		valueName="org.mate.power-manager.button-suspend"
+		presentation="$(presentation.OrgMatePowerManagerButtonSuspend-pr)">
+	<parentCategory ref="system:ALT_PowerManager" />
+	<supportedOn ref="system:SUPPORTED_AltP9" />
+	<elements>
+		<enum id="OrgMatePowerManagerButtonSuspend_setter" required="true" valueName="org.mate.power-manager.button-suspend">
+			<item displayName="$(string.button-suspend_blank)">
+				<value>
+					<string>blank</string>
+				</value>
+			</item>
+			<item displayName="$(string.button-suspend_suspend)">
+				<value>
+					<string>suspend</string>
+				</value>
+			</item>
+			<item displayName="$(string.button-suspend_shutdown)">
+				<value>
+					<string>shutdown</string>
+				</value>
+			</item>
+			<item displayName="$(string.button-suspend_hibernate)">
+				<value>
+					<string>hibernate</string>
+				</value>
+			</item>
+			<item displayName="$(string.button-suspend_interactive)">
+				<value>
+					<string>interactive</string>
+				</value>
+			</item>
+			<item displayName="$(string.button-suspend_nothing)">
+				<value>
+					<string>nothing</string>
+				</value>
+			</item>
+		</enum>
+	</elements>
+	</policy>
+
 <!--         class="Machine"         -->
 <!--         org.mate.screensaver         -->
 
@@ -297,6 +343,50 @@
 	<elements>
 		<decimal id="OrgMateScreensaverPowerManagementDelay_setter" valueName="org.mate.screensaver.power-management-delay" minValue="0" maxValue="2147483647" storeAsText="true" />
 	</elements>	
+	</policy>
+
+	<policy name="OrgMatePowerManagerButtonSuspendMachine" class="Machine"
+		displayName="$(string.button-suspend)"
+		explainText="$(string.button-suspend_help)"
+		key="Software\BaseALT\Policies\gsettings"
+		valueName="org.mate.power-manager.button-suspend"
+		presentation="$(presentation.OrgMatePowerManagerButtonSuspend-pr)">
+	<parentCategory ref="system:ALT_PowerManager" />
+	<supportedOn ref="system:SUPPORTED_AltP9" />
+	<elements>
+		<enum id="OrgMatePowerManagerButtonSuspend_setter" required="true" valueName="org.mate.power-manager.button-suspend">
+			<item displayName="$(string.button-suspend_blank)">
+				<value>
+					<string>blank</string>
+				</value>
+			</item>
+			<item displayName="$(string.button-suspend_suspend)">
+				<value>
+					<string>suspend</string>
+				</value>
+			</item>
+			<item displayName="$(string.button-suspend_shutdown)">
+				<value>
+					<string>shutdown</string>
+				</value>
+			</item>
+			<item displayName="$(string.button-suspend_hibernate)">
+				<value>
+					<string>hibernate</string>
+				</value>
+			</item>
+			<item displayName="$(string.button-suspend_interactive)">
+				<value>
+					<string>interactive</string>
+				</value>
+			</item>
+			<item displayName="$(string.button-suspend_nothing)">
+				<value>
+					<string>nothing</string>
+				</value>
+			</item>
+		</enum>
+	</elements>
 	</policy>
 
   </policies>
