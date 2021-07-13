@@ -26,6 +26,20 @@
 		</disabledValue>
 	</policy>
 
+	<policy name="OrgMateScreensaverLockEnabledUser" class="User"
+		displayName="$(string.lock-enabled)"
+		explainText="$(string.lock-enabled_help)"
+		key="Software\BaseALT\Policies\gsettings"
+		valueName="org.mate.screensaver.lock-enabled">
+	<parentCategory ref="system:ALT_Screensaver" />
+	<supportedOn ref="system:SUPPORTED_AltP9" />
+		<enabledValue>
+			<string>1</string>
+		</enabledValue>
+		<disabledValue>
+			<string>0</string>
+		</disabledValue>
+		</policy>
 
 <!--         class="Machine"         -->
 <!--         org.mate.screensaver         -->
@@ -45,6 +59,21 @@
 			<string>0</string>
 		</disabledValue>
 	</policy>
+
+	<policy name="OrgMateScreensaverLockEnabledMachine" class="Machine"
+		displayName="$(string.lock-enabled)"
+		explainText="$(string.lock-enabled_help)"
+		key="Software\BaseALT\Policies\gsettings"
+		valueName="org.mate.screensaver.lock-enabled">
+	<parentCategory ref="system:ALT_Screensaver" />
+	<supportedOn ref="system:SUPPORTED_AltP9" />
+		<enabledValue>
+			<string>1</string>
+		</enabledValue>
+		<disabledValue>
+			<string>0</string>
+		</disabledValue>
+		</policy>
 
   </policies>
 </policyDefinitions>

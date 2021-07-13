@@ -7,6 +7,9 @@
 		<stringTable>
 			<string id="idle-activation-enabled">Включение хранителя экрана, когда сеанс не активен</string>
 			<string id="idle-activation-enabled_help">True - хранитель экрана включается, когда сеанс неактивен. False - хранитель экрана отключен.</string>
+
+			<string id="lock-enabled">Возможность выхода из системы при включенном хранителе экрана</string>
+			<string id="lock-enabled_help">Установите значение TRUE, чтобы к диалогу разблокирования экрана  добавилась возможность выхода из системы.</string>
 		</stringTable>
 	</resources>
 </policyDefinitionResources>
