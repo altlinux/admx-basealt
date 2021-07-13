@@ -7,6 +7,9 @@
 		<stringTable>
 			<string id="idle-activation-enabled">Turn on screensaver, when the computer is idle</string>
       			<string id="idle-activation-enabled_help">If TRUE, screensaver will run if the computer is idle. If FALSE, the screensaver is disabled.</string>
+
+			<string id="lock-enabled">The ability to log out when the screen saver is enabled.</string>
+			<string id="lock-enabled_help">Set the value to TRUE so that the option to log out is added to the screen unlock dialog.</string>
 		</stringTable>
 	</resources>
 </policyDefinitionResources>
