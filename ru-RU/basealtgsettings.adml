@@ -17,12 +17,21 @@
 			<string id="mode_blank_only">пустой экран</string>
 			<string id="mode_random">случайные темы</string>
 			<string id="mode_single">выбранная тема</string>
+
+			<string id="themes">Тема для хранителя экрана</string>
+			<string id="themes_help">Выберите файл с темой для хранителя экрана</string>
 		</stringTable>
 
 		<presentationTable>
 			<presentation id="OrgMateScreensaverMode-pr">
 				<dropdownList noSort="true" defaultItem="0" refId="OrgMateScreensaverMode_setter">Выберите режим работы хранителя экрана:</dropdownList>
 			</presentation>
+		<presentation id="OrgMateScreensaverThemes-pr">
+			<textBox refId="OrgMateScreensaverThemes_setter">
+				<label>Имя файла-темы для хранителя экрана</label>
+			</textBox>
+		</presentation>
+
 		</presentationTable>
 	</resources>
 </policyDefinitionResources>

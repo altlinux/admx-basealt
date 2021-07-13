@@ -75,6 +75,19 @@
 	</elements>
 	</policy> 
 
+	<policy name="OrgMateScreensaverThemesUser" class="User"
+		displayName="$(string.themes)"
+		explainText="$(string.themes_help)"
+		key="Software\BaseALT\Policies\gsettings"
+		valueName="org.mate.screensaver.themes"
+		presentation="$(presentation.OrgMateScreensaverThemes-pr)">
+	<parentCategory ref="system:ALT_Screensaver" />
+	<supportedOn ref="system:SUPPORTED_AltP9" />
+	<elements>
+		<text id="OrgMateScreensaverThemes_setter" valueName="org.mate.screensaver.themes"/>
+	</elements>
+	</policy>
+
 <!--         class="Machine"         -->
 <!--         org.mate.screensaver         -->
 
@@ -142,6 +155,19 @@
 		</enum>
 	</elements>
 	</policy> 
+
+	<policy name="OrgMateScreensaverThemesMachine" class="Machine"
+		displayName="$(string.themes)"
+		explainText="$(string.themes_help)"
+		key="Software\BaseALT\Policies\gsettings"
+		valueName="org.mate.screensaver.themes"
+		presentation="$(presentation.OrgMateScreensaverThemes-pr)">
+	<parentCategory ref="system:ALT_Screensaver" />
+	<supportedOn ref="system:SUPPORTED_AltP9" />
+	<elements>
+		<text id="OrgMateScreensaverThemes_setter" valueName="org.mate.screensaver.themes"/>
+	</elements>
+	</policy>
 
   </policies>
 </policyDefinitions>
