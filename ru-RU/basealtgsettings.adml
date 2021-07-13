@@ -20,18 +20,26 @@
 
 			<string id="themes">Тема для хранителя экрана</string>
 			<string id="themes_help">Выберите файл с темой для хранителя экрана</string>
+
+			<string id="lock-delay">Количество минут после активации хранителя экрана, по истечении которых экран будет заблокирован.</string>
+			<string id="lock-delay_help">Установите количество минут по истечении которых экран будет заблокирован</string>
 		</stringTable>
 
 		<presentationTable>
 			<presentation id="OrgMateScreensaverMode-pr">
 				<dropdownList noSort="true" defaultItem="0" refId="OrgMateScreensaverMode_setter">Выберите режим работы хранителя экрана:</dropdownList>
 			</presentation>
-		<presentation id="OrgMateScreensaverThemes-pr">
-			<textBox refId="OrgMateScreensaverThemes_setter">
-				<label>Имя файла-темы для хранителя экрана</label>
-			</textBox>
-		</presentation>
-
+		
+			<presentation id="OrgMateScreensaverThemes-pr">
+				<textBox refId="OrgMateScreensaverThemes_setter">
+					<label>Имя файла-темы для хранителя экрана</label>
+				</textBox>
+			</presentation>
+		
+			<presentation id="OrgMateScreensaverLockDelay-pr">
+				<text>Интервал в минутах между активацией хранителя экрана и появлением диалога выхода из системы при активации</text>
+				<decimalTextBox refId="OrgMateScreensaverLockDelay_setter" defaultValue="2">Время в минутах</decimalTextBox>
+			</presentation>
 		</presentationTable>
 	</resources>
 </policyDefinitionResources>

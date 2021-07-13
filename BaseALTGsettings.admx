@@ -88,6 +88,19 @@
 	</elements>
 	</policy>
 
+	<policy name="OrgMateScreensaverLockDelayUser" class="User"
+		displayName="$(string.lock-delay)"
+		explainText="$(string.lock-delay_help)"
+		key="Software\BaseALT\Policies\gsettings"
+		valueName="org.mate.screensaver.lock-delay" 
+		presentation="$(presentation.OrgMateScreensaverLockDelay-pr)">
+	<parentCategory ref="system:ALT_Screensaver" />
+	<supportedOn ref="system:SUPPORTED_AltP9" />
+	<elements>
+		<decimal id="OrgMateScreensaverLockDelay_setter" valueName="org.mate.screensaver.lock-delay" minValue="0" maxValue="2147483647" storeAsText="true" />
+	</elements>
+	</policy>
+
 <!--         class="Machine"         -->
 <!--         org.mate.screensaver         -->
 
@@ -166,6 +179,19 @@
 	<supportedOn ref="system:SUPPORTED_AltP9" />
 	<elements>
 		<text id="OrgMateScreensaverThemes_setter" valueName="org.mate.screensaver.themes"/>
+	</elements>
+	</policy>
+	
+	<policy name="OrgMateScreensaverLockDelayMachine" class="Machine"
+		displayName="$(string.lock-delay)"
+		explainText="$(string.lock-delay_help)"
+		key="Software\BaseALT\Policies\gsettings"
+		valueName="org.mate.screensaver.lock-delay" 
+		presentation="$(presentation.OrgMateScreensaverLockDelay-pr)">
+	<parentCategory ref="system:ALT_Screensaver" />
+	<supportedOn ref="system:SUPPORTED_AltP9" />
+	<elements>
+		<decimal id="OrgMateScreensaverLockDelay_setter" valueName="org.mate.screensaver.lock-delay" minValue="0" maxValue="2147483647" storeAsText="true" />
 	</elements>
 	</policy>
 
