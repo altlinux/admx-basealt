@@ -44,6 +44,15 @@
 			<string id="button-suspend_hibernate">hibernate</string>
 			<string id="button-suspend_interactive">interactive</string>
 			<string id="button-suspend_nothing">nothing</string>
+
+			<string id="icon-policy">Options for the power supply status notification icon.</string>
+			<string id="icon-policy_help">When to show a notification about the power status: always - show a notification always, present - show a notification when powered on, charge - show a notification when the battery is charging, low - show a notification when the battery is low, critical - show a notification when the battery is critically low, never - never show a notification.</string>
+			<string id="icon-policy_never">never</string>
+			<string id="icon-policy_critical">critical</string>
+			<string id="icon-policy_low">low</string>
+			<string id="icon-policy_charge">charge</string>
+			<string id="icon-policy_present">present</string>
+			<string id="icon-policy_always">always</string>
 		</stringTable>
 
 		<presentationTable>
@@ -86,6 +95,10 @@
 
 			<presentation id="OrgMatePowerManagerButtonSuspend-pr">
 				<dropdownList noSort="true" defaultItem="0" refId="OrgMatePowerManagerButtonSuspend_setter">Select an operating mode:</dropdownList>
+			</presentation>
+
+			<presentation id="OrgMatePowerManagerIconPolicy-pr">
+				<dropdownList noSort="true" defaultItem="0" refId="OrgMatePowerManagerIconPolicy_setter">Select an operating mode:</dropdownList>
 			</presentation>
 		</presentationTable>
 	</resources>
