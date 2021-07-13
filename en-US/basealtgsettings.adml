@@ -35,6 +35,15 @@
 
 			<string id="power-management-delay">The period of time, in seconds, after which the power management system receives a signal about the user's inactivity in the session.</string>
 			<string id="power-management-delay_help">This key is installed and managed by the power management agent.</string>
+
+			<string id="button-suspend">The action to take when the system suspend button is pressed.</string>
+			<string id="button-suspend_help">Set the action that is performed when the standby mode button is pressed: blank - do not install anything, suspend-go to sleep mode, shutdown - turn off the computer, hibernate - go to hibernation mode, interactive - ask what needs to be done, nothing - do nothing</string>
+			<string id="button-suspend_blank">blank</string>
+			<string id="button-suspend_suspend">suspend</string>
+			<string id="button-suspend_shutdown">shutdown</string>
+			<string id="button-suspend_hibernate">hibernate</string>
+			<string id="button-suspend_interactive">interactive</string>
+			<string id="button-suspend_nothing">nothing</string>
 		</stringTable>
 
 		<presentationTable>
@@ -73,6 +82,10 @@
 			<presentation id="OrgMateScreensaverPowerManagementDelay-pr">
 				<text>The time in seconds after which the power management system receives a signal about the user's inactivity.</text>
 				<decimalTextBox refId="OrgMateScreensaverPowerManagementDelay_setter" defaultValue="180">Time in seconds</decimalTextBox>
+			</presentation>
+
+			<presentation id="OrgMatePowerManagerButtonSuspend-pr">
+				<dropdownList noSort="true" defaultItem="0" refId="OrgMatePowerManagerButtonSuspend_setter">Select an operating mode:</dropdownList>
 			</presentation>
 		</presentationTable>
 	</resources>
