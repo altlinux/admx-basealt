@@ -56,6 +56,15 @@
 
 			<string id="sleep-display-ac">Время бездействия компьютера, по истечении которого, дисплей будет отключен при питании от сети.</string>
 			<string id="sleep-display-ac_help">Установите время бездействия в секундах, по истечении которого дисплей будет отключен при питании от сети.</string>
+
+			<string id="button-power">Действие, выполняемое при нажатии кнопки питания</string>
+			<string id="button-power_help">Установите действие, выполняемое при нажатии кнопки питания: blank - ничего не устанавливать, suspend - спящий режим, shutdown - выключение, hibernate - гибернация, interactive - запросить действие, nothing - ничего не делать.</string>
+			<string id="button-power_blank">blank</string>
+			<string id="button-power_suspend">suspend</string>
+			<string id="button-power_hibernate">hibernate</string>
+			<string id="button-power_shutdown">shutdown</string>
+			<string id="button-power_interactive">interactive</string>
+			<string id="button-power_nothing">nothing</string>
 		</stringTable>
 
 		<presentationTable>
@@ -107,6 +116,10 @@
 			<presentation id="OrgMatePowerManagerSleepDisplayAc-pr">
 				<text>Какое время в секундах компьютер должен простаивать при питании от сети перед передотключением дисплея</text>
 				<decimalTextBox refId="OrgMatePowerManagerSleepDisplayAc_setter" defaultValue="600">Время в cекундах</decimalTextBox>
+			</presentation>
+
+			<presentation id="OrgMatePowerManagerButtonPower-pr">
+				<dropdownList noSort="true" defaultItem="0" refId="OrgMatePowerManagerButtonPower_setter">Выберите действие:</dropdownList>
 			</presentation>
 
 		</presentationTable>
