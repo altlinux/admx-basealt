@@ -40,8 +40,8 @@
       <string id="LinuxComponents_Help">Contains settings for Kernel components.</string>
       <string id="ALT_Mate">mate</string>
       <string id="ALT_Mate_Help">org.mate</string>
-      <string id="ALT_Screensaver">Screensaver</string>
-      <string id="ALT_Screensaver_Help">Screensaver options</string>
+      <string id="ALT_Screensaver">screensaver</string>
+      <string id="ALT_Screensaver_Help">screensaver options</string>
     </stringTable>
   </resources>
 </policyDefinitionResources>
