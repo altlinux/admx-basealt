@@ -29,6 +29,9 @@
 
 			<string id="cycle-delay">The interval in minutes between changing the themes of the screen saver</string>
 			<string id="cycle-delay_help">Set the interval in minutes between changing the themes of the screen saver.</string>
+
+			<string id="embedded-keyboard-command">The command that should be executed to embed the keyboard widget in the window.</string>
+			<string id="embedded-keyboard-command_help">Enter a command that implements the XEMBED connection interface and outputs the XID of the window to standard output. It works if the "embedded_keyboard_enabled" key is set to TRUE.</string>
 		</stringTable>
 
 		<presentationTable>
@@ -57,6 +60,12 @@
 				<decimalTextBox refId="ScreenSaverCycleDelay_setter" defaultValue="2">Time in minutes:</decimalTextBox>
 			</presentation>
 
+			<presentation id="OrgMateScreensaverEmbeddedKeyboardCommand-pr">
+				<text>Command for embedding a keyboard widget in a window</text>
+				<textBox refId="EmbeddedKeyboardCommand_setter">
+					<label>Command:</label>
+				</textBox>
+			</presentation>
 		</presentationTable>
 	</resources>
 </policyDefinitionResources>

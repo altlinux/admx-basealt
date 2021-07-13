@@ -29,6 +29,9 @@
 
 			<string id="cycle-delay">Интервал между сменами тем хранителя экрана в минутах.</string>
 			<string id="cycle-delay_help">Установите интервал в минутах между сменами тем хранителя экрана.</string>
+
+			<string id="embedded-keyboard-command">Команда, которая должна выполняться, чтобы встроить виджет клавиатуры в окно.</string>
+			<string id="embedded-keyboard-command_help">Введите команду, реализующую интерфейс подключения XEMBED и выводящую XID окна на стандартный вывод. Работает, если установлено значение TRUE для ключа «embedded_keyboard_enabled».</string>
 		</stringTable>
 
 		<presentationTable>
@@ -55,6 +58,13 @@
 			<presentation id="OrgMateScreensaverCycleDelay-pr">
 				<text>Интервал в минутах между сменами тем хранителя экрана</text>
 				<decimalTextBox refId="ScreenSaverCycleDelay_setter" defaultValue="2">Время в минутах:</decimalTextBox>
+			</presentation>
+
+			<presentation id="OrgMateScreensaverEmbeddedKeyboardCommand-pr">
+				<text>Команда для встраивания виджета клавиатуры в окно</text>
+				<textBox refId="EmbeddedKeyboardCommand_setter">
+					<label>Команда:</label>
+				</textBox>
 			</presentation>
 		</presentationTable>
 	</resources>
