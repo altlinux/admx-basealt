@@ -101,6 +101,19 @@
 	</elements>
 	</policy>
 
+	<policy name="OrgMateScreensaverLogoutDelayUser" class="User"
+		displayName="$(string.logout-delay)"
+		explainText="$(string.logout-delay_help)"
+		key="Software\BaseALT\Policies\gsettings"
+		valueName="org.mate.screensaver.logout-delay" 
+		presentation="$(presentation.OrgMateScreensaverLogoutDelay-pr)">
+	<parentCategory ref="system:ALT_Screensaver" />
+	<supportedOn ref="system:SUPPORTED_AltP9" />
+	<elements>
+		<decimal id="OrgMateScreensaverLogoutDelay_setter" valueName="org.mate.screensaver.logout-delay" minValue="0" maxValue="2147483647" storeAsText="true" />
+	</elements>
+	</policy>
+
 <!--         class="Machine"         -->
 <!--         org.mate.screensaver         -->
 
@@ -192,6 +205,19 @@
 	<supportedOn ref="system:SUPPORTED_AltP9" />
 	<elements>
 		<decimal id="OrgMateScreensaverLockDelay_setter" valueName="org.mate.screensaver.lock-delay" minValue="0" maxValue="2147483647" storeAsText="true" />
+	</elements>
+	</policy>
+
+	<policy name="OrgMateScreensaverLogoutDelayMachine" class="Machine"
+		displayName="$(string.logout-delay)"
+		explainText="$(string.logout-delay_help)"
+		key="Software\BaseALT\Policies\gsettings"
+		valueName="org.mate.screensaver.logout-delay" 
+		presentation="$(presentation.OrgMateScreensaverLogoutDelay-pr)">
+	<parentCategory ref="system:ALT_Screensaver" />
+	<supportedOn ref="system:SUPPORTED_AltP9" />
+	<elements>
+		<decimal id="OrgMateScreensaverLogoutDelay_setter" valueName="org.mate.screensaver.logout-delay" minValue="0" maxValue="2147483647" storeAsText="true" />
 	</elements>
 	</policy>
 

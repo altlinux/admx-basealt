@@ -23,6 +23,9 @@
 
 			<string id="lock-delay">The number of minutes after the screen saver is activated, after which the screen will be locked.</string>
 			<string id="lock-delay_help">Set the number of minutes after which the screen will be locked.</string>
+
+			<string id="logout-delay">The interval in minutes between the activation of the screen saver and the appearance of the logout option in the dialog</string>
+			<string id="logout-delay_help">Set the number of minutes after which the logout dialog will appear after activating the screen saver. This parameter is active if the logout-enable parameter is set to TRUE</string>
 		</stringTable>
 
 		<presentationTable>
@@ -40,6 +43,12 @@
 				<text>The interval in minutes between the activation of the screen saver and the appearance of the logout dialog during activation</text>
 				<decimalTextBox refId="OrgMateScreensaverLockDelay_setter" defaultValue="2">Time in minutes:</decimalTextBox>
 			</presentation>
+
+			<presentation id="OrgMateScreensaverLogoutDelay-pr">
+				<text>The number of minutes after which, after activating the screen saver, the screen will be locked</text>
+				<decimalTextBox refId="OrgMateScreensaverLogoutDelay_setter" defaultValue="3">Time in minutes:</decimalTextBox>
+			</presentation>
 		</presentationTable>
 	</resources>
 </policyDefinitionResources>
+

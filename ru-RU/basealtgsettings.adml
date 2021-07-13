@@ -23,6 +23,9 @@
 
 			<string id="lock-delay">Количество минут после активации хранителя экрана, по истечении которых экран будет заблокирован.</string>
 			<string id="lock-delay_help">Установите количество минут по истечении которых экран будет заблокирован</string>
+
+			<string id="logout-delay">Интервал в минутах между активацией хранителя экрана и появлением параметра выхода из сеанса в диалоге</string>
+			<string id="logout-delay_help">Установите количество минут, через которое после активации хранителя экрана будет появляться диалог выхода из сеанса. Этот параметр активен, если установлено значение TRUE для параметра logout-enable</string>
 		</stringTable>
 
 		<presentationTable>
@@ -40,6 +43,12 @@
 				<text>Интервал в минутах между активацией хранителя экрана и появлением диалога выхода из системы при активации</text>
 				<decimalTextBox refId="OrgMateScreensaverLockDelay_setter" defaultValue="2">Время в минутах</decimalTextBox>
 			</presentation>
+
+			<presentation id="OrgMateScreensaverLogoutDelay-pr">
+				<text>Количество минут, по истечении которого после активации хранителя экрана, экран будет заблокирован</text>
+				<decimalTextBox refId="OrgMateScreensaverLogoutDelay_setter" defaultValue="3">Время в минутах:</decimalTextBox>
+			</presentation>
 		</presentationTable>
 	</resources>
 </policyDefinitionResources>
+
