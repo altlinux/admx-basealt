@@ -256,6 +256,50 @@
 	</elements>
 	</policy>
 
+	<policy name="OrgMatePowerManagerButtonPowerUser" class="User"
+		displayName="$(string.button-power)"
+		explainText="$(string.button-power_help)"
+		key="Software\BaseALT\Policies\gsettings"
+		valueName="org.mate.power-manager.button-power"
+		presentation="$(presentation.OrgMatePowerManagerButtonPower-pr)">
+		<parentCategory ref="system:ALT_PowerManager" />
+	<supportedOn ref="system:SUPPORTED_AltP9" />
+	<elements>
+		<enum id="OrgMatePowerManagerButtonPower_setter" required="true" valueName="org.mate.power-manager.button-power">
+			<item displayName="$(string.button-power_nothing)">
+				<value>
+					<string>blank</string>
+				</value>
+			</item>
+			<item displayName="$(string.button-power_suspend)">
+				<value>
+					<string>suspend</string>
+				</value>
+			</item>
+			<item displayName="$(string.button-power_shutdown)">
+				<value>
+					<string>shutdown</string>
+				</value>
+			</item>
+			<item displayName="$(string.button-power_hibernate)">
+				<value>
+					<string>hibernate</string>
+				</value>
+			</item>
+			<item displayName="$(string.button-power_interactive)">
+				<value>
+					<string>interactive</string>
+				</value>
+			</item>
+			<item displayName="$(string.button-power_nothing)">
+				<value>
+					<string>nothing</string>
+				</value>
+			</item>
+		</enum>
+	</elements>
+	</policy>
+
 <!--         class="Machine"         -->
 <!--         org.mate.screensaver         -->
 
@@ -500,6 +544,50 @@
 	<supportedOn ref="system:SUPPORTED_AltP9" />
 	<elements>
 		<decimal id="OrgMatePowerManagerSleepDisplayAc_setter" valueName="org.mate.power-manager.sleep-display-ac" minValue="0" maxValue="2147483647" storeAsText="true" />
+	</elements>
+	</policy>
+
+	<policy name="OrgMatePowerManagerButtonPowerMachine" class="Machine"
+		displayName="$(string.button-power)"
+		explainText="$(string.button-power_help)"
+		key="Software\BaseALT\Policies\gsettings"
+		valueName="org.mate.power-manager.button-power"
+		presentation="$(presentation.OrgMatePowerManagerButtonPower-pr)">
+		<parentCategory ref="system:ALT_PowerManager" />
+	<supportedOn ref="system:SUPPORTED_AltP9" />
+	<elements>
+		<enum id="OrgMatePowerManagerButtonPower_setter" required="true" valueName="org.mate.power-manager.button-power">
+			<item displayName="$(string.button-power_nothing)">
+				<value>
+					<string>blank</string>
+				</value>
+			</item>
+			<item displayName="$(string.button-power_suspend)">
+				<value>
+					<string>suspend</string>
+				</value>
+			</item>
+			<item displayName="$(string.button-power_shutdown)">
+				<value>
+					<string>shutdown</string>
+				</value>
+			</item>
+			<item displayName="$(string.button-power_hibernate)">
+				<value>
+					<string>hibernate</string>
+				</value>
+			</item>
+			<item displayName="$(string.button-power_interactive)">
+				<value>
+					<string>interactive</string>
+				</value>
+			</item>
+			<item displayName="$(string.button-power_nothing)">
+				<value>
+					<string>nothing</string>
+				</value>
+			</item>
+		</enum>
 	</elements>
 	</policy>
 
