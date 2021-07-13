@@ -26,6 +26,9 @@
 
 			<string id="logout-delay">Интервал в минутах между активацией хранителя экрана и появлением параметра выхода из сеанса в диалоге</string>
 			<string id="logout-delay_help">Установите количество минут, через которое после активации хранителя экрана будет появляться диалог выхода из сеанса. Этот параметр активен, если установлено значение TRUE для параметра logout-enable</string>
+
+			<string id="cycle-delay">Интервал между сменами тем хранителя экрана в минутах.</string>
+			<string id="cycle-delay_help">Установите интервал в минутах между сменами тем хранителя экрана.</string>
 		</stringTable>
 
 		<presentationTable>
@@ -47,6 +50,11 @@
 			<presentation id="OrgMateScreensaverLogoutDelay-pr">
 				<text>Количество минут, по истечении которого после активации хранителя экрана, экран будет заблокирован</text>
 				<decimalTextBox refId="OrgMateScreensaverLogoutDelay_setter" defaultValue="3">Время в минутах:</decimalTextBox>
+			</presentation>
+
+			<presentation id="OrgMateScreensaverCycleDelay-pr">
+				<text>Интервал в минутах между сменами тем хранителя экрана</text>
+				<decimalTextBox refId="ScreenSaverCycleDelay_setter" defaultValue="2">Время в минутах:</decimalTextBox>
 			</presentation>
 		</presentationTable>
 	</resources>
