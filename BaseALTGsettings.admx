@@ -243,6 +243,19 @@
 	</elements>
 	</policy>
 
+	<policy name="OrgMatePowerManagerSleepDisplayAcUser" class="User"
+		displayName="$(string.sleep-display-ac)"
+		explainText="$(string.sleep-display-ac_help)"
+		presentation="$(presentation.OrgMatePowerManagerSleepDisplayAc-pr)"
+		key="Software\BaseALT\Policies\gsettings"
+		valueName="org.mate.power-manager.sleep-display-ac">
+	<parentCategory ref="system:ALT_PowerManager" />
+	<supportedOn ref="system:SUPPORTED_AltP9" />
+	<elements>
+		<decimal id="OrgMatePowerManagerSleepDisplayAc_setter" valueName="org.mate.power-manager.sleep-display-ac" minValue="0" maxValue="2147483647" storeAsText="true" />
+	</elements>
+	</policy>
+
 <!--         class="Machine"         -->
 <!--         org.mate.screensaver         -->
 
@@ -474,6 +487,19 @@
 				</value>
 			</item>
 		</enum>
+	</elements>
+	</policy>
+
+	<policy name="OrgMatePowerManagerSleepDisplayAcMachine" class="Machine"
+		displayName="$(string.sleep-display-ac)"
+		explainText="$(string.sleep-display-ac_help)"
+		presentation="$(presentation.OrgMatePowerManagerSleepDisplayAc-pr)"
+		key="Software\BaseALT\Policies\gsettings"
+		valueName="org.mate.power-manager.sleep-display-ac">
+	<parentCategory ref="system:ALT_PowerManager" />
+	<supportedOn ref="system:SUPPORTED_AltP9" />
+	<elements>
+		<decimal id="OrgMatePowerManagerSleepDisplayAc_setter" valueName="org.mate.power-manager.sleep-display-ac" minValue="0" maxValue="2147483647" storeAsText="true" />
 	</elements>
 	</policy>
 
