@@ -140,6 +140,19 @@
 	</elements>
 	</policy>
 
+	<policy name="OrgMateScreensaverPowerManagementDelayUser" class="User"
+		displayName="$(string.power-management-delay)"
+		explainText="$(string.power-management-delay_help)"
+		key="Software\BaseALT\Policies\gsettings"
+		valueName="org.mate.screensaver.power-management-delay" 
+		presentation="$(presentation.OrgMateScreensaverPowerManagementDelay-pr)">
+	<parentCategory ref="system:ALT_Screensaver" />
+	<supportedOn ref="system:SUPPORTED_AltP9" />
+	<elements>
+		<decimal id="OrgMateScreensaverPowerManagementDelay_setter" valueName="org.mate.screensaver.power-management-delay" minValue="0" maxValue="2147483647" storeAsText="true" />
+	</elements>	
+	</policy>
+
 <!--         class="Machine"         -->
 <!--         org.mate.screensaver         -->
 
@@ -271,6 +284,19 @@
 	<elements>
 		<text id="EmbeddedKeyboardCommand_setter" valueName="org.mate.screensaver.embedded-keyboard-command" />
 	</elements>
+	</policy>
+
+	<policy name="OrgMateScreensaverPowerManagementDelayMachine" class="Machine"
+		displayName="$(string.power-management-delay)"
+		explainText="$(string.power-management-delay_help)"
+		key="Software\BaseALT\Policies\gsettings"
+		valueName="org.mate.screensaver.power-management-delay" 
+		presentation="$(presentation.OrgMateScreensaverPowerManagementDelay-pr)">
+	<parentCategory ref="system:ALT_Screensaver" />
+	<supportedOn ref="system:SUPPORTED_AltP9" />
+	<elements>
+		<decimal id="OrgMateScreensaverPowerManagementDelay_setter" valueName="org.mate.screensaver.power-management-delay" minValue="0" maxValue="2147483647" storeAsText="true" />
+	</elements>	
 	</policy>
 
   </policies>
