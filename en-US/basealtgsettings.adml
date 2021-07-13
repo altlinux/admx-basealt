@@ -6,10 +6,23 @@
 	<resources>
 		<stringTable>
 			<string id="idle-activation-enabled">Turn on screensaver, when the computer is idle</string>
-      			<string id="idle-activation-enabled_help">If TRUE, screensaver will run if the computer is idle. If FALSE, the screensaver is disabled.</string>
+			<string id="idle-activation-enabled_help">If TRUE, screensaver will run if the computer is idle. If FALSE, the screensaver is disabled.</string>
 
 			<string id="lock-enabled">The ability to log out when the screen saver is enabled.</string>
 			<string id="lock-enabled_help">Set the value to TRUE so that the option to log out is added to the screen unlock dialog.</string>
+			
+			<string id="mode">The selection mode used by the screen saver. Possible options: "disabled", "blank-only"," single "— use the theme, specified by the "theme" key," random " — use a randomly selected theme.</string>
+			<string id="mode_help">Set the mode of operation of the screen saver.</string>
+			<string id="mode_disabled">disabled</string>
+			<string id="mode_blank_only">blank screen</string>
+			<string id="mode_random">random theme</string>
+			<string id="mode_single">single theme</string>
 		</stringTable>
+
+		<presentationTable>
+			<presentation id="OrgMateScreensaverMode-pr">
+				<dropdownList noSort="true" defaultItem="0" refId="OrgMateScreensaverMode_setter">Select an operating mode:</dropdownList>
+			</presentation>
+		</presentationTable>
 	</resources>
 </policyDefinitionResources>

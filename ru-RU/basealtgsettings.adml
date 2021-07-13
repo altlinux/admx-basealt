@@ -10,6 +10,19 @@
 
 			<string id="lock-enabled">Возможность выхода из системы при включенном хранителе экрана</string>
 			<string id="lock-enabled_help">Установите значение TRUE, чтобы к диалогу разблокирования экрана  добавилась возможность выхода из системы.</string>
+
+			<string id="mode">Режим выбора, используемый хранителем экрана. Возможные варианты: «disabled» — отключён, «blank-only» — пустой экран, «single» — использовать одну тему, указанную ключом «темы», «random» — использовать случайно выбранную тему.</string>
+			<string id="mode_help">Установить режим работы хранителя экрана.</string>
+			<string id="mode_disabled">отключён</string>
+			<string id="mode_blank_only">пустой экран</string>
+			<string id="mode_random">случайные темы</string>
+			<string id="mode_single">выбранная тема</string>
 		</stringTable>
+
+		<presentationTable>
+			<presentation id="OrgMateScreensaverMode-pr">
+				<dropdownList noSort="true" defaultItem="0" refId="OrgMateScreensaverMode_setter">Выберите режим работы хранителя экрана:</dropdownList>
+			</presentation>
+		</presentationTable>
 	</resources>
 </policyDefinitionResources>
