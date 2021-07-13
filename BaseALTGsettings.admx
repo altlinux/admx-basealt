@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  (c) 2019 BaseALT, Ltd.  -->
+<policyDefinitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" revision="1.0" schemaVersion="1.0" xmlns="http://schemas.microsoft.com/GroupPolicy/2006/07/PolicyDefinitions">
+  <policyNamespaces>
+    <target prefix="gsettings" namespace="BaseALT.Policies.Gsettings" />
+    <using prefix="system" namespace="BaseALT.Policies.System" />
+  </policyNamespaces>
+  <resources minRequiredRevision="1.0" />
+  <policies>
+
+<!--         class="User"         -->
+<!--         org.mate.screensaver         -->
+    
+	<policy name="OrgMateScreesaverIdleActivationEnabledUser" class="User"
+		displayName="$(string.idle-activation-enabled)"
+		explainText="$(string.idle-activation-enabled_help)"
+		key="Software\BaseALT\Policies\gsettings"
+		valueName="org.mate.screensaver.idle-activation-enabled">
+	<parentCategory ref="system:ALT_Screensaver" />
+	<supportedOn ref="system:SUPPORTED_AltP9" />
+		<enabledValue>
+			<string>1</string>
+		</enabledValue>
+		<disabledValue>
+			<string>0</string>
+		</disabledValue>
+	</policy>
+
+
+<!--         class="Machine"         -->
+<!--         org.mate.screensaver         -->
+
+
+	<policy name="OrgMateScreesaverIdleActivationEnabledMachine" class="Machine"
+		displayName="$(string.idle-activation-enabled)"
+		explainText="$(string.idle-activation-enabled_help)"
+		key="Software\BaseALT\Policies\gsettings"
+		valueName="org.mate.screensaver.idle-activation-enabled">
+	<parentCategory ref="system:ALT_Screensaver" />
+	<supportedOn ref="system:SUPPORTED_AltP9" />
+		<enabledValue>
+			<string>1</string>
+		</enabledValue>
+		<disabledValue>
+			<string>0</string>
+		</disabledValue>
+	</policy>
+
+  </policies>
+</policyDefinitions>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  (c) 2019 BaseALT, Ltd.  -->
+<policyDefinitionResources xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.microsoft.com/GroupPolicy/2006/07/PolicyDefinitions" revision="1.0" schemaVersion="1.0">
+  <displayName>ALT services definitions</displayName>
+  <description>This file contains the gsettings services definitions used by ALT operating system.</description>
+	<resources>
+		<stringTable>
+			<string id="idle-activation-enabled">Turn on screensaver, when the computer is idle</string>
+      			<string id="idle-activation-enabled_help">If TRUE, screensaver will run if the computer is idle. If FALSE, the screensaver is disabled.</string>
+		</stringTable>
+	</resources>
+</policyDefinitionResources>
