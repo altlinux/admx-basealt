@@ -65,6 +65,9 @@
 			<string id="button-power_shutdown">shutdown</string>
 			<string id="button-power_interactive">interactive</string>
 			<string id="button-power_nothing">nothing</string>
+
+			<string id="sleep-computer-ac">How long, in seconds, should the computer be idle when powered from the ac before being suspended.</string>
+			<string id="sleep-computer-ac_help">Set the time in seconds of inactivity of the computer, after which the computer goes into sleep mode when powered from the ac.</string>
 		</stringTable>
 
 		<presentationTable>
@@ -120,6 +123,11 @@
 
 			<presentation id="OrgMatePowerManagerButtonPower-pr">
 				<dropdownList noSort="true" defaultItem="0" refId="OrgMatePowerManagerButtonPower_setter">Select an action:</dropdownList>
+			</presentation>
+
+			<presentation id="OrgMatePowerManagerSleepComputerAc-pr">
+				<text>How long, in seconds, should the computer be idle when powered from the ac before being suspended.</text>
+				<decimalTextBox refId="OrgMatePowerManagerSleepComputerAc_setter" defaultValue="300">Time in seconds</decimalTextBox>
 			</presentation>
 		</presentationTable>
 	</resources>
