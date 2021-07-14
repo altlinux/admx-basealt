@@ -95,6 +95,9 @@
 
 			<string id="icon-theme">Тема значков, для использования в панели, Caja и других местах.</string>
 			<string id="icon-theme_help">Установите тему значков, для использования в панели, Caja и других местах.</string>
+
+			<string id="theme">Тема определяющая внешний вид границ окна, заголовка и т.д.</string>
+			<string id="theme_help">Установите тему, определяющую внешний вид границ окна, заголовка и так далее</string>
 		</stringTable>
 
 		<presentationTable>
@@ -169,6 +172,12 @@
 
 			<presentation id="OrgMateInterfaceIconTheme-pr">
 				<textBox refId="OrgMateInterfaceIconTheme">
+					<label>Имя темы:</label>
+				</textBox>
+			</presentation>
+
+			<presentation id="OrgMateMarcoGeneralTheme-pr">
+				<textBox refId="OrgMateMarcoGeneralTheme_setter">
 					<label>Имя темы:</label>
 				</textBox>
 			</presentation>
