@@ -110,6 +110,16 @@
 
 			<string id="picture-filename">The file used as the desktop background.</string>
 			<string id="picture-filename_help">Specify the file to use as the desktop background.</string>
+
+			<string id="picture-options">Defines how the image set by the desktop background will be rendered.</string>
+			<string id="picture-options_help">Possible values: "none", "wallpaper", "centered", "scaled", "stretched"," zoom","spanned".</string>
+			<string id= "picture-options_None">none</string>
+			<string id= "picture-options_Wallpaper">wallpaper</string>
+			<string id= "picture-options_Centered">centered</string>
+			<string id= "picture-options_Scaled">scaled</string>
+			<string id= "picture-options_Stretched">stretched</string>
+			<string id= "picture-options_Zoom">zoom</string>
+			<string id= "picture-options_Spanned">spanned</string>
 		</stringTable>
 
 		<presentationTable>
@@ -210,6 +220,9 @@
 				</textBox>	
 			</presentation>
 
+			<presentation id="OrgMateBackgroundPictureOptions-pr">
+				<dropdownList noSort="true" defaultItem="0" refId="OrgMateBackgroundPictureOptions_setter">Method for displaying the desktop background:</dropdownList>
+			</presentation>
 
 		</presentationTable>
 	</resources>

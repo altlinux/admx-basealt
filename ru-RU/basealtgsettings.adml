@@ -110,6 +110,16 @@
 
 			<string id="picture-filename">Файл, используемый в качестве фона рабочего стола.</string>
 			<string id="picture-filename_help">Укажите файл, используемый в качестве фона рабочего стола.</string>
+
+			<string id="picture-options">Определяет, как будет отрисовываться изображение, установленное фоном рабочего стола.</string>
+			<string id="picture-options_help">Возможные значения: «none», «wallpaper», «centered», «scaled», «stretched», «zoom», «spanned».</string>
+			<string id= "picture-options_None">none</string>
+			<string id= "picture-options_Wallpaper">wallpaper</string>
+			<string id= "picture-options_Centered">centered</string>
+			<string id= "picture-options_Scaled">scaled</string>
+			<string id= "picture-options_Stretched">stretched</string>
+			<string id= "picture-options_Zoom">zoom</string>
+			<string id= "picture-options_Spanned">spanned</string>
 		</stringTable>
 
 		<presentationTable>
@@ -208,6 +218,10 @@
 				<textBox refId="OrgMateBackgroundPictureFilename_setter">
 					<label>файл:</label>
 				</textBox>	
+			</presentation>
+
+			<presentation id="OrgMateBackgroundPictureOptions-pr">
+				<dropdownList noSort="true" defaultItem="0" refId="OrgMateBackgroundPictureOptions_setter">Метод отображения фона рабочего стола:</dropdownList>
 			</presentation>
 
 		</presentationTable>

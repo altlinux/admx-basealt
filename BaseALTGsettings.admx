@@ -518,6 +518,55 @@
 	</elements>
 	</policy>
 
+	<policy name="OrgMateBackgroundPictureOptionsUser" class="User"
+		displayName="$(string.picture-options)" 
+		explainText="$(string.picture-options_help)"  
+		key="Software\BaseALT\Policies\gsettings"
+		valueName="org.mate.background.picture-options"
+		presentation="$(presentation.OrgMateBackgroundPictureOptions-pr)">
+	<parentCategory ref="system:ALT_Background" />
+	<supportedOn ref="system:SUPPORTED_AltP9" />
+	<elements>
+		<enum id="OrgMateBackgroundPictureOptions_setter" valueName="org.mate.background.picture-options" required="true">
+			<item displayName="$(string.picture-options_None)">
+				<value>
+					<string>none</string>
+				</value>
+			</item>
+			<item displayName="$(string.picture-options_Wallpaper)">
+				<value>
+					<string>wallpaper</string>
+				</value>
+			</item>
+			<item displayName="$(string.picture-options_Centered)">
+				<value>
+					<string>centered</string>
+				</value>
+			</item>
+			<item displayName="$(string.picture-options_Scaled)">
+				<value>
+					<string>scaled</string>
+				</value>
+			</item>
+			<item displayName="$(string.picture-options_Stretched)">
+				<value>
+					<string>stretched</string>
+				</value>
+			</item>
+			<item displayName="$(string.picture-options_Zoom)">
+				<value>
+					<string>zoom</string>
+				</value>
+			</item>	
+			<item displayName="$(string.picture-options_Spanned)">
+				<value>
+					<string>spanned</string>
+				</value>
+			</item>
+		</enum>
+	</elements>
+	</policy>
+
 <!--         class="Machine"         -->
 <!--         org.mate.screensaver         -->
 
@@ -1025,6 +1074,55 @@
 	<supportedOn ref="system:SUPPORTED_AltP9" />
 	<elements>
 		<text id="OrgMateBackgroundPictureFilename_setter" valueName="org.mate.background.picture-filename" />
+	</elements>
+	</policy>
+
+	<policy name="OrgMateBackgroundPictureOptionsMachine" class="Machine"
+		displayName="$(string.picture-options)" 
+		explainText="$(string.picture-options_help)"  
+		key="Software\BaseALT\Policies\gsettings"
+		valueName="org.mate.background.picture-options"
+		presentation="$(presentation.OrgMateBackgroundPictureOptions-pr)">
+	<parentCategory ref="system:ALT_Background" />
+	<supportedOn ref="system:SUPPORTED_AltP9" />
+	<elements>
+		<enum id="OrgMateBackgroundPictureOptions_setter" valueName="org.mate.background.picture-options" required="true">
+			<item displayName="$(string.picture-options_None)">
+				<value>
+					<string>none</string>
+				</value>
+			</item>
+			<item displayName="$(string.picture-options_Wallpaper)">
+				<value>
+					<string>wallpaper</string>
+				</value>
+			</item>
+			<item displayName="$(string.picture-options_Centered)">
+				<value>
+					<string>centered</string>
+				</value>
+			</item>
+			<item displayName="$(string.picture-options_Scaled)">
+				<value>
+					<string>scaled</string>
+				</value>
+			</item>
+			<item displayName="$(string.picture-options_Stretched)">
+				<value>
+					<string>stretched</string>
+				</value>
+			</item>
+			<item displayName="$(string.picture-options_Zoom)">
+				<value>
+					<string>zoom</string>
+				</value>
+			</item>	
+			<item displayName="$(string.picture-options_Spanned)">
+				<value>
+					<string>spanned</string>
+				</value>
+			</item>
+		</enum>
 	</elements>
 	</policy>
 
