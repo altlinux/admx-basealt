@@ -80,6 +80,12 @@
 
 			<string id="enabled">Permission to perform remote access to the local desktop.</string>
 			<string id="enabled_help">If "true" allows remote access to desktop via the RFB protocol. Users on remote machines may then connect to the desktop using a VNC player.</string>
+
+			<string id="icon-visibility">Controls the behavior of the status icon.</string>
+			<string id="icon-visibility_help">This key controls the behavior of the status icon. There are three options: "always" - the icon will always be present; "client" - the icon will only be present when someone is connected (this is the default behavior); "never" - the icon will not be present.</string>
+			<string id="icon-visibility_client">client</string>
+			<string id="icon-visibility_always">always</string>
+			<string id="icon-visibility_never">never</string>
 		</stringTable>
 
 		<presentationTable>
@@ -141,6 +147,11 @@
 				<text>How long, in seconds, should the computer be idle when powered from the ac before being suspended.</text>
 				<decimalTextBox refId="OrgMatePowerManagerSleepComputerAc_setter" defaultValue="300">Time in seconds</decimalTextBox>
 			</presentation>
+
+			<presentation id="OrgGnomeVinoIconVisibility-pr">
+				<dropdownList noSort="true" defaultItem="0" refId="OrgGnomeVinoIconVisibility">Choose a behavior:</dropdownList>
+			</presentation>
+
 		</presentationTable>
 	</resources>
 </policyDefinitionResources>

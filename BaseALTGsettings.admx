@@ -375,6 +375,35 @@
 	</disabledValue>
 	</policy>
 
+	<policy name="OrgGnomeVinoIconVisibilityUser" class="User"
+		displayName="$(string.icon-visibility)" 
+		explainText="$(string.icon-visibility_help)" 
+		presentation="$(presentation.OrgGnomeVinoIconVisibility-pr)" 
+		key="Software\BaseALT\Policies\gsettings"
+		valueName="org.gnome.Vino.icon-visibility">
+	<parentCategory ref="system:ALT_Vino" />
+	<supportedOn ref="system:SUPPORTED_AltP9" />
+	<elements>
+		<enum id="OrgGnomeVinoIconVisibility" valueName="org.gnome.Vino.icon-visibility" required="true">
+			<item displayName="$(string.icon-visibility_client)">
+				<value>
+					<string>client</string>
+				</value>
+			</item>
+			<item displayName="$(string.icon-visibility_always)">
+				<value>
+					<string>always</string>
+				</value>
+			</item>
+			<item displayName="$(string.icon-visibility_never)">
+				<value>
+					<string>never</string>
+				</value>
+			</item>
+		</enum>
+	</elements>
+	</policy>
+
 <!--         class="Machine"         -->
 <!--         org.mate.screensaver         -->
 
@@ -739,6 +768,35 @@
 	<disabledValue>
 		<string>0</string>
 	</disabledValue>
+	</policy>
+
+	<policy name="OrgGnomeVinoIconVisibilityMachine" class="Machine"
+		displayName="$(string.icon-visibility)" 
+		explainText="$(string.icon-visibility_help)" 
+		presentation="$(presentation.OrgGnomeVinoIconVisibility-pr)" 
+		key="Software\BaseALT\Policies\gsettings"
+		valueName="org.gnome.Vino.icon-visibility">
+	<parentCategory ref="system:ALT_Vino" />
+	<supportedOn ref="system:SUPPORTED_AltP9" />
+	<elements>
+		<enum id="OrgGnomeVinoIconVisibility" valueName="org.gnome.Vino.icon-visibility" required="true">
+			<item displayName="$(string.icon-visibility_client)">
+				<value>
+					<string>client</string>
+				</value>
+			</item>
+			<item displayName="$(string.icon-visibility_always)">
+				<value>
+					<string>always</string>
+				</value>
+			</item>
+			<item displayName="$(string.icon-visibility_never)">
+				<value>
+					<string>never</string>
+				</value>
+			</item>
+		</enum>
+	</elements>
 	</policy>
 
   </policies>
