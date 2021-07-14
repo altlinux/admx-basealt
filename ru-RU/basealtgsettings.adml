@@ -92,6 +92,9 @@
 
 			<string id="gtk-theme">Имя темы по умолчанию, используемой GTK+.</string>
 			<string id="gtk-theme_help">Имя базовой темы, используемой по умолчанию в GTK+</string>
+
+			<string id="icon-theme">Тема значков, для использования в панели, Caja и других местах.</string>
+			<string id="icon-theme_help">Установите тему значков, для использования в панели, Caja и других местах.</string>
 		</stringTable>
 
 		<presentationTable>
@@ -160,6 +163,12 @@
 
 			<presentation id="OrgMateInterfaceGtkTheme-pr">
 				<textBox refId="OrgMateInterfaceGtkTheme">
+					<label>Имя темы:</label>
+				</textBox>
+			</presentation>
+
+			<presentation id="OrgMateInterfaceIconTheme-pr">
+				<textBox refId="OrgMateInterfaceIconTheme">
 					<label>Имя темы:</label>
 				</textBox>
 			</presentation>
