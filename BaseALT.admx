@@ -113,5 +113,11 @@
     <category name="ALT_Interface" displayName="$(string.ALT_Interface)" explainText="$(string.ALT_Interface_Help)">
 	<parentCategory ref="ALT_Mate" />
     </category>
+    <category name="ALT_Marco" displayName="$(string.ALT_Marco)" explainText="$(string.ALT_Marco_Help)">
+	<parentCategory ref="ALT_Mate" />
+    </category>
+    <category name="ALT_General" displayName="$(string.ALT_General)" explainText="$(string.ALT_General_Help)">
+	<parentCategory ref="ALT_Marco" />
+    </category>
   </categories>
 </policyDefinitions>

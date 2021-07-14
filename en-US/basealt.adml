@@ -54,6 +54,10 @@
       <string id="ALT_Vino_Help">Vino options</string>
       <string id="ALT_Interface">interface</string>
       <string id="ALT_Interface_Help">interface options</string>
+      <string id="ALT_Marco">Marco</string>
+      <string id="ALT_Marco_Help">Marco options</string>
+      <string id="ALT_General">general</string>
+      <string id="ALT_General_Help">general options</string>
     </stringTable>
   </resources>
 </policyDefinitionResources>
