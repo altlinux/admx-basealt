@@ -345,6 +345,21 @@
 	</disabledValue>
 	</policy>
 
+	<policy name="OrgGnomeVinoViewOnlyUser" class="User"
+		displayName="$(string.view-only)"
+		explainText="$(string.view-only_help)"
+		key="Software\BaseALT\Policies\gsettings"
+		valueName="org.gnome.Vino.view-only">
+	<parentCategory ref="system:ALT_Vino" />
+	<supportedOn ref="system:SUPPORTED_AltP9" />
+	<enabledValue>
+		<string>1</string>
+	</enabledValue>
+	<disabledValue>
+		<string>0</string>
+	</disabledValue>
+	</policy>
+
 <!--         class="Machine"         -->
 <!--         org.mate.screensaver         -->
 
@@ -671,6 +686,21 @@
 		explainText="$(string.prompt-enabled_help)"
 		key="Software\BaseALT\Policies\gsettings"
 		valueName="org.gnome.Vino.prompt-enabled">
+	<parentCategory ref="system:ALT_Vino" />
+	<supportedOn ref="system:SUPPORTED_AltP9" />
+	<enabledValue>
+		<string>1</string>
+	</enabledValue>
+	<disabledValue>
+		<string>0</string>
+	</disabledValue>
+	</policy>
+
+	<policy name="OrgGnomeVinoViewOnlyMachine" class="Machine"
+		displayName="$(string.view-only)"
+		explainText="$(string.view-only_help)"
+		key="Software\BaseALT\Policies\gsettings"
+		valueName="org.gnome.Vino.view-only">
 	<parentCategory ref="system:ALT_Vino" />
 	<supportedOn ref="system:SUPPORTED_AltP9" />
 	<enabledValue>
