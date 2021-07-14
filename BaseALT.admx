@@ -110,5 +110,8 @@
     <category name="ALT_Vino" displayName="$(string.ALT_Vino)" explainText="$(string.ALT_Vino)">
 	<parentCategory ref="ALT_Gnome" />
     </category>
+    <category name="ALT_Interface" displayName="$(string.ALT_Interface)" explainText="$(string.ALT_Interface_Help)">
+	<parentCategory ref="ALT_Mate" />
+    </category>
   </categories>
 </policyDefinitions>

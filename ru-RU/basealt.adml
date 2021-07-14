@@ -52,6 +52,8 @@
       <string id="ALT_Gnome_Help">Gnome options</string>
       <string id="ALT_Vino">Vino</string>
       <string id="ALT_Vino_Help">Vino options</string>
+      <string id="ALT_Interface">interface</string>
+      <string id="ALT_Interface_Help">interface options</string>
     </stringTable>
   </resources>
 </policyDefinitionResources>
