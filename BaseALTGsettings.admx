@@ -328,6 +328,23 @@
 	</disabledValue>
 	</policy>
 
+<!--         org.gnome.Vino               -->
+
+	<policy name="OrgGnomeVinoPromptEnabledUser" class="User"
+		displayName="$(string.prompt-enabled)"
+		explainText="$(string.prompt-enabled_help)"
+		key="Software\BaseALT\Policies\gsettings"
+		valueName="org.gnome.Vino.prompt-enabled">
+	<parentCategory ref="system:ALT_Vino" />
+	<supportedOn ref="system:SUPPORTED_AltP9" />
+	<enabledValue>
+		<string>1</string>
+	</enabledValue>
+	<disabledValue>
+		<string>0</string>
+	</disabledValue>
+	</policy>
+
 <!--         class="Machine"         -->
 <!--         org.mate.screensaver         -->
 
@@ -638,6 +655,23 @@
 		key="Software\BaseALT\Policies\gsettings"
 		valueName="org.mate.power-manager.lock-hibernate">
 	<parentCategory ref="system:ALT_PowerManager" />
+	<supportedOn ref="system:SUPPORTED_AltP9" />
+	<enabledValue>
+		<string>1</string>
+	</enabledValue>
+	<disabledValue>
+		<string>0</string>
+	</disabledValue>
+	</policy>
+
+<!--         org.gnome.Vino               -->
+
+	<policy name="OrgGnomeVinoPromptEnabledMachine" class="Machine"
+		displayName="$(string.prompt-enabled)"
+		explainText="$(string.prompt-enabled_help)"
+		key="Software\BaseALT\Policies\gsettings"
+		valueName="org.gnome.Vino.prompt-enabled">
+	<parentCategory ref="system:ALT_Vino" />
 	<supportedOn ref="system:SUPPORTED_AltP9" />
 	<enabledValue>
 		<string>1</string>
