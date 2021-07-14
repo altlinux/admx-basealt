@@ -77,6 +77,9 @@
 
 			<string id="view-only">Disabling desktop management for remote users.</string>
 			<string id="view-only_help">If true, remote users accessing the desktop are only allowed to view the desktop. Remote users will not be able to use the mouse or keyboard.</string>
+
+			<string id="enabled">Permission to perform remote access to the local desktop.</string>
+			<string id="enabled_help">If "true" allows remote access to desktop via the RFB protocol. Users on remote machines may then connect to the desktop using a VNC player.</string>
 		</stringTable>
 
 		<presentationTable>

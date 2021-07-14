@@ -360,6 +360,21 @@
 	</disabledValue>
 	</policy>
 
+	<policy name="OrgGnomeVinoEnabledUser" class="User"
+		displayName="$(string.enabled)"
+		explainText="$(string.enabled_help)"
+		key="Software\BaseALT\Policies\gsettings"
+		valueName="org.gnome.Vino.enabled">
+	<parentCategory ref="system:ALT_Vino" />
+	<supportedOn ref="system:SUPPORTED_AltP9" />
+	<enabledValue>
+		<string>1</string>
+	</enabledValue>
+	<disabledValue>
+		<string>0</string>
+	</disabledValue>
+	</policy>
+
 <!--         class="Machine"         -->
 <!--         org.mate.screensaver         -->
 
@@ -701,6 +716,21 @@
 		explainText="$(string.view-only_help)"
 		key="Software\BaseALT\Policies\gsettings"
 		valueName="org.gnome.Vino.view-only">
+	<parentCategory ref="system:ALT_Vino" />
+	<supportedOn ref="system:SUPPORTED_AltP9" />
+	<enabledValue>
+		<string>1</string>
+	</enabledValue>
+	<disabledValue>
+		<string>0</string>
+	</disabledValue>
+	</policy>
+
+	<policy name="OrgGnomeVinoEnabledMachine" class="Machine"
+		displayName="$(string.enabled)"
+		explainText="$(string.enabled_help)"
+		key="Software\BaseALT\Policies\gsettings"
+		valueName="org.gnome.Vino.enabled">
 	<parentCategory ref="system:ALT_Vino" />
 	<supportedOn ref="system:SUPPORTED_AltP9" />
 	<enabledValue>
