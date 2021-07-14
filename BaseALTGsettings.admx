@@ -503,6 +503,21 @@
 	</disabledValue>
 	</policy>
 
+<!--         org.mate.background      -->
+
+	<policy name="OrgMateBackgroundPictureFilenameUser" class="User"
+		displayName="$(string.picture-filename)"
+		explainText="$(string.picture-filename_help)"
+		presentation="$(presentation.OrgMateBackgroundPictureFilename-pr)"
+		key="Software\BaseALT\Policies\gsettings"
+		valueName="org.mate.background.picture-filename">
+	<parentCategory ref="system:ALT_Background" />
+	<supportedOn ref="system:SUPPORTED_AltP9" />
+	<elements>
+		<text id="OrgMateBackgroundPictureFilename_setter" valueName="org.mate.background.picture-filename" />
+	</elements>
+	</policy>
+
 <!--         class="Machine"         -->
 <!--         org.mate.screensaver         -->
 
@@ -996,6 +1011,21 @@
 	<disabledValue>
 		<string>0</string>
 	</disabledValue>
+	</policy>
+
+<!--         org.mate.background      -->
+
+	<policy name="OrgMateBackgroundPictureFilenameMachine" class="Machine"
+		displayName="$(string.picture-filename)"
+		explainText="$(string.picture-filename_help)"
+		presentation="$(presentation.OrgMateBackgroundPictureFilename-pr)"
+		key="Software\BaseALT\Policies\gsettings"
+		valueName="org.mate.background.picture-filename">
+	<parentCategory ref="system:ALT_Background" />
+	<supportedOn ref="system:SUPPORTED_AltP9" />
+	<elements>
+		<text id="OrgMateBackgroundPictureFilename_setter" valueName="org.mate.background.picture-filename" />
+	</elements>
 	</policy>
 
   </policies>
