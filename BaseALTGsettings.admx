@@ -488,6 +488,21 @@
 	</elements>
 	</policy>
 
+	<policy name="OrgMateMarcoGeneralVisualBellUser" class="User"
+		displayName="$(string.visual-bell)"
+		explainText="$(string.visual-bell_help)"
+		key="Software\BaseALT\Policies\gsettings"
+		valueName="org.mate.Marco.general.visual-bell">
+	<parentCategory ref="system:ALT_General" />
+	<supportedOn ref="system:SUPPORTED_AltP9" />
+	<enabledValue>
+		<string>1</string>
+	</enabledValue>
+	<disabledValue>
+		<string>0</string>
+	</disabledValue>
+	</policy>
+
 <!--         class="Machine"         -->
 <!--         org.mate.screensaver         -->
 
@@ -965,6 +980,22 @@
 	<elements>
 		<decimal id="num-workspaces_setter" valueName="org.mate.Marco.general.num-workspaces" minValue="1" maxValue="36" storeAsText="true" />
 	</elements>
+	</policy>
+
+
+	<policy name="OrgMateMarcoGeneralVisualBellMachine" class="Machine"
+		displayName="$(string.visual-bell)"
+		explainText="$(string.visual-bell_help)"
+		key="Software\BaseALT\Policies\gsettings"
+		valueName="org.mate.Marco.general.visual-bell">
+	<parentCategory ref="system:ALT_General" />
+	<supportedOn ref="system:SUPPORTED_AltP9" />
+	<enabledValue>
+		<string>1</string>
+	</enabledValue>
+	<disabledValue>
+		<string>0</string>
+	</disabledValue>
 	</policy>
 
   </policies>

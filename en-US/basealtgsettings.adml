@@ -104,6 +104,9 @@
 
 			<string id="num-workspaces">Number of workspaces.</string>
 			<string id="num-workspaces_help">Number of workspaces. Must be more than zero, and has a fixed maximum(36) to prevent making the desktop unusable by accidentally asking for too many workspaces.</string>
+
+			<string id="visual-bell">Enabling the visualization of sound effects.</string>
+			<string id="visual-bell_help">Visual indication when an application or the system issues a 'bell' or 'beep'; useful for the hard-of-hearing and for use in noisy environments.</string>
 		</stringTable>
 
 		<presentationTable>
