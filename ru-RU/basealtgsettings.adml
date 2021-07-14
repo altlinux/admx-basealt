@@ -80,6 +80,12 @@
 
 			<string id="enabled">Разрешение к осуществлению удаленного доступа к локальному рабочему столу.</string>
 			<string id="enabled_help">Если установлено TRUE, то удаленный пользователь может подключаться к локальному рабочему столу с использованием протокола RFB и VNC.</string>
+
+			<string id="icon-visibility">Контролирует иконку уведомления осостоянии удаленного подключения.</string>
+			<string id="icon-visibility_help">Варианты состояния: "всегда" - иконка уведомления будет всегда; "клиент" - иконка уведомления появится, если кто-то подключился (выбрано по умолчанию); "никогда" - иконка уведомления не будет появляться.</string>
+			<string id="icon-visibility_client">клиент</string>
+			<string id="icon-visibility_always">всегда</string>
+			<string id="icon-visibility_never">никогда</string>
 		</stringTable>
 
 		<presentationTable>
@@ -140,6 +146,10 @@
 			<presentation id="OrgMatePowerManagerSleepComputerAc-pr">
 				<text>Какое время в секундах компьютер должен простаивать при питании от сети перед приостановкой.</text>
 				<decimalTextBox refId="OrgMatePowerManagerSleepComputerAc_setter" defaultValue="300">Время в cекундах</decimalTextBox>
+			</presentation>
+
+			<presentation id="OrgGnomeVinoIconVisibility-pr">
+				<dropdownList noSort="true" defaultItem="0" refId="OrgGnomeVinoIconVisibility">Выберите вариант:</dropdownList>
 			</presentation>
 
 		</presentationTable>
