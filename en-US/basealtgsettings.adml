@@ -71,6 +71,9 @@
 
 			<string id="lock-hibernate">The ability to lock the screen after restoring the computer from sleep mode. It is used only if the lock-use-screensaver parameter is not set.</string>
 			<string id="lock-hibernate_help">Set the value to TRUE to lock the computer after recovering from sleep mode.</string>
+
+			<string id="prompt-enabled">Confirmation of the remote user's connection to the desktop.</string>
+			<string id="prompt-enabled_help">If true, remote users accessing the desktop are not allowed access until the user on the host machine approves the connection. Recommended especially when access is not password protected.</string>
 		</stringTable>
 
 		<presentationTable>
