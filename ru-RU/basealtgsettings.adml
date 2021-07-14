@@ -89,6 +89,9 @@
 
 			<string id="use-upnp">Использовать открытый порт на UPnP роутере.</string>
 			<string id="use-upnp_help">Если установлено TRUE, то необходимо настроить перенаправление и открыть порт, используемый Vino, на UPnP роутере.</string>
+
+			<string id="gtk-theme">Имя темы по умолчанию, используемой GTK+.</string>
+			<string id="gtk-theme_help">Имя базовой темы, используемой по умолчанию в GTK+</string>
 		</stringTable>
 
 		<presentationTable>
@@ -153,6 +156,12 @@
 
 			<presentation id="OrgGnomeVinoIconVisibility-pr">
 				<dropdownList noSort="true" defaultItem="0" refId="OrgGnomeVinoIconVisibility">Выберите вариант:</dropdownList>
+			</presentation>
+
+			<presentation id="OrgMateInterfaceGtkTheme-pr">
+				<textBox refId="OrgMateInterfaceGtkTheme">
+					<label>Имя темы:</label>
+				</textBox>
 			</presentation>
 
 		</presentationTable>
