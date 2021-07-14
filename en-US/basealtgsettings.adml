@@ -89,6 +89,9 @@
 
 			<string id="use-upnp">Use an open port on the UPnP router.</string>
 			<string id="use-upnp_help">If true, request that a UPnP-capable router should forward and open the port used by Vino.</string>
+
+			<string id="gtk-theme">The name of the default theme used by GTK+.</string>
+			<string id="gtk-theme_help">The name of the base theme used by default in GTK+</string>
 		</stringTable>
 
 		<presentationTable>
@@ -153,6 +156,12 @@
 
 			<presentation id="OrgGnomeVinoIconVisibility-pr">
 				<dropdownList noSort="true" defaultItem="0" refId="OrgGnomeVinoIconVisibility">Choose a behavior:</dropdownList>
+			</presentation>
+
+			<presentation id="OrgMateInterfaceGtkTheme-pr">
+				<textBox refId="OrgMateInterfaceGtkTheme">
+					<label>Theme's name:</label>
+				</textBox>
 			</presentation>
 
 		</presentationTable>

@@ -419,6 +419,21 @@
 	</disabledValue>
 	</policy>
 
+<!--         org.mate.interface      -->
+
+	<policy name="OrgMateInterfaceGtkThemeUser" class="User"
+		displayName="$(string.gtk-theme)"
+		explainText="$(string.gtk-theme_help)"
+		key="Software\BaseALT\Policies\gsettings"
+		valueName="org.mate.interface.gtk-theme"
+		presentation="$(presentation.OrgMateInterfaceGtkTheme-pr)">
+	<parentCategory ref="system:ALT_Interface" />
+	<supportedOn ref="system:SUPPORTED_AltP9" />
+	<elements>
+		<text id="OrgMateInterfaceGtkTheme" valueName="org.mate.interface.gtk-theme" />
+	</elements>
+	</policy>
+
 <!--         class="Machine"         -->
 <!--         org.mate.screensaver         -->
 
@@ -827,6 +842,21 @@
 	<disabledValue>
 		<string>0</string>
 	</disabledValue>
+	</policy>
+
+<!--         org.mate.interface      -->
+
+	<policy name="OrgMateInterfaceGtkThemeMachine" class="Machine"
+		displayName="$(string.gtk-theme)"
+		explainText="$(string.gtk-theme_help)"
+		key="Software\BaseALT\Policies\gsettings"
+		valueName="org.mate.interface.gtk-theme"
+		presentation="$(presentation.OrgMateInterfaceGtkTheme-pr)">
+	<parentCategory ref="system:ALT_Interface" />
+	<supportedOn ref="system:SUPPORTED_AltP9" />
+	<elements>
+		<text id="OrgMateInterfaceGtkTheme" valueName="org.mate.interface.gtk-theme" />
+	</elements>
 	</policy>
 
   </policies>
