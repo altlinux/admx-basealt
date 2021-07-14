@@ -48,6 +48,10 @@
       <string id="ALT_Screensaver_Help">screensaver options</string>
       <string id="ALT_PowerManager">power-manager</string>
       <string id="ALT_PowerManager_Help">power-manager options</string>
+      <string id="ALT_Gnome">gnome</string>
+      <string id="ALT_Gnome_Help">Gnome options</string>
+      <string id="ALT_Vino">Vino</string>
+      <string id="ALT_Vino_Help">Vino options</string>
     </stringTable>
   </resources>
 </policyDefinitionResources>
