@@ -68,6 +68,9 @@
 
 			<string id="sleep-computer-ac">How long, in seconds, should the computer be idle when powered from the ac before being suspended.</string>
 			<string id="sleep-computer-ac_help">Set the time in seconds of inactivity of the computer, after which the computer goes into sleep mode when powered from the ac.</string>
+
+			<string id="lock-hibernate">The ability to lock the screen after restoring the computer from sleep mode. It is used only if the lock-use-screensaver parameter is not set.</string>
+			<string id="lock-hibernate_help">Set the value to TRUE to lock the computer after recovering from sleep mode.</string>
 		</stringTable>
 
 		<presentationTable>

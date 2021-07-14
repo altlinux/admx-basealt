@@ -313,6 +313,21 @@
 	</elements>
 	</policy>
 
+	<policy name="OrgMatePowerManagerLockHibernateUser" class="User"
+		displayName="$(string.lock-hibernate)"
+		explainText="$(string.lock-hibernate_help)"
+		key="Software\BaseALT\Policies\gsettings"
+		valueName="org.mate.power-manager.lock-hibernate">
+	<parentCategory ref="system:ALT_PowerManager" />
+	<supportedOn ref="system:SUPPORTED_AltP9" />
+	<enabledValue>
+		<string>1</string>
+	</enabledValue>
+	<disabledValue>
+		<string>0</string>
+	</disabledValue>
+	</policy>
+
 <!--         class="Machine"         -->
 <!--         org.mate.screensaver         -->
 
@@ -615,6 +630,21 @@
 	<elements>
 		<decimal id="OrgMatePowerManagerSleepComputerAc_setter" valueName="org.mate.power-manager.sleep-computer-ac" minValue="0" maxValue="2147483647" storeAsText="true" />
 	</elements>
+	</policy>
+
+	<policy name="OrgMatePowerManagerLockHibernateMachine" class="Machine"
+		displayName="$(string.lock-hibernate)"
+		explainText="$(string.lock-hibernate_help)"
+		key="Software\BaseALT\Policies\gsettings"
+		valueName="org.mate.power-manager.lock-hibernate">
+	<parentCategory ref="system:ALT_PowerManager" />
+	<supportedOn ref="system:SUPPORTED_AltP9" />
+	<enabledValue>
+		<string>1</string>
+	</enabledValue>
+	<disabledValue>
+		<string>0</string>
+	</disabledValue>
 	</policy>
 
   </policies>
