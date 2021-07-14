@@ -475,6 +475,19 @@
 	</elements>
 	</policy>
 
+	<policy name="OrgMateMarcoGeneralNumWorspacesUser" class="User"
+		displayName="$(string.num-workspaces)"
+		explainText="$(string.num-workspaces_help)"
+		key="Software\BaseALT\Policies\gsettings"
+		valueName="org.mate.Marco.general.num-workspaces"
+		presentation="$(presentation.num-workspaces)">
+	<parentCategory ref="system:ALT_General" />
+	<supportedOn ref="system:SUPPORTED_AltP9" />
+	<elements>
+		<decimal id="num-workspaces_setter" valueName="org.mate.Marco.general.num-workspaces" minValue="1" maxValue="36" storeAsText="true" />
+	</elements>
+	</policy>
+
 <!--         class="Machine"         -->
 <!--         org.mate.screensaver         -->
 
@@ -938,6 +951,19 @@
 	<supportedOn ref="system:SUPPORTED_AltP9" />
 	<elements>
 		<text id="OrgMateMarcoGeneralButtonLayout_setter" valueName="org.mate.Marco.general.button-layout" />
+	</elements>
+	</policy>
+
+	<policy name="OrgMateMarcoGeneralNumWorspacesMachine" class="Machine"
+		displayName="$(string.num-workspaces)"
+		explainText="$(string.num-workspaces_help)"
+		key="Software\BaseALT\Policies\gsettings"
+		valueName="org.mate.Marco.general.num-workspaces"
+		presentation="$(presentation.num-workspaces)">
+	<parentCategory ref="system:ALT_General" />
+	<supportedOn ref="system:SUPPORTED_AltP9" />
+	<elements>
+		<decimal id="num-workspaces_setter" valueName="org.mate.Marco.general.num-workspaces" minValue="1" maxValue="36" storeAsText="true" />
 	</elements>
 	</policy>
 

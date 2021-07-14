@@ -101,6 +101,9 @@
 
 			<string id="button-layout">Порядок кнопок в заголовке окна</string>
 			<string id="button-layout_help">Определяет порядок кнопок в заголовке окна.Значение должно быть типа string, например "menu:minimize,maximize,spacer,close". Двоеточие отделяет левый угол от правого, имена кнопок разделяются запятой. Дублирование запрещено.</string>
+
+			<string id="num-workspaces">Количество рабочих областей.</string>
+			<string id="num-workspaces_help">Должно быть больше ноля, и имеет фиксированный максимум(36), чтобы предотвратить случайное изменение, способное сделать рабочий стол трудноиспользуемым.</string>
 		</stringTable>
 
 		<presentationTable>
@@ -189,6 +192,10 @@
 				<textBox refId="OrgMateMarcoGeneralButtonLayout_setter">
 					<label>Расположение кнопок:</label>
 				</textBox>
+			</presentation>
+
+			<presentation id="num-workspaces">
+				<decimalTextBox refId="num-workspaces_setter">Количество:</decimalTextBox>
 			</presentation>
 
 		</presentationTable>

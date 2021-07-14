@@ -101,6 +101,9 @@
 
 			<string id="button-layout">Arrangement of buttons on the titlebar.</string>
 			<string id="button-layout_help">The value should be a string, such as "menu:minimize,maximize,spacer,close"; the colon separates the left corner of the window from the right corner, and the button names are comma-separated. Duplicate buttons are not allowed. Unknown button names are silently ignored so that buttons can be added in future marco versions without breaking older versions. A special spacer tag can be used to insert some space between two adjacent buttons.</string>
+
+			<string id="num-workspaces">Number of workspaces.</string>
+			<string id="num-workspaces_help">Number of workspaces. Must be more than zero, and has a fixed maximum(36) to prevent making the desktop unusable by accidentally asking for too many workspaces.</string>
 		</stringTable>
 
 		<presentationTable>
@@ -189,6 +192,10 @@
 				<textBox refId="OrgMateMarcoGeneralButtonLayout_setter">
 					<label>Button layout</label>
 				</textBox>
+			</presentation>
+
+			<presentation id="num-workspaces">
+				<decimalTextBox refId="num-workspaces_setter">Number of workspaces:</decimalTextBox>
 			</presentation>
 
 		</presentationTable>
