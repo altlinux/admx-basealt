@@ -86,6 +86,9 @@
 			<string id="icon-visibility_client">client</string>
 			<string id="icon-visibility_always">always</string>
 			<string id="icon-visibility_never">never</string>
+
+			<string id="use-upnp">Use an open port on the UPnP router.</string>
+			<string id="use-upnp_help">If true, request that a UPnP-capable router should forward and open the port used by Vino.</string>
 		</stringTable>
 
 		<presentationTable>

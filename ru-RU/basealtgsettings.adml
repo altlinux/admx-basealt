@@ -86,6 +86,9 @@
 			<string id="icon-visibility_client">клиент</string>
 			<string id="icon-visibility_always">всегда</string>
 			<string id="icon-visibility_never">никогда</string>
+
+			<string id="use-upnp">Использовать открытый порт на UPnP роутере.</string>
+			<string id="use-upnp_help">Если установлено TRUE, то необходимо настроить перенаправление и открыть порт, используемый Vino, на UPnP роутере.</string>
 		</stringTable>
 
 		<presentationTable>
