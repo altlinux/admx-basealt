@@ -434,6 +434,20 @@
 	</elements>
 	</policy>
 
+	<policy name="OrgMateInterfaceIconThemeUser" class="User"
+		displayName="$(string.icon-theme)"
+		explainText="$(string.icon-theme_help)"
+		key="Software\BaseALT\Policies\gsettings"
+		valueName="org.mate.interface.icon-theme"
+		presentation="$(presentation.OrgMateInterfaceIconTheme-pr)">
+	<parentCategory ref="system:ALT_Interface" />
+	<supportedOn ref="system:SUPPORTED_AltP9" />
+	<elements>
+		<text id="OrgMateInterfaceIconTheme" valueName="org.mate.interface.icon-theme" />
+	</elements>
+	</policy>
+
+
 <!--         class="Machine"         -->
 <!--         org.mate.screensaver         -->
 
@@ -856,6 +870,19 @@
 	<supportedOn ref="system:SUPPORTED_AltP9" />
 	<elements>
 		<text id="OrgMateInterfaceGtkTheme" valueName="org.mate.interface.gtk-theme" />
+	</elements>
+	</policy>
+
+	<policy name="OrgMateInterfaceIconThemeMachine" class="Machine"
+		displayName="$(string.icon-theme)"
+		explainText="$(string.icon-theme_help)"
+		key="Software\BaseALT\Policies\gsettings"
+		valueName="org.mate.interface.icon-theme"
+		presentation="$(presentation.OrgMateInterfaceIconTheme-pr)">
+	<parentCategory ref="system:ALT_Interface" />
+	<supportedOn ref="system:SUPPORTED_AltP9" />
+	<elements>
+		<text id="OrgMateInterfaceIconTheme" valueName="org.mate.interface.icon-theme" />
 	</elements>
 	</policy>
 
