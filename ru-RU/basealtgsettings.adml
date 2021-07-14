@@ -98,6 +98,9 @@
 
 			<string id="theme">Тема определяющая внешний вид границ окна, заголовка и т.д.</string>
 			<string id="theme_help">Установите тему, определяющую внешний вид границ окна, заголовка и так далее</string>
+
+			<string id="button-layout">Порядок кнопок в заголовке окна</string>
+			<string id="button-layout_help">Определяет порядок кнопок в заголовке окна.Значение должно быть типа string, например "menu:minimize,maximize,spacer,close". Двоеточие отделяет левый угол от правого, имена кнопок разделяются запятой. Дублирование запрещено.</string>
 		</stringTable>
 
 		<presentationTable>
@@ -179,6 +182,12 @@
 			<presentation id="OrgMateMarcoGeneralTheme-pr">
 				<textBox refId="OrgMateMarcoGeneralTheme_setter">
 					<label>Имя темы:</label>
+				</textBox>
+			</presentation>
+
+			<presentation id="OrgMateMarcoGeneralButtonLayout-pr">
+				<textBox refId="OrgMateMarcoGeneralButtonLayout_setter">
+					<label>Расположение кнопок:</label>
 				</textBox>
 			</presentation>
 

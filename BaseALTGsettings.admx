@@ -462,6 +462,19 @@
 	</elements>
 	</policy>
 
+	<policy name="OrgMateMarcoGeneralButtonLayoutUser" class="User"
+		displayName="$(string.button-layout)"
+		explainText="$(string.button-layout_help)"
+		key="Software\BaseALT\Policies\gsettings"
+		valueName="org.mate.Marco.general.button-layout"
+		presentation="$(presentation.OrgMateMarcoGeneralButtonLayout-pr)">
+	<parentCategory ref="system:ALT_OnScreen_Windows_Settings" />
+	<supportedOn ref="system:SUPPORTED_AltP9" />
+	<elements>
+		<text id="OrgMateMarcoGeneralButtonLayout_setter" valueName="org.mate.Marco.general.button-layout" />
+	</elements>
+	</policy>
+
 <!--         class="Machine"         -->
 <!--         org.mate.screensaver         -->
 
@@ -912,6 +925,19 @@
 	<supportedOn ref="system:SUPPORTED_AltP9" />
 	<elements>
 		<text id="OrgMateMarcoGeneralTheme_setter" valueName="org.mate.Marco.general.theme" />
+	</elements>
+	</policy>
+
+	<policy name="OrgMateMarcoGeneralButtonLayoutMachine" class="Machine"
+		displayName="$(string.button-layout)"
+		explainText="$(string.button-layout_help)"
+		key="Software\BaseALT\Policies\gsettings"
+		valueName="org.mate.Marco.general.button-layout"
+		presentation="$(presentation.OrgMateMarcoGeneralButtonLayout-pr)">
+	<parentCategory ref="system:ALT_OnScreen_Windows_Settings" />
+	<supportedOn ref="system:SUPPORTED_AltP9" />
+	<elements>
+		<text id="OrgMateMarcoGeneralButtonLayout_setter" valueName="org.mate.Marco.general.button-layout" />
 	</elements>
 	</policy>
 
