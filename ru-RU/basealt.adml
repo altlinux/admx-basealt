@@ -58,6 +58,8 @@
       <string id="ALT_Marco_Help">Marco options</string>
       <string id="ALT_General">general</string>
       <string id="ALT_General_Help">general options</string>
+      <string id="ALT_Background">background</string>
+      <string id="ALT_Background_Help">background options</string>
     </stringTable>
   </resources>
 </policyDefinitionResources>

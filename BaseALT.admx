@@ -119,5 +119,8 @@
     <category name="ALT_General" displayName="$(string.ALT_General)" explainText="$(string.ALT_General_Help)">
 	<parentCategory ref="ALT_Marco" />
     </category>
+    <category name="ALT_Background" displayName="$(string.ALT_Background)" explainText="$(string.ALT_Background_Help)">
+	<parentCategory ref="ALT_Mate" />
+    </category>
   </categories>
 </policyDefinitions>
