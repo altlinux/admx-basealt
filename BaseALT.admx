@@ -98,5 +98,11 @@
     <category name="ALT_PowerManager" displayName="$(string.ALT_PowerManager)" explainText="$(string.ALT_PowerManager_Help)">
 	<parentCategory ref="ALT_Mate" />
     </category>
+    <category name="ALT_Gnome" displayName="$(string.ALT_Gnome)" explainText="$(string.ALT_Gnome_Help)">
+	<parentCategory ref="ALT_System" />
+    </category>
+    <category name="ALT_Vino" displayName="$(string.ALT_Vino)" explainText="$(string.ALT_Vino)">
+	<parentCategory ref="ALT_Gnome" />
+    </category>
   </categories>
 </policyDefinitions>
