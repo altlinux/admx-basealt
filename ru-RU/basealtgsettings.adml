@@ -107,6 +107,9 @@
 
 			<string id="visual-bell">Включение визуализации звуковых эффектов.</string>
 			<string id="visual-bell_help">Визуальная индикация системных звуков. Используюется для шумного окружения и слабослышащих.</string>
+
+			<string id="picture-filename">Файл, используемый в качестве фона рабочего стола.</string>
+			<string id="picture-filename_help">Укажите файл, используемый в качестве фона рабочего стола.</string>
 		</stringTable>
 
 		<presentationTable>
@@ -199,6 +202,12 @@
 
 			<presentation id="num-workspaces">
 				<decimalTextBox refId="num-workspaces_setter">Количество:</decimalTextBox>
+			</presentation>
+
+			<presentation id="OrgMateBackgroundPictureFilename-pr">
+				<textBox refId="OrgMateBackgroundPictureFilename_setter">
+					<label>файл:</label>
+				</textBox>	
 			</presentation>
 
 		</presentationTable>

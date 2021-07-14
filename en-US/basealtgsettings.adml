@@ -107,6 +107,9 @@
 
 			<string id="visual-bell">Enabling the visualization of sound effects.</string>
 			<string id="visual-bell_help">Visual indication when an application or the system issues a 'bell' or 'beep'; useful for the hard-of-hearing and for use in noisy environments.</string>
+
+			<string id="picture-filename">The file used as the desktop background.</string>
+			<string id="picture-filename_help">Specify the file to use as the desktop background.</string>
 		</stringTable>
 
 		<presentationTable>
@@ -200,6 +203,13 @@
 			<presentation id="num-workspaces">
 				<decimalTextBox refId="num-workspaces_setter">Number of workspaces:</decimalTextBox>
 			</presentation>
+
+			<presentation id="OrgMateBackgroundPictureFilename-pr">
+				<textBox refId="OrgMateBackgroundPictureFilename_setter">
+					<label>file:</label>
+				</textBox>	
+			</presentation>
+
 
 		</presentationTable>
 	</resources>
