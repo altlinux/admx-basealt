@@ -74,6 +74,9 @@
 
 			<string id="prompt-enabled">Confirmation of the remote user's connection to the desktop.</string>
 			<string id="prompt-enabled_help">If true, remote users accessing the desktop are not allowed access until the user on the host machine approves the connection. Recommended especially when access is not password protected.</string>
+
+			<string id="view-only">Disabling desktop management for remote users.</string>
+			<string id="view-only_help">If true, remote users accessing the desktop are only allowed to view the desktop. Remote users will not be able to use the mouse or keyboard.</string>
 		</stringTable>
 
 		<presentationTable>
