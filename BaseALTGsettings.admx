@@ -404,6 +404,21 @@
 	</elements>
 	</policy>
 
+	<policy name="OrgGnomeVinoUseUpnpUser" class="User"
+		displayName="$(string.use-upnp)"
+		explainText="$(string.use-upnp_help)"
+		key="Software\BaseALT\Policies\gsettings"
+		valueName="org.gnome.Vino.use-upnp">
+	<parentCategory ref="system:ALT_Vino" />
+	<supportedOn ref="system:SUPPORTED_AltP9" />
+	<enabledValue>
+		<string>1</string>
+	</enabledValue>
+	<disabledValue>
+		<string>0</string>
+	</disabledValue>
+	</policy>
+
 <!--         class="Machine"         -->
 <!--         org.mate.screensaver         -->
 
@@ -797,6 +812,21 @@
 			</item>
 		</enum>
 	</elements>
+	</policy>
+
+	<policy name="OrgGnomeVinoUseUpnpMachine" class="Machine"
+		displayName="$(string.use-upnp)"
+		explainText="$(string.use-upnp_help)"
+		key="Software\BaseALT\Policies\gsettings"
+		valueName="org.gnome.Vino.use-upnp">
+	<parentCategory ref="system:ALT_Vino" />
+	<supportedOn ref="system:SUPPORTED_AltP9" />
+	<enabledValue>
+		<string>1</string>
+	</enabledValue>
+	<disabledValue>
+		<string>0</string>
+	</disabledValue>
 	</policy>
 
   </policies>
