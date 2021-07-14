@@ -113,5 +113,8 @@
     <category name="ALT_OnScreen_Windows_Settings" displayName="$(string.ALT_OnScreen_Windows_Settings)" explainText="$(string.ALT_OnScreen_Windows_Settings_Help)">
 	<parentCategory ref="ALT_Windows_Manager" />
     </category>
+    <category name="ALT_Background" displayName="$(string.ALT_Background)" explainText="$(string.ALT_Background_Help)">
+	<parentCategory ref="ALT_Mate" />
+    </category>
   </categories>
 </policyDefinitions>
