@@ -95,6 +95,9 @@
 
 			<string id="icon-theme">Icon theme, for use in the panel, Caja and other places.</string>
 			<string id="icon-theme_help">Set the icon theme, for use in the panel, Caja and other places.</string>
+
+			<string id="theme">The theme determines the appearance of the window borders, title bar, and so on.</string>
+			<string id="theme_help">Set a theme that defines the appearance of the window borders, title bar, and so on.</string>
 		</stringTable>
 
 		<presentationTable>
@@ -169,6 +172,12 @@
 
 			<presentation id="OrgMateInterfaceIconTheme-pr">
 				<textBox refId="OrgMateInterfaceIconTheme">
+					<label>Theme's name:</label>
+				</textBox>
+			</presentation>
+
+			<presentation id="OrgMateMarcoGeneralTheme-pr">
+				<textBox refId="OrgMateMarcoGeneralTheme_setter">
 					<label>Theme's name:</label>
 				</textBox>
 			</presentation>

@@ -447,6 +447,20 @@
 	</elements>
 	</policy>
 
+<!--         org.mate.Marco.general      -->
+
+	<policy name="OrgMateMarcoGeneralThemeUser" class="User"
+		displayName="$(string.theme)"
+		explainText="$(string.theme_help)"
+		key="Software\BaseALT\Policies\gsettings"
+		valueName="org.mate.Marco.general.theme"
+		presentation="$(presentation.OrgMateMarcoGeneralTheme-pr)">
+	<parentCategory ref="system:ALT_General" />
+	<supportedOn ref="system:SUPPORTED_AltP9" />
+	<elements>
+		<text id="OrgMateMarcoGeneralTheme_setter" valueName="org.mate.Marco.general.theme" />
+	</elements>
+	</policy>
 
 <!--         class="Machine"         -->
 <!--         org.mate.screensaver         -->
@@ -883,6 +897,21 @@
 	<supportedOn ref="system:SUPPORTED_AltP9" />
 	<elements>
 		<text id="OrgMateInterfaceIconTheme" valueName="org.mate.interface.icon-theme" />
+	</elements>
+	</policy>
+
+<!--         org.mate.Marco.general      -->
+
+	<policy name="OrgMateMarcoGeneralThemeMachine" class="Machine"
+		displayName="$(string.theme)"
+		explainText="$(string.theme_help)"
+		key="Software\BaseALT\Policies\gsettings"
+		valueName="org.mate.Marco.general.theme"
+		presentation="$(presentation.OrgMateMarcoGeneralTheme-pr)">
+	<parentCategory ref="system:ALT_General" />
+	<supportedOn ref="system:SUPPORTED_AltP9" />
+	<elements>
+		<text id="OrgMateMarcoGeneralTheme_setter" valueName="org.mate.Marco.general.theme" />
 	</elements>
 	</policy>
 
