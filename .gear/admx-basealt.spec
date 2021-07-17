@@ -1,7 +1,7 @@
 %define _destdir %_datadir/PolicyDefinitions
 
 Name: admx-basealt
-Version: 0.1.4
+Version: 0.1.5
 Release: alt1
 
 Summary: BaseALT-specific ADMX policy templates
@@ -36,6 +36,12 @@ done
 %_destdir
 
 %changelog
+* Sun Jul 18 2021 Evgeny Sinelnikov <sin@altlinux.org> 0.1.5-alt1
+- Add new categories and policies:
+ + SSHD and Systemd categories
+ + Windows policies mapping support (applied for GSettings only yet)
+- Add admx and adml files checking via admx-lint
+
 * Tue Mar 23 2021 Evgeny Sinelnikov <sin@altlinux.org> 0.1.4-alt1
 - Add sssd controls in separate category
 
