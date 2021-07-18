@@ -15,6 +15,9 @@
       <string id="gpupdate_global_experimental">Experimental Group Policies</string>
       <string id="gpupdate_global_experimental_help">This policy enables experimental group policy appliers features globally.</string>
 
+      <string id="gpupdate_windows_mapping">Windows keys mapping for ALT Group Policies</string>
+      <string id="gpupdate_windows_mapping_help">This policy globally enables/disables mechanisms for displaying some Windows keys for applying group policies in the ALT operating system.</string>
+
       <string id="gpupdate_control_applier">Control system facilities</string>
       <string id="gpupdate_control_applier_help">This policy enables group policy Control applier features.</string>
 
