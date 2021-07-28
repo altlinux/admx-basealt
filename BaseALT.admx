@@ -107,17 +107,17 @@
     <category name="ALT_Gnome" displayName="$(string.ALT_Gnome)" explainText="$(string.ALT_Gnome_Help)">
 	<parentCategory ref="ALT_System" />
     </category>
-    <category name="ALT_Vino" displayName="$(string.ALT_Vino)" explainText="$(string.ALT_Vino)">
+    <category name="ALT_Vino" displayName="$(string.ALT_Vino)" explainText="$(string.ALT_Vino_Help)">
 	<parentCategory ref="ALT_Gnome" />
     </category>
     <category name="ALT_Interface" displayName="$(string.ALT_Interface)" explainText="$(string.ALT_Interface_Help)">
 	<parentCategory ref="ALT_Mate" />
     </category>
-    <category name="ALT_Marco" displayName="$(string.ALT_Marco)" explainText="$(string.ALT_Marco_Help)">
+    <category name="ALT_Windows_Manager" displayName="$(string.ALT_Windows_Manager)" explainText="$(string.ALT_Windows_Manager_Help)">
 	<parentCategory ref="ALT_Mate" />
     </category>
-    <category name="ALT_General" displayName="$(string.ALT_General)" explainText="$(string.ALT_General_Help)">
-	<parentCategory ref="ALT_Marco" />
+    <category name="ALT_OnScreen_Windows_Settings" displayName="$(string.ALT_OnScreen_Windows_Settings)" explainText="$(string.ALT_OnScreen_Windows_Settings_Help)">
+	<parentCategory ref="ALT_Windows_Manager" />
     </category>
     <category name="ALT_Background" displayName="$(string.ALT_Background)" explainText="$(string.ALT_Background_Help)">
 	<parentCategory ref="ALT_Mate" />

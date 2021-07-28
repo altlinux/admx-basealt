@@ -54,10 +54,10 @@
       <string id="ALT_Vino_Help">Vino options</string>
       <string id="ALT_Interface">interface</string>
       <string id="ALT_Interface_Help">interface options</string>
-      <string id="ALT_Marco">Marco</string>
-      <string id="ALT_Marco_Help">Marco options</string>
-      <string id="ALT_General">general</string>
-      <string id="ALT_General_Help">general options</string>
+      <string id="ALT_Windows_Manager">Менеджер окон</string>
+      <string id="ALT_Windows_Manager_Help">Настройки менеджера окон</string>
+      <string id="ALT_OnScreen_Windows_Settings">Экранные окна и рабочие области</string>
+      <string id="ALT_OnScreen_Windows_Settings_Help">Настройки экранных окон и рабочих областей</string>
       <string id="ALT_Background">background</string>
       <string id="ALT_Background_Help">background options</string>
     </stringTable>
