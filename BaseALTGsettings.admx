@@ -455,7 +455,7 @@
 		key="Software\BaseALT\Policies\gsettings"
 		valueName="org.mate.Marco.general.theme"
 		presentation="$(presentation.OrgMateMarcoGeneralTheme-pr)">
-	<parentCategory ref="system:ALT_General" />
+	<parentCategory ref="system:ALT_OnScreen_Windows_Settings" />
 	<supportedOn ref="system:SUPPORTED_AltP9" />
 	<elements>
 		<text id="OrgMateMarcoGeneralTheme_setter" valueName="org.mate.Marco.general.theme" />
@@ -1013,7 +1013,7 @@
 		key="Software\BaseALT\Policies\gsettings"
 		valueName="org.mate.Marco.general.theme"
 		presentation="$(presentation.OrgMateMarcoGeneralTheme-pr)">
-	<parentCategory ref="system:ALT_General" />
+	<parentCategory ref="system:ALT_OnScreen_Windows_Settings" />
 	<supportedOn ref="system:SUPPORTED_AltP9" />
 	<elements>
 		<text id="OrgMateMarcoGeneralTheme_setter" valueName="org.mate.Marco.general.theme" />
