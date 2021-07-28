@@ -468,7 +468,7 @@
 		key="Software\BaseALT\Policies\gsettings"
 		valueName="org.mate.Marco.general.button-layout"
 		presentation="$(presentation.OrgMateMarcoGeneralButtonLayout-pr)">
-	<parentCategory ref="system:ALT_General" />
+	<parentCategory ref="system:ALT_OnScreen_Windows_Settings" />
 	<supportedOn ref="system:SUPPORTED_AltP9" />
 	<elements>
 		<text id="OrgMateMarcoGeneralButtonLayout_setter" valueName="org.mate.Marco.general.button-layout" />
@@ -1026,7 +1026,7 @@
 		key="Software\BaseALT\Policies\gsettings"
 		valueName="org.mate.Marco.general.button-layout"
 		presentation="$(presentation.OrgMateMarcoGeneralButtonLayout-pr)">
-	<parentCategory ref="system:ALT_General" />
+	<parentCategory ref="system:ALT_OnScreen_Windows_Settings" />
 	<supportedOn ref="system:SUPPORTED_AltP9" />
 	<elements>
 		<text id="OrgMateMarcoGeneralButtonLayout_setter" valueName="org.mate.Marco.general.button-layout" />
