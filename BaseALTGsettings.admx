@@ -481,7 +481,7 @@
 		key="Software\BaseALT\Policies\gsettings"
 		valueName="org.mate.Marco.general.num-workspaces"
 		presentation="$(presentation.num-workspaces)">
-	<parentCategory ref="system:ALT_General" />
+	<parentCategory ref="system:ALT_OnScreen_Windows_Settings" />
 	<supportedOn ref="system:SUPPORTED_AltP9" />
 	<elements>
 		<decimal id="num-workspaces_setter" valueName="org.mate.Marco.general.num-workspaces" minValue="1" maxValue="36" storeAsText="true" />
@@ -493,7 +493,7 @@
 		explainText="$(string.visual-bell_help)"
 		key="Software\BaseALT\Policies\gsettings"
 		valueName="org.mate.Marco.general.visual-bell">
-	<parentCategory ref="system:ALT_General" />
+	<parentCategory ref="system:ALT_OnScreen_Windows_Settings" />
 	<supportedOn ref="system:SUPPORTED_AltP9" />
 	<enabledValue>
 		<string>1</string>
@@ -1039,7 +1039,7 @@
 		key="Software\BaseALT\Policies\gsettings"
 		valueName="org.mate.Marco.general.num-workspaces"
 		presentation="$(presentation.num-workspaces)">
-	<parentCategory ref="system:ALT_General" />
+	<parentCategory ref="system:ALT_OnScreen_Windows_Settings" />
 	<supportedOn ref="system:SUPPORTED_AltP9" />
 	<elements>
 		<decimal id="num-workspaces_setter" valueName="org.mate.Marco.general.num-workspaces" minValue="1" maxValue="36" storeAsText="true" />
@@ -1052,7 +1052,7 @@
 		explainText="$(string.visual-bell_help)"
 		key="Software\BaseALT\Policies\gsettings"
 		valueName="org.mate.Marco.general.visual-bell">
-	<parentCategory ref="system:ALT_General" />
+	<parentCategory ref="system:ALT_OnScreen_Windows_Settings" />
 	<supportedOn ref="system:SUPPORTED_AltP9" />
 	<enabledValue>
 		<string>1</string>
