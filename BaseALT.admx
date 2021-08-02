@@ -95,5 +95,17 @@
       <parentCategory ref="ALT_System" />
     </category>
     <category name="LinuxComponents" displayName="$(string.LinuxComponents)" explainText="$(string.LinuxComponents_Help)" />
+    <category name="ALT_Common" displayName="$(string.ALT_Common)" explainText="$(string.ALT_Common_Help)">
+      <parentCategory ref="ALT_System" />
+    </category>
+    <category name="ALT_Restrictions" displayName="$(string.ALT_Restrictions)" explainText="$(string.ALT_Restrictions_Help)">
+      <parentCategory ref="ALT_Common" />
+    </category>
+    <category name="ALT_Background" displayName="$(string.ALT_Background)" explainText="$(string.ALT_Background_Help)">
+      <parentCategory ref="ALT_Common" />
+    </category>
+    <category name="ALT_Keyboard" displayName="$(string.ALT_Keyboard)" explainText="$(string.ALT_Keyboard_Help)">
+      <parentCategory ref="ALT_Common" />
+    </category>
   </categories>
 </policyDefinitions>

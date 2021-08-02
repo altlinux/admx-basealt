@@ -42,6 +42,14 @@
 
       <string id="LinuxComponents">Компоненты Linux</string>
       <string id="LinuxComponents_Help">Содержит настройки ядра операционной системы.</string>
+      <string id="ALT_Common">Общие настройки</string>
+      <string id="ALT_Common_Help">Общие настройки</string>
+      <string id="ALT_Restrictions">Ограничения</string>
+      <string id="ALT_Restrictions_Help">Ограничения действий пользователя</string>
+      <string id="ALT_Background">Фон рабочего стола</string>
+      <string id="ALT_Background_Help">Настройки фона рабочего стола</string>
+      <string id="ALT_Keyboard">Настройки клавиатуры</string>
+      <string id="ALT_Keyboard_Help">Различные настройки клаиватуры</string>
     </stringTable>
   </resources>
 </policyDefinitionResources>

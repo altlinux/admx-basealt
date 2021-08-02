@@ -42,6 +42,14 @@
 
       <string id="LinuxComponents">Linux Components</string>
       <string id="LinuxComponents_Help">Contains settings for Kernel components.</string>
+      <string id="ALT_Common">Common settings</string>
+      <string id="ALT_Common_Help">Common settings</string>
+      <string id="ALT_Restrictions">Restrictions</string>
+      <string id="ALT_Restrictions_Help">Resctrictions on user actions</string>
+      <string id="ALT_Background">Desktop background</string>
+      <string id="ALT_Background_Help">Desktop background settings</string>
+      <string id="ALT_Keyboard">Keyboard Settings</string>
+      <string id="ALT_Keyboard_Help">Various keyboard settings</string>
     </stringTable>
   </resources>
 </policyDefinitionResources>
