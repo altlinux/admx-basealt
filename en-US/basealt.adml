@@ -42,6 +42,16 @@
 
       <string id="LinuxComponents">Linux Components</string>
       <string id="LinuxComponents_Help">Contains settings for Kernel components.</string>
+      <string id="ALT_Graphics_Mate">Mate settings</string>
+      <string id="ALT_Graphics_Mate_Help">Mate settings</string>
+      <string id="ALT_Windows_Manager_Mate">Windows Manager</string>
+      <string id="ALT_Windows_Manager_Mate_Help">Windows manager settings</string>
+      <string id="ALT_Background_Mate">Desktop background</string>
+      <string id="ALT_Background_Mate_Help">Desktop background settings</string>
+      <string id="ALT_Desktop_Interface_Mate">Desktop interface</string>
+      <string id="ALT_Desktop_Interface_Mate_Help">Desktop interface settings</string>
+      <string id="ALT_Screensaver_Mate">Screensaver</string>
+      <string id="ALT_Screensaver_Mate_Help">Screensaver settings</string>
     </stringTable>
   </resources>
 </policyDefinitionResources>

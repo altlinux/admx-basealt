@@ -95,5 +95,20 @@
       <parentCategory ref="ALT_System" />
     </category>
     <category name="LinuxComponents" displayName="$(string.LinuxComponents)" explainText="$(string.LinuxComponents_Help)" />
+    <category name="ALT_Graphics_Mate" displayName="$(string.ALT_Graphics_Mate)" explainText="$(string.ALT_Graphics_Mate_Help)">
+      <parentCategory ref="ALT_Graphics" />
+    </category>
+    <category name="ALT_Windows_Manager_Mate" displayName="$(string.ALT_Windows_Manager_Mate)" explainText="$(string.ALT_Windows_Manager_Mate_Help)">
+      <parentCategory ref="ALT_Graphics_Mate" />
+    </category>
+    <category name="ALT_Background_Mate" displayName="$(string.ALT_Background_Mate)" explainText="$(string.ALT_Background_Mate_Help)">
+      <parentCategory ref="ALT_Graphics_Mate" />
+    </category>
+    <category name="ALT_Desktop_Interface_Mate" displayName="$(string.ALT_Desktop_Interface_Mate)" explainText="$(string.ALT_Desktop_Interface_Mate_Help)">
+      <parentCategory ref="ALT_Graphics_Mate" />
+    </category>
+    <category name="ALT_Screensaver_Mate" displayName="$(string.ALT_Screensaver_Mate)" explainText="$(string.ALT_Screensaver_Mate_Help)">
+      <parentCategory ref="ALT_Graphics_Mate" />
+    </category>
   </categories>
 </policyDefinitions>
