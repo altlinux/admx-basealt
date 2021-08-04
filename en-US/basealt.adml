@@ -52,6 +52,9 @@
       <string id="ALT_Desktop_Interface_Mate_Help">Desktop interface settings</string>
       <string id="ALT_Screensaver_Mate">Screensaver</string>
       <string id="ALT_Screensaver_Mate_Help">Screensaver settings</string>
+      <string id="ALT_User_Restrictions_Mate">User restrictions</string>
+      <string id="ALT_User_Restrictions_Mate_Help">Resctrictions on user actions</string>
+
     </stringTable>
   </resources>
 </policyDefinitionResources>
