@@ -87,6 +87,33 @@
 
       <string id="org-mate-screensaver-logout-enabled">Возможность вызода из системы после блокировки экрана</string>
       <string id="org-mate-screensaver-logout-enabled_help">Установите значение TRUE, чтобы к диалогу разблокирования экрана  добавилась возможность выхода из системы после некоторой задержки. Время задержки указывается в ключе «logout_delay».</string>
+      <string id="org-mate-lockdown-disable-command-line">Запрещает пользователю доступ к командной строке.</string>
+      <string id="org-mate-lockdown-disable-command-line_help">Установите, если хотите запретить доступ пользователю к командной строке.</string>
+
+      <string id="org-mate-lockdown-disable-log-out">Запрещает пользователю завершать сеанс.</string>
+      <string id="org-mate-lockdown-disable-log-out_help">Установите, если хотите запретить пользователю завершать сеанс.</string>
+
+      <string id="org-mate-lockdown-disable-printing">Запрещает пользователю печать. Например, будет отключён доступ к диалогу «Печать» во всех приложениях.</string>
+      <string id="org-mate-lockdown-disable-printing_help">Установите, если хотите запретить пользователю печать.</string>
+
+      <string id="org-mate-lockdown-disable-lock-screen">Отключает возможность блокировки экрана пользователем.</string>
+      <string id="org-mate-lockdown-disable-lock-screen_help">Установите, если хотите запретить пользователю блокировать экран.</string>
+
+      <string id="org-mate-lockdown-disable-print-setup">Запрещает пользователю изменение параметров печати.</string>
+      <string id="org-mate-lockdown-disable-print-setup_help">Установите, если хотите запретить доступ пользователю к изменению параметров печати. Например, будет отключён доступ к диалогу «Настройка печати» во всех приложениях.</string>
+
+      <string id="org-mate-lockdown-disable-application-handlers">Запретить запуск программ-обработчиков URL или типов MIME.</string>
+      <string id="org-mate-lockdown-disable-application-handlers_help">Установите, если хотите запретить запуск программ-обработчиков URL или типов MIME.</string>
+
+      <string id="org-mate-lockdown-disable-save-to-disk">Запрещает пользователю доступ к командной строке.</string>
+      <string id="org-mate-lockdown-disable-save-to-disk_help">Установите, если хотите запретить доступ пользователю к командной строке.</string>
+
+      <string id="org-mate-lockdown-disable-user-switching">Запрещает пользователю переключение на другую учётную запись, пока активен его сеанс.</string>
+      <string id="org-mate-lockdown-disable-user-switching_help">Установите, если хотите запретить пользователю переключение на другую учётную запись, пока активен его сеанс.</string>
+
+      <string id="org-mate-lockdown-disable-theme-settings">Запретить пользователю изменять настройки темы.</string>
+      <string id="org-mate-lockdown-disable-theme-settings_help">Установите, если хотите запретить пользователю изменять настройки темы.</string>
+
 
     </stringTable>
 
@@ -320,6 +347,51 @@
 
       <presentation id="OrgMateScreensaverLogoutEnabledMachine-pr">
         <checkBox refId="OrgMateScreensaverLogoutEnabled_setter_blocker">блокировать</checkBox>
+        <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
+      </presentation>
+
+      <presentation id="OrgMateLockdownDisableCommandLineMachine-pr">
+        <checkBox refId="OrgMateLockdownDisableCommandLine_setter_blocker">блокировать</checkBox>
+        <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
+      </presentation>
+
+      <presentation id="OrgMateLockdownDisableLogOutMachine-pr">
+        <checkBox refId="OrgMateLockdownDisableLogOut_setter_blocker">блокировать</checkBox>
+        <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
+      </presentation>
+
+      <presentation id="OrgMateLockdownDisablePrintingMachine-pr">
+        <checkBox refId="OrgMateLockdownDisablePrinting_setter_blocker">блокировать</checkBox>
+        <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
+      </presentation>
+
+      <presentation id="OrgMateLockdownDisableLockScreenMachine-pr">
+        <checkBox refId="OrgMateLockdownDisableLockScreen_setter_blocker">блокировать</checkBox>
+        <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
+      </presentation>
+
+      <presentation id="OrgMateLockdownDisablePrintSetupMachine-pr">
+        <checkBox refId="OrgMateLockdownDisablePrintSetup_setter_blocker">блокировать</checkBox>
+        <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
+      </presentation>
+
+      <presentation id="OrgMateLockdownDisableApplicationHandlersMachine-pr">
+        <checkBox refId="OrgMateLockdownDisableApplicationHandlers_setter_blocker">блокировать</checkBox>
+        <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
+      </presentation>
+
+      <presentation id="OrgMateLockdownDisableSaveToDiskMachine-pr">
+        <checkBox refId="OrgMateLockdownDisableSaveToDisk_setter_blocker">блокировать</checkBox>
+        <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
+      </presentation>
+
+      <presentation id="OrgMateLockdownDisableUserSwitchingMachine-pr">
+        <checkBox refId="OrgMateLockdownDisableUserSwitching_setter_blocker">блокировать</checkBox>
+        <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
+      </presentation>
+
+      <presentation id="OrgMateLockdownDisableThemeSettingsMachine-pr">
+        <checkBox refId="OrgMateLockdownDisableThemeSettings_setter_blocker">блокировать</checkBox>
         <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
       </presentation>
 

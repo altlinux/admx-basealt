@@ -88,6 +88,33 @@
       <string id="org-mate-screensaver-logout-enabled">The ability to log out of the system after locking the screen</string>
       <string id="org-mate-screensaver-logout-enabled_help">Set the value to TRUE so that the option to log out after a certain delay is added to the screen unlock dialog. The delay time is specified in the "logout_delay" key.</string>
 
+      <string id="org-mate-lockdown-disable-command-line">Prevents the user from accessing the command line.</string>
+      <string id="org-mate-lockdown-disable-command-line_help">Set it if you want to deny the user access to the command line.</string>
+
+      <string id="org-mate-lockdown-disable-log-out">Prevents the user from terminating the session.</string>
+      <string id="org-mate-lockdown-disable-log-out_help">Set it if you want to prevent the user from ending the session.</string>
+
+      <string id="org-mate-lockdown-disable-printing">Prohibits the user from printing. For example, access to the "Print" dialog will be disabled in all applications.</string>
+      <string id="org-mate-lockdown-disable-printing_help">Set it if you want to prohibit the user from printing.</string>
+
+      <string id="org-mate-lockdown-disable-lock-screen">Disables the ability to lock the screen by the user.</string>
+      <string id="org-mate-lockdown-disable-lock-screen_help">Set it if you want to prevent the user from blocking the screen.</string>
+
+      <string id="org-mate-lockdown-disable-print-setup">Prevents the user from changing the print settings.</string>
+      <string id="org-mate-lockdown-disable-print-setup_help">Set it if you want to prevent the user from changing the print settings. For example, access to the "Print Settings" dialog will be disabled in all applications.</string>
+
+      <string id="org-mate-lockdown-disable-application-handlers">Prohibit the launch of URL handlers or MIME types.</string>
+      <string id="org-mate-lockdown-disable-application-handlers_help">Set it if you want to prohibit the launch of URL handlers or MIME types.</string>
+
+      <string id="org-mate-lockdown-disable-save-to-disk">Prevents the user from accessing the command line.</string>
+      <string id="org-mate-lockdown-disable-save-to-disk_help">Set it if you want to deny the user access to the command line.</string>
+
+      <string id="org-mate-lockdown-disable-user-switching">Prevents the user from switching to another account while his session is active.</string>
+      <string id="org-mate-lockdown-disable-user-switching_help">Set it if you want to prevent the user from switching to another account while his session is active.</string>
+
+      <string id="org-mate-lockdown-disable-theme-settings">Prohibit the user from changing the theme settings.</string>
+      <string id="org-mate-lockdown-disable-theme-settings_help">Set it if you want to prevent the user from changing the theme settings.</string>
+
     </stringTable>
 
     <presentationTable>
@@ -315,6 +342,75 @@
 
       <presentation id="OrgMateScreensaverLogoutEnabledMachine-pr">
         <checkBox refId="OrgMateScreensaverLogoutEnabled_setter_blocker">lock</checkBox>
+        <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
+      </presentation>
+
+      <presentation id="OrgMateScreensaverLockDialogThemeMachine-pr">
+        <text>Name of theme used for the blocking dialog</text>
+        <textBox refId="OrgMateScreensaverLockDialogTheme_setter">
+          <label>Name:</label>
+        </textBox>
+        <checkBox refId="OrgMateScreensaverLockDialogTheme_setter_blocker">lock</checkBox>
+        <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
+      </presentation>
+
+      <presentation id="OrgMateScreensaverUserSwitchEnabledMachine-pr">
+        <checkBox refId="OrgMateScreensaverUserSwitchEnabled_setter_blocker">lock</checkBox>
+        <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
+      </presentation>
+
+      <presentation id="OrgMateScreensaverEmbeddedKeyboardEnabledMachine-pr">
+        <checkBox refId="OrgMateScreensaverEmbeddedKeyboardEnabled_setter_blocker">lock</checkBox>
+        <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
+      </presentation>
+
+      <presentation id="OrgMateScreensaverLogoutEnabledMachine-pr">
+        <checkBox refId="OrgMateScreensaverLogoutEnabled_setter_blocker">lock</checkBox>
+        <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
+      </presentation>
+
+      <presentation id="OrgMateLockdownDisableCommandLineMachine-pr">
+        <checkBox refId="OrgMateLockdownDisableCommandLine_setter_blocker">lock</checkBox>
+        <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
+      </presentation>
+
+      <presentation id="OrgMateLockdownDisableLogOutMachine-pr">
+        <checkBox refId="OrgMateLockdownDisableLogOut_setter_blocker">lock</checkBox>
+        <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
+      </presentation>
+
+      <presentation id="OrgMateLockdownDisablePrintingMachine-pr">
+        <checkBox refId="OrgMateLockdownDisablePrinting_setter_blocker">lock</checkBox>
+        <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
+      </presentation>
+
+      <presentation id="OrgMateLockdownDisableLockScreenMachine-pr">
+        <checkBox refId="OrgMateLockdownDisableLockScreen_setter_blocker">lock</checkBox>
+        <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
+      </presentation>
+
+      <presentation id="OrgMateLockdownDisablePrintSetupMachine-pr">
+        <checkBox refId="OrgMateLockdownDisablePrintSetup_setter_blocker">lock</checkBox>
+        <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
+      </presentation>
+
+      <presentation id="OrgMateLockdownDisableApplicationHandlersMachine-pr">
+        <checkBox refId="OrgMateLockdownDisableApplicationHandlers_setter_blocker">lock</checkBox>
+        <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
+      </presentation>
+
+      <presentation id="OrgMateLockdownDisableSaveToDiskMachine-pr">
+        <checkBox refId="OrgMateLockdownDisableSaveToDisk_setter_blocker">lock</checkBox>
+        <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
+      </presentation>
+
+      <presentation id="OrgMateLockdownDisableUserSwitchingMachine-pr">
+        <checkBox refId="OrgMateLockdownDisableUserSwitching_setter_blocker">lock</checkBox>
+        <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
+      </presentation>
+
+      <presentation id="OrgMateLockdownDisableThemeSettingsMachine-pr">
+        <checkBox refId="OrgMateLockdownDisableThemeSettings_setter_blocker">lock</checkBox>
         <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
       </presentation>
 

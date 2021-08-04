@@ -961,5 +961,374 @@
       </elements>
     </policy>
 
+    <policy name="OrgMateLockdownDisableCommandLineUser" class="User"
+        displayName="$(string.org-mate-lockdown-disable-command-line)"
+        explainText="$(string.org-mate-lockdown-disable-command-line_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        valueName="org.mate.lockdown.disable-command-line">
+      <parentCategory ref="system:ALT_User_Restrictions_Mate" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+    </policy>
+
+    <policy name="OrgMateLockdownDisableCommandLineMachine" class="Machine"
+        displayName="$(string.org-mate-lockdown-disable-command-line)"
+        explainText="$(string.org-mate-lockdown-disable-command-line_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        valueName="org.mate.lockdown.disable-command-line"
+        presentation="$(presentation.OrgMateLockdownDisableCommandLineMachine-pr)">
+      <parentCategory ref="system:ALT_User_Restrictions_Mate" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+      <elements>
+        <boolean id="OrgMateLockdownDisableCommandLine_setter_blocker" key="Software\BaseALT\Policies\GSettingsLocks" valueName="org.mate.lockdown.disable-command-line">
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+        </boolean>
+      </elements>
+    </policy>
+
+    <policy name="OrgMateLockdownDisableLogOutUser" class="User"
+        displayName="$(string.org-mate-lockdown-disable-log-out)"
+        explainText="$(string.org-mate-lockdown-disable-log-out_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        valueName="org.mate.lockdown.disable-log-out">
+      <parentCategory ref="system:ALT_User_Restrictions_Mate" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+    </policy>
+
+    <policy name="OrgMateLockdownDisableLogOutMachine" class="Machine"
+        displayName="$(string.org-mate-lockdown-disable-log-out)"
+        explainText="$(string.org-mate-lockdown-disable-log-out_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        valueName="org.mate.lockdown.disable-log-out"
+        presentation="$(presentation.OrgMateLockdownDisableLogOutMachine-pr)">
+      <parentCategory ref="system:ALT_User_Restrictions_Mate" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+      <elements>
+        <boolean id="OrgMateLockdownDisableLogOut_setter_blocker" key="Software\BaseALT\Policies\GSettingsLocks" valueName="org.mate.lockdown.disable-log-out">
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+        </boolean>
+      </elements>
+    </policy>
+
+    <policy name="OrgMateLockdownDisablePrintingUser" class="User"
+        displayName="$(string.org-mate-lockdown-disable-printing)"
+        explainText="$(string.org-mate-lockdown-disable-printing_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        valueName="org.mate.lockdown.disable-printing">
+      <parentCategory ref="system:ALT_User_Restrictions_Mate" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+    </policy>
+
+    <policy name="OrgMateLockdownDisablePrintingMachine" class="Machine"
+        displayName="$(string.org-mate-lockdown-disable-printing)"
+        explainText="$(string.org-mate-lockdown-disable-printing_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        valueName="org.mate.lockdown.disable-printing"
+        presentation="$(presentation.OrgMateLockdownDisablePrintingMachine-pr)">
+      <parentCategory ref="system:ALT_User_Restrictions_Mate" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+      <elements>
+        <boolean id="OrgMateLockdownDisablePrinting_setter_blocker" key="Software\BaseALT\Policies\GSettingsLocks" valueName="org.mate.lockdown.disable-printing">
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+        </boolean>
+      </elements>
+    </policy>
+
+    <policy name="OrgMateLockdownDisableLockScreenUser" class="User"
+        displayName="$(string.org-mate-lockdown-disable-lock-screen)"
+        explainText="$(string.org-mate-lockdown-disable-lock-screen_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        valueName="org.mate.lockdown.disable-lock-screen">
+      <parentCategory ref="system:ALT_User_Restrictions_Mate" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+    </policy>
+
+    <policy name="OrgMateLockdownDisableLockScreenMachine" class="Machine"
+        displayName="$(string.org-mate-lockdown-disable-lock-screen)"
+        explainText="$(string.org-mate-lockdown-disable-lock-screen_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        valueName="org.mate.lockdown.disable-lock-screen"
+        presentation="$(presentation.OrgMateLockdownDisableLockScreenMachine-pr)">
+      <parentCategory ref="system:ALT_User_Restrictions_Mate" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+      <elements>
+        <boolean id="OrgMateLockdownDisableLockScreen_setter_blocker" key="Software\BaseALT\Policies\GSettingsLocks" valueName="org.mate.lockdown.disable-lock-screen">
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+        </boolean>
+      </elements>
+    </policy>
+
+    <policy name="OrgMateLockdownDisablePrintSetupUser" class="User"
+        displayName="$(string.org-mate-lockdown-disable-print-setup)"
+        explainText="$(string.org-mate-lockdown-disable-print-setup_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        valueName="org.mate.lockdown.disable-print-setup">
+      <parentCategory ref="system:ALT_User_Restrictions_Mate" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+    </policy>
+
+    <policy name="OrgMateLockdownDisablePrintSetupMachine" class="Machine"
+        displayName="$(string.org-mate-lockdown-disable-print-setup)"
+        explainText="$(string.org-mate-lockdown-disable-print-setup_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        valueName="org.mate.lockdown.disable-print-setup"
+        presentation="$(presentation.OrgMateLockdownDisablePrintSetupMachine-pr)">
+      <parentCategory ref="system:ALT_User_Restrictions_Mate" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+      <elements>
+        <boolean id="OrgMateLockdownDisablePrintSetup_setter_blocker" key="Software\BaseALT\Policies\GSettingsLocks" valueName="org.mate.lockdown.disable-print-setup">
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+        </boolean>
+      </elements>
+    </policy>
+
+    <policy name="OrgMateLockdownDisableApplicationHandlersUser" class="User"
+        displayName="$(string.org-mate-lockdown-disable-application-handlers)"
+        explainText="$(string.org-mate-lockdown-disable-application-handlers_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        valueName="org.mate.lockdown.disable-application-handlers">
+      <parentCategory ref="system:ALT_User_Restrictions_Mate" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+    </policy>
+
+    <policy name="OrgMateLockdownDisableApplicationHandlersMachine" class="Machine"
+        displayName="$(string.org-mate-lockdown-disable-application-handlers)"
+        explainText="$(string.org-mate-lockdown-disable-application-handlers_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        valueName="org.mate.lockdown.disable-application-handlers"
+        presentation="$(presentation.OrgMateLockdownDisableApplicationHandlersMachine-pr)">
+      <parentCategory ref="system:ALT_User_Restrictions_Mate" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+      <elements>
+        <boolean id="OrgMateLockdownDisableApplicationHandlers_setter_blocker" key="Software\BaseALT\Policies\GSettingsLocks" valueName="org.mate.lockdown.disable-application-handlers">
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+        </boolean>
+      </elements>
+    </policy>
+
+    <policy name="OrgMateLockdownDisableSaveToDiskUser" class="User"
+        displayName="$(string.org-mate-lockdown-disable-save-to-disk)"
+        explainText="$(string.org-mate-lockdown-disable-save-to-disk_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        valueName="org.mate.lockdown.disable-save-to-disk">
+      <parentCategory ref="system:ALT_User_Restrictions_Mate" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+    </policy>
+
+    <policy name="OrgMateLockdownDisableSaveToDiskMachine" class="Machine"
+        displayName="$(string.org-mate-lockdown-disable-save-to-disk)"
+        explainText="$(string.org-mate-lockdown-disable-save-to-disk_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        valueName="org.mate.lockdown.disable-save-to-disk"
+        presentation="$(presentation.OrgMateLockdownDisableSaveToDiskMachine-pr)">
+      <parentCategory ref="system:ALT_User_Restrictions_Mate" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+      <elements>
+        <boolean id="OrgMateLockdownDisableSaveToDisk_setter_blocker" key="Software\BaseALT\Policies\GSettingsLocks" valueName="org.mate.lockdown.disable-save-to-disk">
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+        </boolean>
+      </elements>
+    </policy>
+
+    <policy name="OrgMateLockdownDisableUserSwitchingUser" class="User"
+        displayName="$(string.org-mate-lockdown-disable-user-switching)"
+        explainText="$(string.org-mate-lockdown-disable-user-switching_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        valueName="org.mate.lockdown.disable-user-switching">
+      <parentCategory ref="system:ALT_User_Restrictions_Mate" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+    </policy>
+
+    <policy name="OrgMateLockdownDisableUserSwitchingMachine" class="Machine"
+        displayName="$(string.org-mate-lockdown-disable-user-switching)"
+        explainText="$(string.org-mate-lockdown-disable-user-switching_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        valueName="org.mate.lockdown.disable-user-switching"
+        presentation="$(presentation.OrgMateLockdownDisableUserSwitchingMachine-pr)">
+      <parentCategory ref="system:ALT_User_Restrictions_Mate" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+      <elements>
+        <boolean id="OrgMateLockdownDisableUserSwitching_setter_blocker" key="Software\BaseALT\Policies\GSettingsLocks" valueName="org.mate.lockdown.disable-user-switching">
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+        </boolean>
+      </elements>
+    </policy>
+
+    <policy name="OrgMateLockdownDisableThemeSettingsUser" class="User"
+        displayName="$(string.org-mate-lockdown-disable-theme-settings)"
+        explainText="$(string.org-mate-lockdown-disable-theme-settings_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        valueName="org.mate.lockdown.disable-theme-settings">
+      <parentCategory ref="system:ALT_User_Restrictions_Mate" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+    </policy>
+
+    <policy name="OrgMateLockdownDisableThemeSettingsMachine" class="Machine"
+        displayName="$(string.org-mate-lockdown-disable-theme-settings)"
+        explainText="$(string.org-mate-lockdown-disable-theme-settings_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        valueName="org.mate.lockdown.disable-theme-settings"
+        presentation="$(presentation.OrgMateLockdownDisableThemeSettingsMachine-pr)">
+      <parentCategory ref="system:ALT_User_Restrictions_Mate" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+      <elements>
+        <boolean id="OrgMateLockdownDisableThemeSettings_setter_blocker" key="Software\BaseALT\Policies\GSettingsLocks" valueName="org.mate.lockdown.disable-theme-settings">
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+        </boolean>
+      </elements>
+    </policy>
+
   </policies>
 </policyDefinitions>
