@@ -25,7 +25,7 @@
       <string id="org-mate-background-color-shading-type-solid">solid fill</string>
 
       <string id="org-mate-background-picture-opacity">The opacity with which to draw the desktop background image.</string>
-      <string id="org-mate-background-picture-opacity_help">Set the opacity of the desktop background image.</string>	
+      <string id="org-mate-background-picture-opacity_help">Set the opacity of the desktop background image.</string>
 
       <string id="org-mate-background-picture-filename">The file used as the desktop background.</string>
       <string id="org-mate-background-picture-filename_help">Specify the file to use as the desktop background.</string>
@@ -114,6 +114,59 @@
 
       <string id="org-mate-lockdown-disable-theme-settings">Prohibit the user from changing the theme settings.</string>
       <string id="org-mate-lockdown-disable-theme-settings_help">Set it if you want to prevent the user from changing the theme settings.</string>
+
+      <string id="org-gnome-desktop-lockdown-user-administration-disabled">Prohibit the user from changing accounts.</string>
+      <string id="org-gnome-desktop-lockdown-user-administration-disabled_help">Set it if you want to prevent the user from changing accounts. By default, it is allowed to add and remove users, as well as change their parameters.</string>
+
+      <string id="org-gnome-vino-view-only">View only</string>
+      <string id="org-gnome-vino-view-only_help">If true, remote users accessing the desktop are only allowed to view the desktop. Remote users will not be able to use the mouse or keyboard.</string>
+
+      <string id="org-gnome-vino-disable-background">Disable desktop background</string>
+      <string id="org-gnome-vino-disable-background_help">When true, disable the desktop background and replace it with a single block of color when a user successfully connects.</string>
+
+      <string id="org-gnome-vino-alternative-port">Alternative port</string>
+      <string id="org-gnome-vino-alternative-port_help">The port which the server will listen to if the 'use-alternative-port' key is set to true. Valid values are in the range of 5000 to 50000.</string>
+
+      <string id="org-gnome-vino-lock-screen-on-disconnect">Lock screen on disconnect</string>
+      <string id="org-gnome-vino-lock-screen-on-disconnect_help">If true, the screen will be locked after the last remote client disconnects.</string>
+
+      <string id="org-gnome-vino-mailto">Email address for sending the link</string>
+      <string id="org-gnome-vino-mailto_help">This key specifies the e-mail address to which the remote desktop URL should be sent if the user clicks on the URL in the Desktop Sharing preferences dialog.</string>
+
+      <string id="org-gnome-vino-use-upnp">Use an open port on the UPnP router.</string>
+      <string id="org-gnome-vino-use-upnp_help">If true, request that a UPnP-capable router should forward and open the port used by Vino.</string>
+
+      <string id="org-gnome-vino-use-alternative-port">Use alternative port</string>
+      <string id="org-gnome-vino-use-alternative-port_help">If true, the server will listen on another port, instead of the default (5900). The port must be specified in the 'alternative-port' key.</string>
+
+      <string id="org-gnome-vino-prompt-enabled">Confirmation of the remote user's connection to the desktop.</string>
+      <string id="org-gnome-vino-prompt-enabled_help">If true, remote users accessing the desktop are not allowed access until the user on the host machine approves the connection. Recommended especially when access is not password protected.</string>
+
+      <string id="org-gnome-vino-authentication-methods">Authentication methods</string>
+      <string id="org-gnome-vino-authentication-methods_help">Lists the authentication methods with which remote users may access the desktop.  There are two possible authentication methods; "vnc" causes the remote user to be prompted for a password (the password is specified by the vnc-password key) before connecting and "none" which allows any remote user to connect.</string>
+
+      <string id="org-gnome-vino-icon-visibility">ontrols the behavior of the status icon.</string>
+      <string id="org-gnome-vino-icon-visibility_help">This key controls the behavior of the status icon. There are three options: "always" - the icon will always be present; "client" - the icon will only be present when someone is connected (this is the default behavior); "never" - the icon will not be present.</string>
+      <string id="org-gnome-vino-icon-visibility-never">never</string>
+      <string id="org-gnome-vino-icon-visibility-always">always</string>
+      <string id="org-gnome-vino-icon-visibility-client">client</string>
+
+      <string id="org-gnome-vino-enabled">Remote access permission</string>
+      <string id="org-gnome-vino-enabled_help">If "true" allows remote access to desktop via the RFB protocol. Users on remote machines may then connect to the desktop using a VNC player.</string>
+
+      <string id="org-gnome-vino-network-interface">Network interface for remote access</string>
+      <string id="org-gnome-vino-network-interface_help">If not set, the server will listen on all network interfaces.  Set this if you want to accept connections only from some specific network interface. For example, eth0, wifi0, lo and so on.</string>
+
+      <string id="org-gnome-vino-require-encryption">Require encryption</string>
+      <string id="org-gnome-vino-require-encryption_help">If true, remote users accessing the desktop are required to support encryption. It is highly recommended that you use a client which supports encryption unless the intervening network is trusted.</string>
+
+      <string id="org-gnome-vino-vnc-password">Password for remote access</string>
+      <string id="org-gnome-vino-vnc-password_help">The password which the remote user will be prompted for if the "vnc" authentication method is used. The password specified by the key is base64 encoded.  The special value of 'keyring' (which is not valid base64) means that the password is stored in the GNOME keyring.</string>
+
+      <string id="org-gnome-vino-disable-xdamage">Don't use the XDamage extension</string>
+      <string id="org-gnome-vino-disable-xdamage_help">If true, do not use the XDamage extension of X.org. This extension does not work properly on some video drivers when using 3D effects. Disabling it will make Vino work in these environments, with slower rendering as a side effect.</string>
+      <string id="org-gnome-vino-notify-on-connect">Connection Notification</string>
+      <string id="org-gnome-vino-notify-on-connect_help">If true, show a notification when a user connects to the system.</string>
 
     </stringTable>
 
@@ -409,8 +462,125 @@
         <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
       </presentation>
 
-      <presentation id="OrgMateLockdownDisableThemeSettingsMachine-pr">
-        <checkBox refId="OrgMateLockdownDisableThemeSettings_setter_blocker">lock</checkBox>
+      <presentation id="OrgGnomeVinoViewOnlyMachine-pr">
+        <checkBox refId="OrgGnomeVinoViewOnly_setter_blocker">lock</checkBox>
+        <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
+      </presentation>
+
+      <presentation id="OrgGnomeVinoDisableBackgroundMachine-pr">
+        <checkBox refId="OrgGnomeVinoDisableBackground_setter_blocker">lock</checkBox>
+        <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
+      </presentation>
+
+      <presentation id="OrgGnomeVinoAlternativePortUser-pr">
+        <decimalTextBox refId="OrgGnomeVinoAlternativePort_setter" defaultValue="5000">Port:</decimalTextBox>
+      </presentation>
+
+      <presentation id="OrgGnomeVinoAlternativePortMachine-pr">
+        <decimalTextBox refId="OrgGnomeVinoAlternativePort_setter" defaultValue="5000">Port:</decimalTextBox>
+        <checkBox refId="OrgGnomeVinoAlternativePort_setter_blocker">lock</checkBox>
+        <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
+      </presentation>
+
+      <presentation id="OrgGnomeVinoLockScreenOnDisconnectMachine-pr">
+        <checkBox refId="OrgGnomeVinoLockScreenOnDisconnect_setter_blocker">lock</checkBox>
+        <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
+      </presentation>
+
+      <presentation id="OrgGnomeVinoMailtoUser-pr">
+        <textBox refId="OrgGnomeVinoMailto_setter">
+          <label>e-mail:</label>
+        </textBox>
+      </presentation>
+
+      <presentation id="OrgGnomeVinoMailtoMachine-pr">
+        <textBox refId="OrgGnomeVinoMailto_setter">
+          <label>e-mail:</label>
+        </textBox>
+        <checkBox refId="OrgGnomeVinoMailto_setter_blocker">lock</checkBox>
+        <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
+      </presentation>
+
+      <presentation id="OrgGnomeVinoUseUpnpMachine-pr">
+        <checkBox refId="OrgGnomeVinoUseUpnp_setter_blocker">lock</checkBox>
+        <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
+      </presentation>
+
+      <presentation id="OrgGnomeVinoUseAlternativePortMachine-pr">
+        <checkBox refId="OrgGnomeVinoUseAlternativePort_setter_blocker">lock</checkBox>
+        <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
+      </presentation>
+
+      <presentation id="OrgGnomeVinoPromptEnabledMachine-pr">
+        <checkBox refId="OrgGnomeVinoPromptEnabled_setter_blocker">lock</checkBox>
+        <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
+      </presentation>
+
+      <presentation id="OrgGnomeVinoAuthenticationMethodsUser-pr">
+        <listBox refId="OrgGnomeVinoAuthenticationMethods_setter">Authentication methods:</listBox>
+      </presentation>
+
+      <presentation id="OrgGnomeVinoAuthenticationMethodsMachine-pr">
+        <listBox refId="OrgGnomeVinoAuthenticationMethods_setter">Authentication methods:</listBox>
+        <checkBox refId="OrgGnomeVinoAuthenticationMethods_setter_blocker">lock</checkBox>
+        <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
+      </presentation>
+
+      <presentation id="OrgGnomeVinoIconVisibilityUser-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="OrgGnomeVinoIconVisibility_setter">Show notification:</dropdownList>
+      </presentation>
+
+      <presentation id="OrgGnomeVinoIconVisibilityMachine-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="OrgGnomeVinoIconVisibility_setter">Show notification:</dropdownList>
+        <checkBox refId="OrgGnomeVinoIconVisibility_setter_blocker">lock</checkBox>
+        <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
+      </presentation>
+
+      <presentation id="OrgGnomeVinoEnabledMachine-pr">
+        <checkBox refId="OrgGnomeVinoEnabled_setter_blocker">lock</checkBox>
+        <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
+      </presentation>
+
+      <presentation id="OrgGnomeVinoNetworkInterfaceUser-pr">
+        <textBox refId="OrgGnomeVinoNetworkInterface_setter">
+          <label>Network interface:</label>
+        </textBox>
+      </presentation>
+
+      <presentation id="OrgGnomeVinoNetworkInterfaceMachine-pr">
+        <textBox refId="OrgGnomeVinoNetworkInterface_setter">
+          <label>Network interface:</label>
+        </textBox>
+        <checkBox refId="OrgGnomeVinoNetworkInterface_setter_blocker">lock</checkBox>
+        <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
+      </presentation>
+
+      <presentation id="OrgGnomeVinoRequireEncryptionMachine-pr">
+        <checkBox refId="OrgGnomeVinoRequireEncryption_setter_blocker">lock</checkBox>
+        <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
+      </presentation>
+
+      <presentation id="OrgGnomeVinoVncPasswordUser-pr">
+        <textBox refId="OrgGnomeVinoVncPassword_setter">
+          <label>Password:</label>
+        </textBox>
+      </presentation>
+
+      <presentation id="OrgGnomeVinoVncPasswordMachine-pr">
+        <textBox refId="OrgGnomeVinoVncPassword_setter">
+          <label>Password:</label>
+        </textBox>
+        <checkBox refId="OrgGnomeVinoVncPassword_setter_blocker">lock</checkBox>
+        <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
+      </presentation>
+
+      <presentation id="OrgGnomeVinoDisableXdamageMachine-pr">
+        <checkBox refId="OrgGnomeVinoDisableXdamage_setter_blocker">lock</checkBox>
+        <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
+      </presentation>
+
+      <presentation id="OrgGnomeVinoNotifyOnConnectMachine-pr">
+        <checkBox refId="OrgGnomeVinoNotifyOnConnect_setter_blocker">lock</checkBox>
         <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
       </presentation>
 

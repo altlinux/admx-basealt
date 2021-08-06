@@ -1330,5 +1330,641 @@
       </elements>
     </policy>
 
+    <policy name="OrgGnomeVinoViewOnlyUser" class="User"
+        displayName="$(string.org-gnome-vino-view-only)"
+        explainText="$(string.org-gnome-vino-view-only_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        valueName="org.gnome.Vino.view-only">
+      <parentCategory ref="system:ALT_Remote_Access_Gnome" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+    </policy>
+
+    <policy name="OrgGnomeVinoViewOnlyMachine" class="Machine"
+        displayName="$(string.org-gnome-vino-view-only)"
+        explainText="$(string.org-gnome-vino-view-only_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        valueName="org.gnome.Vino.view-only"
+        presentation="$(presentation.OrgGnomeVinoViewOnlyMachine-pr)">
+      <parentCategory ref="system:ALT_Remote_Access_Gnome" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+      <elements>
+        <boolean id="OrgGnomeVinoViewOnly_setter_blocker" key="Software\BaseALT\Policies\GSettingsLocks" valueName="org.gnome.Vino.view-only">
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+        </boolean>
+      </elements>
+    </policy>
+
+    <policy name="OrgGnomeVinoDisableBackgroundUser" class="User"
+        displayName="$(string.org-gnome-vino-disable-background)"
+        explainText="$(string.org-gnome-vino-disable-background_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        valueName="org.gnome.Vino.disable-background">
+      <parentCategory ref="system:ALT_Remote_Access_Gnome" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+    </policy>
+
+    <policy name="OrgGnomeVinoDisableBackgroundMachine" class="Machine"
+        displayName="$(string.org-gnome-vino-disable-background)"
+        explainText="$(string.org-gnome-vino-disable-background_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        valueName="org.gnome.Vino.disable-background"
+        presentation="$(presentation.OrgGnomeVinoDisableBackgroundMachine-pr)">
+      <parentCategory ref="system:ALT_Remote_Access_Gnome" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+      <elements>
+        <boolean id="OrgGnomeVinoDisableBackground_setter_blocker" key="Software\BaseALT\Policies\GSettingsLocks" valueName="org.gnome.Vino.disable-background">
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+        </boolean>
+      </elements>
+    </policy>
+
+    <policy name="OrgGnomeVinoAlternativePortUser" class="User"
+        displayName="$(string.org-gnome-vino-alternative-port)"
+        explainText="$(string.org-gnome-vino-alternative-port_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        presentation="$(presentation.OrgGnomeVinoAlternativePortUser-pr)">
+      <parentCategory ref="system:ALT_Remote_Access_Gnome" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <elements>
+        <decimal id="OrgGnomeVinoAlternativePort_setter" valueName="org.gnome.Vino.alternative-port" minValue="5000" maxValue="50000" />
+      </elements>
+    </policy>
+
+    <policy name="OrgGnomeVinoAlternativePortMachine" class="Machine"
+        displayName="$(string.org-gnome-vino-alternative-port)"
+        explainText="$(string.org-gnome-vino-alternative-port_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        presentation="$(presentation.OrgGnomeVinoAlternativePortMachine-pr)">
+      <parentCategory ref="system:ALT_Remote_Access_Gnome" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <elements>
+        <decimal id="OrgGnomeVinoAlternativePort_setter" valueName="org.gnome.Vino.alternative-port" minValue="5000" maxValue="50000" />
+        <boolean id="OrgGnomeVinoAlternativePort_setter_blocker" key="Software\BaseALT\Policies\GSettingsLocks" valueName="org.gnome.Vino.alternative-port">
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+        </boolean>
+      </elements>
+    </policy>
+
+    <policy name="OrgGnomeVinoLockScreenOnDisconnectUser" class="User"
+        displayName="$(string.org-gnome-vino-lock-screen-on-disconnect)"
+        explainText="$(string.org-gnome-vino-lock-screen-on-disconnect_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        valueName="org.gnome.Vino.lock-screen-on-disconnect">
+      <parentCategory ref="system:ALT_Remote_Access_Gnome" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+    </policy>
+
+    <policy name="OrgGnomeVinoLockScreenOnDisconnectMachine" class="Machine"
+        displayName="$(string.org-gnome-vino-lock-screen-on-disconnect)"
+        explainText="$(string.org-gnome-vino-lock-screen-on-disconnect_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        valueName="org.gnome.Vino.lock-screen-on-disconnect"
+        presentation="$(presentation.OrgGnomeVinoLockScreenOnDisconnectMachine-pr)">
+      <parentCategory ref="system:ALT_Remote_Access_Gnome" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+      <elements>
+        <boolean id="OrgGnomeVinoLockScreenOnDisconnect_setter_blocker" key="Software\BaseALT\Policies\GSettingsLocks" valueName="org.gnome.Vino.lock-screen-on-disconnect">
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+        </boolean>
+      </elements>
+    </policy>
+
+    <policy name="OrgGnomeVinoMailtoUser" class="User"
+        displayName="$(string.org-gnome-vino-mailto)"
+        explainText="$(string.org-gnome-vino-mailto_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        presentation="$(presentation.OrgGnomeVinoMailtoUser-pr)">
+      <parentCategory ref="system:ALT_Remote_Access_Gnome" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <elements>
+        <text id="OrgGnomeVinoMailto_setter" valueName="org.gnome.Vino.mailto" />
+      </elements>
+    </policy>
+
+    <policy name="OrgGnomeVinoMailtoMachine" class="Machine"
+        displayName="$(string.org-gnome-vino-mailto)"
+        explainText="$(string.org-gnome-vino-mailto_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        presentation="$(presentation.OrgGnomeVinoMailtoMachine-pr)">
+      <parentCategory ref="system:ALT_Remote_Access_Gnome" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <elements>
+        <text id="OrgGnomeVinoMailto_setter" valueName="org.gnome.Vino.mailto" />
+        <boolean id="OrgGnomeVinoMailto_setter_blocker" key="Software\BaseALT\Policies\GSettingsLocks" valueName="org.gnome.Vino.mailto">
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+        </boolean>
+      </elements>
+    </policy>
+
+    <policy name="OrgGnomeVinoUseUpnpUser" class="User"
+        displayName="$(string.org-gnome-vino-use-upnp)"
+        explainText="$(string.org-gnome-vino-use-upnp_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        valueName="org.gnome.Vino.use-upnp">
+      <parentCategory ref="system:ALT_Remote_Access_Gnome" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+    </policy>
+
+    <policy name="OrgGnomeVinoUseUpnpMachine" class="Machine"
+        displayName="$(string.org-gnome-vino-use-upnp)"
+        explainText="$(string.org-gnome-vino-use-upnp_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        valueName="org.gnome.Vino.use-upnp"
+        presentation="$(presentation.OrgGnomeVinoUseUpnpMachine-pr)">
+      <parentCategory ref="system:ALT_Remote_Access_Gnome" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+      <elements>
+        <boolean id="OrgGnomeVinoUseUpnp_setter_blocker" key="Software\BaseALT\Policies\GSettingsLocks" valueName="org.gnome.Vino.use-upnp">
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+        </boolean>
+      </elements>
+    </policy>
+
+    <policy name="OrgGnomeVinoUseAlternativePortUser" class="User"
+        displayName="$(string.org-gnome-vino-use-alternative-port)"
+        explainText="$(string.org-gnome-vino-use-alternative-port_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        valueName="org.gnome.Vino.use-alternative-port">
+      <parentCategory ref="system:ALT_Remote_Access_Gnome" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+    </policy>
+
+    <policy name="OrgGnomeVinoUseAlternativePortMachine" class="Machine"
+        displayName="$(string.org-gnome-vino-use-alternative-port)"
+        explainText="$(string.org-gnome-vino-use-alternative-port_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        valueName="org.gnome.Vino.use-alternative-port"
+        presentation="$(presentation.OrgGnomeVinoUseAlternativePortMachine-pr)">
+      <parentCategory ref="system:ALT_Remote_Access_Gnome" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+      <elements>
+        <boolean id="OrgGnomeVinoUseAlternativePort_setter_blocker" key="Software\BaseALT\Policies\GSettingsLocks" valueName="org.gnome.Vino.use-alternative-port">
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+        </boolean>
+      </elements>
+    </policy>
+
+    <policy name="OrgGnomeVinoPromptEnabledUser" class="User"
+        displayName="$(string.org-gnome-vino-prompt-enabled)"
+        explainText="$(string.org-gnome-vino-prompt-enabled_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        valueName="org.gnome.Vino.prompt-enabled">
+      <parentCategory ref="system:ALT_Remote_Access_Gnome" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+    </policy>
+
+    <policy name="OrgGnomeVinoPromptEnabledMachine" class="Machine"
+        displayName="$(string.org-gnome-vino-prompt-enabled)"
+        explainText="$(string.org-gnome-vino-prompt-enabled_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        valueName="org.gnome.Vino.prompt-enabled"
+        presentation="$(presentation.OrgGnomeVinoPromptEnabledMachine-pr)">
+      <parentCategory ref="system:ALT_Remote_Access_Gnome" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+      <elements>
+        <boolean id="OrgGnomeVinoPromptEnabled_setter_blocker" key="Software\BaseALT\Policies\GSettingsLocks" valueName="org.gnome.Vino.prompt-enabled">
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+        </boolean>
+      </elements>
+    </policy>
+
+    <policy name="OrgGnomeVinoAuthenticationMethodsUser" class="User"
+        displayName="$(string.org-gnome-vino-authentication-methods)"
+        explainText="$(string.org-gnome-vino-authentication-methods_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        valueName="org.gnome.Vino.authentication-methods"
+        presentation="$(presentation.OrgGnomeVinoAuthenticationMethodsUser-pr)">
+      <parentCategory ref="system:ALT_Remote_Access_Gnome" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <elements>
+        <list id="OrgGnomeVinoAuthenticationMethods_setter" key="org.gnome.Vino.authentication-methods" additive="true" />
+      </elements>
+    </policy>
+
+    <policy name="OrgGnomeVinoAuthenticationMethodsMachine" class="Machine"
+        displayName="$(string.org-gnome-vino-authentication-methods)"
+        explainText="$(string.org-gnome-vino-authentication-methods_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        valueName="org.gnome.Vino.authentication-methods"
+        presentation="$(presentation.OrgGnomeVinoAuthenticationMethodsMachine-pr)">
+      <parentCategory ref="system:ALT_Remote_Access_Gnome" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <elements>
+        <list id="OrgGnomeVinoAuthenticationMethods_setter" key="org.gnome.Vino.authentication-methods" additive="true" />
+        <boolean id="OrgGnomeVinoAuthenticationMethods_setter_blocker" key="Software\BaseALT\Policies\GSettingsLocks" valueName="org.gnome.Vino.authentication-methods">
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+        </boolean>
+      </elements>
+    </policy>
+
+    <policy name="OrgGnomeVinoIconVisibilityUser" class="User"
+        displayName="$(string.org-gnome-vino-icon-visibility)"
+        explainText="$(string.org-gnome-vino-icon-visibility_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        presentation="$(presentation.OrgGnomeVinoIconVisibilityUser-pr)" >
+      <parentCategory ref="system:ALT_Remote_Access_Gnome" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <elements>
+        <enum id="OrgGnomeVinoIconVisibility_setter" required="true" valueName="org.gnome.Vino.icon-visibility">
+          <item displayName="$(string.org-gnome-vino-icon-visibility-never)">
+            <value>
+              <string>never</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-gnome-vino-icon-visibility-always)">
+            <value>
+              <string>always</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-gnome-vino-icon-visibility-client)">
+            <value>
+              <string>client</string>
+            </value>
+          </item>
+        </enum>
+      </elements>
+    </policy>
+
+    <policy name="OrgGnomeVinoIconVisibilityMachine" class="Machine"
+        displayName="$(string.org-gnome-vino-icon-visibility)"
+        explainText="$(string.org-gnome-vino-icon-visibility_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        presentation="$(presentation.OrgGnomeVinoIconVisibilityMachine-pr)" >
+      <parentCategory ref="system:ALT_Remote_Access_Gnome" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <elements>
+        <enum id="OrgGnomeVinoIconVisibility_setter" required="true" valueName="org.gnome.Vino.icon-visibility">
+          <item displayName="$(string.org-gnome-vino-icon-visibility-never)">
+            <value>
+              <string>never</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-gnome-vino-icon-visibility-always)">
+            <value>
+              <string>always</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-gnome-vino-icon-visibility-client)">
+            <value>
+              <string>client</string>
+            </value>
+          </item>
+        </enum>
+        <boolean id="OrgGnomeVinoIconVisibility_setter_blocker" key="Software\BaseALT\Policies\GSettingsLocks" valueName="org.gnome.Vino.icon-visibility">
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+        </boolean>
+      </elements>
+    </policy>
+
+    <policy name="OrgGnomeVinoEnabledUser" class="User"
+        displayName="$(string.org-gnome-vino-enabled)"
+        explainText="$(string.org-gnome-vino-enabled_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        valueName="org.gnome.Vino.enabled">
+      <parentCategory ref="system:ALT_Remote_Access_Gnome" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+    </policy>
+
+    <policy name="OrgGnomeVinoEnabledMachine" class="Machine"
+        displayName="$(string.org-gnome-vino-enabled)"
+        explainText="$(string.org-gnome-vino-enabled_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        valueName="org.gnome.Vino.enabled"
+        presentation="$(presentation.OrgGnomeVinoEnabledMachine-pr)" >
+      <parentCategory ref="system:ALT_Remote_Access_Gnome" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+      <elements>
+        <boolean id="OrgGnomeVinoEnabled_setter_blocker" key="Software\BaseALT\Policies\GSettingsLocks" valueName="org.gnome.Vino.enabled">
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+        </boolean>
+      </elements>
+    </policy>
+
+    <policy name="OrgGnomeVinoNetworkInterfaceUser" class="User"
+        displayName="$(string.org-gnome-vino-network-interface)"
+        explainText="$(string.org-gnome-vino-network-interface_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        presentation="$(presentation.OrgGnomeVinoNetworkInterfaceUser-pr)">
+      <parentCategory ref="system:ALT_Remote_Access_Gnome" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <elements>
+        <text id="OrgGnomeVinoNetworkInterface_setter" valueName="org.gnome.Vino.network-interface" />
+      </elements>
+    </policy>
+
+    <policy name="OrgGnomeVinoNetworkInterfaceMachine" class="Machine"
+        displayName="$(string.org-gnome-vino-network-interface)"
+        explainText="$(string.org-gnome-vino-network-interface_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        presentation="$(presentation.OrgGnomeVinoNetworkInterfaceMachine-pr)">
+      <parentCategory ref="system:ALT_Remote_Access_Gnome" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <elements>
+        <text id="OrgGnomeVinoNetworkInterface_setter" valueName="org.gnome.Vino.network-interface" />
+        <boolean id="OrgGnomeVinoNetworkInterface_setter_blocker" key="Software\BaseALT\Policies\GSettingsLocks" valueName="org.gnome.Vino.network-interface">
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+        </boolean>
+      </elements>
+    </policy>
+
+    <policy name="OrgGnomeVinoRequireEncryptionUser" class="User"
+        displayName="$(string.org-gnome-vino-require-encryption)"
+        explainText="$(string.org-gnome-vino-require-encryption_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        valueName="org.gnome.Vino.require-encryption">
+      <parentCategory ref="system:ALT_Remote_Access_Gnome" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+    </policy>
+
+    <policy name="OrgGnomeVinoRequireEncryptionMachine" class="Machine"
+        displayName="$(string.org-gnome-vino-require-encryption)"
+        explainText="$(string.org-gnome-vino-require-encryption_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        valueName="org.gnome.Vino.require-encryption"
+        presentation="$(presentation.OrgGnomeVinoRequireEncryptionMachine-pr)">
+      <parentCategory ref="system:ALT_Remote_Access_Gnome" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+      <elements>
+        <boolean id="OrgGnomeVinoRequireEncryption_setter_blocker" key="Software\BaseALT\Policies\GSettingsLocks" valueName="org.gnome.Vino.require-encryption">
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+        </boolean>
+      </elements>
+    </policy>
+
+    <policy name="OrgGnomeVinoVncPasswordUser" class="User"
+        displayName="$(string.org-gnome-vino-vnc-password)"
+        explainText="$(string.org-gnome-vino-vnc-password_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        presentation="$(presentation.OrgGnomeVinoVncPasswordUser-pr)">
+      <parentCategory ref="system:ALT_Remote_Access_Gnome" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <elements>
+        <text id="OrgGnomeVinoVncPassword_setter" valueName="org.gnome.Vino.vnc-password" />
+      </elements>
+    </policy>
+
+    <policy name="OrgGnomeVinoVncPasswordMachine" class="Machine"
+        displayName="$(string.org-gnome-vino-vnc-password)"
+        explainText="$(string.org-gnome-vino-vnc-password_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        presentation="$(presentation.OrgGnomeVinoVncPasswordMachine-pr)">
+      <parentCategory ref="system:ALT_Remote_Access_Gnome" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <elements>
+        <text id="OrgGnomeVinoVncPassword_setter" valueName="org.gnome.Vino.vnc-password" />
+        <boolean id="OrgGnomeVinoVncPassword_setter_blocker" key="Software\BaseALT\Policies\GSettingsLocks" valueName="org.gnome.Vino.vnc-password">
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+        </boolean>
+      </elements>
+    </policy>
+
+    <policy name="OrgGnomeVinoDisableXdamageUser" class="User"
+        displayName="$(string.org-gnome-vino-disable-xdamage)"
+        explainText="$(string.org-gnome-vino-disable-xdamage_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        valueName="org.gnome.Vino.disable-xdamage">
+      <parentCategory ref="system:ALT_Remote_Access_Gnome" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+    </policy>
+
+    <policy name="OrgGnomeVinoDisableXdamageMachine" class="Machine"
+        displayName="$(string.org-gnome-vino-disable-xdamage)"
+        explainText="$(string.org-gnome-vino-disable-xdamage_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        valueName="org.gnome.Vino.disable-xdamage"
+        presentation="$(presentation.OrgGnomeVinoDisableXdamageMachine-pr)">
+      <parentCategory ref="system:ALT_Remote_Access_Gnome" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+      <elements>
+        <boolean id="OrgGnomeVinoDisableXdamage_setter_blocker" key="Software\BaseALT\Policies\GSettingsLocks" valueName="org.gnome.Vino.disable-xdamage">
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+        </boolean>
+      </elements>
+    </policy>
+
+    <policy name="OrgGnomeVinoNotifyOnConnectUser" class="User"
+        displayName="$(string.org-gnome-vino-notify-on-connect)"
+        explainText="$(string.org-gnome-vino-notify-on-connect_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        valueName="org.gnome.Vino.notify-on-connect">
+      <parentCategory ref="system:ALT_Remote_Access_Gnome" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+    </policy>
+
+    <policy name="OrgGnomeVinoNotifyOnConnectMachine" class="Machine"
+        displayName="$(string.org-gnome-vino-notify-on-connect)"
+        explainText="$(string.org-gnome-vino-notify-on-connect_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        valueName="org.gnome.Vino.notify-on-connect"
+        presentation="$(presentation.OrgGnomeVinoNotifyOnConnectMachine-pr)">
+      <parentCategory ref="system:ALT_Remote_Access_Gnome" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+      <elements>
+        <boolean id="OrgGnomeVinoNotifyOnConnect_setter_blocker" key="Software\BaseALT\Policies\GSettingsLocks" valueName="org.gnome.Vino.notify-on-connect">
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+        </boolean>
+      </elements>
+    </policy>
+
   </policies>
 </policyDefinitions>
