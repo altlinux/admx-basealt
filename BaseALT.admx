@@ -113,5 +113,8 @@
     <category name="ALT_User_Restrictions_Mate" displayName="$(string.ALT_User_Restrictions_Mate)" explainText="$(string.ALT_User_Restrictions_Mate_Help)">
       <parentCategory ref="ALT_Graphics_Mate" />
     </category>
+    <category name="ALT_Remote_Access_Gnome" displayName="$(string.ALT_Remote_Access_Gnome)" explainText="$(string.ALT_Remote_Access_Gnome_Help)">
+      <parentCategory ref="ALT_System" />
+    </category>
   </categories>
 </policyDefinitions>

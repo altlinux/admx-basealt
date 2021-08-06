@@ -54,6 +54,8 @@
       <string id="ALT_Screensaver_Mate_Help">Screensaver settings</string>
       <string id="ALT_User_Restrictions_Mate">User restrictions</string>
       <string id="ALT_User_Restrictions_Mate_Help">Resctrictions on user actions</string>
+      <string id="ALT_Remote_Access_Gnome">Remote access</string>
+      <string id="ALT_Remote_Access_Gnome_Help">Remote Access Settings</string>
 
     </stringTable>
   </resources>
