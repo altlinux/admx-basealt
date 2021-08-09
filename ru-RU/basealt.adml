@@ -56,7 +56,12 @@
       <string id="ALT_User_Restrictions_Mate_Help">Ограничения действий пользователя</string>
       <string id="ALT_Remote_Access_Gnome">Удаленный доступ</string>
       <string id="ALT_Remote_Access_Gnome_Help">Настройки удаленного доступа</string>
-
+      <string id="ALT_Power_Manager_Mate">Настройки питания</string>
+      <string id="ALT_Power_Manager_Mate_Help">Настройки питания</string>
+      <string id="ALT_Power_Manager_AC_Mate">Настройки питания от сети</string>
+      <string id="ALT_Power_Manager_AC_Mate_Help">Настройки питания от сети</string>
+      <string id="ALT_Power_Manager_Battery_Mate">Настройки питания от батареи</string>
+      <string id="ALT_Power_Manager_Battery_Mate_Help">Настройки питания от батареи</string>
     </stringTable>
   </resources>
 </policyDefinitionResources>

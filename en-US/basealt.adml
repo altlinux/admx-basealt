@@ -56,7 +56,12 @@
       <string id="ALT_User_Restrictions_Mate_Help">Resctrictions on user actions</string>
       <string id="ALT_Remote_Access_Gnome">Remote access</string>
       <string id="ALT_Remote_Access_Gnome_Help">Remote Access Settings</string>
-
+      <string id="ALT_Power_Manager_Mate">Power Settings</string>
+      <string id="ALT_Power_Manager_Mate_Help">Power Settings</string>
+      <string id="ALT_Power_Manager_AC_Mate">AC power supply settings</string>
+      <string id="ALT_Power_Manager_AC_Mate_Help">AC power supply settings</string>
+      <string id="ALT_Power_Manager_Battery_Mate">Power supply settings from the battery</string>
+      <string id="ALT_Power_Manager_Battery_Mate_Help">Power supply settings from the battery</string>
     </stringTable>
   </resources>
 </policyDefinitionResources>
