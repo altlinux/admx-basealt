@@ -168,6 +168,207 @@
       <string id="org-gnome-vino-notify-on-connect">Connection Notification</string>
       <string id="org-gnome-vino-notify-on-connect_help">If true, show a notification when a user connects to the system.</string>
 
+      <string id="org-mate-power-manager-lock-hibernate">Lock the screen after waking up from sleep mode.</string>
+      <string id="org-mate-power-manager-lock-hibernate_help">Whether to lock the screen after restoring the computer from sleep mode. It is used only if the lock-use-screensaver parameter is not set.</string>
+
+      <string id="org-mate-power-manager-action-critical-battery">An action performed when the battery is at a critical level of charge.</string>
+      <string id="org-mate-power-manager-action-critical-battery_help">An action performed when the battery is at a critical level of charge.</string>
+      <string id="org-mate-power-manager-action-critical-battery-blank">blank</string>
+      <string id="org-mate-power-manager-action-critical-battery-suspend">suspend</string>
+      <string id="org-mate-power-manager-action-critical-battery-shutdown">shutdown</string>
+      <string id="org-mate-power-manager-action-critical-battery-hibernate">hibernate</string>
+      <string id="org-mate-power-manager-action-critical-battery-interactive">interactive</string>
+      <string id="org-mate-power-manager-action-critical-battery-nothing">nothing</string>
+
+      <string id="org-mate-power-manager-kbd-brightness-dim-by-on-idle">The brightness of the keyboard backlight in simple</string>
+      <string id="org-mate-power-manager-kbd-brightness-dim-by-on-idle_help">The value to which the keyboard brightness should be lowered when idle, in percent. For example, if you set the value to "60", when idle, the backlight will be reduced by 40%. Valid values are from 0 to 100.</string>
+
+      <string id="org-mate-power-manager-enable-sound">Sound notification about the battery charge</string>
+      <string id="org-mate-power-manager-enable-sound_help">Whether audio notifications should be used to notify about low battery levels or that blocking requests have stopped a scheduled action.</string>
+
+      <string id="org-mate-power-manager-info-stats-graph-points">Show points on the graph in the statistics window</string>
+      <string id="org-mate-power-manager-info-stats-graph-points_help">Show points on the graph in the statistics window</string>
+
+      <string id="org-mate-power-manager-notify-fully-charged">Notification of a full battery charge</string>
+      <string id="org-mate-power-manager-notify-fully-charged_help">If installed, a notification will be displayed when the battery is fully charged.</string>
+
+      <string id="org-mate-power-manager-event-when-closed-battery">Generating an event for closing the laptop panel, with a subsequent power outage</string>
+      <string id="org-mate-power-manager-event-when-closed-battery_help">Should generate a laptop panel closing event (for example, standby mode when the panel is closed on the battery) when the panel was closed and the power supply was turned off later</string>
+
+      <string id="org-mate-power-manager-notify-sleep-failed-uri">URI for sending a message when an error occurs when switching to sleep mode</string>
+      <string id="org-mate-power-manager-notify-sleep-failed-uri_help">Specify the URI for sending a message when an error occurs when switching to sleep mode. Leave the field empty to exclude sending the message.</string>
+
+      <string id="org-mate-power-manager-backlight-enable">Changing the screen brightness when changing the power source</string>
+      <string id="org-mate-power-manager-backlight-enable_help">Set the screen brightness to change when the power supply changes</string>
+
+      <string id="org-mate-power-manager-dpms-method-battery">The DPMS method used when turning off the screen when powered by a battery.</string>
+      <string id="org-mate-power-manager-dpms-method-battery_help">Select the DPMS method used when turning off the screen when powered by battery.</string>
+      <string id="org-mate-power-manager-dpms-method-battery_standby">standby</string>
+      <string id="org-mate-power-manager-dpms-method-battery_suspend">suspend</string>
+      <string id="org-mate-power-manager-dpms-method-battery_off">off</string>
+
+      <string id="org-mate-power-manager-notify-low-capacity-mouse">Notification of a decrease in battery capacity</string>
+      <string id="org-mate-power-manager-notify-low-capacity-mouse_help">Set it to receive notification when the battery capacity decreases</string>
+
+      <string id="org-mate-power-manager-lock-use-screensaver">Using the screen saver settings to lock the screen</string>
+      <string id="org-mate-power-manager-lock-use-screensaver_help">Whether to use the screen lock option of the mate-screensaver program to determine whether to lock the screen after standby mode, sleep mode, or turning off the display</string>
+
+      <string id="org-mate-power-manager-button-suspend">The action performed when the standby mode button is pressed.</string>
+      <string id="org-mate-power-manager-button-suspend_help">Select the action to perform when the standby button is pressed.</string>
+      <string id="org-mate-power-manager-button-suspend_blank">blank</string>
+      <string id="org-mate-power-manager-button-suspend_suspend">suspend</string>
+      <string id="org-mate-power-manager-button-suspend_shutdown">shutdown</string>
+      <string id="org-mate-power-manager-button-suspend_hibernate">hibernate</string>
+      <string id="org-mate-power-manager-button-suspend_interactive">interactive</string>
+      <string id="org-mate-power-manager-button-suspend_nothing">nothing</string>
+
+      <string id="org-mate-power-manager-lock-suspend">Lock the screen when computer wakes up from suspend mode.</string>
+      <string id="org-mate-power-manager-lock-suspend_help">Set it to lock the screen when the computer comes out of suspend mode.</string>
+
+      <string id="org-mate-power-manager-button-lid-ac">The action performed when closing the panel of a laptop powered by a AC.</string>
+      <string id="org-mate-power-manager-button-lid-ac_help">Select the action to be performed when closing the panel of a laptop powered by a AC</string>
+      <string id="org-mate-power-manager-button-lid-ac_blank">blank</string>
+      <string id="org-mate-power-manager-button-lid-ac_suspend">suspend</string>
+      <string id="org-mate-power-manager-button-lid-ac_shutdown">shutdown</string>
+      <string id="org-mate-power-manager-button-lid-ac_hibernate">hibernate</string>
+      <string id="org-mate-power-manager-button-lid-ac_interactive">interactive</string>
+      <string id="org-mate-power-manager-button-lid-ac_nothing">nothing</string>
+
+      <string id="org-mate-power-manager-button-lid-battery">The action performed when closing the panel of a laptop powered by a battery.</string>
+      <string id="org-mate-power-manager-button-lid-battery_help">Select the action to perform when closing the panel of a battery-powered laptop.</string>
+      <string id="org-mate-power-manager-button-lid-battery_blank">blank</string>
+      <string id="org-mate-power-manager-button-lid-battery_suspend">suspend</string>
+      <string id="org-mate-power-manager-button-lid-battery_shutdown">shutdown</string>
+      <string id="org-mate-power-manager-button-lid-battery_hibernate">hibernate</string>
+      <string id="org-mate-power-manager-button-lid-battery_interactive">interactive</string>
+      <string id="org-mate-power-manager-button-lid-battery_nothing">nothing</string>
+
+      <string id="org-mate-power-manager-icon-policy">Configuring the Power notification</string>
+      <string id="org-mate-power-manager-icon-policy_help">Set the behavior of the power notification</string>
+      <string id="org-mate-power-manager-icon-policy_always">always</string>
+      <string id="org-mate-power-manager-icon-policy_present">present</string>
+      <string id="org-mate-power-manager-icon-policy_charge">charge</string>
+      <string id="org-mate-power-manager-icon-policy_low">low</string>
+      <string id="org-mate-power-manager-icon-policy_critical">critical</string>
+      <string id="org-mate-power-manager-icon-policy_never">never</string>
+
+      <string id="org-mate-power-manager-time-low">The remaining battery life in seconds, perceived as low.</string>
+      <string id="org-mate-power-manager-time-low_help">The remaining battery life in seconds, perceived as low. Valid only if the use-time-for-policy parameter is set.</string>
+
+      <string id="org-mate-power-manager-percentage-action">The percentage of battery charge at which the critical action is performed</string>
+      <string id="org-mate-power-manager-percentage-action_help">The percentage of battery charge at which the critical action is performed. Valid only if the use-time-for-policy parameter is not set.</string>
+
+      <string id="org-mate-power-manager-action-sleep-type-battery">The type of computer suspension after a period of inactivity, when powered by a battery</string>
+      <string id="org-mate-power-manager-action-sleep-type-battery_help">The type of computer suspension after a period of inactivity, when powered by a battery</string>
+      <string id="org-mate-power-manager-action-sleep-type-battery_blank">blank</string>
+      <string id="org-mate-power-manager-action-sleep-type-battery_suspend">suspend</string>
+      <string id="org-mate-power-manager-action-sleep-type-battery_shutdown">shutdown</string>
+      <string id="org-mate-power-manager-action-sleep-type-battery_hibernate">hibernate</string>
+      <string id="org-mate-power-manager-action-sleep-type-battery_interactive">interactive</string>
+      <string id="org-mate-power-manager-action-sleep-type-battery_nothing">nothing</string>
+
+      <string id="org-mate-power-manager-idle-dim-battery">Reducing the brightness of the screen when idle and powered by battery</string>
+      <string id="org-mate-power-manager-idle-dim-battery_help">Set it to automatically reduce the brightness of the screen when idle and powered by battery</string>
+
+      <string id="org-mate-power-manager-sleep-display-ac">The time of inactivity, in seconds, after which the display will be turned off when working from the network.</string>
+      <string id="org-mate-power-manager-sleep-display-ac_help">Set the idle time in seconds after which the display will be turned off when working from the network.</string>
+
+      <string id="org-mate-power-manager-notify-low-power">Low Battery Notification</string>
+      <string id="org-mate-power-manager-notify-low-power_help">Set it if you want to receive a low battery notification</string>
+
+      <string id="org-mate-power-manager-lock-blank-screen">Lock the screen when suspend</string>
+      <string id="org-mate-power-manager-lock-blank-screen_help">Set it if you want to lock the screen when suspend. It is used only if the lock-usa-screensaver parameter is not set.</string>
+
+      <string id="org-mate-power-manager-show-actions">Displaying parameters and statistics in the context menu</string>
+      <string id="org-mate-power-manager-show-actions_help">Set it if you want to add parameters and statistics on power supply to the context menu.</string>
+
+      <string id="org-mate-power-manager-info-stats-graph-smooth">Smoothing statistical data on the graph</string>
+      <string id="org-mate-power-manager-info-stats-graph-smooth_help">Set it if you want to enable smoothing of statistical data on the chart</string>
+
+      <string id="org-mate-power-manager-idle-dim-ac">Reducing the brightness of the screen when idle and powered by AC</string>
+      <string id="org-mate-power-manager-idle-dim-ac_help">Set it to automatically reduce the brightness of the screen when idle and powered by AC</string>
+
+      <string id="org-mate-power-manager-button-power">The action performed when the power button is pressed.</string>
+      <string id="org-mate-power-manager-button-power_help">Set the action to be performed when the power button is pressed.</string>
+      <string id="org-mate-power-manager-button-power_blank">blank</string>
+      <string id="org-mate-power-manager-button-power_suspend">suspend</string>
+      <string id="org-mate-power-manager-button-power_shutdown">shutdown</string>
+      <string id="org-mate-power-manager-button-power_hibernate">hibernate</string>
+      <string id="org-mate-power-manager-button-power_interactive">interactive</string>
+      <string id="org-mate-power-manager-button-power_nothing">nothing</string>
+
+      <string id="org-mate-power-manager-idle-brightness">Screen brightness when the computer is idle</string>
+      <string id="org-mate-power-manager-idle-brightness_help">Set the screen brightness when the computer is idle</string>
+
+      <string id="org-mate-power-manager-time-action">The remaining battery life when a critical action is performed</string>
+      <string id="org-mate-power-manager-time-action_help">The remaining battery life, in seconds, when a critical action is performed. Valid only if the use-time-for-policy parameter is set.</string>
+
+      <string id="org-mate-power-manager-kbd-brightness-dim-by-on-battery">Reducing the brightness of the keyboard backlight when powered by a battery</string>
+      <string id="org-mate-power-manager-kbd-brightness-dim-by-on-battery_help">The value to which the brightness of the keyboard should be lowered when powered by a battery, as a percentage. For example, if you set the value to "60", the backlight will be reduced by 40% when powered by a battery. Valid values are from 0 to 100.</string>
+
+      <string id="org-mate-power-manager-sleep-computer-ac">The time in seconds before pausing the computer</string>
+      <string id="org-mate-power-manager-sleep-computer-ac_help">Set the number of seconds that the computer should be idle when powered from the mains before pausing.</string>
+
+      <string id="org-mate-power-manager-sleep-computer-battery">The time in seconds before pausing the computer when powered by battery</string>
+      <string id="org-mate-power-manager-sleep-computer-battery_help">Set the number of seconds that the computer should be idle when powered by the battery before pausing.</string>
+
+      <string id="org-mate-power-manager-time-critical">Critical time in seconds when powered by a battery</string>
+      <string id="org-mate-power-manager-time-critical_help">The remaining battery life in seconds, perceived as critical. Valid only if the use-time-for-policy parameter is set.</string>
+
+      <string id="org-mate-power-manager-notify-sleep-failed">Notification of an unsuccessful attempt to switch to sleep mode</string>
+      <string id="org-mate-power-manager-notify-sleep-failed_help">Set it if you want to receive a notification about an unsuccessful attempt to switch to sleep mode.</string>
+
+      <string id="org-mate-power-manager-button-hibernate">The action performed when the hibernation mode button is pressed.</string>
+      <string id="org-mate-power-manager-button-hibernate_help">Set the action to be performed when the hibernation mode button is pressed.</string>
+      <string id="org-mate-power-manager-button-hibernate_blank">blank</string>
+      <string id="org-mate-power-manager-button-hibernate_suspend">suspend</string>
+      <string id="org-mate-power-manager-button-hibernate_shutdown">shutdown</string>
+      <string id="org-mate-power-manager-button-hibernate_hibernate">hibernate</string>
+      <string id="org-mate-power-manager-button-hibernate_interactive">interactive</string>
+      <string id="org-mate-power-manager-button-hibernate_nothing">nothing</string>
+
+      <string id="org-mate-power-manager-use-time-for-policy">Using time-based notifications</string>
+      <string id="org-mate-power-manager-use-time-for-policy_help">Whether time-based notifications should be used. If this parameter is not set, the battery charge percentage will be used instead of the time, which can fix the problem with the corrupted ACPI BIOS.</string>
+
+      <string id="org-mate-power-manager-backlight-battery-reduce">Reducing the brightness of the screen when powered by a battery</string>
+      <string id="org-mate-power-manager-backlight-battery-reduce_help">Set if you want to change the brightness of the screen when powered by battery.</string>
+
+      <string id="org-mate-power-manager-notify-discharging">Notify when disconnecting from the AC power supply</string>
+      <string id="org-mate-power-manager-notify-discharging_help">Set it if you want to receive a notification when disconnecting from the AC power supply.</string>
+
+      <string id="org-mate-power-manager-dpms-method-ac">The DPMS method used when disconnecting the screen when powered from the mains.</string>
+      <string id="org-mate-power-manager-dpms-method-ac_help">Select the DPMS method used when turning off the screen when powered from the mains.</string>
+      <string id="org-mate-power-manager-dpms-method-ac_standby">standby</string>
+      <string id="org-mate-power-manager-dpms-method-ac_suspend">suspend</string>
+      <string id="org-mate-power-manager-dpms-method-ac_off">off</string>
+
+      <string id="org-mate-power-manager-sleep-display-battery">The idle time of the computer before turning off the screen when powered by the battery</string>
+      <string id="org-mate-power-manager-sleep-display-battery_help">Set the idle time of the computer in seconds before turning off the screen when powered by battery</string>
+
+      <string id="org-mate-power-manager-percentage-low">The percentage of battery charge perceived as low</string>
+      <string id="org-mate-power-manager-percentage-low_help">The percentage of battery charge perceived as low. Valid only if the use-time-for-policy parameter is not set.</string>
+
+      <string id="org-mate-power-manager-action-low-ups">An action performed when the UPS is low.</string>
+      <string id="org-mate-power-manager-action-low-ups_help">Set the action to be performed when the UPS is low.</string>
+      <string id="org-mate-power-manager-action-low-ups_blank">blank</string>
+      <string id="org-mate-power-manager-action-low-ups_suspend">suspend</string>
+      <string id="org-mate-power-manager-action-low-ups_shutdown">shutdown</string>
+      <string id="org-mate-power-manager-action-low-ups_hibernate">hibernate</string>
+      <string id="org-mate-power-manager-action-low-ups_interactive">interactive</string>
+      <string id="org-mate-power-manager-action-low-ups_nothing">nothing</string>
+
+      <string id="org-mate-power-manager-action-sleep-type-ac">The type of computer suspension after inactivity when powered from the network</string>
+      <string id="org-mate-power-manager-action-sleep-type-ac_help">Select the type of computer suspension after a period of inactivity when powered by the network</string>
+      <string id="org-mate-power-manager-action-sleep-type-ac_blank">blank</string>
+      <string id="org-mate-power-manager-action-sleep-type-ac_suspend">suspend</string>
+      <string id="org-mate-power-manager-action-sleep-type-ac_shutdown">shutdown</string>
+      <string id="org-mate-power-manager-action-sleep-type-ac_hibernate">hibernate</string>
+      <string id="org-mate-power-manager-action-sleep-type-ac_interactive">interactive</string>
+      <string id="org-mate-power-manager-action-sleep-type-ac_nothing">nothing</string>
+
+      <string id="org-mate-power-manager-notify-low-capacity">Low charge notification for faulty batteries</string>
+      <string id="org-mate-power-manager-notify-low-capacity_help">Set it to receive a notification about a low charge of faulty batteries.</string>
+
     </stringTable>
 
     <presentationTable>
@@ -581,6 +782,361 @@
 
       <presentation id="OrgGnomeVinoNotifyOnConnectMachine-pr">
         <checkBox refId="OrgGnomeVinoNotifyOnConnect_setter_blocker">lock</checkBox>
+        <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
+      </presentation>
+
+      <presentation id="OrgMatePowerManagerLockHibernateMachine-pr">
+        <checkBox refId="OrgMatePowerManagerLockHibernate_setter_blocker">lock</checkBox>
+        <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
+      </presentation>
+
+      <presentation id="OrgMatePowerManagerActionCriticalBatteryUser-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="OrgMatePowerManagerActionCriticalBattery_setter">Action:</dropdownList>
+      </presentation>
+
+      <presentation id="OrgMatePowerManagerActionCriticalBatteryMachine-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="OrgMatePowerManagerActionCriticalBattery_setter">Action:</dropdownList>
+        <checkBox refId="OrgMatePowerManagerActionCriticalBattery_setter_blocker">lock</checkBox>
+        <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
+      </presentation>
+
+      <presentation id="OrgMatePowerManagerKbdBrightnessDimByOnIdleUser-pr">
+        <decimalTextBox refId="OrgMatePowerManagerKbdBrightnessDimByOnIdle_setter">Brightness:</decimalTextBox>
+      </presentation>
+
+      <presentation id="OrgMatePowerManagerKbdBrightnessDimByOnIdleMachine-pr">
+        <decimalTextBox refId="OrgMatePowerManagerKbdBrightnessDimByOnIdle_setter">Brightness:</decimalTextBox>
+        <checkBox refId="OrgMatePowerManagerKbdBrightnessDimByOnIdle_setter_blocker">lock</checkBox>
+        <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
+      </presentation>
+
+      <presentation id="OrgMatePowerManagerEnableSoundMachine-pr">
+        <checkBox refId="OrgMatePowerManagerEnableSound_setter_blocker">lock</checkBox>
+        <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
+      </presentation>
+
+      <presentation id="OrgMatePowerManagerInfoStatsGraphPointsMachine-pr">
+        <checkBox refId="OrgMatePowerManagerInfoStatsGraphPoints_setter_blocker">lock</checkBox>
+        <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
+      </presentation>
+
+      <presentation id="OrgMatePowerManagerNotifyFullyChargedMachine-pr">
+        <checkBox refId="OrgMatePowerManagerNotifyFullyCharged_setter_blocker">lock</checkBox>
+        <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
+      </presentation>
+
+      <presentation id="OrgMatePowerManagerEventWhenClosedBatteryMachine-pr">
+        <checkBox refId="OrgMatePowerManagerEventWhenClosedBattery_setter_blocker">lock</checkBox>
+        <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
+      </presentation>
+
+      <presentation id="OrgMatePowerManagerNotifySleepFailedUriUser-pr">
+        <textBox refId="OrgMatePowerManagerNotifySleepFailedUri_setter">
+          <label>URI:</label>
+        </textBox>
+      </presentation>
+
+      <presentation id="OrgMatePowerManagerNotifySleepFailedUriMachine-pr">
+        <textBox refId="OrgMatePowerManagerNotifySleepFailedUri_setter">
+          <label>URI:</label>
+        </textBox>
+        <checkBox refId="OrgMatePowerManagerNotifySleepFailed_setter_blocker">lock</checkBox>
+        <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
+      </presentation>
+
+      <presentation id="OrgMatePowerManagerBacklightEnableMachine-pr">
+        <checkBox refId="OrgMatePowerManagerBacklightEnable_setter_blocker">block</checkBox>
+        <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
+      </presentation>
+
+      <presentation id="OrgMatePowerManagerDpmsMethodBatteryUser-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="OrgMatePowerManagerDpmsMethodBattery_setter">Method DPMS:</dropdownList>
+      </presentation>
+
+      <presentation id="OrgMatePowerManagerDpmsMethodBatteryMachine-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="OrgMatePowerManagerDpmsMethodBattery_setter">Method DPMS:</dropdownList>
+        <checkBox refId="OrgMatePowerManagerDpmsMethodBattery_setter_blocker">lock</checkBox>
+        <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
+      </presentation>
+
+      <presentation id="OrgMatePowerManagerNotifyLowCapacityMouseMachine-pr">
+        <checkBox refId="OrgMatePowerManagerNotifyLowCapacityMouse_setter_blocker">lock</checkBox>
+        <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
+      </presentation>
+
+      <presentation id="OrgMatePowerManagerLockUseScreensaverMachine-pr">
+        <checkBox refId="OrgMatePowerManagerLockUseScreensaver_setter_blocker">lock</checkBox>
+        <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
+      </presentation>
+
+      <presentation id="OrgMatePowerManagerButtonSuspendUser-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="OrgMatePowerManagerButtonSuspend_setter">Action:</dropdownList>
+      </presentation>
+
+      <presentation id="OrgMatePowerManagerButtonSuspendMachine-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="OrgMatePowerManagerButtonSuspend_setter">Action:</dropdownList>
+        <checkBox refId="OrgMatePowerManagerButtonSuspend_setter_blocker">lock</checkBox>
+        <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
+      </presentation>
+
+      <presentation id="OrgMatePowerManagerLockSuspendMachine-pr">
+        <checkBox refId="OrgMatePowerManagerLockSuspend_setter_blocker">lock</checkBox>
+        <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
+      </presentation>
+
+      <presentation id="OrgMatePowerManagerButtonLidAcUser-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="OrgMatePowerManagerButtonLidAc_setter">Action:</dropdownList>
+      </presentation>
+
+      <presentation id="OrgMatePowerManagerButtonLidAcMachine-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="OrgMatePowerManagerButtonLidAc_setter">Action:</dropdownList>
+        <checkBox refId="OrgMatePowerManagerButtonLidAc_setter_blocker">lock</checkBox>
+        <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
+      </presentation>
+
+      <presentation id="OrgMatePowerManagerButtonLidBatteryUser-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="OrgMatePowerManagerButtonLidBattery_setter">Action:</dropdownList>
+      </presentation>
+
+      <presentation id="OrgMatePowerManagerButtonLidBatteryMachine-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="OrgMatePowerManagerButtonLidBattery_setter">Action:</dropdownList>
+        <checkBox refId="OrgMatePowerManagerButtonLidBattery_setter_blocker">lock</checkBox>
+        <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
+      </presentation>
+
+      <presentation id="OrgMatePowerManagerIconPolicyUser-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="OrgMatePowerManagerIconPolicy_setter">Notification:</dropdownList>
+      </presentation>
+
+      <presentation id="OrgMatePowerManagerIconPolicyMachine-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="OrgMatePowerManagerIconPolicy_setter">Notification:</dropdownList>
+        <checkBox refId="OrgMatePowerManagerIconPolicy_setter_blocker">lock</checkBox>
+        <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
+      </presentation>
+
+      <presentation id="OrgMatePowerManagerTimeLowUser-pr">
+        <decimalTextBox refId="OrgMatePowerManagerTimeLow_setter" defaultValue="">Seconds:</decimalTextBox>
+      </presentation>
+
+      <presentation id="OrgMatePowerManagerTimeLowMachine-pr">
+        <decimalTextBox refId="OrgMatePowerManagerTimeLow_setter" defaultValue="">Seconds:</decimalTextBox>
+        <checkBox refId="OrgMatePowerManagerTimeLow_setter_blocker">lock</checkBox>
+        <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
+      </presentation>
+
+      <presentation id="OrgMatePowerManagerPercentageActionUser-pr">
+        <decimalTextBox refId="OrgMatePowerManagerPercentageAction_setter">Charge percent:</decimalTextBox>
+      </presentation>
+
+      <presentation id="OrgMatePowerManagerPercentageActionMachine-pr">
+        <decimalTextBox refId="OrgMatePowerManagerPercentageAction_setter">Charge percent:</decimalTextBox>
+        <checkBox refId="OrgMatePowerManagerPercentageAction_setter_blocker">lock</checkBox>
+        <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
+      </presentation>
+
+      <presentation id="OrgMatePowerManagerActionSleepTypeBatteryUser-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="OrgMatePowerManagerActionSleepTypeBattery_setter">Action:</dropdownList>
+      </presentation>
+
+      <presentation id="OrgMatePowerManagerActionSleepTypeBatteryMachine-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="OrgMatePowerManagerActionSleepTypeBattery_setter">Action:</dropdownList>
+        <checkBox refId="OrgMatePowerManagerActionSleepTypeBattery_setter_blocker">lock</checkBox>
+        <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
+      </presentation>
+
+      <presentation id="OrgMatePowerManagerIdleDimBatteryMachine-pr">
+        <checkBox refId="OrgMatePowerManagerIdleDimBattery_setter_blocker">lock</checkBox>
+        <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
+      </presentation>
+
+      <presentation id="OrgMatePowerManagerSleepDisplayAcUser-pr">
+        <decimalTextBox refId="OrgMatePowerManagerSleepDisplayAc_setter">Seconds:</decimalTextBox>
+      </presentation>
+
+      <presentation id="OrgMatePowerManagerSleepDisplayAcMachine-pr">
+        <decimalTextBox refId="OrgMatePowerManagerSleepDisplayAc_setter">Seconds:</decimalTextBox>
+        <checkBox refId="OrgMatePowerManagerSleepDisplayAc_setter_blocker">lock</checkBox>
+        <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
+      </presentation>
+
+      <presentation id="OrgMatePowerManagerNotifyLowPowerMachine-pr">
+        <checkBox refId="OrgMatePowerManagerNotifyLowPower_setter_blocker">lock</checkBox>
+        <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
+      </presentation>
+
+      <presentation id="OrgMatePowerManagerLockBlankScreenMachine-pr">
+        <checkBox refId="OrgMatePowerManagerLockBlankScreen_setter_blocker">lock</checkBox>
+        <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
+      </presentation>
+
+      <presentation id="OrgMatePowerManagerShowActionsMachine-pr">
+        <checkBox refId="OrgMatePowerManagerShowActions_setter_blocker">lock</checkBox>
+        <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
+      </presentation>
+
+      <presentation id="OrgMatePowerManagerInfoStatsGraphSmoothMachine-pr">
+        <checkBox refId="OrgMatePowerManagerInfoStatsGraphSmooth_setter_blocker">lock</checkBox>
+        <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
+      </presentation>
+
+      <presentation id="OrgMatePowerManagerIdleDimAcMachine-pr">
+        <checkBox refId="OrgMatePowerManagerIdleDimAc_setter_blocker">lock</checkBox>
+        <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
+      </presentation>
+
+      <presentation id="OrgMatePowerManagerButtonPowerUser-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="OrgMatePowerManagerButtonPower_setter">Action:</dropdownList>
+      </presentation>
+
+      <presentation id="OrgMatePowerManagerButtonPowerMachine-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="OrgMatePowerManagerButtonPower_setter">Action:</dropdownList>
+        <checkBox refId="OrgMatePowerManagerButtonPower_setter_blocker">lock</checkBox>
+        <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
+      </presentation>
+
+      <presentation id="OrgMatePowerManagerIdleBrightnessUser-pr">
+        <decimalTextBox refId="OrgMatePowerManagerIdleBrightness_setter">Brightness:</decimalTextBox>
+      </presentation>
+
+      <presentation id="OrgMatePowerManagerIdleBrightnessMachine-pr">
+        <decimalTextBox refId="OrgMatePowerManagerIdleBrightness_setter">Brightness:</decimalTextBox>
+        <checkBox refId="OrgMatePowerManagerIdleBrightness_setter_blocker">lock</checkBox>
+        <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
+      </presentation>
+
+      <presentation id="OrgMatePowerManagerKbdBrightnessDimByOnBatteryUser-pr">
+        <decimalTextBox refId="OrgMatePowerManagerKbdBrightnessDimByOnBattery_setter">Brightness:</decimalTextBox>
+      </presentation>
+
+      <presentation id="OrgMatePowerManagerKbdBrightnessDimByOnBatteryMachine-pr">
+        <decimalTextBox refId="OrgMatePowerManagerKbdBrightnessDimByOnBattery_setter">Brightness:</decimalTextBox>
+        <checkBox refId="OrgMatePowerManagerKbdBrightnessDimByOnBattery_setter_blocker">lock</checkBox>
+        <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
+      </presentation>
+
+      <presentation id="OrgMatePowerManagerTimeActionUser-pr">
+        <decimalTextBox refId="OrgMatePowerManagerTimeAction_setter">Time:</decimalTextBox>
+      </presentation>
+
+      <presentation id="OrgMatePowerManagerTimeActionMachine-pr">
+        <decimalTextBox refId="OrgMatePowerManagerTimeAction_setter">Time:</decimalTextBox>
+        <checkBox refId="OrgMatePowerManagerTimeAction_setter_blocker">lock</checkBox>
+        <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
+      </presentation>
+
+      <presentation id="OrgMatePowerManagerSleepComputerAcUser-pr">
+        <decimalTextBox refId="OrgMatePowerManagerSleepComputerAc_setter">Time:</decimalTextBox>
+      </presentation>
+
+      <presentation id="OrgMatePowerManagerSleepComputerAcMachine-pr">
+        <decimalTextBox refId="OrgMatePowerManagerSleepComputerAc_setter">Time:</decimalTextBox>
+        <checkBox refId="OrgMatePowerManagerSleepComputerAc_setter_blocker">lock</checkBox>
+        <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
+      </presentation>
+
+      <presentation id="OrgMatePowerManagerSleepComputerBatteryUser-pr">
+        <decimalTextBox refId="OrgMatePowerManagerSleepComputerBattery_setter">Time:</decimalTextBox>
+      </presentation>
+
+      <presentation id="OrgMatePowerManagerSleepComputerBatteryMachine-pr">
+        <decimalTextBox refId="OrgMatePowerManagerSleepComputerBattery_setter">Time:</decimalTextBox>
+        <checkBox refId="OrgMatePowerManagerSleepComputerBattery_setter_blocker">lock</checkBox>
+        <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
+      </presentation>
+
+      <presentation id="OrgMatePowerManagerTimeCriticalUser-pr">
+        <decimalTextBox refId="OrgMatePowerManagerTimeCritical_setter">Time:</decimalTextBox>
+      </presentation>
+
+      <presentation id="OrgMatePowerManagerTimeCriticalMachine-pr">
+        <decimalTextBox refId="OrgMatePowerManagerTimeCritical_setter">Time:</decimalTextBox>
+        <checkBox refId="OrgMatePowerManagerTimeCritical_setter_blocker">lock</checkBox>
+        <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
+      </presentation>
+
+
+      <presentation id="OrgMatePowerManagerNotifySleepFailedMachine-pr">
+        <checkBox refId="OrgMatePowerManagerNotifySleepFailed_setter_blocker">lock</checkBox>
+        <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
+      </presentation>
+
+      <presentation id="OrgMatePowerManagerButtonHibernateUser-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="OrgMatePowerManagerButtonHibernate_setter">Action:</dropdownList>
+      </presentation>
+
+      <presentation id="OrgMatePowerManagerButtonHibernateMachine-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="OrgMatePowerManagerButtonHibernate_setter">Action:</dropdownList>
+        <checkBox refId="OrgMatePowerManagerButtonHibernate_setter_blocker">lock</checkBox>
+        <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
+      </presentation>
+
+      <presentation id="OrgMatePowerManagerUseTimeForPolicyMachine-pr">
+        <checkBox refId="OrgMatePowerManagerUseTimeForPolicy_setter_blocker">lock</checkBox>
+        <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
+      </presentation>
+
+      <presentation id="OrgMatePowerManagerBacklightBatteryReduceMachine-pr">
+        <checkBox refId="OrgMatePowerManagerBacklightBatteryReduce_setter_blocker">lock</checkBox>
+        <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
+      </presentation>
+
+      <presentation id="OrgMatePowerManagerNotifyDischargingMachine-pr">
+        <checkBox refId="OrgMatePowerManagerNotifyDischarging_setter_blocker">lock</checkBox>
+        <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
+      </presentation>
+
+      <presentation id="OrgMatePowerManagerDpmsMethodAcUser-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="OrgMatePowerManagerDpmsMethodAc_setter">Method:</dropdownList>
+      </presentation>
+
+      <presentation id="OrgMatePowerManagerDpmsMethodAcMachine-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="OrgMatePowerManagerDpmsMethodAc_setter">Method:</dropdownList>
+        <checkBox refId="OrgMatePowerManagerDpmsMethodAc_setter_blocker">lock</checkBox>
+        <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
+      </presentation>
+
+      <presentation id="OrgMatePowerManagerSleepDisplayBatteryUser-pr">
+        <decimalTextBox refId="OrgMatePowerManagerSleepDisplayBattery_setter">Time:</decimalTextBox>
+      </presentation>
+
+      <presentation id="OrgMatePowerManagerSleepDisplayBatteryMachine-pr">
+        <decimalTextBox refId="OrgMatePowerManagerSleepDisplayBattery_setter">Time:</decimalTextBox>
+        <checkBox refId="OrgMatePowerManagerSleepDisplayBattery_setter_blocker">lock</checkBox>
+        <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
+      </presentation>
+
+      <presentation id="OrgMatePowerManagerPercentageLowUser-pr">
+        <decimalTextBox refId="OrgMatePowerManagerPercentageLow_setter">Charge as a percentage:</decimalTextBox>
+      </presentation>
+
+      <presentation id="OrgMatePowerManagerPercentageLowMachine-pr">
+        <decimalTextBox refId="OrgMatePowerManagerPercentageLow_setter">Charge as a percentage:</decimalTextBox>
+        <checkBox refId="OrgMatePowerManagerPercentageLow_setter_blocker">lock</checkBox>
+        <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
+      </presentation>
+
+      <presentation id="OrgMatePowerManagerActionLowUpsUser-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="OrgMatePowerManagerActionLowUps_setter">Action:</dropdownList>
+      </presentation>
+
+      <presentation id="OrgMatePowerManagerActionLowUpsMachine-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="OrgMatePowerManagerActionLowUps_setter">Action:</dropdownList>
+        <checkBox refId="OrgMatePowerManagerActionLowUps_setter_blocker">lock</checkBox>
+        <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
+      </presentation>
+
+      <presentation id="OrgMatePowerManagerActionSleepTypeAcUser-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="OrgMatePowerManagerActionSleepTypeAc_setter">Method:</dropdownList>
+      </presentation>
+
+      <presentation id="OrgMatePowerManagerActionSleepTypeAcMachine-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="OrgMatePowerManagerActionSleepTypeAc_setter">Method:</dropdownList>
+        <checkBox refId="OrgMatePowerManagerActionSleepTypeAc_setter_blocker">lock</checkBox>
+        <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
+      </presentation>
+
+      <presentation id="OrgMatePowerManagerNotifyLowCapacityMachine-pr">
+        <checkBox refId="OrgMatePowerManagerNotifyLowCapacity_setter_blocker">lock</checkBox>
         <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
       </presentation>
 

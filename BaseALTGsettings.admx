@@ -1966,5 +1966,2309 @@
       </elements>
     </policy>
 
+    <policy name="OrgMatePowerManagerLockHibernateUser" class="User"
+        displayName="$(string.org-mate-power-manager-lock-hibernate)"
+        explainText="$(string.org-mate-power-manager-lock-hibernate_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        valueName="org.mate.power-manager.lock-hibernate">
+      <parentCategory ref="system:ALT_Power_Manager_Mate" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+    </policy>
+
+    <policy name="OrgMatePowerManagerLockHibernateMachine" class="Machine"
+        displayName="$(string.org-mate-power-manager-lock-hibernate)"
+        explainText="$(string.org-mate-power-manager-lock-hibernate_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        valueName="org.mate.power-manager.lock-hibernate"
+        presentation="$(presentation.OrgMatePowerManagerLockHibernateMachine-pr)">
+      <parentCategory ref="system:ALT_Power_Manager_Mate" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+      <elements>
+        <boolean id="OrgMatePowerManagerLockHibernate_setter_blocker" key="Software\BaseALT\Policies\GSettingsLocks" valueName="org.mate.power-manager.lock-hibernate">
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+        </boolean>
+      </elements>
+    </policy>
+
+    <policy name="OrgMatePowerManagerActionCriticalBatteryUser" class="User"
+        displayName="$(string.org-mate-power-manager-action-critical-battery)"
+        explainText="$(string.org-mate-power-manager-action-critical-battery_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        presentation="$(presentation.OrgMatePowerManagerActionCriticalBatteryUser-pr)" >
+      <parentCategory ref="system:ALT_Power_Manager_Battery_Mate" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <elements>
+        <enum id="OrgMatePowerManagerActionCriticalBattery_setter" required="true" valueName="org.mate.power-manager.action-critical-battery">
+          <item displayName="$(string.org-mate-power-manager-action-critical-battery-blank)">
+            <value>
+              <string>blank</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-power-manager-action-critical-battery-suspend)">
+            <value>
+              <string>suspend</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-power-manager-action-critical-battery-shutdown)">
+            <value>
+              <string>shutdown</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-power-manager-action-critical-battery-hibernate)">
+            <value>
+              <string>hibernate</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-power-manager-action-critical-battery-interactive)">
+            <value>
+              <string>interactive</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-power-manager-action-critical-battery-nothing)">
+            <value>
+              <string>nothing</string>
+            </value>
+          </item>
+        </enum>
+      </elements>
+    </policy>
+
+    <policy name="OrgMatePowerManagerActionCriticalBatteryMachine" class="Machine"
+        displayName="$(string.org-mate-power-manager-action-critical-battery)"
+        explainText="$(string.org-mate-power-manager-action-critical-battery_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        presentation="$(presentation.OrgMatePowerManagerActionCriticalBatteryMachine-pr)" >
+      <parentCategory ref="system:ALT_Power_Manager_Battery_Mate" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <elements>
+        <enum id="OrgMatePowerManagerActionCriticalBattery_setter" required="true" valueName="org.mate.power-manager.action-critical-battery">
+          <item displayName="$(string.org-mate-power-manager-action-critical-battery-blank)">
+            <value>
+              <string>blank</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-power-manager-action-critical-battery-suspend)">
+            <value>
+              <string>suspend</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-power-manager-action-critical-battery-shutdown)">
+            <value>
+              <string>shutdown</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-power-manager-action-critical-battery-hibernate)">
+            <value>
+              <string>hibernate</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-power-manager-action-critical-battery-interactive)">
+            <value>
+              <string>interactive</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-power-manager-action-critical-battery-nothing)">
+            <value>
+              <string>nothing</string>
+            </value>
+          </item>
+        </enum>
+        <boolean id="OrgMatePowerManagerActionCriticalBattery_setter_blocker" key="Software\BaseALT\Policies\GSettingsLocks" valueName="org.mate.power-manager.action-critical-battery">
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+        </boolean>
+      </elements>
+    </policy>
+
+    <policy name="OrgMatePowerManagerKbdBrightnessDimByOnIdleUser" class="User"
+        displayName="$(string.org-mate-power-manager-kbd-brightness-dim-by-on-idle)"
+        explainText="$(string.org-mate-power-manager-kbd-brightness-dim-by-on-idle_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        presentation="$(presentation.OrgMatePowerManagerKbdBrightnessDimByOnIdleUser-pr)">
+      <parentCategory ref="system:ALT_Power_Manager_Mate" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <elements>
+        <decimal id="OrgMatePowerManagerKbdBrightnessDimByOnIdle_setter" valueName="org.mate.power-manager.kbd-brightness-dim-by-on-idle" minValue="0" maxValue="100" />
+      </elements>
+    </policy>
+
+    <policy name="OrgMatePowerManagerKbdBrightnessDimByOnIdleMachine" class="Machine"
+        displayName="$(string.org-mate-power-manager-kbd-brightness-dim-by-on-idle)"
+        explainText="$(string.org-mate-power-manager-kbd-brightness-dim-by-on-idle_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        presentation="$(presentation.OrgMatePowerManagerKbdBrightnessDimByOnIdleMachine-pr)">
+      <parentCategory ref="system:ALT_Power_Manager_Mate" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <elements>
+        <decimal id="OrgMatePowerManagerKbdBrightnessDimByOnIdle_setter" valueName="org.mate.power-manager.kbd-brightness-dim-by-on-idle" minValue="0" maxValue="100" />
+        <boolean id="OrgMatePowerManagerKbdBrightnessDimByOnIdle_setter_blocker" key="Software\BaseALT\Policies\GSettingsLocks" valueName="org.mate.power-manager.kbd-brightness-dim-by-on-idle">
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+        </boolean>
+      </elements>
+    </policy>
+
+    <policy name="OrgMatePowerManagerEnableSoundUser" class="User"
+        displayName="$(string.org-mate-power-manager-enable-sound)"
+        explainText="$(string.org-mate-power-manager-enable-sound_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        valueName="org.mate.power-manager.enable-sound">
+      <parentCategory ref="system:ALT_Power_Manager_Battery_Mate" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+    </policy>
+
+    <policy name="OrgMatePowerManagerEnableSoundMachine" class="Machine"
+        displayName="$(string.org-mate-power-manager-enable-sound)"
+        explainText="$(string.org-mate-power-manager-enable-sound_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        valueName="org.mate.power-manager.enable-sound"
+        presentation="$(presentation.OrgMatePowerManagerEnableSoundMachine-pr)">
+      <parentCategory ref="system:ALT_Power_Manager_Battery_Mate" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+      <elements>
+        <boolean id="OrgMatePowerManagerEnableSound_setter_blocker" key="Software\BaseALT\Policies\GSettingsLocks" valueName="org.mate.power-manager.enable-sound">
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+        </boolean>
+      </elements>
+    </policy>
+
+    <policy name="OrgMatePowerManagerInfoStatsGraphPointsUser" class="User"
+        displayName="$(string.org-mate-power-manager-info-stats-graph-points)"
+        explainText="$(string.org-mate-power-manager-info-stats-graph-points_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        valueName="org.mate.power-manager.info-stats-graph-points">
+      <parentCategory ref="system:ALT_Power_Manager_Mate" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+    </policy>
+
+    <policy name="OrgMatePowerManagerInfoStatsGraphPointsMachine" class="Machine"
+        displayName="$(string.org-mate-power-manager-info-stats-graph-points)"
+        explainText="$(string.org-mate-power-manager-info-stats-graph-points_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        valueName="org.mate.power-manager.info-stats-graph-points"
+        presentation="$(presentation.OrgMatePowerManagerInfoStatsGraphPointsMachine-pr)">
+      <parentCategory ref="system:ALT_Power_Manager_Mate" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <enabledValue>
+        <string>1</string>
+      </enabledValue>
+      <disabledValue>
+        <string>0</string>
+      </disabledValue>
+      <elements>
+        <boolean id="OrgMatePowerManagerInfoStatsGraphPoints_setter_blocker" key="Software\BaseALT\Policies\GSettingsLocks" valueName="org.mate.power-manager.info-stats-graph-points">
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+        </boolean>
+      </elements>
+    </policy>
+
+    <policy name="OrgMatePowerManagerNotifyFullyChargedUser" class="User"
+        displayName="$(string.org-mate-power-manager-notify-fully-charged)"
+        explainText="$(string.org-mate-power-manager-notify-fully-charged_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        valueName="org.mate.power-manager.notify-fully-charged">
+      <parentCategory ref="system:ALT_Power_Manager_Battery_Mate" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+    </policy>
+
+    <policy name="OrgMatePowerManagerNotifyFullyChargedMachine" class="Machine"
+        displayName="$(string.org-mate-power-manager-notify-fully-charged)"
+        explainText="$(string.org-mate-power-manager-notify-fully-charged_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        valueName="org.mate.power-manager.notify-fully-charged"
+        presentation="$(presentation.OrgMatePowerManagerNotifyFullyChargedMachine-pr)">
+      <parentCategory ref="system:ALT_Power_Manager_Battery_Mate" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+      <elements>
+        <boolean id="OrgMatePowerManagerNotifyFullyCharged_setter_blocker" key="Software\BaseALT\Policies\GSettingsLocks" valueName="org.mate.power-manager.notify-fully-charged">
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+        </boolean>
+      </elements>
+    </policy>
+
+    <policy name="OrgMatePowerManagerEventWhenClosedBatteryUser" class="User"
+        displayName="$(string.org-mate-power-manager-event-when-closed-battery)"
+        explainText="$(string.org-mate-power-manager-event-when-closed-battery_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        valueName="org.mate.power-manager.event-when-closed-battery">
+      <parentCategory ref="system:ALT_Power_Manager_Battery_Mate" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+    </policy>
+
+    <policy name="OrgMatePowerManagerEventWhenClosedBatteryMachine" class="Machine"
+        displayName="$(string.org-mate-power-manager-event-when-closed-battery)"
+        explainText="$(string.org-mate-power-manager-event-when-closed-battery_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        valueName="org.mate.power-manager.event-when-closed-battery"
+        presentation="$(presentation.OrgMatePowerManagerEventWhenClosedBatteryMachine-pr)">
+      <parentCategory ref="system:ALT_Power_Manager_Battery_Mate" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+      <elements>
+        <boolean id="OrgMatePowerManagerEventWhenClosedBattery_setter_blocker" key="Software\BaseALT\Policies\GSettingsLocks" valueName="org.mate.power-manager.event-when-closed-battery">
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+        </boolean>
+      </elements>
+    </policy>
+
+    <policy name="OrgMatePowerManagerNotifySleepFailedUriUser" class="User"
+        displayName="$(string.org-mate-power-manager-notify-sleep-failed-uri)"
+        explainText="$(string.org-mate-power-manager-notify-sleep-failed-uri_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        presentation="$(presentation.OrgMatePowerManagerNotifySleepFailedUriUser-pr)">
+      <parentCategory ref="system:ALT_Power_Manager_Mate" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <elements>
+        <text id="OrgMatePowerManagerNotifySleepFailedUri_setter" valueName="org.mate.power-manager.notify-sleep-failed-uri" />
+      </elements>
+    </policy>
+
+    <policy name="OrgMatePowerManagerNotifySleepFailedUriMachine" class="Machine"
+        displayName="$(string.org-mate-power-manager-notify-sleep-failed-uri)"
+        explainText="$(string.org-mate-power-manager-notify-sleep-failed-uri_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        presentation="$(presentation.OrgMatePowerManagerNotifySleepFailedUriMachine-pr)">
+      <parentCategory ref="system:ALT_Power_Manager_Mate" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <elements>
+        <text id="OrgMatePowerManagerNotifySleepFailedUri_setter" valueName="org.mate.power-manager.notify-sleep-failed-uri" />
+        <boolean id="OrgMatePowerManagerNotifySleepFailed_setter_blocker" key="Software\BaseALT\Policies\GSettingsLocks" valueName="org.mate.power-manager.notify-sleep-failed-uri">
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+        </boolean>
+      </elements>
+    </policy>
+
+    <policy name="OrgMatePowerManagerBacklightEnableUser" class="User"
+        displayName="$(string.org-mate-power-manager-backlight-enable)"
+        explainText="$(string.org-mate-power-manager-backlight-enable_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        valueName="org.mate.power-manager.backlight-enable">
+      <parentCategory ref="system:ALT_Power_Manager_Battery_Mate" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+    </policy>
+
+    <policy name="OrgMatePowerManagerBacklightEnableMachine" class="Machine"
+        displayName="$(string.org-mate-power-manager-backlight-enable)"
+        explainText="$(string.org-mate-power-manager-backlight-enable_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        valueName="org.mate.power-manager.backlight-enable"
+        presentation="$(presentation.OrgMatePowerManagerBacklightEnableMachine-pr)">
+      <parentCategory ref="system:ALT_Power_Manager_Battery_Mate" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+      <elements>
+        <boolean id="OrgMatePowerManagerBacklightEnable_setter_blocker" key="Software\BaseALT\Policies\GSettingsLocks" valueName="org.mate.power-manager.backlight-enable">
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+        </boolean>
+      </elements>
+    </policy>
+
+    <policy name="OrgMatePowerManagerDpmsMethodBatteryUser" class="User"
+        displayName="$(string.org-mate-power-manager-dpms-method-battery)"
+        explainText="$(string.org-mate-power-manager-dpms-method-battery_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        presentation="$(presentation.OrgMatePowerManagerDpmsMethodBatteryUser-pr)" >
+      <parentCategory ref="system:ALT_Power_Manager_Battery_Mate" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <elements>
+        <enum id="OrgMatePowerManagerDpmsMethodBattery_setter" required="true" valueName="org.mate.power-manager.dpms-method-battery">
+          <item displayName="$(string.org-mate-power-manager-dpms-method-battery_standby)">
+            <value>
+              <string>standby</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-power-manager-dpms-method-battery_suspend)">
+            <value>
+              <string>suspend</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-power-manager-dpms-method-battery_off)">
+            <value>
+              <string>off</string>
+            </value>
+          </item>
+        </enum>
+      </elements>
+    </policy>
+
+    <policy name="OrgMatePowerManagerDpmsMethodBatteryMachine" class="Machine"
+        displayName="$(string.org-mate-power-manager-dpms-method-battery)"
+        explainText="$(string.org-mate-power-manager-dpms-method-battery_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        presentation="$(presentation.OrgMatePowerManagerDpmsMethodBatteryMachine-pr)" >
+      <parentCategory ref="system:ALT_Power_Manager_Battery_Mate" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <elements>
+        <enum id="OrgMatePowerManagerDpmsMethodBattery_setter" required="true" valueName="org.mate.power-manager.dpms-method-battery">
+          <item displayName="$(string.org-mate-power-manager-dpms-method-battery_standby)">
+            <value>
+              <string>standby</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-power-manager-dpms-method-battery_suspend)">
+            <value>
+              <string>suspend</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-power-manager-dpms-method-battery_off)">
+            <value>
+              <string>off</string>
+            </value>
+          </item>
+        </enum>
+        <boolean id="OrgMatePowerManagerDpmsMethodBattery_setter_blocker" key="Software\BaseALT\Policies\GSettingsLocks" valueName="org.mate.power-manager.dpms-method-battery">
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+        </boolean>
+      </elements>
+    </policy>
+
+    <policy name="OrgMatePowerManagerNotifyLowCapacityMouseUser" class="User"
+        displayName="$(string.org-mate-power-manager-notify-low-capacity-mouse)"
+        explainText="$(string.org-mate-power-manager-notify-low-capacity-mouse_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        valueName="org.mate.power-manager.notify-low-capacity-mouse">
+      <parentCategory ref="system:ALT_Power_Manager_Battery_Mate" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+    </policy>
+
+    <policy name="OrgMatePowerManagerNotifyLowCapacityMouseMachine" class="Machine"
+        displayName="$(string.org-mate-power-manager-notify-low-capacity-mouse)"
+        explainText="$(string.org-mate-power-manager-notify-low-capacity-mouse_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        valueName="org.mate.power-manager.notify-low-capacity-mouse"
+        presentation="$(presentation.OrgMatePowerManagerNotifyLowCapacityMouseMachine-pr)" >
+      <parentCategory ref="system:ALT_Power_Manager_Battery_Mate" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+      <elements>
+        <boolean id="OrgMatePowerManagerNotifyLowCapacityMouse_setter_blocker" key="Software\BaseALT\Policies\GSettingsLocks" valueName="org.mate.power-manager.notify-low-capacity-mouse">
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+        </boolean>
+      </elements>
+    </policy>
+
+    <policy name="OrgMatePowerManagerLockUseScreensaverUser" class="User"
+        displayName="$(string.org-mate-power-manager-lock-use-screensaver)"
+        explainText="$(string.org-mate-power-manager-lock-use-screensaver_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        valueName="org.mate.power-manager.lock-use-screensaver">
+      <parentCategory ref="system:ALT_Power_Manager_Mate" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+    </policy>
+
+    <policy name="OrgMatePowerManagerLockUseScreensaverMachine" class="Machine"
+        displayName="$(string.org-mate-power-manager-lock-use-screensaver)"
+        explainText="$(string.org-mate-power-manager-lock-use-screensaver_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        valueName="org.mate.power-manager.lock-use-screensaver"
+        presentation="$(presentation.OrgMatePowerManagerLockUseScreensaverMachine-pr)" >
+      <parentCategory ref="system:ALT_Power_Manager_Mate" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+      <elements>
+        <boolean id="OrgMatePowerManagerLockUseScreensaver_setter_blocker" key="Software\BaseALT\Policies\GSettingsLocks" valueName="org.mate.power-manager.lock-use-screensaver">
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+        </boolean>
+      </elements>
+    </policy>
+
+    <policy name="OrgMatePowerManagerButtonSuspendUser" class="User"
+        displayName="$(string.org-mate-power-manager-button-suspend)"
+        explainText="$(string.org-mate-power-manager-button-suspend_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        presentation="$(presentation.OrgMatePowerManagerButtonSuspendUser-pr)" >
+      <parentCategory ref="system:ALT_Power_Manager_Mate" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <elements>
+        <enum id="OrgMatePowerManagerButtonSuspend_setter" required="true" valueName="org.mate.power-manager.button-suspend">
+          <item displayName="$(string.org-mate-power-manager-button-suspend_blank)">
+            <value>
+              <string>blank</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-power-manager-button-suspend_suspend)">
+            <value>
+              <string>suspend</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-power-manager-button-suspend_shutdown)">
+            <value>
+              <string>shutdown</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-power-manager-button-suspend_hibernate)">
+            <value>
+              <string>hibernate</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-power-manager-button-suspend_interactive)">
+            <value>
+              <string>interactive</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-power-manager-button-suspend_nothing)">
+            <value>
+              <string>nothing</string>
+            </value>
+          </item>
+        </enum>
+      </elements>
+    </policy>
+
+    <policy name="OrgMatePowerManagerButtonSuspendMachine" class="Machine"
+        displayName="$(string.org-mate-power-manager-button-suspend)"
+        explainText="$(string.org-mate-power-manager-button-suspend_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        presentation="$(presentation.OrgMatePowerManagerButtonSuspendMachine-pr)" >
+      <parentCategory ref="system:ALT_Power_Manager_Mate" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <elements>
+        <enum id="OrgMatePowerManagerButtonSuspend_setter" required="true" valueName="org.mate.power-manager.button-suspend">
+          <item displayName="$(string.org-mate-power-manager-button-suspend_blank)">
+            <value>
+              <string>blank</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-power-manager-button-suspend_suspend)">
+            <value>
+              <string>suspend</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-power-manager-button-suspend_shutdown)">
+            <value>
+              <string>shutdown</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-power-manager-button-suspend_hibernate)">
+            <value>
+              <string>hibernate</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-power-manager-button-suspend_interactive)">
+            <value>
+              <string>interactive</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-power-manager-button-suspend_nothing)">
+            <value>
+              <string>nothing</string>
+            </value>
+          </item>
+        </enum>
+        <boolean id="OrgMatePowerManagerButtonSuspend_setter_blocker" key="Software\BaseALT\Policies\GSettingsLocks" valueName="org.mate.power-manager.button-suspend">
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+        </boolean>
+      </elements>
+    </policy>
+
+    <policy name="OrgMatePowerManagerLockSuspendUser" class="User"
+        displayName="$(string.org-mate-power-manager-lock-suspend)"
+        explainText="$(string.org-mate-power-manager-lock-suspend_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        valueName="org.mate.power-manager.lock-suspend">
+      <parentCategory ref="system:ALT_Power_Manager_Mate" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+    </policy>
+
+    <policy name="OrgMatePowerManagerLockSuspendMachine" class="Machine"
+        displayName="$(string.org-mate-power-manager-lock-suspend)"
+        explainText="$(string.org-mate-power-manager-lock-suspend_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        valueName="org.mate.power-manager.lock-suspend"
+        presentation="$(presentation.OrgMatePowerManagerLockSuspendMachine-pr)" >
+      <parentCategory ref="system:ALT_Power_Manager_Mate" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+      <elements>
+        <boolean id="OrgMatePowerManagerLockSuspend_setter_blocker" key="Software\BaseALT\Policies\GSettingsLocks" valueName="org.mate.power-manager.lock-suspend">
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+        </boolean>
+      </elements>
+    </policy>
+
+    <policy name="OrgMatePowerManagerButtonLidAcUser" class="User"
+        displayName="$(string.org-mate-power-manager-button-lid-ac)"
+        explainText="$(string.org-mate-power-manager-button-lid-ac_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        presentation="$(presentation.OrgMatePowerManagerButtonLidAcUser-pr)" >
+      <parentCategory ref="system:ALT_Power_Manager_AC_Mate" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <elements>
+        <enum id="OrgMatePowerManagerButtonLidAc_setter" required="true" valueName="org.mate.power-manager.button-lid-ac">
+          <item displayName="$(string.org-mate-power-manager-button-lid-ac_blank)">
+            <value>
+              <string>blank</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-power-manager-button-lid-ac_suspend)">
+            <value>
+              <string>suspend</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-power-manager-button-lid-ac_shutdown)">
+            <value>
+              <string>shutdown</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-power-manager-button-lid-ac_hibernate)">
+            <value>
+              <string>hibernate</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-power-manager-button-lid-ac_interactive)">
+            <value>
+              <string>interactive</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-power-manager-button-lid-ac_nothing)">
+            <value>
+              <string>nothing</string>
+            </value>
+          </item>
+        </enum>
+      </elements>
+    </policy>
+
+    <policy name="OrgMatePowerManagerButtonLidAcMachine" class="Machine"
+        displayName="$(string.org-mate-power-manager-button-lid-ac)"
+        explainText="$(string.org-mate-power-manager-button-lid-ac_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        presentation="$(presentation.OrgMatePowerManagerButtonLidAcMachine-pr)" >
+      <parentCategory ref="system:ALT_Power_Manager_AC_Mate" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <elements>
+        <enum id="OrgMatePowerManagerButtonLidAc_setter" required="true" valueName="org.mate.power-manager.button-lid-ac">
+          <item displayName="$(string.org-mate-power-manager-button-lid-ac_blank)">
+            <value>
+              <string>blank</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-power-manager-button-lid-ac_suspend)">
+            <value>
+              <string>suspend</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-power-manager-button-lid-ac_shutdown)">
+            <value>
+              <string>shutdown</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-power-manager-button-lid-ac_hibernate)">
+            <value>
+              <string>hibernate</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-power-manager-button-lid-ac_interactive)">
+            <value>
+              <string>interactive</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-power-manager-button-lid-ac_nothing)">
+            <value>
+              <string>nothing</string>
+            </value>
+          </item>
+        </enum>
+        <boolean id="OrgMatePowerManagerButtonLidAc_setter_blocker" key="Software\BaseALT\Policies\GSettingsLocks" valueName="org.mate.power-manager.button-lid-ac">
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+        </boolean>
+      </elements>
+    </policy>
+
+    <policy name="OrgMatePowerManagerButtonLidBatteryUser" class="User"
+        displayName="$(string.org-mate-power-manager-button-lid-battery)"
+        explainText="$(string.org-mate-power-manager-button-lid-battery_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        presentation="$(presentation.OrgMatePowerManagerButtonLidBatteryUser-pr)" >
+      <parentCategory ref="system:ALT_Power_Manager_Battery_Mate" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <elements>
+        <enum id="OrgMatePowerManagerButtonLidBattery_setter" required="true" valueName="org.mate.power-manager.button-lid-battery">
+          <item displayName="$(string.org-mate-power-manager-button-lid-battery_blank)">
+            <value>
+              <string>blank</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-power-manager-button-lid-battery_suspend)">
+            <value>
+              <string>suspend</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-power-manager-button-lid-battery_shutdown)">
+            <value>
+              <string>shutdown</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-power-manager-button-lid-battery_hibernate)">
+            <value>
+              <string>hibernate</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-power-manager-button-lid-battery_interactive)">
+            <value>
+              <string>interactive</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-power-manager-button-lid-battery_nothing)">
+            <value>
+              <string>nothing</string>
+            </value>
+          </item>
+        </enum>
+      </elements>
+    </policy>
+
+    <policy name="OrgMatePowerManagerButtonLidBatteryMachine" class="Machine"
+        displayName="$(string.org-mate-power-manager-button-lid-battery)"
+        explainText="$(string.org-mate-power-manager-button-lid-battery_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        presentation="$(presentation.OrgMatePowerManagerButtonLidBatteryMachine-pr)" >
+      <parentCategory ref="system:ALT_Power_Manager_Battery_Mate" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <elements>
+        <enum id="OrgMatePowerManagerButtonLidBattery_setter" required="true" valueName="org.mate.power-manager.button-lid-battery">
+          <item displayName="$(string.org-mate-power-manager-button-lid-battery_blank)">
+            <value>
+              <string>blank</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-power-manager-button-lid-battery_suspend)">
+            <value>
+              <string>suspend</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-power-manager-button-lid-battery_shutdown)">
+            <value>
+              <string>shutdown</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-power-manager-button-lid-battery_hibernate)">
+            <value>
+              <string>hibernate</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-power-manager-button-lid-battery_interactive)">
+            <value>
+              <string>interactive</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-power-manager-button-lid-battery_nothing)">
+            <value>
+              <string>nothing</string>
+            </value>
+          </item>
+        </enum>
+        <boolean id="OrgMatePowerManagerButtonLidBattery_setter_blocker" key="Software\BaseALT\Policies\GSettingsLocks" valueName="org.mate.power-manager.button-lid-battery">
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+        </boolean>
+      </elements>
+    </policy>
+
+    <policy name="OrgMatePowerManagerIconPolicyUser" class="User"
+        displayName="$(string.org-mate-power-manager-icon-policy)"
+        explainText="$(string.org-mate-power-manager-icon-policy_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        presentation="$(presentation.OrgMatePowerManagerIconPolicyUser-pr)" >
+      <parentCategory ref="system:ALT_Power_Manager_Mate" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <elements>
+        <enum id="OrgMatePowerManagerIconPolicy_setter" required="true" valueName="org.mate.power-manager.icon-policy">
+          <item displayName="$(string.org-mate-power-manager-icon-policy_always)">
+            <value>
+              <string>always</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-power-manager-icon-policy_present)">
+            <value>
+              <string>present</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-power-manager-icon-policy_charge)">
+            <value>
+              <string>charge</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-power-manager-icon-policy_low)">
+            <value>
+              <string>low</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-power-manager-icon-policy_critical)">
+            <value>
+              <string>critical</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-power-manager-icon-policy_never)">
+            <value>
+              <string>never</string>
+            </value>
+          </item>
+        </enum>
+      </elements>
+    </policy>
+
+    <policy name="OrgMatePowerManagerIconPolicyMachine" class="Machine"
+        displayName="$(string.org-mate-power-manager-icon-policy)"
+        explainText="$(string.org-mate-power-manager-icon-policy_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        presentation="$(presentation.OrgMatePowerManagerIconPolicyMachine-pr)" >
+      <parentCategory ref="system:ALT_Power_Manager_Mate" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <elements>
+        <enum id="OrgMatePowerManagerIconPolicy_setter" required="true" valueName="org.mate.power-manager.icon-policy">
+          <item displayName="$(string.org-mate-power-manager-icon-policy_always)">
+            <value>
+              <string>always</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-power-manager-icon-policy_present)">
+            <value>
+              <string>present</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-power-manager-icon-policy_charge)">
+            <value>
+              <string>charge</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-power-manager-icon-policy_low)">
+            <value>
+              <string>low</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-power-manager-icon-policy_critical)">
+            <value>
+              <string>critical</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-power-manager-icon-policy_never)">
+            <value>
+              <string>never</string>
+            </value>
+          </item>
+        </enum>
+        <boolean id="OrgMatePowerManagerIconPolicy_setter_blocker" key="Software\BaseALT\Policies\GSettingsLocks" valueName="org.mate.power-manager.icon-policy">
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+        </boolean>
+      </elements>
+    </policy>
+
+    <policy name="OrgMatePowerManagerTimeLowUser" class="User"
+        displayName="$(string.org-mate-power-manager-time-low)"
+        explainText="$(string.org-mate-power-manager-time-low_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        presentation="$(presentation.OrgMatePowerManagerTimeLowUser-pr)">
+      <parentCategory ref="system:ALT_Power_Manager_Battery_Mate" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <elements>
+        <decimal id="OrgMatePowerManagerTimeLow_setter" valueName="org.mate.power-manager.time-low" minValue="0" maxValue="2147483647" />
+      </elements>
+    </policy>
+
+    <policy name="OrgMatePowerManagerTimeLowMachine" class="Machine"
+        displayName="$(string.org-mate-power-manager-time-low)"
+        explainText="$(string.org-mate-power-manager-time-low_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        presentation="$(presentation.OrgMatePowerManagerTimeLowMachine-pr)">
+      <parentCategory ref="system:ALT_Power_Manager_Battery_Mate" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <elements>
+        <decimal id="OrgMatePowerManagerTimeLow_setter" valueName="org.mate.power-manager.time-low" minValue="0" maxValue="2147483647" />
+        <boolean id="OrgMatePowerManagerTimeLow_setter_blocker" key="Software\BaseALT\Policies\GSettingsLocks" valueName="org.mate.power-manager.time-low">
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+        </boolean>
+      </elements>
+    </policy>
+
+    <policy name="OrgMatePowerManagerPercentageActionUser" class="User"
+        displayName="$(string.org-mate-power-manager-percentage-action)"
+        explainText="$(string.org-mate-power-manager-percentage-action_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        presentation="$(presentation.OrgMatePowerManagerPercentageActionUser-pr)">
+      <parentCategory ref="system:ALT_Power_Manager_Battery_Mate" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <elements>
+        <decimal id="OrgMatePowerManagerPercentageAction_setter" valueName="org.mate.power-manager.percentage-action" minValue="0" maxValue="100" />
+      </elements>
+    </policy>
+
+    <policy name="OrgMatePowerManagerPercentageActionMachine" class="Machine"
+        displayName="$(string.org-mate-power-manager-percentage-action)"
+        explainText="$(string.org-mate-power-manager-percentage-action_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        presentation="$(presentation.OrgMatePowerManagerPercentageActionMachine-pr)">
+      <parentCategory ref="system:ALT_Power_Manager_Battery_Mate" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <elements>
+        <decimal id="OrgMatePowerManagerPercentageAction_setter" valueName="org.mate.power-manager.percentage-action" minValue="0" maxValue="100" />
+        <boolean id="OrgMatePowerManagerPercentageAction_setter_blocker" key="Software\BaseALT\Policies\GSettingsLocks" valueName="org.mate.power-manager.time-low">
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+        </boolean>
+      </elements>
+    </policy>
+
+    <policy name="OrgMatePowerManagerActionSleepTypeBatteryUser" class="User"
+        displayName="$(string.org-mate-power-manager-action-sleep-type-battery)"
+        explainText="$(string.org-mate-power-manager-action-sleep-type-battery_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        presentation="$(presentation.OrgMatePowerManagerActionSleepTypeBatteryUser-pr)" >
+      <parentCategory ref="system:ALT_Power_Manager_Battery_Mate" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <elements>
+        <enum id="OrgMatePowerManagerActionSleepTypeBattery_setter" required="true" valueName="org.mate.power-manager.action-sleep-type-battery">
+          <item displayName="$(string.org-mate-power-manager-action-sleep-type-battery_blank)">
+            <value>
+              <string>blank</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-power-manager-action-sleep-type-battery_suspend)">
+            <value>
+              <string>suspend</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-power-manager-action-sleep-type-battery_shutdown)">
+            <value>
+              <string>shutdown</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-power-manager-action-sleep-type-battery_hibernate)">
+            <value>
+              <string>hibernate</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-power-manager-action-sleep-type-battery_interactive)">
+            <value>
+              <string>interactive</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-power-manager-action-sleep-type-battery_nothing)">
+            <value>
+              <string>nothing</string>
+            </value>
+          </item>
+        </enum>
+      </elements>
+    </policy>
+
+    <policy name="OrgMatePowerManagerActionSleepTypeBatteryMachine" class="Machine"
+        displayName="$(string.org-mate-power-manager-action-sleep-type-battery)"
+        explainText="$(string.org-mate-power-manager-action-sleep-type-battery_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        presentation="$(presentation.OrgMatePowerManagerActionSleepTypeBatteryMachine-pr)" >
+      <parentCategory ref="system:ALT_Power_Manager_Battery_Mate" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <elements>
+        <enum id="OrgMatePowerManagerActionSleepTypeBattery_setter" required="true" valueName="org.mate.power-manager.action-sleep-type-battery">
+          <item displayName="$(string.org-mate-power-manager-action-sleep-type-battery_blank)">
+            <value>
+              <string>blank</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-power-manager-action-sleep-type-battery_suspend)">
+            <value>
+              <string>suspend</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-power-manager-action-sleep-type-battery_shutdown)">
+            <value>
+              <string>shutdown</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-power-manager-action-sleep-type-battery_hibernate)">
+            <value>
+              <string>hibernate</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-power-manager-action-sleep-type-battery_interactive)">
+            <value>
+              <string>interactive</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-power-manager-action-sleep-type-battery_nothing)">
+            <value>
+              <string>nothing</string>
+            </value>
+          </item>
+        </enum>
+        <boolean id="OrgMatePowerManagerActionSleepTypeBattery_setter_blocker" key="Software\BaseALT\Policies\GSettingsLocks" valueName="org.mate.power-manager.action-sleep-type-battery">
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+        </boolean>
+      </elements>
+    </policy>
+
+    <policy name="OrgMatePowerManagerIdleDimBatteryUser" class="User"
+        displayName="$(string.org-mate-power-manager-idle-dim-battery)"
+        explainText="$(string.org-mate-power-manager-idle-dim-battery_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        valueName="org.mate.power-manager.idle-dim-battery">
+      <parentCategory ref="system:ALT_Power_Manager_Battery_Mate" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+    </policy>
+
+    <policy name="OrgMatePowerManagerIdleDimBatteryMachine" class="Machine"
+        displayName="$(string.org-mate-power-manager-idle-dim-battery)"
+        explainText="$(string.org-mate-power-manager-idle-dim-battery_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        valueName="org.mate.power-manager.idle-dim-battery"
+        presentation="$(presentation.OrgMatePowerManagerIdleDimBatteryMachine-pr)" >
+      <parentCategory ref="system:ALT_Power_Manager_Battery_Mate" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+      <elements>
+        <boolean id="OrgMatePowerManagerIdleDimBattery_setter_blocker" key="Software\BaseALT\Policies\GSettingsLocks" valueName="org.mate.power-manager.idle-dim-battery">
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+        </boolean>
+      </elements>
+    </policy>
+
+    <policy name="OrgMatePowerManagerSleepDisplayAcUser" class="User"
+        displayName="$(string.org-mate-power-manager-sleep-display-ac)"
+        explainText="$(string.org-mate-power-manager-sleep-display-ac_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        presentation="$(presentation.OrgMatePowerManagerSleepDisplayAcUser-pr)" >
+      <parentCategory ref="system:ALT_Power_Manager_AC_Mate" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <elements>
+        <decimal id="OrgMatePowerManagerSleepDisplayAc_setter" valueName="org.mate.power-manager.sleep-display-ac" minValue="0" maxValue="2147483647" />
+      </elements>
+    </policy>
+
+    <policy name="OrgMatePowerManagerSleepDisplayAcMachine" class="Machine"
+        displayName="$(string.org-mate-power-manager-sleep-display-ac)"
+        explainText="$(string.org-mate-power-manager-sleep-display-ac_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        presentation="$(presentation.OrgMatePowerManagerSleepDisplayAcMachine-pr)">
+      <parentCategory ref="system:ALT_Power_Manager_AC_Mate" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <elements>
+        <decimal id="OrgMatePowerManagerSleepDisplayAc_setter" valueName="org.mate.power-manager.sleep-display-ac" minValue="0" maxValue="2147483647" />
+        <boolean id="OrgMatePowerManagerSleepDisplayAc_setter_blocker" key="Software\BaseALT\Policies\GSettingsLocks" valueName="org.mate.power-manager.sleep-display-ac">
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+        </boolean>
+      </elements>
+    </policy>
+
+    <policy name="OrgMatePowerManagerNotifyLowPowerUser" class="User"
+        displayName="$(string.org-mate-power-manager-notify-low-power)"
+        explainText="$(string.org-mate-power-manager-notify-low-power_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        valueName="org.mate.power-manager.notify-low-power">
+      <parentCategory ref="system:ALT_Power_Manager_Battery_Mate" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+    </policy>
+
+    <policy name="OrgMatePowerManagerNotifyLowPowerMachine" class="Machine"
+        displayName="$(string.org-mate-power-manager-notify-low-power)"
+        explainText="$(string.org-mate-power-manager-notify-low-power_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        valueName="org.mate.power-manager.notify-low-power"
+        presentation="$(presentation.OrgMatePowerManagerNotifyLowPowerMachine-pr)">
+      <parentCategory ref="system:ALT_Power_Manager_Battery_Mate" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+      <elements>
+        <boolean id="OrgMatePowerManagerNotifyLowPower_setter_blocker" key="Software\BaseALT\Policies\GSettingsLocks" valueName="org.mate.power-manager.notify-low-power">
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+        </boolean>
+      </elements>
+    </policy>
+
+    <policy name="OrgMatePowerManagerLockBlankScreenUser" class="User"
+        displayName="$(string.org-mate-power-manager-lock-blank-screen)"
+        explainText="$(string.org-mate-power-manager-lock-blank-screen_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        valueName="org.mate.power-manager.lock-blank-screen">
+      <parentCategory ref="system:ALT_Power_Manager_Mate" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+    </policy>
+
+    <policy name="OrgMatePowerManagerLockBlankScreenMachine" class="Machine"
+        displayName="$(string.org-mate-power-manager-lock-blank-screen)"
+        explainText="$(string.org-mate-power-manager-lock-blank-screen_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        valueName="org.mate.power-manager.lock-blank-screen"
+        presentation="$(presentation.OrgMatePowerManagerLockBlankScreenMachine-pr)">
+      <parentCategory ref="system:ALT_Power_Manager_Mate" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+      <elements>
+        <boolean id="OrgMatePowerManagerLockBlankScreen_setter_blocker" key="Software\BaseALT\Policies\GSettingsLocks" valueName="org.mate.power-manager.lock-blank-screen">
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+        </boolean>
+      </elements>
+    </policy>
+
+    <policy name="OrgMatePowerManagerShowActionsUser" class="User"
+        displayName="$(string.org-mate-power-manager-show-actions)"
+        explainText="$(string.org-mate-power-manager-show-actions_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        valueName="org.mate.power-manager.show-actions">
+      <parentCategory ref="system:ALT_Power_Manager_Mate" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+    </policy>
+
+    <policy name="OrgMatePowerManagerShowActionsMachine" class="Machine"
+        displayName="$(string.org-mate-power-manager-show-actions)"
+        explainText="$(string.org-mate-power-manager-show-actions_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        valueName="org.mate.power-manager.show-actions"
+        presentation="$(presentation.OrgMatePowerManagerShowActionsMachine-pr)">
+      <parentCategory ref="system:ALT_Power_Manager_Mate" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+      <elements>
+        <boolean id="OrgMatePowerManagerShowActions_setter_blocker" key="Software\BaseALT\Policies\GSettingsLocks" valueName="org.mate.power-manager.show-actions">
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+        </boolean>
+      </elements>
+    </policy>
+
+    <policy name="OrgMatePowerManagerInfoStatsGraphSmoothUser" class="User"
+        displayName="$(string.org-mate-power-manager-info-stats-graph-smooth)"
+        explainText="$(string.org-mate-power-manager-info-stats-graph-smooth_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        valueName="org.mate.power-manager.info-stats-graph-smooth">
+      <parentCategory ref="system:ALT_Power_Manager_Mate" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+    </policy>
+
+    <policy name="OrgMatePowerManagerInfoStatsGraphSmoothMachine" class="Machine"
+        displayName="$(string.org-mate-power-manager-info-stats-graph-smooth)"
+        explainText="$(string.org-mate-power-manager-info-stats-graph-smooth_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        valueName="org.mate.power-manager.info-stats-graph-smooth"
+        presentation="$(presentation.OrgMatePowerManagerInfoStatsGraphSmoothMachine-pr)">
+      <parentCategory ref="system:ALT_Power_Manager_Mate" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+      <elements>
+        <boolean id="OrgMatePowerManagerInfoStatsGraphSmooth_setter_blocker" key="Software\BaseALT\Policies\GSettingsLocks" valueName="org.mate.power-manager.info-stats-graph-smooth">
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+        </boolean>
+      </elements>
+    </policy>
+
+    <policy name="OrgMatePowerManagerIdleDimAcUser" class="User"
+        displayName="$(string.org-mate-power-manager-idle-dim-ac)"
+        explainText="$(string.org-mate-power-manager-idle-dim-ac_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        valueName="org.mate.power-manager.idle-dim-ac">
+      <parentCategory ref="system:ALT_Power_Manager_AC_Mate" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+    </policy>
+
+    <policy name="OrgMatePowerManagerIdleDimAcMachine" class="Machine"
+        displayName="$(string.org-mate-power-manager-idle-dim-ac)"
+        explainText="$(string.org-mate-power-manager-idle-dim-ac_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        valueName="org.mate.power-manager.idle-dim-ac"
+        presentation="$(presentation.OrgMatePowerManagerIdleDimAcMachine-pr)">
+      <parentCategory ref="system:ALT_Power_Manager_AC_Mate" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+      <elements>
+        <boolean id="OrgMatePowerManagerIdleDimAc_setter_blocker" key="Software\BaseALT\Policies\GSettingsLocks" valueName="org.mate.power-manager.idle-dim-ac">
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+        </boolean>
+      </elements>
+    </policy>
+
+    <policy name="OrgMatePowerManagerButtonPowerUser" class="User"
+        displayName="$(string.org-mate-power-manager-button-power)"
+        explainText="$(string.org-mate-power-manager-button-power_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        presentation="$(presentation.OrgMatePowerManagerButtonPowerUser-pr)" >
+      <parentCategory ref="system:ALT_Power_Manager_Mate" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <elements>
+        <enum id="OrgMatePowerManagerButtonPower_setter" required="true" valueName="org.mate.power-manager.button-power">
+          <item displayName="$(string.org-mate-power-manager-button-power_blank)">
+            <value>
+              <string>blank</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-power-manager-button-power_suspend)">
+            <value>
+              <string>suspend</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-power-manager-button-power_shutdown)">
+            <value>
+              <string>shutdown</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-power-manager-button-power_hibernate)">
+            <value>
+              <string>hibernate</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-power-manager-button-power_interactive)">
+            <value>
+              <string>interactive</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-power-manager-button-power_nothing)">
+            <value>
+              <string>nothing</string>
+            </value>
+          </item>
+        </enum>
+      </elements>
+    </policy>
+
+    <policy name="OrgMatePowerManagerButtonPowerMachine" class="Machine"
+        displayName="$(string.org-mate-power-manager-button-power)"
+        explainText="$(string.org-mate-power-manager-button-power_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        presentation="$(presentation.OrgMatePowerManagerButtonPowerMachine-pr)" >
+      <parentCategory ref="system:ALT_Power_Manager_Mate" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <elements>
+        <enum id="OrgMatePowerManagerButtonPower_setter" required="true" valueName="org.mate.power-manager.button-power">
+          <item displayName="$(string.org-mate-power-manager-button-power_blank)">
+            <value>
+              <string>blank</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-power-manager-button-power_suspend)">
+            <value>
+              <string>suspend</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-power-manager-button-power_shutdown)">
+            <value>
+              <string>shutdown</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-power-manager-button-power_hibernate)">
+            <value>
+              <string>hibernate</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-power-manager-button-power_interactive)">
+            <value>
+              <string>interactive</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-power-manager-button-power_nothing)">
+            <value>
+              <string>nothing</string>
+            </value>
+          </item>
+        </enum>
+        <boolean id="OrgMatePowerManagerButtonPower_setter_blocker" key="Software\BaseALT\Policies\GSettingsLocks" valueName="org.mate.power-manager.button-power">
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+        </boolean>
+      </elements>
+    </policy>
+
+    <policy name="OrgMatePowerManagerIdleBrightnessUser" class="User"
+        displayName="$(string.org-mate-power-manager-idle-brightness)"
+        explainText="$(string.org-mate-power-manager-idle-brightness_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        presentation="$(presentation.OrgMatePowerManagerIdleBrightnessUser-pr)">
+      <parentCategory ref="system:ALT_Power_Manager_Mate" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <elements>
+        <decimal id="OrgMatePowerManagerIdleBrightness_setter" valueName="org.mate.power-manager.idle-brightness" minValue="0" maxValue="2147483647" />
+      </elements>
+    </policy>
+
+    <policy name="OrgMatePowerManagerIdleBrightnessMachine" class="Machine"
+        displayName="$(string.org-mate-power-manager-idle-brightness)"
+        explainText="$(string.org-mate-power-manager-idle-brightness_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        presentation="$(presentation.OrgMatePowerManagerIdleBrightnessMachine-pr)">
+      <parentCategory ref="system:ALT_Power_Manager_Mate" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <elements>
+        <decimal id="OrgMatePowerManagerIdleBrightness_setter" valueName="org.mate.power-manager.idle-brightness" minValue="0" maxValue="2147483647" />
+        <boolean id="OrgMatePowerManagerIdleBrightness_setter_blocker" key="Software\BaseALT\Policies\GSettingsLocks" valueName="org.mate.power-manager.idle-brightness">
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+        </boolean>
+      </elements>
+    </policy>
+
+    <policy name="OrgMatePowerManagerKbdBrightnessDimByOnBatteryUser" class="User"
+        displayName="$(string.org-mate-power-manager-kbd-brightness-dim-by-on-battery)"
+        explainText="$(string.org-mate-power-manager-kbd-brightness-dim-by-on-battery_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        presentation="$(presentation.OrgMatePowerManagerKbdBrightnessDimByOnBatteryUser-pr)">
+      <parentCategory ref="system:ALT_Power_Manager_Battery_Mate" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <elements>
+        <decimal id="OrgMatePowerManagerKbdBrightnessDimByOnBattery_setter" valueName="org.mate.power-manager.kbd-brightness-dim-by-on-battery" minValue="0" maxValue="100" />
+      </elements>
+    </policy>
+
+    <policy name="OrgMatePowerManagerKbdBrightnessDimByOnBatteryMachine" class="Machine"
+        displayName="$(string.org-mate-power-manager-kbd-brightness-dim-by-on-battery)"
+        explainText="$(string.org-mate-power-manager-kbd-brightness-dim-by-on-battery_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        presentation="$(presentation.OrgMatePowerManagerKbdBrightnessDimByOnBatteryMachine-pr)">
+      <parentCategory ref="system:ALT_Power_Manager_Battery_Mate" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <elements>
+        <decimal id="OrgMatePowerManagerKbdBrightnessDimByOnBattery_setter" valueName="org.mate.power-manager.kbd-brightness-dim-by-on-battery" minValue="0" maxValue="100" />
+        <boolean id="OrgMatePowerManagerKbdBrightnessDimByOnBattery_setter_blocker" key="Software\BaseALT\Policies\GSettingsLocks" valueName="org.mate.power-manager.kbd-brightness-dim-by-on-battery">
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+        </boolean>
+      </elements>
+    </policy>
+
+    <policy name="OrgMatePowerManagerTimeActionUser" class="User"
+        displayName="$(string.org-mate-power-manager-time-action)"
+        explainText="$(string.org-mate-power-manager-time-action_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        presentation="$(presentation.OrgMatePowerManagerTimeActionUser-pr)">
+      <parentCategory ref="system:ALT_Power_Manager_Battery_Mate" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <elements>
+        <decimal id="OrgMatePowerManagerTimeAction_setter" valueName="org.mate.power-manager.time-action" minValue="0" maxValue="2147483647" />
+      </elements>
+    </policy>
+
+    <policy name="OrgMatePowerManagerTimeActionMachine" class="Machine"
+        displayName="$(string.org-mate-power-manager-time-action)"
+        explainText="$(string.org-mate-power-manager-time-action_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        presentation="$(presentation.OrgMatePowerManagerTimeActionMachine-pr)">
+      <parentCategory ref="system:ALT_Power_Manager_Battery_Mate" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <elements>
+        <decimal id="OrgMatePowerManagerTimeAction_setter" valueName="org.mate.power-manager.time-action" minValue="0" maxValue="2147483647" />
+        <boolean id="OrgMatePowerManagerTimeAction_setter_blocker" key="Software\BaseALT\Policies\GSettingsLocks" valueName="org.mate.power-manager.time-action">
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+        </boolean>
+      </elements>
+    </policy>
+
+    <policy name="OrgMatePowerManagerSleepComputerAcUser" class="User"
+        displayName="$(string.org-mate-power-manager-sleep-computer-ac)"
+        explainText="$(string.org-mate-power-manager-sleep-computer-ac_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        presentation="$(presentation.OrgMatePowerManagerSleepComputerAcUser-pr)">
+      <parentCategory ref="system:ALT_Power_Manager_AC_Mate" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <elements>
+        <decimal id="OrgMatePowerManagerSleepComputerAc_setter" valueName="org.mate.power-manager.sleep-computer-ac" minValue="0" maxValue="2147483647" />
+      </elements>
+    </policy>
+
+    <policy name="OrgMatePowerManagerSleepComputerAcMachine" class="Machine"
+        displayName="$(string.org-mate-power-manager-sleep-computer-ac)"
+        explainText="$(string.org-mate-power-manager-sleep-computer-ac_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        presentation="$(presentation.OrgMatePowerManagerSleepComputerAcMachine-pr)">
+      <parentCategory ref="system:ALT_Power_Manager_AC_Mate" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <elements>
+        <decimal id="OrgMatePowerManagerSleepComputerAc_setter" valueName="org.mate.power-manager.sleep-computer-ac" minValue="0" maxValue="2147483647" />
+        <boolean id="OrgMatePowerManagerSleepComputerAc_setter_blocker" key="Software\BaseALT\Policies\GSettingsLocks" valueName="org.mate.power-manager.sleep-computer-ac">
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+        </boolean>
+      </elements>
+    </policy>
+
+    <policy name="OrgMatePowerManagerSleepComputerBatteryUser" class="User"
+        displayName="$(string.org-mate-power-manager-sleep-computer-battery)"
+        explainText="$(string.org-mate-power-manager-sleep-computer-battery_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        presentation="$(presentation.OrgMatePowerManagerSleepComputerBatteryUser-pr)">
+      <parentCategory ref="system:ALT_Power_Manager_Battery_Mate" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <elements>
+        <decimal id="OrgMatePowerManagerSleepComputerBattery_setter" valueName="org.mate.power-manager.sleep-computer-battery" minValue="0" maxValue="2147483647" />
+      </elements>
+    </policy>
+
+    <policy name="OrgMatePowerManagerSleepComputerBatteryMachine" class="Machine"
+        displayName="$(string.org-mate-power-manager-sleep-computer-battery)"
+        explainText="$(string.org-mate-power-manager-sleep-computer-battery_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        presentation="$(presentation.OrgMatePowerManagerSleepComputerBatteryMachine-pr)">
+      <parentCategory ref="system:ALT_Power_Manager_Battery_Mate" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <elements>
+        <decimal id="OrgMatePowerManagerSleepComputerBattery_setter" valueName="org.mate.power-manager.sleep-computer-battery" minValue="0" maxValue="2147483647" />
+        <boolean id="OrgMatePowerManagerSleepComputerBattery_setter_blocker" key="Software\BaseALT\Policies\GSettingsLocks" valueName="org.mate.power-manager.sleep-computer-battery">
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+        </boolean>
+      </elements>
+    </policy>
+
+    <policy name="OrgMatePowerManagerTimeCriticalUser" class="User"
+        displayName="$(string.org-mate-power-manager-time-critical)"
+        explainText="$(string.org-mate-power-manager-time-critical_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        presentation="$(presentation.OrgMatePowerManagerTimeCriticalUser-pr)">
+      <parentCategory ref="system:ALT_Power_Manager_Battery_Mate" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <elements>
+        <decimal id="OrgMatePowerManagerTimeCritical_setter" valueName="org.mate.power-manager.time-critical" minValue="0" maxValue="2147483647" />
+      </elements>
+    </policy>
+
+    <policy name="OrgMatePowerManagerTimeCriticalMachine" class="Machine"
+        displayName="$(string.org-mate-power-manager-time-critical)"
+        explainText="$(string.org-mate-power-manager-time-critical_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        presentation="$(presentation.OrgMatePowerManagerTimeCriticalMachine-pr)">
+      <parentCategory ref="system:ALT_Power_Manager_Battery_Mate" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <elements>
+        <decimal id="OrgMatePowerManagerTimeCritical_setter" valueName="org.mate.power-manager.time-critical" minValue="0" maxValue="2147483647" />
+        <boolean id="OrgMatePowerManagerTimeCritical_setter_blocker" key="Software\BaseALT\Policies\GSettingsLocks" valueName="org.mate.power-manager.time-critical">
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+        </boolean>
+      </elements>
+    </policy>
+
+    <policy name="OrgMatePowerManagerNotifySleepFailedUser" class="User"
+        displayName="$(string.org-mate-power-manager-notify-sleep-failed)"
+        explainText="$(string.org-mate-power-manager-notify-sleep-failed_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        valueName="org.mate.power-manager.notify-sleep-failed">
+      <parentCategory ref="system:ALT_Power_Manager_Mate" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+    </policy>
+
+    <policy name="OrgMatePowerManagerNotifySleepFailedMachine" class="Machine"
+        displayName="$(string.org-mate-power-manager-notify-sleep-failed)"
+        explainText="$(string.org-mate-power-manager-notify-sleep-failed_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        valueName="org.mate.power-manager.notify-sleep-failed"
+        presentation="$(presentation.OrgMatePowerManagerNotifySleepFailedMachine-pr)">
+      <parentCategory ref="system:ALT_Power_Manager_Mate" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+      <elements>
+        <boolean id="OrgMatePowerManagerNotifySleepFailed_setter_blocker" key="Software\BaseALT\Policies\GSettingsLocks" valueName="org.mate.power-manager.notify-sleep-failed">
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+        </boolean>
+      </elements>
+    </policy>
+
+    <policy name="OrgMatePowerManagerButtonHibernateUser" class="User"
+        displayName="$(string.org-mate-power-manager-button-hibernate)"
+        explainText="$(string.org-mate-power-manager-button-hibernate_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        presentation="$(presentation.OrgMatePowerManagerButtonHibernateUser-pr)" >
+      <parentCategory ref="system:ALT_Power_Manager_Mate" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <elements>
+        <enum id="OrgMatePowerManagerButtonHibernate_setter" required="true" valueName="org.mate.power-manager.button-hibernate">
+          <item displayName="$(string.org-mate-power-manager-button-hibernate_blank)">
+            <value>
+              <string>blank</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-power-manager-button-hibernate_suspend)">
+            <value>
+              <string>suspend</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-power-manager-button-hibernate_shutdown)">
+            <value>
+              <string>shutdown</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-power-manager-button-hibernate_hibernate)">
+            <value>
+              <string>hibernate</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-power-manager-button-hibernate_interactive)">
+            <value>
+              <string>interactive</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-power-manager-button-hibernate_nothing)">
+            <value>
+              <string>nothing</string>
+            </value>
+          </item>
+        </enum>
+      </elements>
+    </policy>
+
+    <policy name="OrgMatePowerManagerButtonHibernateMachine" class="Machine"
+        displayName="$(string.org-mate-power-manager-button-hibernate)"
+        explainText="$(string.org-mate-power-manager-button-hibernate_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        presentation="$(presentation.OrgMatePowerManagerButtonHibernateMachine-pr)" >
+      <parentCategory ref="system:ALT_Power_Manager_Mate" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <elements>
+        <enum id="OrgMatePowerManagerButtonHibernate_setter" required="true" valueName="org.mate.power-manager.button-hibernate">
+          <item displayName="$(string.org-mate-power-manager-button-hibernate_blank)">
+            <value>
+              <string>blank</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-power-manager-button-hibernate_suspend)">
+            <value>
+              <string>suspend</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-power-manager-button-hibernate_shutdown)">
+            <value>
+              <string>shutdown</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-power-manager-button-hibernate_hibernate)">
+            <value>
+              <string>hibernate</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-power-manager-button-hibernate_interactive)">
+            <value>
+              <string>interactive</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-power-manager-button-hibernate_nothing)">
+            <value>
+              <string>nothing</string>
+            </value>
+          </item>
+        </enum>
+        <boolean id="OrgMatePowerManagerButtonHibernate_setter_blocker" key="Software\BaseALT\Policies\GSettingsLocks" valueName="org.mate.power-manager.button-hibernate">
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+        </boolean>
+      </elements>
+    </policy>
+
+    <policy name="OrgMatePowerManagerUseTimeForPolicyUser" class="User"
+        displayName="$(string.org-mate-power-manager-use-time-for-policy)"
+        explainText="$(string.org-mate-power-manager-use-time-for-policy_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        valueName="org.mate.power-manager.use-time-for-policy">
+      <parentCategory ref="system:ALT_Power_Manager_Battery_Mate" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+    </policy>
+
+    <policy name="OrgMatePowerManagerUseTimeForPolicyMachine" class="Machine"
+        displayName="$(string.org-mate-power-manager-use-time-for-policy)"
+        explainText="$(string.org-mate-power-manager-use-time-for-policy_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        valueName="org.mate.power-manager.use-time-for-policy"
+        presentation="$(presentation.OrgMatePowerManagerUseTimeForPolicyMachine-pr)" >
+      <parentCategory ref="system:ALT_Power_Manager_Battery_Mate" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+      <elements>
+        <boolean id="OrgMatePowerManagerUseTimeForPolicy_setter_blocker" key="Software\BaseALT\Policies\GSettingsLocks" valueName="org.mate.power-manager.use-time-for-policy">
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+        </boolean>
+      </elements>
+    </policy>
+
+    <policy name="OrgMatePowerManagerBacklightBatteryReduceUser" class="User"
+        displayName="$(string.org-mate-power-manager-backlight-battery-reduce)"
+        explainText="$(string.org-mate-power-manager-backlight-battery-reduce_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        valueName="org.mate.power-manager.backlight-battery-reduce">
+      <parentCategory ref="system:ALT_Power_Manager_Battery_Mate" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+    </policy>
+
+    <policy name="OrgMatePowerManagerBacklightBatteryReduceMachine" class="Machine"
+        displayName="$(string.org-mate-power-manager-backlight-battery-reduce)"
+        explainText="$(string.org-mate-power-manager-backlight-battery-reduce_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        valueName="org.mate.power-manager.backlight-battery-reduce"
+        presentation="$(presentation.OrgMatePowerManagerBacklightBatteryReduceMachine-pr)" >
+      <parentCategory ref="system:ALT_Power_Manager_Battery_Mate" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+      <elements>
+        <boolean id="OrgMatePowerManagerBacklightBatteryReduce_setter_blocker" key="Software\BaseALT\Policies\GSettingsLocks" valueName="org.mate.power-manager.backlight-battery-reduce">
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+        </boolean>
+      </elements>
+    </policy>
+
+    <policy name="OrgMatePowerManagerNotifyDischargingUser" class="User"
+        displayName="$(string.org-mate-power-manager-notify-discharging)"
+        explainText="$(string.org-mate-power-manager-notify-discharging_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        valueName="org.mate.power-manager.notify-discharging">
+      <parentCategory ref="system:ALT_Power_Manager_Mate" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+    </policy>
+
+    <policy name="OrgMatePowerManagerNotifyDischargingMachine" class="Machine"
+        displayName="$(string.org-mate-power-manager-notify-discharging)"
+        explainText="$(string.org-mate-power-manager-notify-discharging_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        valueName="org.mate.power-manager.notify-discharging"
+        presentation="$(presentation.OrgMatePowerManagerNotifyDischargingMachine-pr)" >
+      <parentCategory ref="system:ALT_Power_Manager_Mate" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+      <elements>
+        <boolean id="OrgMatePowerManagerNotifyDischarging_setter_blocker" key="Software\BaseALT\Policies\GSettingsLocks" valueName="org.mate.power-manager.notify-discharging">
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+        </boolean>
+      </elements>
+    </policy>
+
+    <policy name="OrgMatePowerManagerDpmsMethodAcUser" class="User"
+        displayName="$(string.org-mate-power-manager-dpms-method-ac)"
+        explainText="$(string.org-mate-power-manager-dpms-method-ac_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        presentation="$(presentation.OrgMatePowerManagerDpmsMethodAcUser-pr)" >
+      <parentCategory ref="system:ALT_Power_Manager_AC_Mate" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <elements>
+        <enum id="OrgMatePowerManagerDpmsMethodAc_setter" required="true" valueName="org.mate.power-manager.dpms-method-ac">
+          <item displayName="$(string.org-mate-power-manager-dpms-method-ac_standby)">
+            <value>
+              <string>standby</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-power-manager-dpms-method-ac_suspend)">
+            <value>
+              <string>suspend</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-power-manager-dpms-method-ac_off)">
+            <value>
+              <string>off</string>
+            </value>
+          </item>
+        </enum>
+      </elements>
+    </policy>
+
+    <policy name="OrgMatePowerManagerDpmsMethodAcMachine" class="Machine"
+        displayName="$(string.org-mate-power-manager-dpms-method-ac)"
+        explainText="$(string.org-mate-power-manager-dpms-method-ac_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        presentation="$(presentation.OrgMatePowerManagerDpmsMethodAcMachine-pr)" >
+      <parentCategory ref="system:ALT_Power_Manager_AC_Mate" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <elements>
+        <enum id="OrgMatePowerManagerDpmsMethodAc_setter" required="true" valueName="org.mate.power-manager.dpms-method-ac">
+          <item displayName="$(string.org-mate-power-manager-dpms-method-ac_standby)">
+            <value>
+              <string>standby</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-power-manager-dpms-method-ac_suspend)">
+            <value>
+              <string>suspend</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-power-manager-dpms-method-ac_off)">
+            <value>
+              <string>off</string>
+            </value>
+          </item>
+        </enum>
+        <boolean id="OrgMatePowerManagerDpmsMethodAc_setter_blocker" key="Software\BaseALT\Policies\GSettingsLocks" valueName="org.mate.power-manager.dpms-method-ac">
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+        </boolean>
+      </elements>
+    </policy>
+
+    <policy name="OrgMatePowerManagerSleepDisplayBatteryUser" class="User"
+        displayName="$(string.org-mate-power-manager-sleep-display-battery)"
+        explainText="$(string.org-mate-power-manager-sleep-display-battery_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        presentation="$(presentation.OrgMatePowerManagerSleepDisplayBatteryUser-pr)">
+      <parentCategory ref="system:ALT_Power_Manager_Battery_Mate" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <elements>
+        <decimal id="OrgMatePowerManagerSleepDisplayBattery_setter" valueName="org.mate.power-manager.sleep-display-battery" minValue="0" maxValue="2147483647" />
+      </elements>
+    </policy>
+
+    <policy name="OrgMatePowerManagerSleepDisplayBatteryMachine" class="Machine"
+        displayName="$(string.org-mate-power-manager-sleep-display-battery)"
+        explainText="$(string.org-mate-power-manager-sleep-display-battery_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        presentation="$(presentation.OrgMatePowerManagerSleepDisplayBatteryMachine-pr)">
+      <parentCategory ref="system:ALT_Power_Manager_Battery_Mate" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <elements>
+        <decimal id="OrgMatePowerManagerSleepDisplayBattery_setter" valueName="org.mate.power-manager.sleep-display-battery" minValue="0" maxValue="2147483647" />
+        <boolean id="OrgMatePowerManagerSleepDisplayBattery_setter_blocker" key="Software\BaseALT\Policies\GSettingsLocks" valueName="org.mate.power-manager.sleep-display-battery">
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+        </boolean>
+      </elements>
+    </policy>
+
+    <policy name="OrgMatePowerManagerPercentageLowUser" class="User"
+        displayName="$(string.org-mate-power-manager-percentage-low)"
+        explainText="$(string.org-mate-power-manager-percentage-low_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        presentation="$(presentation.OrgMatePowerManagerPercentageLowUser-pr)">
+      <parentCategory ref="system:ALT_Power_Manager_Battery_Mate" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <elements>
+        <decimal id="OrgMatePowerManagerPercentageLow_setter" valueName="org.mate.power-manager.percentage-low" minValue="0" maxValue="100" />
+      </elements>
+    </policy>
+
+    <policy name="OrgMatePowerManagerPercentageLowMachine" class="Machine"
+        displayName="$(string.org-mate-power-manager-percentage-low)"
+        explainText="$(string.org-mate-power-manager-percentage-low_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        presentation="$(presentation.OrgMatePowerManagerPercentageLowMachine-pr)">
+      <parentCategory ref="system:ALT_Power_Manager_Battery_Mate" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <elements>
+        <decimal id="OrgMatePowerManagerPercentageLow_setter" valueName="org.mate.power-manager.percentage-low" minValue="0" maxValue="100" />
+        <boolean id="OrgMatePowerManagerPercentageLow_setter_blocker" key="Software\BaseALT\Policies\GSettingsLocks" valueName="org.mate.power-manager.percentage-low">
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+        </boolean>
+      </elements>
+    </policy>
+
+    <policy name="OrgMatePowerManagerActionLowUpsUser" class="User"
+        displayName="$(string.org-mate-power-manager-action-low-ups)"
+        explainText="$(string.org-mate-power-manager-action-low-ups_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        presentation="$(presentation.OrgMatePowerManagerActionLowUpsUser-pr)" >
+      <parentCategory ref="system:ALT_Power_Manager_Mate" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <elements>
+        <enum id="OrgMatePowerManagerActionLowUps_setter" required="true" valueName="org.mate.power-manager.action-low-ups">
+          <item displayName="$(string.org-mate-power-manager-action-low-ups_blank)">
+            <value>
+              <string>blank</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-power-manager-action-low-ups_suspend)">
+            <value>
+              <string>suspend</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-power-manager-action-low-ups_shutdown)">
+            <value>
+              <string>shutdown</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-power-manager-action-low-ups_hibernate)">
+            <value>
+              <string>hibernate</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-power-manager-action-low-ups_interactive)">
+            <value>
+              <string>interactive</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-power-manager-action-low-ups_nothing)">
+            <value>
+              <string>nothing</string>
+            </value>
+          </item>
+        </enum>
+      </elements>
+    </policy>
+
+    <policy name="OrgMatePowerManagerActionLowUpsMachine" class="Machine"
+        displayName="$(string.org-mate-power-manager-action-low-ups)"
+        explainText="$(string.org-mate-power-manager-action-low-ups_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        presentation="$(presentation.OrgMatePowerManagerActionLowUpsMachine-pr)" >
+      <parentCategory ref="system:ALT_Power_Manager_Mate" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <elements>
+        <enum id="OrgMatePowerManagerActionLowUps_setter" required="true" valueName="org.mate.power-manager.action-low-ups">
+          <item displayName="$(string.org-mate-power-manager-action-low-ups_blank)">
+            <value>
+              <string>blank</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-power-manager-action-low-ups_suspend)">
+            <value>
+              <string>suspend</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-power-manager-action-low-ups_shutdown)">
+            <value>
+              <string>shutdown</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-power-manager-action-low-ups_hibernate)">
+            <value>
+              <string>hibernate</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-power-manager-action-low-ups_interactive)">
+            <value>
+              <string>interactive</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-power-manager-action-low-ups_nothing)">
+            <value>
+              <string>nothing</string>
+            </value>
+          </item>
+        </enum>
+        <boolean id="OrgMatePowerManagerActionLowUps_setter_blocker" key="Software\BaseALT\Policies\GSettingsLocks" valueName="org.mate.power-manager.action-low-ups">
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+        </boolean>
+      </elements>
+    </policy>
+
+    <policy name="OrgMatePowerManagerActionSleepTypeAcUser" class="User"
+        displayName="$(string.org-mate-power-manager-action-sleep-type-ac)"
+        explainText="$(string.org-mate-power-manager-action-sleep-type-ac_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        presentation="$(presentation.OrgMatePowerManagerActionSleepTypeAcUser-pr)" >
+      <parentCategory ref="system:ALT_Power_Manager_AC_Mate" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <elements>
+        <enum id="OrgMatePowerManagerActionSleepTypeAc_setter" required="true" valueName="org.mate.power-manager.action-sleep-type-ac">
+          <item displayName="$(string.org-mate-power-manager-action-sleep-type-ac_blank)">
+            <value>
+              <string>blank</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-power-manager-action-sleep-type-ac_suspend)">
+            <value>
+              <string>suspend</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-power-manager-action-sleep-type-ac_shutdown)">
+            <value>
+              <string>shutdown</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-power-manager-action-sleep-type-ac_hibernate)">
+            <value>
+              <string>hibernate</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-power-manager-action-sleep-type-ac_interactive)">
+            <value>
+              <string>interactive</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-power-manager-action-sleep-type-ac_nothing)">
+            <value>
+              <string>nothing</string>
+            </value>
+          </item>
+        </enum>
+      </elements>
+    </policy>
+
+    <policy name="OrgMatePowerManagerActionSleepTypeAcMachine" class="Machine"
+        displayName="$(string.org-mate-power-manager-action-sleep-type-ac)"
+        explainText="$(string.org-mate-power-manager-action-sleep-type-ac_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        presentation="$(presentation.OrgMatePowerManagerActionSleepTypeAcMachine-pr)" >
+      <parentCategory ref="system:ALT_Power_Manager_AC_Mate" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <elements>
+        <enum id="OrgMatePowerManagerActionSleepTypeAc_setter" required="true" valueName="org.mate.power-manager.action-sleep-type-ac">
+          <item displayName="$(string.org-mate-power-manager-action-sleep-type-ac_blank)">
+            <value>
+              <string>blank</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-power-manager-action-sleep-type-ac_suspend)">
+            <value>
+              <string>suspend</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-power-manager-action-sleep-type-ac_shutdown)">
+            <value>
+              <string>shutdown</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-power-manager-action-sleep-type-ac_hibernate)">
+            <value>
+              <string>hibernate</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-power-manager-action-sleep-type-ac_interactive)">
+            <value>
+              <string>interactive</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-power-manager-action-sleep-type-ac_nothing)">
+            <value>
+              <string>nothing</string>
+            </value>
+          </item>
+        </enum>
+        <boolean id="OrgMatePowerManagerActionSleepTypeAc_setter_blocker" key="Software\BaseALT\Policies\GSettingsLocks" valueName="org.mate.power-manager.action-sleep-type-ac">
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+        </boolean>
+      </elements>
+    </policy>
+
+    <policy name="OrgMatePowerManagerNotifyLowCapacityUser" class="User"
+        displayName="$(string.org-mate-power-manager-notify-low-capacity)"
+        explainText="$(string.org-mate-power-manager-notify-low-capacity_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        valueName="org.mate.power-manager.notify-low-capacity">
+      <parentCategory ref="system:ALT_Power_Manager_Battery_Mate" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+    </policy>
+
+    <policy name="OrgMatePowerManagerNotifyLowCapacityMachine" class="Machine"
+        displayName="$(string.org-mate-power-manager-notify-low-capacity)"
+        explainText="$(string.org-mate-power-manager-notify-low-capacity_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        valueName="org.mate.power-manager.notify-low-capacity"
+        presentation="$(presentation.OrgMatePowerManagerNotifyLowCapacityMachine-pr)" >
+      <parentCategory ref="system:ALT_Power_Manager_Battery_Mate" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+      <elements>
+        <boolean id="OrgMatePowerManagerNotifyLowCapacity_setter_blocker" key="Software\BaseALT\Policies\GSettingsLocks" valueName="org.mate.power-manager.notify-low-capacity">
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+        </boolean>
+      </elements>
+    </policy>
+
   </policies>
 </policyDefinitions>

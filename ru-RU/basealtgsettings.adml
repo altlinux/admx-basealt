@@ -164,6 +164,207 @@
       <string id="org-gnome-vino-notify-on-connect">Уведомление о подключении</string>
       <string id="org-gnome-vino-notify-on-connect_help">Если установлено, то при подключении удаленного пользователя будет показано уведомление.</string>
 
+      <string id="org-mate-power-manager-lock-hibernate">Блокировка экрана после пробуждения из спящего режима.</string>
+      <string id="org-mate-power-manager-lock-hibernate_help">Блокировать ли экран после восстановления компьютера из спящего режима. Используется только в случае, если не установлен параметр lock-use-screensaver.</string>
+
+      <string id="org-mate-power-manager-action-critical-battery">Действие, выполняемое при критическом уровне заряда батареи.</string>
+      <string id="org-mate-power-manager-action-critical-battery_help">Действие, выполняемое при критическом уровне заряда батареи.</string>
+      <string id="org-mate-power-manager-action-critical-battery-blank">blank</string>
+      <string id="org-mate-power-manager-action-critical-battery-suspend">suspend</string>
+      <string id="org-mate-power-manager-action-critical-battery-shutdown">shutdown</string>
+      <string id="org-mate-power-manager-action-critical-battery-hibernate">hibernate</string>
+      <string id="org-mate-power-manager-action-critical-battery-interactive">interactive</string>
+      <string id="org-mate-power-manager-action-critical-battery-nothing">nothing</string>
+
+      <string id="org-mate-power-manager-kbd-brightness-dim-by-on-idle">Яркость подсветки клавиатуры в простое</string>
+      <string id="org-mate-power-manager-kbd-brightness-dim-by-on-idle_help">Значение, до которого должна быть понижена яркость клавиатуры при простое, в процентах. Например, если установить значение «60», при простое подсветка будет уменьшена на 40%. Допустимые значения — от 0 до 100.</string>
+
+      <string id="org-mate-power-manager-enable-sound">Звуковое оповещение о заряде батареи</string>
+      <string id="org-mate-power-manager-enable-sound_help">Должны ли использоваться звуковые уведомления для извещения о низком уровне батарей или о том, что блокирующие запросы остановили запланированное действие.</string>
+
+      <string id="org-mate-power-manager-info-stats-graph-points">Показать точки на графике в окне статистики</string>
+      <string id="org-mate-power-manager-info-stats-graph-points_help">Показать точки на графике в окне статистики</string>
+
+      <string id="org-mate-power-manager-notify-fully-charged">Уведомление о полном заряде батареи</string>
+      <string id="org-mate-power-manager-notify-fully-charged_help">Если установлено, то при полном заряде батареи будет показано уведомление.</string>
+
+      <string id="org-mate-power-manager-event-when-closed-battery">Генерация события закрытия панели ноутбука, при последующем отключении питания</string>
+      <string id="org-mate-power-manager-event-when-closed-battery_help">Генерировать ли событие закрывания панели ноутбука (например, ждущий режим когда панель закрыта на батарее), когда панель была закрыта, а источник питания отключён позже</string>
+
+      <string id="org-mate-power-manager-notify-sleep-failed-uri">URI для отправки сообщения при ошибке перехода в спящйи режим</string>
+      <string id="org-mate-power-manager-notify-sleep-failed-uri_help">Укажите URI для отправки сообщения при ошибке перехода в спящйи режим. Оставьте поле пустым, чтобы исключить отправку сообщения</string>
+
+      <string id="org-mate-power-manager-backlight-enable">Изменение яркости экрана при смене источника питания</string>
+      <string id="org-mate-power-manager-backlight-enable_help">Установите, чтобы изменялась яркость экрана при изменении источника питания</string>
+
+      <string id="org-mate-power-manager-dpms-method-battery">Метод DPMS, используемый при отключении экрана при питании от батареи.</string>
+      <string id="org-mate-power-manager-dpms-method-battery_help">Выберите метод DPMS, используемый при отключении экрана при питании от батареи.</string>
+      <string id="org-mate-power-manager-dpms-method-battery_standby">standby</string>
+      <string id="org-mate-power-manager-dpms-method-battery_suspend">suspend</string>
+      <string id="org-mate-power-manager-dpms-method-battery_off">off</string>
+
+      <string id="org-mate-power-manager-notify-low-capacity-mouse">Уведомление об уменьшении емкости батареи</string>
+      <string id="org-mate-power-manager-notify-low-capacity-mouse_help">Установите, чтобы получать уведомление об уменьшении емкости батареи</string>
+
+      <string id="org-mate-power-manager-lock-use-screensaver">Использование параметров хранителя экрана для блокировки экрана</string>
+      <string id="org-mate-power-manager-lock-use-screensaver_help">Использовать ли параметр блокировки экрана программы mate-screensaver чтобы определить, нужно ли блокировать экран после ждущего режима, спящего режима или отключения дисплея</string>
+
+      <string id="org-mate-power-manager-button-suspend">Действие, выполняемое при нажатой кнопке ждущего режима.</string>
+      <string id="org-mate-power-manager-button-suspend_help">Выберите действие, выполняемое при нажатии кнопки ждущего режима.</string>
+      <string id="org-mate-power-manager-button-suspend_blank">blank</string>
+      <string id="org-mate-power-manager-button-suspend_suspend">suspend</string>
+      <string id="org-mate-power-manager-button-suspend_shutdown">shutdown</string>
+      <string id="org-mate-power-manager-button-suspend_hibernate">hibernate</string>
+      <string id="org-mate-power-manager-button-suspend_interactive">interactive</string>
+      <string id="org-mate-power-manager-button-suspend_nothing">nothing</string>
+
+      <string id="org-mate-power-manager-lock-suspend">Блокировка экрана при выходе из ждущего режима.</string>
+      <string id="org-mate-power-manager-lock-suspend_help">Установите, для блокирования экрана при выходе компьютера из ждущего режима.</string>
+
+      <string id="org-mate-power-manager-button-lid-ac">Действие, выполняемое при закрытии панели ноутбука, питающегося от сети.</string>
+      <string id="org-mate-power-manager-button-lid-ac_help">Выберите действие, выполняемое при закрытии панели ноутбука, питающегося от сети.</string>
+      <string id="org-mate-power-manager-button-lid-ac_blank">blank</string>
+      <string id="org-mate-power-manager-button-lid-ac_suspend">suspend</string>
+      <string id="org-mate-power-manager-button-lid-ac_shutdown">shutdown</string>
+      <string id="org-mate-power-manager-button-lid-ac_hibernate">hibernate</string>
+      <string id="org-mate-power-manager-button-lid-ac_interactive">interactive</string>
+      <string id="org-mate-power-manager-button-lid-ac_nothing">nothing</string>
+
+      <string id="org-mate-power-manager-button-lid-battery">Действие, выполняемое при закрытии панели ноутбука, питающегося от батареи.</string>
+      <string id="org-mate-power-manager-button-lid-battery_help">Выберите действие, выполняемое при закрытии панели ноутбука, питающегося от батареи.</string>
+      <string id="org-mate-power-manager-button-lid-battery_blank">blank</string>
+      <string id="org-mate-power-manager-button-lid-battery_suspend">suspend</string>
+      <string id="org-mate-power-manager-button-lid-battery_shutdown">shutdown</string>
+      <string id="org-mate-power-manager-button-lid-battery_hibernate">hibernate</string>
+      <string id="org-mate-power-manager-button-lid-battery_interactive">interactive</string>
+      <string id="org-mate-power-manager-button-lid-battery_nothing">nothing</string>
+
+      <string id="org-mate-power-manager-icon-policy">Настройка уведомления об электропитании</string>
+      <string id="org-mate-power-manager-icon-policy_help">Установите поведение уведомления об электропитании</string>
+      <string id="org-mate-power-manager-icon-policy_always">always</string>
+      <string id="org-mate-power-manager-icon-policy_present">present</string>
+      <string id="org-mate-power-manager-icon-policy_charge">charge</string>
+      <string id="org-mate-power-manager-icon-policy_low">low</string>
+      <string id="org-mate-power-manager-icon-policy_critical">critical</string>
+      <string id="org-mate-power-manager-icon-policy_never">never</string>
+
+      <string id="org-mate-power-manager-time-low">Оставшееся время работы на батарее в секундах, воспринимаемое как низкое.</string>
+      <string id="org-mate-power-manager-time-low_help">Оставшееся время работы на батарее в секундах, воспринимаемое как низкое. Действительно только в случае, когда установлен параметр use-time-for-policy.</string>
+
+      <string id="org-mate-power-manager-percentage-action">Процент заряда батареи, при котором выполняется критическое действие</string>
+      <string id="org-mate-power-manager-percentage-action_help">Процент заряда батареи, при котором выполняется критическое действие. Действителен только если не установлен параметр use-time-for-policy.</string>
+
+      <string id="org-mate-power-manager-action-sleep-type-battery">Тип приостановки компьютера после периода бездействия.</string>
+      <string id="org-mate-power-manager-action-sleep-type-battery_help">Тип приостановки компьютера после периода бездействия, при питании от батареи</string>
+      <string id="org-mate-power-manager-action-sleep-type-battery_blank">blank</string>
+      <string id="org-mate-power-manager-action-sleep-type-battery_suspend">suspend</string>
+      <string id="org-mate-power-manager-action-sleep-type-battery_shutdown">shutdown</string>
+      <string id="org-mate-power-manager-action-sleep-type-battery_hibernate">hibernate</string>
+      <string id="org-mate-power-manager-action-sleep-type-battery_interactive">interactive</string>
+      <string id="org-mate-power-manager-action-sleep-type-battery_nothing">nothing</string>
+
+      <string id="org-mate-power-manager-idle-dim-battery">Снижение яркости экрана при бездействии и питании от батареи</string>
+      <string id="org-mate-power-manager-idle-dim-battery_help">Установите, чтобы автоматически снижать яркость экрана при бездествии и питании от батареи</string>
+
+      <string id="org-mate-power-manager-sleep-display-ac">Время бездействия в секундах, по истечении которого дисплей будет отключён при работе от сети.</string>
+      <string id="org-mate-power-manager-sleep-display-ac_help">Установите время бездействия в секундах, по истечении которого дисплей будет отключён при работе от сети.</string>
+
+      <string id="org-mate-power-manager-notify-low-power">Уведомление о разряде батареи</string>
+      <string id="org-mate-power-manager-notify-low-power_help">Установите, если хотите получать уведомление о разряде батареи</string>
+
+      <string id="org-mate-power-manager-lock-blank-screen">Блокировка экрана при отключении</string>
+      <string id="org-mate-power-manager-lock-blank-screen_help">Установите, если хотите блокировать экран при отключении. Используется только в случае, если не установлен параметр lock-use-screensaver.</string>
+
+      <string id="org-mate-power-manager-show-actions">Отображение параметров и статистики в контекстном меню</string>
+      <string id="org-mate-power-manager-show-actions_help">Установите, если хотите добавить в контекстное меню параметры и статистику по электропитанию.</string>
+
+      <string id="org-mate-power-manager-info-stats-graph-smooth">Сглаживание статистических данных на графике</string>
+      <string id="org-mate-power-manager-info-stats-graph-smooth_help">Установите, если хотите включить сглаживание статистических данных на графике</string>
+
+      <string id="org-mate-power-manager-idle-dim-ac">Снижение яркости экрана при бездействии и питании от сети</string>
+      <string id="org-mate-power-manager-idle-dim-ac_help">Установите, чтобы автоматически снижать яркость экрана при бездествии и питании от сети</string>
+
+      <string id="org-mate-power-manager-button-power">Действие, выполняемое при нажатой кнопке питания.</string>
+      <string id="org-mate-power-manager-button-power_help">Установите действие, выполняемое при нажатой кнопке питания.</string>
+      <string id="org-mate-power-manager-button-power_blank">blank</string>
+      <string id="org-mate-power-manager-button-power_suspend">suspend</string>
+      <string id="org-mate-power-manager-button-power_shutdown">shutdown</string>
+      <string id="org-mate-power-manager-button-power_hibernate">hibernate</string>
+      <string id="org-mate-power-manager-button-power_interactive">interactive</string>
+      <string id="org-mate-power-manager-button-power_nothing">nothing</string>
+
+      <string id="org-mate-power-manager-idle-brightness">Яркость экрана при простое компьютера</string>
+      <string id="org-mate-power-manager-idle-brightness_help">Установите яркость экрана при простое компьютера</string>
+
+      <string id="org-mate-power-manager-time-action">Оставшееся время работы от батареи, когда будет выполнено критическое действие</string>
+      <string id="org-mate-power-manager-time-action_help">Оставшееся время работы на батарее в секундах, когда выполняется критическое действие. Действительно только в случае, когда установлен параметр use-time-for-policy.</string>
+
+      <string id="org-mate-power-manager-kbd-brightness-dim-by-on-battery">Снижение яркости подсветки клавиатуры при питании от батареи</string>
+      <string id="org-mate-power-manager-kbd-brightness-dim-by-on-battery_help">Значение, до которого должна быть понижена яркость клавиатуры при питании от батареи, в процентах. Например, если установить значение «60», подсветка будет уменьшена на 40% при питании от батареи. Допустимые значения — от 0 до 100.</string>
+
+      <string id="org-mate-power-manager-sleep-computer-ac">Время в секундах, перед приостановкой компьютера</string>
+      <string id="org-mate-power-manager-sleep-computer-ac_help">Установите количество секунд, которые компьютер должен простаивать при питании от сети перед приостановкой.</string>
+
+      <string id="org-mate-power-manager-sleep-computer-battery">Время в секундах, перед приостановкой компьютера при питании от батареи</string>
+      <string id="org-mate-power-manager-sleep-computer-battery_help">Установите количество секунд, которые компьютер должен простаивать при питании от батареи перед приостановкой.</string>
+
+      <string id="org-mate-power-manager-time-critical">Критическое время в секундах при питании от батареи</string>
+      <string id="org-mate-power-manager-time-critical_help">Оставшееся время работы на батарее в секундах, воспринимаемое как критическое. Действительно только в случае, когда установлен параметр use-time-for-policy.</string>
+
+      <string id="org-mate-power-manager-notify-sleep-failed">Уведомление о неудачной попытке перейти в спящий режим</string>
+      <string id="org-mate-power-manager-notify-sleep-failed_help">Установите, если хотите получать уведомление о неудачной попытке перейти в спящий режим.</string>
+
+      <string id="org-mate-power-manager-button-hibernate">Действие, выполняемое при нажатой кнопке режима гибернации.</string>
+      <string id="org-mate-power-manager-button-hibernate_help">Установите действие, выполняемое при нажатой кнопке режима гибернации.</string>
+      <string id="org-mate-power-manager-button-hibernate_blank">blank</string>
+      <string id="org-mate-power-manager-button-hibernate_suspend">suspend</string>
+      <string id="org-mate-power-manager-button-hibernate_shutdown">shutdown</string>
+      <string id="org-mate-power-manager-button-hibernate_hibernate">hibernate</string>
+      <string id="org-mate-power-manager-button-hibernate_interactive">interactive</string>
+      <string id="org-mate-power-manager-button-hibernate_nothing">nothing</string>
+
+      <string id="org-mate-power-manager-use-time-for-policy">Использование уведомлений на основе времени</string>
+      <string id="org-mate-power-manager-use-time-for-policy_help">Должны ли использоваться уведомления на основе времени. Если этот параметр не установлен, вместо времени будет использоваться процент заряда батареи, что может исправить проблему с испорченными ACPI BIOS.</string>
+
+      <string id="org-mate-power-manager-backlight-battery-reduce">Снижение яркости экрана при питании от батареи</string>
+      <string id="org-mate-power-manager-backlight-battery-reduce_help">Установите, если хотите, чтобы изменять яркость экрана при питании от батареи.</string>
+
+      <string id="org-mate-power-manager-notify-discharging">Уведомлять при отключении от сети переменного тока</string>
+      <string id="org-mate-power-manager-notify-discharging_help">Установите, если хотите получать уведомление при отключении от сети переменного тока.</string>
+
+      <string id="org-mate-power-manager-dpms-method-ac">Метод DPMS, используемый при отключении экрана при питании от сети.</string>
+      <string id="org-mate-power-manager-dpms-method-ac_help">Выберите метод DPMS, используемый при отключении экрана при питании от сети.</string>
+      <string id="org-mate-power-manager-dpms-method-ac_standby">standby</string>
+      <string id="org-mate-power-manager-dpms-method-ac_suspend">suspend</string>
+      <string id="org-mate-power-manager-dpms-method-ac_off">off</string>
+
+      <string id="org-mate-power-manager-sleep-display-battery">Время простоя компьютера перед отключением экрана при питании от батареи</string>
+      <string id="org-mate-power-manager-sleep-display-battery_help">Установите время простоя компьютера в секундах перед отключением экрана при питании от батареи</string>
+
+      <string id="org-mate-power-manager-percentage-low">Процент заряда батареи, воспринимаемый как низкий</string>
+      <string id="org-mate-power-manager-percentage-low_help">Процент заряда батареи, воспринимаемый как низкий. Действителен только если не установлен параметр use-time-for-policy.</string>
+
+      <string id="org-mate-power-manager-action-low-ups">Действие, выполняемое при разряженном UPS.</string>
+      <string id="org-mate-power-manager-action-low-ups_help">Установите действие, выполняемое при разряженном UPS.</string>
+      <string id="org-mate-power-manager-action-low-ups_blank">blank</string>
+      <string id="org-mate-power-manager-action-low-ups_suspend">suspend</string>
+      <string id="org-mate-power-manager-action-low-ups_shutdown">shutdown</string>
+      <string id="org-mate-power-manager-action-low-ups_hibernate">hibernate</string>
+      <string id="org-mate-power-manager-action-low-ups_interactive">interactive</string>
+      <string id="org-mate-power-manager-action-low-ups_nothing">nothing</string>
+
+      <string id="org-mate-power-manager-action-sleep-type-ac">Тип приостановки компьютера после бездействия при питании от сети</string>
+      <string id="org-mate-power-manager-action-sleep-type-ac_help">Выберите тип приостановки компьютера после периода бездействия при питании от сети</string>
+      <string id="org-mate-power-manager-action-sleep-type-ac_blank">blank</string>
+      <string id="org-mate-power-manager-action-sleep-type-ac_suspend">suspend</string>
+      <string id="org-mate-power-manager-action-sleep-type-ac_shutdown">shutdown</string>
+      <string id="org-mate-power-manager-action-sleep-type-ac_hibernate">hibernate</string>
+      <string id="org-mate-power-manager-action-sleep-type-ac_interactive">interactive</string>
+      <string id="org-mate-power-manager-action-sleep-type-ac_nothing">nothing</string>
+
+      <string id="org-mate-power-manager-notify-low-capacity">Уведомление о малом заряде для неисправных батарей</string>
+      <string id="org-mate-power-manager-notify-low-capacity_help">Установите, чтобы получать уведомление о малом заряде неисправных батарей.</string>
+
     </stringTable>
 
     <presentationTable>
@@ -558,6 +759,360 @@
 
       <presentation id="OrgGnomeVinoNotifyOnConnectMachine-pr">
         <checkBox refId="OrgGnomeVinoNotifyOnConnect_setter_blocker">блокировать</checkBox>
+        <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
+      </presentation>
+
+      <presentation id="OrgMatePowerManagerLockHibernateMachine-pr">
+        <checkBox refId="OrgMatePowerManagerLockHibernate_setter_blocker">блокировать</checkBox>
+        <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
+      </presentation>
+
+      <presentation id="OrgMatePowerManagerActionCriticalBatteryUser-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="OrgMatePowerManagerActionCriticalBattery_setter">Действие:</dropdownList>
+      </presentation>
+
+      <presentation id="OrgMatePowerManagerActionCriticalBatteryMachine-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="OrgMatePowerManagerActionCriticalBattery_setter">Действие:</dropdownList>
+        <checkBox refId="OrgMatePowerManagerActionCriticalBattery_setter_blocker">блокировать</checkBox>
+        <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
+      </presentation>
+
+      <presentation id="OrgMatePowerManagerKbdBrightnessDimByOnIdleUser-pr">
+        <decimalTextBox refId="OrgMatePowerManagerKbdBrightnessDimByOnIdle_setter">Яркость:</decimalTextBox>
+      </presentation>
+
+      <presentation id="OrgMatePowerManagerKbdBrightnessDimByOnIdleMachine-pr">
+        <decimalTextBox refId="OrgMatePowerManagerKbdBrightnessDimByOnIdle_setter">Яркость:</decimalTextBox>
+        <checkBox refId="OrgMatePowerManagerKbdBrightnessDimByOnIdle_setter_blocker">блокировать</checkBox>
+        <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
+      </presentation>
+
+      <presentation id="OrgMatePowerManagerEnableSoundMachine-pr">
+        <checkBox refId="OrgMatePowerManagerEnableSound_setter_blocker">блокировать</checkBox>
+        <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
+      </presentation>
+
+      <presentation id="OrgMatePowerManagerInfoStatsGraphPointsMachine-pr">
+        <checkBox refId="OrgMatePowerManagerInfoStatsGraphPoints_setter_blocker">блокировать</checkBox>
+        <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
+      </presentation>
+
+      <presentation id="OrgMatePowerManagerNotifyFullyChargedMachine-pr">
+        <checkBox refId="OrgMatePowerManagerNotifyFullyCharged_setter_blocker">блокировать</checkBox>
+        <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
+      </presentation>
+
+      <presentation id="OrgMatePowerManagerEventWhenClosedBatteryMachine-pr">
+        <checkBox refId="OrgMatePowerManagerEventWhenClosedBattery_setter_blocker">блокировать</checkBox>
+        <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
+      </presentation>
+
+      <presentation id="OrgMatePowerManagerNotifySleepFailedUriUser-pr">
+        <textBox refId="OrgMatePowerManagerNotifySleepFailedUri_setter">
+          <label>URI:</label>
+        </textBox>
+      </presentation>
+
+      <presentation id="OrgMatePowerManagerNotifySleepFailedUriMachine-pr">
+        <textBox refId="OrgMatePowerManagerNotifySleepFailedUri_setter">
+          <label>URI:</label>
+        </textBox>
+        <checkBox refId="OrgMatePowerManagerNotifySleepFailed_setter_blocker">блокировать</checkBox>
+        <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
+      </presentation>
+
+      <presentation id="OrgMatePowerManagerBacklightEnableMachine-pr">
+        <checkBox refId="OrgMatePowerManagerBacklightEnable_setter_blocker">блокировать</checkBox>
+        <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
+      </presentation>
+
+      <presentation id="OrgMatePowerManagerDpmsMethodBatteryUser-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="OrgMatePowerManagerDpmsMethodBattery_setter">Метод DPMS:</dropdownList>
+      </presentation>
+
+      <presentation id="OrgMatePowerManagerDpmsMethodBatteryMachine-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="OrgMatePowerManagerDpmsMethodBattery_setter">Метод DPMS:</dropdownList>
+        <checkBox refId="OrgMatePowerManagerDpmsMethodBattery_setter_blocker">блокировать</checkBox>
+        <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
+      </presentation>
+
+      <presentation id="OrgMatePowerManagerNotifyLowCapacityMouseMachine-pr">
+        <checkBox refId="OrgMatePowerManagerNotifyLowCapacityMouse_setter_blocker">блокировать</checkBox>
+        <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
+      </presentation>
+
+      <presentation id="OrgMatePowerManagerLockUseScreensaverMachine-pr">
+        <checkBox refId="OrgMatePowerManagerLockUseScreensaver_setter_blocker">блокировать</checkBox>
+        <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
+      </presentation>
+
+      <presentation id="OrgMatePowerManagerButtonSuspendUser-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="OrgMatePowerManagerButtonSuspend_setter">Действие:</dropdownList>
+      </presentation>
+
+      <presentation id="OrgMatePowerManagerButtonSuspendMachine-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="OrgMatePowerManagerButtonSuspend_setter">Действие:</dropdownList>
+        <checkBox refId="OrgMatePowerManagerButtonSuspend_setter_blocker">блокировать</checkBox>
+        <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
+      </presentation>
+
+      <presentation id="OrgMatePowerManagerLockSuspendMachine-pr">
+        <checkBox refId="OrgMatePowerManagerLockSuspend_setter_blocker">блокировать</checkBox>
+        <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
+      </presentation>
+
+      <presentation id="OrgMatePowerManagerButtonLidAcUser-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="OrgMatePowerManagerButtonLidAc_setter">Действие:</dropdownList>
+      </presentation>
+
+      <presentation id="OrgMatePowerManagerButtonLidAcMachine-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="OrgMatePowerManagerButtonLidAc_setter">Действие:</dropdownList>
+        <checkBox refId="OrgMatePowerManagerButtonLidAc_setter_blocker">блокировать</checkBox>
+        <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
+      </presentation>
+
+      <presentation id="OrgMatePowerManagerButtonLidBatteryUser-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="OrgMatePowerManagerButtonLidBattery_setter">Действие:</dropdownList>
+      </presentation>
+
+      <presentation id="OrgMatePowerManagerButtonLidBatteryMachine-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="OrgMatePowerManagerButtonLidBattery_setter">Действие:</dropdownList>
+        <checkBox refId="OrgMatePowerManagerButtonLidBattery_setter_blocker">блокировать</checkBox>
+        <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
+      </presentation>
+
+      <presentation id="OrgMatePowerManagerIconPolicyUser-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="OrgMatePowerManagerIconPolicy_setter">Уведомление:</dropdownList>
+      </presentation>
+
+      <presentation id="OrgMatePowerManagerIconPolicyMachine-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="OrgMatePowerManagerIconPolicy_setter">Уведомление:</dropdownList>
+        <checkBox refId="OrgMatePowerManagerIconPolicy_setter_blocker">блокировать</checkBox>
+        <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
+      </presentation>
+
+      <presentation id="OrgMatePowerManagerTimeLowUser-pr">
+        <decimalTextBox refId="OrgMatePowerManagerTimeLow_setter" defaultValue="">Секунды:</decimalTextBox>
+      </presentation>
+
+      <presentation id="OrgMatePowerManagerTimeLowMachine-pr">
+        <decimalTextBox refId="OrgMatePowerManagerTimeLow_setter" defaultValue="">Секунды:</decimalTextBox>
+        <checkBox refId="OrgMatePowerManagerTimeLow_setter_blocker">блокировать</checkBox>
+        <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
+      </presentation>
+
+      <presentation id="OrgMatePowerManagerPercentageActionUser-pr">
+        <decimalTextBox refId="OrgMatePowerManagerPercentageAction_setter">Процент заряда:</decimalTextBox>
+      </presentation>
+
+      <presentation id="OrgMatePowerManagerPercentageActionMachine-pr">
+        <decimalTextBox refId="OrgMatePowerManagerPercentageAction_setter">Процент заряда:</decimalTextBox>
+        <checkBox refId="OrgMatePowerManagerPercentageAction_setter_blocker">блокировать</checkBox>
+        <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
+      </presentation>
+
+      <presentation id="OrgMatePowerManagerActionSleepTypeBatteryUser-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="OrgMatePowerManagerActionSleepTypeBattery_setter">Действие:</dropdownList>
+      </presentation>
+
+      <presentation id="OrgMatePowerManagerActionSleepTypeBatteryMachine-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="OrgMatePowerManagerActionSleepTypeBattery_setter">Действие:</dropdownList>
+        <checkBox refId="OrgMatePowerManagerActionSleepTypeBattery_setter_blocker">блокировать</checkBox>
+        <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
+      </presentation>
+
+      <presentation id="OrgMatePowerManagerIdleDimBatteryMachine-pr">
+        <checkBox refId="OrgMatePowerManagerIdleDimBattery_setter_blocker">блокировать</checkBox>
+        <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
+      </presentation>
+
+      <presentation id="OrgMatePowerManagerSleepDisplayAcUser-pr">
+        <decimalTextBox refId="OrgMatePowerManagerSleepDisplayAc_setter">Время в секундах:</decimalTextBox>
+      </presentation>
+
+      <presentation id="OrgMatePowerManagerSleepDisplayAcMachine-pr">
+        <decimalTextBox refId="OrgMatePowerManagerSleepDisplayAc_setter">Время в секундах:</decimalTextBox>
+        <checkBox refId="OrgMatePowerManagerSleepDisplayAc_setter_blocker">блокировать</checkBox>
+        <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
+      </presentation>
+
+      <presentation id="OrgMatePowerManagerNotifyLowPowerMachine-pr">
+        <checkBox refId="OrgMatePowerManagerNotifyLowPower_setter_blocker">блокировать</checkBox>
+        <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
+      </presentation>
+
+      <presentation id="OrgMatePowerManagerLockBlankScreenMachine-pr">
+        <checkBox refId="OrgMatePowerManagerLockBlankScreen_setter_blocker">блокировать</checkBox>
+        <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
+      </presentation>
+
+      <presentation id="OrgMatePowerManagerShowActionsMachine-pr">
+        <checkBox refId="OrgMatePowerManagerShowActions_setter_blocker">блокировать</checkBox>
+        <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
+      </presentation>
+
+      <presentation id="OrgMatePowerManagerInfoStatsGraphSmoothMachine-pr">
+        <checkBox refId="OrgMatePowerManagerInfoStatsGraphSmooth_setter_blocker">блокировать</checkBox>
+        <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
+      </presentation>
+
+      <presentation id="OrgMatePowerManagerIdleDimAcMachine-pr">
+        <checkBox refId="OrgMatePowerManagerIdleDimAc_setter_blocker">блокировать</checkBox>
+        <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
+      </presentation>
+
+      <presentation id="OrgMatePowerManagerButtonPowerUser-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="OrgMatePowerManagerButtonPower_setter">Действие:</dropdownList>
+      </presentation>
+
+      <presentation id="OrgMatePowerManagerButtonPowerMachine-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="OrgMatePowerManagerButtonPower_setter">Действие:</dropdownList>
+        <checkBox refId="OrgMatePowerManagerButtonPower_setter_blocker">блокировать</checkBox>
+        <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
+      </presentation>
+
+      <presentation id="OrgMatePowerManagerIdleBrightnessUser-pr">
+        <decimalTextBox refId="OrgMatePowerManagerIdleBrightness_setter">Яркость:</decimalTextBox>
+      </presentation>
+
+      <presentation id="OrgMatePowerManagerIdleBrightnessMachine-pr">
+        <decimalTextBox refId="OrgMatePowerManagerIdleBrightness_setter">Яркость:</decimalTextBox>
+        <checkBox refId="OrgMatePowerManagerIdleBrightness_setter_blocker">блокировать</checkBox>
+        <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
+      </presentation>
+
+      <presentation id="OrgMatePowerManagerKbdBrightnessDimByOnBatteryUser-pr">
+        <decimalTextBox refId="OrgMatePowerManagerKbdBrightnessDimByOnBattery_setter">Яркость:</decimalTextBox>
+      </presentation>
+
+      <presentation id="OrgMatePowerManagerKbdBrightnessDimByOnBatteryMachine-pr">
+        <decimalTextBox refId="OrgMatePowerManagerKbdBrightnessDimByOnBattery_setter">Яркость:</decimalTextBox>
+        <checkBox refId="OrgMatePowerManagerKbdBrightnessDimByOnBattery_setter_blocker">блокировать</checkBox>
+        <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
+      </presentation>
+
+      <presentation id="OrgMatePowerManagerTimeActionUser-pr">
+        <decimalTextBox refId="OrgMatePowerManagerTimeAction_setter">Время:</decimalTextBox>
+      </presentation>
+
+      <presentation id="OrgMatePowerManagerTimeActionMachine-pr">
+        <decimalTextBox refId="OrgMatePowerManagerTimeAction_setter">Время:</decimalTextBox>
+        <checkBox refId="OrgMatePowerManagerTimeAction_setter_blocker">блокировать</checkBox>
+        <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
+      </presentation>
+
+      <presentation id="OrgMatePowerManagerSleepComputerAcUser-pr">
+        <decimalTextBox refId="OrgMatePowerManagerSleepComputerAc_setter">Время:</decimalTextBox>
+      </presentation>
+
+      <presentation id="OrgMatePowerManagerSleepComputerAcMachine-pr">
+        <decimalTextBox refId="OrgMatePowerManagerSleepComputerAc_setter">Время:</decimalTextBox>
+        <checkBox refId="OrgMatePowerManagerSleepComputerAc_setter_blocker">блокировать</checkBox>
+        <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
+      </presentation>
+
+      <presentation id="OrgMatePowerManagerSleepComputerBatteryUser-pr">
+        <decimalTextBox refId="OrgMatePowerManagerSleepComputerBattery_setter">Время:</decimalTextBox>
+      </presentation>
+
+      <presentation id="OrgMatePowerManagerSleepComputerBatteryMachine-pr">
+        <decimalTextBox refId="OrgMatePowerManagerSleepComputerBattery_setter">Время:</decimalTextBox>
+        <checkBox refId="OrgMatePowerManagerSleepComputerBattery_setter_blocker">блокировать</checkBox>
+        <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
+      </presentation>
+
+      <presentation id="OrgMatePowerManagerTimeCriticalUser-pr">
+        <decimalTextBox refId="OrgMatePowerManagerTimeCritical_setter">Время:</decimalTextBox>
+      </presentation>
+
+      <presentation id="OrgMatePowerManagerTimeCriticalMachine-pr">
+        <decimalTextBox refId="OrgMatePowerManagerTimeCritical_setter">Время:</decimalTextBox>
+        <checkBox refId="OrgMatePowerManagerTimeCritical_setter_blocker">блокировать</checkBox>
+        <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
+      </presentation>
+
+      <presentation id="OrgMatePowerManagerNotifySleepFailedMachine-pr">
+        <checkBox refId="OrgMatePowerManagerNotifySleepFailed_setter_blocker">блокировать</checkBox>
+        <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
+      </presentation>
+
+      <presentation id="OrgMatePowerManagerButtonHibernateUser-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="OrgMatePowerManagerButtonHibernate_setter">Действие:</dropdownList>
+      </presentation>
+
+      <presentation id="OrgMatePowerManagerButtonHibernateMachine-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="OrgMatePowerManagerButtonHibernate_setter">Действие:</dropdownList>
+        <checkBox refId="OrgMatePowerManagerButtonHibernate_setter_blocker">блокировать</checkBox>
+        <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
+      </presentation>
+
+      <presentation id="OrgMatePowerManagerUseTimeForPolicyMachine-pr">
+        <checkBox refId="OrgMatePowerManagerUseTimeForPolicy_setter_blocker">блокировать</checkBox>
+        <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
+      </presentation>
+
+      <presentation id="OrgMatePowerManagerBacklightBatteryReduceMachine-pr">
+        <checkBox refId="OrgMatePowerManagerBacklightBatteryReduce_setter_blocker">блокировать</checkBox>
+        <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
+      </presentation>
+
+      <presentation id="OrgMatePowerManagerNotifyDischargingMachine-pr">
+        <checkBox refId="OrgMatePowerManagerNotifyDischarging_setter_blocker">блокировать</checkBox>
+        <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
+      </presentation>
+
+      <presentation id="OrgMatePowerManagerDpmsMethodAcUser-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="OrgMatePowerManagerDpmsMethodAc_setter">Метод:</dropdownList>
+      </presentation>
+
+      <presentation id="OrgMatePowerManagerDpmsMethodAcMachine-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="OrgMatePowerManagerDpmsMethodAc_setter">Метод:</dropdownList>
+        <checkBox refId="OrgMatePowerManagerDpmsMethodAc_setter_blocker">блокировать</checkBox>
+        <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
+      </presentation>
+
+      <presentation id="OrgMatePowerManagerSleepDisplayBatteryUser-pr">
+        <decimalTextBox refId="OrgMatePowerManagerSleepDisplayBattery_setter">Время:</decimalTextBox>
+      </presentation>
+
+      <presentation id="OrgMatePowerManagerSleepDisplayBatteryMachine-pr">
+        <decimalTextBox refId="OrgMatePowerManagerSleepDisplayBattery_setter">Время:</decimalTextBox>
+        <checkBox refId="OrgMatePowerManagerSleepDisplayBattery_setter_blocker">блокировать</checkBox>
+        <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
+      </presentation>
+
+      <presentation id="OrgMatePowerManagerPercentageLowUser-pr">
+        <decimalTextBox refId="OrgMatePowerManagerPercentageLow_setter">Заряд в процентах:</decimalTextBox>
+      </presentation>
+
+      <presentation id="OrgMatePowerManagerPercentageLowMachine-pr">
+        <decimalTextBox refId="OrgMatePowerManagerPercentageLow_setter">Заряд в процентах:</decimalTextBox>
+        <checkBox refId="OrgMatePowerManagerPercentageLow_setter_blocker">блокировать</checkBox>
+        <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
+      </presentation>
+
+      <presentation id="OrgMatePowerManagerActionLowUpsUser-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="OrgMatePowerManagerActionLowUps_setter">Действие:</dropdownList>
+      </presentation>
+
+      <presentation id="OrgMatePowerManagerActionLowUpsMachine-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="OrgMatePowerManagerActionLowUps_setter">Действие:</dropdownList>
+        <checkBox refId="OrgMatePowerManagerActionLowUps_setter_blocker">блокировать</checkBox>
+        <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
+      </presentation>
+
+      <presentation id="OrgMatePowerManagerActionSleepTypeAcUser-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="OrgMatePowerManagerActionSleepTypeAc_setter">Метод:</dropdownList>
+      </presentation>
+
+      <presentation id="OrgMatePowerManagerActionSleepTypeAcMachine-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="OrgMatePowerManagerActionSleepTypeAc_setter">Метод:</dropdownList>
+        <checkBox refId="OrgMatePowerManagerActionSleepTypeAc_setter_blocker">блокировать</checkBox>
+        <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
+      </presentation>
+
+      <presentation id="OrgMatePowerManagerNotifyLowCapacityMachine-pr">
+        <checkBox refId="OrgMatePowerManagerNotifyLowCapacity_setter_blocker">блокировать</checkBox>
         <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
       </presentation>
 
