@@ -42,6 +42,14 @@
 
       <string id="LinuxComponents">Компоненты Linux</string>
       <string id="LinuxComponents_Help">Содержит настройки ядра операционной системы.</string>
+      <string id="ALT_Settings_Mate">Настройки Mate</string>
+      <string id="ALT_Settings_Mate_Help">Настройки Mate</string>
+      <string id="ALT_Background_Mate">Фон рабочего стола</string>
+      <string id="ALT_Background_Mate_Help">Настройки фона рабочего стола</string>
+      <string id="ALT_Screensaver_Mate">Хранитель экрана</string>
+      <string id="ALT_Screensaver_Mate_Help">Настройки хранителя экрана</string>
+      <string id="ALT_User_Restrictions_Mate">Ограничения пользователя</string>
+      <string id="ALT_User_Restrictions_Mate_Help">Ограничения действий пользователя</string>
     </stringTable>
   </resources>
 </policyDefinitionResources>
