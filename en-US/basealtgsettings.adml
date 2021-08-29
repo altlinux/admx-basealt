@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  (c) 2019 BaseALT, Ltd.  -->
+<policyDefinitionResources xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.microsoft.com/GroupPolicy/2006/07/PolicyDefinitions" revision="1.0" schemaVersion="1.0">
+  <displayName>ALT services definitions</displayName>
+  <description>This file contains the gsettings services definitions used by ALT operating system.</description>
+  <resources>
+    <stringTable>
+      <string id="org-mate-background-secondary-color">The final color of the gradient</string>
+      <string id="org-mate-background-secondary-color_help">Set the right or bottom color when drawing the gradient. It is not used for solid color.</string>
+
+      <string id="org-mate-background-picture-options">Method for displaying the background image</string>
+      <string id="org-mate-background-picture-options_help">Sets the method for displaying the desktop background image. Possible values: "none", "wallpaper", "centered", "scaled", "stretched"," zoom","spanned".</string>
+      <string id="org-mate-background-picture-options_None">none</string>
+      <string id="org-mate-background-picture-options_Wallpaper">wallpaper</string>
+      <string id="org-mate-background-picture-options_Centered">centered</string>
+      <string id="org-mate-background-picture-options_Scaled">scaled</string>
+      <string id="org-mate-background-picture-options_Stretched">stretched</string>
+      <string id="org-mate-background-picture-options_Zoom">zoom</string>
+      <string id="org-mate-background-picture-options_Spanned">spanned</string>
+
+      <string id="org-mate-background-color-shading-type">Gradient type</string>
+      <string id="org-mate-background-color-shading-type_help">Set the gradient type: vertical, horizontal, or solid fill.</string>
+      <string id="org-mate-background-color-shading-type-horizontal-gradient">horizontal gradient</string>
+      <string id="org-mate-background-color-shading-type-vertical-gradient">vertical gradient</string>
+      <string id="org-mate-background-color-shading-type-solid">solid fill</string>
+
+      <string id="org-mate-background-picture-filename">Desktop background image</string>
+      <string id="org-mate-background-picture-filename_help">Specify the file containing the image to install as the desktop background.</string>
+
+      <string id="org-mate-background-primary-color">The initial color of the gradient (solid fill color)</string>
+      <string id="org-mate-background-primary-color_help">Set the left or top, or solid color when drawing the gradient, depending on the set type of gradient.</string>
+
+    </stringTable>
+
+    <presentationTable>
+      <presentation id="OrgMateBackgroundSecondaryColorMachine-pr">
+        <textBox refId="OrgMateBackgroundSecondaryColor_setter">
+          <label>Set the color:</label>
+        </textBox>
+        <checkBox refId="OrgMateBackgroundSecondaryColor_setter_blocker">lock</checkBox>
+        <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
+      </presentation>
+
+      <presentation id="OrgMateBackgroundSecondaryColorUser-pr">
+        <textBox refId="OrgMateBackgroundSecondaryColor_setter">
+          <label>Set the color:</label>
+        </textBox>
+      </presentation>
+
+      <presentation id="OrgMateBackgroundPictureOptionsUser-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="OrgMateBackgroundPictureOptions_setter">Method for displaying the desktop background:</dropdownList>
+      </presentation>
+
+      <presentation id="OrgMateBackgroundPictureOptionsMachine-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="OrgMateBackgroundPictureOptions_setter">Method for displaying the desktop background:</dropdownList>
+        <checkBox refId="OrgMateBackgroundPictureOptions_setter_blocker">lock</checkBox>
+        <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
+      </presentation>
+
+      <presentation id="OrgMateBackgroundColorShadingTypeUser-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="OrgMateBackgroundColorShadingType_setter">Set the gradient type:</dropdownList>
+      </presentation>
+
+      <presentation id="OrgMateBackgroundColorShadingTypeMachine-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="OrgMateBackgroundColorShadingType_setter">Set the gradient type:</dropdownList>
+        <checkBox refId="OrgMateBackgroundColorShadingType_setter_blocker">lock</checkBox>
+        <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
+      </presentation>
+
+      <presentation id="OrgMateBackgroundPictureFilenameUser-pr">
+        <textBox refId="OrgMateBackgroundPictureFilename_setter">
+          <label>file:</label>
+        </textBox>
+      </presentation>
+
+      <presentation id="OrgMateBackgroundPictureFilenameMachine-pr">
+        <textBox refId="OrgMateBackgroundPictureFilename_setter">
+          <label>file:</label>
+        </textBox>
+        <checkBox refId="OrgMateBackgroundPictureFilename_setter_blocker">lock</checkBox>
+        <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
+      </presentation>
+
+      <presentation id="OrgMateBackgroundPrimaryColorUser-pr">
+        <textBox refId="OrgMateBackgroundPrimaryColor_setter">
+          <label>Set the color:</label>
+        </textBox>
+      </presentation>
+      <presentation id="OrgMateBackgroundPrimaryColorMachine-pr">
+
+        <textBox refId="OrgMateBackgroundPrimaryColor_setter">
+          <label>Set the color:</label>
+        </textBox>
+        <checkBox refId="OrgMateBackgroundPrimaryColor_setter_blocker">lock</checkBox>
+        <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
+      </presentation>
+
+    </presentationTable>
+  </resources>
+</policyDefinitionResources>

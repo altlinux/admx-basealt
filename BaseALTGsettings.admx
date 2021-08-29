@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  (c) 2019 BaseALT, Ltd.  -->
+<policyDefinitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" revision="1.0" schemaVersion="1.0" xmlns="http://schemas.microsoft.com/GroupPolicy/2006/07/PolicyDefinitions">
+  <policyNamespaces>
+    <target prefix="gsettings" namespace="BaseALT.Policies.Gsettings" />
+    <using prefix="system" namespace="BaseALT.Policies.System" />
+  </policyNamespaces>
+  <resources minRequiredRevision="1.0" />
+  <policies>
+    <policy name="OrgMateBackgroundSecondaryColorUser" class="User"
+        displayName="$(string.org-mate-background-secondary-color)"
+        explainText="$(string.org-mate-background-secondary-color_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        presentation="$(presentation.OrgMateBackgroundSecondaryColorUser-pr)" >
+      <parentCategory ref="system:ALT_Background_Mate" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <elements>
+        <text id="OrgMateBackgroundSecondaryColor_setter" valueName="org.mate.background.secondary-color"/>
+      </elements>
+    </policy>
+
+    <policy name="OrgMateBackgroundSecondaryColorMachine" class="Machine"
+        displayName="$(string.org-mate-background-secondary-color)"
+        explainText="$(string.org-mate-background-secondary-color_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        presentation="$(presentation.OrgMateBackgroundSecondaryColorMachine-pr)" >
+      <parentCategory ref="system:ALT_Background_Mate" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <elements>
+        <text id="OrgMateBackgroundSecondaryColor_setter" valueName="org.mate.background.secondary-color"/>
+        <boolean id="OrgMateBackgroundSecondaryColor_setter_blocker" key="Software\BaseALT\Policies\GSettingsLocks" valueName="org.mate.background.secondary-color">
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+        </boolean>
+      </elements>
+    </policy>
+
+    <policy name="OrgMateBackgroundPictureOptionsUser" class="User"
+        displayName="$(string.org-mate-background-picture-options)" 
+        explainText="$(string.org-mate-background-picture-options_help)"  
+        key="Software\BaseALT\Policies\gsettings"
+        presentation="$(presentation.OrgMateBackgroundPictureOptionsUser-pr)">
+      <parentCategory ref="system:ALT_Background_Mate" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <elements>
+        <enum id="OrgMateBackgroundPictureOptions_setter" valueName="org.mate.background.picture-options" required="true">
+          <item displayName="$(string.org-mate-background-picture-options_None)">
+            <value>
+              <string>none</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-background-picture-options_Wallpaper)">
+            <value>
+              <string>wallpaper</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-background-picture-options_Centered)">
+            <value>
+              <string>centered</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-background-picture-options_Scaled)">
+            <value>
+              <string>scaled</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-background-picture-options_Stretched)">
+            <value>
+              <string>stretched</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-background-picture-options_Zoom)">
+            <value>
+              <string>zoom</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-background-picture-options_Spanned)">
+            <value>
+              <string>spanned</string>
+            </value>
+          </item>
+        </enum>
+      </elements>
+    </policy>
+
+    <policy name="OrgMateBackgroundPictureOptionsMachine" class="Machine"
+        displayName="$(string.org-mate-background-picture-options)" 
+        explainText="$(string.org-mate-background-picture-options_help)"  
+        key="Software\BaseALT\Policies\gsettings"
+        presentation="$(presentation.OrgMateBackgroundPictureOptionsMachine-pr)">
+      <parentCategory ref="system:ALT_Background_Mate" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <elements>
+        <enum id="OrgMateBackgroundPictureOptions_setter" valueName="org.mate.background.picture-options" required="true">
+          <item displayName="$(string.org-mate-background-picture-options_None)">
+            <value>
+              <string>none</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-background-picture-options_Wallpaper)">
+            <value>
+              <string>wallpaper</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-background-picture-options_Centered)">
+            <value>
+              <string>centered</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-background-picture-options_Scaled)">
+            <value>
+              <string>scaled</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-background-picture-options_Stretched)">
+            <value>
+              <string>stretched</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-background-picture-options_Zoom)">
+            <value>
+              <string>zoom</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-background-picture-options_Spanned)">
+            <value>
+              <string>spanned</string>
+            </value>
+          </item>
+        </enum>
+        <boolean id="OrgMateBackgroundPictureOptions_setter_blocker" key="Software\BaseALT\Policies\GSettingsLocks" valueName="org.mate.background.picture-options">
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+        </boolean>
+      </elements>
+    </policy>
+
+    <policy name="OrgMateBackgroundColorShadingTypeUser" class="User"
+        displayName="$(string.org-mate-background-color-shading-type)"
+        explainText="$(string.org-mate-background-color-shading-type_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        presentation="$(presentation.OrgMateBackgroundColorShadingTypeUser-pr)" >
+      <parentCategory ref="system:ALT_Background_Mate" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <elements>
+        <enum id="OrgMateBackgroundColorShadingType_setter" required="true" valueName="org.mate.background.color-shading-type">
+          <item displayName="$(string.org-mate-background-color-shading-type-horizontal-gradient)">
+            <value>
+              <string>horizontal-gradient</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-background-color-shading-type-vertical-gradient)">
+            <value>
+              <string>vertical-gradient</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-background-color-shading-type-solid)">
+            <value>
+              <string>solid</string>
+            </value>
+          </item>
+        </enum>
+      </elements>
+    </policy>
+
+    <policy name="OrgMateBackgroundColorShadingTypeMachine" class="Machine"
+        displayName="$(string.org-mate-background-color-shading-type)"
+        explainText="$(string.org-mate-background-color-shading-type_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        presentation="$(presentation.OrgMateBackgroundColorShadingTypeMachine-pr)" >
+      <parentCategory ref="system:ALT_Background_Mate" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <elements>
+        <enum id="OrgMateBackgroundColorShadingType_setter" required="true" valueName="org.mate.background.color-shading-type">
+          <item displayName="$(string.org-mate-background-color-shading-type-horizontal-gradient)">
+            <value>
+              <string>horizontal-gradient</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-background-color-shading-type-vertical-gradient)">
+            <value>
+              <string>vertical-gradient</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-background-color-shading-type-solid)">
+            <value>
+              <string>solid</string>
+            </value>
+          </item>
+        </enum>
+        <boolean id="OrgMateBackgroundColorShadingType_setter_blocker" key="Software\BaseALT\Policies\GSettingsLocks" valueName="org.mate.background.color-shading-type">
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+        </boolean>
+      </elements>
+    </policy>
+
+    <policy name="OrgMateBackgroundPictureFilenameUser" class="User"
+        displayName="$(string.org-mate-background-picture-filename)"
+        explainText="$(string.org-mate-background-picture-filename_help)"
+        presentation="$(presentation.OrgMateBackgroundPictureFilenameUser-pr)"
+        key="Software\BaseALT\Policies\gsettings">
+      <parentCategory ref="system:ALT_Background_Mate" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <elements>
+        <text id="OrgMateBackgroundPictureFilename_setter" valueName="org.mate.background.picture-filename" />
+      </elements>
+    </policy>
+
+    <policy name="OrgMateBackgroundPictureFilenameMachine" class="Machine"
+        displayName="$(string.org-mate-background-picture-filename)"
+        explainText="$(string.org-mate-background-picture-filename_help)"
+        presentation="$(presentation.OrgMateBackgroundPictureFilenameMachine-pr)"
+        key="Software\BaseALT\Policies\gsettings">
+      <parentCategory ref="system:ALT_Background_Mate" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <elements>
+        <text id="OrgMateBackgroundPictureFilename_setter" valueName="org.mate.background.picture-filename" />
+        <boolean id="OrgMateBackgroundPictureFilename_setter_blocker" key="Software\BaseALT\Policies\GSettingsLocks" valueName="org.mate.background.picture-filename">
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+        </boolean>
+      </elements>
+    </policy>
+
+    <policy name="OrgMateBackgroundPrimaryColorUser" class="User"
+        displayName="$(string.org-mate-background-primary-color)"
+        explainText="$(string.org-mate-background-primary-color_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        presentation="$(presentation.OrgMateBackgroundPrimaryColorUser-pr)" >
+      <parentCategory ref="system:ALT_Background_Mate" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <elements>
+        <text id="OrgMateBackgroundPrimaryColor_setter" valueName="org.mate.background.primary-color"/>
+      </elements>
+    </policy>
+
+    <policy name="OrgMateBackgroundPrimaryColorMachine" class="Machine"
+        displayName="$(string.org-mate-background-primary-color)"
+        explainText="$(string.org-mate-background-primary-color_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        presentation="$(presentation.OrgMateBackgroundPrimaryColorMachine-pr)" >
+      <parentCategory ref="system:ALT_Background_Mate" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <elements>
+        <text id="OrgMateBackgroundPrimaryColor_setter" valueName="org.mate.background.primary-color"/>
+        <boolean id="OrgMateBackgroundPrimaryColor_setter_blocker" key="Software\BaseALT\Policies\GSettingsLocks" valueName="org.mate.background.primary-color">
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+        </boolean>
+      </elements>
+    </policy>
+
+  </policies>
+</policyDefinitions>
