@@ -58,6 +58,17 @@
       <string id="org-mate-screensaver-logout-enabled">Выход из системы после блокировки</string>
       <string id="org-mate-screensaver-logout-enabled_help">Включите, чтобы к диалогу разблокирования экрана  добавилась возможность выхода из системы после некоторой задержки. Время задержки указывается в настройке «Время выхода из сеанса».</string>
 
+      <string id="org-mate-lockdown-disable-log-out">Запрет пользователю завершать сеанс</string>
+      <string id="org-mate-lockdown-disable-log-out_help">Установите, если хотите запретить пользователю завершать сеанс.</string>
+
+      <string id="org-mate-lockdown-disable-lock-screen">Запрет блокировки экрана</string>
+      <string id="org-mate-lockdown-disable-lock-screen_help">Установите, если хотите запретить пользователю блокировать экран.</string>
+
+      <string id="org-mate-lockdown-disable-user-switching">Запрет переключения пользователя</string>
+      <string id="org-mate-lockdown-disable-user-switching_help">Установите, если хотите запретить пользователю переключение на другую учётную запись, пока активен его сеанс.</string>
+
+      <string id="org-mate-lockdown-disable-theme-settings">Запрет выбора тем рабочего стола</string>
+      <string id="org-mate-lockdown-disable-theme-settings_help">Установите, если хотите запретить пользователю изменять настройки темы.</string>
     </stringTable>
 
     <presentationTable>
@@ -186,6 +197,26 @@
 
       <presentation id="OrgMateScreensaverLogoutEnabledMachine-pr">
         <checkBox refId="OrgMateScreensaverLogoutEnabled_setter_blocker">блокировать</checkBox>
+        <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
+      </presentation>
+
+      <presentation id="OrgMateLockdownDisableLogOutMachine-pr">
+        <checkBox refId="OrgMateLockdownDisableLogOut_setter_blocker">блокировать</checkBox>
+        <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
+      </presentation>
+
+      <presentation id="OrgMateLockdownDisableLockScreenMachine-pr">
+        <checkBox refId="OrgMateLockdownDisableLockScreen_setter_blocker">блокировать</checkBox>
+        <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
+      </presentation>
+
+      <presentation id="OrgMateLockdownDisableUserSwitchingMachine-pr">
+        <checkBox refId="OrgMateLockdownDisableUserSwitching_setter_blocker">блокировать</checkBox>
+        <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
+      </presentation>
+
+      <presentation id="OrgMateLockdownDisableThemeSettingsMachine-pr">
+        <checkBox refId="OrgMateLockdownDisableThemeSettings_setter_blocker">блокировать</checkBox>
         <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
       </presentation>
     </presentationTable>

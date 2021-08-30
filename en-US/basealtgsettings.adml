@@ -58,6 +58,17 @@
       <string id="org-mate-screensaver-logout-enabled">Logging out user after blocking</string>
       <string id="org-mate-screensaver-logout-enabled_help">Enable it so that the ability to log out after a certain delay is added to the screen unlock dialog. The delay time is specified in the "Time to exit the session" setting.</string>
 
+      <string id="org-mate-lockdown-disable-log-out">Forbidding the user to terminate the session</string>
+      <string id="org-mate-lockdown-disable-log-out_help">Set it if you want to prevent the user from ending the session.</string>
+
+      <string id="org-mate-lockdown-disable-lock-screen">Forbidding the screen lock</string>
+      <string id="org-mate-lockdown-disable-lock-screen_help">Set it if you want to prevent the user from blocking the screen.</string>
+
+      <string id="org-mate-lockdown-disable-user-switching">Forbidding user switching</string>
+      <string id="org-mate-lockdown-disable-user-switching_help">Set it if you want to prevent the user from switching to another account while his session is active.</string>
+
+      <string id="org-mate-lockdown-disable-theme-settings">Forbidding the selection of desktop themes</string>
+      <string id="org-mate-lockdown-disable-theme-settings_help">Set it if you want to prevent the user from changing the theme settings.</string>
     </stringTable>
 
     <presentationTable>
@@ -189,6 +200,25 @@
         <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
       </presentation>
 
+      <presentation id="OrgMateLockdownDisableLogOutMachine-pr">
+        <checkBox refId="OrgMateLockdownDisableLogOut_setter_blocker">lock</checkBox>
+        <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
+      </presentation>
+
+      <presentation id="OrgMateLockdownDisableLockScreenMachine-pr">
+        <checkBox refId="OrgMateLockdownDisableLockScreen_setter_blocker">lock</checkBox>
+        <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
+      </presentation>
+
+      <presentation id="OrgMateLockdownDisableUserSwitchingMachine-pr">
+        <checkBox refId="OrgMateLockdownDisableUserSwitching_setter_blocker">lock</checkBox>
+        <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
+      </presentation>
+
+      <presentation id="OrgMateLockdownDisableThemeSettingsMachine-pr">
+        <checkBox refId="OrgMateLockdownDisableThemeSettings_setter_blocker">lock</checkBox>
+        <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
+      </presentation>
     </presentationTable>
   </resources>
 </policyDefinitionResources>
