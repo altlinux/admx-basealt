@@ -30,6 +30,34 @@
       <string id="org-mate-background-primary-color">Начальный цвет градиента (цвет сплошной заливки)</string>
       <string id="org-mate-background-primary-color_help">Установите левый или верхний, или сплошной цвет при отрисовке градиента, в зависимости от установленного типа градиента.</string>
 
+      <string id="org-mate-screensaver-idle-activation-enabled">Активация при бездействии</string>
+      <string id="org-mate-screensaver-idle-activation-enabled_help">Включение хранителя экрана при бездействии компьютера</string>
+
+      <string id="org-mate-screensaver-lock-enabled">Блокировка компьютера</string>
+      <string id="org-mate-screensaver-lock-enabled_help">Включите, чтобы заблокировать компьютер при активации хранителя экрана. Блокировака будет включена чере интервал времени, установленный настройкой "Время до блокировки паролем"</string>
+
+      <string id="org-mate-screensaver-mode">Режим работы</string>
+      <string id="org-mate-screensaver-mode_help">Режим работы хранителя экрана. Возможные варианты: «disabled» — отключён, «blank-only» — пустой экран, «single» — использовать одну тему, указанную ключом «темы», «random» — использовать случайно выбранную тему.</string>
+      <string id="org-mate-screensaver-mode_disabled">отключён</string>
+      <string id="org-mate-screensaver-mode_blank_only">пустой экран</string>
+      <string id="org-mate-screensaver-mode_random">случайные темы</string>
+      <string id="org-mate-screensaver-mode_single">выбранная тема</string>
+
+      <string id="org-mate-screensaver-lock-delay">Время до блокировки паролем</string>
+      <string id="org-mate-screensaver-lock-delay_help">Установите количество минут по истечении которых, после активации хранителя экрана, компьютер будет заблокирован</string>
+
+      <string id="org-mate-screensaver-logout-delay">Время до выхода из сеанса</string>
+      <string id="org-mate-screensaver-logout-delay_help">Установите количество минут, через которое после активации хранителя экрана будет появляться диалог выхода из сеанса. Этот параметр активен, если установлено значение TRUE для параметра logout-enable</string>
+
+      <string id="org-mate-screensaver-cycle-delay">Время смены тем</string>
+      <string id="org-mate-screensaver-cycle-delay_help">Установите интервал в минутах между сменами тем хранителя экрана.</string>
+
+      <string id="org-mate-screensaver-user-switch-enabled">Переключение пользователя после блокировки</string>
+      <string id="org-mate-screensaver-user-switch-enabled_help">Включите, чтобы диалог разблокирования экрана предоставлял возможность переключиться на другую учётную запись.</string>
+
+      <string id="org-mate-screensaver-logout-enabled">Выход из системы после блокировки</string>
+      <string id="org-mate-screensaver-logout-enabled_help">Включите, чтобы к диалогу разблокирования экрана  добавилась возможность выхода из системы после некоторой задержки. Время задержки указывается в настройке «Время выхода из сеанса».</string>
+
     </stringTable>
 
     <presentationTable>
@@ -95,6 +123,71 @@
         <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
       </presentation>
 
+      <presentation id="OrgMateScreesaverIdleActivationEnabledMachine-pr">
+        <checkBox refId="OrgMateScreesaverIdleActivationEnabled_setter_blocker">блокировать</checkBox>
+        <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
+      </presentation>
+
+      <presentation id="OrgMateScreensaverLockEnabledMachine-pr">
+        <checkBox refId="OrgMateScreensaverLockEnabled_setter_blocker">блокировать</checkBox>
+        <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
+      </presentation>
+
+      <presentation id="OrgMateScreensaverModeUser-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="OrgMateScreensaverMode_setter">Выберите режим работы хранителя экрана:</dropdownList>
+      </presentation>
+
+      <presentation id="OrgMateScreensaverModeMachine-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="OrgMateScreensaverMode_setter">Выберите режим работы хранителя экрана:</dropdownList>
+        <checkBox refId="OrgMateScreensaverMode_setter_blocker">блокировать</checkBox>
+        <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
+      </presentation>
+
+      <presentation id="OrgMateScreensaverLockDelayUser-pr">
+        <text>Интервал в минутах между активацией хранителя экрана и появлением диалога выхода из системы при активации</text>
+        <decimalTextBox refId="OrgMateScreensaverLockDelay_setter" defaultValue="2">Время в минутах</decimalTextBox>
+      </presentation>
+
+      <presentation id="OrgMateScreensaverLockDelayMachine-pr">
+        <text>Интервал в минутах между активацией хранителя экрана и появлением диалога выхода из системы при активации</text>
+        <decimalTextBox refId="OrgMateScreensaverLockDelay_setter" defaultValue="2">Время в минутах</decimalTextBox>
+        <checkBox refId="OrgMateScreensaverLockDelay_setter_blocker">блокировать</checkBox>
+        <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
+      </presentation>
+
+      <presentation id="OrgMateScreensaverLogoutDelayUser-pr">
+        <text>Количество минут, по истечении которого после активации хранителя экрана, экран будет заблокирован</text>
+        <decimalTextBox refId="OrgMateScreensaverLogoutDelay_setter" defaultValue="3">Время в минутах:</decimalTextBox>
+      </presentation>
+
+      <presentation id="OrgMateScreensaverLogoutDelayMachine-pr">
+        <text>Количество минут, по истечении которого после активации хранителя экрана, экран будет заблокирован</text>
+        <decimalTextBox refId="OrgMateScreensaverLogoutDelay_setter" defaultValue="3">Время в минутах:</decimalTextBox>
+        <checkBox refId="OrgMateScreensaverLogoutDelay_setter_blocker">блокировать</checkBox>
+        <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
+      </presentation>
+
+      <presentation id="OrgMateScreensaverCycleDelayUser-pr">
+        <text>Интервал в минутах между сменами тем хранителя экрана</text>
+        <decimalTextBox refId="OrgMateScreensaverCycleDelay_setter" defaultValue="2">Время в минутах:</decimalTextBox>
+      </presentation>
+
+      <presentation id="OrgMateScreensaverCycleDelayMachine-pr">
+        <text>Интервал в минутах между сменами тем хранителя экрана</text>
+        <decimalTextBox refId="OrgMateScreensaverCycleDelay_setter" defaultValue="2">Время в минутах:</decimalTextBox>
+        <checkBox refId="OrgMateScreensaverCycleDelay_setter_blocker">блокировать</checkBox>
+        <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
+      </presentation>
+
+      <presentation id="OrgMateScreensaverUserSwitchEnabledMachine-pr">
+        <checkBox refId="OrgMateScreensaverUserSwitchEnabled_setter_blocker">блокировать</checkBox>
+        <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
+      </presentation>
+
+      <presentation id="OrgMateScreensaverLogoutEnabledMachine-pr">
+        <checkBox refId="OrgMateScreensaverLogoutEnabled_setter_blocker">блокировать</checkBox>
+        <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
+      </presentation>
     </presentationTable>
   </resources>
 </policyDefinitionResources>

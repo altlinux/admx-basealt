@@ -30,6 +30,34 @@
       <string id="org-mate-background-primary-color">The initial color of the gradient (solid fill color)</string>
       <string id="org-mate-background-primary-color_help">Set the left or top, or solid color when drawing the gradient, depending on the set type of gradient.</string>
 
+      <string id="org-mate-screensaver-idle-activation-enabled">Activation, when the computer is idle</string>
+      <string id="org-mate-screensaver-idle-activation-enabled_help">Enabling the screen saver when the computer is idle</string>
+
+      <string id="org-mate-screensaver-lock-enabled">Locking the computer</string>
+      <string id="org-mate-screensaver-lock-enabled_help">Enable it to lock the computer when the screen saver is activated. The lock will be enabled after the time interval set by the "Time to lock with a password"setting</string>
+
+      <string id="org-mate-screensaver-mode">Operating mode</string>
+      <string id="org-mate-screensaver-mode_help">The mode of operation of the screen saver. Possible options: "disabled" — disabled, "blank-only" — an empty screen," single "— use one theme specified by the" themes "key," random " - use a randomly selected theme.</string>
+      <string id="org-mate-screensaver-mode_disabled">disabled</string>
+      <string id="org-mate-screensaver-mode_blank_only">blank screen</string>
+      <string id="org-mate-screensaver-mode_random">random theme</string>
+      <string id="org-mate-screensaver-mode_single">single theme</string>
+
+      <string id="org-mate-screensaver-lock-delay">Time to lock with a password</string>
+      <string id="org-mate-screensaver-lock-delay_help">Set the number of minutes after which, after activating the screen saver, the computer will be locked</string>
+
+      <string id="org-mate-screensaver-logout-delay">Time to exit the session</string>
+      <string id="org-mate-screensaver-logout-delay_help">Set the number of minutes after which the logout dialog will appear after activating the screen saver. This parameter is active if the logout-enable parameter is set to TRUE</string>
+
+      <string id="org-mate-screensaver-cycle-delay">Time to change themes</string>
+      <string id="org-mate-screensaver-cycle-delay_help">Set the interval in minutes between changing the themes of the screen saver.</string>
+
+      <string id="org-mate-screensaver-user-switch-enabled">Switching the user after blocking</string>
+      <string id="org-mate-screensaver-user-switch-enabled_help">Enable it so that the screen unlock dialog provides an opportunity to switch to another account.</string>
+
+      <string id="org-mate-screensaver-logout-enabled">Logging out user after blocking</string>
+      <string id="org-mate-screensaver-logout-enabled_help">Enable it so that the ability to log out after a certain delay is added to the screen unlock dialog. The delay time is specified in the "Time to exit the session" setting.</string>
+
     </stringTable>
 
     <presentationTable>
@@ -92,6 +120,72 @@
           <label>Set the color:</label>
         </textBox>
         <checkBox refId="OrgMateBackgroundPrimaryColor_setter_blocker">lock</checkBox>
+        <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
+      </presentation>
+
+      <presentation id="OrgMateScreesaverIdleActivationEnabledMachine-pr">
+        <checkBox refId="OrgMateScreesaverIdleActivationEnabled_setter_blocker">lock</checkBox>
+        <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
+      </presentation>
+
+      <presentation id="OrgMateScreensaverLockEnabledMachine-pr">
+        <checkBox refId="OrgMateScreensaverLockEnabled_setter_blocker">lock</checkBox>
+        <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
+      </presentation>
+
+      <presentation id="OrgMateScreensaverModeUser-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="OrgMateScreensaverMode_setter">Select an operating mode:</dropdownList>
+      </presentation>
+
+      <presentation id="OrgMateScreensaverModeMachine-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="OrgMateScreensaverMode_setter">Select an operating mode:</dropdownList>
+        <checkBox refId="OrgMateScreensaverMode_setter_blocker">lock</checkBox>
+        <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
+      </presentation>
+
+      <presentation id="OrgMateScreensaverLockDelayUser-pr">
+        <text>The interval in minutes between the activation of the screen saver and the appearance of the logout dialog during activation</text>
+        <decimalTextBox refId="OrgMateScreensaverLockDelay_setter" defaultValue="2">Time in minutes:</decimalTextBox>
+      </presentation>
+
+      <presentation id="OrgMateScreensaverLockDelayMachine-pr">
+        <text>The interval in minutes between the activation of the screen saver and the appearance of the logout dialog during activation</text>
+        <decimalTextBox refId="OrgMateScreensaverLockDelay_setter" defaultValue="2">Time in minutes:</decimalTextBox>
+        <checkBox refId="OrgMateScreensaverLockDelay_setter_blocker">lock</checkBox>
+        <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
+      </presentation>
+
+      <presentation id="OrgMateScreensaverLogoutDelayUser-pr">
+        <text>The number of minutes after which, after activating the screen saver, the screen will be locked</text>
+        <decimalTextBox refId="OrgMateScreensaverLogoutDelay_setter" defaultValue="3">Time in minutes:</decimalTextBox>
+      </presentation>
+
+      <presentation id="OrgMateScreensaverLogoutDelayMachine-pr">
+        <text>The number of minutes after which, after activating the screen saver, the screen will be locked</text>
+        <decimalTextBox refId="OrgMateScreensaverLogoutDelay_setter" defaultValue="3">Time in minutes:</decimalTextBox>
+        <checkBox refId="OrgMateScreensaverLogoutDelay_setter_blocker">lock</checkBox>
+        <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
+      </presentation>
+
+      <presentation id="OrgMateScreensaverCycleDelayUser-pr">
+        <text>The interval in minutes between changing the themes of the screen saver</text>
+        <decimalTextBox refId="OrgMateScreensaverCycleDelay_setter" defaultValue="2">Time in minutes:</decimalTextBox>
+      </presentation>
+
+      <presentation id="OrgMateScreensaverCycleDelayMachine-pr">
+        <text>The interval in minutes between changing the themes of the screen saver</text>
+        <decimalTextBox refId="OrgMateScreensaverCycleDelay_setter" defaultValue="2">Time in minutes:</decimalTextBox>
+        <checkBox refId="OrgMateScreensaverCycleDelay_setter_blocker">lock</checkBox>
+        <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
+      </presentation>
+
+      <presentation id="OrgMateScreensaverLogoutEnabledMachine-pr">
+        <checkBox refId="OrgMateScreensaverLogoutEnabled_setter_blocker">lock</checkBox>
+        <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
+      </presentation>
+
+      <presentation id="OrgMateScreensaverUserSwitchEnabledMachine-pr">
+        <checkBox refId="OrgMateScreensaverUserSwitchEnabled_setter_blocker">lock</checkBox>
         <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
       </presentation>
 
