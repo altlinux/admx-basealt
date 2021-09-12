@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  (c) 2019 BaseALT, Ltd.  -->
+<policyDefinitionResources xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.microsoft.com/GroupPolicy/2006/07/PolicyDefinitions" revision="1.0" schemaVersion="1.0">
+  <displayName>ALT services definitions</displayName>
+  <description>This file contains the gsettings services definitions used by ALT operating system.</description>
+  <resources>
+    <stringTable>
+      <string id="org-mate-background-secondary-color">Конечный цвет градиента</string>
+      <string id="org-mate-background-secondary-color_help">Установите правый или нижний цвет при отрисовке градиента. Не используется при сплошном цвете.</string>
+
+      <string id="org-mate-background-picture-options">Метод отображения картинки фона</string>
+      <string id="org-mate-background-picture-options_help">Устанавливает метод отображения картинки фона рабочего  стола. Возможные значения: «none», «wallpaper», «centered», «scaled», «stretched», «zoom», «spanned».</string>
+      <string id="org-mate-background-picture-options_None">none</string>
+      <string id="org-mate-background-picture-options_Wallpaper">wallpaper</string>
+      <string id="org-mate-background-picture-options_Centered">centered</string>
+      <string id="org-mate-background-picture-options_Scaled">scaled</string>
+      <string id="org-mate-background-picture-options_Stretched">stretched</string>
+      <string id="org-mate-background-picture-options_Zoom">zoom</string>
+      <string id="org-mate-background-picture-options_Spanned">spanned</string>
+
+      <string id="org-mate-background-color-shading-type">Тип градиента</string>
+      <string id="org-mate-background-color-shading-type_help">Установите тип градиента: вертикальный, горизонтальный или сплошная заливка.</string>
+      <string id="org-mate-background-color-shading-type-horizontal-gradient">горизонтальный градиент</string>
+      <string id="org-mate-background-color-shading-type-vertical-gradient">вертикальный градиент</string>
+      <string id="org-mate-background-color-shading-type-solid">сплошная заливка</string>
+
+      <string id="org-mate-background-picture-filename">Картинка фона рабочего стола</string>
+      <string id="org-mate-background-picture-filename_help">Укажите файл, содержащий картинку для установки в качестве фона рабочего стола.</string>
+
+      <string id="org-mate-background-primary-color">Начальный цвет градиента (цвет сплошной заливки)</string>
+      <string id="org-mate-background-primary-color_help">Установите левый или верхний, или сплошной цвет при отрисовке градиента, в зависимости от установленного типа градиента.</string>
+
+      <string id="org-mate-screensaver-idle-activation-enabled">Активация при бездействии</string>
+      <string id="org-mate-screensaver-idle-activation-enabled_help">Включение хранителя экрана при бездействии компьютера</string>
+
+      <string id="org-mate-screensaver-lock-enabled">Блокировка компьютера</string>
+      <string id="org-mate-screensaver-lock-enabled_help">Включите, чтобы заблокировать компьютер при активации хранителя экрана. Блокировака будет включена чере интервал времени, установленный настройкой "Время до блокировки паролем"</string>
+
+      <string id="org-mate-screensaver-mode">Режим работы</string>
+      <string id="org-mate-screensaver-mode_help">Режим работы хранителя экрана. Возможные варианты: «disabled» — отключён, «blank-only» — пустой экран, «single» — использовать одну тему, указанную ключом «темы», «random» — использовать случайно выбранную тему.</string>
+      <string id="org-mate-screensaver-mode_disabled">отключён</string>
+      <string id="org-mate-screensaver-mode_blank_only">пустой экран</string>
+      <string id="org-mate-screensaver-mode_random">случайные темы</string>
+      <string id="org-mate-screensaver-mode_single">выбранная тема</string>
+
+      <string id="org-mate-screensaver-lock-delay">Время до блокировки паролем</string>
+      <string id="org-mate-screensaver-lock-delay_help">Установите количество минут по истечении которых, после активации хранителя экрана, компьютер будет заблокирован</string>
+
+      <string id="org-mate-screensaver-logout-delay">Время до выхода из сеанса</string>
+      <string id="org-mate-screensaver-logout-delay_help">Установите количество минут, через которое после активации хранителя экрана будет появляться диалог выхода из сеанса. Этот параметр активен, если установлено значение TRUE для параметра logout-enable</string>
+
+      <string id="org-mate-screensaver-cycle-delay">Время смены тем</string>
+      <string id="org-mate-screensaver-cycle-delay_help">Установите интервал в минутах между сменами тем хранителя экрана.</string>
+
+      <string id="org-mate-screensaver-user-switch-enabled">Переключение пользователя после блокировки</string>
+      <string id="org-mate-screensaver-user-switch-enabled_help">Включите, чтобы диалог разблокирования экрана предоставлял возможность переключиться на другую учётную запись.</string>
+
+      <string id="org-mate-screensaver-logout-enabled">Выход из системы после блокировки</string>
+      <string id="org-mate-screensaver-logout-enabled_help">Включите, чтобы к диалогу разблокирования экрана  добавилась возможность выхода из системы после некоторой задержки. Время задержки указывается в настройке «Время выхода из сеанса».</string>
+
+      <string id="org-mate-lockdown-disable-log-out">Запрет пользователю завершать сеанс</string>
+      <string id="org-mate-lockdown-disable-log-out_help">Установите, если хотите запретить пользователю завершать сеанс.</string>
+
+      <string id="org-mate-lockdown-disable-lock-screen">Запрет блокировки экрана</string>
+      <string id="org-mate-lockdown-disable-lock-screen_help">Установите, если хотите запретить пользователю блокировать экран.</string>
+
+      <string id="org-mate-lockdown-disable-user-switching">Запрет переключения пользователя</string>
+      <string id="org-mate-lockdown-disable-user-switching_help">Установите, если хотите запретить пользователю переключение на другую учётную запись, пока активен его сеанс.</string>
+
+      <string id="org-mate-lockdown-disable-theme-settings">Запрет выбора тем рабочего стола</string>
+      <string id="org-mate-lockdown-disable-theme-settings_help">Установите, если хотите запретить пользователю изменять настройки темы.</string>
+    </stringTable>
+
+    <presentationTable>
+      <presentation id="OrgMateBackgroundSecondaryColorMachine-pr">
+        <textBox refId="OrgMateBackgroundSecondaryColor_setter">
+          <label>Установите цвет:</label>
+        </textBox>
+        <checkBox refId="OrgMateBackgroundSecondaryColor_setter_blocker">блокировать</checkBox>
+        <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
+      </presentation>
+
+      <presentation id="OrgMateBackgroundSecondaryColorUser-pr">
+        <textBox refId="OrgMateBackgroundSecondaryColor_setter">
+          <label>Установите конечный цвет:</label>
+        </textBox>
+      </presentation>
+
+      <presentation id="OrgMateBackgroundPictureOptionsUser-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="OrgMateBackgroundPictureOptions_setter">Метод отображения картинки фона рабочего стола:</dropdownList>
+      </presentation>
+
+      <presentation id="OrgMateBackgroundPictureOptionsMachine-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="OrgMateBackgroundPictureOptions_setter">Метод отображения картинки фона рабочего стола:</dropdownList>
+        <checkBox refId="OrgMateBackgroundPictureOptions_setter_blocker">блокировать</checkBox>
+        <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
+      </presentation>
+
+      <presentation id="OrgMateBackgroundColorShadingTypeUser-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="OrgMateBackgroundColorShadingType_setter">Установите тип градиента:</dropdownList>
+      </presentation>
+
+      <presentation id="OrgMateBackgroundColorShadingTypeMachine-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="OrgMateBackgroundColorShadingType_setter">Установите тип градиента:</dropdownList>
+        <checkBox refId="OrgMateBackgroundColorShadingType_setter_blocker">блокировать</checkBox>
+        <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
+      </presentation>
+
+      <presentation id="OrgMateBackgroundPictureFilenameUser-pr">
+        <textBox refId="OrgMateBackgroundPictureFilename_setter">
+          <label>файл:</label>
+        </textBox>
+      </presentation>
+
+      <presentation id="OrgMateBackgroundPictureFilenameMachine-pr">
+        <textBox refId="OrgMateBackgroundPictureFilename_setter">
+          <label>файл:</label>
+        </textBox>
+        <checkBox refId="OrgMateBackgroundPictureFilename_setter_blocker">блокировать</checkBox>
+        <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
+      </presentation>
+
+      <presentation id="OrgMateBackgroundPrimaryColorUser-pr">
+        <textBox refId="OrgMateBackgroundPrimaryColor_setter">
+          <label>Установите цвет:</label>
+        </textBox>
+      </presentation>
+
+      <presentation id="OrgMateBackgroundPrimaryColorMachine-pr">
+        <textBox refId="OrgMateBackgroundPrimaryColor_setter">
+          <label>Установите цвет:</label>
+        </textBox>
+        <checkBox refId="OrgMateBackgroundPrimaryColor_setter_blocker">блокировать</checkBox>
+        <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
+      </presentation>
+
+      <presentation id="OrgMateScreesaverIdleActivationEnabledMachine-pr">
+        <checkBox refId="OrgMateScreesaverIdleActivationEnabled_setter_blocker">блокировать</checkBox>
+        <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
+      </presentation>
+
+      <presentation id="OrgMateScreensaverLockEnabledMachine-pr">
+        <checkBox refId="OrgMateScreensaverLockEnabled_setter_blocker">блокировать</checkBox>
+        <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
+      </presentation>
+
+      <presentation id="OrgMateScreensaverModeUser-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="OrgMateScreensaverMode_setter">Выберите режим работы хранителя экрана:</dropdownList>
+      </presentation>
+
+      <presentation id="OrgMateScreensaverModeMachine-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="OrgMateScreensaverMode_setter">Выберите режим работы хранителя экрана:</dropdownList>
+        <checkBox refId="OrgMateScreensaverMode_setter_blocker">блокировать</checkBox>
+        <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
+      </presentation>
+
+      <presentation id="OrgMateScreensaverLockDelayUser-pr">
+        <text>Интервал в минутах между активацией хранителя экрана и появлением диалога выхода из системы при активации</text>
+        <decimalTextBox refId="OrgMateScreensaverLockDelay_setter" defaultValue="2">Время в минутах</decimalTextBox>
+      </presentation>
+
+      <presentation id="OrgMateScreensaverLockDelayMachine-pr">
+        <text>Интервал в минутах между активацией хранителя экрана и появлением диалога выхода из системы при активации</text>
+        <decimalTextBox refId="OrgMateScreensaverLockDelay_setter" defaultValue="2">Время в минутах</decimalTextBox>
+        <checkBox refId="OrgMateScreensaverLockDelay_setter_blocker">блокировать</checkBox>
+        <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
+      </presentation>
+
+      <presentation id="OrgMateScreensaverLogoutDelayUser-pr">
+        <text>Количество минут, по истечении которого после активации хранителя экрана, экран будет заблокирован</text>
+        <decimalTextBox refId="OrgMateScreensaverLogoutDelay_setter" defaultValue="3">Время в минутах:</decimalTextBox>
+      </presentation>
+
+      <presentation id="OrgMateScreensaverLogoutDelayMachine-pr">
+        <text>Количество минут, по истечении которого после активации хранителя экрана, экран будет заблокирован</text>
+        <decimalTextBox refId="OrgMateScreensaverLogoutDelay_setter" defaultValue="3">Время в минутах:</decimalTextBox>
+        <checkBox refId="OrgMateScreensaverLogoutDelay_setter_blocker">блокировать</checkBox>
+        <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
+      </presentation>
+
+      <presentation id="OrgMateScreensaverCycleDelayUser-pr">
+        <text>Интервал в минутах между сменами тем хранителя экрана</text>
+        <decimalTextBox refId="OrgMateScreensaverCycleDelay_setter" defaultValue="2">Время в минутах:</decimalTextBox>
+      </presentation>
+
+      <presentation id="OrgMateScreensaverCycleDelayMachine-pr">
+        <text>Интервал в минутах между сменами тем хранителя экрана</text>
+        <decimalTextBox refId="OrgMateScreensaverCycleDelay_setter" defaultValue="2">Время в минутах:</decimalTextBox>
+        <checkBox refId="OrgMateScreensaverCycleDelay_setter_blocker">блокировать</checkBox>
+        <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
+      </presentation>
+
+      <presentation id="OrgMateScreensaverUserSwitchEnabledMachine-pr">
+        <checkBox refId="OrgMateScreensaverUserSwitchEnabled_setter_blocker">блокировать</checkBox>
+        <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
+      </presentation>
+
+      <presentation id="OrgMateScreensaverLogoutEnabledMachine-pr">
+        <checkBox refId="OrgMateScreensaverLogoutEnabled_setter_blocker">блокировать</checkBox>
+        <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
+      </presentation>
+
+      <presentation id="OrgMateLockdownDisableLogOutMachine-pr">
+        <checkBox refId="OrgMateLockdownDisableLogOut_setter_blocker">блокировать</checkBox>
+        <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
+      </presentation>
+
+      <presentation id="OrgMateLockdownDisableLockScreenMachine-pr">
+        <checkBox refId="OrgMateLockdownDisableLockScreen_setter_blocker">блокировать</checkBox>
+        <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
+      </presentation>
+
+      <presentation id="OrgMateLockdownDisableUserSwitchingMachine-pr">
+        <checkBox refId="OrgMateLockdownDisableUserSwitching_setter_blocker">блокировать</checkBox>
+        <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
+      </presentation>
+
+      <presentation id="OrgMateLockdownDisableThemeSettingsMachine-pr">
+        <checkBox refId="OrgMateLockdownDisableThemeSettings_setter_blocker">блокировать</checkBox>
+        <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
+      </presentation>
+    </presentationTable>
+  </resources>
+</policyDefinitionResources>
