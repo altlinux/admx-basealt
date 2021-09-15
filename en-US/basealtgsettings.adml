@@ -69,6 +69,21 @@
 
       <string id="org-mate-lockdown-disable-theme-settings">Forbidding the selection of desktop themes</string>
       <string id="org-mate-lockdown-disable-theme-settings_help">Set it if you want to prevent the user from changing the theme settings.</string>
+
+      <string id="org-gnome-vino-view-only">Remote control</string>
+      <string id="org-gnome-vino-view-only_help">If true, remote users accessing the desktop are only allowed to view the desktop. Remote users will not be able to use the mouse or keyboard.</string>
+
+      <string id="org-gnome-vino-prompt-enabled">Confirmation when connecting</string>
+      <string id="org-gnome-vino-prompt-enabled_help">If true, remote users accessing the desktop are not allowed access until the user on the host machine approves the connection. Recommended especially when access is not password protected.</string>
+
+      <string id="org-gnome-vino-icon-visibility">Connection icon</string>
+      <string id="org-gnome-vino-icon-visibility_help">This key controls the behavior of the status icon. There are three options: "always" - the icon will always be present; "client" - the icon will only be present when someone is connected (this is the default behavior); "never" - the icon will not be present.</string>
+      <string id="org-gnome-vino-icon-visibility-never">never</string>
+      <string id="org-gnome-vino-icon-visibility-always">always</string>
+      <string id="org-gnome-vino-icon-visibility-client">client</string>
+
+      <string id="org-gnome-vino-enabled">Remote access</string>
+      <string id="org-gnome-vino-enabled_help">If "true" allows remote access to desktop via the RFB protocol. Users on remote machines may then connect to the desktop using a VNC player.</string>
     </stringTable>
 
     <presentationTable>
@@ -219,6 +234,32 @@
         <checkBox refId="OrgMateLockdownDisableThemeSettings_setter_blocker">lock</checkBox>
         <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
       </presentation>
+
+      <presentation id="OrgGnomeVinoViewOnlyMachine-pr">
+        <checkBox refId="OrgGnomeVinoViewOnly_setter_blocker">lock</checkBox>
+        <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
+      </presentation>
+
+      <presentation id="OrgGnomeVinoPromptEnabledMachine-pr">
+        <checkBox refId="OrgGnomeVinoPromptEnabled_setter_blocker">lock</checkBox>
+        <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
+      </presentation>
+
+      <presentation id="OrgGnomeVinoIconVisibilityUser-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="OrgGnomeVinoIconVisibility_setter">Show notification:</dropdownList>
+      </presentation>
+
+      <presentation id="OrgGnomeVinoIconVisibilityMachine-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="OrgGnomeVinoIconVisibility_setter">Show notification:</dropdownList>
+        <checkBox refId="OrgGnomeVinoIconVisibility_setter_blocker">lock</checkBox>
+        <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
+      </presentation>
+
+      <presentation id="OrgGnomeVinoEnabledMachine-pr">
+        <checkBox refId="OrgGnomeVinoEnabled_setter_blocker">lock</checkBox>
+        <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
+      </presentation>
+
     </presentationTable>
   </resources>
 </policyDefinitionResources>

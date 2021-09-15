@@ -69,6 +69,22 @@
 
       <string id="org-mate-lockdown-disable-theme-settings">Запрет выбора тем рабочего стола</string>
       <string id="org-mate-lockdown-disable-theme-settings_help">Установите, если хотите запретить пользователю изменять настройки темы.</string>
+
+      <string id="org-gnome-vino-view-only">Удаленное управление</string>
+      <string id="org-gnome-vino-view-only_help">Если установлено, то удаленным пользователям, разрешается только просматривать рабочий стол. Удаленные пользователи не смогут управлять мышью и клавиатурой.</string>
+
+      <string id="org-gnome-vino-prompt-enabled">Подтверждение при подключении</string>
+      <string id="org-gnome-vino-prompt-enabled_help">Если установлено TRUE, то подключение удаленного пользователя к рабочему столу невозможно без подтверждения локального пользоваителя. Рекомендуется при отсутствии защиты подключения паролем.</string>
+
+      <string id="org-gnome-vino-icon-visibility">Иконка подключения </string>
+      <string id="org-gnome-vino-icon-visibility_help">Поведение иконки уведомления о состоянии удаленного подключения</string>
+      <string id="org-gnome-vino-icon-visibility-never">никогда</string>
+      <string id="org-gnome-vino-icon-visibility-always">всегда</string>
+      <string id="org-gnome-vino-icon-visibility-client">только при подключении клиента</string>
+
+      <string id="org-gnome-vino-enabled">Удаленный доступ</string>
+      <string id="org-gnome-vino-enabled_help">Если установлено TRUE, то удаленный пользователь может подключаться к локальному рабочему столу с использованием протокола RFB и VNC.</string>
+
     </stringTable>
 
     <presentationTable>
@@ -219,6 +235,32 @@
         <checkBox refId="OrgMateLockdownDisableThemeSettings_setter_blocker">блокировать</checkBox>
         <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
       </presentation>
+
+      <presentation id="OrgGnomeVinoViewOnlyMachine-pr">
+        <checkBox refId="OrgGnomeVinoViewOnly_setter_blocker">блокировать</checkBox>
+        <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
+      </presentation>
+
+      <presentation id="OrgGnomeVinoPromptEnabledMachine-pr">
+        <checkBox refId="OrgGnomeVinoPromptEnabled_setter_blocker">блокировать</checkBox>
+        <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
+      </presentation>
+
+      <presentation id="OrgGnomeVinoIconVisibilityUser-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="OrgGnomeVinoIconVisibility_setter">Показывать уведомление:</dropdownList>
+      </presentation>
+
+      <presentation id="OrgGnomeVinoIconVisibilityMachine-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="OrgGnomeVinoIconVisibility_setter">Показывать уведомление:</dropdownList>
+        <checkBox refId="OrgGnomeVinoIconVisibility_setter_blocker">блокировать</checkBox>
+        <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
+      </presentation>
+
+      <presentation id="OrgGnomeVinoEnabledMachine-pr">
+        <checkBox refId="OrgGnomeVinoEnabled_setter_blocker">блокировать</checkBox>
+        <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
+      </presentation>
+
     </presentationTable>
   </resources>
 </policyDefinitionResources>
