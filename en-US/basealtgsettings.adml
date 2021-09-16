@@ -91,6 +91,12 @@
       <string id="org-gnome-vino-use-alternative-port">Connecting via an alternative port</string>
       <string id="org-gnome-vino-use-alternative-port_help">If true, the server will listen on another port, instead of the default (5900). The port must be specified in the 'alternative-port' key.</string>
 
+      <string id="org-gnome-vino-authentication-methods">Authentication methods</string>
+      <string id="org-gnome-vino-authentication-methods_help">Lists the authentication methods with which remote users may access the desktop.  There are two possible authentication methods; "vnc" causes the remote user to be prompted for a password (the password is specified by the vnc-password key) before connecting and "none" which allows any remote user to connect.</string>
+
+      <string id="org-gnome-vino-vnc-password">Password for remote access</string>
+      <string id="org-gnome-vino-vnc-password_help">The password which the remote user will be prompted for if the "vnc" authentication method is used. The password specified by the key is base64 encoded.  The special value of 'keyring' (which is not valid base64) means that the password is stored in the GNOME keyring.</string>
+
     </stringTable>
 
     <presentationTable>
@@ -279,6 +285,30 @@
 
       <presentation id="OrgGnomeVinoUseAlternativePortMachine-pr">
         <checkBox refId="OrgGnomeVinoUseAlternativePort_setter_blocker">lock</checkBox>
+        <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
+      </presentation>
+
+      <presentation id="OrgGnomeVinoAuthenticationMethodsUser-pr">
+        <listBox refId="OrgGnomeVinoAuthenticationMethods_setter">Authentication methods:</listBox>
+      </presentation>
+
+      <presentation id="OrgGnomeVinoAuthenticationMethodsMachine-pr">
+        <listBox refId="OrgGnomeVinoAuthenticationMethods_setter">Authentication methods:</listBox>
+        <checkBox refId="OrgGnomeVinoAuthenticationMethods_setter_blocker">lock</checkBox>
+        <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
+      </presentation>
+
+      <presentation id="OrgGnomeVinoVncPasswordUser-pr">
+        <textBox refId="OrgGnomeVinoVncPassword_setter">
+          <label>Password:</label>
+        </textBox>
+      </presentation>
+
+      <presentation id="OrgGnomeVinoVncPasswordMachine-pr">
+        <textBox refId="OrgGnomeVinoVncPassword_setter">
+          <label>Password:</label>
+        </textBox>
+        <checkBox refId="OrgGnomeVinoVncPassword_setter_blocker">lock</checkBox>
         <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
       </presentation>
 
