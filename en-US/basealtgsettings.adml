@@ -84,6 +84,13 @@
 
       <string id="org-gnome-vino-enabled">Remote access</string>
       <string id="org-gnome-vino-enabled_help">If "true" allows remote access to desktop via the RFB protocol. Users on remote machines may then connect to the desktop using a VNC player.</string>
+
+      <string id="org-gnome-vino-alternative-port">Alternative port</string>
+      <string id="org-gnome-vino-alternative-port_help">The port which the server will listen to if the 'use-alternative-port' key is set to true. Valid values are in the range of 5000 to 50000.</string>
+
+      <string id="org-gnome-vino-use-alternative-port">Connecting via an alternative port</string>
+      <string id="org-gnome-vino-use-alternative-port_help">If true, the server will listen on another port, instead of the default (5900). The port must be specified in the 'alternative-port' key.</string>
+
     </stringTable>
 
     <presentationTable>
@@ -257,6 +264,21 @@
 
       <presentation id="OrgGnomeVinoEnabledMachine-pr">
         <checkBox refId="OrgGnomeVinoEnabled_setter_blocker">lock</checkBox>
+        <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
+      </presentation>
+
+      <presentation id="OrgGnomeVinoAlternativePortUser-pr">
+        <decimalTextBox refId="OrgGnomeVinoAlternativePort_setter" defaultValue="5000">Port:</decimalTextBox>
+      </presentation>
+
+      <presentation id="OrgGnomeVinoAlternativePortMachine-pr">
+        <decimalTextBox refId="OrgGnomeVinoAlternativePort_setter" defaultValue="5000">Port:</decimalTextBox>
+        <checkBox refId="OrgGnomeVinoAlternativePort_setter_blocker">lock</checkBox>
+        <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
+      </presentation>
+
+      <presentation id="OrgGnomeVinoUseAlternativePortMachine-pr">
+        <checkBox refId="OrgGnomeVinoUseAlternativePort_setter_blocker">lock</checkBox>
         <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
       </presentation>
 

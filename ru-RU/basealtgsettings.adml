@@ -85,6 +85,12 @@
       <string id="org-gnome-vino-enabled">Удаленный доступ</string>
       <string id="org-gnome-vino-enabled_help">Если установлено TRUE, то удаленный пользователь может подключаться к локальному рабочему столу с использованием протокола RFB и VNC.</string>
 
+      <string id="org-gnome-vino-alternative-port">Альтернативный порт</string>
+      <string id="org-gnome-vino-alternative-port_help">Альтернативный порт подключения. Диапазон значений от 5 000 до 50 000.</string>
+
+      <string id="org-gnome-vino-use-alternative-port">Подключение по альтернативному порту</string>
+      <string id="org-gnome-vino-use-alternative-port_help">Если установлено, то Vino использует альтернативный порт для подключения(вместо порта по умолчанию 5900), указанные в ключе "alternative-port".</string>
+
     </stringTable>
 
     <presentationTable>
@@ -258,6 +264,21 @@
 
       <presentation id="OrgGnomeVinoEnabledMachine-pr">
         <checkBox refId="OrgGnomeVinoEnabled_setter_blocker">блокировать</checkBox>
+        <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
+      </presentation>
+
+      <presentation id="OrgGnomeVinoAlternativePortUser-pr">
+        <decimalTextBox refId="OrgGnomeVinoAlternativePort_setter" defaultValue="5000">Порт:</decimalTextBox>
+      </presentation>
+
+        <presentation id="OrgGnomeVinoAlternativePortMachine-pr">
+        <decimalTextBox refId="OrgGnomeVinoAlternativePort_setter" defaultValue="5000">Порт:</decimalTextBox>
+        <checkBox refId="OrgGnomeVinoAlternativePort_setter_blocker">блокировать</checkBox>
+        <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
+      </presentation>
+
+      <presentation id="OrgGnomeVinoUseAlternativePortMachine-pr">
+        <checkBox refId="OrgGnomeVinoUseAlternativePort_setter_blocker">блокировать</checkBox>
         <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
       </presentation>
 

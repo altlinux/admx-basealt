@@ -956,5 +956,78 @@
       </elements>
     </policy>
 
+    <policy name="OrgGnomeVinoAlternativePortUser" class="User"
+        displayName="$(string.org-gnome-vino-alternative-port)"
+        explainText="$(string.org-gnome-vino-alternative-port_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        presentation="$(presentation.OrgGnomeVinoAlternativePortUser-pr)">
+      <parentCategory ref="system:ALT_Remote_Access_Vino_Gnome" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <elements>
+        <decimal id="OrgGnomeVinoAlternativePort_setter" valueName="org.gnome.Vino.alternative-port" minValue="5000" maxValue="50000" />
+      </elements>
+    </policy>
+
+    <policy name="OrgGnomeVinoAlternativePortMachine" class="Machine"
+        displayName="$(string.org-gnome-vino-alternative-port)"
+        explainText="$(string.org-gnome-vino-alternative-port_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        presentation="$(presentation.OrgGnomeVinoAlternativePortMachine-pr)">
+      <parentCategory ref="system:ALT_Remote_Access_Vino_Gnome" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <elements>
+        <decimal id="OrgGnomeVinoAlternativePort_setter" valueName="org.gnome.Vino.alternative-port" minValue="5000" maxValue="50000" />
+        <boolean id="OrgGnomeVinoAlternativePort_setter_blocker" key="Software\BaseALT\Policies\GSettingsLocks" valueName="org.gnome.Vino.alternative-port">
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+        </boolean>
+      </elements>
+    </policy>
+
+    <policy name="OrgGnomeVinoUseAlternativePortUser" class="User"
+        displayName="$(string.org-gnome-vino-use-alternative-port)"
+        explainText="$(string.org-gnome-vino-use-alternative-port_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        valueName="org.gnome.Vino.use-alternative-port">
+      <parentCategory ref="system:ALT_Remote_Access_Vino_Gnome" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+    </policy>
+
+    <policy name="OrgGnomeVinoUseAlternativePortMachine" class="Machine"
+        displayName="$(string.org-gnome-vino-use-alternative-port)"
+        explainText="$(string.org-gnome-vino-use-alternative-port_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        valueName="org.gnome.Vino.use-alternative-port"
+        presentation="$(presentation.OrgGnomeVinoUseAlternativePortMachine-pr)">
+      <parentCategory ref="system:ALT_Remote_Access_Vino_Gnome" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+      <elements>
+        <boolean id="OrgGnomeVinoUseAlternativePort_setter_blocker" key="Software\BaseALT\Policies\GSettingsLocks" valueName="org.gnome.Vino.use-alternative-port">
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+        </boolean>
+      </elements>
+    </policy>
+
   </policies>
 </policyDefinitions>
