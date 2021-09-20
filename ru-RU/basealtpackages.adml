@@ -28,15 +28,32 @@
 Отключено — не обновлять операционную систему автоматически
 
 Включено — обновлять операционную систему автоматически
-      </string>
+      </string>
+
+      <string id="sync_packages_work_machine">Cинхронная работа с пакетами</string>
+      <string id="sync_packages_work_machine_help">Включите данную настройку, для синхронной работы с пакетами</string>
+
+      <string id="sync_packages_work_user">Синхронная работа с пакетами</string>
+      <string id="sync_packages_work_user_help">Включите данную настройку, для синхронной работы с пакетами</string>
+
     </stringTable>
     <presentationTable>
-      <presentation id="InstallPackages">
+      <presentation id="InstallPackagesMachine">
         <listBox refId="InstallPackagesList">Список пакетов для установки</listBox>
       </presentation>
-      <presentation id="RemovePackages">
+
+      <presentation id="InstallPackagesUser">
+        <listBox refId="InstallPackagesList">Список пакетов для установки</listBox>
+      </presentation>
+
+      <presentation id="RemovePackagesMachine">
         <listBox refId="RemovePackagesList">Список пакетов для удаления</listBox>
       </presentation>
+
+      <presentation id="RemovePackagesUser">
+        <listBox refId="RemovePackagesList">Список пакетов для удаления</listBox>
+      </presentation>
+
     </presentationTable>
   </resources>
 </policyDefinitionResources>

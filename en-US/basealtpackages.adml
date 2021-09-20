@@ -29,14 +29,31 @@ Disabled - Don't update OS automatically
 
 Enabled - Update OS automatically
       </string>
+
+      <string id="sync_packages_work_machine">Synchronous work with packages</string>
+      <string id="sync_packages_work_machine_help">Enable this setting for synchronous work with packages</string>
+
+      <string id="sync_packages_work_user">Synchronous work with packages</string>
+      <string id="sync_packages_work_user_help">Enable this setting for synchronous work with packages</string>
+
     </stringTable>
     <presentationTable>
-      <presentation id="InstallPackages">
+      <presentation id="InstallPackagesMachine">
         <listBox refId="InstallPackagesList">List of packages to install</listBox>
       </presentation>
-      <presentation id="RemovePackages">
+
+      <presentation id="InstallPackagesUser">
+        <listBox refId="InstallPackagesList">List of packages to install</listBox>
+      </presentation>
+
+      <presentation id="RemovePackagesMachine">
         <listBox refId="RemovePackagesList">List of packages to remove</listBox>
       </presentation>
+
+      <presentation id="RemovePackagesUser">
+        <listBox refId="RemovePackagesList">List of packages to remove</listBox>
+      </presentation>
+
     </presentationTable>
   </resources>
 </policyDefinitionResources>
