@@ -34,7 +34,7 @@
       <string id="org-mate-screensaver-idle-activation-enabled_help">Включение хранителя экрана при бездействии компьютера</string>
 
       <string id="org-mate-screensaver-lock-enabled">Блокировка компьютера</string>
-      <string id="org-mate-screensaver-lock-enabled_help">Включите, чтобы заблокировать компьютер при активации хранителя экрана. Блокировака будет включена чере интервал времени, установленный настройкой "Время до блокировки паролем"</string>
+      <string id="org-mate-screensaver-lock-enabled_help">Включите, чтобы заблокировать компьютер при активации хранителя экрана. Блокировка будет включена чере интервал времени, установленный настройкой "Время до блокировки паролем"</string>
 
       <string id="org-mate-screensaver-mode">Режим работы</string>
       <string id="org-mate-screensaver-mode_help">Режим работы хранителя экрана. Возможные варианты: «disabled» — отключён, «blank-only» — пустой экран, «single» — использовать одну тему, указанную ключом «темы», «random» — использовать случайно выбранную тему.</string>
@@ -74,7 +74,7 @@
       <string id="org-gnome-vino-view-only_help">Если установлено, то удаленным пользователям, разрешается только просматривать рабочий стол. Удаленные пользователи не смогут управлять мышью и клавиатурой.</string>
 
       <string id="org-gnome-vino-prompt-enabled">Подтверждение при подключении</string>
-      <string id="org-gnome-vino-prompt-enabled_help">Если установлено TRUE, то подключение удаленного пользователя к рабочему столу невозможно без подтверждения локального пользоваителя. Рекомендуется при отсутствии защиты подключения паролем.</string>
+      <string id="org-gnome-vino-prompt-enabled_help">Если установлено TRUE, то подключение удаленного пользователя к рабочему столу невозможно без подтверждения локального пользователя. Рекомендуется при отсутствии защиты подключения паролем.</string>
 
       <string id="org-gnome-vino-icon-visibility">Иконка подключения </string>
       <string id="org-gnome-vino-icon-visibility_help">Поведение иконки уведомления о состоянии удаленного подключения</string>
@@ -91,7 +91,7 @@
       <string id="org-gnome-vino-use-alternative-port">Подключение по альтернативному порту</string>
       <string id="org-gnome-vino-use-alternative-port_help">Если установлено, то Vino использует альтернативный порт для подключения(вместо порта по умолчанию 5900), указанные в ключе "alternative-port".</string>
 
-      <string id="org-gnome-vino-authentication-methods">Методы аутентификации.</string>
+      <string id="org-gnome-vino-authentication-methods">Методы аутентификации</string>
       <string id="org-gnome-vino-authentication-methods_help">Методы аутентификации пользователей, подключающихся к удаленному рабочему столу. Есть два метода аутентификации: "vnc" - для подключения необходим пароль и "none" - пароль не требуется.</string>
 
       <string id="org-gnome-vino-vnc-password">Пароль для подключения</string>
