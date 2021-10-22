@@ -5,11 +5,11 @@
   <description>This file contains the gsettings services definitions used by ALT operating system.</description>
   <resources>
     <stringTable>
-      <string id="org-mate-background-secondary-color">The final color of the gradient</string>
-      <string id="org-mate-background-secondary-color_help">Set the right or bottom color when drawing the gradient. It is not used for solid color.</string>
+      <string id="org-mate-background-secondary-color">Final gradient color</string>
+      <string id="org-mate-background-secondary-color_help">Set right or bottom color when drawing the gradient. Doesn't apply to solid color.</string>
 
-      <string id="org-mate-background-picture-options">Method for displaying the background image</string>
-      <string id="org-mate-background-picture-options_help">Sets the method for displaying the desktop background image. Possible values: "none", "wallpaper", "centered", "scaled", "stretched"," zoom","spanned".</string>
+      <string id="org-mate-background-picture-options">Desktop background options</string>
+      <string id="org-mate-background-picture-options_help">Set how to display the desktop background. Possible values: "none", "wallpaper", "centered", "scaled", "stretched", "zoom", "spanned".</string>
       <string id="org-mate-background-picture-options_None">none</string>
       <string id="org-mate-background-picture-options_Wallpaper">wallpaper</string>
       <string id="org-mate-background-picture-options_Centered">centered</string>
@@ -25,65 +25,65 @@
       <string id="org-mate-background-color-shading-type-solid">solid fill</string>
 
       <string id="org-mate-background-picture-filename">Desktop background image</string>
-      <string id="org-mate-background-picture-filename_help">Specify the file containing the image to install as the desktop background.</string>
+      <string id="org-mate-background-picture-filename_help">Set the image to use as the desktop background.</string>
 
       <string id="org-mate-background-primary-color">The initial color of the gradient (solid fill color)</string>
-      <string id="org-mate-background-primary-color_help">Set the left or top, or solid color when drawing the gradient, depending on the set type of gradient.</string>
+      <string id="org-mate-background-primary-color_help">Set left, top, or solid color to be used for the gradient, depending on the defined gradient type.</string>
 
-      <string id="org-mate-screensaver-idle-activation-enabled">Activation, when the computer is idle</string>
-      <string id="org-mate-screensaver-idle-activation-enabled_help">Enabling the screen saver when the computer is idle</string>
+      <string id="org-mate-screensaver-idle-activation-enabled">Screen saver</string>
+      <string id="org-mate-screensaver-idle-activation-enabled_help">Turn on screen saver while idle.</string>
 
-      <string id="org-mate-screensaver-lock-enabled">Locking the computer</string>
-      <string id="org-mate-screensaver-lock-enabled_help">Enable it to lock the computer when the screen saver is activated. The lock will be enabled after the time interval set by the "Time to lock with a password"setting</string>
+      <string id="org-mate-screensaver-lock-enabled">Screen lock</string>
+      <string id="org-mate-screensaver-lock-enabled_help">Enable, to lock the computer while screen saver is active. Computer will be locked after the time interval set by the "Lock delay" setting.</string>
 
-      <string id="org-mate-screensaver-mode">Operating mode</string>
-      <string id="org-mate-screensaver-mode_help">The mode of operation of the screen saver. Possible options: "disabled" — disabled, "blank-only" — an empty screen," single "— use one theme specified by the" themes "key," random " - use a randomly selected theme.</string>
+      <string id="org-mate-screensaver-mode">Screen saver mode</string>
+      <string id="org-mate-screensaver-mode_help">The mode of operation for the screen saver. Possible options: "disabled" — disabled, "blank-only" — an empty screen, "single" — use one theme specified by the " themes" key, "random" - use a random theme.</string>
       <string id="org-mate-screensaver-mode_disabled">disabled</string>
       <string id="org-mate-screensaver-mode_blank_only">blank screen</string>
       <string id="org-mate-screensaver-mode_random">random theme</string>
       <string id="org-mate-screensaver-mode_single">single theme</string>
 
-      <string id="org-mate-screensaver-lock-delay">Time to lock with a password</string>
-      <string id="org-mate-screensaver-lock-delay_help">Set the number of minutes after which, after activating the screen saver, the computer will be locked</string>
+      <string id="org-mate-screensaver-lock-delay">Lock delay</string>
+      <string id="org-mate-screensaver-lock-delay_help">Set the delay in minutes between screen saver activation and computer lock.</string>
 
-      <string id="org-mate-screensaver-logout-delay">Time to exit the session</string>
-      <string id="org-mate-screensaver-logout-delay_help">Set the number of minutes after which the logout dialog will appear after activating the screen saver. This parameter is active if the logout-enable parameter is set to TRUE</string>
+      <string id="org-mate-screensaver-logout-delay">Logout delay</string>
+      <string id="org-mate-screensaver-logout-delay_help">Set the delay in minutes between screen saver activation and automatic logout. This setting is active if the "User logout after blocking" setting is enabled.</string>
 
-      <string id="org-mate-screensaver-cycle-delay">Time to change themes</string>
-      <string id="org-mate-screensaver-cycle-delay_help">Set the interval in minutes between changing the themes of the screen saver.</string>
+      <string id="org-mate-screensaver-cycle-delay">Screensaver cycle delay</string>
+      <string id="org-mate-screensaver-cycle-delay_help">Set the delay for screen saver theme cycle.</string>
 
-      <string id="org-mate-screensaver-user-switch-enabled">Switching the user after blocking</string>
-      <string id="org-mate-screensaver-user-switch-enabled_help">Enable it so that the screen unlock dialog provides an opportunity to switch to another account.</string>
+      <string id="org-mate-screensaver-user-switch-enabled">Switching user after blocking</string>
+      <string id="org-mate-screensaver-user-switch-enabled_help">Enable to allow switching to another account in the screen unlock dialog.</string>
 
-      <string id="org-mate-screensaver-logout-enabled">Logging out user after blocking</string>
-      <string id="org-mate-screensaver-logout-enabled_help">Enable it so that the ability to log out after a certain delay is added to the screen unlock dialog. The delay time is specified in the "Time to exit the session" setting.</string>
+      <string id="org-mate-screensaver-logout-enabled">User logout after blocking</string>
+      <string id="org-mate-screensaver-logout-enabled_help">Enable to allow logging out in the screen unlock dialog. The delay is specified in the "Logout delay" setting.</string>
 
-      <string id="org-mate-lockdown-disable-log-out">Forbidding the user to terminate the session</string>
-      <string id="org-mate-lockdown-disable-log-out_help">Set it if you want to prevent the user from ending the session.</string>
+      <string id="org-mate-lockdown-disable-log-out">Forbid log out </string>
+      <string id="org-mate-lockdown-disable-log-out_help">Enable to prevent the user from ending the session.</string>
 
-      <string id="org-mate-lockdown-disable-lock-screen">Forbidding the screen lock</string>
-      <string id="org-mate-lockdown-disable-lock-screen_help">Set it if you want to prevent the user from blocking the screen.</string>
+      <string id="org-mate-lockdown-disable-lock-screen">Disable screen lock</string>
+      <string id="org-mate-lockdown-disable-lock-screen_help">Set to disable automatic screen lock.</string>
 
-      <string id="org-mate-lockdown-disable-user-switching">Forbidding user switching</string>
-      <string id="org-mate-lockdown-disable-user-switching_help">Set it if you want to prevent the user from switching to another account while his session is active.</string>
+      <string id="org-mate-lockdown-disable-user-switching">Forbid user switching</string>
+      <string id="org-mate-lockdown-disable-user-switching_help">Enable to prevent the user from switching to another account while their session is active.</string>
 
-      <string id="org-mate-lockdown-disable-theme-settings">Forbidding the selection of desktop themes</string>
-      <string id="org-mate-lockdown-disable-theme-settings_help">Set it if you want to prevent the user from changing the theme settings.</string>
+      <string id="org-mate-lockdown-disable-theme-settings">Forbid desktop theme customization</string>
+      <string id="org-mate-lockdown-disable-theme-settings_help">Enabled to prevent the user from changing theme setthings.</string>
 
       <string id="org-gnome-vino-view-only">Remote control</string>
       <string id="org-gnome-vino-view-only_help">If true, remote users accessing the desktop are only allowed to view the desktop. Remote users will not be able to use the mouse or keyboard.</string>
 
       <string id="org-gnome-vino-prompt-enabled">Confirmation when connecting</string>
-      <string id="org-gnome-vino-prompt-enabled_help">If true, remote users accessing the desktop are not allowed access until the user on the host machine approves the connection. Recommended especially when access is not password protected.</string>
+      <string id="org-gnome-vino-prompt-enabled_help">If true, remote users accessing the desktop are not allowed access until the user on the host machine approves the connection. Recommended when access is not password protected.</string>
 
       <string id="org-gnome-vino-icon-visibility">Connection icon</string>
-      <string id="org-gnome-vino-icon-visibility_help">This key controls the behavior of the status icon. There are three options: "always" - the icon will always be present; "client" - the icon will only be present when someone is connected (this is the default behavior); "never" - the icon will not be present.</string>
+      <string id="org-gnome-vino-icon-visibility_help">This key controls the behavior of the connection status icon. There are three options: "always" - the icon will always be present; "client" - the icon will only be present when someone is connected (this is the default behavior); "never" - the icon will not be present.</string>
       <string id="org-gnome-vino-icon-visibility-never">never</string>
       <string id="org-gnome-vino-icon-visibility-always">always</string>
       <string id="org-gnome-vino-icon-visibility-client">client</string>
 
       <string id="org-gnome-vino-enabled">Remote access</string>
-      <string id="org-gnome-vino-enabled_help">If "true" allows remote access to desktop via the RFB protocol. Users on remote machines may then connect to the desktop using a VNC player.</string>
+      <string id="org-gnome-vino-enabled_help">If true, allows remote access to desktop via the RFB protocol. Users on remote machines may then connect to the desktop using a VNC player.</string>
 
       <string id="org-gnome-vino-alternative-port">Alternative port</string>
       <string id="org-gnome-vino-alternative-port_help">The port which the server will listen to if the 'use-alternative-port' key is set to true. Valid values are in the range of 5000 to 50000.</string>
