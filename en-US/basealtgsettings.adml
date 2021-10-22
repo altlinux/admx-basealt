@@ -93,6 +93,8 @@
 
       <string id="org-gnome-vino-authentication-methods">Authentication methods</string>
       <string id="org-gnome-vino-authentication-methods_help">Lists the authentication methods with which remote users may access the desktop.  There are two possible authentication methods; "vnc" causes the remote user to be prompted for a password (the password is specified by the vnc-password key) before connecting and "none" which allows any remote user to connect.</string>
+      <string id="org-gnome-vino-authentication-methods-none">none</string>
+      <string id="org-gnome-vino-authentication-methods-vnc">vnc</string>
 
       <string id="org-gnome-vino-vnc-password">Password for remote access</string>
       <string id="org-gnome-vino-vnc-password_help">The password which the remote user will be prompted for if the "vnc" authentication method is used. The password specified by the key is base64 encoded.  The special value of 'keyring' (which is not valid base64) means that the password is stored in the GNOME keyring.</string>
@@ -289,11 +291,11 @@
       </presentation>
 
       <presentation id="OrgGnomeVinoAuthenticationMethodsUser-pr">
-        <listBox refId="OrgGnomeVinoAuthenticationMethods_setter">Authentication methods:</listBox>
+        <dropdownList noSort="true" defaultItem="0" refId="OrgGnomeVinoAuthenticationMethods_setter">Method:</dropdownList>
       </presentation>
 
       <presentation id="OrgGnomeVinoAuthenticationMethodsMachine-pr">
-        <listBox refId="OrgGnomeVinoAuthenticationMethods_setter">Authentication methods:</listBox>
+        <dropdownList noSort="true" defaultItem="0" refId="OrgGnomeVinoAuthenticationMethods_setter">Method:</dropdownList>
         <checkBox refId="OrgGnomeVinoAuthenticationMethods_setter_blocker">lock</checkBox>
         <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
       </presentation>
