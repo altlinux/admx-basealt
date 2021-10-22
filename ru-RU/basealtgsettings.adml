@@ -34,7 +34,7 @@
       <string id="org-mate-screensaver-idle-activation-enabled_help">Включение хранителя экрана при бездействии компьютера</string>
 
       <string id="org-mate-screensaver-lock-enabled">Блокировка компьютера</string>
-      <string id="org-mate-screensaver-lock-enabled_help">Включите, чтобы заблокировать компьютер при активации хранителя экрана. Блокировка будет включена чере интервал времени, установленный настройкой "Время до блокировки паролем"</string>
+      <string id="org-mate-screensaver-lock-enabled_help">Включите, чтобы заблокировать компьютер при активации хранителя экрана. Блокировка будет включена через интервал времени, установленный настройкой "Время до блокировки паролем"</string>
 
       <string id="org-mate-screensaver-mode">Режим работы</string>
       <string id="org-mate-screensaver-mode_help">Режим работы хранителя экрана. Возможные варианты: «disabled» — отключён, «blank-only» — пустой экран, «single» — использовать одну тему, указанную ключом «темы», «random» — использовать случайно выбранную тему.</string>
