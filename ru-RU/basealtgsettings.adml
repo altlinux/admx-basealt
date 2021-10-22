@@ -25,13 +25,13 @@
       <string id="org-mate-background-color-shading-type-solid">сплошная заливка</string>
 
       <string id="org-mate-background-picture-filename">Картинка фона рабочего стола</string>
-      <string id="org-mate-background-picture-filename_help">Укажите файл, содержащий картинку для установки в качестве фона рабочего стола.</string>
+      <string id="org-mate-background-picture-filename_help">Укажите файл c картинкой для установки в качестве фона рабочего стола.</string>
 
       <string id="org-mate-background-primary-color">Начальный цвет градиента (цвет сплошной заливки)</string>
       <string id="org-mate-background-primary-color_help">Установите левый или верхний, или сплошной цвет при отрисовке градиента, в зависимости от установленного типа градиента.</string>
 
-      <string id="org-mate-screensaver-idle-activation-enabled">Активация при бездействии</string>
-      <string id="org-mate-screensaver-idle-activation-enabled_help">Включение хранителя экрана при бездействии компьютера</string>
+      <string id="org-mate-screensaver-idle-activation-enabled">Включение хранителя экрана</string>
+      <string id="org-mate-screensaver-idle-activation-enabled_help">Установите для включения хранителя экрана при бездействии компьютера</string>
 
       <string id="org-mate-screensaver-lock-enabled">Блокировка компьютера</string>
       <string id="org-mate-screensaver-lock-enabled_help">Включите, чтобы заблокировать компьютер при активации хранителя экрана. Блокировка будет включена через интервал времени, установленный настройкой "Время до блокировки паролем"</string>
@@ -52,7 +52,7 @@
       <string id="org-mate-screensaver-cycle-delay">Время смены тем</string>
       <string id="org-mate-screensaver-cycle-delay_help">Установите интервал в минутах между сменами тем хранителя экрана.</string>
 
-      <string id="org-mate-screensaver-user-switch-enabled">Переключение пользователя после блокировки</string>
+      <string id="org-mate-screensaver-user-switch-enabled">Переключить пользователя после блокировки</string>
       <string id="org-mate-screensaver-user-switch-enabled_help">Включите, чтобы диалог разблокирования экрана предоставлял возможность переключиться на другую учётную запись.</string>
 
       <string id="org-mate-screensaver-logout-enabled">Выход из системы после блокировки</string>
@@ -64,7 +64,7 @@
       <string id="org-mate-lockdown-disable-lock-screen">Запрет блокировки экрана</string>
       <string id="org-mate-lockdown-disable-lock-screen_help">Установите, если хотите запретить пользователю блокировать экран.</string>
 
-      <string id="org-mate-lockdown-disable-user-switching">Запрет переключения пользователя</string>
+      <string id="org-mate-lockdown-disable-user-switching">Запретить переключать пользователя</string>
       <string id="org-mate-lockdown-disable-user-switching_help">Установите, если хотите запретить пользователю переключение на другую учётную запись, пока активен его сеанс.</string>
 
       <string id="org-mate-lockdown-disable-theme-settings">Запрет выбора тем рабочего стола</string>
@@ -88,7 +88,7 @@
       <string id="org-gnome-vino-alternative-port">Альтернативный порт</string>
       <string id="org-gnome-vino-alternative-port_help">Альтернативный порт подключения. Диапазон значений от 5 000 до 50 000.</string>
 
-      <string id="org-gnome-vino-use-alternative-port">Подключение по альтернативному порту</string>
+      <string id="org-gnome-vino-use-alternative-port">Включить альтернативный порт</string>
       <string id="org-gnome-vino-use-alternative-port_help">Если установлено, то Vino использует альтернативный порт для подключения(вместо порта по умолчанию 5900), указанные в ключе "alternative-port".</string>
 
       <string id="org-gnome-vino-authentication-methods">Методы аутентификации</string>
