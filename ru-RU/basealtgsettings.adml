@@ -93,6 +93,8 @@
 
       <string id="org-gnome-vino-authentication-methods">Методы аутентификации</string>
       <string id="org-gnome-vino-authentication-methods_help">Методы аутентификации пользователей, подключающихся к удаленному рабочему столу. Есть два метода аутентификации: "vnc" - для подключения необходим пароль и "none" - пароль не требуется.</string>
+      <string id="org-gnome-vino-authentication-methods-none">none</string>
+      <string id="org-gnome-vino-authentication-methods-vnc">vnc</string>
 
       <string id="org-gnome-vino-vnc-password">Пароль для подключения</string>
       <string id="org-gnome-vino-vnc-password_help">Пароль, который удаленному пользователю будет предложено ввести, если используется метод аутентификации "vnc". Пароль, указанный ключом, закодирован в кодировке base64.</string>
@@ -289,11 +291,11 @@
       </presentation>
 
       <presentation id="OrgGnomeVinoAuthenticationMethodsUser-pr">
-        <listBox refId="OrgGnomeVinoAuthenticationMethods_setter">Методы аутентификации:</listBox>
+        <dropdownList noSort="true" defaultItem="0" refId="OrgGnomeVinoAuthenticationMethods_setter">Метод:</dropdownList>
       </presentation>
 
       <presentation id="OrgGnomeVinoAuthenticationMethodsMachine-pr">
-        <listBox refId="OrgGnomeVinoAuthenticationMethods_setter">Методы аутентификации:</listBox>
+        <dropdownList noSort="true" defaultItem="0" refId="OrgGnomeVinoAuthenticationMethods_setter">Метод:</dropdownList>
         <checkBox refId="OrgGnomeVinoAuthenticationMethods_setter_blocker">блокировать</checkBox>
         <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
       </presentation>

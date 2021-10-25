@@ -1033,12 +1033,22 @@
         displayName="$(string.org-gnome-vino-authentication-methods)"
         explainText="$(string.org-gnome-vino-authentication-methods_help)"
         key="Software\BaseALT\Policies\gsettings"
-        valueName="org.gnome.Vino.authentication-methods"
         presentation="$(presentation.OrgGnomeVinoAuthenticationMethodsUser-pr)">
       <parentCategory ref="system:ALT_Remote_Access_Vino_Gnome" />
       <supportedOn ref="system:SUPPORTED_AltP9" />
       <elements>
-        <list id="OrgGnomeVinoAuthenticationMethods_setter" key="org.gnome.Vino.authentication-methods" additive="true" />
+        <enum id="OrgGnomeVinoAuthenticationMethods_setter" required="true" valueName="org.gnome.Vino.authentication-methods">
+          <item displayName="$(string.org-gnome-vino-authentication-methods-none)">
+            <value>
+              <string>none</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-gnome-vino-authentication-methods-vnc)">
+            <value>
+              <string>vnc</string>
+            </value>
+          </item>
+        </enum>
       </elements>
     </policy>
 
@@ -1046,12 +1056,22 @@
         displayName="$(string.org-gnome-vino-authentication-methods)"
         explainText="$(string.org-gnome-vino-authentication-methods_help)"
         key="Software\BaseALT\Policies\gsettings"
-        valueName="org.gnome.Vino.authentication-methods"
         presentation="$(presentation.OrgGnomeVinoAuthenticationMethodsMachine-pr)">
       <parentCategory ref="system:ALT_Remote_Access_Vino_Gnome" />
       <supportedOn ref="system:SUPPORTED_AltP9" />
       <elements>
-        <list id="OrgGnomeVinoAuthenticationMethods_setter" key="org.gnome.Vino.authentication-methods" additive="true" />
+        <enum id="OrgGnomeVinoAuthenticationMethods_setter" required="true" valueName="org.gnome.Vino.authentication-methods">
+          <item displayName="$(string.org-gnome-vino-authentication-methods-none)">
+            <value>
+              <string>none</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-gnome-vino-authentication-methods-vnc)">
+            <value>
+              <string>vnc</string>
+            </value>
+          </item>
+        </enum>
         <boolean id="OrgGnomeVinoAuthenticationMethods_setter_blocker" key="Software\BaseALT\Policies\GSettingsLocks" valueName="org.gnome.Vino.authentication-methods">
           <trueValue>
             <decimal value="1" />
