@@ -12,6 +12,9 @@
       <string id="ALT_GPUpdateAppliers">GPUpdate Mechanisms</string>
       <string id="ALT_GPUpdateAppliers_Help">Group Policy update appliers settings.</string>
 
+      <string id="ALT_GPLocalUsers">Group policies for local users</string>
+      <string id="ALT_GPLocalUsers_Help">Applying Group policies for local users</string>
+
       <string id="gpupdate_global_experimental">Experimental Group Policies</string>
       <string id="gpupdate_global_experimental_help">This policy enables experimental group policy appliers features globally.</string>
 
@@ -74,6 +77,15 @@
 
       <string id="gpupdate_ntp_applier">NTP configuration support</string>
       <string id="gpupdate_ntp_applier_help">This policy enables group policy NTP applier feature.</string>
+
+      <string id="gp_local_users_group_users">Group users</string>
+      <string id="gp_local_users_group_users_help">Disable the application of group policies for users in the users group.</string>
+
+      <string id="gp_local_users_group_localusers">Local users</string>
+      <string id="gp_local_users_group_localusers_help">Disable the application of group policies for local users.</string>
+
+      <string id="gp_local_users_system-uids">System uids</string>
+      <string id="gp_local_users_system-uids_help">Disable the application of group policies for users with uid less 500.</string>
     </stringTable>
   </resources>
 </policyDefinitionResources>
