@@ -36,6 +36,14 @@
             <decimal value="0" />
           </falseValue>
         </boolean>
+        <boolean id="OrgMateBackgroundSecondaryColor_setter_default" key="Software\BaseALT\Policies\GSettingsDefaults" valueName="org.mate.background.secondary-color">
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+        </boolean>
       </elements>
     </policy>
 
@@ -140,6 +148,14 @@
             <decimal value="0" />
           </falseValue>
         </boolean>
+        <boolean id="OrgMateBackgroundPictureOptions_setter_default" key="Software\BaseALT\Policies\GSettingsDefaults" valueName="org.mate.background.picture-options">
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+        </boolean>
       </elements>
     </policy>
 
@@ -204,6 +220,14 @@
             <decimal value="0" />
           </falseValue>
         </boolean>
+        <boolean id="OrgMateBackgroundColorShadingType_setter_default" key="Software\BaseALT\Policies\GSettingsDefaults" valueName="org.mate.background.color-shading-type">
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+        </boolean>
       </elements>
     </policy>
 
@@ -236,6 +260,14 @@
             <decimal value="0" />
           </falseValue>
         </boolean>
+        <boolean id="OrgMateBackgroundPictureFilename_setter_default" key="Software\BaseALT\Policies\GSettingsDefaults" valueName="org.mate.background.picture-filename">
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+        </boolean>
       </elements>
     </policy>
 
@@ -261,6 +293,14 @@
       <elements>
         <text id="OrgMateBackgroundPrimaryColor_setter" valueName="org.mate.background.primary-color"/>
         <boolean id="OrgMateBackgroundPrimaryColor_setter_blocker" key="Software\BaseALT\Policies\GSettingsLocks" valueName="org.mate.background.primary-color">
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+        </boolean>
+        <boolean id="OrgMateBackgroundPrimaryColor_setter_default" key="Software\BaseALT\Policies\GSettingsDefaults" valueName="org.mate.background.primary-color">
           <trueValue>
             <decimal value="1" />
           </trueValue>
@@ -309,6 +349,14 @@
             <decimal value="0" />
           </falseValue>
         </boolean>
+        <boolean id="OrgMateScreesaverIdleActivationEnabled_setter_default" key="Software\BaseALT\Policies\GSettingsDefaults" valueName="org.mate.screensaver.idle-activation-enabled">
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+        </boolean>
       </elements>
     </policy>
 
@@ -343,6 +391,14 @@
       </disabledValue>
       <elements>
         <boolean id="OrgMateScreensaverLockEnabled_setter_blocker" key="Software\BaseALT\Policies\GSettingsLocks" valueName="org.mate.screensaver.lock-enabled">
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+        </boolean>
+        <boolean id="OrgMateScreensaverLockEnabled_setter_default" key="Software\BaseALT\Policies\GSettingsDefaults" valueName="org.mate.screensaver.lock-enabled">
           <trueValue>
             <decimal value="1" />
           </trueValue>
@@ -424,6 +480,14 @@
             <decimal value="0" />
           </falseValue>
         </boolean>
+        <boolean id="OrgMateScreensaverMode_setter_default" key="Software\BaseALT\Policies\GSettingsDefaults" valueName="org.mate.screensaver.mode">
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+        </boolean>
       </elements>
     </policy>
 
@@ -449,6 +513,14 @@
       <elements>
         <decimal id="OrgMateScreensaverLockDelay_setter" valueName="org.mate.screensaver.lock-delay" minValue="0" maxValue="2147483647" />
         <boolean id="OrgMateScreensaverLockDelay_setter_blocker" key="Software\BaseALT\Policies\GSettingsLocks" valueName="org.mate.screensaver.lock-delay">
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+        </boolean>
+        <boolean id="OrgMateScreensaverLockDelay_setter_default" key="Software\BaseALT\Policies\GSettingsDefaults" valueName="org.mate.screensaver.lock-delay">
           <trueValue>
             <decimal value="1" />
           </trueValue>
@@ -488,6 +560,14 @@
             <decimal value="0" />
           </falseValue>
         </boolean>
+        <boolean id="OrgMateScreensaverLogoutDelay_setter_default" key="Software\BaseALT\Policies\GSettingsDefaults" valueName="org.mate.screensaver.logout-delay">
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+        </boolean>
       </elements>
     </policy>
 
@@ -513,6 +593,14 @@
       <elements>
         <decimal id="OrgMateScreensaverCycleDelay_setter" valueName="org.mate.screensaver.cycle-delay" minValue="0" maxValue="2147483647" />
         <boolean id="OrgMateScreensaverCycleDelay_setter_blocker" key="Software\BaseALT\Policies\GSettingsLocks" valueName="org.mate.screensaver.cycle-delay">
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+        </boolean>
+        <boolean id="OrgMateScreensaverCycleDelay_setter_default" key="Software\BaseALT\Policies\GSettingsDefaults" valueName="org.mate.screensaver.cycle-delay">
           <trueValue>
             <decimal value="1" />
           </trueValue>
@@ -561,6 +649,14 @@
             <decimal value="0" />
           </falseValue>
         </boolean>
+        <boolean id="OrgMateScreensaverUserSwitchEnabled_setter_default" key="Software\BaseALT\Policies\GSettingsDefaults" valueName="org.mate.screensaver.user-switch-enabled">
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+        </boolean>
       </elements>
     </policy>
 
@@ -595,6 +691,14 @@
       </disabledValue>
       <elements>
         <boolean id="OrgMateScreensaverLogoutEnabled_setter_blocker" key="Software\BaseALT\Policies\GSettingsLocks" valueName="org.mate.screensaver.logout-enabled">
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+        </boolean>
+        <boolean id="OrgMateScreensaverLogoutEnabled_setter_default" key="Software\BaseALT\Policies\GSettingsDefaults" valueName="org.mate.screensaver.logout-enabled">
           <trueValue>
             <decimal value="1" />
           </trueValue>

@@ -108,6 +108,8 @@
         </textBox>
         <checkBox refId="OrgMateBackgroundSecondaryColor_setter_blocker">lock</checkBox>
         <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
+        <checkBox refId="OrgMateBackgroundSecondaryColor_setter_default" defaultChecked = "true">by default</checkBox>
+        <text>Set as the default value for the computer. In the disabled state, it will be distributed as a setting for the user with the lowest priority.</text>
       </presentation>
 
       <presentation id="OrgMateBackgroundSecondaryColorUser-pr">
@@ -124,6 +126,8 @@
         <dropdownList noSort="true" defaultItem="0" refId="OrgMateBackgroundPictureOptions_setter">Method for displaying the desktop background:</dropdownList>
         <checkBox refId="OrgMateBackgroundPictureOptions_setter_blocker">lock</checkBox>
         <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
+        <checkBox refId="OrgMateBackgroundPictureOptions_setter_default" defaultChecked = "true">by default</checkBox>
+        <text>Set as the default value for the computer. In the disabled state, it will be distributed as a setting for the user with the lowest priority.</text>
       </presentation>
 
       <presentation id="OrgMateBackgroundColorShadingTypeUser-pr">
@@ -134,6 +138,8 @@
         <dropdownList noSort="true" defaultItem="0" refId="OrgMateBackgroundColorShadingType_setter">Set the gradient type:</dropdownList>
         <checkBox refId="OrgMateBackgroundColorShadingType_setter_blocker">lock</checkBox>
         <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
+        <checkBox refId="OrgMateBackgroundColorShadingType_setter_default" defaultChecked = "true">by default</checkBox>
+        <text>Set as the default value for the computer. In the disabled state, it will be distributed as a setting for the user with the lowest priority.</text>
       </presentation>
 
       <presentation id="OrgMateBackgroundPictureFilenameUser-pr">
@@ -148,6 +154,8 @@
         </textBox>
         <checkBox refId="OrgMateBackgroundPictureFilename_setter_blocker">lock</checkBox>
         <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
+        <checkBox refId="OrgMateBackgroundPictureFilename_setter_default" defaultChecked = "true">by default</checkBox>
+        <text>Set as the default value for the computer. In the disabled state, it will be distributed as a setting for the user with the lowest priority.</text>
       </presentation>
 
       <presentation id="OrgMateBackgroundPrimaryColorUser-pr">
@@ -155,23 +163,29 @@
           <label>Set the color:</label>
         </textBox>
       </presentation>
-      <presentation id="OrgMateBackgroundPrimaryColorMachine-pr">
 
+      <presentation id="OrgMateBackgroundPrimaryColorMachine-pr">
         <textBox refId="OrgMateBackgroundPrimaryColor_setter">
           <label>Set the color:</label>
         </textBox>
         <checkBox refId="OrgMateBackgroundPrimaryColor_setter_blocker">lock</checkBox>
         <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
+        <checkBox refId="OrgMateBackgroundPrimaryColor_setter_default" defaultChecked = "true">by default</checkBox>
+        <text>Set as the default value for the computer. In the disabled state, it will be distributed as a setting for the user with the lowest priority.</text>
       </presentation>
 
       <presentation id="OrgMateScreesaverIdleActivationEnabledMachine-pr">
         <checkBox refId="OrgMateScreesaverIdleActivationEnabled_setter_blocker">lock</checkBox>
         <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
+        <checkBox refId="OrgMateScreesaverIdleActivationEnabled_setter_default" defaultChecked = "true">by default</checkBox>
+        <text>Set as the default value for the computer. In the disabled state, it will be distributed as a setting for the user with the lowest priority.</text>
       </presentation>
 
       <presentation id="OrgMateScreensaverLockEnabledMachine-pr">
         <checkBox refId="OrgMateScreensaverLockEnabled_setter_blocker">lock</checkBox>
         <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
+        <checkBox refId="OrgMateScreensaverLockEnabled_setter_default" defaultChecked = "true">by default</checkBox>
+        <text>Set as the default value for the computer. In the disabled state, it will be distributed as a setting for the user with the lowest priority.</text>
       </presentation>
 
       <presentation id="OrgMateScreensaverModeUser-pr">
@@ -182,6 +196,8 @@
         <dropdownList noSort="true" defaultItem="0" refId="OrgMateScreensaverMode_setter">Select an operating mode:</dropdownList>
         <checkBox refId="OrgMateScreensaverMode_setter_blocker">lock</checkBox>
         <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
+        <checkBox refId="OrgMateScreensaverMode_setter_default" defaultChecked = "true">by default</checkBox>
+        <text>Set as the default value for the computer. In the disabled state, it will be distributed as a setting for the user with the lowest priority.</text>
       </presentation>
 
       <presentation id="OrgMateScreensaverLockDelayUser-pr">
@@ -194,6 +210,8 @@
         <decimalTextBox refId="OrgMateScreensaverLockDelay_setter" defaultValue="2">Time in minutes:</decimalTextBox>
         <checkBox refId="OrgMateScreensaverLockDelay_setter_blocker">lock</checkBox>
         <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
+        <checkBox refId="OrgMateScreensaverLockDelay_setter_default" defaultChecked = "true">by default</checkBox>
+        <text>Set as the default value for the computer. In the disabled state, it will be distributed as a setting for the user with the lowest priority.</text>
       </presentation>
 
       <presentation id="OrgMateScreensaverLogoutDelayUser-pr">
@@ -206,6 +224,8 @@
         <decimalTextBox refId="OrgMateScreensaverLogoutDelay_setter" defaultValue="3">Time in minutes:</decimalTextBox>
         <checkBox refId="OrgMateScreensaverLogoutDelay_setter_blocker">lock</checkBox>
         <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
+        <checkBox refId="OrgMateScreensaverLogoutDelay_setter_default" defaultChecked = "true">by default</checkBox>
+        <text>Set as the default value for the computer. In the disabled state, it will be distributed as a setting for the user with the lowest priority.</text>
       </presentation>
 
       <presentation id="OrgMateScreensaverCycleDelayUser-pr">
@@ -218,16 +238,22 @@
         <decimalTextBox refId="OrgMateScreensaverCycleDelay_setter" defaultValue="2">Time in minutes:</decimalTextBox>
         <checkBox refId="OrgMateScreensaverCycleDelay_setter_blocker">lock</checkBox>
         <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
+        <checkBox refId="OrgMateScreensaverCycleDelay_setter_default" defaultChecked = "true">by default</checkBox>
+        <text>Set as the default value for the computer. In the disabled state, it will be distributed as a setting for the user with the lowest priority.</text>
       </presentation>
 
       <presentation id="OrgMateScreensaverLogoutEnabledMachine-pr">
         <checkBox refId="OrgMateScreensaverLogoutEnabled_setter_blocker">lock</checkBox>
         <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
+        <checkBox refId="OrgMateScreensaverLogoutEnabled_setter_default" defaultChecked = "true">by default</checkBox>
+        <text>Set as the default value for the computer. In the disabled state, it will be distributed as a setting for the user with the lowest priority.</text>
       </presentation>
 
       <presentation id="OrgMateScreensaverUserSwitchEnabledMachine-pr">
         <checkBox refId="OrgMateScreensaverUserSwitchEnabled_setter_blocker">lock</checkBox>
         <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
+        <checkBox refId="OrgMateScreensaverUserSwitchEnabled_setter_default" defaultChecked = "true">by default</checkBox>
+        <text>Set as the default value for the computer. In the disabled state, it will be distributed as a setting for the user with the lowest priority.</text>
       </presentation>
 
       <presentation id="OrgMateLockdownDisableLogOutMachine-pr">

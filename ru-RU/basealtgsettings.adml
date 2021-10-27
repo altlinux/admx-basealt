@@ -108,6 +108,8 @@
         </textBox>
         <checkBox refId="OrgMateBackgroundSecondaryColor_setter_blocker">блокировать</checkBox>
         <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
+        <checkBox refId="OrgMateBackgroundSecondaryColor_setter_default" defaultChecked = "true">по умолчанию</checkBox>
+        <text>Установка в качестве значения по умолчанию для компьютера. В отключенном состоянии будет распространяться как настройка для пользователя с наименьшим приоритетом.</text>
       </presentation>
 
       <presentation id="OrgMateBackgroundSecondaryColorUser-pr">
@@ -124,6 +126,8 @@
         <dropdownList noSort="true" defaultItem="0" refId="OrgMateBackgroundPictureOptions_setter">Метод отображения картинки фона рабочего стола:</dropdownList>
         <checkBox refId="OrgMateBackgroundPictureOptions_setter_blocker">блокировать</checkBox>
         <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
+        <checkBox refId="OrgMateBackgroundPictureOptions_setter_default" defaultChecked = "true">по умолчанию</checkBox>
+        <text>Установка в качестве значения по умолчанию для компьютера. В отключенном состоянии будет распространяться как настройка для пользователя с наименьшим приоритетом.</text>
       </presentation>
 
       <presentation id="OrgMateBackgroundColorShadingTypeUser-pr">
@@ -134,6 +138,8 @@
         <dropdownList noSort="true" defaultItem="0" refId="OrgMateBackgroundColorShadingType_setter">Установите тип градиента:</dropdownList>
         <checkBox refId="OrgMateBackgroundColorShadingType_setter_blocker">блокировать</checkBox>
         <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
+        <checkBox refId="OrgMateBackgroundColorShadingType_setter_default" defaultChecked = "true">по умолчанию</checkBox>
+        <text>Установка в качестве значения по умолчанию для компьютера. В отключенном состоянии будет распространяться как настройка для пользователя с наименьшим приоритетом.</text>
       </presentation>
 
       <presentation id="OrgMateBackgroundPictureFilenameUser-pr">
@@ -148,6 +154,8 @@
         </textBox>
         <checkBox refId="OrgMateBackgroundPictureFilename_setter_blocker">блокировать</checkBox>
         <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
+        <checkBox refId="OrgMateBackgroundPictureFilename_setter_default" defaultChecked = "true">по умолчанию</checkBox>
+        <text>Установка в качестве значения по умолчанию для компьютера. В отключенном состоянии будет распространяться как настройка для пользователя с наименьшим приоритетом.</text>
       </presentation>
 
       <presentation id="OrgMateBackgroundPrimaryColorUser-pr">
@@ -162,16 +170,22 @@
         </textBox>
         <checkBox refId="OrgMateBackgroundPrimaryColor_setter_blocker">блокировать</checkBox>
         <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
+        <checkBox refId="OrgMateBackgroundPrimaryColor_setter_default" defaultChecked = "true">по умолчанию</checkBox>
+        <text>Установка в качестве значения по умолчанию для компьютера. В отключенном состоянии будет распространяться как настройка для пользователя с наименьшим приоритетом.</text>
       </presentation>
 
       <presentation id="OrgMateScreesaverIdleActivationEnabledMachine-pr">
         <checkBox refId="OrgMateScreesaverIdleActivationEnabled_setter_blocker">блокировать</checkBox>
         <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
+        <checkBox refId="OrgMateScreesaverIdleActivationEnabled_setter_default" defaultChecked = "true">по умолчанию</checkBox>
+        <text>Установка в качестве значения по умолчанию для компьютера. В отключенном состоянии будет распространяться как настройка для пользователя с наименьшим приоритетом.</text>
       </presentation>
 
       <presentation id="OrgMateScreensaverLockEnabledMachine-pr">
         <checkBox refId="OrgMateScreensaverLockEnabled_setter_blocker">блокировать</checkBox>
         <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
+        <checkBox refId="OrgMateScreensaverLockEnabled_setter_default" defaultChecked = "true">по умолчанию</checkBox>
+        <text>Установка в качестве значения по умолчанию для компьютера. В отключенном состоянии будет распространяться как настройка для пользователя с наименьшим приоритетом.</text>
       </presentation>
 
       <presentation id="OrgMateScreensaverModeUser-pr">
@@ -182,6 +196,8 @@
         <dropdownList noSort="true" defaultItem="0" refId="OrgMateScreensaverMode_setter">Выберите режим работы хранителя экрана:</dropdownList>
         <checkBox refId="OrgMateScreensaverMode_setter_blocker">блокировать</checkBox>
         <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
+        <checkBox refId="OrgMateScreensaverMode_setter_default" defaultChecked = "true">по умолчанию</checkBox>
+        <text>Установка в качестве значения по умолчанию для компьютера. В отключенном состоянии будет распространяться как настройка для пользователя с наименьшим приоритетом.</text>
       </presentation>
 
       <presentation id="OrgMateScreensaverLockDelayUser-pr">
@@ -194,6 +210,8 @@
         <decimalTextBox refId="OrgMateScreensaverLockDelay_setter" defaultValue="2">Время в минутах</decimalTextBox>
         <checkBox refId="OrgMateScreensaverLockDelay_setter_blocker">блокировать</checkBox>
         <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
+        <checkBox refId="OrgMateScreensaverLockDelay_setter_default" defaultChecked = "true">по умолчанию</checkBox>
+        <text>Установка в качестве значения по умолчанию для компьютера. В отключенном состоянии будет распространяться как настройка для пользователя с наименьшим приоритетом.</text>
       </presentation>
 
       <presentation id="OrgMateScreensaverLogoutDelayUser-pr">
@@ -206,6 +224,8 @@
         <decimalTextBox refId="OrgMateScreensaverLogoutDelay_setter" defaultValue="3">Время в минутах:</decimalTextBox>
         <checkBox refId="OrgMateScreensaverLogoutDelay_setter_blocker">блокировать</checkBox>
         <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
+        <checkBox refId="OrgMateScreensaverLogoutDelay_setter_default" defaultChecked = "true">по умолчанию</checkBox>
+        <text>Установка в качестве значения по умолчанию для компьютера. В отключенном состоянии будет распространяться как настройка для пользователя с наименьшим приоритетом.</text>
       </presentation>
 
       <presentation id="OrgMateScreensaverCycleDelayUser-pr">
@@ -218,16 +238,22 @@
         <decimalTextBox refId="OrgMateScreensaverCycleDelay_setter" defaultValue="2">Время в минутах:</decimalTextBox>
         <checkBox refId="OrgMateScreensaverCycleDelay_setter_blocker">блокировать</checkBox>
         <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
+        <checkBox refId="OrgMateScreensaverCycleDelay_setter_default" defaultChecked = "true">по умолчанию</checkBox>
+        <text>Установка в качестве значения по умолчанию для компьютера. В отключенном состоянии будет распространяться как настройка для пользователя с наименьшим приоритетом.</text>
       </presentation>
 
       <presentation id="OrgMateScreensaverUserSwitchEnabledMachine-pr">
         <checkBox refId="OrgMateScreensaverUserSwitchEnabled_setter_blocker">блокировать</checkBox>
         <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
+        <checkBox refId="OrgMateScreensaverUserSwitchEnabled_setter_default" defaultChecked = "true">по умолчанию</checkBox>
+        <text>Установка в качестве значения по умолчанию для компьютера. В отключенном состоянии будет распространяться как настройка для пользователя с наименьшим приоритетом.</text>
       </presentation>
 
       <presentation id="OrgMateScreensaverLogoutEnabledMachine-pr">
         <checkBox refId="OrgMateScreensaverLogoutEnabled_setter_blocker">блокировать</checkBox>
         <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
+        <checkBox refId="OrgMateScreensaverLogoutEnabled_setter_default" defaultChecked = "true">по умолчанию</checkBox>
+        <text>Установка в качестве значения по умолчанию для компьютера. В отключенном состоянии будет распространяться как настройка для пользователя с наименьшим приоритетом.</text>
       </presentation>
 
       <presentation id="OrgMateLockdownDisableLogOutMachine-pr">
