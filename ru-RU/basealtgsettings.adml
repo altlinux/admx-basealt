@@ -259,31 +259,43 @@
       <presentation id="OrgMateLockdownDisableLogOutMachine-pr">
         <checkBox refId="OrgMateLockdownDisableLogOut_setter_blocker">блокировать</checkBox>
         <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
+        <checkBox refId="OrgMateLockdownDisableLogOut_setter_default" defaultChecked = "true">по умолчанию</checkBox>
+        <text>Установка в качестве значения по умолчанию для компьютера. В отключенном состоянии будет распространяться как настройка для пользователя с наименьшим приоритетом.</text>
       </presentation>
 
       <presentation id="OrgMateLockdownDisableLockScreenMachine-pr">
         <checkBox refId="OrgMateLockdownDisableLockScreen_setter_blocker">блокировать</checkBox>
         <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
+        <checkBox refId="OrgMateLockdownDisableLockScreen_setter_default" defaultChecked = "true">по умолчанию</checkBox>
+        <text>Установка в качестве значения по умолчанию для компьютера. В отключенном состоянии будет распространяться как настройка для пользователя с наименьшим приоритетом.</text>
       </presentation>
 
       <presentation id="OrgMateLockdownDisableUserSwitchingMachine-pr">
         <checkBox refId="OrgMateLockdownDisableUserSwitching_setter_blocker">блокировать</checkBox>
         <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
+        <checkBox refId="OrgMateLockdownDisableUserSwitching_setter_default" defaultChecked = "true">по умолчанию</checkBox>
+        <text>Установка в качестве значения по умолчанию для компьютера. В отключенном состоянии будет распространяться как настройка для пользователя с наименьшим приоритетом.</text>
       </presentation>
 
       <presentation id="OrgMateLockdownDisableThemeSettingsMachine-pr">
         <checkBox refId="OrgMateLockdownDisableThemeSettings_setter_blocker">блокировать</checkBox>
         <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
+        <checkBox refId="OrgMateLockdownDisableThemeSettings_setter_default" defaultChecked = "true">по умолчанию</checkBox>
+        <text>Установка в качестве значения по умолчанию для компьютера. В отключенном состоянии будет распространяться как настройка для пользователя с наименьшим приоритетом.</text>
       </presentation>
 
       <presentation id="OrgGnomeVinoViewOnlyMachine-pr">
         <checkBox refId="OrgGnomeVinoViewOnly_setter_blocker">блокировать</checkBox>
         <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
+        <checkBox refId="OrgGnomeVinoViewOnly_setter_default" defaultChecked = "true">по умолчанию</checkBox>
+        <text>Установка в качестве значения по умолчанию для компьютера. В отключенном состоянии будет распространяться как настройка для пользователя с наименьшим приоритетом.</text>
       </presentation>
 
       <presentation id="OrgGnomeVinoPromptEnabledMachine-pr">
         <checkBox refId="OrgGnomeVinoPromptEnabled_setter_blocker">блокировать</checkBox>
         <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
+        <checkBox refId="OrgGnomeVinoPromptEnabled_setter_default" defaultChecked = "true">по умолчанию</checkBox>
+        <text>Установка в качестве значения по умолчанию для компьютера. В отключенном состоянии будет распространяться как настройка для пользователя с наименьшим приоритетом.</text>
       </presentation>
 
       <presentation id="OrgGnomeVinoIconVisibilityUser-pr">
@@ -294,11 +306,15 @@
         <dropdownList noSort="true" defaultItem="0" refId="OrgGnomeVinoIconVisibility_setter">Показывать уведомление:</dropdownList>
         <checkBox refId="OrgGnomeVinoIconVisibility_setter_blocker">блокировать</checkBox>
         <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
+        <checkBox refId="OrgGnomeVinoIconVisibility_setter_default" defaultChecked = "true">по умолчанию</checkBox>
+        <text>Установка в качестве значения по умолчанию для компьютера. В отключенном состоянии будет распространяться как настройка для пользователя с наименьшим приоритетом.</text>
       </presentation>
 
       <presentation id="OrgGnomeVinoEnabledMachine-pr">
         <checkBox refId="OrgGnomeVinoEnabled_setter_blocker">блокировать</checkBox>
         <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
+        <checkBox refId="OrgGnomeVinoEnabled_setter_default" defaultChecked = "true">по умолчанию</checkBox>
+        <text>Установка в качестве значения по умолчанию для компьютера. В отключенном состоянии будет распространяться как настройка для пользователя с наименьшим приоритетом.</text>
       </presentation>
 
       <presentation id="OrgGnomeVinoAlternativePortUser-pr">
@@ -309,11 +325,15 @@
         <decimalTextBox refId="OrgGnomeVinoAlternativePort_setter" defaultValue="5000">Порт:</decimalTextBox>
         <checkBox refId="OrgGnomeVinoAlternativePort_setter_blocker">блокировать</checkBox>
         <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
+        <checkBox refId="OrgGnomeVinoAlternativePort_setter_default" defaultChecked = "true">по умолчанию</checkBox>
+        <text>Установка в качестве значения по умолчанию для компьютера. В отключенном состоянии будет распространяться как настройка для пользователя с наименьшим приоритетом.</text>
       </presentation>
 
       <presentation id="OrgGnomeVinoUseAlternativePortMachine-pr">
         <checkBox refId="OrgGnomeVinoUseAlternativePort_setter_blocker">блокировать</checkBox>
         <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
+        <checkBox refId="OrgGnomeVinoUseAlternativePort_setter_default" defaultChecked = "true">по умолчанию</checkBox>
+        <text>Установка в качестве значения по умолчанию для компьютера. В отключенном состоянии будет распространяться как настройка для пользователя с наименьшим приоритетом.</text>
       </presentation>
 
       <presentation id="OrgGnomeVinoAuthenticationMethodsUser-pr">
@@ -324,6 +344,8 @@
         <dropdownList noSort="true" defaultItem="0" refId="OrgGnomeVinoAuthenticationMethods_setter">Метод:</dropdownList>
         <checkBox refId="OrgGnomeVinoAuthenticationMethods_setter_blocker">блокировать</checkBox>
         <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
+        <checkBox refId="OrgGnomeVinoAuthenticationMethods_setter_default" defaultChecked = "true">по умолчанию</checkBox>
+        <text>Установка в качестве значения по умолчанию для компьютера. В отключенном состоянии будет распространяться как настройка для пользователя с наименьшим приоритетом.</text>
       </presentation>
 
       <presentation id="OrgGnomeVinoVncPasswordUser-pr">
@@ -338,6 +360,8 @@
         </textBox>
         <checkBox refId="OrgGnomeVinoVncPassword_setter_blocker">блокировать</checkBox>
         <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
+        <checkBox refId="OrgGnomeVinoVncPassword_setter_default" defaultChecked = "true">по умолчанию</checkBox>
+        <text>Установка в качестве значения по умолчанию для компьютера. В отключенном состоянии будет распространяться как настройка для пользователя с наименьшим приоритетом.</text>
       </presentation>
 
     </presentationTable>

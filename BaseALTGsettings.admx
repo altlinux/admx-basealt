@@ -747,6 +747,14 @@
             <decimal value="0" />
           </falseValue>
         </boolean>
+        <boolean id="OrgMateLockdownDisableLogOut_setter_default" key="Software\BaseALT\Policies\GSettingsDefaults" valueName="org.mate.lockdown.disable-log-out">
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+        </boolean>
       </elements>
     </policy>
 
@@ -781,6 +789,14 @@
       </disabledValue>
       <elements>
         <boolean id="OrgMateLockdownDisableLockScreen_setter_blocker" key="Software\BaseALT\Policies\GSettingsLocks" valueName="org.mate.lockdown.disable-lock-screen">
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+        </boolean>
+        <boolean id="OrgMateLockdownDisableLockScreen_setter_default" key="Software\BaseALT\Policies\GSettingsDefaults" valueName="org.mate.lockdown.disable-lock-screen">
           <trueValue>
             <decimal value="1" />
           </trueValue>
@@ -829,6 +845,14 @@
             <decimal value="0" />
           </falseValue>
         </boolean>
+        <boolean id="OrgMateLockdownDisableUserSwitching_setter_default" key="Software\BaseALT\Policies\GSettingsDefaults" valueName="org.mate.lockdown.disable-user-switching">
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+        </boolean>
       </elements>
     </policy>
 
@@ -863,6 +887,14 @@
       </disabledValue>
       <elements>
         <boolean id="OrgMateLockdownDisableThemeSettings_setter_blocker" key="Software\BaseALT\Policies\GSettingsLocks" valueName="org.mate.lockdown.disable-theme-settings">
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+        </boolean>
+        <boolean id="OrgMateLockdownDisableThemeSettings_setter_default" key="Software\BaseALT\Policies\GSettingsDefaults" valueName="org.mate.lockdown.disable-theme-settings">
           <trueValue>
             <decimal value="1" />
           </trueValue>
@@ -911,6 +943,14 @@
             <decimal value="0" />
           </falseValue>
         </boolean>
+        <boolean id="OrgGnomeVinoViewOnly_setter_default" key="Software\BaseALT\Policies\GSettingsDefaults" valueName="org.gnome.Vino.view-only">
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+        </boolean>
       </elements>
     </policy>
 
@@ -945,6 +985,14 @@
       </disabledValue>
       <elements>
         <boolean id="OrgGnomeVinoPromptEnabled_setter_blocker" key="Software\BaseALT\Policies\GSettingsLocks" valueName="org.gnome.Vino.prompt-enabled">
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+        </boolean>
+        <boolean id="OrgGnomeVinoPromptEnabled_setter_default" key="Software\BaseALT\Policies\GSettingsDefaults" valueName="org.gnome.Vino.prompt-enabled">
           <trueValue>
             <decimal value="1" />
           </trueValue>
@@ -1016,6 +1064,14 @@
             <decimal value="0" />
           </falseValue>
         </boolean>
+        <boolean id="OrgGnomeVinoIconVisibility_setter_default" key="Software\BaseALT\Policies\GSettingsDefaults" valueName="org.gnome.Vino.icon-visibility">
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+        </boolean>
       </elements>
     </policy>
 
@@ -1057,6 +1113,14 @@
             <decimal value="0" />
           </falseValue>
         </boolean>
+        <boolean id="OrgGnomeVinoEnabled_setter_default" key="Software\BaseALT\Policies\GSettingsDefaults" valueName="org.gnome.Vino.enabled">
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+        </boolean>
       </elements>
     </policy>
 
@@ -1082,6 +1146,14 @@
       <elements>
         <decimal id="OrgGnomeVinoAlternativePort_setter" valueName="org.gnome.Vino.alternative-port" minValue="5000" maxValue="50000" />
         <boolean id="OrgGnomeVinoAlternativePort_setter_blocker" key="Software\BaseALT\Policies\GSettingsLocks" valueName="org.gnome.Vino.alternative-port">
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+        </boolean>
+        <boolean id="OrgGnomeVinoAlternativePort_setter_default" key="Software\BaseALT\Policies\GSettingsDefaults" valueName="org.gnome.Vino.alternative-port">
           <trueValue>
             <decimal value="1" />
           </trueValue>
@@ -1123,6 +1195,14 @@
       </disabledValue>
       <elements>
         <boolean id="OrgGnomeVinoUseAlternativePort_setter_blocker" key="Software\BaseALT\Policies\GSettingsLocks" valueName="org.gnome.Vino.use-alternative-port">
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+        </boolean>
+        <boolean id="OrgGnomeVinoUseAlternativePort_setter_default" key="Software\BaseALT\Policies\GSettingsDefaults" valueName="org.gnome.Vino.use-alternative-port">
           <trueValue>
             <decimal value="1" />
           </trueValue>
@@ -1184,6 +1264,14 @@
             <decimal value="0" />
           </falseValue>
         </boolean>
+        <boolean id="OrgGnomeVinoAuthenticationMethods_setter_default" key="Software\BaseALT\Policies\GSettingsDefaults" valueName="org.gnome.Vino.use-alternative-port">
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+        </boolean>
       </elements>
     </policy>
 
@@ -1209,6 +1297,14 @@
       <elements>
         <text id="OrgGnomeVinoVncPassword_setter" valueName="org.gnome.Vino.vnc-password" />
         <boolean id="OrgGnomeVinoVncPassword_setter_blocker" key="Software\BaseALT\Policies\GSettingsLocks" valueName="org.gnome.Vino.vnc-password">
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+        </boolean>
+        <boolean id="OrgGnomeVinoVncPassword_setter_default" key="Software\BaseALT\Policies\GSettingsDefaults" valueName="org.gnome.Vino.vnc-password">
           <trueValue>
             <decimal value="1" />
           </trueValue>
