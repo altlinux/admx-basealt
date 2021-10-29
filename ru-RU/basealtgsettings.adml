@@ -108,7 +108,7 @@
         </textBox>
         <checkBox refId="OrgMateBackgroundSecondaryColor_setter_blocker">блокировать</checkBox>
         <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
-        <checkBox refId="OrgMateBackgroundSecondaryColor_setter_default" defaultChecked = "true">по умолчанию</checkBox>
+        <checkBox refId="OrgMateBackgroundSecondaryColor_setter_default" defaultChecked = "true">только по умолчанию</checkBox>
         <text>Установка в качестве значения по умолчанию для компьютера. В отключенном состоянии будет распространяться как настройка для пользователя с наименьшим приоритетом.</text>
       </presentation>
 
@@ -126,7 +126,7 @@
         <dropdownList noSort="true" defaultItem="0" refId="OrgMateBackgroundPictureOptions_setter">Метод отображения картинки фона рабочего стола:</dropdownList>
         <checkBox refId="OrgMateBackgroundPictureOptions_setter_blocker">блокировать</checkBox>
         <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
-        <checkBox refId="OrgMateBackgroundPictureOptions_setter_default" defaultChecked = "true">по умолчанию</checkBox>
+        <checkBox refId="OrgMateBackgroundPictureOptions_setter_default" defaultChecked = "true">только по умолчанию</checkBox>
         <text>Установка в качестве значения по умолчанию для компьютера. В отключенном состоянии будет распространяться как настройка для пользователя с наименьшим приоритетом.</text>
       </presentation>
 
@@ -138,7 +138,7 @@
         <dropdownList noSort="true" defaultItem="0" refId="OrgMateBackgroundColorShadingType_setter">Установите тип градиента:</dropdownList>
         <checkBox refId="OrgMateBackgroundColorShadingType_setter_blocker">блокировать</checkBox>
         <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
-        <checkBox refId="OrgMateBackgroundColorShadingType_setter_default" defaultChecked = "true">по умолчанию</checkBox>
+        <checkBox refId="OrgMateBackgroundColorShadingType_setter_default" defaultChecked = "true">только по умолчанию</checkBox>
         <text>Установка в качестве значения по умолчанию для компьютера. В отключенном состоянии будет распространяться как настройка для пользователя с наименьшим приоритетом.</text>
       </presentation>
 
@@ -154,7 +154,7 @@
         </textBox>
         <checkBox refId="OrgMateBackgroundPictureFilename_setter_blocker">блокировать</checkBox>
         <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
-        <checkBox refId="OrgMateBackgroundPictureFilename_setter_default" defaultChecked = "true">по умолчанию</checkBox>
+        <checkBox refId="OrgMateBackgroundPictureFilename_setter_default" defaultChecked = "true">только по умолчанию</checkBox>
         <text>Установка в качестве значения по умолчанию для компьютера. В отключенном состоянии будет распространяться как настройка для пользователя с наименьшим приоритетом.</text>
       </presentation>
 
@@ -170,21 +170,21 @@
         </textBox>
         <checkBox refId="OrgMateBackgroundPrimaryColor_setter_blocker">блокировать</checkBox>
         <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
-        <checkBox refId="OrgMateBackgroundPrimaryColor_setter_default" defaultChecked = "true">по умолчанию</checkBox>
+        <checkBox refId="OrgMateBackgroundPrimaryColor_setter_default" defaultChecked = "true">только по умолчанию</checkBox>
         <text>Установка в качестве значения по умолчанию для компьютера. В отключенном состоянии будет распространяться как настройка для пользователя с наименьшим приоритетом.</text>
       </presentation>
 
       <presentation id="OrgMateScreesaverIdleActivationEnabledMachine-pr">
         <checkBox refId="OrgMateScreesaverIdleActivationEnabled_setter_blocker">блокировать</checkBox>
         <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
-        <checkBox refId="OrgMateScreesaverIdleActivationEnabled_setter_default" defaultChecked = "true">по умолчанию</checkBox>
+        <checkBox refId="OrgMateScreesaverIdleActivationEnabled_setter_default" defaultChecked = "true">только по умолчанию</checkBox>
         <text>Установка в качестве значения по умолчанию для компьютера. В отключенном состоянии будет распространяться как настройка для пользователя с наименьшим приоритетом.</text>
       </presentation>
 
       <presentation id="OrgMateScreensaverLockEnabledMachine-pr">
         <checkBox refId="OrgMateScreensaverLockEnabled_setter_blocker">блокировать</checkBox>
         <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
-        <checkBox refId="OrgMateScreensaverLockEnabled_setter_default" defaultChecked = "true">по умолчанию</checkBox>
+        <checkBox refId="OrgMateScreensaverLockEnabled_setter_default" defaultChecked = "true">только по умолчанию</checkBox>
         <text>Установка в качестве значения по умолчанию для компьютера. В отключенном состоянии будет распространяться как настройка для пользователя с наименьшим приоритетом.</text>
       </presentation>
 
@@ -196,7 +196,7 @@
         <dropdownList noSort="true" defaultItem="0" refId="OrgMateScreensaverMode_setter">Выберите режим работы хранителя экрана:</dropdownList>
         <checkBox refId="OrgMateScreensaverMode_setter_blocker">блокировать</checkBox>
         <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
-        <checkBox refId="OrgMateScreensaverMode_setter_default" defaultChecked = "true">по умолчанию</checkBox>
+        <checkBox refId="OrgMateScreensaverMode_setter_default" defaultChecked = "true">только по умолчанию</checkBox>
         <text>Установка в качестве значения по умолчанию для компьютера. В отключенном состоянии будет распространяться как настройка для пользователя с наименьшим приоритетом.</text>
       </presentation>
 
@@ -210,7 +210,7 @@
         <decimalTextBox refId="OrgMateScreensaverLockDelay_setter" defaultValue="2">Время в минутах</decimalTextBox>
         <checkBox refId="OrgMateScreensaverLockDelay_setter_blocker">блокировать</checkBox>
         <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
-        <checkBox refId="OrgMateScreensaverLockDelay_setter_default" defaultChecked = "true">по умолчанию</checkBox>
+        <checkBox refId="OrgMateScreensaverLockDelay_setter_default" defaultChecked = "true">только по умолчанию</checkBox>
         <text>Установка в качестве значения по умолчанию для компьютера. В отключенном состоянии будет распространяться как настройка для пользователя с наименьшим приоритетом.</text>
       </presentation>
 
@@ -224,7 +224,7 @@
         <decimalTextBox refId="OrgMateScreensaverLogoutDelay_setter" defaultValue="3">Время в минутах:</decimalTextBox>
         <checkBox refId="OrgMateScreensaverLogoutDelay_setter_blocker">блокировать</checkBox>
         <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
-        <checkBox refId="OrgMateScreensaverLogoutDelay_setter_default" defaultChecked = "true">по умолчанию</checkBox>
+        <checkBox refId="OrgMateScreensaverLogoutDelay_setter_default" defaultChecked = "true">только по умолчанию</checkBox>
         <text>Установка в качестве значения по умолчанию для компьютера. В отключенном состоянии будет распространяться как настройка для пользователя с наименьшим приоритетом.</text>
       </presentation>
 
@@ -245,56 +245,56 @@
       <presentation id="OrgMateScreensaverUserSwitchEnabledMachine-pr">
         <checkBox refId="OrgMateScreensaverUserSwitchEnabled_setter_blocker">блокировать</checkBox>
         <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
-        <checkBox refId="OrgMateScreensaverUserSwitchEnabled_setter_default" defaultChecked = "true">по умолчанию</checkBox>
+        <checkBox refId="OrgMateScreensaverUserSwitchEnabled_setter_default" defaultChecked = "true">только по умолчанию</checkBox>
         <text>Установка в качестве значения по умолчанию для компьютера. В отключенном состоянии будет распространяться как настройка для пользователя с наименьшим приоритетом.</text>
       </presentation>
 
       <presentation id="OrgMateScreensaverLogoutEnabledMachine-pr">
         <checkBox refId="OrgMateScreensaverLogoutEnabled_setter_blocker">блокировать</checkBox>
         <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
-        <checkBox refId="OrgMateScreensaverLogoutEnabled_setter_default" defaultChecked = "true">по умолчанию</checkBox>
+        <checkBox refId="OrgMateScreensaverLogoutEnabled_setter_default" defaultChecked = "true">только по умолчанию</checkBox>
         <text>Установка в качестве значения по умолчанию для компьютера. В отключенном состоянии будет распространяться как настройка для пользователя с наименьшим приоритетом.</text>
       </presentation>
 
       <presentation id="OrgMateLockdownDisableLogOutMachine-pr">
         <checkBox refId="OrgMateLockdownDisableLogOut_setter_blocker">блокировать</checkBox>
         <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
-        <checkBox refId="OrgMateLockdownDisableLogOut_setter_default" defaultChecked = "true">по умолчанию</checkBox>
+        <checkBox refId="OrgMateLockdownDisableLogOut_setter_default" defaultChecked = "true">только по умолчанию</checkBox>
         <text>Установка в качестве значения по умолчанию для компьютера. В отключенном состоянии будет распространяться как настройка для пользователя с наименьшим приоритетом.</text>
       </presentation>
 
       <presentation id="OrgMateLockdownDisableLockScreenMachine-pr">
         <checkBox refId="OrgMateLockdownDisableLockScreen_setter_blocker">блокировать</checkBox>
         <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
-        <checkBox refId="OrgMateLockdownDisableLockScreen_setter_default" defaultChecked = "true">по умолчанию</checkBox>
+        <checkBox refId="OrgMateLockdownDisableLockScreen_setter_default" defaultChecked = "true">только по умолчанию</checkBox>
         <text>Установка в качестве значения по умолчанию для компьютера. В отключенном состоянии будет распространяться как настройка для пользователя с наименьшим приоритетом.</text>
       </presentation>
 
       <presentation id="OrgMateLockdownDisableUserSwitchingMachine-pr">
         <checkBox refId="OrgMateLockdownDisableUserSwitching_setter_blocker">блокировать</checkBox>
         <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
-        <checkBox refId="OrgMateLockdownDisableUserSwitching_setter_default" defaultChecked = "true">по умолчанию</checkBox>
+        <checkBox refId="OrgMateLockdownDisableUserSwitching_setter_default" defaultChecked = "true">только по умолчанию</checkBox>
         <text>Установка в качестве значения по умолчанию для компьютера. В отключенном состоянии будет распространяться как настройка для пользователя с наименьшим приоритетом.</text>
       </presentation>
 
       <presentation id="OrgMateLockdownDisableThemeSettingsMachine-pr">
         <checkBox refId="OrgMateLockdownDisableThemeSettings_setter_blocker">блокировать</checkBox>
         <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
-        <checkBox refId="OrgMateLockdownDisableThemeSettings_setter_default" defaultChecked = "true">по умолчанию</checkBox>
+        <checkBox refId="OrgMateLockdownDisableThemeSettings_setter_default" defaultChecked = "true">только по умолчанию</checkBox>
         <text>Установка в качестве значения по умолчанию для компьютера. В отключенном состоянии будет распространяться как настройка для пользователя с наименьшим приоритетом.</text>
       </presentation>
 
       <presentation id="OrgGnomeVinoViewOnlyMachine-pr">
         <checkBox refId="OrgGnomeVinoViewOnly_setter_blocker">блокировать</checkBox>
         <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
-        <checkBox refId="OrgGnomeVinoViewOnly_setter_default" defaultChecked = "true">по умолчанию</checkBox>
+        <checkBox refId="OrgGnomeVinoViewOnly_setter_default" defaultChecked = "true">только по умолчанию</checkBox>
         <text>Установка в качестве значения по умолчанию для компьютера. В отключенном состоянии будет распространяться как настройка для пользователя с наименьшим приоритетом.</text>
       </presentation>
 
       <presentation id="OrgGnomeVinoPromptEnabledMachine-pr">
         <checkBox refId="OrgGnomeVinoPromptEnabled_setter_blocker">блокировать</checkBox>
         <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
-        <checkBox refId="OrgGnomeVinoPromptEnabled_setter_default" defaultChecked = "true">по умолчанию</checkBox>
+        <checkBox refId="OrgGnomeVinoPromptEnabled_setter_default" defaultChecked = "true">только по умолчанию</checkBox>
         <text>Установка в качестве значения по умолчанию для компьютера. В отключенном состоянии будет распространяться как настройка для пользователя с наименьшим приоритетом.</text>
       </presentation>
 
@@ -306,14 +306,14 @@
         <dropdownList noSort="true" defaultItem="0" refId="OrgGnomeVinoIconVisibility_setter">Показывать уведомление:</dropdownList>
         <checkBox refId="OrgGnomeVinoIconVisibility_setter_blocker">блокировать</checkBox>
         <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
-        <checkBox refId="OrgGnomeVinoIconVisibility_setter_default" defaultChecked = "true">по умолчанию</checkBox>
+        <checkBox refId="OrgGnomeVinoIconVisibility_setter_default" defaultChecked = "true">только по умолчанию</checkBox>
         <text>Установка в качестве значения по умолчанию для компьютера. В отключенном состоянии будет распространяться как настройка для пользователя с наименьшим приоритетом.</text>
       </presentation>
 
       <presentation id="OrgGnomeVinoEnabledMachine-pr">
         <checkBox refId="OrgGnomeVinoEnabled_setter_blocker">блокировать</checkBox>
         <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
-        <checkBox refId="OrgGnomeVinoEnabled_setter_default" defaultChecked = "true">по умолчанию</checkBox>
+        <checkBox refId="OrgGnomeVinoEnabled_setter_default" defaultChecked = "true">только по умолчанию</checkBox>
         <text>Установка в качестве значения по умолчанию для компьютера. В отключенном состоянии будет распространяться как настройка для пользователя с наименьшим приоритетом.</text>
       </presentation>
 
@@ -325,14 +325,14 @@
         <decimalTextBox refId="OrgGnomeVinoAlternativePort_setter" defaultValue="5000">Порт:</decimalTextBox>
         <checkBox refId="OrgGnomeVinoAlternativePort_setter_blocker">блокировать</checkBox>
         <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
-        <checkBox refId="OrgGnomeVinoAlternativePort_setter_default" defaultChecked = "true">по умолчанию</checkBox>
+        <checkBox refId="OrgGnomeVinoAlternativePort_setter_default" defaultChecked = "true">только по умолчанию</checkBox>
         <text>Установка в качестве значения по умолчанию для компьютера. В отключенном состоянии будет распространяться как настройка для пользователя с наименьшим приоритетом.</text>
       </presentation>
 
       <presentation id="OrgGnomeVinoUseAlternativePortMachine-pr">
         <checkBox refId="OrgGnomeVinoUseAlternativePort_setter_blocker">блокировать</checkBox>
         <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
-        <checkBox refId="OrgGnomeVinoUseAlternativePort_setter_default" defaultChecked = "true">по умолчанию</checkBox>
+        <checkBox refId="OrgGnomeVinoUseAlternativePort_setter_default" defaultChecked = "true">только по умолчанию</checkBox>
         <text>Установка в качестве значения по умолчанию для компьютера. В отключенном состоянии будет распространяться как настройка для пользователя с наименьшим приоритетом.</text>
       </presentation>
 
@@ -344,7 +344,7 @@
         <dropdownList noSort="true" defaultItem="0" refId="OrgGnomeVinoAuthenticationMethods_setter">Метод:</dropdownList>
         <checkBox refId="OrgGnomeVinoAuthenticationMethods_setter_blocker">блокировать</checkBox>
         <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
-        <checkBox refId="OrgGnomeVinoAuthenticationMethods_setter_default" defaultChecked = "true">по умолчанию</checkBox>
+        <checkBox refId="OrgGnomeVinoAuthenticationMethods_setter_default" defaultChecked = "true">только по умолчанию</checkBox>
         <text>Установка в качестве значения по умолчанию для компьютера. В отключенном состоянии будет распространяться как настройка для пользователя с наименьшим приоритетом.</text>
       </presentation>
 
@@ -360,7 +360,7 @@
         </textBox>
         <checkBox refId="OrgGnomeVinoVncPassword_setter_blocker">блокировать</checkBox>
         <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
-        <checkBox refId="OrgGnomeVinoVncPassword_setter_default" defaultChecked = "true">по умолчанию</checkBox>
+        <checkBox refId="OrgGnomeVinoVncPassword_setter_default" defaultChecked = "true">только по умолчанию</checkBox>
         <text>Установка в качестве значения по умолчанию для компьютера. В отключенном состоянии будет распространяться как настройка для пользователя с наименьшим приоритетом.</text>
       </presentation>
 

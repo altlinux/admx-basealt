@@ -108,7 +108,7 @@
         </textBox>
         <checkBox refId="OrgMateBackgroundSecondaryColor_setter_blocker">lock</checkBox>
         <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
-        <checkBox refId="OrgMateBackgroundSecondaryColor_setter_default" defaultChecked = "true">by default</checkBox>
+        <checkBox refId="OrgMateBackgroundSecondaryColor_setter_default" defaultChecked = "true">default only</checkBox>
         <text>Set as the default value for the computer. In the disabled state, it will be distributed as a setting for the user with the lowest priority.</text>
       </presentation>
 
@@ -126,7 +126,7 @@
         <dropdownList noSort="true" defaultItem="0" refId="OrgMateBackgroundPictureOptions_setter">Method for displaying the desktop background:</dropdownList>
         <checkBox refId="OrgMateBackgroundPictureOptions_setter_blocker">lock</checkBox>
         <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
-        <checkBox refId="OrgMateBackgroundPictureOptions_setter_default" defaultChecked = "true">by default</checkBox>
+        <checkBox refId="OrgMateBackgroundPictureOptions_setter_default" defaultChecked = "true">default only</checkBox>
         <text>Set as the default value for the computer. In the disabled state, it will be distributed as a setting for the user with the lowest priority.</text>
       </presentation>
 
@@ -138,7 +138,7 @@
         <dropdownList noSort="true" defaultItem="0" refId="OrgMateBackgroundColorShadingType_setter">Set the gradient type:</dropdownList>
         <checkBox refId="OrgMateBackgroundColorShadingType_setter_blocker">lock</checkBox>
         <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
-        <checkBox refId="OrgMateBackgroundColorShadingType_setter_default" defaultChecked = "true">by default</checkBox>
+        <checkBox refId="OrgMateBackgroundColorShadingType_setter_default" defaultChecked = "true">default only</checkBox>
         <text>Set as the default value for the computer. In the disabled state, it will be distributed as a setting for the user with the lowest priority.</text>
       </presentation>
 
@@ -154,7 +154,7 @@
         </textBox>
         <checkBox refId="OrgMateBackgroundPictureFilename_setter_blocker">lock</checkBox>
         <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
-        <checkBox refId="OrgMateBackgroundPictureFilename_setter_default" defaultChecked = "true">by default</checkBox>
+        <checkBox refId="OrgMateBackgroundPictureFilename_setter_default" defaultChecked = "true">default only</checkBox>
         <text>Set as the default value for the computer. In the disabled state, it will be distributed as a setting for the user with the lowest priority.</text>
       </presentation>
 
@@ -170,21 +170,21 @@
         </textBox>
         <checkBox refId="OrgMateBackgroundPrimaryColor_setter_blocker">lock</checkBox>
         <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
-        <checkBox refId="OrgMateBackgroundPrimaryColor_setter_default" defaultChecked = "true">by default</checkBox>
+        <checkBox refId="OrgMateBackgroundPrimaryColor_setter_default" defaultChecked = "true">default only</checkBox>
         <text>Set as the default value for the computer. In the disabled state, it will be distributed as a setting for the user with the lowest priority.</text>
       </presentation>
 
       <presentation id="OrgMateScreesaverIdleActivationEnabledMachine-pr">
         <checkBox refId="OrgMateScreesaverIdleActivationEnabled_setter_blocker">lock</checkBox>
         <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
-        <checkBox refId="OrgMateScreesaverIdleActivationEnabled_setter_default" defaultChecked = "true">by default</checkBox>
+        <checkBox refId="OrgMateScreesaverIdleActivationEnabled_setter_default" defaultChecked = "true">default only</checkBox>
         <text>Set as the default value for the computer. In the disabled state, it will be distributed as a setting for the user with the lowest priority.</text>
       </presentation>
 
       <presentation id="OrgMateScreensaverLockEnabledMachine-pr">
         <checkBox refId="OrgMateScreensaverLockEnabled_setter_blocker">lock</checkBox>
         <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
-        <checkBox refId="OrgMateScreensaverLockEnabled_setter_default" defaultChecked = "true">by default</checkBox>
+        <checkBox refId="OrgMateScreensaverLockEnabled_setter_default" defaultChecked = "true">default only</checkBox>
         <text>Set as the default value for the computer. In the disabled state, it will be distributed as a setting for the user with the lowest priority.</text>
       </presentation>
 
@@ -196,7 +196,7 @@
         <dropdownList noSort="true" defaultItem="0" refId="OrgMateScreensaverMode_setter">Select an operating mode:</dropdownList>
         <checkBox refId="OrgMateScreensaverMode_setter_blocker">lock</checkBox>
         <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
-        <checkBox refId="OrgMateScreensaverMode_setter_default" defaultChecked = "true">by default</checkBox>
+        <checkBox refId="OrgMateScreensaverMode_setter_default" defaultChecked = "true">default only</checkBox>
         <text>Set as the default value for the computer. In the disabled state, it will be distributed as a setting for the user with the lowest priority.</text>
       </presentation>
 
@@ -210,7 +210,7 @@
         <decimalTextBox refId="OrgMateScreensaverLockDelay_setter" defaultValue="2">Time in minutes:</decimalTextBox>
         <checkBox refId="OrgMateScreensaverLockDelay_setter_blocker">lock</checkBox>
         <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
-        <checkBox refId="OrgMateScreensaverLockDelay_setter_default" defaultChecked = "true">by default</checkBox>
+        <checkBox refId="OrgMateScreensaverLockDelay_setter_default" defaultChecked = "true">default only</checkBox>
         <text>Set as the default value for the computer. In the disabled state, it will be distributed as a setting for the user with the lowest priority.</text>
       </presentation>
 
@@ -224,7 +224,7 @@
         <decimalTextBox refId="OrgMateScreensaverLogoutDelay_setter" defaultValue="3">Time in minutes:</decimalTextBox>
         <checkBox refId="OrgMateScreensaverLogoutDelay_setter_blocker">lock</checkBox>
         <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
-        <checkBox refId="OrgMateScreensaverLogoutDelay_setter_default" defaultChecked = "true">by default</checkBox>
+        <checkBox refId="OrgMateScreensaverLogoutDelay_setter_default" defaultChecked = "true">default only</checkBox>
         <text>Set as the default value for the computer. In the disabled state, it will be distributed as a setting for the user with the lowest priority.</text>
       </presentation>
 
@@ -238,7 +238,7 @@
         <decimalTextBox refId="OrgMateScreensaverCycleDelay_setter" defaultValue="2">Time in minutes:</decimalTextBox>
         <checkBox refId="OrgMateScreensaverCycleDelay_setter_blocker">lock</checkBox>
         <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
-        <checkBox refId="OrgMateScreensaverCycleDelay_setter_default" defaultChecked = "true">by default</checkBox>
+        <checkBox refId="OrgMateScreensaverCycleDelay_setter_default" defaultChecked = "true">default only</checkBox>
         <text>Set as the default value for the computer. In the disabled state, it will be distributed as a setting for the user with the lowest priority.</text>
       </presentation>
 
@@ -252,49 +252,49 @@
       <presentation id="OrgMateScreensaverUserSwitchEnabledMachine-pr">
         <checkBox refId="OrgMateScreensaverUserSwitchEnabled_setter_blocker">lock</checkBox>
         <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
-        <checkBox refId="OrgMateScreensaverUserSwitchEnabled_setter_default" defaultChecked = "true">by default</checkBox>
+        <checkBox refId="OrgMateScreensaverUserSwitchEnabled_setter_default" defaultChecked = "true">default only</checkBox>
         <text>Set as the default value for the computer. In the disabled state, it will be distributed as a setting for the user with the lowest priority.</text>
       </presentation>
 
       <presentation id="OrgMateLockdownDisableLogOutMachine-pr">
         <checkBox refId="OrgMateLockdownDisableLogOut_setter_blocker">lock</checkBox>
         <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
-        <checkBox refId="OrgMateLockdownDisableLogOut_setter_default" defaultChecked = "true">by default</checkBox>
+        <checkBox refId="OrgMateLockdownDisableLogOut_setter_default" defaultChecked = "true">default only</checkBox>
         <text>Set as the default value for the computer. In the disabled state, it will be distributed as a setting for the user with the lowest priority.</text>
       </presentation>
 
       <presentation id="OrgMateLockdownDisableLockScreenMachine-pr">
         <checkBox refId="OrgMateLockdownDisableLockScreen_setter_blocker">lock</checkBox>
         <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
-        <checkBox refId="OrgMateLockdownDisableLockScreen_setter_default" defaultChecked = "true">by default</checkBox>
+        <checkBox refId="OrgMateLockdownDisableLockScreen_setter_default" defaultChecked = "true">default only</checkBox>
         <text>Set as the default value for the computer. In the disabled state, it will be distributed as a setting for the user with the lowest priority.</text>
       </presentation>
 
       <presentation id="OrgMateLockdownDisableUserSwitchingMachine-pr">
         <checkBox refId="OrgMateLockdownDisableUserSwitching_setter_blocker">lock</checkBox>
         <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
-        <checkBox refId="OrgMateLockdownDisableUserSwitching_setter_default" defaultChecked = "true">by default</checkBox>
+        <checkBox refId="OrgMateLockdownDisableUserSwitching_setter_default" defaultChecked = "true">default only</checkBox>
         <text>Set as the default value for the computer. In the disabled state, it will be distributed as a setting for the user with the lowest priority.</text>
       </presentation>
 
       <presentation id="OrgMateLockdownDisableThemeSettingsMachine-pr">
         <checkBox refId="OrgMateLockdownDisableThemeSettings_setter_blocker">lock</checkBox>
         <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
-        <checkBox refId="OrgMateLockdownDisableThemeSettings_setter_default" defaultChecked = "true">by default</checkBox>
+        <checkBox refId="OrgMateLockdownDisableThemeSettings_setter_default" defaultChecked = "true">default only</checkBox>
         <text>Set as the default value for the computer. In the disabled state, it will be distributed as a setting for the user with the lowest priority.</text>
       </presentation>
 
       <presentation id="OrgGnomeVinoViewOnlyMachine-pr">
         <checkBox refId="OrgGnomeVinoViewOnly_setter_blocker">lock</checkBox>
         <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
-        <checkBox refId="OrgGnomeVinoViewOnly_setter_default" defaultChecked = "true">by default</checkBox>
+        <checkBox refId="OrgGnomeVinoViewOnly_setter_default" defaultChecked = "true">default only</checkBox>
         <text>Set as the default value for the computer. In the disabled state, it will be distributed as a setting for the user with the lowest priority.</text>
       </presentation>
 
       <presentation id="OrgGnomeVinoPromptEnabledMachine-pr">
         <checkBox refId="OrgGnomeVinoPromptEnabled_setter_blocker">lock</checkBox>
         <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
-        <checkBox refId="OrgGnomeVinoPromptEnabled_setter_default" defaultChecked = "true">by default</checkBox>
+        <checkBox refId="OrgGnomeVinoPromptEnabled_setter_default" defaultChecked = "true">default only</checkBox>
         <text>Set as the default value for the computer. In the disabled state, it will be distributed as a setting for the user with the lowest priority.</text>
       </presentation>
 
@@ -306,14 +306,14 @@
         <dropdownList noSort="true" defaultItem="0" refId="OrgGnomeVinoIconVisibility_setter">Show notification:</dropdownList>
         <checkBox refId="OrgGnomeVinoIconVisibility_setter_blocker">lock</checkBox>
         <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
-        <checkBox refId="OrgGnomeVinoIconVisibility_setter_default" defaultChecked = "true">by default</checkBox>
+        <checkBox refId="OrgGnomeVinoIconVisibility_setter_default" defaultChecked = "true">default only</checkBox>
         <text>Set as the default value for the computer. In the disabled state, it will be distributed as a setting for the user with the lowest priority.</text>
       </presentation>
 
       <presentation id="OrgGnomeVinoEnabledMachine-pr">
         <checkBox refId="OrgGnomeVinoEnabled_setter_blocker">lock</checkBox>
         <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
-        <checkBox refId="OrgGnomeVinoEnabled_setter_default" defaultChecked = "true">by default</checkBox>
+        <checkBox refId="OrgGnomeVinoEnabled_setter_default" defaultChecked = "true">default only</checkBox>
         <text>Set as the default value for the computer. In the disabled state, it will be distributed as a setting for the user with the lowest priority.</text>
       </presentation>
 
@@ -325,14 +325,14 @@
         <decimalTextBox refId="OrgGnomeVinoAlternativePort_setter" defaultValue="5000">Port:</decimalTextBox>
         <checkBox refId="OrgGnomeVinoAlternativePort_setter_blocker">lock</checkBox>
         <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
-        <checkBox refId="OrgGnomeVinoAlternativePort_setter_default" defaultChecked = "true">by default</checkBox>
+        <checkBox refId="OrgGnomeVinoAlternativePort_setter_default" defaultChecked = "true">default only</checkBox>
         <text>Set as the default value for the computer. In the disabled state, it will be distributed as a setting for the user with the lowest priority.</text>
       </presentation>
 
       <presentation id="OrgGnomeVinoUseAlternativePortMachine-pr">
         <checkBox refId="OrgGnomeVinoUseAlternativePort_setter_blocker">lock</checkBox>
         <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
-        <checkBox refId="OrgGnomeVinoUseAlternativePort_setter_default" defaultChecked = "true">by default</checkBox>
+        <checkBox refId="OrgGnomeVinoUseAlternativePort_setter_default" defaultChecked = "true">default only</checkBox>
         <text>Set as the default value for the computer. In the disabled state, it will be distributed as a setting for the user with the lowest priority.</text>
       </presentation>
 
@@ -344,7 +344,7 @@
         <dropdownList noSort="true" defaultItem="0" refId="OrgGnomeVinoAuthenticationMethods_setter">Method:</dropdownList>
         <checkBox refId="OrgGnomeVinoAuthenticationMethods_setter_blocker">lock</checkBox>
         <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
-        <checkBox refId="OrgGnomeVinoAuthenticationMethods_setter_default" defaultChecked = "true">by default</checkBox>
+        <checkBox refId="OrgGnomeVinoAuthenticationMethods_setter_default" defaultChecked = "true">default only</checkBox>
         <text>Set as the default value for the computer. In the disabled state, it will be distributed as a setting for the user with the lowest priority.</text>
       </presentation>
 
@@ -360,7 +360,7 @@
         </textBox>
         <checkBox refId="OrgGnomeVinoVncPassword_setter_blocker">lock</checkBox>
         <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
-        <checkBox refId="OrgGnomeVinoVncPassword_setter_default" defaultChecked = "true">by default</checkBox>
+        <checkBox refId="OrgGnomeVinoVncPassword_setter_default" defaultChecked = "true">default only</checkBox>
         <text>Set as the default value for the computer. In the disabled state, it will be distributed as a setting for the user with the lowest priority.</text>
       </presentation>
 
