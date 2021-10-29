@@ -97,7 +97,7 @@
       <string id="org-gnome-vino-authentication-methods-vnc">vnc</string>
 
       <string id="org-gnome-vino-vnc-password">Пароль для подключения</string>
-      <string id="org-gnome-vino-vnc-password_help">Пароль, который удаленному пользователю будет предложено ввести, если используется метод аутентификации "vnc". Пароль, указанный ключом, закодирован в кодировке base64.</string>
+      <string id="org-gnome-vino-vnc-password_help">Пароль, который удаленному пользователю будет предложено ввести, если используется метод аутентификации "vnc". Хранение паролей в открытом виде небезопасно, поэтому необходимо ввести строку, полученную кодированием пароля по стандартному алгоритму base64.</string>
 
     </stringTable>
 
