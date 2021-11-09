@@ -99,6 +99,18 @@
       <string id="org-gnome-vino-vnc-password">Password for remote access</string>
       <string id="org-gnome-vino-vnc-password_help">The password which the remote user will be prompted for if the "vnc" authentication method is used. The password specified by the key is base64 encoded.  The special value of 'keyring' (which is not valid base64) means that the password is stored in the GNOME keyring.</string>
 
+      <string id="org-mate-marco-button-layout">Window title Icons</string>
+      <string id="org-mate-marco-button-layout_help">Settings for the location of icons in the window title. The separator of the right and left halves is a colon. For example, the line 'menu:minimize,maximize,spacer,close' has the window menu icon on the left, and on the right the icons collapse, open, close the window.</string>
+
+      <string id="org-mate-marco-general-wrap-style">Switch workspaces</string>
+      <string id="org-mate-marco-general-wrap-style_help">The wrap style is used to determine how to switch from one workspace to another at the border of the workspace switcher. When set to "no wrap", nothing will happen if you try to switch to a workspace past the border of the workspace switcher. If set to "classic", the old marco behavior is used: the end of one row leads to the beginning of the next and the end of a column leads to the beginning of the next. If set to "toroidal", workspaces are connected like a doughnut: the end of each row leads to its own beginning and the end of each column leads to its own beginning.</string>
+      <string id="org-mate-Marco-general-wrap-style-no-wrap">no wrap</string>
+      <string id="org-mate-Marco-general-wrap-style-classic">classic</string>
+      <string id="org-mate-Marco-general-wrap-style-toroidal">toroidal</string>
+
+      <string id="org-mate-marco-general-show-tab-border">Show window border</string>
+      <string id="org-mate-marco-general-show-tab-border_help">Set this to false to disable border of preselected window while performing tab switching.</string>
+
     </stringTable>
 
     <presentationTable>
@@ -311,6 +323,35 @@
           <label>Password:</label>
         </textBox>
         <checkBox refId="OrgGnomeVinoVncPassword_setter_blocker">lock</checkBox>
+        <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
+      </presentation>
+
+      <presentation id="OrgMateMarcoGeneraButtonLayoutUser-pr">
+        <textBox refId="OrgMateMarcoGeneraButtonLayout_setter">
+          <label></label>
+        </textBox>
+      </presentation>
+
+      <presentation id="OrgMateMarcoGeneraButtonLayoutMachine-pr">
+        <textBox refId="OrgMateMarcoGeneraButtonLayout_setter">
+          <label></label>
+        </textBox>
+        <checkBox refId="OrgMateMarcoGeneraButtonLayout_setter_blocker">lock</checkBox>
+        <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
+      </presentation>
+
+      <presentation id="OrgMateMarcoGeneralWrapStyleUser-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="OrgMateMarcoGeneralWrapStyle_setter">Method:</dropdownList>
+      </presentation>
+
+      <presentation id="OrgMateMarcoGeneralWrapStyleMachine-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="OrgMateMarcoGeneralWrapStyle_setter">Method:</dropdownList>
+        <checkBox refId="OrgMateMarcoGeneralWrapStyle_setter_blocker">lock</checkBox>
+        <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
+      </presentation>
+
+      <presentation id="OrgMateMarcoGeneralShowTabBorderMachine-pr">
+        <checkBox refId="OrgMateMarcoGeneralShowTabBorder_setter_blocker">lock</checkBox>
         <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
       </presentation>
 

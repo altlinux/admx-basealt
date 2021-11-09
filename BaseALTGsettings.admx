@@ -1115,5 +1115,142 @@
       </elements>
     </policy>
 
+    <policy name="OrgMateMarcoGeneraButtonLayoutUser" class="User"
+        displayName="$(string.org-mate-marco-button-layout)"
+        explainText="$(string.org-mate-marco-button-layout_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        presentation="$(presentation.OrgMateMarcoGeneraButtonLayoutUser-pr)">
+      <parentCategory ref="system:ALT_Windows_Manager_Marco" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <elements>
+        <text id="OrgMateMarcoGeneraButtonLayout_setter" valueName="org.mate.Marco.general.button-layout" />
+      </elements>
+    </policy>
+
+    <policy name="OrgMateMarcoGeneraButtonLayoutMachine" class="Machine"
+        displayName="$(string.org-mate-marco-button-layout)"
+        explainText="$(string.org-mate-marco-button-layout_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        presentation="$(presentation.OrgMateMarcoGeneraButtonLayoutMachine-pr)">
+      <parentCategory ref="system:ALT_Windows_Manager_Marco" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <elements>
+        <text id="OrgMateMarcoGeneraButtonLayout_setter" valueName="org.mate.Marco.general.button-layout" />
+        <boolean id="OrgMateMarcoGeneraButtonLayout_setter_blocker" key="Software\BaseALT\Policies\GSettingsLocks" valueName="org.mate.Marco.general.button-layout">
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+        </boolean>
+      </elements>
+    </policy>
+
+    <policy name="OrgMateMarcoGeneralWrapStyleUser" class="User"
+        displayName="$(string.org-mate-marco-general-wrap-style)"
+        explainText="$(string.org-mate-marco-general-wrap-style_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        presentation="$(presentation.OrgMateMarcoGeneralWrapStyleUser-pr)" >
+      <parentCategory ref="system:ALT_Windows_Manager_Marco" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <elements>
+        <enum id="OrgMateMarcoGeneralWrapStyle_setter" required="true" valueName="org.mate.Marco.general.wrap-style">
+          <item displayName="$(string.org-mate-Marco-general-wrap-style-no-wrap)">
+            <value>
+              <string>no wrap</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-Marco-general-wrap-style-classic)">
+            <value>
+              <string>classic</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-Marco-general-wrap-style-toroidal)">
+            <value>
+              <string>toroidal</string>
+            </value>
+          </item>
+        </enum>
+      </elements>
+    </policy>
+
+    <policy name="OrgMateMarcoGeneralWrapStyleMachine" class="Machine"
+        displayName="$(string.org-mate-marco-general-wrap-style)"
+        explainText="$(string.org-mate-marco-general-wrap-style_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        presentation="$(presentation.OrgMateMarcoGeneralWrapStyleMachine-pr)" >
+      <parentCategory ref="system:ALT_Windows_Manager_Marco" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <elements>
+        <enum id="OrgMateMarcoGeneralWrapStyle_setter" required="true" valueName="org.mate.Marco.general.wrap-style">
+          <item displayName="$(string.org-mate-Marco-general-wrap-style-no-wrap)">
+            <value>
+              <string>no wrap</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-Marco-general-wrap-style-classic)">
+            <value>
+              <string>classic</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-Marco-general-wrap-style-toroidal)">
+            <value>
+              <string>toroidal</string>
+            </value>
+          </item>
+        </enum>
+        <boolean id="OrgMateMarcoGeneralWrapStyle_setter_blocker" key="Software\BaseALT\Policies\GSettingsLocks" valueName="org.mate.Marco.general.wrap-style">
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+        </boolean>
+      </elements>
+    </policy>
+
+    <policy name="OrgMateMarcoGeneralShowTabBorderUser" class="User"
+        displayName="$(string.org-mate-marco-general-show-tab-border)"
+        explainText="$(string.org-mate-marco-general-show-tab-border_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        valueName="org.mate.Marco.general.show-tab-border">
+      <parentCategory ref="system:ALT_Windows_Manager_Marco" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+    </policy>
+
+    <policy name="OrgMateMarcoGeneralShowTabBorderMachine" class="Machine"
+        displayName="$(string.org-mate-marco-general-show-tab-border)"
+        explainText="$(string.org-mate-marco-general-show-tab-border_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        valueName="org.mate.Marco.general.show-tab-border"
+        presentation="$(presentation.OrgMateMarcoGeneralShowTabBorderMachine-pr)">
+      <parentCategory ref="system:ALT_Windows_Manager_Marco" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+      <elements>
+        <boolean id="OrgMateMarcoGeneralShowTabBorder_setter_blocker" key="Software\BaseALT\Policies\GSettingsLocks" valueName="org.mate.Marco.general.show-tab-border">
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+        </boolean>
+      </elements>
+    </policy>
+
   </policies>
 </policyDefinitions>

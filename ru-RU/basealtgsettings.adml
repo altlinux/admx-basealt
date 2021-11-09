@@ -99,6 +99,18 @@
       <string id="org-gnome-vino-vnc-password">Пароль для подключения</string>
       <string id="org-gnome-vino-vnc-password_help">Пароль, который удаленному пользователю будет предложено ввести, если используется метод аутентификации "vnc". Пароль, указанный ключом, закодирован в кодировке base64.</string>
 
+      <string id="org-mate-marco-button-layout">Иконки заголовка окна</string>
+      <string id="org-mate-marco-button-layout_help">Настройки расположения иконок в заголовке окна. Разделителем правой и левой половин является двоеточие. Например, строка 'menu:minimize,maximize,spacer,close' располагаем иконку меню окна слева, а справа иконки свернуть, распахнуть, закрыть окно.</string>
+
+      <string id="org-mate-marco-general-wrap-style">Переключение рабочих областей</string>
+      <string id="org-mate-marco-general-wrap-style_help">Настройки окна переключения рабочих областей</string>
+      <string id="org-mate-Marco-general-wrap-style-no-wrap">no wrap</string>
+      <string id="org-mate-Marco-general-wrap-style-classic">classic</string>
+      <string id="org-mate-Marco-general-wrap-style-toroidal">toroidal</string>
+
+      <string id="org-mate-marco-general-show-tab-border">Граница окна при переключении</string>
+      <string id="org-mate-marco-general-show-tab-border_help">Показывать ли границу окна при переключении с помощью Alt+Tab.</string>
+
     </stringTable>
 
     <presentationTable>
@@ -311,6 +323,35 @@
           <label>Пароль:</label>
         </textBox>
         <checkBox refId="OrgGnomeVinoVncPassword_setter_blocker">блокировать</checkBox>
+        <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
+      </presentation>
+
+<presentation id="OrgMateMarcoGeneraButtonLayoutUser-pr">
+        <textBox refId="OrgMateMarcoGeneraButtonLayout_setter">
+          <label></label>
+        </textBox>
+      </presentation>
+
+      <presentation id="OrgMateMarcoGeneraButtonLayoutMachine-pr">
+        <textBox refId="OrgMateMarcoGeneraButtonLayout_setter">
+          <label></label>
+        </textBox>
+        <checkBox refId="OrgMateMarcoGeneraButtonLayout_setter_blocker">блокировать</checkBox>
+        <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
+      </presentation>
+
+      <presentation id="OrgMateMarcoGeneralWrapStyleUser-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="OrgMateMarcoGeneralWrapStyle_setter">Метод:</dropdownList>
+      </presentation>
+
+      <presentation id="OrgMateMarcoGeneralWrapStyleMachine-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="OrgMateMarcoGeneralWrapStyle_setter">Метод:</dropdownList>
+        <checkBox refId="OrgMateMarcoGeneralWrapStyle_setter_blocker">блокировать</checkBox>
+        <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
+      </presentation>
+
+      <presentation id="OrgMateMarcoGeneralShowTabBorderMachine-pr">
+        <checkBox refId="OrgMateMarcoGeneralShowTabBorder_setter_blocker">блокировать</checkBox>
         <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
       </presentation>
 
