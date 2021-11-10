@@ -1388,5 +1388,142 @@
       </elements>
     </policy>
 
+    <policy name="OrgMateMarcoGeneralNumWorkspacesUser" class="User"
+        displayName="$(string.org-mate-marco-general-num-workspaces)"
+        explainText="$(string.org-mate-marco-general-num-workspaces_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        presentation="$(presentation.OrgMateMarcoGeneralNumWorkspacesUser-pr)">
+      <parentCategory ref="system:ALT_Windows_Manager_Marco" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <elements>
+        <decimal id="OrgMateMarcoGeneralNumWorkspaces_setter" valueName="org.mate.Marco.general.num-workspaces" minValue="1" maxValue="36" />
+      </elements>
+    </policy>
+
+    <policy name="OrgMateMarcoGeneralNumWorkspacesMachine" class="Machine"
+        displayName="$(string.org-mate-marco-general-num-workspaces)"
+        explainText="$(string.org-mate-marco-general-num-workspaces_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        presentation="$(presentation.OrgMateMarcoGeneralNumWorkspacesMachine-pr)">
+      <parentCategory ref="system:ALT_Windows_Manager_Marco" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <elements>
+        <decimal id="OrgMateMarcoGeneralNumWorkspaces_setter" valueName="org.mate.Marco.general.num-workspaces" minValue="1" maxValue="36" />
+        <boolean id="OrgMateMarcoGeneralNumWorkspaces_setter_blocker" key="Software\BaseALT\Policies\GSettingsLocks" valueName="org.mate.Marco.general.num-workspaces">
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+        </boolean>
+      </elements>
+    </policy>
+
+    <policy name="OrgMateMarcoGeneralPlacementModeUser" class="User"
+        displayName="$(string.org-mate-marco-general-placement-mode)"
+        explainText="$(string.org-mate-marco-general-placement-mode_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        presentation="$(presentation.OrgMateMarcoGeneralPlacementModeUser-pr)" >
+      <parentCategory ref="system:ALT_Windows_Manager_Marco" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <elements>
+        <enum id="OrgMateMarcoGeneralPlacementMode_setter" required="true" valueName="org.mate.Marco.general.placement-mode">
+          <item displayName="$(string.org-mate-marco-general-placement-mode-automatic)">
+            <value>
+              <string>automatic</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-marco-general-placement-mode-pointer)">
+            <value>
+              <string>pointer</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-marco-general-placement-mode-manual)">
+            <value>
+              <string>manual</string>
+            </value>
+          </item>
+        </enum>
+      </elements>
+    </policy>
+
+    <policy name="OrgMateMarcoGeneralPlacementModeMachine" class="Machine"
+        displayName="$(string.org-mate-marco-general-placement-mode)"
+        explainText="$(string.org-mate-marco-general-placement-mode_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        presentation="$(presentation.OrgMateMarcoGeneralPlacementModeMachine-pr)" >
+      <parentCategory ref="system:ALT_Windows_Manager_Marco" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <elements>
+        <enum id="OrgMateMarcoGeneralPlacementMode_setter" required="true" valueName="org.mate.Marco.general.placement-mode">
+          <item displayName="$(string.org-mate-marco-general-placement-mode-automatic)">
+            <value>
+              <string>automatic</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-marco-general-placement-mode-pointer)">
+            <value>
+              <string>pointer</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-marco-general-placement-mode-manual)">
+            <value>
+              <string>manual</string>
+            </value>
+          </item>
+        </enum>
+        <boolean id="OrgMateMarcoGeneralPlacementMode_setter_blocker" key="Software\BaseALT\Policies\GSettingsLocks" valueName="org.mate.Marco.general.placement-mode">
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+        </boolean>
+      </elements>
+    </policy>
+
+    <policy name="OrgMateMarcoGeneralAutoRaiseUser" class="User"
+        displayName="$(string.org-mate-marco-general-auto-raise)"
+        explainText="$(string.org-mate-marco-general-auto-raise_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        valueName="org.mate.Marco.general.auto-raise">
+      <parentCategory ref="system:ALT_Windows_Manager_Marco" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+    </policy>
+
+    <policy name="OrgMateMarcoGeneralAutoRaiseMachine" class="Machine"
+        displayName="$(string.org-mate-marco-general-auto-raise)"
+        explainText="$(string.org-mate-marco-general-auto-raise_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        valueName="org.mate.Marco.general.auto-raise"
+        presentation="$(presentation.OrgMateMarcoGeneralAutoRaiseMachine-pr)">
+      <parentCategory ref="system:ALT_Windows_Manager_Marco" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+      <elements>
+        <boolean id="OrgMateMarcoGeneralAutoRaise_setter_blocker" key="Software\BaseALT\Policies\GSettingsLocks" valueName="org.mate.Marco.general.auto-raise">
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+        </boolean>
+      </elements>
+    </policy>
+
   </policies>
 </policyDefinitions>

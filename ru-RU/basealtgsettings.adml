@@ -122,6 +122,18 @@
       <string id="org-mate-marco-general-allow-tiling">Изменение размеров при перетаскивании</string>
       <string id="org-mate-marco-general-allow-tiling_help">Включает изменение размеров окна при перетаскивании его в различные области экрана.</string>
 
+      <string id="org-mate-marco-general-num-workspaces">Количество рабочих областей</string>
+      <string id="org-mate-marco-general-num-workspaces_help">Установка количества рабочих областей. Интервал допустимых значений 1-36.</string>
+
+      <string id="org-mate-marco-general-placement-mode">Расположение новых окон</string>
+      <string id="org-mate-marco-general-placement-mode_help">Устанавливает расположение новых окон на экране. automatic - автоматически, в зависимости от занятости экрана другими окнами, pointer - в зависимости от положения курсора мыши на экране, manual -  пользователь сам выбирает положение нокового окна на экране.</string>
+      <string id="org-mate-marco-general-placement-mode-automatic">automatic</string>
+      <string id="org-mate-marco-general-placement-mode-pointer">pointer</string>
+      <string id="org-mate-marco-general-placement-mode-manual">manual</string>
+
+      <string id="org-mate-marco-general-auto-raise">Подъем окна в фокусе</string>
+      <string id="org-mate-marco-general-auto-raise_help">При включении, окно, получившее фокус, отображается поверх остальных автоматически. Настройка "переключение окон" должна быть установлена в "sloppy" или "mouse". Интервал, по истечении которого, окно поднимается, устанавливается в настройке "задержка при восстановлении"</string>
+
     </stringTable>
 
     <presentationTable>
@@ -383,6 +395,31 @@
 
       <presentation id="OrgMateMarcoGeneralAllowTilingMachine-pr">
         <checkBox refId="OrgMateMarcoGeneralAllowTiling_setter_blocker">блокировать</checkBox>
+        <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
+      </presentation>
+
+        <presentation id="OrgMateMarcoGeneralNumWorkspacesUser-pr">
+        <decimalTextBox refId="OrgMateMarcoGeneralNumWorkspaces_setter" defaultValue="2">Количество:</decimalTextBox>
+      </presentation>
+
+        <presentation id="OrgMateMarcoGeneralNumWorkspacesMachine-pr">
+        <decimalTextBox refId="OrgMateMarcoGeneralNumWorkspaces_setter" defaultValue="2">Количество:</decimalTextBox>
+        <checkBox refId="OrgMateMarcoGeneralNumWorkspaces_setter_blocker">блокировать</checkBox>
+        <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
+      </presentation>
+
+      <presentation id="OrgMateMarcoGeneralPlacementModeUser-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="OrgMateMarcoGeneralPlacementMode_setter">Расположение:</dropdownList>
+      </presentation>
+
+      <presentation id="OrgMateMarcoGeneralPlacementModeMachine-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="OrgMateMarcoGeneralPlacementMode_setter">Расположение:</dropdownList>
+        <checkBox refId="OrgMateMarcoGeneralPlacementMode_setter_blocker">блокировать</checkBox>
+        <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
+      </presentation>
+
+      <presentation id="OrgMateMarcoGeneralAutoRaiseMachine-pr">
+        <checkBox refId="OrgMateMarcoGeneralAutoRaise_setter_blocker">блокировать</checkBox>
         <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
       </presentation>
 

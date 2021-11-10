@@ -122,6 +122,17 @@
       <string id="org-mate-marco-general-allow-tiling">Resizing when drag-dropping</string>
       <string id="org-mate-marco-general-allow-tiling_help">If enabled, dropping windows on screen edges maximizes them vertically and resizes them horizontally to cover half of the available area. Drag-dropping to the top maximizes the window if allow-top-tiling is enabled.</string>
 
+      <string id="org-mate-marco-general-num-workspaces">Number of workspaces</string>
+      <string id="org-mate-marco-general-num-workspaces_help">Set the number of workspaces. The range of acceptable values is 1-36.</string>
+
+      <string id="org-mate-marco-general-placement-mode">Location of new windows</string>
+      <string id="org-mate-marco-general-placement-mode_help">Indicates how new windows are positioned. "automatic" means the system chooses a location automatically based on the space available on the desktop, or by a simple cascade if there is no space; "pointer" means that new windows are placed according to the mouse pointer position; "manual" means that the user must manually place the new window with the mouse or keyboard.</string>
+      <string id="org-mate-marco-general-placement-mode-automatic">automatic</string>
+      <string id="org-mate-marco-general-placement-mode-pointer">pointer</string>
+      <string id="org-mate-marco-general-placement-mode-manual">manual</string>
+
+      <string id="org-mate-marco-general-auto-raise">Raise the window in focus</string>
+      <string id="org-mate-marco-general-auto-raise_help">If set to true, and the focus mode is either "sloppy" or "mouse" then the focused window will be automatically raised after a delay specified by the auto_raise_delay key. This is not related to clicking on a window to raise it, nor to entering a window during drag-and-drop.</string>
     </stringTable>
 
     <presentationTable>
@@ -383,6 +394,31 @@
 
       <presentation id="OrgMateMarcoGeneralAllowTilingMachine-pr">
         <checkBox refId="OrgMateMarcoGeneralAllowTiling_setter_blocker">lock</checkBox>
+        <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
+      </presentation>
+
+        <presentation id="OrgMateMarcoGeneralNumWorkspacesUser-pr">
+        <decimalTextBox refId="OrgMateMarcoGeneralNumWorkspaces_setter" defaultValue="2">Number of workspaces:</decimalTextBox>
+      </presentation>
+
+        <presentation id="OrgMateMarcoGeneralNumWorkspacesMachine-pr">
+        <decimalTextBox refId="OrgMateMarcoGeneralNumWorkspaces_setter" defaultValue="2">Number of workspaces:</decimalTextBox>
+        <checkBox refId="OrgMateMarcoGeneralNumWorkspaces_setter_blocker">lock</checkBox>
+        <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
+      </presentation>
+
+      <presentation id="OrgMateMarcoGeneralPlacementModeUser-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="OrgMateMarcoGeneralPlacementMode_setter">Location:</dropdownList>
+      </presentation>
+
+      <presentation id="OrgMateMarcoGeneralPlacementModeMachine-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="OrgMateMarcoGeneralPlacementMode_setter">Location:</dropdownList>
+        <checkBox refId="OrgMateMarcoGeneralPlacementMode_setter_blocker">lock</checkBox>
+        <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
+      </presentation>
+
+      <presentation id="OrgMateMarcoGeneralAutoRaiseMachine-pr">
+        <checkBox refId="OrgMateMarcoGeneralAutoRaise_setter_blocker">lock</checkBox>
         <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
       </presentation>
 
