@@ -111,6 +111,17 @@
       <string id="org-mate-marco-general-show-tab-border">Граница окна при переключении</string>
       <string id="org-mate-marco-general-show-tab-border_help">Показывать ли границу окна при переключении с помощью Alt+Tab.</string>
 
+      <string id="org-mate-marco-general-allow-top-tiling">Разворачивание при перетаскивании</string>
+      <string id="org-mate-marco-general-allow-top-tiling_help">Включает разворачивание окна во весь экран при его перетаскивании в верхнюю центральную часть экрана.</string>
+
+      <string id="org-mate-marco-general-focus-new-windows">Переключение фокуса на новое окно</string>
+      <string id="org-mate-marco-general-focus-new-windows_help">Устанавливает способ переключения фокуса на новое окно. smart - новое окно получает фокус при создании. strict - при создании нового окна по команде из терминала, новое окно фокус не получает.</string>
+      <string id="org-mate-Marco-general-focus-new-windows-smart">smart</string>
+      <string id="org-mate-Marco-general-focus-new-windows-strict">strict</string>
+
+      <string id="org-mate-marco-general-allow-tiling">Изменение размеров при перетаскивании</string>
+      <string id="org-mate-marco-general-allow-tiling_help">Включает изменение размеров окна при перетаскивании его в различные области экрана.</string>
+
     </stringTable>
 
     <presentationTable>
@@ -352,6 +363,26 @@
 
       <presentation id="OrgMateMarcoGeneralShowTabBorderMachine-pr">
         <checkBox refId="OrgMateMarcoGeneralShowTabBorder_setter_blocker">блокировать</checkBox>
+        <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
+      </presentation>
+
+      <presentation id="OrgMateMarcoGeneralAllowTopTilingMachine-pr">
+        <checkBox refId="OrgMateMarcoGeneralAllowTopTilingMachine_setter_blocker">блокировать</checkBox>
+        <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
+      </presentation>
+
+      <presentation id="OrgMateMarcoGeneralFocusNewWindowsUser-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="OrgMateMarcoGeneralFocusNewWindows_setter">Передача фокуса:</dropdownList>
+      </presentation>
+
+      <presentation id="OrgMateMarcoGeneralFocusNewWindowsMachine-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="OrgMateMarcoGeneralFocusNewWindows_setter">Передача фокуса:</dropdownList>
+        <checkBox refId="OrgMateMarcoGeneralFocusNewWindows_setter_blocker">блокировать</checkBox>
+        <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
+      </presentation>
+
+      <presentation id="OrgMateMarcoGeneralAllowTilingMachine-pr">
+        <checkBox refId="OrgMateMarcoGeneralAllowTiling_setter_blocker">блокировать</checkBox>
         <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
       </presentation>
 
