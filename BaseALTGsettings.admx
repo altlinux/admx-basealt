@@ -1525,5 +1525,377 @@
       </elements>
     </policy>
 
+    <policy name="OrgMateMarcoGeneralActionMiddleClickTitlebarUser" class="User"
+        displayName="$(string.org-mate-marco-general-action-middle-click-titlebar)"
+        explainText="$(string.org-mate-marco-general-action-middle-click-titlebar_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        presentation="$(presentation.OrgMateMarcoGeneralActionMiddleClickTitlebarUser-pr)" >
+      <parentCategory ref="system:ALT_Windows_Manager_Marco" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <elements>
+        <enum id="OrgMateMarcoGeneralActionMiddleClickTitlebar_setter" required="true" valueName="org.mate.Marco.general.action-middle-click-titlebar">
+          <item displayName="$(string.org-mate-marco-general-action-middle-click-titlebar-toggle_shade)">
+            <value>
+              <string>toggle shade</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-marco-general-action-middle-click-titlebar-toggle_maximize)">
+            <value>
+              <string>toggle maximize</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-marco-general-action-middle-click-titlebar-toggle_maximize_horizontally)">
+            <value>
+              <string>toggle maximize horizontally</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-marco-general-action-middle-click-titlebar-toggle_maximize_vertically)">
+            <value>
+              <string>toggle maximize vertically</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-marco-general-action-middle-click-titlebar-minimize)">
+            <value>
+              <string>minimize</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-marco-general-action-middle-click-titlebar-none)">
+            <value>
+              <string>none</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-marco-general-action-middle-click-titlebar-lower)">
+            <value>
+              <string>lower</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-marco-general-action-middle-click-titlebar-menu)">
+            <value>
+              <string>menu</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-marco-general-action-middle-click-titlebar-last)">
+            <value>
+              <string>last</string>
+            </value>
+          </item>
+        </enum>
+      </elements>
+    </policy>
+
+    <policy name="OrgMateMarcoGeneralActionMiddleClickTitlebarMachine" class="Machine"
+        displayName="$(string.org-mate-marco-general-action-middle-click-titlebar)"
+        explainText="$(string.org-mate-marco-general-action-middle-click-titlebar_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        presentation="$(presentation.OrgMateMarcoGeneralActionMiddleClickTitlebarMachine-pr)" >
+      <parentCategory ref="system:ALT_Windows_Manager_Marco" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <elements>
+        <enum id="OrgMateMarcoGeneralActionMiddleClickTitlebar_setter" required="true" valueName="org.mate.Marco.general.action-middle-click-titlebar">
+          <item displayName="$(string.org-mate-marco-general-action-middle-click-titlebar-toggle_shade)">
+            <value>
+              <string>toggle shade</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-marco-general-action-middle-click-titlebar-toggle_maximize)">
+            <value>
+              <string>toggle maximize</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-marco-general-action-middle-click-titlebar-toggle_maximize_horizontally)">
+            <value>
+              <string>toggle maximize horizontally</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-marco-general-action-middle-click-titlebar-toggle_maximize_vertically)">
+            <value>
+              <string>toggle maximize vertically</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-marco-general-action-middle-click-titlebar-minimize)">
+            <value>
+              <string>minimize</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-marco-general-action-middle-click-titlebar-none)">
+            <value>
+              <string>none</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-marco-general-action-middle-click-titlebar-lower)">
+            <value>
+              <string>lower</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-marco-general-action-middle-click-titlebar-menu)">
+            <value>
+              <string>menu</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-marco-general-action-middle-click-titlebar-last)">
+            <value>
+              <string>last</string>
+            </value>
+          </item>
+        </enum>
+        <boolean id="OrgMateMarcoGeneralActionMiddleClickTitlebar_setter_blocker" key="Software\BaseALT\Policies\GSettingsLocks" valueName="org.mate.Marco.general.action-middle-click-titlebar">
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+        </boolean>
+      </elements>
+    </policy>
+
+    <policy name="OrgMateMarcoGeneralActionRightClickTitlebarUser" class="User"
+        displayName="$(string.org-mate-marco-general-action-right-click-titlebar)"
+        explainText="$(string.org-mate-marco-general-action-right-click-titlebar_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        presentation="$(presentation.OrgMateMarcoGeneralActionRightClickTitlebarUser-pr)" >
+      <parentCategory ref="system:ALT_Windows_Manager_Marco" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <elements>
+        <enum id="OrgMateMarcoGeneralActionRightClickTitlebar_setter" required="true" valueName="org.mate.Marco.general.action-right-click-titlebar">
+          <item displayName="$(string.org-mate-marco-general-action-right-click-titlebar-toggle_shade)">
+            <value>
+              <string>toggle shade</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-marco-general-action-right-click-titlebar-toggle_maximize)">
+            <value>
+              <string>toggle maximize</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-marco-general-action-right-click-titlebar-toggle_maximize_horizontally)">
+            <value>
+              <string>toggle maximize horizontally</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-marco-general-action-right-click-titlebar-toggle_maximize_vertically)">
+            <value>
+              <string>toggle maximize vertically</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-marco-general-action-right-click-titlebar-minimize)">
+            <value>
+              <string>minimize</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-marco-general-action-right-click-titlebar-none)">
+            <value>
+              <string>none</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-marco-general-action-right-click-titlebar-lower)">
+            <value>
+              <string>lower</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-marco-general-action-right-click-titlebar-menu)">
+            <value>
+              <string>menu</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-marco-general-action-right-click-titlebar-last)">
+            <value>
+              <string>last</string>
+            </value>
+          </item>
+        </enum>
+      </elements>
+    </policy>
+
+    <policy name="OrgMateMarcoGeneralActionRightClickTitlebarMachine" class="Machine"
+        displayName="$(string.org-mate-marco-general-action-right-click-titlebar)"
+        explainText="$(string.org-mate-marco-general-action-right-click-titlebar_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        presentation="$(presentation.OrgMateMarcoGeneralActionRightClickTitlebarMachine-pr)" >
+      <parentCategory ref="system:ALT_Windows_Manager_Marco" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <elements>
+        <enum id="OrgMateMarcoGeneralActionRightClickTitlebar_setter" required="true" valueName="org.mate.Marco.general.action-right-click-titlebar">
+          <item displayName="$(string.org-mate-marco-general-action-right-click-titlebar-toggle_shade)">
+            <value>
+              <string>toggle shade</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-marco-general-action-right-click-titlebar-toggle_maximize)">
+            <value>
+              <string>toggle maximize</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-marco-general-action-right-click-titlebar-toggle_maximize_horizontally)">
+            <value>
+              <string>toggle maximize horizontally</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-marco-general-action-right-click-titlebar-toggle_maximize_vertically)">
+            <value>
+              <string>toggle maximize vertically</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-marco-general-action-right-click-titlebar-minimize)">
+            <value>
+              <string>minimize</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-marco-general-action-right-click-titlebar-none)">
+            <value>
+              <string>none</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-marco-general-action-right-click-titlebar-lower)">
+            <value>
+              <string>lower</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-marco-general-action-right-click-titlebar-menu)">
+            <value>
+              <string>menu</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-marco-general-action-right-click-titlebar-last)">
+            <value>
+              <string>last</string>
+            </value>
+          </item>
+        </enum>
+        <boolean id="OrgMateMarcoGeneralActionRightClickTitlebar_setter_blocker" key="Software\BaseALT\Policies\GSettingsLocks" valueName="org.mate.Marco.general.action-right-click-titlebar">
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+        </boolean>
+      </elements>
+    </policy>
+
+    <policy name="OrgMateMarcoGeneralActionDoubleClickTitlebarUser" class="User"
+        displayName="$(string.org-mate-marco-general-action-double-click-titlebar)"
+        explainText="$(string.org-mate-marco-general-action-double-click-titlebar_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        presentation="$(presentation.OrgMateMarcoGeneralActionDoubleClickTitlebarUser-pr)" >
+      <parentCategory ref="system:ALT_Windows_Manager_Marco" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <elements>
+        <enum id="OrgMateMarcoGeneralActionDoubleClickTitlebar_setter" required="true" valueName="org.mate.Marco.general.action-double-click-titlebar">
+          <item displayName="$(string.org-mate-marco-general-action-double-click-titlebar-toggle_shade)">
+            <value>
+              <string>toggle shade</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-marco-general-action-double-click-titlebar-toggle_maximize)">
+            <value>
+              <string>toggle maximize</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-marco-general-action-double-click-titlebar-toggle_maximize_horizontally)">
+            <value>
+              <string>toggle maximize horizontally</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-marco-general-action-double-click-titlebar-toggle_maximize_vertically)">
+            <value>
+              <string>toggle maximize vertically</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-marco-general-action-double-click-titlebar-minimize)">
+            <value>
+              <string>minimize</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-marco-general-action-double-click-titlebar-none)">
+            <value>
+              <string>none</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-marco-general-action-double-click-titlebar-lower)">
+            <value>
+              <string>lower</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-marco-general-action-double-click-titlebar-menu)">
+            <value>
+              <string>menu</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-marco-general-action-double-click-titlebar-last)">
+            <value>
+              <string>last</string>
+            </value>
+          </item>
+        </enum>
+      </elements>
+    </policy>
+
+    <policy name="OrgMateMarcoGeneralActionDoubleClickTitlebarMachine" class="Machine"
+        displayName="$(string.org-mate-marco-general-action-double-click-titlebar)"
+        explainText="$(string.org-mate-marco-general-action-double-click-titlebar_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        presentation="$(presentation.OrgMateMarcoGeneralActionDoubleClickTitlebarMachine-pr)" >
+      <parentCategory ref="system:ALT_Windows_Manager_Marco" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <elements>
+        <enum id="OrgMateMarcoGeneralActionDoubleClickTitlebar_setter" required="true" valueName="org.mate.Marco.general.action-double-click-titlebar">
+          <item displayName="$(string.org-mate-marco-general-action-double-click-titlebar-toggle_shade)">
+            <value>
+              <string>toggle shade</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-marco-general-action-double-click-titlebar-toggle_maximize)">
+            <value>
+              <string>toggle maximize</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-marco-general-action-double-click-titlebar-toggle_maximize_horizontally)">
+            <value>
+              <string>toggle maximize horizontally</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-marco-general-action-double-click-titlebar-toggle_maximize_vertically)">
+            <value>
+              <string>toggle maximize vertically</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-marco-general-action-double-click-titlebar-minimize)">
+            <value>
+              <string>minimize</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-marco-general-action-double-click-titlebar-none)">
+            <value>
+              <string>none</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-marco-general-action-double-click-titlebar-lower)">
+            <value>
+              <string>lower</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-marco-general-action-double-click-titlebar-menu)">
+            <value>
+              <string>menu</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-marco-general-action-double-click-titlebar-last)">
+            <value>
+              <string>last</string>
+            </value>
+          </item>
+        </enum>
+        <boolean id="OrgMateMarcoGeneralActionDoubleClickTitlebar_setter_blocker" key="Software\BaseALT\Policies\GSettingsLocks" valueName="org.mate.Marco.general.action-double-click-titlebar">
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+        </boolean>
+      </elements>
+    </policy>
+
   </policies>
 </policyDefinitions>

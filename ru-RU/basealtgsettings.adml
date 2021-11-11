@@ -134,6 +134,42 @@
       <string id="org-mate-marco-general-auto-raise">Подъем окна в фокусе</string>
       <string id="org-mate-marco-general-auto-raise_help">При включении, окно, получившее фокус, отображается поверх остальных автоматически. Настройка "переключение окон" должна быть установлена в "sloppy" или "mouse". Интервал, по истечении которого, окно поднимается, устанавливается в настройке "задержка при восстановлении"</string>
 
+      <string id="org-mate-marco-general-action-middle-click-titlebar">Действие по нажатию средней кнопки</string>
+      <string id="org-mate-marco-general-action-middle-click-titlebar_help">Установка действия, выполняемого по нажатию средней кнопки мыши.</string>
+      <string id="org-mate-marco-general-action-middle-click-titlebar-toggle_shade">toggle_shade</string>
+      <string id="org-mate-marco-general-action-middle-click-titlebar-toggle_maximize">toggle_maximize</string>
+      <string id="org-mate-marco-general-action-middle-click-titlebar-toggle_maximize_horizontally">toggle_maximize_horizontally</string>
+      <string id="org-mate-marco-general-action-middle-click-titlebar-toggle_maximize_vertically">toggle_maximize_vertically</string>
+      <string id="org-mate-marco-general-action-middle-click-titlebar-minimize">minimize</string>
+      <string id="org-mate-marco-general-action-middle-click-titlebar-none">none</string>
+      <string id="org-mate-marco-general-action-middle-click-titlebar-lower">lower</string>
+      <string id="org-mate-marco-general-action-middle-click-titlebar-menu">menu</string>
+      <string id="org-mate-marco-general-action-middle-click-titlebar-last">last</string>
+
+      <string id="org-mate-marco-general-action-right-click-titlebar">Действие по нажатию правой кнопки</string>
+      <string id="org-mate-marco-general-action-right-click-titlebar_help">Установка действия, выполняемого по нажатию правой кнопки мыши.</string>
+      <string id="org-mate-marco-general-action-right-click-titlebar-toggle_shade">toggle_shade</string>
+      <string id="org-mate-marco-general-action-right-click-titlebar-toggle_maximize">toggle_maximize</string>
+      <string id="org-mate-marco-general-action-right-click-titlebar-toggle_maximize_horizontally">toggle_maximize_horizontally</string>
+      <string id="org-mate-marco-general-action-right-click-titlebar-toggle_maximize_vertically">toggle_maximize_vertically</string>
+      <string id="org-mate-marco-general-action-right-click-titlebar-minimize">minimize</string>
+      <string id="org-mate-marco-general-action-right-click-titlebar-none">none</string>
+      <string id="org-mate-marco-general-action-right-click-titlebar-lower">lower</string>
+      <string id="org-mate-marco-general-action-right-click-titlebar-menu">menu</string>
+      <string id="org-mate-marco-general-action-right-click-titlebar-last">last</string>
+
+      <string id="org-mate-marco-general-action-double-click-titlebar">Действие по двойному щелчку</string>
+      <string id="org-mate-marco-general-action-double-click-titlebar_help">Установка действия, выполняемого по двойному щелчку левой кнопкой по заголовку.</string>
+      <string id="org-mate-marco-general-action-double-click-titlebar-toggle_shade">toggle_shade</string>
+      <string id="org-mate-marco-general-action-double-click-titlebar-toggle_maximize">toggle_maximize</string>
+      <string id="org-mate-marco-general-action-double-click-titlebar-toggle_maximize_horizontally">toggle_maximize_horizontally</string>
+      <string id="org-mate-marco-general-action-double-click-titlebar-toggle_maximize_vertically">toggle_maximize_vertically</string>
+      <string id="org-mate-marco-general-action-double-click-titlebar-minimize">minimize</string>
+      <string id="org-mate-marco-general-action-double-click-titlebar-none">none</string>
+      <string id="org-mate-marco-general-action-double-click-titlebar-lower">lower</string>
+      <string id="org-mate-marco-general-action-double-click-titlebar-menu">menu</string>
+      <string id="org-mate-marco-general-action-double-click-titlebar-last">last</string>
+
     </stringTable>
 
     <presentationTable>
@@ -420,6 +456,84 @@
 
       <presentation id="OrgMateMarcoGeneralAutoRaiseMachine-pr">
         <checkBox refId="OrgMateMarcoGeneralAutoRaise_setter_blocker">блокировать</checkBox>
+        <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
+      </presentation>
+
+      <presentation id="OrgMateMarcoGeneralActionMiddleClickTitlebarUser-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="OrgMateMarcoGeneralActionMiddleClickTitlebar_setter">Действие:</dropdownList>
+        <text>toggle_shade - свернуть до заголовка
+toggle_maximize - развернуть во весь экран
+toggle_maximize_horizontally - развернуть во весь экран по горизонтали
+toggle_maximize_vertically - развернуть во весь экран по вертикали
+none - ничего не делать
+lower - скрыть окно под другими окнами на экране
+menu - открыть меню окна
+last - повторить последнее действие</text>
+      </presentation>
+
+      <presentation id="OrgMateMarcoGeneralActionMiddleClickTitlebarMachine-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="OrgMateMarcoGeneralActionMiddleClickTitlebar_setter">Действие:</dropdownList>
+<text>toggle_shade - свернуть до заголовка
+toggle_maximize - развернуть во весь экран
+toggle_maximize horizontally - развернуть во весь экран по горизонтали
+toggle_maximize vertically - развернуть во весь экран по вертикали
+none - ничего не делать
+lower - скрыть окно под другими окнами на экране
+menu - открыть меню окна
+last - повторить последнее действие</text>
+        <checkBox refId="OrgMateMarcoGeneralActionMiddleClickTitlebar_setter_blocker">блокировать</checkBox>
+        <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
+      </presentation>
+
+      <presentation id="OrgMateMarcoGeneralActionRightClickTitlebarUser-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="OrgMateMarcoGeneralActionRightClickTitlebar_setter">Действие:</dropdownList>
+<text>toggle_shade - свернуть до заголовка
+toggle_maximize - развернуть во весь экран
+toggle_maximize horizontally - развернуть во весь экран по горизонтали
+toggle_maximize vertically - развернуть во весь экран по вертикали
+none - ничего не делать
+lower - скрыть окно под другими окнами на экране
+menu - открыть меню окна
+last - повторить последнее действие</text>
+      </presentation>
+
+        <presentation id="OrgMateMarcoGeneralActionRightClickTitlebarMachine-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="OrgMateMarcoGeneralActionRightClickTitlebar_setter">Действие:</dropdownList>
+<text>toggle_shade - свернуть до заголовка
+toggle_maximize - развернуть во весь экран
+toggle_maximize horizontally - развернуть во весь экран по горизонтали
+toggle_maximize vertically - развернуть во весь экран по вертикали
+none - ничего не делать
+lower - скрыть окно под другими окнами на экране
+menu - открыть меню окна
+last - повторить последнее действие</text>
+        <checkBox refId="OrgMateMarcoGeneralActionRightClickTitlebar_setter_blocker">блокировать</checkBox>
+        <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
+      </presentation>
+
+        <presentation id="OrgMateMarcoGeneralActionDoubleClickTitlebarUser-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="OrgMateMarcoGeneralActionDoubleClickTitlebar_setter">Действие:</dropdownList>
+<text>toggle_shade - свернуть до заголовка
+toggle_maximize - развернуть во весь экран
+toggle_maximize horizontally - развернуть во весь экран по горизонтали
+toggle_maximize vertically - развернуть во весь экран по вертикали
+none - ничего не делать
+lower - скрыть окно под другими окнами на экране
+menu - открыть меню окна
+last - повторить последнее действие</text>
+      </presentation>
+
+        <presentation id="OrgMateMarcoGeneralActionDoubleClickTitlebarMachine-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="OrgMateMarcoGeneralActionDoubleClickTitlebar_setter">Действие:</dropdownList>
+<text>toggle_shade - свернуть до заголовка
+toggle_maximize - развернуть во весь экран
+toggle_maximize horizontally - развернуть во весь экран по горизонтали
+toggle_maximize vertically - развернуть во весь экран по вертикали
+none - ничего не делать
+lower - скрыть окно под другими окнами на экране
+menu - открыть меню окна
+last - повторить последнее действие</text>
+        <checkBox refId="OrgMateMarcoGeneralActionDoubleClickTitlebar_setter_blocker">блокировать</checkBox>
         <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
       </presentation>
 

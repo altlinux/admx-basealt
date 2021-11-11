@@ -133,6 +133,42 @@
 
       <string id="org-mate-marco-general-auto-raise">Raise the window in focus</string>
       <string id="org-mate-marco-general-auto-raise_help">If set to true, and the focus mode is either "sloppy" or "mouse" then the focused window will be automatically raised after a delay specified by the auto_raise_delay key. This is not related to clicking on a window to raise it, nor to entering a window during drag-and-drop.</string>
+
+      <string id="org-mate-marco-general-action-middle-click-titlebar">Action by the middle button</string>
+      <string id="org-mate-marco-general-action-middle-click-titlebar_help">Set the action performed by pressing the middle mouse button.</string>
+      <string id="org-mate-marco-general-action-middle-click-titlebar-toggle_shade">toggle_shade</string>
+      <string id="org-mate-marco-general-action-middle-click-titlebar-toggle_maximize">toggle_maximize</string>
+      <string id="org-mate-marco-general-action-middle-click-titlebar-toggle_maximize_horizontally">toggle_maximize_horizontally</string>
+      <string id="org-mate-marco-general-action-middle-click-titlebar-toggle_maximize_vertically">toggle_maximize_vertically</string>
+      <string id="org-mate-marco-general-action-middle-click-titlebar-minimize">minimize</string>
+      <string id="org-mate-marco-general-action-middle-click-titlebar-none">none</string>
+      <string id="org-mate-marco-general-action-middle-click-titlebar-lower">lower</string>
+      <string id="org-mate-marco-general-action-middle-click-titlebar-menu">menu</string>
+      <string id="org-mate-marco-general-action-middle-click-titlebar-last">last</string>
+
+      <string id="org-mate-marco-general-action-right-click-titlebar">Action by the right button</string>
+      <string id="org-mate-marco-general-action-right-click-titlebar_help">Set the action performed by pressing the right button on the header.</string>
+      <string id="org-mate-marco-general-action-right-click-titlebar-toggle_shade">toggle_shade</string>
+      <string id="org-mate-marco-general-action-right-click-titlebar-toggle_maximize">toggle_maximize</string>
+      <string id="org-mate-marco-general-action-right-click-titlebar-toggle_maximize_horizontally">toggle_maximize_horizontally</string>
+      <string id="org-mate-marco-general-action-right-click-titlebar-toggle_maximize_vertically">toggle_maximize_vertically</string>
+      <string id="org-mate-marco-general-action-right-click-titlebar-minimize">minimize</string>
+      <string id="org-mate-marco-general-action-right-click-titlebar-none">none</string>
+      <string id="org-mate-marco-general-action-right-click-titlebar-lower">lower</string>
+      <string id="org-mate-marco-general-action-right-click-titlebar-menu">menu</string>
+      <string id="org-mate-marco-general-action-right-click-titlebar-last">last</string>
+
+      <string id="org-mate-marco-general-action-double-click-titlebar">Action by the double click</string>
+      <string id="org-mate-marco-general-action-double-click-titlebar_help">Set the action performed by double-click the left button on the header.</string>
+      <string id="org-mate-marco-general-action-double-click-titlebar-toggle_shade">toggle_shade</string>
+      <string id="org-mate-marco-general-action-double-click-titlebar-toggle_maximize">toggle_maximize</string>
+      <string id="org-mate-marco-general-action-double-click-titlebar-toggle_maximize_horizontally">toggle_maximize_horizontally</string>
+      <string id="org-mate-marco-general-action-double-click-titlebar-toggle_maximize_vertically">toggle_maximize_vertically</string>
+      <string id="org-mate-marco-general-action-double-click-titlebar-minimize">minimize</string>
+      <string id="org-mate-marco-general-action-double-click-titlebar-none">none</string>
+      <string id="org-mate-marco-general-action-double-click-titlebar-lower">lower</string>
+      <string id="org-mate-marco-general-action-double-click-titlebar-menu">menu</string>
+      <string id="org-mate-marco-general-action-double-click-titlebar-last">last</string>
     </stringTable>
 
     <presentationTable>
@@ -419,6 +455,84 @@
 
       <presentation id="OrgMateMarcoGeneralAutoRaiseMachine-pr">
         <checkBox refId="OrgMateMarcoGeneralAutoRaise_setter_blocker">lock</checkBox>
+        <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
+      </presentation>
+
+      <presentation id="OrgMateMarcoGeneralActionMiddleClickTitlebarUser-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="OrgMateMarcoGeneralActionMiddleClickTitlebar_setter">Action:</dropdownList>
+        <text>toggle_shade - will shade/unshade the window
+toggle_maximize - will maximize/unmaximize the window
+toggle_maximize_horizontally - which will maximize/unmaximize the window horizontally
+toggle_maximize_vertically - which will maximize/unmaximize the window vertically
+none - nothing
+lower - will put the window behind all the others
+menu - will display the window menu
+last - repeat last action</text>
+      </presentation>
+
+      <presentation id="OrgMateMarcoGeneralActionMiddleClickTitlebarMachine-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="OrgMateMarcoGeneralActionMiddleClickTitlebar_setter">Action:</dropdownList>
+<text>toggle_shade - will shade/unshade the window
+toggle_maximize - will maximize/unmaximize the window
+toggle_maximize_horizontally - which will maximize/unmaximize the window horizontally
+toggle_maximize_vertically - which will maximize/unmaximize the window vertically
+none - nothing
+lower - will put the window behind all the others
+menu - will display the window menu
+last - repeat last action</text>
+        <checkBox refId="OrgMateMarcoGeneralActionMiddleClickTitlebar_setter_blocker">lock</checkBox>
+        <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
+      </presentation>
+
+      <presentation id="OrgMateMarcoGeneralActionRightClickTitlebarUser-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="OrgMateMarcoGeneralActionRightClickTitlebar_setter">Action:</dropdownList>
+<text>toggle_shade - will shade/unshade the window
+toggle_maximize - will maximize/unmaximize the window
+toggle_maximize_horizontally - which will maximize/unmaximize the window horizontally
+toggle_maximize_vertically - which will maximize/unmaximize the window vertically
+none - nothing
+lower - will put the window behind all the others
+menu - will display the window menu
+last - repeat last action</text>
+      </presentation>
+
+        <presentation id="OrgMateMarcoGeneralActionRightClickTitlebarMachine-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="OrgMateMarcoGeneralActionRightClickTitlebar_setter">Action:</dropdownList>
+<text>toggle_shade - will shade/unshade the window
+toggle_maximize - will maximize/unmaximize the window
+toggle_maximize_horizontally - which will maximize/unmaximize the window horizontally
+toggle_maximize_vertically - which will maximize/unmaximize the window vertically
+none - nothing
+lower - will put the window behind all the others
+menu - will display the window menu
+last - repeat last action</text>
+        <checkBox refId="OrgMateMarcoGeneralActionRightClickTitlebar_setter_blocker">lock</checkBox>
+        <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
+      </presentation>
+
+        <presentation id="OrgMateMarcoGeneralActionDoubleClickTitlebarUser-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="OrgMateMarcoGeneralActionDoubleClickTitlebar_setter">Action:</dropdownList>
+<text>toggle_shade - will shade/unshade the window
+toggle_maximize - will maximize/unmaximize the window
+toggle_maximize_horizontally - which will maximize/unmaximize the window horizontally
+toggle_maximize_vertically - which will maximize/unmaximize the window vertically
+none - nothing
+lower - will put the window behind all the others
+menu - will display the window menu
+last - repeat last action</text>
+      </presentation>
+
+        <presentation id="OrgMateMarcoGeneralActionDoubleClickTitlebarMachine-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="OrgMateMarcoGeneralActionDoubleClickTitlebar_setter">Action:</dropdownList>
+<text>toggle_shade - will shade/unshade the window
+toggle_maximize - will maximize/unmaximize the window
+toggle_maximize_horizontally - which will maximize/unmaximize the window horizontally
+toggle_maximize_vertically - which will maximize/unmaximize the window vertically
+none - nothing
+lower - will put the window behind all the others
+menu - will display the window menu
+last - repeat last action</text>
+        <checkBox refId="OrgMateMarcoGeneralActionDoubleClickTitlebar_setter_blocker">lock</checkBox>
         <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
       </presentation>
 
