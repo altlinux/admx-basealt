@@ -170,6 +170,21 @@
       <string id="org-mate-marco-general-action-double-click-titlebar-menu">menu</string>
       <string id="org-mate-marco-general-action-double-click-titlebar-last">last</string>
 
+      <string id="org-mate-marco-general-theme">Тема оформления</string>
+      <string id="org-mate-marco-general-theme_help">Устанавливает тему, отвечающущю за отображение границ окон, заголовка и т.д.</string>
+
+      <string id="org-mate-marco-general-titlebar-font">Шрифт заголовков</string>
+      <string id="org-mate-marco-general-titlebar-font_help">Устанавливает шрифт заголовков окон</string>
+
+      <string id="org-mate-marco-general-focus-mode">Переключение фокуса окон</string>
+      <string id="org-mate-marco-general-focus-mode_help">Установка режима переключения фокуса окон.</string>
+      <string id="org-mate-marco-general-focus-mode-click">click</string>
+      <string id="org-mate-marco-general-focus-mode-sloppy">sloppy</string>
+      <string id="org-mate-marco-general-focus-mode-mouse">mouse</string>
+
+      <string id="org-mate-marco-general-titlebar-uses-system-font">Системный шрифт в заголовке окон</string>
+      <string id="org-mate-marco-general-titlebar-uses-system-font_help">При включении в заголовках окон будет использоваться системный шрифт.</string>
+
     </stringTable>
 
     <presentationTable>
@@ -534,6 +549,49 @@ lower - скрыть окно под другими окнами на экран
 menu - открыть меню окна
 last - повторить последнее действие</text>
         <checkBox refId="OrgMateMarcoGeneralActionDoubleClickTitlebar_setter_blocker">блокировать</checkBox>
+        <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
+      </presentation>
+
+      <presentation id="OrgMateMarcoGeneralThemeUser-pr">
+        <textBox refId="OrgMateMarcoGeneralTheme_setter">
+          <label>Тема:</label>
+        </textBox>
+      </presentation>
+
+      <presentation id="OrgMateMarcoGeneralThemeMachine-pr">
+        <textBox refId="OrgMateMarcoGeneralTheme_setter">
+          <label>Тема:</label>
+        </textBox>
+        <checkBox refId="OrgMateMarcoGeneralTheme_setter_blocker">блокировать</checkBox>
+        <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
+      </presentation>
+
+      <presentation id="OrgMateMarcoGeneralTitlebarFont-pr">
+        <textBox refId="OrgMateMarcoGeneralTheme_setter">
+          <label>Тема:</label>
+        </textBox>
+      </presentation>
+
+      <presentation id="OrgMateMarcoGeneralTitlebarFontMachine-pr">
+        <textBox refId="OrgMateMarcoGeneralTitlebarFont_setter">
+          <label>Тема:</label>
+        </textBox>
+        <checkBox refId="OrgMateMarcoGeneralTitlebarFont_setter_blocker">блокировать</checkBox>
+        <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
+      </presentation>
+
+      <presentation id="OrgMateMarcoGeneralFocusModeUser-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="OrgMateMarcoGeneralFocusMode_setter">Режим переключения фокуса окон:</dropdownList>
+      </presentation>
+
+      <presentation id="OrgMateMarcoGeneralFocusModeMachine-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="OrgMateMarcoGeneralFocusMode_setter">Режим переключения фокуса окон:</dropdownList>
+        <checkBox refId="OrgMateMarcoGeneralFocusMode_setter_blocker">блокировать</checkBox>
+        <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
+      </presentation>
+
+      <presentation id="OrgMateMarcoGeneralTitlebarUsesSystemFontMachine-pr">
+        <checkBox refId="OrgMateMarcoGeneralTitlebarUsesSystemFont_setter_blocker">блокировать</checkBox>
         <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
       </presentation>
 

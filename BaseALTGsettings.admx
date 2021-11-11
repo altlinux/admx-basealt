@@ -1897,5 +1897,174 @@
       </elements>
     </policy>
 
+    <policy name="OrgMateMarcoGeneralThemeUser" class="User"
+        displayName="$(string.org-mate-marco-general-theme)"
+        explainText="$(string.org-mate-marco-general-theme_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        presentation="$(presentation.OrgMateMarcoGeneralThemeUser-pr)">
+      <parentCategory ref="system:ALT_Windows_Manager_Marco" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <elements>
+        <text id="OrgMateMarcoGeneralTheme_setter" valueName="org.mate.Marco.general.theme" />
+      </elements>
+    </policy>
+
+    <policy name="OrgMateMarcoGeneralThemeMachine" class="Machine"
+        displayName="$(string.org-mate-marco-general-theme)"
+        explainText="$(string.org-mate-marco-general-theme_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        presentation="$(presentation.OrgMateMarcoGeneralThemeMachine-pr)">
+      <parentCategory ref="system:ALT_Windows_Manager_Marco" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <elements>
+        <text id="OrgMateMarcoGeneralTheme_setter" valueName="org.mate.Marco.general.theme" />
+        <boolean id="OrgMateMarcoGeneralTheme_setter_blocker" key="Software\BaseALT\Policies\GSettingsLocks" valueName="org.mate.Marco.general.theme">
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+        </boolean>
+      </elements>
+    </policy>
+
+    <policy name="OrgMateMarcoGeneralTitlebarFontUser" class="User"
+        displayName="$(string.org-mate-marco-general-titlebar-font)"
+        explainText="$(string.org-mate-marco-general-titlebar-font_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        presentation="$(presentation.OrgMateMarcoGeneralTitlebarFont-pr)">
+      <parentCategory ref="system:ALT_Windows_Manager_Marco" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <elements>
+        <text id="OrgMateMarcoGeneralTheme_setter" valueName="org.mate.Marco.general.titlebar-font" />
+      </elements>
+    </policy>
+
+    <policy name="OrgMateMarcoGeneralTitlebarFontMachine" class="Machine"
+        displayName="$(string.org-mate-marco-general-titlebar-font)"
+        explainText="$(string.org-mate-marco-general-titlebar-font_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        presentation="$(presentation.OrgMateMarcoGeneralTitlebarFontMachine-pr)">
+      <parentCategory ref="system:ALT_Windows_Manager_Marco" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <elements>
+        <text id="OrgMateMarcoGeneralTitlebarFont_setter" valueName="org.mate.Marco.general.titlebar-font" />
+        <boolean id="OrgMateMarcoGeneralTitlebarFont_setter_blocker" key="Software\BaseALT\Policies\GSettingsLocks" valueName="org.mate.Marco.general.titlebar-font">
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+        </boolean>
+      </elements>
+    </policy>
+
+    <policy name="OrgMateMarcoGeneralFocusModeUser" class="User"
+        displayName="$(string.org-mate-marco-general-focus-mode)"
+        explainText="$(string.org-mate-marco-general-focus-mode_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        presentation="$(presentation.OrgMateMarcoGeneralFocusModeUser-pr)" >
+      <parentCategory ref="system:ALT_Windows_Manager_Marco" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <elements>
+        <enum id="OrgMateMarcoGeneralFocusMode_setter" required="true" valueName="org.mate.Marco.general.focus-mode">
+          <item displayName="$(string.org-mate-marco-general-focus-mode-click)">
+            <value>
+              <string>click</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-marco-general-focus-mode-sloppy)">
+            <value>
+              <string>sloppy</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-marco-general-focus-mode-mouse)">
+            <value>
+              <string>mouse</string>
+            </value>
+          </item>
+        </enum>
+      </elements>
+    </policy>
+
+    <policy name="OrgMateMarcoGeneralFocusModeMachine" class="Machine"
+        displayName="$(string.org-mate-marco-general-focus-mode)"
+        explainText="$(string.org-mate-marco-general-focus-mode_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        presentation="$(presentation.OrgMateMarcoGeneralFocusModeMachine-pr)" >
+      <parentCategory ref="system:ALT_Windows_Manager_Marco" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <elements>
+        <enum id="OrgMateMarcoGeneralFocusMode_setter" required="true" valueName="org.mate.Marco.general.focus-mode">
+          <item displayName="$(string.org-mate-marco-general-focus-mode-click)">
+            <value>
+              <string>click</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-marco-general-focus-mode-sloppy)">
+            <value>
+              <string>sloppy</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-marco-general-focus-mode-mouse)">
+            <value>
+              <string>mouse</string>
+            </value>
+          </item>
+        </enum>
+        <boolean id="OrgMateMarcoGeneralFocusMode_setter_blocker" key="Software\BaseALT\Policies\GSettingsLocks" valueName="org.mate.Marco.general.focus-mode">
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+        </boolean>
+      </elements>
+    </policy>
+
+    <policy name="OrgMateMarcoGeneralTitlebarUsesSystemFontUser" class="User"
+        displayName="$(string.org-mate-marco-general-titlebar-uses-system-font)"
+        explainText="$(string.org-mate-marco-general-titlebar-uses-system-font_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        valueName="org.mate.Marco.general.titlebar-uses-system-font">
+      <parentCategory ref="system:ALT_Windows_Manager_Marco" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+    </policy>
+
+    <policy name="OrgMateMarcoGeneralTitlebarUsesSystemFontMachine" class="Machine"
+        displayName="$(string.org-mate-marco-general-titlebar-uses-system-font)"
+        explainText="$(string.org-mate-marco-general-titlebar-uses-system-font_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        valueName="org.mate.Marco.general.titlebar-uses-system-font"
+        presentation="$(presentation.OrgMateMarcoGeneralTitlebarUsesSystemFontMachine-pr)">
+      <parentCategory ref="system:ALT_Windows_Manager_Marco" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+      <elements>
+        <boolean id="OrgMateMarcoGeneralTitlebarUsesSystemFont_setter_blocker" key="Software\BaseALT\Policies\GSettingsLocks" valueName="org.mate.Marco.general.titlebar-uses-system-font">
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+        </boolean>
+      </elements>
+    </policy>
+
   </policies>
 </policyDefinitions>

@@ -169,6 +169,21 @@
       <string id="org-mate-marco-general-action-double-click-titlebar-lower">lower</string>
       <string id="org-mate-marco-general-action-double-click-titlebar-menu">menu</string>
       <string id="org-mate-marco-general-action-double-click-titlebar-last">last</string>
+
+      <string id="org-mate-marco-general-theme">Theme</string>
+      <string id="org-mate-marco-general-theme_help">The theme determines the appearance of window borders, titlebar, and so forth.</string>
+
+      <string id="org-mate-marco-general-titlebar-font">Titlebar font</string>
+      <string id="org-mate-marco-general-titlebar-font_help">Sets the font of titlebar.</string>
+
+      <string id="org-mate-marco-general-focus-mode">Window focus switch mode</string>
+      <string id="org-mate-marco-general-focus-mode_help">Set the window focus switching mode.</string>
+      <string id="org-mate-marco-general-focus-mode-click">click</string>
+      <string id="org-mate-marco-general-focus-mode-sloppy">sloppy</string>
+      <string id="org-mate-marco-general-focus-mode-mouse">mouse</string>
+
+      <string id="org-mate-marco-general-titlebar-uses-system-font">System font in the titlebar</string>
+      <string id="org-mate-marco-general-titlebar-uses-system-font_help">When enabled, the system font will be used in the window titlebar.</string>
     </stringTable>
 
     <presentationTable>
@@ -533,6 +548,49 @@ lower - will put the window behind all the others
 menu - will display the window menu
 last - repeat last action</text>
         <checkBox refId="OrgMateMarcoGeneralActionDoubleClickTitlebar_setter_blocker">lock</checkBox>
+        <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
+      </presentation>
+
+      <presentation id="OrgMateMarcoGeneralThemeUser-pr">
+        <textBox refId="OrgMateMarcoGeneralTheme_setter">
+          <label>Theme:</label>
+        </textBox>
+      </presentation>
+
+      <presentation id="OrgMateMarcoGeneralThemeMachine-pr">
+        <textBox refId="OrgMateMarcoGeneralTheme_setter">
+          <label>Theme:</label>
+        </textBox>
+        <checkBox refId="OrgMateMarcoGeneralTheme_setter_blocker">lock</checkBox>
+        <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
+      </presentation>
+
+      <presentation id="OrgMateMarcoGeneralTitlebarFont-pr">
+        <textBox refId="OrgMateMarcoGeneralTheme_setter">
+          <label>Тема:</label>
+        </textBox>
+      </presentation>
+
+      <presentation id="OrgMateMarcoGeneralTitlebarFontMachine-pr">
+        <textBox refId="OrgMateMarcoGeneralTitlebarFont_setter">
+          <label>Тема:</label>
+        </textBox>
+        <checkBox refId="OrgMateMarcoGeneralTitlebarFont_setter_blocker">lock</checkBox>
+        <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
+      </presentation>
+
+      <presentation id="OrgMateMarcoGeneralFocusModeUser-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="OrgMateMarcoGeneralFocusMode_setter">Window focus switching mode:</dropdownList>
+      </presentation>
+
+      <presentation id="OrgMateMarcoGeneralFocusModeMachine-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="OrgMateMarcoGeneralFocusMode_setter">Window focus switching mode:</dropdownList>
+        <checkBox refId="OrgMateMarcoGeneralFocusMode_setter_blocker">lock</checkBox>
+        <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
+      </presentation>
+
+      <presentation id="OrgMateMarcoGeneralTitlebarUsesSystemFontMachine-pr">
+        <checkBox refId="OrgMateMarcoGeneralTitlebarUsesSystemFont_setter_blocker">lock</checkBox>
         <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
       </presentation>
 
