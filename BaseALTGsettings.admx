@@ -2066,5 +2066,78 @@
       </elements>
     </policy>
 
+    <policy name="OrgMateMarcoGeneralCompositingFastAltTabUser" class="User"
+        displayName="$(string.org-mate-marco-general-compositing-fast-alt-tab)"
+        explainText="$(string.org-mate-marco-general-compositing-fast-alt-tab_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        valueName="org.mate.Marco.general.compositing-fast-alt-tab">
+      <parentCategory ref="system:ALT_Windows_Manager_Marco" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+    </policy>
+
+    <policy name="OrgMateMarcoGeneralCompositingFastAltTabMachine" class="Machine"
+        displayName="$(string.org-mate-marco-general-compositing-fast-alt-tab)"
+        explainText="$(string.org-mate-marco-general-compositing-fast-alt-tab_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        valueName="org.mate.Marco.general.compositing-fast-alt-tab"
+        presentation="$(presentation.OrgMateMarcoGeneralCompositingFastAltTabMachine-pr)">
+      <parentCategory ref="system:ALT_Windows_Manager_Marco" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+      <elements>
+        <boolean id="OrgMateMarcoGeneralCompositingFastAltTab_setter_blocker" key="Software\BaseALT\Policies\GSettingsLocks" valueName="org.mate.Marco.compositing-fast-alt-tab">
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+        </boolean>
+      </elements>
+    </policy>
+
+    <policy name="OrgMateMarcoGeneralAutoRaiseDelayUser" class="User"
+        displayName="$(string.org-mate-marco-general-auto-raise-delay)"
+        explainText="$(string.org-mate-marco-general-auto-raise-delay_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        presentation="$(presentation.OrgMateMarcoGeneralAutoRaiseDelayUser-pr)">
+      <parentCategory ref="system:ALT_Windows_Manager_Marco" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <elements>
+        <decimal id="OrgMateMarcoGeneralAutoRaiseDelay_setter" valueName="org.mate.Marco.general.auto-raise-delay" minValue="1" />
+      </elements>
+    </policy>
+
+    <policy name="OrgMateMarcoGeneralAutoRaiseDelayMachine" class="Machine"
+        displayName="$(string.org-mate-marco-general-auto-raise-delay)"
+        explainText="$(string.org-mate-marco-general-auto-raise-delay_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        presentation="$(presentation.OrgMateMarcoGeneralAutoRaiseDelayMachine-pr)">
+      <parentCategory ref="system:ALT_Windows_Manager_Marco" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <elements>
+        <decimal id="OrgMateMarcoGeneralAutoRaiseDelay_setter" valueName="org.mate.Marco.general.auto-raise-delay" minValue="1" />
+        <boolean id="OrgMateMarcoGeneralAutoRaiseDelay_setter_blocker" key="Software\BaseALT\Policies\GSettingsLocks" valueName="org.mate.Marco.general.auto-raise-delay">
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+        </boolean>
+      </elements>
+    </policy>
+
   </policies>
 </policyDefinitions>

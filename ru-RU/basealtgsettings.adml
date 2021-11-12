@@ -185,6 +185,12 @@
       <string id="org-mate-marco-general-titlebar-uses-system-font">Системный шрифт в заголовке окон</string>
       <string id="org-mate-marco-general-titlebar-uses-system-font_help">При включении в заголовках окон будет использоваться системный шрифт.</string>
 
+      <string id="org-mate-marco-general-compositing-fast-alt-tab">Миниатюры при переключении окон</string>
+      <string id="org-mate-marco-general-compositing-fast-alt-tab_help">Если включено, то вместо миниатюр в окне переключения Alt+Tab будут отображаться иконки приложения.</string>
+
+      <string id="org-mate-marco-general-auto-raise-delay">Задержка при восстановлении</string>
+      <string id="org-mate-marco-general-auto-raise-delay_help">Временной интервал в миллисекундах, по истечении которого окно в фокусе будет поднято поверх остальных.</string>
+
     </stringTable>
 
     <presentationTable>
@@ -592,6 +598,21 @@ last - повторить последнее действие</text>
 
       <presentation id="OrgMateMarcoGeneralTitlebarUsesSystemFontMachine-pr">
         <checkBox refId="OrgMateMarcoGeneralTitlebarUsesSystemFont_setter_blocker">блокировать</checkBox>
+        <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
+      </presentation>
+
+      <presentation id="OrgMateMarcoGeneralCompositingFastAltTabMachine-pr">
+        <checkBox refId="OrgMateMarcoGeneralCompositingFastAltTab_setter_blocker">блокировать</checkBox>
+        <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
+      </presentation>
+
+        <presentation id="OrgMateMarcoGeneralAutoRaiseDelayUser-pr">
+        <decimalTextBox refId="OrgMateMarcoGeneralAutoRaiseDelay_setter" defaultValue="500">Миллисекунды:</decimalTextBox>
+      </presentation>
+
+        <presentation id="OrgMateMarcoGeneralAutoRaiseDelayMachine-pr">
+        <decimalTextBox refId="OrgMateMarcoGeneralAutoRaiseDelay_setter" defaultValue="500">Миллисекунды:</decimalTextBox>
+        <checkBox refId="OrgMateMarcoGeneralAutoRaiseDelay_setter_blocker">блокировать</checkBox>
         <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
       </presentation>
 

@@ -184,6 +184,12 @@
 
       <string id="org-mate-marco-general-titlebar-uses-system-font">System font in the titlebar</string>
       <string id="org-mate-marco-general-titlebar-uses-system-font_help">When enabled, the system font will be used in the window titlebar.</string>
+
+      <string id="org-mate-marco-general-compositing-fast-alt-tab">Thumbnails when switching windows</string>
+      <string id="org-mate-marco-general-compositing-fast-alt-tab_help">If set to true, no window thumbnails will be displayed in the alt-tab popup window when the compositing manager is enabled. Application icons will be displayed instead.</string>
+
+      <string id="org-mate-marco-general-auto-raise-delay">Auto raise delay</string>
+      <string id="org-mate-marco-general-auto-raise-delay_help">The time delay before raising a window if auto_raise is set to true. The delay is given in milliseconds.</string>
     </stringTable>
 
     <presentationTable>
@@ -591,6 +597,21 @@ last - repeat last action</text>
 
       <presentation id="OrgMateMarcoGeneralTitlebarUsesSystemFontMachine-pr">
         <checkBox refId="OrgMateMarcoGeneralTitlebarUsesSystemFont_setter_blocker">lock</checkBox>
+        <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
+      </presentation>
+
+      <presentation id="OrgMateMarcoGeneralCompositingFastAltTabMachine-pr">
+        <checkBox refId="OrgMateMarcoGeneralCompositingFastAltTab_setter_blocker">lock</checkBox>
+        <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
+      </presentation>
+
+        <presentation id="OrgMateMarcoGeneralAutoRaiseDelayUser-pr">
+        <decimalTextBox refId="OrgMateMarcoGeneralAutoRaiseDelay_setter" defaultValue="500">Milliseconds:</decimalTextBox>
+      </presentation>
+
+        <presentation id="OrgMateMarcoGeneralAutoRaiseDelayMachine-pr">
+        <decimalTextBox refId="OrgMateMarcoGeneralAutoRaiseDelay_setter" defaultValue="500">Milliseconds:</decimalTextBox>
+        <checkBox refId="OrgMateMarcoGeneralAutoRaiseDelay_setter_blocker">lock</checkBox>
         <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
       </presentation>
 
