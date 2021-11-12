@@ -191,6 +191,15 @@
       <string id="org-mate-marco-general-auto-raise-delay">Задержка при восстановлении</string>
       <string id="org-mate-marco-general-auto-raise-delay_help">Временной интервал в миллисекундах, по истечении которого окно в фокусе будет поднято поверх остальных.</string>
 
+      <string id="org-mate-marco-general-center-new-windows">Новые окна по центру</string>
+      <string id="org-mate-marco-general-center-new-windows_help">Если включено, то новые окна будут открываться по центру экрана.</string>
+
+      <string id="org-mate-marco-general-icon-size">Размер иконок</string>
+      <string id="org-mate-marco-general-icon-size_help">Устанавливает размер иконок в окне переключения приложений Alt+Tab.</string>
+
+      <string id="org-mate-marco-general-alt-tab-max-columns">Размер окна переключения Alt+Tab</string>
+      <string id="org-mate-marco-general-alt-tab-max-columns_help">Устанавливает количество колонок в окне переключения приложений Alt+Tab.</string>
+
     </stringTable>
 
     <presentationTable>
@@ -613,6 +622,31 @@ last - повторить последнее действие</text>
         <presentation id="OrgMateMarcoGeneralAutoRaiseDelayMachine-pr">
         <decimalTextBox refId="OrgMateMarcoGeneralAutoRaiseDelay_setter" defaultValue="500">Миллисекунды:</decimalTextBox>
         <checkBox refId="OrgMateMarcoGeneralAutoRaiseDelay_setter_blocker">блокировать</checkBox>
+        <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
+      </presentation>
+
+      <presentation id="OrgMateMarcoGeneralCenterNewWindowsMachine-pr">
+        <checkBox refId="OrgMateMarcoGeneralCenterNewWindows_setter_blocker">блокировать</checkBox>
+        <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
+      </presentation>
+
+        <presentation id="OrgMateMarcoGeneralIconSizeUser-pr">
+        <decimalTextBox refId="OrgMateMarcoGeneralIconSize_setter" defaultValue="48">Размер:</decimalTextBox>
+      </presentation>
+
+        <presentation id="OrgMateMarcoGeneralIconSizeMachine-pr">
+        <decimalTextBox refId="OrgMateMarcoGeneralIconSize_setter" defaultValue="48">Размер:</decimalTextBox>
+        <checkBox refId="OrgMateMarcoGeneralIconSize_setter_blocker">блокировать</checkBox>
+        <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
+      </presentation>
+
+        <presentation id="OrgMateMarcoGeneralAltTabMaxColumnsUser-pr">
+        <decimalTextBox refId="OrgMateMarcoGeneralAltTabMaxColumns_setter" defaultValue="5">Количество колонок:</decimalTextBox>
+      </presentation>
+
+        <presentation id="OrgMateMarcoGeneralAltTabMaxColumnsMachine-pr">
+        <decimalTextBox refId="OrgMateMarcoGeneralAltTabMaxColumns_setter" defaultValue="5">Количество колонок:</decimalTextBox>
+        <checkBox refId="OrgMateMarcoGeneralAltTabMaxColumns_setter_blocker">блокировать</checkBox>
         <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
       </presentation>
 

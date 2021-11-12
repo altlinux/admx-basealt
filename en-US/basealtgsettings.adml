@@ -190,6 +190,15 @@
 
       <string id="org-mate-marco-general-auto-raise-delay">Auto raise delay</string>
       <string id="org-mate-marco-general-auto-raise-delay_help">The time delay before raising a window if auto_raise is set to true. The delay is given in milliseconds.</string>
+
+      <string id="org-mate-marco-general-center-new-windows">Center new windows</string>
+      <string id="org-mate-marco-general-center-new-windows_help">If set to true, new windows are opened in the center of the screen. Otherwise, they are opened at the top left of the screen.</string>
+
+      <string id="org-mate-marco-general-icon-size">Icon size</string>
+      <string id="org-mate-marco-general-icon-size_help">Size of the application icons displayed in alt-tab popup window. The screen's scale factor is applied to this value.</string>
+
+      <string id="org-mate-marco-general-alt-tab-max-columns">Alt+Tab switching window size</string>
+      <string id="org-mate-marco-general-alt-tab-max-columns_help">The popup Alt+Tab window will be expanded to fit up to these many entries per row.</string>
     </stringTable>
 
     <presentationTable>
@@ -612,6 +621,31 @@ last - repeat last action</text>
         <presentation id="OrgMateMarcoGeneralAutoRaiseDelayMachine-pr">
         <decimalTextBox refId="OrgMateMarcoGeneralAutoRaiseDelay_setter" defaultValue="500">Milliseconds:</decimalTextBox>
         <checkBox refId="OrgMateMarcoGeneralAutoRaiseDelay_setter_blocker">lock</checkBox>
+        <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
+      </presentation>
+
+      <presentation id="OrgMateMarcoGeneralCenterNewWindowsMachine-pr">
+        <checkBox refId="OrgMateMarcoGeneralCenterNewWindows_setter_blocker">lock</checkBox>
+        <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
+      </presentation>
+
+        <presentation id="OrgMateMarcoGeneralIconSizeUser-pr">
+        <decimalTextBox refId="OrgMateMarcoGeneralIconSize_setter" defaultValue="48">Size:</decimalTextBox>
+      </presentation>
+
+        <presentation id="OrgMateMarcoGeneralIconSizeMachine-pr">
+        <decimalTextBox refId="OrgMateMarcoGeneralIconSize_setter" defaultValue="48">Size:</decimalTextBox>
+        <checkBox refId="OrgMateMarcoGeneralIconSize_setter_blocker">lock</checkBox>
+        <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
+      </presentation>
+
+        <presentation id="OrgMateMarcoGeneralAltTabMaxColumnsUser-pr">
+        <decimalTextBox refId="OrgMateMarcoGeneralAltTabMaxColumns_setter" defaultValue="5">Number of columns</decimalTextBox>
+      </presentation>
+
+        <presentation id="OrgMateMarcoGeneralAltTabMaxColumnsMachine-pr">
+        <decimalTextBox refId="OrgMateMarcoGeneralAltTabMaxColumns_setter" defaultValue="5">Number of columns</decimalTextBox>
+        <checkBox refId="OrgMateMarcoGeneralAltTabMaxColumns_setter_blocker">lock</checkBox>
         <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
       </presentation>
 

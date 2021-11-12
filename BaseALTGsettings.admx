@@ -2139,5 +2139,110 @@
       </elements>
     </policy>
 
+    <policy name="OrgMateMarcoGeneralCenterNewWindowsUser" class="User"
+        displayName="$(string.org-mate-marco-general-center-new-windows)"
+        explainText="$(string.org-mate-marco-general-center-new-windows_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        valueName="org.mate.Marco.general.center-new-windows">
+      <parentCategory ref="system:ALT_Windows_Manager_Marco" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+    </policy>
+
+    <policy name="OrgMateMarcoGeneralCenterNewWindowsMachine" class="Machine"
+        displayName="$(string.org-mate-marco-general-center-new-windows)"
+        explainText="$(string.org-mate-marco-general-center-new-windows_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        valueName="org.mate.Marco.general.center-new-windows"
+        presentation="$(presentation.OrgMateMarcoGeneralCenterNewWindowsMachine-pr)">
+      <parentCategory ref="system:ALT_Windows_Manager_Marco" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+      <elements>
+        <boolean id="OrgMateMarcoGeneralCenterNewWindows_setter_blocker" key="Software\BaseALT\Policies\GSettingsLocks" valueName="org.mate.Marco.general.center-new-windows">
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+        </boolean>
+      </elements>
+    </policy>
+
+    <policy name="OrgMateMarcoGeneralIconSizeUser" class="User"
+        displayName="$(string.org-mate-marco-general-icon-size)"
+        explainText="$(string.org-mate-marco-general-icon-size_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        presentation="$(presentation.OrgMateMarcoGeneralIconSizeUser-pr)">
+      <parentCategory ref="system:ALT_Windows_Manager_Marco" />
+      <supportedOn ref="system:SUPPORTED_AltP10" />
+      <elements>
+        <decimal id="OrgMateMarcoGeneralIconSize_setter" valueName="org.mate.Marco.general.icon-size" minValue="8" maxValue="256" />
+      </elements>
+    </policy>
+
+    <policy name="OrgMateMarcoGeneralIconSizeMachine" class="Machine"
+        displayName="$(string.org-mate-marco-general-icon-size)"
+        explainText="$(string.org-mate-marco-general-icon-size_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        presentation="$(presentation.OrgMateMarcoGeneralIconSizeMachine-pr)">
+      <parentCategory ref="system:ALT_Windows_Manager_Marco" />
+      <supportedOn ref="system:SUPPORTED_AltP10" />
+      <elements>
+        <decimal id="OrgMateMarcoGeneralIconSize_setter" valueName="org.mate.Marco.general.icon-size" minValue="8" maxValue="256" />
+        <boolean id="OrgMateMarcoGeneralIconSize_setter_blocker" key="Software\BaseALT\Policies\GSettingsLocks" valueName="org.mate.Marco.general.icon-size">
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+        </boolean>
+      </elements>
+    </policy>
+
+    <policy name="OrgMateMarcoGeneralAltTabMaxColumnsUser" class="User"
+        displayName="$(string.org-mate-marco-general-alt-tab-max-columns)"
+        explainText="$(string.org-mate-marco-general-alt-tab-max-columns_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        presentation="$(presentation.OrgMateMarcoGeneralAltTabMaxColumnsUser-pr)">
+      <parentCategory ref="system:ALT_Windows_Manager_Marco" />
+      <supportedOn ref="system:SUPPORTED_AltP10" />
+      <elements>
+        <decimal id="OrgMateMarcoGeneralAltTabMaxColumns_setter" valueName="org.mate.Marco.general.alt-tab-max-columns" minValue="1" maxValue="64" />
+      </elements>
+    </policy>
+
+    <policy name="OrgMateMarcoGeneralAltTabMaxColumnsMachine" class="Machine"
+        displayName="$(string.org-mate-marco-general-alt-tab-max-columns)"
+        explainText="$(string.org-mate-marco-general-alt-tab-max-columns_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        presentation="$(presentation.OrgMateMarcoGeneralAltTabMaxColumnsMachine-pr)">
+      <parentCategory ref="system:ALT_Windows_Manager_Marco" />
+      <supportedOn ref="system:SUPPORTED_AltP10" />
+      <elements>
+        <decimal id="OrgMateMarcoGeneralAltTabMaxColumns_setter" valueName="org.mate.Marco.general.alt-tab-max-columns" minValue="1" maxValue="64" />
+        <boolean id="OrgMateMarcoGeneralAltTabMaxColumns_setter_blocker" key="Software\BaseALT\Policies\GSettingsLocks" valueName="org.mate.Marco.general.alt-tab-max-columns">
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+        </boolean>
+      </elements>
+    </policy>
+
   </policies>
 </policyDefinitions>
