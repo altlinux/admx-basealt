@@ -200,6 +200,15 @@
       <string id="org-mate-marco-general-alt-tab-max-columns">Размер окна переключения Alt+Tab</string>
       <string id="org-mate-marco-general-alt-tab-max-columns_help">Устанавливает количество колонок в окне переключения приложений Alt+Tab.</string>
 
+      <string id="org-mate-peripherals-keyboard-delay">Задержка перед повтором</string>
+      <string id="org-mate-peripherals-keyboard-delay_help">Задержка перед повтором нажатой и удерживаемой клавишей.</string>
+
+      <string id="org-mate-peripherals-keyboard-repeat">Включить повтор</string>
+      <string id="org-mate-peripherals-keyboard-repeat_help">Включить повтор нажатой и удерживаемой клавиши.</string>
+
+      <string id="org-mate-peripherals-keyboard-rate">Скорость повтора</string>
+      <string id="org-mate-peripherals-keyboard-rate_help">Устанавливает скорость повтора нажатой и удерживаемой клавиши.</string>
+
     </stringTable>
 
     <presentationTable>
@@ -647,6 +656,31 @@ last - повторить последнее действие</text>
         <presentation id="OrgMateMarcoGeneralAltTabMaxColumnsMachine-pr">
         <decimalTextBox refId="OrgMateMarcoGeneralAltTabMaxColumns_setter" defaultValue="5">Количество колонок:</decimalTextBox>
         <checkBox refId="OrgMateMarcoGeneralAltTabMaxColumns_setter_blocker">блокировать</checkBox>
+        <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
+      </presentation>
+
+      <presentation id="OrgMatePeripheralsKeyboardDelayUser-pr">
+        <decimalTextBox refId="OrgMatePeripheralsKeyboardDelay_setter">Задержка:</decimalTextBox>
+      </presentation>
+
+      <presentation id="OrgMatePeripheralsKeyboardDelayMachine-pr">
+        <decimalTextBox refId="OrgMatePeripheralsKeyboardDelay_setter">Задержка:</decimalTextBox>
+        <checkBox refId="OrgMatePeripheralsKeyboardDelay_setter_blocker">блокировать</checkBox>
+        <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
+      </presentation>
+
+      <presentation id="OrgMatePeripheralsKeyboardRepeatMachine-pr">
+        <checkBox refId="OrgMatePeripheralsKeyboardRepeat_setter_blocker">блокировать</checkBox>
+        <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
+      </presentation>
+
+      <presentation id="OrgMatePeripheralsKeyboardRateUser-pr">
+        <decimalTextBox refId="OrgMatePeripheralsKeyboardRate_setter">Скорость повтора:</decimalTextBox>
+      </presentation>
+
+      <presentation id="OrgMatePeripheralsKeyboardRateMachine-pr">
+        <decimalTextBox refId="OrgMatePeripheralsKeyboardRate_setter">Скорость повтора:</decimalTextBox>
+        <checkBox refId="OrgMatePeripheralsKeyboardRate_setter_blocker">блокировать</checkBox>
         <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
       </presentation>
 

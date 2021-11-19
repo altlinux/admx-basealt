@@ -199,6 +199,15 @@
 
       <string id="org-mate-marco-general-alt-tab-max-columns">Alt+Tab switching window size</string>
       <string id="org-mate-marco-general-alt-tab-max-columns_help">The popup Alt+Tab window will be expanded to fit up to these many entries per row.</string>
+
+      <string id="org-mate-peripherals-keyboard-delay">Delay before repeat</string>
+      <string id="org-mate-peripherals-keyboard-delay_help">The delay in milliseconds before repeating the pressed and held key.</string>
+
+      <string id="org-mate-peripherals-keyboard-repeat">Enable repeat</string>
+      <string id="org-mate-peripherals-keyboard-repeat_help">Enable repeat of the pressed and held key.</string>
+
+      <string id="org-mate-peripherals-keyboard-rate">Repeat rate</string>
+      <string id="org-mate-peripherals-keyboard-rate_help">Sets the repeat rate of the pressed and held key.</string>
     </stringTable>
 
     <presentationTable>
@@ -646,6 +655,31 @@ last - repeat last action</text>
         <presentation id="OrgMateMarcoGeneralAltTabMaxColumnsMachine-pr">
         <decimalTextBox refId="OrgMateMarcoGeneralAltTabMaxColumns_setter" defaultValue="5">Number of columns</decimalTextBox>
         <checkBox refId="OrgMateMarcoGeneralAltTabMaxColumns_setter_blocker">lock</checkBox>
+        <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
+      </presentation>
+
+      <presentation id="OrgMatePeripheralsKeyboardDelayUser-pr">
+        <decimalTextBox refId="OrgMatePeripheralsKeyboardDelay_setter">Delay:</decimalTextBox>
+      </presentation>
+
+      <presentation id="OrgMatePeripheralsKeyboardDelayMachine-pr">
+        <decimalTextBox refId="OrgMatePeripheralsKeyboardDelay_setter">Delay:</decimalTextBox>
+        <checkBox refId="OrgMatePeripheralsKeyboardDelay_setter_blocker">lock</checkBox>
+        <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
+      </presentation>
+
+      <presentation id="OrgMatePeripheralsKeyboardRepeatMachine-pr">
+        <checkBox refId="OrgMatePeripheralsKeyboardRepeat_setter_blocker">lock</checkBox>
+        <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
+      </presentation>
+
+      <presentation id="OrgMatePeripheralsKeyboardRateUser-pr">
+        <decimalTextBox refId="OrgMatePeripheralsKeyboardRate_setter">Repeat rate:</decimalTextBox>
+      </presentation>
+
+      <presentation id="OrgMatePeripheralsKeyboardRateMachine-pr">
+        <decimalTextBox refId="OrgMatePeripheralsKeyboardRate_setter">Repeat rate:</decimalTextBox>
+        <checkBox refId="OrgMatePeripheralsKeyboardRate_setter_blocker">lock</checkBox>
         <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
       </presentation>
 

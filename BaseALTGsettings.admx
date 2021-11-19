@@ -2244,5 +2244,110 @@
       </elements>
     </policy>
 
+    <policy name="OrgMatePeripheralsKeyboardDelayUser" class="User"
+        displayName="$(string.org-mate-peripherals-keyboard-delay)"
+        explainText="$(string.org-mate-peripherals-keyboard-delay_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        presentation="$(presentation.OrgMatePeripheralsKeyboardDelayUser-pr)">
+      <parentCategory ref="system:ALT_Windows_Manager_Marco_Keyboard" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <elements>
+        <decimal id="OrgMatePeripheralsKeyboardDelay_setter" valueName="org.mate.peripherals-keyboard.delay" />
+      </elements>
+    </policy>
+
+    <policy name="OrgMatePeripheralsKeyboardDelayMachine" class="Machine"
+        displayName="$(string.org-mate-peripherals-keyboard-delay)"
+        explainText="$(string.org-mate-peripherals-keyboard-delay_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        presentation="$(presentation.OrgMatePeripheralsKeyboardDelayMachine-pr)">
+      <parentCategory ref="system:ALT_Windows_Manager_Marco_Keyboard" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <elements>
+        <decimal id="OrgMatePeripheralsKeyboardDelay_setter" valueName="org.mate.peripherals-keyboard.delay"/>
+        <boolean id="OrgMatePeripheralsKeyboardDelay_setter_blocker" key="Software\BaseALT\Policies\GSettingsLocks" valueName="org.mate.peripherals-keyboard.delay">
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+        </boolean>
+      </elements>
+    </policy>
+
+    <policy name="OrgMatePeripheralsKeyboardRepeatUser" class="User"
+        displayName="$(string.org-mate-peripherals-keyboard-repeat)"
+        explainText="$(string.org-mate-peripherals-keyboard-repeat_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        valueName="org.mate.peripherals-keyboard.repeat">
+      <parentCategory ref="system:ALT_Windows_Manager_Marco_Keyboard" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+    </policy>
+
+    <policy name="OrgMatePeripheralsKeyboardRepeatMachine" class="Machine"
+        displayName="$(string.org-mate-peripherals-keyboard-repeat)"
+        explainText="$(string.org-mate-peripherals-keyboard-repeat_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        valueName="org.mate.peripherals-keyboard.repeat"
+        presentation="$(presentation.OrgMatePeripheralsKeyboardRepeatMachine-pr)">
+      <parentCategory ref="system:ALT_Windows_Manager_Marco_Keyboard" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+      <elements>
+        <boolean id="OrgMatePeripheralsKeyboardRepeat_setter_blocker" key="Software\BaseALT\Policies\GSettingsLocks" valueName="org.mate.peripherals-keyboard.repeat">
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+        </boolean>
+      </elements>
+    </policy>
+
+    <policy name="OrgMatePeripheralsKeyboardRateUser" class="User"
+        displayName="$(string.org-mate-peripherals-keyboard-rate)"
+        explainText="$(string.org-mate-peripherals-keyboard-rate_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        presentation="$(presentation.OrgMatePeripheralsKeyboardRateUser-pr)">
+      <parentCategory ref="system:ALT_Windows_Manager_Marco_Keyboard" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <elements>
+        <decimal id="OrgMatePeripheralsKeyboardRate_setter" valueName="org.mate.peripherals-keyboard.rate" />
+      </elements>
+    </policy>
+
+    <policy name="OrgMatePeripheralsKeyboardRateMachine" class="Machine"
+        displayName="$(string.org-mate-peripherals-keyboard-rate)"
+        explainText="$(string.org-mate-peripherals-keyboard-rate_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        presentation="$(presentation.OrgMatePeripheralsKeyboardRateMachine-pr)">
+      <parentCategory ref="system:ALT_Windows_Manager_Marco_Keyboard" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <elements>
+        <decimal id="OrgMatePeripheralsKeyboardRate_setter" valueName="org.mate.peripherals-keyboard.rate" />
+        <boolean id="OrgMatePeripheralsKeyboardRate_setter_blocker" key="Software\BaseALT\Policies\GSettingsLocks" valueName="org.mate.peripherals-keyboard.rate">
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+        </boolean>
+      </elements>
+    </policy>
+
   </policies>
 </policyDefinitions>

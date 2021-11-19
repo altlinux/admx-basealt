@@ -52,6 +52,10 @@
       <string id="ALT_User_Restrictions_Mate_Help">Ограничения действий пользователя</string>
       <string id="ALT_Remote_Access_Vino_Gnome">Удаленный доступ через Vino</string>
       <string id="ALT_Remote_Access_Vino_Gnome_Help">Настройки удаленного доступа через Vino</string>
+      <string id="ALT_Windows_Manager_Marco">Оконный менеджер Marco</string>
+      <string id="ALT_Windows_Manager_Marco_Help">Настройки оконного менеджера Marco</string>
+      <string id="ALT_Windows_Manager_Marco_Keyboard">Настройки клавиатуры</string>
+      <string id="ALT_Windows_Manager_Marco_Keyboard_Help">Настройки клавиатуры</string>
     </stringTable>
   </resources>
 </policyDefinitionResources>
