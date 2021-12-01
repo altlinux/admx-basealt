@@ -431,7 +431,7 @@ Disabled — Disable SFTP support on the OpenSSH server
 Enabled — Enable SFTP support on the OpenSSH server
       </string>
 
-      <string id="sshd-allow-groups">Enabling Allowed Groups for SSH Remote Access</string>
+      <string id="sshd-allow-groups">Remote access control via SSH</string>
       <string id="sshd-allow-groups_help">This policy enables list of allowed groups for SSH Remote Access
 
 Disabled — The list of allowed groups for SSH Remote Access is disabled
@@ -439,7 +439,7 @@ Disabled — The list of allowed groups for SSH Remote Access is disabled
 Enabled — The list of allowed groups for SSH Remote Access is enabled
       </string>
 
-      <string id="sshd-allow-groups-list">Switching Allowed Groups variants for SSH Remote Access</string>
+      <string id="sshd-allow-groups-list">SSH Remote Access Groups</string>
       <string id="sshd-allow-groups-list_help">This policy determines which groups are included in the list of allowed groups for SSH Remote Access
 
 All users - Allow SSH Access to groups wheel and users
@@ -456,7 +456,7 @@ Remote users only - Allow SSH Access to group remote only
       <string id="sshd-allow-groups-list_wheelonly">Administrators only</string>
       <string id="sshd-allow-groups-list_remoteonly">Remote users only</string>
 
-      <string id="sshd-gssapi-auth">GSS API authorization support on sshd server</string>
+      <string id="sshd-gssapi-auth">Authorization of the GSS API in OpenSSH</string>
       <string id="sshd-gssapi-auth_help">This policy defines the functionality of authorization support using the GSS API on the sshd server
 
 Enable — GSS API support on sshd server is enabled
@@ -464,7 +464,7 @@ Enable — GSS API support on sshd server is enabled
 Disable — GSS API support on sshd server is disabled
        </string>
 
-      <string id="sshd-password-auth">Password authorization support on sshd server</string>
+      <string id="sshd-password-auth">Authorization of the GSS API on OpenSSH</string>
       <string id="sshd-password-auth_help">This policy defines the functionality of password authorization support on the sshd server
 
 
@@ -473,7 +473,7 @@ Enable — Password authorization support for sshd is enabled
 Disable — Password authorization support for sshd client is disabled
       </string>
 
-      <string id="sshd-permit-root-login">Password authorization support on sshd server for root</string>
+      <string id="sshd-permit-root-login">OpenSSH Superuser Authentication</string>
       <string id="sshd-permit-root-login_help">This policy defines the functionality of password authorization support for root on the sshd server
 
 Without password — Only non password login for root via SSH is enabled
