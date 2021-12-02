@@ -213,7 +213,7 @@
       <string id="hddtemp_wheelonly">Только wheel</string>
       <string id="hddtemp_restricted">Только root</string>
 
-      <string id="lightdm-greeter-hide-users">Показать или скрыть список известных пользователей в greeter (LightDM)</string>
+      <string id="lightdm-greeter-hide-users">Список пользователей в greeter (LightDM)</string>
       <string id="lightdm-greeter-hide-users_help">Эта политика определяет, будет ли показан список всех пользователей при входе в систему с помощью LightDM (в greeter — на экране приветствия/входа в систему LightDM) или нет
 
 Показать — показать список доступных пользователей в greeter
@@ -713,7 +713,7 @@ SSSD — использовать метод проверки подлиннос
       <string id="write_public">Любой пользователь</string>
       <string id="write_restricted">Только wheel</string>
 
-      <string id="xdg-user-dirs">Функция для сохранения списка пользовательских каталогов</string>
+      <string id="xdg-user-dirs">Сохранение пользовательских каталогов</string>
       <string id="xdg-user-dirs_help">Эта политика определяет, работает ли функция сохранения списка пользовательских каталогов (xdg-user-dirs)
 
 Отключено — функция сохранения списка пользовательских каталогов отключена

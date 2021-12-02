@@ -213,7 +213,7 @@ Only root — Only superuser (root) can execute /usr/sbin/hddtemp
       <string id="hddtemp_wheelonly">Only wheel</string>
       <string id="hddtemp_restricted">Only root</string>
 
-      <string id="lightdm-greeter-hide-users">Show or hide the list of known users in the greeter (LightDM)</string>
+      <string id="lightdm-greeter-hide-users">List of users in the greeter (LightDM)</string>
       <string id="lightdm-greeter-hide-users_help">This policy defines to list all users when logging in with LightDM (in greeter — on the Welcome/Logon screen of LightDM) or not
 
 Show — Show available users list in greeter
@@ -720,7 +720,7 @@ Only root — Only superuser (root) is permitted to run /usr/bin/write
       <string id="write_public">Any user</string>
       <string id="write_restricted">Only root</string>
 
-      <string id="xdg-user-dirs">Function for saving the list of user directories</string>
+      <string id="xdg-user-dirs">Save user directories</string>
       <string id="xdg-user-dirs_help">This policy determines whether the function to save the list of user directories works (xdg-user-dirs)
 
 Disabled — The function to save the list of user directories is disabled
