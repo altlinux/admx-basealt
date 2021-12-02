@@ -694,7 +694,7 @@ Only root — Only superuser (root) is permitted to use VirtualBox
       <string id="virtualbox_vboxusers">Group vboxusers</string>
       <string id="virtualbox_restricted">Only root</string>
 
-      <string id="wireshark-capture">Functionality and permissions for wireshark-capture (dumpcap)</string>
+      <string id="wireshark-capture">Permissions for wireshark-capture (dumpcap)</string>
       <string id="wireshark-capture_help">This policy defines the functionality (modes) of permission for wireshark-capture (/usr/bin/dumpcap)
 
 Any user — Any user has the right to run /usr/bin/dumpcap, traffic capture is enabled

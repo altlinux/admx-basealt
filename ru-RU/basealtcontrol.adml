@@ -687,7 +687,7 @@ SSSD — использовать метод проверки подлиннос
       <string id="virtualbox_vboxusers">Группа vboxusers</string>
       <string id="virtualbox_restricted">Только root</string>
 
-<string id="wireshark-capture">Функциональные возможности и разрешения для wireshark-capture (dumpcap)</string>
+<string id="wireshark-capture">Разрешения для wireshark-capture (dumpcap)</string>
       <string id="wireshark-capture_help">Эта политика определяет функциональные возможности (режимы) разрешения для захвата wireshark (/usr/bin/dumpcap)
 
 Любой пользователь — любой пользователь имеет право запустить /usr/bin/dumpcap, захват трафика включен
