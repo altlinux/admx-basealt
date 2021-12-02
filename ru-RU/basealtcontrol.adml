@@ -145,7 +145,7 @@
       <string id="dvd_rw-mediainfo_restricted">Только root</string>
       <string id="dvd_rw-mediainfo_legacy">Режим совместимости</string>
 
-      <string id="fusermount">Права доступа к инструментам монтирования файловых систем FUSE</string>
+      <string id="fusermount">Доступ к инструментам FUSE</string>
       <string id="fusermount_help">Эта политика определяет права доступа для монтирования файловой системы FUSE (выполнение программ /usr/bin/fusermount и /usr/bin/fusermount3)
 
 Любой пользователь — любой пользователь может выполнить /usr/bin/fusermount и /usr/bin/fusermount3

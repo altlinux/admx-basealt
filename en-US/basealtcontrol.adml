@@ -145,7 +145,7 @@ Compatibility mode — Compatibility mode, should not be used
       <string id="dvd_rw-mediainfo_restricted">Only root</string>
       <string id="dvd_rw-mediainfo_legacy">Compatibility mode</string>
 
-      <string id="fusermount">Access rights to FUSE filesystems mount tools</string>
+      <string id="fusermount">Access to FUSE filesystems mount</string>
       <string id="fusermount_help">This policy defines access permissions for FUSE file system mounts (execution of programs  /usr/bin/fusermount and /usr/bin/fusermount3)
 
 Any user — Any user can execute /usr/bin/fusermount and /usr/bin/fusermount3
