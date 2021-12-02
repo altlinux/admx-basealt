@@ -323,7 +323,7 @@
       <string id="nfsmount_wheelonly">Только wheel</string>
       <string id="nfsmount_restricted">Только root</string>
 
-      <string id="pam_mktemp">Создание отдельных временных каталогов для пользователей</string>
+      <string id="pam_mktemp">Создание временных каталогов</string>
       <string id="pam_mktemp_help">Эта политика определяет, следует ли создавать отдельные временные каталоги для пользователей
 
 Отключено — отключить создание отдельных временных каталогов для пользователей
@@ -633,7 +633,7 @@ TCB — любой пользователь может изменить свой
       <string id="sudoreplay_wheelonly">Только wheel</string>
       <string id="sudoreplay_restricted">Только root</string>
 
-      <string id="sudowheel">Запрос пароля sudo для пользователей группы «wheel»</string>
+      <string id="sudowheel">Запрос пароля sudo для группы «wheel»</string>
       <string id="sudowheel_help">Эта политика определяет, следует ли делать запрос пароля sudo для пользователей группы «wheel»
 
 Отключено — отключить запрос пароля sudo для пользователей группы «wheel»

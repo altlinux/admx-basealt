@@ -321,7 +321,7 @@ Only root — Only superuser (root) is permitted to run /sbin/mount.nfs
       <string id="nfsmount_wheelonly">Only wheel</string>
       <string id="nfsmount_restricted">Only root</string>
 
-      <string id="pam_mktemp">Create individual temporary directories for users</string>
+      <string id="pam_mktemp">Create temporary directories</string>
       <string id="pam_mktemp_help">This policy determines whether to create individual temporary directories for users
 
 Disabled — Disable the creation of individual temporary directories for users
@@ -635,7 +635,7 @@ Only root — Only superuser (root) is permitted to run /usr/bin/sudoreplay
       <string id="sudoreplay_wheelonly">Only wheel</string>
       <string id="sudoreplay_restricted">Only root</string>
 
-      <string id="sudowheel">Request sudo password for users of the «wheel» group</string>
+      <string id="sudowheel">Request sudo password for «wheel» group</string>
       <string id="sudowheel_help">This policy determines whether to make a sudo password request for users of the «wheel» group
 
 Disabled — Disable sudo password request for users of the «wheel» group
