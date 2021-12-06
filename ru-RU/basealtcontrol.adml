@@ -593,7 +593,7 @@ TCB — любой пользователь может изменить свой
 Только root — только суперпользователь (root) может запускать /bin/su
       </string>
       <string id="su_public">Любой пользователь может запускать /bin/su</string>
-      <string id="su_wheel">Колесные суперпользователи</string>
+      <string id="su_wheel">Суперпользователи в группе Wheel</string>
       <string id="su_wheelonly">Только wheel</string>
       <string id="su_restricted">Только root</string>
 
