@@ -499,7 +499,7 @@ TCB — любой пользователь может изменить свой
 Отключить — поддержка API GSS на клиенте sshd отключена
       </string>
 
-      <string id="sssd-ad-gpo-access-control">Режимы контроля доступа в SSSD для контроля политик</string>
+      <string id="sssd-ad-gpo-access-control">Доступ в SSSD для контроля политик</string>
       <string id="sssd-ad-gpo-access-control_help">Эта политика определяет в каком режиме будет осуществляться контроль доступа в SSSD основанный на GPO
 
 Принудительный режим — Правила управления доступом в SSSD основанные на GPO выполняются и ведётся логирование
@@ -515,7 +515,7 @@ TCB — любой пользователь может изменить свой
       <string id="sssd-ad-gpo-access-control_disabled">Отключить</string>
       <string id="sssd-ad-gpo-access-control_default">По умолчанию</string>
 
-      <string id="sssd-ad-gpo-ignore-unreadable">Опция игнорирования политик, если они не доступны для чтения</string>
+      <string id="sssd-ad-gpo-ignore-unreadable">Игнорирование политик, при их недоступности</string>
       <string id="sssd-ad-gpo-ignore-unreadable_help">Эта политика определяет политику будут ли проигнорированы шаблоны (GPT)  для SSSD групповой политики (GPO), если они не читаются.
 Включить - игнорировать групповые политики, если их атрибуты в GPT не читаются для SSSD
 
@@ -527,7 +527,7 @@ TCB — любой пользователь может изменить свой
       <string id="sssd-ad-gpo-ignore-unreadable_disabled">Отключить</string>
       <string id="sssd-ad-gpo-ignore-unreadable_default">По умолчанию</string>
 
-      <string id="sssd-cache-credentials">Кэширование в локальном кэше LDB учетных данных пользователей для SSSD</string>
+      <string id="sssd-cache-credentials">Кэширование пользователей для SSSD</string>
       <string id="sssd-cache-credentials_help">Эта политика определяет будут ли учетные данные пользователя SSSD кэшироваться в локальном кэше LDB.
 
 Включить - кэширование в локальном кэше LDB учетных данных пользователей для SSSD включено

@@ -497,7 +497,7 @@ Enable — GSS API support on sshd client is enabled
 Disable — GSS API support on sshd client is disabled
       </string>
 
-      <string id="sssd-ad-gpo-access-control">SSSD option for GPO-based access control</string>
+      <string id="sssd-ad-gpo-access-control">SSSD access for policy control</string>
       <string id="sssd-ad-gpo-access-control_help">This policy defines SSSD option specifies the operation mode for GPO-based access control functionality
 
 Enforced — SSSD GPO-based access control rules are evaluated and enforced
@@ -527,7 +527,7 @@ Default — Deny access SSSD AD users when group policy templates are not readab
       <string id="sssd-ad-gpo-ignore-unreadable_disabled">Disabled</string>
       <string id="sssd-ad-gpo-ignore-unreadable_default">Default</string>
 
-      <string id="sssd-cache-credentials">SSSD option for user password is cached</string>
+      <string id="sssd-cache-credentials">SSSD for user password is cached</string>
       <string id="sssd-cache-credentials_help">This policy determines SSSD user credentials are also cached in the local LDB cache
 
 Enabled — SSSD users credentials cached in the local LDB cache is enabled
