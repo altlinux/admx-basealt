@@ -110,5 +110,8 @@
     <category name="ALT_Remote_Access_Vino_Gnome" displayName="$(string.ALT_Remote_Access_Vino_Gnome)" explainText="$(string.ALT_Remote_Access_Vino_Gnome_Help)">
       <parentCategory ref="ALT_System" />
     </category>
+    <category name="ALT_Caja_Settings_Mate" displayName="$(string.ALT_Caja_Settings_Mate)" explainText="$(string.ALT_Caja_Settings_Mate_Help)">
+      <parentCategory ref="ALT_Settings_Mate" />
+    </category>
   </categories>
 </policyDefinitions>
