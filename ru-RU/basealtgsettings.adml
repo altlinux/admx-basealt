@@ -99,6 +99,24 @@
       <string id="org-gnome-vino-vnc-password">Пароль для подключения</string>
       <string id="org-gnome-vino-vnc-password_help">Пароль, который удаленному пользователю будет предложено ввести, если используется метод аутентификации "vnc". Пароль, указанный ключом, закодирован в кодировке base64.</string>
 
+      <string id="org-mate-media-handling-autorun-never">Отключение автозапуска</string>
+      <string id="org-mate-media-handling-autorun-never_help">Если включено, Caja никогда не будет запрашивать действие или автоматически запускать программы при вставке носителей.</string>
+
+      <string id="org-mate-media-handling-automount-open">Открытие при присоединении</string>
+      <string id="org-mate-media-handling-automount-open_help">Если этот ключ установлен, Caja будет автоматически открывать папку при автоприсоединении носителя. Это относится только к носителям, для которых не определён тип x-content/*; над носителями, у которых есть известный тип x-content, будет вместо этого выполнено настраиваемое пользователем действие.</string>
+
+      <string id="org-mate-media-handling-autorun-x-content-open-folder">Список для открытия папки</string>
+      <string id="org-mate-media-handling-autorun-x-content-open-folder_help">Список типов x-content/*, для которых пользователь в параметрах программы выбрал «Открыть папку». Окно с папкой будет открыто при вставке носителя с данными указанного здесь типа.</string>
+
+      <string id="org-mate-media-handling-autorun-x-content-ignore">Список игнорирования</string>
+      <string id="org-mate-media-handling-autorun-x-content-ignore_help">Список типов x-content/*, для которых пользователь выбрал «Ничего не делать». При вставке носителя с данными указанного типа не будут автоматически запускаться приложения, не будет предложено выбрать то или иное приложение на усмотрение пользователя.</string>
+
+      <string id="org-mate-media-handling-automount">Автомонтиривание</string>
+      <string id="org-mate-media-handling-automount_help">Если этот ключ установлен, Caja будет автоматически присоединять носители — такие как видимые пользователю жёсткие диски или сменные носители — при запуске и при вставке носителя.</string>
+
+      <string id="org-mate-media-handling-autorun-x-content-start-app">Автозапуск предпочитаемого приложения</string>
+      <string id="org-mate-media-handling-autorun-x-content-start-app_help">Список типов x-content/*, для которых пользователь в параметрах программы выбрал «Открыть папку». Предпочитаемое приложение будет открыто при вставке носителя с данными указанного здесь типа.</string>
+
     </stringTable>
 
     <presentationTable>
@@ -311,6 +329,51 @@
           <label>Пароль:</label>
         </textBox>
         <checkBox refId="OrgGnomeVinoVncPassword_setter_blocker">блокировать</checkBox>
+        <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
+      </presentation>
+
+      <presentation id="OrgMateMediaHandlingAutorunNeverMachine-pr">
+        <checkBox refId="OrgMateMediaHandlingAutorunNever_setter_blocker">блокировать</checkBox>
+        <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
+      </presentation>
+
+      <presentation id="OrgMateMediaHandlingAutomountOpenMachine-pr">
+        <checkBox refId="OrgMateMediaHandlingAutomountOpen_setter_blocker">блокировать</checkBox>
+        <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
+      </presentation>
+
+      <presentation id="OrgMateMediaHandlingAutorunXContentOpenFolderUser-pr">
+        <listBox refId="OrgMateMediaHandlingAutorunXContentOpenFolder_setter">Типы:</listBox>
+      </presentation>
+
+      <presentation id="OrgMateMediaHandlingAutorunXContentOpenFolderMachine-pr">
+        <listBox refId="OrgMateMediaHandlingAutorunXContentOpenFolder_setter">Типы:</listBox>
+        <checkBox refId="OrgMateMediaHandlingAutorunXContentOpenFolder_setter_blocker">блокировать</checkBox>
+        <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
+      </presentation>
+
+      <presentation id="OrgMateMediaHandlingAutorunXContentIgnoreUser-pr">
+        <listBox refId="OrgMateMediaHandlingAutorunXContentIgnore_setter">Типы:</listBox>
+      </presentation>
+
+      <presentation id="OrgMateMediaHandlingAutorunXContentIgnoreMachine-pr">
+        <listBox refId="OrgMateMediaHandlingAutorunXContentIgnore_setter">Типы:</listBox>
+        <checkBox refId="OrgMateMediaHandlingAutorunXContentIgnore_setter_blocker">блокировать</checkBox>
+        <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
+      </presentation>
+
+      <presentation id="OrgMateMediaHandlingAutomountMachine-pr">
+        <checkBox refId="OrgMateMediaHandlingAutomount_setter_blocker">блокировать</checkBox>
+        <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
+      </presentation>
+
+      <presentation id="OrgMateMediaHandlingAutorunXContentStartAppUser-pr">
+        <listBox refId="OrgMateMediaHandlingAutorunXContentStartApp_setter">Типы:</listBox>
+      </presentation>
+
+      <presentation id="OrgMateMediaHandlingAutorunXContentStartAppMachine-pr">
+        <listBox refId="OrgMateMediaHandlingAutorunXContentStartApp_setter">Типы:</listBox>
+        <checkBox refId="OrgMateMediaHandlingAutorunXContentStartApp_setter_blocker">блокировать</checkBox>
         <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
       </presentation>
 

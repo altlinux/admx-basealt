@@ -99,6 +99,24 @@
       <string id="org-gnome-vino-vnc-password">Password for remote access</string>
       <string id="org-gnome-vino-vnc-password_help">The password which the remote user will be prompted for if the "vnc" authentication method is used. The password specified by the key is base64 encoded.  The special value of 'keyring' (which is not valid base64) means that the password is stored in the GNOME keyring.</string>
 
+      <string id="org-mate-media-handling-autorun-never">Disable autorun</string>
+      <string id="org-mate-media-handling-autorun-never_help">If enabled, Caja will never prompt for an action or automatically launch programs when inserting media.</string>
+
+      <string id="org-mate-media-handling-automount-open">Оpen folder after mount</string>
+      <string id="org-mate-media-handling-automount-open_help">If true, Caja will automatically open the folder when the media is auto-connected. This applies only to media for which the x-content/* type is not defined; media that have a known x-content type will instead be subject to a user-configurable action.</string>
+
+      <string id="org-mate-media-handling-autorun-x-content-open-folder">List of types to open a folder</string>
+      <string id="org-mate-media-handling-autorun-x-content-open-folder_help">A list of x-content/* types for which the user has selected "Open Folder" in the program parameters. The folder window will be opened when inserting the media with the data of the type specified here.</string>
+
+      <string id="org-mate-media-handling-autorun-x-content-ignore">Ignore list of types</string>
+      <string id="org-mate-media-handling-autorun-x-content-ignore_help">A list of x-content/* types for which the user has selected "Do nothing". When inserting a media with data of the specified type, applications will not automatically start, and user will not be prompted to select one or another application at the discretion of the user.</string>
+
+      <string id="org-mate-media-handling-automount">Automount</string>
+      <string id="org-mate-media-handling-automount_help">If this key is set, Caja will automatically attach media - such as user-visible hard drives or removable media - at startup and when inserting media.</string>
+
+      <string id="org-mate-media-handling-autorun-x-content-start-app">Autorun of the preferred application</string>
+      <string id="org-mate-media-handling-autorun-x-content-start-app_help">A list of x-content/* types for which the user has selected "Open Folder" in the program parameters. The preferred application will be opened when inserting the media with the data type specified here.</string>
+
     </stringTable>
 
     <presentationTable>
@@ -311,6 +329,51 @@
           <label>Password:</label>
         </textBox>
         <checkBox refId="OrgGnomeVinoVncPassword_setter_blocker">lock</checkBox>
+        <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
+      </presentation>
+
+      <presentation id="OrgMateMediaHandlingAutorunNeverMachine-pr">
+        <checkBox refId="OrgMateMediaHandlingAutorunNever_setter_blocker">lock</checkBox>
+        <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
+      </presentation>
+
+      <presentation id="OrgMateMediaHandlingAutomountOpenMachine-pr">
+        <checkBox refId="OrgMateMediaHandlingAutomountOpen_setter_blocker">lock</checkBox>
+        <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
+      </presentation>
+
+      <presentation id="OrgMateMediaHandlingAutorunXContentOpenFolderUser-pr">
+        <listBox refId="OrgMateMediaHandlingAutorunXContentOpenFolder_setter">Types:</listBox>
+      </presentation>
+
+      <presentation id="OrgMateMediaHandlingAutorunXContentOpenFolderMachine-pr">
+        <listBox refId="OrgMateMediaHandlingAutorunXContentOpenFolder_setter">Types:</listBox>
+        <checkBox refId="OrgMateMediaHandlingAutorunXContentOpenFolder_setter_blocker">lock</checkBox>
+        <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
+      </presentation>
+
+      <presentation id="OrgMateMediaHandlingAutorunXContentIgnoreUser-pr">
+        <listBox refId="OrgMateMediaHandlingAutorunXContentIgnore_setter">Types:</listBox>
+      </presentation>
+
+      <presentation id="OrgMateMediaHandlingAutorunXContentIgnoreMachine-pr">
+        <listBox refId="OrgMateMediaHandlingAutorunXContentIgnore_setter">Types:</listBox>
+        <checkBox refId="OrgMateMediaHandlingAutorunXContentIgnore_setter_blocker">lock</checkBox>
+        <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
+      </presentation>
+
+      <presentation id="OrgMateMediaHandlingAutomountMachine-pr">
+        <checkBox refId="OrgMateMediaHandlingAutomount_setter_blocker">lock</checkBox>
+        <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
+      </presentation>
+
+      <presentation id="OrgMateMediaHandlingAutorunXContentStartAppUser-pr">
+        <listBox refId="OrgMateMediaHandlingAutorunXContentStartApp_setter">Types:</listBox>
+      </presentation>
+
+      <presentation id="OrgMateMediaHandlingAutorunXContentStartAppMachine-pr">
+        <listBox refId="OrgMateMediaHandlingAutorunXContentStartApp_setter">Types:</listBox>
+        <checkBox refId="OrgMateMediaHandlingAutorunXContentStartApp_setter_blocker">lock</checkBox>
         <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
       </presentation>
 

@@ -1115,5 +1115,230 @@
       </elements>
     </policy>
 
+    <policy name="OrgMateMediaHandlingAutorunNeverUser" class="User"
+        displayName="$(string.org-mate-media-handling-autorun-never)"
+        explainText="$(string.org-mate-media-handling-autorun-never_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        valueName="org.mate.media-handling.autorun-never">
+      <parentCategory ref="system:ALT_Caja_Settings_Mate" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+    </policy>
+
+    <policy name="OrgMateMediaHandlingAutorunNeverMachine" class="Machine"
+        displayName="$(string.org-mate-media-handling-autorun-never)"
+        explainText="$(string.org-mate-media-handling-autorun-never_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        valueName="org.mate.media-handling.autorun-never"
+        presentation="$(presentation.OrgMateMediaHandlingAutorunNeverMachine-pr)">
+      <parentCategory ref="system:ALT_Caja_Settings_Mate" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+      <elements>
+        <boolean id="OrgMateMediaHandlingAutorunNever_setter_blocker" key="Software\BaseALT\Policies\GSettingsLocks" valueName="org.mate.media-handling.autorun-never">
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+        </boolean>
+      </elements>
+    </policy>
+
+    <policy name="OrgMateMediaHandlingAutomountOpenUser" class="User"
+        displayName="$(string.org-mate-media-handling-automount-open)"
+        explainText="$(string.org-mate-media-handling-automount-open_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        valueName="org.mate.media-handling.automount-open" >
+      <parentCategory ref="system:ALT_Caja_Settings_Mate" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+    </policy>
+
+    <policy name="OrgMateMediaHandlingAutomountOpenMachine" class="Machine"
+        displayName="$(string.org-mate-media-handling-automount-open)"
+        explainText="$(string.org-mate-media-handling-automount-open_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        valueName="org.mate.media-handling.automount-open"
+        presentation="$(presentation.OrgMateMediaHandlingAutomountOpenMachine-pr)">
+      <parentCategory ref="system:ALT_Caja_Settings_Mate" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+      <elements>
+        <boolean id="OrgMateMediaHandlingAutomountOpen_setter_blocker" key="Software\BaseALT\Policies\GSettingsLocks" valueName="org.mate.media-handling.automount-open">
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+        </boolean>
+      </elements>
+    </policy>
+
+    <policy name="OrgMateMediaHandlingAutorunXContentOpenFolderUser" class="User"
+        displayName="$(string.org-mate-media-handling-autorun-x-content-open-folder)"
+        explainText="$(string.org-mate-media-handling-autorun-x-content-open-folder_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        valueName="org.mate.media-handling.autorun-x-content-open-folder"
+        presentation="$(presentation.OrgMateMediaHandlingAutorunXContentOpenFolderUser-pr)" >
+      <parentCategory ref="system:ALT_Caja_Settings_Mate" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <elements>
+        <list id="OrgMateMediaHandlingAutorunXContentOpenFolder_setter" key="org.mate.media-handling.autorun-x-content-open-folder" additive="true" />
+      </elements>
+    </policy>
+
+    <policy name="OrgMateMediaHandlingAutorunXContentOpenFolderMachine" class="Machine"
+        displayName="$(string.org-mate-media-handling-autorun-x-content-open-folder)"
+        explainText="$(string.org-mate-media-handling-autorun-x-content-open-folder_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        valueName="org.mate.media-handling.autorun-x-content-open-folder"
+        presentation="$(presentation.OrgMateMediaHandlingAutorunXContentOpenFolderMachine-pr)" >
+      <parentCategory ref="system:ALT_Caja_Settings_Mate" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <elements>
+        <list id="OrgMateMediaHandlingAutorunXContentOpenFolder_setter" key="org.mate.media-handling.autorun-x-content-open-folder" additive="true" />
+        <boolean id="OrgMateMediaHandlingAutorunXContentOpenFolder_setter_blocker" key="Software\BaseALT\Policies\GSettingsLocks" valueName="org.mate.media-handling.autorun-x-content-open-folder">
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+        </boolean>
+      </elements>
+    </policy>
+
+    <policy name="OrgMateMediaHandlingAutorunXContentIgnoreUser" class="User"
+        displayName="$(string.org-mate-media-handling-autorun-x-content-ignore)"
+        explainText="$(string.org-mate-media-handling-autorun-x-content-ignore_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        valueName="org.mate.media-handling.autorun-x-content-ignore"
+        presentation="$(presentation.OrgMateMediaHandlingAutorunXContentIgnoreUser-pr)" >
+      <parentCategory ref="system:ALT_Caja_Settings_Mate" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <elements>
+        <list id="OrgMateMediaHandlingAutorunXContentIgnore_setter" key="org.mate.media-handling.autorun-x-content-ignore" additive="true" />
+      </elements>
+    </policy>
+
+    <policy name="OrgMateMediaHandlingAutorunXContentIgnoreMachine" class="Machine"
+        displayName="$(string.org-mate-media-handling-autorun-x-content-ignore)"
+        explainText="$(string.org-mate-media-handling-autorun-x-content-ignore_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        valueName="org.mate.media-handling.autorun-x-content-ignore"
+        presentation="$(presentation.OrgMateMediaHandlingAutorunXContentIgnoreMachine-pr)" >
+      <parentCategory ref="system:ALT_Caja_Settings_Mate" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <elements>
+        <list id="OrgMateMediaHandlingAutorunXContentIgnore_setter" key="org.mate.media-handling.autorun-x-content-ignore" additive="true" />
+        <boolean id="OrgMateMediaHandlingAutorunXContentIgnore_setter_blocker" key="Software\BaseALT\Policies\GSettingsLocks" valueName="org.mate.media-handling.autorun-x-content-ignore">
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+        </boolean>
+      </elements>
+    </policy>
+
+    <policy name="OrgMateMediaHandlingAutomountUser" class="User"
+        displayName="$(string.org-mate-media-handling-automount)"
+        explainText="$(string.org-mate-media-handling-automount_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        valueName="org.mate.media-handling.automount" >
+      <parentCategory ref="system:ALT_Caja_Settings_Mate" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+    </policy>
+
+    <policy name="OrgMateMediaHandlingAutomountMachine" class="Machine"
+        displayName="$(string.org-mate-media-handling-automount)"
+        explainText="$(string.org-mate-media-handling-automount_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        valueName="org.mate.media-handling.automount"
+        presentation="$(presentation.OrgMateMediaHandlingAutomountMachine-pr)">
+      <parentCategory ref="system:ALT_Caja_Settings_Mate" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+      <elements>
+        <boolean id="OrgMateMediaHandlingAutomount_setter_blocker" key="Software\BaseALT\Policies\GSettingsLocks" valueName="org.mate.media-handling.automount">
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+        </boolean>
+      </elements>
+    </policy>
+
+    <policy name="OrgMateMediaHandlingAutorunXContentStartAppUser" class="User"
+        displayName="$(string.org-mate-media-handling-autorun-x-content-start-app)"
+        explainText="$(string.org-mate-media-handling-autorun-x-content-start-app_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        valueName="org.mate.media-handling.autorun-x-content-start-app"
+        presentation="$(presentation.OrgMateMediaHandlingAutorunXContentStartAppUser-pr)" >
+      <parentCategory ref="system:ALT_Caja_Settings_Mate" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <elements>
+        <list id="OrgMateMediaHandlingAutorunXContentStartApp_setter" key="org.mate.media-handling.autorun-x-content-start-app" additive="true" />
+      </elements>
+    </policy>
+
+    <policy name="OrgMateMediaHandlingAutorunXContentStartAppMachine" class="Machine"
+        displayName="$(string.org-mate-media-handling-autorun-x-content-start-app)"
+        explainText="$(string.org-mate-media-handling-autorun-x-content-start-app_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        valueName="org.mate.media-handling.autorun-x-content-start-app"
+        presentation="$(presentation.OrgMateMediaHandlingAutorunXContentStartAppMachine-pr)" >
+      <parentCategory ref="system:ALT_Caja_Settings_Mate" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <elements>
+        <list id="OrgMateMediaHandlingAutorunXContentStartApp_setter" key="org.mate.media-handling.autorun-x-content-start-app" additive="true" />
+        <boolean id="OrgMateMediaHandlingAutorunXContentStartApp_setter_blocker" key="Software\BaseALT\Policies\GSettingsLocks" valueName="org.mate.media-handling.autorun-x-content-start-app">
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+        </boolean>
+      </elements>
+    </policy>
+
   </policies>
 </policyDefinitions>
