@@ -10,19 +10,19 @@
 
       <string id="org-mate-background-picture-options">Desktop background options</string>
       <string id="org-mate-background-picture-options_help">Set how to display the desktop background. Possible values: "none", "wallpaper", "centered", "scaled", "stretched", "zoom", "spanned".</string>
-      <string id="org-mate-background-picture-options_None">none</string>
-      <string id="org-mate-background-picture-options_Wallpaper">wallpaper</string>
-      <string id="org-mate-background-picture-options_Centered">centered</string>
-      <string id="org-mate-background-picture-options_Scaled">scaled</string>
-      <string id="org-mate-background-picture-options_Stretched">stretched</string>
-      <string id="org-mate-background-picture-options_Zoom">zoom</string>
-      <string id="org-mate-background-picture-options_Spanned">spanned</string>
+      <string id="org-mate-background-picture-options_None">None</string>
+      <string id="org-mate-background-picture-options_Wallpaper">Wallpaper</string>
+      <string id="org-mate-background-picture-options_Centered">Centered</string>
+      <string id="org-mate-background-picture-options_Scaled">Scaled</string>
+      <string id="org-mate-background-picture-options_Stretched">Stretched</string>
+      <string id="org-mate-background-picture-options_Zoom">Zoom</string>
+      <string id="org-mate-background-picture-options_Spanned">Spanned</string>
 
       <string id="org-mate-background-color-shading-type">Gradient type</string>
       <string id="org-mate-background-color-shading-type_help">Set the gradient type: vertical, horizontal, or solid fill.</string>
-      <string id="org-mate-background-color-shading-type-horizontal-gradient">horizontal gradient</string>
-      <string id="org-mate-background-color-shading-type-vertical-gradient">vertical gradient</string>
-      <string id="org-mate-background-color-shading-type-solid">solid fill</string>
+      <string id="org-mate-background-color-shading-type-horizontal-gradient">Horizontal gradient</string>
+      <string id="org-mate-background-color-shading-type-vertical-gradient">Vertical gradient</string>
+      <string id="org-mate-background-color-shading-type-solid">Solid fill</string>
 
       <string id="org-mate-background-picture-filename">Desktop background image</string>
       <string id="org-mate-background-picture-filename_help">Set the image to use as the desktop background.</string>
@@ -38,10 +38,10 @@
 
       <string id="org-mate-screensaver-mode">Screen saver mode</string>
       <string id="org-mate-screensaver-mode_help">Set screen saver mode. Possible options: "disabled" — disabled, "blank-only" — an empty screen,"single" — use one theme specified by the "themes" key,"random" — use a randomly selected theme.</string>
-      <string id="org-mate-screensaver-mode_disabled">disabled</string>
-      <string id="org-mate-screensaver-mode_blank_only">blank screen</string>
-      <string id="org-mate-screensaver-mode_random">random</string>
-      <string id="org-mate-screensaver-mode_single">single</string>
+      <string id="org-mate-screensaver-mode_disabled">Disabled</string>
+      <string id="org-mate-screensaver-mode_blank_only">Blank screen</string>
+      <string id="org-mate-screensaver-mode_random">Random</string>
+      <string id="org-mate-screensaver-mode_single">Single</string>
 
       <string id="org-mate-screensaver-lock-delay">Lock delay</string>
       <string id="org-mate-screensaver-lock-delay_help">Set the delay in minutes between screen saver activation and computer lock.</string>
@@ -78,9 +78,9 @@
 
       <string id="org-gnome-vino-icon-visibility">Connection icon</string>
       <string id="org-gnome-vino-icon-visibility_help">This key controls the behavior of the connection status icon. There are three options: "always" - the icon will always be present; "client" - the icon will only be present when someone is connected (this is the default behavior); "never" - the icon will not be present.</string>
-      <string id="org-gnome-vino-icon-visibility-never">never</string>
-      <string id="org-gnome-vino-icon-visibility-always">always</string>
-      <string id="org-gnome-vino-icon-visibility-client">client</string>
+      <string id="org-gnome-vino-icon-visibility-never">Never</string>
+      <string id="org-gnome-vino-icon-visibility-always">Always</string>
+      <string id="org-gnome-vino-icon-visibility-client">Client</string>
 
       <string id="org-gnome-vino-enabled">Remote access</string>
       <string id="org-gnome-vino-enabled_help">If true, allows remote access to desktop via the RFB protocol. Users on remote machines may then connect to the desktop using a VNC player.</string>
@@ -93,8 +93,8 @@
 
       <string id="org-gnome-vino-authentication-methods">Authentication methods</string>
       <string id="org-gnome-vino-authentication-methods_help">Lists the authentication methods with which remote users may access the desktop.  There are two possible authentication methods; "vnc" causes the remote user to be prompted for a password (the password is specified by the vnc-password key) before connecting and "none" which allows any remote user to connect.</string>
-      <string id="org-gnome-vino-authentication-methods-none">none</string>
-      <string id="org-gnome-vino-authentication-methods-vnc">vnc</string>
+      <string id="org-gnome-vino-authentication-methods-none">None</string>
+      <string id="org-gnome-vino-authentication-methods-vnc">Vnc</string>
 
       <string id="org-gnome-vino-vnc-password">Password for remote access</string>
       <string id="org-gnome-vino-vnc-password_help">The password which the remote user will be prompted for if the "vnc" authentication method is used. The password specified by the key is base64 encoded.  The special value of 'keyring' (which is not valid base64) means that the password is stored in the GNOME keyring.</string>
@@ -106,7 +106,7 @@
         <textBox refId="OrgMateBackgroundSecondaryColor_setter">
           <label>Set the color:</label>
         </textBox>
-        <checkBox refId="OrgMateBackgroundSecondaryColor_setter_blocker">lock</checkBox>
+        <checkBox refId="OrgMateBackgroundSecondaryColor_setter_blocker">Lock</checkBox>
         <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
       </presentation>
 
@@ -122,7 +122,7 @@
 
       <presentation id="OrgMateBackgroundPictureOptionsMachine-pr">
         <dropdownList noSort="true" defaultItem="0" refId="OrgMateBackgroundPictureOptions_setter">Method for displaying the desktop background:</dropdownList>
-        <checkBox refId="OrgMateBackgroundPictureOptions_setter_blocker">lock</checkBox>
+        <checkBox refId="OrgMateBackgroundPictureOptions_setter_blocker">Lock</checkBox>
         <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
       </presentation>
 
@@ -132,21 +132,21 @@
 
       <presentation id="OrgMateBackgroundColorShadingTypeMachine-pr">
         <dropdownList noSort="true" defaultItem="0" refId="OrgMateBackgroundColorShadingType_setter">Set the gradient type:</dropdownList>
-        <checkBox refId="OrgMateBackgroundColorShadingType_setter_blocker">lock</checkBox>
+        <checkBox refId="OrgMateBackgroundColorShadingType_setter_blocker">Lock</checkBox>
         <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
       </presentation>
 
       <presentation id="OrgMateBackgroundPictureFilenameUser-pr">
         <textBox refId="OrgMateBackgroundPictureFilename_setter">
-          <label>file:</label>
+          <label>File:</label>
         </textBox>
       </presentation>
 
       <presentation id="OrgMateBackgroundPictureFilenameMachine-pr">
         <textBox refId="OrgMateBackgroundPictureFilename_setter">
-          <label>file:</label>
+          <label>File:</label>
         </textBox>
-        <checkBox refId="OrgMateBackgroundPictureFilename_setter_blocker">lock</checkBox>
+        <checkBox refId="OrgMateBackgroundPictureFilename_setter_blocker">Lock</checkBox>
         <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
       </presentation>
 
@@ -160,17 +160,17 @@
         <textBox refId="OrgMateBackgroundPrimaryColor_setter">
           <label>Set the color:</label>
         </textBox>
-        <checkBox refId="OrgMateBackgroundPrimaryColor_setter_blocker">lock</checkBox>
+        <checkBox refId="OrgMateBackgroundPrimaryColor_setter_blocker">Lock</checkBox>
         <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
       </presentation>
 
       <presentation id="OrgMateScreesaverIdleActivationEnabledMachine-pr">
-        <checkBox refId="OrgMateScreesaverIdleActivationEnabled_setter_blocker">lock</checkBox>
+        <checkBox refId="OrgMateScreesaverIdleActivationEnabled_setter_blocker">Lock</checkBox>
         <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
       </presentation>
 
       <presentation id="OrgMateScreensaverLockEnabledMachine-pr">
-        <checkBox refId="OrgMateScreensaverLockEnabled_setter_blocker">lock</checkBox>
+        <checkBox refId="OrgMateScreensaverLockEnabled_setter_blocker">Lock</checkBox>
         <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
       </presentation>
 
@@ -180,7 +180,7 @@
 
       <presentation id="OrgMateScreensaverModeMachine-pr">
         <dropdownList noSort="true" defaultItem="0" refId="OrgMateScreensaverMode_setter">Select an operating mode:</dropdownList>
-        <checkBox refId="OrgMateScreensaverMode_setter_blocker">lock</checkBox>
+        <checkBox refId="OrgMateScreensaverMode_setter_blocker">Lock</checkBox>
         <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
       </presentation>
 
@@ -192,7 +192,7 @@
       <presentation id="OrgMateScreensaverLockDelayMachine-pr">
         <text>The interval in minutes between the activation of the screen saver and the appearance of the logout dialog during activation</text>
         <decimalTextBox refId="OrgMateScreensaverLockDelay_setter" defaultValue="2">Time in minutes:</decimalTextBox>
-        <checkBox refId="OrgMateScreensaverLockDelay_setter_blocker">lock</checkBox>
+        <checkBox refId="OrgMateScreensaverLockDelay_setter_blocker">Lock</checkBox>
         <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
       </presentation>
 
@@ -204,7 +204,7 @@
       <presentation id="OrgMateScreensaverLogoutDelayMachine-pr">
         <text>The number of minutes after which, after activating the screen saver, the screen will be locked</text>
         <decimalTextBox refId="OrgMateScreensaverLogoutDelay_setter" defaultValue="3">Time in minutes:</decimalTextBox>
-        <checkBox refId="OrgMateScreensaverLogoutDelay_setter_blocker">lock</checkBox>
+        <checkBox refId="OrgMateScreensaverLogoutDelay_setter_blocker">Lock</checkBox>
         <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
       </presentation>
 
@@ -216,47 +216,47 @@
       <presentation id="OrgMateScreensaverCycleDelayMachine-pr">
         <text>The interval in minutes between changing the themes of the screen saver</text>
         <decimalTextBox refId="OrgMateScreensaverCycleDelay_setter" defaultValue="2">Time in minutes:</decimalTextBox>
-        <checkBox refId="OrgMateScreensaverCycleDelay_setter_blocker">lock</checkBox>
+        <checkBox refId="OrgMateScreensaverCycleDelay_setter_blocker">Lock</checkBox>
         <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
       </presentation>
 
       <presentation id="OrgMateScreensaverLogoutEnabledMachine-pr">
-        <checkBox refId="OrgMateScreensaverLogoutEnabled_setter_blocker">lock</checkBox>
+        <checkBox refId="OrgMateScreensaverLogoutEnabled_setter_blocker">Lock</checkBox>
         <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
       </presentation>
 
       <presentation id="OrgMateScreensaverUserSwitchEnabledMachine-pr">
-        <checkBox refId="OrgMateScreensaverUserSwitchEnabled_setter_blocker">lock</checkBox>
+        <checkBox refId="OrgMateScreensaverUserSwitchEnabled_setter_blocker">Lock</checkBox>
         <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
       </presentation>
 
       <presentation id="OrgMateLockdownDisableLogOutMachine-pr">
-        <checkBox refId="OrgMateLockdownDisableLogOut_setter_blocker">lock</checkBox>
+        <checkBox refId="OrgMateLockdownDisableLogOut_setter_blocker">Lock</checkBox>
         <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
       </presentation>
 
       <presentation id="OrgMateLockdownDisableLockScreenMachine-pr">
-        <checkBox refId="OrgMateLockdownDisableLockScreen_setter_blocker">lock</checkBox>
+        <checkBox refId="OrgMateLockdownDisableLockScreen_setter_blocker">Lock</checkBox>
         <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
       </presentation>
 
       <presentation id="OrgMateLockdownDisableUserSwitchingMachine-pr">
-        <checkBox refId="OrgMateLockdownDisableUserSwitching_setter_blocker">lock</checkBox>
+        <checkBox refId="OrgMateLockdownDisableUserSwitching_setter_blocker">Lock</checkBox>
         <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
       </presentation>
 
       <presentation id="OrgMateLockdownDisableThemeSettingsMachine-pr">
-        <checkBox refId="OrgMateLockdownDisableThemeSettings_setter_blocker">lock</checkBox>
+        <checkBox refId="OrgMateLockdownDisableThemeSettings_setter_blocker">Lock</checkBox>
         <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
       </presentation>
 
       <presentation id="OrgGnomeVinoViewOnlyMachine-pr">
-        <checkBox refId="OrgGnomeVinoViewOnly_setter_blocker">lock</checkBox>
+        <checkBox refId="OrgGnomeVinoViewOnly_setter_blocker">Lock</checkBox>
         <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
       </presentation>
 
       <presentation id="OrgGnomeVinoPromptEnabledMachine-pr">
-        <checkBox refId="OrgGnomeVinoPromptEnabled_setter_blocker">lock</checkBox>
+        <checkBox refId="OrgGnomeVinoPromptEnabled_setter_blocker">Lock</checkBox>
         <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
       </presentation>
 
@@ -266,12 +266,12 @@
 
       <presentation id="OrgGnomeVinoIconVisibilityMachine-pr">
         <dropdownList noSort="true" defaultItem="0" refId="OrgGnomeVinoIconVisibility_setter">Show notification:</dropdownList>
-        <checkBox refId="OrgGnomeVinoIconVisibility_setter_blocker">lock</checkBox>
+        <checkBox refId="OrgGnomeVinoIconVisibility_setter_blocker">Lock</checkBox>
         <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
       </presentation>
 
       <presentation id="OrgGnomeVinoEnabledMachine-pr">
-        <checkBox refId="OrgGnomeVinoEnabled_setter_blocker">lock</checkBox>
+        <checkBox refId="OrgGnomeVinoEnabled_setter_blocker">Lock</checkBox>
         <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
       </presentation>
 
@@ -281,12 +281,12 @@
 
       <presentation id="OrgGnomeVinoAlternativePortMachine-pr">
         <decimalTextBox refId="OrgGnomeVinoAlternativePort_setter" defaultValue="5000">Port:</decimalTextBox>
-        <checkBox refId="OrgGnomeVinoAlternativePort_setter_blocker">lock</checkBox>
+        <checkBox refId="OrgGnomeVinoAlternativePort_setter_blocker">Lock</checkBox>
         <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
       </presentation>
 
       <presentation id="OrgGnomeVinoUseAlternativePortMachine-pr">
-        <checkBox refId="OrgGnomeVinoUseAlternativePort_setter_blocker">lock</checkBox>
+        <checkBox refId="OrgGnomeVinoUseAlternativePort_setter_blocker">Lock</checkBox>
         <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
       </presentation>
 
@@ -296,7 +296,7 @@
 
       <presentation id="OrgGnomeVinoAuthenticationMethodsMachine-pr">
         <dropdownList noSort="true" defaultItem="0" refId="OrgGnomeVinoAuthenticationMethods_setter">Method:</dropdownList>
-        <checkBox refId="OrgGnomeVinoAuthenticationMethods_setter_blocker">lock</checkBox>
+        <checkBox refId="OrgGnomeVinoAuthenticationMethods_setter_blocker">Lock</checkBox>
         <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
       </presentation>
 
@@ -310,7 +310,7 @@
         <textBox refId="OrgGnomeVinoVncPassword_setter">
           <label>Password:</label>
         </textBox>
-        <checkBox refId="OrgGnomeVinoVncPassword_setter_blocker">lock</checkBox>
+        <checkBox refId="OrgGnomeVinoVncPassword_setter_blocker">Lock</checkBox>
         <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
       </presentation>
 
