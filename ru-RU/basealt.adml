@@ -52,6 +52,9 @@
       <string id="ALT_User_Restrictions_Mate_Help">Ограничения действий пользователя</string>
       <string id="ALT_Remote_Access_Vino_Gnome">Удаленный доступ через Vino</string>
       <string id="ALT_Remote_Access_Vino_Gnome_Help">Настройки удаленного доступа через Vino</string>
+      <string id="ALT_Caja_Settings_Mate">Настройки Caja</string>
+      <string id="ALT_Caja_Settings_Mate_Help">Настройки файлового менеджера Caja</string>
+
     </stringTable>
   </resources>
 </policyDefinitionResources>

@@ -1116,4 +1116,46 @@
     </policy>
 
   </policies>
+
+    <policy name="OrgMateCajaDesktopVolumesVisibleUser" class="User"
+        displayName="$(string.org-mate-caja-desktop-volumes-visible"
+        explainText="$(string.org-mate-caja-desktop-volumes-visible_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        valueName="org.mate.caja.desktop.volumes-visible">
+      <parentCategory ref="system:ALT_Caja_Settings_Mate" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+    </policy>
+
+    <policy name="OrgMateCajaDesktopVolumesVisibleMachine" class="Machine"
+        displayName="$(string.org-mate-caja-desktop-volumes-visible)"
+        explainText="$(string.org-mate-caja-desktop-volumes-visible_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        valueName="org.mate.caja.desktop.volumes-visible"
+        presentation="$(presentation.OrgMateCajaDesktopVolumesVisibleMachine-pr)">
+      <parentCategory ref="system:ALT_Caja_Settings_Mate" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+      <elements>
+        <boolean id="OrgMateCajaDesktopVolumesVisible_setter_blocker" key="Software\BaseALT\Policies\GSettingsLocks" valueName="org.mate.caja.desktop.volumes-visible">
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+        </boolean>
+      </elements>
+    </policy>
+
 </policyDefinitions>

@@ -165,6 +165,9 @@
 
 Пароль будет запрашивается только при использовании метода аутентификации «vnc», установленном в параметре «Методы аутентификации».</string>
 
+      <string id="org-mate-caja-desktop-volumes-visible">Отображение значков на присоединенные тома</string>
+      <string id="org-mate-caja-desktop-volumes-visible_help">Если включено, то будут отображаться значки, ссылающиеся на присоединенные тома.</string>
+
     </stringTable>
 
     <presentationTable>
@@ -377,6 +380,11 @@
           <label>Пароль:</label>
         </textBox>
         <checkBox refId="OrgGnomeVinoVncPassword_setter_blocker">Блокировать</checkBox>
+        <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
+      </presentation>
+
+      <presentation id="OrgMateCajaDesktopVolumesVisibleMachine-pr">
+        <checkBox refId="OrgMateCajaDesktopVolumesVisible_setter_blocker">Блокировать</checkBox>
         <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
       </presentation>
 

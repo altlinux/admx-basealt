@@ -99,6 +99,9 @@
       <string id="org-gnome-vino-vnc-password">Password for remote access</string>
       <string id="org-gnome-vino-vnc-password_help">The password which the remote user will be prompted for if the "vnc" authentication method is used. The password specified by the key is base64 encoded.  The special value of 'keyring' (which is not valid base64) means that the password is stored in the GNOME keyring.</string>
 
+      <string id="org-mate-caja-desktop-volumes-visible">Display icons on attached volumes</string>
+      <string id="org-mate-caja-desktop-volumes-visible_help">If enabled, icons referring to attached volumes will be displayed.</string>
+
     </stringTable>
 
     <presentationTable>
@@ -311,6 +314,11 @@
           <label>Password:</label>
         </textBox>
         <checkBox refId="OrgGnomeVinoVncPassword_setter_blocker">Lock</checkBox>
+        <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
+      </presentation>
+
+      <presentation id="OrgMateCajaDesktopVolumesVisibleMachine-pr">
+        <checkBox refId="OrgMateCajaDesktopVolumesVisible_setter_blocker">Lock</checkBox>
         <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
       </presentation>
 
