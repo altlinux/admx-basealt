@@ -165,8 +165,8 @@
 
 Пароль будет запрашивается только при использовании метода аутентификации «vnc», установленном в параметре «Методы аутентификации».</string>
 
-      <string id="org-mate-caja-desktop-volumes-visible">Отображение значков на присоединенные тома</string>
-      <string id="org-mate-caja-desktop-volumes-visible_help">Если включено, то будут отображаться значки, ссылающиеся на присоединенные тома.</string>
+      <string id="org-mate-caja-desktop-volumes-visible">Отображение иконок на присоединенные тома</string>
+      <string id="org-mate-caja-desktop-volumes-visible_help">Если включено, то будут отображаться иконки файловом менеджере, ссылающиеся на присоединенные тома. На рабочем столе данные иконки отображаться не будут.</string>
 
     </stringTable>
 
