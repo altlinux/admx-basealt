@@ -12,6 +12,7 @@
       <string id="BranchP7">Branch of Platfrom 7</string>
       <string id="BranchP8">Branch of Platfrom 8</string>
       <string id="BranchP9">Branch of Platfrom 9</string>
+      <string id="BranchP10">Branch of Platfrom 10</string>
 
       <string id="ALTWorkstation8">ALT Workstation 8 family</string>
       <string id="ALTWorkstation8_8">ALT Workstation 8</string>
@@ -54,7 +55,22 @@
 
       <string id="ALTServerV9">ALT Server Virtualization 9 family</string>
       <string id="ALTServerV9_9">ALT Server Virtualization 9</string>
-      <string id="ALTServerV9_91">ALT Server Virtualization 9.1</string>
+      <string id="ALTServerV9_91">ALT Server Virtualization 9.1</string>\
+
+      <string id="ALTWorkstation10">ALT Workstation 10 family</string>
+      <string id="ALTWorkstation10_10">ALT Workstation 10</string>
+
+      <string id="ALTWorkstationK10">ALT Workstation K 10 family</string>
+      <string id="ALTWorkstationK10_10">ALT Workstation K 10</string>
+
+      <string id="ALTEducation10">ALT Education 10 family</string>
+      <string id="ALTEducation10_10">ALT Education 10</string>
+
+      <string id="ALTServer10">ALT Server 10 family</string>
+      <string id="ALTServer10_10">ALT Server 10</string>
+
+      <string id="ALTServerV10">ALT Server Virtualization 10 family</string>
+      <string id="ALTServerV10_10">ALT Server Virtualization 10</string>
     </stringTable>
   </resources>
 </policyDefinitionResources>

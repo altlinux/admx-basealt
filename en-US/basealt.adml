@@ -12,6 +12,8 @@
       <string id="SUPPORTED_AltP8_Only">ALT Platform 8 only</string>
       <string id="SUPPORTED_AltP9">At least ALT Platform 9</string>
       <string id="SUPPORTED_AltP9_Only">ALT Platform 9 only</string>
+      <string id="SUPPORTED_AltP10">At least ALT Platform 10</string>
+      <string id="SUPPORTED_AltP10_Only">ALT Platform 10 only</string>
 
       <string id="ALT_System">ALT System</string>
       <string id="ALT_System_Help">Configuration of solutions based on ALT operating system.</string>
