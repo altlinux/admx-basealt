@@ -515,8 +515,8 @@ TCB — любой пользователь может изменить свой
       <string id="sssd-ad-gpo-access-control_disabled">Отключить</string>
       <string id="sssd-ad-gpo-access-control_default">По умолчанию</string>
 
-      <string id="sssd-ad-gpo-ignore-unreadable">Игнорирование политик, при их недоступности</string>
-      <string id="sssd-ad-gpo-ignore-unreadable_help">Эта политика определяет политику будут ли проигнорированы шаблоны (GPT)  для SSSD групповой политики (GPO), если они не читаются.
+      <string id="sssd-ad-gpo-ignore-unreadable">Игнорирование политик, при недоступности объекта GPO</string>
+      <string id="sssd-ad-gpo-ignore-unreadable_help">Эта настройка определяет будут ли проигнорированы политики SSSD, если недоступен шаблон (GPT) объекта групповой политики (GPO).
 Включить - игнорировать групповые политики, если их атрибуты в GPT не читаются для SSSD
 
 Отключить - запретить доступ пользователям SSSD AD, когда шаблоны групповой политики не читаются
@@ -713,8 +713,8 @@ SSSD — использовать метод проверки подлиннос
       <string id="write_public">Любой пользователь</string>
       <string id="write_restricted">Только wheel</string>
 
-      <string id="xdg-user-dirs">Сохранение пользовательских каталогов</string>
-      <string id="xdg-user-dirs_help">Эта политика определяет, работает ли функция сохранения списка пользовательских каталогов (xdg-user-dirs)
+      <string id="xdg-user-dirs">Стандартные каталоги в home</string>
+      <string id="xdg-user-dirs_help">Эта политика определяет, работает ли функция стандартных каталогов(Документы, Загрузки, Изобржения и т.д.) xdg-user-dirs в домашнем каталоге пользователя home
 
 Отключено — функция сохранения списка пользовательских каталогов отключена
 

@@ -206,7 +206,7 @@ Enabled - Turn the unit into enabled (execute the command systemctl enable netwo
 Disabled - Turn the unit into off state (execute the command systemctl disable network.service)
       </string>
 
-      <string id="NetworkManager-wait-online_service">Network Manager Wait Online</string>
+      <string id="NetworkManager-wait-online_service">Wait for a network connection on boot</string>
       <string id="NetworkManager-wait-online_service_help">This policy determines whether the systemd unit of the Network Manager Wait Online is enabled
 
 Not Configuration - Do not change unit systemd state
@@ -216,7 +216,7 @@ Enabled - Turn the unit into enabled (execute the command systemctl enable Netwo
 Disabled - Turn the unit into off state (execute the command systemctl disable NetworkManager-wait-online.service)
       </string>
 
-      <string id="NetworkManager_service">Network Manager</string>
+      <string id="NetworkManager_service">Network Manager service</string>
       <string id="NetworkManager_service_help">This policy determines whether the systemd unit of the Network Manager is enabled
 
 Not Configuration - Do not change unit systemd state

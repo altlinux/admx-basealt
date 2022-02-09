@@ -720,8 +720,8 @@ Only root — Only superuser (root) is permitted to run /usr/bin/write
       <string id="write_public">Any user</string>
       <string id="write_restricted">Only root</string>
 
-      <string id="xdg-user-dirs">Save user directories</string>
-      <string id="xdg-user-dirs_help">This policy determines whether the function to save the list of user directories works (xdg-user-dirs)
+      <string id="xdg-user-dirs">Standard directories in home</string>
+      <string id="xdg-user-dirs_help">This policy determines whether the standard directories feature (Documents, Downloads, Images, etc.) xdg-user-dirs works in the user's home directory
 
 Disabled — The function to save the list of user directories is disabled
 
