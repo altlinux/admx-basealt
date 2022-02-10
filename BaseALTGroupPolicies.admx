@@ -232,7 +232,7 @@
     </policy>
     <policy class="Machine" displayName="$(string.gp_local_users_group_users)" explainText="$(string.gp_local_users_group_users_help)" key="Software\BaseALT\Policies\Control" name="gpupdate-group-users" valueName="gpupdate-group-users">
       <parentCategory ref="ALT_GPLocalUsers"/>
-      <supportedOn ref="system:SUPPORTED_AltP9"/>
+      <supportedOn ref="system:SUPPORTED_AltP10"/>
       <enabledValue>
         <decimal value="1"/>
       </enabledValue>
