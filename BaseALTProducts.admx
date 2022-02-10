@@ -77,7 +77,6 @@
           <minorVersion name="ALTServerV10_10" displayName="$(string.ALTServerV10_10)" versionIndex="0"/>
         </majorVersion>
 
-        </majorVersion>
       </product>
     </products>
   </supportedOn>

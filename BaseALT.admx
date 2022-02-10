@@ -54,7 +54,6 @@
           <reference ref="products:Branch" minVersionIndex="2" maxVersionIndex="2"/>
         </or>
       </definition>
-    </definitions>
 
  <!--ALT Platform 10-->
       <definition name="SUPPORTED_AltP10" displayName="$(string.SUPPORTED_AltP10)">
