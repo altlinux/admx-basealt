@@ -40,22 +40,27 @@
       <string id="ALTWorkstation9">ALT Workstation 9 family</string>
       <string id="ALTWorkstation9_9">ALT Workstation 9</string>
       <string id="ALTWorkstation9_91">ALT Workstation 9.1</string>
+      <string id="ALTWorkstation9_92">ALT Workstation 9.2</string>
 
       <string id="ALTWorkstationK9">ALT Workstation K 9 family</string>
       <string id="ALTWorkstationK9_9">ALT Workstation K 9</string>
       <string id="ALTWorkstationK9_91">ALT Workstation K 9.1</string>
+      <string id="ALTWorkstationK9_92">ALT Workstation K 9.2</string>
 
       <string id="ALTEducation9">ALT Education 9 family</string>
       <string id="ALTEducation9_9">ALT Education 9</string>
       <string id="ALTEducation9_91">ALT Education 9.1</string>
+      <string id="ALTEducation9_92">ALT Education 9.2</string>
 
       <string id="ALTServer9">ALT Server 9 family</string>
       <string id="ALTServer9_9">ALT Server 9</string>
       <string id="ALTServer9_91">ALT Server 9.1</string>
+      <string id="ALTServer9_92">ALT Server 9.2</string>
 
       <string id="ALTServerV9">ALT Server Virtualization 9 family</string>
       <string id="ALTServerV9_9">ALT Server Virtualization 9</string>
       <string id="ALTServerV9_91">ALT Server Virtualization 9.1</string>
+      <string id="ALTServerV9_92">ALT Server Virtualization 9.2</string>
 
       <string id="ALTWorkstation10">ALT Workstation 10 family</string>
       <string id="ALTWorkstation10_10">ALT Workstation 10</string>
