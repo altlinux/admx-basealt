@@ -54,7 +54,24 @@
           <reference ref="products:Branch" minVersionIndex="2" maxVersionIndex="2"/>
         </or>
       </definition>
+
+ <!--ALT Platform 10-->
+      <definition name="SUPPORTED_AltP10" displayName="$(string.SUPPORTED_AltP10)">
+        <or>
+          <reference ref="products:BranchP10"/>
+          <reference ref="products:Branch" minVersionIndex="3"/>
+        </or>
+      </definition>
+
+      <!--ALT Platform 10 only-->
+      <definition name="SUPPORTED_AltP10_Only" displayName="$(string.SUPPORTED_AltP10_Only)">
+        <or>
+          <reference ref="products:BranchP10"/>
+          <reference ref="products:Branch" minVersionIndex="3" maxVersionIndex="3"/>
+        </or>
+      </definition>
     </definitions>
+
   </supportedOn>
   <categories>
     <category name="ALT_System" displayName="$(string.ALT_System)" explainText="$(string.ALT_System_Help)" />

@@ -16,6 +16,7 @@
           <minorVersion name="BranchP7" displayName="$(string.BranchP7)" versionIndex="0"/>
           <minorVersion name="BranchP8" displayName="$(string.BranchP8)" versionIndex="1"/>
           <minorVersion name="BranchP9" displayName="$(string.BranchP9)" versionIndex="2"/>
+          <minorVersion name="BranchP10" displayName="$(string.BranchP10)" versionIndex="3"/>
         </majorVersion>
         <majorVersion name="ALTWorkstation8" displayName="$(string.ALTWorkstation8)" versionIndex="2">
           <minorVersion name="ALTWorkstation8_8" displayName="$(string.ALTWorkstation8_8)" versionIndex="0"/>
@@ -43,23 +44,44 @@
         <majorVersion name="ALTWorkstation9" displayName="$(string.ALTWorkstation9)" versionIndex="6">
           <minorVersion name="ALTWorkstation9_9" displayName="$(string.ALTWorkstation9_9)" versionIndex="0"/>
           <minorVersion name="ALTWorkstation9_91" displayName="$(string.ALTWorkstation9_91)" versionIndex="1"/>
+          <minorVersion name="ALTWorkstation9_92" displayName="$(string.ALTWorkstation9_92)" versionIndex="2"/>
         </majorVersion>
         <majorVersion name="ALTWorkstationK9" displayName="$(string.ALTWorkstationK9)" versionIndex="7">
           <minorVersion name="ALTWorkstationK9_9" displayName="$(string.ALTWorkstationK9_9)" versionIndex="0"/>
           <minorVersion name="ALTWorkstationK9_91" displayName="$(string.ALTWorkstationK9_91)" versionIndex="1"/>
+          <minorVersion name="ALTWorkstationK9_92" displayName="$(string.ALTWorkstationK9_92)" versionIndex="2"/>
         </majorVersion>
         <majorVersion name="ALTEducation9" displayName="$(string.ALTEducation9)" versionIndex="8">
           <minorVersion name="ALTEducation9_9" displayName="$(string.ALTEducation9_9)" versionIndex="0"/>
           <minorVersion name="ALTEducation9_91" displayName="$(string.ALTEducation9_91)" versionIndex="1"/>
+          <minorVersion name="ALTEducation9_92" displayName="$(string.ALTEducation9_92)" versionIndex="2"/>
         </majorVersion>
         <majorVersion name="ALTServer9" displayName="$(string.ALTServer9)" versionIndex="9">
           <minorVersion name="ALTServer9_9" displayName="$(string.ALTServer9_9)" versionIndex="0"/>
           <minorVersion name="ALTServer9_91" displayName="$(string.ALTServer9_91)" versionIndex="1"/>
+          <minorVersion name="ALTServer9_92" displayName="$(string.ALTServer9_92)" versionIndex="2"/>
         </majorVersion>
         <majorVersion name="ALTServerV9" displayName="$(string.ALTServerV9)" versionIndex="10">
           <minorVersion name="ALTServerV9_9" displayName="$(string.ALTServerV9_9)" versionIndex="0"/>
           <minorVersion name="ALTServerV9_91" displayName="$(string.ALTServerV9_91)" versionIndex="1"/>
+          <minorVersion name="ALTServerV9_92" displayName="$(string.ALTServerV9_92)" versionIndex="2"/>
         </majorVersion>
+        <majorVersion name="ALTWorkstation10" displayName="$(string.ALTWorkstation10)" versionIndex="11">
+          <minorVersion name="ALTWorkstation10_10" displayName="$(string.ALTWorkstation10_10)" versionIndex="0"/>
+        </majorVersion>
+        <majorVersion name="ALTWorkstationK10" displayName="$(string.ALTWorkstationK10)" versionIndex="12">
+          <minorVersion name="ALTWorkstationK10_10" displayName="$(string.ALTWorkstationK10_10)" versionIndex="0"/>
+        </majorVersion>
+        <majorVersion name="ALTEducation10" displayName="$(string.ALTEducation10)" versionIndex="13">
+          <minorVersion name="ALTEducation10_10" displayName="$(string.ALTEducation10_10)" versionIndex="0"/>
+        </majorVersion>
+        <majorVersion name="ALTServer10" displayName="$(string.ALTServer10)" versionIndex="14">
+          <minorVersion name="ALTServer10_10" displayName="$(string.ALTServer10_10)" versionIndex="0"/>
+        </majorVersion>
+        <majorVersion name="ALTServerV10" displayName="$(string.ALTServerV10)" versionIndex="15">
+          <minorVersion name="ALTServerV10_10" displayName="$(string.ALTServerV10_10)" versionIndex="0"/>
+        </majorVersion>
+
       </product>
     </products>
   </supportedOn>
