@@ -78,14 +78,14 @@
       <string id="gpupdate_ntp_applier">NTP configuration support</string>
       <string id="gpupdate_ntp_applier_help">This policy enables group policy NTP applier feature.</string>
 
-      <string id="gp_local_users_group_users">Users outside the users group</string>
-      <string id="gp_local_users_group_users_help">Disable the application of group policies for users not in the users group.</string>
+      <string id="gp_local_users_group_users">Filter users by group</string>
+      <string id="gp_local_users_group_users_help">This policy allows to enable/disable group policies applying for users not in the «users» group.</string>
 
       <string id="gp_local_users_group_localusers">Enable local users</string>
-      <string id="gp_local_users_group_localusers_help">Enable group policies applying for local users.</string>
+      <string id="gp_local_users_group_localusers_help">This policy allows to enable/disable group policies applying for local users.</string>
 
       <string id="gp_local_users_system-uids">Filter users by uid</string>
-      <string id="gp_local_users_system-uids_help">Disable the application of group policies for users with uid less 500.</string>
+      <string id="gp_local_users_system-uids_help">This policy allows to disable/disable group policies applying for users with uid less 500.</string>
     </stringTable>
   </resources>
 </policyDefinitionResources>

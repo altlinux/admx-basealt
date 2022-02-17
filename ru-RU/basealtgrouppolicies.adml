@@ -78,14 +78,14 @@
       <string id="gpupdate_ntp_applier">Поддержка конфигурации NTP</string>
       <string id="gpupdate_ntp_applier_help">Эта политика включает поддержку конфигурирования NTP.</string>
 
-      <string id="gp_local_users_group_users">Пользователи вне группы users</string>
-      <string id="gp_local_users_group_users_help">Отключение применения групповых политик для пользователей, не входящих в группу users.</string>
+      <string id="gp_local_users_group_users">Фильтровать пользователей по группе</string>
+      <string id="gp_local_users_group_users_help">Эта политика позволяет включить/отключить применение групповых политик для пользователей, не входящих в группу «users».</string>
 
-      <string id="gp_local_users_group_localusers">Локальные пользователи</string>
-      <string id="gp_local_users_group_localusers_help">Применение групповых политик для локальных пользователей</string>
+      <string id="gp_local_users_group_localusers">Применять для локальных пользователей</string>
+      <string id="gp_local_users_group_localusers_help">Эта политика позволяет включить/отключить применение групповых политик для локальных пользователей.</string>
 
-      <string id="gp_local_users_system-uids">Пользователи с системными uids</string>
-      <string id="gp_local_users_system-uids_help">Отключение применения групповых политик для пользователей, с uid меньше 500</string>
+      <string id="gp_local_users_system-uids">Фильтровать пользователей с системными идентификаторами</string>
+      <string id="gp_local_users_system-uids_help">Эта политика позволяет включить/отключить применение групповых политик для пользователей, с uid меньше 500.</string>
 
     </stringTable>
   </resources>
