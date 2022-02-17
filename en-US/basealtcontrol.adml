@@ -213,12 +213,67 @@ Only root — Only superuser (root) can execute /usr/sbin/hddtemp
       <string id="hddtemp_wheelonly">Only wheel</string>
       <string id="hddtemp_restricted">Only root</string>
 
+
+      <string id="idle-activation-enabled">Enable org.mate.screensaver</string>
+      <string id="idle-activation-enabled_help">
+Enables desktop screen savers. If you disable this setting, screen savers do not run. Also, this setting disables the Screen Saver section of the Screen Saver dialog in the Personalization or Display Control Panel. As a result, users cannot change the screen saver options. If you do not configure it, this setting has no effect on the system. If you enable it, a screen saver runs, provided the following two conditions hold: First, a valid screen saver on the client is specified through the "Screen Saver executable name" setting or through Control Panel on the client computer. Second, the screen saver timeout is set to a nonzero value through the setting or Control Panel. Also, see the "Prevent changing Screen Saver" setting.
+      </string>
+      <string id="idle-delay">Screen saver timeout</string>
+      <string id="idle-delay_help">Specifies how much user idle time must elapse before the screen saver is launched.
+
+When configured, this idle time can be set from a minimum of 1 second to a maximum of 86,400 seconds, or 24 hours. If set to zero, the screen saver will not be started.
+
+This setting has no effect under any of the following circumstances:
+
+    - The setting is disabled or not configured.
+
+    - The wait time is set to zero.
+
+    - The "Enable Screen Saver" setting is disabled.
+
+    - Neither the "Screen saver executable name" setting nor the Screen Saver dialog of the client computer's Personalization or Display Control Panel specifies a valid existing screen saver program on the client.
+
+When not configured, whatever wait time is set on the client through the Screen Saver dialog in the Personalization or Display Control Panel is used. The default is 15 minutes.</string>
+
+      <string id="lock-enabled">Password protect the screen saver</string>
+      <string id="lock-enabled_help">Determines whether screen savers used on the computer are password protected.
+
+If you enable this setting, all screen savers are password protected. If you disable this setting, password protection cannot be set on any screen saver.
+
+This setting also disables the "Password protected" checkbox on the Screen Saver dialog in the Personalization or Display Control Panel, preventing users from changing the password protection setting.
+
+If you do not configure this setting, users can choose whether or not to set password protection on each screen saver.
+
+To ensure that a computer will be password protected, enable the "Enable Screen Saver" setting and specify a timeout via the "Screen Saver timeout" setting.
+
+Note: To remove the Screen Saver dialog, use the "Prevent changing Screen Saver" setting.</string>
+
+      <string id="Wallpaper">Desktop Wallpaper</string>
+      <string id="Wallpaper_Help">Specifies the desktop background ("wallpaper") displayed on all users' desktops.
+
+This setting lets you specify the wallpaper on users' desktops and prevents users from changing the image or its presentation. The wallpaper you specify can be stored in a bitmap (*.bmp) or JPEG (*.jpg) file.
+
+To use this setting, type the fully qualified path and name of the file that stores the wallpaper image. You can type a local path, such as /home/user/images/home.jpg or a UNC path, such as \\Server\Share\Corp.jpg. If the specified file is not available when the user logs on, no wallpaper is displayed. Users cannot specify alternative wallpaper. You can also use this setting to specify that the wallpaper image be centered, tiled, or stretched. Users cannot change this specification.
+
+If you disable this setting or do not configure it, no wallpaper is displayed. However, users can select the wallpaper of their choice.
+
+Also, see the "Allow only bitmapped wallpaper" in the same location, and the "Prevent changing wallpaper" setting in User Configuration\Administrative Templates\Control Panel.
+
+Note: This setting does not apply to remote desktop server sessions.</string>
+      <string id="WallpaperStyle_Center">Center</string>
+      <string id="WallpaperStyle_Stretch">Stretch</string>
+      <string id="WallpaperStyle_Tile">Tile</string>
+      <string id="WallpaperStyle_KeepAspect">Fit</string>
+      <string id="WallpaperStyle_CropToFit">Fill</string>
+
+
       <string id="lightdm-greeter-hide-users">Show or hide the list of known users in the greeter (LightDM)</string>
       <string id="lightdm-greeter-hide-users_help">This policy defines to list all users when logging in with LightDM (in greeter — on the Welcome/Logon screen of LightDM) or not
 
 Show — Show available users list in greeter
 
 Hide — Don't list all users in greeter
+
       </string>
       <string id="lightdm-greeter-hide-users_show">Show</string>
       <string id="lightdm-greeter-hide-users_hide">Hide</string>
@@ -816,6 +871,20 @@ Only root — Only superuser (root) is permitted to run /usr/bin/Xorg
         <dropdownList noSort="true" defaultItem="1" refId="hddtemp_setter">Who can use:
         </dropdownList>
       </presentation>
+      <presentation id="idle-delay">
+        <text>Number of seconds to wait to enable the screen saver</text>
+        <text> </text>
+        <decimalTextBox refId="ScreenSaverTimeOutFreqSpin" defaultValue="900" spinStep="60">Seconds:</decimalTextBox>
+      </presentation>
+      <presentation id="Wallpaper">
+        <textBox refId="WallpaperName">
+          <label>Wallpaper Name:</label>
+        </textBox>
+        <text>Example: Using a local path:   /home/user/images/home.jpg</text>
+        <text>Example: Using a UNC path:     \\Server\Share\Corp.jpg</text>
+        <dropdownList refId="WallpaperStyle" defaultItem="0">Wallpaper Style:</dropdownList>
+      </presentation>
+
       <presentation id="lightdm-greeter-hide-users">
         <dropdownList noSort="true" defaultItem="0" refId="lightdm-greeter-hide-users_setter">Select a mode:
         </dropdownList>
