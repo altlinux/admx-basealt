@@ -16,7 +16,7 @@
       <string id="gpupdate_global_experimental_help">Эта политика глобально включает экспериментальные механизмы применения групповых политик.</string>
 
       <string id="gpupdate_windows_mapping">Отображение Windows-ключей для групповых политик ALT</string>
-      <string id="gpupdate_windows_mapping_help">Эта политика глобально включает/выключает механизмы отображения некоторых Windows-ключей для применения групповых политик в опереационной системе ALT.</string>
+      <string id="gpupdate_windows_mapping_help">Эта политика глобально включает/выключает механизмы отображения некоторых Windows-ключей для применения групповых политик в операционной системе ALT.</string>
 
       <string id="gpupdate_control_applier">Системные средства Control</string>
       <string id="gpupdate_control_applier_help">Эта политика включает применение механизма групповых политик Control.</string>
