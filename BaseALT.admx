@@ -127,5 +127,11 @@
     <category name="ALT_Remote_Access_Vino_Gnome" displayName="$(string.ALT_Remote_Access_Vino_Gnome)" explainText="$(string.ALT_Remote_Access_Vino_Gnome_Help)">
       <parentCategory ref="ALT_System" />
     </category>
+    <category name="ALT_Windows_Manager_Marco" displayName="$(string.ALT_Windows_Manager_Marco)" explainText="$(string.ALT_Windows_Manager_Marco_Help)">
+      <parentCategory ref="ALT_Settings_Mate" />
+    </category>
+    <category name="ALT_Windows_Manager_Marco_Keyboard" displayName="$(string.ALT_Windows_Manager_Marco_Keyboard)" explainText="$(string.ALT_Windows_Manager_Marco_Keyboard_Help)">
+      <parentCategory ref="ALT_Windows_Manager_Marco" />
+    </category>
   </categories>
 </policyDefinitions>
