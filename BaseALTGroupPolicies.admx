@@ -234,30 +234,30 @@
       <parentCategory ref="ALT_GPLocalUsers"/>
       <supportedOn ref="system:SUPPORTED_AltP10"/>
       <enabledValue>
-        <decimal value="1"/>
+        <string>enabled</string>
       </enabledValue>
       <disabledValue>
-        <decimal value="0"/>
+        <string>disabled</string>
       </disabledValue>
     </policy>
     <policy class="Machine" displayName="$(string.gp_local_users_group_localusers)" explainText="$(string.gp_local_users_group_localusers_help)" key="Software\BaseALT\Policies\Control" name="gpupdate-localusers" valueName="gpupdate-localusers">
       <parentCategory ref="ALT_GPLocalUsers"/>
-      <supportedOn ref="system:SUPPORTED_AltP9"/>
+      <supportedOn ref="system:SUPPORTED_AltP10"/>
       <enabledValue>
-        <decimal value="1"/>
+        <string>enabled</string>
       </enabledValue>
       <disabledValue>
-        <decimal value="0"/>
+        <string>disabled</string>
       </disabledValue>
     </policy>
     <policy class="Machine" displayName="$(string.gp_local_users_system-uids)" explainText="$(string.gp_local_users_system-uids_help)" key="Software\BaseALT\Policies\Control" name="gpupdate-system-uids" valueName="gpupdate-system-uids">
       <parentCategory ref="ALT_GPLocalUsers"/>
-      <supportedOn ref="system:SUPPORTED_AltP9"/>
+      <supportedOn ref="system:SUPPORTED_AltP10"/>
       <enabledValue>
-        <decimal value="1"/>
+        <string>enabled</string>
       </enabledValue>
       <disabledValue>
-        <decimal value="0"/>
+        <string>disabled</string>
       </disabledValue>
     </policy>
   </policies>
