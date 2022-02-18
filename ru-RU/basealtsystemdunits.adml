@@ -207,7 +207,7 @@
 Отключено — перевести юнит в состояние «выключено» (выполнить команду systemctl disable network.service)
       </string>
 
-      <string id="NetworkManager-wait-online_service">Ожидание подключения сети при загрузке</string>
+      <string id="NetworkManager-wait-online_service">Ожидание Network Manager'ом сети при загрузке</string>
       <string id="NetworkManager-wait-online_service_help">Эта политика определяет, включен ли systemd юнит «Network Manager Wait Online»
 
 Не задана — не изменять системное состояние юнита
