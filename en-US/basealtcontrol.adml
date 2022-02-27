@@ -472,7 +472,7 @@ Enable — Password authentication support on the OpenSSH server is enabled
 Disable — Password authentication support on the OpenSSH server is disables
       </string>
 
-      <string id="sshd-permit-root-login">Superuser authentication on OpenSSH server</string>
+      <string id="sshd-permit-root-login">OpenSSH authentication of root by password</string>
       <string id="sshd-permit-root-login_help">This policy defines authentication modes for the superuser (root) on the OpenSSH server
 
 Without password — The superuser (root) is only allowed password-free authentication on the OpenSSH server
