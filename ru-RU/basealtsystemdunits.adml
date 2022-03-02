@@ -207,7 +207,7 @@
 Отключено — перевести юнит в состояние «выключено» (выполнить команду systemctl disable network.service)
       </string>
 
-      <string id="NetworkManager-wait-online_service">Сетевой менеджер (Network Manager), ожидающий в сети</string>
+      <string id="NetworkManager-wait-online_service">Ожидание Network Manager'ом сети при загрузке</string>
       <string id="NetworkManager-wait-online_service_help">Эта политика определяет, включен ли systemd юнит «Network Manager Wait Online»
 
 Не задана — не изменять системное состояние юнита
@@ -217,7 +217,7 @@
 Отключено — включить устройство в выключенное состояние (выполнить команду systemctl disable NetworkManager-wait-online.service)
       </string>
 
-      <string id="NetworkManager_service">Сетевой менеджер (Network Manager)</string>
+      <string id="NetworkManager_service">Управление службой Network Manager</string>
       <string id="NetworkManager_service_help">Эта политика определяет, включен ли systemd юнит Network Manager
 
 Не задана — не изменять системное состояние юнита
@@ -357,7 +357,7 @@
 Отключено — перевести юнит в состояние «выключено» (выполнить команду systemctl disable postfix.service)
        </string>
 
-       <string id="rpcbind_service">Сервис отображения универсальных адресов и номеров программ RPC</string>
+       <string id="rpcbind_service">Отображение адресов и номеров RPC</string>
        <string id="rpcbind_service_help">Эта политика определяет, включен ли systemd юнит RPC bind
 
 Не задана — не изменять системное состояние юнита

@@ -145,7 +145,7 @@ Compatibility mode — Compatibility mode, should not be used
       <string id="dvd_rw-mediainfo_restricted">Only root</string>
       <string id="dvd_rw-mediainfo_legacy">Compatibility mode</string>
 
-      <string id="fusermount">Access rights to FUSE filesystems mount tools</string>
+      <string id="fusermount">Access to FUSE filesystems mount</string>
       <string id="fusermount_help">This policy defines access permissions for FUSE file system mounts (execution of programs  /usr/bin/fusermount and /usr/bin/fusermount3)
 
 Any user — Any user can execute /usr/bin/fusermount and /usr/bin/fusermount3
@@ -213,7 +213,7 @@ Only root — Only superuser (root) can execute /usr/sbin/hddtemp
       <string id="hddtemp_wheelonly">Only wheel</string>
       <string id="hddtemp_restricted">Only root</string>
 
-      <string id="lightdm-greeter-hide-users">Show or hide the list of known users in the greeter (LightDM)</string>
+      <string id="lightdm-greeter-hide-users">List of users in the greeter (LightDM)</string>
       <string id="lightdm-greeter-hide-users_help">This policy defines to list all users when logging in with LightDM (in greeter — on the Welcome/Logon screen of LightDM) or not
 
 Show — Show available users list in greeter
@@ -321,7 +321,7 @@ Only root — Only superuser (root) is permitted to run /sbin/mount.nfs
       <string id="nfsmount_wheelonly">Only wheel</string>
       <string id="nfsmount_restricted">Only root</string>
 
-      <string id="pam_mktemp">Create individual temporary directories for users</string>
+      <string id="pam_mktemp">Create temporary directories</string>
       <string id="pam_mktemp_help">This policy determines whether to create individual temporary directories for users
 
 Disabled — Disable the creation of individual temporary directories for users
@@ -424,31 +424,31 @@ Local — rpcbind will only accept local requests
       <string id="rpcbind_local">Local</string>
 
       <string id="sftp">SFTP support on OpenSSH server</string>
-      <string id="sftp_help">This policy defines SFTP support on OpenSSH server
+      <string id="sftp_help">This policy defines SFTP support on the OpenSSH server
 
 Disabled — Disable SFTP support on the OpenSSH server
 
 Enabled — Enable SFTP support on the OpenSSH server
       </string>
 
-      <string id="sshd-allow-groups">Enabling Allowed Groups for SSH Remote Access</string>
-      <string id="sshd-allow-groups_help">This policy enables list of allowed groups for SSH Remote Access
+      <string id="sshd-allow-groups">Group access control to OpenSSH server</string>
+      <string id="sshd-allow-groups_help">This policy enables access control by the list of allowed groups on the OpenSSH server
 
-Disabled — The list of allowed groups for SSH Remote Access is disabled
+Disabled — Remote access control to the OpenSSH server is disabled
 
-Enabled — The list of allowed groups for SSH Remote Access is enabled
+Enabled — Remote access control to the OpenSSH server is enabled
       </string>
 
-      <string id="sshd-allow-groups-list">Switching Allowed Groups variants for SSH Remote Access</string>
-      <string id="sshd-allow-groups-list_help">This policy determines which groups are included in the list of allowed groups for SSH Remote Access
+      <string id="sshd-allow-groups-list">Allowed groups for access to OpenSSH server</string>
+      <string id="sshd-allow-groups-list_help">This policy determines which groups are included in the list of allowed groups for the remote access service to the OpenSSH server
 
-All users - Allow SSH Access to groups wheel and users
+All users - Allow access to the OpenSSH server by «wheel» and «users» groups
 
-Administrators and remote users - Allow SSH Access to groups wheel and remote
+Administrators and remote users - Allow access to the OpenSSH server by «wheel» and «remote» groups
 
-Administrators only - Allow SSH Access to group wheel only
+Administrators only - Allow access to the OpenSSH server by «wheel» group only
 
-Remote users only - Allow SSH Access to group remote only
+Remote users only - Allow access to the OpenSSH server by «remote» group only
       </string>
 
       <string id="sshd-allow-groups-list_users">All users</string>
@@ -456,49 +456,48 @@ Remote users only - Allow SSH Access to group remote only
       <string id="sshd-allow-groups-list_wheelonly">Administrators only</string>
       <string id="sshd-allow-groups-list_remoteonly">Remote users only</string>
 
-      <string id="sshd-gssapi-auth">GSS API authorization support on sshd server</string>
-      <string id="sshd-gssapi-auth_help">This policy defines the functionality of authorization support using the GSS API on the sshd server
+      <string id="sshd-gssapi-auth">Support GSSAPI authentication on OpenSSH server</string>
+      <string id="sshd-gssapi-auth_help">This policy enables support for authentication using GSSAPI on the OpenSSH server
 
-Enable — GSS API support on sshd server is enabled
+Enable — GSSAPI support on the OpenSSH server is enabled
 
-Disable — GSS API support on sshd server is disabled
+Disable — GSSAPI support on the OpenSSH server is disabled
        </string>
 
-      <string id="sshd-password-auth">Password authorization support on sshd server</string>
-      <string id="sshd-password-auth_help">This policy defines the functionality of password authorization support on the sshd server
+      <string id="sshd-password-auth">Password authentication on OpenSSH server</string>
+      <string id="sshd-password-auth_help">This policy enables support for password authentication on the OpenSSH server
 
+Enable — Password authentication support on the OpenSSH server is enabled
 
-Enable — Password authorization support for sshd is enabled
-
-Disable — Password authorization support for sshd client is disabled
+Disable — Password authentication support on the OpenSSH server is disables
       </string>
 
-      <string id="sshd-permit-root-login">Password authorization support on sshd server for root</string>
-      <string id="sshd-permit-root-login_help">This policy defines the functionality of password authorization support for root on the sshd server
+      <string id="sshd-permit-root-login">OpenSSH authentication of root by password</string>
+      <string id="sshd-permit-root-login_help">This policy defines authentication modes for the superuser (root) on the OpenSSH server
 
-Without password — Only non password login for root via SSH is enabled
+Without password — The superuser (root) is only allowed password-free authentication on the OpenSSH server
 
-Enabled — Login for root via SSH is enabled
+Enabled — The superuser (root) is allowed to authenticate on the OpenSSH server
 
-Disabled — Login for root via SSH is disabled
+Disabled — The superuser (root) is denied authentication on the OpenSSH server
 
-Default — Reset root login setting to the package default
+Default — Reset the authentication mode for the superuser (root) to the package default
       </string>
-      <string id="sshd-permit-root-login_without_password">Only without password</string>
+      <string id="sshd-permit-root-login_without_password">Without password only</string>
       <string id="sshd-permit-root-login_enabled">Enabled</string>
       <string id="sshd-permit-root-login_disabled">Disabled</string>
       <string id="sshd-permit-root-login_default">Default</string>
 
-      <string id="ssh-gssapi-auth">GSS API authorization support on SSH client</string>
-      <string id="ssh-gssapi-auth_help">This policy defines the functionality of authorization support using the GSS API on the sshd client
+      <string id="ssh-gssapi-auth">Authentication of OpenSSH clients via GSSAPI</string>
+      <string id="ssh-gssapi-auth_help">This policy defines the functionality to support authentication of OpenSSH clients using via GSSAPI
 
-Enable — GSS API support on sshd client is enabled
+Enable — GSSAPI authentication support for OpenSSH clients is enabled
 
-Disable — GSS API support on sshd client is disabled
+Disable — GSSAPI authentication support for OpenSSH clients is disabled
       </string>
 
-      <string id="sssd-ad-gpo-access-control">SSSD option for GPO-based access control</string>
-      <string id="sssd-ad-gpo-access-control_help">This policy defines SSSD option specifies the operation mode for GPO-based access control functionality
+      <string id="sssd-ad-gpo-access-control">SSSD access control via Group Policies</string>
+      <string id="sssd-ad-gpo-access-control_help">This policy determines in which mode access control in SSSD will be performed based on Active Directory group policies (GPO)
 
 Enforced — SSSD GPO-based access control rules are evaluated and enforced
 
@@ -506,49 +505,49 @@ Permissived — SSSD GPO-based access control rules are evaluated, but not enfor
 
 Disabled — SSSD GPO-based access control rules are neither evaluated nor enforced
 
-Default — SSSD GPO-based access control rules are evaluated and enforced
+Default — SSSD GPO-based access control reset to the default value in the package
       </string>
       <string id="sssd-ad-gpo-access-control_enforced">Enforced</string>
       <string id="sssd-ad-gpo-access-control_permissived">Permissived</string>
       <string id="sssd-ad-gpo-access-control_disabled">Disabled</string>
       <string id="sssd-ad-gpo-access-control_default">Default</string>
 
-      <string id="sssd-ad-gpo-ignore-unreadable">SSSD option for ignore unreadable GPO's</string>
-      <string id="sssd-ad-gpo-ignore-unreadable_help">This policy defines ignore policy for SSSD if GPO (group policy AD object) templates (GPT) are not readable for SSSD
+      <string id="sssd-ad-gpo-ignore-unreadable">Ignoring policies when GPT are unavailable</string>
+      <string id="sssd-ad-gpo-ignore-unreadable_help">This setting determines whether access control rules in SSSD based on group policies will be ignored if any template (GPT) of the Group Policy Object (GPO) is not available
 
-Enabled — Ignore group policies if theirs attributes in GPT are not readable for SSSD
+Enabled — Ignore access control rules via group policies if group policy templates are not available for SSSD
 
-Disabled — Deny access SSSD AD users when group policy templates are not readable
+Disabled — Deny access SSSD AD users when group policy templates are not unavailable
 
-Default — Deny access SSSD AD users when group policy templates are not readable
+Default — The policy ignoring setting, when group policy templates are unavailable, is reset to the default value in the package
 
       </string>
       <string id="sssd-ad-gpo-ignore-unreadable_enabled">Enabled</string>
       <string id="sssd-ad-gpo-ignore-unreadable_disabled">Disabled</string>
       <string id="sssd-ad-gpo-ignore-unreadable_default">Default</string>
 
-      <string id="sssd-cache-credentials">SSSD option for user password is cached</string>
-      <string id="sssd-cache-credentials_help">This policy determines SSSD user credentials are also cached in the local LDB cache
+      <string id="sssd-cache-credentials">Caching user credentials</string>
+      <string id="sssd-cache-credentials_help">This policy determines whether the credentials of remote users will be stored in the local SSSD cache
 
-Enabled — SSSD users credentials cached in the local LDB cache is enabled
+Enabled — Storing user credentials in the local SSSD cache is enabled
 
-Disabled — SSSD users credentials cached in the local LDB cache is disabled
+Disabled — Storing user credentials in the local SSSD cache is disabled
 
-Default — SSSD users credentials cached in the local LDB cache is disabled
+Default — The setting for storing user credentials in the local SSSD cache reset to the default value in the package
 
       </string>
       <string id="sssd-cache-credentials_enabled">Enabled</string>
       <string id="sssd-cache-credentials_disabled">Disabled</string>
       <string id="sssd-cache-credentials_default">Default</string>
 
-      <string id="sssd-drop-privileges">Drop the user's privileges</string>
-      <string id="sssd-drop-privileges_help">SSSD option drops the user's privileges to where appropriate to avoid running as the root user.
+      <string id="sssd-drop-privileges">SSSD privilege mode</string>
+      <string id="sssd-drop-privileges_help">This policy allows to reset the rights of the SSSD service to avoid working on behalf of the superuser (root)
 
-Privileged — SSSD running from privileged user (as the root user)
+Privileged — The SSSD service is running on behalf of a privileged superuser (root)
 
-Unprivileged — SSSD running from unprivileged user (as the _sssd user)
+Unprivileged — The SSSD service is running on behalf of an unprivileged user (_sssd)
 
-Default — SSSD running from default user (different in various versions)
+Default — The SSSD privilege mode is set by default in the packager
 
       </string>
       <string id="sssd-drop-privileges_privileged">Privileged</string>
@@ -556,13 +555,13 @@ Default — SSSD running from default user (different in various versions)
       <string id="sssd-drop-privileges_default">Default</string>
 
       <string id="sssd-dyndns-update">Update forward DNS record</string>
-      <string id="sssd-dyndns-update_help">This policy defines SSSD option specifies the automatically update DNS record (secured using GSS-TSIG) together with the IP address of this client
+      <string id="sssd-dyndns-update_help">This policy allows to enable automatic updating of DNS records (protected with GSS-TSIG) with the client's IP address via SSSD
 
-Enabled — Automatically update DNS record together with the IP address using SSSD is enabled
+Enabled — Automatic client DNS record update via SSSD is enabled
 
-Disabled — Automatically update DNS record together with the IP address using SSSD is disabled
+Disabled — Automatic client DNS record update via SSSD is disabled
 
-Default — Automatically update DNS record together with the IP address using SSSD by default is disabled
+Default — The configuration of automatic updating of client DNS records via SSSD is set by default in the package
 
       </string>
       <string id="sssd-dyndns-update_enabled">Enabled</string>
@@ -570,13 +569,13 @@ Default — Automatically update DNS record together with the IP address using S
       <string id="sssd-dyndns-update_default">Default</string>
 
       <string id="sssd-dyndns-update-ptr">Update reverse DNS record</string>
-      <string id="sssd-dyndns-update-ptr_help">This policy defines SSSD option specifies the automatically update DNS record for forward zone (secured using GSS-TSIG) together with the PTR record for reverse zone of this client, when dyndns update in enabled only
+      <string id="sssd-dyndns-update-ptr_help">This policy determines whether the client PTR record (protected with GSS-TSIG) will be updated. This policy only works if "Update forward DNS record" is enabled.
 
-Enabled — Automatically update DNS record together with the PTR record for reverse zone using SSSD is enabled
+Enabled — Automatic DNS update of the reverse zone record via SSSD is enabled
 
-Disabled — Automatically update DNS record together with the PTR record for reverse zone using SSSD is disabled
+Disabled — Automatic DNS update of the reverse zone record via SSSD is disabled
 
-Default — Automatically update DNS record together with the PTR record for reverse zone using SSSD by default is enabled
+Default — The configuration of automatic updating of client PTR record for reverse zone records using SSSD is set by default in the package
 
       </string>
       <string id="sssd-dyndns-update-ptr_enabled">Enabled</string>
@@ -588,7 +587,7 @@ Default — Automatically update DNS record together with the PTR record for rev
 
 Any user — Any user is permitted to run /bin/su
 
-Wheel superusers — Any user has the right to run /bin/su, but only users of the «wheel» group can elevate privileges to the superuser
+Wheel superusers — Any user has the right to run /bin/su, but only users of the «wheel» group can elevate privileges to the superuser (root)
 
 Only wheel — Only users of the «wheel» group are allowed to run /bin/su
 
@@ -635,7 +634,7 @@ Only root — Only superuser (root) is permitted to run /usr/bin/sudoreplay
       <string id="sudoreplay_wheelonly">Only wheel</string>
       <string id="sudoreplay_restricted">Only root</string>
 
-      <string id="sudowheel">Request sudo password for users of the «wheel» group</string>
+      <string id="sudowheel">Request sudo password for «wheel» group</string>
       <string id="sudowheel_help">This policy determines whether to make a sudo password request for users of the «wheel» group
 
 Disabled — Disable sudo password request for users of the «wheel» group
@@ -694,7 +693,7 @@ Only root — Only superuser (root) is permitted to use VirtualBox
       <string id="virtualbox_vboxusers">Group vboxusers</string>
       <string id="virtualbox_restricted">Only root</string>
 
-      <string id="wireshark-capture">Functionality and permissions for wireshark-capture (dumpcap)</string>
+      <string id="wireshark-capture">Permissions for wireshark-capture (dumpcap)</string>
       <string id="wireshark-capture_help">This policy defines the functionality (modes) of permission for wireshark-capture (/usr/bin/dumpcap)
 
 Any user — Any user has the right to run /usr/bin/dumpcap, traffic capture is enabled
@@ -720,8 +719,8 @@ Only root — Only superuser (root) is permitted to run /usr/bin/write
       <string id="write_public">Any user</string>
       <string id="write_restricted">Only root</string>
 
-      <string id="xdg-user-dirs">Function for saving the list of user directories</string>
-      <string id="xdg-user-dirs_help">This policy determines whether the function to save the list of user directories works (xdg-user-dirs)
+      <string id="xdg-user-dirs">Standard directories in home</string>
+      <string id="xdg-user-dirs_help">This policy determines whether the standard directories feature (Documents, Downloads, Images, etc.) xdg-user-dirs works in the user's home directory
 
 Disabled — The function to save the list of user directories is disabled
 
