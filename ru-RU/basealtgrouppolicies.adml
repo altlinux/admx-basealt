@@ -12,6 +12,9 @@
       <string id="ALT_GPUpdateAppliers">Механизмы GPUpdate</string>
       <string id="ALT_GPUpdateAppliers_Help">Механизмы применения групповых политик.</string>
 
+      <string id="ALT_GPLocalUsers">Групповые политики для локальных пользователей.</string>
+      <string id="ALT_GPLocalUsers_Help">Управление применением групповых политик к локальным пользователям.</string>
+
       <string id="gpupdate_global_experimental">Экспериментальные групповые политики</string>
       <string id="gpupdate_global_experimental_help">Эта политика глобально включает экспериментальные механизмы применения групповых политик.</string>
 
@@ -74,6 +77,16 @@
 
       <string id="gpupdate_ntp_applier">Поддержка конфигурации NTP</string>
       <string id="gpupdate_ntp_applier_help">Эта политика включает поддержку конфигурирования NTP.</string>
+
+      <string id="gp_local_users_group_users">Фильтровать пользователей по группе</string>
+      <string id="gp_local_users_group_users_help">Эта политика позволяет включить/отключить применение групповых политик для пользователей, не входящих в группу «users».</string>
+
+      <string id="gp_local_users_group_localusers">Применять для локальных пользователей</string>
+      <string id="gp_local_users_group_localusers_help">Эта политика позволяет включить/отключить применение групповых политик для локальных пользователей.</string>
+
+      <string id="gp_local_users_system-uids">Фильтровать пользователей с системными идентификаторами</string>
+      <string id="gp_local_users_system-uids_help">Эта политика позволяет включить/отключить применение групповых политик для пользователей, с uid меньше 500.</string>
+
     </stringTable>
   </resources>
 </policyDefinitionResources>

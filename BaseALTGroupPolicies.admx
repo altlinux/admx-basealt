@@ -14,6 +14,9 @@
     <category name="ALT_GPUpdateAppliers" displayName="$(string.ALT_GPUpdateAppliers)" explainText="$(string.ALT_GPUpdateAppliers_Help)">
       <parentCategory ref="ALT_GroupPolicies" />
     </category>
+    <category name="ALT_GPLocalUsers" displayName="$(string.ALT_GPLocalUsers)"  explainText="$(string.ALT_GPLocalUsers_Help)" >
+      <parentCategory ref="ALT_GroupPolicies" />
+    </category>
   </categories>
 
   <policies>
@@ -225,6 +228,36 @@
       </enabledValue>
       <disabledValue>
         <decimal value="0"/>
+      </disabledValue>
+    </policy>
+    <policy class="Machine" displayName="$(string.gp_local_users_group_users)" explainText="$(string.gp_local_users_group_users_help)" key="Software\BaseALT\Policies\Control" name="gpupdate-group-users" valueName="gpupdate-group-users">
+      <parentCategory ref="ALT_GPLocalUsers"/>
+      <supportedOn ref="system:SUPPORTED_AltP10"/>
+      <enabledValue>
+        <string>enabled</string>
+      </enabledValue>
+      <disabledValue>
+        <string>disabled</string>
+      </disabledValue>
+    </policy>
+    <policy class="Machine" displayName="$(string.gp_local_users_group_localusers)" explainText="$(string.gp_local_users_group_localusers_help)" key="Software\BaseALT\Policies\Control" name="gpupdate-localusers" valueName="gpupdate-localusers">
+      <parentCategory ref="ALT_GPLocalUsers"/>
+      <supportedOn ref="system:SUPPORTED_AltP10"/>
+      <enabledValue>
+        <string>enabled</string>
+      </enabledValue>
+      <disabledValue>
+        <string>disabled</string>
+      </disabledValue>
+    </policy>
+    <policy class="Machine" displayName="$(string.gp_local_users_system-uids)" explainText="$(string.gp_local_users_system-uids_help)" key="Software\BaseALT\Policies\Control" name="gpupdate-system-uids" valueName="gpupdate-system-uids">
+      <parentCategory ref="ALT_GPLocalUsers"/>
+      <supportedOn ref="system:SUPPORTED_AltP10"/>
+      <enabledValue>
+        <string>enabled</string>
+      </enabledValue>
+      <disabledValue>
+        <string>disabled</string>
       </disabledValue>
     </policy>
   </policies>
