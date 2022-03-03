@@ -277,7 +277,7 @@
         <decimal value="0"/>
       </disabledValue>
     </policy>
-    <policy class="Machine" displayName="$(string.org_cups_cupsd_service)" explainText="$(string.org_cups_cupsd_service_help)" key="Software\BaseALT\Policies\SystemdUnits" valueName="org_cups_cupsd.service" name="org_cups_cupsd.service">
+    <policy class="Machine" displayName="$(string.cups_service)" explainText="$(string.cups_service_help)" key="Software\BaseALT\Policies\SystemdUnits" valueName="cups.service" name="cups.service">
       <parentCategory ref="system:ALT_Systemd"/>
       <supportedOn ref="system:SUPPORTED_AltP9"/>
       <enabledValue>

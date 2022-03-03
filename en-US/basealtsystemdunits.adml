@@ -276,8 +276,8 @@ Enabled - Turn the unit into enabled (execute the command systemctl enable openc
 Disabled - Turn the unit into off state (execute the command systemctl disable openct.service)
       </string>
 
-      <string id="org_cups_cupsd_service">CUPS Scheduler</string>
-      <string id="org_cups_cupsd_service_help">This policy determines whether the systemd unit of the Service CUPS (Scheduler) is enabled
+      <string id="cups_service">CUPS Scheduler</string>
+      <string id="cups_service_help">This policy determines whether the systemd unit of the Service CUPS (Scheduler) is enabled
 
 Not Configuration - Do not change unit systemd state
 

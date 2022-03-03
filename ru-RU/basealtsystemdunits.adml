@@ -277,8 +277,8 @@
 Отключено — перевести юнит в состояние «выключено» (выполнить команду systemctl disable openct.service)
       </string>
 
-      <string id="org_cups_cupsd_service">Планировщик CUPS</string>
-      <string id="org_cups_cupsd_service_help">Эта политика определяет, включен ли systemd юнит Service CUPS (планировщик)
+      <string id="cups_service">Планировщик CUPS</string>
+      <string id="cups_service_help">Эта политика определяет, включен ли systemd юнит Service CUPS (планировщик)
 
 Не задана — не изменять системное состояние юнита
 
