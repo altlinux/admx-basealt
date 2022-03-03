@@ -81,7 +81,9 @@
         <majorVersion name="ALTServerV10" displayName="$(string.ALTServerV10)" versionIndex="15">
           <minorVersion name="ALTServerV10_10" displayName="$(string.ALTServerV10_10)" versionIndex="0"/>
         </majorVersion>
-
+        <majorVersion name="SimplyLinux10" displayName="$(string.SimplyLinux10)" versionIndex="16">
+          <minorVersion name="SimplyLinux10_10" displayName="$(string.SimplyLinux10_10)" versionIndex="0"/>
+        </majorVersion>
       </product>
     </products>
   </supportedOn>

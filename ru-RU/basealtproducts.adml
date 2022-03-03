@@ -76,6 +76,9 @@
 
       <string id="ALTServerV10">Семейство Альт Сервер Виртуализация 10</string>
       <string id="ALTServerV10_10">Альт Сервер Виртуализация 10</string>
+
+      <string id="SimplyLinux10">Семейство Симпли Линукс 10</string>
+      <string id="SimplyLinux10_10">Симпли Линукс 10</string>
     </stringTable>
   </resources>
 </policyDefinitionResources>

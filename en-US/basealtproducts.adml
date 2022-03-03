@@ -76,6 +76,9 @@
 
       <string id="ALTServerV10">ALT Server Virtualization 10 family</string>
       <string id="ALTServerV10_10">ALT Server Virtualization 10</string>
+
+      <string id="SimplyLinux10">Simply Linux 10 family</string>
+      <string id="SimplyLinux10_10">Simply Linux 10</string>
     </stringTable>
   </resources>
 </policyDefinitionResources>
