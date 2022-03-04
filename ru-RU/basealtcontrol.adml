@@ -711,7 +711,7 @@ SSSD — использовать метод проверки подлиннос
 Только root — только суперпользователю (root) разрешено запускать /usr/bin/write
       </string>
       <string id="write_public">Любой пользователь</string>
-      <string id="write_restricted">Только wheel</string>
+      <string id="write_restricted">Только root</string>
 
       <string id="xdg-user-dirs">Стандартные каталоги в home</string>
       <string id="xdg-user-dirs_help">Эта политика определяет, работает ли функция стандартных каталогов(Документы, Загрузки, Изобржения и т.д.) xdg-user-dirs в домашнем каталоге пользователя home
