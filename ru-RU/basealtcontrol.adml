@@ -288,13 +288,13 @@
 
 Только wheel — пользователям из группы «wheel» разрешено запускать /bin/mount и /bin/umount
 
-Непривилегированный пользователь — любой пользователь может запускать /bin/mount и /bin/umount для непривилегированных действий
+Непривилегированный режим — любой пользователь может запускать /bin/mount и /bin/umount для непривилегированных действий (не от имени root)
 
 Только root — только суперпользователю (root) разрешено запускать /bin/mount и /bin/umount
       </string>
       <string id="mount_public">Любой пользователь</string>
       <string id="mount_wheelonly">Только wheel</string>
-      <string id="mount_unprivileged">Непривилегированный</string>
+      <string id="mount_unprivileged">Непривилегированный режим</string>
       <string id="mount_restricted">Только root</string>
 
       <string id="newgrp">Разрешения для /usr/bin/newgrp</string>
@@ -446,17 +446,17 @@ TCB — любой пользователь может изменить свой
 
 Все пользователи — разрешить доступ к серверу OpenSSH для групп «wheel» и «users»
 
-Администраторы и пользователи удалённого доступа — разрешить доступ к серверу OpenSSH для групп «wheel» и «remote»
+Группы wheel и remote — разрешить доступ к серверу OpenSSH для групп администраторов и пользователей удалённого доступа («wheel и »«remote»)
 
-Только администраторы — разрешить доступ к серверу OpenSSH только для группы «wheel»
+Только wheel — разрешить доступ к серверу OpenSSH только для группы администраторов («wheel»)
 
-Только пользователи удалённого доступа — разрешить доступ к серверу OpenSSH только для группы «remote»
+Только remote — разрешить доступ к серверу OpenSSH только для группы пользователи удалённого доступа («remote»)
       </string>
 
       <string id="sshd-allow-groups-list_users">Все пользователи</string>
-      <string id="sshd-allow-groups-list_remote">Администраторы и пользователи удалённого доступа</string>
-      <string id="sshd-allow-groups-list_wheelonly">Только администраторы</string>
-      <string id="sshd-allow-groups-list_remoteonly">Только пользователи удалённого доступа</string>
+      <string id="sshd-allow-groups-list_remote">Группы wheel и remote</string>
+      <string id="sshd-allow-groups-list_wheelonly">Только wheel</string>
+      <string id="sshd-allow-groups-list_remoteonly">Только remote</string>
 
       <string id="sshd-gssapi-auth">Поддержка GSSAPI-аутентификации на сервере OpenSSH</string>
       <string id="sshd-gssapi-auth_help">Эта политика включает поддержку аутентификации с использованием GSSAPI на сервере OpenSSH
@@ -586,14 +586,14 @@ TCB — любой пользователь может изменить свой
 
 Любой пользователь — любой пользователь может запускать /bin/su
 
-Суперпользователи wheel — любой пользователь имеет право запускать /bin/su, но только пользователи группы «wheel» могут повышать привилегии суперпользователя (root)
+Все пользователи, кроме root — любой пользователь имеет право запускать /bin/su, но только пользователи группы «wheel» могут повышать привилегии до суперпользователя (root)
 
 Только wheel — только пользователи из группы «wheel» могут запускать /bin/su
 
 Только root — только суперпользователь (root) может запускать /bin/su
       </string>
-      <string id="su_public">Любой пользователь может запускать /bin/su</string>
-      <string id="su_wheel">Суперпользователи в группе Wheel</string>
+      <string id="su_public">Любой пользователь</string>
+      <string id="su_wheel">Все пользователи, кроме root</string>
       <string id="su_wheelonly">Только wheel</string>
       <string id="su_restricted">Только root</string>
 

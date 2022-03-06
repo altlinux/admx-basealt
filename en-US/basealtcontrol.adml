@@ -286,13 +286,13 @@ Any user — Any user is permitted to run /bin/mount and /bin/umount
 
 Only wheel — Users from the «wheel» group are permitted to run /bin/mount and /bin/umount
 
-Unprivileged user — Any user is permitted to run /bin/mount and /bin/umount for unprivileged actions
+Unprivileged mode — Any user is permitted to run /bin/mount and /bin/umount for unprivileged actions
 
 Only root — Only superuser (root) is permitted to run /bin/mount and /bin/umount
       </string>
       <string id="mount_public">Any user</string>
       <string id="mount_wheelonly">Only wheel</string>
-      <string id="mount_unprivileged">Unprivileged</string>
+      <string id="mount_unprivileged">Unprivileged mode</string>
       <string id="mount_restricted">Only root</string>
 
       <string id="newgrp">Permissions for /usr/bin/newgrp</string>
@@ -442,19 +442,19 @@ Enabled — Remote access control to the OpenSSH server is enabled
       <string id="sshd-allow-groups-list">Allowed groups for access to OpenSSH server</string>
       <string id="sshd-allow-groups-list_help">This policy determines which groups are included in the list of allowed groups for the remote access service to the OpenSSH server
 
-All users - Allow access to the OpenSSH server by «wheel» and «users» groups
+All users - Allow access to the OpenSSH server by all users
 
-Administrators and remote users - Allow access to the OpenSSH server by «wheel» and «remote» groups
+Groups wheel and remote - Allow access to the OpenSSH server by «wheel» and «remote» groups
 
-Administrators only - Allow access to the OpenSSH server by «wheel» group only
+Only wheel - Allow access to the OpenSSH server by «wheel» group only
 
-Remote users only - Allow access to the OpenSSH server by «remote» group only
+Only remote - Allow access to the OpenSSH server by «remote» group only
       </string>
 
       <string id="sshd-allow-groups-list_users">All users</string>
-      <string id="sshd-allow-groups-list_remote">Administrators and remote users</string>
-      <string id="sshd-allow-groups-list_wheelonly">Administrators only</string>
-      <string id="sshd-allow-groups-list_remoteonly">Remote users only</string>
+      <string id="sshd-allow-groups-list_remote">Groups wheel and remote</string>
+      <string id="sshd-allow-groups-list_wheelonly">Only wheel</string>
+      <string id="sshd-allow-groups-list_remoteonly">Only remote</string>
 
       <string id="sshd-gssapi-auth">Support GSSAPI authentication on OpenSSH server</string>
       <string id="sshd-gssapi-auth_help">This policy enables support for authentication using GSSAPI on the OpenSSH server
@@ -587,14 +587,14 @@ Default — The configuration of automatic updating of client PTR record for rev
 
 Any user — Any user is permitted to run /bin/su
 
-Wheel superusers — Any user has the right to run /bin/su, but only users of the «wheel» group can elevate privileges to the superuser (root)
+All users, but not root — Any user has the right to run /bin/su, but only users of the «wheel» group can elevate privileges to the superuser (root)
 
 Only wheel — Only users of the «wheel» group are allowed to run /bin/su
 
 Only root — Only superuser (root) is permitted to run /bin/su
       </string>
-      <string id="su_public">Any user is permitted to run /bin/su</string>
-      <string id="su_wheel">Wheel superusers</string>
+      <string id="su_public">Any user</string>
+      <string id="su_wheel">All users, but not root</string>
       <string id="su_wheelonly">Only wheel</string>
       <string id="su_restricted">Only root</string>
 
