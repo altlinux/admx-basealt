@@ -23,7 +23,7 @@ List of packages to remove:
       <string id="packages_upgrade">Automatic software upgrade</string>
       <string id="packages_upgrade_help">This policy defines automatic update behavior
 
-Undefined - Do nothing
+Not Configured - Do nothing
 
 Disabled - Don't update OS automatically
 

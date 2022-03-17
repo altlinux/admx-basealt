@@ -459,17 +459,17 @@ Remote users only — Allow access to the OpenSSH server by «remote» group onl
       <string id="sshd-gssapi-auth">Support GSSAPI authentication on OpenSSH server</string>
       <string id="sshd-gssapi-auth_help">This policy enables support for authentication using GSSAPI on the OpenSSH server
 
-Enable — GSSAPI support on the OpenSSH server is enabled
+Enabled — GSSAPI support on the OpenSSH server is enabled
 
-Disable — GSSAPI support on the OpenSSH server is disabled
+Disabled — GSSAPI support on the OpenSSH server is disabled
        </string>
 
       <string id="sshd-password-auth">Password authentication on OpenSSH server</string>
       <string id="sshd-password-auth_help">This policy enables support for password authentication on the OpenSSH server
 
-Enable — Password authentication support on the OpenSSH server is enabled
+Enabled — Password authentication support on the OpenSSH server is enabled
 
-Disable — Password authentication support on the OpenSSH server is disabled
+Disabled — Password authentication support on the OpenSSH server is disabled
       </string>
 
       <string id="sshd-permit-root-login">OpenSSH authentication of root by password</string>
@@ -491,9 +491,9 @@ Default — Reset the authentication mode for the superuser (root) to the packag
       <string id="ssh-gssapi-auth">Authentication of OpenSSH clients via GSSAPI</string>
       <string id="ssh-gssapi-auth_help">This policy defines the functionality to support authentication of OpenSSH clients using via GSSAPI
 
-Enable — GSSAPI authentication support for OpenSSH clients is enabled
+Enabled — GSSAPI authentication support for OpenSSH clients is enabled
 
-Disable — GSSAPI authentication support for OpenSSH clients is disabled
+Disabled — GSSAPI authentication support for OpenSSH clients is disabled
       </string>
 
       <string id="sssd-ad-gpo-access-control">SSSD access control via Group Policies</string>
