@@ -138,7 +138,7 @@
       </string>
 
       <string id="dnsmasq_service">Служба Dnsmasq</string>
-      <string id="dnsmasq_service_help">Эта политика определяет, включен ли systemd юнит Службы Dnsmasq (облегченный DHCP и кеширующий DNS-сервер, а также TFTP-сервер для поддержки загрузки по сети)
+      <string id="dnsmasq_service_help">Эта политика определяет, включен ли systemd юнит Службы Dnsmasq (облегченный DHCP и кэширующий DNS-сервер, а также TFTP-сервер для поддержки загрузки по сети)
 
 Не задана — не изменять системное состояние юнита
 

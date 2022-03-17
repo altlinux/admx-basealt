@@ -35,7 +35,7 @@ Only root — Only superuser (root) can execute /usr/bin/chage
 Any user — Any user can use the command /usr/bin/chfn
 
 Only root — Only superuser (root) can execute /usr/bin/chfn
-      </string>  
+      </string>
       <string id="chfn_public">Any user</string>
       <string id="chfn_restricted">Only root</string>
 
@@ -442,13 +442,13 @@ Enabled — Remote access control to the OpenSSH server is enabled
       <string id="sshd-allow-groups-list">Allowed groups for access to OpenSSH server</string>
       <string id="sshd-allow-groups-list_help">This policy determines which groups are included in the list of allowed groups for the remote access service to the OpenSSH server
 
-All users - Allow access to the OpenSSH server by «wheel» and «users» groups
+All users — Allow access to the OpenSSH server by «wheel» and «users» groups
 
-Administrators and remote users - Allow access to the OpenSSH server by «wheel» and «remote» groups
+Administrators and remote users — Allow access to the OpenSSH server by «wheel» and «remote» groups
 
-Administrators only - Allow access to the OpenSSH server by «wheel» group only
+Administrators only — Allow access to the OpenSSH server by «wheel» group only
 
-Remote users only - Allow access to the OpenSSH server by «remote» group only
+Remote users only — Allow access to the OpenSSH server by «remote» group only
       </string>
 
       <string id="sshd-allow-groups-list_users">All users</string>
@@ -469,7 +469,7 @@ Disable — GSSAPI support on the OpenSSH server is disabled
 
 Enable — Password authentication support on the OpenSSH server is enabled
 
-Disable — Password authentication support on the OpenSSH server is disables
+Disable — Password authentication support on the OpenSSH server is disabled
       </string>
 
       <string id="sshd-permit-root-login">OpenSSH authentication of root by password</string>
