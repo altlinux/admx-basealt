@@ -7,66 +7,72 @@
   <resources>
     <stringTable>
       <string id="at">Права доступа и поведение очереди заданий /usr/bin/at</string>
-      <string id="at_help">Политика позволяет контролировать поведение и права доступа для запуска очереди заданий (права доступа для запуска /usr/bin/at)
+      <string id="at_help">Политика позволяет контролировать поведение и права доступа для запуска очереди заданий (права доступа для запуска /usr/bin/at):
 
-Все пользователи — всем пользователям разрешено запускать /usr/bin/at
+Все пользователи — всем пользователям разрешено запускать /usr/bin/at;
 
-Только root — только суперпользователь (root) может запускать /usr/bin/at
+Только root — только суперпользователь (root) может запускать /usr/bin/at;
 
-Режим совместимости — режим «atdaemon», не должен использоваться
+Режим совместимости — режим «atdaemon», не должен использоваться.
       </string>
       <string id="at_public">Все пользователи</string>
       <string id="at_restricted">Только root</string>
       <string id="at_atdaemon">Режим совместимости</string>
 
       <string id="chage">Выполнение программы /usr/bin/chage</string>
-      <string id="chage_help">Политика позволяет контролировать доступ для выполнения программы /usr/bin/chage
+      <string id="chage_help">Политика позволяет контролировать доступ для выполнения программы /usr/bin/chage:
 
-Любой пользователь — любой пользователь может определить, когда ему следует сменить свой пароль, используя команду "chage"
+Любой пользователь — любой пользователь может определить, когда ему следует сменить свой пароль, используя команду «chage»;
 
-Только root — только суперпользователь (root) может выполнить /usr/bin/chage
+Только root — только суперпользователь (root) может выполнить /usr/bin/chage.
       </string>
       <string id="chage_public">Любой пользователь</string>
       <string id="chage_restricted">Только root</string>
 
       <string id="chfn">Выполнение команды /usr/bin/chfn</string>
-      <string id="chfn_help">Политика позволяет контролировать поведение и права доступа к команде chfn (/usr/bin/chfn). Команда chfn может изменить полное имя пользователя, номер кабинета, номера офисного и домашнего телефона для учетной записи пользователя. Обычный пользователь может изменять поля только для своей учетной записи, с учетом ограничений в /etc/login.defs (конфигурация по умолчанию не позволяет пользователям менять свое полное имя). Кроме того, только суперпользователь может использовать опцию -o для изменения неопределенных частей поля GECOS.
+      <string id="chfn_help">Политика позволяет контролировать поведение и права доступа к команде chfn (/usr/bin/chfn):
 
-Любой пользователь — любой пользователь может использовать команду /usr/bin/chfn
+Любой пользователь — любой пользователь может использовать команду /usr/bin/chfn;
 
-Только root — только суперпользователь (root) может выполнить /usr/bin/chfn
+Только root — только суперпользователь (root) может выполнить /usr/bin/chfn.
+
+Команда chfn может изменить полное имя пользователя, номер кабинета, номера офисного и домашнего телефона для учетной записи пользователя. Обычный пользователь может изменять поля только для своей учетной записи, с учетом ограничений в /etc/login.defs (конфигурация по умолчанию не позволяет пользователям менять свое полное имя). Кроме того, только суперпользователь может использовать опцию -o для изменения неопределенных частей поля GECOS.
       </string>
       <string id="chfn_public">Любой пользователь</string>
       <string id="chfn_restricted">Только root</string>
 
       <string id="chsh">Разрешение на использование /usr/bin/chsh</string>
-      <string id="chsh_help">Политика позволяет управлять правами доступа к команде chsh (/usr/bin/chsh), которая изменяет оболочку входа пользователя: она определяет имя начальной команды входа пользователя. Обычный пользователь может изменить оболочку входа только для своей учетной записи; суперпользователь может изменить логин для любой учетной записи
+      <string id="chsh_help">Политика позволяет управлять правами доступа к команде chsh (/usr/bin/chsh):
 
-Все пользователи — всем пользователям разрешено использовать /usr/bin/chsh
+Все пользователи — всем пользователям разрешено использовать /usr/bin/chsh;
 
-Только root — только суперпользователь (root) может использовать /usr/bin/chsh
+Только root — только суперпользователь (root) может использовать /usr/bin/chsh.
+
+Команда chsh изменяет оболочку входа пользователя: она определяет имя начальной команды входа пользователя. Обычный пользователь может изменить оболочку входа только для своей учетной записи; суперпользователь может изменить логин для любой учетной записи.
       </string>
       <string id="chsh_public">Все пользователи</string>
       <string id="chsh_restricted">Только root</string>
 
       <string id="chrony">Режим демона NTP Chrony</string>
-      <string id="chrony_help">Эта политика определяет режим работы (конфигурацию) демона Chrony, который реализует функции сетевого протокола времени
+      <string id="chrony_help">Эта политика определяет режим работы (конфигурацию) демона Chrony, который реализует функции сетевого протокола времени:
 
-Сервер — если этот режим выбран, то он раскомментирует или добавит директиву «allow all» в файл конфигурации демона, подробности см. в документации
+Сервер — если этот режим выбран, то он раскомментирует или добавит директиву «allow all» в файл конфигурации демона, подробности см. в документации;
 
-Клиент — если этот режим выбран, он закомментирует директиву «allow» в файле конфигурации демона, подробности см. в документации
+Клиент — если этот режим выбран, он закомментирует директиву «allow» в файле конфигурации демона, подробности см. в документации.
       </string>
       <string id="chrony_server">Сервер</string>
       <string id="chrony_client">Клиент</string>
 
       <string id="consolehelper">Разрешение на использование consolehelper</string>
-      <string id="consolehelper_help">Эта политика определяет права доступа к инструменту consolehelper (/usr/lib/consolehelper/priv/auth), который позволяет пользователям консоли запускать системные программы, выполняя аутентификацию через PAM (которую можно настроить так, чтобы доверять всем пользователям консоли или запрашивать пароль по усмотрению системного администратора). Когда это возможно, аутентификация выполняется графически; в противном случае это делается в текстовой консоли, с которой был запущен consolehelper.
+      <string id="consolehelper_help">Эта политика определяет права доступа к инструменту consolehelper (/usr/lib/consolehelper/priv/auth):
 
-Любой пользователь — любой пользователь может использовать consolehelper
+Любой пользователь — любой пользователь может использовать consolehelper;
 
-Только wheel — только члены группы «wheel» могут использовать consolehelper
+Только wheel — только члены группы «wheel» могут использовать consolehelper;
 
-Только root — только суперпользователь (root) может использовать consolehelper
+Только root — только суперпользователь (root) может использовать consolehelper.
+
+Инструмент consolehelper позволяет пользователям консоли запускать системные программы, выполняя аутентификацию через PAM (которую можно настроить так, чтобы доверять всем пользователям консоли или запрашивать пароль по усмотрению системного администратора). Когда это возможно, аутентификация выполняется графически; в противном случае это делается в текстовой консоли, с которой был запущен consolehelper.
       </string>
 
       <string id="consolehelper_public">Любой пользователь</string>
@@ -74,87 +80,87 @@
       <string id="consolehelper_restricted">Только root</string>
 
       <string id="crontab">Разрешение на использование crontab</string>
-      <string id="crontab_help">Эта политика определяет права доступа к инструменту crontab (/usr/bin/crontab)
+      <string id="crontab_help">Эта политика определяет права доступа к инструменту crontab (/usr/bin/crontab):
 
-Любой пользователь — любой пользователь может использовать /usr/bin/crontab
+Любой пользователь — любой пользователь может использовать /usr/bin/crontab;
 
-Только root — только суперпользователь (root) может использовать /usr/bin/crontab
+Только root — только суперпользователь (root) может использовать /usr/bin/crontab.
       </string>
       <string id="crontab_public">Любой пользователь</string>
       <string id="crontab_restricted">Только root</string>
 
       <string id="cups">Режим CUPS</string>
-      <string id="cups_help">Эта политика определяет поведение CUPS
+      <string id="cups_help">Эта политика определяет поведение CUPS:
 
-Внешний интерфейс IPP — внешний интерфейс IPP доступен для пользователя
+Внешний интерфейс IPP — внешний интерфейс IPP доступен для пользователя;
 
-Только локальные утилиты — только локальные утилиты могут работать с CUPS
+Только локальные утилиты — только локальные утилиты могут работать с CUPS.
       </string>
       <string id="cups_server">Внешний интерфейс IPP</string>
       <string id="cups_local">Только локальные утилиты</string>
 
       <string id="dvd-ram-control">Разрешение на использование /usr/bin/dvd-ram-control</string>
-      <string id="dvd-ram-control_help">Эта политика определяет права доступа к /usr/bin/dvd-ram-control
+      <string id="dvd-ram-control_help">Эта политика определяет права доступа к /usr/bin/dvd-ram-control:
 
-Только cdwriter — только члены группы «cdwriter» могут выполнять /usr/bin/dvd-ram-control
+Только cdwriter — только члены группы «cdwriter» могут выполнять /usr/bin/dvd-ram-control;
 
-Только root — только суперпользователь (root) может выполнять /usr/bin/dvd-ram-control
+Только root — только суперпользователь (root) может выполнять /usr/bin/dvd-ram-control;
 
-Режим совместимости — режим совместимости, не должен использоваться
+Режим совместимости — режим совместимости, не должен использоваться.
       </string>
       <string id="dvd-ram-control_public">Только cdwriter</string>
       <string id="dvd-ram-control_restricted">Только root</string>
       <string id="dvd-ram-control_legacy">Режим совместимости</string>
 
       <string id="dvd_rw-booktype">Разрешение на использование /usr/bin/dvd+rw-booktype</string>
-      <string id="dvd_rw-booktype_help">Эта политика определяет права доступа к /usr/bin/dvd+rw-booktype
+      <string id="dvd_rw-booktype_help">Эта политика определяет права доступа к /usr/bin/dvd+rw-booktype:
 
-Только cdwriter — только члены группы «cdwriter» могут выполнять /usr/bin/dvd+rw-booktype
+Только cdwriter — только члены группы «cdwriter» могут выполнять /usr/bin/dvd+rw-booktype;
 
-Только root — только суперпользователь (root) может выполнять /usr/bin/dvd+rw-booktype
+Только root — только суперпользователь (root) может выполнять /usr/bin/dvd+rw-booktype;
 
-Режим совместимости — режим совместимости, не должен использоваться
+Режим совместимости — режим совместимости, не должен использоваться.
       </string>
       <string id="dvd_rw-booktype_public">Только cdwriter</string>
       <string id="dvd_rw-booktype_restricted">Только root</string>
       <string id="dvd_rw-booktype_legacy">Режим совместимости</string>
 
       <string id="dvd_rw-format">Разрешение на использование /usr/bin/dvd+rw-format</string>
-      <string id="dvd_rw-format_help">Эта политика определяет права доступа к /usr/bin/dvd+rw-format
+      <string id="dvd_rw-format_help">Эта политика определяет права доступа к /usr/bin/dvd+rw-format:
 
-Только cdwriter — только члены группы «cdwriter» могут выполнять /usr/bin/dvd+rw-format
+Только cdwriter — только члены группы «cdwriter» могут выполнять /usr/bin/dvd+rw-format;
 
-Только root — только суперпользователь (root) может выполнять /usr/bin/dvd+rw-format
+Только root — только суперпользователь (root) может выполнять /usr/bin/dvd+rw-format;
 
-Режим совместимости — режим совместимости, не должен использоваться
+Режим совместимости — режим совместимости, не должен использоваться.
       </string>
       <string id="dvd_rw-format_public">Только cdwriter</string>
       <string id="dvd_rw-format_restricted">Только root</string>
       <string id="dvd_rw-format_legacy">Режим совместимости</string>
 
       <string id="dvd_rw-mediainfo">Разрешение на использование /usr/bin/dvd+rw-mediainfo</string>
-      <string id="dvd_rw-mediainfo_help">Эта политика определяет права доступа к /usr/bin/dvd+rw-mediainfo
+      <string id="dvd_rw-mediainfo_help">Эта политика определяет права доступа к /usr/bin/dvd+rw-mediainfo:
 
-Только cdwriter — только члены группы «cdwriter» могут выполнять /usr/bin/dvd+rw-mediainfo
+Только cdwriter — только члены группы «cdwriter» могут выполнять /usr/bin/dvd+rw-mediainfo;
 
-Только root — только суперпользователь (root) может выполнить /usr/bin/dvd+rw-mediainfo
+Только root — только суперпользователь (root) может выполнить /usr/bin/dvd+rw-mediainfo;
 
-Режим совместимости — режим совместимости, не должен использоваться
+Режим совместимости — режим совместимости, не должен использоваться.
       </string>
       <string id="dvd_rw-mediainfo_public">Только cdwriter</string>
       <string id="dvd_rw-mediainfo_restricted">Только root</string>
       <string id="dvd_rw-mediainfo_legacy">Режим совместимости</string>
 
       <string id="fusermount">Доступ к инструментам FUSE</string>
-      <string id="fusermount_help">Эта политика определяет права доступа для монтирования файловой системы FUSE (выполнение программ /usr/bin/fusermount и /usr/bin/fusermount3)
+      <string id="fusermount_help">Эта политика определяет права доступа для монтирования файловой системы FUSE (выполнение программ /usr/bin/fusermount и /usr/bin/fusermount3):
 
-Любой пользователь — любой пользователь может выполнить /usr/bin/fusermount и /usr/bin/fusermount3
+Любой пользователь — любой пользователь может выполнить /usr/bin/fusermount и /usr/bin/fusermount3;
 
-Только fuse — только члены группы «fuse» могут выполнять /usr/bin/fusermount и /usr/bin/fusermount3
+Только fuse — только члены группы «fuse» могут выполнять /usr/bin/fusermount и /usr/bin/fusermount3;
 
-Только wheel — только члены группы «wheel» могут выполнять /usr/bin/fusermount и /usr/bin/fusermount3
+Только wheel — только члены группы «wheel» могут выполнять /usr/bin/fusermount и /usr/bin/fusermount3;
 
-Только root — только суперпользователь (root) может выполнять /usr/bin/fusermount и /usr/bin/fusermount3
+Только root — только суперпользователь (root) может выполнять /usr/bin/fusermount и /usr/bin/fusermount3.
       </string>
       <string id="fusermount_public">Любой пользователь</string>
       <string id="fusermount_fuseonly">Только fuse</string>
@@ -162,118 +168,118 @@
       <string id="fusermount_restricted">Только root</string>
 
       <string id="gpasswd">Выполнение программы /usr/bin/gpasswd</string>
-      <string id="gpasswd_help">Политика определяет права на запуск инструмента /usr/bin/gpasswd
+      <string id="gpasswd_help">Политика определяет права на запуск инструмента /usr/bin/gpasswd:
 
-Любой пользователь — любой пользователь может выполнить /usr/bin/gpasswd
+Любой пользователь — любой пользователь может выполнить /usr/bin/gpasswd;
 
-Только wheel — только члены группы «wheel» могут выполнять /usr/bin/gpasswd
+Только wheel — только члены группы «wheel» могут выполнять /usr/bin/gpasswd;
 
-Только root — только суперпользователь (root) может выполнить /usr/bin/gpasswd
+Только root — только суперпользователь (root) может выполнить /usr/bin/gpasswd.
       </string>
       <string id="gpasswd_public">Любой пользователь</string>
       <string id="gpasswd_wheelonly">Только wheel</string>
       <string id="gpasswd_restricted">Только root</string>
 
       <string id="groupmems">Выполнение программы /usr/bin/groupmems</string>
-      <string id="groupmems_help">Политика определяет права на выполнение программы /usr/bin/groupmems
+      <string id="groupmems_help">Политика определяет права на выполнение программы /usr/bin/groupmems:
 
-Любой пользователь — любой пользователь может выполнить /usr/bin/groupmems
+Любой пользователь — любой пользователь может выполнить /usr/bin/groupmems;
 
-Только wheel — только члены группы «wheel» могут выполнять /usr/bin/groupmems
+Только wheel — только члены группы «wheel» могут выполнять /usr/bin/groupmems;
 
-Только root — только суперпользователь (root) может выполнять /usr/bin/groupmems
+Только root — только суперпользователь (root) может выполнять /usr/bin/groupmems.
       </string>
       <string id="groupmems_public">Любой пользователь</string>
       <string id="groupmems_wheelonly">Только wheel</string>
       <string id="groupmems_restricted">Только root</string>
 
       <string id="growisofs">Разрешение на использование /usr/bin/growisofs</string>
-      <string id="growisofs_help">Политика определяет права на использование инструмента /usr/bin/growisofs
+      <string id="growisofs_help">Политика определяет права на использование инструмента /usr/bin/growisofs:
 
-Только cdwriter — только члены группы «cdwriter» могут выполнять /usr/bin/growisofs
+Только cdwriter — только члены группы «cdwriter» могут выполнять /usr/bin/growisofs;
 
-Только root — только суперпользователь (root) может выполнить /usr/bin/growisofs
+Только root — только суперпользователь (root) может выполнить /usr/bin/growisofs;
 
-Режим совместимости — режим совместимости не должен использоваться
+Режим совместимости — режим совместимости не должен использоваться.
       </string>
       <string id="growisofs_public">Только cdwriter</string>
       <string id="growisofs_restricted">Только root</string>
       <string id="growisofs_legacy">Режим совместимости</string>
 
       <string id="hddtemp">Разрешение на использование /usr/sbin/hddtemp</string>
-      <string id="hddtemp_help">Разрешение на использование инструмента /usr/sbin/hddtemp — отслеживание температуры жесткого диска
+      <string id="hddtemp_help">Разрешение на использование инструмента /usr/sbin/hddtemp — отслеживание температуры жесткого диска:
 
-Любой пользователь — любой пользователь может выполнить /usr/sbin/hddtemp
+Любой пользователь — любой пользователь может выполнить /usr/sbin/hddtemp;
 
-Только wheel — только члены группы «wheel» могут выполнять /usr/sbin/hddtemp
+Только wheel — только члены группы «wheel» могут выполнять /usr/sbin/hddtemp;
 
-Только root — только суперпользователь (root) может выполнить /usr/sbin/hddtemp
+Только root — только суперпользователь (root) может выполнить /usr/sbin/hddtemp.
       </string>
       <string id="hddtemp_public">Любой пользователь</string>
       <string id="hddtemp_wheelonly">Только wheel</string>
       <string id="hddtemp_restricted">Только root</string>
 
       <string id="lightdm-greeter-hide-users">Список пользователей в greeter (LightDM)</string>
-      <string id="lightdm-greeter-hide-users_help">Эта политика определяет, будет ли показан список всех пользователей при входе в систему с помощью LightDM (в greeter — на экране приветствия/входа в систему LightDM) или нет
+      <string id="lightdm-greeter-hide-users_help">Эта политика определяет, будет ли показан список всех пользователей при входе в систему с помощью LightDM (в greeter — на экране приветствия/входа в систему LightDM) или нет:
 
-Показать — показать список доступных пользователей в greeter
+Показать — показать список доступных пользователей в greeter;
 
-Скрыть — не перечислять всех пользователей в greeter
+Скрыть — не перечислять всех пользователей в greeter.
       </string>
       <string id="lightdm-greeter-hide-users_show">Показать</string>
       <string id="lightdm-greeter-hide-users_hide">Скрыть</string>
 
       <string id="mtr">Разрешение на использование /usr/bin/mtr</string>
-      <string id="mtr_help">Разрешение на использование сетевого инструмента /usr/bin/mtr
+      <string id="mtr_help">Разрешение на использование сетевого инструмента /usr/bin/mtr:
 
-Любой пользователь — любой пользователь может выполнить /usr/bin/mtr
+Любой пользователь — любой пользователь может выполнить /usr/bin/mtr;
 
-Группа netadmin — только члены группы «netadmin» могут выполнять /usr/bin/mtr
+Группа netadmin — только члены группы «netadmin» могут выполнять /usr/bin/mtr;
 
-Только root — только суперпользователь (root) может выполнить /usr/bin/mtr
+Только root — только суперпользователь (root) может выполнить /usr/bin/mtr.
       </string>
       <string id="mtr_public">Любой пользователь</string>
       <string id="mtr_netadmin">Группа netadmin</string>
       <string id="mtr_restricted">Только root</string>
 
       <string id="kvm">Права на устройства QEMU KVM</string>
-      <string id="kvm_help">Политика определяет права на устройства QEMU KVM
+      <string id="kvm_help">Политика определяет права на устройства QEMU KVM:
 
-Любой пользователь — любой пользователь имеет право использовать KVM
+Любой пользователь — любой пользователь имеет право использовать KVM;
 
-Группа vmusers — пользователи группы «vmusers» имеют право использовать KVM
+Группа vmusers — пользователи группы «vmusers» имеют право использовать KVM;
 
-Только root — только суперпользователь (root) имеет право использовать KVM
+Только root — только суперпользователь (root) имеет право использовать KVM.
       </string>
       <string id="kvm_public">Любой пользователь</string>
       <string id="kvm_vmusers">Группа vmusers</string>
       <string id="kvm_restricted">Только root</string>
 
       <string id="ldap-reverse-dns-lookup">Обратный поиск DNS для запросов OpenLDAP</string>
-      <string id="ldap-reverse-dns-lookup_help">Политика определяет, разрешен ли обратный поиск DNS для запросов OpenLDAP
+      <string id="ldap-reverse-dns-lookup_help">Политика определяет, разрешен ли обратный поиск DNS для запросов OpenLDAP:
 
-Разрешить — выполнять обратный поиск DNS для запросов OpenLDAP
+Разрешить — выполнять обратный поиск DNS для запросов OpenLDAP;
 
-Не разрешать — не выполнять обратный поиск DNS для запросов OpenLDAP
+Не разрешать — не выполнять обратный поиск DNS для запросов OpenLDAP;
 
-По умолчанию — выполнять обратный поиск DNS для запросов OpenLDAP
+По умолчанию — выполнять обратный поиск DNS для запросов OpenLDAP.
       </string>
       <string id="ldap-reverse-dns-lookup_allow">Разрешить</string>
-      <string id="ldap-reverse-dns-lookup_deny">Не разрешено</string>
+      <string id="ldap-reverse-dns-lookup_deny">Не разрешать</string>
       <string id="ldap-reverse-dns-lookup_default">По умолчанию</string>
 
       <string id="ldap-tls-cert-check">Проверка сертификата при установлении соединений TLS OpenLDAP</string>
-      <string id="ldap-tls-cert-check_help">Политика определяет режим проверки сертификата при установке TLS соединений OpenLDAP
+      <string id="ldap-tls-cert-check_help">Политика определяет режим проверки сертификата при установке TLS соединений OpenLDAP:
 
-По умолчанию — установить соединение только с правильным сертификатом
+По умолчанию — установить соединение только с правильным сертификатом;
 
-Никогда — не выполнять никаких проверок
+Никогда — не выполнять никаких проверок;
 
-Разрешить — установить соединение, даже если сертификат отсутствует или неверный
+Разрешить — установить соединение, даже если сертификат отсутствует или неверный;
 
-Пробовать — установить соединение, если нет или с действующим сертификатом
+Пробовать — установить соединение, если нет или с действующим сертификатом;
 
-Требование — установить соединение только с правильным сертификатом
+Требование — установить соединение только с правильным сертификатом.
       </string>
       <string id="ldap-tls-cert-check_default">По умолчанию</string>
       <string id="ldap-tls-cert-check_never">Никогда</string>
@@ -282,15 +288,15 @@
       <string id="ldap-tls-cert-check_demand">Спрос</string>
 
       <string id="mount">Разрешения для /bin/mount и /bin/umount</string>
-      <string id="mount_help">Эта политика определяет разрешения для /bin/mount и /bin/umount
+      <string id="mount_help">Эта политика определяет разрешения для /bin/mount и /bin/umount:
 
-Любой пользователь — любому пользователю разрешено запускать /bin/mount и /bin/umount
+Любой пользователь — любому пользователю разрешено запускать /bin/mount и /bin/umount;
 
-Только wheel — пользователям из группы «wheel» разрешено запускать /bin/mount и /bin/umount
+Только wheel — пользователям из группы «wheel» разрешено запускать /bin/mount и /bin/umount;
 
-Непривилегированный пользователь — любой пользователь может запускать /bin/mount и /bin/umount для непривилегированных действий
+Непривилегированный пользователь — любой пользователь может запускать /bin/mount и /bin/umount для непривилегированных действий;
 
-Только root — только суперпользователю (root) разрешено запускать /bin/mount и /bin/umount
+Только root — только суперпользователю (root) разрешено запускать /bin/mount и /bin/umount.
       </string>
       <string id="mount_public">Любой пользователь</string>
       <string id="mount_wheelonly">Только wheel</string>
@@ -298,74 +304,74 @@
       <string id="mount_restricted">Только root</string>
 
       <string id="newgrp">Разрешения для /usr/bin/newgrp</string>
-      <string id="newgrp_help">Эта политика определяет разрешения для /usr/bin/newgrp
+      <string id="newgrp_help">Эта политика определяет разрешения для /usr/bin/newgrp:
 
-Любой пользователь — любой пользователь может запускать /usr/bin/newgrp
+Любой пользователь — любой пользователь может запускать /usr/bin/newgrp;
 
-Только wheel — пользователям из группы «wheel» разрешено запускать /usr/bin/newgrp
+Только wheel — пользователям из группы «wheel» разрешено запускать /usr/bin/newgrp;
 
-Только root — только суперпользователь (root) может запускать /usr/bin/newgrp
+Только root — только суперпользователь (root) может запускать /usr/bin/newgrp.
       </string>
       <string id="newgrp_public">Любой пользователь</string>
       <string id="newgrp_wheelonly">Только wheel</string>
       <string id="newgrp_restricted">Только root</string>
 
       <string id="nfsmount">Разрешения для /sbin/mount.nfs</string>
-      <string id="nfsmount_help">Эта политика определяет разрешения для /sbin/mount.nfs
+      <string id="nfsmount_help">Эта политика определяет разрешения для /sbin/mount.nfs:
 
-Любой пользователь — любому пользователю разрешено запускать /sbin/mount.nfs
+Любой пользователь — любому пользователю разрешено запускать /sbin/mount.nfs;
 
-Только wheel — пользователям из группы «wheel» разрешено запускать /sbin/mount.nfs
+Только wheel — пользователям из группы «wheel» разрешено запускать /sbin/mount.nfs;
 
-Только root — только суперпользователь (root) может запускать /sbin/mount.nfs
+Только root — только суперпользователь (root) может запускать /sbin/mount.nfs.
       </string>
       <string id="nfsmount_public">Любой пользователь</string>
       <string id="nfsmount_wheelonly">Только wheel</string>
       <string id="nfsmount_restricted">Только root</string>
 
       <string id="pam_mktemp">Создание временных каталогов</string>
-      <string id="pam_mktemp_help">Эта политика определяет, следует ли создавать отдельные временные каталоги для пользователей
+      <string id="pam_mktemp_help">Эта политика определяет, следует ли создавать отдельные временные каталоги для пользователей:
 
-Отключено — отключить создание отдельных временных каталогов для пользователей
+Выключено — отключить создание отдельных временных каталогов для пользователей;
 
-Включено — включить создание отдельных временных каталогов для пользователей
+Включено — включить создание отдельных временных каталогов для пользователей.
       </string>
 
       <string id="passwd">Управление паролями с помощью passwd</string>
-      <string id="passwd_help">Определяет политику управления паролями с помощью команды /usr/bin/passwd
+      <string id="passwd_help">Определяет политику управления паролями с помощью команды /usr/bin/passwd:
 
-TCB — любой пользователь может изменить свой пароль, используя /usr/bin/passwd, когда включена схема tcb
+TCB — любой пользователь может изменить свой пароль, используя /usr/bin/passwd, когда включена схема tcb;
 
-Традиционный — любой пользователь может изменить свой пароль, используя /usr/bin/passwd, когда схема tcb отключена
+Традиционный — любой пользователь может изменить свой пароль, используя /usr/bin/passwd, когда схема tcb отключена;
 
-Только root — только суперпользователь (root) имеет право изменять пароли пользователей
+Только root — только суперпользователь (root) имеет право изменять пароли пользователей.
       </string>
       <string id="passwd_tcb">TCB</string>
       <string id="passwd_traditional">Традиционный (схема tcb отключена)</string>
       <string id="passwd_restricted">Только root</string>
 
       <string id="passwdqc-enforce">Управление проверками сложности пароля</string>
-      <string id="passwdqc-enforce_help">Политика управляет паролями для достаточной надежности пароля
+      <string id="passwdqc-enforce_help">Политика управляет паролями для достаточной надежности пароля:
 
-Все — включить проверку сложности пароля для всех пользователей
+Все — включить проверку сложности пароля для всех пользователей;
 
-Только для пользователей — включить проверку сложности пароля для всех, кроме суперпользователей
+Только для пользователей — включить проверку сложности пароля для всех, кроме суперпользователей.
       </string>
       <string id="passwdqc-enforce_everyone">Все</string>
       <string id="passwdqc-enforce_users">Только для пользователей</string>
 
       <string id="ping">Разрешения для /usr/bin/ping</string>
-      <string id="ping_help">Эта политика определяет разрешения для /usr/bin/ping
+      <string id="ping_help">Эта политика определяет разрешения для /usr/bin/ping:
 
-Любой пользователь — любой пользователь может запускать /usr/bin/ping
+Любой пользователь — любой пользователь может запускать /usr/bin/ping;
 
-Группа netadmin — пользователям из группы «netadmin» разрешено запускать /usr/bin/ping
+Группа netadmin — пользователям из группы «netadmin» разрешено запускать /usr/bin/ping;
 
-Только root — только суперпользователь (root) может запускать /usr/bin/ping
+Только root — только суперпользователь (root) может запускать /usr/bin/ping;
 
-Любой пользователь (в контейнерах) — любой пользователь может запускать /usr/bin/ping (в контейнерах)
+Любой пользователь (в контейнерах) — любой пользователь может запускать /usr/bin/ping (в контейнерах);
 
-Группа netadmin (в контейнерах) — пользователям из группы «netadmin» разрешено запускать /usr/bin/ping (в контейнерах)
+Группа netadmin (в контейнерах) — пользователям из группы «netadmin» разрешено запускать /usr/bin/ping (в контейнерах).
       </string>
       <string id="ping_public">Любой пользователь</string>
       <string id="ping_netadmin">Группа netadmin</string>
@@ -374,83 +380,83 @@ TCB — любой пользователь может изменить свой
       <string id="ping_netadmin_caps">Группа netadmin (в контейнерах)</string>
 
       <string id="postfix">Режим работы Postfix MTA</string>
-      <string id="postfix_help">Эта политика определяет режим работы MTA Postfix (Почтовый транспортный агент)
+      <string id="postfix_help">Эта политика определяет режим работы MTA Postfix (Почтовый транспортный агент):
 
-Локальный (отключен) — Postfix MTA отключен
+Локальный (отключен) — Postfix MTA отключен;
 
-Сервер (фильтры отключены) — Postfix MTA включен без почтовых фильтров
+Сервер (фильтры отключены) — Postfix MTA включен без почтовых фильтров;
 
-Фильтр — Postfix MTA включен с почтовыми фильтрами
+Фильтр — Postfix MTA включен с почтовыми фильтрами.
       </string>
       <string id="postfix_local">Локальный (отключен)</string>
       <string id="postfix_server">Сервер (фильтры отключены)</string>
       <string id="postfix_filter">Фильтр</string>
 
       <string id="postqueue">Разрешения для /usr/bin/postqueue</string>
-      <string id="postqueue_help">Эта политика определяет разрешения для /usr/bin/postqueue
+      <string id="postqueue_help">Эта политика определяет разрешения для /usr/bin/postqueue:
 
-Любой пользователь — любому пользователю разрешено запускать /usr/bin/postqueue
+Любой пользователь — любому пользователю разрешено запускать /usr/bin/postqueue;
 
-Группа mailadm — пользователям из группы «mailadm» разрешено запускать /usr/bin/postqueue
+Группа mailadm — пользователям из группы «mailadm» разрешено запускать /usr/bin/postqueue;
 
-Только root — только суперпользователю (root) разрешено запускать /usr/bin/postqueue
+Только root — только суперпользователю (root) разрешено запускать /usr/bin/postqueue.
       </string>
       <string id="postqueue_public">Любой пользователь</string>
       <string id="postqueue_mailadm">Группа mailadm</string>
       <string id="postqueue_restricted">Только root</string>
 
       <string id="ppp">Разрешения для /usr/sbin/pppd</string>
-      <string id="ppp_help">Эта политика определяет разрешения для /usr/sbin/pppd
+      <string id="ppp_help">Эта политика определяет разрешения для /usr/sbin/pppd:
 
-Только root — только суперпользователю (root) разрешено запускать /usr/sbin/pppd
+Только root — только суперпользователю (root) разрешено запускать /usr/sbin/pppd;
 
-Традиционный — любой пользователь имеет право запускать /usr/sbin/pppd без повышения привилегий
+Традиционный — любой пользователь имеет право запускать /usr/sbin/pppd без повышения привилегий;
 
-Группа uucp — Пользователи группы «uucp» имеют право запускать /usr/sbin/pppd с правами суперпользователя
+Группа uucp — Пользователи группы «uucp» имеют право запускать /usr/sbin/pppd с правами суперпользователя;
 
-Любой пользователь — любой пользователь имеет право запускать /usr/sbin/pppd с правами суперпользователя
+Любой пользователь — любой пользователь имеет право запускать /usr/sbin/pppd с правами суперпользователя.
       </string>
-      <string id="ppp_restricted">Только root может запускать /usr/sbin/pppd</string>
+      <string id="ppp_restricted">Только root</string>
       <string id="ppp_traditional">Традиционный</string>
       <string id="ppp_uucp">Группа uucp</string>
       <string id="ppp_public">Любой пользователь</string>
 
       <string id="rpcbind">Режим работы Rpcbind</string>
-      <string id="rpcbind_help">Эта политика определяет режим работы rpcbind (/sbin/rpcbind)
+      <string id="rpcbind_help">Эта политика определяет режим работы rpcbind (/sbin/rpcbind):
 
-Сервер — rpcbind будет прослушивать входящие соединения из сети
+Сервер — rpcbind будет прослушивать входящие соединения из сети;
 
-Локальный — rpcbind будет принимать только локальные запросы
+Локальный — rpcbind будет принимать только локальные запросы.
       </string>
       <string id="rpcbind_server">Сервер</string>
       <string id="rpcbind_local">Локальный</string>
 
       <string id="sftp">Поддержка SFTP на сервере OpenSSH</string>
-      <string id="sftp_help">Эта политика определяет поддержку SFTP на сервере OpenSSH
+      <string id="sftp_help">Эта политика определяет поддержку SFTP на сервере OpenSSH:
 
-Включено — включить поддержку SFTP на сервере OpenSSH
+Включено — включить поддержку SFTP на сервере OpenSSH;
 
-Отключено — отключить поддержку SFTP на сервере OpenSSH
+Выключено — отключить поддержку SFTP на сервере OpenSSH.
       </string>
 
       <string id="sshd-allow-groups">Контроль доступа по группам к серверу OpenSSH</string>
-      <string id="sshd-allow-groups_help">Эта политика включает в службе удаленного доступа OpenSSH контроль доступа по списку разрешенных групп
+      <string id="sshd-allow-groups_help">Эта политика включает в службе удаленного доступа OpenSSH контроль доступа по списку разрешенных групп:
 
-Включено — контроль доступа по группам для службы удаленного доступа OpenSSH включен
+Включено — контроль доступа по группам для службы удаленного доступа OpenSSH включен;
 
-Отключено — контроль доступа по группам для службы удаленного доступа OpenSSH отключен
+Выключено — контроль доступа по группам для службы удаленного доступа OpenSSH отключен.
       </string>
 
       <string id="sshd-allow-groups-list">Группы для контроля доступа к серверу OpenSSH</string>
-      <string id="sshd-allow-groups-list_help">Эта политика определяет, какие группы входят в список разрешенных для службы удаленного доступа к серверу OpenSSH
+      <string id="sshd-allow-groups-list_help">Эта политика определяет, какие группы входят в список разрешенных для службы удаленного доступа к серверу OpenSSH:
 
-Все пользователи — разрешить доступ к серверу OpenSSH для групп «wheel» и «users»
+Все пользователи — разрешить доступ к серверу OpenSSH для групп «wheel» и «users»;
 
-Администраторы и пользователи удалённого доступа — разрешить доступ к серверу OpenSSH для групп «wheel» и «remote»
+Администраторы и пользователи удалённого доступа — разрешить доступ к серверу OpenSSH для групп «wheel» и «remote»;
 
-Только администраторы — разрешить доступ к серверу OpenSSH только для группы «wheel»
+Только администраторы — разрешить доступ к серверу OpenSSH только для группы «wheel»;
 
-Только пользователи удалённого доступа — разрешить доступ к серверу OpenSSH только для группы «remote»
+Только пользователи удалённого доступа — разрешить доступ к серверу OpenSSH только для группы «remote».
       </string>
 
       <string id="sshd-allow-groups-list_users">Все пользователи</string>
@@ -459,55 +465,55 @@ TCB — любой пользователь может изменить свой
       <string id="sshd-allow-groups-list_remoteonly">Только пользователи удалённого доступа</string>
 
       <string id="sshd-gssapi-auth">Поддержка GSSAPI-аутентификации на сервере OpenSSH</string>
-      <string id="sshd-gssapi-auth_help">Эта политика включает поддержку аутентификации с использованием GSSAPI на сервере OpenSSH
+      <string id="sshd-gssapi-auth_help">Эта политика включает поддержку аутентификации с использованием GSSAPI на сервере OpenSSH:
 
-Включить — поддержка GSSAPI на сервере OpenSSH включена
+Включено — поддержка GSSAPI на сервере OpenSSH включена;
 
-Отключить — поддержка GSSAPI на сервере OpenSSH отключена
+Выключено — поддержка GSSAPI на сервере OpenSSH отключена.
        </string>
 
       <string id="sshd-password-auth">Аутентификация по паролю на сервере OpenSSH</string>
-      <string id="sshd-password-auth_help">Эта политика включает поддержку аутентификации по паролю на сервере OpenSSH
+      <string id="sshd-password-auth_help">Эта политика включает поддержку аутентификации по паролю на сервере OpenSSH:
 
-Включить — поддержка аутентификации по паролю на сервере OpenSSH включена
+Включено — поддержка аутентификации по паролю на сервере OpenSSH включена;
 
-Отключено — поддержка аутентификации по паролю на сервере OpenSSH отключена
+Выключено — поддержка аутентификации по паролю на сервере OpenSSH отключена.
       </string>
 
       <string id="sshd-permit-root-login">Аутентификация суперпользователя на сервере OpenSSH</string>
-      <string id="sshd-permit-root-login_help">Эта политика определяет режимы аутентификации для суперпользователя (root) на сервере OpenSSH
+      <string id="sshd-permit-root-login_help">Эта политика определяет режимы аутентификации для суперпользователя (root) на сервере OpenSSH:
 
-Без пароля — суперпользователю разрешена только беспарольная аутентификация на сервере OpenSSH
+Без пароля — суперпользователю разрешена только беспарольная аутентификация на сервере OpenSSH;
 
-Разрешено — суперпользователю разрешена аутентификация на сервере OpenSSH
+Разрешено — суперпользователю разрешена аутентификация на сервере OpenSSH;
 
-Запрещено — суперпользователю запрещена аутентификация на сервере OpenSSH
+Запрещено — суперпользователю запрещена аутентификация на сервере OpenSSH;
 
-По-умолчанию — Cбросить режим аутентификации для суперпользователя на значение по-умолчанию в пакете
+По умолчанию — Cбросить режим аутентификации для суперпользователя на значение по умолчанию в пакете.
       </string>
       <string id="sshd-permit-root-login_without_password">Только без пароля</string>
       <string id="sshd-permit-root-login_enabled">Разрешено</string>
       <string id="sshd-permit-root-login_disabled">Запрещено</string>
-      <string id="sshd-permit-root-login_default">По-умолчанию</string>
+      <string id="sshd-permit-root-login_default">По умолчанию</string>
 
       <string id="ssh-gssapi-auth">Поддержка аутентификации OpenSSH-клиентов через GSSAPI</string>
-      <string id="ssh-gssapi-auth_help">Эта политика определяет функциональные возможности поддержки аутентификация OpenSSH-клиентов с использованием через GSSAPI
+      <string id="ssh-gssapi-auth_help">Эта политика определяет функциональные возможности поддержки аутентификация OpenSSH-клиентов с использованием через GSSAPI:
 
-Включить — поддержка аутентификации через GSSAPI для OpenSSH-клиентов включена
+Включено — поддержка аутентификации через GSSAPI для OpenSSH-клиентов включена;
 
-Отключить — поддержка аутентификации через GSSAPI для OpenSSH-клиентов отключена
+Выключено — поддержка аутентификации через GSSAPI для OpenSSH-клиентов отключена.
       </string>
 
       <string id="sssd-ad-gpo-access-control">Контроль доступа в SSSD через групповые политики</string>
-      <string id="sssd-ad-gpo-access-control_help">Эта политика определяет в каком режиме будет осуществляться контроль доступа в SSSD основанный на групповых политиках Active Directory (GPO)
+      <string id="sssd-ad-gpo-access-control_help">Эта политика определяет в каком режиме будет осуществляться контроль доступа в SSSD основанный на групповых политиках Active Directory (GPO):
 
-Принудительный режим — правила управления доступом в SSSD основанные на GPO выполняются, ведётся логирование
+Принудительный режим — правила управления доступом в SSSD основанные на GPO выполняются, ведётся логирование;
 
-Разрешающий режим — правила управления доступом в SSSD основанные на GPO не выполняются, ведётся только логирование. Такой режим необходим администратору, чтобы оценить как срабатывают новые правила.
+Разрешающий режим — правила управления доступом в SSSD основанные на GPO не выполняются, ведётся только логирование. Такой режим необходим администратору, чтобы оценить как срабатывают новые правила;
 
-Отключить — правила управления доступом в SSSD основанные на GPO не логируются и не выполняются
+Отключить — правила управления доступом в SSSD основанные на GPO не логируются и не выполняются;
 
-По умолчанию — настройка контроля доступом в SSSD основанное на GPO сброшена на значение по-умолчанию в пакете
+По умолчанию — настройка контроля доступом в SSSD основанное на GPO сброшена на значение по умолчанию в пакете.
       </string>
       <string id="sssd-ad-gpo-access-control_enforced">Принудительный режим</string>
       <string id="sssd-ad-gpo-access-control_permissived">Разрешающий режим</string>
@@ -515,26 +521,26 @@ TCB — любой пользователь может изменить свой
       <string id="sssd-ad-gpo-access-control_default">По умолчанию</string>
 
       <string id="sssd-ad-gpo-ignore-unreadable">Игнорирование политик при недоступности GPT</string>
-      <string id="sssd-ad-gpo-ignore-unreadable_help">Эта настройка определяет будут ли проигнорированы правила управления доступом в SSSD основанные на групповых политиках, если недоступен какой-либо шаблон (GPT) объекта групповой политики (GPO).
+      <string id="sssd-ad-gpo-ignore-unreadable_help">Эта настройка определяет будут ли проигнорированы правила управления доступом в SSSD основанные на групповых политиках, если недоступен какой-либо шаблон (GPT) объекта групповой политики (GPO):
 
-Включить - игнорировать правила управления доступом через групповые политики, если шаблоны групповых политик не доступны для SSSD
+Включить — игнорировать правила управления доступом через групповые политики, если шаблоны групповых политик не доступны для SSSD;
 
-Отключить - запретить доступ пользователям SSSD AD, которым назначены групповые политики, если шаблоны групповых политик не доступны
+Отключить — запретить доступ пользователям SSSD AD, которым назначены групповые политики, если шаблоны групповых политик не доступны;
 
-По умолчанию - настройка игнорирования политик, при недоступности шаблонов групповых политик сброшена на значение по-умолчанию в пакете
+По умолчанию — настройка игнорирования политик, при недоступности шаблонов групповых политик сброшена на значение по умолчанию в пакете.
       </string>
       <string id="sssd-ad-gpo-ignore-unreadable_enabled">Включить</string>
       <string id="sssd-ad-gpo-ignore-unreadable_disabled">Отключить</string>
       <string id="sssd-ad-gpo-ignore-unreadable_default">По умолчанию</string>
 
       <string id="sssd-cache-credentials">Кэширование учётных данных пользователей</string>
-      <string id="sssd-cache-credentials_help">Эта политика определяет, будут ли учётные данные удалённых пользователей сохраняться в локальном кэше SSSD
+      <string id="sssd-cache-credentials_help">Эта политика определяет, будут ли учётные данные удалённых пользователей сохраняться в локальном кэше SSSD:
 
-Включить - сохранение в локальном кэше SSSD учётных данных пользователей включено
+Включить — сохранение в локальном кэше SSSD учётных данных пользователей включено;
 
-Отключить - сохранение в локальном кэше SSSD учётных данных пользователей отключено
+Отключить — сохранение в локальном кэше SSSD учётных данных пользователей отключено.
 
-По умолчанию - настройка сохранения в локальном кэше SSSD учётных данных пользователей сброшена на значение по-умолчанию в пакете
+По умолчанию — настройка сохранения в локальном кэше SSSD учётных данных пользователей сброшена на значение по умолчанию в пакете
 
       </string>
       <string id="sssd-cache-credentials_enabled">Включить</string>
@@ -542,13 +548,13 @@ TCB — любой пользователь может изменить свой
       <string id="sssd-cache-credentials_default">По умолчанию</string>
 
       <string id="sssd-drop-privileges">Режим привилегий службы SSSD</string>
-      <string id="sssd-drop-privileges_help">Эта политика позволяет сбросить права службы SSSD, чтобы избежать работы от имени суперпользователя (root)
+      <string id="sssd-drop-privileges_help">Эта политика позволяет сбросить права службы SSSD, чтобы избежать работы от имени суперпользователя (root):
 
-Привилегированный — служба SSSD запущена от имени привилегированного суперпользователя (root)
+Привилегированный — служба SSSD запущена от имени привилегированного суперпользователя (root);
 
-Непривилегированный — служба SSSD запущена от имени непривилегированного пользователя (_sssd)
+Непривилегированный — служба SSSD запущена от имени непривилегированного пользователя (_sssd);
 
-По умолчанию — режим привилегий службы SSSD задан по умолчанию в пакете
+По умолчанию — режим привилегий службы SSSD задан по умолчанию в пакете.
 
       </string>
       <string id="sssd-drop-privileges_privileged">Привилегированный</string>
@@ -556,41 +562,41 @@ TCB — любой пользователь может изменить свой
       <string id="sssd-drop-privileges_default">По умолчанию</string>
 
       <string id="sssd-dyndns-update">Обновление DNS-записей прямой зоны</string>
-      <string id="sssd-dyndns-update_help">Эта политика позволяет включить или отключить автоматическое обновление DNS-записей (защищенных с помощью GSS-TSIG) с IP-адресом клиента через SSSD
+      <string id="sssd-dyndns-update_help">Эта политика позволяет включить или отключить автоматическое обновление DNS-записей (защищенных с помощью GSS-TSIG) с IP-адресом клиента через SSSD:
 
-Включить - автоматическое обновление DNS-записи клиента через SSSD включено
+Включить — автоматическое обновление DNS-записи клиента через SSSD включено;
 
-Отключить - автоматическое обновление DNS-записи клиента через SSSD отключено
+Отключить — автоматическое обновление DNS-записи клиента через SSSD отключено;
 
-По умолчанию - настройка автоматического обновления DNS-записи клиента через SSSD задана по умолчанию в пакете
+По умолчанию — настройка автоматического обновления DNS-записи клиента через SSSD задана по умолчанию в пакете.
       </string>
       <string id="sssd-dyndns-update_enabled">Включить</string>
       <string id="sssd-dyndns-update_disabled">Отключить</string>
       <string id="sssd-dyndns-update_default">По умолчанию</string>
 
       <string id="sssd-dyndns-update-ptr">Обновление DNS-записей обратной зоны</string>
-      <string id="sssd-dyndns-update-ptr_help">Данная политика определяет будет ли обновляться клиентская PTR-запись (защищенная с помощью GSS-TSIG). Эта политика работает только если включено "обновление DNS-записей прямой зоны".
+      <string id="sssd-dyndns-update-ptr_help">Данная политика определяет будет ли обновляться клиентская PTR-запись (защищенная с помощью GSS-TSIG). Эта политика работает только если включена политика «Обновление DNS-записей прямой зоны»:
 
-Включить - автоматическое обновление DNS записи обратной зоны через SSSD включено
+Включить — автоматическое обновление DNS записи обратной зоны через SSSD включено;
 
-Отключить - автоматическое обновление DNS записи обратной зоны через SSSD отключено
+Отключить — автоматическое обновление DNS записи обратной зоны через SSSD отключено;
 
-По умолчанию - настройка автоматического обновления DNS-записи обратной зоны задана по умолчанию в пакете
+По умолчанию — настройка автоматического обновления DNS-записи обратной зоны задана по умолчанию в пакете.
       </string>
       <string id="sssd-dyndns-update-ptr_enabled">Включить</string>
       <string id="sssd-dyndns-update-ptr_disabled">Отключить</string>
       <string id="sssd-dyndns-update-ptr_default">По умолчанию</string>
 
       <string id="su">Разрешения для /bin/su</string>
-      <string id="su_help">Эта политика определяет разрешения для /bin/su
+      <string id="su_help">Эта политика определяет разрешения для /bin/su:
 
-Любой пользователь — любой пользователь может запускать /bin/su
+Любой пользователь — любой пользователь может запускать /bin/su;
 
-Суперпользователи wheel — любой пользователь имеет право запускать /bin/su, но только пользователи группы «wheel» могут повышать привилегии суперпользователя (root)
+Суперпользователи wheel — любой пользователь имеет право запускать /bin/su, но только пользователи группы «wheel» могут повышать привилегии суперпользователя (root);
 
-Только wheel — только пользователи из группы «wheel» могут запускать /bin/su
+Только wheel — только пользователи из группы «wheel» могут запускать /bin/su;
 
-Только root — только суперпользователь (root) может запускать /bin/su
+Только root — только суперпользователь (root) может запускать /bin/su.
       </string>
       <string id="su_public">Любой пользователь может запускать /bin/su</string>
       <string id="su_wheel">Суперпользователи в группе Wheel</string>
@@ -598,53 +604,53 @@ TCB — любой пользователь может изменить свой
       <string id="su_restricted">Только root</string>
 
       <string id="sudo">Разрешения для /usr/bin/sudo</string>
-      <string id="sudo_help">Эта политика определяет разрешения для /usr/bin/sudo
+      <string id="sudo_help">Эта политика определяет разрешения для /usr/bin/sudo:
 
-Любой пользователь — любой пользователь может запускать /usr/bin/sudo
+Любой пользователь — любой пользователь может запускать /usr/bin/sudo;
 
-Только wheel — пользователям из группы «wheel» разрешено запускать /usr/bin/sudo
+Только wheel — пользователям из группы «wheel» разрешено запускать /usr/bin/sudo;
 
-Только root — только суперпользователь (root) может запускать /usr/bin/sudo
+Только root — только суперпользователь (root) может запускать /usr/bin/sudo.
       </string>
       <string id="sudo_public">Любой пользователь</string>
       <string id="sudo_wheelonly">Только wheel</string>
       <string id="sudo_restricted">Только root</string>
 
       <string id="sudoers">Режим передачи родительской среды в sudo</string>
-      <string id="sudoers_help">Эта политика определяет, передается ли родительская среда (переменные среды) в sudo
+      <string id="sudoers_help">Эта политика определяет, передается ли родительская среда (переменные среды) в sudo:
 
-Строгий — не передавать переменные окружения дочернему процессу
+Строгий — не передавать переменные окружения дочернему процессу;
 
-Слабый — передать переменные окружения дочернему процессу
+Слабый — передать переменные окружения дочернему процессу.
       </string>
       <string id="sudoers_strict">Строгий</string>
       <string id="sudoers_relaxed">Слабый</string>
 
       <string id="sudoreplay">Разрешения для /usr/bin/sudoreplay</string>
-      <string id="sudoreplay_help">Эта политика определяет разрешения для /usr/bin/sudoreplay
+      <string id="sudoreplay_help">Эта политика определяет разрешения для /usr/bin/sudoreplay:
 
-Любой пользователь — любой пользователь может запускать /usr/bin/sudoreplay
+Любой пользователь — любой пользователь может запускать /usr/bin/sudoreplay;
 
-Только wheel — пользователям из группы «wheel» разрешено запускать /usr/bin/sudoreplay
+Только wheel — пользователям из группы «wheel» разрешено запускать /usr/bin/sudoreplay;
 
-Только root — только суперпользователь (root) может запускать /usr/bin/sudoreplay
+Только root — только суперпользователь (root) может запускать /usr/bin/sudoreplay.
       </string>
       <string id="sudoreplay_public">Любой пользователь</string>
       <string id="sudoreplay_wheelonly">Только wheel</string>
       <string id="sudoreplay_restricted">Только root</string>
 
       <string id="sudowheel">Запрос пароля sudo для группы «wheel»</string>
-      <string id="sudowheel_help">Эта политика определяет, следует ли делать запрос пароля sudo для пользователей группы «wheel»
+      <string id="sudowheel_help">Эта политика определяет, следует ли делать запрос пароля sudo для пользователей группы «wheel»:
 
-Отключено — отключить запрос пароля sudo для пользователей группы «wheel»
+Выключено — отключить запрос пароля sudo для пользователей группы «wheel»;
 
-Включено — включить запрос пароля sudo для пользователей группы «wheel»
+Включено — включить запрос пароля sudo для пользователей группы «wheel».
       </string>
 
       <string id="system-auth">Метод аутентификации</string>
-      <string id="system-auth_help">Эта политика определяет метод аутентификации пользователя
+      <string id="system-auth_help">Эта политика определяет метод аутентификации пользователя:
 
-Winbind — использовать Winbind для аутентификации
+Winbind — использовать Winbind для аутентификации;
 
 SSSD — использовать метод проверки подлинности демона System Security Services.
       </string>
@@ -652,51 +658,51 @@ SSSD — использовать метод проверки подлиннос
       <string id="system-auth_winbind">Winbind</string>
 
       <string id="tcb_chkpwd">Разрешения для /usr/lib/chkpwd/tcb_chkpwd</string>
-      <string id="tcb_chkpwd_help">Эта политика определяет разрешения для привилегированного помощника /usr/lib/chkpwd/tcb_chkpwd
+      <string id="tcb_chkpwd_help">Эта политика определяет разрешения для привилегированного помощника /usr/lib/chkpwd/tcb_chkpwd:
 
-Любой пользователь с отключенной схемой tcb — любой пользователь может быть аутентифицирован с использованием привилегированного помощника /usr/lib/chkpwd/tcb_chkpwd, когда отключена схема tcb
+Любой пользователь с отключенной схемой tcb — любой пользователь может быть аутентифицирован с использованием привилегированного помощника /usr/lib/chkpwd/tcb_chkpwd, когда отключена схема tcb;
 
-Любой пользователь с включенной схемой tcb — любой пользователь может аутентифицироваться с помощью привилегированного помощника /usr/lib/chkpwd/tcb_chkpwd, если включена схема tcb
+Любой пользователь с включенной схемой tcb — любой пользователь может аутентифицироваться с помощью привилегированного помощника /usr/lib/chkpwd/tcb_chkpwd, если включена схема tcb;
 
-Только root — только суперпользователь (root) может быть аутентифицирован с помощью /usr/lib/chkpwd/tcb_chkpwd
+Только root — только суперпользователь (root) может быть аутентифицирован с помощью /usr/lib/chkpwd/tcb_chkpwd.
       </string>
       <string id="tcb_chkpwd_traditional">Любой пользователь с отключенным tcb</string>
       <string id="tcb_chkpwd_tcb">Любой пользователь с включенным tcb</string>
       <string id="tcb_chkpwd_restricted">Только root</string>
 
       <string id="udisks2">Правила подключения USB-накопителей</string>
-      <string id="udisks2_help">Эта политика определяет правила подключения USB-накопителей
+      <string id="udisks2_help">Эта политика определяет правила подключения USB-накопителей:
 
-По умолчанию — подключить носитель индивидуально (/run/media/$user/) для каждого пользователя
+По умолчанию — подключить носитель индивидуально (/run/media/$user/) для каждого пользователя;
 
-Общий — подключить носитель к общедоступной точке (/media/)
+Общий — подключить носитель к общедоступной точке (/media/).
       </string>
       <string id="udisks2_default">По умолчанию</string>
       <string id="udisks2_shared">Общий</string>
 
       <string id="virtualbox">Разрешения для VirtualBox</string>
-      <string id="virtualbox_help">Эта политика определяет разрешения для VirtualBox
+      <string id="virtualbox_help">Эта политика определяет разрешения для VirtualBox:
 
-Любой пользователь — любому пользователю разрешено использовать VirtualBox
+Любой пользователь — любому пользователю разрешено использовать VirtualBox;
 
-Группа vboxusers — пользователям группы «vboxusers» разрешено использовать VirtualBox
+Группа vboxusers — пользователям группы «vboxusers» разрешено использовать VirtualBox;
 
-Только root — только суперпользователю (root) разрешено использовать VirtualBox
+Только root — только суперпользователю (root) разрешено использовать VirtualBox.
       </string>
       <string id="virtualbox_public">Любой пользователь</string>
       <string id="virtualbox_vboxusers">Группа vboxusers</string>
       <string id="virtualbox_restricted">Только root</string>
 
 <string id="wireshark-capture">Разрешения для wireshark-capture (dumpcap)</string>
-      <string id="wireshark-capture_help">Эта политика определяет функциональные возможности (режимы) разрешения для захвата wireshark (/usr/bin/dumpcap)
+      <string id="wireshark-capture_help">Эта политика определяет функциональные возможности (режимы) разрешения для захвата wireshark (/usr/bin/dumpcap):
 
-Любой пользователь — любой пользователь имеет право запустить /usr/bin/dumpcap, захват трафика включен
+Любой пользователь — любой пользователь имеет право запустить /usr/bin/dumpcap, захват трафика включен;
 
-Любой пользователь, без захвата трафика — любой пользователь имеет право запускать /usr/bin/dumpcap, захват трафика отключен
+Любой пользователь, без захвата трафика — любой пользователь имеет право запускать /usr/bin/dumpcap, захват трафика отключен;
 
-Группа netadmin — пользователи группы «netadmin» имеют право запускать /usr/bin/dumpcap
+Группа netadmin — пользователи группы «netadmin» имеют право запускать /usr/bin/dumpcap;
 
-Только root — только суперпользователь (root) имеет право запускать /usr/bin/dumpcap
+Только root — только суперпользователь (root) имеет право запускать /usr/bin/dumpcap.
       </string>
       <string id="wireshark-capture_public">Любой пользователь</string>
       <string id="wireshark-capture_relaxed">Любой пользователь без захвата трафика</string>
@@ -704,33 +710,33 @@ SSSD — использовать метод проверки подлиннос
       <string id="wireshark-capture_restricted">Только root</string>
 
       <string id="write">Разрешения для /usr/bin/write</string>
-      <string id="write_help">Эта политика определяет разрешения для /usr/bin/write
+      <string id="write_help">Эта политика определяет разрешения для /usr/bin/write:
 
-Любой пользователь — любому пользователю разрешено запускать /usr/bin/write
+Любой пользователь — любому пользователю разрешено запускать /usr/bin/write;
 
-Только root — только суперпользователю (root) разрешено запускать /usr/bin/write
+Только root — только суперпользователю (root) разрешено запускать /usr/bin/write.
       </string>
       <string id="write_public">Любой пользователь</string>
       <string id="write_restricted">Только root</string>
 
       <string id="xdg-user-dirs">Стандартные каталоги в home</string>
-      <string id="xdg-user-dirs_help">Эта политика определяет, работает ли функция стандартных каталогов(Документы, Загрузки, Изобржения и т.д.) xdg-user-dirs в домашнем каталоге пользователя home
+      <string id="xdg-user-dirs_help">Эта политика определяет, работает ли функция стандартных каталогов (Документы, Загрузки, Изображения и т.д.) xdg-user-dirs в домашнем каталоге пользователя home:
 
-Отключено — функция сохранения списка пользовательских каталогов отключена
+Выключено — функция сохранения списка пользовательских каталогов отключена;
 
-Включено — функция сохранения списка пользовательских каталогов включена
+Включено — функция сохранения списка пользовательских каталогов включена.
       </string>
 
       <string id="xorg-server">Разрешения для Xorg</string>
-      <string id="xorg-server_help">Эта политика определяет разрешения для Xorg (/usr/bin/Xorg)
+      <string id="xorg-server_help">Эта политика определяет разрешения для Xorg (/usr/bin/Xorg):
 
-Не настроен — любому пользователю разрешено запускать /usr/bin/Xorg
+Не настроен — любому пользователю разрешено запускать /usr/bin/Xorg;
 
-Любой пользователь — любому пользователю разрешено запускать /usr/bin/Xorg
+Любой пользователь — любому пользователю разрешено запускать /usr/bin/Xorg;
 
-Группа xgrp — пользователям группы «xgrp» разрешено запускать /usr/bin/Xorg
+Группа xgrp — пользователям группы «xgrp» разрешено запускать /usr/bin/Xorg;
 
-Только root — только суперпользователь (root) может запускать /usr/bin/Xorg
+Только root — только суперпользователь (root) может запускать /usr/bin/Xorg.
       </string>
       <string id="xorg-server_public">Любой пользователь</string>
       <string id="xorg-server_xgrp">Группа xgrp</string>

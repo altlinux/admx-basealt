@@ -99,14 +99,14 @@
       <string id="org-gnome-vino-vnc-password">Password for remote access</string>
       <string id="org-gnome-vino-vnc-password_help">The password which the remote user will be prompted for if the "vnc" authentication method is used. The password specified by the key is base64 encoded.  The special value of 'keyring' (which is not valid base64) means that the password is stored in the GNOME keyring.</string>
 
-      <string id="org-mate-marco-button-layout">Window title Icons</string>
+      <string id="org-mate-marco-button-layout">Arrangement of buttons on the titlebar</string>
       <string id="org-mate-marco-button-layout_help">Settings for the location of icons in the window title. The separator of the right and left halves is a colon. For example, the line 'menu:minimize,maximize,spacer,close' has the window menu icon on the left, and on the right the icons collapse, open, close the window.</string>
 
       <string id="org-mate-marco-general-wrap-style">Switch workspaces</string>
-      <string id="org-mate-marco-general-wrap-style_help">The wrap style is used to determine how to switch from one workspace to another at the border of the workspace switcher. When set to "no wrap", nothing will happen if you try to switch to a workspace past the border of the workspace switcher. If set to "classic", the old marco behavior is used: the end of one row leads to the beginning of the next and the end of a column leads to the beginning of the next. If set to "toroidal", workspaces are connected like a doughnut: the end of each row leads to its own beginning and the end of each column leads to its own beginning.</string>
-      <string id="org-mate-Marco-general-wrap-style-no-wrap">no wrap</string>
-      <string id="org-mate-Marco-general-wrap-style-classic">classic</string>
-      <string id="org-mate-Marco-general-wrap-style-toroidal">toroidal</string>
+      <string id="org-mate-marco-general-wrap-style_help">The wrap style is used to determine how to switch from one workspace to another at the border of the workspace switcher. When set to "No wrap", nothing will happen if you try to switch to a workspace past the border of the workspace switcher. If set to "Classic", the old marco behavior is used: the end of one row leads to the beginning of the next and the end of a column leads to the beginning of the next. If set to "Toroidal", workspaces are connected like a doughnut: the end of each row leads to its own beginning and the end of each column leads to its own beginning.</string>
+      <string id="org-mate-Marco-general-wrap-style-no-wrap">No wrap</string>
+      <string id="org-mate-Marco-general-wrap-style-classic">Classic</string>
+      <string id="org-mate-Marco-general-wrap-style-toroidal">Toroidal</string>
 
       <string id="org-mate-marco-general-show-tab-border">Show window border</string>
       <string id="org-mate-marco-general-show-tab-border_help">Set this to false to disable border of preselected window while performing tab switching.</string>
@@ -115,9 +115,9 @@
       <string id="org-mate-marco-general-allow-top-tiling_help">If enabled, drag-dropping a window to the top of the screen will maximize it. Only works when allow-tiling is enabled.</string>
 
       <string id="org-mate-marco-general-focus-new-windows">Switch focus to a new window</string>
-      <string id="org-mate-marco-general-focus-new-windows_help">This option provides additional control over how newly created windows get focus. It has two possible values; "smart" applies the user's normal focus mode, and "strict" results in windows started from a terminal not being given focus.</string>
-      <string id="org-mate-Marco-general-focus-new-windows-smart">smart</string>
-      <string id="org-mate-Marco-general-focus-new-windows-strict">strict</string>
+      <string id="org-mate-marco-general-focus-new-windows_help">This option provides additional control over how newly created windows get focus. It has two possible values; "Smart" applies the user's normal focus mode, and "Strict" results in windows started from a terminal not being given focus.</string>
+      <string id="org-mate-Marco-general-focus-new-windows-smart">Smart</string>
+      <string id="org-mate-Marco-general-focus-new-windows-strict">Strict</string>
 
       <string id="org-mate-marco-general-allow-tiling">Resizing when drag-dropping</string>
       <string id="org-mate-marco-general-allow-tiling_help">If enabled, dropping windows on screen edges maximizes them vertically and resizes them horizontally to cover half of the available area. Drag-dropping to the top maximizes the window if allow-top-tiling is enabled.</string>
@@ -126,49 +126,97 @@
       <string id="org-mate-marco-general-num-workspaces_help">Set the number of workspaces. The range of acceptable values is 1-36.</string>
 
       <string id="org-mate-marco-general-placement-mode">Location of new windows</string>
-      <string id="org-mate-marco-general-placement-mode_help">Indicates how new windows are positioned. "automatic" means the system chooses a location automatically based on the space available on the desktop, or by a simple cascade if there is no space; "pointer" means that new windows are placed according to the mouse pointer position; "manual" means that the user must manually place the new window with the mouse or keyboard.</string>
-      <string id="org-mate-marco-general-placement-mode-automatic">automatic</string>
-      <string id="org-mate-marco-general-placement-mode-pointer">pointer</string>
-      <string id="org-mate-marco-general-placement-mode-manual">manual</string>
+      <string id="org-mate-marco-general-placement-mode_help">Indicates how new windows are positioned. "Automatic" means the system chooses a location automatically based on the space available on the desktop, or by a simple cascade if there is no space; "Pointer" means that new windows are placed according to the mouse pointer position; "Manual" means that the user must manually place the new window with the mouse or keyboard.</string>
+      <string id="org-mate-marco-general-placement-mode-automatic">Automatic</string>
+      <string id="org-mate-marco-general-placement-mode-pointer">Pointer</string>
+      <string id="org-mate-marco-general-placement-mode-manual">Manual</string>
 
       <string id="org-mate-marco-general-auto-raise">Raise the window in focus</string>
-      <string id="org-mate-marco-general-auto-raise_help">If set to true, and the focus mode is either "sloppy" or "mouse" then the focused window will be automatically raised after a delay specified by the auto_raise_delay key. This is not related to clicking on a window to raise it, nor to entering a window during drag-and-drop.</string>
+      <string id="org-mate-marco-general-auto-raise_help">If set to true, and the focus mode is either "Sloppy" or "Mouse" then the focused window will be automatically raised after a delay specified by the auto_raise_delay key. This is not related to clicking on a window to raise it, nor to entering a window during drag-and-drop.</string>
 
       <string id="org-mate-marco-general-action-middle-click-titlebar">Action by the middle button</string>
-      <string id="org-mate-marco-general-action-middle-click-titlebar_help">Set the action performed by pressing the middle mouse button.</string>
-      <string id="org-mate-marco-general-action-middle-click-titlebar-toggle_shade">toggle_shade</string>
-      <string id="org-mate-marco-general-action-middle-click-titlebar-toggle_maximize">toggle_maximize</string>
-      <string id="org-mate-marco-general-action-middle-click-titlebar-toggle_maximize_horizontally">toggle_maximize_horizontally</string>
-      <string id="org-mate-marco-general-action-middle-click-titlebar-toggle_maximize_vertically">toggle_maximize_vertically</string>
-      <string id="org-mate-marco-general-action-middle-click-titlebar-minimize">minimize</string>
-      <string id="org-mate-marco-general-action-middle-click-titlebar-none">none</string>
-      <string id="org-mate-marco-general-action-middle-click-titlebar-lower">lower</string>
-      <string id="org-mate-marco-general-action-middle-click-titlebar-menu">menu</string>
-      <string id="org-mate-marco-general-action-middle-click-titlebar-last">last</string>
+      <string id="org-mate-marco-general-action-middle-click-titlebar_help">Set the action performed by pressing the middle mouse button:
+
+Toggle_shade — will shade/unshade the window;
+
+Toggle_maximize — will maximize/unmaximize the window;
+
+Toggle_maximize_horizontally — which will maximize/unmaximize the window horizontally;
+
+Toggle_maximize_vertically — which will maximize/unmaximize the window vertically;
+
+None — nothing;
+
+Lower — will put the window behind all the others;
+
+Menu — will display the window menu;
+
+Last — repeat last action.</string>
+      <string id="org-mate-marco-general-action-middle-click-titlebar-toggle_shade">Toggle_shade</string>
+      <string id="org-mate-marco-general-action-middle-click-titlebar-toggle_maximize">Toggle_maximize</string>
+      <string id="org-mate-marco-general-action-middle-click-titlebar-toggle_maximize_horizontally">Toggle_maximize_horizontally</string>
+      <string id="org-mate-marco-general-action-middle-click-titlebar-toggle_maximize_vertically">Toggle_maximize_vertically</string>
+      <string id="org-mate-marco-general-action-middle-click-titlebar-minimize">Minimize</string>
+      <string id="org-mate-marco-general-action-middle-click-titlebar-none">None</string>
+      <string id="org-mate-marco-general-action-middle-click-titlebar-lower">Lower</string>
+      <string id="org-mate-marco-general-action-middle-click-titlebar-menu">Menu</string>
+      <string id="org-mate-marco-general-action-middle-click-titlebar-last">Last</string>
 
       <string id="org-mate-marco-general-action-right-click-titlebar">Action by the right button</string>
-      <string id="org-mate-marco-general-action-right-click-titlebar_help">Set the action performed by pressing the right button on the header.</string>
-      <string id="org-mate-marco-general-action-right-click-titlebar-toggle_shade">toggle_shade</string>
-      <string id="org-mate-marco-general-action-right-click-titlebar-toggle_maximize">toggle_maximize</string>
-      <string id="org-mate-marco-general-action-right-click-titlebar-toggle_maximize_horizontally">toggle_maximize_horizontally</string>
-      <string id="org-mate-marco-general-action-right-click-titlebar-toggle_maximize_vertically">toggle_maximize_vertically</string>
-      <string id="org-mate-marco-general-action-right-click-titlebar-minimize">minimize</string>
-      <string id="org-mate-marco-general-action-right-click-titlebar-none">none</string>
-      <string id="org-mate-marco-general-action-right-click-titlebar-lower">lower</string>
-      <string id="org-mate-marco-general-action-right-click-titlebar-menu">menu</string>
-      <string id="org-mate-marco-general-action-right-click-titlebar-last">last</string>
+      <string id="org-mate-marco-general-action-right-click-titlebar_help">Set the action performed by pressing the right button on the header:
+
+Toggle_shade — will shade/unshade the window;
+
+Toggle_maximize — will maximize/unmaximize the window;
+
+Toggle_maximize_horizontally — which will maximize/unmaximize the window horizontally;
+
+Toggle_maximize_vertically — which will maximize/unmaximize the window vertically;
+
+None — nothing;
+
+Lower — will put the window behind all the others;
+
+Menu — will display the window menu;
+
+Last — repeat last action.</string>
+      <string id="org-mate-marco-general-action-right-click-titlebar-toggle_shade">Toggle_shade</string>
+      <string id="org-mate-marco-general-action-right-click-titlebar-toggle_maximize">Toggle_maximize</string>
+      <string id="org-mate-marco-general-action-right-click-titlebar-toggle_maximize_horizontally">Toggle_maximize_horizontally</string>
+      <string id="org-mate-marco-general-action-right-click-titlebar-toggle_maximize_vertically">Toggle_maximize_vertically</string>
+      <string id="org-mate-marco-general-action-right-click-titlebar-minimize">Minimize</string>
+      <string id="org-mate-marco-general-action-right-click-titlebar-none">None</string>
+      <string id="org-mate-marco-general-action-right-click-titlebar-lower">Lower</string>
+      <string id="org-mate-marco-general-action-right-click-titlebar-menu">Menu</string>
+      <string id="org-mate-marco-general-action-right-click-titlebar-last">Last</string>
 
       <string id="org-mate-marco-general-action-double-click-titlebar">Action by the double click</string>
-      <string id="org-mate-marco-general-action-double-click-titlebar_help">Set the action performed by double-click the left button on the header.</string>
-      <string id="org-mate-marco-general-action-double-click-titlebar-toggle_shade">toggle_shade</string>
-      <string id="org-mate-marco-general-action-double-click-titlebar-toggle_maximize">toggle_maximize</string>
-      <string id="org-mate-marco-general-action-double-click-titlebar-toggle_maximize_horizontally">toggle_maximize_horizontally</string>
-      <string id="org-mate-marco-general-action-double-click-titlebar-toggle_maximize_vertically">toggle_maximize_vertically</string>
-      <string id="org-mate-marco-general-action-double-click-titlebar-minimize">minimize</string>
-      <string id="org-mate-marco-general-action-double-click-titlebar-none">none</string>
-      <string id="org-mate-marco-general-action-double-click-titlebar-lower">lower</string>
-      <string id="org-mate-marco-general-action-double-click-titlebar-menu">menu</string>
-      <string id="org-mate-marco-general-action-double-click-titlebar-last">last</string>
+      <string id="org-mate-marco-general-action-double-click-titlebar_help">Set the action performed by double-click the left button on the header:
+
+Toggle_shade — will shade/unshade the window;
+
+Toggle_maximize — will maximize/unmaximize the window;
+
+Toggle_maximize_horizontally — which will maximize/unmaximize the window horizontally;
+
+Toggle_maximize_vertically — which will maximize/unmaximize the window vertically;
+
+None — nothing;
+
+Lower — will put the window behind all the others;
+
+Menu — will display the window menu;
+
+Last — repeat last action.</string>
+      <string id="org-mate-marco-general-action-double-click-titlebar-toggle_shade">Toggle_shade</string>
+      <string id="org-mate-marco-general-action-double-click-titlebar-toggle_maximize">Toggle_maximize</string>
+      <string id="org-mate-marco-general-action-double-click-titlebar-toggle_maximize_horizontally">Toggle_maximize_horizontally</string>
+      <string id="org-mate-marco-general-action-double-click-titlebar-toggle_maximize_vertically">Toggle_maximize_vertically</string>
+      <string id="org-mate-marco-general-action-double-click-titlebar-minimize">Minimize</string>
+      <string id="org-mate-marco-general-action-double-click-titlebar-none">None</string>
+      <string id="org-mate-marco-general-action-double-click-titlebar-lower">Lower</string>
+      <string id="org-mate-marco-general-action-double-click-titlebar-menu">Menu</string>
+      <string id="org-mate-marco-general-action-double-click-titlebar-last">Last</string>
 
       <string id="org-mate-marco-general-theme">Theme</string>
       <string id="org-mate-marco-general-theme_help">The theme determines the appearance of window borders, titlebar, and so forth.</string>
@@ -178,9 +226,9 @@
 
       <string id="org-mate-marco-general-focus-mode">Window focus switch mode</string>
       <string id="org-mate-marco-general-focus-mode_help">Set the window focus switching mode.</string>
-      <string id="org-mate-marco-general-focus-mode-click">click</string>
-      <string id="org-mate-marco-general-focus-mode-sloppy">sloppy</string>
-      <string id="org-mate-marco-general-focus-mode-mouse">mouse</string>
+      <string id="org-mate-marco-general-focus-mode-click">Click</string>
+      <string id="org-mate-marco-general-focus-mode-sloppy">Sloppy</string>
+      <string id="org-mate-marco-general-focus-mode-mouse">Mouse</string>
 
       <string id="org-mate-marco-general-titlebar-uses-system-font">System font in the titlebar</string>
       <string id="org-mate-marco-general-titlebar-uses-system-font_help">When enabled, the system font will be used in the window titlebar.</string>
@@ -433,7 +481,7 @@
         <textBox refId="OrgMateMarcoGeneraButtonLayout_setter">
           <label></label>
         </textBox>
-        <checkBox refId="OrgMateMarcoGeneraButtonLayout_setter_blocker">lock</checkBox>
+        <checkBox refId="OrgMateMarcoGeneraButtonLayout_setter_blocker">Lock</checkBox>
         <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
       </presentation>
 
@@ -443,32 +491,32 @@
 
       <presentation id="OrgMateMarcoGeneralWrapStyleMachine-pr">
         <dropdownList noSort="true" defaultItem="0" refId="OrgMateMarcoGeneralWrapStyle_setter">Method:</dropdownList>
-        <checkBox refId="OrgMateMarcoGeneralWrapStyle_setter_blocker">lock</checkBox>
+        <checkBox refId="OrgMateMarcoGeneralWrapStyle_setter_blocker">Lock</checkBox>
         <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
       </presentation>
 
       <presentation id="OrgMateMarcoGeneralShowTabBorderMachine-pr">
-        <checkBox refId="OrgMateMarcoGeneralShowTabBorder_setter_blocker">lock</checkBox>
+        <checkBox refId="OrgMateMarcoGeneralShowTabBorder_setter_blocker">Lock</checkBox>
         <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
       </presentation>
 
       <presentation id="OrgMateMarcoGeneralAllowTopTilingMachine-pr">
-        <checkBox refId="OrgMateMarcoGeneralAllowTopTilingMachine_setter_blocker">lock</checkBox>
+        <checkBox refId="OrgMateMarcoGeneralAllowTopTilingMachine_setter_blocker">Lock</checkBox>
         <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
       </presentation>
 
       <presentation id="OrgMateMarcoGeneralFocusNewWindowsUser-pr">
-        <dropdownList noSort="true" defaultItem="0" refId="OrgMateMarcoGeneralFocusNewWindows_setter">focus transfer:</dropdownList>
+        <dropdownList noSort="true" defaultItem="0" refId="OrgMateMarcoGeneralFocusNewWindows_setter">Focus transfer:</dropdownList>
       </presentation>
 
       <presentation id="OrgMateMarcoGeneralFocusNewWindowsMachine-pr">
-        <dropdownList noSort="true" defaultItem="0" refId="OrgMateMarcoGeneralFocusNewWindows_setter">focus transfer:</dropdownList>
-        <checkBox refId="OrgMateMarcoGeneralFocusNewWindows_setter_blocker">lock</checkBox>
+        <dropdownList noSort="true" defaultItem="0" refId="OrgMateMarcoGeneralFocusNewWindows_setter">Focus transfer:</dropdownList>
+        <checkBox refId="OrgMateMarcoGeneralFocusNewWindows_setter_blocker">Lock</checkBox>
         <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
       </presentation>
 
       <presentation id="OrgMateMarcoGeneralAllowTilingMachine-pr">
-        <checkBox refId="OrgMateMarcoGeneralAllowTiling_setter_blocker">lock</checkBox>
+        <checkBox refId="OrgMateMarcoGeneralAllowTiling_setter_blocker">Lock</checkBox>
         <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
       </presentation>
 
@@ -478,7 +526,7 @@
 
         <presentation id="OrgMateMarcoGeneralNumWorkspacesMachine-pr">
         <decimalTextBox refId="OrgMateMarcoGeneralNumWorkspaces_setter" defaultValue="2">Number of workspaces:</decimalTextBox>
-        <checkBox refId="OrgMateMarcoGeneralNumWorkspaces_setter_blocker">lock</checkBox>
+        <checkBox refId="OrgMateMarcoGeneralNumWorkspaces_setter_blocker">Lock</checkBox>
         <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
       </presentation>
 
@@ -488,90 +536,42 @@
 
       <presentation id="OrgMateMarcoGeneralPlacementModeMachine-pr">
         <dropdownList noSort="true" defaultItem="0" refId="OrgMateMarcoGeneralPlacementMode_setter">Location:</dropdownList>
-        <checkBox refId="OrgMateMarcoGeneralPlacementMode_setter_blocker">lock</checkBox>
+        <checkBox refId="OrgMateMarcoGeneralPlacementMode_setter_blocker">Lock</checkBox>
         <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
       </presentation>
 
       <presentation id="OrgMateMarcoGeneralAutoRaiseMachine-pr">
-        <checkBox refId="OrgMateMarcoGeneralAutoRaise_setter_blocker">lock</checkBox>
+        <checkBox refId="OrgMateMarcoGeneralAutoRaise_setter_blocker">Lock</checkBox>
         <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
       </presentation>
 
       <presentation id="OrgMateMarcoGeneralActionMiddleClickTitlebarUser-pr">
         <dropdownList noSort="true" defaultItem="0" refId="OrgMateMarcoGeneralActionMiddleClickTitlebar_setter">Action:</dropdownList>
-        <text>toggle_shade - will shade/unshade the window
-toggle_maximize - will maximize/unmaximize the window
-toggle_maximize_horizontally - which will maximize/unmaximize the window horizontally
-toggle_maximize_vertically - which will maximize/unmaximize the window vertically
-none - nothing
-lower - will put the window behind all the others
-menu - will display the window menu
-last - repeat last action</text>
       </presentation>
 
       <presentation id="OrgMateMarcoGeneralActionMiddleClickTitlebarMachine-pr">
         <dropdownList noSort="true" defaultItem="0" refId="OrgMateMarcoGeneralActionMiddleClickTitlebar_setter">Action:</dropdownList>
-<text>toggle_shade - will shade/unshade the window
-toggle_maximize - will maximize/unmaximize the window
-toggle_maximize_horizontally - which will maximize/unmaximize the window horizontally
-toggle_maximize_vertically - which will maximize/unmaximize the window vertically
-none - nothing
-lower - will put the window behind all the others
-menu - will display the window menu
-last - repeat last action</text>
-        <checkBox refId="OrgMateMarcoGeneralActionMiddleClickTitlebar_setter_blocker">lock</checkBox>
+        <checkBox refId="OrgMateMarcoGeneralActionMiddleClickTitlebar_setter_blocker">Lock</checkBox>
         <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
       </presentation>
 
       <presentation id="OrgMateMarcoGeneralActionRightClickTitlebarUser-pr">
         <dropdownList noSort="true" defaultItem="0" refId="OrgMateMarcoGeneralActionRightClickTitlebar_setter">Action:</dropdownList>
-<text>toggle_shade - will shade/unshade the window
-toggle_maximize - will maximize/unmaximize the window
-toggle_maximize_horizontally - which will maximize/unmaximize the window horizontally
-toggle_maximize_vertically - which will maximize/unmaximize the window vertically
-none - nothing
-lower - will put the window behind all the others
-menu - will display the window menu
-last - repeat last action</text>
       </presentation>
 
         <presentation id="OrgMateMarcoGeneralActionRightClickTitlebarMachine-pr">
         <dropdownList noSort="true" defaultItem="0" refId="OrgMateMarcoGeneralActionRightClickTitlebar_setter">Action:</dropdownList>
-<text>toggle_shade - will shade/unshade the window
-toggle_maximize - will maximize/unmaximize the window
-toggle_maximize_horizontally - which will maximize/unmaximize the window horizontally
-toggle_maximize_vertically - which will maximize/unmaximize the window vertically
-none - nothing
-lower - will put the window behind all the others
-menu - will display the window menu
-last - repeat last action</text>
-        <checkBox refId="OrgMateMarcoGeneralActionRightClickTitlebar_setter_blocker">lock</checkBox>
+        <checkBox refId="OrgMateMarcoGeneralActionRightClickTitlebar_setter_blocker">Lock</checkBox>
         <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
       </presentation>
 
         <presentation id="OrgMateMarcoGeneralActionDoubleClickTitlebarUser-pr">
         <dropdownList noSort="true" defaultItem="0" refId="OrgMateMarcoGeneralActionDoubleClickTitlebar_setter">Action:</dropdownList>
-<text>toggle_shade - will shade/unshade the window
-toggle_maximize - will maximize/unmaximize the window
-toggle_maximize_horizontally - which will maximize/unmaximize the window horizontally
-toggle_maximize_vertically - which will maximize/unmaximize the window vertically
-none - nothing
-lower - will put the window behind all the others
-menu - will display the window menu
-last - repeat last action</text>
       </presentation>
 
         <presentation id="OrgMateMarcoGeneralActionDoubleClickTitlebarMachine-pr">
         <dropdownList noSort="true" defaultItem="0" refId="OrgMateMarcoGeneralActionDoubleClickTitlebar_setter">Action:</dropdownList>
-<text>toggle_shade - will shade/unshade the window
-toggle_maximize - will maximize/unmaximize the window
-toggle_maximize_horizontally - which will maximize/unmaximize the window horizontally
-toggle_maximize_vertically - which will maximize/unmaximize the window vertically
-none - nothing
-lower - will put the window behind all the others
-menu - will display the window menu
-last - repeat last action</text>
-        <checkBox refId="OrgMateMarcoGeneralActionDoubleClickTitlebar_setter_blocker">lock</checkBox>
+        <checkBox refId="OrgMateMarcoGeneralActionDoubleClickTitlebar_setter_blocker">Lock</checkBox>
         <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
       </presentation>
 
@@ -585,7 +585,7 @@ last - repeat last action</text>
         <textBox refId="OrgMateMarcoGeneralTheme_setter">
           <label>Theme:</label>
         </textBox>
-        <checkBox refId="OrgMateMarcoGeneralTheme_setter_blocker">lock</checkBox>
+        <checkBox refId="OrgMateMarcoGeneralTheme_setter_blocker">Lock</checkBox>
         <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
       </presentation>
 
@@ -599,7 +599,7 @@ last - repeat last action</text>
         <textBox refId="OrgMateMarcoGeneralTitlebarFont_setter">
           <label>Тема:</label>
         </textBox>
-        <checkBox refId="OrgMateMarcoGeneralTitlebarFont_setter_blocker">lock</checkBox>
+        <checkBox refId="OrgMateMarcoGeneralTitlebarFont_setter_blocker">Lock</checkBox>
         <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
       </presentation>
 
@@ -609,17 +609,17 @@ last - repeat last action</text>
 
       <presentation id="OrgMateMarcoGeneralFocusModeMachine-pr">
         <dropdownList noSort="true" defaultItem="0" refId="OrgMateMarcoGeneralFocusMode_setter">Window focus switching mode:</dropdownList>
-        <checkBox refId="OrgMateMarcoGeneralFocusMode_setter_blocker">lock</checkBox>
+        <checkBox refId="OrgMateMarcoGeneralFocusMode_setter_blocker">Lock</checkBox>
         <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
       </presentation>
 
       <presentation id="OrgMateMarcoGeneralTitlebarUsesSystemFontMachine-pr">
-        <checkBox refId="OrgMateMarcoGeneralTitlebarUsesSystemFont_setter_blocker">lock</checkBox>
+        <checkBox refId="OrgMateMarcoGeneralTitlebarUsesSystemFont_setter_blocker">Lock</checkBox>
         <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
       </presentation>
 
       <presentation id="OrgMateMarcoGeneralCompositingFastAltTabMachine-pr">
-        <checkBox refId="OrgMateMarcoGeneralCompositingFastAltTab_setter_blocker">lock</checkBox>
+        <checkBox refId="OrgMateMarcoGeneralCompositingFastAltTab_setter_blocker">Lock</checkBox>
         <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
       </presentation>
 
@@ -629,12 +629,12 @@ last - repeat last action</text>
 
         <presentation id="OrgMateMarcoGeneralAutoRaiseDelayMachine-pr">
         <decimalTextBox refId="OrgMateMarcoGeneralAutoRaiseDelay_setter" defaultValue="500">Milliseconds:</decimalTextBox>
-        <checkBox refId="OrgMateMarcoGeneralAutoRaiseDelay_setter_blocker">lock</checkBox>
+        <checkBox refId="OrgMateMarcoGeneralAutoRaiseDelay_setter_blocker">Lock</checkBox>
         <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
       </presentation>
 
       <presentation id="OrgMateMarcoGeneralCenterNewWindowsMachine-pr">
-        <checkBox refId="OrgMateMarcoGeneralCenterNewWindows_setter_blocker">lock</checkBox>
+        <checkBox refId="OrgMateMarcoGeneralCenterNewWindows_setter_blocker">Lock</checkBox>
         <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
       </presentation>
 
@@ -644,7 +644,7 @@ last - repeat last action</text>
 
         <presentation id="OrgMateMarcoGeneralIconSizeMachine-pr">
         <decimalTextBox refId="OrgMateMarcoGeneralIconSize_setter" defaultValue="48">Size:</decimalTextBox>
-        <checkBox refId="OrgMateMarcoGeneralIconSize_setter_blocker">lock</checkBox>
+        <checkBox refId="OrgMateMarcoGeneralIconSize_setter_blocker">Lock</checkBox>
         <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
       </presentation>
 
@@ -654,7 +654,7 @@ last - repeat last action</text>
 
         <presentation id="OrgMateMarcoGeneralAltTabMaxColumnsMachine-pr">
         <decimalTextBox refId="OrgMateMarcoGeneralAltTabMaxColumns_setter" defaultValue="5">Number of columns</decimalTextBox>
-        <checkBox refId="OrgMateMarcoGeneralAltTabMaxColumns_setter_blocker">lock</checkBox>
+        <checkBox refId="OrgMateMarcoGeneralAltTabMaxColumns_setter_blocker">Lock</checkBox>
         <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
       </presentation>
 
@@ -664,12 +664,12 @@ last - repeat last action</text>
 
       <presentation id="OrgMatePeripheralsKeyboardDelayMachine-pr">
         <decimalTextBox refId="OrgMatePeripheralsKeyboardDelay_setter">Delay:</decimalTextBox>
-        <checkBox refId="OrgMatePeripheralsKeyboardDelay_setter_blocker">lock</checkBox>
+        <checkBox refId="OrgMatePeripheralsKeyboardDelay_setter_blocker">Lock</checkBox>
         <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
       </presentation>
 
       <presentation id="OrgMatePeripheralsKeyboardRepeatMachine-pr">
-        <checkBox refId="OrgMatePeripheralsKeyboardRepeat_setter_blocker">lock</checkBox>
+        <checkBox refId="OrgMatePeripheralsKeyboardRepeat_setter_blocker">Lock</checkBox>
         <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
       </presentation>
 
@@ -679,7 +679,7 @@ last - repeat last action</text>
 
       <presentation id="OrgMatePeripheralsKeyboardRateMachine-pr">
         <decimalTextBox refId="OrgMatePeripheralsKeyboardRate_setter">Repeat rate:</decimalTextBox>
-        <checkBox refId="OrgMatePeripheralsKeyboardRate_setter_blocker">lock</checkBox>
+        <checkBox refId="OrgMatePeripheralsKeyboardRate_setter_blocker">Lock</checkBox>
         <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
       </presentation>
 
