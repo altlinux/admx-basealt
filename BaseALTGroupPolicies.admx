@@ -260,5 +260,25 @@
         <string>disabled</string>
       </disabledValue>
     </policy>
+    <policy class="Machine" displayName="$(string.gpupdate_scripts_applier)" explainText="$(string.gpupdate_scripts_applier_help)" key="Software\BaseALT\Policies\GPUpdate" name="ScriptsApplier" valueName="ScriptsApplier">
+      <parentCategory ref="ALT_GPUpdateAppliers"/>
+      <supportedOn ref="system:SUPPORTED_AltP10"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+    <policy class="Machine" displayName="$(string.gpupdate_scripts_user_applier)" explainText="$(string.gpupdate_scripts_user_applier_help)" key="Software\BaseALT\Policies\GPUpdate" name="ScriptsApplierUser" valueName="ScriptsApplierUser">
+      <parentCategory ref="ALT_GPUpdateAppliers"/>
+      <supportedOn ref="system:SUPPORTED_AltP10"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
   </policies>
 </policyDefinitions>

@@ -86,6 +86,12 @@
 
       <string id="gp_local_users_system-uids">Filter users by uid</string>
       <string id="gp_local_users_system-uids_help">This policy allows to disable/disable group policies applying for users with uid less 500.</string>
+
+      <string id="gpupdate_scripts_applier">Script execution module for machine</string>
+      <string id="gpupdate_scripts_applier_help">This policy enables disables the scripting group policy execution engine for computers.</string>
+
+      <string id="gpupdate_scripts_users_applier">Script execution module for users</string>
+      <string id="gpupdate_scripts_users_applier_help">This policy enables disables the scripting group policy execution engine for users.</string>
     </stringTable>
   </resources>
 </policyDefinitionResources>

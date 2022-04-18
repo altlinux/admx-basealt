@@ -87,6 +87,11 @@
       <string id="gp_local_users_system-uids">Фильтровать пользователей с системными идентификаторами</string>
       <string id="gp_local_users_system-uids_help">Эта политика позволяет включить/отключить применение групповых политик для пользователей, с uid меньше 500.</string>
 
+      <string id="gpupdate_scripts_applier">Модуль выполнения сценариев для компьютеров</string>
+      <string id="gpupdate_scripts_applier_help">Эта политика включает/отключает модуль выполнения групповых политик сценариев для компьютеров.</string>
+
+      <string id="gpupdate_scripts_user_applier">Модуль выполнения сценариев для пользователей</string>
+      <string id="gpupdate_scripts_user_applier_help">Эта политика включает/отключает модуль выполнения групповых политик сценариев для пользователей.</string>
     </stringTable>
   </resources>
 </policyDefinitionResources>
