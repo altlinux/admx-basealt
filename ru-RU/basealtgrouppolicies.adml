@@ -87,6 +87,8 @@
       <string id="gp_local_users_system-uids">Фильтровать пользователей с системными идентификаторами</string>
       <string id="gp_local_users_system-uids_help">Эта политика позволяет включить/отключить применение групповых политик для пользователей, с uid меньше 500.</string>
 
+      <string id="gpupdate_findtrusteddc_applier">Включить поиск доверенных доменов</string>
+      <string id="gpupdate_findtrusteddc_applier_help">Эта политика включает поиск доверенных доменов с настроенным каталогом Sysvol, если автоматически выбранный контроллер домена оказался с пустым Sysvol.</string>
     </stringTable>
   </resources>
 </policyDefinitionResources>

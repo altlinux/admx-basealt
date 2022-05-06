@@ -260,5 +260,15 @@
         <string>disabled</string>
       </disabledValue>
     </policy>
+  <policy class="Machine" displayName="$(string.gpupdate_findtrusteddc_applier)" explainText="$(string.gpupdate_findtrusteddc_applier_help)" key="Software\BaseALT\Policies\GPUpdate" name="SearchTrustDC" valueName="SearchTrustDC">
+      <parentCategory ref="ALT_GroupPolicies"/>
+      <supportedOn ref="system:SUPPORTED_AltP10"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
   </policies>
 </policyDefinitions>
