@@ -633,12 +633,12 @@ TCB — любой пользователь может изменить свой
       <string id="sudoreplay_wheelonly">Только wheel</string>
       <string id="sudoreplay_restricted">Только root</string>
 
-      <string id="sudowheel">Запрос пароля sudo для группы «wheel»</string>
-      <string id="sudowheel_help">Эта политика определяет, следует ли делать запрос пароля sudo для пользователей группы «wheel»
+      <string id="sudowheel">Включение sudo для группы «wheel» со стандартными конфигурациями</string>
+      <string id="sudowheel_help">Эта политика позволяет повышать привилегии для членов группы «wheel» через команду sudo.
 
-Отключено — отключить запрос пароля sudo для пользователей группы «wheel»
+Если политика включена, члены группы «wheel» могут повысить привилегии с помощью sudo.
 
-Включено — включить запрос пароля sudo для пользователей группы «wheel»
+Если политика выключена или не настроена, члены группы «wheel» не могут повысить привилегии с помощью sudo.
       </string>
 
       <string id="system-auth">Метод аутентификации</string>
