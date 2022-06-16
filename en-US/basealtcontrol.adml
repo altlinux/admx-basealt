@@ -634,12 +634,14 @@ Only root — Only superuser (root) is permitted to run /usr/bin/sudoreplay
       <string id="sudoreplay_wheelonly">Only wheel</string>
       <string id="sudoreplay_restricted">Only root</string>
 
-      <string id="sudowheel">Enabling sudo for the "wheel" group with standard configurations</string>
-      <string id="sudowheel_help">This policy allows privilege escalation for members of the "wheel" group via the sudo command.
+      <string id="sudowheel">Enabling sudo for the «wheel» group with standard configurations</string>
+      <string id="sudowheel_help">This policy allows privilege escalation for members of the «wheel» group via the sudo command.
 
-If the policy is enabled, members of the "wheel" group can elevate privileges with sudo.
+Enable - members of the «wheel» group can elevate privileges with sudo.
 
-If the policy is disabled or not configured, members of the "wheel" group cannot elevate privileges with sudo.
+Disable - members of the «wheel» group cannot elevate privileges with sudo.
+
+Not configured - remains in the previously assigned state
       </string>
 
       <string id="system-auth">Authentication method</string>
