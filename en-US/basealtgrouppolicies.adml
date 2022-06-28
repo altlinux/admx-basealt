@@ -87,8 +87,8 @@
       <string id="gp_local_users_system-uids">Filter users by uid</string>
       <string id="gp_local_users_system-uids_help">This policy allows to disable/disable group policies applying for users with uid less 500.</string>
 
-      <string id="gpupdate_findtrusteddc_applier">Enable search for trusted domains</string>
-      <string id="gpupdate_findtrusteddc_applier_help">This policy enables searching for trusted domains with a configured Sysvol directory if the auto-selected domain controller ends up with an empty Sysvol.</string>
+      <string id="gpupdate_scrollsysvoldc_applier">Enable enumeration of domain controllers with full Sysvol</string>
+      <string id="gpupdate_scrollsysvoldc_applier_help">This policy enables iterating over domain controllers with a configured Sysvol catalog if the automatically selected domain controller happens to have a Sysvol that does not have group policies.</string>
     </stringTable>
   </resources>
 </policyDefinitionResources>

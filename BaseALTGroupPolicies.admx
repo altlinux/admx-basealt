@@ -260,7 +260,7 @@
         <string>disabled</string>
       </disabledValue>
     </policy>
-  <policy class="Machine" displayName="$(string.gpupdate_findtrusteddc_applier)" explainText="$(string.gpupdate_findtrusteddc_applier_help)" key="Software\BaseALT\Policies\GPUpdate" name="SearchTrustDC" valueName="SearchTrustDC">
+  <policy class="Machine" displayName="$(string.gpupdate_scrollsysvoldc_applier)" explainText="$(string.gpupdate_scrollsysvoldc_applier_help)" key="Software\BaseALT\Policies\GPUpdate" name="ScrollSysvolDC" valueName="ScrollSysvolDC">
       <parentCategory ref="ALT_GroupPolicies"/>
       <supportedOn ref="system:SUPPORTED_AltP10"/>
       <enabledValue>
