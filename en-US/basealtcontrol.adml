@@ -634,12 +634,12 @@ Only root — Only superuser (root) is permitted to run /usr/bin/sudoreplay
       <string id="sudoreplay_wheelonly">Only wheel</string>
       <string id="sudoreplay_restricted">Only root</string>
 
-      <string id="sudowheel">Request sudo password for «wheel» group</string>
-      <string id="sudowheel_help">This policy determines whether to make a sudo password request for users of the «wheel» group
+      <string id="sudowheel">Allow sudo command to members of "wheel" group</string>
+      <string id="sudowheel_help">This policy allows or denies members of the "wheel" group to use the sudo command. If the policy is enabled, users in the "wheel" group can elevate system privileges via the sudo command. If the policy is not configured or disabled, a member of the "wheel" groups will not be able to use the sudo command.
 
-Disabled — Disable sudo password request for users of the «wheel» group
+Disabled - user group "wheel" cannot elevate privileges via sudo command
 
-Enabled — Enable sudo password request for users of the «wheel» group
+Enabled - user group "wheel" can elevate privileges via sudo command
       </string>
 
       <string id="system-auth">Authentication method</string>
