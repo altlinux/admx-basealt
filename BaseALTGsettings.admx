@@ -290,17 +290,22 @@
         displayName="$(string.org-mate-screensaver-idle-activation-enabled)"
         explainText="$(string.org-mate-screensaver-idle-activation-enabled_help)"
         key="Software\BaseALT\Policies\gsettings"
-        valueName="org.mate.screensaver.idle-activation-enabled"
         presentation="$(presentation.OrgMateScreesaverIdleActivationEnabledMachine-pr)" >
       <parentCategory ref="system:ALT_Screensaver_Mate" />
       <supportedOn ref="system:SUPPORTED_AltP9" />
-      <enabledValue>
-        <decimal value="1" />
-      </enabledValue>
-      <disabledValue>
-        <decimal value="0" />
-      </disabledValue>
       <elements>
+        <enum id="OrgMateScreesaverIdleActivationEnabled_setter" required="true" valueName="org.mate.screensaver.idle-activation-enabled">
+          <item displayName="$(string.org-mate-screensaver-idle-activation-enabled-true)">
+            <value>
+              <decimal value="1" />
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-screensaver-idle-activation-enabled-false)">
+            <value>
+              <decimal value="0" />
+            </value>
+          </item>
+        </enum>
         <boolean id="OrgMateScreesaverIdleActivationEnabled_setter_blocker" key="Software\BaseALT\Policies\GSettingsLocks" valueName="org.mate.screensaver.idle-activation-enabled">
           <trueValue>
             <decimal value="1" />
@@ -331,17 +336,22 @@
         displayName="$(string.org-mate-screensaver-lock-enabled)"
         explainText="$(string.org-mate-screensaver-lock-enabled_help)"
         key="Software\BaseALT\Policies\gsettings"
-        valueName="org.mate.screensaver.lock-enabled"
         presentation="$(presentation.OrgMateScreensaverLockEnabledMachine-pr)" >
       <parentCategory ref="system:ALT_Screensaver_Mate" />
       <supportedOn ref="system:SUPPORTED_AltP9" />
-      <enabledValue>
-        <decimal value="1" />
-      </enabledValue>
-      <disabledValue>
-        <decimal value="0" />
-      </disabledValue>
       <elements>
+        <enum id="OrgMateScreensaverLockEnabled_setter" required="true" valueName="org.mate.screensaver.lock-enabled">
+          <item displayName="$(string.org-mate-screensaver-lock-enabled-true)">
+            <value>
+              <decimal value="1" />
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-screensaver-lock-enabled-false)">
+            <value>
+              <decimal value="0" />
+            </value>
+          </item>
+        </enum>
         <boolean id="OrgMateScreensaverLockEnabled_setter_blocker" key="Software\BaseALT\Policies\GSettingsLocks" valueName="org.mate.screensaver.lock-enabled">
           <trueValue>
             <decimal value="1" />
@@ -542,17 +552,22 @@
         displayName="$(string.org-mate-screensaver-user-switch-enabled)"
         explainText="$(string.org-mate-screensaver-user-switch-enabled_help)"
         key="Software\BaseALT\Policies\gsettings"
-        valueName="org.mate.screensaver.user-switch-enabled"
         presentation="$(presentation.OrgMateScreensaverUserSwitchEnabledMachine-pr)">
       <parentCategory ref="system:ALT_Screensaver_Mate" />
       <supportedOn ref="system:SUPPORTED_AltP9" />
-      <enabledValue>
-        <decimal value="1" />
-      </enabledValue>
-      <disabledValue>
-        <decimal value="0" />
-      </disabledValue>
       <elements>
+        <enum id="OrgMateScreensaverUserSwitchEnabled_setter" required="true" valueName="org.mate.screensaver.user-switch-enabled">
+          <item displayName="$(string.org-mate-screensaver-user-switch-enabled-true)">
+            <value>
+              <decimal value="1" />
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-screensaver-user-switch-enabled-false)">
+            <value>
+              <decimal value="0" />
+            </value>
+          </item>
+        </enum>
         <boolean id="OrgMateScreensaverUserSwitchEnabled_setter_blocker" key="Software\BaseALT\Policies\GSettingsLocks" valueName="org.mate.screensaver.user-switch-enabled">
           <trueValue>
             <decimal value="1" />
@@ -583,17 +598,22 @@
         displayName="$(string.org-mate-screensaver-logout-enabled)"
         explainText="$(string.org-mate-screensaver-logout-enabled_help)"
         key="Software\BaseALT\Policies\gsettings"
-        valueName="org.mate.screensaver.logout-enabled"
         presentation="$(presentation.OrgMateScreensaverLogoutEnabledMachine-pr)">
       <parentCategory ref="system:ALT_Screensaver_Mate" />
       <supportedOn ref="system:SUPPORTED_AltP9" />
-      <enabledValue>
-        <decimal value="1" />
-      </enabledValue>
-      <disabledValue>
-        <decimal value="0" />
-      </disabledValue>
       <elements>
+        <enum id="OrgMateScreensaverLogoutEnabled_setter" required="true" valueName="org.mate.screensaver.logout-enabled">
+          <item displayName="$(string.org-mate-screensaver-logout-enabled-true)">
+            <value>
+              <decimal value="1" />
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-screensaver-logout-enabled-false)">
+            <value>
+              <decimal value="0" />
+            </value>
+          </item>
+        </enum>
         <boolean id="OrgMateScreensaverLogoutEnabled_setter_blocker" key="Software\BaseALT\Policies\GSettingsLocks" valueName="org.mate.screensaver.logout-enabled">
           <trueValue>
             <decimal value="1" />
@@ -624,17 +644,22 @@
         displayName="$(string.org-mate-lockdown-disable-log-out)"
         explainText="$(string.org-mate-lockdown-disable-log-out_help)"
         key="Software\BaseALT\Policies\gsettings"
-        valueName="org.mate.lockdown.disable-log-out"
         presentation="$(presentation.OrgMateLockdownDisableLogOutMachine-pr)">
       <parentCategory ref="system:ALT_User_Restrictions_Mate" />
       <supportedOn ref="system:SUPPORTED_AltP9" />
-      <enabledValue>
-        <decimal value="1" />
-      </enabledValue>
-      <disabledValue>
-        <decimal value="0" />
-      </disabledValue>
       <elements>
+        <enum id="OrgMateLockdownDisableLogOut_setter" required="true" valueName="org.mate.lockdown.disable-log-out">
+          <item displayName="$(string.org-mate-lockdown-disable-log-out-true)">
+            <value>
+              <decimal value="1" />
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-lockdown-disable-log-out-false)">
+            <value>
+              <decimal value="0" />
+            </value>
+          </item>
+        </enum>
         <boolean id="OrgMateLockdownDisableLogOut_setter_blocker" key="Software\BaseALT\Policies\GSettingsLocks" valueName="org.mate.lockdown.disable-log-out">
           <trueValue>
             <decimal value="1" />
@@ -665,17 +690,22 @@
         displayName="$(string.org-mate-lockdown-disable-lock-screen)"
         explainText="$(string.org-mate-lockdown-disable-lock-screen_help)"
         key="Software\BaseALT\Policies\gsettings"
-        valueName="org.mate.lockdown.disable-lock-screen"
         presentation="$(presentation.OrgMateLockdownDisableLockScreenMachine-pr)">
       <parentCategory ref="system:ALT_User_Restrictions_Mate" />
       <supportedOn ref="system:SUPPORTED_AltP9" />
-      <enabledValue>
-        <decimal value="1" />
-      </enabledValue>
-      <disabledValue>
-        <decimal value="0" />
-      </disabledValue>
       <elements>
+        <enum id="OrgMateLockdownDisableLockScreen_setter" required="true" valueName="org.mate.lockdown.disable-lock-screen">
+          <item displayName="$(string.org-mate-lockdown-disable-lock-screen-true)">
+            <value>
+              <decimal value="1" />
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-lockdown-disable-lock-screen-false)">
+            <value>
+              <decimal value="0" />
+            </value>
+          </item>
+        </enum>
         <boolean id="OrgMateLockdownDisableLockScreen_setter_blocker" key="Software\BaseALT\Policies\GSettingsLocks" valueName="org.mate.lockdown.disable-lock-screen">
           <trueValue>
             <decimal value="1" />
@@ -706,17 +736,22 @@
         displayName="$(string.org-mate-lockdown-disable-user-switching)"
         explainText="$(string.org-mate-lockdown-disable-user-switching_help)"
         key="Software\BaseALT\Policies\gsettings"
-        valueName="org.mate.lockdown.disable-user-switching"
         presentation="$(presentation.OrgMateLockdownDisableUserSwitchingMachine-pr)">
       <parentCategory ref="system:ALT_User_Restrictions_Mate" />
       <supportedOn ref="system:SUPPORTED_AltP9" />
-      <enabledValue>
-        <decimal value="1" />
-      </enabledValue>
-      <disabledValue>
-        <decimal value="0" />
-      </disabledValue>
       <elements>
+        <enum id="OrgMateLockdownDisableUserSwitching_setter" required="true" valueName="org.mate.lockdown.disable-user-switching">
+          <item displayName="$(string.org-mate-lockdown-disable-user-switching-true)">
+            <value>
+              <decimal value="1" />
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-lockdown-disable-user-switching-false)">
+            <value>
+              <decimal value="0" />
+            </value>
+          </item>
+        </enum>
         <boolean id="OrgMateLockdownDisableUserSwitching_setter_blocker" key="Software\BaseALT\Policies\GSettingsLocks" valueName="org.mate.lockdown.disable-user-switching">
           <trueValue>
             <decimal value="1" />
@@ -747,17 +782,22 @@
         displayName="$(string.org-mate-lockdown-disable-theme-settings)"
         explainText="$(string.org-mate-lockdown-disable-theme-settings_help)"
         key="Software\BaseALT\Policies\gsettings"
-        valueName="org.mate.lockdown.disable-theme-settings"
         presentation="$(presentation.OrgMateLockdownDisableThemeSettingsMachine-pr)">
       <parentCategory ref="system:ALT_User_Restrictions_Mate" />
       <supportedOn ref="system:SUPPORTED_AltP9" />
-      <enabledValue>
-        <decimal value="1" />
-      </enabledValue>
-      <disabledValue>
-        <decimal value="0" />
-      </disabledValue>
       <elements>
+        <enum id="OrgMateLockdownDisableThemeSettings_setter" required="true" valueName="org.mate.lockdown.disable-theme-settings">
+          <item displayName="$(string.org-mate-lockdown-disable-theme-settings-true)">
+            <value>
+              <decimal value="1" />
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-lockdown-disable-theme-settings-false)">
+            <value>
+              <decimal value="0" />
+            </value>
+          </item>
+        </enum>
         <boolean id="OrgMateLockdownDisableThemeSettings_setter_blocker" key="Software\BaseALT\Policies\GSettingsLocks" valueName="org.mate.lockdown.disable-theme-settings">
           <trueValue>
             <decimal value="1" />

@@ -32,9 +32,13 @@
 
       <string id="org-mate-screensaver-idle-activation-enabled">Screen saver</string>
       <string id="org-mate-screensaver-idle-activation-enabled_help">Turn on screen saver while idle.</string>
+      <string id="org-mate-screensaver-idle-activation-enabled-true">enabled</string>
+      <string id="org-mate-screensaver-idle-activation-enabled-false">disabled</string>
 
       <string id="org-mate-screensaver-lock-enabled">Screen lock</string>
       <string id="org-mate-screensaver-lock-enabled_help">Enable, to lock the computer while screen saver is active. Computer will be locked after the time interval set by the "Lock delay" setting.</string>
+      <string id="org-mate-screensaver-lock-enabled-true">enabled</string>
+      <string id="org-mate-screensaver-lock-enabled-false">disabled</string>
 
       <string id="org-mate-screensaver-mode">Screen saver mode</string>
       <string id="org-mate-screensaver-mode_help">Set screen saver mode. Possible options: "disabled" — disabled, "blank-only" — an empty screen,"single" — use one theme specified by the "themes" key,"random" — use a randomly selected theme.</string>
@@ -54,21 +58,33 @@
 
       <string id="org-mate-screensaver-user-switch-enabled">Switching user after blocking</string>
       <string id="org-mate-screensaver-user-switch-enabled_help">Enable to allow switching to another account in the screen unlock dialog.</string>
+      <string id="org-mate-screensaver-user-switch-enabled-true">enabled</string>
+      <string id="org-mate-screensaver-user-switch-enabled-false">disabled</string>
 
       <string id="org-mate-screensaver-logout-enabled">User logout after blocking</string>
       <string id="org-mate-screensaver-logout-enabled_help">Enable to allow logging out in the screen unlock dialog. The delay is specified in the "Logout delay" setting.</string>
+      <string id="org-mate-screensaver-logout-enabled-true">enabled</string>
+      <string id="org-mate-screensaver-logout-enabled-false">disabled</string>
 
       <string id="org-mate-lockdown-disable-log-out">Forbid log out </string>
       <string id="org-mate-lockdown-disable-log-out_help">Enable to prevent the user from ending the session.</string>
+      <string id="org-mate-lockdown-disable-log-out-true">enabled</string>
+      <string id="org-mate-lockdown-disable-log-out-false">disabled</string>
 
       <string id="org-mate-lockdown-disable-lock-screen">Disable screen lock</string>
       <string id="org-mate-lockdown-disable-lock-screen_help">Set to disable automatic screen lock.</string>
+      <string id="org-mate-lockdown-disable-lock-screen-true">enabled</string>
+      <string id="org-mate-lockdown-disable-lock-screen-false">disabled</string>
 
       <string id="org-mate-lockdown-disable-user-switching">Forbid user switching</string>
       <string id="org-mate-lockdown-disable-user-switching_help">Enable to prevent the user from switching to another account while their session is active.</string>
+      <string id="org-mate-lockdown-disable-user-switching-true">enabled</string>
+      <string id="org-mate-lockdown-disable-user-switching-false">disabled</string>
 
       <string id="org-mate-lockdown-disable-theme-settings">Forbid desktop theme customization</string>
       <string id="org-mate-lockdown-disable-theme-settings_help">Enabled to prevent the user from changing theme setthings.</string>
+      <string id="org-mate-lockdown-disable-theme-settings-true">enabled</string>
+      <string id="org-mate-lockdown-disable-theme-settings-false">disabled</string>
 
       <string id="org-gnome-vino-view-only">Remote control</string>
       <string id="org-gnome-vino-view-only_help">If true, remote users accessing the desktop are only allowed to view the desktop. Remote users will not be able to use the mouse or keyboard.</string>
@@ -274,11 +290,13 @@
       </presentation>
 
       <presentation id="OrgMateScreesaverIdleActivationEnabledMachine-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="OrgMateScreesaverIdleActivationEnabled_setter">Choose "enabled" or "disabled":</dropdownList>
         <checkBox refId="OrgMateScreesaverIdleActivationEnabled_setter_blocker">Lock</checkBox>
         <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
       </presentation>
 
       <presentation id="OrgMateScreensaverLockEnabledMachine-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="OrgMateScreensaverLockEnabled_setter">Choose "enabled" or "disabled":</dropdownList>
         <checkBox refId="OrgMateScreensaverLockEnabled_setter_blocker">Lock</checkBox>
         <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
       </presentation>
@@ -330,31 +348,37 @@
       </presentation>
 
       <presentation id="OrgMateScreensaverLogoutEnabledMachine-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="OrgMateScreensaverLogoutEnabled_setter">Choose "enabled" or "disabled":</dropdownList>
         <checkBox refId="OrgMateScreensaverLogoutEnabled_setter_blocker">Lock</checkBox>
         <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
       </presentation>
 
       <presentation id="OrgMateScreensaverUserSwitchEnabledMachine-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="OrgMateScreensaverUserSwitchEnabled_setter">Choose "enabled" or "disabled":</dropdownList>
         <checkBox refId="OrgMateScreensaverUserSwitchEnabled_setter_blocker">Lock</checkBox>
         <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
       </presentation>
 
       <presentation id="OrgMateLockdownDisableLogOutMachine-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="OrgMateLockdownDisableLogOut_setter">Choose "enabled" or "disabled":</dropdownList>
         <checkBox refId="OrgMateLockdownDisableLogOut_setter_blocker">Lock</checkBox>
         <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
       </presentation>
 
       <presentation id="OrgMateLockdownDisableLockScreenMachine-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="OrgMateLockdownDisableLockScreen_setter">Choose "enabled" or "disabled":</dropdownList>
         <checkBox refId="OrgMateLockdownDisableLockScreen_setter_blocker">Lock</checkBox>
         <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
       </presentation>
 
       <presentation id="OrgMateLockdownDisableUserSwitchingMachine-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="OrgMateLockdownDisableUserSwitching_setter">Choose "enabled" or "disabled":</dropdownList>
         <checkBox refId="OrgMateLockdownDisableUserSwitching_setter_blocker">Lock</checkBox>
         <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
       </presentation>
 
       <presentation id="OrgMateLockdownDisableThemeSettingsMachine-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="OrgMateLockdownDisableThemeSettings_setter">Choose "enabled" or "disabled":</dropdownList>
         <checkBox refId="OrgMateLockdownDisableThemeSettings_setter_blocker">Lock</checkBox>
         <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
       </presentation>

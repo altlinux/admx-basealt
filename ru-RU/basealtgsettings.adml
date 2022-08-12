@@ -56,11 +56,15 @@
 
       <string id="org-mate-screensaver-idle-activation-enabled">Включение хранителя экрана</string>
       <string id="org-mate-screensaver-idle-activation-enabled_help">Установка этого параметра включает хранитель экрана при бездействии компьютера.</string>
+      <string id="org-mate-screensaver-idle-activation-enabled-true">включено</string>
+      <string id="org-mate-screensaver-idle-activation-enabled-false">отключено</string>
 
       <string id="org-mate-screensaver-lock-enabled">Блокировка компьютера</string>
       <string id="org-mate-screensaver-lock-enabled_help">Включает блокировку компьютера при активации хранителя экрана. Блокировка будет включена через интервал времени, установленный в параметре «Время до блокировки паролем».
 
 Этот параметр имеет смысл только при активированном параметре «Включение хранителя экрана».</string>
+      <string id="org-mate-screensaver-lock-enabled-true">включено</string>
+      <string id="org-mate-screensaver-lock-enabled-false">отключено</string>
 
       <string id="org-mate-screensaver-mode">Режим работы</string>
       <string id="org-mate-screensaver-mode_help">Устанавливает режим работы хранителя экрана. Этот параметр имеет смысл только при активированном параметре «Включение хранителя экрана».
@@ -98,25 +102,37 @@
       <string id="org-mate-screensaver-user-switch-enabled_help">Добавляет кнопку «Переключить пользователя» к диалогу разблокирования экрана.
 
 Этот параметр имеет смысл только при активированном параметре «Включение хранителя экрана» и «Блокировка компьютера».</string>
+      <string id="org-mate-screensaver-user-switch-enabled-true">включено</string>
+      <string id="org-mate-screensaver-user-switch-enabled-false">отключено</string>
 
       <string id="org-mate-screensaver-logout-enabled">Выход из системы после блокировки</string>
       <string id="org-mate-screensaver-logout-enabled_help">После некоторой задержки добавляет кнопку выхода из системы («Завершить сеанс») к диалогу разблокирования экрана. Время задержки указывается в параметре «Время выхода из сеанса».
 
 Этот параметр имеет смысл только при активированных параметрах «Включение хранителя экрана» и «Блокировка компьютера».</string>
+      <string id="org-mate-screensaver-logout-enabled-true">включено</string>
+      <string id="org-mate-screensaver-logout-enabled-false">отключено</string>
 
       <string id="org-mate-lockdown-disable-log-out">Запрет пользователю завершать сеанс</string>
       <string id="org-mate-lockdown-disable-log-out_help">Установка этого параметра запрещает пользователю завершать свой сеанс.</string>
+      <string id="org-mate-lockdown-disable-log-out-true">включено</string>
+      <string id="org-mate-lockdown-disable-log-out-false">отключено</string>
 
       <string id="org-mate-lockdown-disable-lock-screen">Запрет блокировки экрана</string>
       <string id="org-mate-lockdown-disable-lock-screen_help">Установка этого параметра запрещает пользователю блокировать экран паролем.
 
 При установке данного параметра, значение параметра «Блокировка компьютера» игнорируется.</string>
+      <string id="org-mate-lockdown-disable-lock-screen-true">включено</string>
+      <string id="org-mate-lockdown-disable-lock-screen-false">отключено</string>
 
       <string id="org-mate-lockdown-disable-user-switching">Запрет переключения пользователей</string>
       <string id="org-mate-lockdown-disable-user-switching_help">Установка этого параметра запрещает пользователю переключение на другую учётную запись, пока активен его сеанс.</string>
+      <string id="org-mate-lockdown-disable-user-switching-true">включено</string>
+      <string id="org-mate-lockdown-disable-user-switching-false">отключено</string>
 
       <string id="org-mate-lockdown-disable-theme-settings">Запрет выбора тем рабочего стола</string>
       <string id="org-mate-lockdown-disable-theme-settings_help">Установка этого параметра запрещает пользователю изменять настройки темы.</string>
+      <string id="org-mate-lockdown-disable-theme-settings-true">включено</string>
+      <string id="org-mate-lockdown-disable-theme-settings-false">отключено</string>
 
       <string id="org-gnome-vino-view-only">Удаленное управление</string>
       <string id="org-gnome-vino-view-only_help">Установка этого параметра запрещает удалённое управление рабочим столом. Удалённым пользователям, разрешается только просматривать рабочий стол, но не управлять мышью и клавиатурой.</string>
@@ -341,11 +357,13 @@
       </presentation>
 
       <presentation id="OrgMateScreesaverIdleActivationEnabledMachine-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="OrgMateScreesaverIdleActivationEnabled_setter">Выберите "включено" или "отключено":</dropdownList>
         <checkBox refId="OrgMateScreesaverIdleActivationEnabled_setter_blocker">Блокировать</checkBox>
         <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
       </presentation>
 
       <presentation id="OrgMateScreensaverLockEnabledMachine-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="OrgMateScreensaverLockEnabled_setter">Выберите "включено" или "отключено":</dropdownList>
         <checkBox refId="OrgMateScreensaverLockEnabled_setter_blocker">Блокировать</checkBox>
         <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
       </presentation>
@@ -397,31 +415,37 @@
       </presentation>
 
       <presentation id="OrgMateScreensaverUserSwitchEnabledMachine-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="OrgMateScreensaverUserSwitchEnabled_setter">Выберите "включено" или "отключено":</dropdownList>
         <checkBox refId="OrgMateScreensaverUserSwitchEnabled_setter_blocker">Блокировать</checkBox>
         <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
       </presentation>
 
       <presentation id="OrgMateScreensaverLogoutEnabledMachine-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="OrgMateScreensaverLogoutEnabled_setter">Выберите "включено" или "отключено":</dropdownList>
         <checkBox refId="OrgMateScreensaverLogoutEnabled_setter_blocker">Блокировать</checkBox>
         <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
       </presentation>
 
       <presentation id="OrgMateLockdownDisableLogOutMachine-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="OrgMateLockdownDisableLogOut_setter">Выберите "включено" или "отключено":</dropdownList>
         <checkBox refId="OrgMateLockdownDisableLogOut_setter_blocker">Блокировать</checkBox>
         <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
       </presentation>
 
       <presentation id="OrgMateLockdownDisableLockScreenMachine-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="OrgMateLockdownDisableLockScreen_setter">Выберите "включено" или "отключено":</dropdownList>
         <checkBox refId="OrgMateLockdownDisableLockScreen_setter_blocker">Блокировать</checkBox>
         <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
       </presentation>
 
       <presentation id="OrgMateLockdownDisableUserSwitchingMachine-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="OrgMateLockdownDisableUserSwitching_setter">Выберите "включено" или "отключено":</dropdownList>
         <checkBox refId="OrgMateLockdownDisableUserSwitching_setter_blocker">Блокировать</checkBox>
         <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
       </presentation>
 
       <presentation id="OrgMateLockdownDisableThemeSettingsMachine-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="OrgMateLockdownDisableThemeSettings_setter">Выберите "включено" или "отключено":</dropdownList>
         <checkBox refId="OrgMateLockdownDisableThemeSettings_setter_blocker">Блокировать</checkBox>
         <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
       </presentation>
