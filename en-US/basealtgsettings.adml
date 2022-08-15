@@ -88,9 +88,13 @@
 
       <string id="org-gnome-vino-view-only">Remote control</string>
       <string id="org-gnome-vino-view-only_help">If true, remote users accessing the desktop are only allowed to view the desktop. Remote users will not be able to use the mouse or keyboard.</string>
+      <string id="org-gnome-vino-view-only-true">enabled</string>
+      <string id="org-gnome-vino-view-only-false">disabled</string>
 
       <string id="org-gnome-vino-prompt-enabled">Confirmation when connecting</string>
       <string id="org-gnome-vino-prompt-enabled_help">If true, remote users accessing the desktop are not allowed access until the user on the host machine approves the connection. Recommended when access is not password protected.</string>
+      <string id="org-gnome-vino-prompt-enabled-true">enabled</string>
+      <string id="org-gnome-vino-prompt-enabled-false">disabled</string>
 
       <string id="org-gnome-vino-icon-visibility">Connection icon</string>
       <string id="org-gnome-vino-icon-visibility_help">This key controls the behavior of the connection status icon. There are three options: "always" - the icon will always be present; "client" - the icon will only be present when someone is connected (this is the default behavior); "never" - the icon will not be present.</string>
@@ -100,12 +104,16 @@
 
       <string id="org-gnome-vino-enabled">Remote access</string>
       <string id="org-gnome-vino-enabled_help">If true, allows remote access to desktop via the RFB protocol. Users on remote machines may then connect to the desktop using a VNC player.</string>
+      <string id="org-gnome-vino-enabled-true">enabled</string>
+      <string id="org-gnome-vino-enabled-false">disabled</string>
 
       <string id="org-gnome-vino-alternative-port">Alternative port</string>
       <string id="org-gnome-vino-alternative-port_help">The port which the server will listen to if the 'use-alternative-port' key is set to true. Valid values are in the range of 5000 to 50000.</string>
 
       <string id="org-gnome-vino-use-alternative-port">Enable alternative port</string>
       <string id="org-gnome-vino-use-alternative-port_help">If true, the server will listen on another port, instead of the default (5900). The port must be specified in the 'alternative-port' key.</string>
+      <string id="org-gnome-vino-use-alternative-true">enabled</string>
+      <string id="org-gnome-vino-use-alternative-false">disabled</string>
 
       <string id="org-gnome-vino-authentication-methods">Authentication methods</string>
       <string id="org-gnome-vino-authentication-methods_help">Lists the authentication methods with which remote users may access the desktop.  There are two possible authentication methods; "vnc" causes the remote user to be prompted for a password (the password is specified by the vnc-password key) before connecting and "none" which allows any remote user to connect.</string>
@@ -384,11 +392,13 @@
       </presentation>
 
       <presentation id="OrgGnomeVinoViewOnlyMachine-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="OrgGnomeVinoViewOnly_setter">Choose "enabled" or "disabled":</dropdownList>
         <checkBox refId="OrgGnomeVinoViewOnly_setter_blocker">Lock</checkBox>
         <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
       </presentation>
 
       <presentation id="OrgGnomeVinoPromptEnabledMachine-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="OrgGnomeVinoPromptEnabled_setter">Choose "enabled" or "disabled":</dropdownList>
         <checkBox refId="OrgGnomeVinoPromptEnabled_setter_blocker">Lock</checkBox>
         <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
       </presentation>
@@ -404,6 +414,7 @@
       </presentation>
 
       <presentation id="OrgGnomeVinoEnabledMachine-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="OrgGnomeVinoEnabled_setter">Choose "enabled" or "disabled":</dropdownList>
         <checkBox refId="OrgGnomeVinoEnabled_setter_blocker">Lock</checkBox>
         <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
       </presentation>
@@ -419,6 +430,7 @@
       </presentation>
 
       <presentation id="OrgGnomeVinoUseAlternativePortMachine-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="OrgGnomeVinoUseAlternativePort_setter">Choose "enabled" or "disabled":</dropdownList>
         <checkBox refId="OrgGnomeVinoUseAlternativePort_setter_blocker">Lock</checkBox>
         <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
       </presentation>

@@ -136,9 +136,13 @@
 
       <string id="org-gnome-vino-view-only">Удаленное управление</string>
       <string id="org-gnome-vino-view-only_help">Установка этого параметра запрещает удалённое управление рабочим столом. Удалённым пользователям, разрешается только просматривать рабочий стол, но не управлять мышью и клавиатурой.</string>
+      <string id="org-gnome-vino-view-only-true">включено</string>
+      <string id="org-gnome-vino-view-only-false">отключено</string>
 
       <string id="org-gnome-vino-prompt-enabled">Подтверждение при подключении</string>
       <string id="org-gnome-vino-prompt-enabled_help">Включает запрос подтверждения при любой попытке доступа к рабочему столу. Рекомендуется при отсутствии защиты подключения паролем.</string>
+      <string id="org-gnome-vino-prompt-enabled-true">включено</string>
+      <string id="org-gnome-vino-prompt-enabled-false">отключено</string>
 
       <string id="org-gnome-vino-icon-visibility">Иконка подключения </string>
       <string id="org-gnome-vino-icon-visibility_help">Управляет отображением значка подключения в области уведомления.
@@ -156,6 +160,8 @@
 
       <string id="org-gnome-vino-enabled">Удаленный доступ</string>
       <string id="org-gnome-vino-enabled_help">Установка этого параметра разрешает удаленный доступ к рабочему столу с использованием протокола RFB и VNC.</string>
+      <string id="org-gnome-vino-enabled-true">включено</string>
+      <string id="org-gnome-vino-enabled-false">отключено</string>
 
       <string id="org-gnome-vino-alternative-port">Альтернативный порт</string>
       <string id="org-gnome-vino-alternative-port_help">Альтернативный порт подключения. Диапазон значений от 5 000 до 50 000. По умолчанию используется порт 5 900.
@@ -164,6 +170,8 @@
 
       <string id="org-gnome-vino-use-alternative-port">Включить альтернативный порт</string>
       <string id="org-gnome-vino-use-alternative-port_help">Включить прослушивание альтернативного порта для удалённых подключений (вместо порта по умолчанию 5 900). Порт указывается в параметре «Альтернативный порт».</string>
+      <string id="org-gnome-vino-use-alternative-true">включено</string>
+      <string id="org-gnome-vino-use-alternative-false">отключено</string>
 
       <string id="org-gnome-vino-authentication-methods">Методы аутентификации</string>
       <string id="org-gnome-vino-authentication-methods_help">В этом параметре устанавливается метод аутентификации пользователей, подключающихся к удаленному рабочему столу.
@@ -451,11 +459,13 @@
       </presentation>
 
       <presentation id="OrgGnomeVinoViewOnlyMachine-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="OrgGnomeVinoViewOnly_setter">Выберите "включено" или "отключено":</dropdownList>
         <checkBox refId="OrgGnomeVinoViewOnly_setter_blocker">Блокировать</checkBox>
         <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
       </presentation>
 
       <presentation id="OrgGnomeVinoPromptEnabledMachine-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="OrgGnomeVinoPromptEnabled_setter">Выберите "включено" или "отключено":</dropdownList>
         <checkBox refId="OrgGnomeVinoPromptEnabled_setter_blocker">Блокировать</checkBox>
         <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
       </presentation>
@@ -471,6 +481,7 @@
       </presentation>
 
       <presentation id="OrgGnomeVinoEnabledMachine-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="OrgGnomeVinoEnabled_setter">Выберите "включено" или "отключено":</dropdownList>
         <checkBox refId="OrgGnomeVinoEnabled_setter_blocker">Блокировать</checkBox>
         <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
       </presentation>
@@ -486,6 +497,7 @@
       </presentation>
 
       <presentation id="OrgGnomeVinoUseAlternativePortMachine-pr">
+      <dropdownList noSort="true" defaultItem="0" refId="OrgGnomeVinoUseAlternativePort_setter">Выберите "включено" или "отключено":</dropdownList>
         <checkBox refId="OrgGnomeVinoUseAlternativePort_setter_blocker">Блокировать</checkBox>
         <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
       </presentation>

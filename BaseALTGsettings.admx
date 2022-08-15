@@ -828,17 +828,22 @@
         displayName="$(string.org-gnome-vino-view-only)"
         explainText="$(string.org-gnome-vino-view-only_help)"
         key="Software\BaseALT\Policies\gsettings"
-        valueName="org.gnome.Vino.view-only"
         presentation="$(presentation.OrgGnomeVinoViewOnlyMachine-pr)">
       <parentCategory ref="system:ALT_Remote_Access_Vino_Gnome" />
       <supportedOn ref="system:SUPPORTED_AltP9" />
-      <enabledValue>
-        <decimal value="1" />
-      </enabledValue>
-      <disabledValue>
-        <decimal value="0" />
-      </disabledValue>
       <elements>
+        <enum id="OrgGnomeVinoViewOnly_setter" required="true" valueName="org.gnome.Vino.view-only">
+          <item displayName="$(string.org-gnome-vino-view-only-true)">
+            <value>
+              <decimal value="1" />
+            </value>
+          </item>
+          <item displayName="$(string.org-gnome-vino-view-only-false)">
+            <value>
+              <decimal value="0" />
+            </value>
+          </item>
+        </enum>
         <boolean id="OrgGnomeVinoViewOnly_setter_blocker" key="Software\BaseALT\Policies\GSettingsLocks" valueName="org.gnome.Vino.view-only">
           <trueValue>
             <decimal value="1" />
@@ -869,17 +874,22 @@
         displayName="$(string.org-gnome-vino-prompt-enabled)"
         explainText="$(string.org-gnome-vino-prompt-enabled_help)"
         key="Software\BaseALT\Policies\gsettings"
-        valueName="org.gnome.Vino.prompt-enabled"
         presentation="$(presentation.OrgGnomeVinoPromptEnabledMachine-pr)">
       <parentCategory ref="system:ALT_Remote_Access_Vino_Gnome" />
       <supportedOn ref="system:SUPPORTED_AltP9" />
-      <enabledValue>
-        <decimal value="1" />
-      </enabledValue>
-      <disabledValue>
-        <decimal value="0" />
-      </disabledValue>
       <elements>
+        <enum id="OrgGnomeVinoPromptEnabled_setter" required="true" valueName="org.gnome.Vino.prompt-enabled">
+          <item displayName="$(string.org-gnome-vino-prompt-enabled-true)">
+            <value>
+              <decimal value="1" />
+            </value>
+          </item>
+          <item displayName="$(string.org-gnome-vino-prompt-enabled-false)">
+            <value>
+              <decimal value="0" />
+            </value>
+          </item>
+        </enum>
         <boolean id="OrgGnomeVinoPromptEnabled_setter_blocker" key="Software\BaseALT\Policies\GSettingsLocks" valueName="org.gnome.Vino.prompt-enabled">
           <trueValue>
             <decimal value="1" />
@@ -974,17 +984,22 @@
         displayName="$(string.org-gnome-vino-enabled)"
         explainText="$(string.org-gnome-vino-enabled_help)"
         key="Software\BaseALT\Policies\gsettings"
-        valueName="org.gnome.Vino.enabled"
         presentation="$(presentation.OrgGnomeVinoEnabledMachine-pr)" >
       <parentCategory ref="system:ALT_Remote_Access_Vino_Gnome" />
       <supportedOn ref="system:SUPPORTED_AltP9" />
-      <enabledValue>
-        <decimal value="1" />
-      </enabledValue>
-      <disabledValue>
-        <decimal value="0" />
-      </disabledValue>
       <elements>
+        <enum id="OrgGnomeVinoEnabled_setter" required="true" valueName="org.gnome.Vino.enabled">
+          <item displayName="$(string.org-gnome-vino-enabled-true)">
+            <value>
+              <decimal value="1" />
+            </value>
+          </item>
+          <item displayName="$(string.org-gnome-vino-enabled-false)">
+            <value>
+              <decimal value="0" />
+            </value>
+          </item>
+        </enum>
         <boolean id="OrgGnomeVinoEnabled_setter_blocker" key="Software\BaseALT\Policies\GSettingsLocks" valueName="org.gnome.Vino.enabled">
           <trueValue>
             <decimal value="1" />
@@ -1047,17 +1062,22 @@
         displayName="$(string.org-gnome-vino-use-alternative-port)"
         explainText="$(string.org-gnome-vino-use-alternative-port_help)"
         key="Software\BaseALT\Policies\gsettings"
-        valueName="org.gnome.Vino.use-alternative-port"
         presentation="$(presentation.OrgGnomeVinoUseAlternativePortMachine-pr)">
       <parentCategory ref="system:ALT_Remote_Access_Vino_Gnome" />
       <supportedOn ref="system:SUPPORTED_AltP9" />
-      <enabledValue>
-        <decimal value="1" />
-      </enabledValue>
-      <disabledValue>
-        <decimal value="0" />
-      </disabledValue>
       <elements>
+        <enum id="OrgGnomeVinoUseAlternativePort_setter" required="true" valueName="org.gnome.Vino.use-alternative-port">
+          <item displayName="$(string.org-gnome-vino-use-alternative-true)">
+            <value>
+              <decimal value="1" />
+            </value>
+          </item>
+          <item displayName="$(string.org-gnome-vino-use-alternative-false)">
+            <value>
+              <decimal value="0" />
+            </value>
+          </item>
+        </enum>
         <boolean id="OrgGnomeVinoUseAlternativePort_setter_blocker" key="Software\BaseALT\Policies\GSettingsLocks" valueName="org.gnome.Vino.use-alternative-port">
           <trueValue>
             <decimal value="1" />
