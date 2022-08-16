@@ -1290,17 +1290,22 @@
         displayName="$(string.org-mate-marco-general-show-tab-border)"
         explainText="$(string.org-mate-marco-general-show-tab-border_help)"
         key="Software\BaseALT\Policies\gsettings"
-        valueName="org.mate.Marco.general.show-tab-border"
         presentation="$(presentation.OrgMateMarcoGeneralShowTabBorderMachine-pr)">
       <parentCategory ref="system:ALT_Windows_Manager_Marco" />
       <supportedOn ref="system:SUPPORTED_AltP9" />
-      <enabledValue>
-        <decimal value="1" />
-      </enabledValue>
-      <disabledValue>
-        <decimal value="0" />
-      </disabledValue>
       <elements>
+        <enum id="OrgMateMarcoGeneralShowTabBorder_setter" required="true" valueName="org.mate.Marco.general.show-tab-border">
+          <item displayName="$(string.org-mate-marco-general-show-tab-border-true)">
+            <value>
+              <decimal value="1" />
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-marco-general-show-tab-border-false)">
+            <value>
+              <decimal value="0" />
+            </value>
+          </item>
+        </enum>
         <boolean id="OrgMateMarcoGeneralShowTabBorder_setter_blocker" key="Software\BaseALT\Policies\GSettingsLocks" valueName="org.mate.Marco.general.show-tab-border">
           <trueValue>
             <decimal value="1" />
@@ -1331,17 +1336,22 @@
         displayName="$(string.org-mate-marco-general-allow-top-tiling)"
         explainText="$(string.org-mate-marco-general-allow-top-tiling_help)"
         key="Software\BaseALT\Policies\gsettings"
-        valueName="org.mate.Marco.general.allow-top-tiling"
         presentation="$(presentation.OrgMateMarcoGeneralAllowTopTilingMachine-pr)">
       <parentCategory ref="system:ALT_Windows_Manager_Marco" />
       <supportedOn ref="system:SUPPORTED_AltP9" />
-      <enabledValue>
-        <decimal value="1" />
-      </enabledValue>
-      <disabledValue>
-        <decimal value="0" />
-      </disabledValue>
       <elements>
+        <enum id="OrgMateMarcoGeneralAllowTopTiling_setter" required="true" valueName="org.mate.Marco.general.allow-top-tiling">
+          <item displayName="$(string.org-mate-marco-general-allow-top-tiling-true)">
+            <value>
+              <decimal value="1" />
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-marco-general-allow-top-tiling-false)">
+            <value>
+              <decimal value="0" />
+            </value>
+          </item>
+        </enum>
         <boolean id="OrgMateMarcoGeneralAllowTopTilingMachine_setter_blocker" key="Software\BaseALT\Policies\GSettingsLocks" valueName="org.mate.Marco.general.allow-top-tiling">
           <trueValue>
             <decimal value="1" />
@@ -1426,17 +1436,22 @@
         displayName="$(string.org-mate-marco-general-allow-tiling)"
         explainText="$(string.org-mate-marco-general-allow-tiling_help)"
         key="Software\BaseALT\Policies\gsettings"
-        valueName="org.mate.Marco.general.allow-tiling"
         presentation="$(presentation.OrgMateMarcoGeneralAllowTilingMachine-pr)">
       <parentCategory ref="system:ALT_Windows_Manager_Marco" />
       <supportedOn ref="system:SUPPORTED_AltP9" />
-      <enabledValue>
-        <decimal value="1" />
-      </enabledValue>
-      <disabledValue>
-        <decimal value="0" />
-      </disabledValue>
       <elements>
+        <enum id="OrgMateMarcoGeneralAllowTiling_setter" required="true" valueName="org.mate.Marco.general.allow-tiling">
+          <item displayName="$(string.org-mate-marco-general-allow-tiling-true)">
+            <value>
+              <decimal value="1" />
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-marco-general-allow-tiling-false)">
+            <value>
+              <decimal value="0" />
+            </value>
+          </item>
+        </enum>
         <boolean id="OrgMateMarcoGeneralAllowTiling_setter_blocker" key="Software\BaseALT\Policies\GSettingsLocks" valueName="org.mate.Marco.general.allow-tiling">
           <trueValue>
             <decimal value="1" />
@@ -1563,17 +1578,22 @@
         displayName="$(string.org-mate-marco-general-auto-raise)"
         explainText="$(string.org-mate-marco-general-auto-raise_help)"
         key="Software\BaseALT\Policies\gsettings"
-        valueName="org.mate.Marco.general.auto-raise"
         presentation="$(presentation.OrgMateMarcoGeneralAutoRaiseMachine-pr)">
       <parentCategory ref="system:ALT_Windows_Manager_Marco" />
       <supportedOn ref="system:SUPPORTED_AltP9" />
-      <enabledValue>
-        <decimal value="1" />
-      </enabledValue>
-      <disabledValue>
-        <decimal value="0" />
-      </disabledValue>
       <elements>
+        <enum id="OrgMateMarcoGeneralAutoRaise_setter" required="true" valueName="org.mate.Marco.general.auto-raise">
+          <item displayName="$(string.org-mate-marco-general-auto-raise-true)">
+            <value>
+              <decimal value="1" />
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-marco-general-auto-raise-false)">
+            <value>
+              <decimal value="0" />
+            </value>
+          </item>
+        </enum>
         <boolean id="OrgMateMarcoGeneralAutoRaise_setter_blocker" key="Software\BaseALT\Policies\GSettingsLocks" valueName="org.mate.Marco.general.auto-raise">
           <trueValue>
             <decimal value="1" />
@@ -2104,17 +2124,22 @@
         displayName="$(string.org-mate-marco-general-titlebar-uses-system-font)"
         explainText="$(string.org-mate-marco-general-titlebar-uses-system-font_help)"
         key="Software\BaseALT\Policies\gsettings"
-        valueName="org.mate.Marco.general.titlebar-uses-system-font"
         presentation="$(presentation.OrgMateMarcoGeneralTitlebarUsesSystemFontMachine-pr)">
       <parentCategory ref="system:ALT_Windows_Manager_Marco" />
       <supportedOn ref="system:SUPPORTED_AltP9" />
-      <enabledValue>
-        <decimal value="1" />
-      </enabledValue>
-      <disabledValue>
-        <decimal value="0" />
-      </disabledValue>
       <elements>
+        <enum id="OrgMateMarcoGeneralTitlebarUsesSystemFont_setter" required="true" valueName="org.mate.Marco.general.titlebar-uses-system-font">
+          <item displayName="$(string.org-mate-marco-general-titlebar-uses-system-font-true)">
+            <value>
+              <decimal value="1" />
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-marco-general-titlebar-uses-system-font-false)">
+            <value>
+              <decimal value="0" />
+            </value>
+          </item>
+        </enum>
         <boolean id="OrgMateMarcoGeneralTitlebarUsesSystemFont_setter_blocker" key="Software\BaseALT\Policies\GSettingsLocks" valueName="org.mate.Marco.general.titlebar-uses-system-font">
           <trueValue>
             <decimal value="1" />
@@ -2145,17 +2170,22 @@
         displayName="$(string.org-mate-marco-general-compositing-fast-alt-tab)"
         explainText="$(string.org-mate-marco-general-compositing-fast-alt-tab_help)"
         key="Software\BaseALT\Policies\gsettings"
-        valueName="org.mate.Marco.general.compositing-fast-alt-tab"
         presentation="$(presentation.OrgMateMarcoGeneralCompositingFastAltTabMachine-pr)">
       <parentCategory ref="system:ALT_Windows_Manager_Marco" />
       <supportedOn ref="system:SUPPORTED_AltP9" />
-      <enabledValue>
-        <decimal value="1" />
-      </enabledValue>
-      <disabledValue>
-        <decimal value="0" />
-      </disabledValue>
       <elements>
+        <enum id="OrgMateMarcoGeneralCompositingFastAltTab_setter" required="true" valueName="org.mate.Marco.general.compositing-fast-alt-tab">
+          <item displayName="$(string.org-mate-marco-general-compositing-fast-alt-tab-true)">
+            <value>
+              <decimal value="1" />
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-marco-general-compositing-fast-alt-tab-false)">
+            <value>
+              <decimal value="0" />
+            </value>
+          </item>
+        </enum>
         <boolean id="OrgMateMarcoGeneralCompositingFastAltTab_setter_blocker" key="Software\BaseALT\Policies\GSettingsLocks" valueName="org.mate.Marco.compositing-fast-alt-tab">
           <trueValue>
             <decimal value="1" />
@@ -2218,17 +2248,22 @@
         displayName="$(string.org-mate-marco-general-center-new-windows)"
         explainText="$(string.org-mate-marco-general-center-new-windows_help)"
         key="Software\BaseALT\Policies\gsettings"
-        valueName="org.mate.Marco.general.center-new-windows"
         presentation="$(presentation.OrgMateMarcoGeneralCenterNewWindowsMachine-pr)">
       <parentCategory ref="system:ALT_Windows_Manager_Marco" />
       <supportedOn ref="system:SUPPORTED_AltP9" />
-      <enabledValue>
-        <decimal value="1" />
-      </enabledValue>
-      <disabledValue>
-        <decimal value="0" />
-      </disabledValue>
       <elements>
+        <enum id="OrgMateMarcoGeneralCenterNewWindows_setter" required="true" valueName="org.mate.Marco.general.center-new-windows">
+          <item displayName="$(string.org-mate-marco-general-center-new-windows-true)">
+            <value>
+              <decimal value="1" />
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-marco-general-center-new-windows-false)">
+            <value>
+              <decimal value="0" />
+            </value>
+          </item>
+        </enum>
         <boolean id="OrgMateMarcoGeneralCenterNewWindows_setter_blocker" key="Software\BaseALT\Policies\GSettingsLocks" valueName="org.mate.Marco.general.center-new-windows">
           <trueValue>
             <decimal value="1" />
@@ -2355,17 +2390,22 @@
         displayName="$(string.org-mate-peripherals-keyboard-repeat)"
         explainText="$(string.org-mate-peripherals-keyboard-repeat_help)"
         key="Software\BaseALT\Policies\gsettings"
-        valueName="org.mate.peripherals-keyboard.repeat"
         presentation="$(presentation.OrgMatePeripheralsKeyboardRepeatMachine-pr)">
       <parentCategory ref="system:ALT_Windows_Manager_Marco_Keyboard" />
       <supportedOn ref="system:SUPPORTED_AltP9" />
-      <enabledValue>
-        <decimal value="1" />
-      </enabledValue>
-      <disabledValue>
-        <decimal value="0" />
-      </disabledValue>
       <elements>
+        <enum id="OrgMatePeripheralsKeyboardRepeat_setter" required="true" valueName="org.mate.peripherals-keyboard-repeat">
+          <item displayName="$(string.org-mate-peripherals-keyboard-repeat-true)">
+            <value>
+              <decimal value="1" />
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-peripherals-keyboard-repeat-false)">
+            <value>
+              <decimal value="0" />
+            </value>
+          </item>
+        </enum>
         <boolean id="OrgMatePeripheralsKeyboardRepeat_setter_blocker" key="Software\BaseALT\Policies\GSettingsLocks" valueName="org.mate.peripherals-keyboard.repeat">
           <trueValue>
             <decimal value="1" />

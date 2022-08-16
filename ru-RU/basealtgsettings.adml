@@ -200,9 +200,13 @@
 
       <string id="org-mate-marco-general-show-tab-border">Граница окна при переключении</string>
       <string id="org-mate-marco-general-show-tab-border_help">Показывать ли границу окна при переключении с помощью Alt+Tab.</string>
+      <string id="org-mate-marco-general-show-tab-border-true">включено</string>
+      <string id="org-mate-marco-general-show-tab-border-false">отключено</string>
 
       <string id="org-mate-marco-general-allow-top-tiling">Разворачивание при перетаскивании</string>
       <string id="org-mate-marco-general-allow-top-tiling_help">Включает разворачивание окна во весь экран при его перетаскивании в верхнюю центральную часть экрана.</string>
+      <string id="org-mate-marco-general-allow-top-tiling-true">включено</string>
+      <string id="org-mate-marco-general-allow-top-tiling-false">отключено</string>
 
       <string id="org-mate-marco-general-focus-new-windows">Переключение фокуса на новое окно</string>
       <string id="org-mate-marco-general-focus-new-windows_help">Устанавливает способ переключения фокуса на новое окно. smart - новое окно получает фокус при создании. strict - при создании нового окна по команде из терминала, новое окно фокус не получает.</string>
@@ -211,6 +215,8 @@
 
       <string id="org-mate-marco-general-allow-tiling">Изменение размеров при перетаскивании</string>
       <string id="org-mate-marco-general-allow-tiling_help">Включает изменение размеров окна при перетаскивании его в различные области экрана.</string>
+      <string id="org-mate-marco-general-allow-tiling-true">включено</string>
+      <string id="org-mate-marco-general-allow-tiling-false">отключено</string>
 
       <string id="org-mate-marco-general-num-workspaces">Количество рабочих областей</string>
       <string id="org-mate-marco-general-num-workspaces_help">Установка количества рабочих областей. Интервал допустимых значений 1-36.</string>
@@ -223,6 +229,8 @@
 
       <string id="org-mate-marco-general-auto-raise">Подъем окна в фокусе</string>
       <string id="org-mate-marco-general-auto-raise_help">При включении, окно, получившее фокус, отображается поверх остальных автоматически. Настройка "переключение окон" должна быть установлена в "sloppy" или "mouse". Интервал, по истечении которого, окно поднимается, устанавливается в настройке "задержка при восстановлении"</string>
+      <string id="org-mate-marco-general-auto-raise-true">включено</string>
+      <string id="org-mate-marco-general-auto-raise-false">отключено</string>
 
       <string id="org-mate-marco-general-action-middle-click-titlebar">Действие по нажатию средней кнопки</string>
       <string id="org-mate-marco-general-action-middle-click-titlebar_help">Установка действия, выполняемого по нажатию средней кнопки мыши.</string>
@@ -274,15 +282,21 @@
 
       <string id="org-mate-marco-general-titlebar-uses-system-font">Системный шрифт в заголовке окон</string>
       <string id="org-mate-marco-general-titlebar-uses-system-font_help">При включении в заголовках окон будет использоваться системный шрифт.</string>
+      <string id="org-mate-marco-general-titlebar-uses-system-font-true">включено</string>
+      <string id="org-mate-marco-general-titlebar-uses-system-font-false">отключено</string>
 
       <string id="org-mate-marco-general-compositing-fast-alt-tab">Миниатюры при переключении окон</string>
       <string id="org-mate-marco-general-compositing-fast-alt-tab_help">Если включено, то вместо миниатюр в окне переключения Alt+Tab будут отображаться иконки приложения.</string>
+      <string id="org-mate-marco-general-compositing-fast-alt-tab-true">включено</string>
+      <string id="org-mate-marco-general-compositing-fast-alt-tab-false">отключено</string>
 
       <string id="org-mate-marco-general-auto-raise-delay">Задержка при восстановлении</string>
       <string id="org-mate-marco-general-auto-raise-delay_help">Временной интервал в миллисекундах, по истечении которого окно в фокусе будет поднято поверх остальных.</string>
 
       <string id="org-mate-marco-general-center-new-windows">Новые окна по центру</string>
       <string id="org-mate-marco-general-center-new-windows_help">Если включено, то новые окна будут открываться по центру экрана.</string>
+      <string id="org-mate-marco-general-center-new-windows-true">включено</string>
+      <string id="org-mate-marco-general-center-new-windows-false">отключено</string>
 
       <string id="org-mate-marco-general-icon-size">Размер иконок</string>
       <string id="org-mate-marco-general-icon-size_help">Устанавливает размер иконок в окне переключения приложений Alt+Tab.</string>
@@ -295,6 +309,8 @@
 
       <string id="org-mate-peripherals-keyboard-repeat">Включить повтор</string>
       <string id="org-mate-peripherals-keyboard-repeat_help">Включить повтор нажатой и удерживаемой клавиши.</string>
+      <string id="org-mate-peripherals-keyboard-repeat-true">включено</string>
+      <string id="org-mate-peripherals-keyboard-repeat-false">отключено</string>
 
       <string id="org-mate-peripherals-keyboard-rate">Скорость повтора</string>
       <string id="org-mate-peripherals-keyboard-rate_help">Устанавливает скорость повтора нажатой и удерживаемой клавиши.</string>
@@ -551,11 +567,13 @@
       </presentation>
 
       <presentation id="OrgMateMarcoGeneralShowTabBorderMachine-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="OrgMateMarcoGeneralShowTabBorder_setter">Выберите "включено" или "отключено":</dropdownList>
         <checkBox refId="OrgMateMarcoGeneralShowTabBorder_setter_blocker">блокировать</checkBox>
         <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
       </presentation>
 
       <presentation id="OrgMateMarcoGeneralAllowTopTilingMachine-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="OrgMateMarcoGeneralAllowTopTiling_setter">Выберите "включено" или "отключено":</dropdownList>
         <checkBox refId="OrgMateMarcoGeneralAllowTopTilingMachine_setter_blocker">блокировать</checkBox>
         <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
       </presentation>
@@ -571,6 +589,7 @@
       </presentation>
 
       <presentation id="OrgMateMarcoGeneralAllowTilingMachine-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="OrgMateMarcoGeneralAllowTiling_setter">Выберите "включено" или "отключено":</dropdownList>
         <checkBox refId="OrgMateMarcoGeneralAllowTiling_setter_blocker">блокировать</checkBox>
         <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
       </presentation>
@@ -596,6 +615,7 @@
       </presentation>
 
       <presentation id="OrgMateMarcoGeneralAutoRaiseMachine-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="OrgMateMarcoGeneralAutoRaise_setter">Выберите "включено" или "отключено":</dropdownList>
         <checkBox refId="OrgMateMarcoGeneralAutoRaise_setter_blocker">блокировать</checkBox>
         <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
       </presentation>
@@ -717,11 +737,13 @@ last - повторить последнее действие</text>
       </presentation>
 
       <presentation id="OrgMateMarcoGeneralTitlebarUsesSystemFontMachine-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="OrgMateMarcoGeneralTitlebarUsesSystemFont_setter">Выберите "включено" или "отключено":</dropdownList>
         <checkBox refId="OrgMateMarcoGeneralTitlebarUsesSystemFont_setter_blocker">блокировать</checkBox>
         <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
       </presentation>
 
       <presentation id="OrgMateMarcoGeneralCompositingFastAltTabMachine-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="OrgMateMarcoGeneralCompositingFastAltTab_setter">Выберите "включено" или "отключено":</dropdownList>
         <checkBox refId="OrgMateMarcoGeneralCompositingFastAltTab_setter_blocker">блокировать</checkBox>
         <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
       </presentation>
@@ -737,6 +759,7 @@ last - повторить последнее действие</text>
       </presentation>
 
       <presentation id="OrgMateMarcoGeneralCenterNewWindowsMachine-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="OrgMateMarcoGeneralCenterNewWindows_setter">Выберите "включено" или "отключено":</dropdownList>
         <checkBox refId="OrgMateMarcoGeneralCenterNewWindows_setter_blocker">блокировать</checkBox>
         <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
       </presentation>
@@ -772,6 +795,7 @@ last - повторить последнее действие</text>
       </presentation>
 
       <presentation id="OrgMatePeripheralsKeyboardRepeatMachine-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="OrgMatePeripheralsKeyboardRepeat_setter">Выберите "включено" или "отключено":</dropdownList>
         <checkBox refId="OrgMatePeripheralsKeyboardRepeat_setter_blocker">блокировать</checkBox>
         <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
       </presentation>
