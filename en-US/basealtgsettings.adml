@@ -32,9 +32,13 @@
 
       <string id="org-mate-screensaver-idle-activation-enabled">Screen saver</string>
       <string id="org-mate-screensaver-idle-activation-enabled_help">Turn on screen saver while idle.</string>
+      <string id="org-mate-screensaver-idle-activation-enabled-true">enabled</string>
+      <string id="org-mate-screensaver-idle-activation-enabled-false">disabled</string>
 
       <string id="org-mate-screensaver-lock-enabled">Screen lock</string>
       <string id="org-mate-screensaver-lock-enabled_help">Enable, to lock the computer while screen saver is active. Computer will be locked after the time interval set by the "Lock delay" setting.</string>
+      <string id="org-mate-screensaver-lock-enabled-true">enabled</string>
+      <string id="org-mate-screensaver-lock-enabled-false">disabled</string>
 
       <string id="org-mate-screensaver-mode">Screen saver mode</string>
       <string id="org-mate-screensaver-mode_help">Set screen saver mode. Possible options: "disabled" — disabled, "blank-only" — an empty screen,"single" — use one theme specified by the "themes" key,"random" — use a randomly selected theme.</string>
@@ -54,27 +58,43 @@
 
       <string id="org-mate-screensaver-user-switch-enabled">Switching user after blocking</string>
       <string id="org-mate-screensaver-user-switch-enabled_help">Enable to allow switching to another account in the screen unlock dialog.</string>
+      <string id="org-mate-screensaver-user-switch-enabled-true">enabled</string>
+      <string id="org-mate-screensaver-user-switch-enabled-false">disabled</string>
 
       <string id="org-mate-screensaver-logout-enabled">User logout after blocking</string>
       <string id="org-mate-screensaver-logout-enabled_help">Enable to allow logging out in the screen unlock dialog. The delay is specified in the "Logout delay" setting.</string>
+      <string id="org-mate-screensaver-logout-enabled-true">enabled</string>
+      <string id="org-mate-screensaver-logout-enabled-false">disabled</string>
 
       <string id="org-mate-lockdown-disable-log-out">Forbid log out </string>
       <string id="org-mate-lockdown-disable-log-out_help">Enable to prevent the user from ending the session.</string>
+      <string id="org-mate-lockdown-disable-log-out-true">enabled</string>
+      <string id="org-mate-lockdown-disable-log-out-false">disabled</string>
 
       <string id="org-mate-lockdown-disable-lock-screen">Disable screen lock</string>
       <string id="org-mate-lockdown-disable-lock-screen_help">Set to disable automatic screen lock.</string>
+      <string id="org-mate-lockdown-disable-lock-screen-true">enabled</string>
+      <string id="org-mate-lockdown-disable-lock-screen-false">disabled</string>
 
       <string id="org-mate-lockdown-disable-user-switching">Forbid user switching</string>
       <string id="org-mate-lockdown-disable-user-switching_help">Enable to prevent the user from switching to another account while their session is active.</string>
+      <string id="org-mate-lockdown-disable-user-switching-true">enabled</string>
+      <string id="org-mate-lockdown-disable-user-switching-false">disabled</string>
 
       <string id="org-mate-lockdown-disable-theme-settings">Forbid desktop theme customization</string>
       <string id="org-mate-lockdown-disable-theme-settings_help">Enabled to prevent the user from changing theme setthings.</string>
+      <string id="org-mate-lockdown-disable-theme-settings-true">enabled</string>
+      <string id="org-mate-lockdown-disable-theme-settings-false">disabled</string>
 
       <string id="org-gnome-vino-view-only">Remote control</string>
       <string id="org-gnome-vino-view-only_help">If true, remote users accessing the desktop are only allowed to view the desktop. Remote users will not be able to use the mouse or keyboard.</string>
+      <string id="org-gnome-vino-view-only-true">enabled</string>
+      <string id="org-gnome-vino-view-only-false">disabled</string>
 
       <string id="org-gnome-vino-prompt-enabled">Confirmation when connecting</string>
       <string id="org-gnome-vino-prompt-enabled_help">If true, remote users accessing the desktop are not allowed access until the user on the host machine approves the connection. Recommended when access is not password protected.</string>
+      <string id="org-gnome-vino-prompt-enabled-true">enabled</string>
+      <string id="org-gnome-vino-prompt-enabled-false">disabled</string>
 
       <string id="org-gnome-vino-icon-visibility">Connection icon</string>
       <string id="org-gnome-vino-icon-visibility_help">This key controls the behavior of the connection status icon. There are three options: "always" - the icon will always be present; "client" - the icon will only be present when someone is connected (this is the default behavior); "never" - the icon will not be present.</string>
@@ -84,12 +104,16 @@
 
       <string id="org-gnome-vino-enabled">Remote access</string>
       <string id="org-gnome-vino-enabled_help">If true, allows remote access to desktop via the RFB protocol. Users on remote machines may then connect to the desktop using a VNC player.</string>
+      <string id="org-gnome-vino-enabled-true">enabled</string>
+      <string id="org-gnome-vino-enabled-false">disabled</string>
 
       <string id="org-gnome-vino-alternative-port">Alternative port</string>
       <string id="org-gnome-vino-alternative-port_help">The port which the server will listen to if the 'use-alternative-port' key is set to true. Valid values are in the range of 5000 to 50000.</string>
 
       <string id="org-gnome-vino-use-alternative-port">Enable alternative port</string>
       <string id="org-gnome-vino-use-alternative-port_help">If true, the server will listen on another port, instead of the default (5900). The port must be specified in the 'alternative-port' key.</string>
+      <string id="org-gnome-vino-use-alternative-true">enabled</string>
+      <string id="org-gnome-vino-use-alternative-false">disabled</string>
 
       <string id="org-gnome-vino-authentication-methods">Authentication methods</string>
       <string id="org-gnome-vino-authentication-methods_help">Lists the authentication methods with which remote users may access the desktop.  There are two possible authentication methods; "vnc" causes the remote user to be prompted for a password (the password is specified by the vnc-password key) before connecting and "none" which allows any remote user to connect.</string>
@@ -110,9 +134,13 @@
 
       <string id="org-mate-marco-general-show-tab-border">Show window border</string>
       <string id="org-mate-marco-general-show-tab-border_help">Set this to false to disable border of preselected window while performing tab switching.</string>
+      <string id="org-mate-marco-general-show-tab-border-true">enabled</string>
+      <string id="org-mate-marco-general-show-tab-border-false">disabled</string>
 
       <string id="org-mate-marco-general-allow-top-tiling">Allow top tiling</string>
       <string id="org-mate-marco-general-allow-top-tiling_help">If enabled, drag-dropping a window to the top of the screen will maximize it. Only works when allow-tiling is enabled.</string>
+      <string id="org-mate-marco-general-allow-top-tiling-true">enabled</string>
+      <string id="org-mate-marco-general-allow-top-tiling-false">disabled</string>
 
       <string id="org-mate-marco-general-focus-new-windows">Switch focus to a new window</string>
       <string id="org-mate-marco-general-focus-new-windows_help">This option provides additional control over how newly created windows get focus. It has two possible values; "smart" applies the user's normal focus mode, and "strict" results in windows started from a terminal not being given focus.</string>
@@ -121,6 +149,8 @@
 
       <string id="org-mate-marco-general-allow-tiling">Resizing when drag-dropping</string>
       <string id="org-mate-marco-general-allow-tiling_help">If enabled, dropping windows on screen edges maximizes them vertically and resizes them horizontally to cover half of the available area. Drag-dropping to the top maximizes the window if allow-top-tiling is enabled.</string>
+      <string id="org-mate-marco-general-allow-tiling-true">enabled</string>
+      <string id="org-mate-marco-general-allow-tiling-false">disabled</string>
 
       <string id="org-mate-marco-general-num-workspaces">Number of workspaces</string>
       <string id="org-mate-marco-general-num-workspaces_help">Set the number of workspaces. The range of acceptable values is 1-36.</string>
@@ -133,6 +163,8 @@
 
       <string id="org-mate-marco-general-auto-raise">Raise the window in focus</string>
       <string id="org-mate-marco-general-auto-raise_help">If set to true, and the focus mode is either "sloppy" or "mouse" then the focused window will be automatically raised after a delay specified by the auto_raise_delay key. This is not related to clicking on a window to raise it, nor to entering a window during drag-and-drop.</string>
+      <string id="org-mate-marco-general-auto-raise-true">enabled</string>
+      <string id="org-mate-marco-general-auto-raise-false">disabled</string>
 
       <string id="org-mate-marco-general-action-middle-click-titlebar">Action by the middle button</string>
       <string id="org-mate-marco-general-action-middle-click-titlebar_help">Set the action performed by pressing the middle mouse button.</string>
@@ -184,15 +216,21 @@
 
       <string id="org-mate-marco-general-titlebar-uses-system-font">System font in the titlebar</string>
       <string id="org-mate-marco-general-titlebar-uses-system-font_help">When enabled, the system font will be used in the window titlebar.</string>
+      <string id="org-mate-marco-general-titlebar-uses-system-font-true">enabled</string>
+      <string id="org-mate-marco-general-titlebar-uses-system-font-false">disabled</string>
 
       <string id="org-mate-marco-general-compositing-fast-alt-tab">Thumbnails when switching windows</string>
       <string id="org-mate-marco-general-compositing-fast-alt-tab_help">If set to true, no window thumbnails will be displayed in the alt-tab popup window when the compositing manager is enabled. Application icons will be displayed instead.</string>
+      <string id="org-mate-marco-general-compositing-fast-alt-tab-true">enabled</string>
+      <string id="org-mate-marco-general-compositing-fast-alt-tab-false">disabled</string>
 
       <string id="org-mate-marco-general-auto-raise-delay">Auto raise delay</string>
       <string id="org-mate-marco-general-auto-raise-delay_help">The time delay before raising a window if auto_raise is set to true. The delay is given in milliseconds.</string>
 
       <string id="org-mate-marco-general-center-new-windows">Center new windows</string>
       <string id="org-mate-marco-general-center-new-windows_help">If set to true, new windows are opened in the center of the screen. Otherwise, they are opened at the top left of the screen.</string>
+      <string id="org-mate-marco-general-center-new-windows-true">enabled</string>
+      <string id="org-mate-marco-general-center-new-windows-false">disabled</string>
 
       <string id="org-mate-marco-general-icon-size">Icon size</string>
       <string id="org-mate-marco-general-icon-size_help">Size of the application icons displayed in alt-tab popup window. The screen's scale factor is applied to this value.</string>
@@ -205,6 +243,8 @@
 
       <string id="org-mate-peripherals-keyboard-repeat">Enable repeat</string>
       <string id="org-mate-peripherals-keyboard-repeat_help">Enable repeat of the pressed and held key.</string>
+      <string id="org-mate-peripherals-keyboard-repeat-true">enabled</string>
+      <string id="org-mate-peripherals-keyboard-repeat-false">disabled</string>
 
       <string id="org-mate-peripherals-keyboard-rate">Repeat rate</string>
       <string id="org-mate-peripherals-keyboard-rate_help">Sets the repeat rate of the pressed and held key.</string>
@@ -274,11 +314,13 @@
       </presentation>
 
       <presentation id="OrgMateScreesaverIdleActivationEnabledMachine-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="OrgMateScreesaverIdleActivationEnabled_setter">Choose "enabled" or "disabled":</dropdownList>
         <checkBox refId="OrgMateScreesaverIdleActivationEnabled_setter_blocker">Lock</checkBox>
         <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
       </presentation>
 
       <presentation id="OrgMateScreensaverLockEnabledMachine-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="OrgMateScreensaverLockEnabled_setter">Choose "enabled" or "disabled":</dropdownList>
         <checkBox refId="OrgMateScreensaverLockEnabled_setter_blocker">Lock</checkBox>
         <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
       </presentation>
@@ -330,41 +372,49 @@
       </presentation>
 
       <presentation id="OrgMateScreensaverLogoutEnabledMachine-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="OrgMateScreensaverLogoutEnabled_setter">Choose "enabled" or "disabled":</dropdownList>
         <checkBox refId="OrgMateScreensaverLogoutEnabled_setter_blocker">Lock</checkBox>
         <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
       </presentation>
 
       <presentation id="OrgMateScreensaverUserSwitchEnabledMachine-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="OrgMateScreensaverUserSwitchEnabled_setter">Choose "enabled" or "disabled":</dropdownList>
         <checkBox refId="OrgMateScreensaverUserSwitchEnabled_setter_blocker">Lock</checkBox>
         <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
       </presentation>
 
       <presentation id="OrgMateLockdownDisableLogOutMachine-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="OrgMateLockdownDisableLogOut_setter">Choose "enabled" or "disabled":</dropdownList>
         <checkBox refId="OrgMateLockdownDisableLogOut_setter_blocker">Lock</checkBox>
         <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
       </presentation>
 
       <presentation id="OrgMateLockdownDisableLockScreenMachine-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="OrgMateLockdownDisableLockScreen_setter">Choose "enabled" or "disabled":</dropdownList>
         <checkBox refId="OrgMateLockdownDisableLockScreen_setter_blocker">Lock</checkBox>
         <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
       </presentation>
 
       <presentation id="OrgMateLockdownDisableUserSwitchingMachine-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="OrgMateLockdownDisableUserSwitching_setter">Choose "enabled" or "disabled":</dropdownList>
         <checkBox refId="OrgMateLockdownDisableUserSwitching_setter_blocker">Lock</checkBox>
         <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
       </presentation>
 
       <presentation id="OrgMateLockdownDisableThemeSettingsMachine-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="OrgMateLockdownDisableThemeSettings_setter">Choose "enabled" or "disabled":</dropdownList>
         <checkBox refId="OrgMateLockdownDisableThemeSettings_setter_blocker">Lock</checkBox>
         <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
       </presentation>
 
       <presentation id="OrgGnomeVinoViewOnlyMachine-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="OrgGnomeVinoViewOnly_setter">Choose "enabled" or "disabled":</dropdownList>
         <checkBox refId="OrgGnomeVinoViewOnly_setter_blocker">Lock</checkBox>
         <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
       </presentation>
 
       <presentation id="OrgGnomeVinoPromptEnabledMachine-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="OrgGnomeVinoPromptEnabled_setter">Choose "enabled" or "disabled":</dropdownList>
         <checkBox refId="OrgGnomeVinoPromptEnabled_setter_blocker">Lock</checkBox>
         <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
       </presentation>
@@ -380,6 +430,7 @@
       </presentation>
 
       <presentation id="OrgGnomeVinoEnabledMachine-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="OrgGnomeVinoEnabled_setter">Choose "enabled" or "disabled":</dropdownList>
         <checkBox refId="OrgGnomeVinoEnabled_setter_blocker">Lock</checkBox>
         <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
       </presentation>
@@ -395,6 +446,7 @@
       </presentation>
 
       <presentation id="OrgGnomeVinoUseAlternativePortMachine-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="OrgGnomeVinoUseAlternativePort_setter">Choose "enabled" or "disabled":</dropdownList>
         <checkBox refId="OrgGnomeVinoUseAlternativePort_setter_blocker">Lock</checkBox>
         <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
       </presentation>
@@ -448,11 +500,13 @@
       </presentation>
 
       <presentation id="OrgMateMarcoGeneralShowTabBorderMachine-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="OrgMateMarcoGeneralShowTabBorder_setter">Choose "enabled" or "disabled":</dropdownList>
         <checkBox refId="OrgMateMarcoGeneralShowTabBorder_setter_blocker">lock</checkBox>
         <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
       </presentation>
 
       <presentation id="OrgMateMarcoGeneralAllowTopTilingMachine-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="OrgMateMarcoGeneralAllowTopTiling_setter">Choose "enabled" or "disabled":</dropdownList>
         <checkBox refId="OrgMateMarcoGeneralAllowTopTilingMachine_setter_blocker">lock</checkBox>
         <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
       </presentation>
@@ -468,6 +522,7 @@
       </presentation>
 
       <presentation id="OrgMateMarcoGeneralAllowTilingMachine-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="OrgMateMarcoGeneralAllowTiling_setter">Choose "enabled" or "disabled":</dropdownList>
         <checkBox refId="OrgMateMarcoGeneralAllowTiling_setter_blocker">lock</checkBox>
         <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
       </presentation>
@@ -493,6 +548,7 @@
       </presentation>
 
       <presentation id="OrgMateMarcoGeneralAutoRaiseMachine-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="OrgMateMarcoGeneralAutoRaise_setter">Choose "enabled" or "disabled":</dropdownList>
         <checkBox refId="OrgMateMarcoGeneralAutoRaise_setter_blocker">lock</checkBox>
         <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
       </presentation>
@@ -614,11 +670,13 @@ last - repeat last action</text>
       </presentation>
 
       <presentation id="OrgMateMarcoGeneralTitlebarUsesSystemFontMachine-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="OrgMateMarcoGeneralTitlebarUsesSystemFont_setter">Choose "enabled" or "disabled":</dropdownList>
         <checkBox refId="OrgMateMarcoGeneralTitlebarUsesSystemFont_setter_blocker">lock</checkBox>
         <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
       </presentation>
 
       <presentation id="OrgMateMarcoGeneralCompositingFastAltTabMachine-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="OrgMateMarcoGeneralCompositingFastAltTab_setter">Choose "enabled" or "disabled":</dropdownList>
         <checkBox refId="OrgMateMarcoGeneralCompositingFastAltTab_setter_blocker">lock</checkBox>
         <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
       </presentation>
@@ -634,6 +692,7 @@ last - repeat last action</text>
       </presentation>
 
       <presentation id="OrgMateMarcoGeneralCenterNewWindowsMachine-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="OrgMateMarcoGeneralCenterNewWindows_setter">Choose "enabled" or "disabled":</dropdownList>
         <checkBox refId="OrgMateMarcoGeneralCenterNewWindows_setter_blocker">lock</checkBox>
         <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
       </presentation>
@@ -669,6 +728,7 @@ last - repeat last action</text>
       </presentation>
 
       <presentation id="OrgMatePeripheralsKeyboardRepeatMachine-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="OrgMatePeripheralsKeyboardRepeat_setter">Choose "enabled" or "disabled":</dropdownList>
         <checkBox refId="OrgMatePeripheralsKeyboardRepeat_setter_blocker">lock</checkBox>
         <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
       </presentation>

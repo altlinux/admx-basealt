@@ -290,17 +290,22 @@
         displayName="$(string.org-mate-screensaver-idle-activation-enabled)"
         explainText="$(string.org-mate-screensaver-idle-activation-enabled_help)"
         key="Software\BaseALT\Policies\gsettings"
-        valueName="org.mate.screensaver.idle-activation-enabled"
         presentation="$(presentation.OrgMateScreesaverIdleActivationEnabledMachine-pr)" >
       <parentCategory ref="system:ALT_Screensaver_Mate" />
       <supportedOn ref="system:SUPPORTED_AltP9" />
-      <enabledValue>
-        <decimal value="1" />
-      </enabledValue>
-      <disabledValue>
-        <decimal value="0" />
-      </disabledValue>
       <elements>
+        <enum id="OrgMateScreesaverIdleActivationEnabled_setter" required="true" valueName="org.mate.screensaver.idle-activation-enabled">
+          <item displayName="$(string.org-mate-screensaver-idle-activation-enabled-true)">
+            <value>
+              <decimal value="1" />
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-screensaver-idle-activation-enabled-false)">
+            <value>
+              <decimal value="0" />
+            </value>
+          </item>
+        </enum>
         <boolean id="OrgMateScreesaverIdleActivationEnabled_setter_blocker" key="Software\BaseALT\Policies\GSettingsLocks" valueName="org.mate.screensaver.idle-activation-enabled">
           <trueValue>
             <decimal value="1" />
@@ -331,17 +336,22 @@
         displayName="$(string.org-mate-screensaver-lock-enabled)"
         explainText="$(string.org-mate-screensaver-lock-enabled_help)"
         key="Software\BaseALT\Policies\gsettings"
-        valueName="org.mate.screensaver.lock-enabled"
         presentation="$(presentation.OrgMateScreensaverLockEnabledMachine-pr)" >
       <parentCategory ref="system:ALT_Screensaver_Mate" />
       <supportedOn ref="system:SUPPORTED_AltP9" />
-      <enabledValue>
-        <decimal value="1" />
-      </enabledValue>
-      <disabledValue>
-        <decimal value="0" />
-      </disabledValue>
       <elements>
+        <enum id="OrgMateScreensaverLockEnabled_setter" required="true" valueName="org.mate.screensaver.lock-enabled">
+          <item displayName="$(string.org-mate-screensaver-lock-enabled-true)">
+            <value>
+              <decimal value="1" />
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-screensaver-lock-enabled-false)">
+            <value>
+              <decimal value="0" />
+            </value>
+          </item>
+        </enum>
         <boolean id="OrgMateScreensaverLockEnabled_setter_blocker" key="Software\BaseALT\Policies\GSettingsLocks" valueName="org.mate.screensaver.lock-enabled">
           <trueValue>
             <decimal value="1" />
@@ -542,17 +552,22 @@
         displayName="$(string.org-mate-screensaver-user-switch-enabled)"
         explainText="$(string.org-mate-screensaver-user-switch-enabled_help)"
         key="Software\BaseALT\Policies\gsettings"
-        valueName="org.mate.screensaver.user-switch-enabled"
         presentation="$(presentation.OrgMateScreensaverUserSwitchEnabledMachine-pr)">
       <parentCategory ref="system:ALT_Screensaver_Mate" />
       <supportedOn ref="system:SUPPORTED_AltP9" />
-      <enabledValue>
-        <decimal value="1" />
-      </enabledValue>
-      <disabledValue>
-        <decimal value="0" />
-      </disabledValue>
       <elements>
+        <enum id="OrgMateScreensaverUserSwitchEnabled_setter" required="true" valueName="org.mate.screensaver.user-switch-enabled">
+          <item displayName="$(string.org-mate-screensaver-user-switch-enabled-true)">
+            <value>
+              <decimal value="1" />
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-screensaver-user-switch-enabled-false)">
+            <value>
+              <decimal value="0" />
+            </value>
+          </item>
+        </enum>
         <boolean id="OrgMateScreensaverUserSwitchEnabled_setter_blocker" key="Software\BaseALT\Policies\GSettingsLocks" valueName="org.mate.screensaver.user-switch-enabled">
           <trueValue>
             <decimal value="1" />
@@ -583,17 +598,22 @@
         displayName="$(string.org-mate-screensaver-logout-enabled)"
         explainText="$(string.org-mate-screensaver-logout-enabled_help)"
         key="Software\BaseALT\Policies\gsettings"
-        valueName="org.mate.screensaver.logout-enabled"
         presentation="$(presentation.OrgMateScreensaverLogoutEnabledMachine-pr)">
       <parentCategory ref="system:ALT_Screensaver_Mate" />
       <supportedOn ref="system:SUPPORTED_AltP9" />
-      <enabledValue>
-        <decimal value="1" />
-      </enabledValue>
-      <disabledValue>
-        <decimal value="0" />
-      </disabledValue>
       <elements>
+        <enum id="OrgMateScreensaverLogoutEnabled_setter" required="true" valueName="org.mate.screensaver.logout-enabled">
+          <item displayName="$(string.org-mate-screensaver-logout-enabled-true)">
+            <value>
+              <decimal value="1" />
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-screensaver-logout-enabled-false)">
+            <value>
+              <decimal value="0" />
+            </value>
+          </item>
+        </enum>
         <boolean id="OrgMateScreensaverLogoutEnabled_setter_blocker" key="Software\BaseALT\Policies\GSettingsLocks" valueName="org.mate.screensaver.logout-enabled">
           <trueValue>
             <decimal value="1" />
@@ -624,17 +644,22 @@
         displayName="$(string.org-mate-lockdown-disable-log-out)"
         explainText="$(string.org-mate-lockdown-disable-log-out_help)"
         key="Software\BaseALT\Policies\gsettings"
-        valueName="org.mate.lockdown.disable-log-out"
         presentation="$(presentation.OrgMateLockdownDisableLogOutMachine-pr)">
       <parentCategory ref="system:ALT_User_Restrictions_Mate" />
       <supportedOn ref="system:SUPPORTED_AltP9" />
-      <enabledValue>
-        <decimal value="1" />
-      </enabledValue>
-      <disabledValue>
-        <decimal value="0" />
-      </disabledValue>
       <elements>
+        <enum id="OrgMateLockdownDisableLogOut_setter" required="true" valueName="org.mate.lockdown.disable-log-out">
+          <item displayName="$(string.org-mate-lockdown-disable-log-out-true)">
+            <value>
+              <decimal value="1" />
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-lockdown-disable-log-out-false)">
+            <value>
+              <decimal value="0" />
+            </value>
+          </item>
+        </enum>
         <boolean id="OrgMateLockdownDisableLogOut_setter_blocker" key="Software\BaseALT\Policies\GSettingsLocks" valueName="org.mate.lockdown.disable-log-out">
           <trueValue>
             <decimal value="1" />
@@ -665,17 +690,22 @@
         displayName="$(string.org-mate-lockdown-disable-lock-screen)"
         explainText="$(string.org-mate-lockdown-disable-lock-screen_help)"
         key="Software\BaseALT\Policies\gsettings"
-        valueName="org.mate.lockdown.disable-lock-screen"
         presentation="$(presentation.OrgMateLockdownDisableLockScreenMachine-pr)">
       <parentCategory ref="system:ALT_User_Restrictions_Mate" />
       <supportedOn ref="system:SUPPORTED_AltP9" />
-      <enabledValue>
-        <decimal value="1" />
-      </enabledValue>
-      <disabledValue>
-        <decimal value="0" />
-      </disabledValue>
       <elements>
+        <enum id="OrgMateLockdownDisableLockScreen_setter" required="true" valueName="org.mate.lockdown.disable-lock-screen">
+          <item displayName="$(string.org-mate-lockdown-disable-lock-screen-true)">
+            <value>
+              <decimal value="1" />
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-lockdown-disable-lock-screen-false)">
+            <value>
+              <decimal value="0" />
+            </value>
+          </item>
+        </enum>
         <boolean id="OrgMateLockdownDisableLockScreen_setter_blocker" key="Software\BaseALT\Policies\GSettingsLocks" valueName="org.mate.lockdown.disable-lock-screen">
           <trueValue>
             <decimal value="1" />
@@ -706,17 +736,22 @@
         displayName="$(string.org-mate-lockdown-disable-user-switching)"
         explainText="$(string.org-mate-lockdown-disable-user-switching_help)"
         key="Software\BaseALT\Policies\gsettings"
-        valueName="org.mate.lockdown.disable-user-switching"
         presentation="$(presentation.OrgMateLockdownDisableUserSwitchingMachine-pr)">
       <parentCategory ref="system:ALT_User_Restrictions_Mate" />
       <supportedOn ref="system:SUPPORTED_AltP9" />
-      <enabledValue>
-        <decimal value="1" />
-      </enabledValue>
-      <disabledValue>
-        <decimal value="0" />
-      </disabledValue>
       <elements>
+        <enum id="OrgMateLockdownDisableUserSwitching_setter" required="true" valueName="org.mate.lockdown.disable-user-switching">
+          <item displayName="$(string.org-mate-lockdown-disable-user-switching-true)">
+            <value>
+              <decimal value="1" />
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-lockdown-disable-user-switching-false)">
+            <value>
+              <decimal value="0" />
+            </value>
+          </item>
+        </enum>
         <boolean id="OrgMateLockdownDisableUserSwitching_setter_blocker" key="Software\BaseALT\Policies\GSettingsLocks" valueName="org.mate.lockdown.disable-user-switching">
           <trueValue>
             <decimal value="1" />
@@ -747,17 +782,22 @@
         displayName="$(string.org-mate-lockdown-disable-theme-settings)"
         explainText="$(string.org-mate-lockdown-disable-theme-settings_help)"
         key="Software\BaseALT\Policies\gsettings"
-        valueName="org.mate.lockdown.disable-theme-settings"
         presentation="$(presentation.OrgMateLockdownDisableThemeSettingsMachine-pr)">
       <parentCategory ref="system:ALT_User_Restrictions_Mate" />
       <supportedOn ref="system:SUPPORTED_AltP9" />
-      <enabledValue>
-        <decimal value="1" />
-      </enabledValue>
-      <disabledValue>
-        <decimal value="0" />
-      </disabledValue>
       <elements>
+        <enum id="OrgMateLockdownDisableThemeSettings_setter" required="true" valueName="org.mate.lockdown.disable-theme-settings">
+          <item displayName="$(string.org-mate-lockdown-disable-theme-settings-true)">
+            <value>
+              <decimal value="1" />
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-lockdown-disable-theme-settings-false)">
+            <value>
+              <decimal value="0" />
+            </value>
+          </item>
+        </enum>
         <boolean id="OrgMateLockdownDisableThemeSettings_setter_blocker" key="Software\BaseALT\Policies\GSettingsLocks" valueName="org.mate.lockdown.disable-theme-settings">
           <trueValue>
             <decimal value="1" />
@@ -788,17 +828,22 @@
         displayName="$(string.org-gnome-vino-view-only)"
         explainText="$(string.org-gnome-vino-view-only_help)"
         key="Software\BaseALT\Policies\gsettings"
-        valueName="org.gnome.Vino.view-only"
         presentation="$(presentation.OrgGnomeVinoViewOnlyMachine-pr)">
       <parentCategory ref="system:ALT_Remote_Access_Vino_Gnome" />
       <supportedOn ref="system:SUPPORTED_AltP9" />
-      <enabledValue>
-        <decimal value="1" />
-      </enabledValue>
-      <disabledValue>
-        <decimal value="0" />
-      </disabledValue>
       <elements>
+        <enum id="OrgGnomeVinoViewOnly_setter" required="true" valueName="org.gnome.Vino.view-only">
+          <item displayName="$(string.org-gnome-vino-view-only-true)">
+            <value>
+              <decimal value="1" />
+            </value>
+          </item>
+          <item displayName="$(string.org-gnome-vino-view-only-false)">
+            <value>
+              <decimal value="0" />
+            </value>
+          </item>
+        </enum>
         <boolean id="OrgGnomeVinoViewOnly_setter_blocker" key="Software\BaseALT\Policies\GSettingsLocks" valueName="org.gnome.Vino.view-only">
           <trueValue>
             <decimal value="1" />
@@ -829,17 +874,22 @@
         displayName="$(string.org-gnome-vino-prompt-enabled)"
         explainText="$(string.org-gnome-vino-prompt-enabled_help)"
         key="Software\BaseALT\Policies\gsettings"
-        valueName="org.gnome.Vino.prompt-enabled"
         presentation="$(presentation.OrgGnomeVinoPromptEnabledMachine-pr)">
       <parentCategory ref="system:ALT_Remote_Access_Vino_Gnome" />
       <supportedOn ref="system:SUPPORTED_AltP9" />
-      <enabledValue>
-        <decimal value="1" />
-      </enabledValue>
-      <disabledValue>
-        <decimal value="0" />
-      </disabledValue>
       <elements>
+        <enum id="OrgGnomeVinoPromptEnabled_setter" required="true" valueName="org.gnome.Vino.prompt-enabled">
+          <item displayName="$(string.org-gnome-vino-prompt-enabled-true)">
+            <value>
+              <decimal value="1" />
+            </value>
+          </item>
+          <item displayName="$(string.org-gnome-vino-prompt-enabled-false)">
+            <value>
+              <decimal value="0" />
+            </value>
+          </item>
+        </enum>
         <boolean id="OrgGnomeVinoPromptEnabled_setter_blocker" key="Software\BaseALT\Policies\GSettingsLocks" valueName="org.gnome.Vino.prompt-enabled">
           <trueValue>
             <decimal value="1" />
@@ -934,17 +984,22 @@
         displayName="$(string.org-gnome-vino-enabled)"
         explainText="$(string.org-gnome-vino-enabled_help)"
         key="Software\BaseALT\Policies\gsettings"
-        valueName="org.gnome.Vino.enabled"
         presentation="$(presentation.OrgGnomeVinoEnabledMachine-pr)" >
       <parentCategory ref="system:ALT_Remote_Access_Vino_Gnome" />
       <supportedOn ref="system:SUPPORTED_AltP9" />
-      <enabledValue>
-        <decimal value="1" />
-      </enabledValue>
-      <disabledValue>
-        <decimal value="0" />
-      </disabledValue>
       <elements>
+        <enum id="OrgGnomeVinoEnabled_setter" required="true" valueName="org.gnome.Vino.enabled">
+          <item displayName="$(string.org-gnome-vino-enabled-true)">
+            <value>
+              <decimal value="1" />
+            </value>
+          </item>
+          <item displayName="$(string.org-gnome-vino-enabled-false)">
+            <value>
+              <decimal value="0" />
+            </value>
+          </item>
+        </enum>
         <boolean id="OrgGnomeVinoEnabled_setter_blocker" key="Software\BaseALT\Policies\GSettingsLocks" valueName="org.gnome.Vino.enabled">
           <trueValue>
             <decimal value="1" />
@@ -1007,17 +1062,22 @@
         displayName="$(string.org-gnome-vino-use-alternative-port)"
         explainText="$(string.org-gnome-vino-use-alternative-port_help)"
         key="Software\BaseALT\Policies\gsettings"
-        valueName="org.gnome.Vino.use-alternative-port"
         presentation="$(presentation.OrgGnomeVinoUseAlternativePortMachine-pr)">
       <parentCategory ref="system:ALT_Remote_Access_Vino_Gnome" />
       <supportedOn ref="system:SUPPORTED_AltP9" />
-      <enabledValue>
-        <decimal value="1" />
-      </enabledValue>
-      <disabledValue>
-        <decimal value="0" />
-      </disabledValue>
       <elements>
+        <enum id="OrgGnomeVinoUseAlternativePort_setter" required="true" valueName="org.gnome.Vino.use-alternative-port">
+          <item displayName="$(string.org-gnome-vino-use-alternative-true)">
+            <value>
+              <decimal value="1" />
+            </value>
+          </item>
+          <item displayName="$(string.org-gnome-vino-use-alternative-false)">
+            <value>
+              <decimal value="0" />
+            </value>
+          </item>
+        </enum>
         <boolean id="OrgGnomeVinoUseAlternativePort_setter_blocker" key="Software\BaseALT\Policies\GSettingsLocks" valueName="org.gnome.Vino.use-alternative-port">
           <trueValue>
             <decimal value="1" />
@@ -1230,17 +1290,22 @@
         displayName="$(string.org-mate-marco-general-show-tab-border)"
         explainText="$(string.org-mate-marco-general-show-tab-border_help)"
         key="Software\BaseALT\Policies\gsettings"
-        valueName="org.mate.Marco.general.show-tab-border"
         presentation="$(presentation.OrgMateMarcoGeneralShowTabBorderMachine-pr)">
       <parentCategory ref="system:ALT_Windows_Manager_Marco" />
       <supportedOn ref="system:SUPPORTED_AltP9" />
-      <enabledValue>
-        <decimal value="1" />
-      </enabledValue>
-      <disabledValue>
-        <decimal value="0" />
-      </disabledValue>
       <elements>
+        <enum id="OrgMateMarcoGeneralShowTabBorder_setter" required="true" valueName="org.mate.Marco.general.show-tab-border">
+          <item displayName="$(string.org-mate-marco-general-show-tab-border-true)">
+            <value>
+              <decimal value="1" />
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-marco-general-show-tab-border-false)">
+            <value>
+              <decimal value="0" />
+            </value>
+          </item>
+        </enum>
         <boolean id="OrgMateMarcoGeneralShowTabBorder_setter_blocker" key="Software\BaseALT\Policies\GSettingsLocks" valueName="org.mate.Marco.general.show-tab-border">
           <trueValue>
             <decimal value="1" />
@@ -1271,17 +1336,22 @@
         displayName="$(string.org-mate-marco-general-allow-top-tiling)"
         explainText="$(string.org-mate-marco-general-allow-top-tiling_help)"
         key="Software\BaseALT\Policies\gsettings"
-        valueName="org.mate.Marco.general.allow-top-tiling"
         presentation="$(presentation.OrgMateMarcoGeneralAllowTopTilingMachine-pr)">
       <parentCategory ref="system:ALT_Windows_Manager_Marco" />
       <supportedOn ref="system:SUPPORTED_AltP9" />
-      <enabledValue>
-        <decimal value="1" />
-      </enabledValue>
-      <disabledValue>
-        <decimal value="0" />
-      </disabledValue>
       <elements>
+        <enum id="OrgMateMarcoGeneralAllowTopTiling_setter" required="true" valueName="org.mate.Marco.general.allow-top-tiling">
+          <item displayName="$(string.org-mate-marco-general-allow-top-tiling-true)">
+            <value>
+              <decimal value="1" />
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-marco-general-allow-top-tiling-false)">
+            <value>
+              <decimal value="0" />
+            </value>
+          </item>
+        </enum>
         <boolean id="OrgMateMarcoGeneralAllowTopTilingMachine_setter_blocker" key="Software\BaseALT\Policies\GSettingsLocks" valueName="org.mate.Marco.general.allow-top-tiling">
           <trueValue>
             <decimal value="1" />
@@ -1366,17 +1436,22 @@
         displayName="$(string.org-mate-marco-general-allow-tiling)"
         explainText="$(string.org-mate-marco-general-allow-tiling_help)"
         key="Software\BaseALT\Policies\gsettings"
-        valueName="org.mate.Marco.general.allow-tiling"
         presentation="$(presentation.OrgMateMarcoGeneralAllowTilingMachine-pr)">
       <parentCategory ref="system:ALT_Windows_Manager_Marco" />
       <supportedOn ref="system:SUPPORTED_AltP9" />
-      <enabledValue>
-        <decimal value="1" />
-      </enabledValue>
-      <disabledValue>
-        <decimal value="0" />
-      </disabledValue>
       <elements>
+        <enum id="OrgMateMarcoGeneralAllowTiling_setter" required="true" valueName="org.mate.Marco.general.allow-tiling">
+          <item displayName="$(string.org-mate-marco-general-allow-tiling-true)">
+            <value>
+              <decimal value="1" />
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-marco-general-allow-tiling-false)">
+            <value>
+              <decimal value="0" />
+            </value>
+          </item>
+        </enum>
         <boolean id="OrgMateMarcoGeneralAllowTiling_setter_blocker" key="Software\BaseALT\Policies\GSettingsLocks" valueName="org.mate.Marco.general.allow-tiling">
           <trueValue>
             <decimal value="1" />
@@ -1503,17 +1578,22 @@
         displayName="$(string.org-mate-marco-general-auto-raise)"
         explainText="$(string.org-mate-marco-general-auto-raise_help)"
         key="Software\BaseALT\Policies\gsettings"
-        valueName="org.mate.Marco.general.auto-raise"
         presentation="$(presentation.OrgMateMarcoGeneralAutoRaiseMachine-pr)">
       <parentCategory ref="system:ALT_Windows_Manager_Marco" />
       <supportedOn ref="system:SUPPORTED_AltP9" />
-      <enabledValue>
-        <decimal value="1" />
-      </enabledValue>
-      <disabledValue>
-        <decimal value="0" />
-      </disabledValue>
       <elements>
+        <enum id="OrgMateMarcoGeneralAutoRaise_setter" required="true" valueName="org.mate.Marco.general.auto-raise">
+          <item displayName="$(string.org-mate-marco-general-auto-raise-true)">
+            <value>
+              <decimal value="1" />
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-marco-general-auto-raise-false)">
+            <value>
+              <decimal value="0" />
+            </value>
+          </item>
+        </enum>
         <boolean id="OrgMateMarcoGeneralAutoRaise_setter_blocker" key="Software\BaseALT\Policies\GSettingsLocks" valueName="org.mate.Marco.general.auto-raise">
           <trueValue>
             <decimal value="1" />
@@ -2044,17 +2124,22 @@
         displayName="$(string.org-mate-marco-general-titlebar-uses-system-font)"
         explainText="$(string.org-mate-marco-general-titlebar-uses-system-font_help)"
         key="Software\BaseALT\Policies\gsettings"
-        valueName="org.mate.Marco.general.titlebar-uses-system-font"
         presentation="$(presentation.OrgMateMarcoGeneralTitlebarUsesSystemFontMachine-pr)">
       <parentCategory ref="system:ALT_Windows_Manager_Marco" />
       <supportedOn ref="system:SUPPORTED_AltP9" />
-      <enabledValue>
-        <decimal value="1" />
-      </enabledValue>
-      <disabledValue>
-        <decimal value="0" />
-      </disabledValue>
       <elements>
+        <enum id="OrgMateMarcoGeneralTitlebarUsesSystemFont_setter" required="true" valueName="org.mate.Marco.general.titlebar-uses-system-font">
+          <item displayName="$(string.org-mate-marco-general-titlebar-uses-system-font-true)">
+            <value>
+              <decimal value="1" />
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-marco-general-titlebar-uses-system-font-false)">
+            <value>
+              <decimal value="0" />
+            </value>
+          </item>
+        </enum>
         <boolean id="OrgMateMarcoGeneralTitlebarUsesSystemFont_setter_blocker" key="Software\BaseALT\Policies\GSettingsLocks" valueName="org.mate.Marco.general.titlebar-uses-system-font">
           <trueValue>
             <decimal value="1" />
@@ -2085,17 +2170,22 @@
         displayName="$(string.org-mate-marco-general-compositing-fast-alt-tab)"
         explainText="$(string.org-mate-marco-general-compositing-fast-alt-tab_help)"
         key="Software\BaseALT\Policies\gsettings"
-        valueName="org.mate.Marco.general.compositing-fast-alt-tab"
         presentation="$(presentation.OrgMateMarcoGeneralCompositingFastAltTabMachine-pr)">
       <parentCategory ref="system:ALT_Windows_Manager_Marco" />
       <supportedOn ref="system:SUPPORTED_AltP9" />
-      <enabledValue>
-        <decimal value="1" />
-      </enabledValue>
-      <disabledValue>
-        <decimal value="0" />
-      </disabledValue>
       <elements>
+        <enum id="OrgMateMarcoGeneralCompositingFastAltTab_setter" required="true" valueName="org.mate.Marco.general.compositing-fast-alt-tab">
+          <item displayName="$(string.org-mate-marco-general-compositing-fast-alt-tab-true)">
+            <value>
+              <decimal value="1" />
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-marco-general-compositing-fast-alt-tab-false)">
+            <value>
+              <decimal value="0" />
+            </value>
+          </item>
+        </enum>
         <boolean id="OrgMateMarcoGeneralCompositingFastAltTab_setter_blocker" key="Software\BaseALT\Policies\GSettingsLocks" valueName="org.mate.Marco.compositing-fast-alt-tab">
           <trueValue>
             <decimal value="1" />
@@ -2158,17 +2248,22 @@
         displayName="$(string.org-mate-marco-general-center-new-windows)"
         explainText="$(string.org-mate-marco-general-center-new-windows_help)"
         key="Software\BaseALT\Policies\gsettings"
-        valueName="org.mate.Marco.general.center-new-windows"
         presentation="$(presentation.OrgMateMarcoGeneralCenterNewWindowsMachine-pr)">
       <parentCategory ref="system:ALT_Windows_Manager_Marco" />
       <supportedOn ref="system:SUPPORTED_AltP9" />
-      <enabledValue>
-        <decimal value="1" />
-      </enabledValue>
-      <disabledValue>
-        <decimal value="0" />
-      </disabledValue>
       <elements>
+        <enum id="OrgMateMarcoGeneralCenterNewWindows_setter" required="true" valueName="org.mate.Marco.general.center-new-windows">
+          <item displayName="$(string.org-mate-marco-general-center-new-windows-true)">
+            <value>
+              <decimal value="1" />
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-marco-general-center-new-windows-false)">
+            <value>
+              <decimal value="0" />
+            </value>
+          </item>
+        </enum>
         <boolean id="OrgMateMarcoGeneralCenterNewWindows_setter_blocker" key="Software\BaseALT\Policies\GSettingsLocks" valueName="org.mate.Marco.general.center-new-windows">
           <trueValue>
             <decimal value="1" />
@@ -2295,17 +2390,22 @@
         displayName="$(string.org-mate-peripherals-keyboard-repeat)"
         explainText="$(string.org-mate-peripherals-keyboard-repeat_help)"
         key="Software\BaseALT\Policies\gsettings"
-        valueName="org.mate.peripherals-keyboard.repeat"
         presentation="$(presentation.OrgMatePeripheralsKeyboardRepeatMachine-pr)">
       <parentCategory ref="system:ALT_Windows_Manager_Marco_Keyboard" />
       <supportedOn ref="system:SUPPORTED_AltP9" />
-      <enabledValue>
-        <decimal value="1" />
-      </enabledValue>
-      <disabledValue>
-        <decimal value="0" />
-      </disabledValue>
       <elements>
+        <enum id="OrgMatePeripheralsKeyboardRepeat_setter" required="true" valueName="org.mate.peripherals-keyboard-repeat">
+          <item displayName="$(string.org-mate-peripherals-keyboard-repeat-true)">
+            <value>
+              <decimal value="1" />
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-peripherals-keyboard-repeat-false)">
+            <value>
+              <decimal value="0" />
+            </value>
+          </item>
+        </enum>
         <boolean id="OrgMatePeripheralsKeyboardRepeat_setter_blocker" key="Software\BaseALT\Policies\GSettingsLocks" valueName="org.mate.peripherals-keyboard.repeat">
           <trueValue>
             <decimal value="1" />
