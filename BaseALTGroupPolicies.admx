@@ -260,7 +260,7 @@
         <string>disabled</string>
       </disabledValue>
     </policy>
-  <policy class="Machine" displayName="$(string.gpupdate_scrollsysvoldc_applier)" explainText="$(string.gpupdate_scrollsysvoldc_applier_help)" key="Software\BaseALT\Policies\GPUpdate" name="ScrollSysvolDC" valueName="ScrollSysvolDC">
+    <policy class="Machine" displayName="$(string.gpupdate_scrollsysvoldc_applier)" explainText="$(string.gpupdate_scrollsysvoldc_applier_help)" key="Software\BaseALT\Policies\GPUpdate" name="ScrollSysvolDC" valueName="ScrollSysvolDC">
       <parentCategory ref="ALT_GroupPolicies"/>
       <supportedOn ref="system:SUPPORTED_AltP10"/>
       <enabledValue>
@@ -270,7 +270,7 @@
         <decimal value="0"/>
       </disabledValue>
     </policy>
-  <policy class="Machine" displayName="$(string.gpupdate_files_applier)" explainText="$(string.gpupdate_files_applier_help)" key="Software\BaseALT\Policies\GPUpdate" name="FilesApplier" valueName="FilesApplier">
+    <policy class="Machine" displayName="$(string.gpupdate_files_user_applier)" explainText="$(string.gpupdate_files_user_applier_help)" key="Software\BaseALT\Policies\GPUpdate" name="FilesApplierUser" valueName="FilesApplierUser">
       <parentCategory ref="ALT_GPUpdateAppliers"/>
       <supportedOn ref="system:SUPPORTED_AltP10"/>
       <enabledValue>
@@ -280,7 +280,7 @@
         <decimal value="0"/>
       </disabledValue>
     </policy>
-  <policy class="Machine" displayName="$(string.gpupdate_files_user_applier)" explainText="$(string.gpupdate_files_user_applier_help)" key="Software\BaseALT\Policies\GPUpdate" name="FilesApplierUser" valueName="FilesApplierUser">
+    <policy class="Machine" displayName="$(string.gpupdate_inifiles_applier)" explainText="$(string.gpupdate_inifiles_applier_help)" key="Software\BaseALT\Policies\GPUpdate" name="InifilesApplier" valueName="InifilesApplier">
       <parentCategory ref="ALT_GPUpdateAppliers"/>
       <supportedOn ref="system:SUPPORTED_AltP10"/>
       <enabledValue>
@@ -290,7 +290,7 @@
         <decimal value="0"/>
       </disabledValue>
     </policy>
-  <policy class="Machine" displayName="$(string.gpupdate_inifiles_applier)" explainText="$(string.gpupdate_inifiles_applier_help)" key="Software\BaseALT\Policies\GPUpdate" name="InifilesApplier" valueName="InifilesApplier">
+    <policy class="Machine" displayName="$(string.gpupdate_inifiles_user_applier)" explainText="$(string.gpupdate_inifiles_user_applier_help)" key="Software\BaseALT\Policies\GPUpdate" name="InifilesApplierUser" valueName="InifilesApplierUser">
       <parentCategory ref="ALT_GPUpdateAppliers"/>
       <supportedOn ref="system:SUPPORTED_AltP10"/>
       <enabledValue>
@@ -300,7 +300,7 @@
         <decimal value="0"/>
       </disabledValue>
     </policy>
-  <policy class="Machine" displayName="$(string.gpupdate_inifiles_user_applier)" explainText="$(string.gpupdate_inifiles_user_applier_help)" key="Software\BaseALT\Policies\GPUpdate" name="InifilesApplierUser" valueName="InifilesApplierUser">
+    <policy class="Machine" displayName="$(string.gpupdate_scripts_applier)" explainText="$(string.gpupdate_scripts_applier_help)" key="Software\BaseALT\Policies\GPUpdate" name="ScriptsApplier" valueName="ScriptsApplier">
       <parentCategory ref="ALT_GPUpdateAppliers"/>
       <supportedOn ref="system:SUPPORTED_AltP10"/>
       <enabledValue>
@@ -309,6 +309,16 @@
       <disabledValue>
         <decimal value="0"/>
       </disabledValue>
-  </policy>
- </policies>
+    </policy>
+    <policy class="Machine" displayName="$(string.gpupdate_scripts_user_applier)" explainText="$(string.gpupdate_scripts_user_applier_help)" key="Software\BaseALT\Policies\GPUpdate" name="ScriptsApplierUser" valueName="ScriptsApplierUser">
+      <parentCategory ref="ALT_GPUpdateAppliers"/>
+      <supportedOn ref="system:SUPPORTED_AltP10"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+  </policies>
 </policyDefinitions>
