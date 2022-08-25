@@ -1,7 +1,7 @@
 %define _destdir %_datadir/PolicyDefinitions
 
 Name: admx-basealt
-Version: 0.1.10
+Version: 0.1.11
 Release: alt1
 
 Summary: BaseALT-specific ADMX policy templates
@@ -36,6 +36,12 @@ done
 %_destdir
 
 %changelog
+* Fri Aug 26 2022 Evgeny Sinelnikov <sin@altlinux.org> 0.1.11-alt1
+- Fix ability to block a disabled Mate policies.
+- Fix error loading templates in gpedit.
+- Add file-copy, ini-files and script policies gpupdate engines.
+- Add ScrollSysvolDC policy.
+
 * Wed Mar 02 2022 Evgeny Sinelnikov <sin@altlinux.org> 0.1.10-alt1
 - Correct adml definitions for controls and group policies.
 - Update machine and user packages settings.
