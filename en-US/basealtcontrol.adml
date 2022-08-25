@@ -402,7 +402,7 @@ Only root — Only superuser (root) is permitted to run /usr/bin/postqueue
 
 Only root — Only superuser (root) is permitted to run /usr/sbin/pppd
 
-Traditional — Any user has the right to run /usr/sbin/pppd without elevating privileges
+Traditional — Any user has the right to run /usr/sbin/pppd without raising privileges
 
 Group uucp —  Users of the «uucp» group have the right to run /usr/sbin/pppd with superuser rights
 
@@ -587,7 +587,7 @@ Default — The configuration of automatic updating of client PTR record for rev
 
 Any user — Any user is permitted to run /bin/su
 
-All users, but not root — Any user has the right to run /bin/su, but only users of the «wheel» group can elevate privileges to the superuser (root)
+All users, but not root — Any user has the right to run /bin/su, but only users of the «wheel» group can raise privileges to the superuser (root)
 
 Only wheel — Only users of the «wheel» group are allowed to run /bin/su
 
@@ -635,7 +635,7 @@ Only root — Only superuser (root) is permitted to run /usr/bin/sudoreplay
       <string id="sudoreplay_restricted">Only root</string>
 
       <string id="sudowheel">Allow sudo command to members of «wheel» group</string>
-      <string id="sudowheel_help">This policy allows or denies members of the «wheel» group to use the sudo command. If the policy is enabled, users in the «wheel» group can elevate system privileges via the sudo command. If the policy is not configured or disabled, a member of the "wheel" groups will not be able to use the sudo command.
+      <string id="sudowheel_help">This policy allows or denies members of the «wheel» group to use the sudo command. If the policy is enabled, users in the «wheel» group can raise system privileges via the sudo command. If the policy is not configured or disabled, a member of the "wheel" groups will not be able to use the sudo command.
 
 Disabled — user group «wheel» cannot raise privileges via sudo command
 
