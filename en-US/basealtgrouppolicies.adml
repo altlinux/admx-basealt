@@ -86,6 +86,21 @@
 
       <string id="gp_local_users_system-uids">Filter users by uid</string>
       <string id="gp_local_users_system-uids_help">This policy allows to disable/disable group policies applying for users with uid less 500.</string>
+
+      <string id="gpupdate_scrollsysvoldc_applier">Enable enumeration of domain controllers with full Sysvol</string>
+      <string id="gpupdate_scrollsysvoldc_applier_help">This policy enables iterating over domain controllers with a configured Sysvol catalog if the automatically selected domain controller happens to have a Sysvol that does not have group policies.</string>
+
+      <string id="gpupdate_files_applier">Enable File Copy Mechanism</string>
+      <string id="gpupdate_files_applier_help">This policy enables the file copy mechanism</string>
+
+      <string id="gpupdate_files_user_applier">Enable file copy mechanism for users</string>
+      <string id="gpupdate_files_user_applier_help">This policy enables the file copy mechanism for users</string>
+
+      <string id="gpupdate_inifiles_applier">Enable Ini-file creation mechanism</string>
+      <string id="gpupdate_inifiles_applier_help">This policy enables the Ini-file creation mechanism</string>
+
+      <string id="gpupdate_inifiles_user_applier">Enable Ini-file creation mechanism for users</string>
+      <string id="gpupdate_inifiles_user_applier_help">This policy enables the Ini-file creation mechanism for users</string>
     </stringTable>
   </resources>
 </policyDefinitionResources>

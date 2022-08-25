@@ -260,5 +260,55 @@
         <string>disabled</string>
       </disabledValue>
     </policy>
-  </policies>
+  <policy class="Machine" displayName="$(string.gpupdate_scrollsysvoldc_applier)" explainText="$(string.gpupdate_scrollsysvoldc_applier_help)" key="Software\BaseALT\Policies\GPUpdate" name="ScrollSysvolDC" valueName="ScrollSysvolDC">
+      <parentCategory ref="ALT_GroupPolicies"/>
+      <supportedOn ref="system:SUPPORTED_AltP10"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+  <policy class="Machine" displayName="$(string.gpupdate_files_applier)" explainText="$(string.gpupdate_files_applier_help)" key="Software\BaseALT\Policies\GPUpdate" name="FilesApplier" valueName="FilesApplier">
+      <parentCategory ref="ALT_GPUpdateAppliers"/>
+      <supportedOn ref="system:SUPPORTED_AltP10"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+  <policy class="Machine" displayName="$(string.gpupdate_files_user_applier)" explainText="$(string.gpupdate_files_user_applier_help)" key="Software\BaseALT\Policies\GPUpdate" name="FilesApplierUser" valueName="FilesApplierUser">
+      <parentCategory ref="ALT_GPUpdateAppliers"/>
+      <supportedOn ref="system:SUPPORTED_AltP10"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+  <policy class="Machine" displayName="$(string.gpupdate_inifiles_applier)" explainText="$(string.gpupdate_inifiles_applier_help)" key="Software\BaseALT\Policies\GPUpdate" name="InifilesApplier" valueName="InifilesApplier">
+      <parentCategory ref="ALT_GPUpdateAppliers"/>
+      <supportedOn ref="system:SUPPORTED_AltP10"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+  <policy class="Machine" displayName="$(string.gpupdate_inifiles_user_applier)" explainText="$(string.gpupdate_inifiles_user_applier_help)" key="Software\BaseALT\Policies\GPUpdate" name="InifilesApplierUser" valueName="InifilesApplierUser">
+      <parentCategory ref="ALT_GPUpdateAppliers"/>
+      <supportedOn ref="system:SUPPORTED_AltP10"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+  </policy>
+ </policies>
 </policyDefinitions>
