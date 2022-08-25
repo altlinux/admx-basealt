@@ -637,9 +637,9 @@ Only root — Only superuser (root) is permitted to run /usr/bin/sudoreplay
       <string id="sudowheel">Allow sudo command to members of «wheel» group</string>
       <string id="sudowheel_help">This policy allows or denies members of the «wheel» group to use the sudo command. If the policy is enabled, users in the «wheel» group can raise system privileges via the sudo command. If the policy is not configured or disabled, a member of the "wheel" groups will not be able to use the sudo command.
 
-Disabled — user group «wheel» cannot raise privileges via sudo command
+Disabled — members of the «wheel» group cannot raise privileges with sudo command
 
-Enabled — user group «wheel» can raise privileges via sudo command
+Enabled — members of the «wheel» grop can raise privileges with sudo command
       </string>
 
       <string id="system-auth">Authentication method</string>
