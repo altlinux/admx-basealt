@@ -1,7 +1,7 @@
 %define _destdir %_datadir/PolicyDefinitions
 
 Name: admx-basealt
-Version: 0.1.11
+Version: 0.1.11.1
 Release: alt1
 
 Summary: BaseALT-specific ADMX policy templates
@@ -36,6 +36,9 @@ done
 %_destdir
 
 %changelog
+* Wed Sep 07 2022 Evgeny Sinelnikov <sin@altlinux.org> 0.1.11.1-alt1
+- Fix machine part of file-copy group policy engine.
+
 * Fri Aug 26 2022 Evgeny Sinelnikov <sin@altlinux.org> 0.1.11-alt1
 - Fix ability to block a disabled Mate policies.
 - Fix error loading templates in gpedit.
