@@ -42,7 +42,6 @@
 
       <string id="org-mate-screensaver-mode">Screen saver mode</string>
       <string id="org-mate-screensaver-mode_help">Set screen saver mode. Possible options: "disabled" — disabled, "blank-only" — an empty screen,"single" — use one theme specified by the "themes" key,"random" — use a randomly selected theme.</string>
-      <string id="org-mate-screensaver-mode_disabled">Disabled</string>
       <string id="org-mate-screensaver-mode_blank_only">Blank screen</string>
       <string id="org-mate-screensaver-mode_random">Random</string>
       <string id="org-mate-screensaver-mode_single">Single</string>

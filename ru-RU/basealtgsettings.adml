@@ -78,7 +78,6 @@
 «Случайные темы» — выбрать тему хранителя экрана случайным образом;
 
 «Выбранная тема» — показывать одну (указанную) тему хранителя экрана.</string>
-      <string id="org-mate-screensaver-mode_disabled">Отключён</string>
       <string id="org-mate-screensaver-mode_blank_only">Пустой экран</string>
       <string id="org-mate-screensaver-mode_random">Случайные темы</string>
       <string id="org-mate-screensaver-mode_single">Выбранная тема</string>
