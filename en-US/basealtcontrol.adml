@@ -64,7 +64,7 @@ Client — if selected, it will comment out the «allow» directive in the daemo
 
 Any user — Any user can use consolehelper
 
-Only wheel — Only members of the «wheel» group can use consolehelper
+Only wheel — Only users of the «wheel» group can use consolehelper
 
 Only root — Only superuser (root) can use consolehelper
       </string>
@@ -241,7 +241,7 @@ Only root — Only superuser (root) can execute /usr/bin/mtr
 
 Any user — Any user has the right to use KVM
 
-Group vmusers — Users of the «vmusers» group have the right to use KVM
+Group vmusers — Members of the «vmusers» group have the right to use KVM
 
 Only root — Only superuser (root) has the right to use KVM
       </string>
@@ -404,7 +404,7 @@ Only root — Only superuser (root) is permitted to run /usr/sbin/pppd
 
 Traditional — Any user has the right to run /usr/sbin/pppd without raising privileges
 
-Group uucp —  Users of the «uucp» group have the right to run /usr/sbin/pppd with superuser rights
+Group uucp —  Members of the «uucp» group have the right to run /usr/sbin/pppd with superuser rights
 
 Public — Any user has the right to run /usr/sbin/pppd with superuser rights
       </string>
@@ -587,7 +587,7 @@ Default — The configuration of automatic updating of client PTR record for rev
 
 Any user — Any user is permitted to run /bin/su
 
-All users, but not root — Any user has the right to run /bin/su, but only users of the «wheel» group can raise privileges to the superuser (root)
+All users, but not root — Any user has the right to run /bin/su, but only members of the «wheel» group can raise privileges to the superuser (root)
 
 Only wheel — Only users of the «wheel» group are allowed to run /bin/su
 
