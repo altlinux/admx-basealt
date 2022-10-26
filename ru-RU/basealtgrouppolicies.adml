@@ -108,6 +108,8 @@
       <string id="gpupdate_scripts_user_applier">Модуль выполнения сценариев для пользователей</string>
       <string id="gpupdate_scripts_user_applier_help">Эта политика включает/отключает модуль выполнения групповых политик сценариев для пользователей.</string>
 
+      <string id="gpupdate_yandex_browser_applier">Настройка браузера Yandex</string>
+      <string id="gpupdate_yandex_browser_applier_help">Эта политика включает применение механизма групповых политик Yandex-браузера.</string>
     </stringTable>
   </resources>
 </policyDefinitionResources>

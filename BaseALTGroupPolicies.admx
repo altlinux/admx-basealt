@@ -330,5 +330,15 @@
         <decimal value="0"/>
       </disabledValue>
     </policy>
+    <policy class="Machine" displayName="$(string.gpupdate_yandex_browser_applier)" explainText="$(string.gpupdate_yandex_browser_applier_help)" key="Software\BaseALT\Policies\GPUpdate" name="YandexBrowserApplier" valueName="YandexBrowserApplier">
+      <parentCategory ref="ALT_GPUpdateAppliers"/>
+      <supportedOn ref="system:SUPPORTED_AltP10"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
   </policies>
 </policyDefinitions>
