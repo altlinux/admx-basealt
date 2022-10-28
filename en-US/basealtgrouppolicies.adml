@@ -110,6 +110,23 @@
 
       <string id="gpupdate_yandex_browser_applier">Yandex browser</string>
       <string id="gpupdate_yandex_browser_applier_help">This policy enables group policy Yandex-browser applier feature.</string>
+
+      <string id="RemovableStorageClasses_DenyAll_Access">All Removable Storage classes: Deny all access</string>
+      <string id="RemovableStorageClasses_DenyAll_Access_help">Configure access to all removable storage classes.
+
+This policy setting takes precedence over any individual removable storage policy settings. To manage individual classes, use the policy settings available for each class.
+
+If you enable this policy setting, no access is allowed to any removable storage class.
+
+If you disable or do not configure this policy setting, write and read accesses are allowed to all removable storage classes.</string>
+      <string id="RemovableStorageClasses_DenyAll_User_Access">All Removable Storage classes: Deny all access</string>
+      <string id="RemovableStorageClasses_DenyAll_User_Access_help">Configure access to all removable storage classes.
+
+This policy setting takes precedence over any individual removable storage policy settings. To manage individual classes, use the policy settings available for each class.
+
+If you enable this policy setting, no access is allowed to any removable storage class.
+
+If you disable or do not configure this policy setting, write and read accesses are allowed to all removable storage classes.</string>
     </stringTable>
   </resources>
 </policyDefinitionResources>
