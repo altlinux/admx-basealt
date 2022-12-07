@@ -282,9 +282,9 @@
 
 Не задана — не изменять системное состояние юнита
 
-Включено — перевести юнит во включенное состояние (выполнить команду systemctl enable org.cups.cupsd.service)
+Включено — перевести юнит во включенное состояние (выполнить команду systemctl enable cupsd.service)
 
-Отключено — перевести юнит в состояние «выключено» (выполнить команду systemctl disable org.cups.cupsd.service)
+Отключено — перевести юнит в состояние «выключено» (выполнить команду systemctl disable cupsd.service)
       </string>
 
       <string id="pcscd_service">Служба PC/SC Smart Card</string>
