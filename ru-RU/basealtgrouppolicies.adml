@@ -87,19 +87,19 @@
       <string id="gp_local_users_system-uids">Фильтровать пользователей с системными идентификаторами</string>
       <string id="gp_local_users_system-uids_help">Эта политика позволяет включить/отключить применение групповых политик для пользователей, с uid меньше 500.</string>
 
-      <string id="gpupdate_scrollsysvoldc_applier">Включить перебор контроллеров домена с наполненным Sysvol</string>
-      <string id="gpupdate_scrollsysvoldc_applier_help">Эта политика включает перебор контроллеров домена с настроенным каталогом Sysvol, если автоматически выбранный контроллер домена оказался с Sysvol, в котором отсутствуют групповые политики.</string>
+      <string id="gpupdate_scrollsysvoldc_applier">Перебор контроллеров домена при подключении к SysVol</string>
+      <string id="gpupdate_scrollsysvoldc_applier_help">Эта политика включает поиск контроллера домена с настроенным сетевым каталогом SysVol, в случае если в автоматически выбранном контроллере SysVol, шаблоны групповых политик не обнаружены.</string>
 
-      <string id="gpupdate_files_applier">Включить механизм копирования файлов</string>
+      <string id="gpupdate_files_applier">Управление копированием файлов</string>
       <string id="gpupdate_files_applier_help">Эта политика включает применение механизма копирования файлов.</string>
 
-      <string id="gpupdate_files_user_applier">Включить механизм копирования файлов для пользователей</string>
+      <string id="gpupdate_files_user_applier">Управление копированием файлов для пользователей</string>
       <string id="gpupdate_files_user_applier_help">Эта политика включает применение механизма копирования файлов для пользователей.</string>
 
-      <string id="gpupdate_inifiles_applier">Включить механизм создания Ini-файлов</string>
+      <string id="gpupdate_inifiles_applier">Управление созданием Ini-файлов</string>
       <string id="gpupdate_inifiles_applier_help">Эта политика включает применение механизма создания Ini-файлов</string>
 
-      <string id="gpupdate_inifiles_user_applier">Включить механизм создания Ini-файлов для пользователей</string>
+      <string id="gpupdate_inifiles_user_applier">Управление созданием Ini-файлов для пользователей</string>
       <string id="gpupdate_inifiles_user_applier_help">Эта политика включает применение механизма создания Ini-файлов для пользователей.</string>
 
       <string id="gpupdate_scripts_applier">Модуль выполнения сценариев для компьютеров</string>
