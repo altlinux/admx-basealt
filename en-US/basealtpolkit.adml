@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  (c) 2020 BaseALT, Ltd.  -->
+<policyDefinitionResources xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.microsoft.com/GroupPolicy/2006/07/PolicyDefinitions" revision="1.0" schemaVersion="1.0">
+  <displayName>ALT Group Policies definitions</displayName>
+  <description>This file contains the polkits policies definitions used by ALT operating system.</description>
+  <resources>
+    <stringTable>
+      <string id="polkit_udisks2_filesystem-mount">Mount a filesystem</string>
+      <string id="polkit_udisks2_filesystem-mount_Help">Authentication is required to mount the filesystem</string>
+    </stringTable>
+  </resources>
+</policyDefinitionResources>
