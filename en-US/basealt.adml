@@ -58,6 +58,10 @@
       <string id="ALT_Windows_Manager_Marco_Help">Windows manager Marco settings</string>
       <string id="ALT_Windows_Manager_Marco_Keyboard">Keyboard settings</string>
       <string id="ALT_Windows_Manager_Marco_Keyboard_Help">Keyboard settings</string>
+      <string id="ALT_Polkit">Polkit rules</string>
+      <string id="ALT_Polkit_Help">Polkit rules management.</string>
+      <string id="ALT_Udisks2">Udisks2 permissions</string>
+      <string id="ALT_Udisks2_Help">Udisks2 permissions management.</string>
     </stringTable>
   </resources>
 </policyDefinitionResources>

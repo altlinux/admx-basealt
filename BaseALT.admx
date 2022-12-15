@@ -133,5 +133,11 @@
     <category name="ALT_Windows_Manager_Marco_Keyboard" displayName="$(string.ALT_Windows_Manager_Marco_Keyboard)" explainText="$(string.ALT_Windows_Manager_Marco_Keyboard_Help)">
       <parentCategory ref="ALT_Windows_Manager_Marco" />
     </category>
+    <category name="ALT_Polkit" displayName="$(string.ALT_Polkit)" explainText="$(string.ALT_Polkit_Help)">
+      <parentCategory ref="ALT_System" />
+    </category>
+    <category name="ALT_Udisks2" displayName="$(string.ALT_Udisks2)" explainText="$(string.ALT_Udisks2_Help)">
+      <parentCategory ref="ALT_Polkit" />
+    </category>
   </categories>
 </policyDefinitions>
