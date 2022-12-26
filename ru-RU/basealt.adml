@@ -27,6 +27,9 @@
       <string id="ALT_SSSD_Help">Настройка опций SSSD.</string>
       <string id="ALT_Systemd">Systemd</string>
       <string id="ALT_Systemd_Help">Настройка опций Systemd.</string>
+      <string id="ALT_SambaOptions">Samba опции</string>
+      <string id="ALT_SambaOptions_Help">Настройка опций Samba.</string>
+
       <string id="ALT_Network">Сетевые приложения</string>
       <string id="ALT_Network_Help">Настройка параметров сетевых приложений.</string>
       <string id="ALT_CD_DVD">Приложения для CD/DVD</string>

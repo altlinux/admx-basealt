@@ -27,6 +27,9 @@
       <string id="ALT_SSSD_Help">SSSD options configuration.</string>
       <string id="ALT_Systemd">Systemd</string>
       <string id="ALT_Systemd_Help">Systemd options configuration.</string>
+      <string id="ALT_SambaOptions">Samba</string>
+      <string id="ALT_SambaOptions_Help">Samba options configuration.</string>
+
       <string id="ALT_Network">Network Applications</string>
       <string id="ALT_Network_Help">Configuration of system.</string>
       <string id="ALT_CD_DVD">CD/DVD Applications</string>
