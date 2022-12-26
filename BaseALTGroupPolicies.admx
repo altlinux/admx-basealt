@@ -350,7 +350,7 @@
         <decimal value="0"/>
       </disabledValue>
     </policy>
-    <policy class="User" displayName="$(string.RemovableStorageClasses_DenyAll_User_Access)" explainText="$(string.RemovableStorageClasses_DenyAll_User_Access_help)" key="Software\BaseALT\Policies\GPUpdate\RemovableStorageDevices" name="RemovableStorageClasses_DenyAll_User_Access" valueName="Deny_All">
+    <policy class="Machine" displayName="$(string.RemovableStorageClasses_DenyAll_User_Access)" explainText="$(string.RemovableStorageClasses_DenyAll_User_Access_help)" key="Software\BaseALT\Policies\GPUpdate\RemovableStorageDevices" name="RemovableStorageClasses_DenyAll_User_Access" valueName="Deny_All">
       <parentCategory ref="system:ALT_Mounting"/>
       <supportedOn ref="system:SUPPORTED_AltP10"/>
       <enabledValue>
