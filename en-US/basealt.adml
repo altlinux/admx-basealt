@@ -58,6 +58,8 @@
       <string id="ALT_Windows_Manager_Marco_Help">Windows manager Marco settings</string>
       <string id="ALT_Windows_Manager_Marco_Keyboard">Keyboard settings</string>
       <string id="ALT_Windows_Manager_Marco_Keyboard_Help">Keyboard settings</string>
+      <string id="ALT_Polkit">Polkit rules</string>
+      <string id="ALT_Polkit_Help">Polkit rules</string>
     </stringTable>
   </resources>
 </policyDefinitionResources>
