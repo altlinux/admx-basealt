@@ -58,6 +58,8 @@
       <string id="ALT_Windows_Manager_Marco_Help">Настройки оконного менеджера Marco</string>
       <string id="ALT_Windows_Manager_Marco_Keyboard">Настройки клавиатуры</string>
       <string id="ALT_Windows_Manager_Marco_Keyboard_Help">Настройки клавиатуры</string>
+      <string id="ALT_Polkit">Polkit правила</string>
+      <string id="ALT_Polkit_Help">Polkit правила</string>
     </stringTable>
   </resources>
 </policyDefinitionResources>
