@@ -330,5 +330,25 @@
         <decimal value="0"/>
       </disabledValue>
     </policy>
+    <policy class="User" displayName="$(string.DriveMapsHome)" explainText="$(string.DriveMapsHome_help)" key="Software\BaseALT\Policies\GPUpdate" name="DriveMapsHome" valueName="DriveMapsHome">
+      <parentCategory ref="system:ALT_Mounting"/>
+      <supportedOn ref="system:SUPPORTED_AltP10"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+    <policy class="User" displayName="$(string.DriveMapsHomeUser)" explainText="$(string.DriveMapsHomeUser_help)" key="Software\BaseALT\Policies\GPUpdate" name="DriveMapsHomeUser" valueName="DriveMapsHomeUser">
+      <parentCategory ref="system:ALT_Mounting"/>
+      <supportedOn ref="system:SUPPORTED_AltP10"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
   </policies>
 </policyDefinitions>

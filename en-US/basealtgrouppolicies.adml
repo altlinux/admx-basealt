@@ -108,6 +108,28 @@
       <string id="gpupdate_scripts_users_applier">Script execution module for users</string>
       <string id="gpupdate_scripts_users_applier_help">This policy enables disables the scripting group policy execution engine for users.</string>
 
+      <string id="DriveMapsHomeUser">Mapping user's network drives in the home directory</string>
+      <string id="DriveMapsHomeUser_help">Mapping user's network drives in the home directory
+
+Disabled (default) - symbolic links to user's network drive mount points will not be placed in the home directory.
+
+Enabled - symbolic links to user's network drive mount points will be displayed in the home directory:
+
+   /run/media/USERNAME/DriveUser - for shared user resources;
+
+   /run/media/USERNAME/.DriveUser - for hidden user shares.
+      </string>
+      <string id="DriveMapsHome">Mapping machine's network drives in the home directory</string>
+      <string id="DriveMapsHome_help">Mapping machine's network drives in the home directory
+
+Disabled (default) - symbolic links to machine's network drive mount points will not be placed in the home directory.
+
+Enabled - symbolic links to machine's network drive mount points will be displayed in the home directory:
+
+   /media/gpupdate/Drive - for system resources;
+
+   /media/gpupdate/.Drive - for hidden system resources;
+      </string>
     </stringTable>
   </resources>
 </policyDefinitionResources>
