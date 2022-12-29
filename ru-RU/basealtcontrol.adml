@@ -273,13 +273,13 @@
 
 Пробовать — установить соединение, если нет или с действующим сертификатом
 
-Требование — установить соединение только с правильным сертификатом
+Требовать — установить соединение только с правильным сертификатом
       </string>
       <string id="ldap-tls-cert-check_default">По умолчанию</string>
       <string id="ldap-tls-cert-check_never">Никогда</string>
       <string id="ldap-tls-cert-check_allow">Разрешить</string>
       <string id="ldap-tls-cert-check_try">Пробовать</string>
-      <string id="ldap-tls-cert-check_demand">Спрос</string>
+      <string id="ldap-tls-cert-check_demand">Требовать</string>
 
       <string id="mount">Разрешения для /bin/mount и /bin/umount</string>
       <string id="mount_help">Эта политика определяет разрешения для /bin/mount и /bin/umount
