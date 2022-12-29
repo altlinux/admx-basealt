@@ -110,6 +110,29 @@
 
       <string id="gpupdate_yandex_browser_applier">Yandex Browser</string>
       <string id="gpupdate_yandex_browser_applier_help">This policy enables group policy Yandex Browser applier feature.</string>
+
+      <string id="gpupdate_drive_maps_home_user">Mapping user's network drives in the home directory</string>
+      <string id="gpupdate_drive_maps_home_user_help">Mapping user's network drives in the home directory
+
+Disabled (default) — symbolic links to user's network drives mount points will not be placed in the home directory.
+
+Enabled — symbolic links to user's network drives mount points will be displayed in the home directory:
+
+   /run/media/USERNAME/drives -> ~/net.drives — for user's network drives;
+
+   /run/media/USERNAME/.drives -> ~/.net.drives — for hidden user's network drives.
+      </string>
+      <string id="gpupdate_drive_maps_home">Mapping machine's network drives in the home directory</string>
+      <string id="gpupdate_drive_maps_home_help">Mapping machine's network drives in the home directory
+
+Disabled (default) — symbolic links to machine's network drives mount points will not be placed in the home directory.
+
+Enabled — symbolic links to machine's network drives mount points will be displayed in the home directory:
+
+   /media/gpupdate/drives.system -> ~/net.drives.system — for system network drives;
+
+   /media/gpupdate/.drives.system -> ~/.net.drives.system — for hidden system network drives.
+      </string>
     </stringTable>
   </resources>
 </policyDefinitionResources>
