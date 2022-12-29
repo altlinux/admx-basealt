@@ -88,7 +88,7 @@
       <string id="gp_local_users_system-uids_help">Эта политика позволяет включить/отключить применение групповых политик для пользователей, с uid меньше 500.</string>
 
       <string id="gpupdate_scrollsysvoldc_applier">Перебор контроллеров домена при подключении к SysVol</string>
-      <string id="gpupdate_scrollsysvoldc_applier_help">Эта политика включает поиск контроллера домена с настроенным сетевым каталогом SysVol, в случае если в автоматически выбранном контроллере SysVol шаблоны групповых политик не обнаружены.</string>
+      <string id="gpupdate_scrollsysvoldc_applier_help">Эта политика включает поиск контроллера домена с настроенным сетевым каталогом SysVol, если в автоматически выбранном контроллере шаблоны групповых политик не обнаружены.</string>
 
       <string id="gpupdate_files_applier">Управление копированием файлов</string>
       <string id="gpupdate_files_applier_help">Эта политика включает применение механизма копирования файлов.</string>
