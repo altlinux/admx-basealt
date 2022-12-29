@@ -205,6 +205,8 @@
 Включено — перевести юнит во включенное состояние (выполнить команду systemctl enable network.service)
 
 Отключено — перевести юнит в состояние «выключено» (выполнить команду systemctl disable network.service)
+
+ВНИМАНИЕ! Выключение Network Manager приведет к неработоспособности сети. Для восстановления работоспособности необходимо повторно вручную запустить Network Manager.
       </string>
 
       <string id="NetworkManager-wait-online_service">Ожидание Network Manager'ом сети при загрузке</string>

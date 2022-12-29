@@ -204,6 +204,8 @@ Not Configuration - Do not change unit systemd state
 Enabled - Turn the unit into enabled (execute the command systemctl enable network.service)
 
 Disabled - Turn the unit into off state (execute the command systemctl disable network.service)
+
+WARNING! Turning off the Network Manager will make the network inoperable. You must manually start Network Manager to restore it.
       </string>
 
       <string id="NetworkManager-wait-online_service">Network manager waiting for network on boot</string>
