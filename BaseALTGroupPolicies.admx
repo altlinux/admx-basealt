@@ -90,6 +90,16 @@
         <decimal value="0"/>
       </disabledValue>
     </policy>
+    <policy class="Machine" displayName="$(string.gpupdate_cifs_applier)" explainText="$(string.gpupdate_cifs_applier_help)" key="Software\BaseALT\Policies\GPUpdate" name="CIFSApplier" valueName="CIFSApplier">
+      <parentCategory ref="ALT_GPUpdateAppliers"/>
+      <supportedOn ref="system:SUPPORTED_AltP9"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
     <policy class="Machine" displayName="$(string.gpupdate_firefox_applier)" explainText="$(string.gpupdate_firefox_applier_help)" key="Software\BaseALT\Policies\GPUpdate" name="FirefoxApplier" valueName="FirefoxApplier">
       <parentCategory ref="ALT_GPUpdateAppliers"/>
       <supportedOn ref="system:SUPPORTED_AltP9"/>

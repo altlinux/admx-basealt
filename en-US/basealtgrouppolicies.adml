@@ -45,6 +45,9 @@
       <string id="gpupdate_cifs_user_applier">Network drives mounting for users</string>
       <string id="gpupdate_cifs_user_applier_help">This policy enables group policy CIFS applier for users feature.</string>
 
+      <string id="gpupdate_cifs_applier">Network drives mounting </string>
+      <string id="gpupdate_cifs_applier_help">This policy enables group policy CIFS applier feature.</string>
+
       <string id="gpupdate_gsettings_applier">GSettings configuration</string>
       <string id="gpupdate_gsettings_applier_help">This policy enables group policy GSettings applier feature.</string>
 

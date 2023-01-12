@@ -45,6 +45,9 @@
       <string id="gpupdate_cifs_user_applier">Подключение сетевых каталогов для пользователей</string>
       <string id="gpupdate_cifs_user_applier_help">Эта политика включает применение механизма групповых политик CIFS для пользователей.</string>
 
+      <string id="gpupdate_cifs_applier">Подключение сетевых каталогов</string>
+      <string id="gpupdate_cifs_applier_help">Эта политика включает применение механизма групповых политик CIFS.</string>
+
       <string id="gpupdate_gsettings_applier">Настройки GSettings</string>
       <string id="gpupdate_gsettings_applier_help">Эта политика включает применение механизма групповых политик GSettings.</string>
 
