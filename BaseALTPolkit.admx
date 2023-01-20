@@ -16,7 +16,7 @@
       <parentCategory ref="system:ALT_Polkit" />
       <supportedOn ref="system:SUPPORTED_AltP10" />
       <elements>
-        <enum id="OrgFreedesktopUdisks2FileSystemMount_setter" valueName="org.freedesktop.udisks2.filesystem-mount-options" required="true">
+        <enum id="OrgFreedesktopUdisks2FileSystemMount_setter" valueName="org.freedesktop.udisks2.filesystem-mount" required="true">
           <item displayName="$(string.org-freedesktop-udisks2-filesystem-mount-No)">
             <value>
               <string>No</string>
@@ -48,7 +48,7 @@
             </value>
           </item>
         </enum>
-        <boolean id="OrgFreedesktopUdisks2FileSystemMount_blocker" key="Software\BaseALT\Policies\PolkitLocks" valueName="org.freedesktop.udisks2.filesystem-mount-options">
+        <boolean id="OrgFreedesktopUdisks2FileSystemMount_blocker" key="Software\BaseALT\Policies\PolkitLocks" valueName="org.freedesktop.udisks2.filesystem-mount">
           <trueValue>
             <decimal value="1" />
           </trueValue>
@@ -59,15 +59,15 @@
       </elements>
     </policy>
     <policy class="User" displayName="$(string.org-freedesktop-udisks2-filesystem-mount)"
-        explainText="$(string.org-freedesktop-udisks2-filesystem-mount_help)"
+        explainText="$(string.org-freedesktop-udisks2-filesystem-mount-user_help)"
         key="Software\BaseALT\Policies\Polkit"
         name="org.freedesktop.udisks2.filesystem-mount-user"
         valuename="org.freedesktop.udisks2.filesystem-mount"
-        presentation="$(presentation.OrgFreedesktopUdisks2FileSystemMountUser-pr)">
+        presentation="$(presentation.OrgFreedesktopUdisks2FileSystemMount-pr)">
       <parentCategory ref="system:ALT_Polkit" />
       <supportedOn ref="system:SUPPORTED_AltP10" />
       <elements>
-        <enum id="OrgFreedesktopUdisks2FileSystemMount_setter" valueName="org.freedesktop.udisks2.filesystem-mount-options" required="true">
+        <enum id="OrgFreedesktopUdisks2FileSystemMount_setter" valueName="org.freedesktop.udisks2.filesystem-mount" required="true">
           <item displayName="$(string.org-freedesktop-udisks2-filesystem-mount-No)">
             <value>
               <string>No</string>
@@ -99,7 +99,7 @@
             </value>
           </item>
         </enum>
-        <boolean id="OrgFreedesktopUdisks2FileSystemMount_blocker" key="Software\BaseALT\Policies\PolkitLocks" valueName="org.freedesktop.udisks2.filesystem-mount-options">
+        <boolean id="OrgFreedesktopUdisks2FileSystemMount_blocker" key="Software\BaseALT\Policies\PolkitLocks" valueName="org.freedesktop.udisks2.filesystem-mount">
           <trueValue>
             <decimal value="1" />
           </trueValue>
@@ -118,7 +118,7 @@
       <parentCategory ref="system:ALT_Polkit" />
       <supportedOn ref="system:SUPPORTED_AltP10" />
       <elements>
-        <enum id="OrgFreedesktopUdisks2FileSystemMount_setter" valueName="org.freedesktop.udisks2.filesystem-mount-options" required="true">
+        <enum id="OrgFreedesktopUdisks2FileSystemMount_setter" valueName="org.freedesktop.udisks2.filesystem-mount-other-seat" required="true">
           <item displayName="$(string.org-freedesktop-udisks2-filesystem-mount-No)">
             <value>
               <string>No</string>
@@ -150,7 +150,7 @@
             </value>
           </item>
         </enum>
-        <boolean id="OrgFreedesktopUdisks2FileSystemMount_blocker" key="Software\BaseALT\Policies\PolkitLocks" valueName="org.freedesktop.udisks2.filesystem-mount-options">
+        <boolean id="OrgFreedesktopUdisks2FileSystemMount_blocker" key="Software\BaseALT\Policies\PolkitLocks" valueName="org.freedesktop.udisks2.filesystem-mount-other-seat">
           <trueValue>
             <decimal value="1" />
           </trueValue>
@@ -161,7 +161,7 @@
       </elements>
     </policy>
     <policy class="User" displayName="$(string.org-freedesktop-udisks2-filesystem-mount-other-seat)"
-        explainText="$(string.org-freedesktop-udisks2-filesystem-mount-other-seat_help)"
+        explainText="$(string.org-freedesktop-udisks2-filesystem-mount-other-seat-user_help)"
         key="Software\BaseALT\Policies\Polkit"
         name="org.freedesktop.udisks2.filesystem-mount-other-seat-user"
         valuename="org.freedesktop.udisks2.filesystem-mount-other-seat"
@@ -169,7 +169,7 @@
       <parentCategory ref="system:ALT_Polkit" />
       <supportedOn ref="system:SUPPORTED_AltP10" />
       <elements>
-        <enum id="OrgFreedesktopUdisks2FileSystemMount_setter" valueName="org.freedesktop.udisks2.filesystem-mount-options" required="true">
+        <enum id="OrgFreedesktopUdisks2FileSystemMount_setter" valueName="org.freedesktop.udisks2.filesystem-mount-other-seat" required="true">
           <item displayName="$(string.org-freedesktop-udisks2-filesystem-mount-No)">
             <value>
               <string>No</string>
@@ -201,7 +201,7 @@
             </value>
           </item>
         </enum>
-        <boolean id="OrgFreedesktopUdisks2FileSystemMount_blocker" key="Software\BaseALT\Policies\PolkitLocks" valueName="org.freedesktop.udisks2.filesystem-mount-options">
+        <boolean id="OrgFreedesktopUdisks2FileSystemMount_blocker" key="Software\BaseALT\Policies\PolkitLocks" valueName="org.freedesktop.udisks2.filesystem-mount-other-seat">
           <trueValue>
             <decimal value="1" />
           </trueValue>
@@ -220,7 +220,7 @@
       <parentCategory ref="system:ALT_Polkit" />
       <supportedOn ref="system:SUPPORTED_AltP10" />
       <elements>
-        <enum id="OrgFreedesktopUdisks2FileSystemMount_setter" valueName="org.freedesktop.udisks2.filesystem-mount-options" required="true">
+        <enum id="OrgFreedesktopUdisks2FileSystemMount_setter" valueName="org.freedesktop.udisks2.filesystem-mount-system" required="true">
           <item displayName="$(string.org-freedesktop-udisks2-filesystem-mount-No)">
             <value>
               <string>No</string>
@@ -252,7 +252,7 @@
             </value>
           </item>
         </enum>
-        <boolean id="OrgFreedesktopUdisks2FileSystemMount_blocker" key="Software\BaseALT\Policies\PolkitLocks" valueName="org.freedesktop.udisks2.filesystem-mount-options">
+        <boolean id="OrgFreedesktopUdisks2FileSystemMount_blocker" key="Software\BaseALT\Policies\PolkitLocks" valueName="org.freedesktop.udisks2.filesystem-mount-system">
           <trueValue>
             <decimal value="1" />
           </trueValue>
@@ -271,7 +271,7 @@
       <parentCategory ref="system:ALT_Polkit" />
       <supportedOn ref="system:SUPPORTED_AltP10" />
       <elements>
-        <enum id="OrgFreedesktopUdisks2FileSystemMount_setter" valueName="org.freedesktop.udisks2.filesystem-mount-options" required="true">
+        <enum id="OrgFreedesktopUdisks2FileSystemMount_setter" valueName="org.freedesktop.udisks2.filesystem-mount-system" required="true">
           <item displayName="$(string.org-freedesktop-udisks2-filesystem-mount-No)">
             <value>
               <string>No</string>
@@ -303,7 +303,171 @@
             </value>
           </item>
         </enum>
-        <boolean id="OrgFreedesktopUdisks2FileSystemMount_blocker" key="Software\BaseALT\Policies\PolkitLocks" valueName="org.freedesktop.udisks2.filesystem-mount-options">
+        <boolean id="OrgFreedesktopUdisks2FileSystemMount_blocker" key="Software\BaseALT\Policies\PolkitLocks" valueName="org.freedesktop.udisks2.filesystem-mount-system">
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+        </boolean>
+      </elements>
+    </policy>
+    <policy class="Machine" displayName="$(string.org-freedesktop-udisks2-filesystem-mount-all)"
+        explainText="$(string.org-freedesktop-udisks2-filesystem-mount-all_Help)"
+        key="Software\BaseALT\Policies\Polkit"
+        name="org-freedesktop-udisks2-filesystem-mount-all"
+        presentation="$(presentation.org-freedesktop-udisks2-filesystem-mount-all-pr)">
+      <parentCategory ref="system:ALT_Polkit" />
+      <supportedOn ref="system:SUPPORTED_AltP10" />
+         <enabledList defaultKey="Software\BaseALT\Policies\Polkit">
+          <item valueName="org.freedesktop.udisks2.filesystem-mount">
+            <value>
+                <decimal value="2" />
+            </value>
+          </item>
+          <item valueName="org.freedesktop.udisks2.filesystem-mount-other-seat">
+            <value>
+                <decimal value="2" />
+            </value>
+          </item>
+          <item valueName="org.freedesktop.udisks2.filesystem-mount-system">
+            <value>
+                <decimal value="2" />
+            </value>
+          </item>
+        </enabledList>
+         <disabledList defaultKey="Software\BaseALT\Policies\Polkit">
+          <item valueName="org.freedesktop.udisks2.filesystem-mount">
+            <value>
+                <decimal value="0" />
+            </value>
+          </item>
+          <item valueName="org.freedesktop.udisks2.filesystem-mount-other-seat">
+            <value>
+                <decimal value="0" />
+            </value>
+          </item>
+          <item valueName="org.freedesktop.udisks2.filesystem-mount-system">
+            <value>
+                <decimal value="0" />
+            </value>
+          </item>
+        </disabledList>
+      <elements>
+        <enum id="OrgFreedesktopUdisks2FileSystemMount_setter" valueName="org.freedesktop.udisks2.filesystem-mount" required="true">
+          <item displayName="$(string.org-freedesktop-udisks2-filesystem-mount-No)">
+            <value>
+              <string>No</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-freedesktop-udisks2-filesystem-mount-Yes)">
+            <value>
+              <string>Yes</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-freedesktop-udisks2-filesystem-mount-Auth-self)">
+            <value>
+              <string>Auth_self</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-freedesktop-udisks2-filesystem-mount-Auth-admin)">
+            <value>
+              <string>Auth_admin</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-freedesktop-udisks2-filesystem-mount-Auth-self-keep)">
+            <value>
+              <string>Auth_self_keep</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-freedesktop-udisks2-filesystem-mount-Auth-admin-keep)">
+            <value>
+              <string>Auth_admin_keep</string>
+            </value>
+          </item>
+        </enum>
+        <boolean id="OrgFreedesktopUdisks2FileSystemMount_blocker" key="Software\BaseALT\Policies\PolkitLocks" valueName="org.freedesktop.udisks2.filesystem-mount">
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+        </boolean>
+        <enum id="OrgFreedesktopUdisks2FileSystemMountOther_setter" valueName="org.freedesktop.udisks2.filesystem-mount-other-seat" required="true">
+          <item displayName="$(string.org-freedesktop-udisks2-filesystem-mount-No)">
+            <value>
+              <string>No</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-freedesktop-udisks2-filesystem-mount-Yes)">
+            <value>
+              <string>Yes</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-freedesktop-udisks2-filesystem-mount-Auth-self)">
+            <value>
+              <string>Auth_self</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-freedesktop-udisks2-filesystem-mount-Auth-admin)">
+            <value>
+              <string>Auth_admin</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-freedesktop-udisks2-filesystem-mount-Auth-self-keep)">
+            <value>
+              <string>Auth_self_keep</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-freedesktop-udisks2-filesystem-mount-Auth-admin-keep)">
+            <value>
+              <string>Auth_admin_keep</string>
+            </value>
+          </item>
+        </enum>
+        <boolean id="OrgFreedesktopUdisks2FileSystemMountOther_blocker" key="Software\BaseALT\Policies\PolkitLocks" valueName="org.freedesktop.udisks2.filesystem-mount-other-seat">
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+        </boolean>
+        <enum id="OrgFreedesktopUdisks2FileSystemMountSystem_setter" valueName="org.freedesktop.udisks2.filesystem-mount-system" required="true">
+          <item displayName="$(string.org-freedesktop-udisks2-filesystem-mount-No)">
+            <value>
+              <string>No</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-freedesktop-udisks2-filesystem-mount-Yes)">
+            <value>
+              <string>Yes</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-freedesktop-udisks2-filesystem-mount-Auth-self)">
+            <value>
+              <string>Auth_self</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-freedesktop-udisks2-filesystem-mount-Auth-admin)">
+            <value>
+              <string>Auth_admin</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-freedesktop-udisks2-filesystem-mount-Auth-self-keep)">
+            <value>
+              <string>Auth_self_keep</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-freedesktop-udisks2-filesystem-mount-Auth-admin-keep)">
+            <value>
+              <string>Auth_admin_keep</string>
+            </value>
+          </item>
+        </enum>
+        <boolean id="OrgFreedesktopUdisks2FileSystemMountSystem_blocker" key="Software\BaseALT\Policies\PolkitLocks" valueName="org.freedesktop.udisks2.filesystem-mount-system">
           <trueValue>
             <decimal value="1" />
           </trueValue>
