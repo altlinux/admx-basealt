@@ -1,0 +1,582 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  (c) 2019 BaseALT, Ltd.  -->
+<policyDefinitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" revision="1.0" schemaVersion="1.0" xmlns="http://schemas.microsoft.com/GroupPolicy/2006/07/PolicyDefinitions">
+  <policyNamespaces>
+    <target prefix="packagekit" namespace="BaseALT.Policies.PackageKit" />
+    <using prefix="packages" namespace="BaseALT.Policies.Packages" />
+    <using prefix="system" namespace="BaseALT.Policies.System" />
+  </policyNamespaces>
+  <resources minRequiredRevision="1.0" />
+
+  <categories>
+    <category name="ALT_PackageKit" displayName="$(string.ALT_PackageKit)" explainText="$(string.ALT_PackageKit_Help)">
+      <parentCategory ref="packages:ALT_Packages" />
+    </category>
+  </categories>
+  <policies>
+    <policy class="Machine" displayName="$(string.org-freedesktop-packagekit-package-install)"
+        explainText="$(string.org-freedesktop-packagekit-package-install_help)"
+        key="Software\BaseALT\Policies\Polkit"
+        name="org.freedesktop.packagekit.package-install"
+        valuename="org.freedesktop.packagekit.package-install"
+        presentation="$(presentation.org-freedesktop-packagekit-package-pr)">
+      <parentCategory ref="ALT_PackageKit" />
+      <supportedOn ref="system:SUPPORTED_AltP10" />
+      <elements>
+        <enum id="OrgFreedesktopPackagekitPackage_setter" valueName="org.freedesktop.packagekit.package-install" required="true">
+          <item displayName="$(string.org-freedesktop-packagekit-package-No)">
+            <value>
+              <string>No</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-freedesktop-packagekit-package-Yes)">
+            <value>
+              <string>Yes</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-freedesktop-packagekit-package-Auth-self)">
+            <value>
+              <string>Auth_self</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-freedesktop-packagekit-package-Auth-admin)">
+            <value>
+              <string>Auth_admin</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-freedesktop-packagekit-package-Auth-self-keep)">
+            <value>
+              <string>Auth_self_keep</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-freedesktop-packagekit-package-Auth-admin-keep)">
+            <value>
+              <string>Auth_admin_keep</string>
+            </value>
+          </item>
+        </enum>
+        <boolean id="OrgFreedesktopPackagekitPackage_blocker" key="Software\BaseALT\Policies\PolkitLocks" valueName="org.freedesktop.packagekit.package-install">
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+          </boolean>
+      </elements>
+    </policy>
+    <policy class="User" displayName="$(string.org-freedesktop-packagekit-package-install-user)"
+            explainText="$(string.org-freedesktop-packagekit-package-install-user_help)"
+            key="Software\BaseALT\Policies\Polkit"
+            name="org.freedesktop.packagekit.package-install-user"
+            valuename="org.freedesktop.packagekit.package-install"
+            presentation="$(presentation.org-freedesktop-packagekit-package-user-pr)">
+          <parentCategory ref="ALT_PackageKit" />
+          <supportedOn ref="system:SUPPORTED_AltP10" />
+          <elements>
+            <enum id="OrgFreedesktopPackagekitPackage_setter" valueName="org.freedesktop.packagekit.package-install" required="true">
+              <item displayName="$(string.org-freedesktop-packagekit-package-No)">
+                 <value>
+                  <string>No</string>
+                </value>
+              </item>
+              <item displayName="$(string.org-freedesktop-packagekit-package-Yes)">
+                <value>
+                  <string>Yes</string>
+                </value>
+              </item>
+              <item displayName="$(string.org-freedesktop-packagekit-package-Auth-self)">
+                <value>
+                  <string>Auth_self</string>
+                </value>
+              </item>
+              <item displayName="$(string.org-freedesktop-packagekit-package-Auth-admin)">
+                <value>
+                  <string>Auth_admin</string>
+                </value>
+              </item>
+              <item displayName="$(string.org-freedesktop-packagekit-package-Auth-self-keep)">
+                <value>
+                  <string>Auth_self_keep</string>
+                </value>
+              </item>
+              <item displayName="$(string.org-freedesktop-packagekit-package-Auth-admin-keep)">
+                <value>
+                  <string>Auth_admin_keep</string>
+                </value>
+              </item>
+            </enum>
+          </elements>
+    </policy>
+    <policy class="Machine" displayName="$(string.org-freedesktop-packagekit-package-remove)"
+      explainText="$(string.org-freedesktop-packagekit-package-remove_help)"
+        key="Software\BaseALT\Policies\Polkit"
+        name="org.freedesktop.packagekit.package-remove"
+        valuename="org.freedesktop.packagekit.package-remove"
+        presentation="$(presentation.org-freedesktop-packagekit-package-pr)">
+      <parentCategory ref="ALT_PackageKit" />
+      <supportedOn ref="system:SUPPORTED_AltP10" />
+      <elements>
+          <enum id="OrgFreedesktopPackagekitPackage_setter" valueName="org.freedesktop.packagekit.package-remove" required="true">
+            <item displayName="$(string.org-freedesktop-packagekit-package-No)">
+              <value>
+                <string>No</string>
+              </value>
+            </item>
+            <item displayName="$(string.org-freedesktop-packagekit-package-Yes)">
+              <value>
+                <string>Yes</string>
+              </value>
+            </item>
+            <item displayName="$(string.org-freedesktop-packagekit-package-Auth-self)">
+              <value>
+                <string>Auth_self</string>
+              </value>
+            </item>
+            <item displayName="$(string.org-freedesktop-packagekit-package-Auth-admin)">
+              <value>
+                <string>Auth_admin</string>
+              </value>
+            </item>
+            <item displayName="$(string.org-freedesktop-packagekit-package-Auth-self-keep)">
+              <value>
+                <string>Auth_self_keep</string>
+              </value>
+            </item>
+            <item displayName="$(string.org-freedesktop-packagekit-package-Auth-admin-keep)">
+              <value>
+                <string>Auth_admin_keep</string>
+              </value>
+            </item>
+          </enum>
+          <boolean id="OrgFreedesktopPackagekitPackage_blocker" key="Software\BaseALT\Policies\PolkitLocks" valueName="org.freedesktop.packagekit.package-remove">
+            <trueValue>
+              <decimal value="1" />
+            </trueValue>
+            <falseValue>
+              <decimal value="0" />
+            </falseValue>
+          </boolean>
+        </elements>
+    </policy>
+    <policy class="User" displayName="$(string.org-freedesktop-packagekit-package-remove-user)"
+        explainText="$(string.org-freedesktop-packagekit-package-remove-user_help)"
+        key="Software\BaseALT\Policies\Polkit"
+        name="org.freedesktop.packagekit.package-remove-user"
+        valuename="org.freedesktop.packagekit.package-remove"
+        presentation="$(presentation.org-freedesktop-packagekit-package-user-pr)">
+      <parentCategory ref="ALT_PackageKit" />
+      <supportedOn ref="system:SUPPORTED_AltP10" />
+      <elements>
+        <enum id="OrgFreedesktopPackagekitPackage_setter" valueName="org.freedesktop.packagekit.package-remove" required="true">
+          <item displayName="$(string.org-freedesktop-packagekit-package-No)">
+              <value>
+              <string>No</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-freedesktop-packagekit-package-Yes)">
+            <value>
+              <string>Yes</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-freedesktop-packagekit-package-Auth-self)">
+            <value>
+              <string>Auth_self</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-freedesktop-packagekit-package-Auth-admin)">
+            <value>
+              <string>Auth_admin</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-freedesktop-packagekit-package-Auth-self-keep)">
+            <value>
+              <string>Auth_self_keep</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-freedesktop-packagekit-package-Auth-admin-keep)">
+            <value>
+              <string>Auth_admin_keep</string>
+            </value>
+          </item>
+        </enum>
+      </elements>
+    </policy>
+    <policy class="Machine" displayName="$(string.org-freedesktop-packagekit-system-update)"
+      explainText="$(string.org-freedesktop-packagekit-system-update_help)"
+        key="Software\BaseALT\Policies\Polkit"
+        name="org.freedesktop.packagekit.system-update"
+        valuename="org.freedesktop.packagekit.system-update"
+        presentation="$(presentation.org-freedesktop-packagekit-package-pr)">
+      <parentCategory ref="ALT_PackageKit" />
+      <supportedOn ref="system:SUPPORTED_AltP10" />
+      <elements>
+          <enum id="OrgFreedesktopPackagekitPackage_setter" valueName="org.freedesktop.packagekit.system-update" required="true">
+            <item displayName="$(string.org-freedesktop-packagekit-package-No)">
+              <value>
+                <string>No</string>
+              </value>
+            </item>
+            <item displayName="$(string.org-freedesktop-packagekit-package-Yes)">
+              <value>
+                <string>Yes</string>
+              </value>
+            </item>
+            <item displayName="$(string.org-freedesktop-packagekit-package-Auth-self)">
+              <value>
+                <string>Auth_self</string>
+              </value>
+            </item>
+            <item displayName="$(string.org-freedesktop-packagekit-package-Auth-admin)">
+              <value>
+                <string>Auth_admin</string>
+              </value>
+            </item>
+            <item displayName="$(string.org-freedesktop-packagekit-package-Auth-self-keep)">
+              <value>
+                <string>Auth_self_keep</string>
+              </value>
+            </item>
+            <item displayName="$(string.org-freedesktop-packagekit-package-Auth-admin-keep)">
+              <value>
+                <string>Auth_admin_keep</string>
+              </value>
+            </item>
+          </enum>
+          <boolean id="OrgFreedesktopPackagekitPackage_blocker" key="Software\BaseALT\Policies\PolkitLocks" valueName="org.freedesktop.packagekit.package-remove">
+            <trueValue>
+              <decimal value="1" />
+            </trueValue>
+            <falseValue>
+              <decimal value="0" />
+            </falseValue>
+          </boolean>
+        </elements>
+    </policy>
+    <policy class="User" displayName="$(string.org-freedesktop-packagekit-system-update-user)"
+        explainText="$(string.org-freedesktop-packagekit-system-update-user_help)"
+        key="Software\BaseALT\Policies\Polkit"
+        name="org.freedesktop.packagekit.system-update-user"
+        valuename="org.freedesktop.packagekit.system-update"
+        presentation="$(presentation.org-freedesktop-packagekit-package-user-pr)">
+      <parentCategory ref="ALT_PackageKit" />
+      <supportedOn ref="system:SUPPORTED_AltP10" />
+      <elements>
+        <enum id="OrgFreedesktopPackagekitPackage_setter" valueName="org.freedesktop.packagekit.system-update" required="true">
+          <item displayName="$(string.org-freedesktop-packagekit-package-No)">
+              <value>
+              <string>No</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-freedesktop-packagekit-package-Yes)">
+            <value>
+              <string>Yes</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-freedesktop-packagekit-package-Auth-self)">
+            <value>
+              <string>Auth_self</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-freedesktop-packagekit-package-Auth-admin)">
+            <value>
+              <string>Auth_admin</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-freedesktop-packagekit-package-Auth-self-keep)">
+            <value>
+              <string>Auth_self_keep</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-freedesktop-packagekit-package-Auth-admin-keep)">
+            <value>
+              <string>Auth_admin_keep</string>
+            </value>
+          </item>
+        </enum>
+      </elements>
+    </policy>
+    <policy class="Machine" displayName="$(string.org-freedesktop-packagekit-system-sources-refresh)"
+      explainText="$(string.org-freedesktop-packagekit-system-sources-refresh_help)"
+        key="Software\BaseALT\Policies\Polkit"
+        name="org.freedesktop.packagekit.system-sources-refresh"
+        valuename="org.freedesktop.packagekit.system-sources-refresh"
+        presentation="$(presentation.org-freedesktop-packagekit-package-pr)">
+      <parentCategory ref="ALT_PackageKit" />
+      <supportedOn ref="system:SUPPORTED_AltP10" />
+      <elements>
+          <enum id="OrgFreedesktopPackagekitPackage_setter" valueName="org.freedesktop.packagekit.system-sources-refresh" required="true">
+            <item displayName="$(string.org-freedesktop-packagekit-package-No)">
+              <value>
+                <string>No</string>
+              </value>
+            </item>
+            <item displayName="$(string.org-freedesktop-packagekit-package-Yes)">
+              <value>
+                <string>Yes</string>
+              </value>
+            </item>
+            <item displayName="$(string.org-freedesktop-packagekit-package-Auth-self)">
+              <value>
+                <string>Auth_self</string>
+              </value>
+            </item>
+            <item displayName="$(string.org-freedesktop-packagekit-package-Auth-admin)">
+              <value>
+                <string>Auth_admin</string>
+              </value>
+            </item>
+            <item displayName="$(string.org-freedesktop-packagekit-package-Auth-self-keep)">
+              <value>
+                <string>Auth_self_keep</string>
+              </value>
+            </item>
+            <item displayName="$(string.org-freedesktop-packagekit-package-Auth-admin-keep)">
+              <value>
+                <string>Auth_admin_keep</string>
+              </value>
+            </item>
+          </enum>
+          <boolean id="OrgFreedesktopPackagekitPackage_blocker" key="Software\BaseALT\Policies\PolkitLocks" valueName="org.freedesktop.packagekit.system-sources-refresh">
+            <trueValue>
+              <decimal value="1" />
+            </trueValue>
+            <falseValue>
+              <decimal value="0" />
+            </falseValue>
+          </boolean>
+        </elements>
+    </policy>
+    <policy class="User" displayName="$(string.org-freedesktop-packagekit-system-sources-refresh-user)"
+        explainText="$(string.org-freedesktop-packagekit-system-sources-refresh-user_help)"
+        key="Software\BaseALT\Policies\Polkit"
+        name="org.freedesktop.packagekit.system-sources-refresh-user"
+        valuename="org.freedesktop.packagekit.system-sources-refresh"
+        presentation="$(presentation.org-freedesktop-packagekit-package-user-pr)">
+      <parentCategory ref="ALT_PackageKit" />
+      <supportedOn ref="system:SUPPORTED_AltP10" />
+      <elements>
+        <enum id="OrgFreedesktopPackagekitPackage_setter" valueName="org.freedesktop.packagekit.system-sources-refresh" required="true">
+          <item displayName="$(string.org-freedesktop-packagekit-package-No)">
+              <value>
+              <string>No</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-freedesktop-packagekit-package-Yes)">
+            <value>
+              <string>Yes</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-freedesktop-packagekit-package-Auth-self)">
+            <value>
+              <string>Auth_self</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-freedesktop-packagekit-package-Auth-admin)">
+            <value>
+              <string>Auth_admin</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-freedesktop-packagekit-package-Auth-self-keep)">
+            <value>
+              <string>Auth_self_keep</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-freedesktop-packagekit-package-Auth-admin-keep)">
+            <value>
+              <string>Auth_admin_keep</string>
+            </value>
+          </item>
+        </enum>
+      </elements>
+    </policy>
+    <policy class="Machine" displayName="$(string.org-freedesktop-packagekit-repair-system)"
+      explainText="$(string.org-freedesktop-packagekit-repair-system_help)"
+        key="Software\BaseALT\Policies\Polkit"
+        name="org.freedesktop.packagekit.repair-system"
+        valuename="org.freedesktop.packagekit.repair-system"
+        presentation="$(presentation.org-freedesktop-packagekit-package-pr)">
+      <parentCategory ref="ALT_PackageKit" />
+      <supportedOn ref="system:SUPPORTED_AltP10" />
+      <elements>
+          <enum id="OrgFreedesktopPackagekitPackage_setter" valueName="org.freedesktop.packagekit.repair-system" required="true">
+            <item displayName="$(string.org-freedesktop-packagekit-package-No)">
+              <value>
+                <string>No</string>
+              </value>
+            </item>
+            <item displayName="$(string.org-freedesktop-packagekit-package-Yes)">
+              <value>
+                <string>Yes</string>
+              </value>
+            </item>
+            <item displayName="$(string.org-freedesktop-packagekit-package-Auth-self)">
+              <value>
+                <string>Auth_self</string>
+              </value>
+            </item>
+            <item displayName="$(string.org-freedesktop-packagekit-package-Auth-admin)">
+              <value>
+                <string>Auth_admin</string>
+              </value>
+            </item>
+            <item displayName="$(string.org-freedesktop-packagekit-package-Auth-self-keep)">
+              <value>
+                <string>Auth_self_keep</string>
+              </value>
+            </item>
+            <item displayName="$(string.org-freedesktop-packagekit-package-Auth-admin-keep)">
+              <value>
+                <string>Auth_admin_keep</string>
+              </value>
+            </item>
+          </enum>
+          <boolean id="OrgFreedesktopPackagekitPackage_blocker" key="Software\BaseALT\Policies\PolkitLocks" valueName="org.freedesktop.packagekit.repair-system">
+            <trueValue>
+              <decimal value="1" />
+            </trueValue>
+            <falseValue>
+              <decimal value="0" />
+            </falseValue>
+          </boolean>
+        </elements>
+    </policy>
+    <policy class="User" displayName="$(string.org-freedesktop-packagekit-repair-system-user)"
+        explainText="$(string.org-freedesktop-packagekit-repair-system-user_help)"
+        key="Software\BaseALT\Policies\Polkit"
+        name="org.freedesktop.packagekit.repair-system-user"
+        valuename="org.freedesktop.packagekit.repair-system"
+        presentation="$(presentation.org-freedesktop-packagekit-package-user-pr)">
+      <parentCategory ref="ALT_PackageKit" />
+      <supportedOn ref="system:SUPPORTED_AltP10" />
+      <elements>
+        <enum id="OrgFreedesktopPackagekitPackage_setter" valueName="org.freedesktop.packagekit.repair-system" required="true">
+          <item displayName="$(string.org-freedesktop-packagekit-package-No)">
+              <value>
+              <string>No</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-freedesktop-packagekit-package-Yes)">
+            <value>
+              <string>Yes</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-freedesktop-packagekit-package-Auth-self)">
+            <value>
+              <string>Auth_self</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-freedesktop-packagekit-package-Auth-admin)">
+            <value>
+              <string>Auth_admin</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-freedesktop-packagekit-package-Auth-self-keep)">
+            <value>
+              <string>Auth_self_keep</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-freedesktop-packagekit-package-Auth-admin-keep)">
+            <value>
+              <string>Auth_admin_keep</string>
+            </value>
+          </item>
+        </enum>
+      </elements>
+    </policy>
+     <policy class="Machine" displayName="$(string.org-freedesktop-packagekit-system-sources-configure)"
+      explainText="$(string.org-freedesktop-packagekit-system-sources-configure_help)"
+        key="Software\BaseALT\Policies\Polkit"
+        name="org.freedesktop.packagekit.system-sources-configure"
+        valuename="org.freedesktop.packagekit.system-sources-configure"
+        presentation="$(presentation.org-freedesktop-packagekit-package-pr)">
+      <parentCategory ref="ALT_PackageKit" />
+      <supportedOn ref="system:SUPPORTED_AltP10" />
+      <elements>
+          <enum id="OrgFreedesktopPackagekitPackage_setter" valueName="org.freedesktop.packagekit.system-sources-configure" required="true">
+            <item displayName="$(string.org-freedesktop-packagekit-package-No)">
+              <value>
+                <string>No</string>
+              </value>
+            </item>
+            <item displayName="$(string.org-freedesktop-packagekit-package-Yes)">
+              <value>
+                <string>Yes</string>
+              </value>
+            </item>
+            <item displayName="$(string.org-freedesktop-packagekit-package-Auth-self)">
+              <value>
+                <string>Auth_self</string>
+              </value>
+            </item>
+            <item displayName="$(string.org-freedesktop-packagekit-package-Auth-admin)">
+              <value>
+                <string>Auth_admin</string>
+              </value>
+            </item>
+            <item displayName="$(string.org-freedesktop-packagekit-package-Auth-self-keep)">
+              <value>
+                <string>Auth_self_keep</string>
+              </value>
+            </item>
+            <item displayName="$(string.org-freedesktop-packagekit-package-Auth-admin-keep)">
+              <value>
+                <string>Auth_admin_keep</string>
+              </value>
+            </item>
+          </enum>
+          <boolean id="OrgFreedesktopPackagekitPackage_blocker" key="Software\BaseALT\Policies\PolkitLocks" valueName="org.freedesktop.packagekit.system-sources-configure">
+            <trueValue>
+              <decimal value="1" />
+            </trueValue>
+            <falseValue>
+              <decimal value="0" />
+            </falseValue>
+          </boolean>
+        </elements>
+    </policy>
+    <policy class="User" displayName="$(string.org-freedesktop-packagekit-system-sources-configure-user)"
+        explainText="$(string.org-freedesktop-packagekit-system-sources-configure-user_help)"
+        key="Software\BaseALT\Policies\Polkit"
+        name="org.freedesktop.packagekit.system-sources-configure-user"
+        valuename="org.freedesktop.packagekit.system-sources-configure"
+        presentation="$(presentation.org-freedesktop-packagekit-package-user-pr)">
+      <parentCategory ref="ALT_PackageKit" />
+      <supportedOn ref="system:SUPPORTED_AltP10" />
+      <elements>
+        <enum id="OrgFreedesktopPackagekitPackage_setter" valueName="org.freedesktop.packagekit.system-sources-configure" required="true">
+          <item displayName="$(string.org-freedesktop-packagekit-package-No)">
+              <value>
+              <string>No</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-freedesktop-packagekit-package-Yes)">
+            <value>
+              <string>Yes</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-freedesktop-packagekit-package-Auth-self)">
+            <value>
+              <string>Auth_self</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-freedesktop-packagekit-package-Auth-admin)">
+            <value>
+              <string>Auth_admin</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-freedesktop-packagekit-package-Auth-self-keep)">
+            <value>
+              <string>Auth_self_keep</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-freedesktop-packagekit-package-Auth-admin-keep)">
+            <value>
+              <string>Auth_admin_keep</string>
+            </value>
+          </item>
+        </enum>
+      </elements>
+    </policy>
+  </policies>
+</policyDefinitions>
