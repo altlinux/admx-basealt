@@ -62,6 +62,8 @@
       <string id="ALT_Polkit_Help">Управление Polkit правилами.</string>
       <string id="ALT_Udisks2">Разрешения Udisks2</string>
       <string id="ALT_Udisks2_Help">Управление разрешениями Udisks2.</string>
+      <string id="ALT_PackageKit">Разрешения PackageKit</string>
+      <string id="ALT_PackageKit_Help">Управление Разрешениями PackageKit.</string>
     </stringTable>
   </resources>
 </policyDefinitionResources>

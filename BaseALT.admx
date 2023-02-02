@@ -139,5 +139,8 @@
     <category name="ALT_Udisks2" displayName="$(string.ALT_Udisks2)" explainText="$(string.ALT_Udisks2_Help)">
       <parentCategory ref="ALT_Polkit" />
     </category>
+    <category name="ALT_PackageKit" displayName="$(string.ALT_PackageKit)" explainText="$(string.ALT_PackageKit_Help)">
+      <parentCategory ref="ALT_Polkit" />
+    </category>
   </categories>
 </policyDefinitions>
