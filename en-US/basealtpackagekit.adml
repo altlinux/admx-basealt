@@ -305,9 +305,59 @@ Possible values:
       </string>
 
       <string id="org-freedesktop-packagekit-system-sources-configure-user">Permission to edit batch sources </string>
-      <string id="org-freedesktop-packagekit-system-sources-configure-user_help">Permission to edit batch sources 
+      <string id="org-freedesktop-packagekit-system-sources-configure-user_help">Permission to edit batch sources
 
 This policy grants or restricts users to edit package sources on the system through the PackageKit package management interface.
+
+Disable/Not configured - permissions are determined by system settings - default settings for polkit actions;
+
+Enable - permission to mount with set rights;
+
+Possible values:
+
+«No» - Not authorized;
+
+«Yes» - Authorized;
+
+«Auth_self» - Authentication by the owner of the session that the client originates from is required. Note that this is not restrictive enough for most uses on multi-user systems; auth_admin* is generally recommended;
+
+«Auth_admin» - Authentication by an administrative user is required;
+
+«Auth_self_keep» - Like auth_self but the authorization is kept for a brief period (e.g. five minutes). The warning about auth_self above applies likewise;
+
+«Auth_admin_keep» - Like auth_admin but the authorization is kept for a brief period (e.g. five minutes).
+
+      </string>
+
+      <string id="org-freedesktop-packagekit-package-install-untrusted">Permission to install unverified packages</string>
+      <string id="org-freedesktop-packagekit-package-install-untrusted_help">Permission to install unverified packages
+
+This policy grants or restricts user rights to install untrusted or unverified packages for external PackageKit package management.
+
+Disable/Not configured - permissions are determined by system settings - default settings for polkit actions;
+
+Enable - permission to mount with set rights;
+
+Possible values:
+
+«No» - Not authorized;
+
+«Yes» - Authorized;
+
+«Auth_self» - Authentication by the owner of the session that the client originates from is required. Note that this is not restrictive enough for most uses on multi-user systems; auth_admin* is generally recommended;
+
+«Auth_admin» - Authentication by an administrative user is required;
+
+«Auth_self_keep» - Like auth_self but the authorization is kept for a brief period (e.g. five minutes). The warning about auth_self above applies likewise;
+
+«Auth_admin_keep» - Like auth_admin but the authorization is kept for a brief period (e.g. five minutes).
+
+      </string>
+
+      <string id="org-freedesktop-packagekit-package-install-untrusted-user">Permission to install unverified packages</string>
+      <string id="org-freedesktop-packagekit-package-install-untrusted-user_help">Permission to install unverified packages
+
+This policy grants or restricts user rights to install untrusted or unverified packages for external PackageKit package management.
 
 Disable/Not configured - permissions are determined by system settings - default settings for polkit actions;
 

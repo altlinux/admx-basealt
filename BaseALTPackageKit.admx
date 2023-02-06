@@ -484,7 +484,7 @@
         </enum>
       </elements>
     </policy>
-     <policy class="Machine" displayName="$(string.org-freedesktop-packagekit-system-sources-configure)"
+    <policy class="Machine" displayName="$(string.org-freedesktop-packagekit-system-sources-configure)"
       explainText="$(string.org-freedesktop-packagekit-system-sources-configure_help)"
         key="Software\BaseALT\Policies\Polkit"
         name="org.freedesktop.packagekit.system-sources-configure"
@@ -545,6 +545,100 @@
       <supportedOn ref="system:SUPPORTED_AltP10" />
       <elements>
         <enum id="OrgFreedesktopPackagekitPackage_setter" valueName="org.freedesktop.packagekit.system-sources-configure" required="true">
+          <item displayName="$(string.org-freedesktop-packagekit-package-No)">
+              <value>
+              <string>No</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-freedesktop-packagekit-package-Yes)">
+            <value>
+              <string>Yes</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-freedesktop-packagekit-package-Auth-self)">
+            <value>
+              <string>Auth_self</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-freedesktop-packagekit-package-Auth-admin)">
+            <value>
+              <string>Auth_admin</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-freedesktop-packagekit-package-Auth-self-keep)">
+            <value>
+              <string>Auth_self_keep</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-freedesktop-packagekit-package-Auth-admin-keep)">
+            <value>
+              <string>Auth_admin_keep</string>
+            </value>
+          </item>
+        </enum>
+      </elements>
+    </policy>
+    <policy class="Machine" displayName="$(string.org-freedesktop-packagekit-package-install-untrusted)"
+      explainText="$(string.org-freedesktop-packagekit-package-install-untrusted_help)"
+        key="Software\BaseALT\Policies\Polkit"
+        name="org.freedesktop.packagekit.package-install-untrusted"
+        valuename="org.freedesktop.packagekit.package-install-untrusted"
+        presentation="$(presentation.org-freedesktop-packagekit-package-pr)">
+      <parentCategory ref="ALT_PackageKit" />
+      <supportedOn ref="system:SUPPORTED_AltP10" />
+      <elements>
+          <enum id="OrgFreedesktopPackagekitPackage_setter" valueName="org.freedesktop.packagekit.package-install-untrusted" required="true">
+            <item displayName="$(string.org-freedesktop-packagekit-package-No)">
+              <value>
+                <string>No</string>
+              </value>
+            </item>
+            <item displayName="$(string.org-freedesktop-packagekit-package-Yes)">
+              <value>
+                <string>Yes</string>
+              </value>
+            </item>
+            <item displayName="$(string.org-freedesktop-packagekit-package-Auth-self)">
+              <value>
+                <string>Auth_self</string>
+              </value>
+            </item>
+            <item displayName="$(string.org-freedesktop-packagekit-package-Auth-admin)">
+              <value>
+                <string>Auth_admin</string>
+              </value>
+            </item>
+            <item displayName="$(string.org-freedesktop-packagekit-package-Auth-self-keep)">
+              <value>
+                <string>Auth_self_keep</string>
+              </value>
+            </item>
+            <item displayName="$(string.org-freedesktop-packagekit-package-Auth-admin-keep)">
+              <value>
+                <string>Auth_admin_keep</string>
+              </value>
+            </item>
+          </enum>
+          <boolean id="OrgFreedesktopPackagekitPackage_blocker" key="Software\BaseALT\Policies\PolkitLocks" valueName="org.freedesktop.packagekit.package-install-untrusted">
+            <trueValue>
+              <decimal value="1" />
+            </trueValue>
+            <falseValue>
+              <decimal value="0" />
+            </falseValue>
+          </boolean>
+        </elements>
+    </policy>
+    <policy class="User" displayName="$(string.org-freedesktop-packagekit-package-install-untrusted-user)"
+        explainText="$(string.org-freedesktop-packagekit-package-install-untrusted-user_help)"
+        key="Software\BaseALT\Policies\Polkit"
+        name="org.freedesktop.packagekit.package-install-untrusted-user"
+        valuename="org.freedesktop.packagekit.package-install-untrusted"
+        presentation="$(presentation.org-freedesktop-packagekit-package-user-pr)">
+      <parentCategory ref="ALT_PackageKit" />
+      <supportedOn ref="system:SUPPORTED_AltP10" />
+      <elements>
+        <enum id="OrgFreedesktopPackagekitPackage_setter" valueName="org.freedesktop.packagekit.package-install-untrusted" required="true">
           <item displayName="$(string.org-freedesktop-packagekit-package-No)">
               <value>
               <string>No</string>
