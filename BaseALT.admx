@@ -133,5 +133,8 @@
     <category name="ALT_Windows_Manager_Marco_Keyboard" displayName="$(string.ALT_Windows_Manager_Marco_Keyboard)" explainText="$(string.ALT_Windows_Manager_Marco_Keyboard_Help)">
       <parentCategory ref="ALT_Windows_Manager_Marco" />
     </category>
+    <category name="ALT_SambaOptions" displayName="$(string.ALT_SambaOptions)"  explainText="$(string.ALT_SambaOptions_Help)" >
+      <parentCategory ref="ALT_Services" />
+    </category>
   </categories>
 </policyDefinitions>
