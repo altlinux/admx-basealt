@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  (c) 2020 BaseALT, Ltd.  -->
+<policyDefinitionResources xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.microsoft.com/GroupPolicy/2006/07/PolicyDefinitions" revision="1.0" schemaVersion="1.0">
+  <displayName>Определения политик безопасности операционной системы Альт</displayName>
+  <description>Этот файл содержит определения политик безопасности операционной системы Альт.</description>
+  <resources>
+    <stringTable>
+
+      <string id="org-freedesktop-udisks2-filesystem-mount">Permission to automount removable storage devices</string>
+      <string id="org-freedesktop-udisks2-filesystem-mount_help">Permission to automount removable storage devices
+
+This policy grants or restricts permissions to automount removable storage devices.
+
+Disable/Not configured - Permissions are determined by system settings. Default is «Auth_admin»
+
+Enable - permission to mount with set rights;
+
+Possible values:
+
+«No» - Not authorized;
+
+«Yes» - Authorized;
+
+«Auth_self» - Authentication by the owner of the session that the client originates from is required. Note that this is not restrictive enough for most uses on multi-user systems; auth_admin* is generally recommended;
+
+«Auth_admin» - Authentication by an administrative user is required;
+
+«Auth_self_keep» - Like auth_self but the authorization is kept for a brief period (e.g. five minutes). The warning about auth_self above applies likewise;
+
+«Auth_admin_keep» - Like auth_admin but the authorization is kept for a brief period (e.g. five minutes).
+
+      </string>
+      <string id="org-freedesktop-udisks2-filesystem-mount-user">Permission to automount removable storage devices</string>
+      <string id="org-freedesktop-udisks2-filesystem-mount-user_help">Permission to automount removable storage devices
+
+This policy grants or restricts permissions to automount removable storage devices.
+
+Disable/Not configured - Permissions are determined by system settings. Default is «Auth_admin»
+
+Enable - permission to mount with set rights;
+
+Possible values:
+
+«No» - Not authorized;
+
+«Yes» - Authorized;
+
+«Auth_self» - Authentication by the owner of the session that the client originates from is required. Note that this is not restrictive enough for most uses on multi-user systems; auth_admin* is generally recommended;
+
+«Auth_admin» - Authentication by an administrative user is required;
+
+«Auth_self_keep» - Like auth_self but the authorization is kept for a brief period (e.g. five minutes). The warning about auth_self above applies likewise;
+
+«Auth_admin_keep» - Like auth_admin but the authorization is kept for a brief period (e.g. five minutes).
+
+      </string>
+      <string id="org-freedesktop-udisks2-filesystem-mount-other-seat">Permission to automount removable storage devices in remote sessions</string>
+      <string id="org-freedesktop-udisks2-filesystem-mount-other-seat_help">Permission to automount removable storage devices in remote sessions
+
+This policy grants or restricts permissions to automount removable storage devices from a device connected to a remote workstation (for example, on another computer or remote session).
+
+Disable/Not configured - Permissions are determined by system settings. Default is «Auth_admin»
+
+Enable - permission to mount with set rights;
+
+Possible values:
+
+«No» - Not authorized;
+
+«Yes» - Authorized;
+
+«Auth_self» - Authentication by the owner of the session that the client originates from is required. Note that this is not restrictive enough for most uses on multi-user systems; auth_admin* is generally recommended;
+
+«Auth_admin» - Authentication by an administrative user is required;
+
+«Auth_self_keep» - Like auth_self but the authorization is kept for a brief period (e.g. five minutes). The warning about auth_self above applies likewise;
+
+«Auth_admin_keep» - Like auth_admin but the authorization is kept for a brief period (e.g. five minutes).
+
+      </string>
+      <string id="org-freedesktop-udisks2-filesystem-mount-other-seat-user">Permission to automount removable storage devices in remote sessions</string>
+      <string id="org-freedesktop-udisks2-filesystem-mount-other-seat-user_help">Permission to automount removable storage devices in remote sessions
+
+This policy grants or restricts permissions to automount removable storage devices from a device connected to a remote workstation (for example, on another computer or remote session).
+
+Disable/Not configured - Permissions are determined by system settings. Default is «Auth_admin»
+
+Enable - permission to mount with set rights;
+
+Possible values:
+
+«No» - Not authorized;
+
+«Yes» - Authorized;
+
+«Auth_self» - Authentication by the owner of the session that the client originates from is required. Note that this is not restrictive enough for most uses on multi-user systems; auth_admin* is generally recommended;
+
+«Auth_admin» - Authentication by an administrative user is required;
+
+«Auth_self_keep» - Like auth_self but the authorization is kept for a brief period (e.g. five minutes). The warning about auth_self above applies likewise;
+
+«Auth_admin_keep» - Like auth_admin but the authorization is kept for a brief period (e.g. five minutes).
+
+      </string>
+      <string id="org-freedesktop-udisks2-filesystem-mount-system">Permission to automount system partitions</string>
+      <string id="org-freedesktop-udisks2-filesystem-mount-system_help">Permission to automount system partitions
+
+This policy grants or restricts permissions to automatically mount system partitions.
+
+Выключить/Не настроено - разрешения определяются системными параметрами. По умолчанию - «Auth_admin»
+
+Disable/Not configured - Permissions are determined by system settings. Default is «Auth_admin»
+
+Enable - permission to mount with set rights;
+
+Possible values:
+
+«No» - Not authorized;
+
+«Yes» - Authorized;
+
+«Auth_self» - Authentication by the owner of the session that the client originates from is required. Note that this is not restrictive enough for most uses on multi-user systems; auth_admin* is generally recommended;
+
+«Auth_admin» - Authentication by an administrative user is required;
+
+«Auth_self_keep» - Like auth_self but the authorization is kept for a brief period (e.g. five minutes). The warning about auth_self above applies likewise;
+
+«Auth_admin_keep» - Like auth_admin but the authorization is kept for a brief period (e.g. five minutes).
+
+      </string>
+      <string id="org-freedesktop-udisks2-filesystem-mount-system-user">Permission to automount system partitions</string>
+      <string id="org-freedesktop-udisks2-filesystem-mount-system-user_help">Permission to automount system partitions
+
+This policy grants or restricts permissions to automatically mount system partitions.
+
+Disable/Not configured - Permissions are determined by system settings. Default is «Auth_admin»
+
+Enable - permission to mount with set rights;
+
+Possible values:
+
+«No» - Not authorized;
+
+«Yes» - Authorized;
+
+«Auth_self» - Authentication by the owner of the session that the client originates from is required. Note that this is not restrictive enough for most uses on multi-user systems; auth_admin* is generally recommended;
+
+«Auth_admin» - Authentication by an administrative user is required;
+
+«Auth_self_keep» - Like auth_self but the authorization is kept for a brief period (e.g. five minutes). The warning about auth_self above applies likewise;
+
+«Auth_admin_keep» - Like auth_admin but the authorization is kept for a brief period (e.g. five minutes).
+
+      </string>
+      <string id="org-freedesktop-udisks2-filesystem-mount-all">General automount policy</string>
+      <string id="org-freedesktop-udisks2-filesystem-mount-all_Help">General automount policy
+
+This policy grants or restricts permissions to automount removable storage devices, automount system partitions, automount removable storage devices in remote sessions.
+
+Disable/Not configured - Permissions are determined by system settings. Default is «Auth_admin»
+
+Enable - permission to mount with set rights;
+
+Possible values:
+
+«No» - Not authorized;
+
+«Yes» - Authorized;
+
+«Auth_self» - Authentication by the owner of the session that the client originates from is required. Note that this is not restrictive enough for most uses on multi-user systems; auth_admin* is generally recommended;
+
+«Auth_admin» - Authentication by an administrative user is required;
+
+«Auth_self_keep» - Like auth_self but the authorization is kept for a brief period (e.g. five minutes). The warning about auth_self above applies likewise;
+
+«Auth_admin_keep» - Like auth_admin but the authorization is kept for a brief period (e.g. five minutes).
+
+      </string>
+      <string id="org-freedesktop-udisks2-filesystem-mount-all-user">General automount policy</string>
+      <string id="org-freedesktop-udisks2-filesystem-mount-all-user_Help">General automount policy
+
+This policy grants or restricts permissions to automount removable storage devices, automount system partitions, automount removable storage devices in remote sessions.
+
+Disable/Not configured - Permissions are determined by system settings. Default is «Auth_admin»
+
+Enable - permission to mount with set rights;
+
+Possible values:
+
+«No» - Not authorized;
+
+«Yes» - Authorized;
+
+«Auth_self» - Authentication by the owner of the session that the client originates from is required. Note that this is not restrictive enough for most uses on multi-user systems; auth_admin* is generally recommended;
+
+«Auth_admin» - Authentication by an administrative user is required;
+
+«Auth_self_keep» - Like auth_self but the authorization is kept for a brief period (e.g. five minutes). The warning about auth_self above applies likewise;
+
+«Auth_admin_keep» - Like auth_admin but the authorization is kept for a brief period (e.g. five minutes).
+
+      </string>
+
+      <string id="org-freedesktop-udisks2-filesystem-mount-No">No</string>
+      <string id="org-freedesktop-udisks2-filesystem-mount-Yes">Yes</string>
+      <string id="org-freedesktop-udisks2-filesystem-mount-Auth-self">Auth_self</string>
+      <string id="org-freedesktop-udisks2-filesystem-mount-Auth-admin">Auth_admin</string>
+      <string id="org-freedesktop-udisks2-filesystem-mount-Auth-self-keep">Auth_self_keep</string>
+      <string id="org-freedesktop-udisks2-filesystem-mount-Auth-admin-keep">Auth_admin_keep</string>
+
+    </stringTable>
+    <presentationTable>
+    <presentation id="org-freedesktop-udisks2-filesystem-mount-all-pr">
+       <dropdownList noSort="true" defaultItem="1" refId="OrgFreedesktopUdisks2FileSystemMount_setter">Restriction options for auto-mounting removable storage devices:</dropdownList>
+       <checkBox refId="OrgFreedesktopUdisks2FileSystemMount_blocker">Block</checkBox>
+        <text>Blocking changes to this setting by user policy. Blocking a policy makes it a priority over a similar policy for the user.</text>
+       <dropdownList noSort="true" defaultItem="1" refId="OrgFreedesktopUdisks2FileSystemMountOther_setter">Restriction options for automounting removable storage devices in remote sessions:</dropdownList>
+       <checkBox refId="OrgFreedesktopUdisks2FileSystemMountOther_blocker">Block</checkBox>
+        <text>Blocking changes to this setting by user policy. Blocking a policy makes it a priority over a similar policy for the user.</text>
+       <dropdownList noSort="true" defaultItem="1" refId="OrgFreedesktopUdisks2FileSystemMountSystem_setter">Options for restrictions on automounting system partitions:</dropdownList>
+       <checkBox refId="OrgFreedesktopUdisks2FileSystemMountSystem_blocker">Block</checkBox>
+        <text>Blocking changes to this setting by user policy. Blocking a policy makes it a priority over a similar policy for the user.</text>
+      </presentation>
+       <presentation id="org-freedesktop-udisks2-filesystem-mount-all-user-pr">
+       <dropdownList noSort="true" defaultItem="1" refId="OrgFreedesktopUdisks2FileSystemMount_setter">Restriction options for auto-mounting removable storage devices:</dropdownList>
+       <dropdownList noSort="true" defaultItem="1" refId="OrgFreedesktopUdisks2FileSystemMountOther_setter">Restriction options for automounting removable storage devices in remote sessions:</dropdownList>
+       <dropdownList noSort="true" defaultItem="1" refId="OrgFreedesktopUdisks2FileSystemMountSystem_setter">Options for restrictions on automounting system partitions:</dropdownList>
+      </presentation>
+      <presentation id="OrgFreedesktopUdisks2FileSystemMount-pr">
+       <dropdownList noSort="true" defaultItem="1" refId="OrgFreedesktopUdisks2FileSystemMount_setter">Restriction options:</dropdownList>
+       <checkBox refId="OrgFreedesktopUdisks2FileSystemMount_blocker">Block</checkBox>
+        <text>Blocking changes to this setting by user policy. Blocking a policy makes it a priority over a similar policy for the user.</text>
+      </presentation>
+      <presentation id="OrgFreedesktopUdisks2FileSystemMountUser-pr">
+       <dropdownList noSort="true" defaultItem="1" refId="OrgFreedesktopUdisks2FileSystemMount_setter">Restriction options:</dropdownList>
+      </presentation>
+    </presentationTable>
+  </resources>
+</policyDefinitionResources>
