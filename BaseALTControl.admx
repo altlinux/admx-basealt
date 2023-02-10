@@ -1255,5 +1255,75 @@
         </enum>
       </elements>
     </policy>
+       <policy class="Machine" displayName="$(string.smb-conf-usershares)" explainText="$(string.smb-conf-usershares_help)" key="Software\BaseALT\Policies\Control" valueName="smb-conf-usershares" name="smb-conf-usershares">
+      <parentCategory ref="system:ALT_SambaOptions"/>
+      <supportedOn ref="system:SUPPORTED_AltP10"/>
+      <enabledValue>
+        <string>enabled</string>
+      </enabledValue>
+      <disabledValue>
+        <string>disabled</string>
+      </disabledValue>
+    </policy>
+    <policy class="Machine" displayName="$(string.role-usershares)" explainText="$(string.role-usershares_help)" key="Software\BaseALT\Policies\Control" valueName="role-usershares" name="role-usershares">
+      <parentCategory ref="system:ALT_SambaOptions"/>
+      <supportedOn ref="system:SUPPORTED_AltP10"/>
+      <enabledValue>
+        <string>enabled</string>
+      </enabledValue>
+      <disabledValue>
+        <string>disabled</string>
+      </disabledValue>
+    </policy>
+    <policy class="Machine" displayName="$(string.role-sambashare)" explainText="$(string.role-sambashare_help)" key="Software\BaseALT\Policies\Control" valueName="role-sambashare" name="role-sambashare">
+      <parentCategory ref="system:ALT_SambaOptions"/>
+      <supportedOn ref="system:SUPPORTED_AltP10"/>
+      <enabledValue>
+        <string>enabled</string>
+      </enabledValue>
+      <disabledValue>
+        <string>disabled</string>
+      </disabledValue>
+    </policy>
+    <policy class="Machine" displayName="$(string.smb-conf-usershare-allow-guests)" explainText="$(string.smb-conf-usershare-allow-guests_help)" key="Software\BaseALT\Policies\Control" valueName="smb-conf-usershare-allow-guests" name="smb-conf-usershare-allow-guests">
+      <parentCategory ref="system:ALT_SambaOptions"/>
+      <supportedOn ref="system:SUPPORTED_AltP10"/>
+      <enabledValue>
+        <string>enabled</string>
+      </enabledValue>
+      <disabledValue>
+        <string>disabled</string>
+      </disabledValue>
+    </policy>
+    <policy class="Machine" displayName="$(string.smb-conf-usershare-allow-list)" explainText="$(string.smb-conf-usershare-allow-list_help)" key="Software\BaseALT\Policies\Control" valueName="smb-conf-usershare-allow-list" name="smb-conf-usershare-allow-list">
+      <parentCategory ref="system:ALT_SambaOptions"/>
+      <supportedOn ref="system:SUPPORTED_AltP10"/>
+      <enabledValue>
+        <string>enabled</string>
+      </enabledValue>
+      <disabledValue>
+        <string>disabled</string>
+      </disabledValue>
+    </policy>
+    <policy class="Machine" displayName="$(string.smb-conf-usershare-deny-list)" explainText="$(string.smb-conf-usershare-deny-list_help)" key="Software\BaseALT\Policies\Control" valueName="smb-conf-usershare-deny-list" name="smb-conf-usershare-deny-list">
+      <parentCategory ref="system:ALT_SambaOptions"/>
+      <supportedOn ref="system:SUPPORTED_AltP10"/>
+      <enabledValue>
+        <string>enabled</string>
+      </enabledValue>
+      <disabledValue>
+        <string>disabled</string>
+      </disabledValue>
+    </policy>
+    <policy class="Machine" displayName="$(string.smb-conf-usershare-owner-only)" explainText="$(string.smb-conf-usershare-owner-only_help)" key="Software\BaseALT\Policies\Control" valueName="smb-conf-usershare-owner-only" name="smb-conf-usershare-owner-only">
+      <parentCategory ref="system:ALT_SambaOptions"/>
+      <supportedOn ref="system:SUPPORTED_AltP10"/>
+      <enabledValue>
+        <string>enabled</string>
+      </enabledValue>
+      <disabledValue>
+        <string>disabled</string>
+      </disabledValue>
+    </policy>
   </policies>
 </policyDefinitions>
