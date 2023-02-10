@@ -3,16 +3,10 @@
 <policyDefinitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" revision="1.0" schemaVersion="1.0" xmlns="http://schemas.microsoft.com/GroupPolicy/2006/07/PolicyDefinitions">
   <policyNamespaces>
     <target prefix="packagekit" namespace="BaseALT.Policies.PackageKit" />
-    <using prefix="packages" namespace="BaseALT.Policies.Packages" />
+    <using prefix="polkit" namespace="BaseALT.Policies.Polkit" />
     <using prefix="system" namespace="BaseALT.Policies.System" />
   </policyNamespaces>
   <resources minRequiredRevision="1.0" />
-
-  <categories>
-    <category name="ALT_PackageKit" displayName="$(string.ALT_PackageKit)" explainText="$(string.ALT_PackageKit_Help)">
-      <parentCategory ref="packages:ALT_Packages" />
-    </category>
-  </categories>
   <policies>
     <policy class="Machine" displayName="$(string.org-freedesktop-packagekit-package-install)"
         explainText="$(string.org-freedesktop-packagekit-package-install_help)"
@@ -20,7 +14,7 @@
         name="org.freedesktop.packagekit.package-install"
         valuename="org.freedesktop.packagekit.package-install"
         presentation="$(presentation.org-freedesktop-packagekit-package-pr)">
-      <parentCategory ref="ALT_PackageKit" />
+      <parentCategory ref="system:ALT_PackageKit" />
       <supportedOn ref="system:SUPPORTED_AltP10" />
       <elements>
         <enum id="OrgFreedesktopPackagekitPackage_setter" valueName="org.freedesktop.packagekit.package-install" required="true">
@@ -71,7 +65,7 @@
             name="org.freedesktop.packagekit.package-install-user"
             valuename="org.freedesktop.packagekit.package-install"
             presentation="$(presentation.org-freedesktop-packagekit-package-user-pr)">
-          <parentCategory ref="ALT_PackageKit" />
+          <parentCategory ref="system:ALT_PackageKit" />
           <supportedOn ref="system:SUPPORTED_AltP10" />
           <elements>
             <enum id="OrgFreedesktopPackagekitPackage_setter" valueName="org.freedesktop.packagekit.package-install" required="true">
@@ -114,7 +108,7 @@
         name="org.freedesktop.packagekit.package-remove"
         valuename="org.freedesktop.packagekit.package-remove"
         presentation="$(presentation.org-freedesktop-packagekit-package-pr)">
-      <parentCategory ref="ALT_PackageKit" />
+      <parentCategory ref="system:ALT_PackageKit" />
       <supportedOn ref="system:SUPPORTED_AltP10" />
       <elements>
           <enum id="OrgFreedesktopPackagekitPackage_setter" valueName="org.freedesktop.packagekit.package-remove" required="true">
@@ -165,7 +159,7 @@
         name="org.freedesktop.packagekit.package-remove-user"
         valuename="org.freedesktop.packagekit.package-remove"
         presentation="$(presentation.org-freedesktop-packagekit-package-user-pr)">
-      <parentCategory ref="ALT_PackageKit" />
+      <parentCategory ref="system:ALT_PackageKit" />
       <supportedOn ref="system:SUPPORTED_AltP10" />
       <elements>
         <enum id="OrgFreedesktopPackagekitPackage_setter" valueName="org.freedesktop.packagekit.package-remove" required="true">
@@ -208,7 +202,7 @@
         name="org.freedesktop.packagekit.system-update"
         valuename="org.freedesktop.packagekit.system-update"
         presentation="$(presentation.org-freedesktop-packagekit-package-pr)">
-      <parentCategory ref="ALT_PackageKit" />
+      <parentCategory ref="system:ALT_PackageKit" />
       <supportedOn ref="system:SUPPORTED_AltP10" />
       <elements>
           <enum id="OrgFreedesktopPackagekitPackage_setter" valueName="org.freedesktop.packagekit.system-update" required="true">
@@ -259,7 +253,7 @@
         name="org.freedesktop.packagekit.system-update-user"
         valuename="org.freedesktop.packagekit.system-update"
         presentation="$(presentation.org-freedesktop-packagekit-package-user-pr)">
-      <parentCategory ref="ALT_PackageKit" />
+      <parentCategory ref="system:ALT_PackageKit" />
       <supportedOn ref="system:SUPPORTED_AltP10" />
       <elements>
         <enum id="OrgFreedesktopPackagekitPackage_setter" valueName="org.freedesktop.packagekit.system-update" required="true">
@@ -302,7 +296,7 @@
         name="org.freedesktop.packagekit.system-sources-refresh"
         valuename="org.freedesktop.packagekit.system-sources-refresh"
         presentation="$(presentation.org-freedesktop-packagekit-package-pr)">
-      <parentCategory ref="ALT_PackageKit" />
+      <parentCategory ref="system:ALT_PackageKit" />
       <supportedOn ref="system:SUPPORTED_AltP10" />
       <elements>
           <enum id="OrgFreedesktopPackagekitPackage_setter" valueName="org.freedesktop.packagekit.system-sources-refresh" required="true">
@@ -353,7 +347,7 @@
         name="org.freedesktop.packagekit.system-sources-refresh-user"
         valuename="org.freedesktop.packagekit.system-sources-refresh"
         presentation="$(presentation.org-freedesktop-packagekit-package-user-pr)">
-      <parentCategory ref="ALT_PackageKit" />
+      <parentCategory ref="system:ALT_PackageKit" />
       <supportedOn ref="system:SUPPORTED_AltP10" />
       <elements>
         <enum id="OrgFreedesktopPackagekitPackage_setter" valueName="org.freedesktop.packagekit.system-sources-refresh" required="true">
@@ -396,7 +390,7 @@
         name="org.freedesktop.packagekit.repair-system"
         valuename="org.freedesktop.packagekit.repair-system"
         presentation="$(presentation.org-freedesktop-packagekit-package-pr)">
-      <parentCategory ref="ALT_PackageKit" />
+      <parentCategory ref="system:ALT_PackageKit" />
       <supportedOn ref="system:SUPPORTED_AltP10" />
       <elements>
           <enum id="OrgFreedesktopPackagekitPackage_setter" valueName="org.freedesktop.packagekit.repair-system" required="true">
@@ -447,7 +441,7 @@
         name="org.freedesktop.packagekit.repair-system-user"
         valuename="org.freedesktop.packagekit.repair-system"
         presentation="$(presentation.org-freedesktop-packagekit-package-user-pr)">
-      <parentCategory ref="ALT_PackageKit" />
+      <parentCategory ref="system:ALT_PackageKit" />
       <supportedOn ref="system:SUPPORTED_AltP10" />
       <elements>
         <enum id="OrgFreedesktopPackagekitPackage_setter" valueName="org.freedesktop.packagekit.repair-system" required="true">
@@ -490,7 +484,7 @@
         name="org.freedesktop.packagekit.system-sources-configure"
         valuename="org.freedesktop.packagekit.system-sources-configure"
         presentation="$(presentation.org-freedesktop-packagekit-package-pr)">
-      <parentCategory ref="ALT_PackageKit" />
+      <parentCategory ref="system:ALT_PackageKit" />
       <supportedOn ref="system:SUPPORTED_AltP10" />
       <elements>
           <enum id="OrgFreedesktopPackagekitPackage_setter" valueName="org.freedesktop.packagekit.system-sources-configure" required="true">
@@ -541,7 +535,7 @@
         name="org.freedesktop.packagekit.system-sources-configure-user"
         valuename="org.freedesktop.packagekit.system-sources-configure"
         presentation="$(presentation.org-freedesktop-packagekit-package-user-pr)">
-      <parentCategory ref="ALT_PackageKit" />
+      <parentCategory ref="system:ALT_PackageKit" />
       <supportedOn ref="system:SUPPORTED_AltP10" />
       <elements>
         <enum id="OrgFreedesktopPackagekitPackage_setter" valueName="org.freedesktop.packagekit.system-sources-configure" required="true">
@@ -584,7 +578,7 @@
         name="org.freedesktop.packagekit.package-install-untrusted"
         valuename="org.freedesktop.packagekit.package-install-untrusted"
         presentation="$(presentation.org-freedesktop-packagekit-package-pr)">
-      <parentCategory ref="ALT_PackageKit" />
+      <parentCategory ref="system:ALT_PackageKit" />
       <supportedOn ref="system:SUPPORTED_AltP10" />
       <elements>
           <enum id="OrgFreedesktopPackagekitPackage_setter" valueName="org.freedesktop.packagekit.package-install-untrusted" required="true">
@@ -635,10 +629,292 @@
         name="org.freedesktop.packagekit.package-install-untrusted-user"
         valuename="org.freedesktop.packagekit.package-install-untrusted"
         presentation="$(presentation.org-freedesktop-packagekit-package-user-pr)">
-      <parentCategory ref="ALT_PackageKit" />
+      <parentCategory ref="system:ALT_PackageKit" />
       <supportedOn ref="system:SUPPORTED_AltP10" />
       <elements>
         <enum id="OrgFreedesktopPackagekitPackage_setter" valueName="org.freedesktop.packagekit.package-install-untrusted" required="true">
+          <item displayName="$(string.org-freedesktop-packagekit-package-No)">
+              <value>
+              <string>No</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-freedesktop-packagekit-package-Yes)">
+            <value>
+              <string>Yes</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-freedesktop-packagekit-package-Auth-self)">
+            <value>
+              <string>Auth_self</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-freedesktop-packagekit-package-Auth-admin)">
+            <value>
+              <string>Auth_admin</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-freedesktop-packagekit-package-Auth-self-keep)">
+            <value>
+              <string>Auth_self_keep</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-freedesktop-packagekit-package-Auth-admin-keep)">
+            <value>
+              <string>Auth_admin_keep</string>
+            </value>
+          </item>
+        </enum>
+      </elements>
+    </policy>
+    <policy class="Machine" displayName="$(string.org-freedesktop-packagekit-package-reinstall)"
+      explainText="$(string.org-freedesktop-packagekit-package-reinstall_help)"
+        key="Software\BaseALT\Policies\Polkit"
+        name="org.freedesktop.packagekit.package-reinstall"
+        valuename="org.freedesktop.packagekit.package-reinstall"
+        presentation="$(presentation.org-freedesktop-packagekit-package-pr)">
+      <parentCategory ref="system:ALT_PackageKit" />
+      <supportedOn ref="system:SUPPORTED_AltP10" />
+      <elements>
+          <enum id="OrgFreedesktopPackagekitPackage_setter" valueName="org.freedesktop.packagekit.package-reinstall" required="true">
+            <item displayName="$(string.org-freedesktop-packagekit-package-No)">
+              <value>
+                <string>No</string>
+              </value>
+            </item>
+            <item displayName="$(string.org-freedesktop-packagekit-package-Yes)">
+              <value>
+                <string>Yes</string>
+              </value>
+            </item>
+            <item displayName="$(string.org-freedesktop-packagekit-package-Auth-self)">
+              <value>
+                <string>Auth_self</string>
+              </value>
+            </item>
+            <item displayName="$(string.org-freedesktop-packagekit-package-Auth-admin)">
+              <value>
+                <string>Auth_admin</string>
+              </value>
+            </item>
+            <item displayName="$(string.org-freedesktop-packagekit-package-Auth-self-keep)">
+              <value>
+                <string>Auth_self_keep</string>
+              </value>
+            </item>
+            <item displayName="$(string.org-freedesktop-packagekit-package-Auth-admin-keep)">
+              <value>
+                <string>Auth_admin_keep</string>
+              </value>
+            </item>
+          </enum>
+          <boolean id="OrgFreedesktopPackagekitPackage_blocker" key="Software\BaseALT\Policies\PolkitLocks" valueName="org.freedesktop.packagekit.package-reinstall">
+            <trueValue>
+              <decimal value="1" />
+            </trueValue>
+            <falseValue>
+              <decimal value="0" />
+            </falseValue>
+          </boolean>
+        </elements>
+    </policy>
+    <policy class="User" displayName="$(string.org-freedesktop-packagekit-package-reinstall-user)"
+        explainText="$(string.org-freedesktop-packagekit-package-reinstall-user_help)"
+        key="Software\BaseALT\Policies\Polkit"
+        name="org.freedesktop.packagekit.package-reinstall-user"
+        valuename="org.freedesktop.packagekit.package-reinstall"
+        presentation="$(presentation.org-freedesktop-packagekit-package-user-pr)">
+      <parentCategory ref="system:ALT_PackageKit" />
+      <supportedOn ref="system:SUPPORTED_AltP10" />
+      <elements>
+        <enum id="OrgFreedesktopPackagekitPackage_setter" valueName="org.freedesktop.packagekit.package-reinstall" required="true">
+          <item displayName="$(string.org-freedesktop-packagekit-package-No)">
+              <value>
+              <string>No</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-freedesktop-packagekit-package-Yes)">
+            <value>
+              <string>Yes</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-freedesktop-packagekit-package-Auth-self)">
+            <value>
+              <string>Auth_self</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-freedesktop-packagekit-package-Auth-admin)">
+            <value>
+              <string>Auth_admin</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-freedesktop-packagekit-package-Auth-self-keep)">
+            <value>
+              <string>Auth_self_keep</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-freedesktop-packagekit-package-Auth-admin-keep)">
+            <value>
+              <string>Auth_admin_keep</string>
+            </value>
+          </item>
+        </enum>
+      </elements>
+    </policy>
+    <policy class="Machine" displayName="$(string.org-freedesktop-packagekit-package-eula-accept)"
+      explainText="$(string.org-freedesktop-packagekit-package-eula-accept_help)"
+        key="Software\BaseALT\Policies\Polkit"
+        name="org.freedesktop.packagekit.package-eula-accept"
+        valuename="org.freedesktop.packagekit.package-eula-accept"
+        presentation="$(presentation.org-freedesktop-packagekit-package-pr)">
+      <parentCategory ref="system:ALT_PackageKit" />
+      <supportedOn ref="system:SUPPORTED_AltP10" />
+      <elements>
+          <enum id="OrgFreedesktopPackagekitPackage_setter" valueName="org.freedesktop.packagekit.package-eula-accept" required="true">
+            <item displayName="$(string.org-freedesktop-packagekit-package-No)">
+              <value>
+                <string>No</string>
+              </value>
+            </item>
+            <item displayName="$(string.org-freedesktop-packagekit-package-Yes)">
+              <value>
+                <string>Yes</string>
+              </value>
+            </item>
+            <item displayName="$(string.org-freedesktop-packagekit-package-Auth-self)">
+              <value>
+                <string>Auth_self</string>
+              </value>
+            </item>
+            <item displayName="$(string.org-freedesktop-packagekit-package-Auth-admin)">
+              <value>
+                <string>Auth_admin</string>
+              </value>
+            </item>
+            <item displayName="$(string.org-freedesktop-packagekit-package-Auth-self-keep)">
+              <value>
+                <string>Auth_self_keep</string>
+              </value>
+            </item>
+            <item displayName="$(string.org-freedesktop-packagekit-package-Auth-admin-keep)">
+              <value>
+                <string>Auth_admin_keep</string>
+              </value>
+            </item>
+          </enum>
+          <boolean id="OrgFreedesktopPackagekitPackage_blocker" key="Software\BaseALT\Policies\PolkitLocks" valueName="org.freedesktop.packagekit.package-eula-accept">
+            <trueValue>
+              <decimal value="1" />
+            </trueValue>
+            <falseValue>
+              <decimal value="0" />
+            </falseValue>
+          </boolean>
+        </elements>
+    </policy>
+    <policy class="User" displayName="$(string.org-freedesktop-packagekit-package-eula-accept-user)"
+        explainText="$(string.org-freedesktop-packagekit-package-eula-accept-user_help)"
+        key="Software\BaseALT\Policies\Polkit"
+        name="org.freedesktop.packagekit.package-eula-accept-user"
+        valuename="org.freedesktop.packagekit.package-eula-accept"
+        presentation="$(presentation.org-freedesktop-packagekit-package-user-pr)">
+      <parentCategory ref="system:ALT_PackageKit" />
+      <supportedOn ref="system:SUPPORTED_AltP10" />
+      <elements>
+        <enum id="OrgFreedesktopPackagekitPackage_setter" valueName="org.freedesktop.packagekit.package-eula-accept" required="true">
+          <item displayName="$(string.org-freedesktop-packagekit-package-No)">
+              <value>
+              <string>No</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-freedesktop-packagekit-package-Yes)">
+            <value>
+              <string>Yes</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-freedesktop-packagekit-package-Auth-self)">
+            <value>
+              <string>Auth_self</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-freedesktop-packagekit-package-Auth-admin)">
+            <value>
+              <string>Auth_admin</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-freedesktop-packagekit-package-Auth-self-keep)">
+            <value>
+              <string>Auth_self_keep</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-freedesktop-packagekit-package-Auth-admin-keep)">
+            <value>
+              <string>Auth_admin_keep</string>
+            </value>
+          </item>
+        </enum>
+      </elements>
+    </policy>
+    <policy class="Machine" displayName="$(string.org-freedesktop-packagekit-system-trust-signing-key)"
+      explainText="$(string.org-freedesktop-packagekit-system-trust-signing-key_help)"
+        key="Software\BaseALT\Policies\Polkit"
+        name="org.freedesktop.packagekit.system-trust-signing-key"
+        valuename="org.freedesktop.packagekit.system-trust-signing-key"
+        presentation="$(presentation.org-freedesktop-packagekit-package-pr)">
+      <parentCategory ref="system:ALT_PackageKit" />
+      <supportedOn ref="system:SUPPORTED_AltP10" />
+      <elements>
+          <enum id="OrgFreedesktopPackagekitPackage_setter" valueName="org.freedesktop.packagekit.system-trust-signing-key" required="true">
+            <item displayName="$(string.org-freedesktop-packagekit-package-No)">
+              <value>
+                <string>No</string>
+              </value>
+            </item>
+            <item displayName="$(string.org-freedesktop-packagekit-package-Yes)">
+              <value>
+                <string>Yes</string>
+              </value>
+            </item>
+            <item displayName="$(string.org-freedesktop-packagekit-package-Auth-self)">
+              <value>
+                <string>Auth_self</string>
+              </value>
+            </item>
+            <item displayName="$(string.org-freedesktop-packagekit-package-Auth-admin)">
+              <value>
+                <string>Auth_admin</string>
+              </value>
+            </item>
+            <item displayName="$(string.org-freedesktop-packagekit-package-Auth-self-keep)">
+              <value>
+                <string>Auth_self_keep</string>
+              </value>
+            </item>
+            <item displayName="$(string.org-freedesktop-packagekit-package-Auth-admin-keep)">
+              <value>
+                <string>Auth_admin_keep</string>
+              </value>
+            </item>
+          </enum>
+          <boolean id="OrgFreedesktopPackagekitPackage_blocker" key="Software\BaseALT\Policies\PolkitLocks" valueName="org.freedesktop.packagekit.system-trust-signing-key">
+            <trueValue>
+              <decimal value="1" />
+            </trueValue>
+            <falseValue>
+              <decimal value="0" />
+            </falseValue>
+          </boolean>
+        </elements>
+    </policy>
+    <policy class="User" displayName="$(string.org-freedesktop-packagekit-system-trust-signing-key-user)"
+        explainText="$(string.org-freedesktop-packagekit-system-trust-signing-key-user_help)"
+        key="Software\BaseALT\Policies\Polkit"
+        name="org.freedesktop.packagekit.system-trust-signing-key-user"
+        valuename="org.freedesktop.packagekit.system-trust-signing-key"
+        presentation="$(presentation.org-freedesktop-packagekit-package-user-pr)">
+      <parentCategory ref="system:ALT_PackageKit" />
+      <supportedOn ref="system:SUPPORTED_AltP10" />
+      <elements>
+        <enum id="OrgFreedesktopPackagekitPackage_setter" valueName="org.freedesktop.packagekit.system-trust-signing-key" required="true">
           <item displayName="$(string.org-freedesktop-packagekit-package-No)">
               <value>
               <string>No</string>

@@ -2,7 +2,8 @@
 <!--  (c) 2022 BaseALT, Ltd.  -->
 <policyDefinitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" revision="1.0" schemaVersion="1.0" xmlns="http://schemas.microsoft.com/GroupPolicy/2006/07/PolicyDefinitions">
   <policyNamespaces>
-    <target prefix="polkit" namespace="BaseALT.Policies.Polkit" />
+    <target prefix="udisks2" namespace="BaseALT.Policies.Udisks2" />
+    <using prefix="polkit" namespace="BaseALT.Policies.Polkit" />
     <using prefix="system" namespace="BaseALT.Policies.System" />
   </policyNamespaces>
   <resources minRequiredRevision="1.0" />
@@ -13,7 +14,7 @@
         name="org.freedesktop.udisks2.filesystem-mount"
         valuename="org.freedesktop.udisks2.filesystem-mount"
         presentation="$(presentation.OrgFreedesktopUdisks2FileSystemMount-pr)">
-      <parentCategory ref="system:ALT_Polkit" />
+      <parentCategory ref="system:ALT_Udisks2" />
       <supportedOn ref="system:SUPPORTED_AltP10" />
       <elements>
         <enum id="OrgFreedesktopUdisks2FileSystemMount_setter" valueName="org.freedesktop.udisks2.filesystem-mount" required="true">
@@ -64,7 +65,7 @@
         name="org.freedesktop.udisks2.filesystem-mount-user"
         valuename="org.freedesktop.udisks2.filesystem-mount"
         presentation="$(presentation.OrgFreedesktopUdisks2FileSystemMountUser-pr)">
-      <parentCategory ref="system:ALT_Polkit" />
+      <parentCategory ref="system:ALT_Udisks2" />
       <supportedOn ref="system:SUPPORTED_AltP10" />
       <elements>
         <enum id="OrgFreedesktopUdisks2FileSystemMount_setter" valueName="org.freedesktop.udisks2.filesystem-mount" required="true">
@@ -107,7 +108,7 @@
         name="org.freedesktop.udisks2.filesystem-mount-other-seat"
         valuename="org.freedesktop.udisks2.filesystem-mount-other-seat"
         presentation="$(presentation.OrgFreedesktopUdisks2FileSystemMount-pr)">
-      <parentCategory ref="system:ALT_Polkit" />
+      <parentCategory ref="system:ALT_Udisks2" />
       <supportedOn ref="system:SUPPORTED_AltP10" />
       <elements>
         <enum id="OrgFreedesktopUdisks2FileSystemMount_setter" valueName="org.freedesktop.udisks2.filesystem-mount-other-seat" required="true">
@@ -158,7 +159,7 @@
         name="org.freedesktop.udisks2.filesystem-mount-other-seat-user"
         valuename="org.freedesktop.udisks2.filesystem-mount-other-seat"
         presentation="$(presentation.OrgFreedesktopUdisks2FileSystemMountUser-pr)">
-      <parentCategory ref="system:ALT_Polkit" />
+      <parentCategory ref="system:ALT_Udisks2" />
       <supportedOn ref="system:SUPPORTED_AltP10" />
       <elements>
         <enum id="OrgFreedesktopUdisks2FileSystemMount_setter" valueName="org.freedesktop.udisks2.filesystem-mount-other-seat" required="true">
@@ -201,7 +202,7 @@
         name="org.freedesktop.udisks2.filesystem-mount-system"
         valuename="org.freedesktop.udisks2.filesystem-mount-system"
         presentation="$(presentation.OrgFreedesktopUdisks2FileSystemMount-pr)">
-      <parentCategory ref="system:ALT_Polkit" />
+      <parentCategory ref="system:ALT_Udisks2" />
       <supportedOn ref="system:SUPPORTED_AltP10" />
       <elements>
         <enum id="OrgFreedesktopUdisks2FileSystemMount_setter" valueName="org.freedesktop.udisks2.filesystem-mount-system" required="true">
@@ -252,7 +253,7 @@
         name="org.freedesktop.udisks2.filesystem-mount-system-user"
         valuename="org.freedesktop.udisks2.filesystem-mount-system"
         presentation="$(presentation.OrgFreedesktopUdisks2FileSystemMountUser-pr)">
-      <parentCategory ref="system:ALT_Polkit" />
+      <parentCategory ref="system:ALT_Udisks2" />
       <supportedOn ref="system:SUPPORTED_AltP10" />
       <elements>
         <enum id="OrgFreedesktopUdisks2FileSystemMount_setter" valueName="org.freedesktop.udisks2.filesystem-mount-system" required="true">
@@ -294,7 +295,7 @@
         key="Software\BaseALT\Policies\Polkit"
         name="org-freedesktop-udisks2-filesystem-mount-all"
         presentation="$(presentation.org-freedesktop-udisks2-filesystem-mount-all-pr)">
-      <parentCategory ref="system:ALT_Polkit" />
+      <parentCategory ref="system:ALT_Udisks2" />
       <supportedOn ref="system:SUPPORTED_AltP10" />
          <enabledList defaultKey="Software\BaseALT\Policies\Polkit">
           <item valueName="org.freedesktop.udisks2.filesystem-mount">
@@ -458,7 +459,7 @@
         key="Software\BaseALT\Policies\Polkit"
         name="org-freedesktop-udisks2-filesystem-mount-all-user"
         presentation="$(presentation.org-freedesktop-udisks2-filesystem-mount-all-user-pr)">
-      <parentCategory ref="system:ALT_Polkit" />
+      <parentCategory ref="system:ALT_Udisks2" />
       <supportedOn ref="system:SUPPORTED_AltP10" />
          <enabledList defaultKey="Software\BaseALT\Policies\Polkit">
           <item valueName="org.freedesktop.udisks2.filesystem-mount">

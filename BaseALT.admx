@@ -134,7 +134,13 @@
       <parentCategory ref="ALT_Windows_Manager_Marco" />
     </category>
     <category name="ALT_Polkit" displayName="$(string.ALT_Polkit)" explainText="$(string.ALT_Polkit_Help)">
-      <parentCategory ref="ALT_System" />
+      <parentCategory ref="ALT_Services" />
+    </category>
+    <category name="ALT_Udisks2" displayName="$(string.ALT_Udisks2)" explainText="$(string.ALT_Udisks2_Help)">
+      <parentCategory ref="ALT_Polkit" />
+    </category>
+    <category name="ALT_PackageKit" displayName="$(string.ALT_PackageKit)" explainText="$(string.ALT_PackageKit_Help)">
+      <parentCategory ref="ALT_Polkit" />
     </category>
   </categories>
 </policyDefinitions>
