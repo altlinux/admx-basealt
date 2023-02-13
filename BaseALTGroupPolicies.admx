@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <!--  (c) 2020 BaseALT, Ltd.  -->
 <policyDefinitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" revision="1.0" schemaVersion="1.0" xmlns="http://schemas.microsoft.com/GroupPolicy/2006/07/PolicyDefinitions">
   <policyNamespaces>
@@ -350,7 +350,7 @@
         <decimal value="0"/>
       </disabledValue>
     </policy>
-    <policy class="User" displayName="$(string.gpupdate_drive_maps_home_user)" explainText="$(string.gpupdate_drive_maps_home_user_help)" key="Software\BaseALT\Policies\GPUpdate" name="DriveMapsHomeUser" valueName="DriveMapsHomeUser">
+    <policy class="Machine" displayName="$(string.RemovableStorageClasses_DenyAll_User_Access)" explainText="$(string.RemovableStorageClasses_DenyAll_User_Access_help)" key="Software\BaseALT\Policies\GPUpdate\RemovableStorageDevices" name="RemovableStorageClasses_DenyAll_User_Access" valueName="Deny_All">
       <parentCategory ref="system:ALT_Mounting"/>
       <supportedOn ref="system:SUPPORTED_AltP10"/>
       <enabledValue>
