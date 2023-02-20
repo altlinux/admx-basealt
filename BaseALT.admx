@@ -134,7 +134,7 @@
       <parentCategory ref="ALT_Windows_Manager_Marco" />
     </category>
     <category name="ALT_Polkit" displayName="$(string.ALT_Polkit)" explainText="$(string.ALT_Polkit_Help)">
-    <parentCategory ref="ALT_Services" />
+    <parentCategory ref="ALT_System" />
     </category>
     <category name="ALT_SambaOptions" displayName="$(string.ALT_SambaOptions)"  explainText="$(string.ALT_SambaOptions_Help)" >
       <parentCategory ref="ALT_Services" />
