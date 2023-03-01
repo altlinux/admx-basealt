@@ -122,17 +122,22 @@ Enabled — symbolic links to user's network drives mount points will be display
 
    /run/media/USERNAME/.drives -> ~/.net.drives — for hidden user's network drives.
       </string>
-      <string id="gpupdate_drive_maps_home">Mapping machine's network drives in the home directory</string>
-      <string id="gpupdate_drive_maps_home_help">Mapping machine's network drives in the home directory
+      <string id="gpupdate_filescopy_applier">Configuring the File Copy Mechanism</string>
+      <string id="gpupdate_filescopy_applier_help">Configuring the File Copy Mechanism
 
-Disabled (default) — symbolic links to machine's network drives mount points will not be placed in the home directory.
+This policy configures the "copy files" mechanism by generating a list of suffixes (extension) that identify a file as executable (Example: .sh) and a list of target copy paths for files with these suffixes.
 
-Enabled — symbolic links to machine's network drives mount points will be displayed in the home directory:
+If you enable this policy setting, enter the paths for copying files in the "List of copy paths" field and the suffixes of executable files in the "List of file suffixes" field. Files with the specified suffixes copied to the assigned paths will be given execute permission (chmod +x).
 
-   /media/gpupdate/drives.system -> ~/net.drives.system — for system network drives;
-
-   /media/gpupdate/.drives.system -> ~/.net.drives.system — for hidden system network drives.
+If this policy setting is disabled or not set, copying occurs without changing execution permissions.
       </string>
     </stringTable>
-  </resources>
+    <presentationTable>
+      <presentation id="GpupdateFilescopyApplier">
+        <listBox refId="MarkerUsagePathList">List of copy paths:</listBox>
+        <listBox refId="ExtensionMarkerList">List of file suffixes:</listBox>
+      </presentation>
+    </presentationTable>
+</resources>
 </policyDefinitionResources>
+

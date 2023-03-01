@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <!--  (c) 2019 BaseALT, Ltd.  -->
 <policyDefinitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                    revision="1.1" schemaVersion="1.0" xmlns="http://schemas.microsoft.com/GroupPolicy/2006/07/PolicyDefinitions">
@@ -132,6 +132,18 @@
     </category>
     <category name="ALT_Windows_Manager_Marco_Keyboard" displayName="$(string.ALT_Windows_Manager_Marco_Keyboard)" explainText="$(string.ALT_Windows_Manager_Marco_Keyboard_Help)">
       <parentCategory ref="ALT_Windows_Manager_Marco" />
+    </category>
+    <category name="ALT_Polkit" displayName="$(string.ALT_Polkit)" explainText="$(string.ALT_Polkit_Help)">
+    <parentCategory ref="ALT_System" />
+    </category>
+    <category name="ALT_SambaOptions" displayName="$(string.ALT_SambaOptions)"  explainText="$(string.ALT_SambaOptions_Help)" >
+      <parentCategory ref="ALT_Services" />
+    </category>
+    <category name="ALT_Udisks2" displayName="$(string.ALT_Udisks2)" explainText="$(string.ALT_Udisks2_Help)">
+      <parentCategory ref="ALT_Polkit" />
+    </category>
+    <category name="ALT_PackageKit" displayName="$(string.ALT_PackageKit)" explainText="$(string.ALT_PackageKit_Help)">
+      <parentCategory ref="ALT_Polkit" />
     </category>
   </categories>
 </policyDefinitions>

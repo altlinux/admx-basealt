@@ -58,6 +58,14 @@
       <string id="ALT_Windows_Manager_Marco_Help">Настройки оконного менеджера Marco</string>
       <string id="ALT_Windows_Manager_Marco_Keyboard">Настройки клавиатуры</string>
       <string id="ALT_Windows_Manager_Marco_Keyboard_Help">Настройки клавиатуры</string>
+      <string id="ALT_SambaOptions">Samba опции</string>
+      <string id="ALT_SambaOptions_Help">Samba опции</string>
+      <string id="ALT_Polkit">Управление Polkit правилами</string>
+      <string id="ALT_Polkit_Help">правление Polkit правилами</string>
+      <string id="ALT_PackageKit">Разрешения PackageKit</string>
+      <string id="ALT_PackageKit_Help">Разрешения PackageKit</string>
+      <string id="ALT_Udisks2">Разрешения Udisks2</string>
+      <string id="ALT_Udisks2_Help">Разрешения Udisks2</string>
     </stringTable>
   </resources>
 </policyDefinitionResources>
