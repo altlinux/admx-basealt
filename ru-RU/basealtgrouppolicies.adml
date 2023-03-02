@@ -136,6 +136,21 @@
 
   /media/gpupdate/.drives.system -> ~/.net.drives.system — для скрытых системных сетевых дисков;
       </string>
+      <string id="gpupdate_filescopy_applier">Настройка механизма копирования файлов</string>
+      <string id="gpupdate_filescopy_applier_help">Настройка механизма копирования файлов
+
+Данная политика конфигурирует механизм "копирования файлов", формируя список суффиксов (расширений), идентифицироющих файл как исполняемый, (Пример: .sh) и список целевых путей копирования для файлов с данными суффиксами.
+
+При включении данного параметра политики введите пути для копирования файлов в поле "Список путей копирования" и суффиксы исполняемых файлов в поле "Список суффиксов файлов". К файлам с указанныеми суффиксами, копированным в назначенные пути будет задано право на исполнение (chmod +x). 
+
+Если данный параметр политики отключён или не задан, копирование происходит без изменения разрешений исполнения.
+      </string>
     </stringTable>
+    <presentationTable>
+      <presentation id="GpupdateFilescopyApplier">
+        <listBox refId="MarkerUsagePathList">Список путей копирования:</listBox>
+        <listBox refId="ExtensionMarkerList">Список суффиксов файлов:</listBox>
+      </presentation>
+    </presentationTable>
   </resources>
 </policyDefinitionResources>
