@@ -662,14 +662,14 @@ last — repeat last action</text>
       </presentation>
 
       <presentation id="OrgMateMarcoGeneralTitlebarFont-pr">
-        <textBox refId="OrgMateMarcoGeneralTheme_setter">
-          <label>Тема:</label>
+        <textBox refId="OrgMateMarcoGeneralTitlebarFont_setter">
+          <label>Theme:</label>
         </textBox>
       </presentation>
 
       <presentation id="OrgMateMarcoGeneralTitlebarFontMachine-pr">
         <textBox refId="OrgMateMarcoGeneralTitlebarFont_setter">
-          <label>Тема:</label>
+          <label>Theme:</label>
         </textBox>
         <checkBox refId="OrgMateMarcoGeneralTitlebarFont_setter_blocker">lock</checkBox>
         <text>Lock changes to this setting. User policies for this setting will be ignored.</text>

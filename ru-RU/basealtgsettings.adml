@@ -768,7 +768,7 @@ Cтрока типа rgb(0,0,0). </string>
       </presentation>
 
       <presentation id="OrgMateMarcoGeneralTitlebarFont-pr">
-        <textBox refId="OrgMateMarcoGeneralTheme_setter">
+        <textBox refId="OrgMateMarcoGeneralTitlebarFont_setter">
           <label>Тема:</label>
         </textBox>
       </presentation>

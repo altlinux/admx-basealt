@@ -2017,7 +2017,7 @@
       <parentCategory ref="system:ALT_Windows_Manager_Marco" />
       <supportedOn ref="system:SUPPORTED_AltP9" />
       <elements>
-        <text id="OrgMateMarcoGeneralTheme_setter" valueName="org.mate.Marco.general.titlebar-font" />
+        <text id="OrgMateMarcoGeneralTitlebarFont_setter" valueName="org.mate.Marco.general.titlebar-font" />
       </elements>
     </policy>
 
