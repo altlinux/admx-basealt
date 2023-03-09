@@ -6,7 +6,7 @@
   <resources>
     <stringTable>
 
-      <string id="org-freedesktop-udisks2-filesystem-mount">Permission to     mount removable storage devices</string>
+      <string id="org-freedesktop-udisks2-filesystem-mount">Permission to mount removable storage devices</string>
       <string id="org-freedesktop-udisks2-filesystem-mount_help">Permission to mount removable storage devices
 
 This policy grants or restricts permissions to mount removable storage devices.
@@ -114,8 +114,6 @@ Note: the possession of administrative rights in the context of PolicyKit is det
       <string id="org-freedesktop-udisks2-filesystem-mount-system_help">Permission to mount system partitions
 
 This policy grants or restricts permissions to matically mount system partitions.
-
-Выключить/Не настроено — разрешения определяются системными параметрами. По умолчанию — «Auth_admin»
 
 Disable/Not configured — Permissions are determined by system settings. Default is «Auth_admin»
 
