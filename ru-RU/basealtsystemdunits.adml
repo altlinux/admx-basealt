@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--  (c) 2019 BaseALT, Ltd.  -->
+<!--  (c) 2023 BaseALT, Ltd.  -->
 <policyDefinitionResources xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.microsoft.com/GroupPolicy/2006/07/PolicyDefinitions" revision="1.0" schemaVersion="1.0">
   <displayName>Определения служб операционной системы Альт</displayName>
   <description>Этот файл содержит определения служб операционной системы Альт.</description>
@@ -9,7 +9,7 @@
       <string id="accounts-daemon_service">Служба учетных записей (accounts-daemon)</string>
       <string id="accounts-daemon_service_help">Эта политика определяет, включен ли systemd юнит службы учетных записей (accounts-daemon)
 
-Не задана — не изменять системное состояние юнита
+Не сконфигурировано — не изменять системное состояние юнита
 
 Включено — перевести юнит во включенное состояние (выполнить команду systemctl enable accounts-daemon.service)
 
@@ -18,7 +18,7 @@
 
       <string id="acpid_service">Служба события ACPI</string>
       <string id="acpid_service_help">Эта политика определяет, включен ли systemd юнит системной службы событий ACPI
-Не задана — не изменять системное состояние юнита
+Не сконфигурировано — не изменять системное состояние юнита
 
 Включено — перевести юнит во включенное состояние (выполнить команду systemctl enable acpid.service)
 
@@ -28,7 +28,7 @@
       <string id="ahttpd_service">Сервер frotend веб-интерфейса Alterator</string>
       <string id="ahttpd_service_help">Эта политика определяет, включен ли systemd юнит веб-сервера frotend WWW интерфейса Alterator
 
-Не задана — не изменять системное состояние юнита
+Не сконфигурировано — не изменять системное состояние юнита
 
 Включено — перевести юнит во включенное состояние (выполнить команду systemctl enable ahttpd.service)
 
@@ -38,19 +38,17 @@
       <string id="alteratord_service">Серверная часть Alterator</string>
       <string id="alteratord_service_help">Эта политика определяет, включен ли systemd юнит внутреннего сервера Alterator
 
-Не задана — не изменять системное состояние юнита
+Не сконфигурировано — не изменять системное состояние юнита
 
 Включено — перевести юнит во включенное состояние (выполнить команду systemctl enable alteratord.service)
 
 Отключено — перевести юнит в состояние «выключено» (выполнить команду systemctl disable alteratord.service)
       </string>
 
-
-946/5000
       <string id="auditd_service">Служба аудита безопасности</string>
       <string id="auditd_service_help">Эта политика определяет, включен ли системный модуль службы аудита безопасности
 
-Не задана — не изменять системное состояние юнита
+Не сконфигурировано — не изменять системное состояние юнита
 
 Включено — перевести юнит во включенное состояние (выполнить команду systemctl enable auditd.service)
 
@@ -60,7 +58,7 @@
       <string id="avahi-daemon_service">Avahi mDNS/DNS-SD</string>
       <string id="avahi-daemon_service_help">Эта политика определяет, включен ли systemd юнит стека mDNS/DNS-SD Avahi
 
-Не задана — не изменять системное состояние юнита
+Не сконфигурировано — не изменять системное состояние юнита
 
 Включено — перевести юнит во включенное состояние (выполнить команду systemctl enable avahi-daemon.service)
 
@@ -70,7 +68,7 @@
       <string id="bind_service">DNS-сервер BIND</string>
       <string id="bind_service_help">Эта политика определяет, включен ли systemd юнит DNS-сервера (сервиса) BIND (Berkeley Internet Name Domain)
 
-Не задана — не изменять системное состояние юнита
+Не сконфигурировано — не изменять системное состояние юнита
 
 Включено — перевести юнит во включенное состояние (выполнить команду systemctl enable bind.service)
 
@@ -80,7 +78,7 @@
       <string id="chronyd_service">Chronyd (служба NTP)</string>
       <string id="chronyd_service_help">Эта политика определяет, включен ли systemd юнит NTP клиента/сервера Chronyd
 
-Не задана — не изменять системное состояние юнита
+Не сконфигурировано — не изменять системное состояние юнита
 
 Включено — перевести юнит во включенное состояние (выполнить команду systemctl enable chronyd.service)
 
@@ -90,7 +88,7 @@
       <string id="colord_service">Сервис colord</string>
       <string id="colord_service_help">Эта политика определяет, включен ли systemd юнит colord (cервис для управления, установки и создания цветовых профилей)
 
-Не задана — не изменять системное состояние юнита
+Не сконфигурировано — не изменять системное состояние юнита
 
 Включено — перевести юнит во включенное состояние (выполнить команду systemctl enable colord.service)
 
@@ -100,7 +98,7 @@
       <string id="consolesaver_service">Сервис Сonsolesaver SYSV</string>
       <string id="consolesaver_service_help">Эта политика определяет, включен ли systemd юнит Сonsolesaver (SYSV: этот пакет загружает конфигурацию энергосбережения консоли)
 
-Не задана — не изменять системное состояние юнита
+Не сконфигурировано — не изменять системное состояние юнита
 
 Включено — перевести юнит во включенное состояние (выполнить команду systemctl enable consolesaver.service)
 
@@ -110,7 +108,7 @@
       <string id="cpufreq-simple_service">Cpufreq-simple сервис</string>
       <string id="cpufreq-simple_service_help">Эта политика определяет, включен ли systemd юнит службы Cpufreq-simple (загружает модули ядра, необходимые для масштабирования cpufreq)
 
-Не задана — не изменять системное состояние юнита
+Не сконфигурировано — не изменять системное состояние юнита
 
 Включено — перевести юнит во включенное состояние (выполнить команду systemctl enable cpufreq-simple.service)
 
@@ -120,7 +118,7 @@
       <string id="crond_service">Служба Crond</string>
       <string id="crond_service_help">Эта политика определяет, включен ли systemd юнит службы Cron
 
-Не задана — не изменять системное состояние юнита
+Не сконфигурировано — не изменять системное состояние юнита
 
 Включено — перевести юнит во включенное состояние (выполнить команду systemctl enable crond.service)
 
@@ -130,7 +128,7 @@
       <string id="dbus_service">Шина системных сообщений D-Bus</string>
       <string id="dbus_service_help">Эта политика определяет, включен ли systemd юнит шины системных сообщений D-Bus
 
-Не задана — не изменять системное состояние юнита
+Не сконфигурировано — не изменять системное состояние юнита
 
 Включено — перевести юнит во включенное состояние (выполнить команду systemctl enable dbus.service)
 
@@ -138,9 +136,9 @@
       </string>
 
       <string id="dnsmasq_service">Служба Dnsmasq</string>
-      <string id="dnsmasq_service_help">Эта политика определяет, включен ли systemd юнит Службы Dnsmasq (облегченный DHCP и кеширующий DNS-сервер, а также TFTP-сервер для поддержки загрузки по сети)
+      <string id="dnsmasq_service_help">Эта политика определяет, включен ли systemd юнит Службы Dnsmasq (облегченный DHCP и кэширующий DNS-сервер, а также TFTP-сервер для поддержки загрузки по сети)
 
-Не задана — не изменять системное состояние юнита
+Не сконфигурировано — не изменять системное состояние юнита
 
 Включено — перевести юнит во включенное состояние (выполнить команду systemctl enable dnsmasq.service)
 
@@ -150,7 +148,7 @@
       <string id="gpm_service">Менеджер мыши в консоли</string>
       <string id="gpm_service_help">Эта политика определяет, включен ли sytemd юнит диспетчера мыши консоли
 
-Не задана — не изменять системное состояние юнита
+Не сконфигурировано — не изменять системное состояние юнита
 
 Включено — перевести юнит во включенное состояние (выполнить команду systemctl enable gpm.service)
 
@@ -160,7 +158,7 @@
       <string id="kmod-static-nodes_service">Системный модуль kmod-static-nodes</string>
       <string id="kmod-static-nodes_service_help">Эта политика определяет, включен ли systemd юнит kmod-static-nodes (создает список необходимых статических узлов устройства для текущего ядра)
 
-Не задана — не изменять системное состояние юнита
+Не сконфигурировано — не изменять системное состояние юнита
 
 Включено — перевести юнит во включенное состояние (выполнить команду systemctl enable kmod-static-nodes.service)
 
@@ -170,7 +168,7 @@
       <string id="krb5kdc_service">Kerberos 5 KDC</string>
       <string id="krb5kdc_service_help">Эта политика определяет, включен ли systemd юнит Kerberos 5 KDC
 
-Не задана — не изменять системное состояние юнита
+Не сконфигурировано — не изменять системное состояние юнита
 
 Включено — перевести юнит во включенное состояние (выполнить команду systemctl enable krb5kdc.service)
 
@@ -180,7 +178,7 @@
       <string id="lightdm_service">Графический менеджер входа в систему (lightdm)</string>
       <string id="lightdm_service_help">Эта политика определяет, включен ли systemd юнит lightdm
 
-Не задана — не изменять системное состояние юнита
+Не сконфигурировано — не изменять системное состояние юнита
 
 Включено — перевести юнит во включенное состояние (выполнить команду systemctl enable lightdm.service)
 
@@ -190,7 +188,7 @@
       <string id="ModemManager_service">Менеджер модема</string>
       <string id="ModemManager_service_help">Эта политика определяет, включен ли systemd юнит диспетчера модемов
 
-Не задана — не изменять системное состояние юнита
+Не сконфигурировано — не изменять системное состояние юнита
 
 Включено — перевести юнит во включенное состояние (выполнить команду systemctl enable ModemManager.service)
 
@@ -200,7 +198,7 @@
       <string id="network_service">Служба сетевых подключений</string>
       <string id="network_service_help">Эта политика определяет, включен ли systemd юнит службы сетевых подключений
 
-Не задана — не изменять системное состояние юнита
+Не сконфигурировано — не изменять системное состояние юнита
 
 Включено — перевести юнит во включенное состояние (выполнить команду systemctl enable network.service)
 
@@ -212,7 +210,7 @@
       <string id="NetworkManager-wait-online_service">Ожидание Network Manager'ом сети при загрузке</string>
       <string id="NetworkManager-wait-online_service_help">Эта политика определяет, включен ли systemd юнит «Network Manager Wait Online»
 
-Не задана — не изменять системное состояние юнита
+Не сконфигурировано — не изменять системное состояние юнита
 
 Включено — перевести юнит во включенное состояние (выполнить команду systemctl enable NetworkManager-wait-online.service)
 
@@ -222,7 +220,7 @@
       <string id="NetworkManager_service">Управление службой Network Manager</string>
       <string id="NetworkManager_service_help">Эта политика определяет, включен ли systemd юнит Network Manager
 
-Не задана — не изменять системное состояние юнита
+Не сконфигурировано — не изменять системное состояние юнита
 
 Включено — перевести юнит во включенное состояние (выполнить команду systemctl enable NetworkManager.service)
 
@@ -232,7 +230,7 @@
       <string id="nmb_service">Samba NMB Сервис</string>
       <string id="nmb_service_help">Эта политика определяет, включен ли systemd юнит сервиса Samba NMB
 
-Не задана — не изменять системное состояние юнита
+Не сконфигурировано — не изменять системное состояние юнита
 
 Включено — перевести юнит во включенное состояние (выполнить команду systemctl enable nmb.service)
 
@@ -242,7 +240,7 @@
       <string id="nscd_service">Сервис кэширования службы имен (nscd)</string>
       <string id="nscd_service_help">Эта политика определяет, включен ли systemd юнит сервиса кэширования службы имен
 
-Не задана — не изменять системное состояние юнита
+Не сконфигурировано — не изменять системное состояние юнита
 
 Включено — перевести юнит во включенное состояние (выполнить команду systemctl enable nscd.service)
 
@@ -252,7 +250,7 @@
       <string id="nslcd_service">Сервис службы именования LDAP-клиента (nslcd)</string>
       <string id="nslcd_service_help">Эта политика определяет, включен ли systemd юнит сервиса служб именования клиента LDAP
 
-Не задана — не изменять системное состояние юнита
+Не сконфигурировано — не изменять системное состояние юнита
 
 Включено — перевести юнит во включенное состояние (выполнить команду systemctl enable nslcd.service)
 
@@ -262,7 +260,7 @@
       <string id="oddjobd_service">Системный модуль oddjobd</string>
       <string id="oddjobd_service_help">Эта политика определяет, включен ли systemd юнит oddjobd (используется для запуска привилегированных операций для непривилегированных процессов)
 
-Не задана — не изменять системное состояние юнита
+Не сконфигурировано — не изменять системное состояние юнита
 
 Включено — перевести юнит во включенное состояние (выполнить команду systemctl enable oddjobd.service)
 
@@ -272,7 +270,7 @@
       <string id="openct_service">SYSV: интерфейс терминала смарт-карт</string>
       <string id="openct_service_help">Эта политика определяет, включен ли systemd юнит Openct (SYSV: терминал смарт-карт)
 
-Не задана — не изменять системное состояние юнита
+Не сконфигурировано — не изменять системное состояние юнита
 
 Включено — перевести юнит во включенное состояние (выполнить команду systemctl enable openct.service)
 
@@ -282,7 +280,7 @@
       <string id="cups_service">Планировщик CUPS</string>
       <string id="cups_service_help">Эта политика определяет, включен ли systemd юнит Service CUPS (планировщик)
 
-Не задана — не изменять системное состояние юнита
+Не сконфигурировано — не изменять системное состояние юнита
 
 Включено — перевести юнит во включенное состояние (выполнить команду systemctl enable cups.service)
 
@@ -292,7 +290,7 @@
       <string id="pcscd_service">Служба PC/SC Smart Card</string>
       <string id="pcscd_service_help">Эта политика определяет, включен ли systemd юнит службы поддержки PC/SC Smart Card
 
-Не задана — не изменять системное состояние юнита
+Не сконфигурировано — не изменять системное состояние юнита
 
 Включено — перевести юнит во включенное состояние (выполнить команду systemctl enable pcscd.service)
 
@@ -302,7 +300,7 @@
       <string id="polkit_service">Диспетчер авторизации (polkit)</string>
       <string id="polkit_service_help">Эта политика определяет, включен ли systemd юнит диспетчера авторизации (polkit)
 
-Не задана — не изменять системное состояние юнита
+Не сконфигурировано — не изменять системное состояние юнита
 
 Включено — перевести юнит во включенное состояние (выполнить команду systemctl enable polkit.service)
 
@@ -312,7 +310,7 @@
       <string id="smb_service">Samba SMB Сервис</string>
       <string id="smb_service_help">Эта политика определяет, включен ли systemd юнит сервис Samba SMB
 
-Не задана — не изменять системное состояние юнита
+Не сконфигурировано — не изменять системное состояние юнита
 
 Включено — перевести юнит во включенное состояние (выполнить команду systemctl enable smb.service)
 
@@ -322,7 +320,7 @@
       <string id="sshd_service">Служба защищённого управления (sshd)</string>
       <string id="sshd_service_help">Эта политика определяет, включен ли systemd юнит демона сервера OpenSSH
 
-Не задана — не изменять системное состояние юнита
+Не сконфигурировано — не изменять системное состояние юнита
 
 Включено — перевести юнит во включенное состояние (выполнить команду systemctl enable sshd.service)
 
@@ -332,7 +330,7 @@
        <string id="upower_service">Демон Upower</string>
        <string id="upower_service_help">Эта политика определяет, включен ли systemd юнит Daemon Upower (управление питанием)
 
-Не задана — не изменять системное состояние юнита
+Не сконфигурировано — не изменять системное состояние юнита
 
 Включено — перевести юнит во включенное состояние (выполнить команду systemctl enable upower.service)
 
@@ -342,7 +340,7 @@
        <string id="winbind_service">Samba Winbind Сервис</string>
        <string id="winbind_service_help">Эта политика определяет, включен ли systemd юнит Samba Winbind
 
-Не задана — не изменять системное состояние юнита
+Не сконфигурировано — не изменять системное состояние юнита
 
 Включено — перевести юнит во включенное состояние (выполнить команду systemctl enable winbind.service)
 
@@ -352,7 +350,7 @@
        <string id="postfix_service">Агент передачи почты Postfix</string>
        <string id="postfix_service_help">Эта политика определяет, включен ли systemd юнит агента передачи почты Postfix
 
-Не задана — не изменять системное состояние юнита
+Не сконфигурировано — не изменять системное состояние юнита
 
 Включено — перевести юнит во включенное состояние (выполнить команду systemctl enable postfix.service)
 
@@ -362,7 +360,7 @@
        <string id="rpcbind_service">Отображение адресов и номеров RPC</string>
        <string id="rpcbind_service_help">Эта политика определяет, включен ли systemd юнит RPC bind
 
-Не задана — не изменять системное состояние юнита
+Не сконфигурировано — не изменять системное состояние юнита
 
 Включено — перевести юнит во включенное состояние (выполнить команду systemctl enable rpcbind.service)
 

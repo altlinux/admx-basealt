@@ -1,13 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--  (c) 2019 BaseALT, Ltd.  -->
+<!--  (c) 2022 BaseALT, Ltd.  -->
 <policyDefinitionResources xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.microsoft.com/GroupPolicy/2006/07/PolicyDefinitions" revision="1.0" schemaVersion="1.0">
   <displayName>ALT services definitions</displayName>
   <description>This file contains the gsettings services definitions used by ALT operating system.</description>
   <resources>
     <stringTable>
       <string id="org-mate-background-secondary-color">Конечный цвет градиента</string>
-      <string id="org-mate-background-secondary-color_help">Устанавливает цвет правого или нижнего края рабочего стола при отрисовке градиента. Не используется, если в параметре «Тип градиента» выбрано значение «Сплошная заливка».</string>
+      <string id="org-mate-background-secondary-color_help">Устанавливает цвет правого или нижнего края рабочего стола при отрисовке градиента. Не используется, если в параметре «Тип градиента» выбрано значение «Сплошная заливка».
 
+Возможные значения:
+
+Ключевое слово цвета (red, aqua, navy и т.д.);
+
+Cтрока типа #RRGGBB;
+
+Cтрока типа rgb(0,0,0). </string>
       <string id="org-mate-background-picture-options">Метод отображения картинки фона</string>
       <string id="org-mate-background-picture-options_help">Устанавливает метод отображения изображения, заданного параметром «Картинка фона рабочего стола».
 
@@ -52,26 +59,33 @@
       <string id="org-mate-background-picture-filename_help">Позволяет установить изображение в качестве фона рабочего стола, указав файл (например, /usr/share/backgrounds/mate/nature/Wood.jpg), содержащий изображение.</string>
 
       <string id="org-mate-background-primary-color">Начальный цвет градиента (цвет сплошной заливки)</string>
-      <string id="org-mate-background-primary-color_help">Устанавливает цвет левого или верхнего края рабочего стола, или цвет сплошной заливки при отрисовке градиента, в зависимости от установленного типа градиента.</string>
+      <string id="org-mate-background-primary-color_help">Устанавливает цвет левого или верхнего края рабочего стола, или цвет сплошной заливки при отрисовке градиента, в зависимости от установленного типа градиента.
 
+Возможные значения:
+
+Ключевое слово цвета (red, aqua, navy и т.д.);
+
+Cтрока типа #RRGGBB;
+
+Cтрока типа rgb(0,0,0). </string>
       <string id="org-mate-screensaver-idle-activation-enabled">Включение хранителя экрана</string>
       <string id="org-mate-screensaver-idle-activation-enabled_help">Установка этого параметра включает хранитель экрана при бездействии компьютера.</string>
-      <string id="org-mate-screensaver-idle-activation-enabled-true">включено</string>
-      <string id="org-mate-screensaver-idle-activation-enabled-false">отключено</string>
+      <string id="org-mate-screensaver-idle-activation-enabled-true">Включено</string>
+      <string id="org-mate-screensaver-idle-activation-enabled-false">Отключено</string>
 
       <string id="org-mate-screensaver-lock-enabled">Блокировка компьютера</string>
       <string id="org-mate-screensaver-lock-enabled_help">Включает блокировку компьютера при активации хранителя экрана. Блокировка будет включена через интервал времени, установленный в параметре «Время до блокировки паролем».
 
 Этот параметр имеет смысл только при активированном параметре «Включение хранителя экрана».</string>
-      <string id="org-mate-screensaver-lock-enabled-true">включено</string>
-      <string id="org-mate-screensaver-lock-enabled-false">отключено</string>
+      <string id="org-mate-screensaver-lock-enabled-true">Включено</string>
+      <string id="org-mate-screensaver-lock-enabled-false">Отключено</string>
 
       <string id="org-mate-screensaver-mode">Режим работы</string>
       <string id="org-mate-screensaver-mode_help">Устанавливает режим работы хранителя экрана. Этот параметр имеет смысл только при активированном параметре «Включение хранителя экрана».
 
 Возможные значения:
 
-«Отключён» — отключён;
+«Отключён» — хранитель экрана отключён;
 
 «Пустой экран» — не показывать никаких изображений, только чёрный экран;
 
@@ -102,52 +116,50 @@
       <string id="org-mate-screensaver-user-switch-enabled_help">Добавляет кнопку «Переключить пользователя» к диалогу разблокирования экрана.
 
 Этот параметр имеет смысл только при активированном параметре «Включение хранителя экрана» и «Блокировка компьютера».</string>
-      <string id="org-mate-screensaver-user-switch-enabled-true">включено</string>
-      <string id="org-mate-screensaver-user-switch-enabled-false">отключено</string>
+      <string id="org-mate-screensaver-user-switch-enabled-true">Включено</string>
+      <string id="org-mate-screensaver-user-switch-enabled-false">Отключено</string>
 
       <string id="org-mate-screensaver-logout-enabled">Выход из системы после блокировки</string>
       <string id="org-mate-screensaver-logout-enabled_help">После некоторой задержки добавляет кнопку выхода из системы («Завершить сеанс») к диалогу разблокирования экрана. Время задержки указывается в параметре «Время выхода из сеанса».
 
 Этот параметр имеет смысл только при активированных параметрах «Включение хранителя экрана» и «Блокировка компьютера».</string>
-      <string id="org-mate-screensaver-logout-enabled-true">включено</string>
-      <string id="org-mate-screensaver-logout-enabled-false">отключено</string>
+      <string id="org-mate-screensaver-logout-enabled-true">Включено</string>
+      <string id="org-mate-screensaver-logout-enabled-false">Отключено</string>
 
       <string id="org-mate-lockdown-disable-log-out">Запрет пользователю завершать сеанс</string>
       <string id="org-mate-lockdown-disable-log-out_help">Установка этого параметра запрещает пользователю завершать свой сеанс.</string>
-      <string id="org-mate-lockdown-disable-log-out-true">включено</string>
-      <string id="org-mate-lockdown-disable-log-out-false">отключено</string>
+      <string id="org-mate-lockdown-disable-log-out-true">Включено</string>
+      <string id="org-mate-lockdown-disable-log-out-false">Отключено</string>
 
       <string id="org-mate-lockdown-disable-lock-screen">Запрет блокировки экрана</string>
-      <string id="org-mate-lockdown-disable-lock-screen_help">Установка этого параметра запрещает пользователю блокировать экран паролем.
+      <string id="org-mate-lockdown-disable-lock-screen_help">Установка этого параметра запрещает пользователю Блокировать экран паролем.
 
 При установке данного параметра, значение параметра «Блокировка компьютера» игнорируется.</string>
-      <string id="org-mate-lockdown-disable-lock-screen-true">включено</string>
-      <string id="org-mate-lockdown-disable-lock-screen-false">отключено</string>
+      <string id="org-mate-lockdown-disable-lock-screen-true">Включено</string>
+      <string id="org-mate-lockdown-disable-lock-screen-false">Отключено</string>
 
       <string id="org-mate-lockdown-disable-user-switching">Запрет переключения пользователей</string>
       <string id="org-mate-lockdown-disable-user-switching_help">Установка этого параметра запрещает пользователю переключение на другую учётную запись, пока активен его сеанс.</string>
-      <string id="org-mate-lockdown-disable-user-switching-true">включено</string>
-      <string id="org-mate-lockdown-disable-user-switching-false">отключено</string>
+      <string id="org-mate-lockdown-disable-user-switching-true">Включено</string>
+      <string id="org-mate-lockdown-disable-user-switching-false">Отключено</string>
 
       <string id="org-mate-lockdown-disable-theme-settings">Запрет выбора тем рабочего стола</string>
       <string id="org-mate-lockdown-disable-theme-settings_help">Установка этого параметра запрещает пользователю изменять настройки темы.</string>
-      <string id="org-mate-lockdown-disable-theme-settings-true">включено</string>
-      <string id="org-mate-lockdown-disable-theme-settings-false">отключено</string>
+      <string id="org-mate-lockdown-disable-theme-settings-true">Включено</string>
+      <string id="org-mate-lockdown-disable-theme-settings-false">Отключено</string>
 
       <string id="org-gnome-vino-view-only">Удаленное управление</string>
       <string id="org-gnome-vino-view-only_help">Установка этого параметра запрещает удалённое управление рабочим столом. Удалённым пользователям, разрешается только просматривать рабочий стол, но не управлять мышью и клавиатурой.</string>
-      <string id="org-gnome-vino-view-only-true">включено</string>
-      <string id="org-gnome-vino-view-only-false">отключено</string>
+      <string id="org-gnome-vino-view-only-true">Включено</string>
+      <string id="org-gnome-vino-view-only-false">Отключено</string>
 
       <string id="org-gnome-vino-prompt-enabled">Подтверждение при подключении</string>
       <string id="org-gnome-vino-prompt-enabled_help">Включает запрос подтверждения при любой попытке доступа к рабочему столу. Рекомендуется при отсутствии защиты подключения паролем.</string>
-      <string id="org-gnome-vino-prompt-enabled-true">включено</string>
-      <string id="org-gnome-vino-prompt-enabled-false">отключено</string>
+      <string id="org-gnome-vino-prompt-enabled-true">Включено</string>
+      <string id="org-gnome-vino-prompt-enabled-false">Отключено</string>
 
       <string id="org-gnome-vino-icon-visibility">Иконка подключения </string>
-      <string id="org-gnome-vino-icon-visibility_help">Управляет отображением значка подключения в области уведомления.
-
-Возможные значения:
+      <string id="org-gnome-vino-icon-visibility_help">Управляет отображением значка подключения в области уведомления. Возможные значения:
 
 «Никогда» — значок не отображается;
 
@@ -160,8 +172,8 @@
 
       <string id="org-gnome-vino-enabled">Удаленный доступ</string>
       <string id="org-gnome-vino-enabled_help">Установка этого параметра разрешает удаленный доступ к рабочему столу с использованием протокола RFB и VNC.</string>
-      <string id="org-gnome-vino-enabled-true">включено</string>
-      <string id="org-gnome-vino-enabled-false">отключено</string>
+      <string id="org-gnome-vino-enabled-true">Включено</string>
+      <string id="org-gnome-vino-enabled-false">Отключено</string>
 
       <string id="org-gnome-vino-alternative-port">Альтернативный порт</string>
       <string id="org-gnome-vino-alternative-port_help">Альтернативный порт подключения. Диапазон значений от 5 000 до 50 000. По умолчанию используется порт 5 900.
@@ -170,8 +182,8 @@
 
       <string id="org-gnome-vino-use-alternative-port">Включить альтернативный порт</string>
       <string id="org-gnome-vino-use-alternative-port_help">Включить прослушивание альтернативного порта для удалённых подключений (вместо порта по умолчанию 5 900). Порт указывается в параметре «Альтернативный порт».</string>
-      <string id="org-gnome-vino-use-alternative-true">включено</string>
-      <string id="org-gnome-vino-use-alternative-false">отключено</string>
+      <string id="org-gnome-vino-use-alternative-true">Включено</string>
+      <string id="org-gnome-vino-use-alternative-false">Отключено</string>
 
       <string id="org-gnome-vino-authentication-methods">Методы аутентификации</string>
       <string id="org-gnome-vino-authentication-methods_help">В этом параметре устанавливается метод аутентификации пользователей, подключающихся к удаленному рабочему столу.
@@ -187,119 +199,207 @@
       <string id="org-gnome-vino-vnc-password">Пароль для подключения</string>
       <string id="org-gnome-vino-vnc-password_help">Установка пароля для подключения к рабочему столу. Пароль должен быть закодирован в base64 (для генерации пароля в base64 можно воспользоваться командой: echo -n "password" | base64).
 
-Пароль будет запрашивается только при использовании метода аутентификации «vnc», установленном в параметре «Методы аутентификации».</string>
+Пароль будет запрашивается только при использовании метода аутентификации «Vnc», установленном в параметре «Методы аутентификации».</string>
 
       <string id="org-mate-marco-button-layout">Иконки заголовка окна</string>
       <string id="org-mate-marco-button-layout_help">Настройки расположения иконок в заголовке окна. Разделителем правой и левой половин является двоеточие. Например, строка 'menu:minimize,maximize,spacer,close' располагаем иконку меню окна слева, а справа иконки свернуть, распахнуть, закрыть окно.</string>
 
       <string id="org-mate-marco-general-wrap-style">Переключение рабочих областей</string>
-      <string id="org-mate-marco-general-wrap-style_help">Настройки окна переключения рабочих областей</string>
-      <string id="org-mate-Marco-general-wrap-style-no-wrap">no wrap</string>
-      <string id="org-mate-Marco-general-wrap-style-classic">classic</string>
-      <string id="org-mate-Marco-general-wrap-style-toroidal">toroidal</string>
+      <string id="org-mate-marco-general-wrap-style_help">Определяет, каким образом пролистывать от одного рабочего стола к другому на границе переключателя рабочих мест:
 
-      <string id="org-mate-marco-general-show-tab-border">Граница окна при переключении</string>
-      <string id="org-mate-marco-general-show-tab-border_help">Показывать ли границу окна при переключении с помощью Alt+Tab.</string>
-      <string id="org-mate-marco-general-show-tab-border-true">включено</string>
-      <string id="org-mate-marco-general-show-tab-border-false">отключено</string>
+«No wrap» — при попытке пролистать рабочее место за границу переключателя ничего не произойдет;
+
+«Classic» — конец одной строки ведет на начало следующей и конец одной колонки ведет к началу следующей;
+
+«Toroidal» — конец каждой строки ведет к её же началу и конец каждой колонки ведёт к её же началу.</string>
+
+      <string id="org-mate-Marco-general-wrap-style-no-wrap">No wrap</string>
+      <string id="org-mate-Marco-general-wrap-style-classic">Classic</string>
+      <string id="org-mate-Marco-general-wrap-style-toroidal">Toroidal</string>
+
+      <string id="org-mate-marco-general-show-tab-border">Граница окна при переключении с помощью Alt+Tab</string>
+      <string id="org-mate-marco-general-show-tab-border_help">Выделять границу выбранного окна при переключении с помощью Alt+Tab.</string>
+      <string id="org-mate-marco-general-show-tab-border-true">Включено</string>
+      <string id="org-mate-marco-general-show-tab-border-false">Отключено</string>
 
       <string id="org-mate-marco-general-allow-top-tiling">Разворачивание при перетаскивании</string>
-      <string id="org-mate-marco-general-allow-top-tiling_help">Включает разворачивание окна во весь экран при его перетаскивании в верхнюю центральную часть экрана.</string>
-      <string id="org-mate-marco-general-allow-top-tiling-true">включено</string>
-      <string id="org-mate-marco-general-allow-top-tiling-false">отключено</string>
+      <string id="org-mate-marco-general-allow-top-tiling_help">Включает разворачивание окна во весь экран при его перетаскивании в верхнюю центральную часть экрана. Этот параметр имеет смысл только при активированном параметре «Изменение размеров окна при перетаскивании».</string>
+      <string id="org-mate-marco-general-allow-top-tiling-true">Включено</string>
+      <string id="org-mate-marco-general-allow-top-tiling-false">Отключено</string>
 
       <string id="org-mate-marco-general-focus-new-windows">Переключение фокуса на новое окно</string>
-      <string id="org-mate-marco-general-focus-new-windows_help">Устанавливает способ переключения фокуса на новое окно. smart - новое окно получает фокус при создании. strict - при создании нового окна по команде из терминала, новое окно фокус не получает.</string>
-      <string id="org-mate-Marco-general-focus-new-windows-smart">smart</string>
-      <string id="org-mate-Marco-general-focus-new-windows-strict">strict</string>
+      <string id="org-mate-marco-general-focus-new-windows_help">Определяет, как новое окно получает фокус:
 
-      <string id="org-mate-marco-general-allow-tiling">Изменение размеров при перетаскивании</string>
+«Smart» — новое окно получает фокус при создании;
+
+«Strict» — окна, запущенные из терминала,не получают фокус.</string>
+      <string id="org-mate-Marco-general-focus-new-windows-smart">Smart</string>
+      <string id="org-mate-Marco-general-focus-new-windows-strict">Strict</string>
+
+      <string id="org-mate-marco-general-allow-tiling">Изменение размеров окна при перетаскивании</string>
       <string id="org-mate-marco-general-allow-tiling_help">Включает изменение размеров окна при перетаскивании его в различные области экрана.</string>
-      <string id="org-mate-marco-general-allow-tiling-true">включено</string>
-      <string id="org-mate-marco-general-allow-tiling-false">отключено</string>
+      <string id="org-mate-marco-general-allow-tiling-true">Включено</string>
+      <string id="org-mate-marco-general-allow-tiling-false">Отключено</string>
 
       <string id="org-mate-marco-general-num-workspaces">Количество рабочих областей</string>
       <string id="org-mate-marco-general-num-workspaces_help">Установка количества рабочих областей. Интервал допустимых значений 1-36.</string>
 
       <string id="org-mate-marco-general-placement-mode">Расположение новых окон</string>
-      <string id="org-mate-marco-general-placement-mode_help">Устанавливает расположение новых окон на экране. automatic - автоматически, в зависимости от занятости экрана другими окнами, pointer - в зависимости от положения курсора мыши на экране, manual -  пользователь сам выбирает положение нокового окна на экране.</string>
-      <string id="org-mate-marco-general-placement-mode-automatic">automatic</string>
-      <string id="org-mate-marco-general-placement-mode-pointer">pointer</string>
-      <string id="org-mate-marco-general-placement-mode-manual">manual</string>
+      <string id="org-mate-marco-general-placement-mode_help">Указывает, как будут позиционироваться новые окна:
 
-      <string id="org-mate-marco-general-auto-raise">Подъем окна в фокусе</string>
-      <string id="org-mate-marco-general-auto-raise_help">При включении, окно, получившее фокус, отображается поверх остальных автоматически. Настройка "переключение окон" должна быть установлена в "sloppy" или "mouse". Интервал, по истечении которого, окно поднимается, устанавливается в настройке "задержка при восстановлении"</string>
-      <string id="org-mate-marco-general-auto-raise-true">включено</string>
-      <string id="org-mate-marco-general-auto-raise-false">отключено</string>
+«Автоматически» («Automatic») — система выбирает местоположение на основе доступного пространства на рабочем столе, или располагает каскадом, если нет места;
 
-      <string id="org-mate-marco-general-action-middle-click-titlebar">Действие по нажатию средней кнопки</string>
-      <string id="org-mate-marco-general-action-middle-click-titlebar_help">Установка действия, выполняемого по нажатию средней кнопки мыши.</string>
-      <string id="org-mate-marco-general-action-middle-click-titlebar-toggle_shade">toggle_shade</string>
-      <string id="org-mate-marco-general-action-middle-click-titlebar-toggle_maximize">toggle_maximize</string>
-      <string id="org-mate-marco-general-action-middle-click-titlebar-toggle_maximize_horizontally">toggle_maximize_horizontally</string>
-      <string id="org-mate-marco-general-action-middle-click-titlebar-toggle_maximize_vertically">toggle_maximize_vertically</string>
-      <string id="org-mate-marco-general-action-middle-click-titlebar-minimize">minimize</string>
-      <string id="org-mate-marco-general-action-middle-click-titlebar-none">none</string>
-      <string id="org-mate-marco-general-action-middle-click-titlebar-lower">lower</string>
-      <string id="org-mate-marco-general-action-middle-click-titlebar-menu">menu</string>
-      <string id="org-mate-marco-general-action-middle-click-titlebar-last">last</string>
+«Указатель» («Pointer») — новые окна размещаются в соответствии с положением указателя мыши;
 
-      <string id="org-mate-marco-general-action-right-click-titlebar">Действие по нажатию правой кнопки</string>
-      <string id="org-mate-marco-general-action-right-click-titlebar_help">Установка действия, выполняемого по нажатию правой кнопки мыши.</string>
-      <string id="org-mate-marco-general-action-right-click-titlebar-toggle_shade">toggle_shade</string>
-      <string id="org-mate-marco-general-action-right-click-titlebar-toggle_maximize">toggle_maximize</string>
-      <string id="org-mate-marco-general-action-right-click-titlebar-toggle_maximize_horizontally">toggle_maximize_horizontally</string>
-      <string id="org-mate-marco-general-action-right-click-titlebar-toggle_maximize_vertically">toggle_maximize_vertically</string>
-      <string id="org-mate-marco-general-action-right-click-titlebar-minimize">minimize</string>
-      <string id="org-mate-marco-general-action-right-click-titlebar-none">none</string>
-      <string id="org-mate-marco-general-action-right-click-titlebar-lower">lower</string>
-      <string id="org-mate-marco-general-action-right-click-titlebar-menu">menu</string>
-      <string id="org-mate-marco-general-action-right-click-titlebar-last">last</string>
+«Ручной» («Manual») — пользователь должен вручную расположить новое окно с помощью мыши и клавиатуры.</string>
+      <string id="org-mate-marco-general-placement-mode-automatic">Автоматически</string>
+      <string id="org-mate-marco-general-placement-mode-pointer">Указатель</string>
+      <string id="org-mate-marco-general-placement-mode-manual">Ручной</string>
 
-      <string id="org-mate-marco-general-action-double-click-titlebar">Действие по двойному щелчку</string>
-      <string id="org-mate-marco-general-action-double-click-titlebar_help">Установка действия, выполняемого по двойному щелчку левой кнопкой по заголовку.</string>
-      <string id="org-mate-marco-general-action-double-click-titlebar-toggle_shade">toggle_shade</string>
-      <string id="org-mate-marco-general-action-double-click-titlebar-toggle_maximize">toggle_maximize</string>
-      <string id="org-mate-marco-general-action-double-click-titlebar-toggle_maximize_horizontally">toggle_maximize_horizontally</string>
-      <string id="org-mate-marco-general-action-double-click-titlebar-toggle_maximize_vertically">toggle_maximize_vertically</string>
-      <string id="org-mate-marco-general-action-double-click-titlebar-minimize">minimize</string>
-      <string id="org-mate-marco-general-action-double-click-titlebar-none">none</string>
-      <string id="org-mate-marco-general-action-double-click-titlebar-lower">lower</string>
-      <string id="org-mate-marco-general-action-double-click-titlebar-menu">menu</string>
-      <string id="org-mate-marco-general-action-double-click-titlebar-last">last</string>
+      <string id="org-mate-marco-general-auto-raise">Автоматически поднимать окно, получившее фокус</string>
+      <string id="org-mate-marco-general-auto-raise_help">При включении, окно, получившее фокус, отображается поверх остальных автоматически.
+
+Параметр «Режим активации окна» должен быть установлен в «Sloppy» или «Mouse».
+
+Интервал, по истечении которого, окно поднимается, устанавливается в настройке «Задержка при восстановлении».</string>
+
+      <string id="org-mate-marco-general-auto-raise-true">Включено</string>
+      <string id="org-mate-marco-general-auto-raise-false">Отключено</string>
+
+      <string id="org-mate-marco-general-action-middle-click-titlebar">Действие по нажатию средней кнопки по заголовку окна</string>
+      <string id="org-mate-marco-general-action-middle-click-titlebar_help">Установка действия, выполняемого по нажатию средней кнопки мыши по заголовку окна:
+
+«Свернуть в заголовок» («toggle_shade») — свернуть окно в заголовок. По двойному щелчку окно разворачивается обратно;
+
+«На весь экран» («toggle_maximize») — распахнуть окно на весь экран или восстановить исходный размер;
+
+«Растянуть по вертикали» («toggle_maximize_vertically») — развернуть окно вертикально без изменения его ширины;
+
+«Растянуть по горизонтали» («toggle_maximize_vertically») — развернуть окно горизонтально без изменения его высоты;
+
+«Свернуть» («minimize») — свернуть окно;
+
+«Показать меню» («menu») — показать меню окна;
+
+«Задвинуть» («lower») — поместить окно под другими;
+
+«Ничего не делать» («none») — никакого действия не производить;
+
+«Последнее действие» («last») — повторить предыдущее действие.</string>
+      <string id="org-mate-marco-general-action-middle-click-titlebar-toggle_shade">>Свернуть в заголовок</string>
+      <string id="org-mate-marco-general-action-middle-click-titlebar-toggle_maximize">На весь экран</string>
+      <string id="org-mate-marco-general-action-middle-click-titlebar-toggle_maximize_horizontally">Растянуть по горизонтали</string>
+      <string id="org-mate-marco-general-action-middle-click-titlebar-toggle_maximize_vertically">Растянуть по вертикали</string>
+      <string id="org-mate-marco-general-action-middle-click-titlebar-minimize">Свернуть</string>
+      <string id="org-mate-marco-general-action-middle-click-titlebar-none">Ничего не делать</string>
+      <string id="org-mate-marco-general-action-middle-click-titlebar-lower">Задвинуть</string>
+      <string id="org-mate-marco-general-action-middle-click-titlebar-menu">Показать меню</string>
+      <string id="org-mate-marco-general-action-middle-click-titlebar-last">Последнее действие</string>
+
+      <string id="org-mate-marco-general-action-right-click-titlebar">Действие по нажатию правой кнопки по заголовку окна</string>
+      <string id="org-mate-marco-general-action-right-click-titlebar_help">Установка действия, выполняемого по нажатию правой кнопки мыши по заголовку окна:
+
+«Свернуть в заголовок» («toggle_shade») — свернуть окно в заголовок. По двойному щелчку окно разворачивается обратно;
+
+«На весь экран» («toggle_maximize») — распахнуть окно на весь экран или восстановить исходный размер;
+
+«Растянуть по вертикали» («toggle_maximize_vertically») — развернуть окно вертикально без изменения его ширины;
+
+«Растянуть по горизонтали» («toggle_maximize_vertically») — развернуть окно горизонтально без изменения его высоты;
+
+«Свернуть» («minimize») — свернуть окно;
+
+«Показать меню» («menu») — показать меню окна;
+
+«Задвинуть» («lower») — поместить окно под другими;
+
+«Ничего не делать» («none») — никакого действия не производить;
+
+«Последнее действие» («last») — повторить предыдущее действие.</string>
+      <string id="org-mate-marco-general-action-right-click-titlebar-toggle_shade">Свернуть в заголовок</string>
+      <string id="org-mate-marco-general-action-right-click-titlebar-toggle_maximize">На весь экран</string>
+      <string id="org-mate-marco-general-action-right-click-titlebar-toggle_maximize_horizontally">Растянуть по горизонтали</string>
+      <string id="org-mate-marco-general-action-right-click-titlebar-toggle_maximize_vertically">Растянуть по вертикали</string>
+      <string id="org-mate-marco-general-action-right-click-titlebar-minimize">Свернуть</string>
+      <string id="org-mate-marco-general-action-right-click-titlebar-none">Ничего не делать</string>
+      <string id="org-mate-marco-general-action-right-click-titlebar-lower">Задвинуть</string>
+      <string id="org-mate-marco-general-action-right-click-titlebar-menu">Показать меню</string>
+      <string id="org-mate-marco-general-action-right-click-titlebar-last">Последнее действие</string>
+
+      <string id="org-mate-marco-general-action-double-click-titlebar">Действие по двойному щелчку по заголовку окна</string>
+      <string id="org-mate-marco-general-action-double-click-titlebar_help">Установка действия, выполняемого по двойному щелчку левой кнопкой по заголовку окна:
+
+«Свернуть в заголовок» («toggle_shade») — свернуть окно в заголовок. По двойному щелчку окно разворачивается обратно;
+
+«На весь экран» («toggle_maximize») — распахнуть окно на весь экран или восстановить исходный размер;
+
+«Растянуть по вертикали» («toggle_maximize_vertically») — развернуть окно вертикально без изменения его ширины;
+
+«Растянуть по горизонтали» («toggle_maximize_vertically») — развернуть окно горизонтально без изменения его высоты;
+
+«Свернуть» («minimize») — свернуть окно;
+
+«Показать меню» («menu») — показать меню окна;
+
+«Задвинуть» («lower») — поместить окно под другими;
+
+«Ничего не делать» («none») — никакого действия не производить;
+
+«Последнее действие» («last») — повторить предыдущее действие.</string>
+      <string id="org-mate-marco-general-action-double-click-titlebar-toggle_shade">Свернуть в заголовок</string>
+      <string id="org-mate-marco-general-action-double-click-titlebar-toggle_maximize">На весь экран</string>
+      <string id="org-mate-marco-general-action-double-click-titlebar-toggle_maximize_horizontally">Растянуть по горизонтали</string>
+      <string id="org-mate-marco-general-action-double-click-titlebar-toggle_maximize_vertically">Растянуть по вертикали</string>
+      <string id="org-mate-marco-general-action-double-click-titlebar-minimize">Свернуть</string>
+      <string id="org-mate-marco-general-action-double-click-titlebar-none">Ничего не делать</string>
+      <string id="org-mate-marco-general-action-double-click-titlebar-lower">Задвинуть</string>
+      <string id="org-mate-marco-general-action-double-click-titlebar-menu">Показать меню</string>
+      <string id="org-mate-marco-general-action-double-click-titlebar-last">Последнее действие</string>
 
       <string id="org-mate-marco-general-theme">Тема оформления</string>
       <string id="org-mate-marco-general-theme_help">Устанавливает тему, отвечающущю за отображение границ окон, заголовка и т.д.</string>
 
-      <string id="org-mate-marco-general-titlebar-font">Шрифт заголовков</string>
-      <string id="org-mate-marco-general-titlebar-font_help">Устанавливает шрифт заголовков окон</string>
+      <string id="org-mate-marco-general-titlebar-font">Шрифт заголовков окна</string>
+      <string id="org-mate-marco-general-titlebar-font_help">Устанавливает шрифт заголовков окон. Например, 'Noto Sans Bold 10'.
 
-      <string id="org-mate-marco-general-focus-mode">Переключение фокуса окон</string>
-      <string id="org-mate-marco-general-focus-mode_help">Установка режима переключения фокуса окон.</string>
-      <string id="org-mate-marco-general-focus-mode-click">click</string>
-      <string id="org-mate-marco-general-focus-mode-sloppy">sloppy</string>
-      <string id="org-mate-marco-general-focus-mode-mouse">mouse</string>
+Этот параметр игнорируется, если активирован параметр «Системный шрифт в заголовке окон».</string>
+
+      <string id="org-mate-marco-general-focus-mode">Режим активации окна</string>
+      <string id="org-mate-marco-general-focus-mode_help">Режим переключения фокуса в окно определяет, как активируются окна. Допустимые значения:
+
+«Click» — для активации окна на нём надо щелкнуть;
+
+«Sloppy» — окно активируется, когда на него перемещается указатель мыши;
+
+«Mouse» — окно активируется, когда в него перемещается указатель мыши, и перестает быть активным, когда указатель мыши уходит из него.</string>
+      <string id="org-mate-marco-general-focus-mode-click">Click</string>
+      <string id="org-mate-marco-general-focus-mode-sloppy">Sloppy</string>
+      <string id="org-mate-marco-general-focus-mode-mouse">Mouse</string>
 
       <string id="org-mate-marco-general-titlebar-uses-system-font">Системный шрифт в заголовке окон</string>
       <string id="org-mate-marco-general-titlebar-uses-system-font_help">При включении в заголовках окон будет использоваться системный шрифт.</string>
-      <string id="org-mate-marco-general-titlebar-uses-system-font-true">включено</string>
-      <string id="org-mate-marco-general-titlebar-uses-system-font-false">отключено</string>
+      <string id="org-mate-marco-general-titlebar-uses-system-font-true">Включено</string>
+      <string id="org-mate-marco-general-titlebar-uses-system-font-false">Отключено</string>
 
       <string id="org-mate-marco-general-compositing-fast-alt-tab">Миниатюры при переключении окон</string>
-      <string id="org-mate-marco-general-compositing-fast-alt-tab_help">Если включено, то вместо миниатюр в окне переключения Alt+Tab будут отображаться иконки приложения.</string>
-      <string id="org-mate-marco-general-compositing-fast-alt-tab-true">включено</string>
-      <string id="org-mate-marco-general-compositing-fast-alt-tab-false">отключено</string>
+      <string id="org-mate-marco-general-compositing-fast-alt-tab_help">Если Включено, то вместо миниатюр в окне переключения Alt+Tab будут отображаться иконки приложения.</string>
+      <string id="org-mate-marco-general-compositing-fast-alt-tab-true">Включено</string>
+      <string id="org-mate-marco-general-compositing-fast-alt-tab-false">Отключено</string>
 
       <string id="org-mate-marco-general-auto-raise-delay">Задержка при восстановлении</string>
-      <string id="org-mate-marco-general-auto-raise-delay_help">Временной интервал в миллисекундах, по истечении которого окно в фокусе будет поднято поверх остальных.</string>
+      <string id="org-mate-marco-general-auto-raise-delay_help">Временной интервал в миллисекундах, по истечении которого окно в фокусе будет поднято поверх остальных.
+
+Этот параметр имеет смысл только при активированном параметре «Автоматически поднимать окно, получившее фокус».</string>
 
       <string id="org-mate-marco-general-center-new-windows">Новые окна по центру</string>
-      <string id="org-mate-marco-general-center-new-windows_help">Если включено, то новые окна будут открываться по центру экрана.</string>
-      <string id="org-mate-marco-general-center-new-windows-true">включено</string>
-      <string id="org-mate-marco-general-center-new-windows-false">отключено</string>
+      <string id="org-mate-marco-general-center-new-windows_help">Если Включено, то новые окна будут открываться по центру экрана.</string>
+      <string id="org-mate-marco-general-center-new-windows-true">Включено</string>
+      <string id="org-mate-marco-general-center-new-windows-false">Отключено</string>
 
-      <string id="org-mate-marco-general-icon-size">Размер иконок</string>
-      <string id="org-mate-marco-general-icon-size_help">Устанавливает размер иконок в окне переключения приложений Alt+Tab.</string>
+      <string id="org-mate-marco-general-icon-size">Размер иконок в окне Alt+Tab</string>
+      <string id="org-mate-marco-general-icon-size_help">Устанавливает размер иконок в окне переключения приложений Alt+Tab.
+
+Интервал допустимых значений: 8-256.</string>
 
       <string id="org-mate-marco-general-alt-tab-max-columns">Размер окна переключения Alt+Tab</string>
       <string id="org-mate-marco-general-alt-tab-max-columns_help">Устанавливает количество колонок в окне переключения приложений Alt+Tab.</string>
@@ -307,10 +407,13 @@
       <string id="org-mate-peripherals-keyboard-delay">Задержка перед повтором</string>
       <string id="org-mate-peripherals-keyboard-delay_help">Задержка перед повтором нажатой и удерживаемой клавишей.</string>
 
-      <string id="org-mate-peripherals-keyboard-repeat">Включить повтор</string>
-      <string id="org-mate-peripherals-keyboard-repeat_help">Включить повтор нажатой и удерживаемой клавиши.</string>
-      <string id="org-mate-peripherals-keyboard-repeat-true">включено</string>
-      <string id="org-mate-peripherals-keyboard-repeat-false">отключено</string>
+      <string id="org-mate-peripherals-keyboard-repeat">Повторять удерживаемую нажатой клавишу</string>
+      <string id="org-mate-peripherals-keyboard-repeat_help">Включить повтор нажатой и удерживаемой клавиши.
+
+Если нажать и удерживать клавишу при включённом повторе ввода, действие, соответствующее клавише, будет повторяться. Например, если нажать и удерживать клавишу с буквой, то эта буква будет многократно повторена.</string>
+
+      <string id="org-mate-peripherals-keyboard-repeat-true">Включено</string>
+      <string id="org-mate-peripherals-keyboard-repeat-false">Отключено</string>
 
       <string id="org-mate-peripherals-keyboard-rate">Скорость повтора</string>
       <string id="org-mate-peripherals-keyboard-rate_help">Устанавливает скорость повтора нажатой и удерживаемой клавиши.</string>
@@ -320,15 +423,15 @@
     <presentationTable>
       <presentation id="OrgMateBackgroundSecondaryColorMachine-pr">
         <textBox refId="OrgMateBackgroundSecondaryColor_setter">
-          <label>Установите цвет:</label>
+          <label>Цвет:</label>
         </textBox>
         <checkBox refId="OrgMateBackgroundSecondaryColor_setter_blocker">Блокировать</checkBox>
-        <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
+        <text>Блокировка изменений данной настройки политикой пользователя. Блокировка политики делает её приоритетнее аналогичной политики для пользователя.</text>
       </presentation>
 
       <presentation id="OrgMateBackgroundSecondaryColorUser-pr">
         <textBox refId="OrgMateBackgroundSecondaryColor_setter">
-          <label>Установите конечный цвет:</label>
+          <label>Цвет:</label>
         </textBox>
       </presentation>
 
@@ -339,17 +442,17 @@
       <presentation id="OrgMateBackgroundPictureOptionsMachine-pr">
         <dropdownList noSort="true" defaultItem="0" refId="OrgMateBackgroundPictureOptions_setter">Метод отображения картинки фона рабочего стола:</dropdownList>
         <checkBox refId="OrgMateBackgroundPictureOptions_setter_blocker">Блокировать</checkBox>
-        <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
+        <text>Блокировка изменений данной настройки политикой пользователя. Блокировка политики делает её приоритетнее аналогичной политики для пользователя.</text>
       </presentation>
 
       <presentation id="OrgMateBackgroundColorShadingTypeUser-pr">
-        <dropdownList noSort="true" defaultItem="0" refId="OrgMateBackgroundColorShadingType_setter">Установите тип градиента:</dropdownList>
+        <dropdownList noSort="true" defaultItem="0" refId="OrgMateBackgroundColorShadingType_setter">Тип градиента:</dropdownList>
       </presentation>
 
       <presentation id="OrgMateBackgroundColorShadingTypeMachine-pr">
-        <dropdownList noSort="true" defaultItem="0" refId="OrgMateBackgroundColorShadingType_setter">Установите тип градиента:</dropdownList>
+        <dropdownList noSort="true" defaultItem="0" refId="OrgMateBackgroundColorShadingType_setter">Тип градиента:</dropdownList>
         <checkBox refId="OrgMateBackgroundColorShadingType_setter_blocker">Блокировать</checkBox>
-        <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
+        <text>Блокировка изменений данной настройки политикой пользователя. Блокировка политики делает её приоритетнее аналогичной политики для пользователя.</text>
       </presentation>
 
       <presentation id="OrgMateBackgroundPictureFilenameUser-pr">
@@ -363,33 +466,33 @@
           <label>Файл:</label>
         </textBox>
         <checkBox refId="OrgMateBackgroundPictureFilename_setter_blocker">Блокировать</checkBox>
-        <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
+        <text>Блокировка изменений данной настройки политикой пользователя. Блокировка политики делает её приоритетнее аналогичной политики для пользователя.</text>
       </presentation>
 
       <presentation id="OrgMateBackgroundPrimaryColorUser-pr">
         <textBox refId="OrgMateBackgroundPrimaryColor_setter">
-          <label>Установите цвет:</label>
+          <label>Цвет:</label>
         </textBox>
       </presentation>
 
       <presentation id="OrgMateBackgroundPrimaryColorMachine-pr">
         <textBox refId="OrgMateBackgroundPrimaryColor_setter">
-          <label>Установите цвет:</label>
+          <label>Цвет:</label>
         </textBox>
         <checkBox refId="OrgMateBackgroundPrimaryColor_setter_blocker">Блокировать</checkBox>
-        <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
+        <text>Блокировка изменений данной настройки политикой пользователя. Блокировка политики делает её приоритетнее аналогичной политики для пользователя.</text>
       </presentation>
 
       <presentation id="OrgMateScreesaverIdleActivationEnabledMachine-pr">
-        <dropdownList noSort="true" defaultItem="0" refId="OrgMateScreesaverIdleActivationEnabled_setter">Выберите "включено" или "отключено":</dropdownList>
+        <dropdownList noSort="true" defaultItem="0" refId="OrgMateScreesaverIdleActivationEnabled_setter">Выберите «Включено» или «Отключено»:</dropdownList>
         <checkBox refId="OrgMateScreesaverIdleActivationEnabled_setter_blocker">Блокировать</checkBox>
-        <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
+        <text>Блокировка изменений данной настройки политикой пользователя. Блокировка политики делает её приоритетнее аналогичной политики для пользователя.</text>
       </presentation>
 
       <presentation id="OrgMateScreensaverLockEnabledMachine-pr">
-        <dropdownList noSort="true" defaultItem="0" refId="OrgMateScreensaverLockEnabled_setter">Выберите "включено" или "отключено":</dropdownList>
+        <dropdownList noSort="true" defaultItem="0" refId="OrgMateScreensaverLockEnabled_setter">Выберите «Включено» или «Отключено»:</dropdownList>
         <checkBox refId="OrgMateScreensaverLockEnabled_setter_blocker">Блокировать</checkBox>
-        <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
+        <text>Блокировка изменений данной настройки политикой пользователя. Блокировка политики делает её приоритетнее аналогичной политики для пользователя.</text>
       </presentation>
 
       <presentation id="OrgMateScreensaverModeUser-pr">
@@ -399,19 +502,19 @@
       <presentation id="OrgMateScreensaverModeMachine-pr">
         <dropdownList noSort="true" defaultItem="0" refId="OrgMateScreensaverMode_setter">Выберите режим работы хранителя экрана:</dropdownList>
         <checkBox refId="OrgMateScreensaverMode_setter_blocker">Блокировать</checkBox>
-        <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
+        <text>Блокировка изменений данной настройки политикой пользователя. Блокировка политики делает её приоритетнее аналогичной политики для пользователя.</text>
       </presentation>
 
       <presentation id="OrgMateScreensaverLockDelayUser-pr">
-        <text>Интервал в минутах между активацией хранителя экрана и появлением диалога выхода из системы при активации</text>
+        <text>Интервал в минутах между активацией хранителя экрана и появлением диалога выхода из системы при активации.</text>
         <decimalTextBox refId="OrgMateScreensaverLockDelay_setter" defaultValue="2">Время в минутах</decimalTextBox>
       </presentation>
 
       <presentation id="OrgMateScreensaverLockDelayMachine-pr">
-        <text>Интервал в минутах между активацией хранителя экрана и появлением диалога выхода из системы при активации</text>
-        <decimalTextBox refId="OrgMateScreensaverLockDelay_setter" defaultValue="2">Время в минутах</decimalTextBox>
+        <text>Интервал в минутах между активацией хранителя экрана и появлением диалога выхода из системы при активации.</text>
+        <decimalTextBox refId="OrgMateScreensaverLockDelay_setter" defaultValue="2">Время в минутах:</decimalTextBox>
         <checkBox refId="OrgMateScreensaverLockDelay_setter_blocker">Блокировать</checkBox>
-        <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
+        <text>Блокировка изменений данной настройки политикой пользователя. Блокировка политики делает её приоритетнее аналогичной политики для пользователя.</text>
       </presentation>
 
       <presentation id="OrgMateScreensaverLogoutDelayUser-pr">
@@ -423,7 +526,7 @@
         <text>Количество минут, по истечении которого после активации хранителя экрана, экран будет заблокирован</text>
         <decimalTextBox refId="OrgMateScreensaverLogoutDelay_setter" defaultValue="3">Время в минутах:</decimalTextBox>
         <checkBox refId="OrgMateScreensaverLogoutDelay_setter_blocker">Блокировать</checkBox>
-        <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
+        <text>Блокировка изменений данной настройки политикой пользователя. Блокировка политики делает её приоритетнее аналогичной политики для пользователя.</text>
       </presentation>
 
       <presentation id="OrgMateScreensaverCycleDelayUser-pr">
@@ -435,55 +538,55 @@
         <text>Интервал в минутах между сменами тем хранителя экрана</text>
         <decimalTextBox refId="OrgMateScreensaverCycleDelay_setter" defaultValue="2">Время в минутах:</decimalTextBox>
         <checkBox refId="OrgMateScreensaverCycleDelay_setter_blocker">Блокировать</checkBox>
-        <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
+        <text>Блокировка изменений данной настройки политикой пользователя. Блокировка политики делает её приоритетнее аналогичной политики для пользователя.</text>
       </presentation>
 
       <presentation id="OrgMateScreensaverUserSwitchEnabledMachine-pr">
-        <dropdownList noSort="true" defaultItem="0" refId="OrgMateScreensaverUserSwitchEnabled_setter">Выберите "включено" или "отключено":</dropdownList>
+        <dropdownList noSort="true" defaultItem="0" refId="OrgMateScreensaverUserSwitchEnabled_setter">Выберите «Включено» или «Отключено»:</dropdownList>
         <checkBox refId="OrgMateScreensaverUserSwitchEnabled_setter_blocker">Блокировать</checkBox>
-        <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
+        <text>Блокировка изменений данной настройки политикой пользователя. Блокировка политики делает её приоритетнее аналогичной политики для пользователя.</text>
       </presentation>
 
       <presentation id="OrgMateScreensaverLogoutEnabledMachine-pr">
-        <dropdownList noSort="true" defaultItem="0" refId="OrgMateScreensaverLogoutEnabled_setter">Выберите "включено" или "отключено":</dropdownList>
+        <dropdownList noSort="true" defaultItem="0" refId="OrgMateScreensaverLogoutEnabled_setter">Выберите «Включено» или «Отключено»:</dropdownList>
         <checkBox refId="OrgMateScreensaverLogoutEnabled_setter_blocker">Блокировать</checkBox>
-        <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
+        <text>Блокировка изменений данной настройки политикой пользователя. Блокировка политики делает её приоритетнее аналогичной политики для пользователя.</text>
       </presentation>
 
       <presentation id="OrgMateLockdownDisableLogOutMachine-pr">
-        <dropdownList noSort="true" defaultItem="0" refId="OrgMateLockdownDisableLogOut_setter">Выберите "включено" или "отключено":</dropdownList>
+        <dropdownList noSort="true" defaultItem="0" refId="OrgMateLockdownDisableLogOut_setter">Выберите «Включено» или «Отключено»:</dropdownList>
         <checkBox refId="OrgMateLockdownDisableLogOut_setter_blocker">Блокировать</checkBox>
-        <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
+        <text>Блокировка изменений данной настройки политикой пользователя. Блокировка политики делает её приоритетнее аналогичной политики для пользователя.</text>
       </presentation>
 
       <presentation id="OrgMateLockdownDisableLockScreenMachine-pr">
-        <dropdownList noSort="true" defaultItem="0" refId="OrgMateLockdownDisableLockScreen_setter">Выберите "включено" или "отключено":</dropdownList>
+        <dropdownList noSort="true" defaultItem="0" refId="OrgMateLockdownDisableLockScreen_setter">Выберите «Включено» или «Отключено»:</dropdownList>
         <checkBox refId="OrgMateLockdownDisableLockScreen_setter_blocker">Блокировать</checkBox>
-        <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
+        <text>Блокировка изменений данной настройки политикой пользователя. Блокировка политики делает её приоритетнее аналогичной политики для пользователя.</text>
       </presentation>
 
       <presentation id="OrgMateLockdownDisableUserSwitchingMachine-pr">
-        <dropdownList noSort="true" defaultItem="0" refId="OrgMateLockdownDisableUserSwitching_setter">Выберите "включено" или "отключено":</dropdownList>
+        <dropdownList noSort="true" defaultItem="0" refId="OrgMateLockdownDisableUserSwitching_setter">Выберите «Включено» или «Отключено»:</dropdownList>
         <checkBox refId="OrgMateLockdownDisableUserSwitching_setter_blocker">Блокировать</checkBox>
-        <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
+        <text>Блокировка изменений данной настройки политикой пользователя. Блокировка политики делает её приоритетнее аналогичной политики для пользователя.</text>
       </presentation>
 
       <presentation id="OrgMateLockdownDisableThemeSettingsMachine-pr">
-        <dropdownList noSort="true" defaultItem="0" refId="OrgMateLockdownDisableThemeSettings_setter">Выберите "включено" или "отключено":</dropdownList>
+        <dropdownList noSort="true" defaultItem="0" refId="OrgMateLockdownDisableThemeSettings_setter">Выберите «Включено» или «Отключено»:</dropdownList>
         <checkBox refId="OrgMateLockdownDisableThemeSettings_setter_blocker">Блокировать</checkBox>
-        <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
+        <text>Блокировка изменений данной настройки политикой пользователя. Блокировка политики делает её приоритетнее аналогичной политики для пользователя.</text>
       </presentation>
 
       <presentation id="OrgGnomeVinoViewOnlyMachine-pr">
-        <dropdownList noSort="true" defaultItem="0" refId="OrgGnomeVinoViewOnly_setter">Выберите "включено" или "отключено":</dropdownList>
+        <dropdownList noSort="true" defaultItem="0" refId="OrgGnomeVinoViewOnly_setter">Выберите «Включено» или «Отключено»:</dropdownList>
         <checkBox refId="OrgGnomeVinoViewOnly_setter_blocker">Блокировать</checkBox>
-        <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
+        <text>Блокировка изменений данной настройки политикой пользователя. Блокировка политики делает её приоритетнее аналогичной политики для пользователя.</text>
       </presentation>
 
       <presentation id="OrgGnomeVinoPromptEnabledMachine-pr">
-        <dropdownList noSort="true" defaultItem="0" refId="OrgGnomeVinoPromptEnabled_setter">Выберите "включено" или "отключено":</dropdownList>
+        <dropdownList noSort="true" defaultItem="0" refId="OrgGnomeVinoPromptEnabled_setter">Выберите «Включено» или «Отключено»:</dropdownList>
         <checkBox refId="OrgGnomeVinoPromptEnabled_setter_blocker">Блокировать</checkBox>
-        <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
+        <text>Блокировка изменений данной настройки политикой пользователя. Блокировка политики делает её приоритетнее аналогичной политики для пользователя.</text>
       </presentation>
 
       <presentation id="OrgGnomeVinoIconVisibilityUser-pr">
@@ -493,13 +596,13 @@
       <presentation id="OrgGnomeVinoIconVisibilityMachine-pr">
         <dropdownList noSort="true" defaultItem="0" refId="OrgGnomeVinoIconVisibility_setter">Показывать уведомление:</dropdownList>
         <checkBox refId="OrgGnomeVinoIconVisibility_setter_blocker">Блокировать</checkBox>
-        <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
+        <text>Блокировка изменений данной настройки политикой пользователя. Блокировка политики делает её приоритетнее аналогичной политики для пользователя.</text>
       </presentation>
 
       <presentation id="OrgGnomeVinoEnabledMachine-pr">
-        <dropdownList noSort="true" defaultItem="0" refId="OrgGnomeVinoEnabled_setter">Выберите "включено" или "отключено":</dropdownList>
+        <dropdownList noSort="true" defaultItem="0" refId="OrgGnomeVinoEnabled_setter">Выберите «Включено» или «Отключено»:</dropdownList>
         <checkBox refId="OrgGnomeVinoEnabled_setter_blocker">Блокировать</checkBox>
-        <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
+        <text>Блокировка изменений данной настройки политикой пользователя. Блокировка политики делает её приоритетнее аналогичной политики для пользователя.</text>
       </presentation>
 
       <presentation id="OrgGnomeVinoAlternativePortUser-pr">
@@ -509,13 +612,13 @@
         <presentation id="OrgGnomeVinoAlternativePortMachine-pr">
         <decimalTextBox refId="OrgGnomeVinoAlternativePort_setter" defaultValue="5000">Порт:</decimalTextBox>
         <checkBox refId="OrgGnomeVinoAlternativePort_setter_blocker">Блокировать</checkBox>
-        <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
+        <text>Блокировка изменений данной настройки политикой пользователя. Блокировка политики делает её приоритетнее аналогичной политики для пользователя.</text>
       </presentation>
 
       <presentation id="OrgGnomeVinoUseAlternativePortMachine-pr">
-      <dropdownList noSort="true" defaultItem="0" refId="OrgGnomeVinoUseAlternativePort_setter">Выберите "включено" или "отключено":</dropdownList>
+      <dropdownList noSort="true" defaultItem="0" refId="OrgGnomeVinoUseAlternativePort_setter">Выберите «Включено» или «Отключено»:</dropdownList>
         <checkBox refId="OrgGnomeVinoUseAlternativePort_setter_blocker">Блокировать</checkBox>
-        <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
+        <text>Блокировка изменений данной настройки политикой пользователя. Блокировка политики делает её приоритетнее аналогичной политики для пользователя.</text>
       </presentation>
 
       <presentation id="OrgGnomeVinoAuthenticationMethodsUser-pr">
@@ -525,7 +628,7 @@
       <presentation id="OrgGnomeVinoAuthenticationMethodsMachine-pr">
         <dropdownList noSort="true" defaultItem="0" refId="OrgGnomeVinoAuthenticationMethods_setter">Метод:</dropdownList>
         <checkBox refId="OrgGnomeVinoAuthenticationMethods_setter_blocker">Блокировать</checkBox>
-        <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
+        <text>Блокировка изменений данной настройки политикой пользователя. Блокировка политики делает её приоритетнее аналогичной политики для пользователя.</text>
       </presentation>
 
       <presentation id="OrgGnomeVinoVncPasswordUser-pr">
@@ -539,7 +642,7 @@
           <label>Пароль:</label>
         </textBox>
         <checkBox refId="OrgGnomeVinoVncPassword_setter_blocker">Блокировать</checkBox>
-        <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
+        <text>Блокировка изменений данной настройки политикой пользователя. Блокировка политики делает её приоритетнее аналогичной политики для пользователя.</text>
       </presentation>
 
 <presentation id="OrgMateMarcoGeneraButtonLayoutUser-pr">
@@ -552,8 +655,8 @@
         <textBox refId="OrgMateMarcoGeneraButtonLayout_setter">
           <label></label>
         </textBox>
-        <checkBox refId="OrgMateMarcoGeneraButtonLayout_setter_blocker">блокировать</checkBox>
-        <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
+        <checkBox refId="OrgMateMarcoGeneraButtonLayout_setter_blocker">Блокировать</checkBox>
+        <text>Блокировка изменений данной настройки политикой пользователя. Блокировка политики делает её приоритетнее аналогичной политики для пользователя.</text>
       </presentation>
 
       <presentation id="OrgMateMarcoGeneralWrapStyleUser-pr">
@@ -562,20 +665,20 @@
 
       <presentation id="OrgMateMarcoGeneralWrapStyleMachine-pr">
         <dropdownList noSort="true" defaultItem="0" refId="OrgMateMarcoGeneralWrapStyle_setter">Метод:</dropdownList>
-        <checkBox refId="OrgMateMarcoGeneralWrapStyle_setter_blocker">блокировать</checkBox>
-        <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
+        <checkBox refId="OrgMateMarcoGeneralWrapStyle_setter_blocker">Блокировать</checkBox>
+        <text>Блокировка изменений данной настройки политикой пользователя. Блокировка политики делает её приоритетнее аналогичной политики для пользователя.</text>
       </presentation>
 
       <presentation id="OrgMateMarcoGeneralShowTabBorderMachine-pr">
-        <dropdownList noSort="true" defaultItem="0" refId="OrgMateMarcoGeneralShowTabBorder_setter">Выберите "включено" или "отключено":</dropdownList>
-        <checkBox refId="OrgMateMarcoGeneralShowTabBorder_setter_blocker">блокировать</checkBox>
-        <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
+        <dropdownList noSort="true" defaultItem="0" refId="OrgMateMarcoGeneralShowTabBorder_setter">Выберите «Включено» или «Отключено»:</dropdownList>
+        <checkBox refId="OrgMateMarcoGeneralShowTabBorder_setter_blocker">Блокировать</checkBox>
+        <text>Блокировка изменений данной настройки политикой пользователя. Блокировка политики делает её приоритетнее аналогичной политики для пользователя.</text>
       </presentation>
 
       <presentation id="OrgMateMarcoGeneralAllowTopTilingMachine-pr">
-        <dropdownList noSort="true" defaultItem="0" refId="OrgMateMarcoGeneralAllowTopTiling_setter">Выберите "включено" или "отключено":</dropdownList>
-        <checkBox refId="OrgMateMarcoGeneralAllowTopTilingMachine_setter_blocker">блокировать</checkBox>
-        <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
+        <dropdownList noSort="true" defaultItem="0" refId="OrgMateMarcoGeneralAllowTopTiling_setter">Выберите «Включено» или «Отключено»:</dropdownList>
+        <checkBox refId="OrgMateMarcoGeneralAllowTopTilingMachine_setter_blocker">Блокировать</checkBox>
+        <text>Блокировка изменений данной настройки политикой пользователя. Блокировка политики делает её приоритетнее аналогичной политики для пользователя.</text>
       </presentation>
 
       <presentation id="OrgMateMarcoGeneralFocusNewWindowsUser-pr">
@@ -584,14 +687,14 @@
 
       <presentation id="OrgMateMarcoGeneralFocusNewWindowsMachine-pr">
         <dropdownList noSort="true" defaultItem="0" refId="OrgMateMarcoGeneralFocusNewWindows_setter">Передача фокуса:</dropdownList>
-        <checkBox refId="OrgMateMarcoGeneralFocusNewWindows_setter_blocker">блокировать</checkBox>
-        <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
+        <checkBox refId="OrgMateMarcoGeneralFocusNewWindows_setter_blocker">Блокировать</checkBox>
+        <text>Блокировка изменений данной настройки политикой пользователя. Блокировка политики делает её приоритетнее аналогичной политики для пользователя.</text>
       </presentation>
 
       <presentation id="OrgMateMarcoGeneralAllowTilingMachine-pr">
-        <dropdownList noSort="true" defaultItem="0" refId="OrgMateMarcoGeneralAllowTiling_setter">Выберите "включено" или "отключено":</dropdownList>
-        <checkBox refId="OrgMateMarcoGeneralAllowTiling_setter_blocker">блокировать</checkBox>
-        <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
+        <dropdownList noSort="true" defaultItem="0" refId="OrgMateMarcoGeneralAllowTiling_setter">Выберите «Включено» или «Отключено»:</dropdownList>
+        <checkBox refId="OrgMateMarcoGeneralAllowTiling_setter_blocker">Блокировать</checkBox>
+        <text>Блокировка изменений данной настройки политикой пользователя. Блокировка политики делает её приоритетнее аналогичной политики для пользователя.</text>
       </presentation>
 
         <presentation id="OrgMateMarcoGeneralNumWorkspacesUser-pr">
@@ -600,8 +703,8 @@
 
         <presentation id="OrgMateMarcoGeneralNumWorkspacesMachine-pr">
         <decimalTextBox refId="OrgMateMarcoGeneralNumWorkspaces_setter" defaultValue="2">Количество:</decimalTextBox>
-        <checkBox refId="OrgMateMarcoGeneralNumWorkspaces_setter_blocker">блокировать</checkBox>
-        <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
+        <checkBox refId="OrgMateMarcoGeneralNumWorkspaces_setter_blocker">Блокировать</checkBox>
+        <text>Блокировка изменений данной настройки политикой пользователя. Блокировка политики делает её приоритетнее аналогичной политики для пользователя.</text>
       </presentation>
 
       <presentation id="OrgMateMarcoGeneralPlacementModeUser-pr">
@@ -610,92 +713,44 @@
 
       <presentation id="OrgMateMarcoGeneralPlacementModeMachine-pr">
         <dropdownList noSort="true" defaultItem="0" refId="OrgMateMarcoGeneralPlacementMode_setter">Расположение:</dropdownList>
-        <checkBox refId="OrgMateMarcoGeneralPlacementMode_setter_blocker">блокировать</checkBox>
-        <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
+        <checkBox refId="OrgMateMarcoGeneralPlacementMode_setter_blocker">Блокировать</checkBox>
+        <text>Блокировка изменений данной настройки политикой пользователя. Блокировка политики делает её приоритетнее аналогичной политики для пользователя.</text>
       </presentation>
 
       <presentation id="OrgMateMarcoGeneralAutoRaiseMachine-pr">
-        <dropdownList noSort="true" defaultItem="0" refId="OrgMateMarcoGeneralAutoRaise_setter">Выберите "включено" или "отключено":</dropdownList>
-        <checkBox refId="OrgMateMarcoGeneralAutoRaise_setter_blocker">блокировать</checkBox>
-        <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
+        <dropdownList noSort="true" defaultItem="0" refId="OrgMateMarcoGeneralAutoRaise_setter">Выберите «Включено» или «Отключено»:</dropdownList>
+        <checkBox refId="OrgMateMarcoGeneralAutoRaise_setter_blocker">Блокировать</checkBox>
+        <text>Блокировка изменений данной настройки политикой пользователя. Блокировка политики делает её приоритетнее аналогичной политики для пользователя.</text>
       </presentation>
 
       <presentation id="OrgMateMarcoGeneralActionMiddleClickTitlebarUser-pr">
         <dropdownList noSort="true" defaultItem="0" refId="OrgMateMarcoGeneralActionMiddleClickTitlebar_setter">Действие:</dropdownList>
-        <text>toggle_shade - свернуть до заголовка
-toggle_maximize - развернуть во весь экран
-toggle_maximize_horizontally - развернуть во весь экран по горизонтали
-toggle_maximize_vertically - развернуть во весь экран по вертикали
-none - ничего не делать
-lower - скрыть окно под другими окнами на экране
-menu - открыть меню окна
-last - повторить последнее действие</text>
       </presentation>
 
       <presentation id="OrgMateMarcoGeneralActionMiddleClickTitlebarMachine-pr">
         <dropdownList noSort="true" defaultItem="0" refId="OrgMateMarcoGeneralActionMiddleClickTitlebar_setter">Действие:</dropdownList>
-<text>toggle_shade - свернуть до заголовка
-toggle_maximize - развернуть во весь экран
-toggle_maximize horizontally - развернуть во весь экран по горизонтали
-toggle_maximize vertically - развернуть во весь экран по вертикали
-none - ничего не делать
-lower - скрыть окно под другими окнами на экране
-menu - открыть меню окна
-last - повторить последнее действие</text>
-        <checkBox refId="OrgMateMarcoGeneralActionMiddleClickTitlebar_setter_blocker">блокировать</checkBox>
-        <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
+        <checkBox refId="OrgMateMarcoGeneralActionMiddleClickTitlebar_setter_blocker">Блокировать</checkBox>
+        <text>Блокировка изменений данной настройки политикой пользователя. Блокировка политики делает её приоритетнее аналогичной политики для пользователя.</text>
       </presentation>
 
       <presentation id="OrgMateMarcoGeneralActionRightClickTitlebarUser-pr">
         <dropdownList noSort="true" defaultItem="0" refId="OrgMateMarcoGeneralActionRightClickTitlebar_setter">Действие:</dropdownList>
-<text>toggle_shade - свернуть до заголовка
-toggle_maximize - развернуть во весь экран
-toggle_maximize horizontally - развернуть во весь экран по горизонтали
-toggle_maximize vertically - развернуть во весь экран по вертикали
-none - ничего не делать
-lower - скрыть окно под другими окнами на экране
-menu - открыть меню окна
-last - повторить последнее действие</text>
       </presentation>
 
         <presentation id="OrgMateMarcoGeneralActionRightClickTitlebarMachine-pr">
         <dropdownList noSort="true" defaultItem="0" refId="OrgMateMarcoGeneralActionRightClickTitlebar_setter">Действие:</dropdownList>
-<text>toggle_shade - свернуть до заголовка
-toggle_maximize - развернуть во весь экран
-toggle_maximize horizontally - развернуть во весь экран по горизонтали
-toggle_maximize vertically - развернуть во весь экран по вертикали
-none - ничего не делать
-lower - скрыть окно под другими окнами на экране
-menu - открыть меню окна
-last - повторить последнее действие</text>
-        <checkBox refId="OrgMateMarcoGeneralActionRightClickTitlebar_setter_blocker">блокировать</checkBox>
-        <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
+        <checkBox refId="OrgMateMarcoGeneralActionRightClickTitlebar_setter_blocker">Блокировать</checkBox>
+        <text>Блокировка изменений данной настройки политикой пользователя. Блокировка политики делает её приоритетнее аналогичной политики для пользователя.</text>
       </presentation>
 
         <presentation id="OrgMateMarcoGeneralActionDoubleClickTitlebarUser-pr">
         <dropdownList noSort="true" defaultItem="0" refId="OrgMateMarcoGeneralActionDoubleClickTitlebar_setter">Действие:</dropdownList>
-<text>toggle_shade - свернуть до заголовка
-toggle_maximize - развернуть во весь экран
-toggle_maximize horizontally - развернуть во весь экран по горизонтали
-toggle_maximize vertically - развернуть во весь экран по вертикали
-none - ничего не делать
-lower - скрыть окно под другими окнами на экране
-menu - открыть меню окна
-last - повторить последнее действие</text>
       </presentation>
 
         <presentation id="OrgMateMarcoGeneralActionDoubleClickTitlebarMachine-pr">
         <dropdownList noSort="true" defaultItem="0" refId="OrgMateMarcoGeneralActionDoubleClickTitlebar_setter">Действие:</dropdownList>
-<text>toggle_shade - свернуть до заголовка
-toggle_maximize - развернуть во весь экран
-toggle_maximize horizontally - развернуть во весь экран по горизонтали
-toggle_maximize vertically - развернуть во весь экран по вертикали
-none - ничего не делать
-lower - скрыть окно под другими окнами на экране
-menu - открыть меню окна
-last - повторить последнее действие</text>
-        <checkBox refId="OrgMateMarcoGeneralActionDoubleClickTitlebar_setter_blocker">блокировать</checkBox>
-        <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
+        <checkBox refId="OrgMateMarcoGeneralActionDoubleClickTitlebar_setter_blocker">Блокировать</checkBox>
+        <text>Блокировка изменений данной настройки политикой пользователя. Блокировка политики делает её приоритетнее аналогичной политики для пользователя.</text>
       </presentation>
 
       <presentation id="OrgMateMarcoGeneralThemeUser-pr">
@@ -708,8 +763,8 @@ last - повторить последнее действие</text>
         <textBox refId="OrgMateMarcoGeneralTheme_setter">
           <label>Тема:</label>
         </textBox>
-        <checkBox refId="OrgMateMarcoGeneralTheme_setter_blocker">блокировать</checkBox>
-        <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
+        <checkBox refId="OrgMateMarcoGeneralTheme_setter_blocker">Блокировать</checkBox>
+        <text>Блокировка изменений данной настройки политикой пользователя. Блокировка политики делает её приоритетнее аналогичной политики для пользователя.</text>
       </presentation>
 
       <presentation id="OrgMateMarcoGeneralTitlebarFont-pr">
@@ -722,8 +777,8 @@ last - повторить последнее действие</text>
         <textBox refId="OrgMateMarcoGeneralTitlebarFont_setter">
           <label>Тема:</label>
         </textBox>
-        <checkBox refId="OrgMateMarcoGeneralTitlebarFont_setter_blocker">блокировать</checkBox>
-        <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
+        <checkBox refId="OrgMateMarcoGeneralTitlebarFont_setter_blocker">Блокировать</checkBox>
+        <text>Блокировка изменений данной настройки политикой пользователя. Блокировка политики делает её приоритетнее аналогичной политики для пользователя.</text>
       </presentation>
 
       <presentation id="OrgMateMarcoGeneralFocusModeUser-pr">
@@ -732,20 +787,20 @@ last - повторить последнее действие</text>
 
       <presentation id="OrgMateMarcoGeneralFocusModeMachine-pr">
         <dropdownList noSort="true" defaultItem="0" refId="OrgMateMarcoGeneralFocusMode_setter">Режим переключения фокуса окон:</dropdownList>
-        <checkBox refId="OrgMateMarcoGeneralFocusMode_setter_blocker">блокировать</checkBox>
-        <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
+        <checkBox refId="OrgMateMarcoGeneralFocusMode_setter_blocker">Блокировать</checkBox>
+        <text>Блокировка изменений данной настройки политикой пользователя. Блокировка политики делает её приоритетнее аналогичной политики для пользователя.</text>
       </presentation>
 
       <presentation id="OrgMateMarcoGeneralTitlebarUsesSystemFontMachine-pr">
-        <dropdownList noSort="true" defaultItem="0" refId="OrgMateMarcoGeneralTitlebarUsesSystemFont_setter">Выберите "включено" или "отключено":</dropdownList>
-        <checkBox refId="OrgMateMarcoGeneralTitlebarUsesSystemFont_setter_blocker">блокировать</checkBox>
-        <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
+        <dropdownList noSort="true" defaultItem="0" refId="OrgMateMarcoGeneralTitlebarUsesSystemFont_setter">Выберите «Включено» или «Отключено»:</dropdownList>
+        <checkBox refId="OrgMateMarcoGeneralTitlebarUsesSystemFont_setter_blocker">Блокировать</checkBox>
+        <text>Блокировка изменений данной настройки политикой пользователя. Блокировка политики делает её приоритетнее аналогичной политики для пользователя.</text>
       </presentation>
 
       <presentation id="OrgMateMarcoGeneralCompositingFastAltTabMachine-pr">
-        <dropdownList noSort="true" defaultItem="0" refId="OrgMateMarcoGeneralCompositingFastAltTab_setter">Выберите "включено" или "отключено":</dropdownList>
-        <checkBox refId="OrgMateMarcoGeneralCompositingFastAltTab_setter_blocker">блокировать</checkBox>
-        <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
+        <dropdownList noSort="true" defaultItem="0" refId="OrgMateMarcoGeneralCompositingFastAltTab_setter">Выберите «Включено» или «Отключено»:</dropdownList>
+        <checkBox refId="OrgMateMarcoGeneralCompositingFastAltTab_setter_blocker">Блокировать</checkBox>
+        <text>Блокировка изменений данной настройки политикой пользователя. Блокировка политики делает её приоритетнее аналогичной политики для пользователя.</text>
       </presentation>
 
         <presentation id="OrgMateMarcoGeneralAutoRaiseDelayUser-pr">
@@ -754,14 +809,14 @@ last - повторить последнее действие</text>
 
         <presentation id="OrgMateMarcoGeneralAutoRaiseDelayMachine-pr">
         <decimalTextBox refId="OrgMateMarcoGeneralAutoRaiseDelay_setter" defaultValue="500">Миллисекунды:</decimalTextBox>
-        <checkBox refId="OrgMateMarcoGeneralAutoRaiseDelay_setter_blocker">блокировать</checkBox>
-        <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
+        <checkBox refId="OrgMateMarcoGeneralAutoRaiseDelay_setter_blocker">Блокировать</checkBox>
+        <text>Блокировка изменений данной настройки политикой пользователя. Блокировка политики делает её приоритетнее аналогичной политики для пользователя.</text>
       </presentation>
 
       <presentation id="OrgMateMarcoGeneralCenterNewWindowsMachine-pr">
-        <dropdownList noSort="true" defaultItem="0" refId="OrgMateMarcoGeneralCenterNewWindows_setter">Выберите "включено" или "отключено":</dropdownList>
-        <checkBox refId="OrgMateMarcoGeneralCenterNewWindows_setter_blocker">блокировать</checkBox>
-        <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
+        <dropdownList noSort="true" defaultItem="0" refId="OrgMateMarcoGeneralCenterNewWindows_setter">Выберите «Включено» или «Отключено»:</dropdownList>
+        <checkBox refId="OrgMateMarcoGeneralCenterNewWindows_setter_blocker">Блокировать</checkBox>
+        <text>Блокировка изменений данной настройки политикой пользователя. Блокировка политики делает её приоритетнее аналогичной политики для пользователя.</text>
       </presentation>
 
         <presentation id="OrgMateMarcoGeneralIconSizeUser-pr">
@@ -770,8 +825,8 @@ last - повторить последнее действие</text>
 
         <presentation id="OrgMateMarcoGeneralIconSizeMachine-pr">
         <decimalTextBox refId="OrgMateMarcoGeneralIconSize_setter" defaultValue="48">Размер:</decimalTextBox>
-        <checkBox refId="OrgMateMarcoGeneralIconSize_setter_blocker">блокировать</checkBox>
-        <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
+        <checkBox refId="OrgMateMarcoGeneralIconSize_setter_blocker">Блокировать</checkBox>
+        <text>Блокировка изменений данной настройки политикой пользователя. Блокировка политики делает её приоритетнее аналогичной политики для пользователя.</text>
       </presentation>
 
         <presentation id="OrgMateMarcoGeneralAltTabMaxColumnsUser-pr">
@@ -780,8 +835,8 @@ last - повторить последнее действие</text>
 
         <presentation id="OrgMateMarcoGeneralAltTabMaxColumnsMachine-pr">
         <decimalTextBox refId="OrgMateMarcoGeneralAltTabMaxColumns_setter" defaultValue="5">Количество колонок:</decimalTextBox>
-        <checkBox refId="OrgMateMarcoGeneralAltTabMaxColumns_setter_blocker">блокировать</checkBox>
-        <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
+        <checkBox refId="OrgMateMarcoGeneralAltTabMaxColumns_setter_blocker">Блокировать</checkBox>
+        <text>Блокировка изменений данной настройки политикой пользователя. Блокировка политики делает её приоритетнее аналогичной политики для пользователя.</text>
       </presentation>
 
       <presentation id="OrgMatePeripheralsKeyboardDelayUser-pr">
@@ -790,14 +845,14 @@ last - повторить последнее действие</text>
 
       <presentation id="OrgMatePeripheralsKeyboardDelayMachine-pr">
         <decimalTextBox refId="OrgMatePeripheralsKeyboardDelay_setter">Задержка:</decimalTextBox>
-        <checkBox refId="OrgMatePeripheralsKeyboardDelay_setter_blocker">блокировать</checkBox>
-        <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
+        <checkBox refId="OrgMatePeripheralsKeyboardDelay_setter_blocker">Блокировать</checkBox>
+        <text>Блокировка изменений данной настройки политикой пользователя. Блокировка политики делает её приоритетнее аналогичной политики для пользователя.</text>
       </presentation>
 
       <presentation id="OrgMatePeripheralsKeyboardRepeatMachine-pr">
-        <dropdownList noSort="true" defaultItem="0" refId="OrgMatePeripheralsKeyboardRepeat_setter">Выберите "включено" или "отключено":</dropdownList>
-        <checkBox refId="OrgMatePeripheralsKeyboardRepeat_setter_blocker">блокировать</checkBox>
-        <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
+        <dropdownList noSort="true" defaultItem="0" refId="OrgMatePeripheralsKeyboardRepeat_setter">Выберите «Включено» или «Отключено»:</dropdownList>
+        <checkBox refId="OrgMatePeripheralsKeyboardRepeat_setter_blocker">Блокировать</checkBox>
+        <text>Блокировка изменений данной настройки политикой пользователя. Блокировка политики делает её приоритетнее аналогичной политики для пользователя.</text>
       </presentation>
 
       <presentation id="OrgMatePeripheralsKeyboardRateUser-pr">
@@ -806,8 +861,8 @@ last - повторить последнее действие</text>
 
       <presentation id="OrgMatePeripheralsKeyboardRateMachine-pr">
         <decimalTextBox refId="OrgMatePeripheralsKeyboardRate_setter">Скорость повтора:</decimalTextBox>
-        <checkBox refId="OrgMatePeripheralsKeyboardRate_setter_blocker">блокировать</checkBox>
-        <text>Блокировка изменений данной настройки пользователем. Пользовательские политики для этой настройки будут проигнорированы.</text>
+        <checkBox refId="OrgMatePeripheralsKeyboardRate_setter_blocker">Блокировать</checkBox>
+        <text>Блокировка изменений данной настройки политикой пользователя. Блокировка политики делает её приоритетнее аналогичной политики для пользователя.</text>
       </presentation>
 
     </presentationTable>
