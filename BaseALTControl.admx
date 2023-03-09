@@ -1255,7 +1255,7 @@
         </enum>
       </elements>
     </policy>
-       <policy class="Machine" displayName="$(string.smb-conf-usershares)" explainText="$(string.smb-conf-usershares_help)" key="Software\BaseALT\Policies\Control" valueName="smb-conf-usershares" name="smb-conf-usershares">
+     <policy class="Machine" displayName="$(string.smb-conf-usershares)" explainText="$(string.smb-conf-usershares_help)" key="Software\BaseALT\Policies\Control" valueName="smb-conf-usershares" name="smb-conf-usershares">
       <parentCategory ref="system:ALT_SambaOptions"/>
       <supportedOn ref="system:SUPPORTED_AltP10"/>
       <enabledValue>
@@ -1324,6 +1324,6 @@
       <disabledValue>
         <string>disabled</string>
       </disabledValue>
-    </policy>
+    </policy> 
   </policies>
 </policyDefinitions>

@@ -12,22 +12,22 @@
       <string id="packages_install">Software install</string>
       <string id="packages_install_help">This policy defines the list of packages to be installed
 
-List of packages to install:
+Specify a list of packages, one per line:
       </string>
       <string id="packages_remove">Software removal</string>
       <string id="packages_remove_help">This policy defines the list of packages to be removed
 
-List of packages to remove:
+Specify a list of packages, one per line
       </string>
 
       <string id="packages_upgrade">Automatic software upgrade</string>
       <string id="packages_upgrade_help">This policy defines automatic update behavior
 
-Undefined - Do nothing
+Not configured — Do nothing
 
-Disabled - Don't update OS automatically
+Disabled — Don't update OS automatically
 
-Enabled - Update OS automatically
+Enabled — Update OS automatically
       </string>
 
       <string id="sync_packages_work_machine">Synchronous work with packages</string>

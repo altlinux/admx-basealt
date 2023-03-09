@@ -442,13 +442,13 @@ Enabled — Remote access control to the OpenSSH server is enabled
       <string id="sshd-allow-groups-list">Allowed groups for access to OpenSSH server</string>
       <string id="sshd-allow-groups-list_help">This policy determines which groups are included in the list of allowed groups for the remote access service to the OpenSSH server
 
-All users - Allow access to the OpenSSH server by all users
+All users — Allow access to the OpenSSH server by all users
 
-Groups wheel and remote - Allow access to the OpenSSH server by «wheel» and «remote» groups
+Groups wheel and remote — Allow access to the OpenSSH server by «wheel» and «remote» groups
 
-Only wheel - Allow access to the OpenSSH server by «wheel» group only
+Only wheel — Allow access to the OpenSSH server by «wheel» group only
 
-Only remote - Allow access to the OpenSSH server by «remote» group only
+Only remote — Allow access to the OpenSSH server by «remote» group only
       </string>
 
       <string id="sshd-allow-groups-list_users">All users</string>
@@ -459,17 +459,17 @@ Only remote - Allow access to the OpenSSH server by «remote» group only
       <string id="sshd-gssapi-auth">Support GSSAPI authentication on OpenSSH server</string>
       <string id="sshd-gssapi-auth_help">This policy enables support for authentication using GSSAPI on the OpenSSH server
 
-Enable — GSSAPI support on the OpenSSH server is enabled
+Enabled — GSSAPI support on the OpenSSH server is enabled
 
-Disable — GSSAPI support on the OpenSSH server is disabled
+Disabled — GSSAPI support on the OpenSSH server is disabled
        </string>
 
       <string id="sshd-password-auth">Password authentication on OpenSSH server</string>
       <string id="sshd-password-auth_help">This policy enables support for password authentication on the OpenSSH server
 
-Enable — Password authentication support on the OpenSSH server is enabled
+Enabled — Password authentication support on the OpenSSH server is enabled
 
-Disable — Password authentication support on the OpenSSH server is disables
+Disabled — Password authentication support on the OpenSSH server is disabled
       </string>
 
       <string id="sshd-permit-root-login">OpenSSH authentication of root by password</string>
@@ -491,9 +491,9 @@ Default — Reset the authentication mode for the superuser (root) to the packag
       <string id="ssh-gssapi-auth">Authentication of OpenSSH clients via GSSAPI</string>
       <string id="ssh-gssapi-auth_help">This policy defines the functionality to support authentication of OpenSSH clients using via GSSAPI
 
-Enable — GSSAPI authentication support for OpenSSH clients is enabled
+Enabled — GSSAPI authentication support for OpenSSH clients is enabled
 
-Disable — GSSAPI authentication support for OpenSSH clients is disabled
+Disabled — GSSAPI authentication support for OpenSSH clients is disabled
       </string>
 
       <string id="sssd-ad-gpo-access-control">SSSD access control via Group Policies</string>
@@ -744,29 +744,29 @@ Only root — Only superuser (root) is permitted to run /usr/bin/Xorg
      <string id="role-usershares">Access for members of the «users» group to Network Shares</string>
       <string id="role-usershares_help">Allow members of the «users» group to access Network Shares through the privileges of the «usershares» group.
 
-Disabled - access to Network Share s is allowed only to members of the «usershares» group;
+Disabled — access to Network Share s is allowed only to members of the «usershares» group;
 
-Enabled - the privileges of the «usershares» group to access Network Shares apply to users included in the «users» group.
+Enabled — the privileges of the «usershares» group to access Network Shares apply to users included in the «users» group.
       </string>
       <string id="role-sambashare">Access for members of the «sambashare» group to Network Shares</string>
       <string id="role-sambashare_help">Allow members of the «sambashare» group to access Network Shares.
 
-Disabled - deny access to Network Shares to members of the «sambashare» group;
+Disabled — deny access to Network Shares to members of the «sambashare» group;
 
-Enabled - allow access to Network Shares to members of the «sambashare» group;
+Enabled — allow access to Network Shares to members of the «sambashare» group;
 
-Default - allow access to Network Shares to members of the «sambashare» group.
+Default — allow access to Network Shares to members of the «sambashare» group.
       </string>
       <string id="smb-conf-usershare-allow-guests">Guest access to Network Shares</string>
       <string id="smb-conf-usershare-allow-guests_help">Allow access to Network Shares without authentication.
 
 The policy controls the «usershare allow guests» setting in smb.conf or usershares.conf, allowing the setting to be set to «yes» or «no». Since the parameter is security sensitive, its default value is «no».
 
-Disabled - deny access to Network Shares without authentication;
+Disabled — deny access to Network Shares without authentication;
 
-Enabled - allow access to Network Shares without authentication;
+Enabled — allow access to Network Shares without authentication;
 
-Default - deny access to Network Shares without authentication.
+Default — deny access to Network Shares without authentication.
       </string>
       <string id="smb-conf-usershare-allow-list">Permission to create Network Shares in root directory folders</string>
       <string id="smb-conf-usershare-allow-list_help">The policy defines the folders in the root directory where the user is allowed to create Network Shares.
@@ -774,11 +774,11 @@ Default - deny access to Network Shares without authentication.
 If the absolute path to the user's Network Shares does not include one of the listed folders in its name, access to the Network Share will be denied.
 This limits the list of folders in the root directory in which it is possible to create user Network Shares. By default, the root folders are set (/home /srv /mnt /media /var).
 If a «usershare prefix deny list» is configured, the deny list is processed first, and then the allow list.
-The policy controls the «usershare prefix allow list» setting in the usershares.conf file - opening or closing this setting with a comment.
+The policy controls the «usershare prefix allow list» setting in the usershares.conf file — opening or closing this setting with a comment.
 
-Disabled - prohibit the creation of Network Shares in system folders from the list;
+Disabled — prohibit the creation of Network Shares in system folders from the list;
 
-Enabled - allow creation of Network Shares in system folders from the list.
+Enabled — allow creation of Network Shares in system folders from the list.
       </string>
       <string id="smb-conf-usershare-deny-list">Prohibit the creation of Network Shares in folders in the root directory</string>
       <string id="smb-conf-usershare-deny-list_help">The policy defines folders in the root directory where the user is not allowed to create Network Shares.
@@ -787,11 +787,11 @@ If the absolute path to the user's public directory starts with one of the liste
 Any other path that does not contain one of the listed folders in the name will allow the creation of the Network Shares.
 This limits the list of folders in the root directory in which it is possible to create user Network Shares. By default, the root folders are set (/etc /dev /sys /proc).
 If a «usershare prefix deny list» and a «usershare prefix allow list» are configured, the deny list is processed first, and then the allow list.
-The policy controls the «usershare prefix deny list» setting in the usershares.conf file - opening or closing this setting with a comment.
+The policy controls the «usershare prefix deny list» setting in the usershares.conf file — opening or closing this setting with a comment.
 
-Disabled - allow creation of Network Shares in system folders from the list;
+Disabled — allow creation of Network Shares in system folders from the list;
 
-Enabled - prohibit the creation of Network Shares in system folders from the list.
+Enabled — prohibit the creation of Network Shares in system folders from the list.
       </string>
       <string id="smb-conf-usershare-owner-only">Access to Network Shares of other users</string>
       <string id="smb-conf-usershare-owner-only_help">The policy controls the user's right to access a Network Shares if the user is not the owner of that directory.
@@ -799,11 +799,11 @@ Enabled - prohibit the creation of Network Shares in system folders from the lis
 If the policy is enabled, the system will check the access rights to the Network Shares and deny access to those users who do not own it.
 If the policy is disabled, this check will not be performed and any directory can be shared, regardless of who owns it. The policy changes the «usershare owner only» setting in the usershares.conf file.
 
-Disabled - open access to Network Shares of other users;
+Disabled — open access to Network Shares of other users;
 
-Enabled - restrict public access, leaving access only to Network Shares owned by the user;
+Enabled — restrict public access, leaving access only to Network Shares owned by the user;
 
-Default - access to shared directories is limited - only those Network Shares that he created are available to the user.
+Default — access to shared directories is limited — only those Network Shares that he created are available to the user.
       </string>
       <string id="smb-conf-usershares">Limit on Network Shares</string>
       <string id="smb-conf-usershares_help">Controls the number of Network Shares that users who belong to the usershares group can create.
@@ -813,11 +813,11 @@ The usershares directory is for creating Network Shares. The usershares director
 The «usershare max shares» parameter sets the number of shares that the specified users can create.
 The policy controls the «usershare max shares» setting in the smb.conf file.
 
-Disabled - disable access to the user's Network Shares; «usershare max shares» parameter = 0;
+Disabled — disable access to the user's Network Shares; «usershare max shares» parameter = 0;
 
-Enabled - enable access to the user's Network Shares; «usershare max shares» parameter = 100;
+Enabled — enable access to the user's Network Shares; «usershare max shares» parameter = 100;
 
-Default - disable access to Network Shares the parameter «usershare max shares» is closed by a comment.
+Default — disable access to Network Shares the parameter «usershare max shares» is closed by a comment.
       </string>
     </stringTable>
     <presentationTable>
