@@ -117,7 +117,7 @@
       <string id="gpupdate_drive_maps_home_user">Mapping user's network drives in the home directory</string>
       <string id="gpupdate_drive_maps_home_user_help">Mapping user's network drives in the home directory
 
-Disable (default) — symbolic links to user's network drives mount points will not be placed in the home directory.
+Disabled (default) — symbolic links to user's network drives mount points will not be placed in the home directory.
 
 Enabled — symbolic links to user's network drives mount points will be displayed in the home directory:
 

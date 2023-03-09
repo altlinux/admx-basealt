@@ -228,9 +228,9 @@ Cтрока типа rgb(0,0,0). </string>
       <string id="org-mate-marco-general-allow-top-tiling-false">Отключено</string>
 
       <string id="org-mate-marco-general-focus-new-windows">Переключение фокуса на новое окно</string>
-      <string id="org-mate-marco-general-focus-new-windows_help">Определяет, как новое окно получает фокус: 
+      <string id="org-mate-marco-general-focus-new-windows_help">Определяет, как новое окно получает фокус:
 
-«Smart» — новое окно получает фокус при создании; 
+«Smart» — новое окно получает фокус при создании;
 
 «Strict» — окна, запущенные из терминала,не получают фокус.</string>
       <string id="org-mate-Marco-general-focus-new-windows-smart">Smart</string>
@@ -298,7 +298,7 @@ Cтрока типа rgb(0,0,0). </string>
 
       <string id="org-mate-marco-general-action-right-click-titlebar">Действие по нажатию правой кнопки по заголовку окна</string>
       <string id="org-mate-marco-general-action-right-click-titlebar_help">Установка действия, выполняемого по нажатию правой кнопки мыши по заголовку окна:
-      
+
 «Свернуть в заголовок» («toggle_shade») — свернуть окно в заголовок. По двойному щелчку окно разворачивается обратно;
 
 «На весь экран» («toggle_maximize») — распахнуть окно на весь экран или восстановить исходный размер;
@@ -409,7 +409,7 @@ Cтрока типа rgb(0,0,0). </string>
 
       <string id="org-mate-peripherals-keyboard-repeat">Повторять удерживаемую нажатой клавишу</string>
       <string id="org-mate-peripherals-keyboard-repeat_help">Включить повтор нажатой и удерживаемой клавиши.
-      
+
 Если нажать и удерживать клавишу при включённом повторе ввода, действие, соответствующее клавише, будет повторяться. Например, если нажать и удерживать клавишу с буквой, то эта буква будет многократно повторена.</string>
 
       <string id="org-mate-peripherals-keyboard-repeat-true">Включено</string>

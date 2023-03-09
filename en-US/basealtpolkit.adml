@@ -11,9 +11,9 @@
 
 This policy grants or restricts permissions to mount removable storage devices.
 
-Disable/Not configured — Permissions are determined by system settings. Default is «Auth_admin»
+Disabledd/Not configured — Permissions are determined by system settings. Default is «Auth_admin»
 
-Enable — permission to mount with set rights;
+Enabled — permission to mount with set rights;
 
 Possible values:
 
@@ -37,9 +37,9 @@ Note: the possession of administrative rights in the context of PolicyKit is det
 
 This policy grants or restricts permissions to mount removable storage devices.
 
-Disable/Not configured — Permissions are determined by system settings. Default is «Auth_admin»
+Disabledd/Not configured — Permissions are determined by system settings. Default is «Auth_admin»
 
-Enable — permission to mount with set rights;
+Enabled — permission to mount with set rights;
 
 Possible values:
 
@@ -63,9 +63,9 @@ Note: the possession of administrative rights in the context of PolicyKit is det
 
 This policy grants or restricts permissions to mount removable storage devices from a device connected to a remote workstation (for example, on another computer or remote session).
 
-Disable/Not configured — Permissions are determined by system settings. Default is «Auth_admin»
+Disabled/Not configured — Permissions are determined by system settings. Default is «Auth_admin»
 
-Enable — permission to mount with set rights;
+Enabled — permission to mount with set rights;
 
 Possible values:
 
@@ -89,9 +89,9 @@ Note: the possession of administrative rights in the context of PolicyKit is det
 
 This policy grants or restricts permissions to mount removable storage devices from a device connected to a remote workstation (for example, on another computer or remote session).
 
-Disable/Not configured — Permissions are determined by system settings. Default is «Auth_admin»
+Disabled/Not configured — Permissions are determined by system settings. Default is «Auth_admin»
 
-Enable — permission to mount with set rights;
+Enabled — permission to mount with set rights;
 
 Possible values:
 
@@ -115,9 +115,9 @@ Note: the possession of administrative rights in the context of PolicyKit is det
 
 This policy grants or restricts permissions to matically mount system partitions.
 
-Disable/Not configured — Permissions are determined by system settings. Default is «Auth_admin»
+Disabled/Not configured — Permissions are determined by system settings. Default is «Auth_admin»
 
-Enable — permission to mount with set rights;
+Enabled — permission to mount with set rights;
 
 Possible values:
 
@@ -141,9 +141,9 @@ Note: the possession of administrative rights in the context of PolicyKit is det
 
 This policy grants or restricts permissions to matically mount system partitions.
 
-Disable/Not configured — Permissions are determined by system settings. Default is «Auth_admin»
+Disabled/Not configured — Permissions are determined by system settings. Default is «Auth_admin»
 
-Enable — permission to mount with set rights;
+Enabled — permission to mount with set rights;
 
 Possible values:
 
@@ -167,9 +167,9 @@ Note: the possession of administrative rights in the context of PolicyKit is det
 
 This policy grants or restricts permissions to mount removable storage devices, mount system partitions, mount removable storage devices in remote sessions.
 
-Disable/Not configured — Permissions are determined by system settings. Default is «Auth_admin»
+Disabled/Not configured — Permissions are determined by system settings. Default is «Auth_admin»
 
-Enable — permission to mount with set rights;
+Enabled — permission to mount with set rights;
 
 Possible values:
 
@@ -193,7 +193,7 @@ Note: the possession of administrative rights in the context of PolicyKit is det
 
 This policy grants or restricts permissions to mount removable storage devices, mount system partitions, mount removable storage devices in remote sessions.
 
-Disable/Not configured — Permissions are determined by system settings. Default is «Auth_admin»
+Disabled/Not configured — Permissions are determined by system settings. Default is «Auth_admin»
 
 Enable — permission to mount with set rights;
 
