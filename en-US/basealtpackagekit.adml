@@ -515,8 +515,8 @@ Note: the possession of administrative rights in the context of PolicyKit is det
 
       </string>
 
-      <string id="org-freedesktop-packagekit-system-trust-signing-key">Разрешение на добавление ключа электронной подписи</string>
-      <string id="org-freedesktop-packagekit-system-trust-signing-key_help">Разрешение на добавление ключа электронной подписи
+      <string id="org-freedesktop-packagekit-system-trust-signing-key">Permission to add the signing key</string>
+      <string id="org-freedesktop-packagekit-system-trust-signing-key_help">Permission to add the signing key
 
 This policy grants or restricts users the right to add the signing key to the list of trusted keys in the system through the PackageKit package management interface.
 
@@ -541,8 +541,8 @@ Possible values:
 Note: the possession of administrative rights in the context of PolicyKit is determined by its rules. By default, Alt asks for the password of the user in the "wheel" group.
       </string>
 
-      <string id="org-freedesktop-packagekit-system-trust-signing-key-user">Разрешение на добавление ключа электронной подписи</string>
-      <string id="org-freedesktop-packagekit-system-trust-signing-key-user_help">Разрешение на добавление ключа электронной подписи
+      <string id="org-freedesktop-packagekit-system-trust-signing-key-user">Permission to add the signing key</string>
+      <string id="org-freedesktop-packagekit-system-trust-signing-key-user_help">Permission to add the signing key
 
 This policy grants or restricts users the right to add the signing key to the list of trusted keys in the system through the PackageKit package management interface.
 
