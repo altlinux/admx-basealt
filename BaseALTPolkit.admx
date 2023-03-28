@@ -297,40 +297,6 @@
         presentation="$(presentation.org-freedesktop-udisks2-filesystem-mount-all-pr)">
       <parentCategory ref="system:ALT_Udisks2" />
       <supportedOn ref="system:SUPPORTED_AltP10" />
-         <enabledList defaultKey="Software\BaseALT\Policies\Polkit">
-          <item valueName="org.freedesktop.udisks2.filesystem-mount">
-            <value>
-                <decimal value="2" />
-            </value>
-          </item>
-          <item valueName="org.freedesktop.udisks2.filesystem-mount-other-seat">
-            <value>
-                <decimal value="2" />
-            </value>
-          </item>
-          <item valueName="org.freedesktop.udisks2.filesystem-mount-system">
-            <value>
-                <decimal value="2" />
-            </value>
-          </item>
-        </enabledList>
-         <disabledList defaultKey="Software\BaseALT\Policies\Polkit">
-          <item valueName="org.freedesktop.udisks2.filesystem-mount">
-            <value>
-                <decimal value="0" />
-            </value>
-          </item>
-          <item valueName="org.freedesktop.udisks2.filesystem-mount-other-seat">
-            <value>
-                <decimal value="0" />
-            </value>
-          </item>
-          <item valueName="org.freedesktop.udisks2.filesystem-mount-system">
-            <value>
-                <decimal value="0" />
-            </value>
-          </item>
-        </disabledList>
       <elements>
         <enum id="OrgFreedesktopUdisks2FileSystemMount_setter" valueName="org.freedesktop.udisks2.filesystem-mount" required="true">
           <item displayName="$(string.org-freedesktop-udisks2-filesystem-mount-No)">
@@ -461,40 +427,6 @@
         presentation="$(presentation.org-freedesktop-udisks2-filesystem-mount-all-user-pr)">
       <parentCategory ref="system:ALT_Udisks2" />
       <supportedOn ref="system:SUPPORTED_AltP10" />
-         <enabledList defaultKey="Software\BaseALT\Policies\Polkit">
-          <item valueName="org.freedesktop.udisks2.filesystem-mount">
-            <value>
-                <decimal value="2" />
-            </value>
-          </item>
-          <item valueName="org.freedesktop.udisks2.filesystem-mount-other-seat">
-            <value>
-                <decimal value="2" />
-            </value>
-          </item>
-          <item valueName="org.freedesktop.udisks2.filesystem-mount-system">
-            <value>
-                <decimal value="2" />
-            </value>
-          </item>
-        </enabledList>
-         <disabledList defaultKey="Software\BaseALT\Policies\Polkit">
-          <item valueName="org.freedesktop.udisks2.filesystem-mount">
-            <value>
-                <decimal value="0" />
-            </value>
-          </item>
-          <item valueName="org.freedesktop.udisks2.filesystem-mount-other-seat">
-            <value>
-                <decimal value="0" />
-            </value>
-          </item>
-          <item valueName="org.freedesktop.udisks2.filesystem-mount-system">
-            <value>
-                <decimal value="0" />
-            </value>
-          </item>
-        </disabledList>
       <elements>
         <enum id="OrgFreedesktopUdisks2FileSystemMount_setter" valueName="org.freedesktop.udisks2.filesystem-mount" required="true">
           <item displayName="$(string.org-freedesktop-udisks2-filesystem-mount-No)">
