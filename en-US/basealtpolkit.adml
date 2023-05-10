@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--  (c) 2022 BaseALT, Ltd.  -->
+<!--  (c) 2023 BaseALT, Ltd.  -->
 <policyDefinitionResources xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.microsoft.com/GroupPolicy/2006/07/PolicyDefinitions" revision="1.0" schemaVersion="1.0">
   <displayName>ALT Udisks2 policies definitions</displayName>
   <description>This file contains the Udisks2 service policies definitions used by ALT operating system.</description>
   <resources>
     <stringTable>
 
-      <string id="org-freedesktop-udisks2-filesystem-mount">Permission to mount removable storage devices</string>
-      <string id="org-freedesktop-udisks2-filesystem-mount_help">Permission to mount removable storage devices
+      <string id="org-freedesktop-udisks2-filesystem-mount">Permission to mount the file system</string>
+      <string id="org-freedesktop-udisks2-filesystem-mount_help">Permission to mount the file system
 
 This policy grants or restricts permissions to mount removable storage devices.
 
@@ -32,8 +32,8 @@ Possible values:
 Note: the possession of administrative rights in the context of PolicyKit is determined by its rules. By default, Alt asks for the password of the user in the "wheel" group.
 
       </string>
-      <string id="org-freedesktop-udisks2-filesystem-mount-user">Permission to mount removable storage devices</string>
-      <string id="org-freedesktop-udisks2-filesystem-mount-user_help">Permission to mount removable storage devices
+      <string id="org-freedesktop-udisks2-filesystem-mount-user">Permission to mount the file system</string>
+      <string id="org-freedesktop-udisks2-filesystem-mount-user_help">Permission to mount the file system
 
 This policy grants or restricts permissions to mount removable storage devices.
 
@@ -224,7 +224,7 @@ Note: the possession of administrative rights in the context of PolicyKit is det
 
     </stringTable>
     <presentationTable>
-    <presentation id="org-freedesktop-udisks2-filesystem-mount-all-pr">
+    <presentation id="OrgFreedesktopUdisks2FileSystemMountAll-pr">
        <dropdownList noSort="true" defaultItem="1" refId="OrgFreedesktopUdisks2FileSystemMount_setter">Restriction options for mounting removable storage devices:</dropdownList>
        <checkBox refId="OrgFreedesktopUdisks2FileSystemMount_blocker">Block</checkBox>
         <text>Blocking changes to this setting by user policy. Blocking a policy makes it a priority over a similar policy for the user.</text>
@@ -235,7 +235,7 @@ Note: the possession of administrative rights in the context of PolicyKit is det
        <checkBox refId="OrgFreedesktopUdisks2FileSystemMountSystem_blocker">Block</checkBox>
         <text>Blocking changes to this setting by user policy. Blocking a policy makes it a priority over a similar policy for the user.</text>
       </presentation>
-       <presentation id="org-freedesktop-udisks2-filesystem-mount-all-user-pr">
+       <presentation id="OrgFreedesktopUdisks2FileSystemMountAllUser-pr">
        <dropdownList noSort="true" defaultItem="1" refId="OrgFreedesktopUdisks2FileSystemMount_setter">Restriction options for mounting removable storage devices:</dropdownList>
        <dropdownList noSort="true" defaultItem="1" refId="OrgFreedesktopUdisks2FileSystemMountOther_setter">Restriction options for mounting removable storage devices in remote sessions:</dropdownList>
        <dropdownList noSort="true" defaultItem="1" refId="OrgFreedesktopUdisks2FileSystemMountSystem_setter">Options for restrictions on mounting system partitions:</dropdownList>
