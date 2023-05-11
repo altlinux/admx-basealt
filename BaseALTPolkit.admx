@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<!--  (c) 2022 BaseALT, Ltd.  -->
+<!--  (c) 2023 BaseALT, Ltd.  -->
 <policyDefinitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                    revision="1.0" schemaVersion="1.0" xmlns="http://schemas.microsoft.com/GroupPolicy/2006/07/PolicyDefinitions">
   <policyNamespaces>
@@ -294,7 +294,7 @@
         explainText="$(string.org-freedesktop-udisks2-filesystem-mount-all_Help)"
         key="Software\BaseALT\Policies\Polkit"
         name="org-freedesktop-udisks2-filesystem-mount-all"
-        presentation="$(presentation.org-freedesktop-udisks2-filesystem-mount-all-pr)">
+        presentation="$(presentation.OrgFreedesktopUdisks2FileSystemMountAll-pr)">
       <parentCategory ref="system:ALT_Udisks2" />
       <supportedOn ref="system:SUPPORTED_AltP10" />
       <elements>
@@ -424,7 +424,7 @@
         explainText="$(string.org-freedesktop-udisks2-filesystem-mount-all-user_Help)"
         key="Software\BaseALT\Policies\Polkit"
         name="org-freedesktop-udisks2-filesystem-mount-all-user"
-        presentation="$(presentation.org-freedesktop-udisks2-filesystem-mount-all-user-pr)">
+        presentation="$(presentation.OrgFreedesktopUdisks2FileSystemMountAllUser-pr)">
       <parentCategory ref="system:ALT_Udisks2" />
       <supportedOn ref="system:SUPPORTED_AltP10" />
       <elements>
