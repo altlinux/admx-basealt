@@ -741,83 +741,88 @@ Only root — Only superuser (root) is permitted to run /usr/bin/Xorg
       <string id="xorg-server_public">Any user</string>
       <string id="xorg-server_xgrp">Group xgrp</string>
       <string id="xorg-server_restricted">Only root</string>
-     <string id="role-usershares">Access for members of the «users» group to Network Shares</string>
-      <string id="role-usershares_help">Allow members of the «users» group to access Network Shares through the privileges of the «usershares» group.
+      <string id="role-usershares">Access for members of the «users» group to usershares</string>
+      <string id="role-usershares_help">Permission for members of the «users» group to manage usershares. The configurations of user shared resources are located in the /var/lib/samba/usershares directory, where members of the «usershares» group have write permissions.
+      The policy allows you to extend the privileges of members of the «users» group by adding them to the «usershares» group.
 
-Disabled — access to Network Share s is allowed only to members of the «usershares» group;
+Disabled — revoke the permission for managing usershares for members of the «users» group; the option also affects the permission for managing shared directories through the preference setting;
 
-Enabled — the privileges of the «usershares» group to access Network Shares apply to users included in the «users» group.
+Enabled — add permission for managing usershares for members of the «users» group;
+
+Not configured — do not change the current value of the «role-usershares» parameter of the control interface.
       </string>
-      <string id="role-sambashare">Access for members of the «sambashare» group to Network Shares</string>
-      <string id="role-sambashare_help">Allow members of the «sambashare» group to access Network Shares.
+      <string id="role-sambashare">Access for members of the «sambashare» group to usershares</string>
+      <string id="role-sambashare_help">Permission for members of the «sambashare» group to manage usershares.
+The configurations of user shared resources are located in the /var/lib/samba/usershares directory, where the members of the «usershares» group have write permissions. The policy allows you to extend the privileges of members of the «sambashare» group by adding them to the «usershares» group.
 
-Disabled — deny access to Network Shares to members of the «sambashare» group;
+Disabled — revoke the permission for managing usershares for members of the «sambashare» group; the option also affects the permission for managing usershares via the preference setting;
 
-Enabled — allow access to Network Shares to members of the «sambashare» group;
+Enabled — add permission for managing usershares to members of the «sambashare» group;
 
-Default — allow access to Network Shares to members of the «sambashare» group.
+Not configured — do not change the current value of the «role-sambashare» parameter of the control interface.
       </string>
-      <string id="smb-conf-usershare-allow-guests">Guest access to Network Shares</string>
-      <string id="smb-conf-usershare-allow-guests_help">Allow access to Network Shares without authentication.
+      <string id="smb-conf-usershare-allow-guests">Guest access to usershares</string>
+      <string id="smb-conf-usershare-allow-guests_help">The policy controls a user's right to access a usershare if the user is not the owner of that directory.
+The permission works in two cases:
+1. When creating a usershare without verifying the directory owner;
+2. When attempting to access a usershare without checking the directory owner;
+If the policy is enabled - the system will check the permissions for access to the usershare, and deny access to users who do not own it. Users will only be able to usershares that they own.
+If the policy is disabled, no owner verification will be performed and any directory can be shared, regardless of who owns it. Users will be able to share a directory that they do not own.
 
-The policy controls the «usershare allow guests» setting in smb.conf or usershares.conf, allowing the setting to be set to «yes» or «no». Since the parameter is security sensitive, its default value is «no».
+The policy changes the «usershare owner only» parameter in usershares.conf.
 
-Disabled — deny access to Network Shares without authentication;
+Disabled — allows access to usershare directories without checking the directory owner; allows creation of shared directories on the computer without checking the owner;
 
-Enabled — allow access to Network Shares without authentication;
+Enabled — restricts access to usershares, leaving user access only to the resources that he owns; prohibits creating usershares on the computer without checking the owner;
 
-Default — deny access to Network Shares without authentication.
+Not configured — do not change current value of «smb-conf-usershare-owner-only» parameter of control interface.
       </string>
-      <string id="smb-conf-usershare-allow-list">Permission to create Network Shares in root directory folders</string>
-      <string id="smb-conf-usershare-allow-list_help">The policy defines the folders in the root directory where the user is allowed to create Network Shares.
+      <string id="smb-conf-usershare-allow-list">Permission to create usershares in system directories</string>
+      <string id="smb-conf-usershare-allow-list_help">The policy manages the list of directories in which shares are allowed to be created. The default composition of the list is /home /srv /mnt /media /var
 
-If the absolute path to the user's Network Shares does not include one of the listed folders in its name, access to the Network Share will be denied.
-This limits the list of folders in the root directory in which it is possible to create user Network Shares. By default, the root folders are set (/home /srv /mnt /media /var).
-If a «usershare prefix deny list» is configured, the deny list is processed first, and then the allow list.
-The policy controls the «usershare prefix allow list» setting in the usershares.conf file — opening or closing this setting with a comment.
+If the «usershare prefix deny list» is set, and the «usershare prefix allow list» is set, the deny list is processed first, and then the permissions list.
 
-Disabled — prohibit the creation of Network Shares in system folders from the list;
+Disabled — disable permission to create shares in system directories from the list;
 
-Enabled — allow creation of Network Shares in system folders from the list.
+Enabled — allow the creation of shared resources in the system directories from the list;
+
+Not configured — do not change current value of «smb-conf-usershare-allow-list» parameter of control interface.
       </string>
-      <string id="smb-conf-usershare-deny-list">Prohibit the creation of Network Shares in folders in the root directory</string>
-      <string id="smb-conf-usershare-deny-list_help">The policy defines folders in the root directory where the user is not allowed to create Network Shares.
+      <string id="smb-conf-usershare-deny-list">Prohibit the creation of usershares in system directories</string>
+      <string id="smb-conf-usershare-deny-list_help">The policy controls the list of directories where share creation is prohibited. The default composition of the list is /etc /dev /sys /proc
 
-If the absolute path to the user's public directory starts with one of the listed folders, access to the public directory in that folder will be denied.
-Any other path that does not contain one of the listed folders in the name will allow the creation of the Network Shares.
-This limits the list of folders in the root directory in which it is possible to create user Network Shares. By default, the root folders are set (/etc /dev /sys /proc).
-If a «usershare prefix deny list» and a «usershare prefix allow list» are configured, the deny list is processed first, and then the allow list.
-The policy controls the «usershare prefix deny list» setting in the usershares.conf file — opening or closing this setting with a comment.
+If the «usershare prefix deny list» is set to prohibit directories and the «usershare prefix allow list» is set to allow directories, the deny list is processed first, and then the permissions list.
 
-Disabled — allow creation of Network Shares in system folders from the list;
+Disabled — remove the ban on the creation of shared resources in the system directories from the list;
 
-Enabled — prohibit the creation of Network Shares in system folders from the list.
+Enabled — prohibit the creation of shared resources in the system directories from the list;
+
+Not configured - do not change current value of «smb-conf-usershare-deny-list» parameter of control interface.
       </string>
-      <string id="smb-conf-usershare-owner-only">Access to Network Shares of other users</string>
-      <string id="smb-conf-usershare-owner-only_help">The policy controls the user's right to access a Network Shares if the user is not the owner of that directory.
+      <string id="smb-conf-usershare-owner-only">Access to other users' shared directories</string>
+      <string id="smb-conf-usershare-owner-only_help">The policy controls a user's right to access a shared directory if the user is not the owner of that directory. The permission works in two cases:
+1. When creating a shared directory without verifying the directory owner;
+2. When attempting to access a shared directory without checking the directory owner;
+If the policy is enabled - the system will check the permissions for access to the shared directory, and deny access to users who do not own it. Users will only be able to share directories that they own.
+If the policy is disabled, no owner verification will be performed and any directory can be shared, regardless of who owns it. Users will be able to share a directory that they do not own.
 
-If the policy is enabled, the system will check the access rights to the Network Shares and deny access to those users who do not own it.
-If the policy is disabled, this check will not be performed and any directory can be shared, regardless of who owns it. The policy changes the «usershare owner only» setting in the usershares.conf file.
+The policy changes the «usershare owner only» parameter in usershares.conf.
 
-Disabled — open access to Network Shares of other users;
+Disabled — allows access to usershare directories without checking the directory owner; allows creation of shared directories on the computer without checking the owner;
 
-Enabled — restrict public access, leaving access only to Network Shares owned by the user;
+Enabled — restricts access to shared directories, leaving user access only to the resources that he/she owns; prohibits creating shared directories on the computer without checking the owner;
 
-Default — access to shared directories is limited — only those Network Shares that he created are available to the user.
+Not configured — do not change current value of «smb-conf-usershare-owner-only» parameter of control interface.
       </string>
-      <string id="smb-conf-usershares">Limit on Network Shares</string>
-      <string id="smb-conf-usershares_help">Controls the number of Network Shares that users who belong to the usershares group can create.
+      <string id="smb-conf-usershares">Permission to create usershares</string>
+      <string id="smb-conf-usershares_help">The policy controls the ability to create usershares on the computer. The setting works through the «usershare max shares» parameter, which sets a limit on the number of shared directories.
+      By default, the parameter is either 100 or 0. If «usershare max shares» is zero, the usershares are ignored.
 
-By default, the «usershare max shares» setting is zero, and user shares are ignored.
-The usershares directory is for creating Network Shares. The usershares directory is owned by the usershares group and the users belonging to this group.
-The «usershare max shares» parameter sets the number of shares that the specified users can create.
-The policy controls the «usershare max shares» setting in the smb.conf file.
+Disabled — disable usershares on the computer; parameter «usershare max shares» = 0;
 
-Disabled — disable access to the user's Network Shares; «usershare max shares» parameter = 0;
+Enabled — allow usershares on computer; parameter «usershare max shares» = 100;
 
-Enabled — enable access to the user's Network Shares; «usershare max shares» parameter = 100;
-
-Default — disable access to Network Shares the parameter «usershare max shares» is closed by a comment.
+Not configured — do not change current value of «smb-conf-usershares» parameter of control interface.
       </string>
     </stringTable>
     <presentationTable>
