@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  (c) 2023 BaseALT, Ltd.  -->
+<policyDefinitionResources xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.microsoft.com/GroupPolicy/2006/07/PolicyDefinitions" revision="1.0" schemaVersion="1.0">
+  <displayName>Определения политик KDE Plasma операционной системы Альт</displayName>
+  <description>Этот файл содержит определения политик для управления средой KDE Plasma в операционной системе Альт.</description>
+
+  <resources>
+    <stringTable>
+      <string id="ALT_Settings_KDE">Настройки графической системы KDE Plasma</string>
+      <string id="ALT_Settings_KDE_Help">Настройки графической системы KDE Plasma.</string>
+
+      <string id="kde-win-activate">Режим активации окна</string>
+      <string id="kde-win-activate_help">Режим переключения фокуса в окно определяет, как активируются окна. Допустимые значения:
+
+«Фокус по щелчку» — окно становится активным после щелчка по заголовку или внутри окна.
+
+«Фокус по щелчку» (приоритет мыши) — этот режим похож на «Фокус по щелчку». Если система сама должна выбрать активное окно(например, когда активное окно было закрыто), предпочтение отдаётся окну под указателем мыши.
+
+«Фокус следует за мышью» — окно активинуется при перемещении указателя мыши в это окно. Окна, которые появляются под указателем мыши случайно, не будут получать фокус, так как предотващение смены фокуса работает как обычно. Этот вариант похож на «Фокус по щелчку», но щелчок не требуется».
+
+«Фокус следует за мышью» (приритет мыши) — этот режим похож на «Фокус следует за мышью". Если система сама должна выбрать активное окно (например, при закрытии активного окна), предпочтение будет отдано окну, находящемуся под указателем мыши. Данный режим следует выбрать для смены фокуса по наведению указателя мыши.
+
+«Фокус под мышью» — фокус всегда оказывается в окне под мышью. Примечание: Предотвращение смены фокуса и переключение через Alt+Tab противоречат этому поведению и не будут работать.
+
+«Фокус строго под мышью» — фокус всегда в окне под указателем мыши(а если под ним пусто, он теряется). Примечание: Предотвращение смены фокуса и переключение через Alt+Tab противоречат этому поведению и не будут работать.
+      </string>
+
+      <string id="kde-wallpaper">Картинка фона рабочего стола</string>
+      <string id="kde-wallpaper_help">Данная политика позволяет установить изображения в качестве фона рабочего стола, указав файл (например, /usr/share/wallpapers/table.png), содержащий изображение.</string>
+
+      <string id="kde-colorscheme">Цветовая схема приложений</string>
+      <string id="kde-colorscheme_help">Данная политика позволяет управлять цветовыми схемами, указав название схемы (например: BreezeClassic).
+
+      Допустимые варианты цветовых схем:
+
+      - OxygenCold
+      - BreezeClassic
+      - BreezeLight
+      - BreezeDark
+      - KritaBlender
+      - KritaBright
+      - KritaDark
+      - KritaDarkOrange
+      - KritaDarker
+      - KritaNeutral
+      - Oxygen
+      </string>
+
+      <string id="kde-win-act-Click_to_focus">Фокус по щелчку</string>
+      <string id="kde-win-act-Click_to_focus_Mp">Фокус по щелчку (приоритет мыши)</string>
+      <string id="kde-win-act-Focus_follows_mouse">Фокус следует за мышью</string>
+      <string id="kde-win-act-Focus_follows_mouse_Mp">Фокус следует за мышью (приоритет мыши)</string>
+      <string id="kde-win-act-Focus_under_mouse">Фокус под мышью</string>
+      <string id="kde-win-act-Focus_under_mouse-Mp">Фокус строго под мышью</string>
+
+      </stringTable>
+    <presentationTable>
+      <presentation id="kde-win-activate-user-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="kde-win-activate_setter">Возможные режимы:</dropdownList>
+        <checkBox refId="kde-win-activate_blocker">Блокировать</checkBox>
+        <text>Блокировка изменений данной настройки пользователем. После перезагрузки устройства внесённые пользователем изменения настройки не сохраняются.</text>
+      </presentation>
+        <presentation id="kde-wallpaper-user-pr">
+        <textBox refId="kde-wallpaper-setter">
+          <label>Файл:</label>
+        </textBox>
+      </presentation>
+      <presentation id="kde-colorscheme-user-pr">
+        <textBox refId="kde-colorscheme-setter">
+          <label>Цветовая схема:</label>
+        </textBox>
+      </presentation>
+     </presentationTable>
+  </resources>
+</policyDefinitionResources>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  (c) 2023 BaseALT, Ltd.  -->
+<policyDefinitionResources xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.microsoft.com/GroupPolicy/2006/07/PolicyDefinitions" revision="1.0" schemaVersion="1.0">
+  <displayName>Definitions of the KDE Plasma policies of the Alt operating system</displayName>
+  <description>This file contains policy definitions for managing the KDE Plasma environment in the Alt operating system.</description>
+
+  <resources>
+    <stringTable>
+      <string id="ALT_Settings_KDE">Settings of the KDE Plasma graphics system</string>
+      <string id="ALT_Settings_KDE_Help">Settings of the KDE Plasma graphics system.</string>
+
+      <string id="kde-win-activate">Window activation mode</string>
+      <string id="kde-win-activate_help">The mode of switching focus to a window determines how windows are activated. Acceptable values:
+
+"Focus to click" — the window becomes active after clicking on the title or inside the window.
+
+"Click to focus" (mouse precedence) — this mode is similar to "Click Focus". If the system itself has to select the active window (for example, when the active window was closed), preference is given to the window under the mouse pointer.
+
+"Focus follows mouse" — the window is activated when the mouse pointer is moved to this window. Windows that appear under the mouse pointer randomly will not receive focus, since preventing the focus change works as usual. This option is similar to "Click Focus", but no click is required."
+
+"Focus follows mouse" (mouse precedence) — this mode is similar to "Focus follows mouse". If the system itself has to select the active window (for example, when closing the active window), preference will be given to the window located under the mouse pointer. This mode should be selected to change the focus by hovering the mouse pointer.
+
+"Focus under the mouse" — the focus is always in the window under the mouse. Note: Preventing focus change and switching via Alt+Tab contradict this behavior and will not work.
+
+"Focus under mouse" (mouse precedence) — the focus is always in the window under the mouse pointer (and if it is empty under it, it is lost). Note: Preventing focus change and switching via Alt+Tab contradict this behavior and will not work.
+
+      </string>
+
+      <string id="kde-wallpaper">Desktop backgroung</string>
+      <string id="kde-wallpaper_help">This policy allows you to set images as your desktop background by specifying a file (eg /usr/share/wallpapers/table.png) containing the image.</string>
+
+      <string id="kde-colorscheme">Application color scheme</string>
+      <string id="kde-colorscheme_help">This policy allows you to manage color schemes by specifying the name of the scheme (for example: BreezeClassic).
+
+       Valid color scheme options:
+
+      - OxygenCold
+      - BreezeClassic
+      - BreezeLight
+      - BreezeDark
+      - KritaBlender
+      - KritaBright
+      - KritaDark
+      - KritaDarkOrange
+      - KritaDarker
+      - KritaNeutral
+      - Oxygen
+
+      </string>
+
+      <string id="kde-win-act-Click_to_focus">Click to focus</string>
+      <string id="kde-win-act-Click_to_focus_Mp">Click to focus (mouse precedence)</string>
+      <string id="kde-win-act-Focus_follows_mouse">Focus follows mouse</string>
+      <string id="kde-win-act-Focus_follows_mouse_Mp">Focus follows mouse (mouse precedence)</string>
+      <string id="kde-win-act-Focus_under_mouse">Focus under mouse</string>
+      <string id="kde-win-act-Focus_under_mouse-Mp">Focus under mouse (mouse precedence)</string>
+
+      </stringTable>
+    <presentationTable>
+      <presentation id="kde-win-activate-user-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="kde-win-activate_setter">Possible modes:</dropdownList>
+        <checkBox refId="kde-win-activate_blocker">Block</checkBox>
+        <text>Blocking changes to this setting by the user. After restarting the device, the user's changes to the settings are not saved.</text>
+      </presentation>
+      <presentation id="kde-wallpaper-user-pr">
+        <textBox refId="kde-wallpaper-setter">
+          <label>File:</label>
+        </textBox>
+      </presentation>
+      <presentation id="kde-colorscheme-user-pr">
+        <textBox refId="kde-colorscheme-setter">
+          <label>Color scheme:</label>
+        </textBox>
+      </presentation>
+     </presentationTable>
+  </resources>
+</policyDefinitionResources>
