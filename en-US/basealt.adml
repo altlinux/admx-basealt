@@ -67,6 +67,10 @@
       <string id="ALT_Udisks2_Help">Udisks2 permissions management.</string>
       <string id="ALT_PackageKit">PackageKit permissions</string>
       <string id="ALT_PackageKit_Help">PackageKit permissions management.</string>
+      <string id="ALT_NetworkManagerPolkit">NetworkManager permissions</string>
+      <string id="ALT_NetworkManagerPolkit_Help">NetworkManager permissions management</string>
+      <string id="ALT_TokenPolkit">Token and smart card permissions</string>
+      <string id="ALT_TokenPolkit_Help">Token and smart card permissions management</string>
     </stringTable>
   </resources>
 </policyDefinitionResources>

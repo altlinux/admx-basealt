@@ -145,5 +145,11 @@
     <category name="ALT_PackageKit" displayName="$(string.ALT_PackageKit)" explainText="$(string.ALT_PackageKit_Help)">
       <parentCategory ref="ALT_Polkit" />
     </category>
+    <category name="ALT_NetworkManagerPolkit" displayName="$(string.ALT_NetworkManagerPolkit)" explainText="$(string.ALT_NetworkManagerPolkit_Help)">
+      <parentCategory ref="ALT_Polkit" />
+    </category>
+    <category name="ALT_TokenPolkit" displayName="$(string.ALT_TokenPolkit)" explainText="$(string.ALT_TokenPolkit_Help)">
+      <parentCategory ref="ALT_Polkit" />
+    </category>
   </categories>
 </policyDefinitions>
