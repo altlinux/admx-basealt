@@ -127,6 +127,9 @@
     <category name="ALT_User_Restrictions_Mate" displayName="$(string.ALT_User_Restrictions_Mate)" explainText="$(string.ALT_User_Restrictions_Mate_Help)">
       <parentCategory ref="ALT_Settings_Mate" />
     </category>
+    <category name="ALT_Terminal_Mate" displayName="$(string.ALT_Terminal_Mate)" explainText="$(string.ALT_Terminal_Mate_Help)">
+      <parentCategory ref="ALT_Settings_Mate" />
+    </category>
     <category name="ALT_Remote_Access_Vino_Gnome" displayName="$(string.ALT_Remote_Access_Vino_Gnome)" explainText="$(string.ALT_Remote_Access_Vino_Gnome_Help)">
       <parentCategory ref="ALT_System" />
     </category>

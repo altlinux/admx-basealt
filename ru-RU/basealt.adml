@@ -49,6 +49,8 @@
       <string id="LinuxComponents_Help">Содержит настройки ядра операционной системы.</string>
       <string id="ALT_Settings_Mate">Настройки Mate</string>
       <string id="ALT_Settings_Mate_Help">Настройки Mate</string>
+      <string id="ALT_Terminal_Mate">Терминал Mate</string>
+      <string id="ALT_Terminal_Mate_Help">Настройки Терминала Mate</string>
       <string id="ALT_Background_Mate">Фон рабочего стола</string>
       <string id="ALT_Background_Mate_Help">Настройки фона рабочего стола</string>
       <string id="ALT_Screensaver_Mate">Хранитель экрана</string>

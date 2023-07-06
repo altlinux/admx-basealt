@@ -418,6 +418,33 @@ Cтрока типа rgb(0,0,0). </string>
       <string id="org-mate-peripherals-keyboard-rate">Скорость повтора</string>
       <string id="org-mate-peripherals-keyboard-rate_help">Устанавливает скорость повтора нажатой и удерживаемой клавиши.</string>
 
+      <string id="org-mate-mate-menu-systemmanagement-show-terminal">Отображение ярлыка "Терминал"</string>
+      <string id="org-mate-mate-menu-systemmanagement-show-terminal_help">Данная политика настраивает отображение ярлыка "Терминал" в MATE меню.
+
+Если значение политики установлено в "Включено", то ярлык "Терминал" будет отображаться в меню системного управления MATE. Если значение установлено в "Отключено", то ярлык "Терминал" будет скрыт.</string>
+
+      <string id="org-mate-mate-menu-systemmanagement-show-terminal-true">Включено</string>
+      <string id="org-mate-mate-menu-systemmanagement-show-terminal-false">Отключено</string>
+
+      <string id="org-mate-Marco-global-keybindings-run-command-terminal">Горячие клавиши для запуска терминала</string>
+      <string id="org-mate-Marco-global-keybindings-run-command-terminal_help">Данная политика позволяет установить комбинацию горячих клавиш для запуска приложения "Терминал".
+
+Комбинация клавиш передаётся в виде строки. Комбинация клавиш Ctrl+Alt+T будет выглядеть следующим образом: &lt;Primary&gt;&lt;Alt&gt;t
+
+Для отключения запуска "Терминала" с помощью горячих клавиш необходимо передать значение false
+
+Существует несколько токенов, используемых для различных клавиш-модификаторов в различных средах рабочего стола и программных приложениях. Вот некоторые из них:
+
+&lt;Primary&gt; или &lt;Ctrl&gt;: Обозначает клавишу "Ctrl" (Control).
+&lt;Alt&gt;: Обозначает клавишу "Alt" (Alternate).
+&lt;Shift&gt;: Обозначает клавишу "Shift".
+&lt;Super&gt; или &lt;Meta&gt;: Обозначает клавишу "Super" или "Meta". На большинстве клавиатур это клавиша Windows или Command.
+&lt;Hyper&gt;: Обозначает клавишу "Hyper", которая обычно отсутствует на большинстве клавиатур.
+&lt;CapsLock&gt;: Обозначает клавишу "Caps Lock".
+false: Отключение запуска терминала с помощью "горячих" клавиш.
+
+ </string>
+
     </stringTable>
 
     <presentationTable>
@@ -616,7 +643,7 @@ Cтрока типа rgb(0,0,0). </string>
       </presentation>
 
       <presentation id="OrgGnomeVinoUseAlternativePortMachine-pr">
-      <dropdownList noSort="true" defaultItem="0" refId="OrgGnomeVinoUseAlternativePort_setter">Выберите «Включено» или «Отключено»:</dropdownList>
+        <dropdownList noSort="true" defaultItem="0" refId="OrgGnomeVinoUseAlternativePort_setter">Выберите «Включено» или «Отключено»:</dropdownList>
         <checkBox refId="OrgGnomeVinoUseAlternativePort_setter_blocker">Блокировать</checkBox>
         <text>Блокировка изменений данной настройки политикой пользователя. Блокировка политики делает её приоритетнее аналогичной политики для пользователя.</text>
       </presentation>
@@ -645,7 +672,7 @@ Cтрока типа rgb(0,0,0). </string>
         <text>Блокировка изменений данной настройки политикой пользователя. Блокировка политики делает её приоритетнее аналогичной политики для пользователя.</text>
       </presentation>
 
-<presentation id="OrgMateMarcoGeneraButtonLayoutUser-pr">
+      <presentation id="OrgMateMarcoGeneraButtonLayoutUser-pr">
         <textBox refId="OrgMateMarcoGeneraButtonLayout_setter">
           <label></label>
         </textBox>
@@ -863,6 +890,26 @@ Cтрока типа rgb(0,0,0). </string>
         <decimalTextBox refId="OrgMatePeripheralsKeyboardRate_setter">Скорость повтора:</decimalTextBox>
         <checkBox refId="OrgMatePeripheralsKeyboardRate_setter_blocker">Блокировать</checkBox>
         <text>Блокировка изменений данной настройки политикой пользователя. Блокировка политики делает её приоритетнее аналогичной политики для пользователя.</text>
+      </presentation>
+
+      <presentation id="OrgMateSystemManagementShowTermimalMachine-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="OrgMateSystemManagementShowTermimal_setter">Отображение ярлыка "Терминал":</dropdownList>
+        <checkBox refId="OrgMateSystemManagementShowTermimal_blocker">Блокировать</checkBox>
+        <text>Блокировка изменений данной настройки политикой пользователя. Блокировка политики делает её приоритетнее аналогичной политики для пользователя.</text>
+      </presentation>
+
+      <presentation id="OrgMateMarcoGlobalKeybindingsRunCommandTerminalMachine-pr">
+        <textBox refId="OrgMateMarcoGlobalKeybindingsRunCommandTerminal_setter">
+          <label>Комбинация горячих клавиш:</label>
+        </textBox>
+        <checkBox refId="OrgMateMarcoGlobalKeybindingsRunCommandTerminal_blocker">Блокировать</checkBox>
+        <text>Блокировка изменений данной настройки политикой пользователя. Блокировка политики делает её приоритетнее аналогичной политики для пользователя.</text>
+      </presentation>
+
+      <presentation id="OrgMateMarcoGlobalKeybindingsRunCommandTerminalUser-pr">
+        <textBox refId="OrgMateMarcoGlobalKeybindingsRunCommandTerminal_setter">
+          <label>Комбинация горячих клавиш:</label>
+        </textBox>
       </presentation>
 
     </presentationTable>
