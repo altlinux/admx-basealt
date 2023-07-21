@@ -57,6 +57,50 @@
           </boolean>
       </elements>
     </policy>
+    <policy name="kde-language" class="User" displayName="$(string.kde-language)"
+    explainText="$(string.kde-language_help)"
+    key="Software\BaseALT\Policies\KDE"
+    presentation="$(presentation.kde-language-user-pr)">
+    <parentCategory ref="system:ALT_Settings_KDE" />
+    <supportedOn ref="system:SUPPORTED_AltP9" />
+      <elements>
+        <enum id="kde-language_setter" valueName="plasma.localerc.Language" required="true">
+          <item displayName="$(string.kde-language-ru)">
+            <value>
+              <string>{"Formats":{"LANG":"ru_RU.UTF-8"}, "Translations":{"LANGUAGE":"ru"}}</string>
+            </value>
+          </item>
+          <item displayName="$(string.kde-language-fr)">
+            <value>
+              <string>{"Formats":{"LANG":"fr_FR.UTF-8"}, "Translations":{"LANGUAGE":"fr"}}</string>
+            </value>
+          </item>
+          <item displayName="$(string.kde-language-de)">
+            <value>
+              <string>{"Formats":{"LANG":"de_DE.UTF-8"}, "Translations":{"LANGUAGE":"de"}}</string>
+            </value>
+          </item>
+          <item displayName="$(string.kde-language-en-us)">
+            <value>
+              <string>{"Formats":{"LANG":"en_US.UTF-8"}, "Translations":{"LANGUAGE":"en_US"}}</string>
+            </value>
+          </item>
+          <item displayName="$(string.kde-language-en-gb)">
+            <value>
+              <string>{"Formats":{"LANG":"en_GB.UTF-8"}, "Translations":{"LANGUAGE":"en_GB"}}</string>
+            </value>
+          </item>
+        </enum>
+        <boolean id="kde-language_blocker" key="Software\BaseALT\Policies\KDELocks" valueName="plasma.localerc.Language">
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+          </boolean>
+      </elements>
+    </policy>
     <policy name="kde-wallpaper" class="User" displayName="$(string.kde-wallpaper)"
     explainText="$(string.kde-wallpaper_help)"
     presentation="$(presentation.kde-wallpaper-user-pr)"
@@ -76,6 +120,64 @@
       <elements>
         <text id="kde-colorscheme-setter" valueName="plasma.colorscheme"/>
       </elements>
+    </policy>
+    <policy name="kde-cursortheme" class="User" displayName="$(string.kde-cursortheme)"
+    explainText="$(string.kde-cursortheme_help)"
+    presentation="$(presentation.kde-cursortheme-user-pr)"
+    key="Software\BaseALT\Policies\KDE">
+    <parentCategory ref="system:ALT_Settings_KDE" />
+    <supportedOn ref="system:SUPPORTED_AltP9" />
+      <elements>
+        <text id="kde-cursortheme-setter" valueName="plasma.cursortheme"/>
+      </elements>
+    </policy>
+    <policy name="kde-filesearch" class="User" displayName="$(string.kde-filesearch)"
+      explainText="$(string.kde-filesearch_help)"
+      key="Software\BaseALT\Policies\KDE" valueName="kde.filerc">
+      <parentCategory ref="system:ALT_FileSearch_KDE"/>
+      <supportedOn ref="system:SUPPORTED_AltP9"/>
+      <enabledValue>
+        <string>{"Basic Settings":{"Indexing-Enabled":"true"}}</string>
+      </enabledValue>
+      <disabledValue>
+        <string>{"Basic Settings":{"Indexing-Enabled":"false"}}</string>
+      </disabledValue>
+    </policy>
+    <policy name="kde-filesearch-basic" class="User" displayName="$(string.kde-filesearch-basic)"
+      explainText="$(string.kde-filesearch-basic_help)"
+      key="Software\BaseALT\Policies\KDE" valueName="kde.filerc.basic">
+      <parentCategory ref="system:ALT_FileSearch_KDE"/>
+      <supportedOn ref="system:SUPPORTED_AltP9"/>
+      <enabledValue>
+        <string>{"General":{"only basic indexing":"false"}}</string>
+      </enabledValue>
+      <disabledValue>
+        <string>{"General":{"only basic indexing":"true"}}</string>
+      </disabledValue>
+    </policy>
+    <policy name="kde-filesearch-hidden" class="User" displayName="$(string.kde-filesearch-hidden)"
+      explainText="$(string.kde-filesearch-hidden_help)"
+      key="Software\BaseALT\Policies\KDE" valueName="kde.filerc.hidden">
+      <parentCategory ref="system:ALT_FileSearch_KDE"/>
+      <supportedOn ref="system:SUPPORTED_AltP9"/>
+      <enabledValue>
+        <string>{"General":{"index hidden folders":"true"}}</string>
+      </enabledValue>
+      <disabledValue>
+        <string>{"General":{"index hidden folders":"false"}}</string>
+      </disabledValue>
+    </policy>
+    <policy name="kde-graphic-effects" class="User" displayName="$(string.kde-graphic-effects)"
+      explainText="$(string.kde-graphic-effects_help)"
+      key="Software\BaseALT\Policies\KDE" valueName="kwinrc.GraphicEffects">
+      <parentCategory ref="system:ALT_Settings_KDE"/>
+      <supportedOn ref="system:SUPPORTED_AltP9"/>
+      <enabledValue>
+        <string>{"Compositing":{"Enabled":"true"}}</string>
+      </enabledValue>
+      <disabledValue>
+        <string>{"Compositing":{"Enabled":"false"}}</string>
+      </disabledValue>
     </policy>
   </policies>
 </policyDefinitions>

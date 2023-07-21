@@ -51,6 +51,8 @@
       <string id="ALT_Settings_Mate_Help">Mate settings.</string>
       <string id="ALT_Settings_KDE">KDE settings</string>
       <string id="ALT_Settings_KDE_Help">KDE settings.</string>
+      <string id="ALT_FileSearch_KDE">File search</string>
+      <string id="ALT_FileSearch_KDE_Help">File search.</string>
       <string id="ALT_Background_Mate">Desktop background</string>
       <string id="ALT_Background_Mate_Help">Desktop background settings.</string>
       <string id="ALT_Screensaver_Mate">Screensaver</string>

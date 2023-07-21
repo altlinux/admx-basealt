@@ -25,8 +25,34 @@
 «Фокус строго под мышью» — фокус всегда в окне под указателем мыши(а если под ним пусто, он теряется). Примечание: Предотвращение смены фокуса и переключение через Alt+Tab противоречат этому поведению и не будут работать.
       </string>
 
+      <string id="kde-language">Региональные и языковые параметры</string>
+      <string id="kde-language_help">Эти параметры меняют настройки не только самого языка системы, но и задают настройки валюты, стандарт времени, числовые значения, стиль написания имени, телефонный код и стандарт телефонного номера страны. Допустимые значения:
+
+«Русский язык»
+
+«Французский язык»
+
+«Немецкий язык»
+
+«Английский язык (Американский)»
+
+«Английский язык (Британский)»
+      </string>
+
       <string id="kde-wallpaper">Картинка фона рабочего стола</string>
       <string id="kde-wallpaper_help">Данная политика позволяет установить изображения в качестве фона рабочего стола, указав файл (например, /usr/share/wallpapers/table.png), содержащий изображение.</string>
+
+      <string id="kde-filesearch">Поиск файлов</string>
+      <string id="kde-filesearch_help">Политика включает службу поиска файлов, которая позволяет быстро находить файлы по их содержимому.</string>
+
+      <string id="kde-filesearch-basic">Индексация содержимого файлов</string>
+      <string id="kde-filesearch-basic_help">Политика является дополнением к политике "Поиск файлов". Индексация содержимого файлов в системе будет включена только в том случае, если данная политика включена вместе с политикой "Поиск файлов".</string>
+
+      <string id="kde-filesearch-hidden">Индексация скрытых файлов и папок</string>
+      <string id="kde-filesearch-hidden_help">Политика является дополнением к политике "Поиск файлов". Индексация скрытых папок и файлов в системе будет включена только в том случае, если данная политика включена вместе с политикой "Поиск файлов".</string>
+
+      <string id="kde-graphic-effects">Граффические эффекты</string>
+      <string id="kde-graphic-effects_help">Политика настраивает включение или отключение граффических эффектов при входе в систему.</string>
 
       <string id="kde-colorscheme">Цветовая схема приложений</string>
       <string id="kde-colorscheme_help">Данная политика позволяет управлять цветовыми схемами, указав название схемы (например: BreezeClassic).
@@ -46,6 +72,22 @@
       - Oxygen
       </string>
 
+      <string id="kde-cursortheme">Тема курсора</string>
+      <string id="kde-cursortheme_help">Данная политика позволяет выбрать тему курсора мыши, указав её название  (например: Oxygen_Black). Используются темы курсоров, доступные в /usr/share/icons. Допустимые значения параметра:
+
+      - Adwaita
+      - Breeze_Wnow
+      - KDE_Classic
+      - Oxygen_Black
+      - Oxygen_Blue
+      - Oxygen_White
+      - Oxygen_Yellow
+      - Oxygen_Zion
+      - breeze
+      - breeze_dark
+      - breeze_cursors
+      </string>
+
       <string id="kde-win-act-Click_to_focus">Фокус по щелчку</string>
       <string id="kde-win-act-Click_to_focus_Mp">Фокус по щелчку (приоритет мыши)</string>
       <string id="kde-win-act-Focus_follows_mouse">Фокус следует за мышью</string>
@@ -53,11 +95,22 @@
       <string id="kde-win-act-Focus_under_mouse">Фокус под мышью</string>
       <string id="kde-win-act-Focus_under_mouse-Mp">Фокус строго под мышью</string>
 
+      <string id="kde-language-ru">Русский язык</string>
+      <string id="kde-language-fr">Французский язык</string>
+      <string id="kde-language-de">Немецкий язык</string>
+      <string id="kde-language-en-us">Английский язык (Американский)</string>
+      <string id="kde-language-en-gb">Английский язык (Британский)</string>
+
       </stringTable>
     <presentationTable>
       <presentation id="kde-win-activate-user-pr">
         <dropdownList noSort="true" defaultItem="0" refId="kde-win-activate_setter">Возможные режимы:</dropdownList>
         <checkBox refId="kde-win-activate_blocker">Блокировать</checkBox>
+        <text>Блокировка изменений данной настройки пользователем. После перезагрузки устройства внесённые пользователем изменения настройки не сохраняются.</text>
+      </presentation>
+      <presentation id="kde-language-user-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="kde-language_setter">Возможные языковые параметры:</dropdownList>
+        <checkBox refId="kde-language_blocker">Блокировать</checkBox>
         <text>Блокировка изменений данной настройки пользователем. После перезагрузки устройства внесённые пользователем изменения настройки не сохраняются.</text>
       </presentation>
         <presentation id="kde-wallpaper-user-pr">
@@ -68,6 +121,11 @@
       <presentation id="kde-colorscheme-user-pr">
         <textBox refId="kde-colorscheme-setter">
           <label>Цветовая схема:</label>
+        </textBox>
+      </presentation>
+      <presentation id="kde-cursortheme-user-pr">
+        <textBox refId="kde-cursortheme-setter">
+          <label>Тема курсора мыши:</label>
         </textBox>
       </presentation>
      </presentationTable>

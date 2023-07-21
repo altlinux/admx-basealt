@@ -23,11 +23,36 @@
 "Focus under the mouse" — the focus is always in the window under the mouse. Note: Preventing focus change and switching via Alt+Tab contradict this behavior and will not work.
 
 "Focus under mouse" (mouse precedence) — the focus is always in the window under the mouse pointer (and if it is empty under it, it is lost). Note: Preventing focus change and switching via Alt+Tab contradict this behavior and will not work.
+      </string>
 
+      <string id="kde-language">Regional and Language Options</string>
+      <string id="kde-language_help">These options not only change the settings for the system language itself, but also set the currency settings, time standard, numeric values, name spelling style, dialing code, and country telephone number standard. Valid values:
+
+"Russian"
+
+"French"
+
+"German"
+
+"English (American)"
+
+"English (British)"
       </string>
 
       <string id="kde-wallpaper">Desktop backgroung</string>
       <string id="kde-wallpaper_help">This policy allows you to set images as your desktop background by specifying a file (eg /usr/share/wallpapers/table.png) containing the image.</string>
+
+      <string id="kde-filesearch">Search for files</string>
+      <string id="kde-filesearch_help">The policy enable a file search service that allows you to quickly find files by their content.</string>
+
+      <string id="kde-filesearch-basic">File content indexing</string>
+      <string id="kde-filesearch-basic_help">The policy is an addition to the "Search for files" policy. File content indexing on the system will only be enabled if this policy is enabled along with the "Search for Files" policy. </string>
+
+      <string id="kde-filesearch-hidden">Indexing hidden files and folders</string>
+      <string id="kde-filesearch-hidden_help">The policy is an addition to the "Search for files" policy. Indexing of hidden folders and files in the system will be enabled only if this policy is enabled together with the "Search for files" policy. </string>
+
+      <string id="kde-graphic-effects">Graphic effects</string>
+      <string id="kde-graphic-effects_help">The policy configures enabling or disabling graphical effects on login.</string>
 
       <string id="kde-colorscheme">Application color scheme</string>
       <string id="kde-colorscheme_help">This policy allows you to manage color schemes by specifying the name of the scheme (for example: BreezeClassic).
@@ -45,7 +70,22 @@
       - KritaDarker
       - KritaNeutral
       - Oxygen
+      </string>
 
+      <string id="kde-cursortheme">Cursor theme</string>
+      <string id="kde-cursortheme_help">This policy allows you to select a mouse cursor theme by specifying its name (for example: Oxygen_Black). Cursor themes available in /usr/share/icons are used. Valid parameter value:
+
+      - Adwaita
+      - Breeze_Wnow
+      - KDE_Classic
+      - Oxygen_Black
+      - Oxygen_Blue
+      - Oxygen_White
+      - Oxygen_Yellow
+      - Oxygen_Zion
+      - breeze
+      - breeze_dark
+      - breeze_cursors
       </string>
 
       <string id="kde-win-act-Click_to_focus">Click to focus</string>
@@ -55,11 +95,22 @@
       <string id="kde-win-act-Focus_under_mouse">Focus under mouse</string>
       <string id="kde-win-act-Focus_under_mouse-Mp">Focus under mouse (mouse precedence)</string>
 
+      <string id="kde-language-ru">Russian</string>
+      <string id="kde-language-fr">French</string>
+      <string id="kde-language-de">German</string>
+      <string id="kde-language-en-us">English (American)</string>
+      <string id="kde-language-en-gb">English (British)</string>
+
       </stringTable>
     <presentationTable>
       <presentation id="kde-win-activate-user-pr">
         <dropdownList noSort="true" defaultItem="0" refId="kde-win-activate_setter">Possible modes:</dropdownList>
         <checkBox refId="kde-win-activate_blocker">Block</checkBox>
+        <text>Blocking changes to this setting by the user. After restarting the device, the user's changes to the settings are not saved.</text>
+      </presentation>
+      <presentation id="kde-language-user-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="kde-language_setter">Possible language options:</dropdownList>
+        <checkBox refId="kde-language_blocker">Block</checkBox>
         <text>Blocking changes to this setting by the user. After restarting the device, the user's changes to the settings are not saved.</text>
       </presentation>
       <presentation id="kde-wallpaper-user-pr">
@@ -70,6 +121,11 @@
       <presentation id="kde-colorscheme-user-pr">
         <textBox refId="kde-colorscheme-setter">
           <label>Color scheme:</label>
+        </textBox>
+      </presentation>
+      <presentation id="kde-cursortheme-user-pr">
+        <textBox refId="kde-cursortheme-setter">
+          <label>Mouse cursor theme:</label>
         </textBox>
       </presentation>
      </presentationTable>
