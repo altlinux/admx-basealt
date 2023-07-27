@@ -174,7 +174,41 @@
             </value>
           </item>
         </enum>
-        <boolean id="kde-desktops_blocker" key="Software\BaseALT\Policies\KDELocks" valueName="kwinrc.FocusPolicy">
+        <boolean id="kde-desktops_blocker" key="Software\BaseALT\Policies\KDELocks" valueName="kwinrc.Desktops">
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+          </boolean>
+      </elements>
+    </policy>
+    <policy name="kde-automount" class="User" displayName="$(string.kde-automount)"
+    explainText="$(string.kde-automount_help)"
+    key="Software\BaseALT\Policies\KDE"
+    presentation="$(presentation.kde-automount-user-pr)">
+    <parentCategory ref="system:ALT_Settings_KDE" />
+    <supportedOn ref="system:SUPPORTED_AltP10" />
+      <elements>
+        <enum id="kde-automount_setter" valueName="kwinrc.AutoMount" required="true">
+          <item displayName="$(string.kde-automount-in-login)">
+            <value>
+              <string>{"General":{"AutomountEnabled":"true", "AutomountOnLogin":"true"}}</string>
+            </value>
+          </item>
+          <item displayName="$(string.kde-automount-enabled)">
+            <value>
+              <string>{"General":{"AutomountEnabled":"true", "AutomountOnPlugin":"true"}}</string>
+            </value>
+          </item>
+          <item displayName="$(string.kde-automount-uknow-enabled)">
+            <value>
+              <string>{"General":{"AutomountEnabled":"false", "AutomountOnLogin":"false", "AutomountOnPlugin":"false"}}</string>
+            </value>
+          </item>
+        </enum>
+        <boolean id="kde-automount_blocker" key="Software\BaseALT\Policies\KDELocks" valueName="kwinrc.AutoMount">
           <trueValue>
             <decimal value="1" />
           </trueValue>

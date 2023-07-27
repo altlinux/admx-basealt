@@ -23,6 +23,7 @@
 "Focus under the mouse" — the focus is always in the window under the mouse. Note: Preventing focus change and switching via Alt+Tab contradict this behavior and will not work.
 
 "Focus under mouse" (mouse precedence) — the focus is always in the window under the mouse pointer (and if it is empty under it, it is lost). Note: Preventing focus change and switching via Alt+Tab contradict this behavior and will not work.
+
       </string>
 
       <string id="kde-win-rendering">Draw delay</string>
@@ -52,6 +53,18 @@
 "English (American)"
 
 "English (British)"
+
+      </string>
+
+      <string id="kde-automount">Setting Up Connected Devices</string>
+      <string id="kde-automount_help">This policy allows you to configure automatic mounting of connected devices. Automatically mount devices:
+
+"At login"
+
+"When connected"
+
+"Automatically mount media that has never been manually mounted before"
+
       </string>
 
       <string id="kde-desktops">Virtual desktops</string>
@@ -130,6 +143,10 @@
       <string id="kde-desktops-three">3</string>
       <string id="kde-desktops-four">4</string>
 
+      <string id="kde-automount-in-login">At login</string>
+      <string id="kde-automount-enabled">When connected</string>
+      <string id="kde-automount-uknow-enabled">Automatically mount media that has never been manually mounted before</string>
+
       </stringTable>
     <presentationTable>
       <presentation id="kde-win-activate-user-pr">
@@ -150,6 +167,11 @@
       <presentation id="kde-desktops-user-pr">
         <dropdownList noSort="true" defaultItem="0" refId="kde-desktops_setter">Number of virtual desktops:</dropdownList>
         <checkBox refId="kde-desktops_blocker">Block</checkBox>
+        <text>Blocking changes to this setting by the user. After restarting the device, the user's changes to the settings are not saved.</text>
+      </presentation>
+      <presentation id="kde-automount-user-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="kde-automount_setter">Automatically mount devices:</dropdownList>
+        <checkBox refId="kde-automount_blocker">Block</checkBox>
         <text>Blocking changes to this setting by the user. After restarting the device, the user's changes to the settings are not saved.</text>
       </presentation>
       <presentation id="kde-wallpaper-user-pr">
