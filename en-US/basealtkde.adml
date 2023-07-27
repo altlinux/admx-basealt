@@ -54,6 +54,9 @@
 "English (British)"
       </string>
 
+      <string id="kde-desktops">Virtual desktops</string>
+      <string id="kde-desktops_help">This policy allows you to configure the number of virtual desktops. The number of tables can be from one to four inclusive.</string>
+
       <string id="kde-wallpaper">Desktop backgroung</string>
       <string id="kde-wallpaper_help">This policy allows you to set images as your desktop background by specifying a file (eg /usr/share/wallpapers/table.png) containing the image.</string>
 
@@ -122,6 +125,11 @@
       <string id="kde-win-rend-High">Prefer smoother animation</string>
       <string id="kde-win-rend-MostHigh">Force the smoothest animation</string>
 
+      <string id="kde-desktops-one">1</string>
+      <string id="kde-desktops-two">2</string>
+      <string id="kde-desktops-three">3</string>
+      <string id="kde-desktops-four">4</string>
+
       </stringTable>
     <presentationTable>
       <presentation id="kde-win-activate-user-pr">
@@ -137,6 +145,11 @@
       <presentation id="kde-win-rendering-user-pr">
         <dropdownList noSort="true" defaultItem="4" refId="kde-win-rendering_setter">Possible language options:</dropdownList>
         <checkBox refId="kde-win-rendering_blocker">Block</checkBox>
+        <text>Blocking changes to this setting by the user. After restarting the device, the user's changes to the settings are not saved.</text>
+      </presentation>
+      <presentation id="kde-desktops-user-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="kde-desktops_setter">Number of virtual desktops:</dropdownList>
+        <checkBox refId="kde-desktops_blocker">Block</checkBox>
         <text>Blocking changes to this setting by the user. After restarting the device, the user's changes to the settings are not saved.</text>
       </presentation>
       <presentation id="kde-wallpaper-user-pr">

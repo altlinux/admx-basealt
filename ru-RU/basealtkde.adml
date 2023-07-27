@@ -55,6 +55,9 @@
 
       </string>
 
+      <string id="kde-desktops">Виртуальные рабочие столы</string>
+      <string id="kde-desktops_help">Данная политика позволяет настраивать количество виртуальных рабочих столов. Количество столов может быть от одного до четырёх включительно.</string>
+
       <string id="kde-wallpaper">Картинка фона рабочего стола</string>
       <string id="kde-wallpaper_help">Данная политика позволяет установить изображения в качестве фона рабочего стола, указав файл (например, /usr/share/wallpapers/table.png), содержащий изображение.</string>
 
@@ -123,6 +126,12 @@
       <string id="kde-win-rend-High">Предпочитать более плавную анимацию</string>
       <string id="kde-win-rend-MostHigh">Принудительно наиболее плавная анимация</string>
 
+      <string id="kde-desktops-one">1</string>
+      <string id="kde-desktops-two">2</string>
+      <string id="kde-desktops-three">3</string>
+      <string id="kde-desktops-four">4</string>
+
+
       </stringTable>
     <presentationTable>
       <presentation id="kde-win-activate-user-pr">
@@ -140,7 +149,12 @@
         <checkBox refId="kde-win-rendering_blocker">Блокировать</checkBox>
         <text>Блокировка изменений данной настройки пользователем. После перезагрузки устройства внесённые пользователем изменения настройки не сохраняются.</text>
       </presentation>
-        <presentation id="kde-wallpaper-user-pr">
+      <presentation id="kde-desktops-user-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="kde-desktops_setter">Количество виртуальных рабочих столов:</dropdownList>
+        <checkBox refId="kde-desktops_blocker">Блокировать</checkBox>
+        <text>Блокировка изменений данной настройки пользователем. После перезагрузки устройства внесённые пользователем изменения настройки не сохраняются.</text>
+      </presentation>
+      <presentation id="kde-wallpaper-user-pr">
         <textBox refId="kde-wallpaper-setter">
           <label>Файл:</label>
         </textBox>
