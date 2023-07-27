@@ -25,6 +25,21 @@
 «Фокус строго под мышью» — фокус всегда в окне под указателем мыши(а если под ним пусто, он теряется). Примечание: Предотвращение смены фокуса и переключение через Alt+Tab противоречат этому поведению и не будут работать.
       </string>
 
+      <string id="kde-win-rendering">Задержка отрисови</string>
+      <string id="kde-win-rendering_help">Политика позволяет выбрать уровень задержки и плавности анимации. Допустимые значения:
+
+«Принудительно низкая задержка (может привести к артефактам)»
+
+«Предпочитать низкую задержку»
+
+«Баланс скорости и плавности»
+
+«Предпочитать более плавную анимацию»
+
+«Принудительно наиболее плавная анимация»
+
+      </string>
+
       <string id="kde-language">Региональные и языковые параметры</string>
       <string id="kde-language_help">Эти параметры меняют настройки не только самого языка системы, но и задают настройки валюты, стандарт времени, числовые значения, стиль написания имени, телефонный код и стандарт телефонного номера страны. Допустимые значения:
 
@@ -37,6 +52,7 @@
 «Английский язык (Американский)»
 
 «Английский язык (Британский)»
+
       </string>
 
       <string id="kde-wallpaper">Картинка фона рабочего стола</string>
@@ -101,6 +117,12 @@
       <string id="kde-language-en-us">Английский язык (Американский)</string>
       <string id="kde-language-en-gb">Английский язык (Британский)</string>
 
+      <string id="kde-win-rend-ExtremelyLow">Принудительно низкая задержка (может привести к артефактам)</string>
+      <string id="kde-win-rend-Low">Предпочитать низкую задержку</string>
+      <string id="kde-win-rend-Medium">Баланс скорости и плавности</string>
+      <string id="kde-win-rend-High">Предпочитать более плавную анимацию</string>
+      <string id="kde-win-rend-MostHigh">Принудительно наиболее плавная анимация</string>
+
       </stringTable>
     <presentationTable>
       <presentation id="kde-win-activate-user-pr">
@@ -111,6 +133,11 @@
       <presentation id="kde-language-user-pr">
         <dropdownList noSort="true" defaultItem="0" refId="kde-language_setter">Возможные языковые параметры:</dropdownList>
         <checkBox refId="kde-language_blocker">Блокировать</checkBox>
+        <text>Блокировка изменений данной настройки пользователем. После перезагрузки устройства внесённые пользователем изменения настройки не сохраняются.</text>
+      </presentation>
+      <presentation id="kde-win-rendering-user-pr">
+        <dropdownList noSort="true" defaultItem="4" refId="kde-win-rendering_setter">Возможные режимы:</dropdownList>
+        <checkBox refId="kde-win-rendering_blocker">Блокировать</checkBox>
         <text>Блокировка изменений данной настройки пользователем. После перезагрузки устройства внесённые пользователем изменения настройки не сохраняются.</text>
       </presentation>
         <presentation id="kde-wallpaper-user-pr">

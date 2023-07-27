@@ -13,7 +13,7 @@
     key="Software\BaseALT\Policies\KDE"
     presentation="$(presentation.kde-win-activate-user-pr)">
     <parentCategory ref="system:ALT_Settings_KDE" />
-    <supportedOn ref="system:SUPPORTED_AltP9" />
+    <supportedOn ref="system:SUPPORTED_AltP10" />
       <elements>
         <enum id="kde-win-activate_setter" valueName="kwinrc.FocusPolicy" required="true">
           <item displayName="$(string.kde-win-act-Click_to_focus)">
@@ -57,12 +57,56 @@
           </boolean>
       </elements>
     </policy>
+    <policy name="kde-win-rendering" class="User" displayName="$(string.kde-win-rendering)"
+    explainText="$(string.kde-win-rendering_help)"
+    key="Software\BaseALT\Policies\KDE"
+    presentation="$(presentation.kde-win-rendering-user-pr)">
+    <parentCategory ref="system:ALT_Settings_KDE" />
+    <supportedOn ref="system:SUPPORTED_AltP10" />
+      <elements>
+        <enum id="kde-win-rendering_setter" valueName="kwinrc.RenderPolicy" required="true">
+          <item displayName="$(string.kde-win-rend-ExtremelyLow)">
+            <value>
+              <string>{"Compositing":{"LatencyPolicy":"ExtremelyLow"}}</string>
+            </value>
+          </item>
+          <item displayName="$(string.kde-win-rend-Low)">
+            <value>
+              <string>{"Compositing":{"LatencyPolicy":"Low"}}</string>
+            </value>
+          </item>
+          <item displayName="$(string.kde-win-rend-Medium)">
+            <value>
+              <string>{"Compositing":{"LatencyPolicy":"Medium"}}</string>
+            </value>
+          </item>
+          <item displayName="$(string.kde-win-rend-High)">
+            <value>
+              <string>{"Compositing":{"LatencyPolicy":"High"}}</string>
+            </value>
+          </item>
+          <item displayName="$(string.kde-win-rend-MostHigh)">
+            <value>
+              <string>{"NONE":{"NONE":"NONE"}}</string>
+            </value>
+          </item>
+        </enum>
+        <boolean id="kde-win-rendering_blocker" key="Software\BaseALT\Policies\KDELocks" valueName="kwinrc.RenderPolicy">
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+          </boolean>
+      </elements>
+    </policy>
     <policy name="kde-language" class="User" displayName="$(string.kde-language)"
     explainText="$(string.kde-language_help)"
     key="Software\BaseALT\Policies\KDE"
     presentation="$(presentation.kde-language-user-pr)">
     <parentCategory ref="system:ALT_Settings_KDE" />
-    <supportedOn ref="system:SUPPORTED_AltP9" />
+    <supportedOn ref="system:SUPPORTED_AltP10" />
       <elements>
         <enum id="kde-language_setter" valueName="plasma.localerc.Language" required="true">
           <item displayName="$(string.kde-language-ru)">
@@ -106,7 +150,7 @@
     presentation="$(presentation.kde-wallpaper-user-pr)"
     key="Software\BaseALT\Policies\KDE">
     <parentCategory ref="system:ALT_Settings_KDE" />
-    <supportedOn ref="system:SUPPORTED_AltP9" />
+    <supportedOn ref="system:SUPPORTED_AltP10" />
       <elements>
         <text id="kde-wallpaper-setter" valueName="plasma.wallpaperimage"/>
       </elements>
@@ -116,7 +160,7 @@
     presentation="$(presentation.kde-colorscheme-user-pr)"
     key="Software\BaseALT\Policies\KDE">
     <parentCategory ref="system:ALT_Settings_KDE" />
-    <supportedOn ref="system:SUPPORTED_AltP9" />
+    <supportedOn ref="system:SUPPORTED_AltP10" />
       <elements>
         <text id="kde-colorscheme-setter" valueName="plasma.colorscheme"/>
       </elements>
@@ -126,7 +170,7 @@
     presentation="$(presentation.kde-cursortheme-user-pr)"
     key="Software\BaseALT\Policies\KDE">
     <parentCategory ref="system:ALT_Settings_KDE" />
-    <supportedOn ref="system:SUPPORTED_AltP9" />
+    <supportedOn ref="system:SUPPORTED_AltP10" />
       <elements>
         <text id="kde-cursortheme-setter" valueName="plasma.cursortheme"/>
       </elements>
@@ -135,7 +179,7 @@
       explainText="$(string.kde-filesearch_help)"
       key="Software\BaseALT\Policies\KDE" valueName="kde.filerc">
       <parentCategory ref="system:ALT_FileSearch_KDE"/>
-      <supportedOn ref="system:SUPPORTED_AltP9"/>
+      <supportedOn ref="system:SUPPORTED_AltP10"/>
       <enabledValue>
         <string>{"Basic Settings":{"Indexing-Enabled":"true"}}</string>
       </enabledValue>
@@ -147,7 +191,7 @@
       explainText="$(string.kde-filesearch-basic_help)"
       key="Software\BaseALT\Policies\KDE" valueName="kde.filerc.basic">
       <parentCategory ref="system:ALT_FileSearch_KDE"/>
-      <supportedOn ref="system:SUPPORTED_AltP9"/>
+      <supportedOn ref="system:SUPPORTED_AltP10"/>
       <enabledValue>
         <string>{"General":{"only basic indexing":"false"}}</string>
       </enabledValue>
@@ -159,7 +203,7 @@
       explainText="$(string.kde-filesearch-hidden_help)"
       key="Software\BaseALT\Policies\KDE" valueName="kde.filerc.hidden">
       <parentCategory ref="system:ALT_FileSearch_KDE"/>
-      <supportedOn ref="system:SUPPORTED_AltP9"/>
+      <supportedOn ref="system:SUPPORTED_AltP10"/>
       <enabledValue>
         <string>{"General":{"index hidden folders":"true"}}</string>
       </enabledValue>
@@ -171,7 +215,7 @@
       explainText="$(string.kde-graphic-effects_help)"
       key="Software\BaseALT\Policies\KDE" valueName="kwinrc.GraphicEffects">
       <parentCategory ref="system:ALT_Settings_KDE"/>
-      <supportedOn ref="system:SUPPORTED_AltP9"/>
+      <supportedOn ref="system:SUPPORTED_AltP10"/>
       <enabledValue>
         <string>{"Compositing":{"Enabled":"true"}}</string>
       </enabledValue>

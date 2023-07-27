@@ -25,6 +25,21 @@
 "Focus under mouse" (mouse precedence) — the focus is always in the window under the mouse pointer (and if it is empty under it, it is lost). Note: Preventing focus change and switching via Alt+Tab contradict this behavior and will not work.
       </string>
 
+      <string id="kde-win-rendering">Draw delay</string>
+      <string id="kde-win-rendering_help">The policy allows you to select the level of delay and smoothness of the animation. Valid values:
+
+"Forced low latency (may lead to artifacts)"
+
+"Prefer low latency"
+
+"The balance of speed and smoothness"
+
+"Prefer smoother animation"
+
+"Forced smoothest animation"
+
+      </string>
+
       <string id="kde-language">Regional and Language Options</string>
       <string id="kde-language_help">These options not only change the settings for the system language itself, but also set the currency settings, time standard, numeric values, name spelling style, dialing code, and country telephone number standard. Valid values:
 
@@ -101,6 +116,12 @@
       <string id="kde-language-en-us">English (American)</string>
       <string id="kde-language-en-gb">English (British)</string>
 
+      <string id="kde-win-rend-ExtremelyLow">Forced low latency (may lead to artifacts)</string>
+      <string id="kde-win-rend-Low">Prefer low latency</string>
+      <string id="kde-win-rend-Medium">Balance of speed and smoothness</string>
+      <string id="kde-win-rend-High">Prefer smoother animation</string>
+      <string id="kde-win-rend-MostHigh">Force the smoothest animation</string>
+
       </stringTable>
     <presentationTable>
       <presentation id="kde-win-activate-user-pr">
@@ -111,6 +132,11 @@
       <presentation id="kde-language-user-pr">
         <dropdownList noSort="true" defaultItem="0" refId="kde-language_setter">Possible language options:</dropdownList>
         <checkBox refId="kde-language_blocker">Block</checkBox>
+        <text>Blocking changes to this setting by the user. After restarting the device, the user's changes to the settings are not saved.</text>
+      </presentation>
+      <presentation id="kde-win-rendering-user-pr">
+        <dropdownList noSort="true" defaultItem="4" refId="kde-win-rendering_setter">Possible language options:</dropdownList>
+        <checkBox refId="kde-win-rendering_blocker">Block</checkBox>
         <text>Blocking changes to this setting by the user. After restarting the device, the user's changes to the settings are not saved.</text>
       </presentation>
       <presentation id="kde-wallpaper-user-pr">
