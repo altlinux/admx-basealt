@@ -23,6 +23,7 @@
 «Фокус под мышью» — фокус всегда оказывается в окне под мышью. Примечание: Предотвращение смены фокуса и переключение через Alt+Tab противоречат этому поведению и не будут работать.
 
 «Фокус строго под мышью» — фокус всегда в окне под указателем мыши(а если под ним пусто, он теряется). Примечание: Предотвращение смены фокуса и переключение через Alt+Tab противоречат этому поведению и не будут работать.
+
       </string>
 
       <string id="kde-win-rendering">Задержка отрисови</string>
@@ -129,6 +130,22 @@
       - breeze_cursors
       </string>
 
+      <string id="kde-iconstheme">Тема значков</string>
+      <string id="kde-iconstheme_help">Данная политика позволяет выбрать тему значков, указав её название  (например: Oxygen_Black). Используются темы курсоров, доступные в /usr/share/icons. Допустимые значения параметра:
+
+      - Adwaita
+      - Breeze_Wnow
+      - KDE_Classic
+      - Oxygen_Black
+      - Oxygen_Blue
+      - Oxygen_White
+      - Oxygen_Yellow
+      - Oxygen_Zion
+      - breeze
+      - breeze_dark
+      - breeze_cursors
+      </string>
+
       <string id="kde-win-act-Click_to_focus">Фокус по щелчку</string>
       <string id="kde-win-act-Click_to_focus_Mp">Фокус по щелчку (приоритет мыши)</string>
       <string id="kde-win-act-Focus_follows_mouse">Фокус следует за мышью</string>
@@ -197,6 +214,11 @@
       <presentation id="kde-cursortheme-user-pr">
         <textBox refId="kde-cursortheme-setter">
           <label>Тема курсора мыши:</label>
+        </textBox>
+      </presentation>
+      <presentation id="kde-iconstheme-user-pr">
+        <textBox refId="kde-iconstheme-setter">
+          <label>Тема значков:</label>
         </textBox>
       </presentation>
      </presentationTable>

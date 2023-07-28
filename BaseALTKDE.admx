@@ -320,5 +320,15 @@
         <string>{"KDE":{"SingleClick":"false"}}</string>
       </disabledValue>
     </policy>
+    <policy name="kde-iconstheme" class="User" displayName="$(string.kde-iconstheme)"
+    explainText="$(string.kde-iconstheme_help)"
+    presentation="$(presentation.kde-iconstheme-user-pr)"
+    key="Software\BaseALT\Policies\KDE">
+    <parentCategory ref="system:ALT_Settings_KDE" />
+    <supportedOn ref="system:SUPPORTED_AltP10" />
+      <elements>
+        <text id="kde-iconstheme-setter" valueName="plasma.iconstheme"/>
+      </elements>
+    </policy>
   </policies>
 </policyDefinitions>

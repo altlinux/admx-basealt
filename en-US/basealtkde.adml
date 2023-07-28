@@ -93,7 +93,8 @@
 
 If the policy is enabled, clicking will open the file or folder.
 
-If the policy is disabled, clicking on the file or folder will highlight it.</string>
+If the policy is disabled, clicking on the file or folder will highlight it.
+      </string>
 
       <string id="kde-colorscheme">Application color scheme</string>
       <string id="kde-colorscheme_help">This policy allows you to manage color schemes by specifying the name of the scheme (for example: BreezeClassic).
@@ -115,6 +116,22 @@ If the policy is disabled, clicking on the file or folder will highlight it.</st
 
       <string id="kde-cursortheme">Cursor theme</string>
       <string id="kde-cursortheme_help">This policy allows you to select a mouse cursor theme by specifying its name (for example: Oxygen_Black). Cursor themes available in /usr/share/icons are used. Valid parameter value:
+
+      - Adwaita
+      - Breeze_Wnow
+      - KDE_Classic
+      - Oxygen_Black
+      - Oxygen_Blue
+      - Oxygen_White
+      - Oxygen_Yellow
+      - Oxygen_Zion
+      - breeze
+      - breeze_dark
+      - breeze_cursors
+      </string>
+
+      <string id="kde-iconstheme">Icons theme</string>
+      <string id="kde-iconstheme_help">This policy allows you to select a icons theme by specifying its name (for example: Oxygen_Black). Icons themes available in /usr/share/icons are used. Valid parameter value:
 
       - Adwaita
       - Breeze_Wnow
@@ -196,7 +213,12 @@ If the policy is disabled, clicking on the file or folder will highlight it.</st
       </presentation>
       <presentation id="kde-cursortheme-user-pr">
         <textBox refId="kde-cursortheme-setter">
-          <label>Mouse cursor theme:</label>
+          <label>Cursor theme:</label>
+        </textBox>
+      </presentation>
+      <presentation id="kde-iconstheme-user-pr">
+        <textBox refId="kde-iconstheme-setter">
+          <label>Icons theme:</label>
         </textBox>
       </presentation>
      </presentationTable>
