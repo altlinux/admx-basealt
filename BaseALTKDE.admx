@@ -307,6 +307,18 @@
       <disabledValue>
         <string>{"KDE":{"ShowDeleteCommand":"false"}}</string>
       </disabledValue>
+      </policy>
+      <policy name="kde-singleclick" class="User" displayName="$(string.kde-singleclick)"
+      explainText="$(string.kde-singleclick_help)"
+      key="Software\BaseALT\Policies\KDE" valueName="kde.globals.singleclick">
+      <parentCategory ref="system:ALT_Settings_KDE"/>
+      <supportedOn ref="system:SUPPORTED_AltP10"/>
+      <enabledValue>
+        <string>{"KDE":{"SingleClick":"true"}}</string>
+      </enabledValue>
+      <disabledValue>
+        <string>{"KDE":{"SingleClick":"false"}}</string>
+      </disabledValue>
     </policy>
   </policies>
 </policyDefinitions>
