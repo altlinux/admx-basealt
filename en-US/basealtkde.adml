@@ -85,6 +85,9 @@
       <string id="kde-graphic-effects">Graphic effects</string>
       <string id="kde-graphic-effects_help">The policy configures enabling or disabling graphical effects on login.</string>
 
+      <string id="kde-showdelete">Deleting directories and files in the context menu</string>
+      <string id="kde-showdelete_help">The policy allows you to add or remove the "delete" button in the Dolphin context menu</string>
+
       <string id="kde-colorscheme">Application color scheme</string>
       <string id="kde-colorscheme_help">This policy allows you to manage color schemes by specifying the name of the scheme (for example: BreezeClassic).
 

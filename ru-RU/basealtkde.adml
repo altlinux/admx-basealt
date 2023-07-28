@@ -84,6 +84,9 @@
       <string id="kde-graphic-effects">Граффические эффекты</string>
       <string id="kde-graphic-effects_help">Политика настраивает включение или отключение граффических эффектов при входе в систему.</string>
 
+      <string id="kde-showdelete">Удаление каталогов и файлов в контекстном меню</string>
+      <string id="kde-showdelete_help">Политика позволяет добавить или убрать кнопку "удалить" в контекстном меню Dolphin</string>
+
       <string id="kde-colorscheme">Цветовая схема приложений</string>
       <string id="kde-colorscheme_help">Данная политика позволяет управлять цветовыми схемами, указав название схемы (например: BreezeClassic).
 
