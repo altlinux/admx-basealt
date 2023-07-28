@@ -53,6 +53,8 @@
       <string id="ALT_Settings_KDE_Help">Настройки KDE.</string>
       <string id="ALT_FileSearch_KDE">Поиск файлов</string>
       <string id="ALT_FileSearch_KDE_Help">Поиск файлов.</string>
+      <string id="ALT_Appearance_KDE">Внешний вид</string>
+      <string id="ALT_Appearance_KDE_Help">Внешний вид.</string>
       <string id="ALT_Background_Mate">Фон рабочего стола</string>
       <string id="ALT_Background_Mate_Help">Настройки фона рабочего стола.</string>
       <string id="ALT_Screensaver_Mate">Хранитель экрана</string>

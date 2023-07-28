@@ -99,6 +99,9 @@
     <category name="ALT_FileSearch_KDE" displayName="$(string.ALT_FileSearch_KDE)" explainText="$(string.ALT_FileSearch_KDE_Help)">
       <parentCategory ref="ALT_Settings_KDE" />
     </category>
+    <category name="ALT_Appearance_KDE" displayName="$(string.ALT_Appearance_KDE)" explainText="$(string.ALT_Appearance_KDE_Help)">
+      <parentCategory ref="ALT_Settings_KDE" />
+    </category>
     <category name="ALT_Network" displayName="$(string.ALT_Network)" explainText="$(string.ALT_Network_Help)">
       <parentCategory ref="ALT_System" />
     </category>
