@@ -222,7 +222,7 @@
     explainText="$(string.kde-wallpaper_help)"
     presentation="$(presentation.kde-wallpaper-user-pr)"
     key="Software\BaseALT\Policies\KDE">
-    <parentCategory ref="system:ALT_Settings_KDE" />
+    <parentCategory ref="system:ALT_Appearance_KDE" />
     <supportedOn ref="system:SUPPORTED_AltP10" />
       <elements>
         <text id="kde-wallpaper-setter" valueName="plasma.wallpaperimage"/>
@@ -232,7 +232,7 @@
     explainText="$(string.kde-colorscheme_help)"
     presentation="$(presentation.kde-colorscheme-user-pr)"
     key="Software\BaseALT\Policies\KDE">
-    <parentCategory ref="system:ALT_Settings_KDE" />
+    <parentCategory ref="system:ALT_Appearance_KDE" />
     <supportedOn ref="system:SUPPORTED_AltP10" />
       <elements>
         <text id="kde-colorscheme-setter" valueName="plasma.colorscheme"/>
@@ -242,7 +242,7 @@
     explainText="$(string.kde-cursortheme_help)"
     presentation="$(presentation.kde-cursortheme-user-pr)"
     key="Software\BaseALT\Policies\KDE">
-    <parentCategory ref="system:ALT_Settings_KDE" />
+    <parentCategory ref="system:ALT_Appearance_KDE" />
     <supportedOn ref="system:SUPPORTED_AltP10" />
       <elements>
         <text id="kde-cursortheme-setter" valueName="plasma.cursortheme"/>
@@ -324,7 +324,7 @@
     explainText="$(string.kde-iconstheme_help)"
     presentation="$(presentation.kde-iconstheme-user-pr)"
     key="Software\BaseALT\Policies\KDE">
-    <parentCategory ref="system:ALT_Settings_KDE" />
+    <parentCategory ref="system:ALT_Appearance_KDE" />
     <supportedOn ref="system:SUPPORTED_AltP10" />
       <elements>
         <text id="kde-iconstheme-setter" valueName="plasma.iconstheme"/>
