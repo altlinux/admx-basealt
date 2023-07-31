@@ -67,17 +67,20 @@
 
       </string>
 
+      <string id="kde-filesearch">Служба поиска файлов</string>
+      <string id="kde-filesearch_help">This policy allows you to configure the file search service, index the contents of files, index hidden files and folders. Possible setting options:
+
+"Enable file search service only"
+
+"Enable search service and file content indexing"
+
+"Enable search service and indexing of hidden files and folders"
+
+"Enable search service, indexing hidden folders, files and their contents"
+      </string>
+
       <string id="kde-desktops">Virtual desktops</string>
       <string id="kde-desktops_help">This policy allows you to configure the number of virtual desktops. The number of tables can be from one to four inclusive.</string>
-
-      <string id="kde-wallpaper">Desktop backgroung</string>
-      <string id="kde-wallpaper_help">This policy allows you to set images as your desktop background by specifying a file (eg /usr/share/wallpapers/table.png) containing the image.</string>
-
-      <string id="kde-filesearch">Search for files</string>
-      <string id="kde-filesearch_help">The policy enable a file search service that allows you to quickly find files by their content.</string>
-
-      <string id="kde-filesearch-basic">File content indexing</string>
-      <string id="kde-filesearch-basic_help">The policy is an addition to the "Search for files" policy. File content indexing on the system will only be enabled if this policy is enabled along with the "Search for Files" policy. </string>
 
       <string id="kde-filesearch-hidden">Indexing hidden files and folders</string>
       <string id="kde-filesearch-hidden_help">The policy is an addition to the "Search for files" policy. Indexing of hidden folders and files in the system will be enabled only if this policy is enabled together with the "Search for files" policy. </string>
@@ -174,6 +177,11 @@ If the policy is disabled, clicking on the file or folder will highlight it.
       <string id="kde-automount-enabled">When connected</string>
       <string id="kde-automount-uknow-enabled">Automatically mount media that has never been manually mounted before</string>
 
+      <string id="kde-filesearch-enabled">Enable file search service only</string>
+      <string id="kde-filesearch-indexing">Enable search service and file content indexing</string>
+      <string id="kde-filesearch-folders">Enable search service and indexing of hidden files and folders</string>
+      <string id="kde-filesearch-folders-and-indexing">Enable search service, indexing hidden folders, files and their contents</string>
+
       </stringTable>
     <presentationTable>
       <presentation id="kde-win-activate-user-pr">
@@ -199,6 +207,11 @@ If the policy is disabled, clicking on the file or folder will highlight it.
       <presentation id="kde-automount-user-pr">
         <dropdownList noSort="true" defaultItem="0" refId="kde-automount_setter">Automatically mount devices:</dropdownList>
         <checkBox refId="kde-automount_blocker">Block</checkBox>
+        <text>Blocking changes to this setting by the user. After restarting the device, the user's changes to the settings are not saved.</text>
+      </presentation>
+      <presentation id="kde-filesearch-user-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="kde-filesearch_setter">Possible modes:</dropdownList>
+        <checkBox refId="kde-filesearch_blocker">Block</checkBox>
         <text>Blocking changes to this setting by the user. After restarting the device, the user's changes to the settings are not saved.</text>
       </presentation>
       <presentation id="kde-wallpaper-user-pr">

@@ -67,20 +67,23 @@
 
       </string>
 
+      <string id="kde-filesearch">Служба поиска файлов</string>
+      <string id="kde-filesearch_help">Данная политика позволяет настраивать службу поиска файлов, индексировать содержимое файлов, индексировать скрытые файлы и папки. Возможные варианты настройки:
+
+«Включить только службу поиска файлов»
+
+«Включить службу поиска и индексацию содержимого файлов»
+
+«Включить службу поиска и индексацию скрытых файлов и папок»
+
+«Включить службу поиска, индексацию скрытых папок, файлов и их содержимого»
+      </string>
+
       <string id="kde-desktops">Виртуальные рабочие столы</string>
       <string id="kde-desktops_help">Данная политика позволяет настраивать количество виртуальных рабочих столов. Количество столов может быть от одного до четырёх включительно.</string>
 
       <string id="kde-wallpaper">Картинка фона рабочего стола</string>
       <string id="kde-wallpaper_help">Данная политика позволяет установить изображения в качестве фона рабочего стола, указав файл (например, /usr/share/wallpapers/table.png), содержащий изображение.</string>
-
-      <string id="kde-filesearch">Поиск файлов</string>
-      <string id="kde-filesearch_help">Политика включает службу поиска файлов, которая позволяет быстро находить файлы по их содержимому.</string>
-
-      <string id="kde-filesearch-basic">Индексация содержимого файлов</string>
-      <string id="kde-filesearch-basic_help">Политика является дополнением к политике "Поиск файлов". Индексация содержимого файлов в системе будет включена только в том случае, если данная политика включена вместе с политикой "Поиск файлов".</string>
-
-      <string id="kde-filesearch-hidden">Индексация скрытых файлов и папок</string>
-      <string id="kde-filesearch-hidden_help">Политика является дополнением к политике "Поиск файлов". Индексация скрытых папок и файлов в системе будет включена только в том случае, если данная политика включена вместе с политикой "Поиск файлов".</string>
 
       <string id="kde-graphic-effects">Граффические эффекты</string>
       <string id="kde-graphic-effects_help">Политика настраивает включение или отключение граффических эффектов при входе в систему.</string>
@@ -174,6 +177,11 @@
       <string id="kde-automount-enabled">При подключении</string>
       <string id="kde-automount-uknow-enabled">Которые никогда ранее не были примонтированы вручную</string>
 
+      <string id="kde-filesearch-enabled">Включить только службу поиска файлов</string>
+      <string id="kde-filesearch-indexing">Включить службу поиска и индексацию содержимого файлов</string>
+      <string id="kde-filesearch-folders">Включить службу поиска и индексацию скрытых файлов и папок</string>
+      <string id="kde-filesearch-folders-and-indexing">Включить службу поиска, индексацию скрытых папок, файлов и их содержимого</string>
+
       </stringTable>
     <presentationTable>
       <presentation id="kde-win-activate-user-pr">
@@ -199,6 +207,11 @@
       <presentation id="kde-automount-user-pr">
         <dropdownList noSort="true" defaultItem="0" refId="kde-automount_setter">Автоматичеки монтировать устройства:</dropdownList>
         <checkBox refId="kde-automount_blocker">Блокировать</checkBox>
+        <text>Блокировка изменений данной настройки пользователем. После перезагрузки устройства внесённые пользователем изменения настройки не сохраняются.</text>
+      </presentation>
+      <presentation id="kde-filesearch-user-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="kde-filesearch_setter">Возможные режимы:</dropdownList>
+        <checkBox refId="kde-filesearch_blocker">Блокировать</checkBox>
         <text>Блокировка изменений данной настройки пользователем. После перезагрузки устройства внесённые пользователем изменения настройки не сохраняются.</text>
       </presentation>
       <presentation id="kde-wallpaper-user-pr">
