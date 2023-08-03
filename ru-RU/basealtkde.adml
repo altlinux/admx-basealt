@@ -99,7 +99,7 @@
 Если политика отключена, щелчком файл или папка будут выделены.
       </string>
 
-      <string id="kde-colorscheme">Цветовая схема приложений</string>
+      <string id="kde-colorscheme">Цвета</string>
       <string id="kde-colorscheme_help">Данная политика позволяет управлять цветовыми схемами, указав название схемы (например: BreezeClassic).
 
       Допустимые варианты цветовых схем:
@@ -134,13 +134,23 @@
       </string>
 
       <string id="kde-iconstheme">Тема значков</string>
-      <string id="kde-iconstheme_help">Данная политика позволяет выбрать тему.  Допустимые значения параметра:
+      <string id="kde-iconstheme_help">Данная политика позволяет выбрать тему значков.  Допустимые значения параметра:
 
       - Adwaita
       - Oxygen
       - Breeze
       - Breeze_dark
       - Gnome
+
+      </string>
+
+      <string id="kde-look-and-feel">Оформление рабочей среды</string>
+      <string id="kde-look-and-feel_help">Данная политика позволяет выбрать оформление рабочей среды.  Допустимые значения параметра:
+
+      - Oxygen
+      - Breeze
+      - Breeze_dark
+      - BreezeTwinlight
 
       </string>
 
@@ -182,6 +192,11 @@
       <string id="kde-icons-Adwaita">Adwaita</string>
       <string id="kde-icons-oxygen">Oxygen</string>
       <string id="kde-icons-gnome">Gnome</string>
+
+      <string id="kde-look-and-feel-breeze">Breeze</string>
+      <string id="kde-look-and-feel-breeze-dark">Breeze-dark</string>
+      <string id="kde-look-and-feel-oxygen">Oxygen</string>
+      <string id="kde-look-and-feel-breezetwilight">BreezeTwilight</string>
 
       </stringTable>
     <presentationTable>
@@ -230,9 +245,26 @@
           <label>Тема курсора мыши:</label>
         </textBox>
       </presentation>
+      <presentation id="kde-graphic-effects-user-pr">
+        <checkBox refId="kde-graphic-effects_blocker">Блокировать</checkBox>
+        <text>Блокировка изменений данной настройки пользователем. После перезагрузки устройства внесённые пользователем изменения настройки не сохраняются.</text>
+      </presentation>
+      <presentation id="kde-singleclick-user-pr">
+        <checkBox refId="kde-singleclick_blocker">Блокировать</checkBox>
+        <text>Блокировка изменений данной настройки пользователем. После перезагрузки устройства внесённые пользователем изменения настройки не сохраняются.</text>
+      </presentation>
+      <presentation id="kde-showdelete-user-pr">
+        <checkBox refId="kde-showdelete_blocker">Блокировать</checkBox>
+        <text>Блокировка изменений данной настройки пользователем. После перезагрузки устройства внесённые пользователем изменения настройки не сохраняются.</text>
+      </presentation>
       <presentation id="kde-iconstheme-user-pr">
         <dropdownList noSort="true" defaultItem="0" refId="kde-iconstheme-setter">Тема значков:</dropdownList>
         <checkBox refId="kde-iconstheme_blocker">Блокировать</checkBox>
+        <text>Блокировка изменений данной настройки пользователем. После перезагрузки устройства внесённые пользователем изменения настройки не сохраняются.</text>
+      </presentation>
+      <presentation id="kde-look-and-feel-user-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="kde-look-and-feel-setter">Оформление рабочей среды:</dropdownList>
+        <checkBox refId="kde-look-and-feel_blocker">Блокировать</checkBox>
         <text>Блокировка изменений данной настройки пользователем. После перезагрузки устройства внесённые пользователем изменения настройки не сохраняются.</text>
       </presentation>
      </presentationTable>

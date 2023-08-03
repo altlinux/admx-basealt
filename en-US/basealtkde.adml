@@ -99,7 +99,7 @@ If the policy is enabled, clicking will open the file or folder.
 If the policy is disabled, clicking on the file or folder will highlight it.
       </string>
 
-      <string id="kde-colorscheme">Application color scheme</string>
+      <string id="kde-colorscheme">Colors</string>
       <string id="kde-colorscheme_help">This policy allows you to manage color schemes by specifying the name of the scheme (for example: BreezeClassic).
 
        Valid color scheme options:
@@ -133,14 +133,24 @@ If the policy is disabled, clicking on the file or folder will highlight it.
       - breeze_cursors
       </string>
 
-      <string id="kde-iconstheme">Тема значков</string>
-      <string id="kde-iconstheme_help">Данная политика позволяет выбрать тему.  Допустимые значения параметра:
+      <string id="kde-iconstheme">Icons theme</string>
+      <string id="kde-iconstheme_help">This policy allows you to select an icon theme. Valid parameter values:
 
       - Adwaita
       - Oxygen
       - Breeze
       - Breeze_dark
       - Gnome
+
+      </string>
+
+      <string id="kde-look-and-feel">Design of the working environment</string>
+      <string id="kde-look-and-feel_help">This policy allows you to choose the appearance of the working environment. Valid parameter values:
+
+      - Oxygen
+      - Breeze
+      - Breeze_dark
+      - BreezeTwinlight
 
       </string>
 
@@ -183,6 +193,11 @@ If the policy is disabled, clicking on the file or folder will highlight it.
       <string id="kde-icons-oxygen">Oxygen</string>
       <string id="kde-icons-gnome">Gnome</string>
 
+      <string id="kde-look-and-feel-breeze">Breeze</string>
+      <string id="kde-look-and-feel-breeze-dark">Breeze-dark</string>
+      <string id="kde-look-and-feel-oxygen">Oxygen</string>
+      <string id="kde-look-and-feel-breezetwilight">BreezeTwilight</string>
+
       </stringTable>
     <presentationTable>
       <presentation id="kde-win-activate-user-pr">
@@ -219,20 +234,31 @@ If the policy is disabled, clicking on the file or folder will highlight it.
         <textBox refId="kde-wallpaper-setter">
           <label>File:</label>
         </textBox>
+        <checkBox refId="kde-wallpaper_blocker">Block</checkBox>
+        <text>Blocking changes to this setting by the user. After restarting the device, the user's changes to the settings are not saved.</text>
       </presentation>
       <presentation id="kde-colorscheme-user-pr">
         <textBox refId="kde-colorscheme-setter">
           <label>Color scheme:</label>
         </textBox>
+        <checkBox refId="kde-colorscheme_blocker">Block</checkBox>
+        <text>Blocking changes to this setting by the user. After restarting the device, the user's changes to the settings are not saved.</text>
       </presentation>
       <presentation id="kde-cursortheme-user-pr">
         <textBox refId="kde-cursortheme-setter">
           <label>Cursor theme:</label>
         </textBox>
+        <checkBox refId="kde-cursortheme_blocker">Block</checkBox>
+        <text>Blocking changes to this setting by the user. After restarting the device, the user's changes to the settings are not saved.</text>
       </presentation>
       <presentation id="kde-iconstheme-user-pr">
         <dropdownList noSort="true" defaultItem="0" refId="kde-iconstheme-setter">Icons theme:</dropdownList>
         <checkBox refId="kde-iconstheme_blocker">Block</checkBox>
+        <text>Blocking changes to this setting by the user. After restarting the device, the user's changes to the settings are not saved.</text>
+      </presentation>
+      <presentation id="kde-look-and-feel-user-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="kde-look-and-feel-setter">Design of the working environment:</dropdownList>
+        <checkBox refId="kde-look-and-feel_blocker">Block</checkBox>
         <text>Blocking changes to this setting by the user. After restarting the device, the user's changes to the settings are not saved.</text>
       </presentation>
      </presentationTable>
