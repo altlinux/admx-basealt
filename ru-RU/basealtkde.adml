@@ -180,7 +180,17 @@
       - Oxygen
       - Breeze
       - Breeze_dark
-      - BreezeTwinlight
+      - BreezeTwilight
+
+      </string>
+
+      <string id="kde-background">Тема заставки</string>
+      <string id="kde-background_help">Данная политика позволяет выбрать тему заставки. Допустимые значения параметра:
+
+      - Oxygen
+      - Breeze
+      - Breeze_dark
+      - BreezeTwilight
 
       </string>
 
@@ -227,6 +237,11 @@
       <string id="kde-look-and-feel-breeze-dark">Breeze-dark</string>
       <string id="kde-look-and-feel-oxygen">Oxygen</string>
       <string id="kde-look-and-feel-breezetwilight">BreezeTwilight</string>
+
+      <string id="kde-background-breeze">Breeze</string>
+      <string id="kde-background-breeze-dark">Breeze-dark</string>
+      <string id="kde-background-oxygen">Oxygen</string>
+      <string id="kde-background-breezetwilight">BreezeTwilight</string>
 
       <string id="kde-autolock-enabled">Включено</string>
       <string id="kde-autolock-disabled">Отключено</string>
@@ -307,6 +322,11 @@
       <presentation id="kde-look-and-feel-user-pr">
         <dropdownList noSort="true" defaultItem="0" refId="kde-look-and-feel-setter">Оформление рабочей среды:</dropdownList>
         <checkBox refId="kde-look-and-feel_blocker">Блокировать</checkBox>
+        <text>Блокировка изменений данной настройки пользователем. После перезагрузки устройства внесённые пользователем изменения настройки не сохраняются.</text>
+      </presentation>
+      <presentation id="kde-background-user-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="kde-background-setter">Тема заставки:</dropdownList>
+        <checkBox refId="kde-background_blocker">Блокировать</checkBox>
         <text>Блокировка изменений данной настройки пользователем. После перезагрузки устройства внесённые пользователем изменения настройки не сохраняются.</text>
       </presentation>
       <presentation id="kde-screenlocker-user-pr">

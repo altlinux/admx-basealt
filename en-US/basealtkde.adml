@@ -180,7 +180,17 @@ If the policy is disabled, clicking on the file or folder will highlight it.
       - Oxygen
       - Breeze
       - Breeze_dark
-      - BreezeTwinlight
+      - BreezeTwilight
+
+      </string>
+
+      <string id="kde-background">Backgroung theme</string>
+      <string id="kde-background_help">This policy allows you to select a screensaver theme. Valid parameter values:
+
+      - Oxygen
+      - Breeze
+      - Breeze_dark
+      - BreezeTwilight
 
       </string>
 
@@ -227,6 +237,11 @@ If the policy is disabled, clicking on the file or folder will highlight it.
       <string id="kde-look-and-feel-breeze-dark">Breeze-dark</string>
       <string id="kde-look-and-feel-oxygen">Oxygen</string>
       <string id="kde-look-and-feel-breezetwilight">BreezeTwilight</string>
+
+      <string id="kde-background-breeze">Breeze</string>
+      <string id="kde-background-breeze-dark">Breeze-dark</string>
+      <string id="kde-background-oxygen">Oxygen</string>
+      <string id="kde-background-breezetwilight">BreezeTwilight</string>
 
       <string id="kde-autolock-enabled">Enabled</string>
       <string id="kde-autolock-disabled">Disabled</string>
@@ -307,6 +322,11 @@ If the policy is disabled, clicking on the file or folder will highlight it.
       <presentation id="kde-look-and-feel-user-pr">
         <dropdownList noSort="true" defaultItem="0" refId="kde-look-and-feel-setter">Design of the working environment:</dropdownList>
         <checkBox refId="kde-look-and-feel_blocker">Block</checkBox>
+        <text>Blocking changes to this setting by the user. After restarting the device, the user's changes to the settings are not saved.</text>
+      </presentation>
+      <presentation id="kde-background-user-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="kde-background-setter">Screensaver theme:</dropdownList>
+        <checkBox refId="kde-background_blocker">Block</checkBox>
         <text>Blocking changes to this setting by the user. After restarting the device, the user's changes to the settings are not saved.</text>
       </presentation>
       <presentation id="kde-screenlocker-user-pr">
