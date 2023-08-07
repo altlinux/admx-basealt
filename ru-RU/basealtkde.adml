@@ -77,6 +77,36 @@
 «Включить службу поиска и индексацию скрытых файлов и папок»
 
 «Включить службу поиска, индексацию скрытых папок, файлов и их содержимого»
+
+      </string>
+
+      <string id="kde-screenlocker">Блокировка экрана</string>
+      <string id="kde-screenlocker_help">Данная политика позволяет настраивать блокировку экрана при отсутствии активности в течении определённого времени; после выхода из ждущего режима. Возможные варианты настройки:
+
+Автоматически блокировать экран при отсутствии активности:
+
+ - Включено;
+
+ - Выключено;
+
+Автоматически блокировать экран после выхода из ждущего режима:
+
+- Включено;
+
+- Выключено;
+
+Автоматически блокировать экран при отсутствии активности в течении определённого времени:
+
+- 5 минут;
+
+- 10 минут;
+
+- 15 минут;
+
+- 30 минут;
+
+- 60 минут.
+
       </string>
 
       <string id="kde-desktops">Виртуальные рабочие столы</string>
@@ -198,6 +228,18 @@
       <string id="kde-look-and-feel-oxygen">Oxygen</string>
       <string id="kde-look-and-feel-breezetwilight">BreezeTwilight</string>
 
+      <string id="kde-autolock-enabled">Включено</string>
+      <string id="kde-autolock-disabled">Отключено</string>
+
+      <string id="kde-lockonresume-enabled">Включено</string>
+      <string id="kde-lockonresume-disabled">Отключено</string>
+
+      <string id="kde-screentimer-5">5 минут</string>
+      <string id="kde-screentimer-10">10 минут</string>
+      <string id="kde-screentimer-15">15 минут</string>
+      <string id="kde-screentimer-30">30 минут</string>
+      <string id="kde-screentimer-60">60 минут</string>
+
       </stringTable>
     <presentationTable>
       <presentation id="kde-win-activate-user-pr">
@@ -265,6 +307,17 @@
       <presentation id="kde-look-and-feel-user-pr">
         <dropdownList noSort="true" defaultItem="0" refId="kde-look-and-feel-setter">Оформление рабочей среды:</dropdownList>
         <checkBox refId="kde-look-and-feel_blocker">Блокировать</checkBox>
+        <text>Блокировка изменений данной настройки пользователем. После перезагрузки устройства внесённые пользователем изменения настройки не сохраняются.</text>
+      </presentation>
+      <presentation id="kde-screenlocker-user-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="kde-autolock_setter">Автоматически блокировать экран:</dropdownList>
+        <checkBox refId="kde-autolock_blocker">Блокировать</checkBox>
+        <text>Блокировка изменений данной настройки пользователем. После перезагрузки устройства внесённые пользователем изменения настройки не сохраняются.</text>
+        <dropdownList noSort="true" defaultItem="0" refId="kde-lockonresume_setter">Автоматически блокировать экран после выхода из ждущего режима:</dropdownList>
+        <checkBox refId="kde-lockonresume_blocker">Блокировать</checkBox>
+        <text>Блокировка изменений данной настройки пользователем. После перезагрузки устройства внесённые пользователем изменения настройки не сохраняются.</text>
+        <dropdownList noSort="true" defaultItem="0" refId="kde-screentimer_setter">Блокировать экран через:</dropdownList>
+        <checkBox refId="kde-screentimer_blocker">Блокировать</checkBox>
         <text>Блокировка изменений данной настройки пользователем. После перезагрузки устройства внесённые пользователем изменения настройки не сохраняются.</text>
       </presentation>
      </presentationTable>

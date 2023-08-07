@@ -8,7 +8,7 @@
   </policyNamespaces>
   <resources minRequiredRevision="1.0" />
   <policies>
-    <policy name="kde-win-activate" class="User" displayName="$(string.kde-win-activate)"
+  <policy name="kde-win-activate" class="User" displayName="$(string.kde-win-activate)"
     explainText="$(string.kde-win-activate_help)"
     key="Software\BaseALT\Policies\KDE"
     presentation="$(presentation.kde-win-activate-user-pr)">
@@ -57,7 +57,7 @@
           </boolean>
       </elements>
     </policy>
-    <policy name="kde-win-rendering" class="User" displayName="$(string.kde-win-rendering)"
+  <policy name="kde-win-rendering" class="User" displayName="$(string.kde-win-rendering)"
     explainText="$(string.kde-win-rendering_help)"
     key="Software\BaseALT\Policies\KDE"
     presentation="$(presentation.kde-win-rendering-user-pr)">
@@ -101,7 +101,7 @@
           </boolean>
       </elements>
     </policy>
-    <policy name="kde-language" class="User" displayName="$(string.kde-language)"
+  <policy name="kde-language" class="User" displayName="$(string.kde-language)"
     explainText="$(string.kde-language_help)"
     key="Software\BaseALT\Policies\KDE"
     presentation="$(presentation.kde-language-user-pr)">
@@ -145,7 +145,7 @@
           </boolean>
       </elements>
     </policy>
-    <policy name="kde-desktops" class="User" displayName="$(string.kde-desktops)"
+  <policy name="kde-desktops" class="User" displayName="$(string.kde-desktops)"
     explainText="$(string.kde-desktops_help)"
     key="Software\BaseALT\Policies\KDE"
     presentation="$(presentation.kde-desktops-user-pr)">
@@ -184,7 +184,7 @@
           </boolean>
       </elements>
     </policy>
-    <policy name="kde-automount" class="User" displayName="$(string.kde-automount)"
+  <policy name="kde-automount" class="User" displayName="$(string.kde-automount)"
     explainText="$(string.kde-automount_help)"
     key="Software\BaseALT\Policies\KDE"
     presentation="$(presentation.kde-automount-user-pr)">
@@ -218,7 +218,7 @@
           </boolean>
       </elements>
     </policy>
-    <policy name="kde-filesearch" class="User" displayName="$(string.kde-filesearch)"
+  <policy name="kde-filesearch" class="User" displayName="$(string.kde-filesearch)"
     explainText="$(string.kde-filesearch_help)"
     key="Software\BaseALT\Policies\KDE"
     presentation="$(presentation.kde-filesearch-user-pr)">
@@ -257,7 +257,7 @@
           </boolean>
       </elements>
     </policy>
-    <policy name="kde-iconstheme" class="User" displayName="$(string.kde-iconstheme)"
+  <policy name="kde-iconstheme" class="User" displayName="$(string.kde-iconstheme)"
     explainText="$(string.kde-iconstheme_help)"
     presentation="$(presentation.kde-iconstheme-user-pr)"
     key="Software\BaseALT\Policies\KDE">
@@ -301,7 +301,7 @@
           </boolean>
       </elements>
     </policy>
-    <policy name="kde-look-and-feel" class="User" displayName="$(string.kde-look-and-feel)"
+  <policy name="kde-look-and-feel" class="User" displayName="$(string.kde-look-and-feel)"
     explainText="$(string.kde-look-and-feel_help)"
     presentation="$(presentation.kde-look-and-feel-user-pr)"
     key="Software\BaseALT\Policies\KDE">
@@ -340,7 +340,91 @@
           </boolean>
       </elements>
     </policy>
-    <policy name="kde-wallpaper" class="User" displayName="$(string.kde-wallpaper)"
+  <policy name="kde-screenlocker" class="User" displayName="$(string.kde-screenlocker)"
+    explainText="$(string.kde-screenlocker_help)"
+    key="Software\BaseALT\Policies\KDE"
+    presentation="$(presentation.kde-screenlocker-user-pr)">
+    <parentCategory ref="system:ALT_Settings_KDE" />
+    <supportedOn ref="system:SUPPORTED_AltP10" />
+      <elements>
+        <enum id="kde-autolock_setter" valueName="kscreenlockerrc.Autolock" required="true">
+          <item displayName="$(string.kde-autolock-enabled)">
+            <value>
+              <string>{"Daemon":{"Autolock":"true"}}</string>
+            </value>
+          </item>
+          <item displayName="$(string.kde-autolock-disabled)">
+            <value>
+              <string>{"Daemon":{"Autolock":"false"}}</string>
+            </value>
+          </item>
+        </enum>
+        <enum id="kde-lockonresume_setter" valueName="kscreenlockerrc.LockOnResume" required="true">
+          <item displayName="$(string.kde-lockonresume-enabled)">
+            <value>
+              <string>{"Daemon":{"LockOnResume":"true"}}</string>
+            </value>
+          </item>
+          <item displayName="$(string.kde-lockonresume-disabled)">
+            <value>
+              <string>{"Daemon":{"LockOnResume":"false"}}</string>
+            </value>
+          </item>
+        </enum>
+        <enum id="kde-screentimer_setter" valueName="kscreenlockerrc.Timer" required="true">
+          <item displayName="$(string.kde-screentimer-5)">
+            <value>
+              <string>{"Daemon":{"Timeout":"5"}}</string>
+            </value>
+          </item>
+          <item displayName="$(string.kde-screentimer-10)">
+            <value>
+              <string>{"Daemon":{"Timeout":"10"}}</string>
+            </value>
+          </item>
+          <item displayName="$(string.kde-screentimer-15)">
+            <value>
+              <string>{"Daemon":{"Timeout":"15"}}</string>
+            </value>
+          </item>
+          <item displayName="$(string.kde-screentimer-30)">
+            <value>
+              <string>{"Daemon":{"Timeout":"30"}}</string>
+            </value>
+          </item>
+          <item displayName="$(string.kde-screentimer-60)">
+            <value>
+              <string>{"Daemon":{"Timeout":"60"}}</string>
+            </value>
+          </item>
+        </enum>
+        <boolean id="kde-autolock_blocker" key="Software\BaseALT\Policies\KDELocks" valueName="kscreenlockerrc.Autolock">
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+          </boolean>
+        <boolean id="kde-lockonresume_blocker" key="Software\BaseALT\Policies\KDELocks" valueName="kscreenlockerrc.LockOnResume">
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+          </boolean>
+        <boolean id="kde-screentimer_blocker" key="Software\BaseALT\Policies\KDELocks" valueName="kscreenlockerrc.Timer">
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+          </boolean>
+      </elements>
+    </policy>
+  <policy name="kde-wallpaper" class="User" displayName="$(string.kde-wallpaper)"
     explainText="$(string.kde-wallpaper_help)"
     presentation="$(presentation.kde-wallpaper-user-pr)"
     key="Software\BaseALT\Policies\KDE">
@@ -350,7 +434,7 @@
         <text id="kde-wallpaper-setter" valueName="plasma.wallpaperimage"/>
       </elements>
     </policy>
-    <policy name="kde-colorscheme" class="User" displayName="$(string.kde-colorscheme)"
+  <policy name="kde-colorscheme" class="User" displayName="$(string.kde-colorscheme)"
     explainText="$(string.kde-colorscheme_help)"
     presentation="$(presentation.kde-colorscheme-user-pr)"
     key="Software\BaseALT\Policies\KDE">
@@ -370,7 +454,7 @@
         <text id="kde-cursortheme-setter" valueName="kdeglobals.Curcor"/>
       </elements>
     </policy>
-    <policy name="kde-graphic-effects" class="User" displayName="$(string.kde-graphic-effects)"
+  <policy name="kde-graphic-effects" class="User" displayName="$(string.kde-graphic-effects)"
       explainText="$(string.kde-graphic-effects_help)"
       presentation="$(presentation.kde-graphic-effects-user-pr)"
       key="Software\BaseALT\Policies\KDE" valueName="kwinrc.GraphicEffects">
@@ -393,7 +477,7 @@
           </boolean>
     </elements>
     </policy>
-    <policy name="kde-showdelete" class="User" displayName="$(string.kde-showdelete)"
+  <policy name="kde-showdelete" class="User" displayName="$(string.kde-showdelete)"
       explainText="$(string.kde-showdelete_help)"
       presentation="$(presentation.kde-showdelete-user-pr)"
       key="Software\BaseALT\Policies\KDE" valueName="kdeglobals.Dolphin">
@@ -416,7 +500,7 @@
           </boolean>
     </elements>
       </policy>
-      <policy name="kde-singleclick" class="User" displayName="$(string.kde-singleclick)"
+  <policy name="kde-singleclick" class="User" displayName="$(string.kde-singleclick)"
       explainText="$(string.kde-singleclick_help)"
       presentation="$(presentation.kde-singleclick-user-pr)"
       key="Software\BaseALT\Policies\KDE" valueName="kdeglobals.singleclick">

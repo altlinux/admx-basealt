@@ -67,7 +67,7 @@
 
       </string>
 
-      <string id="kde-filesearch">Служба поиска файлов</string>
+      <string id="kde-filesearch">File search service</string>
       <string id="kde-filesearch_help">This policy allows you to configure the file search service, index the contents of files, index hidden files and folders. Possible setting options:
 
 "Enable file search service only"
@@ -77,6 +77,36 @@
 "Enable search service and indexing of hidden files and folders"
 
 "Enable search service, indexing hidden folders, files and their contents"
+
+      </string>
+
+      <string id="kde-screenlocker">Screen lock</string>
+      <string id="kde-screenlocker_help">This policy allows you to configure the screen lock when there is no activity for a certain time; after waking up from standby. Possible setting options:
+
+Automatically lock the screen when there is no activity:
+
+  - Enabled;
+
+  - Turned off;
+
+Automatically lock the screen after resuming from standby:
+
+- Enabled;
+
+- Turned off;
+
+Automatically lock the screen when there is no activity for a certain time:
+
+- 5 minutes;
+
+- 10 minutes;
+
+- 15 minutes;
+
+- 30 minutes;
+
+- 60 minutes.
+
       </string>
 
       <string id="kde-desktops">Virtual desktops</string>
@@ -198,6 +228,18 @@ If the policy is disabled, clicking on the file or folder will highlight it.
       <string id="kde-look-and-feel-oxygen">Oxygen</string>
       <string id="kde-look-and-feel-breezetwilight">BreezeTwilight</string>
 
+      <string id="kde-autolock-enabled">Enabled</string>
+      <string id="kde-autolock-disabled">Disabled</string>
+
+      <string id="kde-lockonresume-enabled">Enabled</string>
+      <string id="kde-lockonresume-disabled">Disabled</string>
+
+      <string id="kde-screentimer-5">5 minutes</string>
+      <string id="kde-screentimer-10">10 minutes</string>
+      <string id="kde-screentimer-15">15 minutes</string>
+      <string id="kde-screentimer-30">30 minutes</string>
+      <string id="kde-screentimer-60">60 minutes</string>
+
       </stringTable>
     <presentationTable>
       <presentation id="kde-win-activate-user-pr">
@@ -234,21 +276,27 @@ If the policy is disabled, clicking on the file or folder will highlight it.
         <textBox refId="kde-wallpaper-setter">
           <label>File:</label>
         </textBox>
-        <checkBox refId="kde-wallpaper_blocker">Block</checkBox>
-        <text>Blocking changes to this setting by the user. After restarting the device, the user's changes to the settings are not saved.</text>
       </presentation>
       <presentation id="kde-colorscheme-user-pr">
         <textBox refId="kde-colorscheme-setter">
           <label>Color scheme:</label>
         </textBox>
-        <checkBox refId="kde-colorscheme_blocker">Block</checkBox>
-        <text>Blocking changes to this setting by the user. After restarting the device, the user's changes to the settings are not saved.</text>
       </presentation>
       <presentation id="kde-cursortheme-user-pr">
         <textBox refId="kde-cursortheme-setter">
           <label>Cursor theme:</label>
         </textBox>
-        <checkBox refId="kde-cursortheme_blocker">Block</checkBox>
+      </presentation>
+      <presentation id="kde-graphic-effects-user-pr">
+        <checkBox refId="kde-graphic-effects_blocker">Block</checkBox>
+        <text>Blocking changes to this setting by the user. After restarting the device, the user's changes to the settings are not saved.</text>
+      </presentation>
+      <presentation id="kde-singleclick-user-pr">
+        <checkBox refId="kde-singleclick_blocker">Block</checkBox>
+        <text>Blocking changes to this setting by the user. After restarting the device, the user's changes to the settings are not saved.</text>
+      </presentation>
+      <presentation id="kde-showdelete-user-pr">
+        <checkBox refId="kde-showdelete_blocker">Block</checkBox>
         <text>Blocking changes to this setting by the user. After restarting the device, the user's changes to the settings are not saved.</text>
       </presentation>
       <presentation id="kde-iconstheme-user-pr">
@@ -259,6 +307,17 @@ If the policy is disabled, clicking on the file or folder will highlight it.
       <presentation id="kde-look-and-feel-user-pr">
         <dropdownList noSort="true" defaultItem="0" refId="kde-look-and-feel-setter">Design of the working environment:</dropdownList>
         <checkBox refId="kde-look-and-feel_blocker">Block</checkBox>
+        <text>Blocking changes to this setting by the user. After restarting the device, the user's changes to the settings are not saved.</text>
+      </presentation>
+      <presentation id="kde-screenlocker-user-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="kde-autolock_setter">Automatically lock screen:</dropdownList>
+        <checkBox refId="kde-autolock_blocker">Block</checkBox>
+        <text>Blocking changes to this setting by the user. After restarting the device, the user's changes to the settings are not saved.</text>
+        <dropdownList noSort="true" defaultItem="0" refId="kde-lockonresume_setter">Automatically lock the screen after resuming from standby:</dropdownList>
+        <checkBox refId="kde-lockonresume_blocker">Block</checkBox>
+        <text>Blocking changes to this setting by the user. After restarting the device, the user's changes to the settings are not saved.</text>
+        <dropdownList noSort="true" defaultItem="0" refId="kde-screentimer_setter">Lock screen after:</dropdownList>
+        <checkBox refId="kde-screentimer_blocker">Block</checkBox>
         <text>Blocking changes to this setting by the user. After restarting the device, the user's changes to the settings are not saved.</text>
       </presentation>
      </presentationTable>
