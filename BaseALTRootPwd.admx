@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--  (c) 2023 BaseALT, Ltd.  -->
+<policyDefinitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   revision="1.0" schemaVersion="1.0" xmlns="http://schemas.microsoft.com/GroupPolicy/2006/07/PolicyDefinitions">
+  <policyNamespaces>
+    <target prefix="laps" namespace="BaseALT.Policies.LAPS" />
+    <using prefix="system" namespace="BaseALT.Policies.System" />
+  </policyNamespaces>
+  <resources minRequiredRevision="1.0" />
+  <policies>
+    <policy class="Machine" displayName="$(string.laps_DontAllowPwdExpirationBehindPolicy)"
+    explainText="$(string.laps_DontAllowPwdExpirationBehindPolicy_help)"
+    key="Software\BaseALT\Policies\LAPS"
+    name="LAPSDontAllowPwdExpirationBehindPolicy"
+    valueName="LAPSDontAllowPwdExpirationBehindPolicy">
+      <parentCategory ref="system:ALT_LAPS"/>
+      <supportedOn ref="system:SUPPORTED_AltP10"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+    <policy class="Machine" displayName="$(string.Password_strength_LAPS)"
+    presentation="$(presentation.Password_strength_LAPS)"
+    explainText="$(string.Password_strength_LAPS_help)"
+    key="Software\BaseALT\Policies\LAPS"
+    name="Password_strength_LAPS"
+    valueName="Password_strength_LAPS">
+      <parentCategory ref="system:ALT_LAPS"/>
+      <supportedOn ref="system:SUPPORTED_AltP10"/>
+      <elements>
+        <enum id="ELM_LAPS_PasswordStrength" key="Software\BaseALT\Policies\LAPS" valueName="PasswordStrength">
+          <item displayName="$(string.ITM_LAPS_PwdStrength_1)">
+            <value>
+              <decimal value="1" />
+            </value>
+          </item>
+          <item displayName="$(string.ITM_LAPS_PwdStrength_2)">
+            <value>
+              <decimal value="2" />
+            </value>
+          </item>
+          <item displayName="$(string.ITM_LAPS_PwdStrength_3)">
+            <value>
+              <decimal value="3" />
+            </value>
+          </item>
+          <item displayName="$(string.ITM_LAPS_PwdStrength_4)">
+            <value>
+              <decimal value="4" />
+            </value>
+          </item>
+        </enum>
+        <decimal id="ELM_LAPS_PasswordLength" key="Software\BaseALT\Policies\LAPS" valueName="PasswordLength" minValue="8" maxValue="64" />
+        <decimal id="ELM_LAPS_PasswordAgeDays" key="Software\BaseALT\Policies\LAPS" valueName="PasswordAgeDays" minValue="1" maxValue="365" />
+      </elements>
+    </policy>
+  </policies>
+</policyDefinitions>

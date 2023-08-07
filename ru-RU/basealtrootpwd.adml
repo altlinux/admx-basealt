@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  (c) 2023 BaseALT, Ltd.  -->
+<policyDefinitionResources xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.microsoft.com/GroupPolicy/2006/07/PolicyDefinitions" revision="1.0" schemaVersion="1.0">
+  <displayName>Определения политик для управления паролями суперпользователей в домене - LAPS в операционной системе Альт</displayName>
+  <description>Этот файл содержит определения политик для управления паролями суперпользователей на компьютерах домена - LAPS - в операционной системе Альт</description>
+  <resources>
+    <stringTable>
+      <string id="laps_DontAllowPwdExpirationBehindPolicy">Не допускать превышения срока действия пароля root по сравнению с требованиями политики LAPS</string>
+      <string id="laps_DontAllowPwdExpirationBehindPolicy_help">При включении данного параметра запрещается планируемое истечение срока действия пароля, превышающего возраст пароля, установленный политикой "Сложность пароля суперпользователя".
+При обнаружении такого истечения срока действия пароль немедленно меняется, а срок действия пароля устанавливается в соответствии с политикой.
+
+При отключении или отсутствии данной настройки время истечения срока действия пароля может быть больше, чем требуется политикой "Сложность пароля суперпользователя".
+      </string>
+      <string id="Password_strength_LAPS">Сложность пароля суперпользователя - LAPS</string>
+      <string id="Password_strength_LAPS_help">Настройка параметров пароля
+
+Сложность пароля: какие символы используются при генерации нового пароля
+  По умолчанию: Большие буквы + маленькие буквы + цифры + специальные символы
+
+Длина пароля
+  Минимальная: 8 символов
+  Максимум: 64 символа
+  По умолчанию: 14 символов
+
+Возраст пароля в днях
+  Минимум: 1 день
+  Максимум: 365 дней
+  По умолчанию: 30 дней
+      </string>
+      <string id="ITM_LAPS_PwdStrength_1">Прописные буквы</string>
+      <string id="ITM_LAPS_PwdStrength_2">Прописные буквы + строчные</string>
+      <string id="ITM_LAPS_PwdStrength_3">Прописные буквы + строчные + цифры</string>
+      <string id="ITM_LAPS_PwdStrength_4">Прописные буквы + строчные + цифры + специальные символы</string>
+    </stringTable>
+    <presentationTable>
+      <presentation id="Password_strength_LAPS">
+        <dropdownList refId="ELM_LAPS_PasswordStrength" defaultItem="0">Сложность пароля</dropdownList>
+        <decimalTextBox refId="ELM_LAPS_PasswordLength" defaultValue="9">Длина пароля</decimalTextBox>
+        <decimalTextBox refId="ELM_LAPS_PasswordAgeDays" defaultValue="20">Возраст пароля (Дни)</decimalTextBox>
+      </presentation>
+    </presentationTable>
+  </resources>
+</policyDefinitionResources>
+
+

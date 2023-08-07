@@ -149,6 +149,8 @@
 
 Пример: Если в списке суффиксов указан «.py», а в списке путей указан путь «/usr/bin», то файлы с суффкисом «.py» станут исполняемыми при копировании в путь «/usr/bin».
       </string>
+      <string id="gpupdate_laps_applier">Управление паролем суперпользователя - LAPS</string>
+      <string id="gpupdate_laps_applier_help">Политика включает механизм групповых политик управления паролем суперпользователя - LAPS</string>
     </stringTable>
     <presentationTable>
       <presentation id="GpupdateFilescopyApplier">

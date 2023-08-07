@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  (c) 2023 BaseALT, Ltd.  -->
+<policyDefinitionResources xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.microsoft.com/GroupPolicy/2006/07/PolicyDefinitions" revision="1.0" schemaVersion="1.0">
+  <displayName>Policy definitions for managing superuser passwords in the domain - LAPS in the Alt operating system</displayName>
+  <description>This file contains policy definitions for managing superuser passwords on domain computers - LAPS - in the Alt operating system</description>
+  <resources>
+    <stringTable>
+      <string id="laps_DontAllowPwdExpirationBehindPolicy">Do not allow password expiration time longer than required by policy - LAPS</string>
+      <string id="laps_DontAllowPwdExpirationBehindPolicy_help">When you enable this setting, planned password expiration longer than password age dictated by "Superuser password complexity" policy is NOT allowed.
+When such expiration is detected, password is changed immediately and password expiration is set according to policy.
+
+When you disable or not configure this setting, password expiration time may be longer than required by "Superuser password complexity" policy.
+      </string>
+      <string id="Password_strength_LAPS">Superuser password complexity - LAPS</string>
+      <string id="Password_strength_LAPS_help">Configures password parameters
+
+Password complexity: which characters are used when generating a new password
+  Default: Large letters + small letters + numbers + special characters
+
+Password length
+  Minimum: 8 characters
+  Maximum: 64 characters
+  Default: 14 characters
+
+Password age in days
+  Minimum: 1 day
+  Maximum: 365 days
+  Default: 30 days
+      </string>
+      <string id="ITM_LAPS_PwdStrength_1">Large letters</string>
+      <string id="ITM_LAPS_PwdStrength_2">Large letters + small letters</string>
+      <string id="ITM_LAPS_PwdStrength_3">Large letters + small letters + numbers</string>
+      <string id="ITM_LAPS_PwdStrength_4">Large letters + small letters + numbers + specials</string>
+    </stringTable>
+    <presentationTable>
+      <presentation id="Password_strength_LAPS">
+        <dropdownList refId="ELM_LAPS_PasswordStrength" defaultItem="0">Password Complexity</dropdownList>
+        <decimalTextBox refId="ELM_LAPS_PasswordLength" defaultValue="9">Password Length</decimalTextBox>
+        <decimalTextBox refId="ELM_LAPS_PasswordAgeDays" defaultValue="20">Password Age (Days)</decimalTextBox>
+      </presentation>
+    </presentationTable>
+  </resources>
+</policyDefinitionResources>
+
+

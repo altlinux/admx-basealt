@@ -151,5 +151,8 @@
     <category name="ALT_TokenPolkit" displayName="$(string.ALT_TokenPolkit)" explainText="$(string.ALT_TokenPolkit_Help)">
       <parentCategory ref="ALT_Polkit" />
     </category>
+    <category name="ALT_LAPS" displayName="$(string.ALT_LAPS)" explainText="$(string.ALT_LAPS_Help)">
+      <parentCategory ref="ALT_Security" />
+    </category>
   </categories>
 </policyDefinitions>

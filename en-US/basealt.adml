@@ -71,6 +71,8 @@
       <string id="ALT_NetworkManagerPolkit_Help">NetworkManager permissions management</string>
       <string id="ALT_TokenPolkit">Token and smart card permissions</string>
       <string id="ALT_TokenPolkit_Help">Token and smart card permissions management</string>
+      <string id="ALT_LAPS">LAPS</string>
+      <string id="ALT_LAPS_Help">Managing superuser passwords in the LAPS system</string>
     </stringTable>
   </resources>
 </policyDefinitionResources>
