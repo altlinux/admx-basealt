@@ -456,6 +456,11 @@
           </item>
         </enum>
         <enum id="kde-screentimer_setter" valueName="kscreenlockerrc.Timer" required="true">
+          <item displayName="$(string.kde-screentimer-1)">
+            <value>
+              <string>{"Daemon":{"Timeout":"1"}}</string>
+            </value>
+          </item>
           <item displayName="$(string.kde-screentimer-5)">
             <value>
               <string>{"Daemon":{"Timeout":"5"}}</string>
@@ -479,6 +484,11 @@
           <item displayName="$(string.kde-screentimer-60)">
             <value>
               <string>{"Daemon":{"Timeout":"60"}}</string>
+            </value>
+          </item>
+          <item displayName="$(string.kde-screentimer-99)">
+            <value>
+              <string>{"Daemon":{"Timeout":"99"}}</string>
             </value>
           </item>
         </enum>

@@ -97,6 +97,8 @@ Automatically lock the screen after resuming from standby:
 
 Automatically lock the screen when there is no activity for a certain time:
 
+- 1 minute;
+
 - 5 minutes;
 
 - 10 minutes;
@@ -105,7 +107,9 @@ Automatically lock the screen when there is no activity for a certain time:
 
 - 30 minutes;
 
-- 60 minutes.
+- 60 minutes;
+
+- 99 minutes.
 
       </string>
 
@@ -260,11 +264,13 @@ If the policy is disabled, clicking on the file or folder will highlight it.
       <string id="kde-lockonresume-enabled">Enabled</string>
       <string id="kde-lockonresume-disabled">Disabled</string>
 
+      <string id="kde-screentimer-1">1 minute</string>
       <string id="kde-screentimer-5">5 minutes</string>
       <string id="kde-screentimer-10">10 minutes</string>
       <string id="kde-screentimer-15">15 minutes</string>
       <string id="kde-screentimer-30">30 minutes</string>
       <string id="kde-screentimer-60">60 minutes</string>
+      <string id="kde-screentimer-99">99 minutes</string>
 
       <string id="kde-desktoptheme-default">Default</string>
       <string id="kde-desktoptheme-breeze-light">Breeze-light</string>

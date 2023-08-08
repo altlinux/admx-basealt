@@ -97,6 +97,8 @@
 
 Автоматически блокировать экран при отсутствии активности в течении определённого времени:
 
+- 1 минута;
+
 - 5 минут;
 
 - 10 минут;
@@ -105,7 +107,9 @@
 
 - 30 минут;
 
-- 60 минут.
+- 60 минут;
+
+- 99 минут;
 
       </string>
 
@@ -260,11 +264,13 @@
       <string id="kde-lockonresume-enabled">Включено</string>
       <string id="kde-lockonresume-disabled">Отключено</string>
 
+      <string id="kde-screentimer-1">1 минута</string>
       <string id="kde-screentimer-5">5 минут</string>
       <string id="kde-screentimer-10">10 минут</string>
       <string id="kde-screentimer-15">15 минут</string>
       <string id="kde-screentimer-30">30 минут</string>
       <string id="kde-screentimer-60">60 минут</string>
+      <string id="kde-screentimer-99">99 минут</string>
 
       <string id="kde-desktoptheme-default">Default</string>
       <string id="kde-desktoptheme-breeze-light">Breeze-light</string>
