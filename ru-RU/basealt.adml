@@ -51,8 +51,8 @@
       <string id="ALT_Settings_Mate_Help">Настройки Mate.</string>
       <string id="ALT_Settings_KDE">Настройки KDE</string>
       <string id="ALT_Settings_KDE_Help">Настройки KDE.</string>
-      <string id="ALT_FileSearch_KDE">Поиск файлов</string>
-      <string id="ALT_FileSearch_KDE_Help">Поиск файлов.</string>
+      <string id="ALT_PowerManagement_KDE">Управление электропитанием</string>
+      <string id="ALT_PowerManagement_KDE_Help">Управление электропитанием.</string>
       <string id="ALT_Appearance_KDE">Внешний вид</string>
       <string id="ALT_Appearance_KDE_Help">Внешний вид.</string>
       <string id="ALT_Background_Mate">Фон рабочего стола</string>
