@@ -27,7 +27,7 @@
       <definition name="SUPPORTED_AltP8" displayName="$(string.SUPPORTED_AltP8)">
         <or>
           <reference ref="products:BranchP8"/>
-          <reference ref="products:Branch" minVersionIndex="1"/>
+          <range ref="products:Branch" minVersionIndex="1"/>
         </or>
       </definition>
 
@@ -35,7 +35,7 @@
       <definition name="SUPPORTED_AltP8_Only" displayName="$(string.SUPPORTED_AltP8_Only)">
         <or>
           <reference ref="products:BranchP8"/>
-          <reference ref="products:Branch" minVersionIndex="1" maxVersionIndex="1"/>
+          <range ref="products:Branch" minVersionIndex="1" maxVersionIndex="1"/>
         </or>
       </definition>
 
@@ -43,7 +43,7 @@
       <definition name="SUPPORTED_AltP9" displayName="$(string.SUPPORTED_AltP9)">
         <or>
           <reference ref="products:BranchP9"/>
-          <reference ref="products:Branch" minVersionIndex="2"/>
+          <range ref="products:Branch" minVersionIndex="2"/>
         </or>
       </definition>
 
@@ -51,7 +51,7 @@
       <definition name="SUPPORTED_AltP9_Only" displayName="$(string.SUPPORTED_AltP9_Only)">
         <or>
           <reference ref="products:BranchP9"/>
-          <reference ref="products:Branch" minVersionIndex="2" maxVersionIndex="2"/>
+          <range ref="products:Branch" minVersionIndex="2" maxVersionIndex="2"/>
         </or>
       </definition>
 
@@ -59,7 +59,7 @@
       <definition name="SUPPORTED_AltP10" displayName="$(string.SUPPORTED_AltP10)">
         <or>
           <reference ref="products:BranchP10"/>
-          <reference ref="products:Branch" minVersionIndex="3"/>
+          <range ref="products:Branch" minVersionIndex="3"/>
         </or>
       </definition>
 
@@ -67,7 +67,7 @@
       <definition name="SUPPORTED_AltP10_Only" displayName="$(string.SUPPORTED_AltP10_Only)">
         <or>
           <reference ref="products:BranchP10"/>
-          <reference ref="products:Branch" minVersionIndex="3" maxVersionIndex="3"/>
+          <range ref="products:Branch" minVersionIndex="3" maxVersionIndex="3"/>
         </or>
       </definition>
     </definitions>
