@@ -379,6 +379,51 @@
           </boolean>
       </elements>
     </policy>
+
+  <policy name="kde-desktoptheme" class="User" displayName="$(string.kde-desktoptheme)"
+    explainText="$(string.kde-desktoptheme_help)"
+    presentation="$(presentation.kde-desktoptheme-user-pr)"
+    key="Software\BaseALT\Policies\KDE">
+    <parentCategory ref="system:ALT_Appearance_KDE" />
+    <supportedOn ref="system:SUPPORTED_AltP10" />
+      <elements>
+        <enum  id="kde-desktoptheme-setter" valueName="plasmarc.Desktoptheme" required="true">
+          <item displayName="$(string.kde-desktoptheme-default)">
+            <value>
+              <string>{"Theme":{"name":"default"}}</string>
+            </value>
+          </item>
+          <item displayName="$(string.kde-desktoptheme-breeze-light)">
+            <value>
+              <string>{"Theme":{"name":"breeze-light"}}</string>
+            </value>
+          </item>
+          <item displayName="$(string.kde-desktoptheme-breeze-dark)">
+            <value>
+              <string>{"Theme":{"name":"breeze-dark"}}</string>
+            </value>
+          </item>
+          <item displayName="$(string.kde-desktoptheme-oxygen)">
+            <value>
+              <string>{"Theme":{"name":"oxygen"}}</string>
+            </value>
+          </item>
+          <item displayName="$(string.kde-desktoptheme-air)">
+            <value>
+              <string>{"Theme":{"name":"air"}}</string>
+            </value>
+          </item>
+        </enum>
+        <boolean id="kde-desktoptheme_blocker" key="Software\BaseALT\Policies\KDELocks" valueName="plasmarc.Desktoptheme" >
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+          </boolean>
+      </elements>
+    </policy>
   <policy name="kde-screenlocker" class="User" displayName="$(string.kde-screenlocker)"
     explainText="$(string.kde-screenlocker_help)"
     key="Software\BaseALT\Policies\KDE"

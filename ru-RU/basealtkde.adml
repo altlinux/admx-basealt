@@ -194,6 +194,17 @@
 
       </string>
 
+      <string id="kde-desktoptheme">Оформление рабочего стола</string>
+      <string id="kde-desktoptheme_help">Данная политика позволяет выбрать оформление рабочего стола.  Допустимые значения параметра:
+
+      - Default
+      - Breeze_dark
+      - Breeze-light
+      - Oxygen
+      - Air
+
+      </string>
+
       <string id="kde-win-act-Click_to_focus">Фокус по щелчку</string>
       <string id="kde-win-act-Click_to_focus_Mp">Фокус по щелчку (приоритет мыши)</string>
       <string id="kde-win-act-Focus_follows_mouse">Фокус следует за мышью</string>
@@ -254,6 +265,12 @@
       <string id="kde-screentimer-15">15 минут</string>
       <string id="kde-screentimer-30">30 минут</string>
       <string id="kde-screentimer-60">60 минут</string>
+
+      <string id="kde-desktoptheme-default">Default</string>
+      <string id="kde-desktoptheme-breeze-light">Breeze-light</string>
+      <string id="kde-desktoptheme-breeze-dark">Breeze-dark</string>
+      <string id="kde-desktoptheme-oxygen">Oxygen</string>
+      <string id="kde-desktoptheme-air">Air</string>
 
       </stringTable>
     <presentationTable>
@@ -327,6 +344,11 @@
       <presentation id="kde-background-user-pr">
         <dropdownList noSort="true" defaultItem="0" refId="kde-background-setter">Тема заставки:</dropdownList>
         <checkBox refId="kde-background_blocker">Блокировать</checkBox>
+        <text>Блокировка изменений данной настройки пользователем. После перезагрузки устройства внесённые пользователем изменения настройки не сохраняются.</text>
+      </presentation>
+      <presentation id="kde-desktoptheme-user-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="kde-desktoptheme-setter">Тема оформления рабочего стола:</dropdownList>
+        <checkBox refId="kde-desktoptheme_blocker">Блокировать</checkBox>
         <text>Блокировка изменений данной настройки пользователем. После перезагрузки устройства внесённые пользователем изменения настройки не сохраняются.</text>
       </presentation>
       <presentation id="kde-screenlocker-user-pr">

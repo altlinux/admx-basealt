@@ -112,8 +112,8 @@ Automatically lock the screen when there is no activity for a certain time:
       <string id="kde-desktops">Virtual desktops</string>
       <string id="kde-desktops_help">This policy allows you to configure the number of virtual desktops. The number of tables can be from one to four inclusive.</string>
 
-      <string id="kde-filesearch-hidden">Indexing hidden files and folders</string>
-      <string id="kde-filesearch-hidden_help">The policy is an addition to the "Search for files" policy. Indexing of hidden folders and files in the system will be enabled only if this policy is enabled together with the "Search for files" policy. </string>
+      <string id="kde-wallpaper">Desktop background picture</string>
+      <string id="kde-wallpaper_help">This policy allows you to set images as your desktop background by specifying a file (eg /usr/share/wallpapers/table.png) containing the image.</string>
 
       <string id="kde-graphic-effects">Graphic effects</string>
       <string id="kde-graphic-effects_help">The policy configures enabling or disabling graphical effects on login.</string>
@@ -194,6 +194,17 @@ If the policy is disabled, clicking on the file or folder will highlight it.
 
       </string>
 
+      <string id="kde-desktoptheme">Desktop decoration</string>
+      <string id="kde-desktoptheme_help">This policy allows you to choose the appearance of the desktop. Valid parameter values:
+
+      - Default
+      - Breeze_dark
+      - Breeze-light
+      - Oxygen
+      - Air
+
+      </string>
+
       <string id="kde-win-act-Click_to_focus">Click to focus</string>
       <string id="kde-win-act-Click_to_focus_Mp">Click to focus (mouse precedence)</string>
       <string id="kde-win-act-Focus_follows_mouse">Focus follows mouse</string>
@@ -254,6 +265,12 @@ If the policy is disabled, clicking on the file or folder will highlight it.
       <string id="kde-screentimer-15">15 minutes</string>
       <string id="kde-screentimer-30">30 minutes</string>
       <string id="kde-screentimer-60">60 minutes</string>
+
+      <string id="kde-desktoptheme-default">Default</string>
+      <string id="kde-desktoptheme-breeze-light">Breeze-light</string>
+      <string id="kde-desktoptheme-breeze-dark">Breeze-dark</string>
+      <string id="kde-desktoptheme-oxygen">Oxygen</string>
+      <string id="kde-desktoptheme-air">Air</string>
 
       </stringTable>
     <presentationTable>
@@ -327,6 +344,11 @@ If the policy is disabled, clicking on the file or folder will highlight it.
       <presentation id="kde-background-user-pr">
         <dropdownList noSort="true" defaultItem="0" refId="kde-background-setter">Screensaver theme:</dropdownList>
         <checkBox refId="kde-background_blocker">Block</checkBox>
+        <text>Blocking changes to this setting by the user. After restarting the device, the user's changes to the settings are not saved.</text>
+      </presentation>
+      <presentation id="kde-desktoptheme-user-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="kde-desktoptheme-setter">Desktop theme:</dropdownList>
+        <checkBox refId="kde-desktoptheme_blocker">Block</checkBox>
         <text>Blocking changes to this setting by the user. After restarting the device, the user's changes to the settings are not saved.</text>
       </presentation>
       <presentation id="kde-screenlocker-user-pr">
