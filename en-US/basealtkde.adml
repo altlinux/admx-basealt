@@ -113,6 +113,25 @@ Automatically lock the screen when there is no activity for a certain time:
 
       </string>
 
+      <string id="kde-screenbritness">Screen brightness</string>
+      <string id="kde-screenbritness_help">This policy allows you to adjust the screen brightness level in different power modes: battery powered, plugged in, low battery.
+
+The brightness level of the screen in the mains mode, on battery mode, and when the battery is low has the following possible values:
+
+- 0;
+
+- 20;
+
+- 40;
+
+- 60;
+
+- 80;
+
+- 100.
+
+      </string>
+
       <string id="kde-desktops">Virtual desktops</string>
       <string id="kde-desktops_help">This policy allows you to configure the number of virtual desktops. The number of tables can be from one to four inclusive.</string>
 
@@ -278,6 +297,27 @@ If the policy is disabled, clicking on the file or folder will highlight it.
       <string id="kde-desktoptheme-oxygen">Oxygen</string>
       <string id="kde-desktoptheme-air">Air</string>
 
+      <string id="kde-screenbritness-ac-0">0</string>
+      <string id="kde-screenbritness-ac-20">20</string>
+      <string id="kde-screenbritness-ac-40">40</string>
+      <string id="kde-screenbritness-ac-60">60</string>
+      <string id="kde-screenbritness-ac-80">80</string>
+      <string id="kde-screenbritness-ac-100">100</string>
+
+      <string id="kde-screenbritness-battery-0">0</string>
+      <string id="kde-screenbritness-battery-20">20</string>
+      <string id="kde-screenbritness-battery-40">40</string>
+      <string id="kde-screenbritness-battery-60">60</string>
+      <string id="kde-screenbritness-battery-80">80</string>
+      <string id="kde-screenbritness-battery-100">100</string>
+
+      <string id="kde-screenbritness-lowbattery-0">0</string>
+      <string id="kde-screenbritness-lowbattery-20">20</string>
+      <string id="kde-screenbritness-lowbattery-40">40</string>
+      <string id="kde-screenbritness-lowbattery-60">60</string>
+      <string id="kde-screenbritness-lowbattery-80">80</string>
+      <string id="kde-screenbritness-lowbattery-100">100</string>
+
       </stringTable>
     <presentationTable>
       <presentation id="kde-win-activate-user-pr">
@@ -366,6 +406,17 @@ If the policy is disabled, clicking on the file or folder will highlight it.
         <text>Blocking changes to this setting by the user. After restarting the device, the user's changes to the settings are not saved.</text>
         <dropdownList noSort="true" defaultItem="0" refId="kde-screentimer_setter">Lock screen after:</dropdownList>
         <checkBox refId="kde-screentimer_blocker">Block</checkBox>
+        <text>Blocking changes to this setting by the user. After restarting the device, the user's changes to the settings are not saved.</text>
+      </presentation>
+      <presentation id="kde-screenbritness-user-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="kde-screenbritness-ac_setter">Brightness on mains power:</dropdownList>
+        <checkBox refId="kde-screenbritness-ac_blocker">Block</checkBox>
+        <text>Blocking changes to this setting by the user. After restarting the device, the user's changes to the settings are not saved.</text>
+        <dropdownList noSort="true" defaultItem="0" refId="kde-screenbritness-battery_setter">Brightness on battery power:</dropdownList>
+        <checkBox refId="kde-screenbritness-battery_blocker">Block</checkBox>
+        <text>Blocking changes to this setting by the user. After restarting the device, the user's changes to the settings are not saved.</text>
+        <dropdownList noSort="true" defaultItem="0" refId="kde-screenbritness-lowbattery_setter">Brightness when battery is low:</dropdownList>
+        <checkBox refId="kde-screenbritness-lowbattery_blocker">Block</checkBox>
         <text>Blocking changes to this setting by the user. After restarting the device, the user's changes to the settings are not saved.</text>
       </presentation>
      </presentationTable>

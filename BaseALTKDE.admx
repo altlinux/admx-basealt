@@ -8,7 +8,7 @@
   </policyNamespaces>
   <resources minRequiredRevision="1.0" />
   <policies>
-  <policy name="kde-win-activate" class="User" displayName="$(string.kde-win-activate)"
+  <policy name="kde-win-activate" class="Both" displayName="$(string.kde-win-activate)"
     explainText="$(string.kde-win-activate_help)"
     key="Software\BaseALT\Policies\KDE"
     presentation="$(presentation.kde-win-activate-user-pr)">
@@ -379,7 +379,6 @@
           </boolean>
       </elements>
     </policy>
-
   <policy name="kde-desktoptheme" class="User" displayName="$(string.kde-desktoptheme)"
     explainText="$(string.kde-desktoptheme_help)"
     presentation="$(presentation.kde-desktoptheme-user-pr)"
@@ -428,7 +427,7 @@
     explainText="$(string.kde-screenlocker_help)"
     key="Software\BaseALT\Policies\KDE"
     presentation="$(presentation.kde-screenlocker-user-pr)">
-    <parentCategory ref="system:ALT_Settings_KDE" />
+    <parentCategory ref="system:ALT_PowerManagement_KDE" />
     <supportedOn ref="system:SUPPORTED_AltP10" />
       <elements>
         <enum id="kde-autolock_setter" valueName="kscreenlockerrc.Autolock" required="true">
@@ -509,6 +508,135 @@
           </falseValue>
           </boolean>
         <boolean id="kde-screentimer_blocker" key="Software\BaseALT\Policies\KDELocks" valueName="kscreenlockerrc.Timer">
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+          </boolean>
+      </elements>
+    </policy>
+  <policy name="kde-screenbritness" class="User" displayName="$(string.kde-screenbritness)"
+    explainText="$(string.kde-screenbritness_help)"
+    key="Software\BaseALT\Policies\KDE"
+    presentation="$(presentation.kde-screenbritness-user-pr)">
+    <parentCategory ref="system:ALT_PowerManagement_KDE" />
+    <supportedOn ref="system:SUPPORTED_AltP10" />
+      <elements>
+        <enum id="kde-screenbritness-ac_setter" valueName="powermanagementprofilesrc.ScreenAC" required="true">
+          <item displayName="$(string.kde-screenbritness-ac-0)">
+            <value>
+              <string>{"AC][BrightnessControl":{"value":"0"}}</string>
+            </value>
+          </item>
+          <item displayName="$(string.kde-screenbritness-ac-20)">
+            <value>
+              <string>{"AC][BrightnessControl":{"value":"20"}}</string>
+            </value>
+          </item>
+          <item displayName="$(string.kde-screenbritness-ac-40)">
+            <value>
+              <string>{"AC][BrightnessControl":{"value":"40"}}</string>
+            </value>
+          </item>
+          <item displayName="$(string.kde-screenbritness-ac-60)">
+            <value>
+              <string>{"AC][BrightnessControl":{"value":"60"}}</string>
+            </value>
+          </item>
+          <item displayName="$(string.kde-screenbritness-ac-80)">
+            <value>
+              <string>{"AC][BrightnessControl":{"value":"80"}}</string>
+            </value>
+          </item>
+          <item displayName="$(string.kde-screenbritness-ac-100)">
+            <value>
+              <string>{"AC][BrightnessControl":{"value":"100"}}</string>
+            </value>
+          </item>
+        </enum>
+        <enum id="kde-screenbritness-battery_setter" valueName="powermanagementprofilesrc.ScreenBattery" required="true">
+          <item displayName="$(string.kde-screenbritness-battery-0)">
+            <value>
+              <string>{"Battery][BrightnessControl":{"value":"0"}}</string>
+            </value>
+          </item>
+          <item displayName="$(string.kde-screenbritness-battery-20)">
+            <value>
+              <string>{"Battery][BrightnessControl":{"value":"20"}}</string>
+            </value>
+          </item>
+          <item displayName="$(string.kde-screenbritness-battery-40)">
+            <value>
+              <string>{"Battery][BrightnessControl":{"value":"40"}}</string>
+            </value>
+          </item>
+          <item displayName="$(string.kde-screenbritness-battery-60)">
+            <value>
+              <string>{"Battery][BrightnessControl":{"value":"60"}}</string>
+            </value>
+          </item>
+          <item displayName="$(string.kde-screenbritness-battery-80)">
+            <value>
+              <string>{"Battery][BrightnessControl":{"value":"80"}}</string>
+            </value>
+          </item>
+          <item displayName="$(string.kde-screenbritness-battery-100)">
+            <value>
+              <string>{"Battery][BrightnessControl":{"value":"100"}}</string>
+            </value>
+          </item>
+        </enum>
+        <enum id="kde-screenbritness-lowbattery_setter" valueName="powermanagementprofilesrc.ScreenLowBattery" required="true">
+          <item displayName="$(string.kde-screenbritness-lowbattery-0)">
+            <value>
+              <string>{"LowBattery][BrightnessControl":{"value":"0"}}</string>
+            </value>
+          </item>
+          <item displayName="$(string.kde-screenbritness-lowbattery-20)">
+            <value>
+              <string>{"LowBattery][BrightnessControl":{"value":"20"}}</string>
+            </value>
+          </item>
+          <item displayName="$(string.kde-screenbritness-lowbattery-40)">
+            <value>
+              <string>{"LowBattery][BrightnessControl":{"value":"40"}}</string>
+            </value>
+          </item>
+          <item displayName="$(string.kde-screenbritness-lowbattery-60)">
+            <value>
+              <string>{"LowBattery][BrightnessControl":{"value":"60"}}</string>
+            </value>
+          </item>
+          <item displayName="$(string.kde-screenbritness-lowbattery-80)">
+            <value>
+              <string>{"LowBattery][BrightnessControl":{"value":"80"}}</string>
+            </value>
+          </item>
+          <item displayName="$(string.kde-screenbritness-lowbattery-100)">
+            <value>
+              <string>{"LowBattery][BrightnessControl":{"value":"100"}}</string>
+            </value>
+          </item>
+        </enum>
+        <boolean id="kde-screenbritness-ac_blocker" key="Software\BaseALT\Policies\KDELocks" valueName="powermanagementprofilesrc.ScreenAC">
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+          </boolean>
+        <boolean id="kde-screenbritness-battery_blocker" key="Software\BaseALT\Policies\KDELocks" valueName="powermanagementprofilesrc.ScreenBattery">
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+          </boolean>
+        <boolean id="kde-screenbritness-lowbattery_blocker" key="Software\BaseALT\Policies\KDELocks" valueName="powermanagementprofilesrc.ScreenLowBattery">
           <trueValue>
             <decimal value="1" />
           </trueValue>
