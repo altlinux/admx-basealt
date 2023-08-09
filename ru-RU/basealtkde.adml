@@ -132,6 +132,25 @@
 
       </string>
 
+      <string id="kde-boardbritness">Яркость клавиатуры</string>
+      <string id="kde-boardbritness_help">Данная политика позволяет настраивать уровень яркости клавиатуры при разных режимах электропитания: при питании от батареи, от сети, при низком уровне заряда.
+
+Уровень яркости клавиатуры в режиме электропитания от сети, от батареи и при низком заряде батареи имеет следующие возможные значения:
+
+- 0;
+
+- 20;
+
+- 40;
+
+- 60;
+
+- 80;
+
+- 100.
+
+      </string>
+
       <string id="kde-desktops">Виртуальные рабочие столы</string>
       <string id="kde-desktops_help">Данная политика позволяет настраивать количество виртуальных рабочих столов. Количество столов может быть от одного до четырёх включительно.</string>
 
@@ -318,6 +337,27 @@
       <string id="kde-screenbritness-lowbattery-80">80</string>
       <string id="kde-screenbritness-lowbattery-100">100</string>
 
+      <string id="kde-boardbritness-ac-0">0</string>
+      <string id="kde-boardbritness-ac-20">20</string>
+      <string id="kde-boardbritness-ac-40">40</string>
+      <string id="kde-boardbritness-ac-60">60</string>
+      <string id="kde-boardbritness-ac-80">80</string>
+      <string id="kde-boardbritness-ac-100">100</string>
+
+      <string id="kde-boardbritness-battery-0">0</string>
+      <string id="kde-boardbritness-battery-20">20</string>
+      <string id="kde-boardbritness-battery-40">40</string>
+      <string id="kde-boardbritness-battery-60">60</string>
+      <string id="kde-boardbritness-battery-80">80</string>
+      <string id="kde-boardbritness-battery-100">100</string>
+
+      <string id="kde-boardbritness-lowbattery-0">0</string>
+      <string id="kde-boardbritness-lowbattery-20">20</string>
+      <string id="kde-boardbritness-lowbattery-40">40</string>
+      <string id="kde-boardbritness-lowbattery-60">60</string>
+      <string id="kde-boardbritness-lowbattery-80">80</string>
+      <string id="kde-boardbritness-lowbattery-100">100</string>
+
       </stringTable>
     <presentationTable>
       <presentation id="kde-win-activate-user-pr">
@@ -417,6 +457,17 @@
         <text>Блокировка изменений данной настройки пользователем. После перезагрузки устройства внесённые пользователем изменения настройки не сохраняются.</text>
         <dropdownList noSort="true" defaultItem="0" refId="kde-screenbritness-lowbattery_setter">Яркость при низком заряде батареи:</dropdownList>
         <checkBox refId="kde-screenbritness-lowbattery_blocker">Блокировать</checkBox>
+        <text>Блокировка изменений данной настройки пользователем. После перезагрузки устройства внесённые пользователем изменения настройки не сохраняются.</text>
+      </presentation>
+      <presentation id="kde-boardbritness-user-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="kde-boardbritness-ac_setter">Яркость при питании от сети:</dropdownList>
+        <checkBox refId="kde-boardbritness-ac_blocker">Блокировать</checkBox>
+        <text>Блокировка изменений данной настройки пользователем. После перезагрузки устройства внесённые пользователем изменения настройки не сохраняются.</text>
+        <dropdownList noSort="true" defaultItem="0" refId="kde-boardbritness-battery_setter">Яркость при питании от батареи:</dropdownList>
+        <checkBox refId="kde-boardbritness-battery_blocker">Блокировать</checkBox>
+        <text>Блокировка изменений данной настройки пользователем. После перезагрузки устройства внесённые пользователем изменения настройки не сохраняются.</text>
+        <dropdownList noSort="true" defaultItem="0" refId="kde-boardbritness-lowbattery_setter">Яркость при низком заряде батареи:</dropdownList>
+        <checkBox refId="kde-boardbritness-lowbattery_blocker">Блокировать</checkBox>
         <text>Блокировка изменений данной настройки пользователем. После перезагрузки устройства внесённые пользователем изменения настройки не сохраняются.</text>
       </presentation>
      </presentationTable>
