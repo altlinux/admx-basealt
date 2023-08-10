@@ -208,6 +208,17 @@ The time to pause session on plugged in, on battery, and low battery has the fol
 
       </string>
 
+      <string id="kde-stopsessiontype">Session pause action</string>
+      <string id="kde-stopsessiontype_help">This policy allows you to select the type of action to take when suspending a session in different power modes: on battery power, on AC power, and on low battery. Valid parameter values:
+
+       - Switching to standby mode;
+       - Go to sleep mode;
+       - Switch to hybrid sleep mode;
+       - Turn off computer;
+       - Lock screen.
+
+      </string>
+
       <string id="kde-desktops">Virtual desktops</string>
       <string id="kde-desktops_help">This policy allows you to configure the number of virtual desktops. The number of tables can be from one to four inclusive.</string>
 
@@ -387,6 +398,12 @@ If the policy is disabled, clicking on the file or folder will highlight it.
       <string id="kde-timer-30">30 минут</string>
       <string id="kde-timer-60">60 минут</string>
 
+      <string id="kde-suspendType-1">Switching to standby mode</string>
+      <string id="kde-suspendType-2">Sleep mode</string>
+      <string id="kde-suspendType-4">Entering hybrid sleep mode</string>
+      <string id="kde-suspendType-8">Turn off computer</string>
+      <string id="kde-suspendType-32">lock screen</string>
+
       </stringTable>
     <presentationTable>
       <presentation id="kde-win-activate-user-pr">
@@ -530,6 +547,17 @@ If the policy is disabled, clicking on the file or folder will highlight it.
         <text>Blocking changes to this setting by the user. After restarting the device, the user's changes to the settings are not saved.</text>
         <dropdownList noSort="true" defaultItem="0" refId="kde-stopsessiontime-lowbattery_setter">Time to suspend session when battery is low:</dropdownList>
         <checkBox refId="kde-stopsessiontime-lowbattery_blocker">Block</checkBox>
+        <text>Blocking changes to this setting by the user. After restarting the device, the user's changes to the settings are not saved.</text>
+      </presentation>
+      <presentation id="kde-stopsessiontype-user-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="kde-stopsessiontype-ac_setter">Action when suspending a session while on mains power:</dropdownList>
+        <checkBox refId="kde-stopsessiontype-ac_blocker">Block</checkBox>
+        <text>Blocking changes to this setting by the user. After restarting the device, the user's changes to the settings are not saved.</text>
+        <dropdownList noSort="true" defaultItem="0" refId="kde-stopsessiontype-battery_setter">Action when suspending a session while on battery power:</dropdownList>
+        <checkBox refId="kde-stopsessiontype-battery_blocker">Block</checkBox>
+        <text>Blocking changes to this setting by the user. After restarting the device, the user's changes to the settings are not saved.</text>
+        <dropdownList noSort="true" defaultItem="0" refId="kde-stopsessiontype-lowbattery_setter">Action on session pause when battery is low:</dropdownList>
+        <checkBox refId="kde-stopsessiontype-lowbattery_blocker">Block</checkBox>
         <text>Blocking changes to this setting by the user. After restarting the device, the user's changes to the settings are not saved.</text>
       </presentation>
      </presentationTable>

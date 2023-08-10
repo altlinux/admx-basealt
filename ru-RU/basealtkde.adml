@@ -208,6 +208,17 @@
 
       </string>
 
+      <string id="kde-stopsessiontype">Действие при приостановке сеанса</string>
+      <string id="kde-stopsessiontype_help">Данная политика позволяет выбрать тип действия при приостановке сеанса в разных режимах электропитания: при питании от батареи, от сети, при низком уровне заряда.  Допустимые значения параметра:
+
+      - Переход в ждущий режим;
+      - Перейти в спящий режим;
+      - Перейти в гибридный спящий режим;
+      - Выключить компьютер;
+      - Заблокировать экран.
+
+      </string>
+
       <string id="kde-desktops">Виртуальные рабочие столы</string>
       <string id="kde-desktops_help">Данная политика позволяет настраивать количество виртуальных рабочих столов. Количество столов может быть от одного до четырёх включительно.</string>
 
@@ -387,6 +398,12 @@
       <string id="kde-timer-30">30 минут</string>
       <string id="kde-timer-60">60 минут</string>
 
+      <string id="kde-suspendType-1">Переход в ждущий режим</string>
+      <string id="kde-suspendType-2">Переход в спящий режим</string>
+      <string id="kde-suspendType-4">Переход в гибридный спящий режим</string>
+      <string id="kde-suspendType-8">Выключить компьютер</string>
+      <string id="kde-suspendType-32">Заблокировать экран</string>
+
       </stringTable>
     <presentationTable>
       <presentation id="kde-win-activate-user-pr">
@@ -530,6 +547,17 @@
         <text>Блокировка изменений данной настройки пользователем. После перезагрузки устройства внесённые пользователем изменения настройки не сохраняются.</text>
         <dropdownList noSort="true" defaultItem="0" refId="kde-stopsessiontime-lowbattery_setter">Время до приостановки сеанса при низком заряде батареи:</dropdownList>
         <checkBox refId="kde-stopsessiontime-lowbattery_blocker">Блокировать</checkBox>
+        <text>Блокировка изменений данной настройки пользователем. После перезагрузки устройства внесённые пользователем изменения настройки не сохраняются.</text>
+      </presentation>
+      <presentation id="kde-stopsessiontype-user-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="kde-stopsessiontype-ac_setter">Действие при приостановке сеанса при питании от сети:</dropdownList>
+        <checkBox refId="kde-stopsessiontype-ac_blocker">Блокировать</checkBox>
+        <text>Блокировка изменений данной настройки пользователем. После перезагрузки устройства внесённые пользователем изменения настройки не сохраняются.</text>
+        <dropdownList noSort="true" defaultItem="0" refId="kde-stopsessiontype-battery_setter">Действие при приостановке сеанса при питании от батареи:</dropdownList>
+        <checkBox refId="kde-stopsessiontype-battery_blocker">Блокировать</checkBox>
+        <text>Блокировка изменений данной настройки пользователем. После перезагрузки устройства внесённые пользователем изменения настройки не сохраняются.</text>
+        <dropdownList noSort="true" defaultItem="0" refId="kde-stopsessiontype-lowbattery_setter">Действие при приостановке сеанса при низком заряде батареи:</dropdownList>
+        <checkBox refId="kde-stopsessiontype-lowbattery_blocker">Блокировать</checkBox>
         <text>Блокировка изменений данной настройки пользователем. После перезагрузки устройства внесённые пользователем изменения настройки не сохраняются.</text>
       </presentation>
      </presentationTable>
