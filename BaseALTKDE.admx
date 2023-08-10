@@ -783,96 +783,96 @@
     <supportedOn ref="system:SUPPORTED_AltP10" />
       <elements>
         <enum id="kde-dimdisplay-ac_setter" valueName="powermanagementprofilesrc.DisplayAC" required="true">
-          <item displayName="$(string.kde-dimmer-1)">
+          <item displayName="$(string.kde-timer-1)">
             <value>
               <string>{"AC][DimDisplay":{"idleTime":"60000"}}</string>
             </value>
           </item>
-          <item displayName="$(string.kde-dimmer-2)">
+          <item displayName="$(string.kde-timer-2)">
             <value>
               <string>{"AC][DimDisplay":{"idleTime":"120000"}}</string>
             </value>
           </item>
-          <item displayName="$(string.kde-dimmer-5)">
+          <item displayName="$(string.kde-timer-5)">
             <value>
               <string>{"AC][DimDisplay":{"idleTime":"300000"}}</string>
             </value>
           </item>
-          <item displayName="$(string.kde-dimmer-10)">
+          <item displayName="$(string.kde-timer-10)">
             <value>
               <string>{"AC][DimDisplay":{"idleTime":"600000"}}</string>
             </value>
           </item>
-          <item displayName="$(string.kde-dimmer-30)">
+          <item displayName="$(string.kde-timer-30)">
             <value>
               <string>{"AC][DimDisplay":{"idleTime":"1800000"}}</string>
             </value>
           </item>
-          <item displayName="$(string.kde-dimmer-60)">
+          <item displayName="$(string.kde-timer-60)">
             <value>
               <string>{"AC][DimDisplay":{"idleTime":"3600000"}}</string>
             </value>
           </item>
         </enum>
         <enum id="kde-dimdisplay-battery_setter" valueName="powermanagementprofilesrc.DisplayBattery" required="true">
-          <item displayName="$(string.kde-dimmer-1)">
+          <item displayName="$(string.kde-timer-1)">
             <value>
               <string>{"Battery][DimDisplay":{"idleTime":"60000"}}</string>
             </value>
           </item>
-          <item displayName="$(string.kde-dimmer-2)">
+          <item displayName="$(string.kde-timer-2)">
             <value>
               <string>{"Battery][DimDisplay":{"idleTime":"120000"}}</string>
             </value>
           </item>
-          <item displayName="$(string.kde-dimmer-5)">
+          <item displayName="$(string.kde-timer-5)">
             <value>
               <string>{"Battery][DimDisplay":{"idleTime":"300000"}}</string>
             </value>
           </item>
-          <item displayName="$(string.kde-dimmer-10)">
+          <item displayName="$(string.kde-timer-10)">
             <value>
               <string>{"Battery][DimDisplay":{"idleTime":"600000"}}</string>
             </value>
           </item>
-          <item displayName="$(string.kde-dimmer-30)">
+          <item displayName="$(string.kde-timer-30)">
             <value>
               <string>{"Battery][DimDisplay":{"idleTime":"1800000"}}</string>
             </value>
           </item>
-          <item displayName="$(string.kde-dimmer-60)">
+          <item displayName="$(string.kde-timer-60)">
             <value>
               <string>{"Battery][DimDisplay":{"idleTime":"3600000"}}</string>
             </value>
           </item>
         </enum>
         <enum id="kde-dimdisplay-lowbattery_setter" valueName="powermanagementprofilesrc.DisplayLowBattery" required="true">
-          <item displayName="$(string.kde-dimmer-1)">
+          <item displayName="$(string.kde-timer-1)">
             <value>
               <string>{"LowBattery][DimDisplay":{"idleTime":"60000"}}</string>
             </value>
           </item>
-          <item displayName="$(string.kde-dimmer-2)">
+          <item displayName="$(string.kde-timer-2)">
             <value>
               <string>{"LowBattery][DimDisplay":{"idleTime":"120000"}}</string>
             </value>
           </item>
-          <item displayName="$(string.kde-dimmer-5)">
+          <item displayName="$(string.kde-timer-5)">
             <value>
               <string>{"LowBattery][DimDisplay":{"idleTime":"300000"}}</string>
             </value>
           </item>
-          <item displayName="$(string.kde-dimmer-10)">
+          <item displayName="$(string.kde-timer-10)">
             <value>
               <string>{"LowBattery][DimDisplay":{"idleTime":"600000"}}</string>
             </value>
           </item>
-          <item displayName="$(string.kde-dimmer-30)">
+          <item displayName="$(string.kde-timer-30)">
             <value>
               <string>{"LowBattery][DimDisplay":{"idleTime":"1800000"}}</string>
             </value>
           </item>
-          <item displayName="$(string.kde-dimmer-60)">
+          <item displayName="$(string.kde-timer-60)">
             <value>
               <string>{"LowBattery][DimDisplay":{"idleTime":"3600000"}}</string>
             </value>
@@ -912,96 +912,96 @@
     <supportedOn ref="system:SUPPORTED_AltP10" />
       <elements>
         <enum id="kde-dimmonitor-ac_setter" valueName="powermanagementprofilesrc.MonitorAC" required="true">
-          <item displayName="$(string.kde-dimmer-1)">
+          <item displayName="$(string.kde-timer-1)">
             <value>
               <string>{"AC][DPMSControl":{"idleTime":"60"}}</string>
             </value>
           </item>
-          <item displayName="$(string.kde-dimmer-2)">
+          <item displayName="$(string.kde-timer-2)">
             <value>
               <string>{"AC][DPMSControl":{"idleTime":"120"}}</string>
             </value>
           </item>
-          <item displayName="$(string.kde-dimmer-5)">
+          <item displayName="$(string.kde-timer-5)">
             <value>
               <string>{"AC][DPMSControl":{"idleTime":"300"}}</string>
             </value>
           </item>
-          <item displayName="$(string.kde-dimmer-10)">
+          <item displayName="$(string.kde-timer-10)">
             <value>
               <string>{"AC][DPMSControl":{"idleTime":"600"}}</string>
             </value>
           </item>
-          <item displayName="$(string.kde-dimmer-30)">
+          <item displayName="$(string.kde-timer-30)">
             <value>
               <string>{"AC][DPMSControl":{"idleTime":"1800"}}</string>
             </value>
           </item>
-          <item displayName="$(string.kde-dimmer-60)">
+          <item displayName="$(string.kde-timer-60)">
             <value>
               <string>{"AC][DPMSControl":{"idleTime":"3600"}}</string>
             </value>
           </item>
         </enum>
         <enum id="kde-dimmonitor-battery_setter" valueName="powermanagementprofilesrc.MonitorBattery" required="true">
-          <item displayName="$(string.kde-dimmer-1)">
+          <item displayName="$(string.kde-timer-1)">
             <value>
               <string>{"Battery][DPMSControl":{"idleTime":"60"}}</string>
             </value>
           </item>
-          <item displayName="$(string.kde-dimmer-2)">
+          <item displayName="$(string.kde-timer-2)">
             <value>
               <string>{"Battery][DPMSControl":{"idleTime":"120"}}</string>
             </value>
           </item>
-          <item displayName="$(string.kde-dimmer-5)">
+          <item displayName="$(string.kde-timer-5)">
             <value>
               <string>{"Battery][DPMSControl":{"idleTime":"300"}}</string>
             </value>
           </item>
-          <item displayName="$(string.kde-dimmer-10)">
+          <item displayName="$(string.kde-timer-10)">
             <value>
               <string>{"Battery][DPMSControl":{"idleTime":"600"}}</string>
             </value>
           </item>
-          <item displayName="$(string.kde-dimmer-30)">
+          <item displayName="$(string.kde-timer-30)">
             <value>
               <string>{"Battery][DPMSControl":{"idleTime":"1800"}}</string>
             </value>
           </item>
-          <item displayName="$(string.kde-dimmer-60)">
+          <item displayName="$(string.kde-timer-60)">
             <value>
               <string>{"Battery][DPMSControl":{"idleTime":"3600"}}</string>
             </value>
           </item>
         </enum>
         <enum id="kde-dimmonitor-lowbattery_setter" valueName="powermanagementprofilesrc.MonitorLowBattery" required="true">
-          <item displayName="$(string.kde-dimmer-1)">
+          <item displayName="$(string.kde-timer-1)">
             <value>
               <string>{"LowBattery][DPMSControl":{"idleTime":"60"}}</string>
             </value>
           </item>
-          <item displayName="$(string.kde-dimmer-2)">
+          <item displayName="$(string.kde-timer-2)">
             <value>
               <string>{"LowBattery][DPMSControl":{"idleTime":"120"}}</string>
             </value>
           </item>
-          <item displayName="$(string.kde-dimmer-5)">
+          <item displayName="$(string.kde-timer-5)">
             <value>
               <string>{"LowBattery][DPMSControl":{"idleTime":"300"}}</string>
             </value>
           </item>
-          <item displayName="$(string.kde-dimmer-10)">
+          <item displayName="$(string.kde-timer-10)">
             <value>
               <string>{"LowBattery][DPMSControl":{"idleTime":"600"}}</string>
             </value>
           </item>
-          <item displayName="$(string.kde-dimmer-30)">
+          <item displayName="$(string.kde-timer-30)">
             <value>
               <string>{"LowBattery][DPMSControl":{"idleTime":"1800"}}</string>
             </value>
           </item>
-          <item displayName="$(string.kde-dimmer-60)">
+          <item displayName="$(string.kde-timer-60)">
             <value>
               <string>{"LowBattery][DPMSControl":{"idleTime":"3600"}}</string>
             </value>
@@ -1024,6 +1024,135 @@
           </falseValue>
           </boolean>
         <boolean id="kde-dimmonitor-lowbattery_blocker" key="Software\BaseALT\Policies\KDELocks" valueName="powermanagementprofilesrc.MonitorLowBattery">
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+          </boolean>
+      </elements>
+    </policy>
+<policy name="kde-stopsessiontime" class="User" displayName="$(string.kde-stopsessiontime)"
+    explainText="$(string.kde-stopsessiontime_help)"
+    key="Software\BaseALT\Policies\KDE"
+    presentation="$(presentation.kde-stopsessiontime-user-pr)">
+    <parentCategory ref="system:ALT_PowerManagement_KDE" />
+    <supportedOn ref="system:SUPPORTED_AltP10" />
+      <elements>
+        <enum id="kde-stopsessiontime-ac_setter" valueName="powermanagementprofilesrc.StopSessionTimeAC" required="true">
+          <item displayName="$(string.kde-timer-1)">
+            <value>
+              <string>{"AC][SuspendSession":{"idleTime":"60000"}}</string>
+            </value>
+          </item>
+          <item displayName="$(string.kde-timer-2)">
+            <value>
+              <string>{"AC][SuspendSession":{"idleTime":"120000"}}</string>
+            </value>
+          </item>
+          <item displayName="$(string.kde-timer-5)">
+            <value>
+              <string>{"AC][SuspendSession":{"idleTime":"300000"}}</string>
+            </value>
+          </item>
+          <item displayName="$(string.kde-timer-10)">
+            <value>
+              <string>{"AC][SuspendSession":{"idleTime":"600000"}}</string>
+            </value>
+          </item>
+          <item displayName="$(string.kde-timer-30)">
+            <value>
+              <string>{"AC][SuspendSession":{"idleTime":"1800000"}}</string>
+            </value>
+          </item>
+          <item displayName="$(string.kde-timer-60)">
+            <value>
+              <string>{"AC][SuspendSession":{"idleTime":"3600000"}}</string>
+            </value>
+          </item>
+        </enum>
+        <enum id="kde-stopsessiontime-battery_setter" valueName="powermanagementprofilesrc.StopSessionTimeBattery" required="true">
+          <item displayName="$(string.kde-timer-1)">
+            <value>
+              <string>{"Battery][SuspendSession":{"idleTime":"60000"}}</string>
+            </value>
+          </item>
+          <item displayName="$(string.kde-timer-2)">
+            <value>
+              <string>{"Battery][SuspendSession":{"idleTime":"120000"}}</string>
+            </value>
+          </item>
+          <item displayName="$(string.kde-timer-5)">
+            <value>
+              <string>{"Battery][SuspendSession":{"idleTime":"300000"}}</string>
+            </value>
+          </item>
+          <item displayName="$(string.kde-timer-10)">
+            <value>
+              <string>{"Battery][SuspendSession":{"idleTime":"600000"}}</string>
+            </value>
+          </item>
+          <item displayName="$(string.kde-timer-30)">
+            <value>
+              <string>{"Battery][SuspendSession":{"idleTime":"1800000"}}</string>
+            </value>
+          </item>
+          <item displayName="$(string.kde-timer-60)">
+            <value>
+              <string>{"Battery][SuspendSession":{"idleTime":"3600000"}}</string>
+            </value>
+          </item>
+        </enum>
+        <enum id="kde-stopsessiontime-lowbattery_setter" valueName="powermanagementprofilesrc.StopSessionTimeLowBattery" required="true">
+          <item displayName="$(string.kde-timer-1)">
+            <value>
+              <string>{"LowBattery][SuspendSession":{"idleTime":"60000"}}</string>
+            </value>
+          </item>
+          <item displayName="$(string.kde-timer-2)">
+            <value>
+              <string>{"LowBattery][SuspendSession":{"idleTime":"120000"}}</string>
+            </value>
+          </item>
+          <item displayName="$(string.kde-timer-5)">
+            <value>
+              <string>{"LowBattery][SuspendSession":{"idleTime":"300000"}}</string>
+            </value>
+          </item>
+          <item displayName="$(string.kde-timer-10)">
+            <value>
+              <string>{"LowBattery][SuspendSession":{"idleTime":"600000"}}</string>
+            </value>
+          </item>
+          <item displayName="$(string.kde-timer-30)">
+            <value>
+              <string>{"LowBattery][SuspendSession":{"idleTime":"1800000"}}</string>
+            </value>
+          </item>
+          <item displayName="$(string.kde-timer-60)">
+            <value>
+              <string>{"LowBattery][SuspendSession":{"idleTime":"3600000"}}</string>
+            </value>
+          </item>
+        </enum>
+        <boolean id="kde-stopsessiontime-ac_blocker" key="Software\BaseALT\Policies\KDELocks" valueName="powermanagementprofilesrc.StopSessionTimeAC">
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+          </boolean>
+        <boolean id="kde-stopsessiontime-battery_blocker" key="Software\BaseALT\Policies\KDELocks" valueName="powermanagementprofilesrc.StopSessionTimeBattery">
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+          </boolean>
+        <boolean id="kde-stopsessiontime-lowbattery_blocker" key="Software\BaseALT\Policies\KDELocks" valueName="powermanagementprofilesrc.StopSessionTimeLowBattery">
           <trueValue>
             <decimal value="1" />
           </trueValue>

@@ -189,6 +189,25 @@ The time to turn off the monitor in AC mode, on battery mode, and when the batte
 
       </string>
 
+      <string id="kde-stopsessiontime">Suspending a session</string>
+      <string id="kde-stopsessiontime_help">This policy allows you to configure the time before the session is suspended under different power modes: on battery power, on mains power, and on low battery.
+
+The time to pause session on plugged in, on battery, and low battery has the following possible values:
+
+- 1 minute;
+
+- 2 minutes;
+
+- 5 minutes;
+
+- 10 minutes;
+
+- 30 minutes;
+
+- 60 minutes.
+
+      </string>
+
       <string id="kde-desktops">Virtual desktops</string>
       <string id="kde-desktops_help">This policy allows you to configure the number of virtual desktops. The number of tables can be from one to four inclusive.</string>
 
@@ -361,12 +380,12 @@ If the policy is disabled, clicking on the file or folder will highlight it.
       <string id="kde-britness-80">80</string>
       <string id="kde-britness-100">100</string>
 
-      <string id="kde-dimmer-1">1 минута</string>
-      <string id="kde-dimmer-2">2 минуты</string>
-      <string id="kde-dimmer-5">5 минут</string>
-      <string id="kde-dimmer-10">10 минут</string>
-      <string id="kde-dimmer-30">30 минут</string>
-      <string id="kde-dimmer-60">60 минут</string>
+      <string id="kde-timer-1">1 минута</string>
+      <string id="kde-timer-2">2 минуты</string>
+      <string id="kde-timer-5">5 минут</string>
+      <string id="kde-timer-10">10 минут</string>
+      <string id="kde-timer-30">30 минут</string>
+      <string id="kde-timer-60">60 минут</string>
 
       </stringTable>
     <presentationTable>
@@ -500,6 +519,17 @@ If the policy is disabled, clicking on the file or folder will highlight it.
         <text>Blocking changes to this setting by the user. After restarting the device, the user's changes to the settings are not saved.</text>
         <dropdownList noSort="true" defaultItem="0" refId="kde-dimmonitor-lowbattery_setter">Time before monitor turns off when battery is low:</dropdownList>
         <checkBox refId="kde-dimmonitor-lowbattery_blocker">Block</checkBox>
+        <text>Blocking changes to this setting by the user. After restarting the device, the user's changes to the settings are not saved.</text>
+      </presentation>
+      <presentation id="kde-stopsessiontime-user-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="kde-stopsessiontime-ac_setter">Time to suspend session on mains power:</dropdownList>
+        <checkBox refId="kde-stopsessiontime-ac_blocker">Block</checkBox>
+        <text>Blocking changes to this setting by the user. After restarting the device, the user's changes to the settings are not saved.</text>
+        <dropdownList noSort="true" defaultItem="0" refId="kde-stopsessiontime-battery_setter">Time to suspend session on battery power:</dropdownList>
+        <checkBox refId="kde-stopsessiontime-battery_blocker">Block</checkBox>
+        <text>Blocking changes to this setting by the user. After restarting the device, the user's changes to the settings are not saved.</text>
+        <dropdownList noSort="true" defaultItem="0" refId="kde-stopsessiontime-lowbattery_setter">Time to suspend session when battery is low:</dropdownList>
+        <checkBox refId="kde-stopsessiontime-lowbattery_blocker">Block</checkBox>
         <text>Blocking changes to this setting by the user. After restarting the device, the user's changes to the settings are not saved.</text>
       </presentation>
      </presentationTable>

@@ -189,6 +189,25 @@
 
       </string>
 
+      <string id="kde-stopsessiontime">Приостановка сеанса</string>
+      <string id="kde-stopsessiontime_help">Данная политика позволяет настраивать время до приостановки сеанса при разных режимах электропитания: при питании от батареи, от сети, при низком уровне заряда.
+
+Время до приостановка сеанса в режиме электропитания от сети, от батареи и при низком заряде батареи имеет следующие возможные значения:
+
+- 1 минута;
+
+- 2 минуты;
+
+- 5 минут;
+
+- 10 минут;
+
+- 30 минут;
+
+- 60 минут.
+
+      </string>
+
       <string id="kde-desktops">Виртуальные рабочие столы</string>
       <string id="kde-desktops_help">Данная политика позволяет настраивать количество виртуальных рабочих столов. Количество столов может быть от одного до четырёх включительно.</string>
 
@@ -361,12 +380,12 @@
       <string id="kde-britness-80">80</string>
       <string id="kde-britness-100">100</string>
 
-      <string id="kde-dimmer-1">1 минута</string>
-      <string id="kde-dimmer-2">2 минуты</string>
-      <string id="kde-dimmer-5">5 минут</string>
-      <string id="kde-dimmer-10">10 минут</string>
-      <string id="kde-dimmer-30">30 минут</string>
-      <string id="kde-dimmer-60">60 минут</string>
+      <string id="kde-timer-1">1 минута</string>
+      <string id="kde-timer-2">2 минуты</string>
+      <string id="kde-timer-5">5 минут</string>
+      <string id="kde-timer-10">10 минут</string>
+      <string id="kde-timer-30">30 минут</string>
+      <string id="kde-timer-60">60 минут</string>
 
       </stringTable>
     <presentationTable>
@@ -500,6 +519,17 @@
         <text>Блокировка изменений данной настройки пользователем. После перезагрузки устройства внесённые пользователем изменения настройки не сохраняются.</text>
         <dropdownList noSort="true" defaultItem="0" refId="kde-dimmonitor-lowbattery_setter">Время до отключения монитора при низком заряде батареи:</dropdownList>
         <checkBox refId="kde-dimmonitor-lowbattery_blocker">Блокировать</checkBox>
+        <text>Блокировка изменений данной настройки пользователем. После перезагрузки устройства внесённые пользователем изменения настройки не сохраняются.</text>
+      </presentation>
+      <presentation id="kde-stopsessiontime-user-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="kde-stopsessiontime-ac_setter">Время до приостановки сеанса при питании от сети:</dropdownList>
+        <checkBox refId="kde-stopsessiontime-ac_blocker">Блокировать</checkBox>
+        <text>Блокировка изменений данной настройки пользователем. После перезагрузки устройства внесённые пользователем изменения настройки не сохраняются.</text>
+        <dropdownList noSort="true" defaultItem="0" refId="kde-stopsessiontime-battery_setter">Время до приостановки сеанса при питании от батареи:</dropdownList>
+        <checkBox refId="kde-stopsessiontime-battery_blocker">Блокировать</checkBox>
+        <text>Блокировка изменений данной настройки пользователем. После перезагрузки устройства внесённые пользователем изменения настройки не сохраняются.</text>
+        <dropdownList noSort="true" defaultItem="0" refId="kde-stopsessiontime-lowbattery_setter">Время до приостановки сеанса при низком заряде батареи:</dropdownList>
+        <checkBox refId="kde-stopsessiontime-lowbattery_blocker">Блокировать</checkBox>
         <text>Блокировка изменений данной настройки пользователем. После перезагрузки устройства внесённые пользователем изменения настройки не сохраняются.</text>
       </presentation>
      </presentationTable>
