@@ -525,96 +525,96 @@
     <supportedOn ref="system:SUPPORTED_AltP10" />
       <elements>
         <enum id="kde-screenbritness-ac_setter" valueName="powermanagementprofilesrc.ScreenAC" required="true">
-          <item displayName="$(string.kde-screenbritness-ac-0)">
+          <item displayName="$(string.kde-britness-0)">
             <value>
               <string>{"AC][BrightnessControl":{"value":"0"}}</string>
             </value>
           </item>
-          <item displayName="$(string.kde-screenbritness-ac-20)">
+          <item displayName="$(string.kde-britness-20)">
             <value>
               <string>{"AC][BrightnessControl":{"value":"20"}}</string>
             </value>
           </item>
-          <item displayName="$(string.kde-screenbritness-ac-40)">
+          <item displayName="$(string.kde-britness-40)">
             <value>
               <string>{"AC][BrightnessControl":{"value":"40"}}</string>
             </value>
           </item>
-          <item displayName="$(string.kde-screenbritness-ac-60)">
+          <item displayName="$(string.kde-britness-60)">
             <value>
               <string>{"AC][BrightnessControl":{"value":"60"}}</string>
             </value>
           </item>
-          <item displayName="$(string.kde-screenbritness-ac-80)">
+          <item displayName="$(string.kde-britness-80)">
             <value>
               <string>{"AC][BrightnessControl":{"value":"80"}}</string>
             </value>
           </item>
-          <item displayName="$(string.kde-screenbritness-ac-100)">
+          <item displayName="$(string.kde-britness-100)">
             <value>
               <string>{"AC][BrightnessControl":{"value":"100"}}</string>
             </value>
           </item>
         </enum>
         <enum id="kde-screenbritness-battery_setter" valueName="powermanagementprofilesrc.ScreenBattery" required="true">
-          <item displayName="$(string.kde-screenbritness-battery-0)">
+          <item displayName="$(string.kde-britness-0)">
             <value>
               <string>{"Battery][BrightnessControl":{"value":"0"}}</string>
             </value>
           </item>
-          <item displayName="$(string.kde-screenbritness-battery-20)">
+          <item displayName="$(string.kde-britness-20)">
             <value>
               <string>{"Battery][BrightnessControl":{"value":"20"}}</string>
             </value>
           </item>
-          <item displayName="$(string.kde-screenbritness-battery-40)">
+          <item displayName="$(string.kde-britness-40)">
             <value>
               <string>{"Battery][BrightnessControl":{"value":"40"}}</string>
             </value>
           </item>
-          <item displayName="$(string.kde-screenbritness-battery-60)">
+          <item displayName="$(string.kde-britness-60)">
             <value>
               <string>{"Battery][BrightnessControl":{"value":"60"}}</string>
             </value>
           </item>
-          <item displayName="$(string.kde-screenbritness-battery-80)">
+          <item displayName="$(string.kde-britness-80)">
             <value>
               <string>{"Battery][BrightnessControl":{"value":"80"}}</string>
             </value>
           </item>
-          <item displayName="$(string.kde-screenbritness-battery-100)">
+          <item displayName="$(string.kde-britness-100)">
             <value>
               <string>{"Battery][BrightnessControl":{"value":"100"}}</string>
             </value>
           </item>
         </enum>
         <enum id="kde-screenbritness-lowbattery_setter" valueName="powermanagementprofilesrc.ScreenLowBattery" required="true">
-          <item displayName="$(string.kde-screenbritness-lowbattery-0)">
+          <item displayName="$(string.kde-britness-0)">
             <value>
               <string>{"LowBattery][BrightnessControl":{"value":"0"}}</string>
             </value>
           </item>
-          <item displayName="$(string.kde-screenbritness-lowbattery-20)">
+          <item displayName="$(string.kde-britness-20)">
             <value>
               <string>{"LowBattery][BrightnessControl":{"value":"20"}}</string>
             </value>
           </item>
-          <item displayName="$(string.kde-screenbritness-lowbattery-40)">
+          <item displayName="$(string.kde-britness-40)">
             <value>
               <string>{"LowBattery][BrightnessControl":{"value":"40"}}</string>
             </value>
           </item>
-          <item displayName="$(string.kde-screenbritness-lowbattery-60)">
+          <item displayName="$(string.kde-britness-60)">
             <value>
               <string>{"LowBattery][BrightnessControl":{"value":"60"}}</string>
             </value>
           </item>
-          <item displayName="$(string.kde-screenbritness-lowbattery-80)">
+          <item displayName="$(string.kde-britness-80)">
             <value>
               <string>{"LowBattery][BrightnessControl":{"value":"80"}}</string>
             </value>
           </item>
-          <item displayName="$(string.kde-screenbritness-lowbattery-100)">
+          <item displayName="$(string.kde-britness-100)">
             <value>
               <string>{"LowBattery][BrightnessControl":{"value":"100"}}</string>
             </value>
@@ -654,96 +654,96 @@
     <supportedOn ref="system:SUPPORTED_AltP10" />
       <elements>
         <enum id="kde-boardbritness-ac_setter" valueName="powermanagementprofilesrc.BoardAC" required="true">
-          <item displayName="$(string.kde-boardbritness-ac-0)">
+          <item displayName="$(string.kde-britness-0)">
             <value>
               <string>{"AC][KeyboardBrightnessControl":{"value":"0"}}</string>
             </value>
           </item>
-          <item displayName="$(string.kde-boardbritness-ac-20)">
+          <item displayName="$(string.kde-britness-20)">
             <value>
               <string>{"AC][KeyboardBrightnessControl":{"value":"20"}}</string>
             </value>
           </item>
-          <item displayName="$(string.kde-boardbritness-ac-40)">
+          <item displayName="$(string.kde-britness-40)">
             <value>
               <string>{"AC][KeyboardBrightnessControl":{"value":"40"}}</string>
             </value>
           </item>
-          <item displayName="$(string.kde-boardbritness-ac-60)">
+          <item displayName="$(string.kde-britness-60)">
             <value>
               <string>{"AC][KeyboardBrightnessControl":{"value":"60"}}</string>
             </value>
           </item>
-          <item displayName="$(string.kde-boardbritness-ac-80)">
+          <item displayName="$(string.kde-britness-80)">
             <value>
               <string>{"AC][KeyboardBrightnessControl":{"value":"80"}}</string>
             </value>
           </item>
-          <item displayName="$(string.kde-boardbritness-ac-100)">
+          <item displayName="$(string.kde-britness-100)">
             <value>
               <string>{"AC][KeyboardBrightnessControl":{"value":"100"}}</string>
             </value>
           </item>
         </enum>
         <enum id="kde-boardbritness-battery_setter" valueName="powermanagementprofilesrc.BoardBattery" required="true">
-          <item displayName="$(string.kde-boardbritness-battery-0)">
+          <item displayName="$(string.kde-britness-0)">
             <value>
               <string>{"Battery][KeyboardBrightnessControl":{"value":"0"}}</string>
             </value>
           </item>
-          <item displayName="$(string.kde-boardbritness-battery-20)">
+          <item displayName="$(string.kde-britness-20)">
             <value>
               <string>{"Battery][KeyboardBrightnessControl":{"value":"20"}}</string>
             </value>
           </item>
-          <item displayName="$(string.kde-boardbritness-battery-40)">
+          <item displayName="$(string.kde-britness-40)">
             <value>
               <string>{"Battery][KeyboardBrightnessControl":{"value":"40"}}</string>
             </value>
           </item>
-          <item displayName="$(string.kde-boardbritness-battery-60)">
+          <item displayName="$(string.kde-britness-60)">
             <value>
               <string>{"Battery][KeyboardBrightnessControl":{"value":"60"}}</string>
             </value>
           </item>
-          <item displayName="$(string.kde-boardbritness-battery-80)">
+          <item displayName="$(string.kde-britness-80)">
             <value>
               <string>{"Battery][KeyboardBrightnessControl":{"value":"80"}}</string>
             </value>
           </item>
-          <item displayName="$(string.kde-boardbritness-battery-100)">
+          <item displayName="$(string.kde-britness-100)">
             <value>
               <string>{"Battery][KeyboardBrightnessControl":{"value":"100"}}</string>
             </value>
           </item>
         </enum>
         <enum id="kde-boardbritness-lowbattery_setter" valueName="powermanagementprofilesrc.BoardLowBattery" required="true">
-          <item displayName="$(string.kde-boardbritness-lowbattery-0)">
+          <item displayName="$(string.kde-britness-0)">
             <value>
               <string>{"LowBattery][KeyboardBrightnessControl":{"value":"0"}}</string>
             </value>
           </item>
-          <item displayName="$(string.kde-boardbritness-lowbattery-20)">
+          <item displayName="$(string.kde-britness-20)">
             <value>
               <string>{"LowBattery][KeyboardBrightnessControl":{"value":"20"}}</string>
             </value>
           </item>
-          <item displayName="$(string.kde-boardbritness-lowbattery-40)">
+          <item displayName="$(string.kde-britness-40)">
             <value>
               <string>{"LowBattery][KeyboardBrightnessControl":{"value":"40"}}</string>
             </value>
           </item>
-          <item displayName="$(string.kde-boardbritness-lowbattery-60)">
+          <item displayName="$(string.kde-britness-60)">
             <value>
               <string>{"LowBattery][KeyboardBrightnessControl":{"value":"60"}}</string>
             </value>
           </item>
-          <item displayName="$(string.kde-boardbritness-lowbattery-80)">
+          <item displayName="$(string.kde-britness-80)">
             <value>
               <string>{"LowBattery][KeyboardBrightnessControl":{"value":"80"}}</string>
             </value>
           </item>
-          <item displayName="$(string.kde-boardbritness-lowbattery-100)">
+          <item displayName="$(string.kde-britness-100)">
             <value>
               <string>{"LowBattery][KeyboardBrightnessControl":{"value":"100"}}</string>
             </value>
@@ -783,96 +783,96 @@
     <supportedOn ref="system:SUPPORTED_AltP10" />
       <elements>
         <enum id="kde-dimdisplay-ac_setter" valueName="powermanagementprofilesrc.DisplayAC" required="true">
-          <item displayName="$(string.kde-dimdisplay-ac-1)">
+          <item displayName="$(string.kde-dimmer-1)">
             <value>
               <string>{"AC][DimDisplay":{"idleTime":"60000"}}</string>
             </value>
           </item>
-          <item displayName="$(string.kde-dimdisplay-ac-2)">
+          <item displayName="$(string.kde-dimmer-2)">
             <value>
               <string>{"AC][DimDisplay":{"idleTime":"120000"}}</string>
             </value>
           </item>
-          <item displayName="$(string.kde-dimdisplay-ac-5)">
+          <item displayName="$(string.kde-dimmer-5)">
             <value>
               <string>{"AC][DimDisplay":{"idleTime":"300000"}}</string>
             </value>
           </item>
-          <item displayName="$(string.kde-dimdisplay-ac-10)">
+          <item displayName="$(string.kde-dimmer-10)">
             <value>
               <string>{"AC][DimDisplay":{"idleTime":"600000"}}</string>
             </value>
           </item>
-          <item displayName="$(string.kde-dimdisplay-ac-30)">
+          <item displayName="$(string.kde-dimmer-30)">
             <value>
               <string>{"AC][DimDisplay":{"idleTime":"1800000"}}</string>
             </value>
           </item>
-          <item displayName="$(string.kde-dimdisplay-ac-60)">
+          <item displayName="$(string.kde-dimmer-60)">
             <value>
               <string>{"AC][DimDisplay":{"idleTime":"3600000"}}</string>
             </value>
           </item>
         </enum>
         <enum id="kde-dimdisplay-battery_setter" valueName="powermanagementprofilesrc.DisplayBattery" required="true">
-          <item displayName="$(string.kde-dimdisplay-battery-1)">
+          <item displayName="$(string.kde-dimmer-1)">
             <value>
               <string>{"Battery][DimDisplay":{"idleTime":"60000"}}</string>
             </value>
           </item>
-          <item displayName="$(string.kde-dimdisplay-battery-2)">
+          <item displayName="$(string.kde-dimmer-2)">
             <value>
               <string>{"Battery][DimDisplay":{"idleTime":"120000"}}</string>
             </value>
           </item>
-          <item displayName="$(string.kde-dimdisplay-battery-5)">
+          <item displayName="$(string.kde-dimmer-5)">
             <value>
               <string>{"Battery][DimDisplay":{"idleTime":"300000"}}</string>
             </value>
           </item>
-          <item displayName="$(string.kde-dimdisplay-battery-10)">
+          <item displayName="$(string.kde-dimmer-10)">
             <value>
               <string>{"Battery][DimDisplay":{"idleTime":"600000"}}</string>
             </value>
           </item>
-          <item displayName="$(string.kde-dimdisplay-battery-30)">
+          <item displayName="$(string.kde-dimmer-30)">
             <value>
               <string>{"Battery][DimDisplay":{"idleTime":"1800000"}}</string>
             </value>
           </item>
-          <item displayName="$(string.kde-dimdisplay-battery-60)">
+          <item displayName="$(string.kde-dimmer-60)">
             <value>
               <string>{"Battery][DimDisplay":{"idleTime":"3600000"}}</string>
             </value>
           </item>
         </enum>
         <enum id="kde-dimdisplay-lowbattery_setter" valueName="powermanagementprofilesrc.DisplayLowBattery" required="true">
-          <item displayName="$(string.kde-dimdisplay-lowbattery-1)">
+          <item displayName="$(string.kde-dimmer-1)">
             <value>
               <string>{"LowBattery][DimDisplay":{"idleTime":"60000"}}</string>
             </value>
           </item>
-          <item displayName="$(string.kde-dimdisplay-lowbattery-2)">
+          <item displayName="$(string.kde-dimmer-2)">
             <value>
               <string>{"LowBattery][DimDisplay":{"idleTime":"120000"}}</string>
             </value>
           </item>
-          <item displayName="$(string.kde-dimdisplay-lowbattery-5)">
+          <item displayName="$(string.kde-dimmer-5)">
             <value>
               <string>{"LowBattery][DimDisplay":{"idleTime":"300000"}}</string>
             </value>
           </item>
-          <item displayName="$(string.kde-dimdisplay-lowbattery-10)">
+          <item displayName="$(string.kde-dimmer-10)">
             <value>
               <string>{"LowBattery][DimDisplay":{"idleTime":"600000"}}</string>
             </value>
           </item>
-          <item displayName="$(string.kde-dimdisplay-lowbattery-30)">
+          <item displayName="$(string.kde-dimmer-30)">
             <value>
               <string>{"LowBattery][DimDisplay":{"idleTime":"1800000"}}</string>
             </value>
           </item>
-          <item displayName="$(string.kde-dimdisplay-lowbattery-60)">
+          <item displayName="$(string.kde-dimmer-60)">
             <value>
               <string>{"LowBattery][DimDisplay":{"idleTime":"3600000"}}</string>
             </value>

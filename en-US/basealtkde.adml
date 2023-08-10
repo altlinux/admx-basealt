@@ -335,68 +335,19 @@ If the policy is disabled, clicking on the file or folder will highlight it.
       <string id="kde-desktoptheme-oxygen">Oxygen</string>
       <string id="kde-desktoptheme-air">Air</string>
 
-      <string id="kde-screenbritness-ac-0">0</string>
-      <string id="kde-screenbritness-ac-20">20</string>
-      <string id="kde-screenbritness-ac-40">40</string>
-      <string id="kde-screenbritness-ac-60">60</string>
-      <string id="kde-screenbritness-ac-80">80</string>
-      <string id="kde-screenbritness-ac-100">100</string>
+      <string id="kde-britness-0">0</string>
+      <string id="kde-britness-20">20</string>
+      <string id="kde-britness-40">40</string>
+      <string id="kde-britness-60">60</string>
+      <string id="kde-britness-80">80</string>
+      <string id="kde-britness-100">100</string>
 
-      <string id="kde-screenbritness-battery-0">0</string>
-      <string id="kde-screenbritness-battery-20">20</string>
-      <string id="kde-screenbritness-battery-40">40</string>
-      <string id="kde-screenbritness-battery-60">60</string>
-      <string id="kde-screenbritness-battery-80">80</string>
-      <string id="kde-screenbritness-battery-100">100</string>
-
-      <string id="kde-screenbritness-lowbattery-0">0</string>
-      <string id="kde-screenbritness-lowbattery-20">20</string>
-      <string id="kde-screenbritness-lowbattery-40">40</string>
-      <string id="kde-screenbritness-lowbattery-60">60</string>
-      <string id="kde-screenbritness-lowbattery-80">80</string>
-      <string id="kde-screenbritness-lowbattery-100">100</string>
-
-      <string id="kde-boardbritness-ac-0">0</string>
-      <string id="kde-boardbritness-ac-20">20</string>
-      <string id="kde-boardbritness-ac-40">40</string>
-      <string id="kde-boardbritness-ac-60">60</string>
-      <string id="kde-boardbritness-ac-80">80</string>
-      <string id="kde-boardbritness-ac-100">100</string>
-
-      <string id="kde-boardbritness-battery-0">0</string>
-      <string id="kde-boardbritness-battery-20">20</string>
-      <string id="kde-boardbritness-battery-40">40</string>
-      <string id="kde-boardbritness-battery-60">60</string>
-      <string id="kde-boardbritness-battery-80">80</string>
-      <string id="kde-boardbritness-battery-100">100</string>
-
-      <string id="kde-boardbritness-lowbattery-0">0</string>
-      <string id="kde-boardbritness-lowbattery-20">20</string>
-      <string id="kde-boardbritness-lowbattery-40">40</string>
-      <string id="kde-boardbritness-lowbattery-60">60</string>
-      <string id="kde-boardbritness-lowbattery-80">80</string>
-      <string id="kde-boardbritness-lowbattery-100">100</string>
-
-      <string id="kde-dimdisplay-ac-1">1 минута</string>
-      <string id="kde-dimdisplay-ac-2">2 минуты</string>
-      <string id="kde-dimdisplay-ac-5">5 минут</string>
-      <string id="kde-dimdisplay-ac-10">10 минут</string>
-      <string id="kde-dimdisplay-ac-30">30 минут</string>
-      <string id="kde-dimdisplay-ac-60">60 минут</string>
-
-      <string id="kde-dimdisplay-battery-1">1 минута</string>
-      <string id="kde-dimdisplay-battery-2">2 минуты</string>
-      <string id="kde-dimdisplay-battery-5">5 минут</string>
-      <string id="kde-dimdisplay-battery-10">10 минут</string>
-      <string id="kde-dimdisplay-battery-30">30 минут</string>
-      <string id="kde-dimdisplay-battery-60">60 минут</string>
-
-      <string id="kde-dimdisplay-lowbattery-1">1 минута</string>
-      <string id="kde-dimdisplay-lowbattery-2">2 минуты</string>
-      <string id="kde-dimdisplay-lowbattery-5">5 минут</string>
-      <string id="kde-dimdisplay-lowbattery-10">10 минут</string>
-      <string id="kde-dimdisplay-lowbattery-30">30 минут</string>
-      <string id="kde-dimdisplay-lowbattery-60">60 минут</string>
+      <string id="kde-dimmer-1">1 минута</string>
+      <string id="kde-dimmer-2">2 минуты</string>
+      <string id="kde-dimmer-5">5 минут</string>
+      <string id="kde-dimmer-10">10 минут</string>
+      <string id="kde-dimmer-30">30 минут</string>
+      <string id="kde-dimmer-60">60 минут</string>
 
       </stringTable>
     <presentationTable>
