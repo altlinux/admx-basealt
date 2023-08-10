@@ -170,6 +170,25 @@ The time before the screen fades out in AC mode, on battery mode, and when the b
 
       </string>
 
+      <string id="kde-dimmonitor">Monitor power saving</string>
+      <string id="kde-dimmonitor_help">This policy allows you to configure the time before the monitor turns off under different power modes: on battery power, on mains power, and on low battery.
+
+The time to turn off the monitor in AC mode, on battery mode, and when the battery is low has the following possible values:
+
+- 1 minute;
+
+- 2 minutes;
+
+- 5 minutes;
+
+- 10 minutes;
+
+- 30 minutes;
+
+- 60 minutes.
+
+      </string>
+
       <string id="kde-desktops">Virtual desktops</string>
       <string id="kde-desktops_help">This policy allows you to configure the number of virtual desktops. The number of tables can be from one to four inclusive.</string>
 
@@ -470,6 +489,17 @@ If the policy is disabled, clicking on the file or folder will highlight it.
         <text>Blocking changes to this setting by the user. After restarting the device, the user's changes to the settings are not saved.</text>
         <dropdownList noSort="true" defaultItem="0" refId="kde-dimdisplay-lowbattery_setter">Time before screen fades when battery is low:</dropdownList>
         <checkBox refId="kde-dimdisplay-lowbattery_blocker">Block</checkBox>
+        <text>Blocking changes to this setting by the user. After restarting the device, the user's changes to the settings are not saved.</text>
+      </presentation>
+      <presentation id="kde-dimmonitor-user-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="kde-dimmonitor-ac_setter">Time until monitor turns off when plugged in:</dropdownList>
+        <checkBox refId="kde-dimmonitor-ac_blocker">Block</checkBox>
+        <text>Blocking changes to this setting by the user. After restarting the device, the user's changes to the settings are not saved.</text>
+        <dropdownList noSort="true" defaultItem="0" refId="kde-dimmonitor-battery_setter">Time until monitor turns off when on battery power:</dropdownList>
+        <checkBox refId="kde-dimmonitor-battery_blocker">Block</checkBox>
+        <text>Blocking changes to this setting by the user. After restarting the device, the user's changes to the settings are not saved.</text>
+        <dropdownList noSort="true" defaultItem="0" refId="kde-dimmonitor-lowbattery_setter">Time before monitor turns off when battery is low:</dropdownList>
+        <checkBox refId="kde-dimmonitor-lowbattery_blocker">Block</checkBox>
         <text>Blocking changes to this setting by the user. After restarting the device, the user's changes to the settings are not saved.</text>
       </presentation>
      </presentationTable>

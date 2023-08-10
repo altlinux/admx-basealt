@@ -170,6 +170,25 @@
 
       </string>
 
+      <string id="kde-dimmonitor">Энергосбережение монитора</string>
+      <string id="kde-dimmonitor_help">Данная политика позволяет настраивать время до отключения монитора при разных режимах электропитания: при питании от батареи, от сети, при низком уровне заряда.
+
+Время до отключения монитора в режиме электропитания от сети, от батареи и при низком заряде батареи имеет следующие возможные значения:
+
+- 1 минута;
+
+- 2 минуты;
+
+- 5 минут;
+
+- 10 минут;
+
+- 30 минут;
+
+- 60 минут.
+
+      </string>
+
       <string id="kde-desktops">Виртуальные рабочие столы</string>
       <string id="kde-desktops_help">Данная политика позволяет настраивать количество виртуальных рабочих столов. Количество столов может быть от одного до четырёх включительно.</string>
 
@@ -470,6 +489,17 @@
         <text>Блокировка изменений данной настройки пользователем. После перезагрузки устройства внесённые пользователем изменения настройки не сохраняются.</text>
         <dropdownList noSort="true" defaultItem="0" refId="kde-dimdisplay-lowbattery_setter">Время до затухания при низком заряде батареи:</dropdownList>
         <checkBox refId="kde-dimdisplay-lowbattery_blocker">Блокировать</checkBox>
+        <text>Блокировка изменений данной настройки пользователем. После перезагрузки устройства внесённые пользователем изменения настройки не сохраняются.</text>
+      </presentation>
+      <presentation id="kde-dimmonitor-user-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="kde-dimmonitor-ac_setter">Время до отключения монитора при питании от сети:</dropdownList>
+        <checkBox refId="kde-dimmonitor-ac_blocker">Блокировать</checkBox>
+        <text>Блокировка изменений данной настройки пользователем. После перезагрузки устройства внесённые пользователем изменения настройки не сохраняются.</text>
+        <dropdownList noSort="true" defaultItem="0" refId="kde-dimmonitor-battery_setter">Время до отключения монитора при питании от батареи:</dropdownList>
+        <checkBox refId="kde-dimmonitor-battery_blocker">Блокировать</checkBox>
+        <text>Блокировка изменений данной настройки пользователем. После перезагрузки устройства внесённые пользователем изменения настройки не сохраняются.</text>
+        <dropdownList noSort="true" defaultItem="0" refId="kde-dimmonitor-lowbattery_setter">Время до отключения монитора при низком заряде батареи:</dropdownList>
+        <checkBox refId="kde-dimmonitor-lowbattery_blocker">Блокировать</checkBox>
         <text>Блокировка изменений данной настройки пользователем. После перезагрузки устройства внесённые пользователем изменения настройки не сохраняются.</text>
       </presentation>
      </presentationTable>
