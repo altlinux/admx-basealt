@@ -151,6 +151,25 @@
 
       </string>
 
+      <string id="kde-dimdisplay">Потухание экрана</string>
+      <string id="kde-dimdisplay_help">Данная политика позволяет настраивать время до затухания экрана при разных режимах электропитания: при питании от батареи, от сети, при низком уровне заряда.
+
+Время до затухания экрана в режиме электропитания от сети, от батареи и при низком заряде батареи имеет следующие возможные значения:
+
+- 1 минута;
+
+- 2 минуты;
+
+- 5 минут;
+
+- 10 минут;
+
+- 30 минут;
+
+- 60 минут.
+
+      </string>
+
       <string id="kde-desktops">Виртуальные рабочие столы</string>
       <string id="kde-desktops_help">Данная политика позволяет настраивать количество виртуальных рабочих столов. Количество столов может быть от одного до четырёх включительно.</string>
 
@@ -358,6 +377,27 @@
       <string id="kde-boardbritness-lowbattery-80">80</string>
       <string id="kde-boardbritness-lowbattery-100">100</string>
 
+      <string id="kde-dimdisplay-ac-1">1 минута</string>
+      <string id="kde-dimdisplay-ac-2">2 минуты</string>
+      <string id="kde-dimdisplay-ac-5">5 минут</string>
+      <string id="kde-dimdisplay-ac-10">10 минут</string>
+      <string id="kde-dimdisplay-ac-30">30 минут</string>
+      <string id="kde-dimdisplay-ac-60">60 минут</string>
+
+      <string id="kde-dimdisplay-battery-1">1 минута</string>
+      <string id="kde-dimdisplay-battery-2">2 минуты</string>
+      <string id="kde-dimdisplay-battery-5">5 минут</string>
+      <string id="kde-dimdisplay-battery-10">10 минут</string>
+      <string id="kde-dimdisplay-battery-30">30 минут</string>
+      <string id="kde-dimdisplay-battery-60">60 минут</string>
+
+      <string id="kde-dimdisplay-lowbattery-1">1 минута</string>
+      <string id="kde-dimdisplay-lowbattery-2">2 минуты</string>
+      <string id="kde-dimdisplay-lowbattery-5">5 минут</string>
+      <string id="kde-dimdisplay-lowbattery-10">10 минут</string>
+      <string id="kde-dimdisplay-lowbattery-30">30 минут</string>
+      <string id="kde-dimdisplay-lowbattery-60">60 минут</string>
+
       </stringTable>
     <presentationTable>
       <presentation id="kde-win-activate-user-pr">
@@ -468,6 +508,17 @@
         <text>Блокировка изменений данной настройки пользователем. После перезагрузки устройства внесённые пользователем изменения настройки не сохраняются.</text>
         <dropdownList noSort="true" defaultItem="0" refId="kde-boardbritness-lowbattery_setter">Яркость при низком заряде батареи:</dropdownList>
         <checkBox refId="kde-boardbritness-lowbattery_blocker">Блокировать</checkBox>
+        <text>Блокировка изменений данной настройки пользователем. После перезагрузки устройства внесённые пользователем изменения настройки не сохраняются.</text>
+      </presentation>
+      <presentation id="kde-dimdisplay-user-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="kde-dimdisplay-ac_setter">Время до затухания при питании от сети:</dropdownList>
+        <checkBox refId="kde-dimdisplay-ac_blocker">Блокировать</checkBox>
+        <text>Блокировка изменений данной настройки пользователем. После перезагрузки устройства внесённые пользователем изменения настройки не сохраняются.</text>
+        <dropdownList noSort="true" defaultItem="0" refId="kde-dimdisplay-battery_setter">Время до затухания при питании от батареи:</dropdownList>
+        <checkBox refId="kde-dimdisplay-battery_blocker">Блокировать</checkBox>
+        <text>Блокировка изменений данной настройки пользователем. После перезагрузки устройства внесённые пользователем изменения настройки не сохраняются.</text>
+        <dropdownList noSort="true" defaultItem="0" refId="kde-dimdisplay-lowbattery_setter">Время до затухания при низком заряде батареи:</dropdownList>
+        <checkBox refId="kde-dimdisplay-lowbattery_blocker">Блокировать</checkBox>
         <text>Блокировка изменений данной настройки пользователем. После перезагрузки устройства внесённые пользователем изменения настройки не сохраняются.</text>
       </presentation>
      </presentationTable>

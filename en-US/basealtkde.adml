@@ -151,6 +151,25 @@ The brightness level of the keyboard in the mains mode, on battery mode, and whe
 
       </string>
 
+      <string id="kde-dimdisplay">Screen fade</string>
+      <string id="kde-dimdisplay_help">This policy allows you to configure the time before the screen fades under different power modes: when on battery, on mains, when the battery is low.
+
+The time before the screen fades out in AC mode, on battery mode, and when the battery is low has the following possible values:
+
+- 1 minute;
+
+- 2 minutes;
+
+- 5 minutes;
+
+- 10 minutes;
+
+- 30 minutes;
+
+- 60 minutes.
+
+      </string>
+
       <string id="kde-desktops">Virtual desktops</string>
       <string id="kde-desktops_help">This policy allows you to configure the number of virtual desktops. The number of tables can be from one to four inclusive.</string>
 
@@ -358,6 +377,27 @@ If the policy is disabled, clicking on the file or folder will highlight it.
       <string id="kde-boardbritness-lowbattery-80">80</string>
       <string id="kde-boardbritness-lowbattery-100">100</string>
 
+      <string id="kde-dimdisplay-ac-1">1 минута</string>
+      <string id="kde-dimdisplay-ac-2">2 минуты</string>
+      <string id="kde-dimdisplay-ac-5">5 минут</string>
+      <string id="kde-dimdisplay-ac-10">10 минут</string>
+      <string id="kde-dimdisplay-ac-30">30 минут</string>
+      <string id="kde-dimdisplay-ac-60">60 минут</string>
+
+      <string id="kde-dimdisplay-battery-1">1 минута</string>
+      <string id="kde-dimdisplay-battery-2">2 минуты</string>
+      <string id="kde-dimdisplay-battery-5">5 минут</string>
+      <string id="kde-dimdisplay-battery-10">10 минут</string>
+      <string id="kde-dimdisplay-battery-30">30 минут</string>
+      <string id="kde-dimdisplay-battery-60">60 минут</string>
+
+      <string id="kde-dimdisplay-lowbattery-1">1 минута</string>
+      <string id="kde-dimdisplay-lowbattery-2">2 минуты</string>
+      <string id="kde-dimdisplay-lowbattery-5">5 минут</string>
+      <string id="kde-dimdisplay-lowbattery-10">10 минут</string>
+      <string id="kde-dimdisplay-lowbattery-30">30 минут</string>
+      <string id="kde-dimdisplay-lowbattery-60">60 минут</string>
+
       </stringTable>
     <presentationTable>
       <presentation id="kde-win-activate-user-pr">
@@ -468,6 +508,17 @@ If the policy is disabled, clicking on the file or folder will highlight it.
         <text>Blocking changes to this setting by the user. After restarting the device, the user's changes to the settings are not saved.</text>
         <dropdownList noSort="true" defaultItem="0" refId="kde-boardbritness-lowbattery_setter">Brightness when battery is low:</dropdownList>
         <checkBox refId="kde-boardbritness-lowbattery_blocker">Block</checkBox>
+        <text>Blocking changes to this setting by the user. After restarting the device, the user's changes to the settings are not saved.</text>
+      </presentation>
+      <presentation id="kde-dimdisplay-user-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="kde-dimdisplay-ac_setter">Time to attenuation when powered from the mains:</dropdownList>
+        <checkBox refId="kde-dimdisplay-ac_blocker">Block</checkBox>
+        <text>Blocking changes to this setting by the user. After restarting the device, the user's changes to the settings are not saved.</text>
+        <dropdownList noSort="true" defaultItem="0" refId="kde-dimdisplay-battery_setter">Time to fade screen on battery power:</dropdownList>
+        <checkBox refId="kde-dimdisplay-battery_blocker">Block</checkBox>
+        <text>Blocking changes to this setting by the user. After restarting the device, the user's changes to the settings are not saved.</text>
+        <dropdownList noSort="true" defaultItem="0" refId="kde-dimdisplay-lowbattery_setter">Time before screen fades when battery is low:</dropdownList>
+        <checkBox refId="kde-dimdisplay-lowbattery_blocker">Block</checkBox>
         <text>Blocking changes to this setting by the user. After restarting the device, the user's changes to the settings are not saved.</text>
       </presentation>
      </presentationTable>
