@@ -56,6 +56,23 @@
 
       </string>
 
+      <string id="kde-keyboardset">Настройка раскладки клавиатуры</string>
+      <string id="kde-keyboardset_help">Данная политика позволяет настраивать раскладки клавиатуры. Допустимые значения:
+
+«Русская расскладка»
+
+«Английская расскладка»
+
+«Немецкая расскладка»
+
+«Русская и английская расскладки»
+
+«Русская и немецкая расскладки»
+
+«Английская и немецкая расскладки»
+
+      </string>
+
       <string id="kde-automount">Настройка подключаемых устройств</string>
       <string id="kde-automount_help">Данная политика позволяет настроить автоматическое монтирование подключаемых устройств. Автоматичеки монтировать устройства:
 
@@ -437,6 +454,13 @@
       <string id="kde-suspendThenHibernate-true">Включено</string>
       <string id="kde-suspendThenHibernate-false">Отключено</string>
 
+      <string id="kde-keyboardset-ru">Русская расскладка</string>
+      <string id="kde-keyboardset-us">Английская расскладка</string>
+      <string id="kde-keyboardset-de">Немецкая расскладка</string>
+      <string id="kde-keyboardset-ru-us">Русская и английская расскладки</string>
+      <string id="kde-keyboardset-ru-de">Русская и немецкая расскладки</string>
+      <string id="kde-keyboardset-us-de">Английская и немецкая расскладки</string>
+
       </stringTable>
     <presentationTable>
       <presentation id="kde-win-activate-user-pr">
@@ -514,6 +538,11 @@
       <presentation id="kde-desktoptheme-user-pr">
         <dropdownList noSort="true" defaultItem="0" refId="kde-desktoptheme-setter">Тема оформления рабочего стола:</dropdownList>
         <checkBox refId="kde-desktoptheme_blocker">Блокировать</checkBox>
+        <text>Блокировка изменений данной настройки пользователем. После перезагрузки устройства внесённые пользователем изменения настройки не сохраняются.</text>
+      </presentation>
+      <presentation id="kde-keyboardset-user-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="kde-keyboardset-setter">Варианты раскладки клавиатуры:</dropdownList>
+        <checkBox refId="kde-keyboardset_blocker">Блокировать</checkBox>
         <text>Блокировка изменений данной настройки пользователем. После перезагрузки устройства внесённые пользователем изменения настройки не сохраняются.</text>
       </presentation>
       <presentation id="kde-screenlocker-user-pr">

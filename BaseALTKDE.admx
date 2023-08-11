@@ -423,6 +423,55 @@
           </boolean>
       </elements>
     </policy>
+  <policy name="kde-keyboardset" class="User" displayName="$(string.kde-keyboardset)"
+    explainText="$(string.kde-keyboardset_help)"
+    presentation="$(presentation.kde-keyboardset-user-pr)"
+    key="Software\BaseALT\Policies\KDE">
+    <parentCategory ref="system:ALT_Appearance_KDE" />
+    <supportedOn ref="system:SUPPORTED_AltP10" />
+      <elements>
+        <enum  id="kde-keyboardset-setter" valueName="kxkbrc.KeyBoard" required="true">
+          <item displayName="$(string.kde-keyboardset-ru)">
+            <value>
+              <string>{"Layout":{"Use":"true", "LayoutList":"ru", "Model":"pc104"}}</string>
+            </value>
+          </item>
+          <item displayName="$(string.kde-keyboardset-us)">
+            <value>
+              <string>{"Layout":{"Use":"true", "LayoutList":"us", "Model":"pc104"}}</string>
+            </value>
+          </item>
+          <item displayName="$(string.kde-keyboardset-de)">
+            <value>
+              <string>{"Layout":{"Use":"true", "LayoutList":"de", "Model":"pc104"}}</string>
+            </value>
+          </item>
+          <item displayName="$(string.kde-keyboardset-ru-us)">
+            <value>
+              <string>{"Layout":{"Use":"true", "DisplayNames":",", "LayoutList":"ru,us", "Model":"pc104", "VariantList":","}}</string>
+            </value>
+          </item>
+          <item displayName="$(string.kde-keyboardset-ru-de)">
+            <value>
+              <string>{"Layout":{"Use":"true", "DisplayNames":",", "LayoutList":"ru,de", "Model":"pc104", "VariantList":","}}</string>
+            </value>
+          </item>
+          <item displayName="$(string.kde-keyboardset-us-de)">
+            <value>
+              <string>{"Layout":{"Use":"true", "DisplayNames":",", "LayoutList":"us,de", "Model":"pc104", "VariantList":","}}</string>
+            </value>
+          </item>
+        </enum>
+        <boolean id="kde-keyboardset_blocker" key="Software\BaseALT\Policies\KDELocks" valueName="kxkbrc.KeyBoard" >
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+          </boolean>
+      </elements>
+    </policy>
   <policy name="kde-screenlocker" class="User" displayName="$(string.kde-screenlocker)"
     explainText="$(string.kde-screenlocker_help)"
     key="Software\BaseALT\Policies\KDE"

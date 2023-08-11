@@ -56,6 +56,23 @@
 
       </string>
 
+      <string id="kde-keyboardset">Customizing the keyboard layout</string>
+      <string id="kde-keyboardset_help">This policy allows you to customize keyboard layouts. Valid values:
+
+"Russian layout"
+
+"English layout"
+
+"German layout"
+
+"Russian and English layouts"
+
+"Russian and German layouts"
+
+"English and German layouts"
+
+      </string>
+
       <string id="kde-automount">Setting Up Connected Devices</string>
       <string id="kde-automount_help">This policy allows you to configure automatic mounting of connected devices. Automatically mount devices:
 
@@ -437,6 +454,13 @@ If the policy is disabled, clicking on the file or folder will highlight it.
       <string id="kde-suspendThenHibernate-true">Enabled</string>
       <string id="kde-suspendThenHibernate-false">Disabled</string>
 
+      <string id="kde-keyboardset-ru">Russian layout</string>
+      <string id="kde-keyboardset-us">English layout</string>
+      <string id="kde-keyboardset-de">German layout</string>
+      <string id="kde-keyboardset-ru-us">Russian and English layouts</string>
+      <string id="kde-keyboardset-ru-de">Russian and German layouts</string>
+      <string id="kde-keyboardset-us-de">English and German layouts</string>
+
       </stringTable>
     <presentationTable>
       <presentation id="kde-win-activate-user-pr">
@@ -514,6 +538,11 @@ If the policy is disabled, clicking on the file or folder will highlight it.
       <presentation id="kde-desktoptheme-user-pr">
         <dropdownList noSort="true" defaultItem="0" refId="kde-desktoptheme-setter">Desktop theme:</dropdownList>
         <checkBox refId="kde-desktoptheme_blocker">Block</checkBox>
+        <text>Blocking changes to this setting by the user. After restarting the device, the user's changes to the settings are not saved.</text>
+      </presentation>
+      <presentation id="kde-keyboardset-user-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="kde-keyboardset-setter">Keyboard layout options:</dropdownList>
+        <checkBox refId="kde-keyboardset_blocker">Block</checkBox>
         <text>Blocking changes to this setting by the user. After restarting the device, the user's changes to the settings are not saved.</text>
       </presentation>
       <presentation id="kde-screenlocker-user-pr">
