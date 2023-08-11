@@ -1276,6 +1276,75 @@
           </boolean>
       </elements>
     </policy>
+  <policy name="kde-stopsessionhibernate" class="User" displayName="$(string.kde-stopsessionhibernate)"
+    explainText="$(string.kde-stopsessionhibernate_help)"
+    key="Software\BaseALT\Policies\KDE"
+    presentation="$(presentation.kde-stopsessionhibernate-user-pr)">
+    <parentCategory ref="system:ALT_PowerManagement_KDE" />
+    <supportedOn ref="system:SUPPORTED_AltP10" />
+      <elements>
+        <enum id="kde-stopsessionhibernate-ac_setter" valueName="powermanagementprofilesrc.StopSessionHibernateAC" required="true">
+          <item displayName="$(string.kde-suspendThenHibernate-true)">
+            <value>
+              <string>{"AC][SuspendSession":{"suspendThenHibernate":"true"}}</string>
+            </value>
+          </item>
+          <item displayName="$(string.kde-suspendThenHibernate-false)">
+            <value>
+              <string>{"AC][SuspendSession":{"suspendThenHibernate":"false"}}</string>
+            </value>
+          </item>
+        </enum>
+        <enum id="kde-stopsessionhibernate-battery_setter" valueName="powermanagementprofilesrc.StopSessionHibernateBattery" required="true">
+          <item displayName="$(string.kde-suspendThenHibernate-true)">
+            <value>
+              <string>{"Battery][SuspendSession":{"suspendThenHibernate":"true"}}</string>
+            </value>
+          </item>
+          <item displayName="$(string.kde-suspendThenHibernate-false)">
+            <value>
+              <string>{"Battery][SuspendSession":{"suspendThenHibernate":"false"}}</string>
+            </value>
+          </item>
+        </enum>
+        <enum id="kde-stopsessionhibernate-lowbattery_setter" valueName="powermanagementprofilesrc.StopSessionHibernateLowBattery" required="true">
+          <item displayName="$(string.kde-suspendThenHibernate-true)">
+            <value>
+              <string>{"LowBattery][SuspendSession":{"suspendThenHibernate":"true"}}</string>
+            </value>
+          </item>
+          <item displayName="$(string.kde-suspendThenHibernate-false)">
+            <value>
+              <string>{"LowBattery][SuspendSession":{"suspendThenHibernate":"false"}}</string>
+            </value>
+          </item>
+        </enum>
+        <boolean id="kde-stopsessionhibernate-ac_blocker" key="Software\BaseALT\Policies\KDELocks" valueName="powermanagementprofilesrc.StopSessionHibernateAC">
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+          </boolean>
+        <boolean id="kde-stopsessionhibernate-battery_blocker" key="Software\BaseALT\Policies\KDELocks" valueName="powermanagementprofilesrc.StopSessionHibernateBattery">
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+          </boolean>
+        <boolean id="kde-stopsessionhibernate-lowbattery_blocker" key="Software\BaseALT\Policies\KDELocks" valueName="powermanagementprofilesrc.StopSessionHibernateLowBattery">
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+          </boolean>
+      </elements>
+    </policy>
   <policy name="kde-wallpaper" class="User" displayName="$(string.kde-wallpaper)"
     explainText="$(string.kde-wallpaper_help)"
     presentation="$(presentation.kde-wallpaper-user-pr)"

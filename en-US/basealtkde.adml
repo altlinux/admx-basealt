@@ -211,11 +211,38 @@ The time to pause session on plugged in, on battery, and low battery has the fol
       <string id="kde-stopsessiontype">Session pause action</string>
       <string id="kde-stopsessiontype_help">This policy allows you to select the type of action to take when suspending a session in different power modes: on battery power, on AC power, and on low battery. Valid parameter values:
 
-       - Switching to standby mode;
-       - Go to sleep mode;
-       - Switch to hybrid sleep mode;
-       - Turn off computer;
-       - Lock screen.
+- Switching to standby mode;
+
+- Go to sleep mode;
+
+- Switch to hybrid sleep mode;
+
+- Turn off computer;
+
+- Lock screen.
+
+      </string>
+
+      <string id="kde-stopsessionhibernate">Switching from standby to hibernation</string>
+      <string id="kde-stopsessionhibernate_help">This policy allows you to configure the transition of the computer from standby to hibernation when idle (depending on the power mode).
+
+When powered by mains:
+
+- Enabled;
+
+- Turned off.
+
+On battery power:
+
+- Enabled;
+
+- Turned off.
+
+When the battery level is low:
+
+- Enabled;
+
+- Turned off.
 
       </string>
 
@@ -237,6 +264,7 @@ The time to pause session on plugged in, on battery, and low battery has the fol
 If the policy is enabled, clicking will open the file or folder.
 
 If the policy is disabled, clicking on the file or folder will highlight it.
+
       </string>
 
       <string id="kde-colorscheme">Colors</string>
@@ -255,6 +283,7 @@ If the policy is disabled, clicking on the file or folder will highlight it.
       - KritaDarker
       - KritaNeutral
       - Oxygen
+
       </string>
 
       <string id="kde-cursortheme">Cursor theme</string>
@@ -271,6 +300,7 @@ If the policy is disabled, clicking on the file or folder will highlight it.
       - breeze
       - breeze_dark
       - breeze_cursors
+
       </string>
 
       <string id="kde-iconstheme">Icons theme</string>
@@ -391,18 +421,21 @@ If the policy is disabled, clicking on the file or folder will highlight it.
       <string id="kde-britness-80">80</string>
       <string id="kde-britness-100">100</string>
 
-      <string id="kde-timer-1">1 минута</string>
-      <string id="kde-timer-2">2 минуты</string>
-      <string id="kde-timer-5">5 минут</string>
-      <string id="kde-timer-10">10 минут</string>
-      <string id="kde-timer-30">30 минут</string>
-      <string id="kde-timer-60">60 минут</string>
+      <string id="kde-timer-1">1 minute</string>
+      <string id="kde-timer-2">2 minutes</string>
+      <string id="kde-timer-5">5 minutes</string>
+      <string id="kde-timer-10">10 minutes</string>
+      <string id="kde-timer-30">30 minutes</string>
+      <string id="kde-timer-60">60 minutes</string>
 
       <string id="kde-suspendType-1">Switching to standby mode</string>
       <string id="kde-suspendType-2">Sleep mode</string>
       <string id="kde-suspendType-4">Entering hybrid sleep mode</string>
       <string id="kde-suspendType-8">Turn off computer</string>
       <string id="kde-suspendType-32">lock screen</string>
+
+      <string id="kde-suspendThenHibernate-true">Enabled</string>
+      <string id="kde-suspendThenHibernate-false">Disabled</string>
 
       </stringTable>
     <presentationTable>
@@ -558,6 +591,17 @@ If the policy is disabled, clicking on the file or folder will highlight it.
         <text>Blocking changes to this setting by the user. After restarting the device, the user's changes to the settings are not saved.</text>
         <dropdownList noSort="true" defaultItem="0" refId="kde-stopsessiontype-lowbattery_setter">Action on session pause when battery is low:</dropdownList>
         <checkBox refId="kde-stopsessiontype-lowbattery_blocker">Block</checkBox>
+        <text>Blocking changes to this setting by the user. After restarting the device, the user's changes to the settings are not saved.</text>
+      </presentation>
+      <presentation id="kde-stopsessionhibernate-user-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="kde-stopsessionhibernate-ac_setter">Switching from Standby to Sleep on mains power:</dropdownList>
+        <checkBox refId="kde-stopsessionhibernate-ac_blocker">Block</checkBox>
+        <text>Blocking changes to this setting by the user. After restarting the device, the user's changes to the settings are not saved.</text>
+        <dropdownList noSort="true" defaultItem="0" refId="kde-stopsessionhibernate-battery_setter">Switching from standby to hibernation on battery power:</dropdownList>
+        <checkBox refId="kde-stopsessionhibernate-battery_blocker">Block</checkBox>
+        <text>Blocking changes to this setting by the user. After restarting the device, the user's changes to the settings are not saved.</text>
+        <dropdownList noSort="true" defaultItem="0" refId="kde-stopsessionhibernate-lowbattery_setter">Switching from standby to hibernation when the battery is low:</dropdownList>
+        <checkBox refId="kde-stopsessionhibernate-lowbattery_blocker">Block</checkBox>
         <text>Blocking changes to this setting by the user. After restarting the device, the user's changes to the settings are not saved.</text>
       </presentation>
      </presentationTable>

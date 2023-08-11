@@ -211,11 +211,38 @@
       <string id="kde-stopsessiontype">Действие при приостановке сеанса</string>
       <string id="kde-stopsessiontype_help">Данная политика позволяет выбрать тип действия при приостановке сеанса в разных режимах электропитания: при питании от батареи, от сети, при низком уровне заряда.  Допустимые значения параметра:
 
-      - Переход в ждущий режим;
-      - Перейти в спящий режим;
-      - Перейти в гибридный спящий режим;
-      - Выключить компьютер;
-      - Заблокировать экран.
+- Переход в ждущий режим;
+
+- Перейти в спящий режим;
+
+- Перейти в гибридный спящий режим;
+
+- Выключить компьютер;
+
+- Заблокировать экран.
+
+      </string>
+
+      <string id="kde-stopsessionhibernate">Переход из ждущего в спяший режим</string>
+      <string id="kde-stopsessionhibernate_help">Данная политика позволяет настроить переход компьютера из ждущего режима в спящий при бездействии(в зависимости от режима электропитания). 
+
+При питании от сети:
+
+- Включено;
+
+- Выключено.
+
+При питании от батареи:
+
+- Включено;
+
+- Выключено.
+
+При низком уровне заряда батареи:
+
+- Включено;
+
+- Выключено.
 
       </string>
 
@@ -237,6 +264,7 @@
 Если политика включена, то щелчком файл или папка будут открыты.
 
 Если политика отключена, щелчком файл или папка будут выделены.
+
       </string>
 
       <string id="kde-colorscheme">Цвета</string>
@@ -255,6 +283,7 @@
       - KritaDarker
       - KritaNeutral
       - Oxygen
+
       </string>
 
       <string id="kde-cursortheme">Тема курсора</string>
@@ -271,6 +300,7 @@
       - breeze
       - breeze_dark
       - breeze_cursors
+
       </string>
 
       <string id="kde-iconstheme">Тема значков</string>
@@ -403,6 +433,9 @@
       <string id="kde-suspendType-4">Переход в гибридный спящий режим</string>
       <string id="kde-suspendType-8">Выключить компьютер</string>
       <string id="kde-suspendType-32">Заблокировать экран</string>
+
+      <string id="kde-suspendThenHibernate-true">Включено</string>
+      <string id="kde-suspendThenHibernate-false">Отключено</string>
 
       </stringTable>
     <presentationTable>
@@ -558,6 +591,17 @@
         <text>Блокировка изменений данной настройки пользователем. После перезагрузки устройства внесённые пользователем изменения настройки не сохраняются.</text>
         <dropdownList noSort="true" defaultItem="0" refId="kde-stopsessiontype-lowbattery_setter">Действие при приостановке сеанса при низком заряде батареи:</dropdownList>
         <checkBox refId="kde-stopsessiontype-lowbattery_blocker">Блокировать</checkBox>
+        <text>Блокировка изменений данной настройки пользователем. После перезагрузки устройства внесённые пользователем изменения настройки не сохраняются.</text>
+      </presentation>
+      <presentation id="kde-stopsessionhibernate-user-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="kde-stopsessionhibernate-ac_setter">Переход из ждущего в спящий режим при питании от сети:</dropdownList>
+        <checkBox refId="kde-stopsessionhibernate-ac_blocker">Блокировать</checkBox>
+        <text>Блокировка изменений данной настройки пользователем. После перезагрузки устройства внесённые пользователем изменения настройки не сохраняются.</text>
+        <dropdownList noSort="true" defaultItem="0" refId="kde-stopsessionhibernate-battery_setter">Переход из ждущего в спящий режим при питании от батареи:</dropdownList>
+        <checkBox refId="kde-stopsessionhibernate-battery_blocker">Блокировать</checkBox>
+        <text>Блокировка изменений данной настройки пользователем. После перезагрузки устройства внесённые пользователем изменения настройки не сохраняются.</text>
+        <dropdownList noSort="true" defaultItem="0" refId="kde-stopsessionhibernate-lowbattery_setter">Переход из ждущего в спящий режим при низком заряде батареи:</dropdownList>
+        <checkBox refId="kde-stopsessionhibernate-lowbattery_blocker">Блокировать</checkBox>
         <text>Блокировка изменений данной настройки пользователем. После перезагрузки устройства внесённые пользователем изменения настройки не сохраняются.</text>
       </presentation>
      </presentationTable>
