@@ -57,6 +57,8 @@
       <string id="ALT_Appearance_KDE_Help">Внешний вид.</string>
       <string id="ALT_Application_KDE">Настройки приложений</string>
       <string id="ALT_Application_KDE_Help">Настройки приложений.</string>
+      <string id="ALT_Devices_KDE">Устройства ввода</string>
+      <string id="ALT_Devices_KDE_Help">Устройства ввода.</string>
       <string id="ALT_Background_Mate">Фон рабочего стола</string>
       <string id="ALT_Background_Mate_Help">Настройки фона рабочего стола.</string>
       <string id="ALT_Screensaver_Mate">Хранитель экрана</string>
