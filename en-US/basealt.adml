@@ -55,6 +55,8 @@
       <string id="ALT_PowerManagement_KDE_Help">Power management.</string>
       <string id="ALT_Appearance_KDE">Appearance</string>
       <string id="ALT_Appearance_KDE_Help">Appearance.</string>
+      <string id="ALT_Application_KDE">Applications settings</string>
+      <string id="ALT_Application_KDE_Help">Applications settings.</string>
       <string id="ALT_Background_Mate">Desktop background</string>
       <string id="ALT_Background_Mate_Help">Desktop background settings.</string>
       <string id="ALT_Screensaver_Mate">Screensaver</string>
