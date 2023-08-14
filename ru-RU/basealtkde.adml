@@ -362,6 +362,17 @@
 
       </string>
 
+      <string id="kde-browserapp">Браузрер по умолчанию</string>
+      <string id="kde-browserapp_help">Данная политика позволяет выбрать браузер по умолчанию. Примечание: применение настроек доступно только в случае, если выбранный браузер установлен в систему.
+
+      Допустимые значения параметра:
+
+      - Yandex-Browser
+      - Firefox
+      - Chromium-gost
+
+      </string>
+
       <string id="kde-win-act-Click_to_focus">Фокус по щелчку</string>
       <string id="kde-win-act-Click_to_focus_Mp">Фокус по щелчку (приоритет мыши)</string>
       <string id="kde-win-act-Focus_follows_mouse">Фокус следует за мышью</string>
@@ -461,6 +472,10 @@
       <string id="kde-keyboardset-ru-de">Русская и немецкая расскладки</string>
       <string id="kde-keyboardset-us-de">Английская и немецкая расскладки</string>
 
+      <string id="kde-browserapp-yandex">Yandex-Browser</string>
+      <string id="kde-browserapp-firefox">Firefox</string>
+      <string id="kde-browserapp-chromium">Chromium-gost</string>
+
       </stringTable>
     <presentationTable>
       <presentation id="kde-win-activate-user-pr">
@@ -543,6 +558,11 @@
       <presentation id="kde-keyboardset-user-pr">
         <dropdownList noSort="true" defaultItem="0" refId="kde-keyboardset-setter">Варианты раскладки клавиатуры:</dropdownList>
         <checkBox refId="kde-keyboardset_blocker">Блокировать</checkBox>
+        <text>Блокировка изменений данной настройки пользователем. После перезагрузки устройства внесённые пользователем изменения настройки не сохраняются.</text>
+      </presentation>
+      <presentation id="kde-browserapp-user-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="kde-browserapp-setter">Браузер по умолчанию:</dropdownList>
+        <checkBox refId="kde-browserapp_blocker">Блокировать</checkBox>
         <text>Блокировка изменений данной настройки пользователем. После перезагрузки устройства внесённые пользователем изменения настройки не сохраняются.</text>
       </presentation>
       <presentation id="kde-screenlocker-user-pr">

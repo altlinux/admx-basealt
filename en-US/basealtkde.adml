@@ -362,6 +362,17 @@ If the policy is disabled, clicking on the file or folder will highlight it.
 
       </string>
 
+      <string id="kde-browserapp">Default browser</string>
+      <string id="kde-browserapp_help">This policy allows you to select the default browser. Note: the application of settings is available only if the selected browser is installed in the system.
+
+       Valid parameter values:
+
+       - Yandex Browser
+       - Firefox
+       -Chromium-gost
+
+      </string>
+
       <string id="kde-win-act-Click_to_focus">Click to focus</string>
       <string id="kde-win-act-Click_to_focus_Mp">Click to focus (mouse precedence)</string>
       <string id="kde-win-act-Focus_follows_mouse">Focus follows mouse</string>
@@ -461,6 +472,10 @@ If the policy is disabled, clicking on the file or folder will highlight it.
       <string id="kde-keyboardset-ru-de">Russian and German layouts</string>
       <string id="kde-keyboardset-us-de">English and German layouts</string>
 
+      <string id="kde-browserapp-yandex">Yandex-Browser</string>
+      <string id="kde-browserapp-firefox">Firefox</string>
+      <string id="kde-browserapp-chromium">Chromium-gost</string>
+
       </stringTable>
     <presentationTable>
       <presentation id="kde-win-activate-user-pr">
@@ -543,6 +558,11 @@ If the policy is disabled, clicking on the file or folder will highlight it.
       <presentation id="kde-keyboardset-user-pr">
         <dropdownList noSort="true" defaultItem="0" refId="kde-keyboardset-setter">Keyboard layout options:</dropdownList>
         <checkBox refId="kde-keyboardset_blocker">Block</checkBox>
+        <text>Blocking changes to this setting by the user. After restarting the device, the user's changes to the settings are not saved.</text>
+      </presentation>
+      <presentation id="kde-browserapp-user-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="kde-browserapp-setter">Default browser:</dropdownList>
+        <checkBox refId="kde-browserapp_blocker">Block</checkBox>
         <text>Blocking changes to this setting by the user. After restarting the device, the user's changes to the settings are not saved.</text>
       </presentation>
       <presentation id="kde-screenlocker-user-pr">
