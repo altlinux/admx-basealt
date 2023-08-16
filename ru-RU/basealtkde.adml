@@ -97,172 +97,6 @@
 
       </string>
 
-      <string id="kde-screenlocker">Блокировка экрана</string>
-      <string id="kde-screenlocker_help">Данная политика позволяет настраивать блокировку экрана при отсутствии активности в течении определённого времени; после выхода из ждущего режима. Возможные варианты настройки:
-
-Автоматически блокировать экран при отсутствии активности:
-
- - Включено;
-
- - Выключено;
-
-Автоматически блокировать экран после выхода из ждущего режима:
-
-- Включено;
-
-- Выключено;
-
-Автоматически блокировать экран при отсутствии активности в течении определённого времени:
-
-- 1 минута;
-
-- 5 минут;
-
-- 10 минут;
-
-- 15 минут;
-
-- 30 минут;
-
-- 60 минут;
-
-- 99 минут;
-
-      </string>
-
-      <string id="kde-screenbritness">Яркость экрана</string>
-      <string id="kde-screenbritness_help">Данная политика позволяет настраивать уровень яркости экрана при разных режимах электропитания: при питании от батареи, от сети, при низком уровне заряда.
-
-Уровень яркости экрана в режиме электропитания от сети, от батареи и при низком заряде батареи имеет следующие возможные значения:
-
-- 0;
-
-- 20;
-
-- 40;
-
-- 60;
-
-- 80;
-
-- 100.
-
-      </string>
-
-      <string id="kde-boardbritness">Яркость клавиатуры</string>
-      <string id="kde-boardbritness_help">Данная политика позволяет настраивать уровень яркости клавиатуры при разных режимах электропитания: при питании от батареи, от сети, при низком уровне заряда.
-
-Уровень яркости клавиатуры в режиме электропитания от сети, от батареи и при низком заряде батареи имеет следующие возможные значения:
-
-- 0;
-
-- 20;
-
-- 40;
-
-- 60;
-
-- 80;
-
-- 100.
-
-      </string>
-
-      <string id="kde-dimdisplay">Потухание экрана</string>
-      <string id="kde-dimdisplay_help">Данная политика позволяет настраивать время до затухания экрана при разных режимах электропитания: при питании от батареи, от сети, при низком уровне заряда.
-
-Время до затухания экрана в режиме электропитания от сети, от батареи и при низком заряде батареи имеет следующие возможные значения:
-
-- 1 минута;
-
-- 2 минуты;
-
-- 5 минут;
-
-- 10 минут;
-
-- 30 минут;
-
-- 60 минут.
-
-      </string>
-
-      <string id="kde-dimmonitor">Энергосбережение монитора</string>
-      <string id="kde-dimmonitor_help">Данная политика позволяет настраивать время до отключения монитора при разных режимах электропитания: при питании от батареи, от сети, при низком уровне заряда.
-
-Время до отключения монитора в режиме электропитания от сети, от батареи и при низком заряде батареи имеет следующие возможные значения:
-
-- 1 минута;
-
-- 2 минуты;
-
-- 5 минут;
-
-- 10 минут;
-
-- 30 минут;
-
-- 60 минут.
-
-      </string>
-
-      <string id="kde-stopsessiontime">Приостановка сеанса</string>
-      <string id="kde-stopsessiontime_help">Данная политика позволяет настраивать время до приостановки сеанса при разных режимах электропитания: при питании от батареи, от сети, при низком уровне заряда.
-
-Время до приостановка сеанса в режиме электропитания от сети, от батареи и при низком заряде батареи имеет следующие возможные значения:
-
-- 1 минута;
-
-- 2 минуты;
-
-- 5 минут;
-
-- 10 минут;
-
-- 30 минут;
-
-- 60 минут.
-
-      </string>
-
-      <string id="kde-stopsessiontype">Действие при приостановке сеанса</string>
-      <string id="kde-stopsessiontype_help">Данная политика позволяет выбрать тип действия при приостановке сеанса в разных режимах электропитания: при питании от батареи, от сети, при низком уровне заряда.  Допустимые значения параметра:
-
-- Переход в ждущий режим;
-
-- Перейти в спящий режим;
-
-- Перейти в гибридный спящий режим;
-
-- Выключить компьютер;
-
-- Заблокировать экран.
-
-      </string>
-
-      <string id="kde-stopsessionhibernate">Переход из ждущего в спяший режим</string>
-      <string id="kde-stopsessionhibernate_help">Данная политика позволяет настроить переход компьютера из ждущего режима в спящий при бездействии(в зависимости от режима электропитания). 
-
-При питании от сети:
-
-- Включено;
-
-- Выключено.
-
-При питании от батареи:
-
-- Включено;
-
-- Выключено.
-
-При низком уровне заряда батареи:
-
-- Включено;
-
-- Выключено.
-
-      </string>
-
       <string id="kde-desktops">Виртуальные рабочие столы</string>
       <string id="kde-desktops_help">Данная политика позволяет настраивать количество виртуальных рабочих столов. Количество столов может быть от одного до четырёх включительно.</string>
 
@@ -374,9 +208,7 @@
       </string>
 
       <string id="kde-win-act-Click_to_focus">Фокус по щелчку</string>
-      <string id="kde-win-act-Click_to_focus_Mp">Фокус по щелчку (приоритет мыши)</string>
       <string id="kde-win-act-Focus_follows_mouse">Фокус следует за мышью</string>
-      <string id="kde-win-act-Focus_follows_mouse_Mp">Фокус следует за мышью (приоритет мыши)</string>
       <string id="kde-win-act-Focus_under_mouse">Фокус под мышью</string>
       <string id="kde-win-act-Focus_under_mouse-Mp">Фокус строго под мышью</string>
 
@@ -428,42 +260,11 @@
       <string id="kde-lockonresume-enabled">Включено</string>
       <string id="kde-lockonresume-disabled">Отключено</string>
 
-      <string id="kde-screentimer-1">1 минуту</string>
-      <string id="kde-screentimer-5">5 минут</string>
-      <string id="kde-screentimer-10">10 минут</string>
-      <string id="kde-screentimer-15">15 минут</string>
-      <string id="kde-screentimer-30">30 минут</string>
-      <string id="kde-screentimer-60">60 минут</string>
-      <string id="kde-screentimer-99">99 минут</string>
-
       <string id="kde-desktoptheme-default">Default</string>
       <string id="kde-desktoptheme-breeze-light">Breeze-light</string>
       <string id="kde-desktoptheme-breeze-dark">Breeze-dark</string>
       <string id="kde-desktoptheme-oxygen">Oxygen</string>
       <string id="kde-desktoptheme-air">Air</string>
-
-      <string id="kde-britness-0">0</string>
-      <string id="kde-britness-20">20</string>
-      <string id="kde-britness-40">40</string>
-      <string id="kde-britness-60">60</string>
-      <string id="kde-britness-80">80</string>
-      <string id="kde-britness-100">100</string>
-
-      <string id="kde-timer-1">1 минута</string>
-      <string id="kde-timer-2">2 минуты</string>
-      <string id="kde-timer-5">5 минут</string>
-      <string id="kde-timer-10">10 минут</string>
-      <string id="kde-timer-30">30 минут</string>
-      <string id="kde-timer-60">60 минут</string>
-
-      <string id="kde-suspendType-1">Переход в ждущий режим</string>
-      <string id="kde-suspendType-2">Переход в спящий режим</string>
-      <string id="kde-suspendType-4">Переход в гибридный спящий режим</string>
-      <string id="kde-suspendType-8">Выключить компьютер</string>
-      <string id="kde-suspendType-32">Заблокировать экран</string>
-
-      <string id="kde-suspendThenHibernate-true">Включено</string>
-      <string id="kde-suspendThenHibernate-false">Отключено</string>
 
       <string id="kde-keyboardset-ru">Русская расскладка</string>
       <string id="kde-keyboardset-us">Английская расскладка</string>
@@ -480,6 +281,7 @@
     <presentationTable>
       <presentation id="kde-win-activate-user-pr">
         <dropdownList noSort="true" defaultItem="0" refId="kde-win-activate_setter">Возможные режимы:</dropdownList>
+        <checkBox refId="NextFocusPrefersMouse">Приоритет мыши</checkBox>
         <checkBox refId="kde-win-activate_blocker">Блокировать</checkBox>
         <text>Блокировка изменений данной настройки пользователем. После перезагрузки устройства внесённые пользователем изменения настройки не сохраняются.</text>
       </presentation>
@@ -563,94 +365,6 @@
       <presentation id="kde-browserapp-user-pr">
         <dropdownList noSort="true" defaultItem="0" refId="kde-browserapp-setter">Браузер по умолчанию:</dropdownList>
         <checkBox refId="kde-browserapp_blocker">Блокировать</checkBox>
-        <text>Блокировка изменений данной настройки пользователем. После перезагрузки устройства внесённые пользователем изменения настройки не сохраняются.</text>
-      </presentation>
-      <presentation id="kde-screenlocker-user-pr">
-        <dropdownList noSort="true" defaultItem="0" refId="kde-autolock_setter">Автоматически блокировать экран:</dropdownList>
-        <checkBox refId="kde-autolock_blocker">Блокировать</checkBox>
-        <text>Блокировка изменений данной настройки пользователем. После перезагрузки устройства внесённые пользователем изменения настройки не сохраняются.</text>
-        <dropdownList noSort="true" defaultItem="0" refId="kde-lockonresume_setter">Автоматически блокировать экран после выхода из ждущего режима:</dropdownList>
-        <checkBox refId="kde-lockonresume_blocker">Блокировать</checkBox>
-        <text>Блокировка изменений данной настройки пользователем. После перезагрузки устройства внесённые пользователем изменения настройки не сохраняются.</text>
-        <dropdownList noSort="true" defaultItem="0" refId="kde-screentimer_setter">Блокировать экран через:</dropdownList>
-        <checkBox refId="kde-screentimer_blocker">Блокировать</checkBox>
-        <text>Блокировка изменений данной настройки пользователем. После перезагрузки устройства внесённые пользователем изменения настройки не сохраняются.</text>
-      </presentation>
-      <presentation id="kde-screenbritness-user-pr">
-        <dropdownList noSort="true" defaultItem="0" refId="kde-screenbritness-ac_setter">Яркость при питании от сети:</dropdownList>
-        <checkBox refId="kde-screenbritness-ac_blocker">Блокировать</checkBox>
-        <text>Блокировка изменений данной настройки пользователем. После перезагрузки устройства внесённые пользователем изменения настройки не сохраняются.</text>
-        <dropdownList noSort="true" defaultItem="0" refId="kde-screenbritness-battery_setter">Яркость при питании от батареи:</dropdownList>
-        <checkBox refId="kde-screenbritness-battery_blocker">Блокировать</checkBox>
-        <text>Блокировка изменений данной настройки пользователем. После перезагрузки устройства внесённые пользователем изменения настройки не сохраняются.</text>
-        <dropdownList noSort="true" defaultItem="0" refId="kde-screenbritness-lowbattery_setter">Яркость при низком заряде батареи:</dropdownList>
-        <checkBox refId="kde-screenbritness-lowbattery_blocker">Блокировать</checkBox>
-        <text>Блокировка изменений данной настройки пользователем. После перезагрузки устройства внесённые пользователем изменения настройки не сохраняются.</text>
-      </presentation>
-      <presentation id="kde-boardbritness-user-pr">
-        <dropdownList noSort="true" defaultItem="0" refId="kde-boardbritness-ac_setter">Яркость при питании от сети:</dropdownList>
-        <checkBox refId="kde-boardbritness-ac_blocker">Блокировать</checkBox>
-        <text>Блокировка изменений данной настройки пользователем. После перезагрузки устройства внесённые пользователем изменения настройки не сохраняются.</text>
-        <dropdownList noSort="true" defaultItem="0" refId="kde-boardbritness-battery_setter">Яркость при питании от батареи:</dropdownList>
-        <checkBox refId="kde-boardbritness-battery_blocker">Блокировать</checkBox>
-        <text>Блокировка изменений данной настройки пользователем. После перезагрузки устройства внесённые пользователем изменения настройки не сохраняются.</text>
-        <dropdownList noSort="true" defaultItem="0" refId="kde-boardbritness-lowbattery_setter">Яркость при низком заряде батареи:</dropdownList>
-        <checkBox refId="kde-boardbritness-lowbattery_blocker">Блокировать</checkBox>
-        <text>Блокировка изменений данной настройки пользователем. После перезагрузки устройства внесённые пользователем изменения настройки не сохраняются.</text>
-      </presentation>
-      <presentation id="kde-dimdisplay-user-pr">
-        <dropdownList noSort="true" defaultItem="0" refId="kde-dimdisplay-ac_setter">Время до затухания при питании от сети:</dropdownList>
-        <checkBox refId="kde-dimdisplay-ac_blocker">Блокировать</checkBox>
-        <text>Блокировка изменений данной настройки пользователем. После перезагрузки устройства внесённые пользователем изменения настройки не сохраняются.</text>
-        <dropdownList noSort="true" defaultItem="0" refId="kde-dimdisplay-battery_setter">Время до затухания при питании от батареи:</dropdownList>
-        <checkBox refId="kde-dimdisplay-battery_blocker">Блокировать</checkBox>
-        <text>Блокировка изменений данной настройки пользователем. После перезагрузки устройства внесённые пользователем изменения настройки не сохраняются.</text>
-        <dropdownList noSort="true" defaultItem="0" refId="kde-dimdisplay-lowbattery_setter">Время до затухания при низком заряде батареи:</dropdownList>
-        <checkBox refId="kde-dimdisplay-lowbattery_blocker">Блокировать</checkBox>
-        <text>Блокировка изменений данной настройки пользователем. После перезагрузки устройства внесённые пользователем изменения настройки не сохраняются.</text>
-      </presentation>
-      <presentation id="kde-dimmonitor-user-pr">
-        <dropdownList noSort="true" defaultItem="0" refId="kde-dimmonitor-ac_setter">Время до отключения монитора при питании от сети:</dropdownList>
-        <checkBox refId="kde-dimmonitor-ac_blocker">Блокировать</checkBox>
-        <text>Блокировка изменений данной настройки пользователем. После перезагрузки устройства внесённые пользователем изменения настройки не сохраняются.</text>
-        <dropdownList noSort="true" defaultItem="0" refId="kde-dimmonitor-battery_setter">Время до отключения монитора при питании от батареи:</dropdownList>
-        <checkBox refId="kde-dimmonitor-battery_blocker">Блокировать</checkBox>
-        <text>Блокировка изменений данной настройки пользователем. После перезагрузки устройства внесённые пользователем изменения настройки не сохраняются.</text>
-        <dropdownList noSort="true" defaultItem="0" refId="kde-dimmonitor-lowbattery_setter">Время до отключения монитора при низком заряде батареи:</dropdownList>
-        <checkBox refId="kde-dimmonitor-lowbattery_blocker">Блокировать</checkBox>
-        <text>Блокировка изменений данной настройки пользователем. После перезагрузки устройства внесённые пользователем изменения настройки не сохраняются.</text>
-      </presentation>
-      <presentation id="kde-stopsessiontime-user-pr">
-        <dropdownList noSort="true" defaultItem="0" refId="kde-stopsessiontime-ac_setter">Время до приостановки сеанса при питании от сети:</dropdownList>
-        <checkBox refId="kde-stopsessiontime-ac_blocker">Блокировать</checkBox>
-        <text>Блокировка изменений данной настройки пользователем. После перезагрузки устройства внесённые пользователем изменения настройки не сохраняются.</text>
-        <dropdownList noSort="true" defaultItem="0" refId="kde-stopsessiontime-battery_setter">Время до приостановки сеанса при питании от батареи:</dropdownList>
-        <checkBox refId="kde-stopsessiontime-battery_blocker">Блокировать</checkBox>
-        <text>Блокировка изменений данной настройки пользователем. После перезагрузки устройства внесённые пользователем изменения настройки не сохраняются.</text>
-        <dropdownList noSort="true" defaultItem="0" refId="kde-stopsessiontime-lowbattery_setter">Время до приостановки сеанса при низком заряде батареи:</dropdownList>
-        <checkBox refId="kde-stopsessiontime-lowbattery_blocker">Блокировать</checkBox>
-        <text>Блокировка изменений данной настройки пользователем. После перезагрузки устройства внесённые пользователем изменения настройки не сохраняются.</text>
-      </presentation>
-      <presentation id="kde-stopsessiontype-user-pr">
-        <dropdownList noSort="true" defaultItem="0" refId="kde-stopsessiontype-ac_setter">Действие при приостановке сеанса при питании от сети:</dropdownList>
-        <checkBox refId="kde-stopsessiontype-ac_blocker">Блокировать</checkBox>
-        <text>Блокировка изменений данной настройки пользователем. После перезагрузки устройства внесённые пользователем изменения настройки не сохраняются.</text>
-        <dropdownList noSort="true" defaultItem="0" refId="kde-stopsessiontype-battery_setter">Действие при приостановке сеанса при питании от батареи:</dropdownList>
-        <checkBox refId="kde-stopsessiontype-battery_blocker">Блокировать</checkBox>
-        <text>Блокировка изменений данной настройки пользователем. После перезагрузки устройства внесённые пользователем изменения настройки не сохраняются.</text>
-        <dropdownList noSort="true" defaultItem="0" refId="kde-stopsessiontype-lowbattery_setter">Действие при приостановке сеанса при низком заряде батареи:</dropdownList>
-        <checkBox refId="kde-stopsessiontype-lowbattery_blocker">Блокировать</checkBox>
-        <text>Блокировка изменений данной настройки пользователем. После перезагрузки устройства внесённые пользователем изменения настройки не сохраняются.</text>
-      </presentation>
-      <presentation id="kde-stopsessionhibernate-user-pr">
-        <dropdownList noSort="true" defaultItem="0" refId="kde-stopsessionhibernate-ac_setter">Переход из ждущего в спящий режим при питании от сети:</dropdownList>
-        <checkBox refId="kde-stopsessionhibernate-ac_blocker">Блокировать</checkBox>
-        <text>Блокировка изменений данной настройки пользователем. После перезагрузки устройства внесённые пользователем изменения настройки не сохраняются.</text>
-        <dropdownList noSort="true" defaultItem="0" refId="kde-stopsessionhibernate-battery_setter">Переход из ждущего в спящий режим при питании от батареи:</dropdownList>
-        <checkBox refId="kde-stopsessionhibernate-battery_blocker">Блокировать</checkBox>
-        <text>Блокировка изменений данной настройки пользователем. После перезагрузки устройства внесённые пользователем изменения настройки не сохраняются.</text>
-        <dropdownList noSort="true" defaultItem="0" refId="kde-stopsessionhibernate-lowbattery_setter">Переход из ждущего в спящий режим при низком заряде батареи:</dropdownList>
-        <checkBox refId="kde-stopsessionhibernate-lowbattery_blocker">Блокировать</checkBox>
         <text>Блокировка изменений данной настройки пользователем. После перезагрузки устройства внесённые пользователем изменения настройки не сохраняются.</text>
       </presentation>
      </presentationTable>

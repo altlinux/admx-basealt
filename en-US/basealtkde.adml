@@ -97,172 +97,6 @@
 
       </string>
 
-      <string id="kde-screenlocker">Screen lock</string>
-      <string id="kde-screenlocker_help">This policy allows you to configure the screen lock when there is no activity for a certain time; after waking up from standby. Possible setting options:
-
-Automatically lock the screen when there is no activity:
-
-  - Enabled;
-
-  - Turned off;
-
-Automatically lock the screen after resuming from standby:
-
-- Enabled;
-
-- Turned off;
-
-Automatically lock the screen when there is no activity for a certain time:
-
-- 1 minute;
-
-- 5 minutes;
-
-- 10 minutes;
-
-- 15 minutes;
-
-- 30 minutes;
-
-- 60 minutes;
-
-- 99 minutes.
-
-      </string>
-
-      <string id="kde-screenbritness">Screen brightness</string>
-      <string id="kde-screenbritness_help">This policy allows you to adjust the screen brightness level in different power modes: battery powered, plugged in, low battery.
-
-The brightness level of the screen in the mains mode, on battery mode, and when the battery is low has the following possible values:
-
-- 0;
-
-- 20;
-
-- 40;
-
-- 60;
-
-- 80;
-
-- 100.
-
-      </string>
-
-      <string id="kde-boardbritness">KeyBoard brightness</string>
-      <string id="kde-boardbritness_help">This policy allows you to adjust the keyboard brightness level in different power modes: battery powered, plugged in, low battery.
-
-The brightness level of the keyboard in the mains mode, on battery mode, and when the battery is low has the following possible values:
-
-- 0;
-
-- 20;
-
-- 40;
-
-- 60;
-
-- 80;
-
-- 100.
-
-      </string>
-
-      <string id="kde-dimdisplay">Screen fade</string>
-      <string id="kde-dimdisplay_help">This policy allows you to configure the time before the screen fades under different power modes: when on battery, on mains, when the battery is low.
-
-The time before the screen fades out in AC mode, on battery mode, and when the battery is low has the following possible values:
-
-- 1 minute;
-
-- 2 minutes;
-
-- 5 minutes;
-
-- 10 minutes;
-
-- 30 minutes;
-
-- 60 minutes.
-
-      </string>
-
-      <string id="kde-dimmonitor">Monitor power saving</string>
-      <string id="kde-dimmonitor_help">This policy allows you to configure the time before the monitor turns off under different power modes: on battery power, on mains power, and on low battery.
-
-The time to turn off the monitor in AC mode, on battery mode, and when the battery is low has the following possible values:
-
-- 1 minute;
-
-- 2 minutes;
-
-- 5 minutes;
-
-- 10 minutes;
-
-- 30 minutes;
-
-- 60 minutes.
-
-      </string>
-
-      <string id="kde-stopsessiontime">Suspending a session</string>
-      <string id="kde-stopsessiontime_help">This policy allows you to configure the time before the session is suspended under different power modes: on battery power, on mains power, and on low battery.
-
-The time to pause session on plugged in, on battery, and low battery has the following possible values:
-
-- 1 minute;
-
-- 2 minutes;
-
-- 5 minutes;
-
-- 10 minutes;
-
-- 30 minutes;
-
-- 60 minutes.
-
-      </string>
-
-      <string id="kde-stopsessiontype">Session pause action</string>
-      <string id="kde-stopsessiontype_help">This policy allows you to select the type of action to take when suspending a session in different power modes: on battery power, on AC power, and on low battery. Valid parameter values:
-
-- Switching to standby mode;
-
-- Go to sleep mode;
-
-- Switch to hybrid sleep mode;
-
-- Turn off computer;
-
-- Lock screen.
-
-      </string>
-
-      <string id="kde-stopsessionhibernate">Switching from standby to hibernation</string>
-      <string id="kde-stopsessionhibernate_help">This policy allows you to configure the transition of the computer from standby to hibernation when idle (depending on the power mode).
-
-When powered by mains:
-
-- Enabled;
-
-- Turned off.
-
-On battery power:
-
-- Enabled;
-
-- Turned off.
-
-When the battery level is low:
-
-- Enabled;
-
-- Turned off.
-
-      </string>
-
       <string id="kde-desktops">Virtual desktops</string>
       <string id="kde-desktops_help">This policy allows you to configure the number of virtual desktops. The number of tables can be from one to four inclusive.</string>
 
@@ -374,9 +208,7 @@ If the policy is disabled, clicking on the file or folder will highlight it.
       </string>
 
       <string id="kde-win-act-Click_to_focus">Click to focus</string>
-      <string id="kde-win-act-Click_to_focus_Mp">Click to focus (mouse precedence)</string>
       <string id="kde-win-act-Focus_follows_mouse">Focus follows mouse</string>
-      <string id="kde-win-act-Focus_follows_mouse_Mp">Focus follows mouse (mouse precedence)</string>
       <string id="kde-win-act-Focus_under_mouse">Focus under mouse</string>
       <string id="kde-win-act-Focus_under_mouse-Mp">Focus under mouse (mouse precedence)</string>
 
@@ -428,42 +260,11 @@ If the policy is disabled, clicking on the file or folder will highlight it.
       <string id="kde-lockonresume-enabled">Enabled</string>
       <string id="kde-lockonresume-disabled">Disabled</string>
 
-      <string id="kde-screentimer-1">1 minute</string>
-      <string id="kde-screentimer-5">5 minutes</string>
-      <string id="kde-screentimer-10">10 minutes</string>
-      <string id="kde-screentimer-15">15 minutes</string>
-      <string id="kde-screentimer-30">30 minutes</string>
-      <string id="kde-screentimer-60">60 minutes</string>
-      <string id="kde-screentimer-99">99 minutes</string>
-
       <string id="kde-desktoptheme-default">Default</string>
       <string id="kde-desktoptheme-breeze-light">Breeze-light</string>
       <string id="kde-desktoptheme-breeze-dark">Breeze-dark</string>
       <string id="kde-desktoptheme-oxygen">Oxygen</string>
       <string id="kde-desktoptheme-air">Air</string>
-
-      <string id="kde-britness-0">0</string>
-      <string id="kde-britness-20">20</string>
-      <string id="kde-britness-40">40</string>
-      <string id="kde-britness-60">60</string>
-      <string id="kde-britness-80">80</string>
-      <string id="kde-britness-100">100</string>
-
-      <string id="kde-timer-1">1 minute</string>
-      <string id="kde-timer-2">2 minutes</string>
-      <string id="kde-timer-5">5 minutes</string>
-      <string id="kde-timer-10">10 minutes</string>
-      <string id="kde-timer-30">30 minutes</string>
-      <string id="kde-timer-60">60 minutes</string>
-
-      <string id="kde-suspendType-1">Switching to standby mode</string>
-      <string id="kde-suspendType-2">Sleep mode</string>
-      <string id="kde-suspendType-4">Entering hybrid sleep mode</string>
-      <string id="kde-suspendType-8">Turn off computer</string>
-      <string id="kde-suspendType-32">lock screen</string>
-
-      <string id="kde-suspendThenHibernate-true">Enabled</string>
-      <string id="kde-suspendThenHibernate-false">Disabled</string>
 
       <string id="kde-keyboardset-ru">Russian layout</string>
       <string id="kde-keyboardset-us">English layout</string>
@@ -480,6 +281,7 @@ If the policy is disabled, clicking on the file or folder will highlight it.
     <presentationTable>
       <presentation id="kde-win-activate-user-pr">
         <dropdownList noSort="true" defaultItem="0" refId="kde-win-activate_setter">Possible modes:</dropdownList>
+        <checkBox refId="NextFocusPrefersMouse">Mouse precedence</checkBox>
         <checkBox refId="kde-win-activate_blocker">Block</checkBox>
         <text>Blocking changes to this setting by the user. After restarting the device, the user's changes to the settings are not saved.</text>
       </presentation>
@@ -563,94 +365,6 @@ If the policy is disabled, clicking on the file or folder will highlight it.
       <presentation id="kde-browserapp-user-pr">
         <dropdownList noSort="true" defaultItem="0" refId="kde-browserapp-setter">Default browser:</dropdownList>
         <checkBox refId="kde-browserapp_blocker">Block</checkBox>
-        <text>Blocking changes to this setting by the user. After restarting the device, the user's changes to the settings are not saved.</text>
-      </presentation>
-      <presentation id="kde-screenlocker-user-pr">
-        <dropdownList noSort="true" defaultItem="0" refId="kde-autolock_setter">Automatically lock screen:</dropdownList>
-        <checkBox refId="kde-autolock_blocker">Block</checkBox>
-        <text>Blocking changes to this setting by the user. After restarting the device, the user's changes to the settings are not saved.</text>
-        <dropdownList noSort="true" defaultItem="0" refId="kde-lockonresume_setter">Automatically lock the screen after resuming from standby:</dropdownList>
-        <checkBox refId="kde-lockonresume_blocker">Block</checkBox>
-        <text>Blocking changes to this setting by the user. After restarting the device, the user's changes to the settings are not saved.</text>
-        <dropdownList noSort="true" defaultItem="0" refId="kde-screentimer_setter">Lock screen after:</dropdownList>
-        <checkBox refId="kde-screentimer_blocker">Block</checkBox>
-        <text>Blocking changes to this setting by the user. After restarting the device, the user's changes to the settings are not saved.</text>
-      </presentation>
-      <presentation id="kde-screenbritness-user-pr">
-        <dropdownList noSort="true" defaultItem="0" refId="kde-screenbritness-ac_setter">Brightness on mains power:</dropdownList>
-        <checkBox refId="kde-screenbritness-ac_blocker">Block</checkBox>
-        <text>Blocking changes to this setting by the user. After restarting the device, the user's changes to the settings are not saved.</text>
-        <dropdownList noSort="true" defaultItem="0" refId="kde-screenbritness-battery_setter">Brightness on battery power:</dropdownList>
-        <checkBox refId="kde-screenbritness-battery_blocker">Block</checkBox>
-        <text>Blocking changes to this setting by the user. After restarting the device, the user's changes to the settings are not saved.</text>
-        <dropdownList noSort="true" defaultItem="0" refId="kde-screenbritness-lowbattery_setter">Brightness when battery is low:</dropdownList>
-        <checkBox refId="kde-screenbritness-lowbattery_blocker">Block</checkBox>
-        <text>Blocking changes to this setting by the user. After restarting the device, the user's changes to the settings are not saved.</text>
-      </presentation>
-      <presentation id="kde-boardbritness-user-pr">
-        <dropdownList noSort="true" defaultItem="0" refId="kde-boardbritness-ac_setter">Brightness on mains power:</dropdownList>
-        <checkBox refId="kde-boardbritness-ac_blocker">Block</checkBox>
-        <text>Blocking changes to this setting by the user. After restarting the device, the user's changes to the settings are not saved.</text>
-        <dropdownList noSort="true" defaultItem="0" refId="kde-boardbritness-battery_setter">Brightness on battery power:</dropdownList>
-        <checkBox refId="kde-boardbritness-battery_blocker">Block</checkBox>
-        <text>Blocking changes to this setting by the user. After restarting the device, the user's changes to the settings are not saved.</text>
-        <dropdownList noSort="true" defaultItem="0" refId="kde-boardbritness-lowbattery_setter">Brightness when battery is low:</dropdownList>
-        <checkBox refId="kde-boardbritness-lowbattery_blocker">Block</checkBox>
-        <text>Blocking changes to this setting by the user. After restarting the device, the user's changes to the settings are not saved.</text>
-      </presentation>
-      <presentation id="kde-dimdisplay-user-pr">
-        <dropdownList noSort="true" defaultItem="0" refId="kde-dimdisplay-ac_setter">Time to attenuation when powered from the mains:</dropdownList>
-        <checkBox refId="kde-dimdisplay-ac_blocker">Block</checkBox>
-        <text>Blocking changes to this setting by the user. After restarting the device, the user's changes to the settings are not saved.</text>
-        <dropdownList noSort="true" defaultItem="0" refId="kde-dimdisplay-battery_setter">Time to fade screen on battery power:</dropdownList>
-        <checkBox refId="kde-dimdisplay-battery_blocker">Block</checkBox>
-        <text>Blocking changes to this setting by the user. After restarting the device, the user's changes to the settings are not saved.</text>
-        <dropdownList noSort="true" defaultItem="0" refId="kde-dimdisplay-lowbattery_setter">Time before screen fades when battery is low:</dropdownList>
-        <checkBox refId="kde-dimdisplay-lowbattery_blocker">Block</checkBox>
-        <text>Blocking changes to this setting by the user. After restarting the device, the user's changes to the settings are not saved.</text>
-      </presentation>
-      <presentation id="kde-dimmonitor-user-pr">
-        <dropdownList noSort="true" defaultItem="0" refId="kde-dimmonitor-ac_setter">Time until monitor turns off when plugged in:</dropdownList>
-        <checkBox refId="kde-dimmonitor-ac_blocker">Block</checkBox>
-        <text>Blocking changes to this setting by the user. After restarting the device, the user's changes to the settings are not saved.</text>
-        <dropdownList noSort="true" defaultItem="0" refId="kde-dimmonitor-battery_setter">Time until monitor turns off when on battery power:</dropdownList>
-        <checkBox refId="kde-dimmonitor-battery_blocker">Block</checkBox>
-        <text>Blocking changes to this setting by the user. After restarting the device, the user's changes to the settings are not saved.</text>
-        <dropdownList noSort="true" defaultItem="0" refId="kde-dimmonitor-lowbattery_setter">Time before monitor turns off when battery is low:</dropdownList>
-        <checkBox refId="kde-dimmonitor-lowbattery_blocker">Block</checkBox>
-        <text>Blocking changes to this setting by the user. After restarting the device, the user's changes to the settings are not saved.</text>
-      </presentation>
-      <presentation id="kde-stopsessiontime-user-pr">
-        <dropdownList noSort="true" defaultItem="0" refId="kde-stopsessiontime-ac_setter">Time to suspend session on mains power:</dropdownList>
-        <checkBox refId="kde-stopsessiontime-ac_blocker">Block</checkBox>
-        <text>Blocking changes to this setting by the user. After restarting the device, the user's changes to the settings are not saved.</text>
-        <dropdownList noSort="true" defaultItem="0" refId="kde-stopsessiontime-battery_setter">Time to suspend session on battery power:</dropdownList>
-        <checkBox refId="kde-stopsessiontime-battery_blocker">Block</checkBox>
-        <text>Blocking changes to this setting by the user. After restarting the device, the user's changes to the settings are not saved.</text>
-        <dropdownList noSort="true" defaultItem="0" refId="kde-stopsessiontime-lowbattery_setter">Time to suspend session when battery is low:</dropdownList>
-        <checkBox refId="kde-stopsessiontime-lowbattery_blocker">Block</checkBox>
-        <text>Blocking changes to this setting by the user. After restarting the device, the user's changes to the settings are not saved.</text>
-      </presentation>
-      <presentation id="kde-stopsessiontype-user-pr">
-        <dropdownList noSort="true" defaultItem="0" refId="kde-stopsessiontype-ac_setter">Action when suspending a session while on mains power:</dropdownList>
-        <checkBox refId="kde-stopsessiontype-ac_blocker">Block</checkBox>
-        <text>Blocking changes to this setting by the user. After restarting the device, the user's changes to the settings are not saved.</text>
-        <dropdownList noSort="true" defaultItem="0" refId="kde-stopsessiontype-battery_setter">Action when suspending a session while on battery power:</dropdownList>
-        <checkBox refId="kde-stopsessiontype-battery_blocker">Block</checkBox>
-        <text>Blocking changes to this setting by the user. After restarting the device, the user's changes to the settings are not saved.</text>
-        <dropdownList noSort="true" defaultItem="0" refId="kde-stopsessiontype-lowbattery_setter">Action on session pause when battery is low:</dropdownList>
-        <checkBox refId="kde-stopsessiontype-lowbattery_blocker">Block</checkBox>
-        <text>Blocking changes to this setting by the user. After restarting the device, the user's changes to the settings are not saved.</text>
-      </presentation>
-      <presentation id="kde-stopsessionhibernate-user-pr">
-        <dropdownList noSort="true" defaultItem="0" refId="kde-stopsessionhibernate-ac_setter">Switching from Standby to Sleep on mains power:</dropdownList>
-        <checkBox refId="kde-stopsessionhibernate-ac_blocker">Block</checkBox>
-        <text>Blocking changes to this setting by the user. After restarting the device, the user's changes to the settings are not saved.</text>
-        <dropdownList noSort="true" defaultItem="0" refId="kde-stopsessionhibernate-battery_setter">Switching from standby to hibernation on battery power:</dropdownList>
-        <checkBox refId="kde-stopsessionhibernate-battery_blocker">Block</checkBox>
-        <text>Blocking changes to this setting by the user. After restarting the device, the user's changes to the settings are not saved.</text>
-        <dropdownList noSort="true" defaultItem="0" refId="kde-stopsessionhibernate-lowbattery_setter">Switching from standby to hibernation when the battery is low:</dropdownList>
-        <checkBox refId="kde-stopsessionhibernate-lowbattery_blocker">Block</checkBox>
         <text>Blocking changes to this setting by the user. After restarting the device, the user's changes to the settings are not saved.</text>
       </presentation>
      </presentationTable>
