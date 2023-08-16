@@ -57,39 +57,39 @@
     </policy>
   <policy name="kde-win-rendering" class="User" displayName="$(string.kde-win-rendering)"
     explainText="$(string.kde-win-rendering_help)"
-    key="Software\BaseALT\Policies\KDE"
+    key="Software\BaseALT\Policies\KDE\kwinrc\Compositing"
     presentation="$(presentation.kde-win-rendering-user-pr)">
     <parentCategory ref="system:ALT_Settings_KDE" />
     <supportedOn ref="system:SUPPORTED_AltP10" />
       <elements>
-        <enum id="kde-win-rendering_setter" valueName="kwinrc.RenderPolicy" required="true">
+        <enum id="kde-win-rendering_setter" valueName="LatencyPolicy" required="true">
           <item displayName="$(string.kde-win-rend-ExtremelyLow)">
             <value>
-              <string>{"Compositing":{"LatencyPolicy":"ExtremelyLow"}}</string>
+              <string>ExtremelyLow</string>
             </value>
           </item>
           <item displayName="$(string.kde-win-rend-Low)">
             <value>
-              <string>{"Compositing":{"LatencyPolicy":"Low"}}</string>
+              <string>Low</string>
             </value>
           </item>
           <item displayName="$(string.kde-win-rend-Medium)">
             <value>
-              <string>{"Compositing":{"LatencyPolicy":"Medium"}}</string>
+              <string>Medium</string>
             </value>
           </item>
           <item displayName="$(string.kde-win-rend-High)">
             <value>
-              <string>{"Compositing":{"LatencyPolicy":"High"}}</string>
+              <string>High</string>
             </value>
           </item>
           <item displayName="$(string.kde-win-rend-MostHigh)">
             <value>
-              <string>{"Compositing":{"LatencyPolicy":"NONE"}}</string>
+              <string>NONE</string>
             </value>
           </item>
         </enum>
-        <boolean id="kde-win-rendering_blocker" key="Software\BaseALT\Policies\KDELocks" valueName="kwinrc.RenderPolicy">
+        <boolean id="kde-win-rendering_blocker" key="Software\BaseALT\Policies\KDELocks" valueName="LatencyPolicy">
           <trueValue>
             <decimal value="1" />
           </trueValue>
