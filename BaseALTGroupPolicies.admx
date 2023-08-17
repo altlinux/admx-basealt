@@ -383,5 +383,27 @@
         <list id="MarkerUsagePathList" key="Software\BaseALT\Policies\GroupPolicies\Files\MarkerUsagePath" additive="true"/>
       </elements>
     </policy>
+    <policy class="Machine" displayName="$(string.change_database)"
+            explainText="$(string.change_database_help)"
+            key="Software\BaseALT\Policies\GroupPolicies"
+            name="ChangeDatabase"
+            presentation="$(presentation.ChangeDatabase)">
+      <parentCategory ref="ALT_GroupPolicies"/>
+      <supportedOn ref="system:SUPPORTED_AltP10"/>
+      <elements>
+        <enum id="select-database_setter" valueName="ChangeDatabase" required="true">
+          <item displayName="$(string.select_database-dconf)">
+            <value>
+              <string>dconf</string>
+            </value>
+          </item>
+          <item displayName="$(string.select_database-sqlite)">
+            <value>
+              <string>sqlite</string>
+            </value>
+          </item>
+        </enum>
+      </elements>
+    </policy>
   </policies>
 </policyDefinitions>
