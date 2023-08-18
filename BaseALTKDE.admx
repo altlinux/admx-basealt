@@ -537,25 +537,27 @@
   <policy name="kde-graphic-effects" class="User" displayName="$(string.kde-graphic-effects)"
       explainText="$(string.kde-graphic-effects_help)"
       presentation="$(presentation.kde-graphic-effects-user-pr)"
-      key="Software\BaseALT\Policies\KDE" valueName="kwinrc.GraphicEffects">
+      key="Software\BaseALT\Policies\KDE\kwinrc\Compositing">
       <parentCategory ref="system:ALT_Settings_KDE"/>
       <supportedOn ref="system:SUPPORTED_AltP10"/>
-      <enabledValue>
-        <string>{"Compositing":{"Enabled":"true"}}</string>
-      </enabledValue>
-      <disabledValue>
-        <string>{"Compositing":{"Enabled":"false"}}</string>
-      </disabledValue>
-    <elements>
-      <boolean id="kde-graphic-effects_blocker" key="Software\BaseALT\Policies\KDELocks" valueName="kwinrc.GraphicEffects" >
-          <trueValue>
-            <decimal value="1" />
-          </trueValue>
-          <falseValue>
-            <decimal value="0" />
-          </falseValue>
-          </boolean>
-    </elements>
+      <elements>
+        <boolean id="kde-graphic-effects_setter" valueName="Enabled">
+            <trueValue>
+              <decimal value="1" />
+            </trueValue>
+            <falseValue>
+              <decimal value="0" />
+            </falseValue>
+            </boolean>
+        <boolean id="kde-graphic-effects_blocker" key="Software\BaseALT\Policies\KDELocks" valueName="Enabled" >
+            <trueValue>
+              <decimal value="1" />
+            </trueValue>
+            <falseValue>
+              <decimal value="0" />
+            </falseValue>
+            </boolean>
+      </elements>
     </policy>
   <policy name="kde-showdelete" class="User" displayName="$(string.kde-showdelete)"
       explainText="$(string.kde-showdelete_help)"

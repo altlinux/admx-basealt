@@ -326,6 +326,7 @@ If the policy is disabled, clicking on the file or folder will highlight it.
         </textBox>
       </presentation>
       <presentation id="kde-graphic-effects-user-pr">
+        <checkBox refId="kde-graphic-effects_setter">Enable graphic effects</checkBox>
         <checkBox refId="kde-graphic-effects_blocker">Block</checkBox>
         <text>Blocking changes to this setting by the user. After restarting the device, the user's changes to the settings are not saved.</text>
       </presentation>
