@@ -383,5 +383,28 @@
         <list id="MarkerUsagePathList" key="Software\BaseALT\Policies\GroupPolicies\Files\MarkerUsagePath" additive="true"/>
       </elements>
     </policy>
+    <policy class="Machine" displayName="$(string.UserPolicyMode)"
+            explainText="$(string.UserPolicyMode_Help)"
+            key="Software\Policies\Microsoft\Windows\System"
+            name="UserPolicyMode"
+            valueName="UserPolicyMode"
+            presentation="$(presentation.UserPolicyMode)">
+      <parentCategory ref="ALT_GroupPolicies"/>
+      <supportedOn ref="system:SUPPORTED_AltP10"/>
+      <elements>
+        <enum id="UserPolicyModeOp" valueName="UserPolicyMode">
+          <item displayName="$(string.UserPolicyMode_Merge)">
+            <value>
+              <decimal value="1" />
+            </value>
+          </item>
+          <item displayName="$(string.UserPolicyMode_Replace)">
+            <value>
+              <decimal value="2" />
+            </value>
+          </item>
+        </enum>
+      </elements>
+    </policy>
   </policies>
 </policyDefinitions>
