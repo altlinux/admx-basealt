@@ -98,7 +98,7 @@
       </string>
 
       <string id="kde-desktops">Виртуальные рабочие столы</string>
-      <string id="kde-desktops_help">Данная политика позволяет настраивать количество виртуальных рабочих столов. Количество столов может быть от одного до четырёх включительно.</string>
+      <string id="kde-desktops_help">Данная политика позволяет настраивать количество виртуальных рабочих столов. </string>
 
       <string id="kde-wallpaper">Картинка фона рабочего стола</string>
       <string id="kde-wallpaper_help">Данная политика позволяет установить изображения в качестве фона рабочего стола, указав файл (например, /usr/share/wallpapers/table.png), содержащий изображение.</string>
@@ -224,10 +224,13 @@
       <string id="kde-win-rend-High">Предпочитать более плавную анимацию</string>
       <string id="kde-win-rend-MostHigh">Принудительно наиболее плавная анимация</string>
 
-      <string id="kde-desktops-one">1</string>
-      <string id="kde-desktops-two">2</string>
-      <string id="kde-desktops-three">3</string>
-      <string id="kde-desktops-four">4</string>
+      <string id="kde-desktoprows-one">1</string>
+      <string id="kde-desktoprows-two">2</string>
+
+      <string id="kde-desktopnumber-one">1</string>
+      <string id="kde-desktopnumber-two">2</string>
+      <string id="kde-desktopnumber-three">3</string>
+      <string id="kde-desktopnumber-four">4</string>
 
       <string id="kde-automount-in-login">При входе в систему</string>
       <string id="kde-automount-enabled">При подключении</string>
@@ -296,7 +299,8 @@
         <text>Блокировка изменений данной настройки пользователем. После перезагрузки устройства внесённые пользователем изменения настройки не сохраняются.</text>
       </presentation>
       <presentation id="kde-desktops-user-pr">
-        <dropdownList noSort="true" defaultItem="0" refId="kde-desktops_setter">Количество виртуальных рабочих столов:</dropdownList>
+        <dropdownList noSort="true" defaultItem="0" refId="kde-desktoprows_setter">Количество строк отображения виртуальных столов на панели:</dropdownList>
+        <dropdownList noSort="true" defaultItem="0" refId="kde-desktopnumber_setter">Количество виртуальных столов на панели:</dropdownList>
         <checkBox refId="kde-desktops_blocker">Блокировать</checkBox>
         <text>Блокировка изменений данной настройки пользователем. После перезагрузки устройства внесённые пользователем изменения настройки не сохраняются.</text>
       </presentation>

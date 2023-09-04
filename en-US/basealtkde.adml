@@ -296,7 +296,8 @@ If the policy is disabled, clicking on the file or folder will highlight it.
         <text>Blocking changes to this setting by the user. After restarting the device, the user's changes to the settings are not saved.</text>
       </presentation>
       <presentation id="kde-desktops-user-pr">
-        <dropdownList noSort="true" defaultItem="0" refId="kde-desktops_setter">Number of virtual desktops:</dropdownList>
+        <dropdownList noSort="true" defaultItem="0" refId="kde-desktoprows_setter">Number of lines for displaying virtual tables on the panel:</dropdownList>
+        <dropdownList noSort="true" defaultItem="0" refId="kde-desktopnumber_setter">Number of virtual tables on the panel:</dropdownList>
         <checkBox refId="kde-desktops_blocker">Block</checkBox>
         <text>Blocking changes to this setting by the user. After restarting the device, the user's changes to the settings are not saved.</text>
       </presentation>
