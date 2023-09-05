@@ -184,7 +184,15 @@
             </value>
           </item>
         </enum>
-        <boolean id="kde-desktops_blocker" key="Software\BaseALT\Policies\KDELocks" valueName="Desktops">
+        <boolean id="kde-desktoprows_blocker" key="Software\BaseALT\Policies\KDELocks" valueName="Rows">
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+          </boolean>
+        <boolean id="kde-desktopnumber_blocker" key="Software\BaseALT\Policies\KDELocks" valueName="Number">
           <trueValue>
             <decimal value="1" />
           </trueValue>

@@ -300,9 +300,10 @@
       </presentation>
       <presentation id="kde-desktops-user-pr">
         <dropdownList noSort="true" defaultItem="0" refId="kde-desktoprows_setter">Количество строк отображения виртуальных столов на панели:</dropdownList>
+        <checkBox refId="kde-desktoprows_blocker">Блокировать</checkBox>
         <dropdownList noSort="true" defaultItem="0" refId="kde-desktopnumber_setter">Количество виртуальных столов на панели:</dropdownList>
-        <checkBox refId="kde-desktops_blocker">Блокировать</checkBox>
-        <text>Блокировка изменений данной настройки пользователем. После перезагрузки устройства внесённые пользователем изменения настройки не сохраняются.</text>
+        <checkBox refId="kde-desktopnumber_blocker">Блокировать</checkBox>
+        <text>Блокировки изменений данных настроек пользователем. После перезагрузки устройства внесённые пользователем изменения настройки не сохраняются.</text>
       </presentation>
       <presentation id="kde-automount-user-pr">
         <dropdownList noSort="true" defaultItem="0" refId="kde-automount_setter">Автоматичеки монтировать устройства:</dropdownList>
