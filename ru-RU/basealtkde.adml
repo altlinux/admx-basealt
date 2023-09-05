@@ -232,10 +232,6 @@
       <string id="kde-desktopnumber-three">3</string>
       <string id="kde-desktopnumber-four">4</string>
 
-      <string id="kde-automount-in-login">При входе в систему</string>
-      <string id="kde-automount-enabled">При подключении</string>
-      <string id="kde-automount-uknow-enabled">Которые никогда ранее не были примонтированы вручную</string>
-
       <string id="kde-filesearch-enabled">Включить только службу поиска файлов</string>
       <string id="kde-filesearch-indexing">Включить службу поиска и индексацию содержимого файлов</string>
       <string id="kde-filesearch-folders">Включить службу поиска и индексацию скрытых файлов и папок</string>
@@ -306,7 +302,10 @@
         <text>Блокировки изменений данных настроек пользователем. После перезагрузки устройства внесённые пользователем изменения настройки не сохраняются.</text>
       </presentation>
       <presentation id="kde-automount-user-pr">
-        <dropdownList noSort="true" defaultItem="0" refId="kde-automount_setter">Автоматичеки монтировать устройства:</dropdownList>
+        <checkBox refId="kde-automount_setter">Автоматически монтировать устройства</checkBox>
+        <checkBox refId="kde-automountonlogin_setter">При входе в систему</checkBox>
+        <checkBox refId="kde-automountonplugin_setter">При подключении</checkBox>
+        <checkBox refId="kde-automountuknowndevices_setter">Которые никогда ранее не были примонтированы вручную</checkBox>
         <checkBox refId="kde-automount_blocker">Блокировать</checkBox>
         <text>Блокировка изменений данной настройки пользователем. После перезагрузки устройства внесённые пользователем изменения настройки не сохраняются.</text>
       </presentation>

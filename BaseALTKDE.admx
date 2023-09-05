@@ -204,29 +204,44 @@
     </policy>
   <policy name="kde-automount" class="User" displayName="$(string.kde-automount)"
     explainText="$(string.kde-automount_help)"
-    key="Software\BaseALT\Policies\KDE"
+    key="Software\BaseALT\Policies\KDE\kded_device_automounterrc\General"
     presentation="$(presentation.kde-automount-user-pr)">
     <parentCategory ref="system:ALT_Settings_KDE" />
     <supportedOn ref="system:SUPPORTED_AltP10" />
-      <elements>
-        <enum id="kde-automount_setter" valueName="kded_device_automounterrc.AutoMount" required="true">
-          <item displayName="$(string.kde-automount-in-login)">
-            <value>
-              <string>{"General":{"AutomountEnabled":"true", "AutomountOnLogin":"true"}}</string>
-            </value>
-          </item>
-          <item displayName="$(string.kde-automount-enabled)">
-            <value>
-              <string>{"General":{"AutomountEnabled":"true", "AutomountOnPlugin":"true"}}</string>
-            </value>
-          </item>
-          <item displayName="$(string.kde-automount-uknow-enabled)">
-            <value>
-              <string>{"General":{"AutomountEnabled":"false", "AutomountOnLogin":"false", "AutomountOnPlugin":"false"}}</string>
-            </value>
-          </item>
-        </enum>
-        <boolean id="kde-automount_blocker" key="Software\BaseALT\Policies\KDELocks" valueName="kwinrc.AutoMount">
+    <elements>
+      <boolean id="kde-automount_setter"  valueName="AutomountEnabled">
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+          </boolean>
+      <boolean id="kde-automountonlogin_setter"  valueName="AutomountOnLogin">
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+          </boolean>
+      <boolean id="kde-automountonplugin_setter"  valueName="AutomountOnPlugin">
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+          </boolean>
+      <boolean id="kde-automountuknowndevices_setter"  valueName="AutomountUnknownDevices">
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+          </boolean>
+        <boolean id="kde-automount_blocker" key="Software\BaseALT\Policies\KDELocks" valueName="AutomountEnabled">
           <trueValue>
             <decimal value="1" />
           </trueValue>

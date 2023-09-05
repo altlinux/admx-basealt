@@ -232,10 +232,6 @@ If the policy is disabled, clicking on the file or folder will highlight it.
       <string id="kde-desktopnumber-three">3</string>
       <string id="kde-desktopnumber-four">4</string>
 
-      <string id="kde-automount-in-login">At login</string>
-      <string id="kde-automount-enabled">When connected</string>
-      <string id="kde-automount-uknow-enabled">Automatically mount media that has never been manually mounted before</string>
-
       <string id="kde-filesearch-enabled">Enable file search service only</string>
       <string id="kde-filesearch-indexing">Enable search service and file content indexing</string>
       <string id="kde-filesearch-folders">Enable search service and indexing of hidden files and folders</string>
@@ -306,9 +302,12 @@ If the policy is disabled, clicking on the file or folder will highlight it.
         <text>Blocking changes to these settings by the user. After rebooting the device, the settings changes made by the user are not saved.</text>
       </presentation>
       <presentation id="kde-automount-user-pr">
-        <dropdownList noSort="true" defaultItem="0" refId="kde-automount_setter">Automatically mount devices:</dropdownList>
+        <checkBox refId="kde-automount_setter">Mount devices automatically</checkBox>
+        <checkBox refId="kde-automountonlogin_setter">At login</checkBox>
+        <checkBox refId="kde-automountonplugin_setter">On Plugin</checkBox>
+        <checkBox refId="kde-automountuknowndevices_setter">Which have never been manually mounted before</checkBox>
         <checkBox refId="kde-automount_blocker">Block</checkBox>
-        <text>Blocking changes to this setting by the user. After restarting the device, the user's changes to the settings are not saved.</text>
+        <text>Blocking changes to these settings by the user. After rebooting the device, the settings changes made by the user are not saved.</text>
       </presentation>
       <presentation id="kde-filesearch-user-pr">
         <dropdownList noSort="true" defaultItem="0" refId="kde-filesearch_setter">Possible modes:</dropdownList>
