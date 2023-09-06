@@ -415,38 +415,38 @@
   <policy name="kde-desktoptheme" class="User" displayName="$(string.kde-desktoptheme)"
     explainText="$(string.kde-desktoptheme_help)"
     presentation="$(presentation.kde-desktoptheme-user-pr)"
-    key="Software\BaseALT\Policies\KDE">
+    key="Software\BaseALT\Policies\KDE\plasmarc\Theme">
     <parentCategory ref="system:ALT_Appearance_KDE" />
     <supportedOn ref="system:SUPPORTED_AltP10" />
       <elements>
-        <enum  id="kde-desktoptheme-setter" valueName="plasmarc.Desktoptheme" required="true">
+        <enum  id="kde-desktoptheme-setter" valueName="name" required="true">
           <item displayName="$(string.kde-desktoptheme-default)">
             <value>
-              <string>{"Theme":{"name":"default"}}</string>
+              <string>default</string>
             </value>
           </item>
           <item displayName="$(string.kde-desktoptheme-breeze-light)">
             <value>
-              <string>{"Theme":{"name":"breeze-light"}}</string>
+              <string>breeze-light</string>
             </value>
           </item>
           <item displayName="$(string.kde-desktoptheme-breeze-dark)">
             <value>
-              <string>{"Theme":{"name":"breeze-dark"}}</string>
+              <string>breeze-dark</string>
             </value>
           </item>
           <item displayName="$(string.kde-desktoptheme-oxygen)">
             <value>
-              <string>{"Theme":{"name":"oxygen"}}</string>
+              <string>oxygen</string>
             </value>
           </item>
           <item displayName="$(string.kde-desktoptheme-air)">
             <value>
-              <string>{"Theme":{"name":"air"}}</string>
+              <string>air</string>
             </value>
           </item>
         </enum>
-        <boolean id="kde-desktoptheme_blocker" key="Software\BaseALT\Policies\KDELocks" valueName="plasmarc.Desktoptheme" >
+        <boolean id="kde-desktoptheme_blocker" key="Software\BaseALT\Policies\KDELocks" valueName="name" >
           <trueValue>
             <decimal value="1" />
           </trueValue>
