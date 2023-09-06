@@ -337,33 +337,33 @@
   <policy name="kde-look-and-feel" class="User" displayName="$(string.kde-look-and-feel)"
     explainText="$(string.kde-look-and-feel_help)"
     presentation="$(presentation.kde-look-and-feel-user-pr)"
-    key="Software\BaseALT\Policies\KDE">
+    key="Software\BaseALT\Policies\KDE\kdeglobals\KDE">
     <parentCategory ref="system:ALT_Appearance_KDE" />
     <supportedOn ref="system:SUPPORTED_AltP10" />
       <elements>
-        <enum  id="kde-look-and-feel-setter" valueName="kdeglobals.Look" required="true">
+        <enum  id="kde-look-and-feel-setter" valueName="LookAndFeelPackage" required="true">
           <item displayName="$(string.kde-look-and-feel-breeze)">
             <value>
-              <string>{"KDE":{"LookAndFeelPackage":"org.kde.breeze.desktop"}}</string>
+              <string>org.kde.breeze.desktop</string>
             </value>
           </item>
           <item displayName="$(string.kde-look-and-feel-breeze-dark)">
             <value>
-              <string>{"KDE":{"LookAndFeelPackage":"org.kde.breezedark.desktop"}}</string>
+              <string>org.kde.breezedark.desktop</string>
             </value>
           </item>
           <item displayName="$(string.kde-look-and-feel-oxygen)">
             <value>
-              <string>{"KDE":{"LookAndFeelPackage":"org.kde.oxygen"}}</string>
+              <string>org.kde.oxygen</string>
             </value>
           </item>
           <item displayName="$(string.kde-look-and-feel-breezetwilight)">
             <value>
-              <string>{"KDE":{"LookAndFeelPackage":"org.kde.breezetwilight.desktop"}}</string>
+              <string>org.kde.breezetwilight.desktop</string>
             </value>
           </item>
         </enum>
-        <boolean id="kde-look-and-feel_blocker" key="Software\BaseALT\Policies\KDELocks" valueName="kdeglobals.Look" >
+        <boolean id="kde-look-and-feel_blocker" key="Software\BaseALT\Policies\KDELocks" valueName="LookAndFeelPackage" >
           <trueValue>
             <decimal value="1" />
           </trueValue>
