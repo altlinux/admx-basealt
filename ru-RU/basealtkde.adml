@@ -42,34 +42,17 @@
       </string>
 
       <string id="kde-language">Региональные и языковые параметры</string>
-      <string id="kde-language_help">Эти параметры меняют настройки не только самого языка системы, но и задают настройки валюты, стандарт времени, числовые значения, стиль написания имени, телефонный код и стандарт телефонного номера страны. Допустимые значения:
+      <string id="kde-language_help">Эти параметры меняют настройки не только самого языка системы, но и задают настройки валюты, стандарт времени, числовые значения, стиль написания имени, телефонный код и стандарт телефонного номера страны. Параметры вписываются в поля старндарта и языка соответственно. (Пример стандарта: ru_RU.UTF-8). (Пример языка: ru).  Допустимые значения:
 
-«Русский язык»
+«Русский язык» Стандарт - ru_RU.UTF-8, язык - ru;
 
-«Французский язык»
+«Французский язык» Стандарт - fr_FR.UTF-8, язык - fr;
 
-«Немецкий язык»
+«Немецкий язык» Стандарт - de_DE.UTF-8, язык - de;
 
-«Английский язык (Американский)»
+«Английский язык (Американский)» Стандарт - en_US.UTF-8, язык - en_US;
 
-«Английский язык (Британский)»
-
-      </string>
-
-      <string id="kde-keyboardset">Настройка раскладки клавиатуры</string>
-      <string id="kde-keyboardset_help">Данная политика позволяет настраивать раскладки клавиатуры. Допустимые значения:
-
-«Русская расскладка»
-
-«Английская расскладка»
-
-«Немецкая расскладка»
-
-«Русская и английская расскладки»
-
-«Русская и немецкая расскладки»
-
-«Английская и немецкая расскладки»
+«Английский язык (Британский)» Стандарт - en_GB.UTF-8, язык - en_GB.
 
       </string>
 
@@ -212,12 +195,6 @@
       <string id="kde-win-act-Focus_under_mouse">Фокус под мышью</string>
       <string id="kde-win-act-Focus_under_mouse-Mp">Фокус строго под мышью</string>
 
-      <string id="kde-language-ru">Русский язык</string>
-      <string id="kde-language-fr">Французский язык</string>
-      <string id="kde-language-de">Немецкий язык</string>
-      <string id="kde-language-en-us">Английский язык (Американский)</string>
-      <string id="kde-language-en-gb">Английский язык (Британский)</string>
-
       <string id="kde-win-rend-ExtremelyLow">Принудительно низкая задержка (может привести к артефактам)</string>
       <string id="kde-win-rend-Low">Предпочитать низкую задержку</string>
       <string id="kde-win-rend-Medium">Баланс скорости и плавности</string>
@@ -280,7 +257,12 @@
         <text>Блокировка изменений данной настройки пользователем. После перезагрузки устройства внесённые пользователем изменения настройки не сохраняются.</text>
       </presentation>
       <presentation id="kde-language-user-pr">
-        <dropdownList noSort="true" defaultItem="0" refId="kde-language_setter">Возможные языковые параметры:</dropdownList>
+        <textBox refId="kde-format-setter">
+          <label>Стандарт:</label>
+        </textBox>
+        <textBox refId="kde-language-setter">
+          <label>Язык:</label>
+        </textBox>
         <checkBox refId="kde-language_blocker">Блокировать</checkBox>
         <text>Блокировка изменений данной настройки пользователем. После перезагрузки устройства внесённые пользователем изменения настройки не сохраняются.</text>
       </presentation>
@@ -359,11 +341,6 @@
       <presentation id="kde-desktoptheme-user-pr">
         <dropdownList noSort="true" defaultItem="0" refId="kde-desktoptheme-setter">Тема оформления рабочего стола:</dropdownList>
         <checkBox refId="kde-desktoptheme_blocker">Блокировать</checkBox>
-        <text>Блокировка изменений данной настройки пользователем. После перезагрузки устройства внесённые пользователем изменения настройки не сохраняются.</text>
-      </presentation>
-      <presentation id="kde-keyboardset-user-pr">
-        <dropdownList noSort="true" defaultItem="0" refId="kde-keyboardset-setter">Варианты раскладки клавиатуры:</dropdownList>
-        <checkBox refId="kde-keyboardset_blocker">Блокировать</checkBox>
         <text>Блокировка изменений данной настройки пользователем. После перезагрузки устройства внесённые пользователем изменения настройки не сохраняются.</text>
       </presentation>
       <presentation id="kde-browserapp-user-pr">

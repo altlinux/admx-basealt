@@ -12,7 +12,7 @@
       <string id="kde-win-activate">Window activation mode</string>
       <string id="kde-win-activate_help">The mode of switching focus to a window determines how windows are activated. Acceptable values:
 
-"Focus to click" — the window becomes active after clicking on the title or inside the window.
+"Click to focus" — the window becomes active after clicking on the title or inside the window.
 
 "Click to focus" (mouse precedence) — this mode is similar to "Click Focus". If the system itself has to select the active window (for example, when the active window was closed), preference is given to the window under the mouse pointer.
 
@@ -22,7 +22,7 @@
 
 "Focus under the mouse" — the focus is always in the window under the mouse. Note: Preventing focus change and switching via Alt+Tab contradict this behavior and will not work.
 
-"Focus under mouse" (mouse precedence) — the focus is always in the window under the mouse pointer (and if it is empty under it, it is lost). Note: Preventing focus change and switching via Alt+Tab contradict this behavior and will not work.
+"Focus strictly under mouse" — the focus is always in the window under the mouse pointer (and if it is empty under it, it is lost). Note: Preventing focus change and switching via Alt+Tab contradict this behavior and will not work.
 
       </string>
 
@@ -42,34 +42,17 @@
       </string>
 
       <string id="kde-language">Regional and Language Options</string>
-      <string id="kde-language_help">These options not only change the settings for the system language itself, but also set the currency settings, time standard, numeric values, name spelling style, dialing code, and country telephone number standard. Valid values:
+      <string id="kde-language_help">These options not only change the settings for the system language itself, but also set the currency settings, time standard, numeric values, name spelling style, dialing code, and country telephone number standard. Parameters fit into the fields of standard and language, respectively. (Standard example: ru_RU.UTF-8). (Language example: ru). Valid values:
 
-"Russian"
+"Russian language" Standard - ru_RU.UTF-8, language - ru;
 
-"French"
+"French language" Standard - fr_FR.UTF-8, language - fr;
 
-"German"
+"German" Standard - de_DE.UTF-8, language - de;
 
-"English (American)"
+"English (American)" Standard - en_US.UTF-8, language - en_US;
 
-"English (British)"
-
-      </string>
-
-      <string id="kde-keyboardset">Customizing the keyboard layout</string>
-      <string id="kde-keyboardset_help">This policy allows you to customize keyboard layouts. Valid values:
-
-"Russian layout"
-
-"English layout"
-
-"German layout"
-
-"Russian and English layouts"
-
-"Russian and German layouts"
-
-"English and German layouts"
+"English language (British)" Standard - en_GB.UTF-8, language - en_GB.
 
       </string>
 
@@ -210,13 +193,7 @@ If the policy is disabled, clicking on the file or folder will highlight it.
       <string id="kde-win-act-Click_to_focus">Click to focus</string>
       <string id="kde-win-act-Focus_follows_mouse">Focus follows mouse</string>
       <string id="kde-win-act-Focus_under_mouse">Focus under mouse</string>
-      <string id="kde-win-act-Focus_under_mouse-Mp">Focus under mouse (mouse precedence)</string>
-
-      <string id="kde-language-ru">Russian</string>
-      <string id="kde-language-fr">French</string>
-      <string id="kde-language-de">German</string>
-      <string id="kde-language-en-us">English (American)</string>
-      <string id="kde-language-en-gb">English (British)</string>
+      <string id="kde-win-act-Focus_under_mouse-Mp">Focus strictly under mouse</string>
 
       <string id="kde-win-rend-ExtremelyLow">Forced low latency (may lead to artifacts)</string>
       <string id="kde-win-rend-Low">Prefer low latency</string>
@@ -280,7 +257,12 @@ If the policy is disabled, clicking on the file or folder will highlight it.
         <text>Blocking changes to this setting by the user. After restarting the device, the user's changes to the settings are not saved.</text>
       </presentation>
       <presentation id="kde-language-user-pr">
-        <dropdownList noSort="true" defaultItem="0" refId="kde-language_setter">Possible language options:</dropdownList>
+        <textBox refId="kde-format-setter">
+          <label>Format:</label>
+        </textBox>
+        <textBox refId="kde-language-setter">
+          <label>Language:</label>
+        </textBox>
         <checkBox refId="kde-language_blocker">Block</checkBox>
         <text>Blocking changes to this setting by the user. After restarting the device, the user's changes to the settings are not saved.</text>
       </presentation>
@@ -359,11 +341,6 @@ If the policy is disabled, clicking on the file or folder will highlight it.
       <presentation id="kde-desktoptheme-user-pr">
         <dropdownList noSort="true" defaultItem="0" refId="kde-desktoptheme-setter">Desktop theme:</dropdownList>
         <checkBox refId="kde-desktoptheme_blocker">Block</checkBox>
-        <text>Blocking changes to this setting by the user. After restarting the device, the user's changes to the settings are not saved.</text>
-      </presentation>
-      <presentation id="kde-keyboardset-user-pr">
-        <dropdownList noSort="true" defaultItem="0" refId="kde-keyboardset-setter">Keyboard layout options:</dropdownList>
-        <checkBox refId="kde-keyboardset_blocker">Block</checkBox>
         <text>Blocking changes to this setting by the user. After restarting the device, the user's changes to the settings are not saved.</text>
       </presentation>
       <presentation id="kde-browserapp-user-pr">
