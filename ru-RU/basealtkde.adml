@@ -335,6 +335,7 @@
         <text>Блокировка изменений данной настройки пользователем. После перезагрузки устройства внесённые пользователем изменения настройки не сохраняются.</text>
       </presentation>
       <presentation id="kde-singleclick-user-pr">
+        <checkBox refId="kde-singleclick_setter">Открытие папки или файла одним щелчком</checkBox>
         <checkBox refId="kde-singleclick_blocker">Блокировать</checkBox>
         <text>Блокировка изменений данной настройки пользователем. После перезагрузки устройства внесённые пользователем изменения настройки не сохраняются.</text>
       </presentation>

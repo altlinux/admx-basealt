@@ -335,6 +335,7 @@ If the policy is disabled, clicking on the file or folder will highlight it.
         <text>Blocking changes to this setting by the user. After restarting the device, the user's changes to the settings are not saved.</text>
       </presentation>
       <presentation id="kde-singleclick-user-pr">
+        <checkBox refId="kde-singleclick_setter">Opening a folder or file with one click</checkBox>
         <checkBox refId="kde-singleclick_blocker">Block</checkBox>
         <text>Blocking changes to this setting by the user. After restarting the device, the user's changes to the settings are not saved.</text>
       </presentation>
