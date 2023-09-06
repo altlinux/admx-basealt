@@ -340,6 +340,7 @@
         <text>Блокировка изменений данной настройки пользователем. После перезагрузки устройства внесённые пользователем изменения настройки не сохраняются.</text>
       </presentation>
       <presentation id="kde-showdelete-user-pr">
+        <checkBox refId="kde-showdelete_setter">Убрать кнопку "удалить" в контекстном меню Dolphin</checkBox>
         <checkBox refId="kde-showdelete_blocker">Блокировать</checkBox>
         <text>Блокировка изменений данной настройки пользователем. После перезагрузки устройства внесённые пользователем изменения настройки не сохраняются.</text>
       </presentation>

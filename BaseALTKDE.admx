@@ -597,17 +597,19 @@
   <policy name="kde-showdelete" class="User" displayName="$(string.kde-showdelete)"
       explainText="$(string.kde-showdelete_help)"
       presentation="$(presentation.kde-showdelete-user-pr)"
-      key="Software\BaseALT\Policies\KDE" valueName="kdeglobals.Dolphin">
+      key="Software\BaseALT\Policies\KDE\kdeglobals\KDE">
       <parentCategory ref="system:ALT_Settings_KDE"/>
       <supportedOn ref="system:SUPPORTED_AltP10"/>
-      <enabledValue>
-        <string>{"KDE":{"ShowDeleteCommand":"true"}}</string>
-      </enabledValue>
-      <disabledValue>
-        <string>{"KDE":{"ShowDeleteCommand":"false"}}</string>
-      </disabledValue>
     <elements>
-      <boolean id="kde-showdelete_blocker" key="Software\BaseALT\Policies\KDELocks" valueName="kdeglobals.Dolphin" >
+      <boolean id="kde-showdelete_setter" valueName="ShowDeleteCommand">
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+          </boolean>
+      <boolean id="kde-showdelete_blocker" key="Software\BaseALT\Policies\KDELocks" valueName="ShowDeleteCommand" >
           <trueValue>
             <decimal value="1" />
           </trueValue>
