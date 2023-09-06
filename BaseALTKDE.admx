@@ -376,33 +376,33 @@
   <policy name="kde-background" class="User" displayName="$(string.kde-background)"
     explainText="$(string.kde-background_help)"
     presentation="$(presentation.kde-background-user-pr)"
-    key="Software\BaseALT\Policies\KDE">
+    key="Software\BaseALT\Policies\KDE\ksplashrc\KSplash">
     <parentCategory ref="system:ALT_Appearance_KDE" />
     <supportedOn ref="system:SUPPORTED_AltP10" />
       <elements>
-        <enum  id="kde-background-setter" valueName="ksplashrc.Backgroung" required="true">
+        <enum  id="kde-background-setter" valueName="Theme" required="true">
           <item displayName="$(string.kde-background-breeze)">
             <value>
-              <string>{"KDE":{"KSplash":"org.kde.breeze.desktop"}}</string>
+              <string>org.kde.breeze.desktop</string>
             </value>
           </item>
           <item displayName="$(string.kde-background-breeze-dark)">
             <value>
-              <string>{"KDE":{"KSplash":"org.kde.breezedark.desktop"}}</string>
+              <string>org.kde.breezedark.desktop</string>
             </value>
           </item>
           <item displayName="$(string.kde-background-oxygen)">
             <value>
-              <string>{"KDE":{"KSplash":"org.kde.oxygen"}}</string>
+              <string>org.kde.oxygen</string>
             </value>
           </item>
           <item displayName="$(string.kde-background-breezetwilight)">
             <value>
-              <string>{"KDE":{"KSplash":"org.kde.breezetwilight.desktop"}}</string>
+              <string>org.kde.breezetwilight.desktop</string>
             </value>
           </item>
         </enum>
-        <boolean id="kde-background_blocker" key="Software\BaseALT\Policies\KDELocks" valueName="ksplashrc.Backgroung" >
+        <boolean id="kde-background_blocker" key="Software\BaseALT\Policies\KDELocks" valueName="KSplash" >
           <trueValue>
             <decimal value="1" />
           </trueValue>
