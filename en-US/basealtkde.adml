@@ -232,11 +232,6 @@ If the policy is disabled, clicking on the file or folder will highlight it.
       <string id="kde-desktopnumber-three">3</string>
       <string id="kde-desktopnumber-four">4</string>
 
-      <string id="kde-filesearch-enabled">Enable file search service only</string>
-      <string id="kde-filesearch-indexing">Enable search service and file content indexing</string>
-      <string id="kde-filesearch-folders">Enable search service and indexing of hidden files and folders</string>
-      <string id="kde-filesearch-folders-and-indexing">Enable search service, indexing hidden folders, files and their contents</string>
-
       <string id="kde-icons-breeze">Breeze</string>
       <string id="kde-icons-breeze-dark">Breeze-dark</string>
       <string id="kde-icons-Adwaita">Adwaita</string>
@@ -310,10 +305,12 @@ If the policy is disabled, clicking on the file or folder will highlight it.
         <text>Blocking changes to these settings by the user. After rebooting the device, the settings changes made by the user are not saved.</text>
       </presentation>
       <presentation id="kde-filesearch-user-pr">
-        <dropdownList noSort="true" defaultItem="0" refId="kde-filesearch_setter">Possible modes:</dropdownList>
+        <checkBox refId="kde-basicsettings_setter">Enable file search service only</checkBox>
+        <checkBox refId="kde-onlybasic_setter">Enable file content indexing</checkBox>
+        <checkBox refId="kde-indexhidden_setter">Enable indexing of hidden files and folders</checkBox>
         <checkBox refId="kde-filesearch_blocker">Block</checkBox>
-        <text>Blocking changes to this setting by the user. After restarting the device, the user's changes to the settings are not saved.</text>
-      </presentation>
+        <text>Blocking changes to these settings by the user. After rebooting the device, the settings changes made by the user are not saved.</text>
+       </presentation>
       <presentation id="kde-wallpaper-user-pr">
         <textBox refId="kde-wallpaper-setter">
           <label>File:</label>

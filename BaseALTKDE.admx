@@ -258,29 +258,31 @@
     <parentCategory ref="system:ALT_Settings_KDE" />
     <supportedOn ref="system:SUPPORTED_AltP10" />
       <elements>
-        <enum id="kde-filesearch_setter" valueName="baloofilerc.FileSearch" required="true">
-          <item displayName="$(string.kde-filesearch-enabled)">
-            <value>
-              <string>{"Basic Settings":{"Indexing-Enabled":"true"}}</string>
-            </value>
-          </item>
-          <item displayName="$(string.kde-filesearch-indexing)">
-            <value>
-              <string>{"Basic Settings":{"Indexing-Enabled":"true"}, "General":{"only basic indexing":"false"}}</string>
-            </value>
-          </item>
-          <item displayName="$(string.kde-filesearch-folders)">
-            <value>
-              <string>{"Basic Settings":{"Indexing-Enabled":"true"}, "General":{"index hidden folders":"true"}}</string>
-            </value>
-          </item>
-          <item displayName="$(string.kde-filesearch-folders-and-indexing)">
-            <value>
-              <string>{"Basic Settings":{"Indexing-Enabled":"true"}, "General":{"index hidden folders":"true", "only basic indexing":"false"}}</string>
-            </value>
-          </item>
-        </enum>
-        <boolean id="kde-filesearch_blocker" key="Software\BaseALT\Policies\KDELocks" valueName="baloofilerc.FileSearch">
+        <boolean id="kde-basicsettings_setter" key="Software\BaseALT\Policies\KDE\baloofilerc\Basic Settings" valueName="Indexing-Enabled">
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+          </boolean>
+        <boolean id="kde-onlybasic_setter" key="Software\BaseALT\Policies\KDE\baloofilerc\General" valueName="only basic indexing">
+          <trueValue>
+            <decimal value="0" />
+          </trueValue>
+          <falseValue>
+            <decimal value="1" />
+          </falseValue>
+          </boolean>
+        <boolean id="kde-indexhidden_setter" key="Software\BaseALT\Policies\KDE\baloofilerc\General" valueName="index hidden folders">
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+          </boolean>
+        <boolean id="kde-filesearch_blocker" key="Software\BaseALT\Policies\KDELocks" valueName="baloofilerc.Basic Settings.Indexing-Enabled">
           <trueValue>
             <decimal value="1" />
           </trueValue>
@@ -293,38 +295,38 @@
   <policy name="kde-iconstheme" class="User" displayName="$(string.kde-iconstheme)"
     explainText="$(string.kde-iconstheme_help)"
     presentation="$(presentation.kde-iconstheme-user-pr)"
-    key="Software\BaseALT\Policies\KDE">
+    key="Software\BaseALT\Policies\KDE\kdeglobals\Icons">
     <parentCategory ref="system:ALT_Appearance_KDE" />
     <supportedOn ref="system:SUPPORTED_AltP10" />
       <elements>
-        <enum  id="kde-iconstheme-setter" valueName="kdeglobals.Icons" required="true">
+        <enum  id="kde-iconstheme-setter" valueName="Theme" required="true">
           <item displayName="$(string.kde-icons-breeze)">
             <value>
-              <string>{"Icons":{"Theme":"breeze"}}</string>
+              <string>breeze</string>
             </value>
           </item>
           <item displayName="$(string.kde-icons-breeze-dark)">
             <value>
-              <string>{"Icons":{"Theme":"breeze-dark"}}</string>
+              <string>breeze-dark</string>
             </value>
           </item>
           <item displayName="$(string.kde-icons-Adwaita)">
             <value>
-              <string>{"Icons":{"Theme":"Adwaita"}}</string>
+              <string>Adwaita</string>
             </value>
           </item>
           <item displayName="$(string.kde-icons-oxygen)">
             <value>
-              <string>{"Icons":{"Theme":"oxygen"}}</string>
+              <string>oxygen</string>
             </value>
           </item>
           <item displayName="$(string.kde-icons-gnome)">
             <value>
-              <string>{"Icons":{"Theme":"gnome"}}</string>
+              <string>gnome</string>
             </value>
           </item>
         </enum>
-        <boolean id="kde-iconstheme_blocker" key="Software\BaseALT\Policies\KDELocks" valueName="kdeglobals.Icons" >
+        <boolean id="kde-iconstheme_blocker" key="Software\BaseALT\Policies\KDELocks" valueName="Theme" >
           <trueValue>
             <decimal value="1" />
           </trueValue>
@@ -402,7 +404,7 @@
             </value>
           </item>
         </enum>
-        <boolean id="kde-background_blocker" key="Software\BaseALT\Policies\KDELocks" valueName="KSplash" >
+        <boolean id="kde-background_blocker" key="Software\BaseALT\Policies\KDELocks" valueName="Theme" >
           <trueValue>
             <decimal value="1" />
           </trueValue>
