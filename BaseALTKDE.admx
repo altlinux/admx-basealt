@@ -45,7 +45,7 @@
             <decimal value="0" />
           </falseValue>
           </boolean>
-        <boolean id="kde-win-activate_blocker" key="Software\BaseALT\Policies\KDELocks" valueName="kwinrc.FocusPolicy">
+        <boolean id="kde-win-activate_blocker" key="Software\BaseALT\Policies\KDELocks" valueName="kwinrc.Windows.FocusPolicy">
           <trueValue>
             <decimal value="1" />
           </trueValue>
@@ -89,7 +89,7 @@
             </value>
           </item>
         </enum>
-        <boolean id="kde-win-rendering_blocker" key="Software\BaseALT\Policies\KDELocks" valueName="LatencyPolicy">
+        <boolean id="kde-win-rendering_blocker" key="Software\BaseALT\Policies\KDELocks" valueName="kwinrc.Compositing.LatencyPolicy">
           <trueValue>
             <decimal value="1" />
           </trueValue>
@@ -159,7 +159,7 @@
             </value>
           </item>
         </enum>
-        <boolean id="kde-desktoprows_blocker" key="Software\BaseALT\Policies\KDELocks" valueName="Rows">
+        <boolean id="kde-desktoprows_blocker" key="Software\BaseALT\Policies\KDELocks" valueName="kwinrc.Desktops.Rows">
           <trueValue>
             <decimal value="1" />
           </trueValue>
@@ -167,7 +167,7 @@
             <decimal value="0" />
           </falseValue>
           </boolean>
-        <boolean id="kde-desktopnumber_blocker" key="Software\BaseALT\Policies\KDELocks" valueName="Number">
+        <boolean id="kde-desktopnumber_blocker" key="Software\BaseALT\Policies\KDELocks" valueName="kwinrc.Desktops.Number">
           <trueValue>
             <decimal value="1" />
           </trueValue>
@@ -301,7 +301,7 @@
             </value>
           </item>
         </enum>
-        <boolean id="kde-iconstheme_blocker" key="Software\BaseALT\Policies\KDELocks" valueName="Theme" >
+        <boolean id="kde-iconstheme_blocker" key="Software\BaseALT\Policies\KDELocks" valueName="kdeglobals.Icons.Theme" >
           <trueValue>
             <decimal value="1" />
           </trueValue>
@@ -340,7 +340,7 @@
             </value>
           </item>
         </enum>
-        <boolean id="kde-look-and-feel_blocker" key="Software\BaseALT\Policies\KDELocks" valueName="LookAndFeelPackage" >
+        <boolean id="kde-look-and-feel_blocker" key="Software\BaseALT\Policies\KDELocks" valueName="kdeglobals.KDE.LookAndFeelPackage" >
           <trueValue>
             <decimal value="1" />
           </trueValue>
@@ -379,7 +379,7 @@
             </value>
           </item>
         </enum>
-        <boolean id="kde-background_blocker" key="Software\BaseALT\Policies\KDELocks" valueName="Theme" >
+        <boolean id="kde-background_blocker" key="Software\BaseALT\Policies\KDELocks" valueName="ksplashrc.KSplash.Theme" >
           <trueValue>
             <decimal value="1" />
           </trueValue>
@@ -423,7 +423,7 @@
             </value>
           </item>
         </enum>
-        <boolean id="kde-desktoptheme_blocker" key="Software\BaseALT\Policies\KDELocks" valueName="name" >
+        <boolean id="kde-desktoptheme_blocker" key="Software\BaseALT\Policies\KDELocks" valueName="plasmarc.Theme.name" >
           <trueValue>
             <decimal value="1" />
           </trueValue>
@@ -457,7 +457,7 @@
             </value>
           </item>
         </enum>
-        <boolean id="kde-browserapp_blocker" key="Software\BaseALT\Policies\KDELocks" valueName="mimeapps.list;Default Applications;x-scheme-handler/http" >
+        <boolean id="kde-browserapp_blocker" key="Software\BaseALT\Policies\KDELocks" valueName="mimeapps.list.Default Applications.x-scheme-handler/http" >
           <trueValue>
             <decimal value="1" />
           </trueValue>
@@ -512,7 +512,7 @@
               <decimal value="0" />
             </falseValue>
             </boolean>
-        <boolean id="kde-graphic-effects_blocker" key="Software\BaseALT\Policies\KDELocks" valueName="Enabled" >
+        <boolean id="kde-graphic-effects_blocker" key="Software\BaseALT\Policies\KDELocks" valueName="kwinrc.Compositing.Enabled" >
             <trueValue>
               <decimal value="1" />
             </trueValue>
@@ -537,7 +537,7 @@
             <decimal value="0" />
           </falseValue>
           </boolean>
-      <boolean id="kde-showdelete_blocker" key="Software\BaseALT\Policies\KDELocks" valueName="ShowDeleteCommand" >
+      <boolean id="kde-showdelete_blocker" key="Software\BaseALT\Policies\KDELocks" valueName="kdeglobals.KDE.ShowDeleteCommand" >
           <trueValue>
             <decimal value="1" />
           </trueValue>
@@ -562,7 +562,7 @@
             <decimal value="0" />
           </falseValue>
           </boolean>
-      <boolean id="kde-singleclick_blocker" key="Software\BaseALT\Policies\KDELocks" valueName="SingleClick" >
+      <boolean id="kde-singleclick_blocker" key="Software\BaseALT\Policies\KDELocks" valueName="kdeglobals.KDE.SingleClick" >
           <trueValue>
             <decimal value="1" />
           </trueValue>
