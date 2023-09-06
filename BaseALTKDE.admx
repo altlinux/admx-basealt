@@ -510,28 +510,28 @@
   <policy name="kde-browserapp" class="User" displayName="$(string.kde-browserapp)"
     explainText="$(string.kde-browserapp_help)"
     presentation="$(presentation.kde-browserapp-user-pr)"
-    key="Software\BaseALT\Policies\KDE">
+    key="Software\BaseALT\Policies\KDE\mimeapps.list\Default Applications">
     <parentCategory ref="system:ALT_Application_KDE" />
     <supportedOn ref="system:SUPPORTED_AltP10" />
       <elements>
-        <enum  id="kde-browserapp-setter" valueName="mimeapps.list.Browser" required="true">
+        <enum  id="kde-browserapp-setter" valueName="x-scheme-handler/http" required="true">
           <item displayName="$(string.kde-browserapp-yandex)">
             <value>
-              <string>{"Added Associations":{"x-scheme-handler/http":"yandex-browser.desktop;", "x-scheme-handler/https":"yandex-browser.desktop;"}, "Default Applications":{"x-scheme-handler/http":"yandex-browser.desktop;", "x-scheme-handler/https":"yandex-browser.desktop;"}}</string>
+              <string>yandex-browser.desktop;</string>
             </value>
           </item>
           <item displayName="$(string.kde-browserapp-firefox)">
             <value>
-              <string>{"Added Associations":{"x-scheme-handler/http":"firefox.desktop;", "x-scheme-handler/https":"firefox.desktop;"}, "Default Applications":{"x-scheme-handler/http":"firefox.desktop;", "x-scheme-handler/https":"firefox.desktop;"}}</string>
+              <string>firefox.desktop;</string>
             </value>
           </item>
           <item displayName="$(string.kde-browserapp-chromium)">
             <value>
-              <string>{"Added Associations":{"x-scheme-handler/http":"chromium-gost.desktop;", "x-scheme-handler/https":"chromium-gost.desktop;"}, "Default Applications":{"x-scheme-handler/http":"chromium-gost.desktop;", "x-scheme-handler/https":"chromium-gost.desktop;"}}</string>
+              <string>chromium-gost.desktop;</string>
             </value>
           </item>
         </enum>
-        <boolean id="kde-browserapp_blocker" key="Software\BaseALT\Policies\KDELocks" valueName="mimeapps.list.Browser" >
+        <boolean id="kde-browserapp_blocker" key="Software\BaseALT\Policies\KDELocks" valueName="mimeapps.list;Default Applications;x-scheme-handler/http" >
           <trueValue>
             <decimal value="1" />
           </trueValue>
