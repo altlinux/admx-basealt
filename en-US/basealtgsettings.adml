@@ -264,6 +264,33 @@ A string of type rgb(0,0,0).</string>
 
       <string id="org-mate-peripherals-keyboard-rate">Repeat rate</string>
       <string id="org-mate-peripherals-keyboard-rate_help">Sets the repeat rate of the pressed and held key.</string>
+
+      <string id="org-mate-mate-menu-systemmanagement-show-terminal">Displaying the terminal label</string>
+      <string id="org-mate-mate-menu-systemmanagement-show-terminal_help">This policy configures the display of the "Terminal" shortcut in the MATE menu.
+
+If the policy value is set to "Enabled", then the "Terminal" shortcut will be displayed in the MATE system management menu. If the value is set to "Disabled", then the "Terminal" shortcut will be hidden.</string>
+
+      <string id="org-mate-mate-menu-systemmanagement-show-terminal-true">Enabled</string>
+      <string id="org-mate-mate-menu-systemmanagement-show-terminal-false">Disabled</string>
+
+      <string id="org-mate-Marco-global-keybindings-run-command-terminal">Hot keys to launch the terminal</string>
+      <string id="org-mate-Marco-global-keybindings-run-command-terminal_help">This policy allows you to set a hotkey combination for launching the Terminal application.
+
+The key combination is passed as a string. The keyboard shortcut Ctrl+Alt+T will look like this: &lt;Primary&gt;&lt;Alt&gt;t
+
+To disable the launch of the "Terminal" using hot keys, you must pass the value: false
+
+There are several tokens used for various modifier keys in various desktop environments and software applications. Here are some of them:
+
+&lt;Primary&gt; or &lt;Ctrl&gt;: Indicates the "Ctrl" (Control) key.
+&lt;Alt&gt;: Indicates the "Alt" (Alternate) key.
+&lt;Shift&gt;: Indicates the "Shift" key.
+&lt;Super&gt; or &lt;Meta&gt;: Indicates a "Super" or "Meta" key. On most keyboards, this is the Windows or Command key.
+&lt;Hyper&gt;: Indicates the "Hyper" key, which is not normally found on most keyboards.
+&lt;CapsLock&gt;: Indicates the "Caps Lock" key.
+false: Disable launching the terminal using hotkeys.
+
+ </string>
     </stringTable>
 
     <presentationTable>
@@ -757,6 +784,26 @@ last — repeat last action</text>
         <decimalTextBox refId="OrgMatePeripheralsKeyboardRate_setter">Repeat rate:</decimalTextBox>
         <checkBox refId="OrgMatePeripheralsKeyboardRate_setter_blocker">lock</checkBox>
         <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
+      </presentation>
+
+      <presentation id="OrgMateSystemManagementShowTermimalMachine-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="OrgMateSystemManagementShowTermimal_setter">Display label "Terminal":</dropdownList>
+        <checkBox refId="OrgMateSystemManagementShowTermimal_blocker">lock</checkBox>
+        <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
+      </presentation>
+
+      <presentation id="OrgMateMarcoGlobalKeybindingsRunCommandTerminalMachine-pr">
+        <textBox refId="OrgMateMarcoGlobalKeybindingsRunCommandTerminal_setter">
+          <label>Hot key combination:</label>
+        </textBox>
+        <checkBox refId="OrgMateMarcoGlobalKeybindingsRunCommandTerminal_blocker">lock</checkBox>
+        <text>Lock changes to this setting. User policies for this setting will be ignored.</text>
+      </presentation>
+
+      <presentation id="OrgMateMarcoGlobalKeybindingsRunCommandTerminalUser-pr">
+        <textBox refId="OrgMateMarcoGlobalKeybindingsRunCommandTerminal_setter">
+          <label>Hot key combination:</label>
+        </textBox>
       </presentation>
 
     </presentationTable>

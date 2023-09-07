@@ -49,6 +49,8 @@
       <string id="LinuxComponents_Help">Contains settings for Kernel components.</string>
       <string id="ALT_Settings_Mate">Mate settings</string>
       <string id="ALT_Settings_Mate_Help">Mate settings</string>
+      <string id= "ALT_Terminal_Mate">Mate Terminal</string>
+      <string id= "ALT_Terminal_Mate_Help">Mate terminal settings</string>
       <string id="ALT_Background_Mate">Desktop background</string>
       <string id="ALT_Background_Mate_Help">Desktop background settings</string>
       <string id="ALT_Screensaver_Mate">Screensaver</string>

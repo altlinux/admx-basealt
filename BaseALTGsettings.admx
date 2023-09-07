@@ -2449,5 +2449,82 @@
       </elements>
     </policy>
 
+    <policy name="OrgMateSystemManagementShowTermimalUser" class="User"
+        displayName="$(string.org-mate-mate-menu-systemmanagement-show-terminal)"
+        explainText="$(string.org-mate-mate-menu-systemmanagement-show-terminal_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        valueName="org.mate.mate-menu.system_management.show-terminal">
+      <parentCategory ref="system:ALT_Terminal_Mate" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+    </policy>
+
+    <policy name="OrgMateSystemManagementShowTermimalMachine" class="Machine"
+        displayName="$(string.org-mate-mate-menu-systemmanagement-show-terminal)"
+        explainText="$(string.org-mate-mate-menu-systemmanagement-show-terminal_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        presentation="$(presentation.OrgMateSystemManagementShowTermimalMachine-pr)">
+      <parentCategory ref="system:ALT_Terminal_Mate" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <elements>
+        <enum id="OrgMateSystemManagementShowTermimal_setter" required="true" valueName="org.mate.mate-menu.system_management.show-terminal">
+          <item displayName="$(string.org-mate-mate-menu-systemmanagement-show-terminal-true)">
+            <value>
+              <decimal value="1" />
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-mate-menu-systemmanagement-show-terminal-false)">
+            <value>
+              <decimal value="0" />
+            </value>
+          </item>
+        </enum>
+        <boolean id="OrgMateSystemManagementShowTermimal_blocker" key="Software\BaseALT\Policies\GSettingsLocks" valueName="org.mate.mate-menu.systemmanagement.show-terminal">
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+        </boolean>
+      </elements>
+    </policy>
+
+    <policy name="OrgMateMarcoGlobalKeybindingsRunCommandTerminalUser" class="User"
+        displayName="$(string.org-mate-Marco-global-keybindings-run-command-terminal)"
+        explainText="$(string.org-mate-Marco-global-keybindings-run-command-terminal_help)"
+        presentation="$(presentation.OrgMateMarcoGlobalKeybindingsRunCommandTerminalUser-pr)"
+        key="Software\BaseALT\Policies\gsettings">
+      <parentCategory ref="system:ALT_Terminal_Mate" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <elements>
+        <text id="OrgMateMarcoGlobalKeybindingsRunCommandTerminal_setter" valueName="org.mate.Marco.global-keybindings.run-command-terminal" />
+      </elements>
+    </policy>
+
+    <policy name="OrgMateMarcoGlobalKeybindingsRunCommandTerminalMachine" class="Machine"
+        displayName="$(string.org-mate-Marco-global-keybindings-run-command-terminal)"
+        explainText="$(string.org-mate-Marco-global-keybindings-run-command-terminal_help)"
+        presentation="$(presentation.OrgMateMarcoGlobalKeybindingsRunCommandTerminalMachine-pr)"
+        key="Software\BaseALT\Policies\gsettings">
+      <parentCategory ref="system:ALT_Terminal_Mate" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <elements>
+        <text id="OrgMateMarcoGlobalKeybindingsRunCommandTerminal_setter" valueName="org.mate.Marco.global-keybindings.run-command-terminal" />
+        <boolean id="OrgMateMarcoGlobalKeybindingsRunCommandTerminal_blocker" key="Software\BaseALT\Policies\GSettingsLocks" valueName="org.mate.Marco.global-keybindings.run-command-terminal">
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+        </boolean>
+      </elements>
+    </policy>
   </policies>
 </policyDefinitions>
