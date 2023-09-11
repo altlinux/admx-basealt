@@ -99,7 +99,7 @@
           </boolean>
       </elements>
     </policy>
-  <policy name="kde-language" class="User" displayName="$(string.kde-language)"
+  <policy name="kde-language" class="Both" displayName="$(string.kde-language)"
     explainText="$(string.kde-language_help)"
     key="Software\BaseALT\Policies\KDE"
     presentation="$(presentation.kde-language-user-pr)">
@@ -118,7 +118,7 @@
           </boolean>
       </elements>
     </policy>
-  <policy name="kde-desktops" class="User" displayName="$(string.kde-desktops)"
+  <policy name="kde-desktops" class="Both" displayName="$(string.kde-desktops)"
     explainText="$(string.kde-desktops_help)"
     key="Software\BaseALT\Policies\KDE\kwinrc\Desktops"
     presentation="$(presentation.kde-desktops-user-pr)">
@@ -177,7 +177,7 @@
           </boolean>
       </elements>
     </policy>
-  <policy name="kde-automount" class="User" displayName="$(string.kde-automount)"
+  <policy name="kde-automount" class="Both" displayName="$(string.kde-automount)"
     explainText="$(string.kde-automount_help)"
     key="Software\BaseALT\Policies\KDE\kded_device_automounterrc\General"
     presentation="$(presentation.kde-automount-user-pr)">
@@ -226,7 +226,7 @@
           </boolean>
       </elements>
     </policy>
-  <policy name="kde-filesearch" class="User" displayName="$(string.kde-filesearch)"
+  <policy name="kde-filesearch" class="Both" displayName="$(string.kde-filesearch)"
     explainText="$(string.kde-filesearch_help)"
     key="Software\BaseALT\Policies\KDE"
     presentation="$(presentation.kde-filesearch-user-pr)">
@@ -267,7 +267,7 @@
           </boolean>
       </elements>
     </policy>
-  <policy name="kde-iconstheme" class="User" displayName="$(string.kde-iconstheme)"
+  <policy name="kde-iconstheme" class="Both" displayName="$(string.kde-iconstheme)"
     explainText="$(string.kde-iconstheme_help)"
     presentation="$(presentation.kde-iconstheme-user-pr)"
     key="Software\BaseALT\Policies\KDE\kdeglobals\Icons">
@@ -311,7 +311,7 @@
           </boolean>
       </elements>
     </policy>
-  <policy name="kde-look-and-feel" class="User" displayName="$(string.kde-look-and-feel)"
+  <policy name="kde-look-and-feel" class="Both" displayName="$(string.kde-look-and-feel)"
     explainText="$(string.kde-look-and-feel_help)"
     presentation="$(presentation.kde-look-and-feel-user-pr)"
     key="Software\BaseALT\Policies\KDE\kdeglobals\KDE">
@@ -350,7 +350,7 @@
           </boolean>
       </elements>
     </policy>
-  <policy name="kde-background" class="User" displayName="$(string.kde-background)"
+  <policy name="kde-background" class="Both" displayName="$(string.kde-background)"
     explainText="$(string.kde-background_help)"
     presentation="$(presentation.kde-background-user-pr)"
     key="Software\BaseALT\Policies\KDE\ksplashrc\KSplash">
@@ -389,7 +389,7 @@
           </boolean>
       </elements>
     </policy>
-  <policy name="kde-desktoptheme" class="User" displayName="$(string.kde-desktoptheme)"
+  <policy name="kde-desktoptheme" class="Both" displayName="$(string.kde-desktoptheme)"
     explainText="$(string.kde-desktoptheme_help)"
     presentation="$(presentation.kde-desktoptheme-user-pr)"
     key="Software\BaseALT\Policies\KDE\plasmarc\Theme">
@@ -433,7 +433,7 @@
           </boolean>
       </elements>
     </policy>
-  <policy name="kde-browserapp" class="User" displayName="$(string.kde-browserapp)"
+  <policy name="kde-browserapp" class="Both" displayName="$(string.kde-browserapp)"
     explainText="$(string.kde-browserapp_help)"
     presentation="$(presentation.kde-browserapp-user-pr)"
     key="Software\BaseALT\Policies\KDE\mimeapps.list\Default Applications">
@@ -467,7 +467,7 @@
           </boolean>
       </elements>
     </policy>
-  <policy name="kde-wallpaper" class="User" displayName="$(string.kde-wallpaper)"
+  <policy name="kde-wallpaper" class="Both" displayName="$(string.kde-wallpaper)"
     explainText="$(string.kde-wallpaper_help)"
     presentation="$(presentation.kde-wallpaper-user-pr)"
     key="Software\BaseALT\Policies\KDE\plasma\wallpaperimage">
@@ -477,7 +477,7 @@
         <text id="kde-wallpaper-setter" valueName="Image"/>
       </elements>
     </policy>
-  <policy name="kde-colorscheme" class="User" displayName="$(string.kde-colorscheme)"
+  <policy name="kde-colorscheme" class="Both" displayName="$(string.kde-colorscheme)"
     explainText="$(string.kde-colorscheme_help)"
     presentation="$(presentation.kde-colorscheme-user-pr)"
     key="Software\BaseALT\Policies\KDE\plasma\colorscheme">
@@ -487,7 +487,7 @@
         <text id="kde-colorscheme-setter" valueName="colorscheme"/>
       </elements>
     </policy>
-  <policy name="kde-cursortheme" class="User" displayName="$(string.kde-cursortheme)"
+  <policy name="kde-cursortheme" class="Both" displayName="$(string.kde-cursortheme)"
     explainText="$(string.kde-cursortheme_help)"
     presentation="$(presentation.kde-cursortheme-user-pr)"
     key="Software\BaseALT\Policies\KDE\plasma\cursortheme">
@@ -522,7 +522,7 @@
             </boolean>
       </elements>
     </policy>
-  <policy name="kde-showdelete" class="User" displayName="$(string.kde-showdelete)"
+  <policy name="kde-showdelete" class="Both" displayName="$(string.kde-showdelete)"
       explainText="$(string.kde-showdelete_help)"
       presentation="$(presentation.kde-showdelete-user-pr)"
       key="Software\BaseALT\Policies\KDE\kdeglobals\KDE">
@@ -547,7 +547,7 @@
           </boolean>
     </elements>
       </policy>
-  <policy name="kde-singleclick" class="User" displayName="$(string.kde-singleclick)"
+  <policy name="kde-singleclick" class="Both" displayName="$(string.kde-singleclick)"
       explainText="$(string.kde-singleclick_help)"
       presentation="$(presentation.kde-singleclick-user-pr)"
       key="Software\BaseALT\Policies\KDE\kdeglobals\KDE">
