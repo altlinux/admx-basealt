@@ -111,6 +111,12 @@
       <string id="gpupdate_scripts_user_applier">Script execution module for users</string>
       <string id="gpupdate_scripts_user_applier_help">This policy enables disables the scripting group policy execution engine for users.</string>
 
+      <string id="gpupdate_kde_applier">Setting up the KDE Plasma environment</string>
+      <string id="gpupdate_kde_applier_help">This policy enables/disables the KDE Plasma environment configuration group policy runner for desktops.</string>
+
+      <string id="gpupdate_kde_user_applier">Setting up the KDE Plasma environment for users</string>
+      <string id="gpupdate_kde_user_applier_help">This policy enables/disables the KDE Plasma environment configuration group policy execution module for users.</string>
+
       <string id="gpupdate_yandex_browser_applier">Yandex Browser</string>
       <string id="gpupdate_yandex_browser_applier_help">This policy enables group policy Yandex Browser applier feature.</string>
 

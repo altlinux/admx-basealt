@@ -111,6 +111,12 @@
       <string id="gpupdate_scripts_user_applier">Модуль выполнения сценариев для пользователей</string>
       <string id="gpupdate_scripts_user_applier_help">Эта политика включает/отключает модуль выполнения групповых политик сценариев для пользователей.</string>
 
+      <string id="gpupdate_kde_applier">Настройка среды KDE Plasma</string>
+      <string id="gpupdate_kde_applier_help">Эта политика включает/отключает модуль выполнения групповых политик настройки среды KDE Plasma для компьютеров.</string>
+
+      <string id="gpupdate_kde_user_applier">Настройка среды KDE Plasma для пользователей</string>
+      <string id="gpupdate_kde_user_applier_help">Эта политика включает/отключает модуль выполнения групповых политик настройки среды KDE Plasma для пользователей.</string>
+
       <string id="gpupdate_yandex_browser_applier">Настройка Яндекс.Браузера</string>
       <string id="gpupdate_yandex_browser_applier_help">Эта политика включает применение механизма групповых политик Яндекс.Браузера.</string>
 
