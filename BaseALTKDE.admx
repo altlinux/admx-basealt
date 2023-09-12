@@ -467,7 +467,7 @@
           </boolean>
       </elements>
     </policy>
-  <policy name="kde-wallpaper" class="Both" displayName="$(string.kde-wallpaper)"
+  <policy name="kde-wallpaper" class="User" displayName="$(string.kde-wallpaper)"
     explainText="$(string.kde-wallpaper_help)"
     presentation="$(presentation.kde-wallpaper-user-pr)"
     key="Software\BaseALT\Policies\KDE\plasma\wallpaperimage">
@@ -477,7 +477,7 @@
         <text id="kde-wallpaper-setter" valueName="Image"/>
       </elements>
     </policy>
-  <policy name="kde-colorscheme" class="Both" displayName="$(string.kde-colorscheme)"
+  <policy name="kde-colorscheme" class="User" displayName="$(string.kde-colorscheme)"
     explainText="$(string.kde-colorscheme_help)"
     presentation="$(presentation.kde-colorscheme-user-pr)"
     key="Software\BaseALT\Policies\KDE\plasma\colorscheme">
@@ -487,7 +487,7 @@
         <text id="kde-colorscheme-setter" valueName="colorscheme"/>
       </elements>
     </policy>
-  <policy name="kde-cursortheme" class="Both" displayName="$(string.kde-cursortheme)"
+  <policy name="kde-cursortheme" class="User" displayName="$(string.kde-cursortheme)"
     explainText="$(string.kde-cursortheme_help)"
     presentation="$(presentation.kde-cursortheme-user-pr)"
     key="Software\BaseALT\Policies\KDE\plasma\cursortheme">
