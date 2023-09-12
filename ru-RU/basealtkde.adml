@@ -84,7 +84,7 @@
       <string id="kde-desktops_help">Данная политика позволяет настраивать количество виртуальных рабочих столов. </string>
 
       <string id="kde-wallpaper">Картинка фона рабочего стола</string>
-      <string id="kde-wallpaper_help">Данная политика позволяет установить изображения в качестве фона рабочего стола, указав файл (например, /usr/share/wallpapers/table.png), содержащий изображение.</string>
+      <string id="kde-wallpaper_help">Данная политика позволяет установить изображения в качестве фона рабочего стола, указав файл (например, /usr/share/wallpapers/table.png, или smb://dc0/reGr/test.png (файл из общего каталога)), содержащий изображение.</string>
 
       <string id="kde-graphic-effects">Граффические эффекты</string>
       <string id="kde-graphic-effects_help">Политика настраивает включение или отключение граффических эффектов при входе в систему.</string>

@@ -84,7 +84,7 @@
       <string id="kde-desktops_help">This policy allows you to configure the number of virtual desktops. The number of tables can be from one to four inclusive.</string>
 
       <string id="kde-wallpaper">Desktop background picture</string>
-      <string id="kde-wallpaper_help">This policy allows you to set images as your desktop background by specifying a file (eg /usr/share/wallpapers/table.png) containing the image.</string>
+      <string id="kde-wallpaper_help">This policy allows you to set images as your desktop background by specifying a file (for example, /usr/share/wallpapers/table.png, or smb://dc0/reGr/test.png (file from the shared directory)), containing the image.</string>
 
       <string id="kde-graphic-effects">Graphic effects</string>
       <string id="kde-graphic-effects_help">The policy configures enabling or disabling graphical effects on login.</string>
