@@ -93,6 +93,21 @@
     <category name="ALT_SambaOptions" displayName="$(string.ALT_SambaOptions)"  explainText="$(string.ALT_SambaOptions_Help)" >
       <parentCategory ref="ALT_Services" />
     </category>
+    <category name="ALT_Settings_KDE" displayName="$(string.ALT_Settings_KDE)" explainText="$(string.ALT_Settings_KDE_Help)">
+      <parentCategory ref="ALT_System" />
+    </category>
+    <category name="ALT_PowerManagement_KDE" displayName="$(string.ALT_PowerManagement_KDE)" explainText="$(string.ALT_PowerManagement_KDE_Help)">
+      <parentCategory ref="ALT_Settings_KDE" />
+    </category>
+    <category name="ALT_Appearance_KDE" displayName="$(string.ALT_Appearance_KDE)" explainText="$(string.ALT_Appearance_KDE_Help)">
+      <parentCategory ref="ALT_Settings_KDE" />
+    </category>
+    <category name="ALT_Application_KDE" displayName="$(string.ALT_Application_KDE)" explainText="$(string.ALT_Application_KDE_Help)">
+      <parentCategory ref="ALT_Settings_KDE" />
+    </category>
+    <category name="ALT_Devices_KDE" displayName="$(string.ALT_Devices_KDE)" explainText="$(string.ALT_Devices_KDE_Help)">
+      <parentCategory ref="ALT_Settings_KDE" />
+    </category>
     <category name="ALT_Network" displayName="$(string.ALT_Network)" explainText="$(string.ALT_Network_Help)">
       <parentCategory ref="ALT_System" />
     </category>

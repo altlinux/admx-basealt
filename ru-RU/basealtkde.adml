@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  (c) 2023 BaseALT, Ltd.  -->
+<policyDefinitionResources xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.microsoft.com/GroupPolicy/2006/07/PolicyDefinitions" revision="1.0" schemaVersion="1.0">
+  <displayName>Определения политик KDE Plasma операционной системы Альт</displayName>
+  <description>Этот файл содержит определения политик для управления средой KDE Plasma в операционной системе Альт.</description>
+
+  <resources>
+    <stringTable>
+      <string id="ALT_Settings_KDE">Настройки графической системы KDE Plasma</string>
+      <string id="ALT_Settings_KDE_Help">Настройки графической системы KDE Plasma.</string>
+
+      <string id="kde-win-activate">Режим активации окна</string>
+      <string id="kde-win-activate_help">Режим переключения фокуса в окно определяет, как активируются окна. Допустимые значения:
+
+«Фокус по щелчку» — окно становится активным после щелчка по заголовку или внутри окна.
+
+«Фокус по щелчку» (приоритет мыши) — этот режим похож на «Фокус по щелчку». Если система сама должна выбрать активное окно(например, когда активное окно было закрыто), предпочтение отдаётся окну под указателем мыши.
+
+«Фокус следует за мышью» — окно активинуется при перемещении указателя мыши в это окно. Окна, которые появляются под указателем мыши случайно, не будут получать фокус, так как предотващение смены фокуса работает как обычно. Этот вариант похож на «Фокус по щелчку», но щелчок не требуется».
+
+«Фокус следует за мышью» (приритет мыши) — этот режим похож на «Фокус следует за мышью". Если система сама должна выбрать активное окно (например, при закрытии активного окна), предпочтение будет отдано окну, находящемуся под указателем мыши. Данный режим следует выбрать для смены фокуса по наведению указателя мыши.
+
+«Фокус под мышью» — фокус всегда оказывается в окне под мышью. Примечание: Предотвращение смены фокуса и переключение через Alt+Tab противоречат этому поведению и не будут работать.
+
+«Фокус строго под мышью» — фокус всегда в окне под указателем мыши(а если под ним пусто, он теряется). Примечание: Предотвращение смены фокуса и переключение через Alt+Tab противоречат этому поведению и не будут работать.
+
+      </string>
+
+      <string id="kde-win-rendering">Задержка отрисови</string>
+      <string id="kde-win-rendering_help">Политика позволяет выбрать уровень задержки и плавности анимации. Допустимые значения:
+
+«Принудительно низкая задержка (может привести к артефактам)»
+
+«Предпочитать низкую задержку»
+
+«Баланс скорости и плавности»
+
+«Предпочитать более плавную анимацию»
+
+«Принудительно наиболее плавная анимация»
+
+      </string>
+
+      <string id="kde-language">Региональные и языковые параметры</string>
+      <string id="kde-language_help">Эти параметры меняют настройки не только самого языка системы, но и задают настройки валюты, стандарт времени, числовые значения, стиль написания имени, телефонный код и стандарт телефонного номера страны. Параметры вписываются в поля старндарта и языка соответственно. (Пример стандарта: ru_RU.UTF-8). (Пример языка: ru).  Допустимые значения:
+
+«Русский язык» Стандарт - ru_RU.UTF-8, язык - ru;
+
+«Французский язык» Стандарт - fr_FR.UTF-8, язык - fr;
+
+«Немецкий язык» Стандарт - de_DE.UTF-8, язык - de;
+
+«Английский язык (Американский)» Стандарт - en_US.UTF-8, язык - en_US;
+
+«Английский язык (Британский)» Стандарт - en_GB.UTF-8, язык - en_GB.
+
+      </string>
+
+      <string id="kde-automount">Настройка подключаемых устройств</string>
+      <string id="kde-automount_help">Данная политика позволяет настроить автоматическое монтирование подключаемых устройств. Автоматичеки монтировать устройства:
+
+«При входе в систему»
+
+«При подключении»
+
+«Автоматически монтировать те носители, которые никогда ранее не были примонтированы вручную»
+
+      </string>
+
+      <string id="kde-filesearch">Служба поиска файлов</string>
+      <string id="kde-filesearch_help">Данная политика позволяет настраивать службу поиска файлов, индексировать содержимое файлов, индексировать скрытые файлы и папки. Возможные варианты настройки:
+
+«Включить только службу поиска файлов»
+
+«Включить службу поиска и индексацию содержимого файлов»
+
+«Включить службу поиска и индексацию скрытых файлов и папок»
+
+«Включить службу поиска, индексацию скрытых папок, файлов и их содержимого»
+
+      </string>
+
+      <string id="kde-desktops">Виртуальные рабочие столы</string>
+      <string id="kde-desktops_help">Данная политика позволяет настраивать количество виртуальных рабочих столов. </string>
+
+      <string id="kde-wallpaper">Картинка фона рабочего стола</string>
+      <string id="kde-wallpaper_help">Данная политика позволяет установить изображения в качестве фона рабочего стола, указав файл (например, /usr/share/wallpapers/table.png, или smb://dc0/reGr/test.png (файл из общего каталога)), содержащий изображение.</string>
+
+      <string id="kde-graphic-effects">Граффические эффекты</string>
+      <string id="kde-graphic-effects_help">Политика настраивает включение или отключение граффических эффектов при входе в систему.</string>
+
+      <string id="kde-showdelete">Удаление каталогов и файлов в контекстном меню</string>
+      <string id="kde-showdelete_help">Политика позволяет добавить или убрать кнопку "удалить" в контекстном меню Dolphin</string>
+
+      <string id="kde-singleclick">Открытие файла или каталога одним щелчком</string>
+      <string id="kde-singleclick_help">Данная политика настраивает открытие папки или файла одним щелчком.
+
+Если политика включена, то щелчком файл или папка будут открыты.
+
+Если политика отключена, щелчком файл или папка будут выделены.
+
+      </string>
+
+      <string id="kde-colorscheme">Цвета</string>
+      <string id="kde-colorscheme_help">Данная политика позволяет управлять цветовыми схемами, указав название схемы (например: BreezeClassic).
+
+      Допустимые варианты цветовых схем:
+
+      - OxygenCold
+      - BreezeClassic
+      - BreezeLight
+      - BreezeDark
+      - KritaBlender
+      - KritaBright
+      - KritaDark
+      - KritaDarkOrange
+      - KritaDarker
+      - KritaNeutral
+      - Oxygen
+
+      </string>
+
+      <string id="kde-cursortheme">Тема курсора</string>
+      <string id="kde-cursortheme_help">Данная политика позволяет выбрать тему курсора мыши, указав её название  (например: Oxygen_Black). Используются темы курсоров, доступные в /usr/share/icons. Допустимые значения параметра:
+
+      - Adwaita
+      - Breeze_Wnow
+      - KDE_Classic
+      - Oxygen_Black
+      - Oxygen_Blue
+      - Oxygen_White
+      - Oxygen_Yellow
+      - Oxygen_Zion
+      - breeze
+      - breeze_dark
+      - breeze_cursors
+
+      </string>
+
+      <string id="kde-iconstheme">Тема значков</string>
+      <string id="kde-iconstheme_help">Данная политика позволяет выбрать тему значков.  Допустимые значения параметра:
+
+      - Adwaita
+      - Oxygen
+      - Breeze
+      - Breeze_dark
+      - Gnome
+
+      </string>
+
+      <string id="kde-look-and-feel">Оформление рабочей среды</string>
+      <string id="kde-look-and-feel_help">Данная политика позволяет выбрать оформление рабочей среды.  Допустимые значения параметра:
+
+      - Oxygen
+      - Breeze
+      - Breeze_dark
+      - BreezeTwilight
+
+      </string>
+
+      <string id="kde-background">Тема заставки</string>
+      <string id="kde-background_help">Данная политика позволяет выбрать тему заставки. Допустимые значения параметра:
+
+      - Oxygen
+      - Breeze
+      - Breeze_dark
+      - BreezeTwilight
+
+      </string>
+
+      <string id="kde-desktoptheme">Оформление рабочего стола</string>
+      <string id="kde-desktoptheme_help">Данная политика позволяет выбрать оформление рабочего стола.  Допустимые значения параметра:
+
+      - Default
+      - Breeze_dark
+      - Breeze-light
+      - Oxygen
+      - Air
+
+      </string>
+
+      <string id="kde-browserapp">Браузрер по умолчанию</string>
+      <string id="kde-browserapp_help">Данная политика позволяет выбрать браузер по умолчанию. Примечание: применение настроек доступно только в случае, если выбранный браузер установлен в систему.
+
+      Допустимые значения параметра:
+
+      - Yandex-Browser
+      - Firefox
+      - Chromium-gost
+
+      </string>
+
+      <string id="kde-win-act-Click_to_focus">Фокус по щелчку</string>
+      <string id="kde-win-act-Focus_follows_mouse">Фокус следует за мышью</string>
+      <string id="kde-win-act-Focus_under_mouse">Фокус под мышью</string>
+      <string id="kde-win-act-Focus_under_mouse-Mp">Фокус строго под мышью</string>
+
+      <string id="kde-win-rend-ExtremelyLow">Принудительно низкая задержка (может привести к артефактам)</string>
+      <string id="kde-win-rend-Low">Предпочитать низкую задержку</string>
+      <string id="kde-win-rend-Medium">Баланс скорости и плавности</string>
+      <string id="kde-win-rend-High">Предпочитать более плавную анимацию</string>
+      <string id="kde-win-rend-MostHigh">Принудительно наиболее плавная анимация</string>
+
+      <string id="kde-desktoprows-one">1</string>
+      <string id="kde-desktoprows-two">2</string>
+
+      <string id="kde-desktopnumber-one">1</string>
+      <string id="kde-desktopnumber-two">2</string>
+      <string id="kde-desktopnumber-three">3</string>
+      <string id="kde-desktopnumber-four">4</string>
+
+      <string id="kde-icons-breeze">Breeze</string>
+      <string id="kde-icons-breeze-dark">Breeze-dark</string>
+      <string id="kde-icons-Adwaita">Adwaita</string>
+      <string id="kde-icons-oxygen">Oxygen</string>
+      <string id="kde-icons-gnome">Gnome</string>
+
+      <string id="kde-look-and-feel-breeze">Breeze</string>
+      <string id="kde-look-and-feel-breeze-dark">Breeze-dark</string>
+      <string id="kde-look-and-feel-oxygen">Oxygen</string>
+      <string id="kde-look-and-feel-breezetwilight">BreezeTwilight</string>
+
+      <string id="kde-background-breeze">Breeze</string>
+      <string id="kde-background-breeze-dark">Breeze-dark</string>
+      <string id="kde-background-oxygen">Oxygen</string>
+      <string id="kde-background-breezetwilight">BreezeTwilight</string>
+
+      <string id="kde-autolock-enabled">Включено</string>
+      <string id="kde-autolock-disabled">Отключено</string>
+
+      <string id="kde-lockonresume-enabled">Включено</string>
+      <string id="kde-lockonresume-disabled">Отключено</string>
+
+      <string id="kde-desktoptheme-default">Default</string>
+      <string id="kde-desktoptheme-breeze-light">Breeze-light</string>
+      <string id="kde-desktoptheme-breeze-dark">Breeze-dark</string>
+      <string id="kde-desktoptheme-oxygen">Oxygen</string>
+      <string id="kde-desktoptheme-air">Air</string>
+
+      <string id="kde-keyboardset-ru">Русская расскладка</string>
+      <string id="kde-keyboardset-us">Английская расскладка</string>
+      <string id="kde-keyboardset-de">Немецкая расскладка</string>
+      <string id="kde-keyboardset-ru-us">Русская и английская расскладки</string>
+      <string id="kde-keyboardset-ru-de">Русская и немецкая расскладки</string>
+      <string id="kde-keyboardset-us-de">Английская и немецкая расскладки</string>
+
+      <string id="kde-browserapp-yandex">Yandex-Browser</string>
+      <string id="kde-browserapp-firefox">Firefox</string>
+      <string id="kde-browserapp-chromium">Chromium-gost</string>
+
+      </stringTable>
+    <presentationTable>
+      <presentation id="kde-win-activate-user-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="kde-win-activate_setter">Возможные режимы:</dropdownList>
+        <checkBox refId="NextFocusPrefersMouse">Приоритет мыши</checkBox>
+        <checkBox refId="kde-win-activate_blocker">Блокировать</checkBox>
+        <text>Блокировка изменений данной настройки пользователем. После перезагрузки устройства внесённые пользователем изменения настройки не сохраняются.</text>
+      </presentation>
+      <presentation id="kde-language-user-pr">
+        <textBox refId="kde-format-setter">
+          <label>Стандарт:</label>
+        </textBox>
+        <textBox refId="kde-language-setter">
+          <label>Язык:</label>
+        </textBox>
+        <checkBox refId="kde-language_blocker">Блокировать</checkBox>
+        <text>Блокировка изменений данной настройки пользователем. После перезагрузки устройства внесённые пользователем изменения настройки не сохраняются.</text>
+      </presentation>
+      <presentation id="kde-win-rendering-user-pr">
+        <dropdownList noSort="true" defaultItem="4" refId="kde-win-rendering_setter">Возможные режимы:</dropdownList>
+        <checkBox refId="kde-win-rendering_blocker">Блокировать</checkBox>
+        <text>Блокировка изменений данной настройки пользователем. После перезагрузки устройства внесённые пользователем изменения настройки не сохраняются.</text>
+      </presentation>
+      <presentation id="kde-desktops-user-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="kde-desktoprows_setter">Количество строк отображения виртуальных столов на панели:</dropdownList>
+        <checkBox refId="kde-desktoprows_blocker">Блокировать</checkBox>
+        <dropdownList noSort="true" defaultItem="0" refId="kde-desktopnumber_setter">Количество виртуальных столов на панели:</dropdownList>
+        <checkBox refId="kde-desktopnumber_blocker">Блокировать</checkBox>
+        <text>Блокировки изменений данных настроек пользователем. После перезагрузки устройства внесённые пользователем изменения настройки не сохраняются.</text>
+      </presentation>
+      <presentation id="kde-automount-user-pr">
+        <checkBox refId="kde-automount_setter">Автоматически монтировать устройства</checkBox>
+        <checkBox refId="kde-automountonlogin_setter">При входе в систему</checkBox>
+        <checkBox refId="kde-automountonplugin_setter">При подключении</checkBox>
+        <checkBox refId="kde-automountuknowndevices_setter">Которые никогда ранее не были примонтированы вручную</checkBox>
+        <checkBox refId="kde-automount_blocker">Блокировать</checkBox>
+        <text>Блокировка изменений данной настройки пользователем. После перезагрузки устройства внесённые пользователем изменения настройки не сохраняются.</text>
+      </presentation>
+      <presentation id="kde-filesearch-user-pr">
+        <checkBox refId="kde-basicsettings_setter">Включить только службу поиска файлов</checkBox>
+        <checkBox refId="kde-onlybasic_setter">Включить индексацию содержимого файлов</checkBox>
+        <checkBox refId="kde-indexhidden_setter">Включить индексацию скрытых файлов и папок</checkBox>
+        <checkBox refId="kde-filesearch_blocker">Блокировать</checkBox>
+        <text>Блокировка изменений данной настройки пользователем. После перезагрузки устройства внесённые пользователем изменения настройки не сохраняются.</text>
+      </presentation>
+      <presentation id="kde-wallpaper-user-pr">
+        <textBox refId="kde-wallpaper-setter">
+          <label>Файл:</label>
+        </textBox>
+      </presentation>
+      <presentation id="kde-colorscheme-user-pr">
+        <textBox refId="kde-colorscheme-setter">
+          <label>Цветовая схема:</label>
+        </textBox>
+      </presentation>
+      <presentation id="kde-cursortheme-user-pr">
+        <textBox refId="kde-cursortheme-setter">
+          <label>Тема курсора мыши:</label>
+        </textBox>
+      </presentation>
+      <presentation id="kde-graphic-effects-user-pr">
+        <checkBox refId="kde-graphic-effects_setter">Включить графические эффекты</checkBox>
+        <checkBox refId="kde-graphic-effects_blocker">Блокировать</checkBox>
+        <text>Блокировка изменений данной настройки пользователем. После перезагрузки устройства внесённые пользователем изменения настройки не сохраняются.</text>
+      </presentation>
+      <presentation id="kde-singleclick-user-pr">
+        <checkBox refId="kde-singleclick_setter">Открытие папки или файла одним щелчком</checkBox>
+        <checkBox refId="kde-singleclick_blocker">Блокировать</checkBox>
+        <text>Блокировка изменений данной настройки пользователем. После перезагрузки устройства внесённые пользователем изменения настройки не сохраняются.</text>
+      </presentation>
+      <presentation id="kde-showdelete-user-pr">
+        <checkBox refId="kde-showdelete_setter">Убрать кнопку "удалить" в контекстном меню Dolphin</checkBox>
+        <checkBox refId="kde-showdelete_blocker">Блокировать</checkBox>
+        <text>Блокировка изменений данной настройки пользователем. После перезагрузки устройства внесённые пользователем изменения настройки не сохраняются.</text>
+      </presentation>
+      <presentation id="kde-iconstheme-user-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="kde-iconstheme-setter">Тема значков:</dropdownList>
+        <checkBox refId="kde-iconstheme_blocker">Блокировать</checkBox>
+        <text>Блокировка изменений данной настройки пользователем. После перезагрузки устройства внесённые пользователем изменения настройки не сохраняются.</text>
+      </presentation>
+      <presentation id="kde-look-and-feel-user-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="kde-look-and-feel-setter">Оформление рабочей среды:</dropdownList>
+        <checkBox refId="kde-look-and-feel_blocker">Блокировать</checkBox>
+        <text>Блокировка изменений данной настройки пользователем. После перезагрузки устройства внесённые пользователем изменения настройки не сохраняются.</text>
+      </presentation>
+      <presentation id="kde-background-user-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="kde-background-setter">Тема заставки:</dropdownList>
+        <checkBox refId="kde-background_blocker">Блокировать</checkBox>
+        <text>Блокировка изменений данной настройки пользователем. После перезагрузки устройства внесённые пользователем изменения настройки не сохраняются.</text>
+      </presentation>
+      <presentation id="kde-desktoptheme-user-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="kde-desktoptheme-setter">Тема оформления рабочего стола:</dropdownList>
+        <checkBox refId="kde-desktoptheme_blocker">Блокировать</checkBox>
+        <text>Блокировка изменений данной настройки пользователем. После перезагрузки устройства внесённые пользователем изменения настройки не сохраняются.</text>
+      </presentation>
+      <presentation id="kde-browserapp-user-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="kde-browserapp-setter">Браузер по умолчанию:</dropdownList>
+        <checkBox refId="kde-browserapp_blocker">Блокировать</checkBox>
+        <text>Блокировка изменений данной настройки пользователем. После перезагрузки устройства внесённые пользователем изменения настройки не сохраняются.</text>
+      </presentation>
+     </presentationTable>
+  </resources>
+</policyDefinitionResources>

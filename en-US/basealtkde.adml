@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  (c) 2023 BaseALT, Ltd.  -->
+<policyDefinitionResources xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.microsoft.com/GroupPolicy/2006/07/PolicyDefinitions" revision="1.0" schemaVersion="1.0">
+  <displayName>Definitions of the KDE Plasma policies of the Alt operating system</displayName>
+  <description>This file contains policy definitions for managing the KDE Plasma environment in the Alt operating system.</description>
+
+  <resources>
+    <stringTable>
+      <string id="ALT_Settings_KDE">Settings of the KDE Plasma graphics system</string>
+      <string id="ALT_Settings_KDE_Help">Settings of the KDE Plasma graphics system.</string>
+
+      <string id="kde-win-activate">Window activation mode</string>
+      <string id="kde-win-activate_help">The mode of switching focus to a window determines how windows are activated. Acceptable values:
+
+"Click to focus" — the window becomes active after clicking on the title or inside the window.
+
+"Click to focus" (mouse precedence) — this mode is similar to "Click Focus". If the system itself has to select the active window (for example, when the active window was closed), preference is given to the window under the mouse pointer.
+
+"Focus follows mouse" — the window is activated when the mouse pointer is moved to this window. Windows that appear under the mouse pointer randomly will not receive focus, since preventing the focus change works as usual. This option is similar to "Click Focus", but no click is required."
+
+"Focus follows mouse" (mouse precedence) — this mode is similar to "Focus follows mouse". If the system itself has to select the active window (for example, when closing the active window), preference will be given to the window located under the mouse pointer. This mode should be selected to change the focus by hovering the mouse pointer.
+
+"Focus under the mouse" — the focus is always in the window under the mouse. Note: Preventing focus change and switching via Alt+Tab contradict this behavior and will not work.
+
+"Focus strictly under mouse" — the focus is always in the window under the mouse pointer (and if it is empty under it, it is lost). Note: Preventing focus change and switching via Alt+Tab contradict this behavior and will not work.
+
+      </string>
+
+      <string id="kde-win-rendering">Draw delay</string>
+      <string id="kde-win-rendering_help">The policy allows you to select the level of delay and smoothness of the animation. Valid values:
+
+"Forced low latency (may lead to artifacts)"
+
+"Prefer low latency"
+
+"The balance of speed and smoothness"
+
+"Prefer smoother animation"
+
+"Forced smoothest animation"
+
+      </string>
+
+      <string id="kde-language">Regional and Language Options</string>
+      <string id="kde-language_help">These options not only change the settings for the system language itself, but also set the currency settings, time standard, numeric values, name spelling style, dialing code, and country telephone number standard. Parameters fit into the fields of standard and language, respectively. (Standard example: ru_RU.UTF-8). (Language example: ru). Valid values:
+
+"Russian language" Standard - ru_RU.UTF-8, language - ru;
+
+"French language" Standard - fr_FR.UTF-8, language - fr;
+
+"German" Standard - de_DE.UTF-8, language - de;
+
+"English (American)" Standard - en_US.UTF-8, language - en_US;
+
+"English language (British)" Standard - en_GB.UTF-8, language - en_GB.
+
+      </string>
+
+      <string id="kde-automount">Setting Up Connected Devices</string>
+      <string id="kde-automount_help">This policy allows you to configure automatic mounting of connected devices. Automatically mount devices:
+
+"At login"
+
+"When connected"
+
+"Automatically mount media that has never been manually mounted before"
+
+      </string>
+
+      <string id="kde-filesearch">File search service</string>
+      <string id="kde-filesearch_help">This policy allows you to configure the file search service, index the contents of files, index hidden files and folders. Possible setting options:
+
+"Enable file search service only"
+
+"Enable search service and file content indexing"
+
+"Enable search service and indexing of hidden files and folders"
+
+"Enable search service, indexing hidden folders, files and their contents"
+
+      </string>
+
+      <string id="kde-desktops">Virtual desktops</string>
+      <string id="kde-desktops_help">This policy allows you to configure the number of virtual desktops. The number of tables can be from one to four inclusive.</string>
+
+      <string id="kde-wallpaper">Desktop background picture</string>
+      <string id="kde-wallpaper_help">This policy allows you to set images as your desktop background by specifying a file (for example, /usr/share/wallpapers/table.png, or smb://dc0/reGr/test.png (file from the shared directory)), containing the image.</string>
+
+      <string id="kde-graphic-effects">Graphic effects</string>
+      <string id="kde-graphic-effects_help">The policy configures enabling or disabling graphical effects on login.</string>
+
+      <string id="kde-showdelete">Deleting directories and files in the context menu</string>
+      <string id="kde-showdelete_help">The policy allows you to add or remove the "delete" button in the Dolphin context menu.</string>
+
+      <string id="kde-singleclick">Opening a file or directory with one click</string>
+      <string id="kde-singleclick_help">This policy configures opening a folder or file with one click.
+
+If the policy is enabled, clicking will open the file or folder.
+
+If the policy is disabled, clicking on the file or folder will highlight it.
+
+      </string>
+
+      <string id="kde-colorscheme">Colors</string>
+      <string id="kde-colorscheme_help">This policy allows you to manage color schemes by specifying the name of the scheme (for example: BreezeClassic).
+
+       Valid color scheme options:
+
+      - OxygenCold
+      - BreezeClassic
+      - BreezeLight
+      - BreezeDark
+      - KritaBlender
+      - KritaBright
+      - KritaDark
+      - KritaDarkOrange
+      - KritaDarker
+      - KritaNeutral
+      - Oxygen
+
+      </string>
+
+      <string id="kde-cursortheme">Cursor theme</string>
+      <string id="kde-cursortheme_help">This policy allows you to select a mouse cursor theme by specifying its name (for example: Oxygen_Black). Cursor themes available in /usr/share/icons are used. Valid parameter value:
+
+      - Adwaita
+      - Breeze_Wnow
+      - KDE_Classic
+      - Oxygen_Black
+      - Oxygen_Blue
+      - Oxygen_White
+      - Oxygen_Yellow
+      - Oxygen_Zion
+      - breeze
+      - breeze_dark
+      - breeze_cursors
+
+      </string>
+
+      <string id="kde-iconstheme">Icons theme</string>
+      <string id="kde-iconstheme_help">This policy allows you to select an icon theme. Valid parameter values:
+
+      - Adwaita
+      - Oxygen
+      - Breeze
+      - Breeze_dark
+      - Gnome
+
+      </string>
+
+      <string id="kde-look-and-feel">Design of the working environment</string>
+      <string id="kde-look-and-feel_help">This policy allows you to choose the appearance of the working environment. Valid parameter values:
+
+      - Oxygen
+      - Breeze
+      - Breeze_dark
+      - BreezeTwilight
+
+      </string>
+
+      <string id="kde-background">Backgroung theme</string>
+      <string id="kde-background_help">This policy allows you to select a screensaver theme. Valid parameter values:
+
+      - Oxygen
+      - Breeze
+      - Breeze_dark
+      - BreezeTwilight
+
+      </string>
+
+      <string id="kde-desktoptheme">Desktop decoration</string>
+      <string id="kde-desktoptheme_help">This policy allows you to choose the appearance of the desktop. Valid parameter values:
+
+      - Default
+      - Breeze_dark
+      - Breeze-light
+      - Oxygen
+      - Air
+
+      </string>
+
+      <string id="kde-browserapp">Default browser</string>
+      <string id="kde-browserapp_help">This policy allows you to select the default browser. Note: the application of settings is available only if the selected browser is installed in the system.
+
+       Valid parameter values:
+
+       - Yandex Browser
+       - Firefox
+       -Chromium-gost
+
+      </string>
+
+      <string id="kde-win-act-Click_to_focus">Click to focus</string>
+      <string id="kde-win-act-Focus_follows_mouse">Focus follows mouse</string>
+      <string id="kde-win-act-Focus_under_mouse">Focus under mouse</string>
+      <string id="kde-win-act-Focus_under_mouse-Mp">Focus strictly under mouse</string>
+
+      <string id="kde-win-rend-ExtremelyLow">Forced low latency (may lead to artifacts)</string>
+      <string id="kde-win-rend-Low">Prefer low latency</string>
+      <string id="kde-win-rend-Medium">Balance of speed and smoothness</string>
+      <string id="kde-win-rend-High">Prefer smoother animation</string>
+      <string id="kde-win-rend-MostHigh">Force the smoothest animation</string>
+
+      <string id="kde-desktoprows-one">1</string>
+      <string id="kde-desktoprows-two">2</string>
+
+      <string id="kde-desktopnumber-one">1</string>
+      <string id="kde-desktopnumber-two">2</string>
+      <string id="kde-desktopnumber-three">3</string>
+      <string id="kde-desktopnumber-four">4</string>
+
+      <string id="kde-icons-breeze">Breeze</string>
+      <string id="kde-icons-breeze-dark">Breeze-dark</string>
+      <string id="kde-icons-Adwaita">Adwaita</string>
+      <string id="kde-icons-oxygen">Oxygen</string>
+      <string id="kde-icons-gnome">Gnome</string>
+
+      <string id="kde-look-and-feel-breeze">Breeze</string>
+      <string id="kde-look-and-feel-breeze-dark">Breeze-dark</string>
+      <string id="kde-look-and-feel-oxygen">Oxygen</string>
+      <string id="kde-look-and-feel-breezetwilight">BreezeTwilight</string>
+
+      <string id="kde-background-breeze">Breeze</string>
+      <string id="kde-background-breeze-dark">Breeze-dark</string>
+      <string id="kde-background-oxygen">Oxygen</string>
+      <string id="kde-background-breezetwilight">BreezeTwilight</string>
+
+      <string id="kde-autolock-enabled">Enabled</string>
+      <string id="kde-autolock-disabled">Disabled</string>
+
+      <string id="kde-lockonresume-enabled">Enabled</string>
+      <string id="kde-lockonresume-disabled">Disabled</string>
+
+      <string id="kde-desktoptheme-default">Default</string>
+      <string id="kde-desktoptheme-breeze-light">Breeze-light</string>
+      <string id="kde-desktoptheme-breeze-dark">Breeze-dark</string>
+      <string id="kde-desktoptheme-oxygen">Oxygen</string>
+      <string id="kde-desktoptheme-air">Air</string>
+
+      <string id="kde-keyboardset-ru">Russian layout</string>
+      <string id="kde-keyboardset-us">English layout</string>
+      <string id="kde-keyboardset-de">German layout</string>
+      <string id="kde-keyboardset-ru-us">Russian and English layouts</string>
+      <string id="kde-keyboardset-ru-de">Russian and German layouts</string>
+      <string id="kde-keyboardset-us-de">English and German layouts</string>
+
+      <string id="kde-browserapp-yandex">Yandex-Browser</string>
+      <string id="kde-browserapp-firefox">Firefox</string>
+      <string id="kde-browserapp-chromium">Chromium-gost</string>
+
+      </stringTable>
+    <presentationTable>
+      <presentation id="kde-win-activate-user-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="kde-win-activate_setter">Possible modes:</dropdownList>
+        <checkBox refId="NextFocusPrefersMouse">Mouse precedence</checkBox>
+        <checkBox refId="kde-win-activate_blocker">Block</checkBox>
+        <text>Blocking changes to this setting by the user. After restarting the device, the user's changes to the settings are not saved.</text>
+      </presentation>
+      <presentation id="kde-language-user-pr">
+        <textBox refId="kde-format-setter">
+          <label>Format:</label>
+        </textBox>
+        <textBox refId="kde-language-setter">
+          <label>Language:</label>
+        </textBox>
+        <checkBox refId="kde-language_blocker">Block</checkBox>
+        <text>Blocking changes to this setting by the user. After restarting the device, the user's changes to the settings are not saved.</text>
+      </presentation>
+      <presentation id="kde-win-rendering-user-pr">
+        <dropdownList noSort="true" defaultItem="4" refId="kde-win-rendering_setter">Possible language options:</dropdownList>
+        <checkBox refId="kde-win-rendering_blocker">Block</checkBox>
+        <text>Blocking changes to this setting by the user. After restarting the device, the user's changes to the settings are not saved.</text>
+      </presentation>
+      <presentation id="kde-desktops-user-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="kde-desktoprows_setter">Number of lines for displaying virtual tables on the panel:</dropdownList>
+        <checkBox refId="kde-desktoprows_blocker">Block</checkBox>
+        <dropdownList noSort="true" defaultItem="0" refId="kde-desktopnumber_setter">Number of virtual tables on the panel:</dropdownList>
+        <checkBox refId="kde-desktopnumber_blocker">Block</checkBox>
+        <text>Blocking changes to these settings by the user. After rebooting the device, the settings changes made by the user are not saved.</text>
+      </presentation>
+      <presentation id="kde-automount-user-pr">
+        <checkBox refId="kde-automount_setter">Mount devices automatically</checkBox>
+        <checkBox refId="kde-automountonlogin_setter">At login</checkBox>
+        <checkBox refId="kde-automountonplugin_setter">On Plugin</checkBox>
+        <checkBox refId="kde-automountuknowndevices_setter">Which have never been manually mounted before</checkBox>
+        <checkBox refId="kde-automount_blocker">Block</checkBox>
+        <text>Blocking changes to these settings by the user. After rebooting the device, the settings changes made by the user are not saved.</text>
+      </presentation>
+      <presentation id="kde-filesearch-user-pr">
+        <checkBox refId="kde-basicsettings_setter">Enable file search service only</checkBox>
+        <checkBox refId="kde-onlybasic_setter">Enable file content indexing</checkBox>
+        <checkBox refId="kde-indexhidden_setter">Enable indexing of hidden files and folders</checkBox>
+        <checkBox refId="kde-filesearch_blocker">Block</checkBox>
+        <text>Blocking changes to these settings by the user. After rebooting the device, the settings changes made by the user are not saved.</text>
+       </presentation>
+      <presentation id="kde-wallpaper-user-pr">
+        <textBox refId="kde-wallpaper-setter">
+          <label>File:</label>
+        </textBox>
+      </presentation>
+      <presentation id="kde-colorscheme-user-pr">
+        <textBox refId="kde-colorscheme-setter">
+          <label>Color scheme:</label>
+        </textBox>
+      </presentation>
+      <presentation id="kde-cursortheme-user-pr">
+        <textBox refId="kde-cursortheme-setter">
+          <label>Cursor theme:</label>
+        </textBox>
+      </presentation>
+      <presentation id="kde-graphic-effects-user-pr">
+        <checkBox refId="kde-graphic-effects_setter">Enable graphic effects</checkBox>
+        <checkBox refId="kde-graphic-effects_blocker">Block</checkBox>
+        <text>Blocking changes to this setting by the user. After restarting the device, the user's changes to the settings are not saved.</text>
+      </presentation>
+      <presentation id="kde-singleclick-user-pr">
+        <checkBox refId="kde-singleclick_setter">Opening a folder or file with one click</checkBox>
+        <checkBox refId="kde-singleclick_blocker">Block</checkBox>
+        <text>Blocking changes to this setting by the user. After restarting the device, the user's changes to the settings are not saved.</text>
+      </presentation>
+      <presentation id="kde-showdelete-user-pr">
+        <checkBox refId="kde-showdelete_setter">Remove "delete" button from Dolphin context menu</checkBox>
+        <checkBox refId="kde-showdelete_blocker">Block</checkBox>
+        <text>Blocking changes to this setting by the user. After restarting the device, the user's changes to the settings are not saved.</text>
+      </presentation>
+      <presentation id="kde-iconstheme-user-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="kde-iconstheme-setter">Icons theme:</dropdownList>
+        <checkBox refId="kde-iconstheme_blocker">Block</checkBox>
+        <text>Blocking changes to this setting by the user. After restarting the device, the user's changes to the settings are not saved.</text>
+      </presentation>
+      <presentation id="kde-look-and-feel-user-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="kde-look-and-feel-setter">Design of the working environment:</dropdownList>
+        <checkBox refId="kde-look-and-feel_blocker">Block</checkBox>
+        <text>Blocking changes to this setting by the user. After restarting the device, the user's changes to the settings are not saved.</text>
+      </presentation>
+      <presentation id="kde-background-user-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="kde-background-setter">Screensaver theme:</dropdownList>
+        <checkBox refId="kde-background_blocker">Block</checkBox>
+        <text>Blocking changes to this setting by the user. After restarting the device, the user's changes to the settings are not saved.</text>
+      </presentation>
+      <presentation id="kde-desktoptheme-user-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="kde-desktoptheme-setter">Desktop theme:</dropdownList>
+        <checkBox refId="kde-desktoptheme_blocker">Block</checkBox>
+        <text>Blocking changes to this setting by the user. After restarting the device, the user's changes to the settings are not saved.</text>
+      </presentation>
+      <presentation id="kde-browserapp-user-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="kde-browserapp-setter">Default browser:</dropdownList>
+        <checkBox refId="kde-browserapp_blocker">Block</checkBox>
+        <text>Blocking changes to this setting by the user. After restarting the device, the user's changes to the settings are not saved.</text>
+      </presentation>
+     </presentationTable>
+  </resources>
+</policyDefinitionResources>
