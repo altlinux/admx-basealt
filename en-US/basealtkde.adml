@@ -190,6 +190,17 @@ If the policy is disabled, clicking on the file or folder will highlight it.
 
       </string>
 
+      <string id="kde-brightnesscontrol">Screen brightness</string>
+      <string id="kde-brightnesscontrol_help">This policy allows you to adjust the screen brightness depending on the power supply mode.
+
+Screen brightness in mains power mode: range of values from 0 to 100;
+
+Screen brightness in battery mode: range from 0 to 100;
+
+Screen brightness at low battery level: value range from 0 to 100.
+
+      </string>
+
       <string id="kde-win-act-Click_to_focus">Click to focus</string>
       <string id="kde-win-act-Focus_follows_mouse">Focus follows mouse</string>
       <string id="kde-win-act-Focus_under_mouse">Focus under mouse</string>
@@ -346,6 +357,21 @@ If the policy is disabled, clicking on the file or folder will highlight it.
       <presentation id="kde-browserapp-user-pr">
         <dropdownList noSort="true" defaultItem="0" refId="kde-browserapp-setter">Default browser:</dropdownList>
         <checkBox refId="kde-browserapp_blocker">Block</checkBox>
+        <text>Blocking changes to this setting by the user. After restarting the device, the user's changes to the settings are not saved.</text>
+      </presentation>
+      <presentation id="kde-brightnesscontrol-user-pr">
+        <textBox refId="kde-acbrightnesscontrol-setter">
+          <label>Screen brightness when powered from mains:</label>
+        </textBox>
+        <checkBox refId="kde-acbrightnesscontrol_blocker">Block</checkBox>
+        <textBox refId="kde-batbrightnesscontrol-setter">
+          <label>Screen brightness on battery power:</label>
+        </textBox>
+        <checkBox refId="kde-batbrightnesscontrol_blocker">Block</checkBox>
+        <textBox refId="kde-lowbrightnesscontrol-setter">
+          <label>Screen brightness when battery is low:</label>
+        </textBox>
+        <checkBox refId="kde-lowbrightnesscontrol_blocker">Block</checkBox>
         <text>Blocking changes to this setting by the user. After restarting the device, the user's changes to the settings are not saved.</text>
       </presentation>
      </presentationTable>

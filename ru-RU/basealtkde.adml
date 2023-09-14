@@ -179,7 +179,7 @@
 
       </string>
 
-      <string id="kde-browserapp">Браузрер по умолчанию</string>
+      <string id="kde-browserapp">Браузер по умолчанию</string>
       <string id="kde-browserapp_help">Данная политика позволяет выбрать браузер по умолчанию. Примечание: применение настроек доступно только в случае, если выбранный браузер установлен в систему.
 
       Допустимые значения параметра:
@@ -187,6 +187,17 @@
       - Yandex-Browser
       - Firefox
       - Chromium-gost
+
+      </string>
+
+      <string id="kde-brightnesscontrol">Яркость экрана</string>
+      <string id="kde-brightnesscontrol_help">Данная политика позволяет настраивать яркость экрана в зависимости от режима электропитания.
+
+Яркость экрана при режиме питания от сети: диапазон значений от 0 до 100;
+
+Яркость экрана при режиме питания от батареи: диапазон значений от 0 до 100;
+
+Яркость экрана при низком уровне заряда: диапазон значений от 0 до 100.
 
       </string>
 
@@ -346,6 +357,21 @@
       <presentation id="kde-browserapp-user-pr">
         <dropdownList noSort="true" defaultItem="0" refId="kde-browserapp-setter">Браузер по умолчанию:</dropdownList>
         <checkBox refId="kde-browserapp_blocker">Блокировать</checkBox>
+        <text>Блокировка изменений данной настройки пользователем. После перезагрузки устройства внесённые пользователем изменения настройки не сохраняются.</text>
+      </presentation>
+      <presentation id="kde-brightnesscontrol-user-pr">
+        <textBox refId="kde-acbrightnesscontrol-setter">
+          <label>Яркость экрана при питании от сети:</label>
+        </textBox>
+        <checkBox refId="kde-acbrightnesscontrol_blocker">Блокировать</checkBox>
+        <textBox refId="kde-batbrightnesscontrol-setter">
+          <label>Яркость экрана при питании от батареи:</label>
+        </textBox>
+        <checkBox refId="kde-batbrightnesscontrol_blocker">Блокировать</checkBox>
+        <textBox refId="kde-lowbrightnesscontrol-setter">
+          <label>Яркость экрана при низком заряде батареи:</label>
+        </textBox>
+        <checkBox refId="kde-lowbrightnesscontrol_blocker">Блокировать</checkBox>
         <text>Блокировка изменений данной настройки пользователем. После перезагрузки устройства внесённые пользователем изменения настройки не сохраняются.</text>
       </presentation>
      </presentationTable>

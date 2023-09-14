@@ -572,5 +572,41 @@
           </boolean>
     </elements>
     </policy>
+  <policy name="kde-brightnesscontrol" class="User" displayName="$(string.kde-brightnesscontrol)"
+    explainText="$(string.kde-brightnesscontrol_help)"
+    presentation="$(presentation.kde-brightnesscontrol-user-pr)"
+    key="Software\BaseALT\Policies\KDE">
+    <parentCategory ref="system:ALT_PowerManagement_KDE" />
+    <supportedOn ref="system:SUPPORTED_AltP10" />
+      <elements>
+        <text id="kde-acbrightnesscontrol-setter" key="Software\BaseALT\Policies\KDE\powermanagementprofilesrc\AC)(BrightnessControl" valueName="value"/>
+        <boolean id="kde-acbrightnesscontrol-blocker" key="Software\BaseALT\Policies\KDELocks" valueName="powermanagementprofilesrc.AC][BrightnessControl.value" >
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+          </boolean>
+        <text id="kde-batbrightnesscontrol-setter" key="Software\BaseALT\Policies\KDE\powermanagementprofilesrc\Battery)(BrightnessControl" valueName="value"/>
+        <boolean id="kde-batbrightnesscontrol-blocker" key="Software\BaseALT\Policies\KDELocks" valueName="powermanagementprofilesrc.Battery][BrightnessControl.value" >
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+          </boolean>
+        <text id="kde-lowbrightnesscontrol-setter" key="Software\BaseALT\Policies\KDE\powermanagementprofilesrc\LowBattery)(BrightnessControl" valueName="value"/>
+        <boolean id="kde-lowbrightnesscontrol-blocker" key="Software\BaseALT\Policies\KDELocks" valueName="powermanagementprofilesrc.LowBattery][BrightnessControl.value" >
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+          </boolean>
+      </elements>
+    </policy>
   </policies>
 </policyDefinitions>
