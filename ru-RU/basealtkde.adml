@@ -212,6 +212,19 @@
 
       </string>
 
+      <string id="kde-dimdisplay">Потухание экрана</string>
+      <string id="kde-dimdisplay_help">Данная политика позволяет настраивать время до угасания экрана в зависимости от режима электропитания. Для указания используется точное время в минутах, заданное в миллисекундах. Если время в миллисекундах указано неверно и не соответствует целому значению в минутах, то время автоматически округляется к ближайшему целому значению в минутах.
+
+Допустимы значения параметра в миллисекундах, например:
+
+60000 миллисекунд - 1 минута;
+
+120000 миллисекунд - 2 минуты;
+
+600000 миллисекунд - 10 минут.
+
+      </string>
+
       <string id="kde-win-act-Click_to_focus">Фокус по щелчку</string>
       <string id="kde-win-act-Focus_follows_mouse">Фокус следует за мышью</string>
       <string id="kde-win-act-Focus_under_mouse">Фокус под мышью</string>
@@ -398,6 +411,21 @@
           <label>Яркость клавиатуры при низком заряде батареи:</label>
         </textBox>
         <checkBox refId="kde-lowkeyboardbrightnesscontrol_blocker">Блокировать</checkBox>
+        <text>Блокировка изменений данной настройки пользователем. После перезагрузки устройства внесённые пользователем изменения настройки не сохраняются.</text>
+      </presentation>
+      <presentation id="kde-dimdisplay-user-pr">
+        <textBox refId="kde-acdimdisplay_setter">
+          <label>Время до угасания экрана при питании от сети:</label>
+        </textBox>
+        <checkBox refId="kde-acdimdisplay_blocker">Блокировать</checkBox>
+        <textBox refId="kde-batdimdisplay_setter">
+          <label>Время до угасания экрана при питании от батареи:</label>
+        </textBox>
+        <checkBox refId="kde-batdimdisplay_blocker">Блокировать</checkBox>
+        <textBox refId="kde-lowdimdisplay_setter">
+          <label>Время до угасания экрана при низком заряде батареи:</label>
+        </textBox>
+        <checkBox refId="kde-lowdimdisplay_blocker">Блокировать</checkBox>
         <text>Блокировка изменений данной настройки пользователем. После перезагрузки устройства внесённые пользователем изменения настройки не сохраняются.</text>
       </presentation>
      </presentationTable>
