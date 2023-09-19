@@ -92,6 +92,9 @@
       <string id="kde-showdelete">Удаление каталогов и файлов в контекстном меню</string>
       <string id="kde-showdelete_help">Политика позволяет добавить или убрать кнопку "удалить" в контекстном меню Dolphin</string>
 
+      <string id="kde-filterbar">Включение панели фильтрации в меню Dolphin</string>
+      <string id="kde-filterbar_help">Политика позволяет включать или отключать панель фильтрации в меню Dolphin</string>
+
       <string id="kde-singleclick">Открытие файла или каталога одним щелчком</string>
       <string id="kde-singleclick_help">Данная политика настраивает открытие папки или файла одним щелчком.
 
@@ -355,6 +358,9 @@
         <textBox refId="kde-cursortheme-setter">
           <label>Тема курсора мыши:</label>
         </textBox>
+      </presentation>
+      <presentation id="kde-filterbar-user-pr">
+        <checkBox refId="kde-filterbar-setter">Включить панель фильтрации в меню Dolphin</checkBox>
       </presentation>
       <presentation id="kde-graphic-effects-user-pr">
         <checkBox refId="kde-graphic-effects_setter">Включить графические эффекты</checkBox>

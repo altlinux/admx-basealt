@@ -497,6 +497,23 @@
         <text id="kde-cursortheme-setter" valueName="cursortheme"/>
       </elements>
     </policy>
+    <policy name="kde-filterbar" class="User" displayName="$(string.kde-filterbar)"
+    explainText="$(string.kde-filterbar_help)"
+    presentation="$(presentation.kde-filterbar-user-pr)"
+    key="Software\BaseALT\Policies\KDE\dolphinrc\General">
+    <parentCategory ref="system:ALT_Appearance_KDE" />
+    <supportedOn ref="system:SUPPORTED_AltP10" />
+      <elements>
+        <boolean id="kde-filterbar-setter" valueName="FilterBar">
+            <trueValue>
+              <decimal value="1" />
+            </trueValue>
+            <falseValue>
+              <decimal value="0" />
+            </falseValue>
+            </boolean>
+      </elements>
+    </policy>
   <policy name="kde-graphic-effects" class="Both" displayName="$(string.kde-graphic-effects)"
       explainText="$(string.kde-graphic-effects_help)"
       presentation="$(presentation.kde-graphic-effects-user-pr)"
