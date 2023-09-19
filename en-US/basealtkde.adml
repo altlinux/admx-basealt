@@ -225,6 +225,19 @@ Valid parameter values are in milliseconds, for example:
 
       </string>
 
+      <string id="kde-dpmscontrol">Monitor energy saving</string>
+      <string id="kde-dpmscontrol_help">This policy allows you to configure the time before the monitor turns off depending on the power supply mode. The exact time in minutes specified in seconds is used to indicate. If the time in seconds is incorrect and does not correspond to an integer value in minutes, then the time is automatically rounded to the nearest integer value in minutes.
+
+Valid parameter values in seconds, for example:
+
+60 seconds - 1 minute;
+
+300 seconds - 5 minutes;
+
+600 seconds - 10 minutes.
+
+      </string>
+
       <string id="kde-win-act-Click_to_focus">Click to focus</string>
       <string id="kde-win-act-Focus_follows_mouse">Focus follows mouse</string>
       <string id="kde-win-act-Focus_under_mouse">Focus under mouse</string>
@@ -426,6 +439,21 @@ Valid parameter values are in milliseconds, for example:
           <label>Time before screen goes blank when battery is low:</label>
         </textBox>
         <checkBox refId="kde-lowdimdisplay_blocker">БлокирBlockовать</checkBox>
+        <text>Blocking changes to this setting by the user. After restarting the device, the user's changes to the settings are not saved.</text>
+      </presentation>
+      <presentation id="kde-dpmscontrol-user-pr">
+        <textBox refId="kde-acdpmscontrol_setter">
+          <label>Time before the monitor turns off when powered from the mains:</label>
+        </textBox>
+        <checkBox refId="kde-acdpmscontrol_blocker">Block</checkBox>
+        <textBox refId="kde-batdpmscontrol_setter">
+          <label>Time before monitor turns off when on battery power:</label>
+        </textBox>
+        <checkBox refId="kde-batdpmscontrol_blocker">Block</checkBox>
+        <textBox refId="kde-lowdpmscontrol_setter">
+          <label>Time before monitor turns off when battery is low:</label>
+        </textBox>
+        <checkBox refId="kde-lowdpmscontrol_blocker">Block</checkBox>
         <text>Blocking changes to this setting by the user. After restarting the device, the user's changes to the settings are not saved.</text>
       </presentation>
      </presentationTable>

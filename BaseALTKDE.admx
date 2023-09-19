@@ -680,5 +680,41 @@
           </boolean>
       </elements>
     </policy>
+    <policy name="kde-dpmscontrol" class="Both" displayName="$(string.kde-dpmscontrol)"
+    explainText="$(string.kde-dpmscontrol_help)"
+    presentation="$(presentation.kde-dpmscontrol-user-pr)"
+    key="Software\BaseALT\Policies\KDE">
+    <parentCategory ref="system:ALT_PowerManagement_KDE" />
+    <supportedOn ref="system:SUPPORTED_AltP10" />
+      <elements>
+        <text id="kde-acdpmscontrol_setter" key="Software\BaseALT\Policies\KDE\powermanagementprofilesrc\AC)(DPMSControl" valueName="idleTime"/>
+        <boolean id="kde-acdpmscontrol_blocker" key="Software\BaseALT\Policies\KDELocks" valueName="powermanagementprofilesrc.AC)(DPMSControl.idleTime" >
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+          </boolean>
+        <text id="kde-batdpmscontrol_setter" key="Software\BaseALT\Policies\KDE\powermanagementprofilesrc\Battery)(DPMSControl" valueName="idleTime"/>
+        <boolean id="kde-batdpmscontrol_blocker" key="Software\BaseALT\Policies\KDELocks" valueName="powermanagementprofilesrc.Battery)(DPMSControl.idleTime" >
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+          </boolean>
+        <text id="kde-lowdpmscontrol_setter" key="Software\BaseALT\Policies\KDE\powermanagementprofilesrc\LowBattery)(DPMSControl" valueName="idleTime"/>
+        <boolean id="kde-lowdpmscontrol_blocker" key="Software\BaseALT\Policies\KDELocks" valueName="powermanagementprofilesrc.LowBattery)(DPMSControl.idleTime" >
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+          </boolean>
+      </elements>
+    </policy>
   </policies>
 </policyDefinitions>
