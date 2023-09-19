@@ -373,7 +373,7 @@ Valid parameter values in seconds, for example:
         <text>Blocking changes to this setting by the user. After restarting the device, the user's changes to the settings are not saved.</text>
       </presentation>
       <presentation id="kde-showdelete-user-pr">
-        <checkBox refId="kde-showdelete_setter">Remove "delete" button from Dolphin context menu</checkBox>
+        <checkBox refId="kde-showdelete_setter">Add "delete" button from Dolphin context menu</checkBox>
         <checkBox refId="kde-showdelete_blocker">Block</checkBox>
         <text>Blocking changes to this setting by the user. After restarting the device, the user's changes to the settings are not saved.</text>
       </presentation>
