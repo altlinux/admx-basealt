@@ -201,6 +201,17 @@ Screen brightness at low battery level: value range from 0 to 100.
 
       </string>
 
+      <string id="kde-keyboardbrightnesscontrol">Keyboard brightness</string>
+      <string id="kde-keyboardbrightnesscontrol_help">This policy allows you to adjust the keyboard brightness depending on the power supply mode.
+
+Keyboard brightness in mains power mode: range of values from 0 to 100;
+
+Keyboard brightness in battery mode: range of values from 0 to 100;
+
+Keyboard brightness at low battery level: value range from 0 to 100.
+
+      </string>
+
       <string id="kde-win-act-Click_to_focus">Click to focus</string>
       <string id="kde-win-act-Focus_follows_mouse">Focus follows mouse</string>
       <string id="kde-win-act-Focus_under_mouse">Focus under mouse</string>
@@ -374,6 +385,22 @@ Screen brightness at low battery level: value range from 0 to 100.
         <checkBox refId="kde-lowbrightnesscontrol_blocker">Block</checkBox>
         <text>Blocking changes to this setting by the user. After restarting the device, the user's changes to the settings are not saved.</text>
       </presentation>
+      <presentation id="kde-keyboardbrightnesscontrol-user-pr">
+        <textBox refId="kde-ackeyboardbrightnesscontrol_setter">
+          <label>Keyboard brightness when powered from mains:</label>
+        </textBox>
+        <checkBox refId="kde-ackeyboardbrightnesscontrol_blocker">Блокировать</checkBox>
+        <textBox refId="kde-batkeyboardbrightnesscontrol_setter">
+          <label>Keyboard brightness on battery power:</label>
+        </textBox>
+        <checkBox refId="kde-batkeyboardbrightnesscontrol_blocker">Блокировать</checkBox>
+        <textBox refId="kde-lowkeyboardbrightnesscontrol_setter">
+          <label>Keyboard brightness when battery is low:</label>
+        </textBox>
+        <checkBox refId="kde-lowkeyboardbrightnesscontrol_blocker">Блокировать</checkBox>
+        <text>Blocking changes to this setting by the user. After restarting the device, the user's changes to the settings are not saved.</text>
+      </presentation>
+     </presentationTable>
      </presentationTable>
   </resources>
 </policyDefinitionResources>

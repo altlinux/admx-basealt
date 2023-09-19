@@ -201,6 +201,17 @@
 
       </string>
 
+      <string id="kde-keyboardbrightnesscontrol">Яркость клавиатуры</string>
+      <string id="kde-keyboardbrightnesscontrol_help">Данная политика позволяет настраивать яркость клавиатуры в зависимости от режима электропитания.
+
+Яркость клавиатуры при режиме питания от сети: диапазон значений от 0 до 100;
+
+Яркость клавиатуры при режиме питания от батареи: диапазон значений от 0 до 100;
+
+Яркость клавиатуры при низком уровне заряда: диапазон значений от 0 до 100.
+
+      </string>
+
       <string id="kde-win-act-Click_to_focus">Фокус по щелчку</string>
       <string id="kde-win-act-Focus_follows_mouse">Фокус следует за мышью</string>
       <string id="kde-win-act-Focus_under_mouse">Фокус под мышью</string>
@@ -360,18 +371,33 @@
         <text>Блокировка изменений данной настройки пользователем. После перезагрузки устройства внесённые пользователем изменения настройки не сохраняются.</text>
       </presentation>
       <presentation id="kde-brightnesscontrol-user-pr">
-        <textBox refId="kde-acbrightnesscontrol-setter">
+        <textBox refId="kde-acbrightnesscontrol_setter">
           <label>Яркость экрана при питании от сети:</label>
         </textBox>
         <checkBox refId="kde-acbrightnesscontrol_blocker">Блокировать</checkBox>
-        <textBox refId="kde-batbrightnesscontrol-setter">
+        <textBox refId="kde-batbrightnesscontrol_setter">
           <label>Яркость экрана при питании от батареи:</label>
         </textBox>
         <checkBox refId="kde-batbrightnesscontrol_blocker">Блокировать</checkBox>
-        <textBox refId="kde-lowbrightnesscontrol-setter">
+        <textBox refId="kde-lowbrightnesscontrol_setter">
           <label>Яркость экрана при низком заряде батареи:</label>
         </textBox>
         <checkBox refId="kde-lowbrightnesscontrol_blocker">Блокировать</checkBox>
+        <text>Блокировка изменений данной настройки пользователем. После перезагрузки устройства внесённые пользователем изменения настройки не сохраняются.</text>
+      </presentation>
+      <presentation id="kde-keyboardbrightnesscontrol-user-pr">
+        <textBox refId="kde-ackeyboardbrightnesscontrol_setter">
+          <label>Яркость клавиатуры при питании от сети:</label>
+        </textBox>
+        <checkBox refId="kde-ackeyboardbrightnesscontrol_blocker">Блокировать</checkBox>
+        <textBox refId="kde-batkeyboardbrightnesscontrol_setter">
+          <label>Яркость клавиатуры при питании от батареи:</label>
+        </textBox>
+        <checkBox refId="kde-batkeyboardbrightnesscontrol_blocker">Блокировать</checkBox>
+        <textBox refId="kde-lowkeyboardbrightnesscontrol_setter">
+          <label>Яркость клавиатуры при низком заряде батареи:</label>
+        </textBox>
+        <checkBox refId="kde-lowkeyboardbrightnesscontrol_blocker">Блокировать</checkBox>
         <text>Блокировка изменений данной настройки пользователем. После перезагрузки устройства внесённые пользователем изменения настройки не сохраняются.</text>
       </presentation>
      </presentationTable>
