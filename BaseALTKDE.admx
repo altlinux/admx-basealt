@@ -433,7 +433,7 @@
           </boolean>
       </elements>
     </policy>
-  <policy name="kde-browserapp" class="Both" displayName="$(string.kde-browserapp)"
+  <policy name="kde-browserapp" class="User" displayName="$(string.kde-browserapp)"
     explainText="$(string.kde-browserapp_help)"
     presentation="$(presentation.kde-browserapp-user-pr)"
     key="Software\BaseALT\Policies\KDE\mimeapps.list\Default Applications">
@@ -497,6 +497,23 @@
         <text id="kde-cursortheme-setter" valueName="cursortheme"/>
       </elements>
     </policy>
+    <policy name="kde-filterbar" class="User" displayName="$(string.kde-filterbar)"
+    explainText="$(string.kde-filterbar_help)"
+    presentation="$(presentation.kde-filterbar-user-pr)"
+    key="Software\BaseALT\Policies\KDE\dolphinrc\General">
+    <parentCategory ref="system:ALT_Appearance_KDE" />
+    <supportedOn ref="system:SUPPORTED_AltP10" />
+      <elements>
+        <boolean id="kde-filterbar-setter" valueName="FilterBar">
+            <trueValue>
+              <decimal value="1" />
+            </trueValue>
+            <falseValue>
+              <decimal value="0" />
+            </falseValue>
+            </boolean>
+      </elements>
+    </policy>
   <policy name="kde-graphic-effects" class="Both" displayName="$(string.kde-graphic-effects)"
       explainText="$(string.kde-graphic-effects_help)"
       presentation="$(presentation.kde-graphic-effects-user-pr)"
@@ -528,25 +545,25 @@
       key="Software\BaseALT\Policies\KDE\kdeglobals\KDE">
       <parentCategory ref="system:ALT_Settings_KDE"/>
       <supportedOn ref="system:SUPPORTED_AltP10"/>
-    <elements>
-      <boolean id="kde-showdelete_setter" valueName="ShowDeleteCommand">
-          <trueValue>
-            <decimal value="1" />
-          </trueValue>
-          <falseValue>
-            <decimal value="0" />
-          </falseValue>
-          </boolean>
-      <boolean id="kde-showdelete_blocker" key="Software\BaseALT\Policies\KDELocks" valueName="kdeglobals.KDE.ShowDeleteCommand" >
-          <trueValue>
-            <decimal value="1" />
-          </trueValue>
-          <falseValue>
-            <decimal value="0" />
-          </falseValue>
-          </boolean>
-    </elements>
-      </policy>
+      <elements>
+        <boolean id="kde-showdelete_setter" valueName="ShowDeleteCommand">
+            <trueValue>
+              <decimal value="1" />
+            </trueValue>
+            <falseValue>
+              <decimal value="0" />
+            </falseValue>
+            </boolean>
+        <boolean id="kde-showdelete_blocker" key="Software\BaseALT\Policies\KDELocks" valueName="kdeglobals.KDE.ShowDeleteCommand" >
+            <trueValue>
+              <decimal value="1" />
+            </trueValue>
+            <falseValue>
+              <decimal value="0" />
+            </falseValue>
+            </boolean>
+      </elements>
+    </policy>
   <policy name="kde-singleclick" class="Both" displayName="$(string.kde-singleclick)"
       explainText="$(string.kde-singleclick_help)"
       presentation="$(presentation.kde-singleclick-user-pr)"
@@ -571,6 +588,150 @@
           </falseValue>
           </boolean>
     </elements>
+    </policy>
+  <policy name="kde-brightnesscontrol" class="Both" displayName="$(string.kde-brightnesscontrol)"
+    explainText="$(string.kde-brightnesscontrol_help)"
+    presentation="$(presentation.kde-brightnesscontrol-user-pr)"
+    key="Software\BaseALT\Policies\KDE">
+    <parentCategory ref="system:ALT_PowerManagement_KDE" />
+    <supportedOn ref="system:SUPPORTED_AltP10" />
+      <elements>
+        <text id="kde-acbrightnesscontrol_setter" key="Software\BaseALT\Policies\KDE\powermanagementprofilesrc\AC)(BrightnessControl" valueName="value"/>
+        <boolean id="kde-acbrightnesscontrol_blocker" key="Software\BaseALT\Policies\KDELocks" valueName="powermanagementprofilesrc.AC)(BrightnessControl.value" >
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+          </boolean>
+        <text id="kde-batbrightnesscontrol_setter" key="Software\BaseALT\Policies\KDE\powermanagementprofilesrc\Battery)(BrightnessControl" valueName="value"/>
+        <boolean id="kde-batbrightnesscontrol_blocker" key="Software\BaseALT\Policies\KDELocks" valueName="powermanagementprofilesrc.Battery)(BrightnessControl.value" >
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+          </boolean>
+        <text id="kde-lowbrightnesscontrol_setter" key="Software\BaseALT\Policies\KDE\powermanagementprofilesrc\LowBattery)(BrightnessControl" valueName="value"/>
+        <boolean id="kde-lowbrightnesscontrol_blocker" key="Software\BaseALT\Policies\KDELocks" valueName="powermanagementprofilesrc.LowBattery)(BrightnessControl.value" >
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+          </boolean>
+      </elements>
+    </policy>
+    <policy name="kde-keyboardbrightnesscontrol" class="Both" displayName="$(string.kde-keyboardbrightnesscontrol)"
+    explainText="$(string.kde-keyboardbrightnesscontrol_help)"
+    presentation="$(presentation.kde-keyboardbrightnesscontrol-user-pr)"
+    key="Software\BaseALT\Policies\KDE">
+    <parentCategory ref="system:ALT_PowerManagement_KDE" />
+    <supportedOn ref="system:SUPPORTED_AltP10" />
+      <elements>
+        <text id="kde-ackeyboardbrightnesscontrol_setter" key="Software\BaseALT\Policies\KDE\powermanagementprofilesrc\AC)(KeyboardBrightnessControl" valueName="value"/>
+        <boolean id="kde-ackeyboardbrightnesscontrol_blocker" key="Software\BaseALT\Policies\KDELocks" valueName="powermanagementprofilesrc.AC)(KeyboardBrightnessControl.value" >
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+          </boolean>
+        <text id="kde-batkeyboardbrightnesscontrol_setter" key="Software\BaseALT\Policies\KDE\powermanagementprofilesrc\Battery)(KeyboardBrightnessControl" valueName="value"/>
+        <boolean id="kde-batkeyboardbrightnesscontrol_blocker" key="Software\BaseALT\Policies\KDELocks" valueName="powermanagementprofilesrc.Battery)(KeyboardBrightnessControl.value" >
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+          </boolean>
+        <text id="kde-lowkeyboardbrightnesscontrol_setter" key="Software\BaseALT\Policies\KDE\powermanagementprofilesrc\LowBattery)(KeyboardBrightnessControl" valueName="value"/>
+        <boolean id="kde-lowkeyboardbrightnesscontrol_blocker" key="Software\BaseALT\Policies\KDELocks" valueName="powermanagementprofilesrc.LowBattery)(KeyboardBrightnessControl.value" >
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+          </boolean>
+      </elements>
+    </policy>
+    <policy name="kde-dimdisplay" class="Both" displayName="$(string.kde-dimdisplay)"
+    explainText="$(string.kde-dimdisplay_help)"
+    presentation="$(presentation.kde-dimdisplay-user-pr)"
+    key="Software\BaseALT\Policies\KDE">
+    <parentCategory ref="system:ALT_PowerManagement_KDE" />
+    <supportedOn ref="system:SUPPORTED_AltP10" />
+      <elements>
+        <text id="kde-acdimdisplay_setter" key="Software\BaseALT\Policies\KDE\powermanagementprofilesrc\AC)(DimDisplay" valueName="idleTime"/>
+        <boolean id="kde-acdimdisplay_blocker" key="Software\BaseALT\Policies\KDELocks" valueName="powermanagementprofilesrc.AC)(DimDisplay.idleTime" >
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+          </boolean>
+        <text id="kde-batdimdisplay_setter" key="Software\BaseALT\Policies\KDE\powermanagementprofilesrc\Battery)(DimDisplay" valueName="idleTime"/>
+        <boolean id="kde-batdimdisplay_blocker" key="Software\BaseALT\Policies\KDELocks" valueName="powermanagementprofilesrc.Battery)(DimDisplay.idleTime" >
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+          </boolean>
+        <text id="kde-lowdimdisplay_setter" key="Software\BaseALT\Policies\KDE\powermanagementprofilesrc\LowBattery)(DimDisplay" valueName="idleTime"/>
+        <boolean id="kde-lowdimdisplay_blocker" key="Software\BaseALT\Policies\KDELocks" valueName="powermanagementprofilesrc.LowBattery)(DimDisplay.idleTime" >
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+          </boolean>
+      </elements>
+    </policy>
+    <policy name="kde-dpmscontrol" class="Both" displayName="$(string.kde-dpmscontrol)"
+    explainText="$(string.kde-dpmscontrol_help)"
+    presentation="$(presentation.kde-dpmscontrol-user-pr)"
+    key="Software\BaseALT\Policies\KDE">
+    <parentCategory ref="system:ALT_PowerManagement_KDE" />
+    <supportedOn ref="system:SUPPORTED_AltP10" />
+      <elements>
+        <text id="kde-acdpmscontrol_setter" key="Software\BaseALT\Policies\KDE\powermanagementprofilesrc\AC)(DPMSControl" valueName="idleTime"/>
+        <boolean id="kde-acdpmscontrol_blocker" key="Software\BaseALT\Policies\KDELocks" valueName="powermanagementprofilesrc.AC)(DPMSControl.idleTime" >
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+          </boolean>
+        <text id="kde-batdpmscontrol_setter" key="Software\BaseALT\Policies\KDE\powermanagementprofilesrc\Battery)(DPMSControl" valueName="idleTime"/>
+        <boolean id="kde-batdpmscontrol_blocker" key="Software\BaseALT\Policies\KDELocks" valueName="powermanagementprofilesrc.Battery)(DPMSControl.idleTime" >
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+          </boolean>
+        <text id="kde-lowdpmscontrol_setter" key="Software\BaseALT\Policies\KDE\powermanagementprofilesrc\LowBattery)(DPMSControl" valueName="idleTime"/>
+        <boolean id="kde-lowdpmscontrol_blocker" key="Software\BaseALT\Policies\KDELocks" valueName="powermanagementprofilesrc.LowBattery)(DPMSControl.idleTime" >
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+          </boolean>
+      </elements>
     </policy>
   </policies>
 </policyDefinitions>
