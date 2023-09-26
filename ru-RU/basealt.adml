@@ -81,6 +81,8 @@
       <string id="ALT_NetworkManagerPolkit_Help">Управление разрешениями NetworkManager</string>
       <string id="ALT_TokenPolkit">Разрешения для работы с токенами и смарткартами</string>
       <string id="ALT_TokenPolkit_Help">Управление разрешениями для работы с токенами и смарткартами</string>
+      <string id="ALT_ModemManagerPolkit">Ограничения ModemManager</string>
+      <string id="ALT_ModemManagerPolkit_Help">Настройки службы ModemManager</string>
     </stringTable>
   </resources>
 </policyDefinitionResources>
