@@ -288,13 +288,6 @@ Valid parameter values in seconds, for example:
       <string id="kde-desktoptheme-oxygen">Oxygen</string>
       <string id="kde-desktoptheme-air">Air</string>
 
-      <string id="kde-keyboardset-ru">Russian layout</string>
-      <string id="kde-keyboardset-us">English layout</string>
-      <string id="kde-keyboardset-de">German layout</string>
-      <string id="kde-keyboardset-ru-us">Russian and English layouts</string>
-      <string id="kde-keyboardset-ru-de">Russian and German layouts</string>
-      <string id="kde-keyboardset-us-de">English and German layouts</string>
-
       <string id="kde-browserapp-yandex">Yandex-Browser</string>
       <string id="kde-browserapp-firefox">Firefox</string>
       <string id="kde-browserapp-chromium">Chromium-gost</string>
