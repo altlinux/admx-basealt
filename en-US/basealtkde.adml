@@ -42,22 +42,22 @@
       </string>
 
       <string id="kde-language">Regional and Language Options</string>
-      <string id="kde-language_help">These options not only change the settings for the system language itself, but also set the currency settings, time standard, numeric values, name spelling style, dialing code, and country telephone number standard. Parameters fit into the fields of standard and language, respectively. (Standard example: ru_RU.UTF-8). (Language example: ru). Valid values:
+      <string id="kde-language_help">These parameters not only change the settings for the system language itself, but also set the currency settings, time standard, numeric values, name writing style, telephone code, and country telephone number standard. The parameters are entered in the “Standard” and “Language” fields, respectively. For example, standard: ru_RU.UTF-8, language: ru. Valid values:
 
-"Russian language" Standard - ru_RU.UTF-8, language - ru;
+“Russian language” standard — ru_RU.UTF-8, language — ru;
 
-"French language" Standard - fr_FR.UTF-8, language - fr;
+“French language” standard — fr_FR.UTF-8, language — fr;
 
-"German" Standard - de_DE.UTF-8, language - de;
+“German language” standard — de_DE.UTF-8, language — de;
 
-"English (American)" Standard - en_US.UTF-8, language - en_US;
+“English (American)” standard — en_US.UTF-8, language — en_US;
 
-"English language (British)" Standard - en_GB.UTF-8, language - en_GB.
+“English (British)” standard – en_GB.UTF-8, language – en_GB.
 
       </string>
 
       <string id="kde-automount">Setting Up Connected Devices</string>
-      <string id="kde-automount_help">This policy allows you to configure automatic mounting of connected devices. Automatically mount devices:
+      <string id="kde-automount_help">This policy allows you to configure automatic mounting of connected devices. Possible options for setting up automatic mounting:
 
 "At login"
 
@@ -65,18 +65,20 @@
 
 "Automatically mount media that has never been manually mounted before"
 
+Note: The options “At login”, “At connected”, and “Automatically mount media that have never been manually mounted before” only make sense when the “Automatically mount devices” option is enabled.
+
       </string>
 
       <string id="kde-filesearch">File search service</string>
       <string id="kde-filesearch_help">This policy allows you to configure the file search service, index the contents of files, index hidden files and folders. Possible setting options:
 
-"Enable file search service only"
+"Enable File Search Service"
 
-"Enable search service and file content indexing"
+"Enable file content indexing"
 
-"Enable search service and indexing of hidden files and folders"
+“Enable indexing of hidden files and folders”
 
-"Enable search service, indexing hidden folders, files and their contents"
+Note: The “Enable indexing of file contents” and “Enable indexing of hidden files and folders” options only make sense if the “Enable File Search Service” option is enabled.
 
       </string>
 
@@ -92,8 +94,8 @@
       <string id="kde-showdelete">Deleting directories and files in the context menu</string>
       <string id="kde-showdelete_help">The policy allows you to add or remove the "delete" button in the Dolphin context menu.</string>
 
-      <string id="kde-filterbar">Enabling the filter panel in the Dolphin menu</string>
-      <string id="kde-filterbar_help">The policy allows you to enable or disable the filter panel in the Dolphin menu</string>
+      <string id="kde-filterbar">Enabling the filter panel in the Dolphin file manager</string>
+      <string id="kde-filterbar_help">The policy allows you to enable or disable the filter panel in the Dolphin file manager</string>
 
       <string id="kde-singleclick">Opening a file or directory with one click</string>
       <string id="kde-singleclick_help">This policy configures opening a folder or file with one click.
@@ -127,15 +129,14 @@ If the policy is disabled, clicking on the file or folder will highlight it.
       <string id="kde-cursortheme_help">This policy allows you to select a mouse cursor theme by specifying its name (for example: Oxygen_Black). Cursor themes available in /usr/share/icons are used. Valid parameter value:
 
       - Adwaita
-      - Breeze_Wnow
+      - Breeze_Snow
       - KDE_Classic
       - Oxygen_Black
       - Oxygen_Blue
       - Oxygen_White
       - Oxygen_Yellow
       - Oxygen_Zion
-      - breeze
-      - breeze_dark
+      - jimmac
       - breeze_cursors
 
       </string>
@@ -189,7 +190,7 @@ If the policy is disabled, clicking on the file or folder will highlight it.
 
        - Yandex Browser
        - Firefox
-       -Chromium-gost
+       - Chromium-gost
 
       </string>
 
@@ -220,11 +221,11 @@ Keyboard brightness at low battery level: value range from 0 to 100.
 
 Valid parameter values are in milliseconds, for example:
 
-60000 milliseconds - 1 minute;
+60000 milliseconds — 1 minute;
 
-120000 milliseconds - 2 minutes;
+120000 milliseconds — 2 minutes;
 
-600000 milliseconds - 10 minutes.
+600000 milliseconds — 10 minutes.
 
       </string>
 
@@ -233,11 +234,11 @@ Valid parameter values are in milliseconds, for example:
 
 Valid parameter values in seconds, for example:
 
-60 seconds - 1 minute;
+60 seconds — 1 minute;
 
-300 seconds - 5 minutes;
+300 seconds — 5 minutes;
 
-600 seconds - 10 minutes.
+600 seconds — 10 minutes.
 
       </string>
 
@@ -287,13 +288,6 @@ Valid parameter values in seconds, for example:
       <string id="kde-desktoptheme-breeze-dark">Breeze-dark</string>
       <string id="kde-desktoptheme-oxygen">Oxygen</string>
       <string id="kde-desktoptheme-air">Air</string>
-
-      <string id="kde-keyboardset-ru">Russian layout</string>
-      <string id="kde-keyboardset-us">English layout</string>
-      <string id="kde-keyboardset-de">German layout</string>
-      <string id="kde-keyboardset-ru-us">Russian and English layouts</string>
-      <string id="kde-keyboardset-ru-de">Russian and German layouts</string>
-      <string id="kde-keyboardset-us-de">English and German layouts</string>
 
       <string id="kde-browserapp-yandex">Yandex-Browser</string>
       <string id="kde-browserapp-firefox">Firefox</string>
@@ -360,7 +354,7 @@ Valid parameter values in seconds, for example:
         </textBox>
       </presentation>
       <presentation id="kde-filterbar-user-pr">
-        <checkBox refId="kde-filterbar-setter">Enable filter panel in Dolphin menu</checkBox>
+        <checkBox refId="kde-filterbar-setter">Enable filter panel in Dolphin file manager</checkBox>
       </presentation>
       <presentation id="kde-graphic-effects-user-pr">
         <checkBox refId="kde-graphic-effects_setter">Enable graphic effects</checkBox>
