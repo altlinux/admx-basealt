@@ -303,13 +303,14 @@ Valid parameter values in seconds, for example:
       </presentation>
       <presentation id="kde-language-user-pr">
         <textBox refId="kde-format-setter">
-          <label>Format:</label>
+          <label>Standard:</label>
         </textBox>
+        <checkBox refId="kde-format_blocker">Block system standard setting</checkBox>
         <textBox refId="kde-language-setter">
           <label>Language:</label>
         </textBox>
-        <checkBox refId="kde-language_blocker">Block</checkBox>
-        <text>Blocking changes to this setting by the user. After restarting the device, the user's changes to the settings are not saved.</text>
+        <checkBox refId="kde-language_blocker">Block system language setting</checkBox>
+        <text>Blocks changes to these settings by the user. After rebooting the device, the user's settings changes are not saved.</text>
       </presentation>
       <presentation id="kde-win-rendering-user-pr">
         <dropdownList noSort="true" defaultItem="4" refId="kde-win-rendering_setter">Possible language options:</dropdownList>
@@ -324,13 +325,16 @@ Valid parameter values in seconds, for example:
         <text>Blocking changes to these settings by the user. After rebooting the device, the settings changes made by the user are not saved.</text>
       </presentation>
       <presentation id="kde-automount-user-pr">
-        <checkBox refId="kde-automount_setter">Mount devices automatically</checkBox>
-        <checkBox refId="kde-automountonlogin_setter">At login</checkBox>
-        <checkBox refId="kde-automountonplugin_setter">On Plugin</checkBox>
-        <checkBox refId="kde-automountuknowndevices_setter">Which have never been manually mounted before</checkBox>
-        <checkBox refId="kde-automount_blocker">Block</checkBox>
-        <text>Blocking changes to these settings by the user. After rebooting the device, the settings changes made by the user are not saved.</text>
-      </presentation>
+         <checkBox refId="kde-automount_setter">Automatically mount devices</checkBox>
+         <checkBox refId="kde-automount_blocker">Block automount setting</checkBox>
+         <checkBox refId="kde-automountonlogin_setter">When logging in</checkBox>
+         <checkBox refId="kde-automount_blocker">Block automount setting at login</checkBox>
+         <checkBox refId="kde-automountonplugin_setter">When connected</checkBox>
+         <checkBox refId="kde-automount_blocker">Block automount setting when connecting</checkBox>
+         <checkBox refId="kde-automountuknowndevices_setter">Automatically mount media that has never been manually mounted before</checkBox>
+         <checkBox refId="kde-automount_blocker">Block the option to automatically mount devices that were not manually mounted</checkBox>
+         <text>Blocks changes to these settings by the user. After rebooting the device, the user's settings changes are not saved.</text>
+       </presentation>
       <presentation id="kde-filesearch-user-pr">
         <checkBox refId="kde-basicsettings_setter">Enable file search service only</checkBox>
         <checkBox refId="kde-onlybasic_setter">Enable file content indexing</checkBox>
@@ -397,65 +401,65 @@ Valid parameter values in seconds, for example:
         <text>Blocking changes to this setting by the user. After restarting the device, the user's changes to the settings are not saved.</text>
       </presentation>
       <presentation id="kde-brightnesscontrol-user-pr">
-        <textBox refId="kde-acbrightnesscontrol-setter">
+        <textBox refId="kde-acbrightnesscontrol_setter">
           <label>Screen brightness when powered from mains:</label>
         </textBox>
-        <checkBox refId="kde-acbrightnesscontrol_blocker">Block</checkBox>
-        <textBox refId="kde-batbrightnesscontrol-setter">
+        <checkBox refId="kde-acbrightnesscontrol_blocker">Block brightness control when on AC power</checkBox>
+        <textBox refId="kde-batbrightnesscontrol_setter">
           <label>Screen brightness on battery power:</label>
         </textBox>
-        <checkBox refId="kde-batbrightnesscontrol_blocker">Block</checkBox>
-        <textBox refId="kde-lowbrightnesscontrol-setter">
+        <checkBox refId="kde-batbrightnesscontrol_blocker">Block brightness control when on battery power</checkBox>
+        <textBox refId="kde-lowbrightnesscontrol_setter">
           <label>Screen brightness when battery is low:</label>
         </textBox>
-        <checkBox refId="kde-lowbrightnesscontrol_blocker">Block</checkBox>
-        <text>Blocking changes to this setting by the user. After restarting the device, the user's changes to the settings are not saved.</text>
-      </presentation>
+        <checkBox refId="kde-lowbrightnesscontrol_blocker">Block brightness control when battery is low</checkBox>
+        <text>Blocks changes to these settings by the user. After rebooting the device, the user's settings changes are not saved.</text>
+        </presentation>
       <presentation id="kde-keyboardbrightnesscontrol-user-pr">
         <textBox refId="kde-ackeyboardbrightnesscontrol_setter">
           <label>Keyboard brightness when powered from mains:</label>
         </textBox>
-        <checkBox refId="kde-ackeyboardbrightnesscontrol_blocker">Block</checkBox>
+        <checkBox refId="kde-ackeyboardbrightnesscontrol_blocker">Block brightness control when on mains power</checkBox>
         <textBox refId="kde-batkeyboardbrightnesscontrol_setter">
           <label>Keyboard brightness on battery power:</label>
         </textBox>
-        <checkBox refId="kde-batkeyboardbrightnesscontrol_blocker">Block</checkBox>
+        <checkBox refId="kde-batkeyboardbrightnesscontrol_blocker">Block brightness control when on battery power</checkBox>
         <textBox refId="kde-lowkeyboardbrightnesscontrol_setter">
           <label>Keyboard brightness when battery is low:</label>
         </textBox>
-        <checkBox refId="kde-lowkeyboardbrightnesscontrol_blocker">Block</checkBox>
-        <text>Blocking changes to this setting by the user. After restarting the device, the user's changes to the settings are not saved.</text>
+        <checkBox refId="kde-lowkeyboardbrightnesscontrol_blocker">Block brightness control when battery is low</checkBox>
+        <text>Blocks changes to these settings by the user. After rebooting the device, the user's settings changes are not saved.</text>
       </presentation>
       <presentation id="kde-dimdisplay-user-pr">
         <textBox refId="kde-acdimdisplay_setter">
-          <label>Time until the screen goes dark when powered from the mains:</label>
+          <label>Time before screen goes dark when powered from mains:</label>
         </textBox>
-        <checkBox refId="kde-acdimdisplay_blocker">Block</checkBox>
+        <checkBox refId="kde-acdimdisplay_blocker">Block AC dimming setting</checkBox>
         <textBox refId="kde-batdimdisplay_setter">
-          <label>Time until screen goes blank when on battery power:</label>
+          <label>Time before screen goes blank when on battery power:</label>
         </textBox>
-        <checkBox refId="kde-batdimdisplay_blocker">Block</checkBox>
+        <checkBox refId="kde-batdimdisplay_blocker">Block dimming setting when on battery power</checkBox>
         <textBox refId="kde-lowdimdisplay_setter">
           <label>Time before screen goes blank when battery is low:</label>
         </textBox>
-        <checkBox refId="kde-lowdimdisplay_blocker">БлокирBlockовать</checkBox>
-        <text>Blocking changes to this setting by the user. After restarting the device, the user's changes to the settings are not saved.</text>
-      </presentation>
+        <checkBox refId="kde-lowdimdisplay_blocker">Block low battery dim setting</checkBox>
+        <text>Blocks changes to these settings by the user. After rebooting the device, the user's settings changes are not saved.</text>
+       </presentation>
       <presentation id="kde-dpmscontrol-user-pr">
         <textBox refId="kde-acdpmscontrol_setter">
           <label>Time before the monitor turns off when powered from the mains:</label>
         </textBox>
-        <checkBox refId="kde-acdpmscontrol_blocker">Block</checkBox>
+        <checkBox refId="kde-acdpmscontrol_blocker">Block time setting when on mains power</checkBox>
         <textBox refId="kde-batdpmscontrol_setter">
-          <label>Time before monitor turns off when on battery power:</label>
+          <label>Time before the monitor turns off when on battery power:</label>
         </textBox>
-        <checkBox refId="kde-batdpmscontrol_blocker">Block</checkBox>
+        <checkBox refId="kde-batdpmscontrol_blocker">Block time setting when on battery power</checkBox>
         <textBox refId="kde-lowdpmscontrol_setter">
           <label>Time before monitor turns off when battery is low:</label>
         </textBox>
-        <checkBox refId="kde-lowdpmscontrol_blocker">Block</checkBox>
-        <text>Blocking changes to this setting by the user. After restarting the device, the user's changes to the settings are not saved.</text>
-      </presentation>
+        <checkBox refId="kde-lowdpmscontrol_blocker">Block time setting when battery is low</checkBox>
+        <text>Blocks changes to these settings by the user. After rebooting the device, the user's settings changes are not saved.</text>
+       </presentation>
      </presentationTable>
   </resources>
 </policyDefinitionResources>
