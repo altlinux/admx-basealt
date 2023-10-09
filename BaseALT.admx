@@ -169,6 +169,9 @@
     <category name="ALT_ModemManagerPolkit" displayName="$(string.ALT_ModemManagerPolkit)" explainText="$(string.ALT_ModemManagerPolkit_Help)">
       <parentCategory ref="ALT_Polkit" />
     </category>
+    <category name="ALT_AccountsPolkit" displayName="$(string.ALT_AccountsPolkit)" explainText="$(string.ALT_AccountsPolkit_help)">
+      <parentCategory ref="ALT_Polkit" />    
+    </category>
     <category name="ALT_MachinePolkit" displayName="$(string.ALT_MachinePolkit)" explainText="$(string.ALT_MachinePolkit_Help)">
       <parentCategory ref="ALT_Polkit" />
     </category>
