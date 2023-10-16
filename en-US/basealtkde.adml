@@ -162,7 +162,7 @@ If the policy is disabled, clicking on the file or folder will highlight it.
 
       </string>
 
-      <string id="kde-background">Backgroung theme</string>
+      <string id="kde-background">Background theme</string>
       <string id="kde-background_help">This policy allows you to select a screensaver theme. Valid parameter values:
 
       - Oxygen
