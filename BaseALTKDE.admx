@@ -107,8 +107,16 @@
     <supportedOn ref="system:SUPPORTED_AltP10" />
       <elements>
         <text id="kde-format-setter" key="Software\BaseALT\Policies\KDE\plasma-localerc\Formats" valueName="LANG"/>
+        <boolean id="kde-format_blocker" key="Software\BaseALT\Policies\KDELocks" valueName="plasma-localerc.Formats.LANG">
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+          </boolean>
         <text id="kde-language-setter" key="Software\BaseALT\Policies\KDE\plasma-localerc\Translation" valueName="LANGUAGE"/>
-        <boolean id="kde-language_blocker" key="Software\BaseALT\Policies\KDELocks" valueName="plasma-localerc.Formats.LANG">
+        <boolean id="kde-language_blocker" key="Software\BaseALT\Policies\KDELocks" valueName="plasma-localerc.Formats.LANGUAGE">
           <trueValue>
             <decimal value="1" />
           </trueValue>
@@ -192,7 +200,23 @@
             <decimal value="0" />
           </falseValue>
           </boolean>
+      <boolean id="kde-automount_blocker" key="Software\BaseALT\Policies\KDELocks" valueName="kded_device_automounterrc.General.AutomountEnabled">
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+          </boolean>
       <boolean id="kde-automountonlogin_setter"  valueName="AutomountOnLogin">
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+          </boolean>
+      <boolean id="kde-automountonlogin_blocker" key="Software\BaseALT\Policies\KDELocks" valueName="kded_device_automounterrc.General.AutomountOnLogin">
           <trueValue>
             <decimal value="1" />
           </trueValue>
@@ -208,6 +232,14 @@
             <decimal value="0" />
           </falseValue>
           </boolean>
+      <boolean id="kde-automountonplugin_blocker" key="Software\BaseALT\Policies\KDELocks" valueName="kded_device_automounterrc.General.AutomountOnPlugin">
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+          </boolean>
       <boolean id="kde-automountuknowndevices_setter"  valueName="AutomountUnknownDevices">
           <trueValue>
             <decimal value="1" />
@@ -216,7 +248,7 @@
             <decimal value="0" />
           </falseValue>
           </boolean>
-        <boolean id="kde-automount_blocker" key="Software\BaseALT\Policies\KDELocks" valueName="AutomountEnabled">
+        <boolean id="kde-automountuknowndevices_blocker" key="Software\BaseALT\Policies\KDELocks" valueName="kded_device_automounterrc.General.AutomountUnknownDevices">
           <trueValue>
             <decimal value="1" />
           </trueValue>

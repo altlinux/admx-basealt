@@ -14,19 +14,19 @@
 
 «Фокус по щелчку» — окно становится активным после щелчка по заголовку или внутри окна.
 
-«Фокус по щелчку» (приоритет мыши) — этот режим похож на «Фокус по щелчку». Если система сама должна выбрать активное окно(например, когда активное окно было закрыто), предпочтение отдаётся окну под указателем мыши.
+«Фокус по щелчку» (приоритет мыши) — этот режим похож на «Фокус по щелчку». Если система сама должна выбрать активное окно (например, когда активное окно было закрыто), предпочтение отдаётся окну под указателем мыши.
 
-«Фокус следует за мышью» — окно активинуется при перемещении указателя мыши в это окно. Окна, которые появляются под указателем мыши случайно, не будут получать фокус, так как предотващение смены фокуса работает как обычно. Этот вариант похож на «Фокус по щелчку», но щелчок не требуется».
+«Фокус следует за мышью» — окно активируется при перемещении указателя мыши в это окно. Окна, которые появляются под указателем мыши случайно, не будут получать фокус, так как предотвращение смены фокуса работает как обычно. Этот вариант похож на «Фокус по щелчку», но щелчок не требуется.
 
-«Фокус следует за мышью» (приритет мыши) — этот режим похож на «Фокус следует за мышью". Если система сама должна выбрать активное окно (например, при закрытии активного окна), предпочтение будет отдано окну, находящемуся под указателем мыши. Данный режим следует выбрать для смены фокуса по наведению указателя мыши.
+«Фокус следует за мышью» (приоритет мыши) — этот режим похож на «Фокус следует за мышью». Если система сама должна выбрать активное окно (например, при закрытии активного окна), предпочтение будет отдано окну, находящемуся под указателем мыши. Данный режим следует выбрать для смены фокуса по наведению указателя мыши.
 
 «Фокус под мышью» — фокус всегда оказывается в окне под мышью. Примечание: Предотвращение смены фокуса и переключение через Alt+Tab противоречат этому поведению и не будут работать.
 
-«Фокус строго под мышью» — фокус всегда в окне под указателем мыши(а если под ним пусто, он теряется). Примечание: Предотвращение смены фокуса и переключение через Alt+Tab противоречат этому поведению и не будут работать.
+«Фокус строго под мышью» — фокус всегда в окне под указателем мыши (а если под ним пусто, он теряется). Примечание: Предотвращение смены фокуса и переключение через Alt+Tab противоречат этому поведению и не будут работать.
 
       </string>
 
-      <string id="kde-win-rendering">Задержка отрисови</string>
+      <string id="kde-win-rendering">Задержка отрисовки</string>
       <string id="kde-win-rendering_help">Политика позволяет выбрать уровень задержки и плавности анимации. Допустимые значения:
 
 «Принудительно низкая задержка (может привести к артефактам)»
@@ -42,22 +42,22 @@
       </string>
 
       <string id="kde-language">Региональные и языковые параметры</string>
-      <string id="kde-language_help">Эти параметры меняют настройки не только самого языка системы, но и задают настройки валюты, стандарт времени, числовые значения, стиль написания имени, телефонный код и стандарт телефонного номера страны. Параметры вписываются в поля старндарта и языка соответственно. (Пример стандарта: ru_RU.UTF-8). (Пример языка: ru).  Допустимые значения:
+      <string id="kde-language_help">Эти параметры меняют настройки не только самого языка системы, но и задают настройки валюты, стандарт времени, числовые значения, стиль написания имени, телефонный код и стандарт телефонного номера страны. Параметры вписываются в поля «Стандарт» и «Язык» соответственно. Например, стандарт: ru_RU.UTF-8, язык: ru.  Допустимые значения:
 
-«Русский язык» Стандарт - ru_RU.UTF-8, язык - ru;
+«Русский язык» стандарт — ru_RU.UTF-8, язык — ru;
 
-«Французский язык» Стандарт - fr_FR.UTF-8, язык - fr;
+«Французский язык» стандарт — fr_FR.UTF-8, язык — fr;
 
-«Немецкий язык» Стандарт - de_DE.UTF-8, язык - de;
+«Немецкий язык» стандарт — de_DE.UTF-8, язык — de;
 
-«Английский язык (Американский)» Стандарт - en_US.UTF-8, язык - en_US;
+«Английский язык (Американский)» стандарт — en_US.UTF-8, язык — en_US;
 
-«Английский язык (Британский)» Стандарт - en_GB.UTF-8, язык - en_GB.
+«Английский язык (Британский)» стандарт — en_GB.UTF-8, язык — en_GB.
 
       </string>
 
       <string id="kde-automount">Настройка подключаемых устройств</string>
-      <string id="kde-automount_help">Данная политика позволяет настроить автоматическое монтирование подключаемых устройств. Автоматичеки монтировать устройства:
+      <string id="kde-automount_help">Данная политика позволяет настроить автоматическое монтирование подключаемых устройств. Возможные варианты настройки автоматического монтирования:
 
 «При входе в систему»
 
@@ -65,18 +65,20 @@
 
 «Автоматически монтировать те носители, которые никогда ранее не были примонтированы вручную»
 
+Примечание: Параметры «При входе в систему», «При подключении», и «Автоматически монтировать те носители, которые никогда ранее не были примонтированы вручную» имеют смысл только при включённом параметре «Автоматически монтировать устройства».
+
       </string>
 
       <string id="kde-filesearch">Служба поиска файлов</string>
       <string id="kde-filesearch_help">Данная политика позволяет настраивать службу поиска файлов, индексировать содержимое файлов, индексировать скрытые файлы и папки. Возможные варианты настройки:
 
-«Включить только службу поиска файлов»
+«Включить службу поиска файлов»
 
-«Включить службу поиска и индексацию содержимого файлов»
+«Включить индексацию содержимого файлов»
 
-«Включить службу поиска и индексацию скрытых файлов и папок»
+«Включить индексацию скрытых файлов и папок»
 
-«Включить службу поиска, индексацию скрытых папок, файлов и их содержимого»
+Примечание: Параметры «Включить индексацию содержимого файлов» и «Включить индексацию скрытых файлов и папок» имеют смысл только при включённом параметре «Включить службу поиска файлов».
 
       </string>
 
@@ -84,30 +86,30 @@
       <string id="kde-desktops_help">Данная политика позволяет настраивать количество виртуальных рабочих столов. </string>
 
       <string id="kde-wallpaper">Картинка фона рабочего стола</string>
-      <string id="kde-wallpaper_help">Данная политика позволяет установить изображения в качестве фона рабочего стола, указав файл (например, /usr/share/wallpapers/table.png, или smb://dc0/reGr/test.png (файл из общего каталога)), содержащий изображение.</string>
+      <string id="kde-wallpaper_help">Данная политика позволяет установить изображение в качестве фона рабочего стола, указав файл (например, /usr/share/wallpapers/table.png, или smb://dc0/reGr/test.png (файл из общего каталога)), содержащий изображение.</string>
 
-      <string id="kde-graphic-effects">Граффические эффекты</string>
-      <string id="kde-graphic-effects_help">Политика настраивает включение или отключение граффических эффектов при входе в систему.</string>
+      <string id="kde-graphic-effects">Графические эффекты</string>
+      <string id="kde-graphic-effects_help">Политика настраивает включение или отключение графических эффектов при входе в систему.</string>
 
-      <string id="kde-showdelete">Удаление каталогов и файлов в контекстном меню</string>
-      <string id="kde-showdelete_help">Политика позволяет добавить или убрать кнопку "удалить" в контекстном меню Dolphin</string>
+      <string id="kde-showdelete">Наличие кнопки «Удалить» в контекстном меню Dolphin</string>
+      <string id="kde-showdelete_help">Политика позволяет добавить или убрать кнопку «Удалить» в контекстном меню Dolphin</string>
 
-      <string id="kde-filterbar">Включение панели фильтрации в меню Dolphin</string>
-      <string id="kde-filterbar_help">Политика позволяет включать или отключать панель фильтрации в меню Dolphin</string>
+      <string id="kde-filterbar">Включение панели фильтрации в файловом менеджере Dolphin</string>
+      <string id="kde-filterbar_help">Политика позволяет включать или отключать панель фильтрации в файловом менеджере Dolphin</string>
 
       <string id="kde-singleclick">Открытие файла или каталога одним щелчком</string>
       <string id="kde-singleclick_help">Данная политика настраивает открытие папки или файла одним щелчком.
 
-Если политика включена, то щелчком файл или папка будут открыты.
+Если политика включена, то одним щелчком файл или папка будут открыты.
 
-Если политика отключена, щелчком файл или папка будут выделены.
+Если политика отключена, одним щелчком файл или папка будут выделены.
 
       </string>
 
       <string id="kde-colorscheme">Цвета</string>
-      <string id="kde-colorscheme_help">Данная политика позволяет управлять цветовыми схемами, указав название схемы (например: BreezeClassic).
+      <string id="kde-colorscheme_help">Данная политика позволяет управлять цветовыми схемами, указав название схемы (например, BreezeClassic).
 
-      Допустимые варианты цветовых схем:
+      Возможные варианты цветовых схем:
 
       - OxygenCold
       - BreezeClassic
@@ -124,18 +126,17 @@
       </string>
 
       <string id="kde-cursortheme">Тема курсора</string>
-      <string id="kde-cursortheme_help">Данная политика позволяет выбрать тему курсора мыши, указав её название  (например: Oxygen_Black). Используются темы курсоров, доступные в /usr/share/icons. Допустимые значения параметра:
+      <string id="kde-cursortheme_help">Данная политика позволяет выбрать тему курсора мыши, указав её название (например, Oxygen_Black). Используются темы курсоров, доступные в /usr/share/icons. Возможные значения параметра:
 
       - Adwaita
-      - Breeze_Wnow
+      - Breeze_Snow
       - KDE_Classic
       - Oxygen_Black
       - Oxygen_Blue
       - Oxygen_White
       - Oxygen_Yellow
       - Oxygen_Zion
-      - breeze
-      - breeze_dark
+      - jimmac
       - breeze_cursors
 
       </string>
@@ -220,11 +221,11 @@
 
 Допустимые значения параметра в миллисекундах, например:
 
-60000 миллисекунд - 1 минута;
+60000 миллисекунд — 1 минута;
 
-120000 миллисекунд - 2 минуты;
+120000 миллисекунд — 2 минуты;
 
-600000 миллисекунд - 10 минут.
+600000 миллисекунд — 10 минут.
 
       </string>
 
@@ -233,11 +234,11 @@
 
 Допустимые значения параметра в секундах, например:
 
-60 секунд - 1 минута;
+60 секунд — 1 минута;
 
-300 секунд - 5 минут;
+300 секунд — 5 минут;
 
-600 секунд - 10 минут.
+600 секунд — 10 минут.
 
       </string>
 
@@ -288,13 +289,6 @@
       <string id="kde-desktoptheme-oxygen">Oxygen</string>
       <string id="kde-desktoptheme-air">Air</string>
 
-      <string id="kde-keyboardset-ru">Русская расскладка</string>
-      <string id="kde-keyboardset-us">Английская расскладка</string>
-      <string id="kde-keyboardset-de">Немецкая расскладка</string>
-      <string id="kde-keyboardset-ru-us">Русская и английская расскладки</string>
-      <string id="kde-keyboardset-ru-de">Русская и немецкая расскладки</string>
-      <string id="kde-keyboardset-us-de">Английская и немецкая расскладки</string>
-
       <string id="kde-browserapp-yandex">Yandex-Browser</string>
       <string id="kde-browserapp-firefox">Firefox</string>
       <string id="kde-browserapp-chromium">Chromium-gost</string>
@@ -311,11 +305,12 @@
         <textBox refId="kde-format-setter">
           <label>Стандарт:</label>
         </textBox>
+        <checkBox refId="kde-format_blocker">Блокировать настройку стандарта системы</checkBox>
         <textBox refId="kde-language-setter">
           <label>Язык:</label>
         </textBox>
-        <checkBox refId="kde-language_blocker">Блокировать</checkBox>
-        <text>Блокировка изменений данной настройки пользователем. После перезагрузки устройства внесённые пользователем изменения настройки не сохраняются.</text>
+        <checkBox refId="kde-language_blocker">Блокировать настройку языка системы</checkBox>
+        <text>Блокировки изменений данных настроек пользователем. После перезагрузки устройства внесённые пользователем изменения настройки не сохраняются.</text>
       </presentation>
       <presentation id="kde-win-rendering-user-pr">
         <dropdownList noSort="true" defaultItem="4" refId="kde-win-rendering_setter">Возможные режимы:</dropdownList>
@@ -331,14 +326,17 @@
       </presentation>
       <presentation id="kde-automount-user-pr">
         <checkBox refId="kde-automount_setter">Автоматически монтировать устройства</checkBox>
+        <checkBox refId="kde-automount_blocker">Блокировать настройку автоматического монтирования</checkBox>
         <checkBox refId="kde-automountonlogin_setter">При входе в систему</checkBox>
+        <checkBox refId="kde-automount_blocker">Блокировать настройку автоматического монтирования при входе в систему</checkBox>
         <checkBox refId="kde-automountonplugin_setter">При подключении</checkBox>
-        <checkBox refId="kde-automountuknowndevices_setter">Которые никогда ранее не были примонтированы вручную</checkBox>
-        <checkBox refId="kde-automount_blocker">Блокировать</checkBox>
-        <text>Блокировка изменений данной настройки пользователем. После перезагрузки устройства внесённые пользователем изменения настройки не сохраняются.</text>
+        <checkBox refId="kde-automount_blocker">Блокировать настройку автоматического монтирования при подключении</checkBox>
+        <checkBox refId="kde-automountuknowndevices_setter">Автоматически монтировать те носители, которые никогда ранее не были примонтированы вручную</checkBox>
+        <checkBox refId="kde-automount_blocker">Блокировать настройку автоматического монтирования устройств, которые не были примонтированы вручную</checkBox>
+        <text>Блокировки изменений данных настроек пользователем. После перезагрузки устройства внесённые пользователем изменения настройки не сохраняются.</text>
       </presentation>
       <presentation id="kde-filesearch-user-pr">
-        <checkBox refId="kde-basicsettings_setter">Включить только службу поиска файлов</checkBox>
+        <checkBox refId="kde-basicsettings_setter">Включить службу поиска файлов</checkBox>
         <checkBox refId="kde-onlybasic_setter">Включить индексацию содержимого файлов</checkBox>
         <checkBox refId="kde-indexhidden_setter">Включить индексацию скрытых файлов и папок</checkBox>
         <checkBox refId="kde-filesearch_blocker">Блокировать</checkBox>
@@ -360,7 +358,7 @@
         </textBox>
       </presentation>
       <presentation id="kde-filterbar-user-pr">
-        <checkBox refId="kde-filterbar-setter">Включить панель фильтрации в меню Dolphin</checkBox>
+        <checkBox refId="kde-filterbar-setter">Включить панель фильтрации в файловом менеджере Dolphin</checkBox>
       </presentation>
       <presentation id="kde-graphic-effects-user-pr">
         <checkBox refId="kde-graphic-effects_setter">Включить графические эффекты</checkBox>
@@ -373,7 +371,7 @@
         <text>Блокировка изменений данной настройки пользователем. После перезагрузки устройства внесённые пользователем изменения настройки не сохраняются.</text>
       </presentation>
       <presentation id="kde-showdelete-user-pr">
-        <checkBox refId="kde-showdelete_setter">Добавить кнопку "удалить" в контекстное меню Dolphin</checkBox>
+        <checkBox refId="kde-showdelete_setter">Добавить кнопку «Удалить» в контекстное меню Dolphin</checkBox>
         <checkBox refId="kde-showdelete_blocker">Блокировать</checkBox>
         <text>Блокировка изменений данной настройки пользователем. После перезагрузки устройства внесённые пользователем изменения настройки не сохраняются.</text>
       </presentation>
@@ -406,61 +404,61 @@
         <textBox refId="kde-acbrightnesscontrol_setter">
           <label>Яркость экрана при питании от сети:</label>
         </textBox>
-        <checkBox refId="kde-acbrightnesscontrol_blocker">Блокировать</checkBox>
+        <checkBox refId="kde-acbrightnesscontrol_blocker">Блокировать настройку яркости при питании от сети</checkBox>
         <textBox refId="kde-batbrightnesscontrol_setter">
           <label>Яркость экрана при питании от батареи:</label>
         </textBox>
-        <checkBox refId="kde-batbrightnesscontrol_blocker">Блокировать</checkBox>
+        <checkBox refId="kde-batbrightnesscontrol_blocker">Блокировать настройку яркости при питании от батареи</checkBox>
         <textBox refId="kde-lowbrightnesscontrol_setter">
           <label>Яркость экрана при низком заряде батареи:</label>
         </textBox>
-        <checkBox refId="kde-lowbrightnesscontrol_blocker">Блокировать</checkBox>
-        <text>Блокировка изменений данной настройки пользователем. После перезагрузки устройства внесённые пользователем изменения настройки не сохраняются.</text>
+        <checkBox refId="kde-lowbrightnesscontrol_blocker">Блокировать настройку яркости при низком заряде батареи</checkBox>
+        <text>Блокировки изменений данных настроек пользователем. После перезагрузки устройства внесённые пользователем изменения настройки не сохраняются.</text>
       </presentation>
       <presentation id="kde-keyboardbrightnesscontrol-user-pr">
         <textBox refId="kde-ackeyboardbrightnesscontrol_setter">
           <label>Яркость клавиатуры при питании от сети:</label>
         </textBox>
-        <checkBox refId="kde-ackeyboardbrightnesscontrol_blocker">Блокировать</checkBox>
+        <checkBox refId="kde-ackeyboardbrightnesscontrol_blocker">Блокировать настройку яркости при питании от сети</checkBox>
         <textBox refId="kde-batkeyboardbrightnesscontrol_setter">
           <label>Яркость клавиатуры при питании от батареи:</label>
         </textBox>
-        <checkBox refId="kde-batkeyboardbrightnesscontrol_blocker">Блокировать</checkBox>
+        <checkBox refId="kde-batkeyboardbrightnesscontrol_blocker">Блокировать настройку яркости при питании от батареи</checkBox>
         <textBox refId="kde-lowkeyboardbrightnesscontrol_setter">
           <label>Яркость клавиатуры при низком заряде батареи:</label>
         </textBox>
-        <checkBox refId="kde-lowkeyboardbrightnesscontrol_blocker">Блокировать</checkBox>
-        <text>Блокировка изменений данной настройки пользователем. После перезагрузки устройства внесённые пользователем изменения настройки не сохраняются.</text>
+        <checkBox refId="kde-lowkeyboardbrightnesscontrol_blocker">Блокировать настройку яркости при низком заряде батареи</checkBox>
+        <text>Блокировки изменений данных настроек пользователем. После перезагрузки устройства внесённые пользователем изменения настройки не сохраняются.</text>
       </presentation>
       <presentation id="kde-dimdisplay-user-pr">
         <textBox refId="kde-acdimdisplay_setter">
           <label>Время до угасания экрана при питании от сети:</label>
         </textBox>
-        <checkBox refId="kde-acdimdisplay_blocker">Блокировать</checkBox>
+        <checkBox refId="kde-acdimdisplay_blocker">Блокировать настройку угасания при питании от сети</checkBox>
         <textBox refId="kde-batdimdisplay_setter">
           <label>Время до угасания экрана при питании от батареи:</label>
         </textBox>
-        <checkBox refId="kde-batdimdisplay_blocker">Блокировать</checkBox>
+        <checkBox refId="kde-batdimdisplay_blocker">Блокировать настройку угасания при питании от батареи</checkBox>
         <textBox refId="kde-lowdimdisplay_setter">
           <label>Время до угасания экрана при низком заряде батареи:</label>
         </textBox>
-        <checkBox refId="kde-lowdimdisplay_blocker">Блокировать</checkBox>
-        <text>Блокировка изменений данной настройки пользователем. После перезагрузки устройства внесённые пользователем изменения настройки не сохраняются.</text>
+        <checkBox refId="kde-lowdimdisplay_blocker">Блокировать настройку угасания при низком заряде батареи</checkBox>
+        <text>Блокировки изменений данных настроек пользователем. После перезагрузки устройства внесённые пользователем изменения настройки не сохраняются.</text>
       </presentation>
       <presentation id="kde-dpmscontrol-user-pr">
         <textBox refId="kde-acdpmscontrol_setter">
           <label>Время до отключения монитора при питании от сети:</label>
         </textBox>
-        <checkBox refId="kde-acdpmscontrol_blocker">Блокировать</checkBox>
+        <checkBox refId="kde-acdpmscontrol_blocker">Блокировать настройку времени при питании от сети</checkBox>
         <textBox refId="kde-batdpmscontrol_setter">
           <label>Время до отключения монитора при питании от батареи:</label>
         </textBox>
-        <checkBox refId="kde-batdpmscontrol_blocker">Блокировать</checkBox>
+        <checkBox refId="kde-batdpmscontrol_blocker">Блокировать настройку времени при питании от батареи</checkBox>
         <textBox refId="kde-lowdpmscontrol_setter">
           <label>Время до отключения монитора при низком заряде батареи:</label>
         </textBox>
-        <checkBox refId="kde-lowdpmscontrol_blocker">Блокировать</checkBox>
-        <text>Блокировка изменений данной настройки пользователем. После перезагрузки устройства внесённые пользователем изменения настройки не сохраняются.</text>
+        <checkBox refId="kde-lowdpmscontrol_blocker">Блокировать настройку времени при низком заряде батареи</checkBox>
+        <text>Блокировки изменений данных настроек пользователем. После перезагрузки устройства внесённые пользователем изменения настройки не сохраняются.</text>
       </presentation>
      </presentationTable>
   </resources>
