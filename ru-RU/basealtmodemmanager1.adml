@@ -449,52 +449,14 @@
 
    </stringTable>
     <presentationTable>
-      <presentation id="org-freedesktop-ModemManager1-Contacts-pr">
+      <presentation id="org-freedesktop-ModemManager1-pr">
        <dropdownList noSort="true" defaultItem="1" refId="OrgFreedesktopModemManager_setter">Варианты ограничений для службы ModemManager:</dropdownList>
        <checkBox refId="OrgFreedesktopModemManager_blocker">Блокировать</checkBox>
        <text>Блокировка изменений данной настройки политикой пользователя. Блокировка политики делает её приоритетнее аналогичной политики для пользователя.</text>
       </presentation>
-      <presentation id="org-freedesktop-ModemManager1-Control-pr">
+      <presentation id="org-freedesktop-ModemManager1-user-pr">
        <dropdownList noSort="true" defaultItem="1" refId="OrgFreedesktopModemManager_setter">Варианты ограничений для службы ModemManager:</dropdownList>
-       <checkBox refId="OrgFreedesktopModemManager_blocker">Блокировать</checkBox>
-       <text>Блокировка изменений данной настройки политикой пользователя. Блокировка политики делает её приоритетнее аналогичной политики для пользователя.</text>
-      </presentation>
-      <presentation id="org-freedesktop-ModemManager1-Device-Control-pr">
-       <dropdownList noSort="true" defaultItem="1" refId="OrgFreedesktopModemManager_setter">Варианты ограничений для службы ModemManager:</dropdownList>
-       <checkBox refId="OrgFreedesktopModemManager_blocker">Блокировать</checkBox>
-       <text>Блокировка изменений данной настройки политикой пользователя. Блокировка политики делает её приоритетнее аналогичной политики для пользователя.</text>
-      </presentation>
-       <presentation id="org-freedesktop-ModemManager1-Firmware-pr">
-       <dropdownList noSort="true" defaultItem="1" refId="OrgFreedesktopModemManager_setter">Варианты ограничений для службы ModemManager:</dropdownList>
-       <checkBox refId="OrgFreedesktopModemManager_blocker">Блокировать</checkBox>
-       <text>Блокировка изменений данной настройки политикой пользователя. Блокировка политики делает её приоритетнее аналогичной политики для пользователя.</text>
-      </presentation>
-      <presentation id="org-freedesktop-ModemManager1-Location-pr">
-       <dropdownList noSort="true" defaultItem="1" refId="OrgFreedesktopModemManager_setter">Варианты ограничений для службы ModemManager:</dropdownList>
-       <checkBox refId="OrgFreedesktopModemManager_blocker">Блокировать</checkBox>
-       <text>Блокировка изменений данной настройки политикой пользователя. Блокировка политики делает её приоритетнее аналогичной политики для пользователя.</text>
-      </presentation>
-      <presentation id="org-freedesktop-ModemManager1-Messaging-pr">
-       <dropdownList noSort="true" defaultItem="1" refId="OrgFreedesktopModemManager_setter">Варианты ограничений для службы ModemManager:</dropdownList>
-       <checkBox refId="OrgFreedesktopModemManager_blocker">Блокировать</checkBox>
-       <text>Блокировка изменений данной настройки политикой пользователя. Блокировка политики делает её приоритетнее аналогичной политики для пользователя.</text>
-      </presentation>
-       <presentation id="org-freedesktop-ModemManager1-Time-pr">
-       <dropdownList noSort="true" defaultItem="1" refId="OrgFreedesktopModemManager_setter">Варианты ограничений для службы ModemManager:</dropdownList>
-       <checkBox refId="OrgFreedesktopModemManager_blocker">Блокировать</checkBox>
-       <text>Блокировка изменений данной настройки политикой пользователя. Блокировка политики делает её приоритетнее аналогичной политики для пользователя.</text>
-      </presentation>
-      <presentation id="org-freedesktop-ModemManager1-USSD-pr">
-       <dropdownList noSort="true" defaultItem="1" refId="OrgFreedesktopModemManager_setter">Варианты ограничений для службы ModemManager:</dropdownList>
-       <checkBox refId="OrgFreedesktopModemManager_blocker">Блокировать</checkBox>
-       <text>Блокировка изменений данной настройки политикой пользователя. Блокировка политики делает её приоритетнее аналогичной политики для пользователя.</text>
-      </presentation>
-      <presentation id="org-freedesktop-ModemManager1-Voice-pr">
-       <dropdownList noSort="true" defaultItem="1" refId="OrgFreedesktopModemManager_setter">Варианты ограничений для службы ModemManager:</dropdownList>
-       <checkBox refId="OrgFreedesktopModemManager_blocker">Блокировать</checkBox>
-       <text>Блокировка изменений данной настройки политикой пользователя. Блокировка политики делает её приоритетнее аналогичной политики для пользователя.</text>
       </presentation>
     </presentationTable>
   </resources>
 </policyDefinitionResources>
-

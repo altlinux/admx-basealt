@@ -13,7 +13,7 @@
         key="Software\BaseALT\Policies\Polkit"
         name="org.freedesktop.ModemManager1.Contacts"
         valuename="org.freedesktop.ModemManager1.Contacts"
-        presentation="$(presentation.org-freedesktop-ModemManager1-Contacts-pr)">
+        presentation="$(presentation.org-freedesktop-ModemManager1-pr)">
       <parentCategory ref="system:ALT_ModemManagerPolkit" />
       <supportedOn ref="system:SUPPORTED_AltP10" />
       <elements>
@@ -64,7 +64,7 @@
         key="Software\BaseALT\Policies\Polkit"
         name="org.freedesktop.ModemManager1.Contacts-user"
         valuename="org.freedesktop.ModemManager1.Contacts"
-        presentation="$(presentation.org-freedesktop-ModemManager1-Contacts-pr)">
+        presentation="$(presentation.org-freedesktop-ModemManager1-user-pr)">
       <parentCategory ref="system:ALT_ModemManagerPolkit" />
       <supportedOn ref="system:SUPPORTED_AltP10" />
       <elements>
@@ -100,14 +100,6 @@
             </value>
           </item>
         </enum>
-        <boolean id="OrgFreedesktopModemManager_blocker" key="Software\BaseALT\Policies\PolkitLocks" valueName="org.freedesktop.ModemManager1.Contacts">
-          <trueValue>
-            <decimal value="1" />
-          </trueValue>
-          <falseValue>
-            <decimal value="0" />
-          </falseValue>
-        </boolean>
       </elements>
     </policy>
     <policy class="Machine" displayName="$(string.org-freedesktop-ModemManager1-Control)"
@@ -115,7 +107,7 @@
         key="Software\BaseALT\Policies\Polkit"
         name="org.freedesktop.ModemManager1.Control"
         valuename="org.freedesktop.ModemManager1.Control"
-        presentation="$(presentation.org-freedesktop-ModemManager1-Control-pr)">
+        presentation="$(presentation.org-freedesktop-ModemManager1-pr)">
       <parentCategory ref="system:ALT_ModemManagerPolkit" />
       <supportedOn ref="system:SUPPORTED_AltP10" />
       <elements>
@@ -161,12 +153,12 @@
         </boolean>
       </elements>
     </policy>
-     <policy class="User" displayName="$(string.org-freedesktop-ModemManager1-Control)"
+    <policy class="User" displayName="$(string.org-freedesktop-ModemManager1-Control)"
         explainText="$(string.org-freedesktop-ModemManager1-Control-user_help)"
         key="Software\BaseALT\Policies\Polkit"
         name="org.freedesktop.ModemManager1.Control-user"
         valuename="org.freedesktop.ModemManager1.Control"
-        presentation="$(presentation.org-freedesktop-ModemManager1-Control-pr)">
+        presentation="$(presentation.org-freedesktop-ModemManager1-user-pr)">
       <parentCategory ref="system:ALT_ModemManagerPolkit" />
       <supportedOn ref="system:SUPPORTED_AltP10" />
       <elements>
@@ -202,14 +194,6 @@
             </value>
           </item>
         </enum>
-        <boolean id="OrgFreedesktopModemManager_blocker" key="Software\BaseALT\Policies\PolkitLocks" valueName="org.freedesktop.ModemManager1.Control">
-          <trueValue>
-            <decimal value="1" />
-          </trueValue>
-          <falseValue>
-            <decimal value="0" />
-          </falseValue>
-        </boolean>
       </elements>
     </policy>
     <policy class="Machine" displayName="$(string.org-freedesktop-ModemManager1-Device-Control)"
@@ -217,7 +201,7 @@
         key="Software\BaseALT\Policies\Polkit"
         name="org.freedesktop.ModemManager1.Device.Control"
         valuename="org.freedesktop.ModemManager1.Device.Control"
-        presentation="$(presentation.org-freedesktop-ModemManager1-Device-Control-pr)">
+        presentation="$(presentation.org-freedesktop-ModemManager1-pr)">
       <parentCategory ref="system:ALT_ModemManagerPolkit" />
       <supportedOn ref="system:SUPPORTED_AltP10" />
       <elements>
@@ -268,7 +252,7 @@
         key="Software\BaseALT\Policies\Polkit"
         name="org.freedesktop.ModemManager1.Device.Control-user"
         valuename="org.freedesktop.ModemManager1.Device.Control"
-        presentation="$(presentation.org-freedesktop-ModemManager1-Device-Control-pr)">
+        presentation="$(presentation.org-freedesktop-ModemManager1-user-pr)">
       <parentCategory ref="system:ALT_ModemManagerPolkit" />
       <supportedOn ref="system:SUPPORTED_AltP10" />
       <elements>
@@ -304,14 +288,6 @@
             </value>
           </item>
         </enum>
-        <boolean id="OrgFreedesktopModemManager_blocker" key="Software\BaseALT\Policies\PolkitLocks" valueName="org.freedesktop.ModemManager1.Device.Control">
-          <trueValue>
-            <decimal value="1" />
-          </trueValue>
-          <falseValue>
-            <decimal value="0" />
-          </falseValue>
-        </boolean>
       </elements>
     </policy>
     <policy class="Machine" displayName="$(string.org-freedesktop-ModemManager1-Firmware)"
@@ -319,7 +295,7 @@
         key="Software\BaseALT\Policies\Polkit"
         name="org.freedesktop.ModemManager1.Firmware"
         valuename="org.freedesktop.ModemManager1.Device.Firmware"
-        presentation="$(presentation.org-freedesktop-ModemManager1-Firmware-pr)">
+        presentation="$(presentation.org-freedesktop-ModemManager1-pr)">
       <parentCategory ref="system:ALT_ModemManagerPolkit" />
       <supportedOn ref="system:SUPPORTED_AltP10" />
       <elements>
@@ -370,7 +346,7 @@
         key="Software\BaseALT\Policies\Polkit"
         name="org.freedesktop.ModemManager1.Firmware-user"
         valuename="org.freedesktop.ModemManager1.Device.Firmware"
-        presentation="$(presentation.org-freedesktop-ModemManager1-Firmware-pr)">
+        presentation="$(presentation.org-freedesktop-ModemManager1-user-pr)">
       <parentCategory ref="system:ALT_ModemManagerPolkit" />
       <supportedOn ref="system:SUPPORTED_AltP10" />
       <elements>
@@ -406,14 +382,6 @@
             </value>
           </item>
         </enum>
-        <boolean id="OrgFreedesktopModemManager_blocker" key="Software\BaseALT\Policies\PolkitLocks" valueName="org.freedesktop.ModemManager1.Firmware">
-          <trueValue>
-            <decimal value="1" />
-          </trueValue>
-          <falseValue>
-            <decimal value="0" />
-          </falseValue>
-        </boolean>
       </elements>
     </policy>
     <policy class="Machine" displayName="$(string.org-freedesktop-ModemManager1-Location)"
@@ -421,7 +389,7 @@
         key="Software\BaseALT\Policies\Polkit"
         name="org.freedesktop.ModemManager1.Location"
         valuename="org.freedesktop.ModemManager1.Location"
-        presentation="$(presentation.org-freedesktop-ModemManager1-Location-pr)">
+        presentation="$(presentation.org-freedesktop-ModemManager1-pr)">
       <parentCategory ref="system:ALT_ModemManagerPolkit" />
       <supportedOn ref="system:SUPPORTED_AltP10" />
       <elements>
@@ -472,7 +440,7 @@
         key="Software\BaseALT\Policies\Polkit"
         name="org.freedesktop.ModemManager1.Location-user"
         valuename="org.freedesktop.ModemManager1.Location"
-        presentation="$(presentation.org-freedesktop-ModemManager1-Location-pr)">
+        presentation="$(presentation.org-freedesktop-ModemManager1-user-pr)">
       <parentCategory ref="system:ALT_ModemManagerPolkit" />
       <supportedOn ref="system:SUPPORTED_AltP10" />
       <elements>
@@ -508,14 +476,6 @@
             </value>
           </item>
         </enum>
-        <boolean id="OrgFreedesktopModemManager_blocker" key="Software\BaseALT\Policies\PolkitLocks" valueName="org.freedesktop.ModemManager1.Location">
-          <trueValue>
-            <decimal value="1" />
-          </trueValue>
-          <falseValue>
-            <decimal value="0" />
-          </falseValue>
-        </boolean>
       </elements>
     </policy>
     <policy class="Machine" displayName="$(string.org-freedesktop-ModemManager1-Messaging)"
@@ -523,7 +483,7 @@
         key="Software\BaseALT\Policies\Polkit"
         name="org.freedesktop.ModemManager1.Messaging"
         valuename="org.freedesktop.ModemManager1.Messaging"
-        presentation="$(presentation.org-freedesktop-ModemManager1-Messaging-pr)">
+        presentation="$(presentation.org-freedesktop-ModemManager1-pr)">
       <parentCategory ref="system:ALT_ModemManagerPolkit" />
       <supportedOn ref="system:SUPPORTED_AltP10" />
       <elements>
@@ -574,7 +534,7 @@
         key="Software\BaseALT\Policies\Polkit"
         name="org.freedesktop.ModemManager1.Messaging-user"
         valuename="org.freedesktop.ModemManager1.Messaging"
-        presentation="$(presentation.org-freedesktop-ModemManager1-Messaging-pr)">
+        presentation="$(presentation.org-freedesktop-ModemManager1-user-pr)">
       <parentCategory ref="system:ALT_ModemManagerPolkit" />
       <supportedOn ref="system:SUPPORTED_AltP10" />
       <elements>
@@ -610,14 +570,6 @@
             </value>
           </item>
         </enum>
-        <boolean id="OrgFreedesktopModemManager_blocker" key="Software\BaseALT\Policies\PolkitLocks" valueName="org.freedesktop.ModemManager1.Messaging">
-          <trueValue>
-            <decimal value="1" />
-          </trueValue>
-          <falseValue>
-            <decimal value="0" />
-          </falseValue>
-        </boolean>
       </elements>
     </policy>
     <policy class="Machine" displayName="$(string.org-freedesktop-ModemManager1-Time)"
@@ -625,7 +577,7 @@
         key="Software\BaseALT\Policies\Polkit"
         name="org.freedesktop.ModemManager1.Time"
         valuename="org.freedesktop.ModemManager1.Time"
-        presentation="$(presentation.org-freedesktop-ModemManager1-Time-pr)">
+        presentation="$(presentation.org-freedesktop-ModemManager1-pr)">
       <parentCategory ref="system:ALT_ModemManagerPolkit" />
       <supportedOn ref="system:SUPPORTED_AltP10" />
       <elements>
@@ -676,7 +628,7 @@
         key="Software\BaseALT\Policies\Polkit"
         name="org.freedesktop.ModemManager1.Time-user"
         valuename="org.freedesktop.ModemManager1.Time"
-        presentation="$(presentation.org-freedesktop-ModemManager1-Time-pr)">
+        presentation="$(presentation.org-freedesktop-ModemManager1-user-pr)">
       <parentCategory ref="system:ALT_ModemManagerPolkit" />
       <supportedOn ref="system:SUPPORTED_AltP10" />
       <elements>
@@ -712,14 +664,6 @@
             </value>
           </item>
         </enum>
-        <boolean id="OrgFreedesktopModemManager_blocker" key="Software\BaseALT\Policies\PolkitLocks" valueName="org.freedesktop.ModemManager1.Time">
-          <trueValue>
-            <decimal value="1" />
-          </trueValue>
-          <falseValue>
-            <decimal value="0" />
-          </falseValue>
-        </boolean>
       </elements>
     </policy>
     <policy class="Machine" displayName="$(string.org-freedesktop-ModemManager1-USSD)"
@@ -727,7 +671,7 @@
         key="Software\BaseALT\Policies\Polkit"
         name="org.freedesktop.ModemManager1.USSD"
         valuename="org.freedesktop.ModemManager1.USSD"
-        presentation="$(presentation.org-freedesktop-ModemManager1-USSD-pr)">
+        presentation="$(presentation.org-freedesktop-ModemManager1-pr)">
       <parentCategory ref="system:ALT_ModemManagerPolkit" />
       <supportedOn ref="system:SUPPORTED_AltP10" />
       <elements>
@@ -778,7 +722,7 @@
         key="Software\BaseALT\Policies\Polkit"
         name="org.freedesktop.ModemManager1.USSDUser"
         valuename="org.freedesktop.ModemManager1.USSD"
-        presentation="$(presentation.org-freedesktop-ModemManager1-USSD-pr)">
+        presentation="$(presentation.org-freedesktop-ModemManager1-user-pr)">
       <parentCategory ref="system:ALT_ModemManagerPolkit" />
       <supportedOn ref="system:SUPPORTED_AltP10" />
       <elements>
@@ -814,14 +758,6 @@
             </value>
           </item>
         </enum>
-        <boolean id="OrgFreedesktopModemManager_blocker" key="Software\BaseALT\Policies\PolkitLocks" valueName="org.freedesktop.ModemManager1.USSD">
-          <trueValue>
-            <decimal value="1" />
-          </trueValue>
-          <falseValue>
-            <decimal value="0" />
-          </falseValue>
-        </boolean>
       </elements>
     </policy>
     <policy class="Machine" displayName="$(string.org-freedesktop-ModemManager1-Voice)"
@@ -829,7 +765,7 @@
         key="Software\BaseALT\Policies\Polkit"
         name="org.freedesktop.ModemManager1.Voice"
         valuename="org.freedesktop.ModemManager1.Voice"
-        presentation="$(presentation.org-freedesktop-ModemManager1-Voice-pr)">
+        presentation="$(presentation.org-freedesktop-ModemManager1-pr)">
       <parentCategory ref="system:ALT_ModemManagerPolkit" />
       <supportedOn ref="system:SUPPORTED_AltP10" />
       <elements>
@@ -880,7 +816,7 @@
         key="Software\BaseALT\Policies\Polkit"
         name="org.freedesktop.ModemManager1.VoiceUser"
         valuename="org.freedesktop.ModemManager1.Voice"
-        presentation="$(presentation.org-freedesktop-ModemManager1-Voice-pr)">
+        presentation="$(presentation.org-freedesktop-ModemManager1-user-pr)">
       <parentCategory ref="system:ALT_ModemManagerPolkit" />
       <supportedOn ref="system:SUPPORTED_AltP10" />
       <elements>
@@ -916,14 +852,6 @@
             </value>
           </item>
         </enum>
-        <boolean id="OrgFreedesktopModemManager_blocker" key="Software\BaseALT\Policies\PolkitLocks" valueName="org.freedesktop.ModemManager1.Voice">
-          <trueValue>
-            <decimal value="1" />
-          </trueValue>
-          <falseValue>
-            <decimal value="0" />
-          </falseValue>
-        </boolean>
       </elements>
     </policy>
   </policies>

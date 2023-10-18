@@ -9,23 +9,23 @@
       <string id="org-freedesktop-ModemManager1-Contacts">Restrict the ability to add, modify, or delete device contacts</string>
       <string id="org-freedesktop-ModemManager1-Contacts_help">The policy manages the restriction on the ability to add, modify and delete mobile broadband contacts
 
-Disabled/Unconfigured - restrictions are defined by system parameters.
+Disabled/Unconfigured — restrictions are defined by system parameters.
 
-Enabled - restriction with defined rights;
+Enabled — restriction with defined rights;
 
 Possible values:
 
-"No" - set restriction with action denial (user is not allowed to perform the action);
+"No" — set restriction with action denial (user is not allowed to perform the action);
 
-"Yes" - remove the restriction (the user can perform the action without any authentication);
+"Yes" — remove the restriction (the user can perform the action without any authentication);
 
-"Auth_self" - the user must enter his/her password for authentication. Note, this level of restriction is not sufficient for most multi-user applications, "Auth_admin" is usually recommended;
+"Auth_self" — the user must enter his/her password for authentication. Note, this level of restriction is not sufficient for most multi-user applications, "Auth_admin" is usually recommended;
 
-"Auth_admin" - the user must enter the administrator password at each request. Requires authentication of the user with administrator privileges;
+"Auth_admin" — the user must enter the administrator password at each request. Requires authentication of the user with administrator privileges;
 
-"Auth_self_keep" - similar to "Auth_self", but authorization is maintained for a short period of time (e.g., five minutes). Note, this level of restriction is insufficient for most multi-user applications, "Auth_admin_keep" is generally recommended;
+"Auth_self_keep" — similar to "Auth_self", but authorization is maintained for a short period of time (e.g., five minutes). Note, this level of restriction is insufficient for most multi-user applications, "Auth_admin_keep" is generally recommended;
 
-"Auth_admin_keep" - similar to "Auth_admin", but authorization is maintained for a short period of time (e.g., five minutes);
+"Auth_admin_keep" — similar to "Auth_admin", but authorization is maintained for a short period of time (e.g., five minutes);
       
 Note: the possession of administrative rights in a PolicyKit context is determined by its rules. By default, Alt asks for the password of a user in the "wheel" group.
 
@@ -33,23 +33,23 @@ Note: the possession of administrative rights in a PolicyKit context is determin
       <string id="org-freedesktop-ModemManager1-Contacts-user">Restrict the ability to add, modify, or delete device contacts</string>
       <string id="org-freedesktop-ModemManager1-Contacts-user_help">The policy manages the restriction on the ability to add, modify and delete mobile broadband contacts
 
-Disabled/Unconfigured - restrictions are defined by system parameters.
+Disabled/Unconfigured — restrictions are defined by system parameters.
 
-Enabled - restriction with defined rights;
+Enabled — restriction with defined rights;
 
 Possible values:
 
-"No" - set restriction with action denial (user is not allowed to perform the action);
+"No" — set restriction with action denial (user is not allowed to perform the action);
 
-"Yes" - remove the restriction (the user can perform the action without any authentication);
+"Yes" — remove the restriction (the user can perform the action without any authentication);
 
-"Auth_self" - the user must enter his/her password for authentication. Note, this level of restriction is not sufficient for most multi-user applications, "Auth_admin" is usually recommended;
+"Auth_self" — the user must enter his/her password for authentication. Note, this level of restriction is not sufficient for most multi-user applications, "Auth_admin" is usually recommended;
 
-"Auth_admin" - the user must enter the administrator password at each request. Requires authentication of the user with administrator privileges;
+"Auth_admin" — the user must enter the administrator password at each request. Requires authentication of the user with administrator privileges;
 
-"Auth_self_keep" - similar to "Auth_self", but authorization is maintained for a short period of time (e.g., five minutes). Note, this level of restriction is insufficient for most multi-user applications, "Auth_admin_keep" is generally recommended;
+"Auth_self_keep" — similar to "Auth_self", but authorization is maintained for a short period of time (e.g., five minutes). Note, this level of restriction is insufficient for most multi-user applications, "Auth_admin_keep" is generally recommended;
 
-"Auth_admin_keep" - similar to "Auth_admin", but authorization is maintained for a short period of time (e.g., five minutes);
+"Auth_admin_keep" — similar to "Auth_admin", but authorization is maintained for a short period of time (e.g., five minutes);
       
 Note: the possession of administrative rights in a PolicyKit context is determined by its rules. By default, Alt asks for the password of a user in the "wheel" group.
 
@@ -57,23 +57,23 @@ Note: the possession of administrative rights in a PolicyKit context is determin
       <string id="org-freedesktop-ModemManager1-Control">The policy restricts the ability to manage the Modem Manager daemon</string>
       <string id="org-freedesktop-ModemManager1-Control_help">The policy restricts the ability to control the Modem Manager
 
-Disabled/Unconfigured - restrictions are defined by system parameters.
+Disabled/Unconfigured — restrictions are defined by system parameters.
 
-Enabled - restriction with defined rights;
+Enabled — restriction with defined rights;
 
 Possible values:
 
-"No" - set restriction with action denial (user is not allowed to perform the action);
+"No" — set restriction with action denial (user is not allowed to perform the action);
 
-"Yes" - remove the restriction (the user can perform the action without any authentication);
+"Yes" — remove the restriction (the user can perform the action without any authentication);
 
-"Auth_self" - the user must enter his/her password for authentication. Note, this level of restriction is not sufficient for most multi-user applications, "Auth_admin" is usually recommended;
+"Auth_self" — the user must enter his/her password for authentication. Note, this level of restriction is not sufficient for most multi-user applications, "Auth_admin" is usually recommended;
 
-"Auth_admin" - the user must enter the administrator password at each request. Requires authentication of the user with administrator privileges;
+"Auth_admin" — the user must enter the administrator password at each request. Requires authentication of the user with administrator privileges;
 
-"Auth_self_keep" - similar to "Auth_self", but authorization is maintained for a short period of time (e.g., five minutes). Note, this level of restriction is insufficient for most multi-user applications, "Auth_admin_keep" is generally recommended;
+"Auth_self_keep" — similar to "Auth_self", but authorization is maintained for a short period of time (e.g., five minutes). Note, this level of restriction is insufficient for most multi-user applications, "Auth_admin_keep" is generally recommended;
 
-"Auth_admin_keep" - similar to "Auth_admin", but authorization is maintained for a short period of time (e.g., five minutes);
+"Auth_admin_keep" — similar to "Auth_admin", but authorization is maintained for a short period of time (e.g., five minutes);
       
 Note: the possession of administrative rights in a PolicyKit context is determined by its rules. By default, Alt asks for the password of a user in the "wheel" group.
 
@@ -81,23 +81,23 @@ Note: the possession of administrative rights in a PolicyKit context is determin
       <string id="org-freedesktop-ModemManager1-Control-user">The policy restricts the ability to manage the Modem Manager daemon</string>
       <string id="org-freedesktop-ModemManager1-Control-user_help">The policy restricts the ability to control the Modem Manager
       
-Disabled/Unconfigured - restrictions are defined by system parameters.
+Disabled/Unconfigured — restrictions are defined by system parameters.
 
-Enabled - restriction with defined rights;
+Enabled — restriction with defined rights;
 
 Possible values:
 
-"No" - set restriction with action denial (user is not allowed to perform the action);
+"No" — set restriction with action denial (user is not allowed to perform the action);
 
-"Yes" - remove the restriction (the user can perform the action without any authentication);
+"Yes" — remove the restriction (the user can perform the action without any authentication);
 
-"Auth_self" - the user must enter his/her password for authentication. Note, this level of restriction is not sufficient for most multi-user applications, "Auth_admin" is usually recommended;
+"Auth_self" — the user must enter his/her password for authentication. Note, this level of restriction is not sufficient for most multi-user applications, "Auth_admin" is usually recommended;
 
-"Auth_admin" - the user must enter the administrator password at each request. Requires authentication of the user with administrator privileges;
+"Auth_admin" — the user must enter the administrator password at each request. Requires authentication of the user with administrator privileges;
 
-"Auth_self_keep" - similar to "Auth_self", but authorization is maintained for a short period of time (e.g., five minutes). Note, this level of restriction is insufficient for most multi-user applications, "Auth_admin_keep" is generally recommended;
+"Auth_self_keep" — similar to "Auth_self", but authorization is maintained for a short period of time (e.g., five minutes). Note, this level of restriction is insufficient for most multi-user applications, "Auth_admin_keep" is generally recommended;
 
-"Auth_admin_keep" - similar to "Auth_admin", but authorization is maintained for a short period of time (e.g., five minutes);
+"Auth_admin_keep" — similar to "Auth_admin", but authorization is maintained for a short period of time (e.g., five minutes);
       
 Note: the possession of administrative rights in a PolicyKit context is determined by its rules. By default, Alt asks for the password of a user in the "wheel" group.
 
@@ -105,23 +105,23 @@ Note: the possession of administrative rights in a PolicyKit context is determin
       <string id="org-freedesktop-ModemManager1-Device-Control">Restricting the ability to blocking and control a mobile broadband device</string>
       <string id="org-freedesktop-ModemManager1-Device-Control_help">The policy restricts the ability to control the Modem Manager
 
-Disabled/Unconfigured - restrictions are defined by system parameters.
+Disabled/Unconfigured — restrictions are defined by system parameters.
 
-Enabled - restriction with defined rights;
+Enabled — restriction with defined rights;
 
 Possible values:
 
-"No" - set restriction with action denial (user is not allowed to perform the action);
+"No" — set restriction with action denial (user is not allowed to perform the action);
 
-"Yes" - remove the restriction (the user can perform the action without any authentication);
+"Yes" — remove the restriction (the user can perform the action without any authentication);
 
-"Auth_self" - the user must enter his/her password for authentication. Note, this level of restriction is not sufficient for most multi-user applications, "Auth_admin" is usually recommended;
+"Auth_self" — the user must enter his/her password for authentication. Note, this level of restriction is not sufficient for most multi-user applications, "Auth_admin" is usually recommended;
 
-"Auth_admin" - the user must enter the administrator password at each request. Requires authentication of the user with administrator privileges;
+"Auth_admin" — the user must enter the administrator password at each request. Requires authentication of the user with administrator privileges;
 
-"Auth_self_keep" - similar to "Auth_self", but authorization is maintained for a short period of time (e.g., five minutes). Note, this level of restriction is insufficient for most multi-user applications, "Auth_admin_keep" is generally recommended;
+"Auth_self_keep" — similar to "Auth_self", but authorization is maintained for a short period of time (e.g., five minutes). Note, this level of restriction is insufficient for most multi-user applications, "Auth_admin_keep" is generally recommended;
 
-"Auth_admin_keep" - similar to "Auth_admin", but authorization is maintained for a short period of time (e.g., five minutes);
+"Auth_admin_keep" — similar to "Auth_admin", but authorization is maintained for a short period of time (e.g., five minutes);
       
 Note: the possession of administrative rights in a PolicyKit context is determined by its rules. By default, Alt asks for the password of a user in the "wheel" group.
 
@@ -129,23 +129,23 @@ Note: the possession of administrative rights in a PolicyKit context is determin
       <string id="org-freedesktop-ModemManager1-Device-Control-user">Restricting the ability to blocking and control a mobile broadband device</string>
       <string id="org-freedesktop-ModemManager1-Device-Control-user_help">The policy restricts the ability to control the Modem Manager
 
-Disabled/Unconfigured - restrictions are defined by system parameters.
+Disabled/Unconfigured — restrictions are defined by system parameters.
 
-Enabled - restriction with defined rights;
+Enabled — restriction with defined rights;
 
 Possible values:
 
-"No" - set restriction with action denial (user is not allowed to perform the action);
+"No" — set restriction with action denial (user is not allowed to perform the action);
 
-"Yes" - remove the restriction (the user can perform the action without any authentication);
+"Yes" — remove the restriction (the user can perform the action without any authentication);
 
-"Auth_self" - the user must enter his/her password for authentication. Note, this level of restriction is not sufficient for most multi-user applications, "Auth_admin" is usually recommended;
+"Auth_self" — the user must enter his/her password for authentication. Note, this level of restriction is not sufficient for most multi-user applications, "Auth_admin" is usually recommended;
 
-"Auth_admin" - the user must enter the administrator password at each request. Requires authentication of the user with administrator privileges;
+"Auth_admin" — the user must enter the administrator password at each request. Requires authentication of the user with administrator privileges;
 
-"Auth_self_keep" - similar to "Auth_self", but authorization is maintained for a short period of time (e.g., five minutes). Note, this level of restriction is insufficient for most multi-user applications, "Auth_admin_keep" is generally recommended;
+"Auth_self_keep" — similar to "Auth_self", but authorization is maintained for a short period of time (e.g., five minutes). Note, this level of restriction is insufficient for most multi-user applications, "Auth_admin_keep" is generally recommended;
 
-"Auth_admin_keep" - similar to "Auth_admin", but authorization is maintained for a short period of time (e.g., five minutes);
+"Auth_admin_keep" — similar to "Auth_admin", but authorization is maintained for a short period of time (e.g., five minutes);
       
 Note: the possession of administrative rights in a PolicyKit context is determined by its rules. By default, Alt asks for the password of a user in the "wheel" group.
 
@@ -153,23 +153,23 @@ Note: the possession of administrative rights in a PolicyKit context is determin
       <string id="org-freedesktop-ModemManager1-Firmware">Restricting the ability to control the firmware of a mobile broadband device</string>
       <string id="org-freedesktop-ModemManager1-Firmware_help">The policy restricts the ability to control the firmware of this device
 
-Disabled/Unconfigured - restrictions are defined by system parameters.
+Disabled/Unconfigured — restrictions are defined by system parameters.
 
-Enabled - restriction with defined rights;
+Enabled — restriction with defined rights;
 
 Possible values:
 
-"No" - set restriction with action denial (user is not allowed to perform the action);
+"No" — set restriction with action denial (user is not allowed to perform the action);
 
-"Yes" - remove the restriction (the user can perform the action without any authentication);
+"Yes" — remove the restriction (the user can perform the action without any authentication);
 
-"Auth_self" - the user must enter his/her password for authentication. Note, this level of restriction is not sufficient for most multi-user applications, "Auth_admin" is usually recommended;
+"Auth_self" — the user must enter his/her password for authentication. Note, this level of restriction is not sufficient for most multi-user applications, "Auth_admin" is usually recommended;
 
-"Auth_admin" - the user must enter the administrator password at each request. Requires authentication of the user with administrator privileges;
+"Auth_admin" — the user must enter the administrator password at each request. Requires authentication of the user with administrator privileges;
 
-"Auth_self_keep" - similar to "Auth_self", but authorization is maintained for a short period of time (e.g., five minutes). Note, this level of restriction is insufficient for most multi-user applications, "Auth_admin_keep" is generally recommended;
+"Auth_self_keep" — similar to "Auth_self", but authorization is maintained for a short period of time (e.g., five minutes). Note, this level of restriction is insufficient for most multi-user applications, "Auth_admin_keep" is generally recommended;
 
-"Auth_admin_keep" - similar to "Auth_admin", but authorization is maintained for a short period of time (e.g., five minutes);
+"Auth_admin_keep" — similar to "Auth_admin", but authorization is maintained for a short period of time (e.g., five minutes);
       
 Note: the possession of administrative rights in a PolicyKit context is determined by its rules. By default, Alt asks for the password of a user in the "wheel" group.
 
@@ -177,23 +177,23 @@ Note: the possession of administrative rights in a PolicyKit context is determin
       <string id="org-freedesktop-ModemManager1-Firmware-user">Restricting the ability to control the firmware of a mobile broadband device</string>
       <string id="org-freedesktop-ModemManager1-Firmware-user_help">The policy restricts the ability to control the firmware of this device
 
-Disabled/Unconfigured - restrictions are defined by system parameters.
+Disabled/Unconfigured — restrictions are defined by system parameters.
 
-Enabled - restriction with defined rights;
+Enabled — restriction with defined rights;
 
 Possible values:
 
-"No" - set restriction with action denial (user is not allowed to perform the action);
+"No" — set restriction with action denial (user is not allowed to perform the action);
 
-"Yes" - remove the restriction (the user can perform the action without any authentication);
+"Yes" — remove the restriction (the user can perform the action without any authentication);
 
-"Auth_self" - the user must enter his/her password for authentication. Note, this level of restriction is not sufficient for most multi-user applications, "Auth_admin" is usually recommended;
+"Auth_self" — the user must enter his/her password for authentication. Note, this level of restriction is not sufficient for most multi-user applications, "Auth_admin" is usually recommended;
 
-"Auth_admin" - the user must enter the administrator password at each request. Requires authentication of the user with administrator privileges;
+"Auth_admin" — the user must enter the administrator password at each request. Requires authentication of the user with administrator privileges;
 
-"Auth_self_keep" - similar to "Auth_self", but authorization is maintained for a short period of time (e.g., five minutes). Note, this level of restriction is insufficient for most multi-user applications, "Auth_admin_keep" is generally recommended;
+"Auth_self_keep" — similar to "Auth_self", but authorization is maintained for a short period of time (e.g., five minutes). Note, this level of restriction is insufficient for most multi-user applications, "Auth_admin_keep" is generally recommended;
 
-"Auth_admin_keep" - similar to "Auth_admin", but authorization is maintained for a short period of time (e.g., five minutes);
+"Auth_admin_keep" — similar to "Auth_admin", but authorization is maintained for a short period of time (e.g., five minutes);
       
 Note: the possession of administrative rights in a PolicyKit context is determined by its rules. By default, Alt asks for the password of a user in the "wheel" group.
 
@@ -201,23 +201,23 @@ Note: the possession of administrative rights in a PolicyKit context is determin
       <string id="org-freedesktop-ModemManager1-Location">Restricted ability to view geographic and positioning information</string>
       <string id="org-freedesktop-ModemManager1-Location_help">The policy restricts the ability to view geographic location information
 
-Disabled/Unconfigured - restrictions are defined by system parameters.
+Disabled/Unconfigured — restrictions are defined by system parameters.
 
-Enabled - restriction with defined rights;
+Enabled — restriction with defined rights;
 
 Possible values:
 
-"No" - set restriction with action denial (user is not allowed to perform the action);
+"No" — set restriction with action denial (user is not allowed to perform the action);
 
-"Yes" - remove the restriction (the user can perform the action without any authentication);
+"Yes" — remove the restriction (the user can perform the action without any authentication);
 
-"Auth_self" - the user must enter his/her password for authentication. Note, this level of restriction is not sufficient for most multi-user applications, "Auth_admin" is usually recommended;
+"Auth_self" — the user must enter his/her password for authentication. Note, this level of restriction is not sufficient for most multi-user applications, "Auth_admin" is usually recommended;
 
-"Auth_admin" - the user must enter the administrator password at each request. Requires authentication of the user with administrator privileges;
+"Auth_admin" — the user must enter the administrator password at each request. Requires authentication of the user with administrator privileges;
 
-"Auth_self_keep" - similar to "Auth_self", but authorization is maintained for a short period of time (e.g., five minutes). Note, this level of restriction is insufficient for most multi-user applications, "Auth_admin_keep" is generally recommended;
+"Auth_self_keep" — similar to "Auth_self", but authorization is maintained for a short period of time (e.g., five minutes). Note, this level of restriction is insufficient for most multi-user applications, "Auth_admin_keep" is generally recommended;
 
-"Auth_admin_keep" - similar to "Auth_admin", but authorization is maintained for a short period of time (e.g., five minutes);
+"Auth_admin_keep" — similar to "Auth_admin", but authorization is maintained for a short period of time (e.g., five minutes);
       
 Note: the possession of administrative rights in a PolicyKit context is determined by its rules. By default, Alt asks for the password of a user in the "wheel" group.
 
@@ -225,23 +225,23 @@ Note: the possession of administrative rights in a PolicyKit context is determin
       <string id="org-freedesktop-ModemManager1-Location-user">Restricted ability to view geographic and positioning information</string>
       <string id="org-freedesktop-ModemManager1-Location-user_help">The policy restricts the ability to view geographic location information
       
-Disabled/Unconfigured - restrictions are defined by system parameters.
+Disabled/Unconfigured — restrictions are defined by system parameters.
 
-Enabled - restriction with defined rights;
+Enabled — restriction with defined rights;
 
 Possible values:
 
-"No" - set restriction with action denial (user is not allowed to perform the action);
+"No" — set restriction with action denial (user is not allowed to perform the action);
 
-"Yes" - remove the restriction (the user can perform the action without any authentication);
+"Yes" — remove the restriction (the user can perform the action without any authentication);
 
-"Auth_self" - the user must enter his/her password for authentication. Note, this level of restriction is not sufficient for most multi-user applications, "Auth_admin" is usually recommended;
+"Auth_self" — the user must enter his/her password for authentication. Note, this level of restriction is not sufficient for most multi-user applications, "Auth_admin" is usually recommended;
 
-"Auth_admin" - the user must enter the administrator password at each request. Requires authentication of the user with administrator privileges;
+"Auth_admin" — the user must enter the administrator password at each request. Requires authentication of the user with administrator privileges;
 
-"Auth_self_keep" - similar to "Auth_self", but authorization is maintained for a short period of time (e.g., five minutes). Note, this level of restriction is insufficient for most multi-user applications, "Auth_admin_keep" is generally recommended;
+"Auth_self_keep" — similar to "Auth_self", but authorization is maintained for a short period of time (e.g., five minutes). Note, this level of restriction is insufficient for most multi-user applications, "Auth_admin_keep" is generally recommended;
 
-"Auth_admin_keep" - similar to "Auth_admin", but authorization is maintained for a short period of time (e.g., five minutes);
+"Auth_admin_keep" — similar to "Auth_admin", but authorization is maintained for a short period of time (e.g., five minutes);
       
 Note: the possession of administrative rights in a PolicyKit context is determined by its rules. By default, Alt asks for the password of a user in the "wheel" group.
 
@@ -249,23 +249,23 @@ Note: the possession of administrative rights in a PolicyKit context is determin
       <string id="org-freedesktop-ModemManager1-Messaging">Restrict the ability to send, save, modify and delete text messages</string>
       <string id="org-freedesktop-ModemManager1-Messaging_help">The policy restricts the ability to send or manipulate text messages to the device
 
-Disabled/Unconfigured - restrictions are defined by system parameters.
+Disabled/Unconfigured — restrictions are defined by system parameters.
 
-Enabled - restriction with defined rights;
+Enabled — restriction with defined rights;
 
 Possible values:
 
-"No" - set restriction with action denial (user is not allowed to perform the action);
+"No" — set restriction with action denial (user is not allowed to perform the action);
 
-"Yes" - remove the restriction (the user can perform the action without any authentication);
+"Yes" — remove the restriction (the user can perform the action without any authentication);
 
-"Auth_self" - the user must enter his/her password for authentication. Note, this level of restriction is not sufficient for most multi-user applications, "Auth_admin" is usually recommended;
+"Auth_self" — the user must enter his/her password for authentication. Note, this level of restriction is not sufficient for most multi-user applications, "Auth_admin" is usually recommended;
 
-"Auth_admin" - the user must enter the administrator password at each request. Requires authentication of the user with administrator privileges;
+"Auth_admin" — the user must enter the administrator password at each request. Requires authentication of the user with administrator privileges;
 
-"Auth_self_keep" - similar to "Auth_self", but authorization is maintained for a short period of time (e.g., five minutes). Note, this level of restriction is insufficient for most multi-user applications, "Auth_admin_keep" is generally recommended;
+"Auth_self_keep" — similar to "Auth_self", but authorization is maintained for a short period of time (e.g., five minutes). Note, this level of restriction is insufficient for most multi-user applications, "Auth_admin_keep" is generally recommended;
 
-"Auth_admin_keep" - similar to "Auth_admin", but authorization is maintained for a short period of time (e.g., five minutes);
+"Auth_admin_keep" — similar to "Auth_admin", but authorization is maintained for a short period of time (e.g., five minutes);
       
 Note: the possession of administrative rights in a PolicyKit context is determined by its rules. By default, Alt asks for the password of a user in the "wheel" group.
 
@@ -273,23 +273,23 @@ Note: the possession of administrative rights in a PolicyKit context is determin
       <string id="org-freedesktop-ModemManager1-Messaging-user">Restrict the ability to send, save, modify and delete text messages</string>
       <string id="org-freedesktop-ModemManager1-Messaging-user_help">The policy restricts the ability to send or manipulate text messages to the device
 
-Disabled/Unconfigured - restrictions are defined by system parameters.
+Disabled/Unconfigured — restrictions are defined by system parameters.
 
-Enabled - restriction with defined rights;
+Enabled — restriction with defined rights;
 
 Possible values:
 
-"No" - set restriction with action denial (user is not allowed to perform the action);
+"No" — set restriction with action denial (user is not allowed to perform the action);
 
-"Yes" - remove the restriction (the user can perform the action without any authentication);
+"Yes" — remove the restriction (the user can perform the action without any authentication);
 
-"Auth_self" - the user must enter his/her password for authentication. Note, this level of restriction is not sufficient for most multi-user applications, "Auth_admin" is usually recommended;
+"Auth_self" — the user must enter his/her password for authentication. Note, this level of restriction is not sufficient for most multi-user applications, "Auth_admin" is usually recommended;
 
-"Auth_admin" - the user must enter the administrator password at each request. Requires authentication of the user with administrator privileges;
+"Auth_admin" — the user must enter the administrator password at each request. Requires authentication of the user with administrator privileges;
 
-"Auth_self_keep" - similar to "Auth_self", but authorization is maintained for a short period of time (e.g., five minutes). Note, this level of restriction is insufficient for most multi-user applications, "Auth_admin_keep" is generally recommended;
+"Auth_self_keep" — similar to "Auth_self", but authorization is maintained for a short period of time (e.g., five minutes). Note, this level of restriction is insufficient for most multi-user applications, "Auth_admin_keep" is generally recommended;
 
-"Auth_admin_keep" - similar to "Auth_admin", but authorization is maintained for a short period of time (e.g., five minutes);
+"Auth_admin_keep" — similar to "Auth_admin", but authorization is maintained for a short period of time (e.g., five minutes);
       
 Note: the possession of administrative rights in a PolicyKit context is determined by its rules. By default, Alt asks for the password of a user in the "wheel" group.
 
@@ -297,23 +297,23 @@ Note: the possession of administrative rights in a PolicyKit context is determin
       <string id="org-freedesktop-ModemManager1-Time">Restrict the ability to request network time and time zone information</string>
       <string id="org-freedesktop-ModemManager1-Time_help">The policy restricts the ability to request network time information
 
-Disabled/Unconfigured - restrictions are defined by system parameters.
+Disabled/Unconfigured — restrictions are defined by system parameters.
 
-Enabled - restriction with defined rights;
+Enabled — restriction with defined rights;
 
 Possible values:
 
-"No" - set restriction with action denial (user is not allowed to perform the action);
+"No" — set restriction with action denial (user is not allowed to perform the action);
 
-"Yes" - remove the restriction (the user can perform the action without any authentication);
+"Yes" — remove the restriction (the user can perform the action without any authentication);
 
-"Auth_self" - the user must enter his/her password for authentication. Note, this level of restriction is not sufficient for most multi-user applications, "Auth_admin" is usually recommended;
+"Auth_self" — the user must enter his/her password for authentication. Note, this level of restriction is not sufficient for most multi-user applications, "Auth_admin" is usually recommended;
 
-"Auth_admin" - the user must enter the administrator password at each request. Requires authentication of the user with administrator privileges;
+"Auth_admin" — the user must enter the administrator password at each request. Requires authentication of the user with administrator privileges;
 
-"Auth_self_keep" - similar to "Auth_self", but authorization is maintained for a short period of time (e.g., five minutes). Note, this level of restriction is insufficient for most multi-user applications, "Auth_admin_keep" is generally recommended;
+"Auth_self_keep" — similar to "Auth_self", but authorization is maintained for a short period of time (e.g., five minutes). Note, this level of restriction is insufficient for most multi-user applications, "Auth_admin_keep" is generally recommended;
 
-"Auth_admin_keep" - similar to "Auth_admin", but authorization is maintained for a short period of time (e.g., five minutes);
+"Auth_admin_keep" — similar to "Auth_admin", but authorization is maintained for a short period of time (e.g., five minutes);
       
 Note: the possession of administrative rights in a PolicyKit context is determined by its rules. By default, Alt asks for the password of a user in the "wheel" group.
 
@@ -321,23 +321,23 @@ Note: the possession of administrative rights in a PolicyKit context is determin
       <string id="org-freedesktop-ModemManager1-Time-user">Restrict the ability to request network time and time zone information</string>
       <string id="org-freedesktop-ModemManager1-Time-user_help">The policy restricts the ability to request network time information
 
-Disabled/Unconfigured - restrictions are defined by system parameters.
+Disabled/Unconfigured — restrictions are defined by system parameters.
 
-Enabled - restriction with defined rights;
+Enabled — restriction with defined rights;
 
 Possible values:
 
-"No" - set restriction with action denial (user is not allowed to perform the action);
+"No" — set restriction with action denial (user is not allowed to perform the action);
 
-"Yes" - remove the restriction (the user can perform the action without any authentication);
+"Yes" — remove the restriction (the user can perform the action without any authentication);
 
-"Auth_self" - the user must enter his/her password for authentication. Note, this level of restriction is not sufficient for most multi-user applications, "Auth_admin" is usually recommended;
+"Auth_self" — the user must enter his/her password for authentication. Note, this level of restriction is not sufficient for most multi-user applications, "Auth_admin" is usually recommended;
 
-"Auth_admin" - the user must enter the administrator password at each request. Requires authentication of the user with administrator privileges;
+"Auth_admin" — the user must enter the administrator password at each request. Requires authentication of the user with administrator privileges;
 
-"Auth_self_keep" - similar to "Auth_self", but authorization is maintained for a short period of time (e.g., five minutes). Note, this level of restriction is insufficient for most multi-user applications, "Auth_admin_keep" is generally recommended;
+"Auth_self_keep" — similar to "Auth_self", but authorization is maintained for a short period of time (e.g., five minutes). Note, this level of restriction is insufficient for most multi-user applications, "Auth_admin_keep" is generally recommended;
 
-"Auth_admin_keep" - similar to "Auth_admin", but authorization is maintained for a short period of time (e.g., five minutes);
+"Auth_admin_keep" — similar to "Auth_admin", but authorization is maintained for a short period of time (e.g., five minutes);
       
 Note: the possession of administrative rights in a PolicyKit context is determined by its rules. By default, Alt asks for the password of a user in the "wheel" group.
 
@@ -345,23 +345,23 @@ Note: the possession of administrative rights in a PolicyKit context is determin
       <string id="org-freedesktop-ModemManager1-USSD">Restrict the ability to request and use network information and services</string>
       <string id="org-freedesktop-ModemManager1-USSD_help">The policy restricts the ability to request or use network information and service
 
-Disabled/Unconfigured - restrictions are defined by system parameters.
+Disabled/Unconfigured — restrictions are defined by system parameters.
 
-Enabled - restriction with defined rights;
+Enabled — restriction with defined rights;
 
 Possible values:
 
-"No" - set restriction with action denial (user is not allowed to perform the action);
+"No" — set restriction with action denial (user is not allowed to perform the action);
 
-"Yes" - remove the restriction (the user can perform the action without any authentication);
+"Yes" — remove the restriction (the user can perform the action without any authentication);
 
-"Auth_self" - the user must enter his/her password for authentication. Note, this level of restriction is not sufficient for most multi-user applications, "Auth_admin" is usually recommended;
+"Auth_self" — the user must enter his/her password for authentication. Note, this level of restriction is not sufficient for most multi-user applications, "Auth_admin" is usually recommended;
 
-"Auth_admin" - the user must enter the administrator password at each request. Requires authentication of the user with administrator privileges;
+"Auth_admin" — the user must enter the administrator password at each request. Requires authentication of the user with administrator privileges;
 
-"Auth_self_keep" - similar to "Auth_self", but authorization is maintained for a short period of time (e.g., five minutes). Note, this level of restriction is insufficient for most multi-user applications, "Auth_admin_keep" is generally recommended;
+"Auth_self_keep" — similar to "Auth_self", but authorization is maintained for a short period of time (e.g., five minutes). Note, this level of restriction is insufficient for most multi-user applications, "Auth_admin_keep" is generally recommended;
 
-"Auth_admin_keep" - similar to "Auth_admin", but authorization is maintained for a short period of time (e.g., five minutes);
+"Auth_admin_keep" — similar to "Auth_admin", but authorization is maintained for a short period of time (e.g., five minutes);
       
 Note: the possession of administrative rights in a PolicyKit context is determined by its rules. By default, Alt asks for the password of a user in the "wheel" group.
 
@@ -369,23 +369,23 @@ Note: the possession of administrative rights in a PolicyKit context is determin
       <string id="org-freedesktop-ModemManager1-USSD-user">Restrict the ability to request and use network information and services</string>
       <string id="org-freedesktop-ModemManager1-USSD-user_help">The policy restricts the ability to request or use network information and service
 
-Disabled/Unconfigured - restrictions are defined by system parameters.
+Disabled/Unconfigured — restrictions are defined by system parameters.
 
-Enabled - restriction with defined rights;
+Enabled — restriction with defined rights;
 
 Possible values:
 
-"No" - set restriction with action denial (user is not allowed to perform the action);
+"No" — set restriction with action denial (user is not allowed to perform the action);
 
-"Yes" - remove the restriction (the user can perform the action without any authentication);
+"Yes" — remove the restriction (the user can perform the action without any authentication);
 
-"Auth_self" - the user must enter his/her password for authentication. Note, this level of restriction is not sufficient for most multi-user applications, "Auth_admin" is usually recommended;
+"Auth_self" — the user must enter his/her password for authentication. Note, this level of restriction is not sufficient for most multi-user applications, "Auth_admin" is usually recommended;
 
-"Auth_admin" - the user must enter the administrator password at each request. Requires authentication of the user with administrator privileges;
+"Auth_admin" — the user must enter the administrator password at each request. Requires authentication of the user with administrator privileges;
 
-"Auth_self_keep" - similar to "Auth_self", but authorization is maintained for a short period of time (e.g., five minutes). Note, this level of restriction is insufficient for most multi-user applications, "Auth_admin_keep" is generally recommended;
+"Auth_self_keep" — similar to "Auth_self", but authorization is maintained for a short period of time (e.g., five minutes). Note, this level of restriction is insufficient for most multi-user applications, "Auth_admin_keep" is generally recommended;
 
-"Auth_admin_keep" - similar to "Auth_admin", but authorization is maintained for a short period of time (e.g., five minutes);
+"Auth_admin_keep" — similar to "Auth_admin", but authorization is maintained for a short period of time (e.g., five minutes);
       
 Note: the possession of administrative rights in a PolicyKit context is determined by its rules. By default, Alt asks for the password of a user in the "wheel" group.
 
@@ -393,23 +393,23 @@ Note: the possession of administrative rights in a PolicyKit context is determin
       <string id="org-freedesktop-ModemManager1-Voice">Restricting the ability to receive incoming voice calls or start an outgoing voice call</string>
       <string id="org-freedesktop-ModemManager1-Voice_help">The policy restricts the ability to make voice calls
 
-Disabled/Unconfigured - restrictions are defined by system parameters.
+Disabled/Unconfigured — restrictions are defined by system parameters.
 
-Enabled - restriction with defined rights;
+Enabled — restriction with defined rights;
 
 Possible values:
 
-"No" - set restriction with action denial (user is not allowed to perform the action);
+"No" — set restriction with action denial (user is not allowed to perform the action);
 
-"Yes" - remove the restriction (the user can perform the action without any authentication);
+"Yes" — remove the restriction (the user can perform the action without any authentication);
 
-"Auth_self" - the user must enter his/her password for authentication. Note, this level of restriction is not sufficient for most multi-user applications, "Auth_admin" is usually recommended;
+"Auth_self" — the user must enter his/her password for authentication. Note, this level of restriction is not sufficient for most multi-user applications, "Auth_admin" is usually recommended;
 
-"Auth_admin" - the user must enter the administrator password at each request. Requires authentication of the user with administrator privileges;
+"Auth_admin" — the user must enter the administrator password at each request. Requires authentication of the user with administrator privileges;
 
-"Auth_self_keep" - similar to "Auth_self", but authorization is maintained for a short period of time (e.g., five minutes). Note, this level of restriction is insufficient for most multi-user applications, "Auth_admin_keep" is generally recommended;
+"Auth_self_keep" — similar to "Auth_self", but authorization is maintained for a short period of time (e.g., five minutes). Note, this level of restriction is insufficient for most multi-user applications, "Auth_admin_keep" is generally recommended;
 
-"Auth_admin_keep" - similar to "Auth_admin", but authorization is maintained for a short period of time (e.g., five minutes);
+"Auth_admin_keep" — similar to "Auth_admin", but authorization is maintained for a short period of time (e.g., five minutes);
       
 Note: the possession of administrative rights in a PolicyKit context is determined by its rules. By default, Alt asks for the password of a user in the "wheel" group.
 
@@ -417,23 +417,23 @@ Note: the possession of administrative rights in a PolicyKit context is determin
       <string id="org-freedesktop-ModemManager1-Voice-user">Restricting the ability to receive incoming voice calls or start an outgoing voice call</string>
       <string id="org-freedesktop-ModemManager1-Voice-user_help">The policy restricts the ability to make voice calls
 
-Disabled/Unconfigured - restrictions are defined by system parameters.
+Disabled/Unconfigured — restrictions are defined by system parameters.
 
-Enabled - restriction with defined rights;
+Enabled — restriction with defined rights;
 
 Possible values:
 
-"No" - set restriction with action denial (user is not allowed to perform the action);
+"No" — set restriction with action denial (user is not allowed to perform the action);
 
-"Yes" - remove the restriction (the user can perform the action without any authentication);
+"Yes" — remove the restriction (the user can perform the action without any authentication);
 
-"Auth_self" - the user must enter his/her password for authentication. Note, this level of restriction is not sufficient for most multi-user applications, "Auth_admin" is usually recommended;
+"Auth_self" — the user must enter his/her password for authentication. Note, this level of restriction is not sufficient for most multi-user applications, "Auth_admin" is usually recommended;
 
-"Auth_admin" - the user must enter the administrator password at each request. Requires authentication of the user with administrator privileges;
+"Auth_admin" — the user must enter the administrator password at each request. Requires authentication of the user with administrator privileges;
 
-"Auth_self_keep" - similar to "Auth_self", but authorization is maintained for a short period of time (e.g., five minutes). Note, this level of restriction is insufficient for most multi-user applications, "Auth_admin_keep" is generally recommended;
+"Auth_self_keep" — similar to "Auth_self", but authorization is maintained for a short period of time (e.g., five minutes). Note, this level of restriction is insufficient for most multi-user applications, "Auth_admin_keep" is generally recommended;
 
-"Auth_admin_keep" - similar to "Auth_admin", but authorization is maintained for a short period of time (e.g., five minutes);
+"Auth_admin_keep" — similar to "Auth_admin", but authorization is maintained for a short period of time (e.g., five minutes);
       
 Note: the possession of administrative rights in a PolicyKit context is determined by its rules. By default, Alt asks for the password of a user in the "wheel" group.
 
@@ -454,46 +454,9 @@ Note: the possession of administrative rights in a PolicyKit context is determin
        <checkBox refId="OrgFreedesktopModemManager_blocker">Block</checkBox>
         <text>Blocking changes to this setting by user policy. Blocking a policy makes it a priority over a similar policy for the user.</text>
         </presentation>
-        <presentation id="org-freedesktop-ModemManager1-Control-pr">
+        <presentation id="org-freedesktop-ModemManager1-Control-user-pr">
          <dropdownList noSort="true" defaultItem="1" refId="OrgFreedesktopModemManager_setter">Restriction options for the ModemManager service:</dropdownList>
-         <checkBox refId="OrgFreedesktopModemManager_blocker">Block</checkBox>
-         <text>Blocking changes to this setting by user policy. Blocking a policy makes it a priority over a similar policy for the user.</text>
         </presentation>
-        <presentation id="org-freedesktop-ModemManager1-Device-Control-pr">
-       <dropdownList noSort="true" defaultItem="1" refId="OrgFreedesktopModemManager_setter">Restriction options for the ModemManager service:</dropdownList>
-       <checkBox refId="OrgFreedesktopModemManager_blocker">Block</checkBox>
-       <text>Blocking changes to this setting by user policy. Blocking a policy makes it a priority over a similar policy for the user.</text>
-      </presentation>
-       <presentation id="org-freedesktop-ModemManager1-Firmware-pr">
-       <dropdownList noSort="true" defaultItem="1" refId="OrgFreedesktopModemManager_setter">Restriction options for the ModemManager service:</dropdownList>
-       <checkBox refId="OrgFreedesktopModemManager_blocker">Block</checkBox>
-       <text>Blocking changes to this setting by user policy. Blocking a policy makes it a priority over a similar policy for the user.</text>
-      </presentation>
-      <presentation id="org-freedesktop-ModemManager1-Location-pr">
-       <dropdownList noSort="true" defaultItem="1" refId="OrgFreedesktopModemManager_setter">Restriction options for the ModemManager service:</dropdownList>
-       <checkBox refId="OrgFreedesktopModemManager_blocker">Block</checkBox>
-       <text>Blocking changes to this setting by user policy. Blocking a policy makes it a priority over a similar policy for the user.</text>
-      </presentation>
-      <presentation id="org-freedesktop-ModemManager1-Messaging-pr">
-       <dropdownList noSort="true" defaultItem="1" refId="OrgFreedesktopModemManager_setter">Restriction options for the ModemManager service:</dropdownList>
-       <checkBox refId="OrgFreedesktopModemManager_blocker">Block</checkBox>
-       <text>Blocking changes to this setting by user policy. Blocking a policy makes it a priority over a similar policy for the user.</text>
-      </presentation>
-       <presentation id="org-freedesktop-ModemManager1-Time-pr">
-       <dropdownList noSort="true" defaultItem="1" refId="OrgFreedesktopModemManager_setter">Restriction options for the ModemManager service:</dropdownList>
-       <checkBox refId="OrgFreedesktopModemManager_blocker">Block</checkBox>
-       <text>Blocking changes to this setting by user policy. Blocking a policy makes it a priority over a similar policy for the user.</text>
-      </presentation>
-      <presentation id="org-freedesktop-ModemManager1-USSD-pr">
-       <dropdownList noSort="true" defaultItem="1" refId="OrgFreedesktopModemManager_setter">Restriction options for the ModemManager service:</dropdownList>
-       <checkBox refId="OrgFreedesktopModemManager_blocker">Block</checkBox>
-       <text>Blocking changes to this setting by user policy. Blocking a policy makes it a priority over a similar policy for the user.</text>
-      </presentation>
-      <presentation id="org-freedesktop-ModemManager1-Voice-pr">
-       <dropdownList noSort="true" defaultItem="1" refId="OrgFreedesktopModemManager_setter">Restriction options for the ModemManager service:</dropdownList>
-       <checkBox refId="OrgFreedesktopModemManager_blocker">Block</checkBox>
-       <text>Blocking changes to this setting by user policy. Blocking a policy makes it a priority over a similar policy for the user.</text>
-      </presentation>
     </presentationTable>
   </resources>
 </policyDefinitionResources>
