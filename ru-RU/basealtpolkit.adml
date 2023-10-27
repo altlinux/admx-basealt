@@ -31,6 +31,8 @@
 
 Примечание: обладание административными правами в контексте PolicyKit определяются его правилами. По умолчанию в Альт запрашивается пароль пользователя, находящегося в группе «wheel».
 
+Опция «Блокировать» необходима для запрета изменений данной настройки пользователем. Блокировка политики делает её приоритетнее аналогичной политики для пользователя.
+
       </string>
       <string id="org-freedesktop-udisks2-filesystem-mount-user">Ограничение возможности монтирования файловой системы</string>
       <string id="org-freedesktop-udisks2-filesystem-mount-user_help">Политика управляет ограничением возможности монтирования файловой системы устройства
@@ -82,6 +84,8 @@
 «Auth_admin_keep» — аналогично «Auth_admin», но авторизация сохраняется в течение короткого периода времени (например, пять минут);
 
 Примечание: обладание административными правами в контексте PolicyKit определяются его правилами. По умолчанию в Альт запрашивается пароль пользователя, находящегося в группе «wheel».
+
+Опция «Блокировать» необходима для запрета изменений данной настройки пользователем. Блокировка политики делает её приоритетнее аналогичной политики для пользователя.
 
       </string>
       <string id="org-freedesktop-udisks2-filesystem-mount-other-seat-user">Ограничение возможности монтирования съёмных запоминающих устройств в удалённых сеансах</string>
@@ -135,6 +139,8 @@
 
 Примечание: обладание административными правами в контексте PolicyKit определяются его правилами. По умолчанию в Альт запрашивается пароль пользователя, находящегося в группе «wheel».
 
+Опция «Блокировать» необходима для запрета изменений данной настройки пользователем. Блокировка политики делает её приоритетнее аналогичной политики для пользователя.
+
       </string>
       <string id="org-freedesktop-udisks2-filesystem-mount-system-user">Ограничение возможности монтирования системных разделов</string>
       <string id="org-freedesktop-udisks2-filesystem-mount-system-user_help">Политика управляет ограничением возможности монтирования системных разделов
@@ -185,6 +191,8 @@
 
 Примечание: обладание административными правами в контексте PolicyKit определяются его правилами. По умолчанию в Альт запрашивается пароль пользователя, находящегося в группе «wheel».
 
+Опция «Блокировать» необходима для запрета изменений данной настройки пользователем. Блокировка политики делает её приоритетнее аналогичной политики для пользователя.
+
       </string>
       <string id="org-freedesktop-udisks2-filesystem-mount-all-user">Общая политика ограничения возможности монтирования</string>
       <string id="org-freedesktop-udisks2-filesystem-mount-all-user_Help">Данная политика ограничивает возможность монтирование съёмных запоминающих устройств, монтирование системных разделов, монтирование съёмных запоминающих устройств в удалённых сеансах
@@ -222,14 +230,11 @@
     <presentationTable>
     <presentation id="OrgFreedesktopUdisks2FileSystemMountAll-pr">
        <dropdownList noSort="true" defaultItem="1" refId="OrgFreedesktopUdisks2FileSystemMount_setter">Варианты ограничений на монтирование съёмных запоминающих устройств:</dropdownList>
-       <checkBox refId="OrgFreedesktopUdisks2FileSystemMount_blocker">Блокировать</checkBox>
-        <text>Блокировка изменений данной настройки политикой пользователя. Блокировка политики делает её приоритетнее аналогичной политики для пользователя.</text>
+       <checkBox refId="OrgFreedesktopUdisks2FileSystemMount_blocker">Блокировать настройку ограничений на монтирование съёмных запоминающих устройств</checkBox>
        <dropdownList noSort="true" defaultItem="1" refId="OrgFreedesktopUdisks2FileSystemMountOther_setter">Варианты ограничений на монтирование съёмных запоминающих устройств в удалённых сеансах:</dropdownList>
-       <checkBox refId="OrgFreedesktopUdisks2FileSystemMountOther_blocker">Блокировать</checkBox>
-        <text>Блокировка изменений данной настройки политикой пользователя. Блокировка политики делает её приоритетнее аналогичной политики для пользователя.</text>
+       <checkBox refId="OrgFreedesktopUdisks2FileSystemMountOther_blocker">Блокировать настройку ограничений на монтирование съёмных запоминающих устройств в удалённых сеансах</checkBox>
        <dropdownList noSort="true" defaultItem="1" refId="OrgFreedesktopUdisks2FileSystemMountSystem_setter">Варианты ограничений на монтирование системных разделов:</dropdownList>
-       <checkBox refId="OrgFreedesktopUdisks2FileSystemMountSystem_blocker">Блокировать</checkBox>
-        <text>Блокировка изменений данной настройки политикой пользователя. Блокировка политики делает её приоритетнее аналогичной политики для пользователя.</text>
+       <checkBox refId="OrgFreedesktopUdisks2FileSystemMountSystem_blocker">Блокировать настройку ограничений на монтирование системных разделов</checkBox>
       </presentation>
        <presentation id="OrgFreedesktopUdisks2FileSystemMountAllUser-pr">
        <dropdownList noSort="true" defaultItem="1" refId="OrgFreedesktopUdisks2FileSystemMount_setter">Варианты ограничений на монтирование съёмных запоминающих устройств:</dropdownList>
@@ -239,7 +244,6 @@
       <presentation id="OrgFreedesktopUdisks2FileSystemMount-pr">
        <dropdownList noSort="true" defaultItem="1" refId="OrgFreedesktopUdisks2FileSystemMount_setter">Варианты ограничений:</dropdownList>
        <checkBox refId="OrgFreedesktopUdisks2FileSystemMount_blocker">Блокировать</checkBox>
-        <text>Блокировка изменений данной настройки политикой пользователя. Блокировка политики делает её приоритетнее аналогичной политики для пользователя.</text>
       </presentation>
       <presentation id="OrgFreedesktopUdisks2FileSystemMountUser-pr">
        <dropdownList noSort="true" defaultItem="1" refId="OrgFreedesktopUdisks2FileSystemMount_setter">Варианты ограничений:</dropdownList>
