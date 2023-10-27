@@ -30,7 +30,7 @@ Possible values:
 
 Note: the possession of administrative rights in the context of PolicyKit is determined by its rules. By default, Alt asks for the password of the user in the "wheel" group.
 
-The “Block” option is necessary to prevent the user from changing this setting. Blocking a policy makes it a priority over a similar policy for the user.
+The "Block" option prevents the user from changing this setting. Blocking a policy makes it a priority over a similar policy for the user.
 
       </string>
       <string id="org-debian-pcsc-lite-access_pcsc-user">Permission access to the PC/SC daemon</string>
@@ -79,7 +79,7 @@ Possible values:
 
 Note: the possession of administrative rights in the context of PolicyKit is determined by its rules. By default, Alt asks for the password of the user in the "wheel" group.
 
-The “Block” option is necessary to prevent the user from changing this setting. Blocking a policy makes it a priority over a similar policy for the user.
+The "Block" option prevents the user from changing this setting. Blocking a policy makes it a priority over a similar policy for the user.
 
       </string>
       <string id="org-debian-pcsc-lite-access_card-user">Permission access to the smart card</string>

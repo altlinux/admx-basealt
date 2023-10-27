@@ -31,7 +31,7 @@ Possible values:
 
 Note: the possession of administrative rights in the context of PolicyKit is determined by its rules. By default, Alt asks for the password of the user in the "wheel" group.
 
-The “Block” option is necessary to prevent the user from changing this setting. Blocking a policy makes it a priority over a similar policy for the user.
+The "Block" option prevents the user from changing this setting. Blocking a policy makes it a priority over a similar policy for the user.
 
       </string>
       <string id="org-freedesktop-udisks2-filesystem-mount-user">Permission to mount the file system</string>
@@ -85,7 +85,7 @@ Possible values:
 
 Note: the possession of administrative rights in the context of PolicyKit is determined by its rules. By default, Alt asks for the password of the user in the "wheel" group.
 
-The “Block” option is necessary to prevent the user from changing this setting. Blocking a policy makes it a priority over a similar policy for the user.
+The "Block" option prevents the user from changing this setting. Blocking a policy makes it a priority over a similar policy for the user.
 
       </string>
       <string id="org-freedesktop-udisks2-filesystem-mount-other-seat-user">Permission to mount removable storage devices in remote sessions</string>
@@ -139,7 +139,7 @@ Possible values:
 
 Note: the possession of administrative rights in the context of PolicyKit is determined by its rules. By default, Alt asks for the password of the user in the "wheel" group.
 
-The “Block” option is necessary to prevent the user from changing this setting. Blocking a policy makes it a priority over a similar policy for the user.
+The "Block" option prevents the user from changing this setting. Blocking a policy makes it a priority over a similar policy for the user.
 
       </string>
       <string id="org-freedesktop-udisks2-filesystem-mount-system-user">Permission to mount system partitions</string>
@@ -191,7 +191,7 @@ Possible values:
 
 Note: the possession of administrative rights in the context of PolicyKit is determined by its rules. By default, Alt asks for the password of the user in the "wheel" group.
 
-The “Block” option is necessary to prevent the user from changing this setting. Blocking a policy makes it a priority over a similar policy for the user.
+The "Block" option prevents the user from changing this setting. Blocking a policy makes it a priority over a similar policy for the user.
 
       </string>
       <string id="org-freedesktop-udisks2-filesystem-mount-all-user">General mount policy</string>

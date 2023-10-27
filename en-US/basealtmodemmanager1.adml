@@ -29,7 +29,7 @@ Possible values:
       
 Note: the possession of administrative rights in a PolicyKit context is determined by its rules. By default, Alt asks for the password of a user in the "wheel" group.
 
-The “Block” option is necessary to prevent the user from changing this setting. Blocking a policy makes it a priority over a similar policy for the user.
+The "Block" option prevents the user from changing this setting. Blocking a policy makes it a priority over a similar policy for the user.
 
       </string>
       <string id="org-freedesktop-ModemManager1-Contacts-user">Restrict the ability to add, modify, or delete device contacts</string>
@@ -79,7 +79,7 @@ Possible values:
       
 Note: the possession of administrative rights in a PolicyKit context is determined by its rules. By default, Alt asks for the password of a user in the "wheel" group.
 
-The “Block” option is necessary to prevent the user from changing this setting. Blocking a policy makes it a priority over a similar policy for the user.
+The "Block" option prevents the user from changing this setting. Blocking a policy makes it a priority over a similar policy for the user.
 
       </string>
       <string id="org-freedesktop-ModemManager1-Control-user">The policy restricts the ability to manage the Modem Manager daemon</string>
@@ -129,7 +129,7 @@ Possible values:
       
 Note: the possession of administrative rights in a PolicyKit context is determined by its rules. By default, Alt asks for the password of a user in the "wheel" group.
 
-The “Block” option is necessary to prevent the user from changing this setting. Blocking a policy makes it a priority over a similar policy for the user.
+The "Block" option prevents the user from changing this setting. Blocking a policy makes it a priority over a similar policy for the user.
 
       </string>
       <string id="org-freedesktop-ModemManager1-Device-Control-user">Restricting the ability to blocking and control a mobile broadband device</string>
@@ -179,7 +179,7 @@ Possible values:
       
 Note: the possession of administrative rights in a PolicyKit context is determined by its rules. By default, Alt asks for the password of a user in the "wheel" group.
 
-The “Block” option is necessary to prevent the user from changing this setting. Blocking a policy makes it a priority over a similar policy for the user.
+The "Block" option prevents the user from changing this setting. Blocking a policy makes it a priority over a similar policy for the user.
 
       </string>
       <string id="org-freedesktop-ModemManager1-Firmware-user">Restricting the ability to control the firmware of a mobile broadband device</string>
@@ -229,7 +229,7 @@ Possible values:
       
 Note: the possession of administrative rights in a PolicyKit context is determined by its rules. By default, Alt asks for the password of a user in the "wheel" group.
 
-The “Block” option is necessary to prevent the user from changing this setting. Blocking a policy makes it a priority over a similar policy for the user.
+The "Block" option prevents the user from changing this setting. Blocking a policy makes it a priority over a similar policy for the user.
 
       </string>
       <string id="org-freedesktop-ModemManager1-Location-user">Restricted ability to view geographic and positioning information</string>
@@ -279,7 +279,7 @@ Possible values:
       
 Note: the possession of administrative rights in a PolicyKit context is determined by its rules. By default, Alt asks for the password of a user in the "wheel" group.
 
-The “Block” option is necessary to prevent the user from changing this setting. Blocking a policy makes it a priority over a similar policy for the user.
+The "Block" option prevents the user from changing this setting. Blocking a policy makes it a priority over a similar policy for the user.
 
       </string>
       <string id="org-freedesktop-ModemManager1-Messaging-user">Restrict the ability to send, save, modify and delete text messages</string>
@@ -329,7 +329,7 @@ Possible values:
       
 Note: the possession of administrative rights in a PolicyKit context is determined by its rules. By default, Alt asks for the password of a user in the "wheel" group.
 
-The “Block” option is necessary to prevent the user from changing this setting. Blocking a policy makes it a priority over a similar policy for the user.
+The "Block" option prevents the user from changing this setting. Blocking a policy makes it a priority over a similar policy for the user.
 
       </string>
       <string id="org-freedesktop-ModemManager1-Time-user">Restrict the ability to request network time and time zone information</string>
@@ -379,7 +379,7 @@ Possible values:
       
 Note: the possession of administrative rights in a PolicyKit context is determined by its rules. By default, Alt asks for the password of a user in the "wheel" group.
 
-The “Block” option is necessary to prevent the user from changing this setting. Blocking a policy makes it a priority over a similar policy for the user.
+The "Block" option prevents the user from changing this setting. Blocking a policy makes it a priority over a similar policy for the user.
 
       </string>
       <string id="org-freedesktop-ModemManager1-USSD-user">Restrict the ability to request and use network information and services</string>
@@ -429,7 +429,7 @@ Possible values:
       
 Note: the possession of administrative rights in a PolicyKit context is determined by its rules. By default, Alt asks for the password of a user in the "wheel" group.
 
-The “Block” option is necessary to prevent the user from changing this setting. Blocking a policy makes it a priority over a similar policy for the user.
+The "Block" option prevents the user from changing this setting. Blocking a policy makes it a priority over a similar policy for the user.
 
       </string>
       <string id="org-freedesktop-ModemManager1-Voice-user">Restricting the ability to receive incoming voice calls or start an outgoing voice call</string>

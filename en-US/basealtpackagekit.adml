@@ -36,7 +36,7 @@ Note: the possession of administrative rights in the context of PolicyKit is det
 
 Action example: pkcon install "package_name"
 
-The “Block” option is necessary to prevent the user from changing this setting. Blocking a policy makes it a priority over a similar policy for the user.
+The "Block" option prevents the user from changing this setting. Blocking a policy makes it a priority over a similar policy for the user.
 
       </string>
 
@@ -96,7 +96,7 @@ Note: the possession of administrative rights in the context of PolicyKit is det
 
 Action example: pkcon remove "package_name"
 
-The “Block” option is necessary to prevent the user from changing this setting. Blocking a policy makes it a priority over a similar policy for the user.
+The "Block" option prevents the user from changing this setting. Blocking a policy makes it a priority over a similar policy for the user.
 
       </string>
 
@@ -156,7 +156,7 @@ Note: the possession of administrative rights in the context of PolicyKit is det
 
 Action example: pkcon update
 
-The “Block” option is necessary to prevent the user from changing this setting. Blocking a policy makes it a priority over a similar policy for the user.
+The "Block" option prevents the user from changing this setting. Blocking a policy makes it a priority over a similar policy for the user.
 
       </string>
 
@@ -216,7 +216,7 @@ Note: the possession of administrative rights in the context of PolicyKit is det
 
 Action example: pkcon refresh
 
-The “Block” option is necessary to prevent the user from changing this setting. Blocking a policy makes it a priority over a similar policy for the user.
+The "Block" option prevents the user from changing this setting. Blocking a policy makes it a priority over a similar policy for the user.
 
       </string>
 
@@ -276,7 +276,7 @@ Note: the possession of administrative rights in the context of PolicyKit is det
 
 Action example: pkcon repair
 
-The “Block” option is necessary to prevent the user from changing this setting. Blocking a policy makes it a priority over a similar policy for the user.
+The "Block" option prevents the user from changing this setting. Blocking a policy makes it a priority over a similar policy for the user.
 
       </string>
 
@@ -334,7 +334,7 @@ Possible values:
 
 Note: the possession of administrative rights in the context of PolicyKit is determined by its rules. By default, Alt asks for the password of the user in the "wheel" group.
 
-The “Block” option is necessary to prevent the user from changing this setting. Blocking a policy makes it a priority over a similar policy for the user.
+The "Block" option prevents the user from changing this setting. Blocking a policy makes it a priority over a similar policy for the user.
 
       </string>
 
@@ -390,7 +390,7 @@ Possible values:
 
 Note: the possession of administrative rights in the context of PolicyKit is determined by its rules. By default, Alt asks for the password of the user in the "wheel" group.
 
-The “Block” option is necessary to prevent the user from changing this setting. Blocking a policy makes it a priority over a similar policy for the user.
+The "Block" option prevents the user from changing this setting. Blocking a policy makes it a priority over a similar policy for the user.
 
       </string>
 
@@ -446,7 +446,7 @@ Possible values:
 
 Note: the possession of administrative rights in the context of PolicyKit is determined by its rules. By default, Alt asks for the password of the user in the "wheel" group.
 
-The “Block” option is necessary to prevent the user from changing this setting. Blocking a policy makes it a priority over a similar policy for the user.
+The "Block" option prevents the user from changing this setting. Blocking a policy makes it a priority over a similar policy for the user.
 
       </string>
 
@@ -502,7 +502,7 @@ Possible values:
 
 Note: the possession of administrative rights in the context of PolicyKit is determined by its rules. By default, Alt asks for the password of the user in the "wheel" group.
 
-The “Block” option is necessary to prevent the user from changing this setting. Blocking a policy makes it a priority over a similar policy for the user.
+The "Block" option prevents the user from changing this setting. Blocking a policy makes it a priority over a similar policy for the user.
 
       </string>
 
@@ -558,7 +558,7 @@ Possible values:
 
 Note: the possession of administrative rights in the context of PolicyKit is determined by its rules. By default, Alt asks for the password of the user in the "wheel" group.
 
-The “Block” option is necessary to prevent the user from changing this setting. Blocking a policy makes it a priority over a similar policy for the user.
+The "Block" option prevents the user from changing this setting. Blocking a policy makes it a priority over a similar policy for the user.
 
       </string>
 

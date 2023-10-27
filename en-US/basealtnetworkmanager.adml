@@ -32,7 +32,7 @@ Possible values:
 
 Note: the possession of administrative rights in the context of PolicyKit is determined by its rules. By default, Alt asks for the password of the user in the "wheel" group.
 
-The “Block” option is necessary to prevent the user from changing this setting. Blocking a policy makes it a priority over a similar policy for the user.
+The "Block" option prevents the user from changing this setting. Blocking a policy makes it a priority over a similar policy for the user.
 
       </string>
       <string id="org-freedesktop-NetworkManager-checkpoint-rollback-user">Permission to rollback configuration of interfaces to a checkpoint-rollback</string>
@@ -84,7 +84,7 @@ Possible values:
 
 Note: the possession of administrative rights in the context of PolicyKit is determined by its rules. By default, Alt asks for the password of the user in the "wheel" group.
 
-The “Block” option is necessary to prevent the user from changing this setting. Blocking a policy makes it a priority over a similar policy for the user.
+The "Block" option prevents the user from changing this setting. Blocking a policy makes it a priority over a similar policy for the user.
 
       </string>
       <string id="org-freedesktop-NetworkManager-enable-disable-connectivity-check-user">Permission to check Network connection</string>
@@ -138,7 +138,7 @@ Possible values:
 
 Note: the possession of administrative rights in the context of PolicyKit is determined by its rules. By default, Alt asks for the password of the user in the "wheel" group.
 
-The “Block” option is necessary to prevent the user from changing this setting. Blocking a policy makes it a priority over a similar policy for the user.
+The "Block" option prevents the user from changing this setting. Blocking a policy makes it a priority over a similar policy for the user.
 
       </string>
       <string id="org-freedesktop-NetworkManager-enable-disable-network-user">Permission to enable or disable networking</string>
@@ -190,7 +190,7 @@ Possible values:
 
 Note: the possession of administrative rights in the context of PolicyKit is determined by its rules. By default, Alt asks for the password of the user in the "wheel" group.
 
-The “Block” option is necessary to prevent the user from changing this setting. Blocking a policy makes it a priority over a similar policy for the user.
+The "Block" option prevents the user from changing this setting. Blocking a policy makes it a priority over a similar policy for the user.
 
       </string>
       <string id="org-freedesktop-NetworkManager-enable-disable-statistics-user">Permission to enable or disable statistics</string>
@@ -240,7 +240,7 @@ Possible values:
 
 Note: the possession of administrative rights in the context of PolicyKit is determined by its rules. By default, Alt asks for the password of the user in the "wheel" group.
 
-The “Block” option is necessary to prevent the user from changing this setting. Blocking a policy makes it a priority over a similar policy for the user.
+The "Block" option prevents the user from changing this setting. Blocking a policy makes it a priority over a similar policy for the user.
 
       </string>
       <string id="org-freedesktop-NetworkManager-enable-disable-wifi-user">Permission to enable or disable Wi-Fi devices</string>
@@ -290,7 +290,7 @@ Possible values:
 
 Note: the possession of administrative rights in the context of PolicyKit is determined by its rules. By default, Alt asks for the password of the user in the "wheel" group.
 
-The “Block” option is necessary to prevent the user from changing this setting. Blocking a policy makes it a priority over a similar policy for the user.
+The "Block" option prevents the user from changing this setting. Blocking a policy makes it a priority over a similar policy for the user.
 
       </string>
       <string id="org-freedesktop-NetworkManager-enable-disable-wimax-user">Permission to enable or disable WiMAX devices</string>
@@ -340,7 +340,7 @@ Possible values:
 
 Note: the possession of administrative rights in the context of PolicyKit is determined by its rules. By default, Alt asks for the password of the user in the "wheel" group.
 
-The “Block” option is necessary to prevent the user from changing this setting. Blocking a policy makes it a priority over a similar policy for the user.
+The "Block" option prevents the user from changing this setting. Blocking a policy makes it a priority over a similar policy for the user.
 
       </string>
       <string id="org-freedesktop-NetworkManager-enable-disable-wwan-user">Permission to enable or disable WWAN-devices</string>
@@ -390,7 +390,7 @@ Possible values:
 
 Note: the possession of administrative rights in the context of PolicyKit is determined by its rules. By default, Alt asks for the password of the user in the "wheel" group.
 
-The “Block” option is necessary to prevent the user from changing this setting. Blocking a policy makes it a priority over a similar policy for the user.
+The "Block" option prevents the user from changing this setting. Blocking a policy makes it a priority over a similar policy for the user.
 
       </string>
       <string id="org-freedesktop-NetworkManager-network-control-user">Permission to change system settings for the network</string>
@@ -440,7 +440,7 @@ Possible values:
 
 Note: the possession of administrative rights in the context of PolicyKit is determined by its rules. By default, Alt asks for the password of the user in the "wheel" group.
 
-The “Block” option is necessary to prevent the user from changing this setting. Blocking a policy makes it a priority over a similar policy for the user.
+The "Block" option prevents the user from changing this setting. Blocking a policy makes it a priority over a similar policy for the user.
 
       </string>
       <string id="org-freedesktop-NetworkManager-reload-user">Permission to reload NetworkManager</string>
@@ -490,7 +490,7 @@ Possible values:
 
 Note: the possession of administrative rights in the context of PolicyKit is determined by its rules. By default, Alt asks for the password of the user in the "wheel" group.
 
-The “Block” option is necessary to prevent the user from changing this setting. Blocking a policy makes it a priority over a similar policy for the user.
+The "Block" option prevents the user from changing this setting. Blocking a policy makes it a priority over a similar policy for the user.
 
       </string>
       <string id="org-freedesktop-NetworkManager-settings-modify-global-dns-user">Permission to change the general DNS settings</string>
@@ -540,7 +540,7 @@ Possible values:
 
 Note: the possession of administrative rights in the context of PolicyKit is determined by its rules. By default, Alt asks for the password of the user in the "wheel" group.
 
-The “Block” option is necessary to prevent the user from changing this setting. Blocking a policy makes it a priority over a similar policy for the user.
+The "Block" option prevents the user from changing this setting. Blocking a policy makes it a priority over a similar policy for the user.
 
       </string>
       <string id="org-freedesktop-NetworkManager-settings-modify-hostname-user">Permission to change the permanent system hostname</string>
@@ -590,7 +590,7 @@ Possible values:
 
 Note: the possession of administrative rights in the context of PolicyKit is determined by its rules. By default, Alt asks for the password of the user in the "wheel" group.
 
-The “Block” option is necessary to prevent the user from changing this setting. Blocking a policy makes it a priority over a similar policy for the user.
+The "Block" option prevents the user from changing this setting. Blocking a policy makes it a priority over a similar policy for the user.
 
       </string>
       <string id="org-freedesktop-NetworkManager-settings-modify-own-user">Permission to changes personal network settings</string>
@@ -640,7 +640,7 @@ Possible values:
 
 Note: the possession of administrative rights in the context of PolicyKit is determined by its rules. By default, Alt asks for the password of the user in the "wheel" group.
 
-The “Block” option is necessary to prevent the user from changing this setting. Blocking a policy makes it a priority over a similar policy for the user.
+The "Block" option prevents the user from changing this setting. Blocking a policy makes it a priority over a similar policy for the user.
 
       </string>
       <string id="org-freedesktop-NetworkManager-settings-modify-system-user">Permission to change network connections for all users</string>
@@ -693,7 +693,7 @@ Possible values:
 
 Note: the possession of administrative rights in the context of PolicyKit is determined by its rules. By default, Alt asks for the password of the user in the "wheel" group.
 
-The “Block” option is necessary to prevent the user from changing this setting. Blocking a policy makes it a priority over a similar policy for the user.
+The "Block" option prevents the user from changing this setting. Blocking a policy makes it a priority over a similar policy for the user.
 
       </string>
       <string id="org-freedesktop-NetworkManager-sleep-wake-user">Permission to change NetworkManager's  sleep state</string>
@@ -746,7 +746,7 @@ Possible values:
 
 Note: the possession of administrative rights in the context of PolicyKit is determined by its rules. By default, Alt asks for the password of the user in the "wheel" group.
 
-The “Block” option is necessary to prevent the user from changing this setting. Blocking a policy makes it a priority over a similar policy for the user.
+The "Block" option prevents the user from changing this setting. Blocking a policy makes it a priority over a similar policy for the user.
 
       </string>
       <string id="org-freedesktop-NetworkManager-wifi-scan-user">Permission to scan Wi-Fi networks</string>
@@ -796,7 +796,7 @@ Possible values:
 
 Note: the possession of administrative rights in the context of PolicyKit is determined by its rules. By default, Alt asks for the password of the user in the "wheel" group.
 
-The “Block” option is necessary to prevent the user from changing this setting. Blocking a policy makes it a priority over a similar policy for the user.
+The "Block" option prevents the user from changing this setting. Blocking a policy makes it a priority over a similar policy for the user.
 
       </string>
       <string id="org-freedesktop-NetworkManager-wifi-share-open-user">Permission to shared connections over an open Wi-Fi network</string>
@@ -846,7 +846,7 @@ Possible values:
 
 Note: the possession of administrative rights in the context of PolicyKit is determined by its rules. By default, Alt asks for the password of the user in the "wheel" group.
 
-The “Block” option is necessary to prevent the user from changing this setting. Blocking a policy makes it a priority over a similar policy for the user.
+The "Block" option prevents the user from changing this setting. Blocking a policy makes it a priority over a similar policy for the user.
 
       </string>
       <string id="org-freedesktop-NetworkManager-wifi-share-protected-user">Permission to shared connections over an protected Wi-Fi network</string>
