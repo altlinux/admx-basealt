@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--  (c) 2023 BaseALT, Ltd.  -->
 <policyDefinitionResources xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.microsoft.com/GroupPolicy/2006/07/PolicyDefinitions" revision="1.0" schemaVersion="1.0">
-  <displayName>Определение политик ModemManager операционной системы Альт</displayName>
-  <description>Этот файл содержит определения политик для управления службой ModemManager  в операционной системе Альт</description>
+  <displayName>Определение политик Color-Manager операционной системы Альт</displayName>
+  <description>Этот файл содержит определения политик для управления службой Color-Manager  в операционной системе Альт</description>
   <resources>
     <stringTable>
 
-      <string id="org-freedesktop-ModemManager1-Contacts">Ограничение возможности добавления, изменения или удаления контактов устройства</string>
-      <string id="org-freedesktop-ModemManager1-Contacts_Help">Политика управляет ограничением возможности добавления, изменения и удаления контактов мобильного широкополосного доступа.
+      <string id="org-freedesktop-color-manager-create-device">Ограничение возможности создания цветоуправляемого устройства</string>
+      <string id="org-freedesktop-color-manager-create-device_Help">Политика управляет ограничением возможности создания цветоуправляемого устройства
+
+Для создания устройства с цветным управлением требуется аутентификация.
 
 Отключено/Не сконфигурировано — ограничения определяются системными параметрами.
 
@@ -30,8 +32,10 @@
 Примечание: обладание административными правами в контексте PolicyKit определяются его правилами. По умолчанию в Альт запрашивается пароль пользователя, находящегося в группе «wheel».
 
       </string>
-      <string id="org-freedesktop-ModemManager1-Contacts-user">Ограничение возможности добавления, изменения или удаления контактов устройства</string>
-      <string id="org-freedesktop-ModemManager1-Contacts-user_Help">Политика управляет ограничением возможности добавления, изменения и удаления контактов мобильного широкополосного доступа.
+      <string id="org-freedesktop-color-manager-create-device-user">Ограничение возможности создания цветоуправляемого устройства</string>
+      <string id="org-freedesktop-color-manager-create-device-user_Help">Политика управляет ограничением возможности создания цветоуправляемого устройства
+
+Для создания устройства с цветным управлением требуется аутентификация.
 
 Отключено/Не сконфигурировано — ограничения определяются системными параметрами.
 
@@ -54,8 +58,10 @@
 Примечание: обладание административными правами в контексте PolicyKit определяются его правилами. По умолчанию в Альт запрашивается пароль пользователя, находящегося в группе «wheel».
 
       </string>
-      <string id="org-freedesktop-ModemManager1-Control">Ограничение возможности управления демоном Modem Manager</string>
-      <string id="org-freedesktop-ModemManager1-Control_Help">Политика ограничивает возможность управления диспетчером модемов
+      <string id="org-freedesktop-color-manager-create-profile">Ограничение возможности создания цветового профиля</string>
+      <string id="org-freedesktop-color-manager-create-profile_Help">Политика ограничивает возможность создания цветового профиля
+
+Для создания цветового профиля требуется аутентификация.
 
 Отключено/Не сконфигурировано — ограничения определяются системными параметрами.
 
@@ -78,8 +84,10 @@
 Примечание: обладание административными правами в контексте PolicyKit определяются его правилами. По умолчанию в Альт запрашивается пароль пользователя, находящегося в группе «wheel».
 
       </string>
-      <string id="org-freedesktop-ModemManager1-Control-user">Ограничение возможности управления демоном Modem Manager</string>
-      <string id="org-freedesktop-ModemManager1-Control-user_Help">Политика ограничивает возможность управления диспетчером модемов
+      <string id="org-freedesktop-color-manager-create-profile-user">Ограничение возможности создания цветового профиля</string>
+      <string id="org-freedesktop-color-manager-create-profile-user_Help">Политика ограничивает возможность создания цветового профиля
+
+Для создания цветового профиля требуется аутентификация.
 
 Отключено/Не сконфигурировано — ограничения определяются системными параметрами.
 
@@ -102,8 +110,10 @@
 Примечание: обладание административными правами в контексте PolicyKit определяются его правилами. По умолчанию в Альт запрашивается пароль пользователя, находящегося в группе «wheel».
 
       </string>
-      <string id="org-freedesktop-ModemManager1-Device-Control">Ограничение возможности блокировки и управления мобильным широкополосным устройством</string>
-      <string id="org-freedesktop-ModemManager1-Device-Control_Help">Политика ограничивает возможность изменения конфигурации мобильного широкополосного устройства
+      <string id="org-freedesktop-color-manager-delete-device">Ограничение возможности удаления цветоуправляемого устройства</string>
+      <string id="org-freedesktop-color-manager-delete-device_Help">Политика ограничивает возможность удаления цветоуправляемого устройства
+
+Для удаления устройства с цветным управлением требуется аутентификация.
 
 Отключено/Не сконфигурировано — ограничения определяются системными параметрами.
 
@@ -126,8 +136,10 @@
 Примечание: обладание административными правами в контексте PolicyKit определяются его правилами. По умолчанию в Альт запрашивается пароль пользователя, находящегося в группе «wheel».
 
       </string>
-      <string id="org-freedesktop-ModemManager1-Device-Control-user">Ограничение возможности блокировки и управления мобильным широкополосным устройством</string>
-      <string id="org-freedesktop-ModemManager1-Device-Control-user_Help">Политика ограничивает возможность изменения конфигурации мобильного широкополосного устройства
+      <string id="org-freedesktop-color-manager-delete-device-user">Ограничение возможности удаления цветоуправляемого устройства</string>
+      <string id="org-freedesktop-color-manager-delete-device-user_Help">Политика ограничивает возможность удаления цветоуправляемого устройства
+
+Для удаления устройства с цветным управлением требуется аутентификация.
 
 Отключено/Не сконфигурировано — ограничения определяются системными параметрами.
 
@@ -150,8 +162,10 @@
 Примечание: обладание административными правами в контексте PolicyKit определяются его правилами. По умолчанию в Альт запрашивается пароль пользователя, находящегося в группе «wheel».
 
       </string>
-      <string id="org-freedesktop-ModemManager1-Firmware">Ограничение возможности управления прошивкой мобильного широкополосного устройства</string>
-      <string id="org-freedesktop-ModemManager1-Firmware_Help">Политика  ограничивает возможность управления микропрограммой этого устройства
+      <string id="org-freedesktop-color-manager-delete-profile">Ограничение возможности удаления цветового профиля</string>
+      <string id="org-freedesktop-color-manager-delete-profile_Help">Политика ограничивает возможность удаления цветового профиля
+
+Для удаления цветового профиля требуется аутентификация.
 
 Отключено/Не сконфигурировано — ограничения определяются системными параметрами.
 
@@ -174,8 +188,10 @@
 Примечание: обладание административными правами в контексте PolicyKit определяются его правилами. По умолчанию в Альт запрашивается пароль пользователя, находящегося в группе «wheel».
 
       </string>
-      <string id="org-freedesktop-ModemManager1-Firmware-user">Ограничение возможности управления прошивкой мобильного широкополосного устройства</string>
-      <string id="org-freedesktop-ModemManager1-Firmware-user_Help">Политика  ограничивает возможность управления микропрограммой этого устройства
+      <string id="org-freedesktop-color-manager-delete-profile-user">Ограничение возможности удаления цветового профиля</string>
+      <string id="org-freedesktop-color-manager-delete-profile-user_Help">Политика ограничивает возможность удаления цветового профиля
+
+Для удаления цветового профиля требуется аутентификация.
 
 Отключено/Не сконфигурировано — ограничения определяются системными параметрами.
 
@@ -198,8 +214,10 @@
 Примечание: обладание административными правами в контексте PolicyKit определяются его правилами. По умолчанию в Альт запрашивается пароль пользователя, находящегося в группе «wheel».
 
       </string>
-      <string id="org-freedesktop-ModemManager1-Location">Ограничение возможности просмотра информации о географическом положении и позиционировании</string>
-      <string id="org-freedesktop-ModemManager1-Location_Help">Политика ограничивает возможность просмотра информации о географическом положении
+      <string id="org-freedesktop-color-manager-device-inhibit">Ограничение на возможность временной блокировки цветового профиля устройства</string>
+      <string id="org-freedesktop-color-manager-device-inhibit_Help">Политика ограничивает возможность временного запрета применения цветового профиля к устройству
+
+Метод device-inhibit утилиты colormgr блокирует цветовой профиль для применения к устройству. Блокировка устанавливается на время (в секундах). При параметре timeout равным "0", применение цветового профиля к устройству будет заблокировано "навсегда", до прекращения работы утилиты colormgr. Polkit позволяет ограничить доступ пользователя к данному методу. Polkit позволяет ограничить доступ пользователя к данному методу.
 
 Отключено/Не сконфигурировано — ограничения определяются системными параметрами.
 
@@ -222,8 +240,10 @@
 Примечание: обладание административными правами в контексте PolicyKit определяются его правилами. По умолчанию в Альт запрашивается пароль пользователя, находящегося в группе «wheel».
 
       </string>
-      <string id="org-freedesktop-ModemManager1-Location-user">Ограничение возможности просмотра информации о географическом положении и позиционировании</string>
-      <string id="org-freedesktop-ModemManager1-Location-user_Help">Политика ограничивает возможность просмотра информации о географическом положении
+      <string id="org-freedesktop-color-manager-device-inhibit-user">Ограничение на возможность временной блокировки цветового профиля устройства</string>
+      <string id="org-freedesktop-color-manager-device-inhibit-user_Help">Политика ограничивает возможность временного запрета применения цветового профиля к устройству
+
+Метод device-inhibit утилиты colormgr блокирует цветовой профиль для применения к устройству. Блокировка устанавливается на время (в секундах). При параметре timeout равным "0", применение цветового профиля к устройству будет заблокировано "навсегда", до прекращения работы утилиты colormgr. Polkit позволяет ограничить доступ пользователя к данному методу. Polkit позволяет ограничить доступ пользователя к данному методу.
 
 Отключено/Не сконфигурировано — ограничения определяются системными параметрами.
 
@@ -246,8 +266,10 @@
 Примечание: обладание административными правами в контексте PolicyKit определяются его правилами. По умолчанию в Альт запрашивается пароль пользователя, находящегося в группе «wheel».
 
       </string>
-      <string id="org-freedesktop-ModemManager1-Messaging">Ограничение возможности отправки, сохранения, изменения и удаления текстовых сообщений</string>
-      <string id="org-freedesktop-ModemManager1-Messaging_Help">Политика ограничивает возможность отправки или манипулирования текстовыми сообщениями устройства
+      <string id="org-freedesktop-color-manager-install-system-wide">Ограничение возможности установки цветовых профилей в системный каталог</string>
+      <string id="org-freedesktop-color-manager-install-system-wide_Help">Политика ограничивает возможность установки цветовых профилей в системный каталог
+
+Для установки цветового профиля для всех пользователей требуется аутентификация.
 
 Отключено/Не сконфигурировано — ограничения определяются системными параметрами.
 
@@ -270,8 +292,10 @@
 Примечание: обладание административными правами в контексте PolicyKit определяются его правилами. По умолчанию в Альт запрашивается пароль пользователя, находящегося в группе «wheel».
 
       </string>
-      <string id="org-freedesktop-ModemManager1-Messaging-user">Ограничение  возможности отправки, сохранения, изменения и удаления текстовых сообщений</string>
-      <string id="org-freedesktop-ModemManager1-Messaging-user_Help">Политика ограничивает возможность отправки или манипулирования текстовыми сообщениями устройства
+      <string id="org-freedesktop-color-manager-install-system-wide-user">Ограничение возможности установки цветовых профилей в системный каталог</string>
+      <string id="org-freedesktop-color-manager-install-system-wide-user_Help">Политика ограничивает возможность установки цветовых профилей в системный каталог
+
+Для установки цветового профиля для всех пользователей требуется аутентификация.
 
 Отключено/Не сконфигурировано — ограничения определяются системными параметрами.
 
@@ -294,8 +318,10 @@
 Примечание: обладание административными правами в контексте PolicyKit определяются его правилами. По умолчанию в Альт запрашивается пароль пользователя, находящегося в группе «wheel».
 
       </string>
-      <string id="org-freedesktop-ModemManager1-Time">Ограничение возможности запросов информации о сетевом времени и часовом поясе</string>
-      <string id="org-freedesktop-ModemManager1-Time_Help">Политика ограничивает возможность запросов информации о сетевом времени
+      <string id="org-freedesktop-color-manager-modify-device">Ограничение возможности изменения цветовых параметров для устройства</string>
+      <string id="org-freedesktop-color-manager-modify-device_Help">Политика ограничивает возможность изменения цветовых параметров для устройства
+
+Для изменения настроек цвета для устройства требуется аутентификация.
 
 Отключено/Не сконфигурировано — ограничения определяются системными параметрами.
 
@@ -318,8 +344,10 @@
 Примечание: обладание административными правами в контексте PolicyKit определяются его правилами. По умолчанию в Альт запрашивается пароль пользователя, находящегося в группе «wheel».
 
       </string>
-      <string id="org-freedesktop-ModemManager1-Time-user">Ограничение возможности запросов информации о сетевом времени и часовом поясе</string>
-      <string id="org-freedesktop-ModemManager1-Time-user_Help">Политика ограничивает возможность запросов информации о сетевом времени
+      <string id="org-freedesktop-color-manager-modify-device-user">Ограничение возможности изменения цветовых параметров для устройства</string>
+      <string id="org-freedesktop-color-manager-modify-device-user_Help">Политика ограничивает возможность изменения цветовых параметров для устройства
+
+Для изменения настроек цвета для устройства требуется аутентификация.
 
 Отключено/Не сконфигурировано — ограничения определяются системными параметрами.
 
@@ -342,8 +370,10 @@
 Примечание: обладание административными правами в контексте PolicyKit определяются его правилами. По умолчанию в Альт запрашивается пароль пользователя, находящегося в группе «wheel».
 
       </string>
-      <string id="org-freedesktop-ModemManager1-USSD">Ограничение возможности запросов и использования сетевой информации и услуг</string>
-      <string id="org-freedesktop-ModemManager1-USSD_Help">Политика ограничивает возможность запросов или использования сетевой информации и службы
+      <string id="org-freedesktop-color-manager-modify-profile">Ограничение возможности изменения цветового профиля</string>
+      <string id="org-freedesktop-color-manager-modify-profile_Help">Политика ограничивает возможность изменения цветового профиля
+
+Для изменения цветового профиля требуется аутентификация.
 
 Отключено/Не сконфигурировано — ограничения определяются системными параметрами.
 
@@ -366,8 +396,10 @@
 Примечание: обладание административными правами в контексте PolicyKit определяются его правилами. По умолчанию в Альт запрашивается пароль пользователя, находящегося в группе «wheel».
 
       </string>
-      <string id="org-freedesktop-ModemManager1-USSD-user">Ограничение возможности запросов и использования сетевой информации и услуг</string>
-      <string id="org-freedesktop-ModemManager1-USSD-user_Help">Политика ограничивает возможность запросов или использования сетевой информации и службы
+      <string id="org-freedesktop-color-manager-modify-profile-user">Ограничение возможности изменения цветового профиля</string>
+      <string id="org-freedesktop-color-manager-modify-profile-user_Help">Политика ограничивает возможность изменения цветового профиля
+
+Для изменения цветового профиля требуется аутентификация.
 
 Отключено/Не сконфигурировано — ограничения определяются системными параметрами.
 
@@ -390,8 +422,10 @@
 Примечание: обладание административными правами в контексте PolicyKit определяются его правилами. По умолчанию в Альт запрашивается пароль пользователя, находящегося в группе «wheel».
 
       </string>
-      <string id="org-freedesktop-ModemManager1-Voice">Ограничение возможности приема входящих голосовых вызовов или начала исходящего голосового вызова</string>
-      <string id="org-freedesktop-ModemManager1-Voice_Help">Политика ограничивает возможность голосовых вызовов
+      <string id="org-freedesktop-color-manager-sensor-lock">Ограничение возможности использования цветового датчика</string>
+      <string id="org-freedesktop-color-manager-sensor-lock_Help">Политика ограничивает возможность использования цветового датчика
+
+Для использования цветового датчика требуется аутентификация.
 
 Отключено/Не сконфигурировано — ограничения определяются системными параметрами.
 
@@ -414,8 +448,10 @@
 Примечание: обладание административными правами в контексте PolicyKit определяются его правилами. По умолчанию в Альт запрашивается пароль пользователя, находящегося в группе «wheel».
 
       </string>
-      <string id="org-freedesktop-ModemManager1-Voice-user">Ограничение возможности приема входящих голосовых вызовов или начала исходящего голосового вызова</string>
-      <string id="org-freedesktop-ModemManager1-Voice-user_Help">Политика ограничивает возможность голосовых вызовов
+      <string id="org-freedesktop-color-manager-sensor-lock-user">Ограничение возможности использования цветового датчика</string>
+      <string id="org-freedesktop-color-manager-sensor-lock-user_Help">Политика ограничивает возможность использования цветового датчика
+
+Для использования цветового датчика требуется аутентификация.
 
 Отключено/Не сконфигурировано — ограничения определяются системными параметрами.
 
@@ -440,22 +476,22 @@
 
       </string>
 
-      <string id="org-freedesktop-modemmanager-No">No</string>
-      <string id="org-freedesktop-modemmanager-Yes">Yes</string>
-      <string id="org-freedesktop-modemmanager-Auth-self">Auth_self</string>
-      <string id="org-freedesktop-modemmanager-Auth-admin">Auth_admin</string>
-      <string id="org-freedesktop-modemmanager-Auth-self-keep">Auth_self_keep</string>
-      <string id="org-freedesktop-modemmanager-Auth-admin-keep">Auth_admin_keep</string>
+      <string id="org-freedesktop-color-manager-No">No</string>
+      <string id="org-freedesktop-color-manager-Yes">Yes</string>
+      <string id="org-freedesktop-color-manager-Auth-self">Auth_self</string>
+      <string id="org-freedesktop-color-manager-Auth-admin">Auth_admin</string>
+      <string id="org-freedesktop-color-manager-Auth-self-keep">Auth_self_keep</string>
+      <string id="org-freedesktop-color-manager-Auth-admin-keep">Auth_admin_keep</string>
 
    </stringTable>
     <presentationTable>
-      <presentation id="org-freedesktop-ModemManager1-pr">
-       <dropdownList noSort="true" defaultItem="1" refId="OrgFreedesktopModemManager_setter">Варианты ограничений для службы ModemManager:</dropdownList>
-       <checkBox refId="OrgFreedesktopModemManager_blocker">Блокировать</checkBox>
+      <presentation id="org-freedesktop-color-manager-pr">
+       <dropdownList noSort="true" defaultItem="1" refId="OrgFreedesktopColor-Manager_setter">Варианты ограничений для службы Color-Manager:</dropdownList>
+       <checkBox refId="OrgFreedesktopColor-Manager_blocker">Блокировать</checkBox>
        <text>Блокировка изменений данной настройки политикой пользователя. Блокировка политики делает её приоритетнее аналогичной политики для пользователя.</text>
       </presentation>
-      <presentation id="org-freedesktop-ModemManager1-user-pr">
-       <dropdownList noSort="true" defaultItem="1" refId="OrgFreedesktopModemManager_setter">Варианты ограничений для службы ModemManager:</dropdownList>
+      <presentation id="org-freedesktop-color-manager-user-pr">
+       <dropdownList noSort="true" defaultItem="1" refId="OrgFreedesktopColor-Manager_setter">Варианты ограничений для службы Color-Manager:</dropdownList>
       </presentation>
     </presentationTable>
   </resources>

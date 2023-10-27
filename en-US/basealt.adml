@@ -82,7 +82,9 @@
       <string id="ALT_TokenPolkit">Token and smart card permissions</string>
       <string id="ALT_TokenPolkit_Help">Token and smart card permissions management</string>
       <string id="ALT_ModemManagerPolkit">Restrictions the ModemManager service</string>
-      <string id="ALT_ModemManagerPolkit_help">ModemManager service settings</string>
+      <string id="ALT_ModemManagerPolkit_Help">ModemManager service settings</string>
+      <string id="ALT_Color-ManagerPolkit">ColorManager permissions</string>
+      <string id="ALT_Color-ManagerPolkit_Help">Color-Manager permissions management</string>
     </stringTable>
   </resources>
 </policyDefinitionResources>

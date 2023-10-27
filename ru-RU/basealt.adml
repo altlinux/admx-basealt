@@ -82,7 +82,9 @@
       <string id="ALT_TokenPolkit">Ограничения для работы с токенами и смарткартами</string>
       <string id="ALT_TokenPolkit_Help">Управление polkit-ограничениями для работы с токенами и смарткартами.</string>
       <string id="ALT_ModemManagerPolkit">Ограничения ModemManager</string>
-      <string id="ALT_ModemManagerPolkit_Help">Настройки службы ModemManager</string>
+      <string id="ALT_ModemManagerPolkit_Help">Управление polkit-ограничениями ModemManager.</string>
+      <string id="ALT_Color-ManagerPolkit">Ограничения ColorManager</string>
+      <string id="ALT_Color-ManagerPolkit_Help">Управление polkit-ограничениями ColorManager.</string>
     </stringTable>
   </resources>
 </policyDefinitionResources>
