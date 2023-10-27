@@ -36,6 +36,8 @@ Note: the possession of administrative rights in the context of PolicyKit is det
 
 Action example: pkcon install "package_name"
 
+The “Block” option is necessary to prevent the user from changing this setting. Blocking a policy makes it a priority over a similar policy for the user.
+
       </string>
 
       <string id="org-freedesktop-packagekit-package-install-user">Permission to install packages</string>
@@ -93,6 +95,8 @@ Possible values:
 Note: the possession of administrative rights in the context of PolicyKit is determined by its rules. By default, Alt asks for the password of the user in the "wheel" group.
 
 Action example: pkcon remove "package_name"
+
+The “Block” option is necessary to prevent the user from changing this setting. Blocking a policy makes it a priority over a similar policy for the user.
 
       </string>
 
@@ -152,6 +156,8 @@ Note: the possession of administrative rights in the context of PolicyKit is det
 
 Action example: pkcon update
 
+The “Block” option is necessary to prevent the user from changing this setting. Blocking a policy makes it a priority over a similar policy for the user.
+
       </string>
 
       <string id="org-freedesktop-packagekit-system-update-user">Permission to update packages</string>
@@ -209,6 +215,8 @@ Possible values:
 Note: the possession of administrative rights in the context of PolicyKit is determined by its rules. By default, Alt asks for the password of the user in the "wheel" group.
 
 Action example: pkcon refresh
+
+The “Block” option is necessary to prevent the user from changing this setting. Blocking a policy makes it a priority over a similar policy for the user.
 
       </string>
 
@@ -268,6 +276,8 @@ Note: the possession of administrative rights in the context of PolicyKit is det
 
 Action example: pkcon repair
 
+The “Block” option is necessary to prevent the user from changing this setting. Blocking a policy makes it a priority over a similar policy for the user.
+
       </string>
 
       <string id="org-freedesktop-packagekit-repair-system-user">Permission to restore packages on the system</string>
@@ -324,6 +334,8 @@ Possible values:
 
 Note: the possession of administrative rights in the context of PolicyKit is determined by its rules. By default, Alt asks for the password of the user in the "wheel" group.
 
+The “Block” option is necessary to prevent the user from changing this setting. Blocking a policy makes it a priority over a similar policy for the user.
+
       </string>
 
       <string id="org-freedesktop-packagekit-system-sources-configure-user">Permission to edit batch sources </string>
@@ -377,6 +389,8 @@ Possible values:
 "Auth_admin_keep" — similar to "Auth_admin", but the authorization is kept for a short period of time (for example, five minutes);
 
 Note: the possession of administrative rights in the context of PolicyKit is determined by its rules. By default, Alt asks for the password of the user in the "wheel" group.
+
+The “Block” option is necessary to prevent the user from changing this setting. Blocking a policy makes it a priority over a similar policy for the user.
 
       </string>
 
@@ -432,6 +446,8 @@ Possible values:
 
 Note: the possession of administrative rights in the context of PolicyKit is determined by its rules. By default, Alt asks for the password of the user in the "wheel" group.
 
+The “Block” option is necessary to prevent the user from changing this setting. Blocking a policy makes it a priority over a similar policy for the user.
+
       </string>
 
       <string id="org-freedesktop-packagekit-package-reinstall-user">Permission to install unverified packages</string>
@@ -486,6 +502,8 @@ Possible values:
 
 Note: the possession of administrative rights in the context of PolicyKit is determined by its rules. By default, Alt asks for the password of the user in the "wheel" group.
 
+The “Block” option is necessary to prevent the user from changing this setting. Blocking a policy makes it a priority over a similar policy for the user.
+
       </string>
 
       <string id="org-freedesktop-packagekit-package-eula-accept-user">Permission to accept the license agreement</string>
@@ -539,6 +557,9 @@ Possible values:
 "Auth_admin_keep" — similar to "Auth_admin", but the authorization is kept for a short period of time (for example, five minutes);
 
 Note: the possession of administrative rights in the context of PolicyKit is determined by its rules. By default, Alt asks for the password of the user in the "wheel" group.
+
+The “Block” option is necessary to prevent the user from changing this setting. Blocking a policy makes it a priority over a similar policy for the user.
+
       </string>
 
       <string id="org-freedesktop-packagekit-system-trust-signing-key-user">Permission to add the signing key</string>
@@ -580,7 +601,6 @@ Note: the possession of administrative rights in the context of PolicyKit is det
       <presentation id="org-freedesktop-packagekit-package-pr">
         <dropdownList noSort="true" defaultItem="1" refId="OrgFreedesktopPackagekitPackage_setter">Restriction Options:</dropdownList>
         <checkBox refId="OrgFreedesktopPackagekitPackage_blocker">Block</checkBox>
-        <text>Blocking changes to this setting by user policy. Blocking a policy makes it a priority over a similar policy for the user.</text>
       </presentation>
       <presentation id="org-freedesktop-packagekit-package-user-pr">
         <dropdownList noSort="true" defaultItem="1" refId="OrgFreedesktopPackagekitPackage_setter">Restriction Options:</dropdownList>
