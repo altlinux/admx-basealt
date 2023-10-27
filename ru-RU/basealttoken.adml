@@ -30,6 +30,8 @@
 
 Примечание: обладание административными правами в контексте PolicyKit определяются его правилами. По умолчанию в Альт запрашивается пароль пользователя, находящегося в группе «wheel».
 
+Опция «Блокировать» необходима для запрета изменений данной настройки пользователем. Блокировка политики делает её приоритетнее аналогичной политики для пользователя.
+
       </string>
       <string id="org-debian-pcsc-lite-access_pcsc-user">Ограничение возможности доступа к демону PC/SC</string>
       <string id="org-debian-pcsc-lite-access_pcsc-user_help">Политика управляет ограничением возможности доступа к демону PC/SC и регулирует работу с токенами.
@@ -78,6 +80,8 @@
 
 Примечание: обладание административными правами в контексте PolicyKit определяются его правилами. По умолчанию в Альт запрашивается пароль пользователя, находящегося в группе «wheel».
 
+Опция «Блокировать» необходима для запрета изменений данной настройки пользователем. Блокировка политики делает её приоритетнее аналогичной политики для пользователя.
+
       </string>
       <string id="org-debian-pcsc-lite-access_card-user">Ограничение возможности доступа к смарт-картам</string>
       <string id="org-debian-pcsc-lite-access_card-user_help">Политика управляет ограничением возможности доступа к смарт-картам.
@@ -116,7 +120,6 @@
       <presentation id="org-debian-pcsc-lite-pr">
         <dropdownList noSort="true" defaultItem="1" refId="OrgDebianPcscLite_setter">Варианты ограничений:</dropdownList>
         <checkBox refId="OrgDebianPcscLite_blocker">Блокировать</checkBox>
-        <text>Блокировка изменений данной настройки политикой пользователя. Блокировка политики делает её приоритетнее аналогичной политики для пользователя.</text>
       </presentation>
       <presentation id="org-debian-pcsc-lite-user-pr">
         <dropdownList noSort="true" defaultItem="1" refId="OrgDebianPcscLite_setter">Варианты ограничений:</dropdownList>
