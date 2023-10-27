@@ -85,6 +85,8 @@
       <string id="ALT_ModemManagerPolkit_Help">ModemManager service settings</string>
       <string id="ALT_AccountsPolkit">Accounts permissions</string>
       <string id="ALT_AccountsPolkit_help">Accounts permissions management</string>
+      <string id="ALT_Color-ManagerPolkit">ColorManager permissions</string>
+      <string id="ALT_Color-ManagerPolkit_Help">Color-Manager permissions management</string>
       <string id="ALT_RealmdPolkit">Realmd permissions</string>
       <string id="ALT_RealmdPolkit_Help">Realmd permissions management</string>
       <string id="ALT_MachinePolkit">Machine permissions</string>

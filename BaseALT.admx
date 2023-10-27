@@ -181,5 +181,8 @@
     <category name="ALT_LoginPolkit" displayName="$(string.ALT_LoginPolkit)" explainText="$(string.ALT_LoginPolkit_Help)">
       <parentCategory ref="ALT_Polkit" />
     </category>
+    <category name="ALT_Color-ManagerPolkit" displayName="$(string.ALT_Color-ManagerPolkit)" explainText="$(string.ALT_Color-ManagerPolkit_Help)">
+      <parentCategory ref="ALT_Polkit" />
+    </category>
   </categories>
 </policyDefinitions>

@@ -3,13 +3,13 @@
 <policyDefinitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                    revision="1.0" schemaVersion="1.0" xmlns="http://schemas.microsoft.com/GroupPolicy/2006/07/PolicyDefinitions">
   <policyNamespaces>
-    <target prefix="modemmanager" namespace="BaseALT.Policies.ModemManager1.Contacts" />
+    <target prefix="modemmanager" namespace="BaseALT.Policies.ModemManager1" />
     <using prefix="system" namespace="BaseALT.Policies.System" />
   </policyNamespaces>
   <resources minRequiredRevision="1.0" />
   <policies>
     <policy class="Machine" displayName="$(string.org-freedesktop-ModemManager1-Contacts)"
-        explainText="$(string.org-freedesktop-ModemManager1-Contacts_help)"
+        explainText="$(string.org-freedesktop-ModemManager1-Contacts_Help)"
         key="Software\BaseALT\Policies\Polkit"
         name="org.freedesktop.ModemManager1.Contacts"
         valuename="org.freedesktop.ModemManager1.Contacts"
@@ -60,7 +60,7 @@
       </elements>
     </policy>
     <policy class="User" displayName="$(string.org-freedesktop-ModemManager1-Contacts)"
-        explainText="$(string.org-freedesktop-ModemManager1-Contacts-user_help)"
+        explainText="$(string.org-freedesktop-ModemManager1-Contacts-user_Help)"
         key="Software\BaseALT\Policies\Polkit"
         name="org.freedesktop.ModemManager1.Contacts-user"
         valuename="org.freedesktop.ModemManager1.Contacts"
@@ -103,7 +103,7 @@
       </elements>
     </policy>
     <policy class="Machine" displayName="$(string.org-freedesktop-ModemManager1-Control)"
-        explainText="$(string.org-freedesktop-ModemManager1-Control_help)"
+        explainText="$(string.org-freedesktop-ModemManager1-Control_Help)"
         key="Software\BaseALT\Policies\Polkit"
         name="org.freedesktop.ModemManager1.Control"
         valuename="org.freedesktop.ModemManager1.Control"
@@ -154,7 +154,7 @@
       </elements>
     </policy>
     <policy class="User" displayName="$(string.org-freedesktop-ModemManager1-Control)"
-        explainText="$(string.org-freedesktop-ModemManager1-Control-user_help)"
+        explainText="$(string.org-freedesktop-ModemManager1-Control-user_Help)"
         key="Software\BaseALT\Policies\Polkit"
         name="org.freedesktop.ModemManager1.Control-user"
         valuename="org.freedesktop.ModemManager1.Control"
@@ -197,7 +197,7 @@
       </elements>
     </policy>
     <policy class="Machine" displayName="$(string.org-freedesktop-ModemManager1-Device-Control)"
-        explainText="$(string.org-freedesktop-ModemManager1-Device-Control_help)"
+        explainText="$(string.org-freedesktop-ModemManager1-Device-Control_Help)"
         key="Software\BaseALT\Policies\Polkit"
         name="org.freedesktop.ModemManager1.Device.Control"
         valuename="org.freedesktop.ModemManager1.Device.Control"
@@ -248,7 +248,7 @@
       </elements>
     </policy>
     <policy class="User" displayName="$(string.org-freedesktop-ModemManager1-Device-Control)"
-        explainText="$(string.org-freedesktop-ModemManager1-Device-Control-user_help)"
+        explainText="$(string.org-freedesktop-ModemManager1-Device-Control-user_Help)"
         key="Software\BaseALT\Policies\Polkit"
         name="org.freedesktop.ModemManager1.Device.Control-user"
         valuename="org.freedesktop.ModemManager1.Device.Control"
@@ -291,7 +291,7 @@
       </elements>
     </policy>
     <policy class="Machine" displayName="$(string.org-freedesktop-ModemManager1-Firmware)"
-        explainText="$(string.org-freedesktop-ModemManager1-Firmware_help)"
+        explainText="$(string.org-freedesktop-ModemManager1-Firmware_Help)"
         key="Software\BaseALT\Policies\Polkit"
         name="org.freedesktop.ModemManager1.Firmware"
         valuename="org.freedesktop.ModemManager1.Device.Firmware"
@@ -342,7 +342,7 @@
       </elements>
     </policy>
     <policy class="User" displayName="$(string.org-freedesktop-ModemManager1-Firmware)"
-        explainText="$(string.org-freedesktop-ModemManager1-Firmware-user_help)"
+        explainText="$(string.org-freedesktop-ModemManager1-Firmware-user_Help)"
         key="Software\BaseALT\Policies\Polkit"
         name="org.freedesktop.ModemManager1.Firmware-user"
         valuename="org.freedesktop.ModemManager1.Device.Firmware"
@@ -385,7 +385,7 @@
       </elements>
     </policy>
     <policy class="Machine" displayName="$(string.org-freedesktop-ModemManager1-Location)"
-        explainText="$(string.org-freedesktop-ModemManager1-Location_help)"
+        explainText="$(string.org-freedesktop-ModemManager1-Location_Help)"
         key="Software\BaseALT\Policies\Polkit"
         name="org.freedesktop.ModemManager1.Location"
         valuename="org.freedesktop.ModemManager1.Location"
@@ -436,7 +436,7 @@
       </elements>
     </policy>
     <policy class="User" displayName="$(string.org-freedesktop-ModemManager1-Location)"
-        explainText="$(string.org-freedesktop-ModemManager1-Location-user_help)"
+        explainText="$(string.org-freedesktop-ModemManager1-Location-user_Help)"
         key="Software\BaseALT\Policies\Polkit"
         name="org.freedesktop.ModemManager1.Location-user"
         valuename="org.freedesktop.ModemManager1.Location"
@@ -479,7 +479,7 @@
       </elements>
     </policy>
     <policy class="Machine" displayName="$(string.org-freedesktop-ModemManager1-Messaging)"
-        explainText="$(string.org-freedesktop-ModemManager1-Messaging_help)"
+        explainText="$(string.org-freedesktop-ModemManager1-Messaging_Help)"
         key="Software\BaseALT\Policies\Polkit"
         name="org.freedesktop.ModemManager1.Messaging"
         valuename="org.freedesktop.ModemManager1.Messaging"
@@ -530,7 +530,7 @@
       </elements>
     </policy>
     <policy class="User" displayName="$(string.org-freedesktop-ModemManager1-Messaging)"
-        explainText="$(string.org-freedesktop-ModemManager1-Messaging-user_help)"
+        explainText="$(string.org-freedesktop-ModemManager1-Messaging-user_Help)"
         key="Software\BaseALT\Policies\Polkit"
         name="org.freedesktop.ModemManager1.Messaging-user"
         valuename="org.freedesktop.ModemManager1.Messaging"
@@ -573,7 +573,7 @@
       </elements>
     </policy>
     <policy class="Machine" displayName="$(string.org-freedesktop-ModemManager1-Time)"
-        explainText="$(string.org-freedesktop-ModemManager1-Time_help)"
+        explainText="$(string.org-freedesktop-ModemManager1-Time_Help)"
         key="Software\BaseALT\Policies\Polkit"
         name="org.freedesktop.ModemManager1.Time"
         valuename="org.freedesktop.ModemManager1.Time"
@@ -624,7 +624,7 @@
       </elements>
     </policy>
     <policy class="User" displayName="$(string.org-freedesktop-ModemManager1-Time)"
-        explainText="$(string.org-freedesktop-ModemManager1-Time-user_help)"
+        explainText="$(string.org-freedesktop-ModemManager1-Time-user_Help)"
         key="Software\BaseALT\Policies\Polkit"
         name="org.freedesktop.ModemManager1.Time-user"
         valuename="org.freedesktop.ModemManager1.Time"
@@ -667,7 +667,7 @@
       </elements>
     </policy>
     <policy class="Machine" displayName="$(string.org-freedesktop-ModemManager1-USSD)"
-        explainText="$(string.org-freedesktop-ModemManager1-USSD_help)"
+        explainText="$(string.org-freedesktop-ModemManager1-USSD_Help)"
         key="Software\BaseALT\Policies\Polkit"
         name="org.freedesktop.ModemManager1.USSD"
         valuename="org.freedesktop.ModemManager1.USSD"
@@ -718,7 +718,7 @@
       </elements>
     </policy>
     <policy class="User" displayName="$(string.org-freedesktop-ModemManager1-USSD)"
-        explainText="$(string.org-freedesktop-ModemManager1-USSD-user_help)"
+        explainText="$(string.org-freedesktop-ModemManager1-USSD-user_Help)"
         key="Software\BaseALT\Policies\Polkit"
         name="org.freedesktop.ModemManager1.USSDUser"
         valuename="org.freedesktop.ModemManager1.USSD"
@@ -761,7 +761,7 @@
       </elements>
     </policy>
     <policy class="Machine" displayName="$(string.org-freedesktop-ModemManager1-Voice)"
-        explainText="$(string.org-freedesktop-ModemManager1-Voice_help)"
+        explainText="$(string.org-freedesktop-ModemManager1-Voice_Help)"
         key="Software\BaseALT\Policies\Polkit"
         name="org.freedesktop.ModemManager1.Voice"
         valuename="org.freedesktop.ModemManager1.Voice"
@@ -812,7 +812,7 @@
       </elements>
     </policy>
     <policy class="User" displayName="$(string.org-freedesktop-ModemManager1-Voice)"
-        explainText="$(string.org-freedesktop-ModemManager1-Voice-user_help)"
+        explainText="$(string.org-freedesktop-ModemManager1-Voice-user_Help)"
         key="Software\BaseALT\Policies\Polkit"
         name="org.freedesktop.ModemManager1.VoiceUser"
         valuename="org.freedesktop.ModemManager1.Voice"
