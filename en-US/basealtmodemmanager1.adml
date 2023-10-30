@@ -467,11 +467,11 @@ Note: the possession of administrative rights in a PolicyKit context is determin
 
     </stringTable>
     <presentationTable>
-    <presentation id="org-freedesktop-ModemManager1-Contacts-pr">
+    <presentation id="org-freedesktop-ModemManager1-pr">
        <dropdownList noSort="true" defaultItem="1" refId="OrgFreedesktopModemManager_setter">Restriction options for the ModemManager service:</dropdownList>
        <checkBox refId="OrgFreedesktopModemManager_blocker">Block</checkBox>
         </presentation>
-        <presentation id="org-freedesktop-ModemManager1-Control-user-pr">
+        <presentation id="org-freedesktop-ModemManager1-user-pr">
          <dropdownList noSort="true" defaultItem="1" refId="OrgFreedesktopModemManager_setter">Restriction options for the ModemManager service:</dropdownList>
         </presentation>
     </presentationTable>
