@@ -169,5 +169,8 @@
     <category name="ALT_ModemManagerPolkit" displayName="$(string.ALT_ModemManagerPolkit)" explainText="$(string.ALT_ModemManagerPolkit_Help)">
       <parentCategory ref="ALT_Polkit" />
     </category>
+    <category name="ALT_TimedatePolkit" displayName="$(string.ALT_TimedatePolkit)" explainText="$(string.ALT_TimedatePolkit_Help)">
+      <parentCategory ref="ALT_Polkit" />
+    </category>
   </categories>
 </policyDefinitions>
