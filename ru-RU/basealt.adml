@@ -87,6 +87,8 @@
       <string id="ALT_TimedatePolkit_Help">Управление polkit-ограничениями TimeDate.</string>
       <string id="ALT_AccountsPolkit">Ограничения Accounts</string>
       <string id="ALT_AccountsPolkit_help">Управление polkit-ограничениями Accounts.</string>
+      <string id="ALT_HostnamePolkit">Ограничения HostName</string>
+      <string id="ALT_HostnamePolkit_Help">Управление polkit-ограничениями HostName.</string>
       <string id="ALT_Color-ManagerPolkit">Ограничения ColorManager</string>
       <string id="ALT_Color-ManagerPolkit_Help">Управление polkit-ограничениями ColorManager.</string>
       <string id="ALT_RealmdPolkit">Ограничения Realmd</string>

@@ -87,6 +87,8 @@
       <string id="ALT_TimedatePolkit_Help">TimeDate permissions management.</string>
       <string id="ALT_AccountsPolkit">Accounts permissions</string>
       <string id="ALT_AccountsPolkit_help">Accounts permissions management</string>
+      <string id="ALT_HostnamePolkit">HostName permissions</string>
+      <string id="ALT_HostnamePolkit_Help">HostName permissions management</string>
       <string id="ALT_Color-ManagerPolkit">ColorManager permissions</string>
       <string id="ALT_Color-ManagerPolkit_Help">Color-Manager permissions management</string>
       <string id="ALT_RealmdPolkit">Realmd permissions</string>
