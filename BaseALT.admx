@@ -172,5 +172,8 @@
     <category name="ALT_TimedatePolkit" displayName="$(string.ALT_TimedatePolkit)" explainText="$(string.ALT_TimedatePolkit_Help)">
       <parentCategory ref="ALT_Polkit" />
     </category>
+     <category name="ALT_HostnamePolkit" displayName="$(string.ALT_HostnamePolkit)" explainText="$(string.ALT_HostnamePolkit_Help)">
+      <parentCategory ref="ALT_Polkit" />
+    </category>
   </categories>
 </policyDefinitions>
