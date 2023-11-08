@@ -28,7 +28,7 @@ Possible values:
 "Auth_self_keep" — similar to "Auth_self", but authorization is maintained for a short period of time (e.g., five minutes). Note, this level of restriction is insufficient for most multi-user applications, "Auth_admin_keep" is generally recommended;
 
 "Auth_admin_keep" — similar to "Auth_admin", but authorization is maintained for a short period of time (e.g., five minutes);
-      
+
 Note: the possession of administrative rights in a PolicyKit context is determined by its rules. By default, Alt asks for the password of a user in the "wheel" group.
 
 The "Block" option prevents the user from changing this setting. Blocking a policy makes it a priority over a similar policy for the user.
@@ -56,7 +56,7 @@ Possible values:
 "Auth_self_keep" — similar to "Auth_self", but authorization is maintained for a short period of time (e.g., five minutes). Note, this level of restriction is insufficient for most multi-user applications, "Auth_admin_keep" is generally recommended;
 
 "Auth_admin_keep" — similar to "Auth_admin", but authorization is maintained for a short period of time (e.g., five minutes);
-      
+
 Note: the possession of administrative rights in a PolicyKit context is determined by its rules. By default, Alt asks for the password of a user in the "wheel" group.
 
       </string>
@@ -82,7 +82,7 @@ Possible values:
 "Auth_self_keep" — similar to "Auth_self", but authorization is maintained for a short period of time (e.g., five minutes). Note, this level of restriction is insufficient for most multi-user applications, "Auth_admin_keep" is generally recommended;
 
 "Auth_admin_keep" — similar to "Auth_admin", but authorization is maintained for a short period of time (e.g., five minutes);
-      
+
 Note: the possession of administrative rights in a PolicyKit context is determined by its rules. By default, Alt asks for the password of a user in the "wheel" group.
 
 The "Block" option prevents the user from changing this setting. Blocking a policy makes it a priority over a similar policy for the user.
@@ -90,7 +90,7 @@ The "Block" option prevents the user from changing this setting. Blocking a poli
       </string>
       <string id="org-freedesktop-timedate1-set-ntp-user">Permission to enable or disable network time synchronization</string>
       <string id="org-freedesktop-timedate1-set-ntp-user_Help">The policy controls the restriction on whether network time synchronization can be enabled or disabled
-      
+
 Authentication is required to control whether network time synchronization is enabled.
 
 Disabled/Unconfigured — restrictions are defined by system parameters.
@@ -110,7 +110,7 @@ Possible values:
 "Auth_self_keep" — similar to "Auth_self", but authorization is maintained for a short period of time (e.g., five minutes). Note, this level of restriction is insufficient for most multi-user applications, "Auth_admin_keep" is generally recommended;
 
 "Auth_admin_keep" — similar to "Auth_admin", but authorization is maintained for a short period of time (e.g., five minutes);
-      
+
 Note: the possession of administrative rights in a PolicyKit context is determined by its rules. By default, Alt asks for the password of a user in the "wheel" group.
 
       </string>
@@ -134,7 +134,7 @@ Possible values:
 "Auth_self_keep" — similar to "Auth_self", but authorization is maintained for a short period of time (e.g., five minutes). Note, this level of restriction is insufficient for most multi-user applications, "Auth_admin_keep" is generally recommended;
 
 "Auth_admin_keep" — similar to "Auth_admin", but authorization is maintained for a short period of time (e.g., five minutes);
-      
+
 Note: the possession of administrative rights in a PolicyKit context is determined by its rules. By default, Alt asks for the password of a user in the "wheel" group.
 
 The "Block" option prevents the user from changing this setting. Blocking a policy makes it a priority over a similar policy for the user.
@@ -160,7 +160,7 @@ Possible values:
 "Auth_self_keep" — similar to "Auth_self", but authorization is maintained for a short period of time (e.g., five minutes). Note, this level of restriction is insufficient for most multi-user applications, "Auth_admin_keep" is generally recommended;
 
 "Auth_admin_keep" — similar to "Auth_admin", but authorization is maintained for a short period of time (e.g., five minutes);
-      
+
 Note: the possession of administrative rights in a PolicyKit context is determined by its rules. By default, Alt asks for the password of a user in the "wheel" group.
 
       </string>
@@ -186,7 +186,7 @@ Possible values:
 "Auth_self_keep" — similar to "Auth_self", but authorization is maintained for a short period of time (e.g., five minutes). Note, this level of restriction is insufficient for most multi-user applications, "Auth_admin_keep" is generally recommended;
 
 "Auth_admin_keep" — similar to "Auth_admin", but authorization is maintained for a short period of time (e.g., five minutes);
-      
+
 Note: the possession of administrative rights in a PolicyKit context is determined by its rules. By default, Alt asks for the password of a user in the "wheel" group.
 
 The "Block" option prevents the user from changing this setting. Blocking a policy makes it a priority over a similar policy for the user.
@@ -214,7 +214,7 @@ Possible values:
 "Auth_self_keep" — similar to "Auth_self", but authorization is maintained for a short period of time (e.g., five minutes). Note, this level of restriction is insufficient for most multi-user applications, "Auth_admin_keep" is generally recommended;
 
 "Auth_admin_keep" — similar to "Auth_admin", but authorization is maintained for a short period of time (e.g., five minutes);
-      
+
 Note: the possession of administrative rights in a PolicyKit context is determined by its rules. By default, Alt asks for the password of a user in the "wheel" group.
 
 
