@@ -1,69 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--  (c) 2023 BaseALT, Ltd.  -->
 <policyDefinitionResources xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.microsoft.com/GroupPolicy/2006/07/PolicyDefinitions" revision="1.0" schemaVersion="1.0">
-  <displayName>ALT polkit-policies definitions of TimeDate</displayName>
-  <description>This file contains the TimeDate service polkit-policies definitions used by ALT operating system.</description>
+  <displayName>ALT polkit-policies definitions of HostName</displayName>
+  <description>This file contains the HostName service polkit-policies definitions used by ALT operating system.</description>
   <resources>
     <stringTable>
 
-      <string id="org-freedesktop-timedate1-set-local-rtc">Permission to setting the RTC to local time zone or UTC</string>
-      <string id="org-freedesktop-timedate1-set-local-rtc_Help">The policy controls the restriction on the ability to set the RTC to the local time zone or UTC
+      <string id="org-freedesktop-hostname1-get-product-uuid">Permission to get product UUID</string>
+      <string id="org-freedesktop-hostname1-get-product-uuid_Help">The policy controls the restriction on the ability to retrieve product UUIDs
 
-Authentication is required to configure the RTC time storage format - local or UTC.
-
-Disabled/Unconfigured — restrictions are defined by system parameters.
-
-Enabled — restriction with defined rights;
-
-Possible values:
-
-"No" — set restriction with action denial (user is not allowed to perform the action);
-
-"Yes" — remove the restriction (the user can perform the action without any authentication);
-
-"Auth_self" — the user must enter his/her password for authentication. Note, this level of restriction is not sufficient for most multi-user applications, "Auth_admin" is usually recommended;
-
-"Auth_admin" — the user must enter the administrator password at each request. Requires authentication of the user with administrator privileges;
-
-"Auth_self_keep" — similar to "Auth_self", but authorization is maintained for a short period of time (e.g., five minutes). Note, this level of restriction is insufficient for most multi-user applications, "Auth_admin_keep" is generally recommended;
-
-"Auth_admin_keep" — similar to "Auth_admin", but authorization is maintained for a short period of time (e.g., five minutes);
-
-Note: the possession of administrative rights in a PolicyKit context is determined by its rules. By default, Alt asks for the password of a user in the "wheel" group.
-
-The "Block" option prevents the user from changing this setting. Blocking a policy makes it a priority over a similar policy for the user.
-
-      </string>
-      <string id="org-freedesktop-timedate1-set-local-rtc-user">Permission to setting the RTC to local time zone or UTC</string>
-      <string id="org-freedesktop-timedate1-set-local-rtc-user_Help">The policy controls the restriction on the ability to set the RTC to the local time zone or UTC
-
-Authentication is required to configure the RTC time storage format - local or UTC.
-
-Disabled/Unconfigured — restrictions are defined by system parameters.
-
-Enabled — restriction with defined rights;
-
-Possible values:
-
-"No" — set restriction with action denial (user is not allowed to perform the action);
-
-"Yes" — remove the restriction (the user can perform the action without any authentication);
-
-"Auth_self" — the user must enter his/her password for authentication. Note, this level of restriction is not sufficient for most multi-user applications, "Auth_admin" is usually recommended;
-
-"Auth_admin" — the user must enter the administrator password at each request. Requires authentication of the user with administrator privileges;
-
-"Auth_self_keep" — similar to "Auth_self", but authorization is maintained for a short period of time (e.g., five minutes). Note, this level of restriction is insufficient for most multi-user applications, "Auth_admin_keep" is generally recommended;
-
-"Auth_admin_keep" — similar to "Auth_admin", but authorization is maintained for a short period of time (e.g., five minutes);
-
-Note: the possession of administrative rights in a PolicyKit context is determined by its rules. By default, Alt asks for the password of a user in the "wheel" group.
-
-      </string>
-      <string id="org-freedesktop-timedate1-set-ntp">Permission to enable or disable network time synchronization</string>
-      <string id="org-freedesktop-timedate1-set-ntp_Help">The policy controls the restriction on whether network time synchronization can be enabled or disabled
-
-Authentication is required to control whether network time synchronization is enabled.
+Authentication is required to obtain the product UUID.
 
 Disabled/Unconfigured — restrictions are defined by system parameters.
 
@@ -88,60 +34,10 @@ Note: the possession of administrative rights in a PolicyKit context is determin
 The "Block" option prevents the user from changing this setting. Blocking a policy makes it a priority over a similar policy for the user.
 
       </string>
-      <string id="org-freedesktop-timedate1-set-ntp-user">Permission to enable or disable network time synchronization</string>
-      <string id="org-freedesktop-timedate1-set-ntp-user_Help">The policy controls the restriction on whether network time synchronization can be enabled or disabled
+      <string id="org-freedesktop-hostname1-get-product-uuid-user">Permission to get product UUID</string>
+      <string id="org-freedesktop-hostname1-get-product-uuid-user_Help">The policy controls the restriction on the ability to retrieve product UUIDs
 
-Authentication is required to control whether network time synchronization is enabled.
-
-Disabled/Unconfigured — restrictions are defined by system parameters.
-
-Enabled — restriction with defined rights;
-
-Possible values:
-
-"No" — set restriction with action denial (user is not allowed to perform the action);
-
-"Yes" — remove the restriction (the user can perform the action without any authentication);
-
-"Auth_self" — the user must enter his/her password for authentication. Note, this level of restriction is not sufficient for most multi-user applications, "Auth_admin" is usually recommended;
-
-"Auth_admin" — the user must enter the administrator password at each request. Requires authentication of the user with administrator privileges;
-
-"Auth_self_keep" — similar to "Auth_self", but authorization is maintained for a short period of time (e.g., five minutes). Note, this level of restriction is insufficient for most multi-user applications, "Auth_admin_keep" is generally recommended;
-
-"Auth_admin_keep" — similar to "Auth_admin", but authorization is maintained for a short period of time (e.g., five minutes);
-
-Note: the possession of administrative rights in a PolicyKit context is determined by its rules. By default, Alt asks for the password of a user in the "wheel" group.
-
-      </string>
-      <string id="org-freedesktop-timedate1-set-time">Permission to system time settings</string>
-      <string id="org-freedesktop-timedate1-set-time_Help">The policy restricts the ability to set the system time
-
-Disabled/Unconfigured — restrictions are defined by system parameters.
-
-Enabled — restriction with defined rights;
-
-Possible values:
-
-"No" — set restriction with action denial (user is not allowed to perform the action);
-
-"Yes" — remove the restriction (the user can perform the action without any authentication);
-
-"Auth_self" — the user must enter his/her password for authentication. Note, this level of restriction is not sufficient for most multi-user applications, "Auth_admin" is usually recommended;
-
-"Auth_admin" — the user must enter the administrator password at each request. Requires authentication of the user with administrator privileges;
-
-"Auth_self_keep" — similar to "Auth_self", but authorization is maintained for a short period of time (e.g., five minutes). Note, this level of restriction is insufficient for most multi-user applications, "Auth_admin_keep" is generally recommended;
-
-"Auth_admin_keep" — similar to "Auth_admin", but authorization is maintained for a short period of time (e.g., five minutes);
-
-Note: the possession of administrative rights in a PolicyKit context is determined by its rules. By default, Alt asks for the password of a user in the "wheel" group.
-
-The "Block" option prevents the user from changing this setting. Blocking a policy makes it a priority over a similar policy for the user.
-
-      </string>
-      <string id="org-freedesktop-timedate1-set-time-user">Permission to system time settings</string>
-      <string id="org-freedesktop-timedate1-set-time-user_Help">The policy restricts the ability to set the system time
+Authentication is required to obtain the product UUID.
 
 Disabled/Unconfigured — restrictions are defined by system parameters.
 
@@ -164,10 +60,10 @@ Possible values:
 Note: the possession of administrative rights in a PolicyKit context is determined by its rules. By default, Alt asks for the password of a user in the "wheel" group.
 
       </string>
-      <string id="org-freedesktop-timedate1-set-timezone">Permission to system time zone settings</string>
-      <string id="org-freedesktop-timedate1-set-timezone_Help">The policy restricts the ability to set the system time zone
+      <string id="org-freedesktop-hostname1-set-hostname">Permission to set hostname</string>
+      <string id="org-freedesktop-hostname1-set-hostname_Help">The policy controls the restriction on the ability to set the hostname
 
-Authentication is required to set the system time zone.
+Authentication is required to set the local hostname.
 
 Disabled/Unconfigured — restrictions are defined by system parameters.
 
@@ -192,10 +88,118 @@ Note: the possession of administrative rights in a PolicyKit context is determin
 The "Block" option prevents the user from changing this setting. Blocking a policy makes it a priority over a similar policy for the user.
 
       </string>
-      <string id="org-freedesktop-timedate1-set-timezone-user">Permission to system time zone settings</string>
-      <string id="org-freedesktop-timedate1-set-timezone-user_Help">The policy restricts the ability to set the system time zone
+      <string id="org-freedesktop-hostname1-set-hostname-user">Permission to set hostname</string>
+      <string id="org-freedesktop-hostname1-set-hostname-user_Help">The policy controls the restriction on the ability to set the hostname
 
-Authentication is required to set the system time zone.
+Authentication is required to set the local hostname.
+
+Disabled/Unconfigured — restrictions are defined by system parameters.
+
+Enabled — restriction with defined rights;
+
+Possible values:
+
+"No" — set restriction with action denial (user is not allowed to perform the action);
+
+"Yes" — remove the restriction (the user can perform the action without any authentication);
+
+"Auth_self" — the user must enter his/her password for authentication. Note, this level of restriction is not sufficient for most multi-user applications, "Auth_admin" is usually recommended;
+
+"Auth_admin" — the user must enter the administrator password at each request. Requires authentication of the user with administrator privileges;
+
+"Auth_self_keep" — similar to "Auth_self", but authorization is maintained for a short period of time (e.g., five minutes). Note, this level of restriction is insufficient for most multi-user applications, "Auth_admin_keep" is generally recommended;
+
+"Auth_admin_keep" — similar to "Auth_admin", but authorization is maintained for a short period of time (e.g., five minutes);
+
+Note: the possession of administrative rights in a PolicyKit context is determined by its rules. By default, Alt asks for the password of a user in the "wheel" group.
+
+      </string>
+      <string id="org-freedesktop-hostname1-set-machine-info">Permission to set machine information</string>
+      <string id="org-freedesktop-hostname1-set-machine-info_Help">The policy restricts the ability to set machine information
+
+Authentication is required to set local computer information.
+
+Disabled/Unconfigured — restrictions are defined by system parameters.
+
+Enabled — restriction with defined rights;
+
+Possible values:
+
+"No" — set restriction with action denial (user is not allowed to perform the action);
+
+"Yes" — remove the restriction (the user can perform the action without any authentication);
+
+"Auth_self" — the user must enter his/her password for authentication. Note, this level of restriction is not sufficient for most multi-user applications, "Auth_admin" is usually recommended;
+
+"Auth_admin" — the user must enter the administrator password at each request. Requires authentication of the user with administrator privileges;
+
+"Auth_self_keep" — similar to "Auth_self", but authorization is maintained for a short period of time (e.g., five minutes). Note, this level of restriction is insufficient for most multi-user applications, "Auth_admin_keep" is generally recommended;
+
+"Auth_admin_keep" — similar to "Auth_admin", but authorization is maintained for a short period of time (e.g., five minutes);
+
+Note: the possession of administrative rights in a PolicyKit context is determined by its rules. By default, Alt asks for the password of a user in the "wheel" group.
+
+The "Block" option prevents the user from changing this setting. Blocking a policy makes it a priority over a similar policy for the user.
+
+      </string>
+      <string id="org-freedesktop-hostname1-set-machine-info-user">Permission to set machine information</string>
+      <string id="org-freedesktop-hostname1-set-machine-info-user_Help">The policy restricts the ability to set machine information
+
+Authentication is required to set local computer information.
+
+Disabled/Unconfigured — restrictions are defined by system parameters.
+
+Enabled — restriction with defined rights;
+
+Possible values:
+
+"No" — set restriction with action denial (user is not allowed to perform the action);
+
+"Yes" — remove the restriction (the user can perform the action without any authentication);
+
+"Auth_self" — the user must enter his/her password for authentication. Note, this level of restriction is not sufficient for most multi-user applications, "Auth_admin" is usually recommended;
+
+"Auth_admin" — the user must enter the administrator password at each request. Requires authentication of the user with administrator privileges;
+
+"Auth_self_keep" — similar to "Auth_self", but authorization is maintained for a short period of time (e.g., five minutes). Note, this level of restriction is insufficient for most multi-user applications, "Auth_admin_keep" is generally recommended;
+
+"Auth_admin_keep" — similar to "Auth_admin", but authorization is maintained for a short period of time (e.g., five minutes);
+
+Note: the possession of administrative rights in a PolicyKit context is determined by its rules. By default, Alt asks for the password of a user in the "wheel" group.
+
+      </string>
+      <string id="org-freedesktop-hostname1-set-static-hostname">Permission to set static hostname</string>
+      <string id="org-freedesktop-hostname1-set-static-hostname_Help">The policy restricts the ability to set a static hostname
+
+Authentication is required to set the statically configured local host name as well as the beautiful host name.
+
+Disabled/Unconfigured — restrictions are defined by system parameters.
+
+Enabled — restriction with defined rights;
+
+Possible values:
+
+"No" — set restriction with action denial (user is not allowed to perform the action);
+
+"Yes" — remove the restriction (the user can perform the action without any authentication);
+
+"Auth_self" — the user must enter his/her password for authentication. Note, this level of restriction is not sufficient for most multi-user applications, "Auth_admin" is usually recommended;
+
+"Auth_admin" — the user must enter the administrator password at each request. Requires authentication of the user with administrator privileges;
+
+"Auth_self_keep" — similar to "Auth_self", but authorization is maintained for a short period of time (e.g., five minutes). Note, this level of restriction is insufficient for most multi-user applications, "Auth_admin_keep" is generally recommended;
+
+"Auth_admin_keep" — similar to "Auth_admin", but authorization is maintained for a short period of time (e.g., five minutes);
+
+Note: the possession of administrative rights in a PolicyKit context is determined by its rules. By default, Alt asks for the password of a user in the "wheel" group.
+
+The "Block" option prevents the user from changing this setting. Blocking a policy makes it a priority over a similar policy for the user.
+
+      </string>
+      <string id="org-freedesktop-hostname1-set-static-hostname-user">Permission to set static hostname</string>
+      <string id="org-freedesktop-hostname1-set-static-hostname-user_Help">The policy restricts the ability to set a static hostname
+
+Authentication is required to set the statically configured local host name as well as the beautiful host name.
 
 Disabled/Unconfigured — restrictions are defined by system parameters.
 
@@ -221,24 +225,24 @@ Note: the possession of administrative rights in a PolicyKit context is determin
 
       </string>
 
-      <string id="org-freedesktop-timedate1-No">No</string>
-      <string id="org-freedesktop-timedate1-Yes">Yes</string>
-      <string id="org-freedesktop-timedate1-Auth-self">Auth_self</string>
-      <string id="org-freedesktop-timedate1-Auth-admin">Auth_admin</string>
-      <string id="org-freedesktop-timedate1-Auth-self-keep">Auth_self_keep</string>
-      <string id="org-freedesktop-timedate1-Auth-admin-keep">Auth_admin_keep</string>
+      <string id="org-freedesktop-hostname1-No">No</string>
+      <string id="org-freedesktop-hostname1-Yes">Yes</string>
+      <string id="org-freedesktop-hostname1-Auth-self">Auth_self</string>
+      <string id="org-freedesktop-hostname1-Auth-admin">Auth_admin</string>
+      <string id="org-freedesktop-hostname1-Auth-self-keep">Auth_self_keep</string>
+      <string id="org-freedesktop-hostname1-Auth-admin-keep">Auth_admin_keep</string>
 
 
 
  </stringTable>
     <presentationTable>
-    <presentation id="org-freedesktop-timedate1-pr">
-       <dropdownList noSort="true" defaultItem="1" refId="OrgFreedesktopTimedate1_setter">Permission options for the TimeDate service:</dropdownList>
-       <checkBox refId="OrgFreedesktopTimedate1_blocker">Block</checkBox>
+    <presentation id="org-freedesktop-hostname1-pr">
+       <dropdownList noSort="true" defaultItem="1" refId="OrgFreedesktopHostname1_setter">Permission options for the HostName:</dropdownList>
+       <checkBox refId="OrgFreedesktopHostname1_blocker">Block</checkBox>
         <text>Blocking changes to this setting by user policy. Blocking a policy makes it a priority over a similar policy for the user.</text>
         </presentation>
-        <presentation id="org-freedesktop-timedate1-user-pr">
-         <dropdownList noSort="true" defaultItem="1" refId="OrgFreedesktopTimedate1_setter">Permission options for the TimeDate service:</dropdownList>
+        <presentation id="org-freedesktop-hostname1-user-pr">
+         <dropdownList noSort="true" defaultItem="1" refId="OrgFreedesktopHostname1_setter">Permission options for the HostName:</dropdownList>
         </presentation>
     </presentationTable>
   </resources>

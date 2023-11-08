@@ -85,6 +85,8 @@
       <string id="ALT_ModemManagerPolkit_Help">ModemManager service settings</string>
       <string id="ALT_TimedatePolkit">TimeDate permissions</string>
       <string id="ALT_TimedatePolkit_Help">TimeDate permissions management</string>
+      <string id="ALT_HostnamePolkit">HostName permissions</string>
+      <string id="ALT_HostnamePolkit_Help">HostName permissions management</string>
     </stringTable>
   </resources>
 </policyDefinitionResources>

@@ -85,6 +85,8 @@
       <string id="ALT_ModemManagerPolkit_Help">Настройки службы ModemManager</string>
       <string id="ALT_TimedatePolkit">Ограничения TimeDate</string>
       <string id="ALT_TimedatePolkit_Help">Управление polkit-ограничениями TimeDate</string>
+      <string id="ALT_HostnamePolkit">Ограничения HostName</string>
+      <string id="ALT_HostnamePolkit_Help">Управление polkit-ограничениями HostName</string>
     </stringTable>
   </resources>
 </policyDefinitionResources>
