@@ -190,5 +190,8 @@
      <category name="ALT_HostnamePolkit" displayName="$(string.ALT_HostnamePolkit)" explainText="$(string.ALT_HostnamePolkit_Help)">
       <parentCategory ref="ALT_Polkit" />
     </category>
+    <category name="ALT_SystemdPolkit" displayName="$(string.ALT_SystemdPolkit)" explainText="$(string.ALT_SystemdPolkit_Help)">
+      <parentCategory ref="ALT_Polkit" />
+    </category>
   </categories>
 </policyDefinitions>

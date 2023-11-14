@@ -83,6 +83,8 @@
       <string id="ALT_TokenPolkit_Help">Token and smart card permissions management</string>
       <string id="ALT_ModemManagerPolkit">Restrictions the ModemManager service</string>
       <string id="ALT_ModemManagerPolkit_Help">ModemManager service settings</string>
+      <string id="ALT_SystemdPolkit">Systemd permissions</string>
+      <string id="ALT_SystemdPolkit_Help">Systemd permissions management.</string>
       <string id="ALT_TimedatePolkit">TimeDate permissions</string>
       <string id="ALT_TimedatePolkit_Help">TimeDate permissions management.</string>
       <string id="ALT_AccountsPolkit">Accounts permissions</string>

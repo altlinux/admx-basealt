@@ -83,6 +83,8 @@
       <string id="ALT_TokenPolkit_Help">Управление polkit-ограничениями для работы с токенами и смарткартами.</string>
       <string id="ALT_ModemManagerPolkit">Ограничения ModemManager</string>
       <string id="ALT_ModemManagerPolkit_Help">Управление polkit-ограничениями ModemManager.</string>
+      <string id="ALT_SystemdPolkit">Ограничения Systemd</string>
+      <string id="ALT_SystemdPolkit_Help">Управление polkit-ограничениями Systemd.</string>
       <string id="ALT_TimedatePolkit">Ограничения TimeDate</string>
       <string id="ALT_TimedatePolkit_Help">Управление polkit-ограничениями TimeDate.</string>
       <string id="ALT_AccountsPolkit">Ограничения Accounts</string>
