@@ -94,9 +94,9 @@
 
       <string id="kde-desktops">Виртуальные рабочие столы</string>
       <string id="kde-desktops_help">Данная политика позволяет настраивать количество виртуальных рабочих столов.
-      
+
 Опция «Блокировать» необходима для запрета изменений данной настройки пользователем.
-      
+
        </string>
 
       <string id="kde-wallpaper">Картинка фона рабочего стола</string>
@@ -104,14 +104,14 @@
 
       <string id="kde-graphic-effects">Графические эффекты</string>
       <string id="kde-graphic-effects_help">Политика настраивает включение или отключение графических эффектов при входе в систему.
-      
+
 Опция «Блокировать» необходима для запрета изменений данной настройки пользователем.
 
       </string>
 
       <string id="kde-showdelete">Наличие кнопки «Удалить» в контекстном меню Dolphin</string>
       <string id="kde-showdelete_help">Политика позволяет добавить или убрать кнопку «Удалить» в контекстном меню Dolphin
-      
+
 Опция «Блокировать» необходима для запрета изменений данной настройки пользователем.
 
       </string>
@@ -150,7 +150,7 @@
       </string>
 
       <string id="kde-cursortheme">Тема курсора</string>
-      <string id="kde-cursortheme_help">Данная политика позволяет выбрать тему курсора мыши, указав её название (например, Oxygen_Black). Используются темы курсоров, доступные в /usr/share/icons. Возможные значения параметра:
+      <string id="kde-cursortheme_help">Данная политика позволяет выбрать тему курсора мыши. Допустимые значения параметра:
 
       - Adwaita
       - Breeze_Snow
@@ -301,6 +301,17 @@
       <string id="kde-desktopnumber-three">3</string>
       <string id="kde-desktopnumber-four">4</string>
 
+      <string id="kde-cursorTheme-Adwaita">Adwaita</string>
+      <string id="kde-cursorTheme-Breeze_Snow">Breeze_Snow</string>
+      <string id="kde-cursorTheme-KDE_Classic">KDE_Classic</string>
+      <string id="kde-cursorTheme-Oxygen_Black">Oxygen_Black</string>
+      <string id="kde-cursorTheme-Oxygen_Blue">Oxygen_Blue</string>
+      <string id="kde-cursorTheme-Oxygen_White">Oxygen_White</string>
+      <string id="kde-cursorTheme-Oxygen_Yellow">Oxygen_Yellow</string>
+      <string id="kde-cursorTheme-Oxygen_Zion">Oxygen_Zion</string>
+      <string id="kde-cursorTheme-jimmac">jimmac</string>
+      <string id="kde-cursorTheme-breeze_cursors">breeze_cursors</string>
+
       <string id="kde-icons-breeze">Breeze</string>
       <string id="kde-icons-breeze-dark">Breeze-dark</string>
       <string id="kde-icons-Adwaita">Adwaita</string>
@@ -387,9 +398,8 @@
         </textBox>
       </presentation>
       <presentation id="kde-cursortheme-user-pr">
-        <textBox refId="kde-cursortheme-setter">
-          <label>Тема курсора мыши:</label>
-        </textBox>
+        <dropdownList noSort="true" defaultItem="0" refId="kde-cursortheme_setter">Тема курсора мыши:</dropdownList>
+        <checkBox refId="kde-cursortheme_blocker">Блокировать</checkBox>
       </presentation>
       <presentation id="kde-filterbar-user-pr">
         <checkBox refId="kde-filterbar-setter">Включить панель фильтрации в файловом менеджере Dolphin</checkBox>

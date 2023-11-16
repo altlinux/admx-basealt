@@ -111,7 +111,7 @@ The "Block" option is necessary to prevent the user from changing this setting.
 
       <string id="kde-showdelete">Deleting directories and files in the context menu</string>
       <string id="kde-showdelete_help">The policy allows you to add or remove the "delete" button in the Dolphin context menu.
-      
+
 The "Block" option is necessary to prevent the user from changing this setting.
 
       </string>
@@ -150,7 +150,7 @@ The "Block" option is necessary to prevent the user from changing this setting.
       </string>
 
       <string id="kde-cursortheme">Cursor theme</string>
-      <string id="kde-cursortheme_help">This policy allows you to select a mouse cursor theme by specifying its name (for example: Oxygen_Black). Cursor themes available in /usr/share/icons are used. Valid parameter value:
+      <string id="kde-cursortheme_help">This policy allows you to select a mouse cursor theme. Valid parameter value:
 
       - Adwaita
       - Breeze_Snow
@@ -301,6 +301,17 @@ The "Block" option is necessary to prevent the user from changing this setting.
       <string id="kde-desktopnumber-three">3</string>
       <string id="kde-desktopnumber-four">4</string>
 
+      <string id="kde-cursorTheme-Adwaita">Adwaita</string>
+      <string id="kde-cursorTheme-Breeze_Snow">Breeze_Snow</string>
+      <string id="kde-cursorTheme-KDE_Classic">KDE_Classic</string>
+      <string id="kde-cursorTheme-Oxygen_Black">Oxygen_Black</string>
+      <string id="kde-cursorTheme-Oxygen_Blue">Oxygen_Blue</string>
+      <string id="kde-cursorTheme-Oxygen_White">Oxygen_White</string>
+      <string id="kde-cursorTheme-Oxygen_Yellow">Oxygen_Yellow</string>
+      <string id="kde-cursorTheme-Oxygen_Zion">Oxygen_Zion</string>
+      <string id="kde-cursorTheme-jimmac">jimmac</string>
+      <string id="kde-cursorTheme-breeze_cursors">breeze_cursors</string>
+
       <string id="kde-icons-breeze">Breeze</string>
       <string id="kde-icons-breeze-dark">Breeze-dark</string>
       <string id="kde-icons-Adwaita">Adwaita</string>
@@ -387,9 +398,8 @@ The "Block" option is necessary to prevent the user from changing this setting.
         </textBox>
       </presentation>
       <presentation id="kde-cursortheme-user-pr">
-        <textBox refId="kde-cursortheme-setter">
-          <label>Cursor theme:</label>
-        </textBox>
+        <dropdownList noSort="true" defaultItem="0" refId="kde-cursortheme_setter">Cursor theme:</dropdownList>
+        <checkBox refId="kde-cursortheme_blocker">Block</checkBox>
       </presentation>
       <presentation id="kde-filterbar-user-pr">
         <checkBox refId="kde-filterbar-setter">Enable filter panel in Dolphin file manager</checkBox>
