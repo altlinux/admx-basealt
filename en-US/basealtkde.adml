@@ -360,32 +360,32 @@ The "Block" option is necessary to prevent the user from changing this setting.
 
       </stringTable>
     <presentationTable>
-      <presentation id="kde-win-activate-user-pr">
+      <presentation id="kde-win-activate-pr">
         <dropdownList noSort="true" defaultItem="0" refId="kde-win-activate_setter">Possible modes:</dropdownList>
         <checkBox refId="NextFocusPrefersMouse">Mouse precedence</checkBox>
         <checkBox refId="kde-win-activate_blocker">Block</checkBox>
       </presentation>
-      <presentation id="kde-language-user-pr">
-        <textBox refId="kde-format-setter">
+      <presentation id="kde-language-pr">
+        <textBox refId="kde-format_setter">
           <label>Standard:</label>
         </textBox>
         <checkBox refId="kde-format_blocker">Block system standard setting</checkBox>
-        <textBox refId="kde-language-setter">
+        <textBox refId="kde-language_setter">
           <label>Language:</label>
         </textBox>
         <checkBox refId="kde-language_blocker">Block system language setting</checkBox>
       </presentation>
-      <presentation id="kde-win-rendering-user-pr">
+      <presentation id="kde-win-rendering-pr">
         <dropdownList noSort="true" defaultItem="4" refId="kde-win-rendering_setter">Possible language options:</dropdownList>
         <checkBox refId="kde-win-rendering_blocker">Block</checkBox>
       </presentation>
-      <presentation id="kde-desktops-user-pr">
+      <presentation id="kde-desktops-pr">
         <dropdownList noSort="true" defaultItem="0" refId="kde-desktoprows_setter">Number of lines for displaying virtual tables on the panel:</dropdownList>
         <checkBox refId="kde-desktoprows_blocker">Block</checkBox>
         <dropdownList noSort="true" defaultItem="0" refId="kde-desktopnumber_setter">Number of virtual tables on the panel:</dropdownList>
         <checkBox refId="kde-desktopnumber_blocker">Block</checkBox>
       </presentation>
-      <presentation id="kde-automount-user-pr">
+      <presentation id="kde-automount-pr">
          <checkBox refId="kde-automount_setter">Automatically mount devices</checkBox>
          <checkBox refId="kde-automount_blocker">Block automount setting</checkBox>
          <checkBox refId="kde-automountonlogin_setter">At login</checkBox>
@@ -395,61 +395,61 @@ The "Block" option is necessary to prevent the user from changing this setting.
          <checkBox refId="kde-automountuknowndevices_setter">Automatically mount media that has never been manually mounted before</checkBox>
          <checkBox refId="kde-automountuknowndevices_blocker">Block the option to automatically mount devices that were not manually mounted</checkBox>
        </presentation>
-      <presentation id="kde-filesearch-user-pr">
+      <presentation id="kde-filesearch-pr">
         <checkBox refId="kde-basicsettings_setter">Enable file search service only</checkBox>
         <checkBox refId="kde-onlybasic_setter">Enable file content indexing</checkBox>
         <checkBox refId="kde-indexhidden_setter">Enable indexing of hidden files and folders</checkBox>
         <checkBox refId="kde-filesearch_blocker">Block</checkBox>
        </presentation>
-      <presentation id="kde-wallpaper-user-pr">
-        <textBox refId="kde-wallpaper-setter">
+      <presentation id="kde-wallpaper-pr">
+        <textBox refId="kde-wallpaper_setter">
           <label>File:</label>
         </textBox>
       </presentation>
-      <presentation id="kde-colorscheme-user-pr">
+      <presentation id="kde-colorscheme-pr">
         <dropdownList noSort="true" defaultItem="0" refId="kde-colorscheme_setter">Color scheme:</dropdownList>
         <checkBox refId="kde-colorscheme_blocker">Block</checkBox>
       </presentation>
-      <presentation id="kde-cursortheme-user-pr">
+      <presentation id="kde-cursortheme-pr">
         <dropdownList noSort="true" defaultItem="0" refId="kde-cursortheme_setter">Cursor theme:</dropdownList>
         <checkBox refId="kde-cursortheme_blocker">Block</checkBox>
       </presentation>
-      <presentation id="kde-filterbar-user-pr">
-        <checkBox refId="kde-filterbar-setter">Enable filter panel in Dolphin file manager</checkBox>
+      <presentation id="kde-filterbar-pr">
+        <checkBox refId="kde-filterbar_setter">Enable filter panel in Dolphin file manager</checkBox>
       </presentation>
-      <presentation id="kde-graphic-effects-user-pr">
+      <presentation id="kde-graphic-effects-pr">
         <checkBox refId="kde-graphic-effects_setter">Enable graphic effects</checkBox>
         <checkBox refId="kde-graphic-effects_blocker">Block</checkBox>
       </presentation>
-      <presentation id="kde-singleclick-user-pr">
+      <presentation id="kde-singleclick-pr">
         <checkBox refId="kde-singleclick_setter">Opening a folder or file with one click</checkBox>
         <checkBox refId="kde-singleclick_blocker">Block</checkBox>
       </presentation>
-      <presentation id="kde-showdelete-user-pr">
+      <presentation id="kde-showdelete-pr">
         <checkBox refId="kde-showdelete_setter">Add "delete" button from Dolphin context menu</checkBox>
         <checkBox refId="kde-showdelete_blocker">Block</checkBox>
       </presentation>
-      <presentation id="kde-iconstheme-user-pr">
-        <dropdownList noSort="true" defaultItem="0" refId="kde-iconstheme-setter">Icons theme:</dropdownList>
+      <presentation id="kde-iconstheme-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="kde-iconstheme_setter">Icons theme:</dropdownList>
         <checkBox refId="kde-iconstheme_blocker">Block</checkBox>
       </presentation>
-      <presentation id="kde-look-and-feel-user-pr">
-        <dropdownList noSort="true" defaultItem="0" refId="kde-look-and-feel-setter">Design of the working environment:</dropdownList>
+      <presentation id="kde-look-and-feel-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="kde-look-and-feel_setter">Design of the working environment:</dropdownList>
         <checkBox refId="kde-look-and-feel_blocker">Block</checkBox>
       </presentation>
-      <presentation id="kde-background-user-pr">
-        <dropdownList noSort="true" defaultItem="0" refId="kde-background-setter">Screensaver theme:</dropdownList>
+      <presentation id="kde-background-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="kde-background_setter">Screensaver theme:</dropdownList>
         <checkBox refId="kde-background_blocker">Block</checkBox>
       </presentation>
-      <presentation id="kde-desktoptheme-user-pr">
-        <dropdownList noSort="true" defaultItem="0" refId="kde-desktoptheme-setter">Desktop theme:</dropdownList>
+      <presentation id="kde-desktoptheme-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="kde-desktoptheme_setter">Desktop theme:</dropdownList>
         <checkBox refId="kde-desktoptheme_blocker">Block</checkBox>
       </presentation>
-      <presentation id="kde-browserapp-user-pr">
-        <dropdownList noSort="true" defaultItem="0" refId="kde-browserapp-setter">Default browser:</dropdownList>
+      <presentation id="kde-browserapp-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="kde-browserapp_setter">Default browser:</dropdownList>
         <checkBox refId="kde-browserapp_blocker">Block</checkBox>
       </presentation>
-      <presentation id="kde-brightnesscontrol-user-pr">
+      <presentation id="kde-brightnesscontrol-pr">
         <textBox refId="kde-acbrightnesscontrol_setter">
           <label>Screen brightness when powered from mains:</label>
         </textBox>
@@ -463,7 +463,7 @@ The "Block" option is necessary to prevent the user from changing this setting.
         </textBox>
         <checkBox refId="kde-lowbrightnesscontrol_blocker">Block brightness control when battery is low</checkBox>
         </presentation>
-      <presentation id="kde-keyboardbrightnesscontrol-user-pr">
+      <presentation id="kde-keyboardbrightnesscontrol-pr">
         <textBox refId="kde-ackeyboardbrightnesscontrol_setter">
           <label>Keyboard brightness when powered from mains:</label>
         </textBox>
@@ -477,7 +477,7 @@ The "Block" option is necessary to prevent the user from changing this setting.
         </textBox>
         <checkBox refId="kde-lowkeyboardbrightnesscontrol_blocker">Block brightness control when battery is low</checkBox>
       </presentation>
-      <presentation id="kde-dimdisplay-user-pr">
+      <presentation id="kde-dimdisplay-pr">
         <textBox refId="kde-acdimdisplay_setter">
           <label>Time before screen goes dark when powered from mains:</label>
         </textBox>
@@ -491,7 +491,7 @@ The "Block" option is necessary to prevent the user from changing this setting.
         </textBox>
         <checkBox refId="kde-lowdimdisplay_blocker">Block low battery dim setting</checkBox>
        </presentation>
-      <presentation id="kde-dpmscontrol-user-pr">
+      <presentation id="kde-dpmscontrol-pr">
         <textBox refId="kde-acdpmscontrol_setter">
           <label>Time before the monitor turns off when powered from the mains:</label>
         </textBox>

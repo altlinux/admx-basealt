@@ -360,32 +360,32 @@
 
       </stringTable>
     <presentationTable>
-      <presentation id="kde-win-activate-user-pr">
+      <presentation id="kde-win-activate-pr">
         <dropdownList noSort="true" defaultItem="0" refId="kde-win-activate_setter">Возможные режимы:</dropdownList>
         <checkBox refId="NextFocusPrefersMouse">Приоритет мыши</checkBox>
         <checkBox refId="kde-win-activate_blocker">Блокировать</checkBox>
       </presentation>
-      <presentation id="kde-language-user-pr">
-        <textBox refId="kde-format-setter">
+      <presentation id="kde-language-pr">
+        <textBox refId="kde-format_setter">
           <label>Стандарт:</label>
         </textBox>
         <checkBox refId="kde-format_blocker">Блокировать настройку стандарта системы</checkBox>
-        <textBox refId="kde-language-setter">
+        <textBox refId="kde-language_setter">
           <label>Язык:</label>
         </textBox>
         <checkBox refId="kde-language_blocker">Блокировать настройку языка системы</checkBox>
       </presentation>
-      <presentation id="kde-win-rendering-user-pr">
+      <presentation id="kde-win-rendering-pr">
         <dropdownList noSort="true" defaultItem="4" refId="kde-win-rendering_setter">Возможные режимы:</dropdownList>
         <checkBox refId="kde-win-rendering_blocker">Блокировать</checkBox>
       </presentation>
-      <presentation id="kde-desktops-user-pr">
+      <presentation id="kde-desktops-pr">
         <dropdownList noSort="true" defaultItem="0" refId="kde-desktoprows_setter">Количество строк отображения виртуальных столов на панели:</dropdownList>
         <checkBox refId="kde-desktoprows_blocker">Блокировать</checkBox>
         <dropdownList noSort="true" defaultItem="0" refId="kde-desktopnumber_setter">Количество виртуальных столов на панели:</dropdownList>
         <checkBox refId="kde-desktopnumber_blocker">Блокировать</checkBox>
       </presentation>
-      <presentation id="kde-automount-user-pr">
+      <presentation id="kde-automount-pr">
         <checkBox refId="kde-automount_setter">Автоматически монтировать устройства</checkBox>
         <checkBox refId="kde-automount_blocker">Блокировать настройку автоматического монтирования</checkBox>
         <checkBox refId="kde-automountonlogin_setter">При входе в систему</checkBox>
@@ -395,61 +395,61 @@
         <checkBox refId="kde-automountuknowndevices_setter">Автоматически монтировать те носители, которые никогда ранее не были примонтированы вручную</checkBox>
         <checkBox refId="kde-automountuknowndevices_blocker">Блокировать настройку автоматического монтирования устройств, которые не были примонтированы вручную</checkBox>
       </presentation>
-      <presentation id="kde-filesearch-user-pr">
+      <presentation id="kde-filesearch-pr">
         <checkBox refId="kde-basicsettings_setter">Включить службу поиска файлов</checkBox>
         <checkBox refId="kde-onlybasic_setter">Включить индексацию содержимого файлов</checkBox>
         <checkBox refId="kde-indexhidden_setter">Включить индексацию скрытых файлов и папок</checkBox>
         <checkBox refId="kde-filesearch_blocker">Блокировать</checkBox>
       </presentation>
-      <presentation id="kde-wallpaper-user-pr">
-        <textBox refId="kde-wallpaper-setter">
+      <presentation id="kde-wallpaper-pr">
+        <textBox refId="kde-wallpaper_setter">
           <label>Файл:</label>
         </textBox>
       </presentation>
-      <presentation id="kde-colorscheme-user-pr">
+      <presentation id="kde-colorscheme-pr">
         <dropdownList noSort="true" defaultItem="0" refId="kde-colorscheme_setter">Цветовая схема:</dropdownList>
         <checkBox refId="kde-colorscheme_blocker">Блокировать</checkBox>
       </presentation>
-      <presentation id="kde-cursortheme-user-pr">
+      <presentation id="kde-cursortheme-pr">
         <dropdownList noSort="true" defaultItem="0" refId="kde-cursortheme_setter">Тема курсора мыши:</dropdownList>
         <checkBox refId="kde-cursortheme_blocker">Блокировать</checkBox>
       </presentation>
-      <presentation id="kde-filterbar-user-pr">
-        <checkBox refId="kde-filterbar-setter">Включить панель фильтрации в файловом менеджере Dolphin</checkBox>
+      <presentation id="kde-filterbar-pr">
+        <checkBox refId="kde-filterbar_setter">Включить панель фильтрации в файловом менеджере Dolphin</checkBox>
       </presentation>
-      <presentation id="kde-graphic-effects-user-pr">
+      <presentation id="kde-graphic-effects-pr">
         <checkBox refId="kde-graphic-effects_setter">Включить графические эффекты</checkBox>
         <checkBox refId="kde-graphic-effects_blocker">Блокировать</checkBox>
       </presentation>
-      <presentation id="kde-singleclick-user-pr">
+      <presentation id="kde-singleclick-pr">
         <checkBox refId="kde-singleclick_setter">Открытие папки или файла одним щелчком</checkBox>
         <checkBox refId="kde-singleclick_blocker">Блокировать</checkBox>
       </presentation>
-      <presentation id="kde-showdelete-user-pr">
+      <presentation id="kde-showdelete-pr">
         <checkBox refId="kde-showdelete_setter">Добавить кнопку «Удалить» в контекстное меню Dolphin</checkBox>
         <checkBox refId="kde-showdelete_blocker">Блокировать</checkBox>
       </presentation>
-      <presentation id="kde-iconstheme-user-pr">
-        <dropdownList noSort="true" defaultItem="0" refId="kde-iconstheme-setter">Тема значков:</dropdownList>
+      <presentation id="kde-iconstheme-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="kde-iconstheme_setter">Тема значков:</dropdownList>
         <checkBox refId="kde-iconstheme_blocker">Блокировать</checkBox>
       </presentation>
-      <presentation id="kde-look-and-feel-user-pr">
-        <dropdownList noSort="true" defaultItem="0" refId="kde-look-and-feel-setter">Оформление рабочей среды:</dropdownList>
+      <presentation id="kde-look-and-feel-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="kde-look-and-feel_setter">Оформление рабочей среды:</dropdownList>
         <checkBox refId="kde-look-and-feel_blocker">Блокировать</checkBox>
       </presentation>
-      <presentation id="kde-background-user-pr">
-        <dropdownList noSort="true" defaultItem="0" refId="kde-background-setter">Тема заставки:</dropdownList>
+      <presentation id="kde-background-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="kde-background_setter">Тема заставки:</dropdownList>
         <checkBox refId="kde-background_blocker">Блокировать</checkBox>
       </presentation>
-      <presentation id="kde-desktoptheme-user-pr">
-        <dropdownList noSort="true" defaultItem="0" refId="kde-desktoptheme-setter">Тема оформления рабочего стола:</dropdownList>
+      <presentation id="kde-desktoptheme-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="kde-desktoptheme_setter">Тема оформления рабочего стола:</dropdownList>
         <checkBox refId="kde-desktoptheme_blocker">Блокировать</checkBox>
       </presentation>
-      <presentation id="kde-browserapp-user-pr">
-        <dropdownList noSort="true" defaultItem="0" refId="kde-browserapp-setter">Браузер по умолчанию:</dropdownList>
+      <presentation id="kde-browserapp-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="kde-browserapp_setter">Браузер по умолчанию:</dropdownList>
         <checkBox refId="kde-browserapp_blocker">Блокировать</checkBox>
       </presentation>
-      <presentation id="kde-brightnesscontrol-user-pr">
+      <presentation id="kde-brightnesscontrol-pr">
         <textBox refId="kde-acbrightnesscontrol_setter">
           <label>Яркость экрана при питании от сети:</label>
         </textBox>
@@ -463,7 +463,7 @@
         </textBox>
         <checkBox refId="kde-lowbrightnesscontrol_blocker">Блокировать настройку яркости при низком заряде батареи</checkBox>
       </presentation>
-      <presentation id="kde-keyboardbrightnesscontrol-user-pr">
+      <presentation id="kde-keyboardbrightnesscontrol-pr">
         <textBox refId="kde-ackeyboardbrightnesscontrol_setter">
           <label>Яркость клавиатуры при питании от сети:</label>
         </textBox>
@@ -477,7 +477,7 @@
         </textBox>
         <checkBox refId="kde-lowkeyboardbrightnesscontrol_blocker">Блокировать настройку яркости при низком заряде батареи</checkBox>
       </presentation>
-      <presentation id="kde-dimdisplay-user-pr">
+      <presentation id="kde-dimdisplay-pr">
         <textBox refId="kde-acdimdisplay_setter">
           <label>Время до угасания экрана при питании от сети:</label>
         </textBox>
@@ -491,7 +491,7 @@
         </textBox>
         <checkBox refId="kde-lowdimdisplay_blocker">Блокировать настройку угасания при низком заряде батареи</checkBox>
       </presentation>
-      <presentation id="kde-dpmscontrol-user-pr">
+      <presentation id="kde-dpmscontrol-pr">
         <textBox refId="kde-acdpmscontrol_setter">
           <label>Время до отключения монитора при питании от сети:</label>
         </textBox>
