@@ -131,9 +131,7 @@
       </string>
 
       <string id="kde-colorscheme">Цвета</string>
-      <string id="kde-colorscheme_help">Данная политика позволяет управлять цветовыми схемами, указав название схемы (например, BreezeClassic).
-
-      Возможные варианты цветовых схем:
+      <string id="kde-colorscheme_help">Данная политика позволяет управлять цветовыми схемами, выбрав схему из списка (например, BreezeClassic). Допустимые значения параметра:
 
       - OxygenCold
       - BreezeClassic
@@ -146,6 +144,8 @@
       - KritaDarker
       - KritaNeutral
       - Oxygen
+
+Опция «Блокировать» необходима для запрета изменений данной настройки пользователем.
 
       </string>
 
@@ -162,6 +162,8 @@
       - Oxygen_Zion
       - jimmac
       - breeze_cursors
+
+Опция «Блокировать» необходима для запрета изменений данной настройки пользователем.
 
       </string>
 
@@ -312,6 +314,18 @@
       <string id="kde-cursorTheme-jimmac">jimmac</string>
       <string id="kde-cursorTheme-breeze_cursors">breeze_cursors</string>
 
+      <string id="kde-colorscheme-OxygenCold">OxygenCold</string>
+      <string id="kde-colorscheme-BreezeClassic">BreezeClassic</string>
+      <string id="kde-colorscheme-BreezeLight">BreezeLight</string>
+      <string id="kde-colorscheme-BreezeDark">BreezeDark</string>
+      <string id="kde-colorscheme-KritaBlender">KritaBlender</string>
+      <string id="kde-colorscheme-KritaBright">KritaBright</string>
+      <string id="kde-colorscheme-KritaDark">KritaDark</string>
+      <string id="kde-colorscheme-KritaDarkOrange">KritaDarkOrange</string>
+      <string id="kde-colorscheme-KritaDarker">KritaDarker</string>
+      <string id="kde-colorscheme-KritaNeutral">KritaNeutral</string>
+      <string id="kde-colorscheme-Oxygen">Oxygen</string>
+
       <string id="kde-icons-breeze">Breeze</string>
       <string id="kde-icons-breeze-dark">Breeze-dark</string>
       <string id="kde-icons-Adwaita">Adwaita</string>
@@ -393,9 +407,8 @@
         </textBox>
       </presentation>
       <presentation id="kde-colorscheme-user-pr">
-        <textBox refId="kde-colorscheme-setter">
-          <label>Цветовая схема:</label>
-        </textBox>
+        <dropdownList noSort="true" defaultItem="0" refId="kde-colorscheme_setter">Цветовая схема:</dropdownList>
+        <checkBox refId="kde-colorscheme_blocker">Блокировать</checkBox>
       </presentation>
       <presentation id="kde-cursortheme-user-pr">
         <dropdownList noSort="true" defaultItem="0" refId="kde-cursortheme_setter">Тема курсора мыши:</dropdownList>

@@ -131,9 +131,7 @@ The "Block" option is necessary to prevent the user from changing this setting.
       </string>
 
       <string id="kde-colorscheme">Colors</string>
-      <string id="kde-colorscheme_help">This policy allows you to manage color schemes by specifying the name of the scheme (for example: BreezeClassic).
-
-       Valid color scheme options:
+      <string id="kde-colorscheme_help">This policy allows you to manage color schemes by selecting a scheme from a list (for example, BreezeClassic). Valid parameter values:
 
       - OxygenCold
       - BreezeClassic
@@ -146,6 +144,8 @@ The "Block" option is necessary to prevent the user from changing this setting.
       - KritaDarker
       - KritaNeutral
       - Oxygen
+
+The "Block" option is necessary to prevent the user from changing this setting.
 
       </string>
 
@@ -162,6 +162,8 @@ The "Block" option is necessary to prevent the user from changing this setting.
       - Oxygen_Zion
       - jimmac
       - breeze_cursors
+
+The "Block" option is necessary to prevent the user from changing this setting.
 
       </string>
 
@@ -312,6 +314,18 @@ The "Block" option is necessary to prevent the user from changing this setting.
       <string id="kde-cursorTheme-jimmac">jimmac</string>
       <string id="kde-cursorTheme-breeze_cursors">breeze_cursors</string>
 
+      <string id="kde-colorscheme-OxygenCold">OxygenCold</string>
+      <string id="kde-colorscheme-BreezeClassic">BreezeClassic</string>
+      <string id="kde-colorscheme-BreezeLight">BreezeLight</string>
+      <string id="kde-colorscheme-BreezeDark">BreezeDark</string>
+      <string id="kde-colorscheme-KritaBlender">KritaBlender</string>
+      <string id="kde-colorscheme-KritaBright">KritaBright</string>
+      <string id="kde-colorscheme-KritaDark">KritaDark</string>
+      <string id="kde-colorscheme-KritaDarkOrange">KritaDarkOrange</string>
+      <string id="kde-colorscheme-KritaDarker">KritaDarker</string>
+      <string id="kde-colorscheme-KritaNeutral">KritaNeutral</string>
+      <string id="kde-colorscheme-Oxygen">Oxygen</string>
+
       <string id="kde-icons-breeze">Breeze</string>
       <string id="kde-icons-breeze-dark">Breeze-dark</string>
       <string id="kde-icons-Adwaita">Adwaita</string>
@@ -393,9 +407,8 @@ The "Block" option is necessary to prevent the user from changing this setting.
         </textBox>
       </presentation>
       <presentation id="kde-colorscheme-user-pr">
-        <textBox refId="kde-colorscheme-setter">
-          <label>Color scheme:</label>
-        </textBox>
+        <dropdownList noSort="true" defaultItem="0" refId="kde-colorscheme_setter">Color scheme:</dropdownList>
+        <checkBox refId="kde-colorscheme_blocker">Block</checkBox>
       </presentation>
       <presentation id="kde-cursortheme-user-pr">
         <dropdownList noSort="true" defaultItem="0" refId="kde-cursortheme_setter">Cursor theme:</dropdownList>

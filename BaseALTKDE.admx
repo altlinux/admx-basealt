@@ -509,14 +509,78 @@
         <text id="kde-wallpaper-setter" valueName="Image"/>
       </elements>
     </policy>
-  <policy name="kde-colorscheme" class="User" displayName="$(string.kde-colorscheme)"
+  <policy name="kde-colorscheme" class="Both" displayName="$(string.kde-colorscheme)"
     explainText="$(string.kde-colorscheme_help)"
     presentation="$(presentation.kde-colorscheme-user-pr)"
-    key="Software\BaseALT\Policies\KDE\plasma\colorscheme">
+    key="Software\BaseALT\Policies\KDE\kdeglobals\General">
     <parentCategory ref="system:ALT_Appearance_KDE" />
     <supportedOn ref="system:SUPPORTED_AltP10" />
       <elements>
-        <text id="kde-colorscheme-setter" valueName="colorscheme"/>
+        <enum  id="kde-colorscheme_setter" valueName="ColorScheme" required="true">
+          <item displayName="$(string.kde-colorscheme-OxygenCold)">
+            <value>
+              <string>OxygenCold</string>
+            </value>
+          </item>
+          <item displayName="$(string.kde-colorscheme-BreezeClassic)">
+            <value>
+              <string>BreezeClassic</string>
+            </value>
+          </item>
+          <item displayName="$(string.kde-colorscheme-BreezeLight)">
+            <value>
+              <string>BreezeLight</string>
+            </value>
+          </item>
+          <item displayName="$(string.kde-colorscheme-BreezeDark)">
+            <value>
+              <string>BreezeDark</string>
+            </value>
+          </item>
+          <item displayName="$(string.kde-colorscheme-KritaBlender)">
+            <value>
+              <string>KritaBlender</string>
+            </value>
+          </item>
+          <item displayName="$(string.kde-colorscheme-KritaBright)">
+            <value>
+              <string>KritaBright</string>
+            </value>
+          </item>
+          <item displayName="$(string.kde-colorscheme-KritaDark)">
+            <value>
+              <string>KritaDark</string>
+            </value>
+          </item>
+          <item displayName="$(string.kde-colorscheme-KritaDarkOrange)">
+            <value>
+              <string>KritaDarkOrange</string>
+            </value>
+          </item>
+          <item displayName="$(string.kde-colorscheme-KritaDarker)">
+            <value>
+              <string>KritaDarker</string>
+            </value>
+          </item>
+          <item displayName="$(string.kde-colorscheme-KritaNeutral)">
+            <value>
+              <string>KritaNeutral</string>
+            </value>
+          </item>
+          <item displayName="$(string.kde-colorscheme-Oxygen)">
+            <value>
+              <string>Oxygen</string>
+            </value>
+          </item>
+        </enum>
+        <boolean id="kde-colorscheme_blocker" key="Software\BaseALT\Policies\KDELocks" valueName="kdeglobals.General.ColorScheme" >
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+          </boolean>
       </elements>
     </policy>
   <policy name="kde-cursortheme" class="Both" displayName="$(string.kde-cursortheme)"
