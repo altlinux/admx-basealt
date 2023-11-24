@@ -169,5 +169,11 @@
     <category name="ALT_ModemManagerPolkit" displayName="$(string.ALT_ModemManagerPolkit)" explainText="$(string.ALT_ModemManagerPolkit_Help)">
       <parentCategory ref="ALT_Polkit" />
     </category>
+    <category name="ALT_RealmdPolkit" displayName="$(string.ALT_RealmdPolkit)" explainText="$(string.ALT_RealmdPolkit_Help)">
+      <parentCategory ref="ALT_Polkit" />
+     </category>
+    <category name="ALT_LoginPolkit" displayName="$(string.ALT_LoginPolkit)" explainText="$(string.ALT_LoginPolkit_Help)">
+      <parentCategory ref="ALT_Polkit" />
+    </category>
   </categories>
 </policyDefinitions>

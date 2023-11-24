@@ -83,6 +83,10 @@
       <string id="ALT_TokenPolkit_Help">Управление polkit-ограничениями для работы с токенами и смарткартами.</string>
       <string id="ALT_ModemManagerPolkit">Ограничения ModemManager</string>
       <string id="ALT_ModemManagerPolkit_Help">Настройки службы ModemManager</string>
+      <string id="ALT_RealmdPolkit">Ограничения Realmd</string>
+      <string id="ALT_RealmdPolkit_Help">Управление polkit-ограничениями Realmd.</string>
+      <string id="ALT_LoginPolkit">Ограничения Login</string>
+      <string id="ALT_LoginPolkit_Help">Управление polkit-ограничениями Login.</string>
     </stringTable>
   </resources>
 </policyDefinitionResources>

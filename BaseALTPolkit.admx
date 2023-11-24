@@ -526,5 +526,99 @@
         </enum>
       </elements>
     </policy>
+    <policy class="Machine" displayName="$(string.org-freedesktop-policykit-exec)"
+        explainText="$(string.org-freedesktop-policykit-exec_Help)"
+        key="Software\BaseALT\Policies\Polkit"
+        name="org.freedesktop.policykit.exec"
+        valuename="org.freedesktop.policykit.exec"
+        presentation="$(presentation.org-freedesktop-Policykit-pr)">
+      <parentCategory ref="system:ALT_Polkit" />
+      <supportedOn ref="system:SUPPORTED_AltP10" />
+      <elements>
+        <enum id="OrgFreedesktopPolicykit_setter" valueName="org.freedesktop.policykit.exec" required="true">
+          <item displayName="$(string.org-freedesktop-policykit-No)">
+            <value>
+              <string>No</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-freedesktop-policykit-Yes)">
+            <value>
+              <string>Yes</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-freedesktop-policykit-Auth-self)">
+            <value>
+              <string>Auth_self</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-freedesktop-policykit-Auth-admin)">
+            <value>
+              <string>Auth_admin</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-freedesktop-policykit-Auth-self-keep)">
+            <value>
+              <string>Auth_self_keep</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-freedesktop-policykit-Auth-admin-keep)">
+            <value>
+              <string>Auth_admin_keep</string>
+            </value>
+          </item>
+        </enum>
+        <boolean id="OrgFreedesktopPolicykit_blocker" key="Software\BaseALT\Policies\PolkitLocks" valueName="org.freedesktop.policykit.exec">
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+        </boolean>
+      </elements>
+    </policy>
+    <policy class="User" displayName="$(string.org-freedesktop-policykit-exec)"
+        explainText="$(string.org-freedesktop-policykit-exec-user_Help)"
+        key="Software\BaseALT\Policies\Polkit"
+        name="org.freedesktop.policykit.exec-user"
+        valuename="org.freedesktop.policykit.exec"
+        presentation="$(presentation.org-freedesktop-Policykit-user-pr)">
+      <parentCategory ref="system:ALT_Polkit" />
+      <supportedOn ref="system:SUPPORTED_AltP10" />
+      <elements>
+        <enum id="OrgFreedesktopPolicykit_setter" valueName="org.freedesktop.policykit.exec" required="true">
+          <item displayName="$(string.org-freedesktop-policykit-No)">
+            <value>
+              <string>No</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-freedesktop-policykit-Yes)">
+            <value>
+              <string>Yes</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-freedesktop-policykit-Auth-self)">
+            <value>
+              <string>Auth_self</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-freedesktop-policykit-Auth-admin)">
+            <value>
+              <string>Auth_admin</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-freedesktop-policykit-Auth-self-keep)">
+            <value>
+              <string>Auth_self_keep</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-freedesktop-policykit-Auth-admin-keep)">
+            <value>
+              <string>Auth_admin_keep</string>
+            </value>
+          </item>
+        </enum>
+      </elements>
+    </policy>
   </policies>
 </policyDefinitions>

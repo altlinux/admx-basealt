@@ -218,6 +218,60 @@ Possible values:
 Note: the possession of administrative rights in the context of PolicyKit is determined by its rules. By default, Alt asks for the password of the user in the "wheel" group.
 
       </string>
+      <string id="org-freedesktop-policykit-exec">Permission to run a program as another user</string>
+      <string id="org-freedesktop-policykit-exec_Help">The policy controls the restriction on the ability to run the program as another user
+
+Authentication is required to run a program as another user.
+
+Disabled/Unconfigured — restrictions are defined by system parameters.
+
+Enabled — restriction with defined rights;
+
+Possible values:
+
+"No" — set restriction with action denial (user is not allowed to perform the action);
+
+"Yes" — remove the restriction (the user can perform the action without any authentication);
+
+"Auth_self" — the user must enter his/her password for authentication. Note, this level of restriction is not sufficient for most multi-user applications, "Auth_admin" is usually recommended;
+
+"Auth_admin" — the user must enter the administrator password at each request. Requires authentication of the user with administrator privileges;
+
+"Auth_self_keep" — similar to "Auth_self", but authorization is maintained for a short period of time (e.g., five minutes). Note, this level of restriction is insufficient for most multi-user applications, "Auth_admin_keep" is generally recommended;
+
+"Auth_admin_keep" — similar to "Auth_admin", but authorization is maintained for a short period of time (e.g., five minutes);
+
+Note: the possession of administrative rights in a PolicyKit context is determined by its rules. By default, Alt asks for the password of a user in the "wheel" group.
+
+The "Block" option prevents the user from changing this setting. Blocking a policy makes it a priority over a similar policy for the user.
+
+      </string>
+      <string id="org-freedesktop-policykit-exec-user">Permission to join machine to realm</string>
+      <string id="org-freedesktop-policykit-exec-user_Help">The policy controls the restriction on the ability to run the program as another user
+
+Authentication is required to run a program as another user.
+
+Disabled/Unconfigured — restrictions are defined by system parameters.
+
+Enabled — restriction with defined rights;
+
+Possible values:
+
+"No" — set restriction with action denial (user is not allowed to perform the action);
+
+"Yes" — remove the restriction (the user can perform the action without any authentication);
+
+"Auth_self" — the user must enter his/her password for authentication. Note, this level of restriction is not sufficient for most multi-user applications, "Auth_admin" is usually recommended;
+
+"Auth_admin" — the user must enter the administrator password at each request. Requires authentication of the user with administrator privileges;
+
+"Auth_self_keep" — similar to "Auth_self", but authorization is maintained for a short period of time (e.g., five minutes). Note, this level of restriction is insufficient for most multi-user applications, "Auth_admin_keep" is generally recommended;
+
+"Auth_admin_keep" — similar to "Auth_admin", but authorization is maintained for a short period of time (e.g., five minutes);
+
+Note: the possession of administrative rights in a PolicyKit context is determined by its rules. By default, Alt asks for the password of a user in the "wheel" group.
+
+      </string>
 
       <string id="org-freedesktop-udisks2-filesystem-mount-No">No</string>
       <string id="org-freedesktop-udisks2-filesystem-mount-Yes">Yes</string>
@@ -225,6 +279,12 @@ Note: the possession of administrative rights in the context of PolicyKit is det
       <string id="org-freedesktop-udisks2-filesystem-mount-Auth-admin">Auth_admin</string>
       <string id="org-freedesktop-udisks2-filesystem-mount-Auth-self-keep">Auth_self_keep</string>
       <string id="org-freedesktop-udisks2-filesystem-mount-Auth-admin-keep">Auth_admin_keep</string>
+      <string id="org-freedesktop-policykit-No">No</string>
+      <string id="org-freedesktop-policykit-Yes">Yes</string>
+      <string id="org-freedesktop-policykit-Auth-self">Auth_self</string>
+      <string id="org-freedesktop-policykit-Auth-admin">Auth_admin</string>
+      <string id="org-freedesktop-policykit-Auth-self-keep">Auth_self_keep</string>
+      <string id="org-freedesktop-policykit-Auth-admin-keep">Auth_admin_keep</string>
 
     </stringTable>
     <presentationTable>
@@ -247,6 +307,13 @@ Note: the possession of administrative rights in the context of PolicyKit is det
       </presentation>
       <presentation id="OrgFreedesktopUdisks2FileSystemMountUser-pr">
        <dropdownList noSort="true" defaultItem="1" refId="OrgFreedesktopUdisks2FileSystemMount_setter">Restriction options:</dropdownList>
+      </presentation>
+      <presentation id="org-freedesktop-Policykit-pr">
+       <dropdownList noSort="true" defaultItem="1" refId="OrgFreedesktopPolicykit_setter">Варианты ограничений:</dropdownList>
+       <checkBox refId="OrgFreedesktopPolicykit_blocker">Блокировать</checkBox>
+      </presentation>
+      <presentation id="org-freedesktop-Policykit-user-pr">
+       <dropdownList noSort="true" defaultItem="1" refId="OrgFreedesktopPolicykit_setter">Варианты ограничений:</dropdownList>
       </presentation>
     </presentationTable>
   </resources>
