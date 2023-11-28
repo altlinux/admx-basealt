@@ -181,12 +181,15 @@
       </string>
 
       <string id="kde-look-and-feel">Оформление рабочей среды</string>
-      <string id="kde-look-and-feel_help">Данная политика позволяет выбрать оформление рабочей среды.  Допустимые значения параметра:
+      <string id="kde-look-and-feel_help">Данная политика позволяет управлять оформлением рабочей среды, указав название темы в формате: org.kde.название.desktop (например, org.kde.breeze.desktop). Применение темы оформления зависит от её наличия в системе.
+Используются темы, доступные в каталоге /usr/share/plasma/look-and-feel. Для добавления новых тем необходимо установить пакеты, включающие в себя эти темы.
 
-      - Oxygen
-      - Breeze
-      - Breeze_dark
-      - BreezeTwilight
+Возможные значения параметра:
+
+      - org.kde.breeze.desktop
+      - org.kde.breezedark.desktop
+      - org.kde.oxygen
+      - org.kde.breezetwilight.desktop
 
 Опция «Блокировать» необходима для запрета изменений данной настройки пользователем.
 
@@ -303,11 +306,6 @@
       <string id="kde-desktopnumber-three">3</string>
       <string id="kde-desktopnumber-four">4</string>
 
-      <string id="kde-look-and-feel-breeze">Breeze</string>
-      <string id="kde-look-and-feel-breeze-dark">Breeze-dark</string>
-      <string id="kde-look-and-feel-oxygen">Oxygen</string>
-      <string id="kde-look-and-feel-breezetwilight">BreezeTwilight</string>
-
       <string id="kde-background-breeze">Breeze</string>
       <string id="kde-background-breeze-dark">Breeze-dark</string>
       <string id="kde-background-oxygen">Oxygen</string>
@@ -411,7 +409,9 @@
         <checkBox refId="kde-iconstheme_blocker">Блокировать</checkBox>
       </presentation>
       <presentation id="kde-look-and-feel-pr">
-        <dropdownList noSort="true" defaultItem="0" refId="kde-look-and-feel_setter">Оформление рабочей среды:</dropdownList>
+        <textBox refId="kde-look-and-feel_setter">
+          <label>Оформление рабочей среды:</label>
+        </textBox>
         <checkBox refId="kde-look-and-feel_blocker">Блокировать</checkBox>
       </presentation>
       <presentation id="kde-background-pr">

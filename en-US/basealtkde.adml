@@ -181,12 +181,15 @@ The "Block" option is necessary to prevent the user from changing this setting.
       </string>
 
       <string id="kde-look-and-feel">Design of the working environment</string>
-      <string id="kde-look-and-feel_help">This policy allows you to choose the appearance of the working environment. Valid parameter values:
+      <string id="kde-look-and-feel_help">TThis policy allows you to control the design of your desktop by specifying the theme name in the format: org.kde.name.desktop (for example, org.kde.breeze.desktop). The use of a theme depends on its availability in the system.
+The themes available in the /usr/share/plasma/look-and-feel directory are used. To add new themes, you must install packages that include those themes.
 
-      - Oxygen
-      - Breeze
-      - Breeze_dark
-      - BreezeTwilight
+Possible parameter values:
+
+      - org.kde.breeze.desktop
+      - org.kde.breezedark.desktop
+      - org.kde.oxygen
+      - org.kde.breezetwilight.desktop
 
 The "Block" option is necessary to prevent the user from changing this setting.
 
@@ -303,11 +306,6 @@ The "Block" option is necessary to prevent the user from changing this setting.
       <string id="kde-desktopnumber-three">3</string>
       <string id="kde-desktopnumber-four">4</string>
 
-      <string id="kde-look-and-feel-breeze">Breeze</string>
-      <string id="kde-look-and-feel-breeze-dark">Breeze-dark</string>
-      <string id="kde-look-and-feel-oxygen">Oxygen</string>
-      <string id="kde-look-and-feel-breezetwilight">BreezeTwilight</string>
-
       <string id="kde-background-breeze">Breeze</string>
       <string id="kde-background-breeze-dark">Breeze-dark</string>
       <string id="kde-background-oxygen">Oxygen</string>
@@ -411,7 +409,9 @@ The "Block" option is necessary to prevent the user from changing this setting.
         <checkBox refId="kde-iconstheme_blocker">Block</checkBox>
       </presentation>
       <presentation id="kde-look-and-feel-pr">
-        <dropdownList noSort="true" defaultItem="0" refId="kde-look-and-feel_setter">Design of the working environment:</dropdownList>
+        <textBox refId="kde-look-and-feel_setter">
+          <label>Design of the working environment:</label>
+        </textBox>
         <checkBox refId="kde-look-and-feel_blocker">Block</checkBox>
       </presentation>
       <presentation id="kde-background-pr">
