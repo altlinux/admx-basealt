@@ -131,7 +131,7 @@
       </string>
 
       <string id="kde-colorscheme">Цвета</string>
-      <string id="kde-colorscheme_help">Данная политика позволяет управлять цветовыми схемами, указав название схемы (например, BreezeClassic). Применение цветовой схемы зависит от её наличия в системе. Для добавления новых схем необходимо установить пакеты, включающие в себя эти схемы.
+      <string id="kde-colorscheme_help">Данная политика позволяет установить цветовую схему, указав название схемы (например, BreezeClassic). Применение цветовой схемы зависит от её наличия в системе. Для добавления новых схем необходимо установить пакеты, включающие в себя эти схемы.
 
 Возможные значения параметра:
 
@@ -146,7 +146,7 @@
       </string>
 
       <string id="kde-cursortheme">Тема курсора</string>
-      <string id="kde-cursortheme_help">Данная политика позволяет управлять темой курсора мыши, указав название темы (например, Adwaita). Применение темы курсора зависит от её наличия в системе. Для добавления новых тем необходимо установить пакеты, включающие в себя эти темы.
+      <string id="kde-cursortheme_help">Данная политика позволяет установить тему курсора мыши, указав название темы (например, Adwaita). Применение темы курсора зависит от её наличия в системе. Для добавления новых тем необходимо установить пакеты, включающие в себя эти темы.
 
 Возможные значения параметра:
 
@@ -166,7 +166,7 @@
       </string>
 
       <string id="kde-iconstheme">Тема значков</string>
-      <string id="kde-iconstheme_help">Данная политика позволяет управлять темой значков, указав название темы (например, gnome). Применение темы значков зависит от её наличия в системе. Для добавления новых тем необходимо установить пакеты, включающие в себя эти темы.
+      <string id="kde-iconstheme_help">Данная политика позволяет установить тему значков, указав название темы (например, gnome). Применение темы значков зависит от её наличия в системе. Для добавления новых тем необходимо установить пакеты, включающие в себя эти темы.
 
 Возможные значения параметра:
 
@@ -181,7 +181,7 @@
       </string>
 
       <string id="kde-look-and-feel">Оформление рабочей среды</string>
-      <string id="kde-look-and-feel_help">Данная политика позволяет управлять оформлением рабочей среды, указав название темы в формате: org.kde.название.desktop (например, org.kde.breeze.desktop). Применение темы оформления зависит от её наличия в системе.
+      <string id="kde-look-and-feel_help">Данная политика позволяет установить тему оформления рабочей среды, указав название темы в формате: org.kde.название.desktop (например, org.kde.breeze.desktop). Применение темы оформления зависит от её наличия в системе.
 Используются темы, доступные в каталоге /usr/share/plasma/look-and-feel. Для добавления новых тем необходимо установить пакеты, включающие в себя эти темы.
 
 Возможные значения параметра:
@@ -196,12 +196,13 @@
       </string>
 
       <string id="kde-background">Тема заставки</string>
-      <string id="kde-background_help">Данная политика позволяет выбрать тему заставки. Допустимые значения параметра:
+      <string id="kde-background_help">Данная политика позволяет установить тему заставки, указав название темы в формате: org.kde.название.desktop (например, org.kde.breeze.desktop). Применение темы заставки зависит от её наличия в системе.
+Используются темы, доступные в каталоге /usr/share/plasma/look-and-feel. Для добавления новых тем необходимо установить пакеты, включающие в себя эти темы.
 
-      - Oxygen
-      - Breeze
-      - Breeze_dark
-      - BreezeTwilight
+Возможные значения параметра:
+
+      - org.kde.breeze.desktop
+      - org.kde.oxygen
 
 Опция «Блокировать» необходима для запрета изменений данной настройки пользователем.
 
@@ -305,11 +306,6 @@
       <string id="kde-desktopnumber-two">2</string>
       <string id="kde-desktopnumber-three">3</string>
       <string id="kde-desktopnumber-four">4</string>
-
-      <string id="kde-background-breeze">Breeze</string>
-      <string id="kde-background-breeze-dark">Breeze-dark</string>
-      <string id="kde-background-oxygen">Oxygen</string>
-      <string id="kde-background-breezetwilight">BreezeTwilight</string>
 
       <string id="kde-autolock-enabled">Включено</string>
       <string id="kde-autolock-disabled">Отключено</string>
@@ -415,7 +411,9 @@
         <checkBox refId="kde-look-and-feel_blocker">Блокировать</checkBox>
       </presentation>
       <presentation id="kde-background-pr">
-        <dropdownList noSort="true" defaultItem="0" refId="kde-background_setter">Тема заставки:</dropdownList>
+        <textBox refId="kde-background_setter">
+          <label>Тема заставки:</label>
+        </textBox>
         <checkBox refId="kde-background_blocker">Блокировать</checkBox>
       </presentation>
       <presentation id="kde-desktoptheme-pr">

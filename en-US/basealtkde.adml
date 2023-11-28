@@ -131,7 +131,7 @@ The "Block" option is necessary to prevent the user from changing this setting.
       </string>
 
       <string id="kde-colorscheme">Colors</string>
-      <string id="kde-colorscheme_help">This policy allows you to manage color schemes by specifying the name of the scheme (for example, BreezeClassic). The use of a color scheme depends on its availability in the system. To add new schemes, you must install packages that include these schemes.
+      <string id="kde-colorscheme_help">This policy allows you to set a color scheme by specifying the name of the scheme (for example, BreezeClassic). The use of a color scheme depends on its availability in the system. To add new schemes, you must install packages that include these schemes.
 
 Possible parameter values:
 
@@ -146,7 +146,7 @@ The "Block" option is necessary to prevent the user from changing this setting.
       </string>
 
       <string id="kde-cursortheme">Cursor theme</string>
-      <string id="kde-cursortheme_help">This policy allows you to control the mouse cursor theme by specifying the theme name (for example, Adwaita). The use of a cursor theme depends on its availability in the system. To add new themes, you must install packages that include those themes.
+      <string id="kde-cursortheme_help">This policy allows you to set the mouse cursor theme by specifying the theme name (for example, Adwaita). The use of a cursor theme depends on its availability in the system. To add new themes, you must install packages that include those themes.
 
 Possible parameter values:
 
@@ -166,7 +166,7 @@ The "Block" option is necessary to prevent the user from changing this setting.
       </string>
 
       <string id="kde-iconstheme">Icons theme</string>
-      <string id="kde-iconstheme_help">This policy allows you to control the theme of the icons by specifying the name of the theme (for example, gnome). The application of an icon theme depends on its availability in the system. To add new themes, you must install packages that include those themes.
+      <string id="kde-iconstheme_help">This policy allows you to set an icon theme by specifying the theme name (for example, gnome). The application of an icon theme depends on its availability in the system. To add new themes, you must install packages that include those themes.
 
 Possible parameter values:
 
@@ -181,7 +181,20 @@ The "Block" option is necessary to prevent the user from changing this setting.
       </string>
 
       <string id="kde-look-and-feel">Design of the working environment</string>
-      <string id="kde-look-and-feel_help">TThis policy allows you to control the design of your desktop by specifying the theme name in the format: org.kde.name.desktop (for example, org.kde.breeze.desktop). The use of a theme depends on its availability in the system.
+      <string id="kde-look-and-feel_help">This policy allows you to set a desktop theme by specifying the theme name in the format: org.kde.name.desktop (for example, org.kde.breeze.desktop). The use of a theme depends on its availability in the system.
+The themes available in the /usr/share/plasma/look-and-feel directory are used. To add new themes, you must install packages that include those themes.
+
+Possible parameter values:
+
+      - org.kde.breeze.desktop
+      - org.kde.oxygen
+
+The "Block" option is necessary to prevent the user from changing this setting.
+
+      </string>
+
+      <string id="kde-background">Background theme</string>
+      <string id="kde-background_help">This policy allows you to set the splash screen theme by specifying the theme name in the format: org.kde.name.desktop (for example, org.kde.breeze.desktop). The application of the screensaver theme depends on its availability in the system.
 The themes available in the /usr/share/plasma/look-and-feel directory are used. To add new themes, you must install packages that include those themes.
 
 Possible parameter values:
@@ -190,18 +203,6 @@ Possible parameter values:
       - org.kde.breezedark.desktop
       - org.kde.oxygen
       - org.kde.breezetwilight.desktop
-
-The "Block" option is necessary to prevent the user from changing this setting.
-
-      </string>
-
-      <string id="kde-background">Background theme</string>
-      <string id="kde-background_help">This policy allows you to select a screensaver theme. Valid parameter values:
-
-      - Oxygen
-      - Breeze
-      - Breeze_dark
-      - BreezeTwilight
 
 The "Block" option is necessary to prevent the user from changing this setting.
 
@@ -305,11 +306,6 @@ The "Block" option is necessary to prevent the user from changing this setting.
       <string id="kde-desktopnumber-two">2</string>
       <string id="kde-desktopnumber-three">3</string>
       <string id="kde-desktopnumber-four">4</string>
-
-      <string id="kde-background-breeze">Breeze</string>
-      <string id="kde-background-breeze-dark">Breeze-dark</string>
-      <string id="kde-background-oxygen">Oxygen</string>
-      <string id="kde-background-breezetwilight">BreezeTwilight</string>
 
       <string id="kde-autolock-enabled">Enabled</string>
       <string id="kde-autolock-disabled">Disabled</string>
@@ -415,7 +411,9 @@ The "Block" option is necessary to prevent the user from changing this setting.
         <checkBox refId="kde-look-and-feel_blocker">Block</checkBox>
       </presentation>
       <presentation id="kde-background-pr">
-        <dropdownList noSort="true" defaultItem="0" refId="kde-background_setter">Screensaver theme:</dropdownList>
+        <textBox refId="kde-background_setter">
+          <label>Screensaver theme:</label>
+        </textBox>
         <checkBox refId="kde-background_blocker">Block</checkBox>
       </presentation>
       <presentation id="kde-desktoptheme-pr">

@@ -342,28 +342,7 @@
     <parentCategory ref="system:ALT_Appearance_KDE" />
     <supportedOn ref="system:SUPPORTED_AltP10" />
       <elements>
-        <enum  id="kde-background_setter" valueName="Theme" required="true">
-          <item displayName="$(string.kde-background-breeze)">
-            <value>
-              <string>org.kde.breeze.desktop</string>
-            </value>
-          </item>
-          <item displayName="$(string.kde-background-breeze-dark)">
-            <value>
-              <string>org.kde.breezedark.desktop</string>
-            </value>
-          </item>
-          <item displayName="$(string.kde-background-oxygen)">
-            <value>
-              <string>org.kde.oxygen</string>
-            </value>
-          </item>
-          <item displayName="$(string.kde-background-breezetwilight)">
-            <value>
-              <string>org.kde.breezetwilight.desktop</string>
-            </value>
-          </item>
-        </enum>
+        <text id="kde-background_setter" valueName="Theme"/>
         <boolean id="kde-background_blocker" key="Software\BaseALT\Policies\KDELocks" valueName="ksplashrc.KSplash.Theme" >
           <trueValue>
             <decimal value="1" />
