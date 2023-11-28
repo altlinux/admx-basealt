@@ -360,33 +360,7 @@
     <parentCategory ref="system:ALT_Appearance_KDE" />
     <supportedOn ref="system:SUPPORTED_AltP10" />
       <elements>
-        <enum  id="kde-desktoptheme_setter" valueName="name" required="true">
-          <item displayName="$(string.kde-desktoptheme-default)">
-            <value>
-              <string>default</string>
-            </value>
-          </item>
-          <item displayName="$(string.kde-desktoptheme-breeze-light)">
-            <value>
-              <string>breeze-light</string>
-            </value>
-          </item>
-          <item displayName="$(string.kde-desktoptheme-breeze-dark)">
-            <value>
-              <string>breeze-dark</string>
-            </value>
-          </item>
-          <item displayName="$(string.kde-desktoptheme-oxygen)">
-            <value>
-              <string>oxygen</string>
-            </value>
-          </item>
-          <item displayName="$(string.kde-desktoptheme-air)">
-            <value>
-              <string>air</string>
-            </value>
-          </item>
-        </enum>
+        <text id="kde-desktoptheme_setter" valueName="name"/>
         <boolean id="kde-desktoptheme_blocker" key="Software\BaseALT\Policies\KDELocks" valueName="plasmarc.Theme.name" >
           <trueValue>
             <decimal value="1" />

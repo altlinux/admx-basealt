@@ -209,13 +209,15 @@
       </string>
 
       <string id="kde-desktoptheme">Оформление рабочего стола</string>
-      <string id="kde-desktoptheme_help">Данная политика позволяет выбрать оформление рабочего стола.  Допустимые значения параметра:
+      <string id="kde-desktoptheme_help">Данная политика позволяет установить тему оформления рабочего стола, указав название темы (например, default). Применение темы рабочего стола зависит от её наличия в системе. Для добавления новых тем необходимо установить пакеты, включающие в себя эти темы.
 
-      - Default
-      - Breeze_dark
-      - Breeze-light
-      - Oxygen
-      - Air
+Возможные значения параметра:
+
+      - default
+      - breeze-light
+      - breeze-dark
+      - oxygen
+      - air
 
 Опция «Блокировать» необходима для запрета изменений данной настройки пользователем.
 
@@ -312,12 +314,6 @@
 
       <string id="kde-lockonresume-enabled">Включено</string>
       <string id="kde-lockonresume-disabled">Отключено</string>
-
-      <string id="kde-desktoptheme-default">Default</string>
-      <string id="kde-desktoptheme-breeze-light">Breeze-light</string>
-      <string id="kde-desktoptheme-breeze-dark">Breeze-dark</string>
-      <string id="kde-desktoptheme-oxygen">Oxygen</string>
-      <string id="kde-desktoptheme-air">Air</string>
 
       <string id="kde-browserapp-yandex">Yandex-Browser</string>
       <string id="kde-browserapp-firefox">Firefox</string>
@@ -417,7 +413,9 @@
         <checkBox refId="kde-background_blocker">Блокировать</checkBox>
       </presentation>
       <presentation id="kde-desktoptheme-pr">
-        <dropdownList noSort="true" defaultItem="0" refId="kde-desktoptheme_setter">Тема оформления рабочего стола:</dropdownList>
+        <textBox refId="kde-desktoptheme_setter">
+          <label>Тема оформления рабочего стола:</label>
+        </textBox>
         <checkBox refId="kde-desktoptheme_blocker">Блокировать</checkBox>
       </presentation>
       <presentation id="kde-browserapp-pr">

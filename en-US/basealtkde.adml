@@ -209,13 +209,15 @@ The "Block" option is necessary to prevent the user from changing this setting.
       </string>
 
       <string id="kde-desktoptheme">Desktop decoration</string>
-      <string id="kde-desktoptheme_help">This policy allows you to choose the appearance of the desktop. Valid parameter values:
+      <string id="kde-desktoptheme_help">This policy allows you to set a desktop theme by specifying the theme name (for example, default). The use of a desktop theme depends on its availability on the system. To add new themes, you must install packages that include those themes.
 
-      - Default
-      - Breeze_dark
-      - Breeze-light
-      - Oxygen
-      - Air
+Possible parameter values:
+
+      - default
+      - breeze-light
+      - breeze-dark
+      - oxygen
+      - air
 
 The "Block" option is necessary to prevent the user from changing this setting.
 
@@ -312,12 +314,6 @@ The "Block" option is necessary to prevent the user from changing this setting.
 
       <string id="kde-lockonresume-enabled">Enabled</string>
       <string id="kde-lockonresume-disabled">Disabled</string>
-
-      <string id="kde-desktoptheme-default">Default</string>
-      <string id="kde-desktoptheme-breeze-light">Breeze-light</string>
-      <string id="kde-desktoptheme-breeze-dark">Breeze-dark</string>
-      <string id="kde-desktoptheme-oxygen">Oxygen</string>
-      <string id="kde-desktoptheme-air">Air</string>
 
       <string id="kde-browserapp-yandex">Yandex-Browser</string>
       <string id="kde-browserapp-firefox">Firefox</string>
@@ -417,7 +413,9 @@ The "Block" option is necessary to prevent the user from changing this setting.
         <checkBox refId="kde-background_blocker">Block</checkBox>
       </presentation>
       <presentation id="kde-desktoptheme-pr">
-        <dropdownList noSort="true" defaultItem="0" refId="kde-desktoptheme_setter">Desktop theme:</dropdownList>
+        <textBox refId="kde-desktoptheme_setter">
+          <label>Desktop theme:</label>
+        </textBox>
         <checkBox refId="kde-desktoptheme_blocker">Block</checkBox>
       </presentation>
       <presentation id="kde-browserapp-pr">
