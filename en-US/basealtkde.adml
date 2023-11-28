@@ -131,18 +131,14 @@ The "Block" option is necessary to prevent the user from changing this setting.
       </string>
 
       <string id="kde-colorscheme">Colors</string>
-      <string id="kde-colorscheme_help">This policy allows you to manage color schemes by selecting a scheme from a list (for example, BreezeClassic). Valid parameter values:
+      <string id="kde-colorscheme_help">This policy allows you to manage color schemes by specifying the name of the scheme (for example, BreezeClassic). The use of a color scheme depends on its availability in the system. To add new schemes, you must install packages that include these schemes.
+
+Possible parameter values:
 
       - OxygenCold
       - BreezeClassic
       - BreezeLight
       - BreezeDark
-      - KritaBlender
-      - KritaBright
-      - KritaDark
-      - KritaDarkOrange
-      - KritaDarker
-      - KritaNeutral
       - Oxygen
 
 The "Block" option is necessary to prevent the user from changing this setting.
@@ -314,18 +310,6 @@ The "Block" option is necessary to prevent the user from changing this setting.
       <string id="kde-cursorTheme-jimmac">jimmac</string>
       <string id="kde-cursorTheme-breeze_cursors">breeze_cursors</string>
 
-      <string id="kde-colorscheme-OxygenCold">OxygenCold</string>
-      <string id="kde-colorscheme-BreezeClassic">BreezeClassic</string>
-      <string id="kde-colorscheme-BreezeLight">BreezeLight</string>
-      <string id="kde-colorscheme-BreezeDark">BreezeDark</string>
-      <string id="kde-colorscheme-KritaBlender">KritaBlender</string>
-      <string id="kde-colorscheme-KritaBright">KritaBright</string>
-      <string id="kde-colorscheme-KritaDark">KritaDark</string>
-      <string id="kde-colorscheme-KritaDarkOrange">KritaDarkOrange</string>
-      <string id="kde-colorscheme-KritaDarker">KritaDarker</string>
-      <string id="kde-colorscheme-KritaNeutral">KritaNeutral</string>
-      <string id="kde-colorscheme-Oxygen">Oxygen</string>
-
       <string id="kde-icons-breeze">Breeze</string>
       <string id="kde-icons-breeze-dark">Breeze-dark</string>
       <string id="kde-icons-Adwaita">Adwaita</string>
@@ -386,28 +370,30 @@ The "Block" option is necessary to prevent the user from changing this setting.
         <checkBox refId="kde-desktopnumber_blocker">Block</checkBox>
       </presentation>
       <presentation id="kde-automount-pr">
-         <checkBox refId="kde-automount_setter">Automatically mount devices</checkBox>
-         <checkBox refId="kde-automount_blocker">Block automount setting</checkBox>
-         <checkBox refId="kde-automountonlogin_setter">At login</checkBox>
-         <checkBox refId="kde-automountonlogin_blocker">Block automount setting at login</checkBox>
-         <checkBox refId="kde-automountonplugin_setter">When connected</checkBox>
-         <checkBox refId="kde-automountonplugin_blocker">Block automount setting when connecting</checkBox>
-         <checkBox refId="kde-automountuknowndevices_setter">Automatically mount media that has never been manually mounted before</checkBox>
-         <checkBox refId="kde-automountuknowndevices_blocker">Block the option to automatically mount devices that were not manually mounted</checkBox>
-       </presentation>
+        <checkBox refId="kde-automount_setter">Automatically mount devices</checkBox>
+        <checkBox refId="kde-automount_blocker">Block automount setting</checkBox>
+        <checkBox refId="kde-automountonlogin_setter">At login</checkBox>
+        <checkBox refId="kde-automountonlogin_blocker">Block automount setting at login</checkBox>
+        <checkBox refId="kde-automountonplugin_setter">When connected</checkBox>
+        <checkBox refId="kde-automountonplugin_blocker">Block automount setting when connecting</checkBox>
+        <checkBox refId="kde-automountuknowndevices_setter">Automatically mount media that has never been manually mounted before</checkBox>
+        <checkBox refId="kde-automountuknowndevices_blocker">Block the option to automatically mount devices that were not manually mounted</checkBox>
+      </presentation>
       <presentation id="kde-filesearch-pr">
         <checkBox refId="kde-basicsettings_setter">Enable file search service only</checkBox>
         <checkBox refId="kde-onlybasic_setter">Enable file content indexing</checkBox>
         <checkBox refId="kde-indexhidden_setter">Enable indexing of hidden files and folders</checkBox>
         <checkBox refId="kde-filesearch_blocker">Block</checkBox>
-       </presentation>
+      </presentation>
       <presentation id="kde-wallpaper-pr">
         <textBox refId="kde-wallpaper_setter">
           <label>File:</label>
         </textBox>
       </presentation>
       <presentation id="kde-colorscheme-pr">
-        <dropdownList noSort="true" defaultItem="0" refId="kde-colorscheme_setter">Color scheme:</dropdownList>
+        <textBox refId="kde-colorscheme_setter">
+          <label>Color scheme:</label>
+        </textBox>
         <checkBox refId="kde-colorscheme_blocker">Block</checkBox>
       </presentation>
       <presentation id="kde-cursortheme-pr">
