@@ -534,58 +534,7 @@
     <parentCategory ref="system:ALT_Appearance_KDE" />
     <supportedOn ref="system:SUPPORTED_AltP10" />
       <elements>
-        <enum  id="kde-cursortheme_setter" valueName="cursorTheme" required="true">
-          <item displayName="$(string.kde-cursorTheme-Adwaita)">
-            <value>
-              <string>Adwaita</string>
-            </value>
-          </item>
-          <item displayName="$(string.kde-cursorTheme-Breeze_Snow)">
-            <value>
-              <string>Breeze_Snow</string>
-            </value>
-          </item>
-          <item displayName="$(string.kde-cursorTheme-KDE_Classic)">
-            <value>
-              <string>KDE_Classic</string>
-            </value>
-          </item>
-          <item displayName="$(string.kde-cursorTheme-Oxygen_Black)">
-            <value>
-              <string>Oxygen_Black</string>
-            </value>
-          </item>
-          <item displayName="$(string.kde-cursorTheme-Oxygen_Blue)">
-            <value>
-              <string>Oxygen_Blue</string>
-            </value>
-          </item>
-          <item displayName="$(string.kde-cursorTheme-Oxygen_White)">
-            <value>
-              <string>Oxygen_White</string>
-            </value>
-          </item>
-          <item displayName="$(string.kde-cursorTheme-Oxygen_Yellow)">
-            <value>
-              <string>Oxygen_Yellow</string>
-            </value>
-          </item>
-          <item displayName="$(string.kde-cursorTheme-Oxygen_Zion)">
-            <value>
-              <string>Oxygen_Zion</string>
-            </value>
-          </item>
-          <item displayName="$(string.kde-cursorTheme-jimmac)">
-            <value>
-              <string>jimmac</string>
-            </value>
-          </item>
-          <item displayName="$(string.kde-cursorTheme-breeze_cursors)">
-            <value>
-              <string>breeze_cursors</string>
-            </value>
-          </item>
-        </enum>
+        <text id="kde-cursortheme_setter" valueName="cursorTheme"/>
         <boolean id="kde-cursortheme_blocker" key="Software\BaseALT\Policies\KDELocks" valueName="kcminputrc.Mouse.cursorTheme" >
           <trueValue>
             <decimal value="1" />

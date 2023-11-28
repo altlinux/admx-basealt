@@ -146,7 +146,9 @@
       </string>
 
       <string id="kde-cursortheme">Тема курсора</string>
-      <string id="kde-cursortheme_help">Данная политика позволяет выбрать тему курсора мыши. Допустимые значения параметра:
+      <string id="kde-cursortheme_help">Данная политика позволяет управлять темой курсора мыши, указав название темы (например, Adwaita). Применение темы курсора зависит от её наличия в системе. Для добавления новых тем необходимо установить пакеты, включающие в себя эти темы.
+
+Возможные значения параметра:
 
       - Adwaita
       - Breeze_Snow
@@ -299,17 +301,6 @@
       <string id="kde-desktopnumber-three">3</string>
       <string id="kde-desktopnumber-four">4</string>
 
-      <string id="kde-cursorTheme-Adwaita">Adwaita</string>
-      <string id="kde-cursorTheme-Breeze_Snow">Breeze_Snow</string>
-      <string id="kde-cursorTheme-KDE_Classic">KDE_Classic</string>
-      <string id="kde-cursorTheme-Oxygen_Black">Oxygen_Black</string>
-      <string id="kde-cursorTheme-Oxygen_Blue">Oxygen_Blue</string>
-      <string id="kde-cursorTheme-Oxygen_White">Oxygen_White</string>
-      <string id="kde-cursorTheme-Oxygen_Yellow">Oxygen_Yellow</string>
-      <string id="kde-cursorTheme-Oxygen_Zion">Oxygen_Zion</string>
-      <string id="kde-cursorTheme-jimmac">jimmac</string>
-      <string id="kde-cursorTheme-breeze_cursors">breeze_cursors</string>
-
       <string id="kde-icons-breeze">Breeze</string>
       <string id="kde-icons-breeze-dark">Breeze-dark</string>
       <string id="kde-icons-Adwaita">Adwaita</string>
@@ -397,7 +388,9 @@
         <checkBox refId="kde-colorscheme_blocker">Блокировать</checkBox>
       </presentation>
       <presentation id="kde-cursortheme-pr">
-        <dropdownList noSort="true" defaultItem="0" refId="kde-cursortheme_setter">Тема курсора мыши:</dropdownList>
+        <textBox refId="kde-cursortheme_setter">
+          <label>Тема курсора мыши:</label>
+        </textBox>
         <checkBox refId="kde-cursortheme_blocker">Блокировать</checkBox>
       </presentation>
       <presentation id="kde-filterbar-pr">
