@@ -166,13 +166,15 @@
       </string>
 
       <string id="kde-iconstheme">Тема значков</string>
-      <string id="kde-iconstheme_help">Данная политика позволяет выбрать тему значков.  Допустимые значения параметра:
+      <string id="kde-iconstheme_help">Данная политика позволяет управлять темой значков, указав название темы (например, gnome). Применение темы значков зависит от её наличия в системе. Для добавления новых тем необходимо установить пакеты, включающие в себя эти темы.
+
+Возможные значения параметра:
 
       - Adwaita
-      - Oxygen
-      - Breeze
-      - Breeze_dark
-      - Gnome
+      - oxygen
+      - breeze
+      - breeze-dark
+      - gnome
 
 Опция «Блокировать» необходима для запрета изменений данной настройки пользователем.
 
@@ -301,12 +303,6 @@
       <string id="kde-desktopnumber-three">3</string>
       <string id="kde-desktopnumber-four">4</string>
 
-      <string id="kde-icons-breeze">Breeze</string>
-      <string id="kde-icons-breeze-dark">Breeze-dark</string>
-      <string id="kde-icons-Adwaita">Adwaita</string>
-      <string id="kde-icons-oxygen">Oxygen</string>
-      <string id="kde-icons-gnome">Gnome</string>
-
       <string id="kde-look-and-feel-breeze">Breeze</string>
       <string id="kde-look-and-feel-breeze-dark">Breeze-dark</string>
       <string id="kde-look-and-feel-oxygen">Oxygen</string>
@@ -409,7 +405,9 @@
         <checkBox refId="kde-showdelete_blocker">Блокировать</checkBox>
       </presentation>
       <presentation id="kde-iconstheme-pr">
-        <dropdownList noSort="true" defaultItem="0" refId="kde-iconstheme_setter">Тема значков:</dropdownList>
+        <textBox refId="kde-iconstheme_setter">
+          <label>Тема значков:</label>
+        </textBox>
         <checkBox refId="kde-iconstheme_blocker">Блокировать</checkBox>
       </presentation>
       <presentation id="kde-look-and-feel-pr">

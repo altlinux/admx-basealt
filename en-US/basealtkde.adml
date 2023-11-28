@@ -166,7 +166,9 @@ The "Block" option is necessary to prevent the user from changing this setting.
       </string>
 
       <string id="kde-iconstheme">Icons theme</string>
-      <string id="kde-iconstheme_help">This policy allows you to select an icon theme. Valid parameter values:
+      <string id="kde-iconstheme_help">This policy allows you to control the theme of the icons by specifying the name of the theme (for example, gnome). The application of an icon theme depends on its availability in the system. To add new themes, you must install packages that include those themes.
+
+Possible parameter values:
 
       - Adwaita
       - Oxygen
@@ -301,12 +303,6 @@ The "Block" option is necessary to prevent the user from changing this setting.
       <string id="kde-desktopnumber-three">3</string>
       <string id="kde-desktopnumber-four">4</string>
 
-      <string id="kde-icons-breeze">Breeze</string>
-      <string id="kde-icons-breeze-dark">Breeze-dark</string>
-      <string id="kde-icons-Adwaita">Adwaita</string>
-      <string id="kde-icons-oxygen">Oxygen</string>
-      <string id="kde-icons-gnome">Gnome</string>
-
       <string id="kde-look-and-feel-breeze">Breeze</string>
       <string id="kde-look-and-feel-breeze-dark">Breeze-dark</string>
       <string id="kde-look-and-feel-oxygen">Oxygen</string>
@@ -409,7 +405,9 @@ The "Block" option is necessary to prevent the user from changing this setting.
         <checkBox refId="kde-showdelete_blocker">Block</checkBox>
       </presentation>
       <presentation id="kde-iconstheme-pr">
-        <dropdownList noSort="true" defaultItem="0" refId="kde-iconstheme_setter">Icons theme:</dropdownList>
+        <textBox refId="kde-iconstheme_setter">
+          <label>Icons theme:</label>
+        </textBox>
         <checkBox refId="kde-iconstheme_blocker">Block</checkBox>
       </presentation>
       <presentation id="kde-look-and-feel-pr">
