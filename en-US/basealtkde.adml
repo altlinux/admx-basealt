@@ -191,8 +191,9 @@ The "Block" option is necessary to prevent the user from changing this setting.
       </string>
 
       <string id="kde-look-and-feel">Design of the working environment</string>
-      <string id="kde-look-and-feel_help">This policy allows you to set a desktop theme by specifying the theme name in the format: org.kde.name.desktop (for example, org.kde.breeze.desktop). The use of a theme depends on its availability in the system.
-The themes available in the /usr/share/plasma/look-and-feel directory are used. To add new themes, you must install packages that include those themes.
+      <string id="kde-look-and-feel_help">This policy allows you to set a desktop theme by specifying the theme name in the format: org.kde.name.desktop or org.kde.name, depending on the name of the theme in the /usr/share/plasma/look-and-feel directory (for example , org.kde.breeze.desktop or org.kde.oxygen).
+
+The use of a theme depends on its availability in the system. To add new themes, you must install packages that include those themes.
 
 Possible parameter values:
 
@@ -204,8 +205,9 @@ The "Block" option is necessary to prevent the user from changing this setting.
       </string>
 
       <string id="kde-background">Background theme</string>
-      <string id="kde-background_help">This policy allows you to set the splash screen theme by specifying the theme name in the format: org.kde.name.desktop (for example, org.kde.breeze.desktop). The application of the screensaver theme depends on its availability in the system.
-The themes available in the /usr/share/plasma/look-and-feel directory are used. To add new themes, you must install packages that include those themes.
+      <string id="kde-background_help">This policy allows you to set a desktop theme by specifying the theme name in the format: org.kde.name.desktop or org.kde.name, depending on the name of the theme in the /usr/share/plasma/look-and-feel directory (for example , org.kde.breeze.desktop or org.kde.oxygen).
+
+The use of a theme depends on its availability in the system. To add new themes, you must install packages that include those themes.
 
 Possible parameter values:
 
