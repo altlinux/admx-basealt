@@ -97,10 +97,20 @@
 
 Опция «Блокировать» необходима для запрета изменений данной настройки пользователем.
 
-       </string>
+      </string>
 
-      <string id="kde-wallpaper">Картинка фона рабочего стола</string>
-      <string id="kde-wallpaper_help">Данная политика позволяет установить изображение в качестве фона рабочего стола, указав файл (например, /usr/share/wallpapers/table.png, или smb://dc0/reGr/test.png (файл из общего каталога)), содержащий изображение.</string>
+      <string id="kde-wallpaper">Обои рабочего стола</string>
+      <string id="kde-wallpaper_help">Данная политика позволяет установить обои рабочего стола, указав путь до изобажения.
+
+Примеры путей:
+
+/usr/share/wallpapers/image.png — локальный путь к изображению;
+
+smb://computername/share/image.png — путь в формате Linux к изображению в общем каталоге на сервере;
+
+\\computername\share\image.png — путь в формате Windows к изображению в общем каталоге на сервере.
+
+      </string>
 
       <string id="kde-graphic-effects">Графические эффекты</string>
       <string id="kde-graphic-effects_help">Политика настраивает включение или отключение графических эффектов при входе в систему.
