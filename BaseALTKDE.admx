@@ -116,7 +116,7 @@
           </falseValue>
           </boolean>
         <text id="kde-language_setter" key="Software\BaseALT\Policies\KDE\plasma-localerc\Translation" valueName="LANGUAGE"/>
-        <boolean id="kde-language_blocker" key="Software\BaseALT\Policies\KDELocks" valueName="plasma-localerc.Formats.LANGUAGE">
+        <boolean id="kde-language_blocker" key="Software\BaseALT\Policies\KDELocks" valueName="plasma-localerc.Translation.LANGUAGE">
           <trueValue>
             <decimal value="1" />
           </trueValue>
