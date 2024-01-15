@@ -252,24 +252,24 @@
       <string id="ldap-reverse-dns-lookup">Обратный поиск DNS для запросов OpenLDAP</string>
       <string id="ldap-reverse-dns-lookup_help">Политика определяет, разрешен ли обратный поиск DNS для запросов OpenLDAP
 
-Разрешить — выполнять обратный поиск DNS для запросов OpenLDAP
+Разрешено — выполнять обратный поиск DNS для запросов OpenLDAP
 
-Не разрешать — не выполнять обратный поиск DNS для запросов OpenLDAP
+Не разрешено — не выполнять обратный поиск DNS для запросов OpenLDAP
 
-Не сконфигурировано — выполнять обратный поиск DNS для запросов OpenLDAP
+По умолчанию — выполнять обратный поиск DNS для запросов OpenLDAP
       </string>
-      <string id="ldap-reverse-dns-lookup_allow">Разрешить</string>
+      <string id="ldap-reverse-dns-lookup_allow">Разрешено</string>
       <string id="ldap-reverse-dns-lookup_deny">Не разрешено</string>
       <string id="ldap-reverse-dns-lookup_default">По умолчанию</string>
 
       <string id="ldap-tls-cert-check">Проверка сертификата при установлении соединений TLS OpenLDAP</string>
       <string id="ldap-tls-cert-check_help">Политика определяет режим проверки сертификата при установке TLS соединений OpenLDAP
 
-Не сконфигурировано — установить соединение только с правильным сертификатом
+По умолчанию — установить соединение только с правильным сертификатом
 
 Никогда — не выполнять никаких проверок
 
-Разрешить — установить соединение, даже если сертификат отсутствует или неверный
+Разрешено — установить соединение, даже если сертификат отсутствует или неверный
 
 Пробовать — установить соединение, если нет или с действующим сертификатом
 
@@ -481,13 +481,13 @@ TCB — любой пользователь может изменить свой
 
 Разрешено — суперпользователю разрешена аутентификация на сервере OpenSSH
 
-Запрещено — суперпользователю запрещена аутентификация на сервере OpenSSH
+Не разрешено — суперпользователю запрещена аутентификация на сервере OpenSSH
 
 По умолчанию — сбросить режим аутентификации для суперпользователя на значение по умолчанию в пакете
       </string>
       <string id="sshd-permit-root-login_without_password">Только без пароля</string>
       <string id="sshd-permit-root-login_enabled">Разрешено</string>
-      <string id="sshd-permit-root-login_disabled">Запрещено</string>
+      <string id="sshd-permit-root-login_disabled">Не разрешено</string>
       <string id="sshd-permit-root-login_default">По умолчанию</string>
 
       <string id="ssh-gssapi-auth">Поддержка аутентификации OpenSSH-клиентов через GSSAPI</string>
