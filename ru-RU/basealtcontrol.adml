@@ -410,7 +410,7 @@ TCB — любой пользователь может изменить свой
 
 Любой пользователь — любой пользователь имеет право запускать /usr/sbin/pppd с правами суперпользователя
       </string>
-      <string id="ppp_restricted">Только root может запускать /usr/sbin/pppd</string>
+      <string id="ppp_restricted">Только root</string>
       <string id="ppp_traditional">Традиционный</string>
       <string id="ppp_uucp">Группа uucp</string>
       <string id="ppp_public">Любой пользователь</string>
