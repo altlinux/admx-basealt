@@ -386,14 +386,14 @@ TCB — любой пользователь может изменить свой
       <string id="postfix_server">Сервер (фильтры отключены)</string>
       <string id="postfix_filter">Фильтр</string>
 
-      <string id="postqueue">Разрешения для /usr/bin/postqueue</string>
-      <string id="postqueue_help">Эта политика определяет разрешения для /usr/bin/postqueue
+      <string id="postqueue">Разрешения для /usr/sbin/postqueue</string>
+      <string id="postqueue_help">Эта политика определяет разрешения для /usr/sbin/postqueue
 
-Любой пользователь — любому пользователю разрешено запускать /usr/bin/postqueue
+Любой пользователь — любому пользователю разрешено запускать /usr/sbin/postqueue
 
-Группа mailadm — пользователям из группы «mailadm» разрешено запускать /usr/bin/postqueue
+Группа mailadm — пользователям из группы «mailadm» разрешено запускать /usr/sbin/postqueue
 
-Только root — только суперпользователю (root) разрешено запускать /usr/bin/postqueue
+Только root — только суперпользователю (root) разрешено запускать /usr/sbin/postqueue
       </string>
       <string id="postqueue_public">Любой пользователь</string>
       <string id="postqueue_mailadm">Группа mailadm</string>
