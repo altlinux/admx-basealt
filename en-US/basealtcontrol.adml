@@ -236,19 +236,6 @@ Only root — Only superuser (root) can execute /usr/bin/mtr
       <string id="mtr_netadmin">Group netadmin</string>
       <string id="mtr_restricted">Only root</string>
 
-      <string id="kvm">Rights to QEMU KVM devices</string>
-      <string id="kvm_help">The policy determines the rights to QEMU KVM devices
-
-Any user — Any user has the right to use KVM
-
-Group vmusers — Members of the «vmusers» group have the right to use KVM
-
-Only root — Only superuser (root) has the right to use KVM
-      </string>
-      <string id="kvm_public">Any user</string>
-      <string id="kvm_vmusers">Group vmusers</string>
-      <string id="kvm_restricted">Only root</string>
-
       <string id="ldap-reverse-dns-lookup">Reverse DNS lookup on OpenLDAP queries</string>
       <string id="ldap-reverse-dns-lookup_help">The policy determines whether reverse DNS lookups are allowed for OpenLDAP queries
 
@@ -904,10 +891,6 @@ Not configured — do not change current value of «smb-conf-usershares» parame
       </presentation>
       <presentation id="mtr">
         <dropdownList noSort="true" defaultItem="1" refId="mtr_setter">Who is allowed to execute:
-        </dropdownList>
-      </presentation>
-      <presentation id="kvm">
-        <dropdownList noSort="true" defaultItem="1" refId="kvm_setter">Who has the right to use:
         </dropdownList>
       </presentation>
       <presentation id="ldap-reverse-dns-lookup">

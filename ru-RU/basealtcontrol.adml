@@ -236,19 +236,6 @@
       <string id="mtr_netadmin">Группа netadmin</string>
       <string id="mtr_restricted">Только root</string>
 
-      <string id="kvm">Права на устройства QEMU KVM</string>
-      <string id="kvm_help">Политика определяет права на устройства QEMU KVM
-
-Любой пользователь — любой пользователь имеет право использовать KVM
-
-Группа vmusers — пользователи группы «vmusers» имеют право использовать KVM
-
-Только root — только суперпользователь (root) имеет право использовать KVM
-      </string>
-      <string id="kvm_public">Любой пользователь</string>
-      <string id="kvm_vmusers">Группа vmusers</string>
-      <string id="kvm_restricted">Только root</string>
-
       <string id="ldap-reverse-dns-lookup">Обратный поиск DNS для запросов OpenLDAP</string>
       <string id="ldap-reverse-dns-lookup_help">Политика определяет, разрешен ли обратный поиск DNS для запросов OpenLDAP
 
@@ -901,10 +888,6 @@ SSSD — использовать метод проверки подлиннос
       </presentation>
       <presentation id="mtr">
         <dropdownList noSort="true" defaultItem="1" refId="mtr_setter">Кому разрешено выполнять:
-        </dropdownList>
-      </presentation>
-      <presentation id="kvm">
-        <dropdownList noSort="true" defaultItem="1" refId="kvm_setter">Кто имеет право использовать:
         </dropdownList>
       </presentation>
       <presentation id="ldap-reverse-dns-lookup">

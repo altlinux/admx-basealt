@@ -414,29 +414,6 @@
         </enum>
       </elements>
     </policy>
-    <policy class="Machine" displayName="$(string.kvm)" explainText="$(string.kvm_help)" key="Software\BaseALT\Policies\Control" name="kvm" presentation="$(presentation.kvm)">
-      <parentCategory ref="system:ALT_Virtualization"/>
-      <supportedOn ref="system:SUPPORTED_AltP8"/>
-      <elements>
-        <enum id="kvm_setter" required="true" valueName="kvm">
-          <item displayName="$(string.kvm_public)">
-            <value>
-              <string>public</string>
-            </value>
-          </item>
-          <item displayName="$(string.kvm_vmusers)">
-            <value>
-              <string>vmusers</string>
-            </value>
-          </item>
-          <item displayName="$(string.kvm_restricted)">
-            <value>
-              <string>restricted</string>
-            </value>
-          </item>
-        </enum>
-      </elements>
-    </policy>
     <policy class="Machine" displayName="$(string.ldap-reverse-dns-lookup)" explainText="$(string.ldap-reverse-dns-lookup_help)" key="Software\BaseALT\Policies\Control" name="ldap-reverse-dns-lookup" presentation="$(presentation.ldap-reverse-dns-lookup)">
       <parentCategory ref="system:ALT_Services"/>
       <supportedOn ref="system:SUPPORTED_AltP9"/>
