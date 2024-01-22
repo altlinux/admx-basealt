@@ -9,8 +9,6 @@
       <string id="org-freedesktop-login1-attach-device">Permission to allow attaching devices to seats</string>
       <string id="org-freedesktop-login1-attach-device_Help">The policy restricts the ability to allow attaching devices to seats
 
-Authentication is required to attach a device to a seat.
-
 Disabled/Unconfigured — restrictions are defined by system parameters.
 
 Enabled — restriction with defined rights;
@@ -37,8 +35,6 @@ The "Block" option prevents the user from changing this setting. Blocking a poli
       <string id="org-freedesktop-login1-attach-device-user">Permission to allow attaching devices to seats</string>
       <string id="org-freedesktop-login1-attach-device-user_Help">The policy restricts the ability to allow attaching devices to seats
 
-Authentication is required to attach a device to a seat.
-
 Disabled/Unconfigured — restrictions are defined by system parameters.
 
 Enabled — restriction with defined rights;
@@ -62,8 +58,6 @@ Note: the possession of administrative rights in a PolicyKit context is determin
       </string>
       <string id="org-freedesktop-login1-chvt">Permission to change session</string>
       <string id="org-freedesktop-login1-chvt_Help">The policy restricts the ability to change a session
-
-Authentication is required to change the virtual terminal.
 
 Disabled/Unconfigured — restrictions are defined by system parameters.
 
@@ -91,8 +85,6 @@ The "Block" option prevents the user from changing this setting. Blocking a poli
       <string id="org-freedesktop-login1-chvt-user">Permission to change session</string>
       <string id="org-freedesktop-login1-chvt-user_Help">The policy restricts the ability to change a session
 
-Authentication is required to change the virtual terminal.
-
 Disabled/Unconfigured — restrictions are defined by system parameters.
 
 Enabled — restriction with defined rights;
@@ -116,8 +108,6 @@ Note: the possession of administrative rights in a PolicyKit context is determin
       </string>
       <string id="org-freedesktop-login1-flush-devices">Permission to flush device to seat attachments</string>
       <string id="org-freedesktop-login1-flush-devices_Help">The policy restricts the ability to flush device to seat attachments
-
-Authentication is required to reset how devices are attached to seats.
 
 Disabled/Unconfigured — restrictions are defined by system parameters.
 
@@ -145,8 +135,6 @@ The "Block" option prevents the user from changing this setting. Blocking a poli
       <string id="org-freedesktop-login1-flush-devices-user">Permission to flush device to seat attachments</string>
       <string id="org-freedesktop-login1-flush-devices-user_Help">The policy restricts the ability to flush device to seat attachments
 
-Authentication is required to reset how devices are attached to seats.
-
 Disabled/Unconfigured — restrictions are defined by system parameters.
 
 Enabled — restriction with defined rights;
@@ -170,8 +158,6 @@ Note: the possession of administrative rights in a PolicyKit context is determin
       </string>
       <string id="org-freedesktop-login1-halt">Permission to halt the system</string>
       <string id="org-freedesktop-login1-halt_Help">The policy restricts the ability to halt the system
-
-Authentication is required to halt the system.
 
 Disabled/Unconfigured — restrictions are defined by system parameters.
 
@@ -199,8 +185,6 @@ The "Block" option prevents the user from changing this setting. Blocking a poli
       <string id="org-freedesktop-login1-halt-user">Permission to halt the system</string>
       <string id="org-freedesktop-login1-halt-user_Help">The policy restricts the ability to halt the system
 
-Authentication is required to halt the system.
-
 Disabled/Unconfigured — restrictions are defined by system parameters.
 
 Enabled — restriction with defined rights;
@@ -224,8 +208,6 @@ Note: the possession of administrative rights in a PolicyKit context is determin
       </string>
       <string id="org-freedesktop-login1-halt-ignore-inhibit">Permission to halt the system while an application is inhibiting this</string>
       <string id="org-freedesktop-login1-halt-ignore-inhibit_Help">The policy restricts the ability to halt the system while an application is inhibiting this
-
-Authentication is required to halt the system while an application is inhibiting this.
 
 Disabled/Unconfigured — restrictions are defined by system parameters.
 
@@ -253,8 +235,6 @@ The "Block" option prevents the user from changing this setting. Blocking a poli
       <string id="org-freedesktop-login1-halt-ignore-inhibit-user">Permission to halt the system while an application is inhibiting this</string>
       <string id="org-freedesktop-login1-halt-ignore-inhibit-user_Help">The policy restricts the ability to halt the system while an application is inhibiting this
 
-Authentication is required to halt the system while an application is inhibiting this.
-
 Disabled/Unconfigured — restrictions are defined by system parameters.
 
 Enabled — restriction with defined rights;
@@ -278,8 +258,6 @@ Note: the possession of administrative rights in a PolicyKit context is determin
       </string>
       <string id="org-freedesktop-login1-halt-multiple-sessions">Permission to halt the system while other users are logged in</string>
       <string id="org-freedesktop-login1-halt-multiple-sessions_Help">The policy restricts the ability to halt the system while other users are logged in
-
-Authentication is required to halt the system while other users are logged in.
 
 Disabled/Unconfigured — restrictions are defined by system parameters.
 
@@ -307,8 +285,6 @@ The "Block" option prevents the user from changing this setting. Blocking a poli
       <string id="org-freedesktop-login1-halt-multiple-sessions-user">Permission to halt the system while other users are logged in</string>
       <string id="org-freedesktop-login1-halt-multiple-sessions-user_Help">The policy restricts the ability to halt the system while other users are logged in
 
-Authentication is required to halt the system while other users are logged in.
-
 Disabled/Unconfigured — restrictions are defined by system parameters.
 
 Enabled — restriction with defined rights;
@@ -332,8 +308,6 @@ Note: the possession of administrative rights in a PolicyKit context is determin
       </string>
       <string id="org-freedesktop-login1-hibernate">Permission to hibernate the system</string>
       <string id="org-freedesktop-login1-hibernate_Help">The policy restricts the ability to hibernate the system
-
-Authentication is required to hibernate the system.
 
 Disabled/Unconfigured — restrictions are defined by system parameters.
 
@@ -361,8 +335,6 @@ The "Block" option prevents the user from changing this setting. Blocking a poli
       <string id="org-freedesktop-login1-hibernate-user">Permission to hibernate the system</string>
       <string id="org-freedesktop-login1-hibernate-user_Help">The policy restricts the ability to hibernate the system
 
-Authentication is required to hibernate the system.
-
 Disabled/Unconfigured — restrictions are defined by system parameters.
 
 Enabled — restriction with defined rights;
@@ -386,8 +358,6 @@ Note: the possession of administrative rights in a PolicyKit context is determin
       </string>
       <string id="org-freedesktop-login1-hibernate-ignore-inhibit">Permission to hibernate the system while an application is inhibiting this</string>
       <string id="org-freedesktop-login1-hibernate-ignore-inhibit_Help">The policy restricts the ability to hibernate the system while an application is inhibiting this
-
-Authentication is required to hibernate the system while an application is inhibiting this.
 
 Disabled/Unconfigured — restrictions are defined by system parameters.
 
@@ -415,8 +385,6 @@ The "Block" option prevents the user from changing this setting. Blocking a poli
       <string id="org-freedesktop-login1-hibernate-ignore-inhibit-user">Permission to hibernate the system while an application is inhibiting this</string>
       <string id="org-freedesktop-login1-hibernate-ignore-inhibit-user_Help">The policy restricts the ability to hibernate the system while an application is inhibiting this
 
-Authentication is required to hibernate the system while an application is inhibiting this.
-
 Disabled/Unconfigured — restrictions are defined by system parameters.
 
 Enabled — restriction with defined rights;
@@ -440,8 +408,6 @@ Note: the possession of administrative rights in a PolicyKit context is determin
       </string>
       <string id="org-freedesktop-login1-hibernate-multiple-sessions">Permission to hibernate the system while other users are logged in</string>
       <string id="org-freedesktop-login1-hibernate-multiple-sessions_Help">The policy restricts the ability to hibernate the system while other users are logged in
-
-Authentication is required to hibernate the system while other users are logged in.
 
 Disabled/Unconfigured — restrictions are defined by system parameters.
 
@@ -469,8 +435,6 @@ The "Block" option prevents the user from changing this setting. Blocking a poli
       <string id="org-freedesktop-login1-hibernate-multiple-sessions-user">Permission to hibernate the system while other users are logged in</string>
       <string id="org-freedesktop-login1-hibernate-multiple-sessions-user_Help">The policy restricts the ability to hibernate the system while other users are logged in
 
-Authentication is required to hibernate the system while other users are logged in.
-
 Disabled/Unconfigured — restrictions are defined by system parameters.
 
 Enabled — restriction with defined rights;
@@ -494,8 +458,6 @@ Note: the possession of administrative rights in a PolicyKit context is determin
       </string>
       <string id="org-freedesktop-login1-inhibit-block-idle">Permission to allow applications to inhibit automatic system suspend</string>
       <string id="org-freedesktop-login1-inhibit-block-idle_Help">The policy restricts the ability to allow applications to inhibit automatic system suspend
-
-Authentication is required for an application to inhibit automatic system suspend.
 
 Disabled/Unconfigured — restrictions are defined by system parameters.
 
@@ -523,8 +485,6 @@ The "Block" option prevents the user from changing this setting. Blocking a poli
       <string id="org-freedesktop-login1-inhibit-block-idle-user">Permission to allow applications to inhibit automatic system suspend</string>
       <string id="org-freedesktop-login1-inhibit-block-idle-user_Help">The policy restricts the ability to allow applications to inhibit automatic system suspend
 
-Authentication is required for an application to inhibit automatic system suspend.
-
 Disabled/Unconfigured — restrictions are defined by system parameters.
 
 Enabled — restriction with defined rights;
@@ -548,8 +508,6 @@ Note: the possession of administrative rights in a PolicyKit context is determin
       </string>
       <string id="org-freedesktop-login1-inhibit-block-shutdown">Permission to allow applications to inhibit system shutdown</string>
       <string id="org-freedesktop-login1-inhibit-block-shutdown_Help">The policy restricts the ability to allow applications to inhibit system shutdown
-
-Authentication is required for an application to inhibit system shutdown.
 
 Disabled/Unconfigured — restrictions are defined by system parameters.
 
@@ -577,8 +535,6 @@ The "Block" option prevents the user from changing this setting. Blocking a poli
       <string id="org-freedesktop-login1-inhibit-block-shutdown-user">Permission to allow applications to inhibit system shutdown</string>
       <string id="org-freedesktop-login1-inhibit-block-shutdown-user_Help">The policy restricts the ability to allow applications to inhibit system shutdown
 
-Authentication is required for an application to inhibit system shutdown.
-
 Disabled/Unconfigured — restrictions are defined by system parameters.
 
 Enabled — restriction with defined rights;
@@ -602,8 +558,6 @@ Note: the possession of administrative rights in a PolicyKit context is determin
       </string>
       <string id="org-freedesktop-login1-inhibit-block-sleep">Permission to allow applications to inhibit system sleep</string>
       <string id="org-freedesktop-login1-inhibit-block-sleep_Help">The policy restricts the ability to allow applications to inhibit system sleep
-
-Authentication is required for an application to inhibit system sleep.
 
 Disabled/Unconfigured — restrictions are defined by system parameters.
 
@@ -631,8 +585,6 @@ The "Block" option prevents the user from changing this setting. Blocking a poli
       <string id="org-freedesktop-login1-inhibit-block-sleep-user">Permission to allow applications to inhibit system sleep</string>
       <string id="org-freedesktop-login1-inhibit-block-sleep-user_Help">The policy restricts the ability to allow applications to inhibit system sleep
 
-Authentication is required for an application to inhibit system sleep.
-
 Disabled/Unconfigured — restrictions are defined by system parameters.
 
 Enabled — restriction with defined rights;
@@ -656,8 +608,6 @@ Note: the possession of administrative rights in a PolicyKit context is determin
       </string>
       <string id="org-freedesktop-login1-inhibit-delay-shutdown">Permission to allow applications to delay system shutdown</string>
       <string id="org-freedesktop-login1-inhibit-delay-shutdown_Help">The policy restricts the ability to allow applications to delay system shutdown
-
-Authentication is required for an application to delay system shutdown.
 
 Disabled/Unconfigured — restrictions are defined by system parameters.
 
@@ -685,8 +635,6 @@ The "Block" option prevents the user from changing this setting. Blocking a poli
       <string id="org-freedesktop-login1-inhibit-delay-shutdown-user">Permission to allow applications to delay system shutdown</string>
       <string id="org-freedesktop-login1-inhibit-delay-shutdown-user_Help">The policy restricts the ability to allow applications to delay system shutdown
 
-Authentication is required for an application to delay system shutdown.
-
 Disabled/Unconfigured — restrictions are defined by system parameters.
 
 Enabled — restriction with defined rights;
@@ -710,8 +658,6 @@ Note: the possession of administrative rights in a PolicyKit context is determin
       </string>
       <string id="org-freedesktop-login1-inhibit-delay-sleep">Permission to allow applications to delay system sleep</string>
       <string id="org-freedesktop-login1-inhibit-delay-sleep_Help">The policy restricts the ability to allow applications to delay system sleep
-
-Authentication is required for an application to delay system sleep.
 
 Disabled/Unconfigured — restrictions are defined by system parameters.
 
@@ -739,8 +685,6 @@ The "Block" option prevents the user from changing this setting. Blocking a poli
       <string id="org-freedesktop-login1-inhibit-delay-sleep-user">Permission to allow applications to delay system sleep</string>
       <string id="org-freedesktop-login1-inhibit-delay-sleep-user_Help">The policy restricts the ability to allow applications to delay system sleep
 
-Authentication is required for an application to delay system sleep.
-
 Disabled/Unconfigured — restrictions are defined by system parameters.
 
 Enabled — restriction with defined rights;
@@ -764,8 +708,6 @@ Note: the possession of administrative rights in a PolicyKit context is determin
       </string>
       <string id="org-freedesktop-login1-inhibit-handle-hibernate-key">Permission to allow applications to inhibit system handling of the hibernate key</string>
       <string id="org-freedesktop-login1-inhibit-handle-hibernate-key_Help">The policy restricts the ability to allow applications to inhibit system handling of the hibernate key
-
-Authentication is required for an application to inhibit system handling of the hibernate key.
 
 Disabled/Unconfigured — restrictions are defined by system parameters.
 
@@ -793,8 +735,6 @@ The "Block" option prevents the user from changing this setting. Blocking a poli
       <string id="org-freedesktop-login1-inhibit-handle-hibernate-key-user">Permission to allow applications to inhibit system handling of the hibernate key</string>
       <string id="org-freedesktop-login1-inhibit-handle-hibernate-key-user_Help">The policy restricts the ability to allow applications to inhibit system handling of the hibernate key
 
-Authentication is required for an application to inhibit system handling of the hibernate key.
-
 Disabled/Unconfigured — restrictions are defined by system parameters.
 
 Enabled — restriction with defined rights;
@@ -818,8 +758,6 @@ Note: the possession of administrative rights in a PolicyKit context is determin
       </string>
       <string id="org-freedesktop-login1-inhibit-handle-lid-switch">Permission to allow applications to inhibit system handling of the lid switch</string>
       <string id="org-freedesktop-login1-inhibit-handle-lid-switch_Help">The policy restricts the ability to allow applications to inhibit system handling of the lid switch
-
-Authentication is required for an application to inhibit system handling of the lid switch.
 
 Disabled/Unconfigured — restrictions are defined by system parameters.
 
@@ -847,8 +785,6 @@ The "Block" option prevents the user from changing this setting. Blocking a poli
       <string id="org-freedesktop-login1-inhibit-handle-lid-switch-user">Permission to allow applications to inhibit system handling of the lid switch</string>
       <string id="org-freedesktop-login1-inhibit-handle-lid-switch-user_Help">The policy restricts the ability to allow applications to inhibit system handling of the lid switch
 
-Authentication is required for an application to inhibit system handling of the lid switch.
-
 Disabled/Unconfigured — restrictions are defined by system parameters.
 
 Enabled — restriction with defined rights;
@@ -872,8 +808,6 @@ Note: the possession of administrative rights in a PolicyKit context is determin
       </string>
       <string id="org-freedesktop-login1-inhibit-handle-power-key">Permission to allow applications to inhibit system handling of the power key</string>
       <string id="org-freedesktop-login1-inhibit-handle-power-key_Help">The policy restricts the ability to allow applications to inhibit system handling of the power key
-
-Authentication is required for an application to inhibit system handling of the power key.
 
 Disabled/Unconfigured — restrictions are defined by system parameters.
 
@@ -901,8 +835,6 @@ The "Block" option prevents the user from changing this setting. Blocking a poli
       <string id="org-freedesktop-login1-inhibit-handle-power-key-user">Permission to allow applications to inhibit system handling of the power key</string>
       <string id="org-freedesktop-login1-inhibit-handle-power-key-user_Help">The policy restricts the ability to allow applications to inhibit system handling of the power key
 
-Authentication is required for an application to inhibit system handling of the power key.
-
 Disabled/Unconfigured — restrictions are defined by system parameters.
 
 Enabled — restriction with defined rights;
@@ -926,8 +858,6 @@ Note: the possession of administrative rights in a PolicyKit context is determin
       </string>
       <string id="org-freedesktop-login1-inhibit-handle-reboot-key">Permission to allow applications to inhibit system handling of the reboot key</string>
       <string id="org-freedesktop-login1-inhibit-handle-reboot-key_Help">The policy restricts the ability to allow applications to inhibit system handling of the reboot key
-
-Authentication is required for an application to inhibit system handling of the reboot key.
 
 Disabled/Unconfigured — restrictions are defined by system parameters.
 
@@ -955,8 +885,6 @@ The "Block" option prevents the user from changing this setting. Blocking a poli
       <string id="org-freedesktop-login1-inhibit-handle-reboot-key-user">Permission to allow applications to inhibit system handling of the reboot key</string>
       <string id="org-freedesktop-login1-inhibit-handle-reboot-key-user_Help">The policy restricts the ability to allow applications to inhibit system handling of the reboot key
 
-Authentication is required for an application to inhibit system handling of the reboot key.
-
 Disabled/Unconfigured — restrictions are defined by system parameters.
 
 Enabled — restriction with defined rights;
@@ -980,8 +908,6 @@ Note: the possession of administrative rights in a PolicyKit context is determin
       </string>
       <string id="org-freedesktop-login1-inhibit-handle-suspend-key">Permission to allow applications to inhibit system handling of the suspend key</string>
       <string id="org-freedesktop-login1-inhibit-handle-suspend-key_Help">The policy restricts the ability to allow applications to inhibit system handling of the suspend key
-
-Authentication is required for an application to inhibit system handling of the suspend key.
 
 Disabled/Unconfigured — restrictions are defined by system parameters.
 
@@ -1009,8 +935,6 @@ The "Block" option prevents the user from changing this setting. Blocking a poli
       <string id="org-freedesktop-login1-inhibit-handle-suspend-key-user">Permission to allow applications to inhibit system handling of the suspend key</string>
       <string id="org-freedesktop-login1-inhibit-handle-suspend-key-user_Help">The policy restricts the ability to allow applications to inhibit system handling of the suspend key
 
-Authentication is required for an application to inhibit system handling of the suspend key.
-
 Disabled/Unconfigured — restrictions are defined by system parameters.
 
 Enabled — restriction with defined rights;
@@ -1034,8 +958,6 @@ Note: the possession of administrative rights in a PolicyKit context is determin
       </string>
       <string id="org-freedesktop-login1-lock-sessions">Permission to lock or unlock active sessions</string>
       <string id="org-freedesktop-login1-lock-sessions_Help">The policy restricts the ability to lock or unlock active sessions
-
-Authentication is required to lock or unlock active sessions.
 
 Disabled/Unconfigured — restrictions are defined by system parameters.
 
@@ -1063,8 +985,6 @@ The "Block" option prevents the user from changing this setting. Blocking a poli
       <string id="org-freedesktop-login1-lock-sessions-user">Permission to lock or unlock active sessions</string>
       <string id="org-freedesktop-login1-lock-sessions-user_Help">The policy restricts the ability to lock or unlock active sessions
 
-Authentication is required to lock or unlock active sessions.
-
 Disabled/Unconfigured — restrictions are defined by system parameters.
 
 Enabled — restriction with defined rights;
@@ -1088,8 +1008,6 @@ Note: the possession of administrative rights in a PolicyKit context is determin
       </string>
       <string id="org-freedesktop-login1-manage">Permission to manage active sessions, users and seats</string>
       <string id="org-freedesktop-login1-manage_Help">The policy restricts the ability to manage active sessions, users and seats
-
-Authentication is required to manage active sessions, users and seats.
 
 Disabled/Unconfigured — restrictions are defined by system parameters.
 
@@ -1117,8 +1035,6 @@ The "Block" option prevents the user from changing this setting. Blocking a poli
       <string id="org-freedesktop-login1-manage-user">Permission to manage active sessions, users and seats</string>
       <string id="org-freedesktop-login1-manage-user_Help">The policy restricts the ability to manage active sessions, users and seats
 
-Authentication is required to manage active sessions, users and seats.
-
 Disabled/Unconfigured — restrictions are defined by system parameters.
 
 Enabled — restriction with defined rights;
@@ -1142,8 +1058,6 @@ Note: the possession of administrative rights in a PolicyKit context is determin
       </string>
       <string id="org-freedesktop-login1-power-off">Permission to power off the system</string>
       <string id="org-freedesktop-login1-power-off_Help">The policy restricts the ability to power off the system
-
-Authentication is required to power off the system.
 
 Disabled/Unconfigured — restrictions are defined by system parameters.
 
@@ -1171,8 +1085,6 @@ The "Block" option prevents the user from changing this setting. Blocking a poli
       <string id="org-freedesktop-login1-power-off-user">Permission to power off the system</string>
       <string id="org-freedesktop-login1-power-off-user_Help">The policy restricts the ability to power off the system
 
-Authentication is required to power off the system.
-
 Disabled/Unconfigured — restrictions are defined by system parameters.
 
 Enabled — restriction with defined rights;
@@ -1196,8 +1108,6 @@ Note: the possession of administrative rights in a PolicyKit context is determin
       </string>
       <string id="org-freedesktop-login1-power-off-ignore-inhibit">Permission to power off the system while an application is inhibiting this</string>
       <string id="org-freedesktop-login1-power-off-ignore-inhibit_Help">The policy restricts the ability to power off the system while an application is inhibiting this
-
-Authentication is required to power off the system while an application is inhibiting this.
 
 Disabled/Unconfigured — restrictions are defined by system parameters.
 
@@ -1225,8 +1135,6 @@ The "Block" option prevents the user from changing this setting. Blocking a poli
       <string id="org-freedesktop-login1-power-off-ignore-inhibit-user">Permission to power off the system while an application is inhibiting this</string>
       <string id="org-freedesktop-login1-power-off-ignore-inhibit-user_Help">The policy restricts the ability to power off the system while an application is inhibiting this
 
-Authentication is required to power off the system while an application is inhibiting this.
-
 Disabled/Unconfigured — restrictions are defined by system parameters.
 
 Enabled — restriction with defined rights;
@@ -1250,8 +1158,6 @@ Note: the possession of administrative rights in a PolicyKit context is determin
       </string>
       <string id="org-freedesktop-login1-power-off-multiple-sessions">Permission to power off the system while other users are logged in</string>
       <string id="org-freedesktop-login1-power-off-multiple-sessions_Help">The policy restricts the ability to power off the system while other users are logged in
-
-Authentication is required to power off the system while other users are logged in.
 
 Disabled/Unconfigured — restrictions are defined by system parameters.
 
@@ -1279,8 +1185,6 @@ The "Block" option prevents the user from changing this setting. Blocking a poli
       <string id="org-freedesktop-login1-power-off-multiple-sessions-user">Permission to power off the system while other users are logged in</string>
       <string id="org-freedesktop-login1-power-off-multiple-sessions-user_Help">The policy restricts the ability to power off the system while other users are logged in
 
-Authentication is required to power off the system while other users are logged in.
-
 Disabled/Unconfigured — restrictions are defined by system parameters.
 
 Enabled — restriction with defined rights;
@@ -1304,8 +1208,6 @@ Note: the possession of administrative rights in a PolicyKit context is determin
       </string>
       <string id="org-freedesktop-login1-reboot">Permission to reboot the system</string>
       <string id="org-freedesktop-login1-reboot_Help">The policy restricts the ability to reboot the system
-
-Authentication is required to reboot the system.
 
 Disabled/Unconfigured — restrictions are defined by system parameters.
 
@@ -1333,8 +1235,6 @@ The "Block" option prevents the user from changing this setting. Blocking a poli
       <string id="org-freedesktop-login1-reboot-user">Permission to reboot the system</string>
       <string id="org-freedesktop-login1-reboot-user_Help">The policy restricts the ability to reboot the system
 
-Authentication is required to reboot the system.
-
 Disabled/Unconfigured — restrictions are defined by system parameters.
 
 Enabled — restriction with defined rights;
@@ -1358,8 +1258,6 @@ Note: the possession of administrative rights in a PolicyKit context is determin
       </string>
       <string id="org-freedesktop-login1-reboot-ignore-inhibit">Permission to reboot the system while an application is inhibiting this</string>
       <string id="org-freedesktop-login1-reboot-ignore-inhibit_Help">The policy restricts the ability to reboot the system while an application is inhibiting this
-
-Authentication is required to reboot the system while an application is inhibiting this.
 
 Disabled/Unconfigured — restrictions are defined by system parameters.
 
@@ -1387,8 +1285,6 @@ The "Block" option prevents the user from changing this setting. Blocking a poli
       <string id="org-freedesktop-login1-reboot-ignore-inhibit-user">Permission to reboot the system while an application is inhibiting this</string>
       <string id="org-freedesktop-login1-reboot-ignore-inhibit-user_Help">The policy restricts the ability to reboot the system while an application is inhibiting this
 
-Authentication is required to reboot the system while an application is inhibiting this.
-
 Disabled/Unconfigured — restrictions are defined by system parameters.
 
 Enabled — restriction with defined rights;
@@ -1412,8 +1308,6 @@ Note: the possession of administrative rights in a PolicyKit context is determin
       </string>
       <string id="org-freedesktop-login1-reboot-multiple-sessions">Permission to reboot the system while other users are logged in</string>
       <string id="org-freedesktop-login1-reboot-multiple-sessions_Help">The policy restricts the ability to reboot the system while other users are logged in
-
-Authentication is required to reboot the system while other users are logged in.
 
 Disabled/Unconfigured — restrictions are defined by system parameters.
 
@@ -1441,8 +1335,6 @@ The "Block" option prevents the user from changing this setting. Blocking a poli
       <string id="org-freedesktop-login1-reboot-multiple-sessions-user">Permission to reboot the system while other users are logged in</string>
       <string id="org-freedesktop-login1-reboot-multiple-sessions-user_Help">The policy restricts the ability to reboot the system while other users are logged in
 
-Authentication is required to reboot the system while other users are logged in.
-
 Disabled/Unconfigured — restrictions are defined by system parameters.
 
 Enabled — restriction with defined rights;
@@ -1466,8 +1358,6 @@ Note: the possession of administrative rights in a PolicyKit context is determin
       </string>
       <string id="org-freedesktop-login1-set-reboot-parameter">Permission to set the reboot "reason" in the kernel</string>
       <string id="org-freedesktop-login1-set-reboot-parameter_Help">The policy restricts the ability to set the reboot "reason" in the kernel
-
-Authentication is required to set the reboot "reason" in the kernel.
 
 Disabled/Unconfigured — restrictions are defined by system parameters.
 
@@ -1495,8 +1385,6 @@ The "Block" option prevents the user from changing this setting. Blocking a poli
       <string id="org-freedesktop-login1-set-reboot-parameter-user">Permission to set the reboot "reason" in the kernel</string>
       <string id="org-freedesktop-login1-set-reboot-parameter-user_Help">The policy restricts the ability to set the reboot "reason" in the kernel
 
-Authentication is required to set the reboot "reason" in the kernel.
-
 Disabled/Unconfigured — restrictions are defined by system parameters.
 
 Enabled — restriction with defined rights;
@@ -1520,8 +1408,6 @@ Note: the possession of administrative rights in a PolicyKit context is determin
       </string>
       <string id="org-freedesktop-login1-set-reboot-to-boot-loader-entry">Permission to indicate to the boot loader to boot a specific entry</string>
       <string id="org-freedesktop-login1-set-reboot-to-boot-loader-entry_Help">The policy restricts the ability to indicate to the boot loader to boot a specific entry
-
-Authentication is required to indicate to the boot loader to boot into a specific boot loader entry.
 
 Disabled/Unconfigured — restrictions are defined by system parameters.
 
@@ -1549,8 +1435,6 @@ The "Block" option prevents the user from changing this setting. Blocking a poli
       <string id="org-freedesktop-login1-set-reboot-to-boot-loader-entry-user">Permission to indicate to the boot loader to boot a specific entry</string>
       <string id="org-freedesktop-login1-set-reboot-to-boot-loader-entry-user_Help">The policy restricts the ability to indicate to the boot loader to boot a specific entry
 
-Authentication is required to indicate to the boot loader to boot into a specific boot loader entry.
-
 Disabled/Unconfigured — restrictions are defined by system parameters.
 
 Enabled — restriction with defined rights;
@@ -1574,8 +1458,6 @@ Note: the possession of administrative rights in a PolicyKit context is determin
       </string>
       <string id="org-freedesktop-login1-set-reboot-to-boot-loader-menu">Permission to indicate to the boot loader to boot to the boot loader menu</string>
       <string id="org-freedesktop-login1-set-reboot-to-boot-loader-menu_Help">The policy restricts the ability to indicate to the boot loader to boot to the boot loader menu
-
-Authentication is required to indicate to the boot loader to boot to the boot loader menu.
 
 Disabled/Unconfigured — restrictions are defined by system parameters.
 
@@ -1603,8 +1485,6 @@ The "Block" option prevents the user from changing this setting. Blocking a poli
       <string id="org-freedesktop-login1-set-reboot-to-boot-loader-menu-user">Permission to indicate to the boot loader to boot to the boot loader menu</string>
       <string id="org-freedesktop-login1-set-reboot-to-boot-loader-menu-user_Help">The policy restricts the ability to indicate to the boot loader to boot to the boot loader menu
 
-Authentication is required to indicate to the boot loader to boot to the boot loader menu.
-
 Disabled/Unconfigured — restrictions are defined by system parameters.
 
 Enabled — restriction with defined rights;
@@ -1628,8 +1508,6 @@ Note: the possession of administrative rights in a PolicyKit context is determin
       </string>
       <string id="org-freedesktop-login1-set-reboot-to-firmware-setup">Permission to indicate to the firmware to boot to setup interface</string>
       <string id="org-freedesktop-login1-set-reboot-to-firmware-setup_Help">The policy restricts the ability to indicate to the firmware to boot to setup interface
-
-Authentication is required to indicate to the firmware to boot to setup interface.
 
 Disabled/Unconfigured — restrictions are defined by system parameters.
 
@@ -1657,8 +1535,6 @@ The "Block" option prevents the user from changing this setting. Blocking a poli
       <string id="org-freedesktop-login1-set-reboot-to-firmware-setup-user">Permission to indicate to the firmware to boot to setup interface</string>
       <string id="org-freedesktop-login1-set-reboot-to-firmware-setup-user_Help">The policy restricts the ability to indicate to the firmware to boot to setup interface
 
-Authentication is required to indicate to the firmware to boot to setup interface.
-
 Disabled/Unconfigured — restrictions are defined by system parameters.
 
 Enabled — restriction with defined rights;
@@ -1682,8 +1558,6 @@ Note: the possession of administrative rights in a PolicyKit context is determin
       </string>
       <string id="org-freedesktop-login1-set-self-linger">Permission to allow non-logged-in user to run programs</string>
       <string id="org-freedesktop-login1-set-self-linger_Help">The policy restricts the ability to allow non-logged-in user to run programs
-
-Explicit request is required to run programs as a non-logged-in user.
 
 Disabled/Unconfigured — restrictions are defined by system parameters.
 
@@ -1711,8 +1585,6 @@ The "Block" option prevents the user from changing this setting. Blocking a poli
       <string id="org-freedesktop-login1-set-self-linger-user">Permission to allow non-logged-in user to run programs</string>
       <string id="org-freedesktop-login1-set-self-linger-user_Help">The policy restricts the ability to allow non-logged-in user to run programs
 
-Explicit request is required to run programs as a non-logged-in user.
-
 Disabled/Unconfigured — restrictions are defined by system parameters.
 
 Enabled — restriction with defined rights;
@@ -1736,8 +1608,6 @@ Note: the possession of administrative rights in a PolicyKit context is determin
       </string>
       <string id="org-freedesktop-login1-set-user-linger">Permission to allow non-logged-in users to run programs</string>
       <string id="org-freedesktop-login1-set-user-linger_Help">The policy restricts the ability to allow non-logged-in users to run programs
-
-Authentication is required to run programs as a non-logged-in user.
 
 Disabled/Unconfigured — restrictions are defined by system parameters.
 
@@ -1765,8 +1635,6 @@ The "Block" option prevents the user from changing this setting. Blocking a poli
       <string id="org-freedesktop-login1-set-user-linger-user">Permission to allow non-logged-in users to run programs</string>
       <string id="org-freedesktop-login1-set-user-linger-user_Help">The policy restricts the ability to allow non-logged-in users to run programs
 
-Authentication is required to run programs as a non-logged-in user.
-
 Disabled/Unconfigured — restrictions are defined by system parameters.
 
 Enabled — restriction with defined rights;
@@ -1790,8 +1658,6 @@ Note: the possession of administrative rights in a PolicyKit context is determin
       </string>
       <string id="org-freedesktop-login1-set-wall-message">Permission to set a wall message</string>
       <string id="org-freedesktop-login1-set-wall-message_Help">The policy restricts the ability to set a wall message
-
-Authentication is required to set a wall message.
 
 Disabled/Unconfigured — restrictions are defined by system parameters.
 
@@ -1819,8 +1685,6 @@ The "Block" option prevents the user from changing this setting. Blocking a poli
       <string id="org-freedesktop-login1-set-wall-message-user">Permission to set a wall message</string>
       <string id="org-freedesktop-login1-set-wall-message-user_Help">The policy restricts the ability to set a wall message
 
-Authentication is required to set a wall message.
-
 Disabled/Unconfigured — restrictions are defined by system parameters.
 
 Enabled — restriction with defined rights;
@@ -1844,8 +1708,6 @@ Note: the possession of administrative rights in a PolicyKit context is determin
       </string>
       <string id="org-freedesktop-login1-suspend">Permission to suspend the system</string>
       <string id="org-freedesktop-login1-suspend_Help">The policy restricts the ability to suspend the system
-
-Authentication is required to suspend the system.
 
 Disabled/Unconfigured — restrictions are defined by system parameters.
 
@@ -1873,8 +1735,6 @@ The "Block" option prevents the user from changing this setting. Blocking a poli
       <string id="org-freedesktop-login1-suspend-user">Permission to suspend the system</string>
       <string id="org-freedesktop-login1-suspend-user_Help">The policy restricts the ability to suspend the system
 
-Authentication is required to suspend the system.
-
 Disabled/Unconfigured — restrictions are defined by system parameters.
 
 Enabled — restriction with defined rights;
@@ -1898,8 +1758,6 @@ Note: the possession of administrative rights in a PolicyKit context is determin
       </string>
       <string id="org-freedesktop-login1-suspend-ignore-inhibit">Permission to suspend the system while an application is inhibiting this</string>
       <string id="org-freedesktop-login1-suspend-ignore-inhibit_Help">The policy restricts the ability to suspend the system while an application is inhibiting this
-
-Authentication is required to suspend the system while an application is inhibiting this.
 
 Disabled/Unconfigured — restrictions are defined by system parameters.
 
@@ -1927,8 +1785,6 @@ The "Block" option prevents the user from changing this setting. Blocking a poli
       <string id="org-freedesktop-login1-suspend-ignore-inhibit-user">Permission to suspend the system while an application is inhibiting this</string>
       <string id="org-freedesktop-login1-suspend-ignore-inhibit-user_Help">The policy restricts the ability to suspend the system while an application is inhibiting this
 
-Authentication is required to suspend the system while an application is inhibiting this.
-
 Disabled/Unconfigured — restrictions are defined by system parameters.
 
 Enabled — restriction with defined rights;
@@ -1952,8 +1808,6 @@ Note: the possession of administrative rights in a PolicyKit context is determin
       </string>
       <string id="org-freedesktop-login1-suspend-multiple-sessions">Permission to suspend the system while other users are logged in</string>
       <string id="org-freedesktop-login1-suspend-multiple-sessions_Help">The policy restricts the ability to suspend the system while other users are logged in
-
-Authentication is required to suspend the system while other users are logged in.
 
 Disabled/Unconfigured — restrictions are defined by system parameters.
 
@@ -1980,8 +1834,6 @@ The "Block" option prevents the user from changing this setting. Blocking a poli
       </string>
       <string id="org-freedesktop-login1-suspend-multiple-sessions-user">Permission to suspend the system while other users are logged in</string>
       <string id="org-freedesktop-login1-suspend-multiple-sessions-user_Help">The policy restricts the ability to suspend the system while other users are logged in
-
-Authentication is required to suspend the system while other users are logged in.
 
 Disabled/Unconfigured — restrictions are defined by system parameters.
 

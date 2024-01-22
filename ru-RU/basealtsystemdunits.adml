@@ -25,8 +25,8 @@
 Отключено — перевести юнит в состояние «выключено» (выполнить команду systemctl disable acpid.service)
       </string>
 
-      <string id="ahttpd_service">Сервер frotend веб-интерфейса Alterator</string>
-      <string id="ahttpd_service_help">Эта политика определяет, включен ли systemd юнит веб-сервера frotend WWW интерфейса Alterator
+      <string id="ahttpd_service">Сервер frontend веб-интерфейса Alterator</string>
+      <string id="ahttpd_service_help">Эта политика определяет, включен ли systemd юнит веб-сервера frontend WWW интерфейса Alterator
 
 Не сконфигурировано — не изменять системное состояние юнита
 

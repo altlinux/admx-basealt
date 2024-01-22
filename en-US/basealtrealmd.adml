@@ -9,8 +9,6 @@
       <string id="org-freedesktop-realmd-configure-realm">Permission to join machine to realm</string>
       <string id="org-freedesktop-realmd-configure-realm_Help">The policy manages the restriction of the machine's ability to join realm
 
-Authentication is required to join this machine to a realm or domain.
-
 Disabled/Unconfigured — restrictions are defined by system parameters.
 
 Enabled — restriction with defined rights;
@@ -37,8 +35,6 @@ The "Block" option prevents the user from changing this setting. Blocking a poli
       <string id="org-freedesktop-realmd-configure-realm-user">Permission to join machine to realm</string>
       <string id="org-freedesktop-realmd-configure-realm-user_Help">The policy manages the restriction of the machine's ability to join realm
 
-Authentication is required to join this machine to a realm or domain.
-
 Disabled/Unconfigured — restrictions are defined by system parameters.
 
 Enabled — restriction with defined rights;
@@ -62,8 +58,6 @@ Note: the possession of administrative rights in a PolicyKit context is determin
       </string>
       <string id="org-freedesktop-realmd-deconfigure-realm">Permission to remove machine from realm</string>
       <string id="org-freedesktop-realmd-deconfigure-realm_Help">The policy restricts the ability to remove a machine from the realm
-
-Authentication is required to remove this computer from a realm or domain.
 
 Disabled/Unconfigured — restrictions are defined by system parameters.
 
@@ -91,8 +85,6 @@ The "Block" option prevents the user from changing this setting. Blocking a poli
       <string id="org-freedesktop-realmd-deconfigure-realm-user">Permission to remove machine from realm</string>
       <string id="org-freedesktop-realmd-deconfigure-realm-user_Help">The policy restricts the ability to remove a machine from the realm
 
-Authentication is required to remove this computer from a realm or domain.
-
 Disabled/Unconfigured — restrictions are defined by system parameters.
 
 Enabled — restriction with defined rights;
@@ -116,8 +108,6 @@ Note: the possession of administrative rights in a PolicyKit context is determin
       </string>
       <string id="org-freedesktop-realmd-discover-realm">Permission to discover realm</string>
       <string id="org-freedesktop-realmd-discover-realm_Help">The policy limits the possibility of discovering the realm
-
-Authentication is required to discover a kerberos realm.
 
 Disabled/Unconfigured — restrictions are defined by system parameters.
 
@@ -145,8 +135,6 @@ The "Block" option prevents the user from changing this setting. Blocking a poli
       <string id="org-freedesktop-realmd-discover-realm-user">Permission to discover realm</string>
       <string id="org-freedesktop-realmd-discover-realm-user_Help">The policy limits the possibility of discovering the realm
 
-Authentication is required to discover a kerberos realm.
-
 Disabled/Unconfigured — restrictions are defined by system parameters.
 
 Enabled — restriction with defined rights;
@@ -170,8 +158,6 @@ Note: the possession of administrative rights in a PolicyKit context is determin
       </string>
       <string id="org-freedesktop-realmd-login-policy">Permission to change login policy</string>
       <string id="org-freedesktop-realmd-login-policy_Help">The policy restricts the ability to change the logon policy
-
-Authentication is required to change the policy of who can log in on this computer.
 
 Disabled/Unconfigured — restrictions are defined by system parameters.
 
@@ -198,8 +184,6 @@ The "Block" option prevents the user from changing this setting. Blocking a poli
       </string>
       <string id="org-freedesktop-realmd-login-policy-user">Permission to change login policy</string>
       <string id="org-freedesktop-realmd-login-policy-user_Help">The policy restricts the ability to change the logon policy
-
-Authentication is required to change the policy of who can log in on this computer.
 
 Disabled/Unconfigured — restrictions are defined by system parameters.
 

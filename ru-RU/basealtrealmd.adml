@@ -2,15 +2,12 @@
 <!--  (c) 2023 BaseALT, Ltd.  -->
 <policyDefinitionResources xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.microsoft.com/GroupPolicy/2006/07/PolicyDefinitions" revision="1.0" schemaVersion="1.0">
   <displayName>Определение политик Realmd операционной системы Альт</displayName>
-  <description>Этот файл содержит определения polkit-политик для управления службой Realmd в операционной системе Альт.
-</description>
+  <description>Этот файл содержит определения polkit-политик для управления службой Realmd в операционной системе Альт.</description>
   <resources>
     <stringTable>
 
       <string id="org-freedesktop-realmd-configure-realm">Ограничение возможности присоединения машины к области</string>
       <string id="org-freedesktop-realmd-configure-realm_Help">Политика управляет ограничением возможности присоединения машины к области
-
-Для присоединения машины к области или домену требуется аутентификация.
 
 Отключено/Не сконфигурировано — ограничения определяются системными параметрами.
 
@@ -38,8 +35,6 @@
       <string id="org-freedesktop-realmd-configure-realm-user">Ограничение возможности присоединения машины к области</string>
       <string id="org-freedesktop-realmd-configure-realm-user_Help">Политика управляет ограничением возможности присоединения машины к области
 
-Для присоединения машины к области или домену требуется аутентификация.
-
 Отключено/Не сконфигурировано — ограничения определяются системными параметрами.
 
 Включено — ограничение с установленными правами;
@@ -63,8 +58,6 @@
       </string>
       <string id="org-freedesktop-realmd-deconfigure-realm">Ограничение возможности удаления машины из области</string>
       <string id="org-freedesktop-realmd-deconfigure-realm_Help">Политика ограничивает возможность удаления машины из области
-
-Для удаления этого компьютера из области или домена требуется аутентификация.
 
 Отключено/Не сконфигурировано — ограничения определяются системными параметрами.
 
@@ -92,8 +85,6 @@
       <string id="org-freedesktop-realmd-deconfigure-realm-user">Ограничение возможности удаления машины из области</string>
       <string id="org-freedesktop-realmd-deconfigure-realm-user_Help">Политика ограничивает возможность удаления машины из области
 
-Для удаления этого компьютера из области или домена требуется аутентификация.
-
 Отключено/Не сконфигурировано — ограничения определяются системными параметрами.
 
 Включено — ограничение с установленными правами;
@@ -116,9 +107,7 @@
 
       </string>
       <string id="org-freedesktop-realmd-discover-realm">Ограничение возможности обнаружения области</string>
-      <string id="org-freedesktop-realmd-discover-realm_Help">Политика ограничивает возможность обнаружения области
-
-Для обнаружения области kerberos требуется аутентификация.
+      <string id="org-freedesktop-realmd-discover-realm_Help">Политика ограничивает возможность обнаружения области kerberos
 
 Отключено/Не сконфигурировано — ограничения определяются системными параметрами.
 
@@ -144,9 +133,7 @@
 
       </string>
       <string id="org-freedesktop-realmd-discover-realm-user">Ограничение возможности обнаружения области</string>
-      <string id="org-freedesktop-realmd-discover-realm-user_Help">Политика ограничивает возможность обнаружения области
-
-Для обнаружения области kerberos требуется аутентификация.
+      <string id="org-freedesktop-realmd-discover-realm-user_Help">Политика ограничивает возможность обнаружения области kerberos
 
 Отключено/Не сконфигурировано — ограничения определяются системными параметрами.
 
@@ -170,9 +157,7 @@
 
       </string>
       <string id="org-freedesktop-realmd-login-policy">Ограничение возможности изменения политики входа в систему</string>
-      <string id="org-freedesktop-realmd-login-policy_Help">Политика  ограничивает возможность изменения политики входа в систему
-
-Для изменения политики входа в систему на данном компьютере требуется аутентификация.
+      <string id="org-freedesktop-realmd-login-policy_Help">Политика ограничивает возможность изменения политики входа в систему
 
 Отключено/Не сконфигурировано — ограничения определяются системными параметрами.
 
@@ -198,9 +183,7 @@
 
       </string>
       <string id="org-freedesktop-realmd-login-policy-user">Ограничение возможности изменения политики входа в систему</string>
-      <string id="org-freedesktop-realmd-login-policy-user_Help">Политика  ограничивает возможность изменения политики входа в систему
-
-Для изменения политики входа в систему на данном компьютере требуется аутентификация.
+      <string id="org-freedesktop-realmd-login-policy-user_Help">Политика ограничивает возможность изменения политики входа в систему
 
 Отключено/Не сконфигурировано — ограничения определяются системными параметрами.
 
