@@ -10,9 +10,7 @@
       <string id="ALT_PackageKit_Help">Customize software installation from a package repository.</string>
 
       <string id="org-freedesktop-packagekit-package-install">Permission to install packages</string>
-      <string id="org-freedesktop-packagekit-package-install_help">Permission to install packages
-
-This policy grants or restricts users the right to install packages through the PackageKit package management interface.
+      <string id="org-freedesktop-packagekit-package-install_help">This policy grants or restricts users the right to install packages through the PackageKit package management interface.
 
 Disabled/Not configured — Permissions are determined by system settings. Default is «Auth_admin»
 
@@ -41,9 +39,7 @@ The "Block" option prevents the user from changing this setting. Blocking a poli
       </string>
 
       <string id="org-freedesktop-packagekit-package-install-user">Permission to install packages</string>
-      <string id="org-freedesktop-packagekit-package-install-user_help">Permission to install packages
-
-This policy grants or restricts users the right to install packages through the PackageKit package management interface.
+      <string id="org-freedesktop-packagekit-package-install-user_help">This policy grants or restricts users the right to install packages through the PackageKit package management interface.
 
 Disabled/Not configured — Permissions are determined by system settings. Default is «Auth_admin»
 
@@ -70,9 +66,7 @@ Action example: pkcon install "package_name"
       </string>
 
       <string id="org-freedesktop-packagekit-package-remove">Permission to remove packages</string>
-      <string id="org-freedesktop-packagekit-package-remove_help">Permission to remove packages
-
-This policy grants or restricts users the right to uninstall packages through the PackageKit package management interface.
+      <string id="org-freedesktop-packagekit-package-remove_help">This policy grants or restricts users the right to uninstall packages through the PackageKit package management interface.
 
 Disabled/Not configured — Permissions are determined by system settings. Default is «Auth_admin»
 
@@ -101,9 +95,7 @@ The "Block" option prevents the user from changing this setting. Blocking a poli
       </string>
 
       <string id="org-freedesktop-packagekit-package-remove-user">Permission to remove packages</string>
-      <string id="org-freedesktop-packagekit-package-remove-user_help">Permission to remove packages
-
-This policy grants or restricts users the right to uninstall packages through the PackageKit package management interface.
+      <string id="org-freedesktop-packagekit-package-remove-user_help">This policy grants or restricts users the right to uninstall packages through the PackageKit package management interface.
 
 Disabled/Not configured — Permissions are determined by system settings. Default is «Auth_admin»
 
@@ -130,9 +122,7 @@ Action example: pkcon remove "package_name"
       </string>
 
       <string id="org-freedesktop-packagekit-system-update">Permission to update packages</string>
-      <string id="org-freedesktop-packagekit-system-update_help">Permission to update packages
-
-This policy grants or restricts users the right to update packages installed on the system through the PackageKit package management interface.
+      <string id="org-freedesktop-packagekit-system-update_help">This policy grants or restricts users the right to update packages installed on the system through the PackageKit package management interface.
 
 Disabled/Not configured — Permissions are determined by system settings. Default is «Auth_admin»
 
@@ -161,9 +151,7 @@ The "Block" option prevents the user from changing this setting. Blocking a poli
       </string>
 
       <string id="org-freedesktop-packagekit-system-update-user">Permission to update packages</string>
-      <string id="org-freedesktop-packagekit-system-update-user_help">Permission to update packages
-
-Disabled/Not configured — Permissions are determined by system settings. Default is «Auth_admin»
+      <string id="org-freedesktop-packagekit-system-update-user_help">Disabled/Not configured — Permissions are determined by system settings. Default is «Auth_admin»
 
 Disabled/Not configured — permissions are determined by system settings — default settings for polkit actions;
 
@@ -190,9 +178,7 @@ Action example: pkcon update
       </string>
 
       <string id="org-freedesktop-packagekit-system-sources-refresh">Permission to update system package sources</string>
-      <string id="org-freedesktop-packagekit-system-sources-refresh_help">Permission to update system package sources
-
-This policy grants or restricts users the right to update system package sources using the PackageKit package management interface.
+      <string id="org-freedesktop-packagekit-system-sources-refresh_help">This policy grants or restricts users the right to update system package sources using the PackageKit package management interface.
 
 Disabled/Not configured — Permissions are determined by system settings. Default is «Auth_admin»
 
@@ -221,9 +207,7 @@ The "Block" option prevents the user from changing this setting. Blocking a poli
       </string>
 
       <string id="org-freedesktop-packagekit-system-sources-refresh-user">Permission to update system package sources</string>
-      <string id="org-freedesktop-packagekit-system-sources-refresh-user_help">Permission to update system package sources
-
-This policy grants or restricts users the right to update system package sources using the PackageKit package management interface.
+      <string id="org-freedesktop-packagekit-system-sources-refresh-user_help">This policy grants or restricts users the right to update system package sources using the PackageKit package management interface.
 
 Disabled/Not configured — Permissions are determined by system settings. Default is «Auth_admin»
 
@@ -250,9 +234,7 @@ Action example: pkcon refresh
       </string>
 
       <string id="org-freedesktop-packagekit-repair-system">Permission to restore packages on the system</string>
-      <string id="org-freedesktop-packagekit-repair-system_help">Permission to restore packages on the system
-
-This policy grants or restricts users the right to restore the package system if it has problems, such as missing dependencies, through the PackageKit package management interface.
+      <string id="org-freedesktop-packagekit-repair-system_help">This policy grants or restricts users the right to restore the package system if it has problems, such as missing dependencies, through the PackageKit package management interface.
 
 Disabled/Not configured — Permissions are determined by system settings. Default is «Auth_admin»
 
@@ -281,9 +263,7 @@ The "Block" option prevents the user from changing this setting. Blocking a poli
       </string>
 
       <string id="org-freedesktop-packagekit-repair-system-user">Permission to restore packages on the system</string>
-      <string id="org-freedesktop-packagekit-repair-system-user_help">Permission to restore packages on the system
-
-This policy grants or restricts users the right to restore the package system if it has problems, such as missing dependencies, through the PackageKit package management interface.
+      <string id="org-freedesktop-packagekit-repair-system-user_help">This policy grants or restricts users the right to restore the package system if it has problems, such as missing dependencies, through the PackageKit package management interface.
 
 Disabled/Not configured — Permissions are determined by system settings. Default is «Auth_admin»
 
@@ -310,9 +290,7 @@ Action example: pkcon repair
       </string>
 
       <string id="org-freedesktop-packagekit-system-sources-configure">Permission to edit batch sources </string>
-      <string id="org-freedesktop-packagekit-system-sources-configure_help">Permission to edit batch sources
-
-This policy grants or restricts users to edit package sources on the system through the PackageKit package management interface.
+      <string id="org-freedesktop-packagekit-system-sources-configure_help">This policy grants or restricts users to edit package sources on the system through the PackageKit package management interface.
 
 Disabled/Not configured — Permissions are determined by system settings. Default is «Auth_admin»
 
@@ -339,9 +317,7 @@ The "Block" option prevents the user from changing this setting. Blocking a poli
       </string>
 
       <string id="org-freedesktop-packagekit-system-sources-configure-user">Permission to edit batch sources </string>
-      <string id="org-freedesktop-packagekit-system-sources-configure-user_help">Permission to edit batch sources
-
-This policy grants or restricts users to edit package sources on the system through the PackageKit package management interface.
+      <string id="org-freedesktop-packagekit-system-sources-configure-user_help">This policy grants or restricts users to edit package sources on the system through the PackageKit package management interface.
 
 Disabled/Not configured — Permissions are determined by system settings. Default is «Auth_admin»
 
@@ -366,9 +342,7 @@ Note: the possession of administrative rights in the context of PolicyKit is det
       </string>
 
       <string id="org-freedesktop-packagekit-package-install-untrusted">Permission to install unverified packages</string>
-      <string id="org-freedesktop-packagekit-package-install-untrusted_help">Permission to install unverified packages
-
-This policy grants or restricts user rights to install untrusted or unverified packages for external PackageKit package management.
+      <string id="org-freedesktop-packagekit-package-install-untrusted_help">This policy grants or restricts user rights to install untrusted or unverified packages for external PackageKit package management.
 
 Disabled/Not configured — Permissions are determined by system settings. Default is «Auth_admin»
 
@@ -395,9 +369,7 @@ The "Block" option prevents the user from changing this setting. Blocking a poli
       </string>
 
       <string id="org-freedesktop-packagekit-package-install-untrusted-user">Permission to install unverified packages</string>
-      <string id="org-freedesktop-packagekit-package-install-untrusted-user_help">Permission to install unverified packages
-
-This policy grants or restricts user rights to install untrusted or unverified packages for external PackageKit package management.
+      <string id="org-freedesktop-packagekit-package-install-untrusted-user_help">This policy grants or restricts user rights to install untrusted or unverified packages for external PackageKit package management.
 
 Disabled/Not configured — Permissions are determined by system settings. Default is «Auth_admin»
 
@@ -422,9 +394,7 @@ Note: the possession of administrative rights in the context of PolicyKit is det
       </string>
 
       <string id="org-freedesktop-packagekit-package-reinstall">Permission to install unverified packages</string>
-      <string id="org-freedesktop-packagekit-package-reinstall_help">Permission to install unverified packages
-
-This policy grants or restricts users the right to reinstall packages through the PackageKit package management interface.
+      <string id="org-freedesktop-packagekit-package-reinstall_help">This policy grants or restricts users the right to reinstall packages through the PackageKit package management interface.
 
 Disabled/Not configured — Permissions are determined by system settings. Default is «Auth_admin»
 
@@ -451,9 +421,7 @@ The "Block" option prevents the user from changing this setting. Blocking a poli
       </string>
 
       <string id="org-freedesktop-packagekit-package-reinstall-user">Permission to install unverified packages</string>
-      <string id="org-freedesktop-packagekit-package-reinstall-user_help">Permission to install unverified packages
-
-This policy grants or restricts users the right to reinstall packages through the PackageKit package management interface.
+      <string id="org-freedesktop-packagekit-package-reinstall-user_help">This policy grants or restricts users the right to reinstall packages through the PackageKit package management interface.
 
 Disabled/Not configured — Permissions are determined by system settings. Default is «Auth_admin»
 
@@ -478,9 +446,7 @@ Note: the possession of administrative rights in the context of PolicyKit is det
       </string>
 
       <string id="org-freedesktop-packagekit-package-eula-accept">Permission to accept the license agreement</string>
-      <string id="org-freedesktop-packagekit-package-eula-accept_help">Permission to accept the license agreement
-
-This policy grants or restricts the right to accept the software user agreement through the PackageKit package management interface.
+      <string id="org-freedesktop-packagekit-package-eula-accept_help">This policy grants or restricts the right to accept the software user agreement through the PackageKit package management interface.
 
 Disabled/Not configured — Permissions are determined by system settings. Default is «Auth_admin»
 
@@ -507,9 +473,7 @@ The "Block" option prevents the user from changing this setting. Blocking a poli
       </string>
 
       <string id="org-freedesktop-packagekit-package-eula-accept-user">Permission to accept the license agreement</string>
-      <string id="org-freedesktop-packagekit-package-eula-accept-user_help">Permission to accept the license agreement
-
-This policy grants or restricts the right to accept the software user agreement through the PackageKit package management interface.
+      <string id="org-freedesktop-packagekit-package-eula-accept-user_help">This policy grants or restricts the right to accept the software user agreement through the PackageKit package management interface.
 
 Disabled/Not configured — Permissions are determined by system settings. Default is «Auth_admin»
 
@@ -534,9 +498,7 @@ Note: the possession of administrative rights in the context of PolicyKit is det
       </string>
 
       <string id="org-freedesktop-packagekit-system-trust-signing-key">Permission to add the signing key</string>
-      <string id="org-freedesktop-packagekit-system-trust-signing-key_help">Permission to add the signing key
-
-This policy grants or restricts users the right to add the signing key to the list of trusted keys in the system through the PackageKit package management interface.
+      <string id="org-freedesktop-packagekit-system-trust-signing-key_help">This policy grants or restricts users the right to add the signing key to the list of trusted keys in the system through the PackageKit package management interface.
 
 Disabled/Not configured — Permissions are determined by system settings. Default is «Auth_admin»
 
@@ -563,9 +525,7 @@ The "Block" option prevents the user from changing this setting. Blocking a poli
       </string>
 
       <string id="org-freedesktop-packagekit-system-trust-signing-key-user">Permission to add the signing key</string>
-      <string id="org-freedesktop-packagekit-system-trust-signing-key-user_help">Permission to add the signing key
-
-This policy grants or restricts users the right to add the signing key to the list of trusted keys in the system through the PackageKit package management interface.
+      <string id="org-freedesktop-packagekit-system-trust-signing-key-user_help">This policy grants or restricts users the right to add the signing key to the list of trusted keys in the system through the PackageKit package management interface.
 
 Disabled/Not configured — Permissions are determined by system settings. Default is «Auth_admin»
 
