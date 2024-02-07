@@ -141,7 +141,7 @@ Cтрока типа rgb(0,0,0).
       <string id="org-mate-screensaver-logout-delay">Время до выхода из сеанса</string>
       <string id="org-mate-screensaver-logout-delay_help">Устанавливает количество минут, по истечении которых после активации хранителя экрана, пользователю будет предоставлена возможность выхода из сеанса.
 
-Этот параметр имеет смысл только при активированных параметрах «Включение хранителя экрана» и «Выход из системы после блокировки».
+Этот параметр имеет смысл только при активированных параметрах «Включение хранителя экрана» и «Выход из сеанса после блокировки».
 
 Опция «Блокировать» — (доступна только для машинной политики) запрещает изменение данной настройки пользователем. Блокировка политики делает её приоритетнее аналогичной политики для пользователя.
 
@@ -167,8 +167,8 @@ Cтрока типа rgb(0,0,0).
       <string id="org-mate-screensaver-user-switch-enabled-true">Включено</string>
       <string id="org-mate-screensaver-user-switch-enabled-false">Отключено</string>
 
-      <string id="org-mate-screensaver-logout-enabled">Выход из системы после блокировки</string>
-      <string id="org-mate-screensaver-logout-enabled_help">После некоторой задержки добавляет кнопку выхода из системы («Завершить сеанс») к диалогу разблокирования экрана. Время задержки указывается в параметре «Время выхода из сеанса».
+      <string id="org-mate-screensaver-logout-enabled">Выход из сеанса после блокировки</string>
+      <string id="org-mate-screensaver-logout-enabled_help">После некоторой задержки добавляет кнопку выхода из сеанса («Завершить сеанс») к диалогу разблокирования экрана. Время задержки указывается в параметре «Время выхода из сеанса».
 
 Этот параметр имеет смысл только при активированных параметрах «Включение хранителя экрана» и «Блокировка компьютера».
 
@@ -697,12 +697,12 @@ Cтрока типа rgb(0,0,0).
       </presentation>
 
       <presentation id="OrgMateScreensaverLogoutDelayUser-pr">
-        <text>Интервал в минутах между активацией хранителя экрана и появлением диалога выхода из системы при активации</text>
+        <text>Интервал в минутах между активацией хранителя экрана и появлением диалога выхода из сеанса при активации</text>
         <decimalTextBox refId="OrgMateScreensaverLogoutDelay_setter" defaultValue="3">Время в минутах:</decimalTextBox>
       </presentation>
 
       <presentation id="OrgMateScreensaverLogoutDelayMachine-pr">
-        <text>Интервал в минутах между активацией хранителя экрана и появлением диалога выхода из системы при активации</text>
+        <text>Интервал в минутах между активацией хранителя экрана и появлением диалога выхода из сеанса при активации</text>
         <decimalTextBox refId="OrgMateScreensaverLogoutDelay_setter" defaultValue="3">Время в минутах:</decimalTextBox>
         <checkBox refId="OrgMateScreensaverLogoutDelay_setter_blocker">Блокировать</checkBox>
       </presentation>
