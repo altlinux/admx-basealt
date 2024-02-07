@@ -686,23 +686,23 @@ The "Block" option — (available only for machine policy) prevents the user fro
       </presentation>
 
       <presentation id="OrgMateScreensaverLockDelayUser-pr">
-        <text>The interval in minutes between activating the screen saver and the appearance of the logout dialog when activated.</text>
+        <text>Number of minutes after which the screen will be locked after activating the screen saver</text>
         <decimalTextBox refId="OrgMateScreensaverLockDelay_setter" defaultValue="2">Time in minutes</decimalTextBox>
       </presentation>
 
       <presentation id="OrgMateScreensaverLockDelayMachine-pr">
-        <text>The interval in minutes between activating the screen saver and the appearance of the logout dialog when activated.</text>
+        <text>Number of minutes after which the screen will be locked after activating the screen saver</text>
         <decimalTextBox refId="OrgMateScreensaverLockDelay_setter" defaultValue="2">Time in minutes:</decimalTextBox>
         <checkBox refId="OrgMateScreensaverLockDelay_setter_blocker">Block</checkBox>
       </presentation>
 
       <presentation id="OrgMateScreensaverLogoutDelayUser-pr">
-        <text>Number of minutes after which the screen will be locked after activating the screen saver</text>
+        <text>The interval in minutes between activating the screen saver and the appearance of the logout dialog when activated</text>
         <decimalTextBox refId="OrgMateScreensaverLogoutDelay_setter" defaultValue="3">Time in minutes:</decimalTextBox>
       </presentation>
 
       <presentation id="OrgMateScreensaverLogoutDelayMachine-pr">
-        <text>Number of minutes after which the screen will be locked after activating the screen saver</text>
+        <text>The interval in minutes between activating the screen saver and the appearance of the logout dialog when activated</text>
         <decimalTextBox refId="OrgMateScreensaverLogoutDelay_setter" defaultValue="3">Time in minutes:</decimalTextBox>
         <checkBox refId="OrgMateScreensaverLogoutDelay_setter_blocker">Block</checkBox>
       </presentation>

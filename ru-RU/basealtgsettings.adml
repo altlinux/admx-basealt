@@ -686,23 +686,23 @@ Cтрока типа rgb(0,0,0).
       </presentation>
 
       <presentation id="OrgMateScreensaverLockDelayUser-pr">
-        <text>Интервал в минутах между активацией хранителя экрана и появлением диалога выхода из системы при активации.</text>
+        <text>Количество минут, по истечении которого после активации хранителя экрана, экран будет заблокирован</text>
         <decimalTextBox refId="OrgMateScreensaverLockDelay_setter" defaultValue="2">Время в минутах</decimalTextBox>
       </presentation>
 
       <presentation id="OrgMateScreensaverLockDelayMachine-pr">
-        <text>Интервал в минутах между активацией хранителя экрана и появлением диалога выхода из системы при активации.</text>
+        <text>Количество минут, по истечении которого после активации хранителя экрана, экран будет заблокирован</text>
         <decimalTextBox refId="OrgMateScreensaverLockDelay_setter" defaultValue="2">Время в минутах:</decimalTextBox>
         <checkBox refId="OrgMateScreensaverLockDelay_setter_blocker">Блокировать</checkBox>
       </presentation>
 
       <presentation id="OrgMateScreensaverLogoutDelayUser-pr">
-        <text>Количество минут, по истечении которого после активации хранителя экрана, экран будет заблокирован</text>
+        <text>Интервал в минутах между активацией хранителя экрана и появлением диалога выхода из системы при активации</text>
         <decimalTextBox refId="OrgMateScreensaverLogoutDelay_setter" defaultValue="3">Время в минутах:</decimalTextBox>
       </presentation>
 
       <presentation id="OrgMateScreensaverLogoutDelayMachine-pr">
-        <text>Количество минут, по истечении которого после активации хранителя экрана, экран будет заблокирован</text>
+        <text>Интервал в минутах между активацией хранителя экрана и появлением диалога выхода из системы при активации</text>
         <decimalTextBox refId="OrgMateScreensaverLogoutDelay_setter" defaultValue="3">Время в минутах:</decimalTextBox>
         <checkBox refId="OrgMateScreensaverLogoutDelay_setter_blocker">Блокировать</checkBox>
       </presentation>
