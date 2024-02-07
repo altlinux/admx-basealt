@@ -811,7 +811,7 @@ SSSD — использовать метод проверки подлиннос
     </stringTable>
     <presentationTable>
       <presentation id="at">
-        <dropdownList noSort="true" defaultItem="0" refId="at_setter">Кому разрешено запускать:
+        <dropdownList noSort="true" defaultItem="0" refId="at_setter">Кому разрешено выполнять:
         </dropdownList>
       </presentation>
       <presentation id="chage">
@@ -819,11 +819,11 @@ SSSD — использовать метод проверки подлиннос
         </dropdownList>
       </presentation>
       <presentation id="chfn">
-        <dropdownList noSort="true" defaultItem="1" refId="chfn_setter">Кто может использовать:
+        <dropdownList noSort="true" defaultItem="1" refId="chfn_setter">Кому разрешено выполнять:
         </dropdownList>
       </presentation>
       <presentation id="chsh">
-        <dropdownList noSort="true" defaultItem="1" refId="chsh_setter">Кто может использовать:
+        <dropdownList noSort="true" defaultItem="1" refId="chsh_setter">Кому разрешено выполнять:
         </dropdownList>
       </presentation>
       <presentation id="chrony_setter">
@@ -835,11 +835,11 @@ SSSD — использовать метод проверки подлиннос
         </dropdownList>
       </presentation>
       <presentation id="consolehelper">
-        <dropdownList noSort="true" defaultItem="0" refId="consolehelper_setter">Кто может использовать:
+        <dropdownList noSort="true" defaultItem="0" refId="consolehelper_setter">Кому разрешено выполнять:
         </dropdownList>
       </presentation>
       <presentation id="crontab">
-        <dropdownList noSort="true" defaultItem="0" refId="crontab_setter">Кто может использовать:
+        <dropdownList noSort="true" defaultItem="0" refId="crontab_setter">Кому разрешено выполнять:
         </dropdownList>
       </presentation>
       <presentation id="cups">
@@ -847,23 +847,23 @@ SSSD — использовать метод проверки подлиннос
         </dropdownList>
       </presentation>
       <presentation id="dvd-ram-control">
-        <dropdownList noSort="true" defaultItem="0" refId="dvd-ram-control_setter">Кому разрешено запускать:
+        <dropdownList noSort="true" defaultItem="0" refId="dvd-ram-control_setter">Кому разрешено выполнять:
          </dropdownList>
       </presentation>
       <presentation id="dvd_rw-booktype">
-        <dropdownList noSort="true" defaultItem="0" refId="dvd_rw-booktype_setter">Кому разрешено запускать:
+        <dropdownList noSort="true" defaultItem="0" refId="dvd_rw-booktype_setter">Кому разрешено выполнять:
         </dropdownList>
       </presentation>
       <presentation id="dvd_rw-format">
-        <dropdownList noSort="true" defaultItem="0" refId="dvd_rw-format_setter">Кому разрешено запускать:
+        <dropdownList noSort="true" defaultItem="0" refId="dvd_rw-format_setter">Кому разрешено выполнять:
         </dropdownList>
       </presentation>
       <presentation id="dvd_rw-mediainfo">
-        <dropdownList noSort="true" defaultItem="0" refId="dvd_rw-mediainfo_setter">Кому разрешено запускать:
+        <dropdownList noSort="true" defaultItem="0" refId="dvd_rw-mediainfo_setter">Кому разрешено выполнять:
         </dropdownList>
       </presentation>
       <presentation id="fusermount">
-        <dropdownList noSort="true" defaultItem="1" refId="fusermount_setter">Кто может использовать:
+        <dropdownList noSort="true" defaultItem="1" refId="fusermount_setter">Кому разрешено выполнять:
         </dropdownList>
       </presentation>
       <presentation id="gpasswd">
@@ -871,15 +871,15 @@ SSSD — использовать метод проверки подлиннос
         </dropdownList>
       </presentation>
       <presentation id="groupmems">
-        <dropdownList noSort="true" defaultItem="2" refId="groupmems_setter">Кто может использовать:
+        <dropdownList noSort="true" defaultItem="2" refId="groupmems_setter">Кому разрешено выполнять:
         </dropdownList>
       </presentation>
       <presentation id="growisofs">
-        <dropdownList noSort="true" defaultItem="0" refId="growisofs_setter">Кто может использовать:
+        <dropdownList noSort="true" defaultItem="0" refId="growisofs_setter">Кому разрешено выполнять:
         </dropdownList>
       </presentation>
       <presentation id="hddtemp">
-        <dropdownList noSort="true" defaultItem="1" refId="hddtemp_setter">Кто может использовать:
+        <dropdownList noSort="true" defaultItem="1" refId="hddtemp_setter">Кому разрешено выполнять:
         </dropdownList>
       </presentation>
       <presentation id="lightdm-greeter-hide-users">
@@ -903,11 +903,11 @@ SSSD — использовать метод проверки подлиннос
         </dropdownList>
       </presentation>
       <presentation id="newgrp">
-        <dropdownList noSort="true" defaultItem="2" refId="newgrp_setter">Кто имеет право использовать:
+        <dropdownList noSort="true" defaultItem="2" refId="newgrp_setter">Кому разрешено выполнять:
         </dropdownList>
       </presentation>
       <presentation id="nfsmount">
-        <dropdownList noSort="true" defaultItem="2" refId="nfsmount_setter">Кто имеет право использовать:
+        <dropdownList noSort="true" defaultItem="2" refId="nfsmount_setter">Кому разрешено выполнять:
         </dropdownList>
       </presentation>
       <presentation id="passwd">
@@ -971,11 +971,11 @@ SSSD — использовать метод проверки подлиннос
         </dropdownList>
       </presentation>
       <presentation id="su">
-        <dropdownList noSort="true" defaultItem="2" refId="su_setter">Кто имеет право использовать:
+        <dropdownList noSort="true" defaultItem="2" refId="su_setter">Кому разрешено выполнять:
         </dropdownList>
       </presentation>
       <presentation id="sudo">
-        <dropdownList noSort="true" defaultItem="1" refId="sudo_setter">Кто имеет право использовать:
+        <dropdownList noSort="true" defaultItem="1" refId="sudo_setter">Кому разрешено выполнять:
         </dropdownList>
       </presentation>
       <presentation id="sudoers">
@@ -983,7 +983,7 @@ SSSD — использовать метод проверки подлиннос
         </dropdownList>
       </presentation>
       <presentation id="sudoreplay">
-        <dropdownList noSort="true" defaultItem="1" refId="sudoreplay_setter">Кто имеет право использовать:
+        <dropdownList noSort="true" defaultItem="1" refId="sudoreplay_setter">Кому разрешено выполнять:
         </dropdownList>
       </presentation>
       <presentation id="system-auth">
@@ -999,7 +999,7 @@ SSSD — использовать метод проверки подлиннос
         </dropdownList>
       </presentation>
       <presentation id="virtualbox">
-        <dropdownList noSort="true" defaultItem="1" refId="virtualbox_setter">Кто имеет право использовать:
+        <dropdownList noSort="true" defaultItem="1" refId="virtualbox_setter">Кому разрешено выполнять:
         </dropdownList>
       </presentation>
       <presentation id="wireshark-capture">
@@ -1007,11 +1007,11 @@ SSSD — использовать метод проверки подлиннос
         </dropdownList>
       </presentation>
       <presentation id="write">
-        <dropdownList noSort="true" defaultItem="0" refId="write_setter">Кому разрешено запускать:
+        <dropdownList noSort="true" defaultItem="0" refId="write_setter">Кому разрешено выполнять:
         </dropdownList>
       </presentation>
       <presentation id="xorg-server">
-        <dropdownList noSort="true" defaultItem="0" refId="xorg-server_setter">Кому разрешено запускать:
+        <dropdownList noSort="true" defaultItem="0" refId="xorg-server_setter">Кому разрешено выполнять:
         </dropdownList>
       </presentation>
     </presentationTable>

@@ -814,7 +814,7 @@ Not configured — do not change current value of «smb-conf-usershares» parame
     </stringTable>
     <presentationTable>
       <presentation id="at">
-        <dropdownList noSort="true" defaultItem="0" refId="at_setter">Who is allowed to run:
+        <dropdownList noSort="true" defaultItem="0" refId="at_setter">Who is allowed to execute:
         </dropdownList>
       </presentation>
       <presentation id="chage">
@@ -822,11 +822,11 @@ Not configured — do not change current value of «smb-conf-usershares» parame
         </dropdownList>
       </presentation>
       <presentation id="chfn">
-        <dropdownList noSort="true" defaultItem="1" refId="chfn_setter">Who can use:
+        <dropdownList noSort="true" defaultItem="1" refId="chfn_setter">Who is allowed to execute:
         </dropdownList>
       </presentation>
       <presentation id="chsh">
-        <dropdownList noSort="true" defaultItem="1" refId="chsh_setter">Who can use:
+        <dropdownList noSort="true" defaultItem="1" refId="chsh_setter">Who is allowed to execute:
         </dropdownList>
       </presentation>
       <presentation id="chrony_setter">
@@ -838,11 +838,11 @@ Not configured — do not change current value of «smb-conf-usershares» parame
         </dropdownList>
       </presentation>
       <presentation id="consolehelper">
-        <dropdownList noSort="true" defaultItem="0" refId="consolehelper_setter">Who can use:
+        <dropdownList noSort="true" defaultItem="0" refId="consolehelper_setter">Who is allowed to execute:
         </dropdownList>
       </presentation>
       <presentation id="crontab">
-        <dropdownList noSort="true" defaultItem="0" refId="crontab_setter">Who can use:
+        <dropdownList noSort="true" defaultItem="0" refId="crontab_setter">Who is allowed to execute:
         </dropdownList>
       </presentation>
       <presentation id="cups">
@@ -850,23 +850,23 @@ Not configured — do not change current value of «smb-conf-usershares» parame
         </dropdownList>
       </presentation>
       <presentation id="dvd-ram-control">
-        <dropdownList noSort="true" defaultItem="0" refId="dvd-ram-control_setter">Who is allowed to run:
+        <dropdownList noSort="true" defaultItem="0" refId="dvd-ram-control_setter">Who is allowed to execute:
          </dropdownList>
       </presentation>
       <presentation id="dvd_rw-booktype">
-        <dropdownList noSort="true" defaultItem="0" refId="dvd_rw-booktype_setter">Who is allowed to run:
+        <dropdownList noSort="true" defaultItem="0" refId="dvd_rw-booktype_setter">Who is allowed to execute:
         </dropdownList>
       </presentation>
       <presentation id="dvd_rw-format">
-        <dropdownList noSort="true" defaultItem="0" refId="dvd_rw-format_setter">Who is allowed to run:
+        <dropdownList noSort="true" defaultItem="0" refId="dvd_rw-format_setter">Who is allowed to execute:
         </dropdownList>
       </presentation>
       <presentation id="dvd_rw-mediainfo">
-        <dropdownList noSort="true" defaultItem="0" refId="dvd_rw-mediainfo_setter">Who is allowed to run:
+        <dropdownList noSort="true" defaultItem="0" refId="dvd_rw-mediainfo_setter">Who is allowed to execute:
         </dropdownList>
       </presentation>
       <presentation id="fusermount">
-        <dropdownList noSort="true" defaultItem="1" refId="fusermount_setter">Who can use:
+        <dropdownList noSort="true" defaultItem="1" refId="fusermount_setter">Who is allowed to execute:
         </dropdownList>
       </presentation>
       <presentation id="gpasswd">
@@ -874,15 +874,15 @@ Not configured — do not change current value of «smb-conf-usershares» parame
         </dropdownList>
       </presentation>
       <presentation id="groupmems">
-        <dropdownList noSort="true" defaultItem="2" refId="groupmems_setter">Who can use:
+        <dropdownList noSort="true" defaultItem="2" refId="groupmems_setter">Who is allowed to execute:
         </dropdownList>
       </presentation>
       <presentation id="growisofs">
-        <dropdownList noSort="true" defaultItem="0" refId="growisofs_setter">Who can use:
+        <dropdownList noSort="true" defaultItem="0" refId="growisofs_setter">Who is allowed to execute:
         </dropdownList>
       </presentation>
       <presentation id="hddtemp">
-        <dropdownList noSort="true" defaultItem="1" refId="hddtemp_setter">Who can use:
+        <dropdownList noSort="true" defaultItem="1" refId="hddtemp_setter">Who is allowed to execute:
         </dropdownList>
       </presentation>
       <presentation id="lightdm-greeter-hide-users">
@@ -906,11 +906,11 @@ Not configured — do not change current value of «smb-conf-usershares» parame
         </dropdownList>
       </presentation>
       <presentation id="newgrp">
-        <dropdownList noSort="true" defaultItem="2" refId="newgrp_setter">Who has the right to use:
+        <dropdownList noSort="true" defaultItem="2" refId="newgrp_setter">Who is allowed to execute:
         </dropdownList>
       </presentation>
       <presentation id="nfsmount">
-        <dropdownList noSort="true" defaultItem="2" refId="nfsmount_setter">Who has the right to use:
+        <dropdownList noSort="true" defaultItem="2" refId="nfsmount_setter">Who is allowed to execute:
         </dropdownList>
       </presentation>
       <presentation id="passwd">
@@ -974,11 +974,11 @@ Not configured — do not change current value of «smb-conf-usershares» parame
         </dropdownList>
       </presentation>
       <presentation id="su">
-        <dropdownList noSort="true" defaultItem="2" refId="su_setter">Who has the right to use:
+        <dropdownList noSort="true" defaultItem="2" refId="su_setter">Who is allowed to execute:
         </dropdownList>
       </presentation>
       <presentation id="sudo">
-        <dropdownList noSort="true" defaultItem="1" refId="sudo_setter">Who has the right to use:
+        <dropdownList noSort="true" defaultItem="1" refId="sudo_setter">Who is allowed to execute:
         </dropdownList>
       </presentation>
       <presentation id="sudoers">
@@ -986,7 +986,7 @@ Not configured — do not change current value of «smb-conf-usershares» parame
         </dropdownList>
       </presentation>
       <presentation id="sudoreplay">
-        <dropdownList noSort="true" defaultItem="1" refId="sudoreplay_setter">Who has the right to use:
+        <dropdownList noSort="true" defaultItem="1" refId="sudoreplay_setter">Who is allowed to execute:
         </dropdownList>
       </presentation>
       <presentation id="system-auth">
@@ -1002,7 +1002,7 @@ Not configured — do not change current value of «smb-conf-usershares» parame
         </dropdownList>
       </presentation>
       <presentation id="virtualbox">
-        <dropdownList noSort="true" defaultItem="1" refId="virtualbox_setter">Who has the right to use:
+        <dropdownList noSort="true" defaultItem="1" refId="virtualbox_setter">Who is allowed to execute:
         </dropdownList>
       </presentation>
       <presentation id="wireshark-capture">
@@ -1010,11 +1010,11 @@ Not configured — do not change current value of «smb-conf-usershares» parame
         </dropdownList>
       </presentation>
       <presentation id="write">
-        <dropdownList noSort="true" defaultItem="0" refId="write_setter">Who is allowed to run:
+        <dropdownList noSort="true" defaultItem="0" refId="write_setter">Who is allowed to execute:
         </dropdownList>
       </presentation>
       <presentation id="xorg-server">
-        <dropdownList noSort="true" defaultItem="0" refId="xorg-server_setter">Who is allowed to run:
+        <dropdownList noSort="true" defaultItem="0" refId="xorg-server_setter">Who is allowed to execute:
         </dropdownList>
       </presentation>
     </presentationTable>
