@@ -405,7 +405,7 @@
     </policy>
     <policy class="Machine" displayName="$(string.UserPolicyMode)"
             explainText="$(string.UserPolicyMode_Help)"
-            key="Software\Policies\Microsoft\Windows\System"
+            key="SOFTWARE\Policies\Microsoft\Windows\System"
             name="UserPolicyMode"
             valueName="UserPolicyMode"
             presentation="$(presentation.UserPolicyMode)">
