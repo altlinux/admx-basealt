@@ -163,7 +163,7 @@
       <supportedOn ref="system:SUPPORTED_AltP10" />
       <elements>
         <enum id="OrgFreedesktopMachine_setter" valueName="org.freedesktop.machine1.host-open-pty" required="true">
-          <item displayName="$(string.org-freedesktop-modemmanager-No)">
+          <item displayName="$(string.org-freedesktop-machine-No)">
             <value>
               <string>No</string>
             </value>
@@ -493,7 +493,7 @@
               <string>No</string>
             </value>
           </item>
-          <item displayName="$(string.org-freedesktop-mmachine-Yes)">
+          <item displayName="$(string.org-freedesktop-machine-Yes)">
             <value>
               <string>Yes</string>
             </value>
@@ -759,5 +759,6 @@
           </item>
         </enum>
       </elements>
+    </policy>
   </policies>
 </policyDefinitions>
