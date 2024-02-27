@@ -687,34 +687,34 @@ Cтрока типа rgb(0,0,0).
 
       <presentation id="OrgMateScreensaverLockDelayUser-pr">
         <text>Количество минут, по истечении которого после активации хранителя экрана, экран будет заблокирован</text>
-        <decimalTextBox refId="OrgMateScreensaverLockDelay_setter" defaultValue="2">Время в минутах</decimalTextBox>
+        <decimalTextBox refId="OrgMateScreensaverLockDelay_setter" defaultValue="1">Время в минутах</decimalTextBox>
       </presentation>
 
       <presentation id="OrgMateScreensaverLockDelayMachine-pr">
         <text>Количество минут, по истечении которого после активации хранителя экрана, экран будет заблокирован</text>
-        <decimalTextBox refId="OrgMateScreensaverLockDelay_setter" defaultValue="2">Время в минутах:</decimalTextBox>
+        <decimalTextBox refId="OrgMateScreensaverLockDelay_setter" defaultValue="1">Время в минутах:</decimalTextBox>
         <checkBox refId="OrgMateScreensaverLockDelay_setter_blocker">Блокировать</checkBox>
       </presentation>
 
       <presentation id="OrgMateScreensaverLogoutDelayUser-pr">
         <text>Интервал в минутах между активацией хранителя экрана и появлением диалога выхода из сеанса при активации</text>
-        <decimalTextBox refId="OrgMateScreensaverLogoutDelay_setter" defaultValue="3">Время в минутах:</decimalTextBox>
+        <decimalTextBox refId="OrgMateScreensaverLogoutDelay_setter" defaultValue="1">Время в минутах:</decimalTextBox>
       </presentation>
 
       <presentation id="OrgMateScreensaverLogoutDelayMachine-pr">
         <text>Интервал в минутах между активацией хранителя экрана и появлением диалога выхода из сеанса при активации</text>
-        <decimalTextBox refId="OrgMateScreensaverLogoutDelay_setter" defaultValue="3">Время в минутах:</decimalTextBox>
+        <decimalTextBox refId="OrgMateScreensaverLogoutDelay_setter" defaultValue="1">Время в минутах:</decimalTextBox>
         <checkBox refId="OrgMateScreensaverLogoutDelay_setter_blocker">Блокировать</checkBox>
       </presentation>
 
       <presentation id="OrgMateScreensaverCycleDelayUser-pr">
         <text>Интервал в минутах между сменами тем хранителя экрана</text>
-        <decimalTextBox refId="OrgMateScreensaverCycleDelay_setter" defaultValue="2">Время в минутах:</decimalTextBox>
+        <decimalTextBox refId="OrgMateScreensaverCycleDelay_setter" defaultValue="1">Время в минутах:</decimalTextBox>
       </presentation>
 
       <presentation id="OrgMateScreensaverCycleDelayMachine-pr">
         <text>Интервал в минутах между сменами тем хранителя экрана</text>
-        <decimalTextBox refId="OrgMateScreensaverCycleDelay_setter" defaultValue="2">Время в минутах:</decimalTextBox>
+        <decimalTextBox refId="OrgMateScreensaverCycleDelay_setter" defaultValue="1">Время в минутах:</decimalTextBox>
         <checkBox refId="OrgMateScreensaverCycleDelay_setter_blocker">Блокировать</checkBox>
       </presentation>
 
