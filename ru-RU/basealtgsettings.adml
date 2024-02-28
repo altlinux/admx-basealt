@@ -188,7 +188,7 @@ Cтрока типа rgb(0,0,0).
       <string id="org-mate-lockdown-disable-log-out-false">Отключено</string>
 
       <string id="org-mate-lockdown-disable-lock-screen">Запрет блокировки экрана</string>
-      <string id="org-mate-lockdown-disable-lock-screen_help">Установка этого параметра запрещает пользователю Блокировать экран паролем.
+      <string id="org-mate-lockdown-disable-lock-screen_help">Установка этого параметра запрещает пользователю блокировать экран паролем.
 
 При установке данного параметра, значение параметра «Блокировка компьютера» игнорируется.
 
@@ -507,10 +507,10 @@ Cтрока типа rgb(0,0,0).
 
       </string>
 
-      <string id="org-mate-marco-general-titlebar-font">Шрифт заголовков окна</string>
-      <string id="org-mate-marco-general-titlebar-font_help">Устанавливает шрифт заголовков окон. Например, 'Noto Sans Bold 10'.
+      <string id="org-mate-marco-general-titlebar-font">Шрифт заголовка окна</string>
+      <string id="org-mate-marco-general-titlebar-font_help">Устанавливает шрифт заголовка окон. Например, 'Noto Sans Bold 10'.
       
-Этот параметр игнорируется, если активирован параметр «Системный шрифт в заголовке окон».
+Этот параметр игнорируется, если активирован параметр «Системный шрифт в заголовке окна».
 
 Опция «Блокировать» — (доступна только для машинной политики) запрещает изменение данной настройки пользователем. Блокировка политики делает её приоритетнее аналогичной политики для пользователя.
 
@@ -532,8 +532,8 @@ Cтрока типа rgb(0,0,0).
       <string id="org-mate-marco-general-focus-mode-sloppy">Sloppy</string>
       <string id="org-mate-marco-general-focus-mode-mouse">Mouse</string>
 
-      <string id="org-mate-marco-general-titlebar-uses-system-font">Системный шрифт в заголовке окон</string>
-      <string id="org-mate-marco-general-titlebar-uses-system-font_help">При включении в заголовках окон будет использоваться системный шрифт.
+      <string id="org-mate-marco-general-titlebar-uses-system-font">Системный шрифт в заголовке окна</string>
+      <string id="org-mate-marco-general-titlebar-uses-system-font_help">При включении в заголовке окна будет использоваться системный шрифт.
 
 Опция «Блокировать» — (доступна только для машинной политики) запрещает изменение данной настройки пользователем. Блокировка политики делает её приоритетнее аналогичной политики для пользователя.
 
