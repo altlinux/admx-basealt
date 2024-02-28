@@ -73,8 +73,8 @@
       <string id="ALT_Windows_Manager_Marco_Keyboard_Help">Настройки клавиатуры.</string>
       <string id="ALT_Polkit">Правила Polkit</string>
       <string id="ALT_Polkit_Help">Управление Polkit правилами.</string>
-      <string id="ALT_Udisks2">Ограничения Udisks2</string>
-      <string id="ALT_Udisks2_Help">Управление polkit-ограничениями Udisks2.</string>
+      <string id="ALT_Udisks2">Ограничения Udisks</string>
+      <string id="ALT_Udisks2_Help">Управление polkit-ограничениями Udisks.</string>
       <string id="ALT_PackageKit">Ограничения PackageKit</string>
       <string id="ALT_PackageKit_Help">Управление polkit-ограничениями PackageKit.</string>
       <string id="ALT_NetworkManagerPolkit">Ограничения NetworkManager</string>
