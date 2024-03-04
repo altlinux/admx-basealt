@@ -288,15 +288,6 @@ Cтрока типа rgb(0,0,0).
       <string id="org-gnome-vino-authentication-methods-none">None</string>
       <string id="org-gnome-vino-authentication-methods-vnc">Vnc</string>
 
-      <string id="org-gnome-vino-vnc-password">Пароль для подключения</string>
-      <string id="org-gnome-vino-vnc-password_help">Установка пароля для подключения к рабочему столу. Пароль должен быть закодирован в base64 (для генерации пароля в base64 можно воспользоваться командой: echo -n "password" | base64).
-
-Пароль будет запрашивается только при использовании метода аутентификации «Vnc», установленном в параметре «Методы аутентификации».
-
-Опция «Блокировать» — (доступна только для машинной политики) запрещает изменение данной настройки пользователем. Блокировка политики делает её приоритетнее аналогичной политики для пользователя.
-
-      </string>
-
       <string id="org-mate-marco-button-layout">Иконки заголовка окна</string>
       <string id="org-mate-marco-button-layout_help">Настройки расположения иконок в заголовке окна. Разделителем правой и левой половин является двоеточие. Например, строка 'menu:minimize,maximize,spacer,close' располагаем иконку меню окна слева, а справа иконки свернуть, распахнуть, закрыть окно.
 
@@ -795,20 +786,7 @@ Cтрока типа rgb(0,0,0).
         <checkBox refId="OrgGnomeVinoAuthenticationMethods_setter_blocker">Блокировать</checkBox>
       </presentation>
 
-      <presentation id="OrgGnomeVinoVncPasswordUser-pr">
-        <textBox refId="OrgGnomeVinoVncPassword_setter">
-          <label>Пароль:</label>
-        </textBox>
-      </presentation>
-
-      <presentation id="OrgGnomeVinoVncPasswordMachine-pr">
-        <textBox refId="OrgGnomeVinoVncPassword_setter">
-          <label>Пароль:</label>
-        </textBox>
-        <checkBox refId="OrgGnomeVinoVncPassword_setter_blocker">Блокировать</checkBox>
-      </presentation>
-
-<presentation id="OrgMateMarcoGeneraButtonLayoutUser-pr">
+      <presentation id="OrgMateMarcoGeneraButtonLayoutUser-pr">
         <textBox refId="OrgMateMarcoGeneraButtonLayout_setter">
           <label></label>
         </textBox>

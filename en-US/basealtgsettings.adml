@@ -288,15 +288,6 @@ The "Block" option — (available only for machine policy) prevents the user fro
       <string id="org-gnome-vino-authentication-methods-none">None</string>
       <string id="org-gnome-vino-authentication-methods-vnc">Vnc</string>
 
-      <string id="org-gnome-vino-vnc-password">Connection password</string>
-      <string id="org-gnome-vino-vnc-password_help">Set a password for connecting to the desktop. The password must be encoded in base64 (to generate a password in base64, you can use the command: echo -n "password" | base64).
-
-The password will only be requested when using the "Vnc" authentication method set in the "Authentication Methods" parameter.
-
-The "Block" option — (available only for machine policy) prevents the user from changing this setting. Blocking a policy makes it a priority over a similar policy for the user.
-
-      </string>
-
       <string id="org-mate-marco-button-layout">Window title icons</string>
       <string id="org-mate-marco-button-layout_help">Settings for the placement of icons in the window title. The separator of the right and left halves is a colon. For example, the line 'menu:minimize,maximize,spacer,close' places the window menu icon on the left, and on the right are the icons for minimizing, expanding, and closing the window.
 
@@ -795,20 +786,7 @@ The "Block" option — (available only for machine policy) prevents the user fro
          <checkBox refId="OrgGnomeVinoAuthenticationMethods_setter_blocker">Block</checkBox>
        </presentation>
 
-       <presentation id="OrgGnomeVinoVncPasswordUser-pr">
-         <textBox refId="OrgGnomeVinoVncPassword_setter">
-           <label>Password:</label>
-         </textBox>
-       </presentation>
-
-       <presentation id="OrgGnomeVinoVncPasswordMachine-pr">
-         <textBox refId="OrgGnomeVinoVncPassword_setter">
-           <label>Password:</label>
-         </textBox>
-         <checkBox refId="OrgGnomeVinoVncPassword_setter_blocker">Block</checkBox>
-       </presentation>
-
-<presentation id="OrgMateMarcoGeneraButtonLayoutUser-pr">
+      <presentation id="OrgMateMarcoGeneraButtonLayoutUser-pr">
         <textBox refId="OrgMateMarcoGeneraButtonLayout_setter">
           <label></label>
         </textBox>

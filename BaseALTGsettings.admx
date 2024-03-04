@@ -1143,38 +1143,6 @@
       </elements>
     </policy>
 
-    <policy name="OrgGnomeVinoVncPasswordUser" class="User"
-        displayName="$(string.org-gnome-vino-vnc-password)"
-        explainText="$(string.org-gnome-vino-vnc-password_help)"
-        key="Software\BaseALT\Policies\gsettings"
-        presentation="$(presentation.OrgGnomeVinoVncPasswordUser-pr)">
-      <parentCategory ref="system:ALT_Remote_Access_Vino_Gnome" />
-      <supportedOn ref="system:SUPPORTED_AltP9" />
-      <elements>
-        <text id="OrgGnomeVinoVncPassword_setter" valueName="org.gnome.Vino.vnc-password" />
-      </elements>
-    </policy>
-
-    <policy name="OrgGnomeVinoVncPasswordMachine" class="Machine"
-        displayName="$(string.org-gnome-vino-vnc-password)"
-        explainText="$(string.org-gnome-vino-vnc-password_help)"
-        key="Software\BaseALT\Policies\gsettings"
-        presentation="$(presentation.OrgGnomeVinoVncPasswordMachine-pr)">
-      <parentCategory ref="system:ALT_Remote_Access_Vino_Gnome" />
-      <supportedOn ref="system:SUPPORTED_AltP9" />
-      <elements>
-        <text id="OrgGnomeVinoVncPassword_setter" valueName="org.gnome.Vino.vnc-password" />
-        <boolean id="OrgGnomeVinoVncPassword_setter_blocker" key="Software\BaseALT\Policies\GSettingsLocks" valueName="org.gnome.Vino.vnc-password">
-          <trueValue>
-            <decimal value="1" />
-          </trueValue>
-          <falseValue>
-            <decimal value="0" />
-          </falseValue>
-        </boolean>
-      </elements>
-    </policy>
-
     <policy name="OrgMateMarcoGeneraButtonLayoutUser" class="User"
         displayName="$(string.org-mate-marco-button-layout)"
         explainText="$(string.org-mate-marco-button-layout_help)"
