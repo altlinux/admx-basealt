@@ -20,16 +20,6 @@ Specify a list of packages, one per line:
 Specify a list of packages, one per line
       </string>
 
-      <string id="packages_upgrade">Automatic software upgrade</string>
-      <string id="packages_upgrade_help">This policy defines automatic update behavior
-
-Not configured — Do nothing
-
-Disabled — Don't update OS automatically
-
-Enabled — Update OS automatically
-      </string>
-
       <string id="sync_packages_work_machine">Synchronous work with packages</string>
       <string id="sync_packages_work_machine_help">Enabling this setting will prohibit the work (installation, removal) with packages in the background, which can slow down the computer when the policy is applied (when the machine boots).</string>
 

@@ -46,28 +46,6 @@
       </elements>
     </policy>
 
-    <policy class="Machine" displayName="$(string.packages_upgrade)" explainText="$(string.packages_upgrade_help)" key="Software\BaseALT\Policies\Packages" name="UpgradePackagesMachine" valueName="UpgradePackages" >
-      <parentCategory ref="ALT_Packages"/>
-      <supportedOn ref="system:SUPPORTED_AltP10"/>
-      <enabledValue>
-        <decimal value="1"/>
-      </enabledValue>
-      <disabledValue>
-        <decimal value="0"/>
-      </disabledValue>
-    </policy>
-
-    <policy class="User" displayName="$(string.packages_upgrade)" explainText="$(string.packages_upgrade_help)" key="Software\BaseALT\Policies\Packages" name="UpgradePackagesUser" valueName="UpgradePackages" >
-      <parentCategory ref="ALT_Packages"/>
-      <supportedOn ref="system:SUPPORTED_AltP10"/>
-      <enabledValue>
-        <decimal value="1"/>
-      </enabledValue>
-      <disabledValue>
-        <decimal value="0"/>
-      </disabledValue>
-    </policy>
-
     <policy class="Machine" displayName="$(string.sync_packages_work_machine)" explainText="$(string.sync_packages_work_machine_help)" key="Software\BaseALT\Policies\Packages" name="SyncPackagesWorkMachine" valueName="Sync" >
       <parentCategory ref="ALT_Packages"/>
       <supportedOn ref="system:SUPPORTED_AltP10"/>
