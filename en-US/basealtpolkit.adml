@@ -972,6 +972,355 @@ Possible values:
 Note: the possession of administrative rights in a PolicyKit context is determined by its rules. By default, Alt asks for the password of a user in the "wheel" group.
 
       </string>
+      <string id="org-freedesktop-udisks2-encrypted-change-passphrase">Permission to change passphrase for an encrypted device</string>
+      <string id="org-freedesktop-udisks2-encrypted-change-passphrase_help">The policy restricts the ability to change passphrase for an encrypted device
+
+Disabled/Unconfigured — restrictions are defined by system parameters.
+
+Enabled — restriction with defined rights;
+
+Possible values:
+
+"No" — set restriction with action denial (user is not allowed to perform the action);
+
+"Yes" — remove the restriction (the user can perform the action without any authentication);
+
+"Auth_self" — the user must enter his/her password for authentication. Note, this level of restriction is not sufficient for most multi-user applications, "Auth_admin" is usually recommended;
+
+"Auth_admin" — the user must enter the administrator password at each request. Requires authentication of the user with administrator privileges;
+
+"Auth_self_keep" — similar to "Auth_self", but authorization is maintained for a short period of time (e.g., five minutes). Note, this level of restriction is insufficient for most multi-user applications, "Auth_admin_keep" is generally recommended;
+
+"Auth_admin_keep" — similar to "Auth_admin", but authorization is maintained for a short period of time (e.g., five minutes);
+      
+Note: the possession of administrative rights in a PolicyKit context is determined by its rules. By default, Alt asks for the password of a user in the "wheel" group.
+
+The "Block" option prevents the user from changing this setting. Blocking a policy makes it a priority over a similar policy for the user.
+
+      </string>
+      <string id="org-freedesktop-udisks2-encrypted-change-passphrase-user">Permission to change passphrase for an encrypted device</string>
+      <string id="org-freedesktop-udisks2-encrypted-change-passphrase-user_help">The policy restricts the ability to change passphrase for an encrypted device
+      
+Disabled/Unconfigured — restrictions are defined by system parameters.
+
+Enabled — restriction with defined rights;
+
+Possible values:
+
+"No" — set restriction with action denial (user is not allowed to perform the action);
+
+"Yes" — remove the restriction (the user can perform the action without any authentication);
+
+"Auth_self" — the user must enter his/her password for authentication. Note, this level of restriction is not sufficient for most multi-user applications, "Auth_admin" is usually recommended;
+
+"Auth_admin" — the user must enter the administrator password at each request. Requires authentication of the user with administrator privileges;
+
+"Auth_self_keep" — similar to "Auth_self", but authorization is maintained for a short period of time (e.g., five minutes). Note, this level of restriction is insufficient for most multi-user applications, "Auth_admin_keep" is generally recommended;
+
+"Auth_admin_keep" — similar to "Auth_admin", but authorization is maintained for a short period of time (e.g., five minutes);
+      
+Note: the possession of administrative rights in a PolicyKit context is determined by its rules. By default, Alt asks for the password of a user in the "wheel" group.
+
+      </string>
+      <string id="org-freedesktop-udisks2-encrypted-change-passphrase-system">Permission to change passphrase for an encrypted device</string>
+      <string id="org-freedesktop-udisks2-encrypted-change-passphrase-system_help">The policy restricts the ability to change passphrase for an encrypted device
+
+Disabled/Unconfigured — restrictions are defined by system parameters.
+
+Enabled — restriction with defined rights;
+
+Possible values:
+
+"No" — set restriction with action denial (user is not allowed to perform the action);
+
+"Yes" — remove the restriction (the user can perform the action without any authentication);
+
+"Auth_self" — the user must enter his/her password for authentication. Note, this level of restriction is not sufficient for most multi-user applications, "Auth_admin" is usually recommended;
+
+"Auth_admin" — the user must enter the administrator password at each request. Requires authentication of the user with administrator privileges;
+
+"Auth_self_keep" — similar to "Auth_self", but authorization is maintained for a short period of time (e.g., five minutes). Note, this level of restriction is insufficient for most multi-user applications, "Auth_admin_keep" is generally recommended;
+
+"Auth_admin_keep" — similar to "Auth_admin", but authorization is maintained for a short period of time (e.g., five minutes);
+      
+Note: the possession of administrative rights in a PolicyKit context is determined by its rules. By default, Alt asks for the password of a user in the "wheel" group.
+
+The "Block" option prevents the user from changing this setting. Blocking a policy makes it a priority over a similar policy for the user.
+
+      </string>
+      <string id="org-freedesktop-udisks2-encrypted-change-passphrase-system-user">Permission to change passphrase for an encrypted device</string>
+      <string id="org-freedesktop-udisks2-encrypted-change-passphrase-system-user_help">The policy restricts the ability to change passphrase for an encrypted device
+      
+Disabled/Unconfigured — restrictions are defined by system parameters.
+
+Enabled — restriction with defined rights;
+
+Possible values:
+
+"No" — set restriction with action denial (user is not allowed to perform the action);
+
+"Yes" — remove the restriction (the user can perform the action without any authentication);
+
+"Auth_self" — the user must enter his/her password for authentication. Note, this level of restriction is not sufficient for most multi-user applications, "Auth_admin" is usually recommended;
+
+"Auth_admin" — the user must enter the administrator password at each request. Requires authentication of the user with administrator privileges;
+
+"Auth_self_keep" — similar to "Auth_self", but authorization is maintained for a short period of time (e.g., five minutes). Note, this level of restriction is insufficient for most multi-user applications, "Auth_admin_keep" is generally recommended;
+
+"Auth_admin_keep" — similar to "Auth_admin", but authorization is maintained for a short period of time (e.g., five minutes);
+      
+Note: the possession of administrative rights in a PolicyKit context is determined by its rules. By default, Alt asks for the password of a user in the "wheel" group.
+
+      </string>
+      <string id="org-freedesktop-udisks2-encrypted-lock-others">Permission to lock an encrypted device unlocked by another user</string>
+      <string id="org-freedesktop-udisks2-encrypted-lock-others_help">The policy restricts the ability to lock an encrypted device unlocked by another user
+
+Disabled/Unconfigured — restrictions are defined by system parameters.
+
+Enabled — restriction with defined rights;
+
+Possible values:
+
+"No" — set restriction with action denial (user is not allowed to perform the action);
+
+"Yes" — remove the restriction (the user can perform the action without any authentication);
+
+"Auth_self" — the user must enter his/her password for authentication. Note, this level of restriction is not sufficient for most multi-user applications, "Auth_admin" is usually recommended;
+
+"Auth_admin" — the user must enter the administrator password at each request. Requires authentication of the user with administrator privileges;
+
+"Auth_self_keep" — similar to "Auth_self", but authorization is maintained for a short period of time (e.g., five minutes). Note, this level of restriction is insufficient for most multi-user applications, "Auth_admin_keep" is generally recommended;
+
+"Auth_admin_keep" — similar to "Auth_admin", but authorization is maintained for a short period of time (e.g., five minutes);
+      
+Note: the possession of administrative rights in a PolicyKit context is determined by its rules. By default, Alt asks for the password of a user in the "wheel" group.
+
+The "Block" option prevents the user from changing this setting. Blocking a policy makes it a priority over a similar policy for the user.
+
+      </string>
+      <string id="org-freedesktop-udisks2-encrypted-lock-others-user">Permission to lock an encrypted device unlocked by another user</string>
+      <string id="org-freedesktop-udisks2-encrypted-lock-others-user_help">The policy restricts the ability to lock an encrypted device unlocked by another user
+      
+Disabled/Unconfigured — restrictions are defined by system parameters.
+
+Enabled — restriction with defined rights;
+
+Possible values:
+
+"No" — set restriction with action denial (user is not allowed to perform the action);
+
+"Yes" — remove the restriction (the user can perform the action without any authentication);
+
+"Auth_self" — the user must enter his/her password for authentication. Note, this level of restriction is not sufficient for most multi-user applications, "Auth_admin" is usually recommended;
+
+"Auth_admin" — the user must enter the administrator password at each request. Requires authentication of the user with administrator privileges;
+
+"Auth_self_keep" — similar to "Auth_self", but authorization is maintained for a short period of time (e.g., five minutes). Note, this level of restriction is insufficient for most multi-user applications, "Auth_admin_keep" is generally recommended;
+
+"Auth_admin_keep" — similar to "Auth_admin", but authorization is maintained for a short period of time (e.g., five minutes);
+      
+Note: the possession of administrative rights in a PolicyKit context is determined by its rules. By default, Alt asks for the password of a user in the "wheel" group.
+
+      </string>
+      <string id="org-freedesktop-udisks2-encrypted-unlock">Permission to unlock an encrypted device</string>
+      <string id="org-freedesktop-udisks2-encrypted-unlock_help">The policy restricts the ability to unlock an encrypted device
+
+Disabled/Unconfigured — restrictions are defined by system parameters.
+
+Enabled — restriction with defined rights;
+
+Possible values:
+
+"No" — set restriction with action denial (user is not allowed to perform the action);
+
+"Yes" — remove the restriction (the user can perform the action without any authentication);
+
+"Auth_self" — the user must enter his/her password for authentication. Note, this level of restriction is not sufficient for most multi-user applications, "Auth_admin" is usually recommended;
+
+"Auth_admin" — the user must enter the administrator password at each request. Requires authentication of the user with administrator privileges;
+
+"Auth_self_keep" — similar to "Auth_self", but authorization is maintained for a short period of time (e.g., five minutes). Note, this level of restriction is insufficient for most multi-user applications, "Auth_admin_keep" is generally recommended;
+
+"Auth_admin_keep" — similar to "Auth_admin", but authorization is maintained for a short period of time (e.g., five minutes);
+      
+Note: the possession of administrative rights in a PolicyKit context is determined by its rules. By default, Alt asks for the password of a user in the "wheel" group.
+
+The "Block" option prevents the user from changing this setting. Blocking a policy makes it a priority over a similar policy for the user.
+
+      </string>
+      <string id="org-freedesktop-udisks2-encrypted-unlock-user">Permission to unlock an encrypted device</string>
+      <string id="org-freedesktop-udisks2-encrypted-unlock-user_help">The policy restricts the ability to unlock an encrypted device 
+      
+Disabled/Unconfigured — restrictions are defined by system parameters.
+
+Enabled — restriction with defined rights;
+
+Possible values:
+
+"No" — set restriction with action denial (user is not allowed to perform the action);
+
+"Yes" — remove the restriction (the user can perform the action without any authentication);
+
+"Auth_self" — the user must enter his/her password for authentication. Note, this level of restriction is not sufficient for most multi-user applications, "Auth_admin" is usually recommended;
+
+"Auth_admin" — the user must enter the administrator password at each request. Requires authentication of the user with administrator privileges;
+
+"Auth_self_keep" — similar to "Auth_self", but authorization is maintained for a short period of time (e.g., five minutes). Note, this level of restriction is insufficient for most multi-user applications, "Auth_admin_keep" is generally recommended;
+
+"Auth_admin_keep" — similar to "Auth_admin", but authorization is maintained for a short period of time (e.g., five minutes);
+      
+Note: the possession of administrative rights in a PolicyKit context is determined by its rules. By default, Alt asks for the password of a user in the "wheel" group.
+
+      </string>
+      <string id="org-freedesktop-udisks2-encrypted-unlock-crypttab">Permission to unlock an encrypted device specified in the crypttab file with the x-udisks-auth option</string>
+      <string id="org-freedesktop-udisks2-encrypted-unlock-crypttab_help">The policy restricts the ability to unlock an encrypted device specified in the crypttab file with the x-udisks-auth option
+
+Disabled/Unconfigured — restrictions are defined by system parameters.
+
+Enabled — restriction with defined rights;
+
+Possible values:
+
+"No" — set restriction with action denial (user is not allowed to perform the action);
+
+"Yes" — remove the restriction (the user can perform the action without any authentication);
+
+"Auth_self" — the user must enter his/her password for authentication. Note, this level of restriction is not sufficient for most multi-user applications, "Auth_admin" is usually recommended;
+
+"Auth_admin" — the user must enter the administrator password at each request. Requires authentication of the user with administrator privileges;
+
+"Auth_self_keep" — similar to "Auth_self", but authorization is maintained for a short period of time (e.g., five minutes). Note, this level of restriction is insufficient for most multi-user applications, "Auth_admin_keep" is generally recommended;
+
+"Auth_admin_keep" — similar to "Auth_admin", but authorization is maintained for a short period of time (e.g., five minutes);
+      
+Note: the possession of administrative rights in a PolicyKit context is determined by its rules. By default, Alt asks for the password of a user in the "wheel" group.
+
+The "Block" option prevents the user from changing this setting. Blocking a policy makes it a priority over a similar policy for the user.
+
+      </string>
+      <string id="org-freedesktop-udisks2-encrypted-unlock-crypttab-user">Permission to unlock an encrypted device specified in the crypttab file with the x-udisks-auth option</string>
+      <string id="org-freedesktop-udisks2-encrypted-unlock-crypttab-user_help">The policy restricts the ability to unlock an encrypted device specified in the crypttab file with the x-udisks-auth option
+      
+Disabled/Unconfigured — restrictions are defined by system parameters.
+
+Enabled — restriction with defined rights;
+
+Possible values:
+
+"No" — set restriction with action denial (user is not allowed to perform the action);
+
+"Yes" — remove the restriction (the user can perform the action without any authentication);
+
+"Auth_self" — the user must enter his/her password for authentication. Note, this level of restriction is not sufficient for most multi-user applications, "Auth_admin" is usually recommended;
+
+"Auth_admin" — the user must enter the administrator password at each request. Requires authentication of the user with administrator privileges;
+
+"Auth_self_keep" — similar to "Auth_self", but authorization is maintained for a short period of time (e.g., five minutes). Note, this level of restriction is insufficient for most multi-user applications, "Auth_admin_keep" is generally recommended;
+
+"Auth_admin_keep" — similar to "Auth_admin", but authorization is maintained for a short period of time (e.g., five minutes);
+      
+Note: the possession of administrative rights in a PolicyKit context is determined by its rules. By default, Alt asks for the password of a user in the "wheel" group.
+
+      </string>
+      <string id="org-freedesktop-udisks2-encrypted-unlock-other-seat">Permission to unlock an encrypted device plugged into another seat</string>
+      <string id="org-freedesktop-udisks2-encrypted-unlock-other-seat_help">The policy restricts the ability to unlock an encrypted device plugged into another seat
+
+Disabled/Unconfigured — restrictions are defined by system parameters.
+
+Enabled — restriction with defined rights;
+
+Possible values:
+
+"No" — set restriction with action denial (user is not allowed to perform the action);
+
+"Yes" — remove the restriction (the user can perform the action without any authentication);
+
+"Auth_self" — the user must enter his/her password for authentication. Note, this level of restriction is not sufficient for most multi-user applications, "Auth_admin" is usually recommended;
+
+"Auth_admin" — the user must enter the administrator password at each request. Requires authentication of the user with administrator privileges;
+
+"Auth_self_keep" — similar to "Auth_self", but authorization is maintained for a short period of time (e.g., five minutes). Note, this level of restriction is insufficient for most multi-user applications, "Auth_admin_keep" is generally recommended;
+
+"Auth_admin_keep" — similar to "Auth_admin", but authorization is maintained for a short period of time (e.g., five minutes);
+      
+Note: the possession of administrative rights in a PolicyKit context is determined by its rules. By default, Alt asks for the password of a user in the "wheel" group.
+
+The "Block" option prevents the user from changing this setting. Blocking a policy makes it a priority over a similar policy for the user.
+
+      </string>
+      <string id="org-freedesktop-udisks2-encrypted-unlock-other-seat-user">Permission to unlock an encrypted device plugged into another seat</string>
+      <string id="org-freedesktop-udisks2-encrypted-unlock-other-seat-user_help">The policy restricts the ability to unlock an encrypted device plugged into another seat
+      
+Disabled/Unconfigured — restrictions are defined by system parameters.
+
+Enabled — restriction with defined rights;
+
+Possible values:
+
+"No" — set restriction with action denial (user is not allowed to perform the action);
+
+"Yes" — remove the restriction (the user can perform the action without any authentication);
+
+"Auth_self" — the user must enter his/her password for authentication. Note, this level of restriction is not sufficient for most multi-user applications, "Auth_admin" is usually recommended;
+
+"Auth_admin" — the user must enter the administrator password at each request. Requires authentication of the user with administrator privileges;
+
+"Auth_self_keep" — similar to "Auth_self", but authorization is maintained for a short period of time (e.g., five minutes). Note, this level of restriction is insufficient for most multi-user applications, "Auth_admin_keep" is generally recommended;
+
+"Auth_admin_keep" — similar to "Auth_admin", but authorization is maintained for a short period of time (e.g., five minutes);
+      
+Note: the possession of administrative rights in a PolicyKit context is determined by its rules. By default, Alt asks for the password of a user in the "wheel" group.
+
+      </string>
+      <string id="org-freedesktop-udisks2-encrypted-unlock-system">Permission to unlock an encrypted system device</string>
+      <string id="org-freedesktop-udisks2-encrypted-unlock-system_help">The policy restricts the ability to unlock an encrypted system device
+
+Disabled/Unconfigured — restrictions are defined by system parameters.
+
+Enabled — restriction with defined rights;
+
+Possible values:
+
+"No" — set restriction with action denial (user is not allowed to perform the action);
+
+"Yes" — remove the restriction (the user can perform the action without any authentication);
+
+"Auth_self" — the user must enter his/her password for authentication. Note, this level of restriction is not sufficient for most multi-user applications, "Auth_admin" is usually recommended;
+
+"Auth_admin" — the user must enter the administrator password at each request. Requires authentication of the user with administrator privileges;
+
+"Auth_self_keep" — similar to "Auth_self", but authorization is maintained for a short period of time (e.g., five minutes). Note, this level of restriction is insufficient for most multi-user applications, "Auth_admin_keep" is generally recommended;
+
+"Auth_admin_keep" — similar to "Auth_admin", but authorization is maintained for a short period of time (e.g., five minutes);
+      
+Note: the possession of administrative rights in a PolicyKit context is determined by its rules. By default, Alt asks for the password of a user in the "wheel" group.
+
+The "Block" option prevents the user from changing this setting. Blocking a policy makes it a priority over a similar policy for the user.
+
+      </string>
+      <string id="org-freedesktop-udisks2-encrypted-unlock-system-user">Permission to unlock an encrypted system device</string>
+      <string id="org-freedesktop-udisks2-encrypted-unlock-system-user_help">The policy restricts the ability to unlock an encrypted system device
+      
+Disabled/Unconfigured — restrictions are defined by system parameters.
+
+Enabled — restriction with defined rights;
+
+Possible values:
+
+"No" — set restriction with action denial (user is not allowed to perform the action);
+
+"Yes" — remove the restriction (the user can perform the action without any authentication);
+
+"Auth_self" — the user must enter his/her password for authentication. Note, this level of restriction is not sufficient for most multi-user applications, "Auth_admin" is usually recommended;
+
+"Auth_admin" — the user must enter the administrator password at each request. Requires authentication of the user with administrator privileges;
+
+"Auth_self_keep" — similar to "Auth_self", but authorization is maintained for a short period of time (e.g., five minutes). Note, this level of restriction is insufficient for most multi-user applications, "Auth_admin_keep" is generally recommended;
+
+"Auth_admin_keep" — similar to "Auth_admin", but authorization is maintained for a short period of time (e.g., five minutes);
+      
+Note: the possession of administrative rights in a PolicyKit context is determined by its rules. By default, Alt asks for the password of a user in the "wheel" group.
+      </string>
 
       <string id="org-freedesktop-udisks2-filesystem-mount-No">No</string>
       <string id="org-freedesktop-udisks2-filesystem-mount-Yes">Yes</string>
