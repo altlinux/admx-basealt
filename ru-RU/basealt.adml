@@ -99,6 +99,8 @@
       <string id="ALT_MachinePolkit_Help">Управление polkit-ограничениями Machine.</string>
       <string id="ALT_LoginPolkit">Ограничения Login</string>
       <string id="ALT_LoginPolkit_Help">Управление polkit-ограничениями Login.</string>
+      <string id="ALT_DisplayManagerPolkit">Ограничения DisplayManager</string>
+      <string id="ALT_DisplayManagerPolkit_help">Управление polkit-ограничениями DisplayManager.</string>
     </stringTable>
   </resources>
 </policyDefinitionResources>

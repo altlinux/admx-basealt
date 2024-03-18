@@ -193,5 +193,8 @@
     <category name="ALT_SystemdPolkit" displayName="$(string.ALT_SystemdPolkit)" explainText="$(string.ALT_SystemdPolkit_Help)">
       <parentCategory ref="ALT_Polkit" />
     </category>
+    <category name="ALT_DisplayManagerPolkit" displayName="$(string.ALT_DisplayManagerPolkit)" explainText="$(string.ALT_DisplayManagerPolkit_help)">
+      <parentCategory ref="ALT_Polkit" />
+    </category>
   </categories>
 </policyDefinitions>

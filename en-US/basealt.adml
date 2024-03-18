@@ -99,6 +99,8 @@
       <string id="ALT_MachinePolkit_Help">Machine permissions management</string>
       <string id="ALT_LoginPolkit">Login permissions</string>
       <string id="ALT_LoginPolkit_Help">Login permissions management</string>
+      <string id="ALT_DisplayManagerPolkit">DisplayManager permissions</string>
+      <string id="ALT_DisplayManagerPolkit_help">DisplayManager permissions management</string>
     </stringTable>
   </resources>
 </policyDefinitionResources>
