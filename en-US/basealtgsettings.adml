@@ -597,6 +597,24 @@ The "Block" option — (available only for machine policy) prevents the user fro
       <string id="org-mate-peripherals-keyboard-rate">Replay rate</string>
       <string id="org-mate-peripherals-keyboard-rate_help">Sets the repeat rate of a pressed and held key.</string>
 
+      <string id="org-mate-session-idle-delay">This policy allows you to set the time in minutes after which the session will be considered idle.</string>
+      <string id="org-mate-session-idle-delay_help">Sets the number of minutes after which the session will be considered idle.
+
+This option only makes sense if the "Enable screen saver" and "Log out after lock" options are activated.
+
+The "Block" option — (available only for machine policy) prevents the user from changing this setting. Blocking a policy makes it a priority over a similar policy for the user.
+
+      </string>
+
+      <string id="org-mate-session-logout-timeout">Session exit timeout</string>
+      <string id="org-mate-session-logout-timeout_help">This policy allows you to set the time in seconds after which the logout will occur.
+
+This option makes sense if the "Request when exiting session" policy is enabled.
+
+The "Block" option — (available only for machine policy) prevents the user from changing this setting. Blocking a policy makes it a priority over a similar policy for the user.
+
+      </string>
+
      </stringTable>
 
     <presentationTable>
@@ -980,6 +998,28 @@ The "Block" option — (available only for machine policy) prevents the user fro
       <presentation id="OrgMatePeripheralsKeyboardRateMachine-pr">
         <decimalTextBox refId="OrgMatePeripheralsKeyboardRate_setter">Repeat rate:</decimalTextBox>
         <checkBox refId="OrgMatePeripheralsKeyboardRate_setter_blocker">Block</checkBox>
+      </presentation>
+
+      <presentation id="OrgMateSessionIdleDelayUser-pr">
+        <text>The time in minutes after which the session is considered idle</text>
+        <decimalTextBox refId="OrgMateSessionIdleDelay_setter" defaultValue="5">Time in minutes</decimalTextBox>
+      </presentation>
+
+      <presentation id="OrgMateSessionIdleDelayMachine-pr">
+        <text>The time in minutes after which the session is considered idle</text>
+        <decimalTextBox refId="OrgMateSessionIdleDelay_setter" defaultValue="5">Time in minutes:</decimalTextBox>
+        <checkBox refId="OrgMateSessionIdleDelay_blocker">Block</checkBox>
+      </presentation>
+
+      <presentation id="OrgMateSessionLogoutTimeoutUser-pr">
+        <text>The time in seconds after which the logout will occur</text>
+        <decimalTextBox refId="OrgMateSessionIdleDelay_setter" defaultValue="60">Time in seconds</decimalTextBox>
+      </presentation>
+
+      <presentation id="OrgMateSessionLogoutTimeoutMachine-pr">
+        <text>The time in seconds after which the logout will occur</text>
+        <decimalTextBox refId="OrgMateSessionIdleDelay_setter" defaultValue="60">Time in seconds:</decimalTextBox>
+        <checkBox refId="OrgMateSessionIdleDelay_blocker">Block</checkBox>
       </presentation>
 
     </presentationTable>

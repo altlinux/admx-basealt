@@ -597,6 +597,25 @@ Cтрока типа rgb(0,0,0).
       <string id="org-mate-peripherals-keyboard-rate">Скорость повтора</string>
       <string id="org-mate-peripherals-keyboard-rate_help">Устанавливает скорость повтора нажатой и удерживаемой клавиши.</string>
 
+
+      <string id="org-mate-session-idle-delay">Интервал бездействия, по истечении которого сеанс считается простаивающим</string>
+      <string id="org-mate-session-idle-delay_help">Данная политика позволяет установить время в минутах, по истечении которого, сеанс будет считаться простаивающим.
+
+Этот параметр имеет смысл только при активированных параметрах «Включение хранителя экрана» и «Блокировка компьютера».
+
+Опция «Блокировать» — (доступна только для машинной политики) запрещает изменение данной настройки пользователем. Блокировка политики делает её приоритетнее аналогичной политики для пользователя.
+
+      </string>
+
+      <string id="org-mate-session-logout-timeout">Таймаут выхода из сеанса</string>
+      <string id="org-mate-session-logout-timeout_help">Данная политика позволяет установить время в секундах, по истечении которого произойдет выход из системы.
+
+Этот параметр имеет смысл только при включенной политике «З апрос при выходе из сеанса».
+
+Опция «Блокировать» — (доступна только для машинной политики) запрещает изменение данной настройки пользователем. Блокировка политики делает её приоритетнее аналогичной политики для пользователя.
+
+      </string>
+
     </stringTable>
 
     <presentationTable>
@@ -980,6 +999,28 @@ Cтрока типа rgb(0,0,0).
       <presentation id="OrgMatePeripheralsKeyboardRateMachine-pr">
         <decimalTextBox refId="OrgMatePeripheralsKeyboardRate_setter">Скорость повтора:</decimalTextBox>
         <checkBox refId="OrgMatePeripheralsKeyboardRate_setter_blocker">Блокировать</checkBox>
+      </presentation>
+
+      <presentation id="OrgMateSessionIdleDelayUser-pr">
+        <text>Время в минутах, по истечении которого сеанс считается простаивающим</text>
+        <decimalTextBox refId="OrgMateSessionIdleDelay_setter" defaultValue="5">Время в минутах</decimalTextBox>
+      </presentation>
+
+      <presentation id="OrgMateSessionIdleDelayMachine-pr">
+        <text>Время в минутах, по истечении которого сеанс считается простаивающим</text>
+        <decimalTextBox refId="OrgMateSessionIdleDelay_setter" defaultValue="5">Время в минутах:</decimalTextBox>
+        <checkBox refId="OrgMateSessionIdleDelay_blocker">Блокировать</checkBox>
+      </presentation>
+
+      <presentation id="OrgMateSessionLogoutTimeoutUser-pr">
+        <text>Время в секундах, по истечении которого произойдет выход из системы</text>
+        <decimalTextBox refId="OrgMateSessionIdleDelay_setter" defaultValue="60">Время в секундах</decimalTextBox>
+      </presentation>
+
+      <presentation id="OrgMateSessionLogoutTimeoutMachine-pr">
+        <text>Время в секундах, по истечении которого произойдет выход из системы</text>
+        <decimalTextBox refId="OrgMateSessionIdleDelay_setter" defaultValue="60">Время в секундах:</decimalTextBox>
+        <checkBox refId="OrgMateSessionIdleDelay_blocker">Блокировать</checkBox>
       </presentation>
 
     </presentationTable>

@@ -65,6 +65,8 @@
       <string id="ALT_Background_Mate_Help">Desktop background settings.</string>
       <string id="ALT_Screensaver_Mate">Screensaver</string>
       <string id="ALT_Screensaver_Mate_Help">Screensaver settings.</string>
+      <string id="ALT_Session_Mate">Session settings</string>
+      <string id="ALT_Session_Mate_Help">Session behavior management.</string>
       <string id="ALT_User_Restrictions_Mate">User restrictions</string>
       <string id="ALT_User_Restrictions_Mate_Help">Resctrictions on user actions.</string>
       <string id="ALT_Remote_Access_Vino_Gnome">Remote access via Vino</string>

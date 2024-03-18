@@ -469,6 +469,70 @@
       </elements>
     </policy>
 
+    <policy name="OrgMateSessionIdleDelayUser" class="User"
+        displayName="$(string.org-mate-session-idle-delay)"
+        explainText="$(string.org-mate-session-idle-delay_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        presentation="$(presentation.OrgMateSessionIdleDelayUser-pr)">
+      <parentCategory ref="system:ALT_Session_Mate" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <elements>
+        <decimal id="OrgMateSessionIdleDelay_setter" valueName="org.mate.session.idle-delay" minValue="1" maxValue="2147483647" />
+      </elements>
+    </policy>
+
+    <policy name="OrgMateSessionIdleDelayMachine" class="Machine"
+        displayName="$(string.org-mate-session-idle-delay)"
+        explainText="$(string.org-mate-session-idle-delay_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        presentation="$(presentation.OrgMateSessionIdleDelayMachine-pr)">
+      <parentCategory ref="system:ALT_Session_Mate" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <elements>
+        <decimal id="OrgMateSessionIdleDelay_setter" valueName="org.mate.session.idle-delay" minValue="1" maxValue="2147483647" />
+        <boolean id="OrgMateSessionIdleDelay_blocker" key="Software\BaseALT\Policies\GSettingsLocks" valueName="org.mate.session.idle-delay">
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+        </boolean>
+      </elements>
+    </policy>
+
+    <policy name="OrgMateSessionLogoutTimeoutUser" class="User"
+        displayName="$(string.org-mate-session-logout-timeout)"
+        explainText="$(string.org-mate-session-logout-timeout_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        presentation="$(presentation.OrgMateSessionLogoutTimeoutUser-pr)">
+      <parentCategory ref="system:ALT_Session_Mate" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <elements>
+        <decimal id="OrgMateSessionIdleDelay_setter" valueName="org.mate.session.logout-timeout" minValue="0" maxValue="300" />
+      </elements>
+    </policy>
+
+    <policy name="OrgMateSessionLogoutTimeoutMachine" class="Machine"
+        displayName="$(string.org-mate-session-logout-timeout)"
+        explainText="$(string.org-mate-session-logout-timeout_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        presentation="$(presentation.OrgMateSessionLogoutTimeoutMachine-pr)">
+      <parentCategory ref="system:ALT_Session_Mate" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <elements>
+        <decimal id="OrgMateSessionLogoutTimeout_setter" valueName="org.mate.session.logout-timeout" minValue="0" maxValue="300" />
+        <boolean id="OrgMateSessionLogoutTimeout_blocker" key="Software\BaseALT\Policies\GSettingsLocks" valueName="org.mate.session.logout-timeout">
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+        </boolean>
+      </elements>
+    </policy>
+
     <policy name="OrgMateScreensaverLogoutDelayUser" class="User"
         displayName="$(string.org-mate-screensaver-logout-delay)"
         explainText="$(string.org-mate-screensaver-logout-delay_help)"
