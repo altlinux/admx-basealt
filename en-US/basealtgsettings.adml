@@ -615,6 +615,15 @@ The "Block" option — (available only for machine policy) prevents the user fro
 
       </string>
 
+      <string id="org-mate-session-logout-prompt">Request when exiting the session</string>
+      <string id="org-mate-session-logout-prompt_help">When this parameter is set to the "enabled" state, a dialog box will be displayed before the end of the session with a choice of actions: end the current session, switch the user or cancel the action.
+
+The "Block" option — (available only for machine policy) prevents the user from changing this setting. Blocking a policy makes it a priority over a similar policy for the user.
+
+      </string>
+      <string id="org-mate-session-logout-prompt-true">Enabled</string>
+      <string id="org-mate-session-logout-prompt-false">Disabled</string>
+
      </stringTable>
 
     <presentationTable>
@@ -1020,6 +1029,11 @@ The "Block" option — (available only for machine policy) prevents the user fro
         <text>The time in seconds after which the logout will occur</text>
         <decimalTextBox refId="OrgMateSessionIdleDelay_setter" defaultValue="60">Time in seconds:</decimalTextBox>
         <checkBox refId="OrgMateSessionIdleDelay_blocker">Block</checkBox>
+      </presentation>
+
+      <presentation id="OrgMateSessionLogoutPromptMachine-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="OrgMateSessionLogoutPrompt_setter">Select "Enabled" or "Disabled":</dropdownList>
+        <checkBox refId="OrgMateSessionLogoutPrompt_setter_blocker">Block</checkBox>
       </presentation>
 
     </presentationTable>

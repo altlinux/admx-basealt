@@ -616,6 +616,15 @@ Cтрока типа rgb(0,0,0).
 
       </string>
 
+      <string id="org-mate-session-logout-prompt">Запрос при выходе из сеанса</string>
+      <string id="org-mate-session-logout-prompt_help">При установке данного параметра в состояние "включено" перед окончанием сеанса будет выведено диалоговое окно с выбором действия: завершить текущий сеанс, переключить пользователя или отменить действие.
+
+Опция «Блокировать» — (доступна только для машинной политики) запрещает изменение данной настройки пользователем. Блокировка политики делает её приоритетнее аналогичной политики для пользователя.
+
+      </string>
+      <string id="org-mate-session-logout-prompt-true">Включено</string>
+      <string id="org-mate-session-logout-prompt-false">Отключено</string>
+
     </stringTable>
 
     <presentationTable>
@@ -1021,6 +1030,11 @@ Cтрока типа rgb(0,0,0).
         <text>Время в секундах, по истечении которого произойдет выход из системы</text>
         <decimalTextBox refId="OrgMateSessionIdleDelay_setter" defaultValue="60">Время в секундах:</decimalTextBox>
         <checkBox refId="OrgMateSessionIdleDelay_blocker">Блокировать</checkBox>
+      </presentation>
+
+      <presentation id="OrgMateSessionLogoutPromptMachine-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="OrgMateSessionLogoutPrompt_setter">Выберите «Включено» или «Отключено»:</dropdownList>
+        <checkBox refId="OrgMateSessionLogoutPrompt_setter_blocker">Блокировать</checkBox>
       </presentation>
 
     </presentationTable>

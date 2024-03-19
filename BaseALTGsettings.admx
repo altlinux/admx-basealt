@@ -2481,5 +2481,51 @@
       </elements>
     </policy>
 
+    <policy name="OrgMateSessionLogoutPromptUser" class="User"
+        displayName="$(string.org-mate-session-logout-prompt)"
+        explainText="$(string.org-mate-session-logout-prompt_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        valueName="org.mate.session.logout-prompt">
+      <parentCategory ref="system:ALT_Session_Mate" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+    </policy>
+
+    <policy name="OrgMateSessionLogoutPromptMachine" class="Machine"
+        displayName="$(string.org-mate-session-logout-prompt)"
+        explainText="$(string.org-mate-session-logout-prompt_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        presentation="$(presentation.OrgMateSessionLogoutPromptMachine-pr)">
+      <parentCategory ref="system:ALT_Session_Mate" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <elements>
+        <enum id="OrgMateSessionLogoutPrompt_setter" required="true" valueName="org.mate.session.logout-prompt">
+          <item displayName="$(string.org-mate-session-logout-prompt-true)">
+            <value>
+              <decimal value="1" />
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-session-logout-prompt-false)">
+            <value>
+              <decimal value="0" />
+            </value>
+          </item>
+        </enum>
+        <boolean id="OrgMateSessionLogoutPrompt_setter_blocker" key="Software\BaseALT\Policies\GSettingsLocks" valueName="org.mate.session.logout-prompt">
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+        </boolean>
+      </elements>
+    </policy>
+
   </policies>
 </policyDefinitions>
