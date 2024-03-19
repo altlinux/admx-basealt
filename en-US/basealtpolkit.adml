@@ -61,9 +61,7 @@ Note: the possession of administrative rights in the context of PolicyKit is det
 
       </string>
       <string id="org-freedesktop-udisks2-filesystem-mount-other-seat">Permission to mount removable storage devices in remote sessions</string>
-      <string id="org-freedesktop-udisks2-filesystem-mount-other-seat_help">Permission to mount removable storage devices in remote sessions
-
-This policy grants or restricts permissions to mount removable storage devices from a device connected to a remote workstation (for example, on another computer or remote session).
+      <string id="org-freedesktop-udisks2-filesystem-mount-other-seat_help">This policy grants or restricts permissions to mount removable storage devices from a device connected to a remote workstation (for example, on another computer or remote session)
 
 Disabled/Not configured — Permissions are determined by system settings. Default is «Auth_admin»
 
@@ -89,9 +87,7 @@ The "Block" option prevents the user from changing this setting. Blocking a poli
 
       </string>
       <string id="org-freedesktop-udisks2-filesystem-mount-other-seat-user">Permission to mount removable storage devices in remote sessions</string>
-      <string id="org-freedesktop-udisks2-filesystem-mount-other-seat-user_help">Permission to mount removable storage devices in remote sessions
-
-This policy grants or restricts permissions to mount removable storage devices from a device connected to a remote workstation (for example, on another computer or remote session).
+      <string id="org-freedesktop-udisks2-filesystem-mount-other-seat-user_help">This policy grants or restricts permissions to mount removable storage devices from a device connected to a remote workstation (for example, on another computer or remote session)
 
 Disabled/Not configured — Permissions are determined by system settings. Default is «Auth_admin»
 
