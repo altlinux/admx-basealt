@@ -59,6 +59,8 @@
       <string id="ALT_Application_KDE_Help">Настройки приложений.</string>
       <string id="ALT_Devices_KDE">Устройства ввода</string>
       <string id="ALT_Devices_KDE_Help">Устройства ввода.</string>
+      <string id="ALT_Environment_KDE">Поведение рабочей среды</string>
+      <string id="ALT_Environment_KDE_Help">Настройка поведения рабочей среды KDE Plasma.</string>
       <string id="ALT_Background_Mate">Фон рабочего стола</string>
       <string id="ALT_Background_Mate_Help">Настройки фона рабочего стола.</string>
       <string id="ALT_Screensaver_Mate">Хранитель экрана</string>
