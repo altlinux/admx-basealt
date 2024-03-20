@@ -302,6 +302,15 @@ The "Block" option is necessary to prevent the user from changing this setting.
 
       </string>
 
+      <string id="kde-screenlocker">Screen lock</string>
+      <string id="kde-screenlocker_help">This policy allows you to adjust screen lock settings.
+
+The “Time until screen locks when inactive” setting will only be applied if the “Automatically lock screen” option is enabled.
+
+The “Block” option is necessary to prevent the user from changing this setting.
+
+      </string>
+
       <string id="kde-win-act-Click_to_focus">Click to focus</string>
       <string id="kde-win-act-Focus_follows_mouse">Focus follows mouse</string>
       <string id="kde-win-act-Focus_under_mouse">Focus under mouse</string>
@@ -490,6 +499,18 @@ The "Block" option is necessary to prevent the user from changing this setting.
         </textBox>
         <checkBox refId="kde-lowdpmscontrol_blocker">Block time setting when battery is low</checkBox>
        </presentation>
+       <presentation id="kde-screenlocker-pr">
+        <checkBox refId="kde-screenlocker-autolock_setter">Automatically lock screen</checkBox>
+        <checkBox refId="kde-screenlocker-autolock_blocker">Lock automatic screen lock setting</checkBox>
+        <decimalTextBox refId="kde-screenlocker-timeout_setter" defaultValue="5">Time until the screen locks when there is no activity in minutes:
+        </decimalTextBox>
+        <checkBox refId="kde-screenlocker-timeout_blocker">Block timeout settings</checkBox>
+        <checkBox refId="kde-screenlocker-lockonresume_setter">Automatically lock the screen after resuming from standby</checkBox>
+        <checkBox refId="kde-screenlocker-lockonresume_blocker">Block the auto-lock setting when resuming from standby</checkBox>
+        <decimalTextBox refId="kde-screenlocker-lockgrace_setter" defaultValue="5">Time to unlock the screen without a password in seconds:
+        </decimalTextBox>
+        <checkBox refId="kde-screenlocker-lockgrace_blocker">Lock automatic unlock time setting</checkBox>
+      </presentation>
      </presentationTable>
   </resources>
 </policyDefinitionResources>

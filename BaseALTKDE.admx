@@ -687,5 +687,64 @@
           </boolean>
       </elements>
     </policy>
+    <policy name="kde-screenlocker" class="Both" displayName="$(string.kde-screenlocker)"
+    explainText="$(string.kde-screenlocker_help)"
+    presentation="$(presentation.kde-screenlocker-pr)"
+    key="Software\BaseALT\Policies\KDE">
+    <parentCategory ref="system:ALT_Environment_KDE" />
+    <supportedOn ref="system:SUPPORTED_AltP10" />
+      <elements>
+        <boolean id="kde-screenlocker-autolock_setter" key="Software\BaseALT\Policies\KDE\kscreenlockerrc\Daemon" valueName="Autolock" >
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+          </boolean>
+        <boolean id="kde-screenlocker-autolock_blocker" key="Software\BaseALT\Policies\KDELocks" valueName="kscreenlockerrc.Daemon.Autolock" >
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+          </boolean>
+        <decimal id="kde-screenlocker-timeout_setter" key="Software\BaseALT\Policies\KDE\kscreenlockerrc\Daemon" valueName="Timeout" minValue="1" maxValue="99"/>
+        <boolean id="kde-screenlocker-timeout_blocker" key="Software\BaseALT\Policies\KDELocks" valueName="kscreenlockerrc.Daemon.Timeout" >
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+          </boolean>
+        <boolean id="kde-screenlocker-lockonresume_setter" key="Software\BaseALT\Policies\KDE\kscreenlockerrc\Daemon" valueName="LockOnResume" >
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+          </boolean>
+        <boolean id="kde-screenlocker-lockonresume_blocker" key="Software\BaseALT\Policies\KDELocks" valueName="kscreenlockerrc.Daemon.LockOnResume" >
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+          </boolean>
+        <decimal id="kde-screenlocker-lockgrace_setter" key="Software\BaseALT\Policies\KDE\kscreenlockerrc\Daemon" valueName="LockGrace" minValue="0" maxValue="300"/>
+        <boolean id="kde-screenlocker-lockgrace_blocker" key="Software\BaseALT\Policies\KDELocks" valueName="kscreenlockerrc.Daemon.LockGrace" >
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+          </boolean>
+      </elements>
+    </policy>
   </policies>
 </policyDefinitions>
