@@ -12,7 +12,7 @@
     explainText="$(string.kde-win-activate_help)"
     key="Software\BaseALT\Policies\KDE\kwinrc\Windows"
     presentation="$(presentation.kde-win-activate-pr)">
-    <parentCategory ref="system:ALT_Settings_KDE" />
+    <parentCategory ref="system:ALT_Environment_KDE" />
     <supportedOn ref="system:SUPPORTED_AltP10" />
       <elements>
         <enum id="kde-win-activate_setter" valueName="FocusPolicy" required="true">
@@ -59,7 +59,7 @@
     explainText="$(string.kde-win-rendering_help)"
     key="Software\BaseALT\Policies\KDE\kwinrc\Compositing"
     presentation="$(presentation.kde-win-rendering-pr)">
-    <parentCategory ref="system:ALT_Settings_KDE" />
+    <parentCategory ref="system:ALT_Environment_KDE" />
     <supportedOn ref="system:SUPPORTED_AltP10" />
       <elements>
         <enum id="kde-win-rendering_setter" valueName="LatencyPolicy" required="true">
@@ -472,7 +472,7 @@
       explainText="$(string.kde-graphic-effects_help)"
       presentation="$(presentation.kde-graphic-effects-pr)"
       key="Software\BaseALT\Policies\KDE\kwinrc\Compositing">
-      <parentCategory ref="system:ALT_Settings_KDE"/>
+      <parentCategory ref="system:ALT_Environment_KDE"/>
       <supportedOn ref="system:SUPPORTED_AltP10"/>
       <elements>
         <boolean id="kde-graphic-effects_setter" valueName="Enabled">
@@ -522,7 +522,7 @@
       explainText="$(string.kde-singleclick_help)"
       presentation="$(presentation.kde-singleclick-pr)"
       key="Software\BaseALT\Policies\KDE\kdeglobals\KDE">
-      <parentCategory ref="system:ALT_Settings_KDE"/>
+      <parentCategory ref="system:ALT_Environment_KDE"/>
       <supportedOn ref="system:SUPPORTED_AltP10"/>
       <elements>
       <boolean id="kde-singleclick_setter" valueName="SingleClick">
