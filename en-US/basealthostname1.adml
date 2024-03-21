@@ -223,7 +223,6 @@ Note: the possession of administrative rights in a PolicyKit context is determin
     <presentation id="org-freedesktop-hostname1-pr">
        <dropdownList noSort="true" defaultItem="1" refId="OrgFreedesktopHostname1_setter">Permission options:</dropdownList>
        <checkBox refId="OrgFreedesktopHostname1_blocker">Block</checkBox>
-        <text>Blocking changes to this setting by user policy. Blocking a policy makes it a priority over a similar policy for the user.</text>
         </presentation>
         <presentation id="org-freedesktop-hostname1-user-pr">
          <dropdownList noSort="true" defaultItem="1" refId="OrgFreedesktopHostname1_setter">Permission options:</dropdownList>

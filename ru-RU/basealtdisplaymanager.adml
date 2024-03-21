@@ -174,7 +174,6 @@
       </presentation>
       <presentation id="org-freedesktop-DisplayManagerPolkit-user-pr">
        <dropdownList noSort="true" defaultItem="1" refId="OrgFreedesktopDisplayManager_setter">Варианты ограничений:</dropdownList>
-      <checkBox refId="OrgFreedesktopDisplayManager_blocker">Блокировать</checkBox>
       </presentation>
     </presentationTable>
   </resources>

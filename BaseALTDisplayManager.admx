@@ -100,14 +100,6 @@
             </value>
           </item>
         </enum>
-        <boolean id="OrgFreedesktopDisplayManager_blocker" key="Software\BaseALT\Policies\PolkitLocks" valueName="org.freedesktop.DisplayManager.AccountsService.ModifyAny">
-          <trueValue>
-            <decimal value="1" />
-          </trueValue>
-          <falseValue>
-            <decimal value="0" />
-          </falseValue>
-        </boolean>
       </elements>
     </policy>
     <policy class="Machine" displayName="$(string.org-freedesktop-DisplayManager-AccountsService-ModifyOwn)"
@@ -202,14 +194,6 @@
             </value>
           </item>
         </enum>
-        <boolean id="OrgFreedesktopDisplayManager_blocker" key="Software\BaseALT\Policies\PolkitLocks" valueName="org.freedesktop.DisplayManager.AccountsService.ModifyOwn">
-          <trueValue>
-            <decimal value="1" />
-          </trueValue>
-          <falseValue>
-            <decimal value="0" />
-          </falseValue>
-        </boolean>
       </elements>
      </policy>
      <policy class="Machine" displayName="$(string.org-freedesktop-DisplayManager-AccountsService-ReadAny)"
@@ -304,14 +288,6 @@
             </value>
           </item>
         </enum>
-        <boolean id="OrgFreedesktopDisplayManager_blocker" key="Software\BaseALT\Policies\PolkitLocks" valueName="org.freedesktop.DisplayManager.AccountsService.ReadAny">
-          <trueValue>
-            <decimal value="1" />
-          </trueValue>
-          <falseValue>
-            <decimal value="0" />
-          </falseValue>
-        </boolean>
       </elements>
     </policy>
   </policies>

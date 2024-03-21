@@ -217,25 +217,12 @@ Note: the possession of administrative rights in a PolicyKit context is determin
 
 </stringTable>
     <presentationTable>
-      <presentation id="org-freedesktop-accounts-change-own-password-pr">
+      <presentation id="org-freedesktop-accounts-pr">
        <dropdownList noSort="true" defaultItem="1" refId="OrgFreedesktopAccounts_setter">Restriction options:</dropdownList>
        <checkBox refId="OrgFreedesktopAccounts_blocker">Block</checkBox>
-       <text>Blocking changes to this setting by user policy. Blocking a policy makes it a priority over a similar policy for the user</text>
       </presentation>
-      <presentation id="org-freedesktop-accounts-change-own-user-data-pr">
+      <presentation id="org-freedesktop-accounts-user-pr">
        <dropdownList noSort="true" defaultItem="1" refId="OrgFreedesktopAccounts_setter">Restriction options:</dropdownList>
-       <checkBox refId="OrgFreedesktopAccounts_blocker">Block</checkBox>
-        <text>Blocking changes to this setting by user policy. Blocking a policy makes it a priority over a similar policy for the user.</text>
-      </presentation>
-      <presentation id="org-freedesktop-accounts-set-login-option-pr">
-       <dropdownList noSort="true" defaultItem="1" refId="OrgFreedesktopAccounts_setter">Restriction options:</dropdownList>
-       <checkBox refId="OrgFreedesktopAccounts_blocker">Block</checkBox>
-       <text>Blocking changes to this setting by user policy. Blocking a policy makes it a priority over a similar policy for the user.</text>
-      </presentation>
-      <presentation id="org-freedesktop-accounts-user-administration-pr">
-       <dropdownList noSort="true" defaultItem="1" refId="OrgFreedesktopAccounts_setter">Restriction options:</dropdownList>
-       <checkBox refId="OrgFreedesktopAccounts_blocker">Block</checkBox>
-       <text>Blocking changes to this setting by user policy. Blocking a policy makes it a priority over a similar policy for the user.</text>
       </presentation>
     </presentationTable>
   </resources>

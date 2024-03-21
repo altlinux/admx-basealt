@@ -176,7 +176,6 @@ Note: the possession of administrative rights in a PolicyKit context is determin
       </presentation>
       <presentation id="org-freedesktop-DisplayManagerPolkit-user-pr">
        <dropdownList noSort="true" defaultItem="1" refId="OrgFreedesktopDisplayManager_setter">Restriction Options:</dropdownList>
-       <checkBox refId="OrgFreedesktopDisplayManager_blocker">Block</checkBox>
       </presentation>
     </presentationTable>
   </resources>

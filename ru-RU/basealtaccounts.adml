@@ -217,25 +217,12 @@
 
     </stringTable>
     <presentationTable>
-      <presentation id="org-freedesktop-accounts-change-own-password-pr">
+      <presentation id="org-freedesktop-accounts-pr">
        <dropdownList noSort="true" defaultItem="1" refId="OrgFreedesktopAccounts_setter">Варианты ограничений:</dropdownList>
        <checkBox refId="OrgFreedesktopAccounts_blocker">Блокировать</checkBox>
-       <text>Блокировка изменений данной настройки политикой пользователя. Блокировка политики делает её приоритетнее аналогичной политики для пользователя.</text>
       </presentation>
-      <presentation id="org-freedesktop-accounts-change-own-user-data-pr">
+      <presentation id="org-freedesktop-accounts-user-pr">
        <dropdownList noSort="true" defaultItem="1" refId="OrgFreedesktopAccounts_setter">Варианты ограничений:</dropdownList>
-       <checkBox refId="OrgFreedesktopAccounts_blocker">Блокировать</checkBox>
-       <text>Блокировка изменений данной настройки политикой пользователя. Блокировка политики делает её приоритетнее аналогичной политики для пользователя.</text>
-      </presentation>
-      <presentation id="org-freedesktop-accounts-set-login-option-pr">
-       <dropdownList noSort="true" defaultItem="1" refId="OrgFreedesktopAccounts_setter">Варианты ограничений:</dropdownList>
-       <checkBox refId="OrgFreedesktopAccounts_blocker">Блокировать</checkBox>
-       <text>Блокировка изменений данной настройки политикой пользователя. Блокировка политики делает её приоритетнее аналогичной политики для пользователя.</text>
-      </presentation>
-      <presentation id="org-freedesktop-accounts-user-administration-pr">
-       <dropdownList noSort="true" defaultItem="1" refId="OrgFreedesktopAccounts_setter">Варианты ограничений:</dropdownList>
-       <checkBox refId="OrgFreedesktopAccounts_blocker">Блокировать</checkBox>
-       <text>Блокировка изменений данной настройки политикой пользователя. Блокировка политики делает её приоритетнее аналогичной политики для пользователя.</text>
       </presentation>
     </presentationTable>
   </resources>

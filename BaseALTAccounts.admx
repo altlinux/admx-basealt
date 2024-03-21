@@ -13,7 +13,7 @@
         key="Software\BaseALT\Policies\Polkit"
         name="org.freedesktop.accounts.change-own-password"
         valuename="org.freedesktop.accounts.change-own-password"
-        presentation="$(presentation.org-freedesktop-accounts-change-own-password-pr)">
+        presentation="$(presentation.org-freedesktop-accounts-pr)">
       <parentCategory ref="system:ALT_AccountsPolkit" />
       <supportedOn ref="system:SUPPORTED_AltP10" />
       <elements>
@@ -64,7 +64,7 @@
         key="Software\BaseALT\Policies\Polkit"
         name="org.freedesktop.accounts.change-own-password-user"
         valuename="org.freedesktop.accounts.change-own-password"
-        presentation="$(presentation.org-freedesktop-accounts-change-own-password-pr)">
+        presentation="$(presentation.org-freedesktop-accounts-user-pr)">
       <parentCategory ref="system:ALT_AccountsPolkit" />
       <supportedOn ref="system:SUPPORTED_AltP10" />
       <elements>
@@ -100,14 +100,6 @@
             </value>
           </item>
         </enum>
-        <boolean id="OrgFreedesktopAccounts_blocker" key="Software\BaseALT\Policies\PolkitLocks" valueName="org.freedesktop.accounts.change-own-password">
-          <trueValue>
-            <decimal value="1" />
-          </trueValue>
-          <falseValue>
-            <decimal value="0" />
-          </falseValue>
-        </boolean>
       </elements>
     </policy>
     <policy class="Machine" displayName="$(string.org-freedesktop-accounts-change-own-user-data)"
@@ -115,7 +107,7 @@
         key="Software\BaseALT\Policies\Polkit"
         name="org.freedesktop.accounts.change-own-user-data"
         valuename="org.freedesktop.accounts.change-own-user-data"
-        presentation="$(presentation.org-freedesktop-accounts-change-own-user-data-pr)">
+        presentation="$(presentation.org-freedesktop-accounts-pr)">
       <parentCategory ref="system:ALT_AccountsPolkit" />
       <supportedOn ref="system:SUPPORTED_AltP10" />
       <elements>
@@ -166,7 +158,7 @@
         key="Software\BaseALT\Policies\Polkit"
         name="org.freedesktop.accounts.change-own-user-data-user"
         valuename="org.freedesktop.accounts.change-own-user-data"
-        presentation="$(presentation.org-freedesktop-accounts-change-own-user-data-pr)">
+        presentation="$(presentation.org-freedesktop-accounts-user-pr)">
       <parentCategory ref="system:ALT_AccountsPolkit" />
       <supportedOn ref="system:SUPPORTED_AltP10" />
       <elements>
@@ -202,14 +194,6 @@
             </value>
           </item>
         </enum>
-        <boolean id="OrgFreedesktopAccounts_blocker" key="Software\BaseALT\Policies\PolkitLocks" valueName="org.freedesktop.accounts.change-own-user-data">
-          <trueValue>
-            <decimal value="1" />
-          </trueValue>
-          <falseValue>
-            <decimal value="0" />
-          </falseValue>
-        </boolean>
       </elements>
      </policy>
      <policy class="Machine" displayName="$(string.org-freedesktop-accounts-set-login-option)"
@@ -217,7 +201,7 @@
         key="Software\BaseALT\Policies\Polkit"
         name="org.freedesktop.accounts.set-login-option"
         valuename="org.freedesktop.accounts.set-login-option"
-        presentation="$(presentation.org-freedesktop-accounts-set-login-option-pr)">
+        presentation="$(presentation.org-freedesktop-accounts-pr)">
       <parentCategory ref="system:ALT_AccountsPolkit" />
       <supportedOn ref="system:SUPPORTED_AltP10" />
       <elements>
@@ -268,7 +252,7 @@
         key="Software\BaseALT\Policies\Polkit"
         name="org.freedesktop.accounts.set-login-option-user"
         valuename="org.freedesktop.accounts.set-login-option"
-        presentation="$(presentation.org-freedesktop-accounts-set-login-option-pr)">
+        presentation="$(presentation.org-freedesktop-accounts-user-pr)">
       <parentCategory ref="system:ALT_AccountsPolkit" />
       <supportedOn ref="system:SUPPORTED_AltP10" />
       <elements>
@@ -304,14 +288,6 @@
             </value>
           </item>
         </enum>
-        <boolean id="OrgFreedesktopAccounts_blocker" key="Software\BaseALT\Policies\PolkitLocks" valueName="org.freedesktop.accounts.set-login-option">
-          <trueValue>
-            <decimal value="1" />
-          </trueValue>
-          <falseValue>
-            <decimal value="0" />
-          </falseValue>
-        </boolean>
       </elements>
     </policy>
     <policy class="Machine" displayName="$(string.org-freedesktop-accounts-user-administration)"
@@ -319,7 +295,7 @@
         key="Software\BaseALT\Policies\Polkit"
         name="org.freedesktop.accounts.user-administration"
         valuename="org.freedesktop.accounts.user-administration"
-        presentation="$(presentation.org-freedesktop-accounts-user-administration-pr)">
+        presentation="$(presentation.org-freedesktop-accounts-pr)">
       <parentCategory ref="system:ALT_AccountsPolkit" />
       <supportedOn ref="system:SUPPORTED_AltP10" />
       <elements>
@@ -370,7 +346,7 @@
         key="Software\BaseALT\Policies\Polkit"
         name="org.freedesktop.accounts.user-administration-user"
         valuename="org.freedesktop.accounts.user-administration"
-        presentation="$(presentation.org-freedesktop-accounts-user-administration-pr)">
+        presentation="$(presentation.org-freedesktop-accounts-user-pr)">
       <parentCategory ref="system:ALT_AccountsPolkit" />
       <supportedOn ref="system:SUPPORTED_AltP10" />
       <elements>
@@ -406,14 +382,6 @@
             </value>
           </item>
         </enum>
-        <boolean id="OrgFreedesktopAccounts_blocker" key="Software\BaseALT\Policies\PolkitLocks" valueName="org.freedesktop.accounts.user-administration">
-          <trueValue>
-            <decimal value="1" />
-          </trueValue>
-          <falseValue>
-            <decimal value="0" />
-          </falseValue>
-        </boolean>
       </elements>
     </policy>
   </policies>

@@ -474,7 +474,6 @@
       <presentation id="org-freedesktop-color-manager-pr">
        <dropdownList noSort="true" defaultItem="1" refId="OrgFreedesktopColor-Manager_setter">Варианты ограничений:</dropdownList>
        <checkBox refId="OrgFreedesktopColor-Manager_blocker">Блокировать</checkBox>
-       <text>Блокировка изменений данной настройки политикой пользователя. Блокировка политики делает её приоритетнее аналогичной политики для пользователя.</text>
       </presentation>
       <presentation id="org-freedesktop-color-manager-user-pr">
        <dropdownList noSort="true" defaultItem="1" refId="OrgFreedesktopColor-Manager_setter">Варианты ограничений:</dropdownList>
