@@ -3440,5 +3440,475 @@
         </enum>
       </elements>
     </policy>
+    <policy class="Machine" displayName="$(string.org-freedesktop-udisks2-modify-device)"
+        explainText="$(string.org-freedesktop-udisks2-modify-device_help)"
+        key="Software\BaseALT\Policies\Polkit"
+        name="org.freedesktop.udisks2.modify-device"
+        valuename="org.freedesktop.udisks2.modify-device"
+        presentation="$(presentation.OrgFreedesktopUdisks2-pr)">
+      <parentCategory ref="system:ALT_Udisks2" />
+      <supportedOn ref="system:SUPPORTED_AltP10" />
+      <elements>
+        <enum id="OrgFreedesktopUdisks2_setter" valueName="org.freedesktop.udisks2.modify-device" required="true">
+          <item displayName="$(string.org-freedesktop-udisks2-No)">
+            <value>
+              <string>No</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-freedesktop-udisks2-Yes)">
+            <value>
+              <string>Yes</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-freedesktop-udisks2-Auth-self)">
+            <value>
+              <string>Auth_self</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-freedesktop-udisks2-Auth-admin)">
+            <value>
+              <string>Auth_admin</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-freedesktop-udisks2-Auth-self-keep)">
+            <value>
+              <string>Auth_self_keep</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-freedesktop-udisks2-Auth-admin-keep)">
+            <value>
+              <string>Auth_admin_keep</string>
+            </value>
+          </item>
+        </enum>
+        <boolean id="OrgFreedesktopUdisks2_blocker" key="Software\BaseALT\Policies\PolkitLocks" valueName="org.freedesktop.udisks2.modify-device">
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+        </boolean>
+      </elements>
+    </policy>
+    <policy class="User" displayName="$(string.org-freedesktop-udisks2-modify-device)"
+        explainText="$(string.org-freedesktop-udisks2-modify-device-user_help)"
+        key="Software\BaseALT\Policies\Polkit"
+        name="org.freedesktop.udisks2.modify-device-user"
+        valuename="org.freedesktop.udisks2.modify-device"
+        presentation="$(presentation.OrgFreedesktopUdisks2User-pr)">
+      <parentCategory ref="system:ALT_Udisks2" />
+      <supportedOn ref="system:SUPPORTED_AltP10" />
+      <elements>
+        <enum id="OrgFreedesktopUdisks2_setter" valueName="org.freedesktop.udisks2.modify-device" required="true">
+          <item displayName="$(string.org-freedesktop-udisks2-No)">
+            <value>
+              <string>No</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-freedesktop-udisks2-Yes)">
+            <value>
+              <string>Yes</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-freedesktop-udisks2-Auth-self)">
+            <value>
+              <string>Auth_self</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-freedesktop-udisks2-Auth-admin)">
+            <value>
+              <string>Auth_admin</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-freedesktop-udisks2-Auth-self-keep)">
+            <value>
+              <string>Auth_self_keep</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-freedesktop-udisks2-Auth-admin-keep)">
+            <value>
+              <string>Auth_admin_keep</string>
+            </value>
+          </item>
+        </enum>
+      </elements>
+    </policy>
+    <policy class="Machine" displayName="$(string.org-freedesktop-udisks2-modify-device-other-seat)"
+        explainText="$(string.org-freedesktop-udisks2-modify-device-other-seat_help)"
+        key="Software\BaseALT\Policies\Polkit"
+        name="org.freedesktop.udisks2.modify-device-other-seat"
+        valuename="org.freedesktop.udisks2.modify-device-other-seat"
+        presentation="$(presentation.OrgFreedesktopUdisks2-pr)">
+      <parentCategory ref="system:ALT_Udisks2" />
+      <supportedOn ref="system:SUPPORTED_AltP10" />
+      <elements>
+        <enum id="OrgFreedesktopUdisks2_setter" valueName="org.freedesktop.udisks2.modify-device-other-seat" required="true">
+          <item displayName="$(string.org-freedesktop-udisks2-No)">
+            <value>
+              <string>No</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-freedesktop-udisks2-Yes)">
+            <value>
+              <string>Yes</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-freedesktop-udisks2-Auth-self)">
+            <value>
+              <string>Auth_self</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-freedesktop-udisks2-Auth-admin)">
+            <value>
+              <string>Auth_admin</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-freedesktop-udisks2-Auth-self-keep)">
+            <value>
+              <string>Auth_self_keep</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-freedesktop-udisks2-Auth-admin-keep)">
+            <value>
+              <string>Auth_admin_keep</string>
+            </value>
+          </item>
+        </enum>
+        <boolean id="OrgFreedesktopUdisks2_blocker" key="Software\BaseALT\Policies\PolkitLocks" valueName="org.freedesktop.udisks2.modify-device-other-seat">
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+        </boolean>
+      </elements>
+    </policy>
+    <policy class="User" displayName="$(string.org-freedesktop-udisks2-modify-device-other-seat)"
+        explainText="$(string.org-freedesktop-udisks2-modify-device-other-seat-user_help)"
+        key="Software\BaseALT\Policies\Polkit"
+        name="org.freedesktop.udisks2.modify-device-other-seat-user"
+        valuename="org.freedesktop.udisks2.modify-device-other-seat"
+        presentation="$(presentation.OrgFreedesktopUdisks2User-pr)">
+      <parentCategory ref="system:ALT_Udisks2" />
+      <supportedOn ref="system:SUPPORTED_AltP10" />
+      <elements>
+        <enum id="OrgFreedesktopUdisks2_setter" valueName="org.freedesktop.udisks2.modify-device-other-seat" required="true">
+          <item displayName="$(string.org-freedesktop-udisks2-No)">
+            <value>
+              <string>No</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-freedesktop-udisks2-Yes)">
+            <value>
+              <string>Yes</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-freedesktop-udisks2-Auth-self)">
+            <value>
+              <string>Auth_self</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-freedesktop-udisks2-Auth-admin)">
+            <value>
+              <string>Auth_admin</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-freedesktop-udisks2-Auth-self-keep)">
+            <value>
+              <string>Auth_self_keep</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-freedesktop-udisks2-Auth-admin-keep)">
+            <value>
+              <string>Auth_admin_keep</string>
+            </value>
+          </item>
+        </enum>
+      </elements>
+    </policy>
+    <policy class="Machine" displayName="$(string.org-freedesktop-udisks2-modify-device-system)"
+        explainText="$(string.org-freedesktop-udisks2-modify-device-system_help)"
+        key="Software\BaseALT\Policies\Polkit"
+        name="org.freedesktop.udisks2.modify-device-system"
+        valuename="org.freedesktop.udisks2.modify-device-system"
+        presentation="$(presentation.OrgFreedesktopUdisks2-pr)">
+      <parentCategory ref="system:ALT_Udisks2" />
+      <supportedOn ref="system:SUPPORTED_AltP10" />
+      <elements>
+        <enum id="OrgFreedesktopUdisks2_setter" valueName="org.freedesktop.udisks2.modify-device-system" required="true">
+          <item displayName="$(string.org-freedesktop-udisks2-No)">
+            <value>
+              <string>No</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-freedesktop-udisks2-Yes)">
+            <value>
+              <string>Yes</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-freedesktop-udisks2-Auth-self)">
+            <value>
+              <string>Auth_self</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-freedesktop-udisks2-Auth-admin)">
+            <value>
+              <string>Auth_admin</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-freedesktop-udisks2-Auth-self-keep)">
+            <value>
+              <string>Auth_self_keep</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-freedesktop-udisks2-Auth-admin-keep)">
+            <value>
+              <string>Auth_admin_keep</string>
+            </value>
+          </item>
+        </enum>
+        <boolean id="OrgFreedesktopUdisks2_blocker" key="Software\BaseALT\Policies\PolkitLocks" valueName="org.freedesktop.udisks2.modify-device-system">
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+        </boolean>
+      </elements>
+    </policy>
+    <policy class="User" displayName="$(string.org-freedesktop-udisks2-modify-device-system)"
+        explainText="$(string.org-freedesktop-udisks2-modify-device-system-user_help)"
+        key="Software\BaseALT\Policies\Polkit"
+        name="org.freedesktop.udisks2.modify-device-system-user"
+        valuename="org.freedesktop.udisks2.modify-device-system"
+        presentation="$(presentation.OrgFreedesktopUdisks2User-pr)">
+      <parentCategory ref="system:ALT_Udisks2" />
+      <supportedOn ref="system:SUPPORTED_AltP10" />
+      <elements>
+        <enum id="OrgFreedesktopUdisks2_setter" valueName="org.freedesktop.udisks2.modify-device-system" required="true">
+          <item displayName="$(string.org-freedesktop-udisks2-No)">
+            <value>
+              <string>No</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-freedesktop-udisks2-Yes)">
+            <value>
+              <string>Yes</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-freedesktop-udisks2-Auth-self)">
+            <value>
+              <string>Auth_self</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-freedesktop-udisks2-Auth-admin)">
+            <value>
+              <string>Auth_admin</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-freedesktop-udisks2-Auth-self-keep)">
+            <value>
+              <string>Auth_self_keep</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-freedesktop-udisks2-Auth-admin-keep)">
+            <value>
+              <string>Auth_admin_keep</string>
+            </value>
+          </item>
+        </enum>
+      </elements>
+    </policy>
+    <policy class="Machine" displayName="$(string.org-freedesktop-udisks2-modify-drive-settings)"
+        explainText="$(string.org-freedesktop-udisks2-modify-drive-settings_help)"
+        key="Software\BaseALT\Policies\Polkit"
+        name="org.freedesktop.udisks2.modify-drive-settings"
+        valuename="org.freedesktop.udisks2.modify-drive-settings"
+        presentation="$(presentation.OrgFreedesktopUdisks2-pr)">
+      <parentCategory ref="system:ALT_Udisks2" />
+      <supportedOn ref="system:SUPPORTED_AltP10" />
+      <elements>
+        <enum id="OrgFreedesktopUdisks2_setter" valueName="org.freedesktop.udisks2.modify-drive-settings" required="true">
+          <item displayName="$(string.org-freedesktop-udisks2-No)">
+            <value>
+              <string>No</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-freedesktop-udisks2-Yes)">
+            <value>
+              <string>Yes</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-freedesktop-udisks2-Auth-self)">
+            <value>
+              <string>Auth_self</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-freedesktop-udisks2-Auth-admin)">
+            <value>
+              <string>Auth_admin</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-freedesktop-udisks2-Auth-self-keep)">
+            <value>
+              <string>Auth_self_keep</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-freedesktop-udisks2-Auth-admin-keep)">
+            <value>
+              <string>Auth_admin_keep</string>
+            </value>
+          </item>
+        </enum>
+        <boolean id="OrgFreedesktopUdisks2_blocker" key="Software\BaseALT\Policies\PolkitLocks" valueName="org.freedesktop.udisks2.modify-drive-settings">
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+        </boolean>
+      </elements>
+    </policy>
+    <policy class="User" displayName="$(string.org-freedesktop-udisks2-modify-drive-settings)"
+        explainText="$(string.org-freedesktop-udisks2-modify-drive-settings-user_help)"
+        key="Software\BaseALT\Policies\Polkit"
+        name="org.freedesktop.udisks2.modify-drive-settings-user"
+        valuename="org.freedesktop.udisks2.modify-drive-settings"
+        presentation="$(presentation.OrgFreedesktopUdisks2User-pr)">
+      <parentCategory ref="system:ALT_Udisks2" />
+      <supportedOn ref="system:SUPPORTED_AltP10" />
+      <elements>
+        <enum id="OrgFreedesktopUdisks2_setter" valueName="org.freedesktop.udisks2.modify-drive-settings" required="true">
+          <item displayName="$(string.org-freedesktop-udisks2-No)">
+            <value>
+              <string>No</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-freedesktop-udisks2-Yes)">
+            <value>
+              <string>Yes</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-freedesktop-udisks2-Auth-self)">
+            <value>
+              <string>Auth_self</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-freedesktop-udisks2-Auth-admin)">
+            <value>
+              <string>Auth_admin</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-freedesktop-udisks2-Auth-self-keep)">
+            <value>
+              <string>Auth_self_keep</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-freedesktop-udisks2-Auth-admin-keep)">
+            <value>
+              <string>Auth_admin_keep</string>
+            </value>
+          </item>
+        </enum>
+      </elements>
+    </policy>
+    <policy class="Machine" displayName="$(string.org-freedesktop-udisks2-modify-system-configuration)"
+        explainText="$(string.org-freedesktop-udisks2-modify-system-configuration_help)"
+        key="Software\BaseALT\Policies\Polkit"
+        name="org.freedesktop.udisks2.modify-system-configuration"
+        valuename="org.freedesktop.udisks2.modify-system-configuration"
+        presentation="$(presentation.OrgFreedesktopUdisks2-pr)">
+      <parentCategory ref="system:ALT_Udisks2" />
+      <supportedOn ref="system:SUPPORTED_AltP10" />
+      <elements>
+        <enum id="OrgFreedesktopUdisks2_setter" valueName="org.freedesktop.udisks2.modify-system-configuration" required="true">
+          <item displayName="$(string.org-freedesktop-udisks2-No)">
+            <value>
+              <string>No</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-freedesktop-udisks2-Yes)">
+            <value>
+              <string>Yes</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-freedesktop-udisks2-Auth-self)">
+            <value>
+              <string>Auth_self</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-freedesktop-udisks2-Auth-admin)">
+            <value>
+              <string>Auth_admin</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-freedesktop-udisks2-Auth-self-keep)">
+            <value>
+              <string>Auth_self_keep</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-freedesktop-udisks2-Auth-admin-keep)">
+            <value>
+              <string>Auth_admin_keep</string>
+            </value>
+          </item>
+        </enum>
+        <boolean id="OrgFreedesktopUdisks2_blocker" key="Software\BaseALT\Policies\PolkitLocks" valueName="org.freedesktop.udisks2.modify-system-configuration">
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+        </boolean>
+      </elements>
+    </policy>
+    <policy class="User" displayName="$(string.org-freedesktop-udisks2-modify-system-configuration)"
+        explainText="$(string.org-freedesktop-udisks2-modify-system-configuration-user_help)"
+        key="Software\BaseALT\Policies\Polkit"
+        name="org.freedesktop.udisks2.modify-system-configuration-user"
+        valuename="org.freedesktop.udisks2.modify-system-configuration"
+        presentation="$(presentation.OrgFreedesktopUdisks2User-pr)">
+      <parentCategory ref="system:ALT_Udisks2" />
+      <supportedOn ref="system:SUPPORTED_AltP10" />
+      <elements>
+        <enum id="OrgFreedesktopUdisks2_setter" valueName="org.freedesktop.udisks2.modify-system-configuration" required="true">
+          <item displayName="$(string.org-freedesktop-udisks2-No)">
+            <value>
+              <string>No</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-freedesktop-udisks2-Yes)">
+            <value>
+              <string>Yes</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-freedesktop-udisks2-Auth-self)">
+            <value>
+              <string>Auth_self</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-freedesktop-udisks2-Auth-admin)">
+            <value>
+              <string>Auth_admin</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-freedesktop-udisks2-Auth-self-keep)">
+            <value>
+              <string>Auth_self_keep</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-freedesktop-udisks2-Auth-admin-keep)">
+            <value>
+              <string>Auth_admin_keep</string>
+            </value>
+          </item>
+        </enum>
+      </elements>
+    </policy>
   </policies>
 </policyDefinitions>
