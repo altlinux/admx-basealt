@@ -617,7 +617,7 @@ Cтрока типа rgb(0,0,0).
       </string>
 
       <string id="org-mate-session-logout-prompt">Запрос при выходе из сеанса</string>
-      <string id="org-mate-session-logout-prompt_help">При установке данного параметра в состояние "включено" перед окончанием сеанса будет выведено диалоговое окно с выбором действия: завершить текущий сеанс, переключить пользователя или отменить действие.
+      <string id="org-mate-session-logout-prompt_help">При установке данного параметра в состояние «включено» перед окончанием сеанса будет выведено диалоговое окно с выбором действия: завершить текущий сеанс, переключить пользователя или отменить действие.
 
 Опция «Блокировать» — (доступна только для машинной политики) запрещает изменение данной настройки пользователем. Блокировка политики делает её приоритетнее аналогичной политики для пользователя.
 
@@ -626,13 +626,22 @@ Cтрока типа rgb(0,0,0).
       <string id="org-mate-session-logout-prompt-false">Отключено</string>
 
       <string id="org-mate-session-auto-save-session">Сохранение сеансов</string>
-      <string id="org-mate-session-auto-save-session_help">При установке данного параметра в состояние "включено" система будет автоматически сохранять рабочий сеанс для восстановления при следующем запуске.
+      <string id="org-mate-session-auto-save-session_help">При установке данного параметра в состояние «включено» система будет автоматически сохранять рабочий сеанс для восстановления при следующем запуске.
 
 Опция «Блокировать» — (доступна только для машинной политики) запрещает изменение данной настройки пользователем. Блокировка политики делает её приоритетнее аналогичной политики для пользователя.
 
       </string>
       <string id="org-mate-session-auto-save-session-true">Включено</string>
       <string id="org-mate-session-auto-save-session-false">Отключено</string>
+
+      <string id="org-mate-session-show-hidden-apps">Отображение скрытых автоматически запускаемых приложений</string>
+      <string id="org-mate-session-show-hidden-apps_help">При установке данного параметра в состояние «включено» в меню «Параметры запускаемых приложений» будут видны скрытые автоматически запускаемые программы.
+
+Опция «Блокировать» — (доступна только для машинной политики) запрещает изменение данной настройки пользователем. Блокировка политики делает её приоритетнее аналогичной политики для пользователя.
+
+      </string>
+      <string id="org-mate-session-show-hidden-apps-true">Включено</string>
+      <string id="org-mate-session-show-hidden-apps-false">Отключено</string>
 
     </stringTable>
 
@@ -1049,6 +1058,11 @@ Cтрока типа rgb(0,0,0).
       <presentation id="OrgMateSessionAutoSaveSessionMachine-pr">
         <dropdownList noSort="true" defaultItem="0" refId="OrgMateSessionAutoSaveSession_setter">Выберите «Включено» или «Отключено»:</dropdownList>
         <checkBox refId="OrgMateSessionAutoSaveSession_setter_blocker">Блокировать</checkBox>
+      </presentation>
+
+      <presentation id="OrgMateSessionShowHiddenAppsMachine-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="OrgMateSessionShowHiddenApps_setter">Выберите «Включено» или «Отключено»:</dropdownList>
+        <checkBox refId="OrgMateSessionShowHiddenApps_setter_blocker">Блокировать</checkBox>
       </presentation>
 
     </presentationTable>

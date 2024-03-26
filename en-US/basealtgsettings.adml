@@ -597,8 +597,8 @@ The "Block" option — (available only for machine policy) prevents the user fro
       <string id="org-mate-peripherals-keyboard-rate">Replay rate</string>
       <string id="org-mate-peripherals-keyboard-rate_help">Sets the repeat rate of a pressed and held key.</string>
 
-      <string id="org-mate-session-idle-delay">This policy allows you to set the time in minutes after which the session will be considered idle.</string>
-      <string id="org-mate-session-idle-delay_help">Sets the number of minutes after which the session will be considered idle.
+      <string id="org-mate-session-idle-delay">The interval of inactivity after which the session is considered idle</string>
+      <string id="org-mate-session-idle-delay_help">This policy allows you to set the time in minutes after which the session will be considered idle.
 
 This option only makes sense if the "Enable screen saver" and "Log out after lock" options are activated.
 
@@ -632,6 +632,15 @@ The "Block" option — (available only for machine policy) prevents the user fro
       </string>
       <string id="org-mate-session-auto-save-session-true">Enabled</string>
       <string id="org-mate-session-auto-save-session-false">Disabled</string>
+
+      <string id="org-mate-session-show-hidden-apps">Displaying hidden automatically launched applications</string>
+      <string id="org-mate-session-show-hidden-apps_help">When this parameter is set to the "enabled" state, hidden automatically launched programs will be visible in the "Settings for running applications" menu.
+
+The "Block" option — (available only for machine policy) prevents the user from changing this setting. Blocking a policy makes it a priority over a similar policy for the user.
+
+      </string>
+      <string id="org-mate-session-show-hidden-apps-true">Enabled</string>
+      <string id="org-mate-session-show-hidden-apps-false">Disabled</string>
 
      </stringTable>
 
@@ -1048,6 +1057,11 @@ The "Block" option — (available only for machine policy) prevents the user fro
       <presentation id="OrgMateSessionAutoSaveSessionMachine-pr">
         <dropdownList noSort="true" defaultItem="0" refId="OrgMateSessionAutoSaveSession_setter">Select "Enabled" or "Disabled":</dropdownList>
         <checkBox refId="OrgMateSessionAutoSaveSession_setter_blocker">Block</checkBox>
+      </presentation>
+
+      <presentation id="OrgMateSessionShowHiddenAppsMachine-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="OrgMateSessionShowHiddenApps_setter">Select "Enabled" or "Disabled":</dropdownList>
+        <checkBox refId="OrgMateSessionShowHiddenApps_setter_blocker">Block</checkBox>
       </presentation>
 
     </presentationTable>

@@ -2573,5 +2573,51 @@
       </elements>
     </policy>
 
+    <policy name="OrgMateSessionShowHiddenAppsUser" class="User"
+        displayName="$(string.org-mate-session-show-hidden-apps)"
+        explainText="$(string.org-mate-session-show-hidden-apps_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        valueName="org.mate.session.show-hidden-apps">
+      <parentCategory ref="system:ALT_Session_Mate" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+    </policy>
+
+    <policy name="OrgMateSessionShowHiddenAppsMachine" class="Machine"
+        displayName="$(string.org-mate-session-show-hidden-apps)"
+        explainText="$(string.org-mate-session-show-hidden-apps_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        presentation="$(presentation.OrgMateSessionShowHiddenAppsMachine-pr)">
+      <parentCategory ref="system:ALT_Session_Mate" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <elements>
+        <enum id="OrgMateSessionShowHiddenApps_setter" required="true" valueName="org.mate.session.show-hidden-apps">
+          <item displayName="$(string.org-mate-session-show-hidden-apps-true)">
+            <value>
+              <decimal value="1" />
+            </value>
+          </item>
+          <item displayName="$(string.org-mate-session-show-hidden-apps-false)">
+            <value>
+              <decimal value="0" />
+            </value>
+          </item>
+        </enum>
+        <boolean id="OrgMateSessionShowHiddenApps_setter_blocker" key="Software\BaseALT\Policies\GSettingsLocks" valueName="org.mate.session.show-hidden-apps">
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+        </boolean>
+      </elements>
+    </policy>
+
   </policies>
 </policyDefinitions>
