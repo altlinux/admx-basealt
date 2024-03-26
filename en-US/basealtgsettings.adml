@@ -624,6 +624,15 @@ The "Block" option — (available only for machine policy) prevents the user fro
       <string id="org-mate-session-logout-prompt-true">Enabled</string>
       <string id="org-mate-session-logout-prompt-false">Disabled</string>
 
+      <string id="org-mate-session-auto-save-session">Saving sessions</string>
+      <string id="org-mate-session-auto-save-session_help">When you set this parameter to the "enabled" state, the system will automatically save work session for recovery the next time you start.
+
+The "Block" option — (available only for machine policy) prevents the user from changing this setting. Blocking a policy makes it a priority over a similar policy for the user.
+
+      </string>
+      <string id="org-mate-session-auto-save-session-true">Enabled</string>
+      <string id="org-mate-session-auto-save-session-false">Disabled</string>
+
      </stringTable>
 
     <presentationTable>
@@ -1034,6 +1043,11 @@ The "Block" option — (available only for machine policy) prevents the user fro
       <presentation id="OrgMateSessionLogoutPromptMachine-pr">
         <dropdownList noSort="true" defaultItem="0" refId="OrgMateSessionLogoutPrompt_setter">Select "Enabled" or "Disabled":</dropdownList>
         <checkBox refId="OrgMateSessionLogoutPrompt_setter_blocker">Block</checkBox>
+      </presentation>
+
+      <presentation id="OrgMateSessionAutoSaveSessionMachine-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="OrgMateSessionAutoSaveSession_setter">Select "Enabled" or "Disabled":</dropdownList>
+        <checkBox refId="OrgMateSessionAutoSaveSession_setter_blocker">Block</checkBox>
       </presentation>
 
     </presentationTable>

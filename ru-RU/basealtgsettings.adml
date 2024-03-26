@@ -610,7 +610,7 @@ Cтрока типа rgb(0,0,0).
       <string id="org-mate-session-logout-timeout">Таймаут выхода из сеанса</string>
       <string id="org-mate-session-logout-timeout_help">Данная политика позволяет установить время в секундах, по истечении которого произойдет выход из системы.
 
-Этот параметр имеет смысл только при включенной политике «З апрос при выходе из сеанса».
+Этот параметр имеет смысл только при включенной политике «Запрос при выходе из сеанса».
 
 Опция «Блокировать» — (доступна только для машинной политики) запрещает изменение данной настройки пользователем. Блокировка политики делает её приоритетнее аналогичной политики для пользователя.
 
@@ -624,6 +624,15 @@ Cтрока типа rgb(0,0,0).
       </string>
       <string id="org-mate-session-logout-prompt-true">Включено</string>
       <string id="org-mate-session-logout-prompt-false">Отключено</string>
+
+      <string id="org-mate-session-auto-save-session">Сохранение сеансов</string>
+      <string id="org-mate-session-auto-save-session_help">При установке данного параметра в состояние "включено" система будет автоматически сохранять рабочий сеанс для восстановления при следующем запуске.
+
+Опция «Блокировать» — (доступна только для машинной политики) запрещает изменение данной настройки пользователем. Блокировка политики делает её приоритетнее аналогичной политики для пользователя.
+
+      </string>
+      <string id="org-mate-session-auto-save-session-true">Включено</string>
+      <string id="org-mate-session-auto-save-session-false">Отключено</string>
 
     </stringTable>
 
@@ -1035,6 +1044,11 @@ Cтрока типа rgb(0,0,0).
       <presentation id="OrgMateSessionLogoutPromptMachine-pr">
         <dropdownList noSort="true" defaultItem="0" refId="OrgMateSessionLogoutPrompt_setter">Выберите «Включено» или «Отключено»:</dropdownList>
         <checkBox refId="OrgMateSessionLogoutPrompt_setter_blocker">Блокировать</checkBox>
+      </presentation>
+
+      <presentation id="OrgMateSessionAutoSaveSessionMachine-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="OrgMateSessionAutoSaveSession_setter">Выберите «Включено» или «Отключено»:</dropdownList>
+        <checkBox refId="OrgMateSessionAutoSaveSession_setter_blocker">Блокировать</checkBox>
       </presentation>
 
     </presentationTable>
