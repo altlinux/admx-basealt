@@ -54,11 +54,11 @@
       <string id="gpupdate_gsettings_user_applier">Настройки GSettings для пользователей</string>
       <string id="gpupdate_gsettings_user_applier_help">Эта политика включает применение механизма групповых политик GSettings для пользователей.</string>
 
-      <string id="gpupdate_polkit_applier">Авторизация PolicyKit</string>
-      <string id="gpupdate_polkit_applier_help">Эта политика включает применение механизма групповых политик PolicyKit.</string>
+      <string id="gpupdate_polkit_applier">Настройка Polkit</string>
+      <string id="gpupdate_polkit_applier_help">Эта политика включает применение механизма групповых политик Polkit.</string>
 
-      <string id="gpupdate_polkit_user_applier">Авторизация PolicyKit для пользователей</string>
-      <string id="gpupdate_polkit_user_applier_help">Эта политика включает применение механизма групповых политик PolicyKit для пользователей.</string>
+      <string id="gpupdate_polkit_user_applier">Настройка Polkit для пользователей</string>
+      <string id="gpupdate_polkit_user_applier_help">Эта политика включает применение механизма групповых политик Polkit для пользователей.</string>
 
       <string id="gpupdate_packages_applier">Установка и удаление программ</string>
       <string id="gpupdate_packages_applier_help">Эта политика включает применение механизма групповых политик Packages.</string>

@@ -54,11 +54,11 @@
       <string id="gpupdate_gsettings_user_applier">GSettings mechanisms for users</string>
       <string id="gpupdate_gsettings_user_applier_help">This policy enables group policy GSettings applier for users feature.</string>
 
-      <string id="gpupdate_polkit_applier">PolicyKit authorization</string>
-      <string id="gpupdate_polkit_applier_help">This policy enables group policy PolicyKit applier feature.</string>
+      <string id="gpupdate_polkit_applier">Polkit configuration</string>
+      <string id="gpupdate_polkit_applier_help">This policy enables group policy Polkit applier feature.</string>
 
-      <string id="gpupdate_polkit_user_applier">PolicyKit authorization for users</string>
-      <string id="gpupdate_polkit_user_applier_help">This policy enables group policy PolicyKit applier for users feature.</string>
+      <string id="gpupdate_polkit_user_applier">Polkit configuration for users</string>
+      <string id="gpupdate_polkit_user_applier_help">This policy enables group policy Polkit applier for users feature.</string>
 
       <string id="gpupdate_packages_applier">Install and remove packages</string>
       <string id="gpupdate_packages_applier_help">This policy enables group policy Packages applier feature.</string>
