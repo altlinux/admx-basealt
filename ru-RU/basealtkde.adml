@@ -441,7 +441,6 @@ smb://computername/share/image.png — путь в формате Linux к из�
       </presentation>
       <presentation id="kde-browserapp-pr">
         <dropdownList noSort="true" defaultItem="0" refId="kde-browserapp_setter">Браузер по умолчанию:</dropdownList>
-        <checkBox refId="kde-browserapp_blocker">Блокировать</checkBox>
       </presentation>
       <presentation id="kde-brightnesscontrol-pr">
         <textBox refId="kde-acbrightnesscontrol_setter">

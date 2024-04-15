@@ -441,7 +441,6 @@ The “Block” option is necessary to prevent the user from changing this setti
       </presentation>
       <presentation id="kde-browserapp-pr">
         <dropdownList noSort="true" defaultItem="0" refId="kde-browserapp_setter">Default browser:</dropdownList>
-        <checkBox refId="kde-browserapp_blocker">Block</checkBox>
       </presentation>
       <presentation id="kde-brightnesscontrol-pr">
         <textBox refId="kde-acbrightnesscontrol_setter">

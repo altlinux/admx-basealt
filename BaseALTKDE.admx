@@ -395,14 +395,6 @@
             </value>
           </item>
         </enum>
-        <boolean id="kde-browserapp_blocker" key="Software\BaseALT\Policies\KDELocks" valueName="mimeapps.list.Default Applications.x-scheme-handler/http" >
-          <trueValue>
-            <decimal value="1" />
-          </trueValue>
-          <falseValue>
-            <decimal value="0" />
-          </falseValue>
-          </boolean>
       </elements>
     </policy>
   <policy name="kde-wallpaper" class="User" displayName="$(string.kde-wallpaper)"
