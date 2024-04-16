@@ -322,14 +322,6 @@ smb://computername/share/image.png — путь в формате Linux к из�
       <string id="kde-win-rend-High">Предпочитать более плавную анимацию</string>
       <string id="kde-win-rend-MostHigh">Принудительно наиболее плавная анимация</string>
 
-      <string id="kde-desktoprows-one">1</string>
-      <string id="kde-desktoprows-two">2</string>
-
-      <string id="kde-desktopnumber-one">1</string>
-      <string id="kde-desktopnumber-two">2</string>
-      <string id="kde-desktopnumber-three">3</string>
-      <string id="kde-desktopnumber-four">4</string>
-
       <string id="kde-autolock-enabled">Включено</string>
       <string id="kde-autolock-disabled">Отключено</string>
 
@@ -362,10 +354,10 @@ smb://computername/share/image.png — путь в формате Linux к из�
         <checkBox refId="kde-win-rendering_blocker">Блокировать</checkBox>
       </presentation>
       <presentation id="kde-desktops-pr">
-        <dropdownList noSort="true" defaultItem="0" refId="kde-desktoprows_setter">Количество строк отображения виртуальных столов на панели:</dropdownList>
-        <checkBox refId="kde-desktoprows_blocker">Блокировать</checkBox>
-        <dropdownList noSort="true" defaultItem="0" refId="kde-desktopnumber_setter">Количество виртуальных столов на панели:</dropdownList>
-        <checkBox refId="kde-desktopnumber_blocker">Блокировать</checkBox>
+        <decimalTextBox refId="kde-desktopnumber_setter" defaultValue="1">Количество виртуальных столов на панели:</decimalTextBox>
+        <checkBox refId="kde-desktopnumber_blocker">Блокировать настройку количества виртуальных столов</checkBox>
+        <decimalTextBox refId="kde-desktoprows_setter" defaultValue="1">Количество строк отображения виртуальных столов на панели:</decimalTextBox>
+        <checkBox refId="kde-desktoprows_blocker">Блокировать настройку количества строк отображения виртуальных столов</checkBox>
       </presentation>
       <presentation id="kde-automount-pr">
         <checkBox refId="kde-automount_setter">Автоматически монтировать устройства</checkBox>

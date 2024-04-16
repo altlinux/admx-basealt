@@ -322,14 +322,6 @@ The “Block” option is necessary to prevent the user from changing this setti
       <string id="kde-win-rend-High">Prefer smoother animation</string>
       <string id="kde-win-rend-MostHigh">Force the smoothest animation</string>
 
-      <string id="kde-desktoprows-one">1</string>
-      <string id="kde-desktoprows-two">2</string>
-
-      <string id="kde-desktopnumber-one">1</string>
-      <string id="kde-desktopnumber-two">2</string>
-      <string id="kde-desktopnumber-three">3</string>
-      <string id="kde-desktopnumber-four">4</string>
-
       <string id="kde-autolock-enabled">Enabled</string>
       <string id="kde-autolock-disabled">Disabled</string>
 
@@ -362,10 +354,10 @@ The “Block” option is necessary to prevent the user from changing this setti
         <checkBox refId="kde-win-rendering_blocker">Block</checkBox>
       </presentation>
       <presentation id="kde-desktops-pr">
-        <dropdownList noSort="true" defaultItem="0" refId="kde-desktoprows_setter">Number of lines for displaying virtual tables on the panel:</dropdownList>
-        <checkBox refId="kde-desktoprows_blocker">Block</checkBox>
-        <dropdownList noSort="true" defaultItem="0" refId="kde-desktopnumber_setter">Number of virtual tables on the panel:</dropdownList>
-        <checkBox refId="kde-desktopnumber_blocker">Block</checkBox>
+        <decimalTextBox refId="kde-desktopnumber_setter" defaultValue="1">Number of virtual tables on the panel:</decimalTextBox>
+        <checkBox refId="kde-desktopnumber_blocker">Block setting the number of virtual desks</checkBox>
+        <decimalTextBox refId="kde-desktoprows_setter" defaultValue="1">Number of lines to display virtual desks on the panel:</decimalTextBox>
+        <checkBox refId="kde-desktoprows_blocker">Block setting the number of virtual desktop display lines</checkBox>
       </presentation>
       <presentation id="kde-automount-pr">
         <checkBox refId="kde-automount_setter">Automatically mount devices</checkBox>

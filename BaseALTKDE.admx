@@ -133,40 +133,8 @@
     <parentCategory ref="system:ALT_Settings_KDE" />
     <supportedOn ref="system:SUPPORTED_AltP10" />
       <elements>
-        <enum id="kde-desktoprows_setter" valueName="Rows" required="true">
-          <item displayName="$(string.kde-desktoprows-one)">
-            <value>
-              <string>1</string>
-            </value>
-          </item>
-          <item displayName="$(string.kde-desktoprows-two)">
-            <value>
-              <string>2</string>
-            </value>
-          </item>
-        </enum>
-        <enum id="kde-desktopnumber_setter" valueName="Number" required="true">
-          <item displayName="$(string.kde-desktopnumber-one)">
-            <value>
-              <string>1</string>
-            </value>
-          </item>
-          <item displayName="$(string.kde-desktopnumber-two)">
-            <value>
-              <string>2</string>
-            </value>
-          </item>
-          <item displayName="$(string.kde-desktopnumber-three)">
-            <value>
-              <string>3</string>
-            </value>
-          </item>
-          <item displayName="$(string.kde-desktopnumber-four)">
-            <value>
-              <string>4</string>
-            </value>
-          </item>
-        </enum>
+        <decimal id="kde-desktoprows_setter" valueName="Rows" minValue="1" maxValue="20" />
+        <decimal id="kde-desktopnumber_setter" valueName="Number" minValue="1" maxValue="20" />
         <boolean id="kde-desktoprows_blocker" key="Software\BaseALT\Policies\KDELocks" valueName="kwinrc.Desktops.Rows">
           <trueValue>
             <decimal value="1" />
