@@ -20,6 +20,16 @@
   </categories>
 
   <policies>
+    <policy class="Machine" displayName="$(string.gpupdate_force_update)" explainText="$(string.gpupdate_force_update_help)" key="Software\BaseALT\Policies\GPUpdate" name="ForceUpdate" valueName="Force">
+      <parentCategory ref="ALT_GroupPolicies"/>
+      <supportedOn ref="system:SUPPORTED_AltP9"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
     <policy class="Machine" displayName="$(string.gpupdate_global_experimental)" explainText="$(string.gpupdate_global_experimental_help)" key="Software\BaseALT\Policies\GPUpdate" name="GlobalExperimental" valueName="GlobalExperimental">
       <parentCategory ref="ALT_GroupPolicies"/>
       <supportedOn ref="system:SUPPORTED_AltP9"/>
