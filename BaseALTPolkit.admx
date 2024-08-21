@@ -1466,5 +1466,475 @@
         </enum>
       </elements>
     </policy>
+    <policy class="Machine" displayName="$(string.org-freedesktop-udisks2-cancel-job)"
+        explainText="$(string.org-freedesktop-udisks2-cancel-job_help)"
+        key="Software\BaseALT\Policies\Polkit"
+        name="org.freedesktop.udisks2.cancel-job"
+        valuename="org.freedesktop.udisks2.cancel-job"
+        presentation="$(presentation.OrgFreedesktopUdisks2-pr)">
+      <parentCategory ref="system:ALT_Udisks2" />
+      <supportedOn ref="system:SUPPORTED_AltP10" />
+      <elements>
+        <enum id="OrgFreedesktopUdisks2_setter" valueName="org.freedesktop.udisks2.cancel-job" required="true">
+          <item displayName="$(string.org-freedesktop-udisks2-No)">
+            <value>
+              <string>No</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-freedesktop-udisks2-Yes)">
+            <value>
+              <string>Yes</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-freedesktop-udisks2-Auth-self)">
+            <value>
+              <string>Auth_self</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-freedesktop-udisks2-Auth-admin)">
+            <value>
+              <string>Auth_admin</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-freedesktop-udisks2-Auth-self-keep)">
+            <value>
+              <string>Auth_self_keep</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-freedesktop-udisks2-Auth-admin-keep)">
+            <value>
+              <string>Auth_admin_keep</string>
+            </value>
+          </item>
+        </enum>
+        <boolean id="OrgFreedesktopUdisks2_blocker" key="Software\BaseALT\Policies\PolkitLocks" valueName="org.freedesktop.udisks2.cancel-job">
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+        </boolean>
+      </elements>
+    </policy>
+    <policy class="User" displayName="$(string.org-freedesktop-udisks2-cancel-job)"
+        explainText="$(string.org-freedesktop-udisks2-cancel-job-user_help)"
+        key="Software\BaseALT\Policies\Polkit"
+        name="org.freedesktop.udisks2.cancel-job-user"
+        valuename="org.freedesktop.udisks2.cancel-job"
+        presentation="$(presentation.OrgFreedesktopUdisks2User-pr)">
+      <parentCategory ref="system:ALT_Udisks2" />
+      <supportedOn ref="system:SUPPORTED_AltP10" />
+      <elements>
+        <enum id="OrgFreedesktopUdisks2_setter" valueName="org.freedesktop.udisks2.cancel-job" required="true">
+          <item displayName="$(string.org-freedesktop-udisks2-No)">
+            <value>
+              <string>No</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-freedesktop-udisks2-Yes)">
+            <value>
+              <string>Yes</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-freedesktop-udisks2-Auth-self)">
+            <value>
+              <string>Auth_self</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-freedesktop-udisks2-Auth-admin)">
+            <value>
+              <string>Auth_admin</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-freedesktop-udisks2-Auth-self-keep)">
+            <value>
+              <string>Auth_self_keep</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-freedesktop-udisks2-Auth-admin-keep)">
+            <value>
+              <string>Auth_admin_keep</string>
+            </value>
+          </item>
+        </enum>
+      </elements>
+    </policy>
+    <policy class="Machine" displayName="$(string.org-freedesktop-udisks2-cancel-job-other-user)"
+        explainText="$(string.org-freedesktop-udisks2-cancel-job-other-user_help)"
+        key="Software\BaseALT\Policies\Polkit"
+        name="org.freedesktop.udisks2.cancel-job-other-user"
+        valuename="org.freedesktop.udisks2.cancel-job-other-user"
+        presentation="$(presentation.OrgFreedesktopUdisks2-pr)">
+      <parentCategory ref="system:ALT_Udisks2" />
+      <supportedOn ref="system:SUPPORTED_AltP10" />
+      <elements>
+        <enum id="OrgFreedesktopUdisks2_setter" valueName="org.freedesktop.udisks2.cancel-job-other-user" required="true">
+          <item displayName="$(string.org-freedesktop-udisks2-No)">
+            <value>
+              <string>No</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-freedesktop-udisks2-Yes)">
+            <value>
+              <string>Yes</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-freedesktop-udisks2-Auth-self)">
+            <value>
+              <string>Auth_self</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-freedesktop-udisks2-Auth-admin)">
+            <value>
+              <string>Auth_admin</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-freedesktop-udisks2-Auth-self-keep)">
+            <value>
+              <string>Auth_self_keep</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-freedesktop-udisks2-Auth-admin-keep)">
+            <value>
+              <string>Auth_admin_keep</string>
+            </value>
+          </item>
+        </enum>
+        <boolean id="OrgFreedesktopUdisks2_blocker" key="Software\BaseALT\Policies\PolkitLocks" valueName="org.freedesktop.udisks2.cancel-job-other-user">
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+        </boolean>
+      </elements>
+    </policy>
+    <policy class="User" displayName="$(string.org-freedesktop-udisks2-cancel-job-other-user)"
+        explainText="$(string.org-freedesktop-udisks2-cancel-job-other-user-user_help)"
+        key="Software\BaseALT\Policies\Polkit"
+        name="org.freedesktop.udisks2.cancel-job-other-user-user"
+        valuename="org.freedesktop.udisks2.cancel-job-other-user"
+        presentation="$(presentation.OrgFreedesktopUdisks2User-pr)">
+      <parentCategory ref="system:ALT_Udisks2" />
+      <supportedOn ref="system:SUPPORTED_AltP10" />
+      <elements>
+        <enum id="OrgFreedesktopUdisks2_setter" valueName="org.freedesktop.udisks2.cancel-job-other-user" required="true">
+          <item displayName="$(string.org-freedesktop-udisks2-No)">
+            <value>
+              <string>No</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-freedesktop-udisks2-Yes)">
+            <value>
+              <string>Yes</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-freedesktop-udisks2-Auth-self)">
+            <value>
+              <string>Auth_self</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-freedesktop-udisks2-Auth-admin)">
+            <value>
+              <string>Auth_admin</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-freedesktop-udisks2-Auth-self-keep)">
+            <value>
+              <string>Auth_self_keep</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-freedesktop-udisks2-Auth-admin-keep)">
+            <value>
+              <string>Auth_admin_keep</string>
+            </value>
+          </item>
+        </enum>
+      </elements>
+    </policy>
+    <policy class="Machine" displayName="$(string.org-freedesktop-udisks2-eject-media)"
+        explainText="$(string.org-freedesktop-udisks2-eject-media_help)"
+        key="Software\BaseALT\Policies\Polkit"
+        name="org.freedesktop.udisks2.eject-media"
+        valuename="org.freedesktop.udisks2.eject-media"
+        presentation="$(presentation.OrgFreedesktopUdisks2-pr)">
+      <parentCategory ref="system:ALT_Udisks2" />
+      <supportedOn ref="system:SUPPORTED_AltP10" />
+      <elements>
+        <enum id="OrgFreedesktopUdisks2_setter" valueName="org.freedesktop.udisks2.eject-media" required="true">
+          <item displayName="$(string.org-freedesktop-udisks2-No)">
+            <value>
+              <string>No</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-freedesktop-udisks2-Yes)">
+            <value>
+              <string>Yes</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-freedesktop-udisks2-Auth-self)">
+            <value>
+              <string>Auth_self</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-freedesktop-udisks2-Auth-admin)">
+            <value>
+              <string>Auth_admin</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-freedesktop-udisks2-Auth-self-keep)">
+            <value>
+              <string>Auth_self_keep</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-freedesktop-udisks2-Auth-admin-keep)">
+            <value>
+              <string>Auth_admin_keep</string>
+            </value>
+          </item>
+        </enum>
+        <boolean id="OrgFreedesktopUdisks2_blocker" key="Software\BaseALT\Policies\PolkitLocks" valueName="org.freedesktop.udisks2.eject-media">
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+        </boolean>
+      </elements>
+    </policy>
+    <policy class="User" displayName="$(string.org-freedesktop-udisks2-eject-media)"
+        explainText="$(string.org-freedesktop-udisks2-eject-media-user_help)"
+        key="Software\BaseALT\Policies\Polkit"
+        name="org.freedesktop.udisks2.eject-media-user"
+        valuename="org.freedesktop.udisks2.eject-media"
+        presentation="$(presentation.OrgFreedesktopUdisks2User-pr)">
+      <parentCategory ref="system:ALT_Udisks2" />
+      <supportedOn ref="system:SUPPORTED_AltP10" />
+      <elements>
+        <enum id="OrgFreedesktopUdisks2_setter" valueName="org.freedesktop.udisks2.eject-media" required="true">
+          <item displayName="$(string.org-freedesktop-udisks2-No)">
+            <value>
+              <string>No</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-freedesktop-udisks2-Yes)">
+            <value>
+              <string>Yes</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-freedesktop-udisks2-Auth-self)">
+            <value>
+              <string>Auth_self</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-freedesktop-udisks2-Auth-admin)">
+            <value>
+              <string>Auth_admin</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-freedesktop-udisks2-Auth-self-keep)">
+            <value>
+              <string>Auth_self_keep</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-freedesktop-udisks2-Auth-admin-keep)">
+            <value>
+              <string>Auth_admin_keep</string>
+            </value>
+          </item>
+        </enum>
+      </elements>
+    </policy>
+    <policy class="Machine" displayName="$(string.org-freedesktop-udisks2-eject-media-other-seat)"
+        explainText="$(string.org-freedesktop-udisks2-eject-media-other-seat_help)"
+        key="Software\BaseALT\Policies\Polkit"
+        name="org.freedesktop.udisks2.eject-media-other-seat"
+        valuename="org.freedesktop.udisks2.eject-media-other-seat"
+        presentation="$(presentation.OrgFreedesktopUdisks2-pr)">
+      <parentCategory ref="system:ALT_Udisks2" />
+      <supportedOn ref="system:SUPPORTED_AltP10" />
+      <elements>
+        <enum id="OrgFreedesktopUdisks2_setter" valueName="org.freedesktop.udisks2.eject-media-other-seat" required="true">
+          <item displayName="$(string.org-freedesktop-udisks2-No)">
+            <value>
+              <string>No</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-freedesktop-udisks2-Yes)">
+            <value>
+              <string>Yes</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-freedesktop-udisks2-Auth-self)">
+            <value>
+              <string>Auth_self</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-freedesktop-udisks2-Auth-admin)">
+            <value>
+              <string>Auth_admin</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-freedesktop-udisks2-Auth-self-keep)">
+            <value>
+              <string>Auth_self_keep</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-freedesktop-udisks2-Auth-admin-keep)">
+            <value>
+              <string>Auth_admin_keep</string>
+            </value>
+          </item>
+        </enum>
+        <boolean id="OrgFreedesktopUdisks2_blocker" key="Software\BaseALT\Policies\PolkitLocks" valueName="org.freedesktop.udisks2.eject-media-other-seat">
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+        </boolean>
+      </elements>
+    </policy>
+    <policy class="User" displayName="$(string.org-freedesktop-udisks2-eject-media-other-seat)"
+        explainText="$(string.org-freedesktop-udisks2-eject-media-other-seat-user_help)"
+        key="Software\BaseALT\Policies\Polkit"
+        name="org.freedesktop.udisks2.eject-media-other-seat-user"
+        valuename="org.freedesktop.udisks2.eject-media-other-seat"
+        presentation="$(presentation.OrgFreedesktopUdisks2User-pr)">
+      <parentCategory ref="system:ALT_Udisks2" />
+      <supportedOn ref="system:SUPPORTED_AltP10" />
+      <elements>
+        <enum id="OrgFreedesktopUdisks2_setter" valueName="org.freedesktop.udisks2.eject-media-other-seat" required="true">
+          <item displayName="$(string.org-freedesktop-udisks2-No)">
+            <value>
+              <string>No</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-freedesktop-udisks2-Yes)">
+            <value>
+              <string>Yes</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-freedesktop-udisks2-Auth-self)">
+            <value>
+              <string>Auth_self</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-freedesktop-udisks2-Auth-admin)">
+            <value>
+              <string>Auth_admin</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-freedesktop-udisks2-Auth-self-keep)">
+            <value>
+              <string>Auth_self_keep</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-freedesktop-udisks2-Auth-admin-keep)">
+            <value>
+              <string>Auth_admin_keep</string>
+            </value>
+          </item>
+        </enum>
+      </elements>
+    </policy>
+    <policy class="Machine" displayName="$(string.org-freedesktop-udisks2-eject-media-system)"
+        explainText="$(string.org-freedesktop-udisks2-eject-media-system_help)"
+        key="Software\BaseALT\Policies\Polkit"
+        name="org.freedesktop.udisks2.eject-media-system"
+        valuename="org.freedesktop.udisks2.eject-media-system"
+        presentation="$(presentation.OrgFreedesktopUdisks2-pr)">
+      <parentCategory ref="system:ALT_Udisks2" />
+      <supportedOn ref="system:SUPPORTED_AltP10" />
+      <elements>
+        <enum id="OrgFreedesktopUdisks2_setter" valueName="org.freedesktop.udisks2.eject-media-system" required="true">
+          <item displayName="$(string.org-freedesktop-udisks2-No)">
+            <value>
+              <string>No</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-freedesktop-udisks2-Yes)">
+            <value>
+              <string>Yes</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-freedesktop-udisks2-Auth-self)">
+            <value>
+              <string>Auth_self</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-freedesktop-udisks2-Auth-admin)">
+            <value>
+              <string>Auth_admin</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-freedesktop-udisks2-Auth-self-keep)">
+            <value>
+              <string>Auth_self_keep</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-freedesktop-udisks2-Auth-admin-keep)">
+            <value>
+              <string>Auth_admin_keep</string>
+            </value>
+          </item>
+        </enum>
+        <boolean id="OrgFreedesktopUdisks2_blocker" key="Software\BaseALT\Policies\PolkitLocks" valueName="org.freedesktop.udisks2.eject-media-system">
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+        </boolean>
+      </elements>
+    </policy>
+    <policy class="User" displayName="$(string.org-freedesktop-udisks2-eject-media-system)"
+        explainText="$(string.org-freedesktop-udisks2-eject-media-system-user_help)"
+        key="Software\BaseALT\Policies\Polkit"
+        name="org.freedesktop.udisks2.eject-media-system-user"
+        valuename="org.freedesktop.udisks2.eject-media-system"
+        presentation="$(presentation.OrgFreedesktopUdisks2User-pr)">
+      <parentCategory ref="system:ALT_Udisks2" />
+      <supportedOn ref="system:SUPPORTED_AltP10" />
+      <elements>
+        <enum id="OrgFreedesktopUdisks2_setter" valueName="org.freedesktop.udisks2.eject-media-system" required="true">
+          <item displayName="$(string.org-freedesktop-udisks2-No)">
+            <value>
+              <string>No</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-freedesktop-udisks2-Yes)">
+            <value>
+              <string>Yes</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-freedesktop-udisks2-Auth-self)">
+            <value>
+              <string>Auth_self</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-freedesktop-udisks2-Auth-admin)">
+            <value>
+              <string>Auth_admin</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-freedesktop-udisks2-Auth-self-keep)">
+            <value>
+              <string>Auth_self_keep</string>
+            </value>
+          </item>
+          <item displayName="$(string.org-freedesktop-udisks2-Auth-admin-keep)">
+            <value>
+              <string>Auth_admin_keep</string>
+            </value>
+          </item>
+        </enum>
+      </elements>
+    </policy>
   </policies>
 </policyDefinitions>
