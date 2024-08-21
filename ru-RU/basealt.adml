@@ -95,6 +95,8 @@
       <string id="ALT_Udisks2NVME_Help">Управление polkit-ограничениями настроек NVME Udisks.</string>
       <string id="ALT_Udisks2Open">Ограничения настроек Open Udisks</string>
       <string id="ALT_Udisks2Open_Help">Управление polkit-ограничениями настроек open Udisks.</string>
+      <string id="ALT_Udisks2Power">Ограничения настроек power-off Udisks</string>
+      <string id="ALT_Udisks2Power_Help">Управление polkit-ограничениями настроек power-off Udisks.</string>
       <string id="ALT_PackageKit">Ограничения PackageKit</string>
       <string id="ALT_PackageKit_Help">Управление polkit-ограничениями PackageKit.</string>
       <string id="ALT_NetworkManagerPolkit">Ограничения NetworkManager</string>

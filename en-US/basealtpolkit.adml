@@ -1824,7 +1824,7 @@ Note: the possession of administrative rights in a PolicyKit context is determin
       </string>
       <string id="org-freedesktop-udisks2-modify-device-other-seat">Permission to modify a device (other seat)</string>
       <string id="org-freedesktop-udisks2-modify-device-other-seat_help">The policy restricts the ability to modify a device (other seat)
-      
+
 Disabled/Unconfigured — restrictions are defined by system parameters.
 
 Enabled — restriction with defined rights;
@@ -1874,7 +1874,7 @@ Note: the possession of administrative rights in a PolicyKit context is determin
       </string>
       <string id="org-freedesktop-udisks2-modify-device-system">Permission to modify a system device</string>
       <string id="org-freedesktop-udisks2-modify-device-system_help">The policy restricts the ability to modify a system device
-      
+
 Disabled/Unconfigured — restrictions are defined by system parameters.
 
 Enabled — restriction with defined rights;
@@ -1924,7 +1924,7 @@ Note: the possession of administrative rights in a PolicyKit context is determin
       </string>
       <string id="org-freedesktop-udisks2-modify-drive-settings">Permission to modify drive settings</string>
       <string id="org-freedesktop-udisks2-modify-drive-settings_help">The policy restricts the ability to modify drive settings
-      
+
 Disabled/Unconfigured — restrictions are defined by system parameters.
 
 Enabled — restriction with defined rights;
@@ -1974,7 +1974,7 @@ Note: the possession of administrative rights in a PolicyKit context is determin
       </string>
       <string id="org-freedesktop-udisks2-modify-system-configuration">Permission to modify system-wide configuration</string>
       <string id="org-freedesktop-udisks2-modify-system-configuration_help">The policy restricts the ability to modify system-wide configuration
-      
+
 Disabled/Unconfigured — restrictions are defined by system parameters.
 
 Enabled — restriction with defined rights;
@@ -2024,7 +2024,7 @@ Note: the possession of administrative rights in a PolicyKit context is determin
       </string>
       <string id="org-freedesktop-udisks2-nvme-connect">Permission to NVMeoF connection</string>
       <string id="org-freedesktop-udisks2-nvme-connect_help">The policy restricts the ability to NVMeoF connection
-      
+
 Disabled/Unconfigured — restrictions are defined by system parameters.
 
 Enabled — restriction with defined rights;
@@ -2074,7 +2074,7 @@ Note: the possession of administrative rights in a PolicyKit context is determin
       </string>
       <string id="org-freedesktop-udisks2-nvme-disconnect">Permission to disconnect a NVMeoF controller</string>
       <string id="org-freedesktop-udisks2-nvme-disconnect_help">The policy restricts the ability to disconnect a NVMeoF controller
-      
+
 Disabled/Unconfigured — restrictions are defined by system parameters.
 
 Enabled — restriction with defined rights;
@@ -2124,7 +2124,7 @@ Note: the possession of administrative rights in a PolicyKit context is determin
       </string>
       <string id="org-freedesktop-udisks2-nvme-format-namespace">Permission to format a namespace</string>
       <string id="org-freedesktop-udisks2-nvme-format-namespace_help">The policy restricts the ability to format a namespace
-      
+
 Disabled/Unconfigured — restrictions are defined by system parameters.
 
 Enabled — restriction with defined rights;
@@ -2174,7 +2174,7 @@ Note: the possession of administrative rights in a PolicyKit context is determin
       </string>
       <string id="org-freedesktop-udisks2-nvme-sanitize">Permission to start the sanitize operation</string>
       <string id="org-freedesktop-udisks2-nvme-sanitize_help">The policy restricts the ability to start the sanitize operation
-      
+
 Disabled/Unconfigured — restrictions are defined by system parameters.
 
 Enabled — restriction with defined rights;
@@ -2224,7 +2224,7 @@ Note: the possession of administrative rights in a PolicyKit context is determin
       </string>
       <string id="org-freedesktop-udisks2-nvme-set-hostnqn-id">Permission to set a NVMe Host NQN/ID</string>
       <string id="org-freedesktop-udisks2-nvme-set-hostnqn-id_help">The policy restricts the ability to set a NVMe Host NQN/ID
-      
+
 Disabled/Unconfigured — restrictions are defined by system parameters.
 
 Enabled — restriction with defined rights;
@@ -2274,7 +2274,7 @@ Note: the possession of administrative rights in a PolicyKit context is determin
       </string>
       <string id="org-freedesktop-udisks2-nvme-smart-selftest">Permission to run device self-test</string>
       <string id="org-freedesktop-udisks2-nvme-smart-selftest_help">The policy restricts the ability to run device self-test
-      
+
 Disabled/Unconfigured — restrictions are defined by system parameters.
 
 Enabled — restriction with defined rights;
@@ -2324,7 +2324,7 @@ Note: the possession of administrative rights in a PolicyKit context is determin
       </string>
       <string id="org-freedesktop-udisks2-nvme-smart-update">Permission to update SMART data (NVMe)</string>
       <string id="org-freedesktop-udisks2-nvme-smart-update_help">The policy restricts the ability to update SMART data (NVMe)
-      
+
 Disabled/Unconfigured — restrictions are defined by system parameters.
 
 Enabled — restriction with defined rights;
@@ -2374,7 +2374,7 @@ Note: the possession of administrative rights in a PolicyKit context is determin
       </string>
       <string id="org-freedesktop-udisks2-open-device">Permission to open a device</string>
       <string id="org-freedesktop-udisks2-open-device_help">The policy restricts the ability to open a device
-      
+
 Disabled/Unconfigured — restrictions are defined by system parameters.
 
 Enabled — restriction with defined rights;
@@ -2424,7 +2424,7 @@ Note: the possession of administrative rights in a PolicyKit context is determin
       </string>
       <string id="org-freedesktop-udisks2-open-device-system">Permission to open a system device</string>
       <string id="org-freedesktop-udisks2-open-device-system_help">The policy restricts the ability to open a system device
-      
+
 Disabled/Unconfigured — restrictions are defined by system parameters.
 
 Enabled — restriction with defined rights;
@@ -2471,6 +2471,155 @@ Possible values:
 
 Note: the possession of administrative rights in a PolicyKit context is determined by its rules. By default, Alt asks for the password of a user in the "wheel" group.
 
+      </string>
+      <string id="org-freedesktop-udisks2-power-off-drive">Permission to power off drive</string>
+      <string id="org-freedesktop-udisks2-power-off-drive_help">The policy restricts the ability to power off drive
+
+Disabled/Unconfigured — restrictions are defined by system parameters.
+
+Enabled — restriction with defined rights;
+
+Possible values:
+
+"No" — set restriction with action denial (user is not allowed to perform the action);
+
+"Yes" — remove the restriction (the user can perform the action without any authentication);
+
+"Auth_self" — the user must enter his/her password for authentication. Note, this level of restriction is not sufficient for most multi-user applications, "Auth_admin" is usually recommended;
+
+"Auth_admin" — the user must enter the administrator password at each request. Requires authentication of the user with administrator privileges;
+
+"Auth_self_keep" — similar to "Auth_self", but authorization is maintained for a short period of time (e.g., five minutes). Note, this level of restriction is insufficient for most multi-user applications, "Auth_admin_keep" is generally recommended;
+
+"Auth_admin_keep" — similar to "Auth_admin", but authorization is maintained for a short period of time (e.g., five minutes);
+
+Note: the possession of administrative rights in a PolicyKit context is determined by its rules. By default, Alt asks for the password of a user in the "wheel" group.
+
+The "Block" option prevents the user from changing this setting. Blocking a policy makes it a priority over a similar policy for the user.
+
+      </string>
+      <string id="org-freedesktop-udisks2-power-off-drive-user">Permission to power off drive</string>
+      <string id="org-freedesktop-udisks2-power-off-drive-user_help">The policy restricts the ability to power off drive
+
+Disabled/Unconfigured — restrictions are defined by system parameters.
+
+Enabled — restriction with defined rights;
+
+Possible values:
+
+"No" — set restriction with action denial (user is not allowed to perform the action);
+
+"Yes" — remove the restriction (the user can perform the action without any authentication);
+
+"Auth_self" — the user must enter his/her password for authentication. Note, this level of restriction is not sufficient for most multi-user applications, "Auth_admin" is usually recommended;
+
+"Auth_admin" — the user must enter the administrator password at each request. Requires authentication of the user with administrator privileges;
+
+"Auth_self_keep" — similar to "Auth_self", but authorization is maintained for a short period of time (e.g., five minutes). Note, this level of restriction is insufficient for most multi-user applications, "Auth_admin_keep" is generally recommended;
+
+"Auth_admin_keep" — similar to "Auth_admin", but authorization is maintained for a short period of time (e.g., five minutes);
+
+Note: the possession of administrative rights in a PolicyKit context is determined by its rules. By default, Alt asks for the password of a user in the "wheel" group.
+
+      </string>
+      <string id="org-freedesktop-udisks2-power-off-drive-other-seat">Permission to power off a drive attached to another seat</string>
+      <string id="org-freedesktop-udisks2-power-off-drive-other-seat_help">The policy restricts the ability to power off a drive attached to another seat
+
+Disabled/Unconfigured — restrictions are defined by system parameters.
+
+Enabled — restriction with defined rights;
+
+Possible values:
+
+"No" — set restriction with action denial (user is not allowed to perform the action);
+
+"Yes" — remove the restriction (the user can perform the action without any authentication);
+
+"Auth_self" — the user must enter his/her password for authentication. Note, this level of restriction is not sufficient for most multi-user applications, "Auth_admin" is usually recommended;
+
+"Auth_admin" — the user must enter the administrator password at each request. Requires authentication of the user with administrator privileges;
+
+"Auth_self_keep" — similar to "Auth_self", but authorization is maintained for a short period of time (e.g., five minutes). Note, this level of restriction is insufficient for most multi-user applications, "Auth_admin_keep" is generally recommended;
+
+"Auth_admin_keep" — similar to "Auth_admin", but authorization is maintained for a short period of time (e.g., five minutes);
+
+Note: the possession of administrative rights in a PolicyKit context is determined by its rules. By default, Alt asks for the password of a user in the "wheel" group.
+
+The "Block" option prevents the user from changing this setting. Blocking a policy makes it a priority over a similar policy for the user.
+
+      </string>
+      <string id="org-freedesktop-udisks2-power-off-drive-other-seat-user">Permission to power off a drive attached to another seat</string>
+      <string id="org-freedesktop-udisks2-power-off-drive-other-seat-user_help">The policy restricts the ability to power off a drive attached to another seat
+
+Disabled/Unconfigured — restrictions are defined by system parameters.
+
+Enabled — restriction with defined rights;
+
+Possible values:
+
+"No" — set restriction with action denial (user is not allowed to perform the action);
+
+"Yes" — remove the restriction (the user can perform the action without any authentication);
+
+"Auth_self" — the user must enter his/her password for authentication. Note, this level of restriction is not sufficient for most multi-user applications, "Auth_admin" is usually recommended;
+
+"Auth_admin" — the user must enter the administrator password at each request. Requires authentication of the user with administrator privileges;
+
+"Auth_self_keep" — similar to "Auth_self", but authorization is maintained for a short period of time (e.g., five minutes). Note, this level of restriction is insufficient for most multi-user applications, "Auth_admin_keep" is generally recommended;
+
+"Auth_admin_keep" — similar to "Auth_admin", but authorization is maintained for a short period of time (e.g., five minutes);
+
+Note: the possession of administrative rights in a PolicyKit context is determined by its rules. By default, Alt asks for the password of a user in the "wheel" group.
+
+      </string>
+      <string id="org-freedesktop-udisks2-power-off-drive-system">Permission to power off a system drive</string>
+      <string id="org-freedesktop-udisks2-power-off-drive-system_help">The policy restricts the ability to power off a system drive
+
+Disabled/Unconfigured — restrictions are defined by system parameters.
+
+Enabled — restriction with defined rights;
+
+Possible values:
+
+"No" — set restriction with action denial (user is not allowed to perform the action);
+
+"Yes" — remove the restriction (the user can perform the action without any authentication);
+
+"Auth_self" — the user must enter his/her password for authentication. Note, this level of restriction is not sufficient for most multi-user applications, "Auth_admin" is usually recommended;
+
+"Auth_admin" — the user must enter the administrator password at each request. Requires authentication of the user with administrator privileges;
+
+"Auth_self_keep" — similar to "Auth_self", but authorization is maintained for a short period of time (e.g., five minutes). Note, this level of restriction is insufficient for most multi-user applications, "Auth_admin_keep" is generally recommended;
+
+"Auth_admin_keep" — similar to "Auth_admin", but authorization is maintained for a short period of time (e.g., five minutes);
+
+Note: the possession of administrative rights in a PolicyKit context is determined by its rules. By default, Alt asks for the password of a user in the "wheel" group.
+
+The "Block" option prevents the user from changing this setting. Blocking a policy makes it a priority over a similar policy for the user.
+
+      </string>
+      <string id="org-freedesktop-udisks2-power-off-drive-system-user">Permission to power off a system drive</string>
+      <string id="org-freedesktop-udisks2-power-off-drive-system-user_help">The policy restricts the ability to power off a system drive
+
+Disabled/Unconfigured — restrictions are defined by system parameters.
+
+Enabled — restriction with defined rights;
+
+Possible values:
+
+"No" — set restriction with action denial (user is not allowed to perform the action);
+
+"Yes" — remove the restriction (the user can perform the action without any authentication);
+
+"Auth_self" — the user must enter his/her password for authentication. Note, this level of restriction is not sufficient for most multi-user applications, "Auth_admin" is usually recommended;
+
+"Auth_admin" — the user must enter the administrator password at each request. Requires authentication of the user with administrator privileges;
+
+"Auth_self_keep" — similar to "Auth_self", but authorization is maintained for a short period of time (e.g., five minutes). Note, this level of restriction is insufficient for most multi-user applications, "Auth_admin_keep" is generally recommended;
+
+"Auth_admin_keep" — similar to "Auth_admin", but authorization is maintained for a short period of time (e.g., five minutes);
+
+Note: the possession of administrative rights in a PolicyKit context is determined by its rules. By default, Alt asks for the password of a user in the "wheel" group.
 
       </string>
 

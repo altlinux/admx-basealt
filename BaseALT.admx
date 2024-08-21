@@ -187,6 +187,9 @@
     <category name="ALT_Udisks2Open" displayName="$(string.ALT_Udisks2Open)" explainText="$(string.ALT_Udisks2Open_Help)">
       <parentCategory ref="ALT_Udisks2" />
     </category>
+    <category name="ALT_Udisks2Power" displayName="$(string.ALT_Udisks2Power)" explainText="$(string.ALT_Udisks2Power_Help)">
+      <parentCategory ref="ALT_Udisks2" />
+    </category>
     <category name="ALT_PackageKit" displayName="$(string.ALT_PackageKit)" explainText="$(string.ALT_PackageKit_Help)">
       <parentCategory ref="ALT_Polkit" />
     </category>
