@@ -157,6 +157,36 @@
     <category name="ALT_Udisks2" displayName="$(string.ALT_Udisks2)" explainText="$(string.ALT_Udisks2_Help)">
       <parentCategory ref="ALT_Polkit" />
     </category>
+    <category name="ALT_Udisks2ATA" displayName="$(string.ALT_Udisks2ATA)" explainText="$(string.ALT_Udisks2ATA_Help)">
+      <parentCategory ref="ALT_Udisks2" />
+    </category>
+    <category name="ALT_Udisks2Cancel" displayName="$(string.ALT_Udisks2Cancel)" explainText="$(string.ALT_Udisks2Cancel_Help)">
+      <parentCategory ref="ALT_Udisks2" />
+    </category>
+    <category name="ALT_Udisks2Eject" displayName="$(string.ALT_Udisks2Eject)" explainText="$(string.ALT_Udisks2Eject_Help)">
+      <parentCategory ref="ALT_Udisks2" />
+    </category>
+    <category name="ALT_Udisks2Encrypted" displayName="$(string.ALT_Udisks2Encrypted)" explainText="$(string.ALT_Udisks2Encrypted_Help)">
+      <parentCategory ref="ALT_Udisks2" />
+    </category>
+    <category name="ALT_Udisks2Filesystem" displayName="$(string.ALT_Udisks2Filesystem)" explainText="$(string.ALT_Udisks2Filesystem_Help)">
+      <parentCategory ref="ALT_Udisks2" />
+    </category>
+    <category name="ALT_Udisks2Loop" displayName="$(string.ALT_Udisks2Loop)" explainText="$(string.ALT_Udisks2Loop_Help)">
+      <parentCategory ref="ALT_Udisks2" />
+    </category>
+    <category name="ALT_Udisks2Manage" displayName="$(string.ALT_Udisks2Manage)" explainText="$(string.ALT_Udisks2Manage_Help)">
+      <parentCategory ref="ALT_Udisks2" />
+    </category>
+    <category name="ALT_Udisks2Modify" displayName="$(string.ALT_Udisks2Modify)" explainText="$(string.ALT_Udisks2Modify_Help)">
+      <parentCategory ref="ALT_Udisks2" />
+    </category>
+    <category name="ALT_Udisks2NVME" displayName="$(string.ALT_Udisks2NVME)" explainText="$(string.ALT_Udisks2NVME_Help)">
+      <parentCategory ref="ALT_Udisks2" />
+    </category>
+    <category name="ALT_Udisks2Open" displayName="$(string.ALT_Udisks2Open)" explainText="$(string.ALT_Udisks2Open_Help)">
+      <parentCategory ref="ALT_Udisks2" />
+    </category>
     <category name="ALT_PackageKit" displayName="$(string.ALT_PackageKit)" explainText="$(string.ALT_PackageKit_Help)">
       <parentCategory ref="ALT_Polkit" />
     </category>
