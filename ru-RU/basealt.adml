@@ -75,10 +75,10 @@
       <string id="ALT_Polkit_Help">Управление Polkit правилами.</string>
       <string id="ALT_Udisks2">Ограничения Udisks</string>
       <string id="ALT_Udisks2_Help">Управление polkit-ограничениями Udisks.</string>
-      <string id="ALT_Udisks2ATA">Ограничения настроек ATA Udisks</string>
-      <string id="ALT_Udisks2ATA_Help">Управление polkit-ограничениями настроек ATA Udisks.</string>
-      <string id="ALT_Udisks2Cancel">Ограничения настроек Cancel Udisks</string>
-      <string id="ALT_Udisks2Cancel_Help">Управление polkit-ограничениями настроек Cancel Udisks.</string>
+      <string id="ALT_Udisks2ATA">Ограничения применения настроек ATA (udisks2)</string>
+      <string id="ALT_Udisks2ATA_Help">Управление polkit-ограничениями настроек ATA (udisks2).</string>
+      <string id="ALT_Udisks2Cancel">Ограничения применения настроек сancel (udisks2)</string>
+      <string id="ALT_Udisks2Cancel_Help">Управление polkit-ограничениями настроек сancel (udisks2).</string>
       <string id="ALT_Udisks2Eject">Ограничения настроек Eject Udisks</string>
       <string id="ALT_Udisks2Eject_Help">Управление polkit-ограничениями настроек Eject Udisks.</string>
       <string id="ALT_Udisks2Encrypted">Ограничения настроек Encrypted Udisks</string>
