@@ -292,7 +292,7 @@ Possible values:
 "Auth_self_keep" — similar to "Auth_self", but authorization is maintained for a short period of time (e.g., five minutes). Note, this level of restriction is insufficient for most multi-user applications, "Auth_admin_keep" is generally recommended;
 
 "Auth_admin_keep" — similar to "Auth_admin", but authorization is maintained for a short period of time (e.g., five minutes);
-      
+
 Note: the possession of administrative rights in a PolicyKit context is determined by its rules. By default, Alt asks for the password of a user in the "wheel" group.
 
 The "Block" option prevents the user from changing this setting. Blocking a policy makes it a priority over a similar policy for the user.
@@ -318,7 +318,7 @@ Possible values:
 "Auth_self_keep" — similar to "Auth_self", but authorization is maintained for a short period of time (e.g., five minutes). Note, this level of restriction is insufficient for most multi-user applications, "Auth_admin_keep" is generally recommended;
 
 "Auth_admin_keep" — similar to "Auth_admin", but authorization is maintained for a short period of time (e.g., five minutes);
-      
+
 Note: the possession of administrative rights in a PolicyKit context is determined by its rules. By default, Alt asks for the password of a user in the "wheel" group.
 
       </string>
@@ -342,7 +342,7 @@ Possible values:
 "Auth_self_keep" — similar to "Auth_self", but authorization is maintained for a short period of time (e.g., five minutes). Note, this level of restriction is insufficient for most multi-user applications, "Auth_admin_keep" is generally recommended;
 
 "Auth_admin_keep" — similar to "Auth_admin", but authorization is maintained for a short period of time (e.g., five minutes);
-      
+
 Note: the possession of administrative rights in a PolicyKit context is determined by its rules. By default, Alt asks for the password of a user in the "wheel" group.
 
 The "Block" option prevents the user from changing this setting. Blocking a policy makes it a priority over a similar policy for the user.
@@ -350,7 +350,7 @@ The "Block" option prevents the user from changing this setting. Blocking a poli
       </string>
       <string id="org-freedesktop-udisks2-ata-secure-erase-user">Permission to securely erase a hard disk</string>
       <string id="org-freedesktop-udisks2-ata-secure-erase-user_help">The policy restricts the ability to securely erase a hard disk
-      
+
 Disabled/Unconfigured — restrictions are defined by system parameters.
 
 Enabled — restriction with defined rights;
@@ -368,7 +368,7 @@ Possible values:
 "Auth_self_keep" — similar to "Auth_self", but authorization is maintained for a short period of time (e.g., five minutes). Note, this level of restriction is insufficient for most multi-user applications, "Auth_admin_keep" is generally recommended;
 
 "Auth_admin_keep" — similar to "Auth_admin", but authorization is maintained for a short period of time (e.g., five minutes);
-      
+
 Note: the possession of administrative rights in a PolicyKit context is determined by its rules. By default, Alt asks for the password of a user in the "wheel" group.
 
       </string>
@@ -392,7 +392,7 @@ Possible values:
 "Auth_self_keep" — similar to "Auth_self", but authorization is maintained for a short period of time (e.g., five minutes). Note, this level of restriction is insufficient for most multi-user applications, "Auth_admin_keep" is generally recommended;
 
 "Auth_admin_keep" — similar to "Auth_admin", but authorization is maintained for a short period of time (e.g., five minutes);
-      
+
 Note: the possession of administrative rights in a PolicyKit context is determined by its rules. By default, Alt asks for the password of a user in the "wheel" group.
 
 The "Block" option prevents the user from changing this setting. Blocking a policy makes it a priority over a similar policy for the user.
@@ -400,7 +400,7 @@ The "Block" option prevents the user from changing this setting. Blocking a poli
       </string>
       <string id="org-freedesktop-udisks2-ata-smart-enable-disable-user">Permission to enable/Disable SMART</string>
       <string id="org-freedesktop-udisks2-ata-smart-enable-disable-user_help">The policy restricts the ability to enable/Disable SMART
-      
+
 Disabled/Unconfigured — restrictions are defined by system parameters.
 
 Enabled — restriction with defined rights;
@@ -418,7 +418,7 @@ Possible values:
 "Auth_self_keep" — similar to "Auth_self", but authorization is maintained for a short period of time (e.g., five minutes). Note, this level of restriction is insufficient for most multi-user applications, "Auth_admin_keep" is generally recommended;
 
 "Auth_admin_keep" — similar to "Auth_admin", but authorization is maintained for a short period of time (e.g., five minutes);
-      
+
 Note: the possession of administrative rights in a PolicyKit context is determined by its rules. By default, Alt asks for the password of a user in the "wheel" group.
 
       </string>
@@ -442,7 +442,7 @@ Possible values:
 "Auth_self_keep" — similar to "Auth_self", but authorization is maintained for a short period of time (e.g., five minutes). Note, this level of restriction is insufficient for most multi-user applications, "Auth_admin_keep" is generally recommended;
 
 "Auth_admin_keep" — similar to "Auth_admin", but authorization is maintained for a short period of time (e.g., five minutes);
-      
+
 Note: the possession of administrative rights in a PolicyKit context is determined by its rules. By default, Alt asks for the password of a user in the "wheel" group.
 
 The "Block" option prevents the user from changing this setting. Blocking a policy makes it a priority over a similar policy for the user.
@@ -450,7 +450,7 @@ The "Block" option prevents the user from changing this setting. Blocking a poli
       </string>
       <string id="org-freedesktop-udisks2-ata-smart-selftest-user">Permission to run SMART self-test</string>
       <string id="org-freedesktop-udisks2-ata-smart-selftest-user_help">The policy restricts the ability to run SMART self-test
-      
+
 Disabled/Unconfigured — restrictions are defined by system parameters.
 
 Enabled — restriction with defined rights;
@@ -468,7 +468,7 @@ Possible values:
 "Auth_self_keep" — similar to "Auth_self", but authorization is maintained for a short period of time (e.g., five minutes). Note, this level of restriction is insufficient for most multi-user applications, "Auth_admin_keep" is generally recommended;
 
 "Auth_admin_keep" — similar to "Auth_admin", but authorization is maintained for a short period of time (e.g., five minutes);
-      
+
 Note: the possession of administrative rights in a PolicyKit context is determined by its rules. By default, Alt asks for the password of a user in the "wheel" group.
 
       </string>
@@ -492,7 +492,7 @@ Possible values:
 "Auth_self_keep" — similar to "Auth_self", but authorization is maintained for a short period of time (e.g., five minutes). Note, this level of restriction is insufficient for most multi-user applications, "Auth_admin_keep" is generally recommended;
 
 "Auth_admin_keep" — similar to "Auth_admin", but authorization is maintained for a short period of time (e.g., five minutes);
-      
+
 Note: the possession of administrative rights in a PolicyKit context is determined by its rules. By default, Alt asks for the password of a user in the "wheel" group.
 
 The "Block" option prevents the user from changing this setting. Blocking a policy makes it a priority over a similar policy for the user.
@@ -500,7 +500,7 @@ The "Block" option prevents the user from changing this setting. Blocking a poli
       </string>
       <string id="org-freedesktop-udisks2-ata-smart-simulate-user">Permission to set SMART data from blob</string>
       <string id="org-freedesktop-udisks2-ata-smart-simulate-user_help">The policy restricts the ability to set SMART data from blob
-      
+
 Disabled/Unconfigured — restrictions are defined by system parameters.
 
 Enabled — restriction with defined rights;
@@ -518,7 +518,7 @@ Possible values:
 "Auth_self_keep" — similar to "Auth_self", but authorization is maintained for a short period of time (e.g., five minutes). Note, this level of restriction is insufficient for most multi-user applications, "Auth_admin_keep" is generally recommended;
 
 "Auth_admin_keep" — similar to "Auth_admin", but authorization is maintained for a short period of time (e.g., five minutes);
-      
+
 Note: the possession of administrative rights in a PolicyKit context is determined by its rules. By default, Alt asks for the password of a user in the "wheel" group.
 
       </string>
@@ -542,7 +542,7 @@ Possible values:
 "Auth_self_keep" — similar to "Auth_self", but authorization is maintained for a short period of time (e.g., five minutes). Note, this level of restriction is insufficient for most multi-user applications, "Auth_admin_keep" is generally recommended;
 
 "Auth_admin_keep" — similar to "Auth_admin", but authorization is maintained for a short period of time (e.g., five minutes);
-      
+
 Note: the possession of administrative rights in a PolicyKit context is determined by its rules. By default, Alt asks for the password of a user in the "wheel" group.
 
 The "Block" option prevents the user from changing this setting. Blocking a policy makes it a priority over a similar policy for the user.
@@ -550,7 +550,7 @@ The "Block" option prevents the user from changing this setting. Blocking a poli
       </string>
       <string id="org-freedesktop-udisks2-ata-smart-update-user">Permission to update SMART data</string>
       <string id="org-freedesktop-udisks2-ata-smart-update-user_help">The policy restricts the ability to update SMART data
-      
+
 Disabled/Unconfigured — restrictions are defined by system parameters.
 
 Enabled — restriction with defined rights;
@@ -568,7 +568,7 @@ Possible values:
 "Auth_self_keep" — similar to "Auth_self", but authorization is maintained for a short period of time (e.g., five minutes). Note, this level of restriction is insufficient for most multi-user applications, "Auth_admin_keep" is generally recommended;
 
 "Auth_admin_keep" — similar to "Auth_admin", but authorization is maintained for a short period of time (e.g., five minutes);
-      
+
 Note: the possession of administrative rights in a PolicyKit context is determined by its rules. By default, Alt asks for the password of a user in the "wheel" group.
 
       </string>
@@ -592,7 +592,7 @@ Possible values:
 "Auth_self_keep" — similar to "Auth_self", but authorization is maintained for a short period of time (e.g., five minutes). Note, this level of restriction is insufficient for most multi-user applications, "Auth_admin_keep" is generally recommended;
 
 "Auth_admin_keep" — similar to "Auth_admin", but authorization is maintained for a short period of time (e.g., five minutes);
-      
+
 Note: the possession of administrative rights in a PolicyKit context is determined by its rules. By default, Alt asks for the password of a user in the "wheel" group.
 
 The "Block" option prevents the user from changing this setting. Blocking a policy makes it a priority over a similar policy for the user.
@@ -600,7 +600,7 @@ The "Block" option prevents the user from changing this setting. Blocking a poli
       </string>
       <string id="org-freedesktop-udisks2-ata-standby-user">Permission to send standby command</string>
       <string id="org-freedesktop-udisks2-ata-standby-user_help">The policy restricts the ability to send standby command
-      
+
 Disabled/Unconfigured — restrictions are defined by system parameters.
 
 Enabled — restriction with defined rights;
@@ -618,7 +618,7 @@ Possible values:
 "Auth_self_keep" — similar to "Auth_self", but authorization is maintained for a short period of time (e.g., five minutes). Note, this level of restriction is insufficient for most multi-user applications, "Auth_admin_keep" is generally recommended;
 
 "Auth_admin_keep" — similar to "Auth_admin", but authorization is maintained for a short period of time (e.g., five minutes);
-      
+
 Note: the possession of administrative rights in a PolicyKit context is determined by its rules. By default, Alt asks for the password of a user in the "wheel" group.
 
       </string>
@@ -642,7 +642,7 @@ Possible values:
 "Auth_self_keep" — similar to "Auth_self", but authorization is maintained for a short period of time (e.g., five minutes). Note, this level of restriction is insufficient for most multi-user applications, "Auth_admin_keep" is generally recommended;
 
 "Auth_admin_keep" — similar to "Auth_admin", but authorization is maintained for a short period of time (e.g., five minutes);
-      
+
 Note: the possession of administrative rights in a PolicyKit context is determined by its rules. By default, Alt asks for the password of a user in the "wheel" group.
 
 The "Block" option prevents the user from changing this setting. Blocking a policy makes it a priority over a similar policy for the user.
@@ -650,7 +650,7 @@ The "Block" option prevents the user from changing this setting. Blocking a poli
       </string>
       <string id="org-freedesktop-udisks2-ata-standby-other-seat-user">Permission to send standby command to drive on other seat</string>
       <string id="org-freedesktop-udisks2-ata-standby-other-seat-user_help">The policy restricts the ability to send standby command to drive on other seat
-      
+
 Disabled/Unconfigured — restrictions are defined by system parameters.
 
 Enabled — restriction with defined rights;
@@ -668,7 +668,7 @@ Possible values:
 "Auth_self_keep" — similar to "Auth_self", but authorization is maintained for a short period of time (e.g., five minutes). Note, this level of restriction is insufficient for most multi-user applications, "Auth_admin_keep" is generally recommended;
 
 "Auth_admin_keep" — similar to "Auth_admin", but authorization is maintained for a short period of time (e.g., five minutes);
-      
+
 Note: the possession of administrative rights in a PolicyKit context is determined by its rules. By default, Alt asks for the password of a user in the "wheel" group.
 
       </string>
@@ -692,7 +692,7 @@ Possible values:
 "Auth_self_keep" — similar to "Auth_self", but authorization is maintained for a short period of time (e.g., five minutes). Note, this level of restriction is insufficient for most multi-user applications, "Auth_admin_keep" is generally recommended;
 
 "Auth_admin_keep" — similar to "Auth_admin", but authorization is maintained for a short period of time (e.g., five minutes);
-      
+
 Note: the possession of administrative rights in a PolicyKit context is determined by its rules. By default, Alt asks for the password of a user in the "wheel" group.
 
 The "Block" option prevents the user from changing this setting. Blocking a policy makes it a priority over a similar policy for the user.
@@ -700,7 +700,7 @@ The "Block" option prevents the user from changing this setting. Blocking a poli
       </string>
       <string id="org-freedesktop-udisks2-ata-standby-system-user">Permission to send standby command to a system drive</string>
       <string id="org-freedesktop-udisks2-ata-standby-system-user_help">The policy restricts the ability to send standby command to a system drive
-      
+
 Disabled/Unconfigured — restrictions are defined by system parameters.
 
 Enabled — restriction with defined rights;
@@ -718,7 +718,7 @@ Possible values:
 "Auth_self_keep" — similar to "Auth_self", but authorization is maintained for a short period of time (e.g., five minutes). Note, this level of restriction is insufficient for most multi-user applications, "Auth_admin_keep" is generally recommended;
 
 "Auth_admin_keep" — similar to "Auth_admin", but authorization is maintained for a short period of time (e.g., five minutes);
-      
+
 Note: the possession of administrative rights in a PolicyKit context is determined by its rules. By default, Alt asks for the password of a user in the "wheel" group.
 
       </string>
@@ -742,7 +742,7 @@ Possible values:
 "Auth_self_keep" — similar to "Auth_self", but authorization is maintained for a short period of time (e.g., five minutes). Note, this level of restriction is insufficient for most multi-user applications, "Auth_admin_keep" is generally recommended;
 
 "Auth_admin_keep" — similar to "Auth_admin", but authorization is maintained for a short period of time (e.g., five minutes);
-      
+
 Note: the possession of administrative rights in a PolicyKit context is determined by its rules. By default, Alt asks for the password of a user in the "wheel" group.
 
 The "Block" option prevents the user from changing this setting. Blocking a policy makes it a priority over a similar policy for the user.
@@ -768,7 +768,7 @@ Possible values:
 "Auth_self_keep" — similar to "Auth_self", but authorization is maintained for a short period of time (e.g., five minutes). Note, this level of restriction is insufficient for most multi-user applications, "Auth_admin_keep" is generally recommended;
 
 "Auth_admin_keep" — similar to "Auth_admin", but authorization is maintained for a short period of time (e.g., five minutes);
-      
+
 Note: the possession of administrative rights in a PolicyKit context is determined by its rules. By default, Alt asks for the password of a user in the "wheel" group.
 
       </string>
@@ -792,7 +792,7 @@ Possible values:
 "Auth_self_keep" — similar to "Auth_self", but authorization is maintained for a short period of time (e.g., five minutes). Note, this level of restriction is insufficient for most multi-user applications, "Auth_admin_keep" is generally recommended;
 
 "Auth_admin_keep" — similar to "Auth_admin", but authorization is maintained for a short period of time (e.g., five minutes);
-      
+
 Note: the possession of administrative rights in a PolicyKit context is determined by its rules. By default, Alt asks for the password of a user in the "wheel" group.
 
 The "Block" option prevents the user from changing this setting. Blocking a policy makes it a priority over a similar policy for the user.
@@ -818,7 +818,7 @@ Possible values:
 "Auth_self_keep" — similar to "Auth_self", but authorization is maintained for a short period of time (e.g., five minutes). Note, this level of restriction is insufficient for most multi-user applications, "Auth_admin_keep" is generally recommended;
 
 "Auth_admin_keep" — similar to "Auth_admin", but authorization is maintained for a short period of time (e.g., five minutes);
-      
+
 Note: the possession of administrative rights in a PolicyKit context is determined by its rules. By default, Alt asks for the password of a user in the "wheel" group.
 
       </string>
@@ -842,7 +842,7 @@ Possible values:
 "Auth_self_keep" — similar to "Auth_self", but authorization is maintained for a short period of time (e.g., five minutes). Note, this level of restriction is insufficient for most multi-user applications, "Auth_admin_keep" is generally recommended;
 
 "Auth_admin_keep" — similar to "Auth_admin", but authorization is maintained for a short period of time (e.g., five minutes);
-      
+
 Note: the possession of administrative rights in a PolicyKit context is determined by its rules. By default, Alt asks for the password of a user in the "wheel" group.
 
 The "Block" option prevents the user from changing this setting. Blocking a policy makes it a priority over a similar policy for the user.
@@ -850,7 +850,7 @@ The "Block" option prevents the user from changing this setting. Blocking a poli
       </string>
       <string id="org-freedesktop-udisks2-eject-media-user">Permission to eject media</string>
       <string id="org-freedesktop-udisks2-eject-media-user_help">The policy restricts the ability to eject media 
-      
+
 Disabled/Unconfigured — restrictions are defined by system parameters.
 
 Enabled — restriction with defined rights;
@@ -868,7 +868,7 @@ Possible values:
 "Auth_self_keep" — similar to "Auth_self", but authorization is maintained for a short period of time (e.g., five minutes). Note, this level of restriction is insufficient for most multi-user applications, "Auth_admin_keep" is generally recommended;
 
 "Auth_admin_keep" — similar to "Auth_admin", but authorization is maintained for a short period of time (e.g., five minutes);
-      
+
 Note: the possession of administrative rights in a PolicyKit context is determined by its rules. By default, Alt asks for the password of a user in the "wheel" group.
 
       </string>
@@ -892,7 +892,7 @@ Possible values:
 "Auth_self_keep" — similar to "Auth_self", but authorization is maintained for a short period of time (e.g., five minutes). Note, this level of restriction is insufficient for most multi-user applications, "Auth_admin_keep" is generally recommended;
 
 "Auth_admin_keep" — similar to "Auth_admin", but authorization is maintained for a short period of time (e.g., five minutes);
-      
+
 Note: the possession of administrative rights in a PolicyKit context is determined by its rules. By default, Alt asks for the password of a user in the "wheel" group.
 
 The "Block" option prevents the user from changing this setting. Blocking a policy makes it a priority over a similar policy for the user.
@@ -900,7 +900,7 @@ The "Block" option prevents the user from changing this setting. Blocking a poli
       </string>
       <string id="org-freedesktop-udisks2-eject-media-other-seat-user">Permission to eject media from a drive attached to another seat</string>
       <string id="org-freedesktop-udisks2-eject-media-other-seat-user_help">The policy restricts the ability to eject media from a drive attached to another seat
-      
+
 Disabled/Unconfigured — restrictions are defined by system parameters.
 
 Enabled — restriction with defined rights;
@@ -918,7 +918,7 @@ Possible values:
 "Auth_self_keep" — similar to "Auth_self", but authorization is maintained for a short period of time (e.g., five minutes). Note, this level of restriction is insufficient for most multi-user applications, "Auth_admin_keep" is generally recommended;
 
 "Auth_admin_keep" — similar to "Auth_admin", but authorization is maintained for a short period of time (e.g., five minutes);
-      
+
 Note: the possession of administrative rights in a PolicyKit context is determined by its rules. By default, Alt asks for the password of a user in the "wheel" group.
 
       </string>
@@ -942,7 +942,7 @@ Possible values:
 "Auth_self_keep" — similar to "Auth_self", but authorization is maintained for a short period of time (e.g., five minutes). Note, this level of restriction is insufficient for most multi-user applications, "Auth_admin_keep" is generally recommended;
 
 "Auth_admin_keep" — similar to "Auth_admin", but authorization is maintained for a short period of time (e.g., five minutes);
-      
+
 Note: the possession of administrative rights in a PolicyKit context is determined by its rules. By default, Alt asks for the password of a user in the "wheel" group.
 
 The "Block" option prevents the user from changing this setting. Blocking a policy makes it a priority over a similar policy for the user.
@@ -950,7 +950,7 @@ The "Block" option prevents the user from changing this setting. Blocking a poli
       </string>
       <string id="org-freedesktop-udisks2-eject-media-system-user">Permission to eject media from a system drive</string>
       <string id="org-freedesktop-udisks2-eject-media-system-user_help">The policy restricts the ability to eject media from a system drive
-      
+
 Disabled/Unconfigured — restrictions are defined by system parameters.
 
 Enabled — restriction with defined rights;
@@ -968,7 +968,7 @@ Possible values:
 "Auth_self_keep" — similar to "Auth_self", but authorization is maintained for a short period of time (e.g., five minutes). Note, this level of restriction is insufficient for most multi-user applications, "Auth_admin_keep" is generally recommended;
 
 "Auth_admin_keep" — similar to "Auth_admin", but authorization is maintained for a short period of time (e.g., five minutes);
-      
+
 Note: the possession of administrative rights in a PolicyKit context is determined by its rules. By default, Alt asks for the password of a user in the "wheel" group.
 
       </string>
@@ -992,7 +992,7 @@ Possible values:
 "Auth_self_keep" — similar to "Auth_self", but authorization is maintained for a short period of time (e.g., five minutes). Note, this level of restriction is insufficient for most multi-user applications, "Auth_admin_keep" is generally recommended;
 
 "Auth_admin_keep" — similar to "Auth_admin", but authorization is maintained for a short period of time (e.g., five minutes);
-      
+
 Note: the possession of administrative rights in a PolicyKit context is determined by its rules. By default, Alt asks for the password of a user in the "wheel" group.
 
 The "Block" option prevents the user from changing this setting. Blocking a policy makes it a priority over a similar policy for the user.
@@ -1000,7 +1000,7 @@ The "Block" option prevents the user from changing this setting. Blocking a poli
       </string>
       <string id="org-freedesktop-udisks2-encrypted-change-passphrase-user">Permission to change passphrase for an encrypted device</string>
       <string id="org-freedesktop-udisks2-encrypted-change-passphrase-user_help">The policy restricts the ability to change passphrase for an encrypted device
-      
+
 Disabled/Unconfigured — restrictions are defined by system parameters.
 
 Enabled — restriction with defined rights;
@@ -1018,7 +1018,7 @@ Possible values:
 "Auth_self_keep" — similar to "Auth_self", but authorization is maintained for a short period of time (e.g., five minutes). Note, this level of restriction is insufficient for most multi-user applications, "Auth_admin_keep" is generally recommended;
 
 "Auth_admin_keep" — similar to "Auth_admin", but authorization is maintained for a short period of time (e.g., five minutes);
-      
+
 Note: the possession of administrative rights in a PolicyKit context is determined by its rules. By default, Alt asks for the password of a user in the "wheel" group.
 
       </string>
@@ -1042,7 +1042,7 @@ Possible values:
 "Auth_self_keep" — similar to "Auth_self", but authorization is maintained for a short period of time (e.g., five minutes). Note, this level of restriction is insufficient for most multi-user applications, "Auth_admin_keep" is generally recommended;
 
 "Auth_admin_keep" — similar to "Auth_admin", but authorization is maintained for a short period of time (e.g., five minutes);
-      
+
 Note: the possession of administrative rights in a PolicyKit context is determined by its rules. By default, Alt asks for the password of a user in the "wheel" group.
 
 The "Block" option prevents the user from changing this setting. Blocking a policy makes it a priority over a similar policy for the user.
@@ -1050,7 +1050,7 @@ The "Block" option prevents the user from changing this setting. Blocking a poli
       </string>
       <string id="org-freedesktop-udisks2-encrypted-change-passphrase-system-user">Permission to change passphrase for an encrypted device</string>
       <string id="org-freedesktop-udisks2-encrypted-change-passphrase-system-user_help">The policy restricts the ability to change passphrase for an encrypted device
-      
+
 Disabled/Unconfigured — restrictions are defined by system parameters.
 
 Enabled — restriction with defined rights;
@@ -1068,7 +1068,7 @@ Possible values:
 "Auth_self_keep" — similar to "Auth_self", but authorization is maintained for a short period of time (e.g., five minutes). Note, this level of restriction is insufficient for most multi-user applications, "Auth_admin_keep" is generally recommended;
 
 "Auth_admin_keep" — similar to "Auth_admin", but authorization is maintained for a short period of time (e.g., five minutes);
-      
+
 Note: the possession of administrative rights in a PolicyKit context is determined by its rules. By default, Alt asks for the password of a user in the "wheel" group.
 
       </string>
@@ -1092,7 +1092,7 @@ Possible values:
 "Auth_self_keep" — similar to "Auth_self", but authorization is maintained for a short period of time (e.g., five minutes). Note, this level of restriction is insufficient for most multi-user applications, "Auth_admin_keep" is generally recommended;
 
 "Auth_admin_keep" — similar to "Auth_admin", but authorization is maintained for a short period of time (e.g., five minutes);
-      
+
 Note: the possession of administrative rights in a PolicyKit context is determined by its rules. By default, Alt asks for the password of a user in the "wheel" group.
 
 The "Block" option prevents the user from changing this setting. Blocking a policy makes it a priority over a similar policy for the user.
@@ -1100,7 +1100,7 @@ The "Block" option prevents the user from changing this setting. Blocking a poli
       </string>
       <string id="org-freedesktop-udisks2-encrypted-lock-others-user">Permission to lock an encrypted device unlocked by another user</string>
       <string id="org-freedesktop-udisks2-encrypted-lock-others-user_help">The policy restricts the ability to lock an encrypted device unlocked by another user
-      
+
 Disabled/Unconfigured — restrictions are defined by system parameters.
 
 Enabled — restriction with defined rights;
@@ -1118,7 +1118,7 @@ Possible values:
 "Auth_self_keep" — similar to "Auth_self", but authorization is maintained for a short period of time (e.g., five minutes). Note, this level of restriction is insufficient for most multi-user applications, "Auth_admin_keep" is generally recommended;
 
 "Auth_admin_keep" — similar to "Auth_admin", but authorization is maintained for a short period of time (e.g., five minutes);
-      
+
 Note: the possession of administrative rights in a PolicyKit context is determined by its rules. By default, Alt asks for the password of a user in the "wheel" group.
 
       </string>
@@ -1142,7 +1142,7 @@ Possible values:
 "Auth_self_keep" — similar to "Auth_self", but authorization is maintained for a short period of time (e.g., five minutes). Note, this level of restriction is insufficient for most multi-user applications, "Auth_admin_keep" is generally recommended;
 
 "Auth_admin_keep" — similar to "Auth_admin", but authorization is maintained for a short period of time (e.g., five minutes);
-      
+
 Note: the possession of administrative rights in a PolicyKit context is determined by its rules. By default, Alt asks for the password of a user in the "wheel" group.
 
 The "Block" option prevents the user from changing this setting. Blocking a policy makes it a priority over a similar policy for the user.
@@ -1150,7 +1150,7 @@ The "Block" option prevents the user from changing this setting. Blocking a poli
       </string>
       <string id="org-freedesktop-udisks2-encrypted-unlock-user">Permission to unlock an encrypted device</string>
       <string id="org-freedesktop-udisks2-encrypted-unlock-user_help">The policy restricts the ability to unlock an encrypted device 
-      
+
 Disabled/Unconfigured — restrictions are defined by system parameters.
 
 Enabled — restriction with defined rights;
@@ -1168,7 +1168,7 @@ Possible values:
 "Auth_self_keep" — similar to "Auth_self", but authorization is maintained for a short period of time (e.g., five minutes). Note, this level of restriction is insufficient for most multi-user applications, "Auth_admin_keep" is generally recommended;
 
 "Auth_admin_keep" — similar to "Auth_admin", but authorization is maintained for a short period of time (e.g., five minutes);
-      
+
 Note: the possession of administrative rights in a PolicyKit context is determined by its rules. By default, Alt asks for the password of a user in the "wheel" group.
 
       </string>
@@ -1192,7 +1192,7 @@ Possible values:
 "Auth_self_keep" — similar to "Auth_self", but authorization is maintained for a short period of time (e.g., five minutes). Note, this level of restriction is insufficient for most multi-user applications, "Auth_admin_keep" is generally recommended;
 
 "Auth_admin_keep" — similar to "Auth_admin", but authorization is maintained for a short period of time (e.g., five minutes);
-      
+
 Note: the possession of administrative rights in a PolicyKit context is determined by its rules. By default, Alt asks for the password of a user in the "wheel" group.
 
 The "Block" option prevents the user from changing this setting. Blocking a policy makes it a priority over a similar policy for the user.
@@ -1200,7 +1200,7 @@ The "Block" option prevents the user from changing this setting. Blocking a poli
       </string>
       <string id="org-freedesktop-udisks2-encrypted-unlock-crypttab-user">Permission to unlock an encrypted device specified in the crypttab file with the x-udisks-auth option</string>
       <string id="org-freedesktop-udisks2-encrypted-unlock-crypttab-user_help">The policy restricts the ability to unlock an encrypted device specified in the crypttab file with the x-udisks-auth option
-      
+
 Disabled/Unconfigured — restrictions are defined by system parameters.
 
 Enabled — restriction with defined rights;
@@ -1218,7 +1218,7 @@ Possible values:
 "Auth_self_keep" — similar to "Auth_self", but authorization is maintained for a short period of time (e.g., five minutes). Note, this level of restriction is insufficient for most multi-user applications, "Auth_admin_keep" is generally recommended;
 
 "Auth_admin_keep" — similar to "Auth_admin", but authorization is maintained for a short period of time (e.g., five minutes);
-      
+
 Note: the possession of administrative rights in a PolicyKit context is determined by its rules. By default, Alt asks for the password of a user in the "wheel" group.
 
       </string>
@@ -1242,7 +1242,7 @@ Possible values:
 "Auth_self_keep" — similar to "Auth_self", but authorization is maintained for a short period of time (e.g., five minutes). Note, this level of restriction is insufficient for most multi-user applications, "Auth_admin_keep" is generally recommended;
 
 "Auth_admin_keep" — similar to "Auth_admin", but authorization is maintained for a short period of time (e.g., five minutes);
-      
+
 Note: the possession of administrative rights in a PolicyKit context is determined by its rules. By default, Alt asks for the password of a user in the "wheel" group.
 
 The "Block" option prevents the user from changing this setting. Blocking a policy makes it a priority over a similar policy for the user.
@@ -1250,7 +1250,7 @@ The "Block" option prevents the user from changing this setting. Blocking a poli
       </string>
       <string id="org-freedesktop-udisks2-encrypted-unlock-other-seat-user">Permission to unlock an encrypted device plugged into another seat</string>
       <string id="org-freedesktop-udisks2-encrypted-unlock-other-seat-user_help">The policy restricts the ability to unlock an encrypted device plugged into another seat
-      
+
 Disabled/Unconfigured — restrictions are defined by system parameters.
 
 Enabled — restriction with defined rights;
@@ -1268,7 +1268,7 @@ Possible values:
 "Auth_self_keep" — similar to "Auth_self", but authorization is maintained for a short period of time (e.g., five minutes). Note, this level of restriction is insufficient for most multi-user applications, "Auth_admin_keep" is generally recommended;
 
 "Auth_admin_keep" — similar to "Auth_admin", but authorization is maintained for a short period of time (e.g., five minutes);
-      
+
 Note: the possession of administrative rights in a PolicyKit context is determined by its rules. By default, Alt asks for the password of a user in the "wheel" group.
 
       </string>
@@ -1292,7 +1292,7 @@ Possible values:
 "Auth_self_keep" — similar to "Auth_self", but authorization is maintained for a short period of time (e.g., five minutes). Note, this level of restriction is insufficient for most multi-user applications, "Auth_admin_keep" is generally recommended;
 
 "Auth_admin_keep" — similar to "Auth_admin", but authorization is maintained for a short period of time (e.g., five minutes);
-      
+
 Note: the possession of administrative rights in a PolicyKit context is determined by its rules. By default, Alt asks for the password of a user in the "wheel" group.
 
 The "Block" option prevents the user from changing this setting. Blocking a policy makes it a priority over a similar policy for the user.
@@ -1300,7 +1300,7 @@ The "Block" option prevents the user from changing this setting. Blocking a poli
       </string>
       <string id="org-freedesktop-udisks2-encrypted-unlock-system-user">Permission to unlock an encrypted system device</string>
       <string id="org-freedesktop-udisks2-encrypted-unlock-system-user_help">The policy restricts the ability to unlock an encrypted system device
-      
+
 Disabled/Unconfigured — restrictions are defined by system parameters.
 
 Enabled — restriction with defined rights;
@@ -1318,8 +1318,211 @@ Possible values:
 "Auth_self_keep" — similar to "Auth_self", but authorization is maintained for a short period of time (e.g., five minutes). Note, this level of restriction is insufficient for most multi-user applications, "Auth_admin_keep" is generally recommended;
 
 "Auth_admin_keep" — similar to "Auth_admin", but authorization is maintained for a short period of time (e.g., five minutes);
-      
+
 Note: the possession of administrative rights in a PolicyKit context is determined by its rules. By default, Alt asks for the password of a user in the "wheel" group.
+
+      </string>
+      <string id="org-freedesktop-udisks2-filesystem-fstab">Permission to mount/unmount filesystems defined in the fstab file with the x-udisks-auth option</string>
+      <string id="org-freedesktop-udisks2-filesystem-fstab_help">The policy restricts the ability to mount/unmount filesystems defined in the fstab file with the x-udisks-auth option
+
+Disabled/Unconfigured — restrictions are defined by system parameters.
+
+Enabled — restriction with defined rights;
+
+Possible values:
+
+"No" — set restriction with action denial (user is not allowed to perform the action);
+
+"Yes" — remove the restriction (the user can perform the action without any authentication);
+
+"Auth_self" — the user must enter his/her password for authentication. Note, this level of restriction is not sufficient for most multi-user applications, "Auth_admin" is usually recommended;
+
+"Auth_admin" — the user must enter the administrator password at each request. Requires authentication of the user with administrator privileges;
+
+"Auth_self_keep" — similar to "Auth_self", but authorization is maintained for a short period of time (e.g., five minutes). Note, this level of restriction is insufficient for most multi-user applications, "Auth_admin_keep" is generally recommended;
+
+"Auth_admin_keep" — similar to "Auth_admin", but authorization is maintained for a short period of time (e.g., five minutes);
+
+Note: the possession of administrative rights in a PolicyKit context is determined by its rules. By default, Alt asks for the password of a user in the "wheel" group.
+
+The "Block" option prevents the user from changing this setting. Blocking a policy makes it a priority over a similar policy for the user.
+
+      </string>
+      <string id="org-freedesktop-udisks2-filesystem-fstab-user">Permission to mount/unmount filesystems defined in the fstab file with the x-udisks-auth option</string>
+      <string id="org-freedesktop-udisks2-filesystem-fstab-user_help">The policy restricts the ability to mount/unmount filesystems defined in the fstab file with the x-udisks-auth option
+
+Disabled/Unconfigured — restrictions are defined by system parameters.
+
+Enabled — restriction with defined rights;
+
+Possible values:
+
+"No" — set restriction with action denial (user is not allowed to perform the action);
+
+"Yes" — remove the restriction (the user can perform the action without any authentication);
+
+"Auth_self" — the user must enter his/her password for authentication. Note, this level of restriction is not sufficient for most multi-user applications, "Auth_admin" is usually recommended;
+
+"Auth_admin" — the user must enter the administrator password at each request. Requires authentication of the user with administrator privileges;
+
+"Auth_self_keep" — similar to "Auth_self", but authorization is maintained for a short period of time (e.g., five minutes). Note, this level of restriction is insufficient for most multi-user applications, "Auth_admin_keep" is generally recommended;
+
+"Auth_admin_keep" — similar to "Auth_admin", but authorization is maintained for a short period of time (e.g., five minutes);
+
+Note: the possession of administrative rights in a PolicyKit context is determined by its rules. By default, Alt asks for the password of a user in the "wheel" group.
+
+      </string>
+      <string id="org-freedesktop-udisks2-filesystem-mount-other-user">Permission to mount a filesystem on behalf of another user</string>
+      <string id="org-freedesktop-udisks2-filesystem-mount-other-user_help">The policy restricts the ability to mount a filesystem on behalf of another user
+
+Disabled/Unconfigured — restrictions are defined by system parameters.
+
+Enabled — restriction with defined rights;
+
+Possible values:
+
+"No" — set restriction with action denial (user is not allowed to perform the action);
+
+"Yes" — remove the restriction (the user can perform the action without any authentication);
+
+"Auth_self" — the user must enter his/her password for authentication. Note, this level of restriction is not sufficient for most multi-user applications, "Auth_admin" is usually recommended;
+
+"Auth_admin" — the user must enter the administrator password at each request. Requires authentication of the user with administrator privileges;
+
+"Auth_self_keep" — similar to "Auth_self", but authorization is maintained for a short period of time (e.g., five minutes). Note, this level of restriction is insufficient for most multi-user applications, "Auth_admin_keep" is generally recommended;
+
+"Auth_admin_keep" — similar to "Auth_admin", but authorization is maintained for a short period of time (e.g., five minutes);
+
+Note: the possession of administrative rights in a PolicyKit context is determined by its rules. By default, Alt asks for the password of a user in the "wheel" group.
+
+The "Block" option prevents the user from changing this setting. Blocking a policy makes it a priority over a similar policy for the user.
+
+      </string>
+      <string id="org-freedesktop-udisks2-filesystem-mount-other-user-user">Permission to mount a filesystem on behalf of another user</string>
+      <string id="org-freedesktop-udisks2-filesystem-mount-other-user-user_help">The policy restricts the ability to mount a filesystem on behalf of another user
+
+Disabled/Unconfigured — restrictions are defined by system parameters.
+
+Enabled — restriction with defined rights;
+
+Possible values:
+
+"No" — set restriction with action denial (user is not allowed to perform the action);
+
+"Yes" — remove the restriction (the user can perform the action without any authentication);
+
+"Auth_self" — the user must enter his/her password for authentication. Note, this level of restriction is not sufficient for most multi-user applications, "Auth_admin" is usually recommended;
+
+"Auth_admin" — the user must enter the administrator password at each request. Requires authentication of the user with administrator privileges;
+
+"Auth_self_keep" — similar to "Auth_self", but authorization is maintained for a short period of time (e.g., five minutes). Note, this level of restriction is insufficient for most multi-user applications, "Auth_admin_keep" is generally recommended;
+
+"Auth_admin_keep" — similar to "Auth_admin", but authorization is maintained for a short period of time (e.g., five minutes);
+
+Note: the possession of administrative rights in a PolicyKit context is determined by its rules. By default, Alt asks for the password of a user in the "wheel" group.
+
+      </string>
+      <string id="org-freedesktop-udisks2-filesystem-take-ownership">Permission to take ownership of a filesystem</string>
+      <string id="org-freedesktop-udisks2-filesystem-take-ownership_help">The policy restricts the ability to take ownership of a filesystem
+
+Disabled/Unconfigured — restrictions are defined by system parameters.
+
+Enabled — restriction with defined rights;
+
+Possible values:
+
+"No" — set restriction with action denial (user is not allowed to perform the action);
+
+"Yes" — remove the restriction (the user can perform the action without any authentication);
+
+"Auth_self" — the user must enter his/her password for authentication. Note, this level of restriction is not sufficient for most multi-user applications, "Auth_admin" is usually recommended;
+
+"Auth_admin" — the user must enter the administrator password at each request. Requires authentication of the user with administrator privileges;
+
+"Auth_self_keep" — similar to "Auth_self", but authorization is maintained for a short period of time (e.g., five minutes). Note, this level of restriction is insufficient for most multi-user applications, "Auth_admin_keep" is generally recommended;
+
+"Auth_admin_keep" — similar to "Auth_admin", but authorization is maintained for a short period of time (e.g., five minutes);
+
+Note: the possession of administrative rights in a PolicyKit context is determined by its rules. By default, Alt asks for the password of a user in the "wheel" group.
+
+The "Block" option prevents the user from changing this setting. Blocking a policy makes it a priority over a similar policy for the user.
+
+      </string>
+      <string id="org-freedesktop-udisks2-filesystem-take-ownership-user">Permission to take ownership of a filesystem</string>
+      <string id="org-freedesktop-udisks2-filesystem-take-ownership-user_help">The policy restricts the ability to take ownership of a filesystem
+
+Disabled/Unconfigured — restrictions are defined by system parameters.
+
+Enabled — restriction with defined rights;
+
+Possible values:
+
+"No" — set restriction with action denial (user is not allowed to perform the action);
+
+"Yes" — remove the restriction (the user can perform the action without any authentication);
+
+"Auth_self" — the user must enter his/her password for authentication. Note, this level of restriction is not sufficient for most multi-user applications, "Auth_admin" is usually recommended;
+
+"Auth_admin" — the user must enter the administrator password at each request. Requires authentication of the user with administrator privileges;
+
+"Auth_self_keep" — similar to "Auth_self", but authorization is maintained for a short period of time (e.g., five minutes). Note, this level of restriction is insufficient for most multi-user applications, "Auth_admin_keep" is generally recommended;
+
+"Auth_admin_keep" — similar to "Auth_admin", but authorization is maintained for a short period of time (e.g., five minutes);
+
+Note: the possession of administrative rights in a PolicyKit context is determined by its rules. By default, Alt asks for the password of a user in the "wheel" group.
+
+      </string>
+      <string id="org-freedesktop-udisks2-filesystem-unmount-others">Permission to unmount a device mounted by another user</string>
+      <string id="org-freedesktop-udisks2-filesystem-unmount-others_help">The policy restricts the ability to unmount a device mounted by another user
+
+Disabled/Unconfigured — restrictions are defined by system parameters.
+
+Enabled — restriction with defined rights;
+
+Possible values:
+
+"No" — set restriction with action denial (user is not allowed to perform the action);
+
+"Yes" — remove the restriction (the user can perform the action without any authentication);
+
+"Auth_self" — the user must enter his/her password for authentication. Note, this level of restriction is not sufficient for most multi-user applications, "Auth_admin" is usually recommended;
+
+"Auth_admin" — the user must enter the administrator password at each request. Requires authentication of the user with administrator privileges;
+
+"Auth_self_keep" — similar to "Auth_self", but authorization is maintained for a short period of time (e.g., five minutes). Note, this level of restriction is insufficient for most multi-user applications, "Auth_admin_keep" is generally recommended;
+
+"Auth_admin_keep" — similar to "Auth_admin", but authorization is maintained for a short period of time (e.g., five minutes);
+
+Note: the possession of administrative rights in a PolicyKit context is determined by its rules. By default, Alt asks for the password of a user in the "wheel" group.
+
+The "Block" option prevents the user from changing this setting. Blocking a policy makes it a priority over a similar policy for the user.
+
+      </string>
+      <string id="org-freedesktop-udisks2-filesystem-unmount-others-user">Permission to unmount a device mounted by another user</string>
+      <string id="org-freedesktop-udisks2-filesystem-unmount-others-user_help">The policy restricts the ability to unmount a device mounted by another user
+
+Disabled/Unconfigured — restrictions are defined by system parameters.
+
+Enabled — restriction with defined rights;
+
+Possible values:
+
+"No" — set restriction with action denial (user is not allowed to perform the action);
+
+"Yes" — remove the restriction (the user can perform the action without any authentication);
+
+"Auth_self" — the user must enter his/her password for authentication. Note, this level of restriction is not sufficient for most multi-user applications, "Auth_admin" is usually recommended;
+
+"Auth_admin" — the user must enter the administrator password at each request. Requires authentication of the user with administrator privileges;
+
+"Auth_self_keep" — similar to "Auth_self", but authorization is maintained for a short period of time (e.g., five minutes). Note, this level of restriction is insufficient for most multi-user applications, "Auth_admin_keep" is generally recommended;
+
+"Auth_admin_keep" — similar to "Auth_admin", but authorization is maintained for a short period of time (e.g., five minutes);
+
+Note: the possession of administrative rights in a PolicyKit context is determined by its rules. By default, Alt asks for the password of a user in the "wheel" group.
+
+
+
       </string>
 
       <string id="org-freedesktop-udisks2-filesystem-mount-No">No</string>
