@@ -417,7 +417,6 @@
             explainText="$(string.UserPolicyMode_Help)"
             key="SOFTWARE\Policies\Microsoft\Windows\System"
             name="UserPolicyMode"
-            valueName="UserPolicyMode"
             presentation="$(presentation.UserPolicyMode)">
       <parentCategory ref="ALT_GroupPolicies"/>
       <supportedOn ref="system:SUPPORTED_AltP10"/>
