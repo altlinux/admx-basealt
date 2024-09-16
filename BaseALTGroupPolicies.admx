@@ -435,5 +435,15 @@
         </enum>
       </elements>
     </policy>
+    <policy class="Machine" displayName="$(string.gpupdate_thunderbird_applier)" explainText="$(string.gpupdate_thunderbird_applier_help)" key="Software\BaseALT\Policies\GPUpdate" name="ThunderbirdApplier" valueName="ThunderbirdApplier">
+      <parentCategory ref="ALT_GPUpdateAppliers"/>
+      <supportedOn ref="system:SUPPORTED_AltP10"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
   </policies>
 </policyDefinitions>
