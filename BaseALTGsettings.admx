@@ -509,7 +509,7 @@
       <parentCategory ref="system:ALT_Screensaver_Mate" />
       <supportedOn ref="system:SUPPORTED_AltP9" />
       <elements>
-        <decimal id="OrgMateScreensaverCycleDelay_setter" valueName="org.mate.screensaver.cycle-delay" minValue="1" maxValue="2147483647" />
+        <decimal id="OrgMateScreensaverCycleDelay_setter" valueName="org.mate.screensaver.cycle-delay" minValue="0" maxValue="2147483647" />
       </elements>
     </policy>
 
@@ -521,7 +521,7 @@
       <parentCategory ref="system:ALT_Screensaver_Mate" />
       <supportedOn ref="system:SUPPORTED_AltP9" />
       <elements>
-        <decimal id="OrgMateScreensaverCycleDelay_setter" valueName="org.mate.screensaver.cycle-delay" minValue="1" maxValue="2147483647" />
+        <decimal id="OrgMateScreensaverCycleDelay_setter" valueName="org.mate.screensaver.cycle-delay" minValue="0" maxValue="2147483647" />
         <boolean id="OrgMateScreensaverCycleDelay_setter_blocker" key="Software\BaseALT\Policies\GSettingsLocks" valueName="org.mate.screensaver.cycle-delay">
           <trueValue>
             <decimal value="1" />
