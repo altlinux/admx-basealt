@@ -158,6 +158,10 @@ If the policy is disabled or not configured, the copy mechanism works by default
 
 Example: If the suffix ".py" is specified in the suffix list, and the path "/usr/bin" is specified in the path list, then files with the suffix ".py" will become executable when copied to the path "/usr/bin".
       </string>
+      <string id="gpupdate_autofs_timer">Time until network directories are unmounted</string>
+      <string id="gpupdate_autofs_timer_help">The policy allows you to set the time (in seconds) before unmounting network directories mounted using group policies.
+
+      </string>
       <string id="UserPolicyMode">Configure user Group Policy loopback processing mode</string>
       <string id="UserPolicyMode_Help">This policy setting directs the system to apply the set of Group Policy objects for the computer to any user who logs on to a computer affected by this setting.
 It is intended for special-use computers, such as those in public places, laboratories, and classrooms, where you must modify the user setting based on the computer that is being used.
@@ -184,6 +188,9 @@ If you disable this setting or do not configure it, the user's Group Policy Obje
       </presentation>
       <presentation id="UserPolicyMode">
         <dropdownList refId="UserPolicyModeOp" noSort="true" defaultItem="1">Mode:</dropdownList>
+      </presentation>
+      <presentation id="GpupdateAutofsTimer-pr">
+        <decimalTextBox refId="AutofsTimer_setter" defaultValue="120">Time until network directories are unmounted:</decimalTextBox>
       </presentation>
     </presentationTable>
   </resources>

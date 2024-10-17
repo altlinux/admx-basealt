@@ -159,6 +159,10 @@
 
 Пример: Если в списке суффиксов указан «.py», а в списке путей указан путь «/usr/bin», то файлы с суффкисом «.py» станут исполняемыми при копировании в путь «/usr/bin».
       </string>
+      <string id="gpupdate_autofs_timer">Время до размонтирования сетевых каталогов</string>
+      <string id="gpupdate_autofs_timer_help">Политика позволяет установить время (в секундах) до размонтирования сетевых каталогов, примонтированных с помощью групповых политик.
+
+      </string>
       <string id="UserPolicyMode">Настройка режима обработки замыкания пользовательской групповой политики</string>
       <string id="UserPolicyMode_Help">В соответствии с этим параметром политики система применяет набор объектов групповой политики для компьютера ко всем пользователям, выполняющим вход в систему компьютера, к которому применен этот параметр политики.
 
@@ -188,6 +192,9 @@
         <dropdownList refId="UserPolicyModeOp" noSort="true" defaultItem="1">
          Режим:
         </dropdownList>
+      </presentation>
+      <presentation id="GpupdateAutofsTimer-pr">
+        <decimalTextBox refId="AutofsTimer_setter" defaultValue="120">Время до размонтирования сетевых каталогов:</decimalTextBox>
       </presentation>
     </presentationTable>
   </resources>
