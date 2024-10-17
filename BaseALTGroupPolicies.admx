@@ -410,6 +410,16 @@
         <decimal value="0"/>
       </disabledValue>
     </policy>
+    <policy class="Machine" displayName="$(string.gpupdate_networkshares_applier_user)" explainText="$(string.gpupdate_networkshares_applier_user_help)" key="Software\BaseALT\Policies\GPUpdate" name="NetworksharesApplierUser" valueName="NetworksharesApplierUser">
+      <parentCategory ref="ALT_GPUpdateAppliers"/>
+      <supportedOn ref="system:SUPPORTED_AltP10"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
     <policy class="Machine" displayName="$(string.gpupdate_autofs_timer)"
       explainText="$(string.gpupdate_autofs_timer_help)"
       key="Software\BaseALT\Policies\GPUpdate"
