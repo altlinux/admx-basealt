@@ -412,6 +412,18 @@
         <decimal id="AutofsTimer_setter" valueName="Number" minValue="0" maxValue="65535" />
       </elements>
     </policy>
+    <policy class="User" displayName="$(string.gpupdate_autofs_timer_user)"
+      explainText="$(string.gpupdate_autofs_timer_user_help)"
+      key="Software\BaseALT\Policies\GPUpdate"
+      name="TimeoutAutofsUser"
+      valueName="TimeoutAutofsUser"
+      presentation="$(presentation.GpupdateAutofsTimer-pr)">
+      <parentCategory ref="ALT_Mounting"/>
+      <supportedOn ref="system:SUPPORTED_AltP10"/>
+      <elements>
+        <decimal id="AutofsTimer_setter" valueName="Number" minValue="0" maxValue="65535" />
+      </elements>
+    </policy>
     <policy class="Machine" displayName="$(string.gpupdate_filescopy_applier)"
             explainText="$(string.gpupdate_filescopy_applier_help)"
             key="Software\BaseALT\Policies\GroupPolicies"
