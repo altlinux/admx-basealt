@@ -158,6 +158,13 @@ If the policy is disabled or not configured, the copy mechanism works by default
 
 Example: If the suffix ".py" is specified in the suffix list, and the path "/usr/bin" is specified in the path list, then files with the suffix ".py" will become executable when copied to the path "/usr/bin".
       </string>
+
+      <string id="gpupdate_networkshares_applier">Сreating network directories</string>
+      <string id="gpupdate_networkshares_applier_help">The policy includes a mechanism for creating network directories
+
+Additional configuration of the mechanism can be performed using the policies "Time before unmounting network directories", "Mapping network drives of the machine/user in the home directory" and "Name of the directory for mounting network drives of the machine/user".
+
+      </string>
       <string id="gpupdate_autofs_timer">Time until network directories are unmounted</string>
       <string id="gpupdate_autofs_timer_help">The policy allows you to set the time (in seconds) before unmounting network directories mounted using group policies.
 
