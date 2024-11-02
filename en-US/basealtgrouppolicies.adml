@@ -204,7 +204,7 @@ If you disable this setting or do not configure it, the user's Group Policy Obje
         <listBox refId="ExtensionMarkerList">List of file suffixes:</listBox>
       </presentation>
       <presentation id="UserPolicyMode">
-        <dropdownList refId="UserPolicyModeOp" noSort="true" defaultItem="1">Mode:</dropdownList>
+        <dropdownList refId="UserPolicyMode-setter" noSort="true" defaultItem="1">Mode:</dropdownList>
       </presentation>
       <presentation id="GpupdateAutofsTimer-pr">
         <decimalTextBox refId="AutofsTimer_setter" defaultValue="120">Time until network directories are unmounted:</decimalTextBox>

@@ -206,7 +206,7 @@
         <listBox refId="ExtensionMarkerList">Список суффиксов файлов:</listBox>
       </presentation>
       <presentation id="UserPolicyMode">
-        <dropdownList refId="UserPolicyModeOp" noSort="true" defaultItem="1">
+        <dropdownList refId="UserPolicyMode-setter" noSort="true" defaultItem="1">
          Режим:
         </dropdownList>
       </presentation>

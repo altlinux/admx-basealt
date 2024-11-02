@@ -120,6 +120,16 @@
         <decimal value="0"/>
       </disabledValue>
     </policy>
+    <policy class="Machine" displayName="$(string.gpupdate_thunderbird_applier)" explainText="$(string.gpupdate_thunderbird_applier_help)" key="Software\BaseALT\Policies\GPUpdate" name="ThunderbirdApplier" valueName="ThunderbirdApplier">
+      <parentCategory ref="ALT_GPUpdateAppliers"/>
+      <supportedOn ref="system:SUPPORTED_AltP10"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
     <policy class="Machine" displayName="$(string.gpupdate_folders_applier)" explainText="$(string.gpupdate_folders_applier_help)" key="Software\BaseALT\Policies\GPUpdate" name="FoldersApplier" valueName="FoldersApplier">
       <parentCategory ref="ALT_GPUpdateAppliers"/>
       <supportedOn ref="system:SUPPORTED_AltP9"/>
@@ -426,7 +436,7 @@
       name="TimeoutAutofs"
       valueName="TimeoutAutofs"
       presentation="$(presentation.GpupdateAutofsTimer-pr)">
-      <parentCategory ref="ALT_Mounting"/>
+      <parentCategory ref="system:ALT_Mounting"/>
       <supportedOn ref="system:SUPPORTED_AltP10"/>
       <elements>
         <decimal id="AutofsTimer_setter" valueName="Number" minValue="0" maxValue="65535" />
@@ -438,7 +448,7 @@
       name="TimeoutAutofsUser"
       valueName="TimeoutAutofsUser"
       presentation="$(presentation.GpupdateAutofsTimer-pr)">
-      <parentCategory ref="ALT_Mounting"/>
+      <parentCategory ref="system:ALT_Mounting"/>
       <supportedOn ref="system:SUPPORTED_AltP10"/>
       <elements>
         <decimal id="AutofsTimer_setter" valueName="Number" minValue="0" maxValue="65535" />
@@ -465,7 +475,7 @@
       <parentCategory ref="ALT_GroupPolicies"/>
       <supportedOn ref="system:SUPPORTED_AltP10"/>
       <elements>
-        <enum id="UserPolicyModeOp" valueName="UserPolicyMode">
+        <enum id="UserPolicyMode-setter" valueName="UserPolicyMode">
           <item displayName="$(string.UserPolicyMode_Merge)">
             <value>
               <decimal value="1" />
@@ -478,16 +488,6 @@
           </item>
         </enum>
       </elements>
-    </policy>
-    <policy class="Machine" displayName="$(string.gpupdate_thunderbird_applier)" explainText="$(string.gpupdate_thunderbird_applier_help)" key="Software\BaseALT\Policies\GPUpdate" name="ThunderbirdApplier" valueName="ThunderbirdApplier">
-      <parentCategory ref="ALT_GPUpdateAppliers"/>
-      <supportedOn ref="system:SUPPORTED_AltP10"/>
-      <enabledValue>
-        <decimal value="1"/>
-      </enabledValue>
-      <disabledValue>
-        <decimal value="0"/>
-      </disabledValue>
     </policy>
   </policies>
 </policyDefinitions>
