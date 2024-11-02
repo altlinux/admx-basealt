@@ -133,6 +133,8 @@ Enabled — symbolic links to user's network drives mount points will be display
    /run/media/USERNAME/drives -> ~/net.drives — for user's network drives;
 
    /run/media/USERNAME/.drives -> ~/.net.drives — for hidden user's network drives.
+
+Note: The name of the mount directory can be specified using the "Name of the user's network drive mount directory" policy.
       </string>
       <string id="gpupdate_drive_maps_home">Mapping machine's network drives in the home directory</string>
       <string id="gpupdate_drive_maps_home_help">Mapping machine's network drives in the home directory
@@ -144,6 +146,8 @@ Enabled — symbolic links to machine's network drives mount points will be disp
    /media/gpupdate/drives.system -> ~/net.drives.system — for system network drives;
 
    /media/gpupdate/.drives.system -> ~/.net.drives.system — for hidden system network drives.
+
+Note: The name of the mount directory can be specified using the "Name of the machine's network drive mount directory" policy.
       </string>
       <string id="gpupdate_filescopy_applier">Configuring the File Copy Mechanism</string>
       <string id="gpupdate_filescopy_applier_help">Configuring the File Copy Mechanism
