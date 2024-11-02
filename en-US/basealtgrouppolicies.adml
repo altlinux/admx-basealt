@@ -179,6 +179,20 @@ Additional configuration of the mechanism can be performed using the policies "T
       <string id="gpupdate_autofs_timer_user_help">The policy allows you to set the time (in seconds) before unmounting network directories mounted using group policies.
 
       </string>
+      <string id="gpupdate_drive_maps_name">Name of the machine's network drive mount directory</string>
+      <string id="gpupdate_drive_maps_name_help">The policy allows you to specify the name of the symbolic link to the machine's network drive mount directory
+
+If the policy is disabled or not configured, the default symbolic link name is set as follows:
+
+/media/gpupdate/{drives.system} — for system network drives and /media/gpupdate/.{drives.system} — for hidden system network drives.
+
+When the "Display machine's network drives in the home directory" policy is enabled, the symbolic link name is set as follows:
+
+~/net.{drives.system} — for system network drives and ~/.net.{drives.system} — for hidden system network drives.
+
+Note: {drives.system} is the default value that points to the disk being connected, replace it with the actual name without curly braces.
+
+      </string>
       <string id="UserPolicyMode">Configure user Group Policy loopback processing mode</string>
       <string id="UserPolicyMode_Help">This policy setting directs the system to apply the set of Group Policy objects for the computer to any user who logs on to a computer affected by this setting.
 It is intended for special-use computers, such as those in public places, laboratories, and classrooms, where you must modify the user setting based on the computer that is being used.
@@ -208,6 +222,11 @@ If you disable this setting or do not configure it, the user's Group Policy Obje
       </presentation>
       <presentation id="GpupdateAutofsTimer-pr">
         <decimalTextBox refId="AutofsTimer_setter" defaultValue="120">Time until network directories are unmounted:</decimalTextBox>
+      </presentation>
+      <presentation id="GPUpdateDriveMapsName">
+       <textBox refId="DriveMapsName-setter">
+         <label>Network drive mount directory name:</label>
+       </textBox>
       </presentation>
     </presentationTable>
   </resources>
