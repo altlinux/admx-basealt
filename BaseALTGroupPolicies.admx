@@ -476,6 +476,32 @@
         <text id="DriveMapsName-setter" valueName="DriveMapsNameUser"/>
       </elements>
     </policy>
+    <policy class="User" displayName="$(string.gpupdate_drive_maps_home_disable_net)"
+      explainText="$(string.gpupdate_drive_maps_home_disable_net_help)"
+      key="Software\BaseALT\Policies\GPUpdate"
+      name="DriveMapsHomeDisableNet"
+      presentation="$(presentation.GPUpdateDriveMapsDisableNet-pr)">
+      <parentCategory ref="system:ALT_Mounting"/>
+      <supportedOn ref="system:SUPPORTED_AltP10"/>
+      <elements>
+        <boolean id="DriveMapsHomeDisableNet-setter" valueName="DriveMapsHomeDisableNet">
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+        </boolean>
+        <boolean id="DriveMapsHomeDisableNetUser-setter" valueName="DriveMapsHomeDisableNetUser">
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+        </boolean>
+      </elements>
+    </policy>
     <policy class="Machine" displayName="$(string.gpupdate_filescopy_applier)"
             explainText="$(string.gpupdate_filescopy_applier_help)"
             key="Software\BaseALT\Policies\GroupPolicies"

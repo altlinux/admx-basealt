@@ -207,6 +207,22 @@ When the "Display user network drives in the home directory" policy is enabled, 
 Note: {drives} is the value that by default points to the connected drive, replace it with the current name without curly braces.
 
       </string>
+      <string id="gpupdate_drive_maps_home_disable_net">Network drive mount directory name prefix</string>
+      <string id="gpupdate_drive_maps_home_disable_net_help">This policy allows you to disable the "net." prefix in the names of symbolic links to network drive mount directories
+
+When the "Map machine network drives in the home directory" policy is enabled, the symbolic link name is set as follows:
+
+~/net.{drives.system} — for system network drives and ~/.net.{drives.system} — for hidden system network drives.
+
+When the "Map user network drives in the home directory" policy is enabled, the symbolic link name is set as follows:
+
+~/net.{drives} — for user network drives and ~/.net.{drives} — for hidden user network drives.
+
+If the policy is disabled or not configured, the names of symbolic links to mount directories begin with the prefix "net."
+
+The "net." prefix is ​​removed from the link names depending on the selected options.
+
+      </string>
       <string id="UserPolicyMode">Configure user Group Policy loopback processing mode</string>
       <string id="UserPolicyMode_Help">This policy setting directs the system to apply the set of Group Policy objects for the computer to any user who logs on to a computer affected by this setting.
 It is intended for special-use computers, such as those in public places, laboratories, and classrooms, where you must modify the user setting based on the computer that is being used.
@@ -241,6 +257,10 @@ If you disable this setting or do not configure it, the user's Group Policy Obje
        <textBox refId="DriveMapsName-setter">
          <label>Network drive mount directory name:</label>
        </textBox>
+      </presentation>
+      <presentation id="GPUpdateDriveMapsDisableNet-pr">
+        <checkBox refId="DriveMapsHomeDisableNet-setter">Remove "net." prefix from directory link names for machine network drives</checkBox>
+        <checkBox refId="DriveMapsHomeDisableNetUser-setter">Remove "net." prefix from directory link names for user network drives</checkBox>
       </presentation>
     </presentationTable>
   </resources>
