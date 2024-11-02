@@ -168,9 +168,13 @@ Example: If the suffix ".py" is specified in the suffix list, and the path "/usr
 
 Additional configuration of the mechanism can be performed using the policies "Time before unmounting network directories", "Mapping network drives of the machine/user in the home directory" and "Name of the directory for mounting network drives of the machine/user".
 
+Additional configuration of the mechanism can be performed using the policies "Time before unmounting network directories", "Mapping network drives of the machine/user in the home directory" and "Name of the directory for mounting network drives of the machine/user".
+
       </string>
       <string id="gpupdate_networkshares_applier_user">Сreating network directories for users</string>
       <string id="gpupdate_networkshares_applier_user_help">The policy includes a mechanism for creating network directories for users
+
+Additional configuration of the mechanism can be performed using the policies "Time before unmounting network directories", "Mapping network drives of the machine/user in the home directory" and "Name of the directory for mounting network drives of the machine/user".
 
 Additional configuration of the mechanism can be performed using the policies "Time before unmounting network directories", "Mapping network drives of the machine/user in the home directory" and "Name of the directory for mounting network drives of the machine/user".
 
