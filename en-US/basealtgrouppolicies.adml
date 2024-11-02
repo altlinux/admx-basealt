@@ -193,6 +193,20 @@ When the "Display machine's network drives in the home directory" policy is enab
 Note: {drives.system} is the default value that points to the disk being connected, replace it with the actual name without curly braces.
 
       </string>
+      <string id="gpupdate_drive_maps_name_user">Name of the user's network drive mount directory</string>
+      <string id="gpupdate_drive_maps_name_user_help">The policy allows you to specify the name of the symbolic link to the user's network drive mount directory
+
+If the policy is disabled or not configured, the default symbolic link name is set as follows:
+
+/run/media/USERNAME/{drives} — for user network drives and /run/media/USERNAME/.{drives} — for hidden user network drives.
+
+When the "Display user network drives in the home directory" policy is enabled, the symbolic link name is set as follows:
+
+~/net.{drives} — for user network drives and ~/.net.{drives} — for hidden user network drives.
+
+Note: {drives} is the value that by default points to the connected drive, replace it with the current name without curly braces.
+
+      </string>
       <string id="UserPolicyMode">Configure user Group Policy loopback processing mode</string>
       <string id="UserPolicyMode_Help">This policy setting directs the system to apply the set of Group Policy objects for the computer to any user who logs on to a computer affected by this setting.
 It is intended for special-use computers, such as those in public places, laboratories, and classrooms, where you must modify the user setting based on the computer that is being used.

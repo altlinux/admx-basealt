@@ -465,44 +465,17 @@
         <text id="DriveMapsName-setter" valueName="DriveMapsName"/>
       </elements>
     </policy>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    <policy class="User" displayName="$(string.gpupdate_drive_maps_name_user)"
+      explainText="$(string.gpupdate_drive_maps_name_user_help)"
+      key="Software\BaseALT\Policies\GPUpdate"
+      name="DriveMapsNameUser"
+      presentation="$(presentation.GPUpdateDriveMapsName)">
+      <parentCategory ref="system:ALT_Mounting"/>
+      <supportedOn ref="system:SUPPORTED_AltP10"/>
+      <elements>
+        <text id="DriveMapsName-setter" valueName="DriveMapsNameUser"/>
+      </elements>
+    </policy>
     <policy class="Machine" displayName="$(string.gpupdate_filescopy_applier)"
             explainText="$(string.gpupdate_filescopy_applier_help)"
             key="Software\BaseALT\Policies\GroupPolicies"
