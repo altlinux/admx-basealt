@@ -375,6 +375,19 @@
         <text id="kde-wallpaper_setter" valueName="Image"/>
       </elements>
     </policy>
+  <policy name="kde-plasma-update" class="User" displayName="$(string.kde-plasma-update)"
+    explainText="$(string.kde-plasma-update_help)"
+    key="Software\BaseALT\Policies\KDE\Plasma"
+    valueName="Update">
+      <parentCategory ref="system:ALT_Environment_KDE"/>
+      <supportedOn ref="system:SUPPORTED_AltP9"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
   <policy name="kde-colorscheme" class="Both" displayName="$(string.kde-colorscheme)"
     explainText="$(string.kde-colorscheme_help)"
     presentation="$(presentation.kde-colorscheme-pr)"

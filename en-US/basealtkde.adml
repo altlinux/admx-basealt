@@ -311,6 +311,11 @@ The “Block” option is necessary to prevent the user from changing this setti
 
       </string>
 
+      <string id="kde-plasma-update">Update the Plasma graphical environment</string>
+      <string id="kde-plasma-update_help">If the policy is enabled, when the path to the desktop image file changes, the Plasma-plasmashell graphical environment service will be automatically updated.
+
+      </string>
+
       <string id="kde-win-act-Click_to_focus">Click to focus</string>
       <string id="kde-win-act-Focus_follows_mouse">Focus follows mouse</string>
       <string id="kde-win-act-Focus_under_mouse">Focus under mouse</string>
