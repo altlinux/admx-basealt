@@ -431,7 +431,17 @@
       </disabledValue>
     </policy>
     <policy class="Machine" displayName="$(string.gpupdate_envvars_applier)" explainText="$(string.gpupdate_envvars_applier_help)" key="Software\BaseALT\Policies\GPUpdate" name="EnvvarsApplier" valueName="EnvvarsApplier">
-      <parentCategory ref="ALT_GroupPolicies"/>
+      <parentCategory ref="ALT_GPUpdateAppliers"/>
+      <supportedOn ref="system:SUPPORTED_AltP10"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+    <policy class="Machine" displayName="$(string.gpupdate_envvars_applier_user)" explainText="$(string.gpupdate_envvars_applier_user_help)" key="Software\BaseALT\Policies\GPUpdate" name="EnvvarsApplierUser" valueName="EnvvarsApplierUser">
+      <parentCategory ref="ALT_GPUpdateAppliers"/>
       <supportedOn ref="system:SUPPORTED_AltP10"/>
       <enabledValue>
         <decimal value="1"/>
