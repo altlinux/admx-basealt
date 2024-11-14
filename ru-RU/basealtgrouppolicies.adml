@@ -126,6 +126,9 @@
       <string id="gpupdate_thunderbird_applier">Настройка почтового клиента Thunderbird</string>
       <string id="gpupdate_thunderbird_applier_help">Эта политика включает применение механизма групповых политик почтового клиента Thunderbird</string>
 
+      <string id="gpupdate_envvars_applier">Настройка переменных окружения</string>
+      <string id="gpupdate_envvars_applier_help">Эта политика включает механизм применения настроек переменных окружения</string>
+
       <string id="gpupdate_drive_maps_home_user">Отображение сетевых дисков пользователя в домашнем каталоге</string>
       <string id="gpupdate_drive_maps_home_user_help">Отображение сетевых дисков пользователя в домашнем каталоге
 
