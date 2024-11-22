@@ -43,10 +43,16 @@
       <string id="gpupdate_folders_user_applier_help">This policy enables group policy Folders applier for users feature.</string>
 
       <string id="gpupdate_cifs_user_applier">Network drives mounting for users</string>
-      <string id="gpupdate_cifs_user_applier_help">This policy enables group policy CIFS applier for users feature.</string>
+      <string id="gpupdate_cifs_user_applier_help">This policy enables group policy CIFS applier for users feature.
+
+      Additional configuration of the mechanism can be performed using the policies "Time before unmounting network directories", "Mapping network drives of the machine/user in the home directory" and "Name of the directory for mounting network drives of the machine/user".
+      </string>
 
       <string id="gpupdate_cifs_applier">Network drives mounting</string>
-      <string id="gpupdate_cifs_applier_help">This policy enables group policy CIFS applier feature.</string>
+      <string id="gpupdate_cifs_applier_help">This policy enables group policy CIFS applier feature.
+
+      Additional configuration of the mechanism can be performed using the policies "Time before unmounting network directories", "Mapping network drives of the machine/user in the home directory" and "Name of the directory for mounting network drives of the machine/user".
+      </string>
 
       <string id="gpupdate_gsettings_applier">GSettings configuration</string>
       <string id="gpupdate_gsettings_applier_help">This policy enables group policy GSettings applier feature.</string>
@@ -172,17 +178,9 @@ Example: If the suffix ".py" is specified in the suffix list, and the path "/usr
       <string id="gpupdate_networkshares_applier">Сreating network directories</string>
       <string id="gpupdate_networkshares_applier_help">The policy includes a mechanism for creating network directories
 
-Additional configuration of the mechanism can be performed using the policies "Time before unmounting network directories", "Mapping network drives of the machine/user in the home directory" and "Name of the directory for mounting network drives of the machine/user".
-
-Additional configuration of the mechanism can be performed using the policies "Time before unmounting network directories", "Mapping network drives of the machine/user in the home directory" and "Name of the directory for mounting network drives of the machine/user".
-
       </string>
       <string id="gpupdate_networkshares_applier_user">Сreating network directories for users</string>
       <string id="gpupdate_networkshares_applier_user_help">The policy includes a mechanism for creating network directories for users
-
-Additional configuration of the mechanism can be performed using the policies "Time before unmounting network directories", "Mapping network drives of the machine/user in the home directory" and "Name of the directory for mounting network drives of the machine/user".
-
-Additional configuration of the mechanism can be performed using the policies "Time before unmounting network directories", "Mapping network drives of the machine/user in the home directory" and "Name of the directory for mounting network drives of the machine/user".
 
       </string>
       <string id="gpupdate_autofs_timer">Time until network directories are unmounted</string>
