@@ -40,6 +40,12 @@ The "Block" option (available only for the machine policy) prevents the user fro
 The "Block" option (available only for the machine policy) prevents the user from changing this setting. Blocking a policy makes it have priority over a similar policy for the user.
 
     </string>
+    <string id="org-gnome-desktop-interface-show-battery-percentage">Display battery percentage</string>
+    <string id="org-gnome-desktop-interface-show-battery-percentage_help">Policy allows you to customize the display of the battery percentage in the quick settings panel
+
+The "Block" option (available only for the machine policy) prevents the user from changing this setting. Blocking a policy makes it have priority over a similar policy for the user.
+
+    </string>
 
     <string id="gnome-time-1-minute">1 Minute</string>
     <string id="gnome-time-2-minute">2 Minutes</string>
@@ -95,6 +101,13 @@ The "Block" option (available only for the machine policy) prevents the user fro
       </presentation>
       <presentation id="OrgGnomeDesktopInterfaceClockShowSecondsUser-pr">
         <dropdownList noSort="true" defaultItem="0" refId="gnome-seconds_setter">Display seconds:</dropdownList>
+      </presentation>
+      <presentation id="OrgGnomeDesktopInterfaceBatteryPercentage-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="gnome-battery_setter">Отображение процента заряда батареи:</dropdownList>
+        <checkBox refId="gnome-battery_blocker">Блокировать</checkBox>
+      </presentation>
+      <presentation id="OrgGnomeDesktopInterfaceBatteryPercentageUser-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="gnome-battery_setter">Отображение процента заряда батареи:</dropdownList>
       </presentation>
     </presentationTable>
   </resources>
