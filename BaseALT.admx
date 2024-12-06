@@ -117,6 +117,18 @@
     <category name="ALT_LAPS" displayName="$(string.ALT_LAPS)" explainText="$(string.ALT_LAPS_Help)">
       <parentCategory ref="ALT_System" />
     </category>
+    <category name="ALT_Settings_Gnome" displayName="$(string.ALT_Settings_Gnome)" explainText="$(string.ALT_Settings_Gnome_Help)">
+      <parentCategory ref="ALT_System" />
+    </category>
+    <category name="ALT_Apperance_Gnome" displayName="$(string.ALT_Apperance_Gnome)" explainText="$(string.ALT_Apperance_Gnome_Help)">
+      <parentCategory ref="ALT_Settings_Gnome" />
+    </category>
+    <category name="ALT_Enviroment_Gnome" displayName="$(string.ALT_Enviroment_Gnome)" explainText="$(string.ALT_Enviroment_Gnome_Help)">
+      <parentCategory ref="ALT_Settings_Gnome" />
+    </category>
+    <category name="ALT_PowerManagement_Gnome" displayName="$(string.ALT_PowerManagement_Gnome)" explainText="$(string.ALT_PowerManagement_Gnome_Help)">
+      <parentCategory ref="ALT_Settings_Gnome" />
+    </category>
     <category name="ALT_Network" displayName="$(string.ALT_Network)" explainText="$(string.ALT_Network_Help)">
       <parentCategory ref="ALT_System" />
     </category>

@@ -51,8 +51,14 @@
 
       <string id="LinuxComponents">Linux Components</string>
       <string id="LinuxComponents_Help">Contains settings for Kernel components.</string>
-      <string id="ALT_Settings_Mate">Mate settings</string>
-      <string id="ALT_Settings_Mate_Help">Mate settings.</string>
+      <string id="ALT_Settings_Gnome">Gnome Settings</string>
+      <string id="ALT_Settings_Gnome_Help">Gnome Settings.</string>
+      <string id="ALT_Apperance_Gnome">Appearance</string>
+      <string id="ALT_Apperance_Gnome_Help">Appearance.</string>
+      <string id="ALT_Enviroment_Gnome">Desktop Behavior</string>
+      <string id="ALT_Enviroment_Gnome_Help">Configure the behavior of the Gnome desktop.</string>
+      <string id="ALT_PowerManagement_Gnome">Power Management</string>
+      <string id="ALT_PowerManagement_Gnome_Help">Power Management.</string>
       <string id="ALT_Settings_KDE">KDE settings</string>
       <string id="ALT_Settings_KDE_Help">KDE settings.</string>
       <string id="ALT_PowerManagement_KDE">Power management</string>
@@ -65,6 +71,8 @@
       <string id="ALT_Devices_KDE_Help">Input devices.</string>
       <string id="ALT_Environment_KDE">Work environment behavior</string>
       <string id="ALT_Environment_KDE_Help">Customizing the behavior of the KDE Plasma environment.</string>
+      <string id="ALT_Settings_Mate">Mate settings</string>
+      <string id="ALT_Settings_Mate_Help">Mate settings.</string>
       <string id="ALT_Background_Mate">Desktop background</string>
       <string id="ALT_Background_Mate_Help">Desktop background settings.</string>
       <string id="ALT_Screensaver_Mate">Screensaver</string>

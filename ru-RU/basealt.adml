@@ -51,8 +51,14 @@
 
       <string id="LinuxComponents">Компоненты Linux</string>
       <string id="LinuxComponents_Help">Содержит настройки ядра операционной системы.</string>
-      <string id="ALT_Settings_Mate">Настройки Mate</string>
-      <string id="ALT_Settings_Mate_Help">Настройки Mate.</string>
+      <string id="ALT_Settings_Gnome">Настройки Gnome</string>
+      <string id="ALT_Settings_Gnome_Help">Настройки Gnome.</string>
+      <string id="ALT_Apperance_Gnome">Внешний вид</string>
+      <string id="ALT_Apperance_Gnome_Help">Внешний вид.</string>
+      <string id="ALT_Enviroment_Gnome">Поведение рабочей среды</string>
+      <string id="ALT_Enviroment_Gnome_Help">Настройка поведения рабочей среды Gnome.</string>
+      <string id="ALT_PowerManagement_Gnome">Управление электропитанием</string>
+      <string id="ALT_PowerManagement_Gnome_Help">Управление электропитанием.</string>
       <string id="ALT_Settings_KDE">Настройки KDE</string>
       <string id="ALT_Settings_KDE_Help">Настройки KDE.</string>
       <string id="ALT_PowerManagement_KDE">Управление электропитанием</string>
@@ -65,6 +71,8 @@
       <string id="ALT_Devices_KDE_Help">Устройства ввода.</string>
       <string id="ALT_Environment_KDE">Поведение рабочей среды</string>
       <string id="ALT_Environment_KDE_Help">Настройка поведения рабочей среды KDE Plasma.</string>
+      <string id="ALT_Settings_Mate">Настройки Mate</string>
+      <string id="ALT_Settings_Mate_Help">Настройки Mate.</string>
       <string id="ALT_Background_Mate">Фон рабочего стола</string>
       <string id="ALT_Background_Mate_Help">Настройки фона рабочего стола.</string>
       <string id="ALT_Screensaver_Mate">Хранитель экрана</string>
