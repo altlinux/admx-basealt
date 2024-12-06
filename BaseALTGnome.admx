@@ -8,7 +8,130 @@
   </policyNamespaces>
   <resources minRequiredRevision="1.0" />
   <policies>
-
+    <policy name="GnomeSleepInactiveBattery" class="Machine"
+        displayName="$(string.GnomeSleepInactiveBattery)"
+        explainText="$(string.GnomeSleepInactiveBattery_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        presentation="$(presentation.GnomeSleepInactiveBattery-pr)">
+      <parentCategory ref="system:Phosh_PowerManagement" />
+      <supportedOn ref="system:SUPPORTED_AltP10" />
+      <elements>
+        <enum id="gnome-sleep-power_setter" valueName="org.gnome.settings-daemon.plugins.power.sleep-inactive-battery-type" required="true">
+          <item displayName="$(string.gnome-state-on)">
+            <value>
+              <string>suspend</string>
+            </value>
+          </item>
+          <item displayName="$(string.gnome-state-off)">
+            <value>
+              <string>nothing</string>
+            </value>
+          </item>
+        </enum>
+        <boolean id="gnome-sleep-power_blocker" key="Software\BaseALT\Policies\GSettingsLocks" valueName="org.gnome.settings-daemon.plugins.power.sleep-inactive-battery-type">
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+        </boolean>
+        <enum id="gnome-sleep-timeout_setter" valueName="org.gnome.settings-daemon.plugins.power.sleep-inactive-battery-timeout" required="true">
+          <item displayName="$(string.gnome-time-1-minute)">
+            <value>
+              <decimal value="60" />
+            </value>
+          </item>
+          <item displayName="$(string.gnome-time-2-minute)">
+            <value>
+              <decimal value="120" />
+            </value>
+          </item>
+          <item displayName="$(string.gnome-time-5-minute)">
+            <value>
+              <decimal value="300" />
+            </value>
+          </item>
+          <item displayName="$(string.gnome-time-10-minute)">
+            <value>
+              <decimal value="600" />
+            </value>
+          </item>
+          <item displayName="$(string.gnome-time-20-minute)">
+            <value>
+              <decimal value="1200" />
+            </value>
+          </item>
+          <item displayName="$(string.gnome-time-60-minute)">
+            <value>
+              <decimal value="3600" />
+            </value>
+          </item>
+        </enum>
+        <boolean id="gnome-sleep-timeout_blocker" key="Software\BaseALT\Policies\GSettingsLocks" valueName="org.gnome.settings-daemon.plugins.power.sleep-inactive-battery-timeout">
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+          </boolean>
+      </elements>
+    </policy>
+    <policy name="GnomeSleepInactiveBattery-user" class="User"
+        displayName="$(string.GnomeSleepInactiveBattery)"
+        explainText="$(string.GnomeSleepInactiveBattery_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        presentation="$(presentation.GnomeSleepInactiveBattery-user-pr)">
+      <parentCategory ref="system:Phosh_PowerManagement" />
+      <supportedOn ref="system:SUPPORTED_AltP10" />
+      <elements>
+        <enum id="gnome-sleep-power_setter" valueName="org.gnome.settings-daemon.plugins.power.sleep-inactive-battery-type" required="true">
+          <item displayName="$(string.gnome-state-on)">
+            <value>
+              <string>suspend</string>
+            </value>
+          </item>
+          <item displayName="$(string.gnome-state-off)">
+            <value>
+              <string>nothing</string>
+            </value>
+          </item>
+        </enum>
+        <enum id="gnome-sleep-timeout_setter" valueName="org.gnome.settings-daemon.plugins.power.sleep-inactive-battery-timeout" required="true">
+          <item displayName="$(string.gnome-time-1-minute)">
+            <value>
+              <decimal value="60" />
+            </value>
+          </item>
+          <item displayName="$(string.gnome-time-2-minute)">
+            <value>
+              <decimal value="120" />
+            </value>
+          </item>
+          <item displayName="$(string.gnome-time-5-minute)">
+            <value>
+              <decimal value="300" />
+            </value>
+          </item>
+          <item displayName="$(string.gnome-time-10-minute)">
+            <value>
+              <decimal value="600" />
+            </value>
+          </item>
+          <item displayName="$(string.gnome-time-20-minute)">
+            <value>
+              <decimal value="1200" />
+            </value>
+          </item>
+          <item displayName="$(string.gnome-time-60-minute)">
+            <value>
+              <decimal value="3600" />
+            </value>
+          </item>
+        </enum>
+      </elements>
+    </policy>
 
   </policies>
 </policyDefinitions>

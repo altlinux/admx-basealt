@@ -6,8 +6,37 @@
 
   <resources>
     <stringTable>
+    <string id="GnomeSleepInactiveBattery">Спящий режим при питании от батареи</string>
+    <string id="GnomeSleepInactiveBattery_help">Политика позволяет управлять условием перехода устройства в спящий режим при питании от батареи
+
+Параметр "Время до перехода в спящий режим при питании от батареи" имеет смысл только при включённом параметре "Переходить в спящий режим при питании от батареи"
+
+Опция «Блокировать» — (доступна только для машинной политики) запрещает изменение настройки пользователем. Блокировка политики делает её приоритетнее аналогичной политики для пользователя.
+
+    </string>
+
+    <string id="gnome-time-1-minute">1 Минута</string>
+    <string id="gnome-time-2-minute">2 Минуты</string>
+    <string id="gnome-time-5-minute">5 Минут</string>
+    <string id="gnome-time-10-minute">10 Минут</string>
+    <string id="gnome-time-20-minute">20 Минут</string>
+    <string id="gnome-time-60-minute">1 Час</string>
+
+
+
+
     </stringTable>
     <presentationTable>
+      <presentation id="GnomeSleepInactiveBattery-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="gnome-sleep-power_setter">Переходить в спящий режим при питании от батареи:</dropdownList>
+        <checkBox refId="gnome-sleep-power_blocker">Блокировать настройку перехода в спящий режим</checkBox>
+        <dropdownList noSort="true" defaultItem="0" refId="gnome-sleep-timeout_setter">Время до перехода в спящий режим при питании от батареи:</dropdownList>
+        <checkBox refId="gnome-sleep-timeout_blocker">Блокировать настройку времени</checkBox>
+      </presentation>
+      <presentation id="GnomeSleepInactiveBattery-user-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="gnome-sleep-power_setter">Переходить в спящий режим при питании от батареи:</dropdownList>
+        <dropdownList noSort="true" defaultItem="0" refId="gnome-sleep-timeout_setter">Время до перехода в спящий режим при питании от батареи:</dropdownList>
+      </presentation>
     </presentationTable>
   </resources>
 </policyDefinitionResources>
