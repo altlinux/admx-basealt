@@ -46,6 +46,12 @@
 Опция «Блокировать» — (доступна только для машинной политики) запрещает изменение настройки пользователем. Блокировка политики делает её приоритетнее аналогичной политики для пользователя.
 
     </string>
+    <string id="org-gnome-desktop-interface-enable-animations">Эффекты анимации</string>
+    <string id="org-gnome-desktop-interface-enable-animations_help">Политика позволяет управлять переключением анимации во всём пользовательском интерфейсе.
+
+Опция «Блокировать» — (доступна только для машинной политики) запрещает изменение настройки пользователем. Блокировка политики делает её приоритетнее аналогичной политики для пользователя.
+
+    </string>
 
     <string id="gnome-time-1-minute">1 Минута</string>
     <string id="gnome-time-2-minute">2 Минуты</string>
@@ -108,6 +114,13 @@
       </presentation>
       <presentation id="OrgGnomeDesktopInterfaceBatteryPercentageUser-pr">
         <dropdownList noSort="true" defaultItem="0" refId="gnome-battery_setter">Отображение процента заряда батареи:</dropdownList>
+      </presentation>
+       <presentation id="OrgGnomeDesktopInterfaceEnableAnimations-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="gnome-animations_setter">Эффекты анимации:</dropdownList>
+        <checkBox refId="gnome-animations_blocker">Блокировать</checkBox>
+      </presentation>
+      <presentation id="OrgGnomeDesktopInterfaceEnableAnimationsUser-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="gnome-animations_setter">Эффекты анимации:</dropdownList>
       </presentation>
     </presentationTable>
   </resources>

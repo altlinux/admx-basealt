@@ -46,6 +46,12 @@ The "Block" option (available only for the machine policy) prevents the user fro
 The "Block" option (available only for the machine policy) prevents the user from changing this setting. Blocking a policy makes it have priority over a similar policy for the user.
 
     </string>
+    <string id="org-gnome-desktop-interface-enable-animations">Animation effects</string>
+    <string id="org-gnome-desktop-interface-enable-animations_help">The policy allows you to control animation switching throughout the entire user interface.
+
+The "Block" option (available only for the machine policy) prevents the user from changing this setting. Blocking the policy makes it have priority over the similar policy for the user.
+
+    </string>
 
     <string id="gnome-time-1-minute">1 Minute</string>
     <string id="gnome-time-2-minute">2 Minutes</string>
@@ -103,11 +109,18 @@ The "Block" option (available only for the machine policy) prevents the user fro
         <dropdownList noSort="true" defaultItem="0" refId="gnome-seconds_setter">Display seconds:</dropdownList>
       </presentation>
       <presentation id="OrgGnomeDesktopInterfaceBatteryPercentage-pr">
-        <dropdownList noSort="true" defaultItem="0" refId="gnome-battery_setter">Отображение процента заряда батареи:</dropdownList>
+        <dropdownList noSort="true" defaultItem="0" refId="gnome-battery_setter">Display battery percentage:</dropdownList>
         <checkBox refId="gnome-battery_blocker">Блокировать</checkBox>
       </presentation>
       <presentation id="OrgGnomeDesktopInterfaceBatteryPercentageUser-pr">
-        <dropdownList noSort="true" defaultItem="0" refId="gnome-battery_setter">Отображение процента заряда батареи:</dropdownList>
+        <dropdownList noSort="true" defaultItem="0" refId="gnome-battery_setter">Display battery percentage:</dropdownList>
+      </presentation>
+      <presentation id="OrgGnomeDesktopInterfaceEnableAnimations-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="gnome-animations_setter">Animation effects:</dropdownList>
+        <checkBox refId="gnome-animations_blocker">Block</checkBox>
+      </presentation>
+      <presentation id="OrgGnomeDesktopInterfaceEnableAnimationsUser-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="gnome-animations_setter">Animation effects:</dropdownList>
       </presentation>
     </presentationTable>
   </resources>
