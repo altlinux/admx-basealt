@@ -256,6 +256,58 @@
         </enum>
       </elements>
     </policy>
-
+    <policy name="OrgGnomeDesktopInterfaceClockShowWeekdayMachine" class="Machine"
+        displayName="$(string.org-gnome-desktop-interface-clock-show-weekday)"
+        explainText="$(string.org-gnome-desktop-interface-clock-show-weekday_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        presentation="$(presentation.OrgGnomeDesktopInterfaceClockShowWeekday-pr)" >
+      <parentCategory ref="system:Phosh_Environment" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <elements>
+        <enum id="gnome-weekday_setter" required="true" valueName="org.gnome.desktop.interface.clock-show-weekday">
+          <item displayName="$(string.gnome-state-on)">
+            <value>
+              <decimal value="1" />
+            </value>
+          </item>
+          <item displayName="$(string.gnome-state-off)">
+            <value>
+              <decimal value="0" />
+            </value>
+          </item>
+        </enum>
+        <boolean id="gnome-weekday_blocker" key="Software\BaseALT\Policies\GSettingsLocks" valueName="org.gnome.desktop.interface.clock-show-weekday">
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+        </boolean>
+      </elements>
+    </policy>
+    <policy name="OrgGnomeDesktopInterfaceClockShowWeekdayUser" class="User"
+        displayName="$(string.org-gnome-desktop-interface-clock-show-weekday)"
+        explainText="$(string.org-gnome-desktop-interface-clock-show-weekday_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        valueName="org.gnome.desktop.interface.clock-show-weekday"
+        presentation="$(presentation.OrgGnomeDesktopInterfaceClockShowWeekdayUser-pr)" >
+      <parentCategory ref="system:Phosh_Environment" />
+      <supportedOn ref="system:SUPPORTED_AltP10" />
+      <elements>
+        <enum id="gnome-weekday_setter" required="true" valueName="org.gnome.desktop.interface.clock-show-weekday">
+          <item displayName="$(string.gnome-state-on)">
+            <value>
+              <decimal value="1" />
+            </value>
+          </item>
+          <item displayName="$(string.gnome-state-off)">
+            <value>
+              <decimal value="0" />
+            </value>
+          </item>
+        </enum>
+      </elements>
+    </policy>
   </policies>
 </policyDefinitions>
