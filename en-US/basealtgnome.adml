@@ -28,6 +28,12 @@ The "Block" option (available only for the machine policy) prevents the user fro
 The "Block" option (available only for the machine policy) prevents the user from changing this setting. Blocking a policy makes it take precedence over a similar policy for the user.
 
     </string>
+    <string id="org-gnome-desktop-interface-clock-show-date">Show date on quick settings panel</string>
+    <string id="org-gnome-desktop-interface-clock-show-date_help">Policy allows you to customize the display of the date on the quick settings panel
+
+The "Block" option (available only for the machine policy) prevents the user from changing this setting. Blocking the policy makes it have priority over the similar policy for the user.
+
+    </string>
 
     <string id="gnome-time-1-minute">1 Minute</string>
     <string id="gnome-time-2-minute">2 Minutes</string>
@@ -69,6 +75,13 @@ The "Block" option (available only for the machine policy) prevents the user fro
       </presentation>
       <presentation id="OrgGnomeDesktopInterfaceClockShowWeekdayUser-pr">
         <dropdownList noSort="true" defaultItem="0" refId="gnome-weekday_setter">Day of week display:</dropdownList>
+      </presentation>
+      <presentation id="OrgGnomeDesktopInterfaceClockShowDate-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="gnome-date_setter">Date display:</dropdownList>
+        <checkBox refId="gnome-date_blocker">Block</checkBox>
+      </presentation>
+      <presentation id="OrgGnomeDesktopInterfaceClockShowDateUser-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="gnome-date_setter">Date display:</dropdownList>
       </presentation>
     </presentationTable>
   </resources>

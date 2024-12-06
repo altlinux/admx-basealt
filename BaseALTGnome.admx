@@ -309,5 +309,58 @@
         </enum>
       </elements>
     </policy>
+    <policy name="OrgGnomeDesktopInterfaceClockShowDateMachine" class="Machine"
+        displayName="$(string.org-gnome-desktop-interface-clock-show-date)"
+        explainText="$(string.org-gnome-desktop-interface-clock-show-date_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        presentation="$(presentation.OrgGnomeDesktopInterfaceClockShowDate-pr)" >
+      <parentCategory ref="system:Phosh_Environment" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <elements>
+        <enum id="gnome-date_setter" required="true" valueName="org.gnome.desktop.interface.clock-show-date">
+          <item displayName="$(string.gnome-state-on)">
+            <value>
+              <decimal value="1" />
+            </value>
+          </item>
+          <item displayName="$(string.gnome-state-off)">
+            <value>
+              <decimal value="0" />
+            </value>
+          </item>
+        </enum>
+        <boolean id="gnome-date_blocker" key="Software\BaseALT\Policies\GSettingsLocks" valueName="org.gnome.desktop.interface.clock-show-date">
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+        </boolean>
+      </elements>
+    </policy>
+    <policy name="OrgGnomeDesktopInterfaceClockShowDateUser" class="User"
+        displayName="$(string.org-gnome-desktop-interface-clock-show-date)"
+        explainText="$(string.org-gnome-desktop-interface-clock-show-date_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        valueName="org.gnome.desktop.interface.clock-show-date"
+        presentation="$(presentation.OrgGnomeDesktopInterfaceClockShowDateUser-pr)" >
+      <parentCategory ref="system:Phosh_Environment" />
+      <supportedOn ref="system:SUPPORTED_AltP10" />
+      <elements>
+        <enum id="gnome-date_setter" required="true" valueName="org.gnome.desktop.interface.clock-show-date">
+          <item displayName="$(string.gnome-state-on)">
+            <value>
+              <decimal value="1" />
+            </value>
+          </item>
+          <item displayName="$(string.gnome-state-off)">
+            <value>
+              <decimal value="0" />
+            </value>
+          </item>
+        </enum>
+      </elements>
+    </policy>
   </policies>
 </policyDefinitions>

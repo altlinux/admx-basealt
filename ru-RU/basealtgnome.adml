@@ -28,6 +28,12 @@
 Опция «Блокировать» — (доступна только для машинной политики) запрещает изменение настройки пользователем. Блокировка политики делает её приоритетнее аналогичной политики для пользователя.
 
     </string>
+    <string id="org-gnome-desktop-interface-clock-show-date">Отображение даты на панели быстрых настроек</string>
+    <string id="org-gnome-desktop-interface-clock-show-date_help">Политика позволяет настраивать отображение даты на панели быстрых настроек
+
+Опция «Блокировать» — (доступна только для машинной политики) запрещает изменение настройки пользователем. Блокировка политики делает её приоритетнее аналогичной политики для пользователя.
+
+    </string>
 
     <string id="gnome-time-1-minute">1 Минута</string>
     <string id="gnome-time-2-minute">2 Минуты</string>
@@ -69,6 +75,13 @@
       </presentation>
       <presentation id="OrgGnomeDesktopInterfaceClockShowWeekdayUser-pr">
         <dropdownList noSort="true" defaultItem="0" refId="gnome-weekday_setter">Отображение дня недели:</dropdownList>
+      </presentation>
+      <presentation id="OrgGnomeDesktopInterfaceClockShowDate-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="gnome-date_setter">Отображение даты:</dropdownList>
+        <checkBox refId="gnome-date_blocker">Блокировать</checkBox>
+      </presentation>
+      <presentation id="OrgGnomeDesktopInterfaceClockShowDateUser-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="gnome-date_setter">Отображение даты:</dropdownList>
       </presentation>
     </presentationTable>
   </resources>
