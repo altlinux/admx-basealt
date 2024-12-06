@@ -14,6 +14,14 @@
 Опция «Блокировать» — (доступна только для машинной политики) запрещает изменение настройки пользователем. Блокировка политики делает её приоритетнее аналогичной политики для пользователя.
 
     </string>
+    <string id="GnomeSleepInactiveAC">Спящий режим при питании от сети</string>
+    <string id="GnomeSleepInactiveAC_help">Политика позволяет управлять условием перехода устройства в спящий режим при питании от сети
+
+Параметр "Время до перехода в спящий режим при питании от сети" имеет смысл только при включённом параметре "Переходить в спящий режим при питании от сети"
+
+Опция «Блокировать» — (доступна только для машинной политики) запрещает изменение настройки пользователем. Блокировка политики делает её приоритетнее аналогичной политики для пользователя.
+
+    </string>
 
     <string id="gnome-time-1-minute">1 Минута</string>
     <string id="gnome-time-2-minute">2 Минуты</string>
@@ -34,6 +42,16 @@
         <checkBox refId="gnome-sleep-timeout_blocker">Блокировать настройку времени</checkBox>
       </presentation>
       <presentation id="GnomeSleepInactiveBattery-user-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="gnome-sleep-power_setter">Переходить в спящий режим при питании от батареи:</dropdownList>
+        <dropdownList noSort="true" defaultItem="0" refId="gnome-sleep-timeout_setter">Время до перехода в спящий режим при питании от батареи:</dropdownList>
+      </presentation>
+      <presentation id="GnomeSleepInactiveAC-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="gnome-sleep-power_setter">Переходить в спящий режим при питании от батареи:</dropdownList>
+        <checkBox refId="gnome-sleep-power_blocker">Блокировать настройку перехода в спящий режим</checkBox>
+        <dropdownList noSort="true" defaultItem="0" refId="gnome-sleep-timeout_setter">Время до перехода в спящий режим при питании от батареи:</dropdownList>
+        <checkBox refId="gnome-sleep-timeout_blocker">Блокировать настройку времени</checkBox>
+      </presentation>
+      <presentation id="GnomeSleepInactiveAC-user-pr">
         <dropdownList noSort="true" defaultItem="0" refId="gnome-sleep-power_setter">Переходить в спящий режим при питании от батареи:</dropdownList>
         <dropdownList noSort="true" defaultItem="0" refId="gnome-sleep-timeout_setter">Время до перехода в спящий режим при питании от батареи:</dropdownList>
       </presentation>

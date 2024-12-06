@@ -14,6 +14,14 @@ The "Time before going to sleep when on battery" parameter is only meaningful if
 The "Block" option (available only for the machine policy) prevents the user from changing this setting. Blocking a policy makes it take precedence over a similar policy for the user.
 
     </string>
+    <string id="GnomeSleepInactiveAC">Sleep when plugged in</string>
+    <string id="GnomeSleepInactiveAC_help">Policy allows you to manage the condition for the device to go to sleep when plugged in
+
+The "Time before going to sleep when plugged in" parameter is only meaningful when the "Go to sleep when plugged in" parameter is enabled
+
+The "Block" option (available only for the machine policy) prevents the user from changing this setting. Blocking a policy makes it take precedence over a similar policy for the user.
+
+    </string>
 
     <string id="gnome-time-1-minute">1 Minute</string>
     <string id="gnome-time-2-minute">2 Minutes</string>
@@ -36,6 +44,16 @@ The "Block" option (available only for the machine policy) prevents the user fro
       <presentation id="GnomeSleepInactiveBattery-user-pr">
         <dropdownList noSort="true" defaultItem="0" refId="gnome-sleep-power_setter">Sleep on battery:</dropdownList>
         <dropdownList noSort="true" defaultItem="0" refId="gnome-sleep-timeout_setter">Time before sleep on battery:</dropdownList>
+      </presentation>
+      <presentation id="GnomeSleepInactiveAC-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="gnome-sleep-power_setter">Sleep on battery power:</dropdownList>
+        <checkBox refId="gnome-sleep-power_blocker">Block sleep setting</checkBox>
+        <dropdownList noSort="true" defaultItem="0" refId="gnome-sleep-timeout_setter">Time before sleep on battery power:</dropdownList>
+        <checkBox refId="gnome-sleep-timeout_blocker">Block time setting</checkBox>
+      </presentation>
+      <presentation id="GnomeSleepInactiveAC-user-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="gnome-sleep-power_setter">Sleep on battery power:</dropdownList>
+        <dropdownList noSort="true" defaultItem="0" refId="gnome-sleep-timeout_setter">Time before going to sleep on battery power:</dropdownList>
       </presentation>
     </presentationTable>
   </resources>
