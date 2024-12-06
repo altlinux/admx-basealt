@@ -34,6 +34,12 @@
 Опция «Блокировать» — (доступна только для машинной политики) запрещает изменение настройки пользователем. Блокировка политики делает её приоритетнее аналогичной политики для пользователя.
 
     </string>
+    <string id="org-gnome-desktop-interface-clock-show-seconds">Отображение секунд на панели быстрых настроек</string>
+    <string id="org-gnome-desktop-interface-clock-show-seconds_help">Политика позволяет настраивать отображение секунд на панели быстрых настроек
+
+Опция «Блокировать» — (доступна только для машинной политики) запрещает изменение настройки пользователем. Блокировка политики делает её приоритетнее аналогичной политики для пользователя.
+
+    </string>
 
     <string id="gnome-time-1-minute">1 Минута</string>
     <string id="gnome-time-2-minute">2 Минуты</string>
@@ -82,6 +88,13 @@
       </presentation>
       <presentation id="OrgGnomeDesktopInterfaceClockShowDateUser-pr">
         <dropdownList noSort="true" defaultItem="0" refId="gnome-date_setter">Отображение даты:</dropdownList>
+      </presentation>
+      <presentation id="OrgGnomeDesktopInterfaceClockShowSeconds-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="gnome-seconds_setter">Отображение секунд:</dropdownList>
+        <checkBox refId="gnome-seconds_blocker">Блокировать</checkBox>
+      </presentation>
+      <presentation id="OrgGnomeDesktopInterfaceClockShowSecondsUser-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="gnome-seconds_setter">Отображение секунд:</dropdownList>
       </presentation>
     </presentationTable>
   </resources>

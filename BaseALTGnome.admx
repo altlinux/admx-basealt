@@ -362,5 +362,58 @@
         </enum>
       </elements>
     </policy>
+    <policy name="OrgGnomeDesktopInterfaceClockShowSecondsMachine" class="Machine"
+        displayName="$(string.org-gnome-desktop-interface-clock-show-seconds)"
+        explainText="$(string.org-gnome-desktop-interface-clock-show-seconds_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        presentation="$(presentation.OrgGnomeDesktopInterfaceClockShowSeconds-pr)" >
+      <parentCategory ref="system:Phosh_Environment" />
+      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <elements>
+        <enum id="gnome-seconds_setter" required="true" valueName="org.gnome.desktop.interface.clock-show-seconds">
+          <item displayName="$(string.gnome-state-on)">
+            <value>
+              <decimal value="1" />
+            </value>
+          </item>
+          <item displayName="$(string.gnome-state-off)">
+            <value>
+              <decimal value="0" />
+            </value>
+          </item>
+        </enum>
+        <boolean id="gnome-seconds_blocker" key="Software\BaseALT\Policies\GSettingsLocks" valueName="org.gnome.desktop.interface.clock-show-seconds">
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+        </boolean>
+      </elements>
+    </policy>
+    <policy name="OrgGnomeDesktopInterfaceClockShowSecondsUser" class="User"
+        displayName="$(string.org-gnome-desktop-interface-clock-show-seconds)"
+        explainText="$(string.org-gnome-desktop-interface-clock-show-seconds_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        valueName="org.gnome.desktop.interface.clock-show-seconds"
+        presentation="$(presentation.OrgGnomeDesktopInterfaceClockShowSecondsUser-pr)" >
+      <parentCategory ref="system:Phosh_Environment" />
+      <supportedOn ref="system:SUPPORTED_AltP10" />
+      <elements>
+        <enum id="gnome-seconds_setter" required="true" valueName="org.gnome.desktop.interface.clock-show-seconds">
+          <item displayName="$(string.gnome-state-on)">
+            <value>
+              <decimal value="1" />
+            </value>
+          </item>
+          <item displayName="$(string.gnome-state-off)">
+            <value>
+              <decimal value="0" />
+            </value>
+          </item>
+        </enum>
+      </elements>
+    </policy>
   </policies>
 </policyDefinitions>

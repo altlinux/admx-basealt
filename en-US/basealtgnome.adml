@@ -34,6 +34,12 @@ The "Block" option (available only for the machine policy) prevents the user fro
 The "Block" option (available only for the machine policy) prevents the user from changing this setting. Blocking the policy makes it have priority over the similar policy for the user.
 
     </string>
+    <string id="org-gnome-desktop-interface-clock-show-seconds">Show seconds on quick settings panel</string>
+    <string id="org-gnome-desktop-interface-clock-show-seconds_help">Policy allows you to customize the display of seconds on the quick settings panel
+
+The "Block" option (available only for the machine policy) prevents the user from changing this setting. Blocking a policy makes it have priority over a similar policy for the user.
+
+    </string>
 
     <string id="gnome-time-1-minute">1 Minute</string>
     <string id="gnome-time-2-minute">2 Minutes</string>
@@ -82,6 +88,13 @@ The "Block" option (available only for the machine policy) prevents the user fro
       </presentation>
       <presentation id="OrgGnomeDesktopInterfaceClockShowDateUser-pr">
         <dropdownList noSort="true" defaultItem="0" refId="gnome-date_setter">Date display:</dropdownList>
+      </presentation>
+      <presentation id="OrgGnomeDesktopInterfaceClockShowSeconds-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="gnome-seconds_setter">Display seconds:</dropdownList>
+        <checkBox refId="gnome-seconds_blocker">Блокировать</checkBox>
+      </presentation>
+      <presentation id="OrgGnomeDesktopInterfaceClockShowSecondsUser-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="gnome-seconds_setter">Display seconds:</dropdownList>
       </presentation>
     </presentationTable>
   </resources>
