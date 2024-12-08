@@ -519,5 +519,57 @@
         </enum>
       </elements>
     </policy>
+    <policy name="OrgGnomeDesktopInterfaceColorSchemeMachine" class="Machine"
+        displayName="$(string.org-gnome-desktop-interface-color-scheme)"
+        explainText="$(string.org-gnome-desktop-interface-color-scheme_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        presentation="$(presentation.OrgGnomeDesktopInterfaceColorScheme-pr)" >
+      <parentCategory ref="system:Phosh_Apperance" />
+      <supportedOn ref="system:SUPPORTED_AltP10" />
+      <elements>
+        <enum id="gnome-color-scheme_setter" required="true" valueName="org.gnome.desktop.interface.color-scheme">
+          <item displayName="$(string.gnome-color-scheme-light)">
+            <value>
+              <string>prefer-light</string>
+            </value>
+          </item>
+          <item displayName="$(string.gnome-color-scheme-dark)">
+            <value>
+              <string>prefer-dark</string>
+            </value>
+          </item>
+        </enum>
+        <boolean id="gnome-color-scheme_blocker" key="Software\BaseALT\Policies\GSettingsLocks" valueName="org.gnome.desktop.interface.color-scheme">
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+        </boolean>
+      </elements>
+    </policy>
+    <policy name="OrgGnomeDesktopInterfaceColorSchemeUser" class="User"
+        displayName="$(string.org-gnome-desktop-interface-color-scheme)"
+        explainText="$(string.org-gnome-desktop-interface-color-scheme_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        presentation="$(presentation.OrgGnomeDesktopInterfaceColorSchemeUser-pr)" >
+      <parentCategory ref="system:Phosh_Apperance" />
+      <supportedOn ref="system:SUPPORTED_AltP10" />
+      <elements>
+        <enum id="gnome-color-scheme_setter" required="true" valueName="org.gnome.desktop.interface.color-scheme">
+          <item displayName="$(string.gnome-color-scheme-light)">
+            <value>
+              <string>prefer-light</string>
+            </value>
+          </item>
+          <item displayName="$(string.gnome-color-scheme-dark)">
+            <value>
+              <string>prefer-dark</string>
+            </value>
+          </item>
+        </enum>
+      </elements>
+    </policy>
   </policies>
 </policyDefinitions>

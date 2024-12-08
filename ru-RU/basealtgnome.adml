@@ -52,6 +52,12 @@
 Опция «Блокировать» — (доступна только для машинной политики) запрещает изменение настройки пользователем. Блокировка политики делает её приоритетнее аналогичной политики для пользователя.
 
     </string>
+    <string id="org-gnome-desktop-interface-color-scheme">Тема оформления</string>
+    <string id="org-gnome-desktop-interface-color-scheme_help">Политика позволяет выбрать тему оформления внешнего вида приложений.
+
+Опция «Блокировать» — (доступна только для машинной политики) запрещает изменение настройки пользователем. Блокировка политики делает её приоритетнее аналогичной политики для пользователя.
+
+    </string>
 
     <string id="gnome-time-1-minute">1 Минута</string>
     <string id="gnome-time-2-minute">2 Минуты</string>
@@ -61,6 +67,8 @@
     <string id="gnome-time-60-minute">1 Час</string>
     <string id="gnome-state-on">Включено</string>
     <string id="gnome-state-off">Отключено</string>
+    <string id="gnome-color-scheme-light">Светлая тема</string>
+    <string id="gnome-color-scheme-dark">Тёмная тема</string>
 
 
 
@@ -121,6 +129,13 @@
       </presentation>
       <presentation id="OrgGnomeDesktopInterfaceEnableAnimationsUser-pr">
         <dropdownList noSort="true" defaultItem="0" refId="gnome-animations_setter">Эффекты анимации:</dropdownList>
+      </presentation>
+      <presentation id="OrgGnomeDesktopInterfaceColorScheme-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="gnome-color-scheme_setter">Тема оформления:</dropdownList>
+        <checkBox refId="gnome-color-scheme_blocker">Блокировать</checkBox>
+      </presentation>
+      <presentation id="OrgGnomeDesktopInterfaceColorSchemeUser-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="gnome-color-scheme_setter">Тема оформления:</dropdownList>
       </presentation>
     </presentationTable>
   </resources>

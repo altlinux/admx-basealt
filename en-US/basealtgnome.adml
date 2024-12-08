@@ -52,6 +52,12 @@ The "Block" option (available only for the machine policy) prevents the user fro
 The "Block" option (available only for the machine policy) prevents the user from changing this setting. Blocking the policy makes it have priority over the similar policy for the user.
 
     </string>
+    <string id="org-gnome-desktop-interface-color-scheme">Theme style</string>
+    <string id="org-gnome-desktop-interface-color-scheme_help">Policy allows you to choose the theme for the appearance of applications
+
+The "Block" option (available only for the machine policy) prevents the user from changing this setting. Blocking a policy makes it take precedence over a similar policy for the user.
+
+    </string>
 
     <string id="gnome-time-1-minute">1 Minute</string>
     <string id="gnome-time-2-minute">2 Minutes</string>
@@ -61,6 +67,8 @@ The "Block" option (available only for the machine policy) prevents the user fro
     <string id="gnome-time-60-minute">1 Hour</string>
     <string id="gnome-state-on">Enabled</string>
     <string id="gnome-state-off">Disabled</string>
+    <string id="gnome-color-scheme-light">Light theme</string>
+    <string id="gnome-color-scheme-dark">Dark theme</string>
 
 
 
@@ -121,6 +129,13 @@ The "Block" option (available only for the machine policy) prevents the user fro
       </presentation>
       <presentation id="OrgGnomeDesktopInterfaceEnableAnimationsUser-pr">
         <dropdownList noSort="true" defaultItem="0" refId="gnome-animations_setter">Animation effects:</dropdownList>
+      </presentation>
+      <presentation id="OrgGnomeDesktopInterfaceColorScheme-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="gnome-color-scheme_setter">Theme:</dropdownList>
+        <checkBox refId="gnome-color-scheme_blocker">Block</checkBox>
+      </presentation>
+      <presentation id="OrgGnomeDesktopInterfaceColorSchemeUser-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="gnome-color-scheme_setter">Theme:</dropdownList>
       </presentation>
     </presentationTable>
   </resources>
