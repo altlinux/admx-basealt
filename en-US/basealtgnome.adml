@@ -64,6 +64,12 @@ The "Block" option (available only for the machine policy) prevents the user fro
 The "Block" option (available only for the machine policy) prevents the user from changing the setting. Blocking a policy makes it take precedence over a similar policy for the user.
 
     </string>
+    <string id="org-gnome-background-picture-filename">Desktop background</string>
+    <string id="org-gnome-background-picture-filename_help">Policy allows you to select a desktop background depending on the appearance theme by specifying the path to the image in the file:///home/user/Images/picture.jpg format.
+
+The "Block" option (available only for machine policy) prevents the user from changing this setting. Blocking a policy makes it take precedence over a similar policy for the user.
+
+    </string>
 
     <string id="gnome-time-1-minute">1 Minute</string>
     <string id="gnome-time-2-minute">2 Minutes</string>
@@ -153,6 +159,24 @@ The "Block" option (available only for the machine policy) prevents the user fro
       </presentation>
       <presentation id="OrgGnomeDesktopInterfaceIconThemeUser-pr">
         <dropdownList noSort="true" defaultItem="0" refId="gnome-icon-theme_setter">Icon theme:</dropdownList>
+      </presentation>
+      <presentation id="OrgGnomeBackgroundPictureFilenameMachine-pr">
+        <textBox refId="OrgGnomeBackgroundPictureFilename_light_setter">
+          <label>Path to image for light theme:</label>
+        </textBox>
+        <checkBox refId="OrgGnomeBackgroundPictureFilename_light_blocker">Block image setting for light theme</checkBox>
+        <textBox refId="OrgGnomeBackgroundPictureFilename_dark_setter">
+          <label>Path to image for dark theme:</label>
+        </textBox>
+        <checkBox refId="OrgGnomeBackgroundPictureFilename_dark_blocker">Block image setting for dark theme</checkBox>
+      </presentation>
+      <presentation id="OrgGnomeBackgroundPictureFilenameUser-pr">
+        <textBox refId="OrgGnomeBackgroundPictureFilename_light_setter">
+          <label>Path to image for light theme:</label>
+        </textBox>
+        <textBox refId="OrgGnomeBackgroundPictureFilename_dark_setter">
+          <label>Path to image for dark theme:</label>
+        </textBox>
       </presentation>
     </presentationTable>
   </resources>

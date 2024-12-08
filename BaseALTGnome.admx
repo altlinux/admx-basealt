@@ -643,5 +643,45 @@
         </enum>
       </elements>
     </policy>
+    <policy name="OrgGnomeBackgroundPictureFilenameMachine" class="Machine"
+        displayName="$(string.org-gnome-background-picture-filename)"
+        explainText="$(string.org-gnome-background-picture-filename_help)"
+        presentation="$(presentation.OrgGnomeBackgroundPictureFilenameMachine-pr)"
+        key="Software\BaseALT\Policies\gsettings">
+      <parentCategory ref="system:Phosh_Apperance" />
+      <supportedOn ref="system:SUPPORTED_AltP10" />
+      <elements>
+        <text id="OrgGnomeBackgroundPictureFilename_light_setter" valueName="org.gnome.desktop.background.picture-uri" />
+        <text id="OrgGnomeBackgroundPictureFilename_dark_setter" valueName="org.gnome.desktop.background.picture-uri-dark" />
+        <boolean id="OrgGnomeBackgroundPictureFilename_light_blocker" key="Software\BaseALT\Policies\GSettingsLocks" valueName="org.gnome.desktop.background.picture-uri">
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+        </boolean>
+        <boolean id="OrgGnomeBackgroundPictureFilename_dark_blocker" key="Software\BaseALT\Policies\GSettingsLocks" valueName="org.gnome.desktop.background.picture-uri-dark">
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+        </boolean>
+      </elements>
+    </policy>
+    <policy name="OrgGnomeBackgroundPictureFilenameUser" class="User"
+        displayName="$(string.org-gnome-background-picture-filename)"
+        explainText="$(string.org-gnome-background-picture-filename_help)"
+        presentation="$(presentation.OrgGnomeBackgroundPictureFilenameUser-pr)"
+        key="Software\BaseALT\Policies\gsettings">
+      <parentCategory ref="system:Phosh_Apperance" />
+      <supportedOn ref="system:SUPPORTED_AltP10" />
+      <elements>
+        <text id="OrgGnomeBackgroundPictureFilename_light_setter" valueName="org.gnome.desktop.background.picture-uri" />
+        <text id="OrgGnomeBackgroundPictureFilename_dark_setter" valueName="org.gnome.desktop.background.picture-uri-dark" />
+      </elements>
+    </policy>
   </policies>
 </policyDefinitions>
