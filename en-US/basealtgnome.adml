@@ -58,6 +58,12 @@ The "Block" option (available only for the machine policy) prevents the user fro
 The "Block" option (available only for the machine policy) prevents the user from changing this setting. Blocking a policy makes it take precedence over a similar policy for the user.
 
     </string>
+    <string id="org-gnome-desktop-interface-icon-theme">Icon theme</string>
+    <string id="org-gnome-desktop-interface-icon-theme_help">The policy allows you to select the icon theme.
+
+The "Block" option (available only for the machine policy) prevents the user from changing the setting. Blocking a policy makes it take precedence over a similar policy for the user.
+
+    </string>
 
     <string id="gnome-time-1-minute">1 Minute</string>
     <string id="gnome-time-2-minute">2 Minutes</string>
@@ -69,6 +75,10 @@ The "Block" option (available only for the machine policy) prevents the user fro
     <string id="gnome-state-off">Disabled</string>
     <string id="gnome-color-scheme-light">Light theme</string>
     <string id="gnome-color-scheme-dark">Dark theme</string>
+    <string id="gnome-theme-Adwaita">Adwaita</string>
+    <string id="gnome-theme-HighContrast">HighContrast</string>
+    <string id="gnome-theme-GNOME">GNOME</string>
+    <string id="gnome-theme-Hicolor">Hicolor</string>
 
 
 
@@ -136,6 +146,13 @@ The "Block" option (available only for the machine policy) prevents the user fro
       </presentation>
       <presentation id="OrgGnomeDesktopInterfaceColorSchemeUser-pr">
         <dropdownList noSort="true" defaultItem="0" refId="gnome-color-scheme_setter">Theme:</dropdownList>
+      </presentation>
+      <presentation id="OrgGnomeDesktopInterfaceIconTheme-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="gnome-icon-theme_setter">Icon theme:</dropdownList>
+        <checkBox refId="gnome-icon-theme_blocker">Block</checkBox>
+      </presentation>
+      <presentation id="OrgGnomeDesktopInterfaceIconThemeUser-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="gnome-icon-theme_setter">Icon theme:</dropdownList>
       </presentation>
     </presentationTable>
   </resources>

@@ -7,7 +7,7 @@
   <resources>
     <stringTable>
     <string id="GnomeSleepInactiveBattery">Спящий режим при питании от батареи</string>
-    <string id="GnomeSleepInactiveBattery_help">Политика позволяет управлять условием перехода устройства в спящий режим при питании от батареи
+    <string id="GnomeSleepInactiveBattery_help">Политика позволяет управлять условием перехода устройства в спящий режим при питании от батареи.
 
 Параметр "Время до перехода в спящий режим при питании от батареи" имеет смысл только при включённом параметре "Переходить в спящий режим при питании от батареи"
 
@@ -52,8 +52,14 @@
 Опция «Блокировать» — (доступна только для машинной политики) запрещает изменение настройки пользователем. Блокировка политики делает её приоритетнее аналогичной политики для пользователя.
 
     </string>
-    <string id="org-gnome-desktop-interface-color-scheme">Тема оформления</string>
-    <string id="org-gnome-desktop-interface-color-scheme_help">Политика позволяет выбрать тему оформления внешнего вида приложений.
+    <string id="org-gnome-desktop-interface-color-scheme">Стиль оформления</string>
+    <string id="org-gnome-desktop-interface-color-scheme_help">Политика позволяет выбрать стиль оформления внешнего вида пользовательского интерфейса.
+
+Опция «Блокировать» — (доступна только для машинной политики) запрещает изменение настройки пользователем. Блокировка политики делает её приоритетнее аналогичной политики для пользователя.
+
+    </string>
+    <string id="org-gnome-desktop-interface-icon-theme">Тема оформления значков</string>
+    <string id="org-gnome-desktop-interface-icon-theme_help">Политика позволяет выбрать тему оформления значков.
 
 Опция «Блокировать» — (доступна только для машинной политики) запрещает изменение настройки пользователем. Блокировка политики делает её приоритетнее аналогичной политики для пользователя.
 
@@ -69,6 +75,10 @@
     <string id="gnome-state-off">Отключено</string>
     <string id="gnome-color-scheme-light">Светлая тема</string>
     <string id="gnome-color-scheme-dark">Тёмная тема</string>
+    <string id="gnome-theme-Adwaita">Adwaita</string>
+    <string id="gnome-theme-HighContrast">HighContrast</string>
+    <string id="gnome-theme-GNOME">GNOME</string>
+    <string id="gnome-theme-Hicolor">Hicolor</string>
 
 
 
@@ -131,11 +141,18 @@
         <dropdownList noSort="true" defaultItem="0" refId="gnome-animations_setter">Эффекты анимации:</dropdownList>
       </presentation>
       <presentation id="OrgGnomeDesktopInterfaceColorScheme-pr">
-        <dropdownList noSort="true" defaultItem="0" refId="gnome-color-scheme_setter">Тема оформления:</dropdownList>
+        <dropdownList noSort="true" defaultItem="0" refId="gnome-color-scheme_setter">Стиль оформления:</dropdownList>
         <checkBox refId="gnome-color-scheme_blocker">Блокировать</checkBox>
       </presentation>
       <presentation id="OrgGnomeDesktopInterfaceColorSchemeUser-pr">
-        <dropdownList noSort="true" defaultItem="0" refId="gnome-color-scheme_setter">Тема оформления:</dropdownList>
+        <dropdownList noSort="true" defaultItem="0" refId="gnome-color-scheme_setter">Стиль оформления:</dropdownList>
+      </presentation>
+      <presentation id="OrgGnomeDesktopInterfaceIconTheme-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="gnome-icon-theme_setter">Тема оформления значков:</dropdownList>
+        <checkBox refId="gnome-icon-theme_blocker">Блокировать</checkBox>
+      </presentation>
+      <presentation id="OrgGnomeDesktopInterfaceIconThemeUser-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="gnome-icon-theme_setter">Тема оформления значков:</dropdownList>
       </presentation>
     </presentationTable>
   </resources>

@@ -571,5 +571,77 @@
         </enum>
       </elements>
     </policy>
+    <policy name="OrgGnomeDesktopInterfaceIconThemeMachine" class="Machine"
+        displayName="$(string.org-gnome-desktop-interface-icon-theme)"
+        explainText="$(string.org-gnome-desktop-interface-icon-theme_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        presentation="$(presentation.OrgGnomeDesktopInterfaceIconTheme-pr)" >
+      <parentCategory ref="system:Phosh_Apperance" />
+      <supportedOn ref="system:SUPPORTED_AltP10" />
+      <elements>
+        <enum id="gnome-icon-theme_setter" required="true" valueName="org.gnome.desktop.interface.icon-theme">
+          <item displayName="$(string.gnome-theme-Adwaita)">
+            <value>
+              <string>Adwaita</string>
+            </value>
+          </item>
+          <item displayName="$(string.gnome-theme-HighContrast)">
+            <value>
+              <string>HighContrast</string>
+            </value>
+          </item>
+          <item displayName="$(string.gnome-theme-GNOME)">
+            <value>
+              <string>GNOME</string>
+            </value>
+          </item>
+          <item displayName="$(string.gnome-theme-Hicolor)">
+            <value>
+              <string>Hicolor</string>
+            </value>
+          </item>
+        </enum>
+        <boolean id="gnome-icon-theme_blocker" key="Software\BaseALT\Policies\GSettingsLocks" valueName="org.gnome.desktop.interface.icon-theme">
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+        </boolean>
+      </elements>
+    </policy>
+    <policy name="OrgGnomeDesktopInterfaceIconThemeUser" class="User"
+        displayName="$(string.org-gnome-desktop-interface-icon-theme)"
+        explainText="$(string.org-gnome-desktop-interface-icon-theme_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        presentation="$(presentation.OrgGnomeDesktopInterfaceIconThemeUser-pr)" >
+      <parentCategory ref="system:Phosh_Apperance" />
+      <supportedOn ref="system:SUPPORTED_AltP10" />
+      <elements>
+        <enum id="gnome-icon-theme_setter" required="true" valueName="org.gnome.desktop.interface.icon-theme">
+          <item displayName="$(string.gnome-theme-Adwaita)">
+            <value>
+              <string>Adwaita</string>
+            </value>
+          </item>
+          <item displayName="$(string.gnome-theme-HighContrast)">
+            <value>
+              <string>HighContrast</string>
+            </value>
+          </item>
+          <item displayName="$(string.gnome-theme-GNOME)">
+            <value>
+              <string>GNOME</string>
+            </value>
+          </item>
+          <item displayName="$(string.gnome-theme-Hicolor)">
+            <value>
+              <string>Hicolor</string>
+            </value>
+          </item>
+        </enum>
+      </elements>
+    </policy>
   </policies>
 </policyDefinitions>
