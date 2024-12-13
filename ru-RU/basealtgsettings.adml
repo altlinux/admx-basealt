@@ -1014,7 +1014,7 @@ Cтрока типа rgb(0,0,0).
       </presentation>
 
       <presentation id="OrgMatePeripheralsKeyboardRepeatMachine-pr">
-        <dropdownList noSort="true" defaultItem="0" refId="OrgMatePeripheralsKeyboardRepeat_setter">Выберите «Включено» или «Отключено»:</dropdownList>
+        <dropdownList noSort="true" defaultItem="0" refId="OrgMatePeripheralsKeyboardRepeat_setter">Повторять удерживаемую нажатой клавишу:</dropdownList>
         <checkBox refId="OrgMatePeripheralsKeyboardRepeat_setter_blocker">Блокировать</checkBox>
       </presentation>
 
@@ -1028,39 +1028,35 @@ Cтрока типа rgb(0,0,0).
       </presentation>
 
       <presentation id="OrgMateSessionIdleDelayUser-pr">
-        <text>Время в минутах, по истечении которого сеанс считается простаивающим</text>
         <decimalTextBox refId="OrgMateSessionIdleDelay_setter" defaultValue="5">Время в минутах</decimalTextBox>
       </presentation>
 
       <presentation id="OrgMateSessionIdleDelayMachine-pr">
-        <text>Время в минутах, по истечении которого сеанс считается простаивающим</text>
         <decimalTextBox refId="OrgMateSessionIdleDelay_setter" defaultValue="5">Время в минутах:</decimalTextBox>
         <checkBox refId="OrgMateSessionIdleDelay_blocker">Блокировать</checkBox>
       </presentation>
 
       <presentation id="OrgMateSessionLogoutTimeoutUser-pr">
-        <text>Время в секундах, по истечении которого произойдет выход из системы</text>
-        <decimalTextBox refId="OrgMateSessionIdleDelay_setter" defaultValue="60">Время в секундах</decimalTextBox>
+        <decimalTextBox refId="OrgMateSessionLogoutTimeout_setter" defaultValue="60">Время в секундах:</decimalTextBox>
       </presentation>
 
       <presentation id="OrgMateSessionLogoutTimeoutMachine-pr">
-        <text>Время в секундах, по истечении которого произойдет выход из системы</text>
-        <decimalTextBox refId="OrgMateSessionIdleDelay_setter" defaultValue="60">Время в секундах:</decimalTextBox>
-        <checkBox refId="OrgMateSessionIdleDelay_blocker">Блокировать</checkBox>
+        <decimalTextBox refId="OrgMateSessionLogoutTimeout_setter" defaultValue="60">Время в секундах:</decimalTextBox>
+        <checkBox refId="OrgMateSessionLogoutTimeout_blocker">Блокировать</checkBox>
       </presentation>
 
       <presentation id="OrgMateSessionLogoutPromptMachine-pr">
-        <dropdownList noSort="true" defaultItem="0" refId="OrgMateSessionLogoutPrompt_setter">Выберите «Включено» или «Отключено»:</dropdownList>
+        <dropdownList noSort="true" defaultItem="0" refId="OrgMateSessionLogoutPrompt_setter">Запрос при выходе из сеанса:</dropdownList>
         <checkBox refId="OrgMateSessionLogoutPrompt_setter_blocker">Блокировать</checkBox>
       </presentation>
 
       <presentation id="OrgMateSessionAutoSaveSessionMachine-pr">
-        <dropdownList noSort="true" defaultItem="0" refId="OrgMateSessionAutoSaveSession_setter">Выберите «Включено» или «Отключено»:</dropdownList>
+        <dropdownList noSort="true" defaultItem="0" refId="OrgMateSessionAutoSaveSession_setter">Сохранение сеансов:</dropdownList>
         <checkBox refId="OrgMateSessionAutoSaveSession_setter_blocker">Блокировать</checkBox>
       </presentation>
 
       <presentation id="OrgMateSessionShowHiddenAppsMachine-pr">
-        <dropdownList noSort="true" defaultItem="0" refId="OrgMateSessionShowHiddenApps_setter">Выберите «Включено» или «Отключено»:</dropdownList>
+        <dropdownList noSort="true" defaultItem="0" refId="OrgMateSessionShowHiddenApps_setter">Отображение скрытых автоматически запускаемых приложений:</dropdownList>
         <checkBox refId="OrgMateSessionShowHiddenApps_setter_blocker">Блокировать</checkBox>
       </presentation>
 

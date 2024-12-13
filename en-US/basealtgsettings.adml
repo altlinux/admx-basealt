@@ -1014,7 +1014,7 @@ The "Block" option — (available only for machine policy) prevents the user fro
       </presentation>
 
       <presentation id="OrgMatePeripheralsKeyboardRepeatMachine-pr">
-        <dropdownList noSort="true" defaultItem="0" refId="OrgMatePeripheralsKeyboardRepeat_setter">Select Enabled or Disabled:</dropdownList>
+        <dropdownList noSort="true" defaultItem="0" refId="OrgMatePeripheralsKeyboardRepeat_setter">Repeat the key that is held down</dropdownList>
         <checkBox refId="OrgMatePeripheralsKeyboardRepeat_setter_blocker">Block</checkBox>
       </presentation>
 
@@ -1028,39 +1028,35 @@ The "Block" option — (available only for machine policy) prevents the user fro
       </presentation>
 
       <presentation id="OrgMateSessionIdleDelayUser-pr">
-        <text>The time in minutes after which the session is considered idle</text>
         <decimalTextBox refId="OrgMateSessionIdleDelay_setter" defaultValue="5">Time in minutes</decimalTextBox>
       </presentation>
 
       <presentation id="OrgMateSessionIdleDelayMachine-pr">
-        <text>The time in minutes after which the session is considered idle</text>
         <decimalTextBox refId="OrgMateSessionIdleDelay_setter" defaultValue="5">Time in minutes:</decimalTextBox>
         <checkBox refId="OrgMateSessionIdleDelay_blocker">Block</checkBox>
       </presentation>
 
       <presentation id="OrgMateSessionLogoutTimeoutUser-pr">
-        <text>The time in seconds after which the logout will occur</text>
-        <decimalTextBox refId="OrgMateSessionIdleDelay_setter" defaultValue="60">Time in seconds</decimalTextBox>
+        <decimalTextBox refId="OrgMateSessionLogoutTimeout_setter" defaultValue="60">Time in seconds</decimalTextBox>
       </presentation>
 
       <presentation id="OrgMateSessionLogoutTimeoutMachine-pr">
-        <text>The time in seconds after which the logout will occur</text>
-        <decimalTextBox refId="OrgMateSessionIdleDelay_setter" defaultValue="60">Time in seconds:</decimalTextBox>
-        <checkBox refId="OrgMateSessionIdleDelay_blocker">Block</checkBox>
+        <decimalTextBox refId="OrgMateSessionLogoutTimeout_setter" defaultValue="60">Time in seconds:</decimalTextBox>
+        <checkBox refId="OrgMateSessionLogoutTimeout_blocker">Block</checkBox>
       </presentation>
 
       <presentation id="OrgMateSessionLogoutPromptMachine-pr">
-        <dropdownList noSort="true" defaultItem="0" refId="OrgMateSessionLogoutPrompt_setter">Select "Enabled" or "Disabled":</dropdownList>
+        <dropdownList noSort="true" defaultItem="0" refId="OrgMateSessionLogoutPrompt_setter">Request when exiting a session:</dropdownList>
         <checkBox refId="OrgMateSessionLogoutPrompt_setter_blocker">Block</checkBox>
       </presentation>
 
       <presentation id="OrgMateSessionAutoSaveSessionMachine-pr">
-        <dropdownList noSort="true" defaultItem="0" refId="OrgMateSessionAutoSaveSession_setter">Select "Enabled" or "Disabled":</dropdownList>
+        <dropdownList noSort="true" defaultItem="0" refId="OrgMateSessionAutoSaveSession_setter">Saving sessions:</dropdownList>
         <checkBox refId="OrgMateSessionAutoSaveSession_setter_blocker">Block</checkBox>
       </presentation>
 
       <presentation id="OrgMateSessionShowHiddenAppsMachine-pr">
-        <dropdownList noSort="true" defaultItem="0" refId="OrgMateSessionShowHiddenApps_setter">Select "Enabled" or "Disabled":</dropdownList>
+        <dropdownList noSort="true" defaultItem="0" refId="OrgMateSessionShowHiddenApps_setter">Show hidden startup applications:</dropdownList>
         <checkBox refId="OrgMateSessionShowHiddenApps_setter_blocker">Block</checkBox>
       </presentation>
 

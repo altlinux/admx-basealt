@@ -509,7 +509,7 @@
       <parentCategory ref="system:ALT_Session_Mate" />
       <supportedOn ref="system:SUPPORTED_AltP9" />
       <elements>
-        <decimal id="OrgMateSessionIdleDelay_setter" valueName="org.mate.session.logout-timeout" minValue="0" maxValue="300" />
+        <decimal id="OrgMateSessionLogoutTimeout_setter" valueName="org.mate.session.logout-timeout" minValue="0" maxValue="300" />
       </elements>
     </policy>
 
