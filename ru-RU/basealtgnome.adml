@@ -71,6 +71,36 @@
 
     </string>
 
+    <string id="org-gnome-desktop-background-picture-options">Подгонка изображения рабочего стола</string>
+    <string id="org-gnome-desktop-background-picture-options_help">Политика позволяет выбрать способ отображения фонового изображения на рабочем столе. Эта настройка влияет на то, как изображение адаптируется к размеру экрана или области, где оно отображается.
+
+Возможные значения:
+
+None:
+Подгонка изображения отключена.
+
+Wallpaper:
+Изображение повторяется в виде плитки, чтобы заполнить весь экран. Этот параметр используется для текстурных обоев или небольших изображений, которые можно копировать без заметных переходов.
+
+Centered:
+Изображение размещается в центре экрана без масштабирования. Если размеры изображения меньше разрешения экрана, вокруг остаются пустые области (заполняются фоновым цветом).
+
+Scaled:
+Изображение масштабируется, чтобы полностью поместиться в экран, при этом пропорции изображения сохраняются. Если пропорции изображения не совпадают с пропорциями экрана, могут появиться пустые полосы.
+
+Stretched:
+Изображение растягивается, чтобы полностью заполнить экран, игнорируя пропорции. Это может привести к искажению изображения.
+
+Zoom:
+Изображение масштабируется так, чтобы заполнить весь экран без пустых полос, при этом пропорции сохраняются. Часть изображения, выходящая за пределы экрана, может быть обрезана.
+
+Spanned:
+Изображение распространяется на все экраны в многомониторной конфигурации, как единое целое. Это полезно, если есть одно большое изображение, которое нужно растянуть на несколько мониторов.
+
+Опция «Блокировать» — (доступна только для машинной политики) запрещает изменение настройки пользователем. Блокировка политики делает её приоритетнее аналогичной политики для пользователя.
+
+    </string>
+
     <string id="gnome-time-1-minute">1 Минута</string>
     <string id="gnome-time-2-minute">2 Минуты</string>
     <string id="gnome-time-5-minute">5 Минут</string>
@@ -85,6 +115,14 @@
     <string id="gnome-theme-HighContrast">HighContrast</string>
     <string id="gnome-theme-GNOME">GNOME</string>
     <string id="gnome-theme-Hicolor">Hicolor</string>
+
+    <string id="gnome-picture-options-none">None</string>
+    <string id="gnome-picture-options-wallpaper">Wallpaper</string>
+    <string id="gnome-picture-options-centered">Centered</string>
+    <string id="gnome-picture-options-scaled">Scaled</string>
+    <string id="gnome-picture-options-stretched">Stretched</string>
+    <string id="gnome-picture-options-zoom">Zoom</string>
+    <string id="gnome-picture-options-spanned">Spanned</string>
 
 
 
@@ -177,6 +215,10 @@
         <textBox refId="OrgGnomeBackgroundPictureFilename_dark_setter">
           <label>Путь до изображения для тёмной темы:</label>
         </textBox>
+      </presentation>
+      <presentation id="OrgGnomeDesktopBackgroundPictureOptionsMachine-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="gnome-picture-options_setter">Способ подгонки:</dropdownList>
+        <checkBox refId="gnome-picture-options_blocker">Блокировать</checkBox>
       </presentation>
     </presentationTable>
   </resources>

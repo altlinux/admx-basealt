@@ -71,6 +71,36 @@ The "Block" option (available only for machine policy) prevents the user from ch
 
     </string>
 
+    <string id="org-gnome-desktop-background-picture-options">Desktop Image adjustment</string>
+    <string id="org-gnome-desktop-background-picture-options_help">This policy allows you to choose how the background image is displayed on the desktop. This setting affects how the image adapts to the screen size or area where it is displayed.
+
+Possible values:
+
+None:
+Image fitting is disabled.
+
+Wallpaper:
+The image is repeated in tiles to fill the entire screen. This setting is used for textured wallpapers or small images that can be copied without noticeable transitions.
+
+Centered:
+The image is placed in the center of the screen without scaling. If the image dimensions are smaller than the screen resolution, empty areas are left around it (filled with the background color).
+
+Scaled:
+The image is scaled to fit the screen completely, while maintaining the image proportions. If the image proportions do not match the screen proportions, empty bars may appear.
+
+Stretched:
+The image is stretched to completely fill the screen, ignoring the proportions. This may result in distortion of the image.
+
+Zoom:
+The image is scaled to fill the entire screen without empty bars, while maintaining the proportions. The portion of the image that extends beyond the screen may be cropped.
+
+Spanned:
+The image is spread across all screens in a multi-monitor setup as a single image. This is useful if you have one large image that needs to be stretched across multiple monitors.
+
+Lock option - (available only for machine policy) prevents the user from changing the setting. Locking a policy makes it take precedence over a similar policy for the user.
+    </string>
+
+
     <string id="gnome-time-1-minute">1 Minute</string>
     <string id="gnome-time-2-minute">2 Minutes</string>
     <string id="gnome-time-5-minute">5 Minutes</string>
@@ -85,6 +115,14 @@ The "Block" option (available only for machine policy) prevents the user from ch
     <string id="gnome-theme-HighContrast">HighContrast</string>
     <string id="gnome-theme-GNOME">GNOME</string>
     <string id="gnome-theme-Hicolor">Hicolor</string>
+
+    <string id="gnome-picture-options-none">None</string>
+    <string id="gnome-picture-options-wallpaper">Wallpaper</string>
+    <string id="gnome-picture-options-centered">Centered</string>
+    <string id="gnome-picture-options-scaled">Scaled</string>
+    <string id="gnome-picture-options-stretched">Stretched</string>
+    <string id="gnome-picture-options-zoom">Zoom</string>
+    <string id="gnome-picture-options-spanned">Spanned</string>
 
 
 
@@ -177,6 +215,10 @@ The "Block" option (available only for machine policy) prevents the user from ch
         <textBox refId="OrgGnomeBackgroundPictureFilename_dark_setter">
           <label>Path to image for dark theme:</label>
         </textBox>
+      </presentation>
+      <presentation id="OrgGnomeDesktopBackgroundPictureOptionsMachine-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="gnome-picture-options_setter">Adjustment method:</dropdownList>
+        <checkBox refId="gnome-picture-options_blocker">Block</checkBox>
       </presentation>
     </presentationTable>
   </resources>
