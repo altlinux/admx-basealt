@@ -220,6 +220,9 @@ Lock option - (available only for machine policy) prevents the user from changin
         <dropdownList noSort="true" defaultItem="0" refId="gnome-picture-options_setter">Adjustment method:</dropdownList>
         <checkBox refId="gnome-picture-options_blocker">Block</checkBox>
       </presentation>
+      <presentation id="OrgGnomeDesktopBackgroundPictureOptionsUser-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="gnome-picture-options_setter">Adjustment method:</dropdownList>
+      </presentation>
     </presentationTable>
   </resources>
 </policyDefinitionResources>

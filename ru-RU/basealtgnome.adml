@@ -220,6 +220,9 @@ Spanned:
         <dropdownList noSort="true" defaultItem="0" refId="gnome-picture-options_setter">Способ подгонки:</dropdownList>
         <checkBox refId="gnome-picture-options_blocker">Блокировать</checkBox>
       </presentation>
+      <presentation id="OrgGnomeDesktopBackgroundPictureOptionsUser-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="gnome-picture-options_setter">Способ подгонки:</dropdownList>
+      </presentation>
     </presentationTable>
   </resources>
 </policyDefinitionResources>
