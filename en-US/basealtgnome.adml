@@ -100,6 +100,15 @@ The image is spread across all screens in a multi-monitor setup as a single imag
 Lock option - (available only for machine policy) prevents the user from changing the setting. Locking a policy makes it take precedence over a similar policy for the user.
     </string>
 
+    <string id="org-gnome-desktop-interface-enable-hot-corners">Hot corner</string>
+    <string id="org-gnome-desktop-interface-enable-hot-corners_help">The policy allows you to enable or disable the hot corner.
+
+The hot corner in GNOME is a user interface feature that allows you to view all active applications by hovering the mouse pointer in the upper left corner of the screen.
+
+The "Block" option - (available only for the machine policy) prevents the user from changing the setting. Blocking a policy makes it take precedence over a similar policy for the user.
+    </string>
+
+
 
     <string id="gnome-time-1-minute">1 Minute</string>
     <string id="gnome-time-2-minute">2 Minutes</string>
@@ -123,8 +132,6 @@ Lock option - (available only for machine policy) prevents the user from changin
     <string id="gnome-picture-options-stretched">Stretched</string>
     <string id="gnome-picture-options-zoom">Zoom</string>
     <string id="gnome-picture-options-spanned">Spanned</string>
-
-
 
 
     </stringTable>
@@ -222,6 +229,10 @@ Lock option - (available only for machine policy) prevents the user from changin
       </presentation>
       <presentation id="OrgGnomeDesktopBackgroundPictureOptionsUser-pr">
         <dropdownList noSort="true" defaultItem="0" refId="gnome-picture-options_setter">Adjustment method:</dropdownList>
+      </presentation>
+      <presentation id="OrgGnomeDesktopInterfaceEnableHotCornersMachine-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="gnome-state_setter">Hot corner:</dropdownList>
+        <checkBox refId="gnome-state_blocker">Block</checkBox>
       </presentation>
     </presentationTable>
   </resources>

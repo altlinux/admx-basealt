@@ -785,5 +785,35 @@
         </enum>
       </elements>
     </policy>
+    <policy name="OrgGnomeDesktopInterfaceEnableHotCornersMachine" class="Machine"
+        displayName="$(string.org-gnome-desktop-interface-enable-hot-corners)"
+        explainText="$(string.org-gnome-desktop-interface-enable-hot-corners_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        presentation="$(presentation.OrgGnomeDesktopInterfaceEnableHotCornersMachine-pr)" >
+      <parentCategory ref="system:Phosh_Environment" />
+      <supportedOn ref="system:SUPPORTED_AltP11" />
+      <elements>
+        <enum id="gnome-state_setter" required="true" valueName="org.gnome.desktop.interface.enable-hot-corners">
+          <item displayName="$(string.gnome-state-on)">
+            <value>
+              <decimal value="1" />
+            </value>
+          </item>
+          <item displayName="$(string.gnome-state-off)">
+            <value>
+              <decimal value="0" />
+            </value>
+          </item>
+        </enum>
+        <boolean id="gnome-state_blocker" key="Software\BaseALT\Policies\GSettingsLocks" valueName="org.gnome.desktop.interface.enable-hot-corners">
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+        </boolean>
+      </elements>
+    </policy>
   </policies>
 </policyDefinitions>

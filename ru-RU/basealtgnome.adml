@@ -100,6 +100,15 @@ Spanned:
 Опция «Блокировать» — (доступна только для машинной политики) запрещает изменение настройки пользователем. Блокировка политики делает её приоритетнее аналогичной политики для пользователя.
 
     </string>
+    <string id="org-gnome-desktop-interface-enable-hot-corners">Горячий угол</string>
+    <string id="org-gnome-desktop-interface-enable-hot-corners_help">Политика позволяет включать или отключать горячий угол.
+
+Горячий угол в GNOME — это функциональность пользовательского интерфейса, которая позволяет быстро выполнять определённые действия, наведя указатель мыши в один из углов экрана.
+
+Опция «Блокировать» — (доступна только для машинной политики) запрещает изменение настройки пользователем. Блокировка политики делает её приоритетнее аналогичной политики для пользователя.
+    </string>
+
+
 
     <string id="gnome-time-1-minute">1 Минута</string>
     <string id="gnome-time-2-minute">2 Минуты</string>
@@ -123,8 +132,6 @@ Spanned:
     <string id="gnome-picture-options-stretched">Stretched</string>
     <string id="gnome-picture-options-zoom">Zoom</string>
     <string id="gnome-picture-options-spanned">Spanned</string>
-
-
 
 
     </stringTable>
@@ -222,6 +229,10 @@ Spanned:
       </presentation>
       <presentation id="OrgGnomeDesktopBackgroundPictureOptionsUser-pr">
         <dropdownList noSort="true" defaultItem="0" refId="gnome-picture-options_setter">Способ подгонки:</dropdownList>
+      </presentation>
+      <presentation id="OrgGnomeDesktopInterfaceEnableHotCornersMachine-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="gnome-state_setter">Горячий угол:</dropdownList>
+        <checkBox refId="gnome-state_blocker">Блокировать</checkBox>
       </presentation>
     </presentationTable>
   </resources>
