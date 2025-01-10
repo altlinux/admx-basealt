@@ -234,6 +234,9 @@ Spanned:
         <dropdownList noSort="true" defaultItem="0" refId="gnome-state_setter">Горячий угол:</dropdownList>
         <checkBox refId="gnome-state_blocker">Блокировать</checkBox>
       </presentation>
+      <presentation id="OrgGnomeDesktopInterfaceEnableHotCornersUser-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="gnome-state_setter">Горячий угол:</dropdownList>
+      </presentation>
     </presentationTable>
   </resources>
 </policyDefinitionResources>

@@ -234,6 +234,9 @@ The "Block" option - (available only for the machine policy) prevents the user f
         <dropdownList noSort="true" defaultItem="0" refId="gnome-state_setter">Hot corner:</dropdownList>
         <checkBox refId="gnome-state_blocker">Block</checkBox>
       </presentation>
+      <presentation id="OrgGnomeDesktopInterfaceEnableHotCornersUser-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="gnome-state_setter">Hot corner:</dropdownList>
+      </presentation>
     </presentationTable>
   </resources>
 </policyDefinitionResources>
