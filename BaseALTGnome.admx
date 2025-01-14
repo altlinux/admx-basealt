@@ -14,7 +14,7 @@
         key="Software\BaseALT\Policies\gsettings"
         presentation="$(presentation.GnomeSleepInactiveBattery-pr)">
       <parentCategory ref="system:Phosh_PowerManagement" />
-      <supportedOn ref="system:SUPPORTED_AltP10" />
+      <supportedOn ref="system:SUPPORTED_AltP11" />
       <elements>
         <enum id="gnome-sleep-power_setter" valueName="org.gnome.settings-daemon.plugins.power.sleep-inactive-battery-type" required="true">
           <item displayName="$(string.gnome-state-on)">
@@ -84,7 +84,7 @@
         key="Software\BaseALT\Policies\gsettings"
         presentation="$(presentation.GnomeSleepInactiveBattery-user-pr)">
       <parentCategory ref="system:Phosh_PowerManagement" />
-      <supportedOn ref="system:SUPPORTED_AltP10" />
+      <supportedOn ref="system:SUPPORTED_AltP11" />
       <elements>
         <enum id="gnome-sleep-power_setter" valueName="org.gnome.settings-daemon.plugins.power.sleep-inactive-battery-type" required="true">
           <item displayName="$(string.gnome-state-on)">
@@ -138,7 +138,7 @@
         key="Software\BaseALT\Policies\gsettings"
         presentation="$(presentation.GnomeSleepInactiveAC-pr)">
       <parentCategory ref="system:Phosh_PowerManagement" />
-      <supportedOn ref="system:SUPPORTED_AltP10" />
+      <supportedOn ref="system:SUPPORTED_AltP11" />
       <elements>
         <enum id="gnome-sleep-power_setter" valueName="org.gnome.settings-daemon.plugins.power.sleep-inactive-ac-type" required="true">
           <item displayName="$(string.gnome-state-on)">
@@ -208,7 +208,7 @@
         key="Software\BaseALT\Policies\gsettings"
         presentation="$(presentation.GnomeSleepInactiveAC-user-pr)">
       <parentCategory ref="system:Phosh_PowerManagement" />
-      <supportedOn ref="system:SUPPORTED_AltP10" />
+      <supportedOn ref="system:SUPPORTED_AltP11" />
       <elements>
         <enum id="gnome-sleep-power_setter" valueName="org.gnome.settings-daemon.plugins.power.sleep-inactive-ac-type" required="true">
           <item displayName="$(string.gnome-state-on)">
@@ -262,7 +262,7 @@
         key="Software\BaseALT\Policies\gsettings"
         presentation="$(presentation.OrgGnomeDesktopInterfaceClockShowWeekday-pr)" >
       <parentCategory ref="system:Phosh_Environment" />
-      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <supportedOn ref="system:SUPPORTED_AltP11" />
       <elements>
         <enum id="gnome-weekday_setter" required="true" valueName="org.gnome.desktop.interface.clock-show-weekday">
           <item displayName="$(string.gnome-state-on)">
@@ -293,7 +293,7 @@
         valueName="org.gnome.desktop.interface.clock-show-weekday"
         presentation="$(presentation.OrgGnomeDesktopInterfaceClockShowWeekdayUser-pr)" >
       <parentCategory ref="system:Phosh_Environment" />
-      <supportedOn ref="system:SUPPORTED_AltP10" />
+      <supportedOn ref="system:SUPPORTED_AltP11" />
       <elements>
         <enum id="gnome-weekday_setter" required="true" valueName="org.gnome.desktop.interface.clock-show-weekday">
           <item displayName="$(string.gnome-state-on)">
@@ -315,7 +315,7 @@
         key="Software\BaseALT\Policies\gsettings"
         presentation="$(presentation.OrgGnomeDesktopInterfaceClockShowDate-pr)" >
       <parentCategory ref="system:Phosh_Environment" />
-      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <supportedOn ref="system:SUPPORTED_AltP11" />
       <elements>
         <enum id="gnome-date_setter" required="true" valueName="org.gnome.desktop.interface.clock-show-date">
           <item displayName="$(string.gnome-state-on)">
@@ -346,7 +346,7 @@
         valueName="org.gnome.desktop.interface.clock-show-date"
         presentation="$(presentation.OrgGnomeDesktopInterfaceClockShowDateUser-pr)" >
       <parentCategory ref="system:Phosh_Environment" />
-      <supportedOn ref="system:SUPPORTED_AltP10" />
+      <supportedOn ref="system:SUPPORTED_AltP11" />
       <elements>
         <enum id="gnome-date_setter" required="true" valueName="org.gnome.desktop.interface.clock-show-date">
           <item displayName="$(string.gnome-state-on)">
@@ -368,7 +368,7 @@
         key="Software\BaseALT\Policies\gsettings"
         presentation="$(presentation.OrgGnomeDesktopInterfaceClockShowSeconds-pr)" >
       <parentCategory ref="system:Phosh_Environment" />
-      <supportedOn ref="system:SUPPORTED_AltP9" />
+      <supportedOn ref="system:SUPPORTED_AltP11" />
       <elements>
         <enum id="gnome-seconds_setter" required="true" valueName="org.gnome.desktop.interface.clock-show-seconds">
           <item displayName="$(string.gnome-state-on)">
@@ -399,7 +399,7 @@
         valueName="org.gnome.desktop.interface.clock-show-seconds"
         presentation="$(presentation.OrgGnomeDesktopInterfaceClockShowSecondsUser-pr)" >
       <parentCategory ref="system:Phosh_Environment" />
-      <supportedOn ref="system:SUPPORTED_AltP10" />
+      <supportedOn ref="system:SUPPORTED_AltP11" />
       <elements>
         <enum id="gnome-seconds_setter" required="true" valueName="org.gnome.desktop.interface.clock-show-seconds">
           <item displayName="$(string.gnome-state-on)">
@@ -421,7 +421,7 @@
         key="Software\BaseALT\Policies\gsettings"
         presentation="$(presentation.OrgGnomeDesktopInterfaceBatteryPercentage-pr)" >
       <parentCategory ref="system:Phosh_Environment" />
-      <supportedOn ref="system:SUPPORTED_AltP10" />
+      <supportedOn ref="system:SUPPORTED_AltP11" />
       <elements>
         <enum id="gnome-battery_setter" required="true" valueName="org.gnome.desktop.interface.show-battery-percentage">
           <item displayName="$(string.gnome-state-on)">
@@ -451,7 +451,7 @@
         key="Software\BaseALT\Policies\gsettings"
         presentation="$(presentation.OrgGnomeDesktopInterfaceBatteryPercentageUser-pr)" >
       <parentCategory ref="system:Phosh_Environment" />
-      <supportedOn ref="system:SUPPORTED_AltP10" />
+      <supportedOn ref="system:SUPPORTED_AltP11" />
       <elements>
         <enum id="gnome-battery_setter" required="true" valueName="org.gnome.desktop.interface.show-battery-percentage">
           <item displayName="$(string.gnome-state-on)">
@@ -473,7 +473,7 @@
         key="Software\BaseALT\Policies\gsettings"
         presentation="$(presentation.OrgGnomeDesktopInterfaceEnableAnimations-pr)" >
       <parentCategory ref="system:Phosh_Environment" />
-      <supportedOn ref="system:SUPPORTED_AltP10" />
+      <supportedOn ref="system:SUPPORTED_AltP11" />
       <elements>
         <enum id="gnome-animations_setter" required="true" valueName="org.gnome.desktop.interface.enable-animations">
           <item displayName="$(string.gnome-state-on)">
@@ -503,7 +503,7 @@
         key="Software\BaseALT\Policies\gsettings"
         presentation="$(presentation.OrgGnomeDesktopInterfaceEnableAnimationsUser-pr)" >
       <parentCategory ref="system:Phosh_Environment" />
-      <supportedOn ref="system:SUPPORTED_AltP10" />
+      <supportedOn ref="system:SUPPORTED_AltP11" />
       <elements>
         <enum id="gnome-animations_setter" required="true" valueName="org.gnome.desktop.interface.enable-animations">
           <item displayName="$(string.gnome-state-on)">
@@ -525,7 +525,7 @@
         key="Software\BaseALT\Policies\gsettings"
         presentation="$(presentation.OrgGnomeDesktopInterfaceColorScheme-pr)" >
       <parentCategory ref="system:Phosh_Apperance" />
-      <supportedOn ref="system:SUPPORTED_AltP10" />
+      <supportedOn ref="system:SUPPORTED_AltP11" />
       <elements>
         <enum id="gnome-color-scheme_setter" required="true" valueName="org.gnome.desktop.interface.color-scheme">
           <item displayName="$(string.gnome-color-scheme-light)">
@@ -555,7 +555,7 @@
         key="Software\BaseALT\Policies\gsettings"
         presentation="$(presentation.OrgGnomeDesktopInterfaceColorSchemeUser-pr)" >
       <parentCategory ref="system:Phosh_Apperance" />
-      <supportedOn ref="system:SUPPORTED_AltP10" />
+      <supportedOn ref="system:SUPPORTED_AltP11" />
       <elements>
         <enum id="gnome-color-scheme_setter" required="true" valueName="org.gnome.desktop.interface.color-scheme">
           <item displayName="$(string.gnome-color-scheme-light)">
@@ -577,7 +577,7 @@
         key="Software\BaseALT\Policies\gsettings"
         presentation="$(presentation.OrgGnomeDesktopInterfaceIconTheme-pr)" >
       <parentCategory ref="system:Phosh_Apperance" />
-      <supportedOn ref="system:SUPPORTED_AltP10" />
+      <supportedOn ref="system:SUPPORTED_AltP11" />
       <elements>
         <enum id="gnome-icon-theme_setter" required="true" valueName="org.gnome.desktop.interface.icon-theme">
           <item displayName="$(string.gnome-theme-Adwaita)">
@@ -617,7 +617,7 @@
         key="Software\BaseALT\Policies\gsettings"
         presentation="$(presentation.OrgGnomeDesktopInterfaceIconThemeUser-pr)" >
       <parentCategory ref="system:Phosh_Apperance" />
-      <supportedOn ref="system:SUPPORTED_AltP10" />
+      <supportedOn ref="system:SUPPORTED_AltP11" />
       <elements>
         <enum id="gnome-icon-theme_setter" required="true" valueName="org.gnome.desktop.interface.icon-theme">
           <item displayName="$(string.gnome-theme-Adwaita)">
@@ -649,7 +649,7 @@
         presentation="$(presentation.OrgGnomeBackgroundPictureFilenameMachine-pr)"
         key="Software\BaseALT\Policies\gsettings">
       <parentCategory ref="system:Phosh_Apperance" />
-      <supportedOn ref="system:SUPPORTED_AltP10" />
+      <supportedOn ref="system:SUPPORTED_AltP11" />
       <elements>
         <text id="OrgGnomeBackgroundPictureFilename_light_setter" valueName="org.gnome.desktop.background.picture-uri" />
         <text id="OrgGnomeBackgroundPictureFilename_dark_setter" valueName="org.gnome.desktop.background.picture-uri-dark" />
@@ -677,7 +677,7 @@
         presentation="$(presentation.OrgGnomeBackgroundPictureFilenameUser-pr)"
         key="Software\BaseALT\Policies\gsettings">
       <parentCategory ref="system:Phosh_Apperance" />
-      <supportedOn ref="system:SUPPORTED_AltP10" />
+      <supportedOn ref="system:SUPPORTED_AltP11" />
       <elements>
         <text id="OrgGnomeBackgroundPictureFilename_light_setter" valueName="org.gnome.desktop.background.picture-uri" />
         <text id="OrgGnomeBackgroundPictureFilename_dark_setter" valueName="org.gnome.desktop.background.picture-uri-dark" />
@@ -689,7 +689,7 @@
         key="Software\BaseALT\Policies\gsettings"
         presentation="$(presentation.OrgGnomeDesktopBackgroundPictureOptionsMachine-pr)" >
       <parentCategory ref="system:Phosh_Apperance" />
-      <supportedOn ref="system:SUPPORTED_AltP10" />
+      <supportedOn ref="system:SUPPORTED_AltP11" />
       <elements>
         <enum id="gnome-picture-options_setter" required="true" valueName="org.gnome.desktop.background.picture-options">
           <item displayName="$(string.gnome-picture-options-none)">
@@ -744,7 +744,7 @@
         key="Software\BaseALT\Policies\gsettings"
         presentation="$(presentation.OrgGnomeDesktopBackgroundPictureOptionsUser-pr)" >
       <parentCategory ref="system:Phosh_Apperance" />
-      <supportedOn ref="system:SUPPORTED_AltP10" />
+      <supportedOn ref="system:SUPPORTED_AltP11" />
       <elements>
         <enum id="gnome-picture-options_setter" required="true" valueName="org.gnome.desktop.background.picture-options">
           <item displayName="$(string.gnome-picture-options-none)">
