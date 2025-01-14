@@ -97,7 +97,7 @@ The image is scaled to fill the entire screen without empty bars, while maintain
 Spanned:
 The image is spread across all screens in a multi-monitor setup as a single image. This is useful if you have one large image that needs to be stretched across multiple monitors.
 
-Lock option - (available only for machine policy) prevents the user from changing the setting. Locking a policy makes it take precedence over a similar policy for the user.
+The "Block" option - (available only for machine policy) prevents the user from changing the setting. Locking a policy makes it take precedence over a similar policy for the user.
     </string>
 
     <string id="org-gnome-desktop-interface-enable-hot-corners">Hot corner</string>
@@ -106,6 +106,18 @@ Lock option - (available only for machine policy) prevents the user from changin
 The hot corner in GNOME is a user interface feature that allows you to view all active applications by hovering the mouse pointer in the upper left corner of the screen.
 
 The "Block" option - (available only for the machine policy) prevents the user from changing the setting. Blocking a policy makes it take precedence over a similar policy for the user.
+    </string>
+
+    <string id="gnome-desktops">Desktops</string>
+    <string id="gnome-desktops_help">This policy allows you to manage the number of desktops.
+
+Dynamic desktops - the number of desktops changes depending on the number of open windows.
+
+Fixed desktops - the number of desktops remains constant, regardless of whether they have windows or not.
+
+Note: the "Number of desktops" parameter is only meaningful in fixed mode.
+
+The "Block" option - (available only for machine policy) prevents the user from changing the setting. Locking a policy makes it take precedence over a similar policy for the user.
     </string>
 
 
@@ -132,6 +144,9 @@ The "Block" option - (available only for the machine policy) prevents the user f
     <string id="gnome-picture-options-stretched">Stretched</string>
     <string id="gnome-picture-options-zoom">Zoom</string>
     <string id="gnome-picture-options-spanned">Spanned</string>
+
+    <string id="gnome-desktop-dynamic">Dynamic</string>
+    <string id="gnome-desktop-static">Fixed</string>
 
 
     </stringTable>
@@ -236,6 +251,12 @@ The "Block" option - (available only for the machine policy) prevents the user f
       </presentation>
       <presentation id="OrgGnomeDesktopInterfaceEnableHotCornersUser-pr">
         <dropdownList noSort="true" defaultItem="0" refId="gnome-state_setter">Hot corner:</dropdownList>
+      </presentation>
+      <presentation id="gnome-desktops-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="gnome-desktop_setter">Desktops:</dropdownList>
+        <decimalTextBox refId="gnome-desktopnumber_setter" defaultValue="4">Number of desktops:</decimalTextBox>
+        <checkBox refId="gnome-desktop_blocker">Block setting of desktops:</checkBox>
+        <checkBox refId="gnome-desktopnumber_blocker">Block setting of number of desktops:</checkBox>
       </presentation>
     </presentationTable>
   </resources>

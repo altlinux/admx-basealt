@@ -108,6 +108,18 @@ Spanned:
 Опция «Блокировать» — (доступна только для машинной политики) запрещает изменение настройки пользователем. Блокировка политики делает её приоритетнее аналогичной политики для пользователя.
     </string>
 
+    <string id="gnome-desktops">Рабочие столы</string>
+    <string id="gnome-desktops_help">Политика позволяет управлять количеством рабочих столов.
+
+Динамические рабочие столы — количество рабочих столов меняется в зависимости от количества открытых окон.
+
+Фиксированные рабочие столы — количество рабочих столов остаётся постоянным, независимо от того, есть ли на них окна или нет.
+
+Примечание: параметр «Количество рабочих столов» имеет смысл только при фиксированном режиме.
+
+Опция «Блокировать» — (доступна только для машинной политики) запрещает изменение настройки пользователем. Блокировка политики делает её приоритетнее аналогичной политики для пользователя.
+    </string>
+
 
 
     <string id="gnome-time-1-minute">1 Минута</string>
@@ -132,6 +144,9 @@ Spanned:
     <string id="gnome-picture-options-stretched">Stretched</string>
     <string id="gnome-picture-options-zoom">Zoom</string>
     <string id="gnome-picture-options-spanned">Spanned</string>
+
+    <string id="gnome-desktop-dynamic">Динамические</string>
+    <string id="gnome-desktop-static">Фиксированные</string>
 
 
     </stringTable>
@@ -236,6 +251,12 @@ Spanned:
       </presentation>
       <presentation id="OrgGnomeDesktopInterfaceEnableHotCornersUser-pr">
         <dropdownList noSort="true" defaultItem="0" refId="gnome-state_setter">Горячий угол:</dropdownList>
+      </presentation>
+      <presentation id="gnome-desktops-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="gnome-desktop_setter">Рабочие столы:</dropdownList>
+        <decimalTextBox refId="gnome-desktopnumber_setter" defaultValue="4">Количество рабочих столов:</decimalTextBox>
+        <checkBox refId="gnome-desktop_blocker">Блокировать настройку рабочих столов:</checkBox>
+        <checkBox refId="gnome-desktopnumber_blocker">Блокировать настройку количества рабочих столов:</checkBox>
       </presentation>
     </presentationTable>
   </resources>
