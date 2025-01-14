@@ -258,6 +258,10 @@ The "Block" option - (available only for machine policy) prevents the user from 
         <checkBox refId="gnome-desktop_blocker">Block setting of desktops:</checkBox>
         <checkBox refId="gnome-desktopnumber_blocker">Block setting of number of desktops:</checkBox>
       </presentation>
+      <presentation id="gnome-desktops-user-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="gnome-desktop_setter">Desktops:</dropdownList>
+        <decimalTextBox refId="gnome-desktopnumber_setter" defaultValue="4">Number of desktops:</decimalTextBox>
+      </presentation>
     </presentationTable>
   </resources>
 </policyDefinitionResources>

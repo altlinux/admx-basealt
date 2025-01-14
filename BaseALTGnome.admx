@@ -876,5 +876,28 @@
         </boolean>
       </elements>
     </policy>
+    <policy name="gnome-desktops" class="User"
+        displayName="$(string.gnome-desktops)"
+        explainText="$(string.gnome-desktops_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        presentation="$(presentation.gnome-desktops-user-pr)">
+      <parentCategory ref="system:ALT_Settings_Gnome" />
+      <supportedOn ref="system:SUPPORTED_AltP11" />
+      <elements>
+        <enum id="gnome-desktop_setter" required="true" valueName="org.gnome.mutter.dynamic-workspaces">
+          <item displayName="$(string.gnome-desktop-dynamic)">
+            <value>
+              <decimal value="1" />
+            </value>
+          </item>
+          <item displayName="$(string.gnome-desktop-static)">
+            <value>
+              <decimal value="0" />
+            </value>
+          </item>
+        </enum>
+        <decimal id="gnome-desktopnumber_setter" valueName="org.gnome.desktop.wm.preferences.num-workspaces" minValue="1" maxValue="36" />
+      </elements>
+    </policy>
   </policies>
 </policyDefinitions>

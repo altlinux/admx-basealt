@@ -258,6 +258,10 @@ Spanned:
         <checkBox refId="gnome-desktop_blocker">Блокировать настройку рабочих столов:</checkBox>
         <checkBox refId="gnome-desktopnumber_blocker">Блокировать настройку количества рабочих столов:</checkBox>
       </presentation>
+      <presentation id="gnome-desktops-user-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="gnome-desktop_setter">Рабочие столы:</dropdownList>
+        <decimalTextBox refId="gnome-desktopnumber_setter" defaultValue="4">Количество рабочих столов:</decimalTextBox>
+      </presentation>
     </presentationTable>
   </resources>
 </policyDefinitionResources>
