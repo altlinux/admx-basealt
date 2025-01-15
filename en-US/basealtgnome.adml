@@ -120,6 +120,16 @@ Note: the "Number of desktops" parameter is only meaningful in fixed mode.
 The "Block" option - (available only for machine policy) prevents the user from changing the setting. Locking a policy makes it take precedence over a similar policy for the user.
     </string>
 
+    <string id="org-gnome-mutter-workspaces-only-on-primary">Workspaces display mode</string>
+    <string id="org-gnome-mutter-workspaces-only-on-primary_help">This policy allows you to configure how desktops are displayed on displays.
+
+Workspaces only on primary display — in this mode, desktops are switched only on the primary display. Only windows related to the current desktop are displayed on additional displays, but the virtual desktops themselves are not switched.
+
+Workspaces on all displays — desktops are synchronized across all connected displays. When you switch a desktop on one screen, it changes on other screens as well.
+
+The "Block" option — (available only for the machine policy) prevents the user from changing the setting. Locking a policy makes it take precedence over a similar policy for the user.
+    </string>
+
 
 
     <string id="gnome-time-1-minute">1 Minute</string>
@@ -147,6 +157,9 @@ The "Block" option - (available only for machine policy) prevents the user from 
 
     <string id="gnome-desktop-dynamic">Dynamic</string>
     <string id="gnome-desktop-static">Fixed</string>
+
+    <string id="gnome-workspaces-main-display">On the main display</string>
+    <string id="gnome-workspaces-all-displays">On all displays</string>
 
 
     </stringTable>
@@ -261,6 +274,10 @@ The "Block" option - (available only for machine policy) prevents the user from 
       <presentation id="gnome-desktops-user-pr">
         <dropdownList noSort="true" defaultItem="0" refId="gnome-desktop_setter">Desktops:</dropdownList>
         <decimalTextBox refId="gnome-desktopnumber_setter" defaultValue="4">Number of desktops:</decimalTextBox>
+      </presentation>
+      <presentation id="OrgGnomeMutterWorkspacesOnlyOnPrimary-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="gnome-workspaces_setter">Workspaces:</dropdownList>
+        <checkBox refId="gnome-workspaces_blocker">Block</checkBox>
       </presentation>
     </presentationTable>
   </resources>

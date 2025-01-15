@@ -120,6 +120,15 @@ Spanned:
 Опция «Блокировать» — (доступна только для машинной политики) запрещает изменение настройки пользователем. Блокировка политики делает её приоритетнее аналогичной политики для пользователя.
     </string>
 
+    <string id="org-gnome-mutter-workspaces-only-on-primary">Режим отображения рабочих столов</string>
+    <string id="org-gnome-mutter-workspaces-only-on-primary_help">Политика позволяет настроить способ отображения рабочих столов на дисплеях.
+
+Рабочие столы только на основном дисплее — в этом режиме рабочие столы переключаются только на основном экране. На дополнительных дисплеях отображаются только окна, относящиеся к текущему рабочему столу, но сами виртуальные рабочие столы не переключаются.
+
+Рабочие столы на всех дисплеях — рабочие столы синхронизированы на всех подключённых дисплеях. При переключении рабочего стола на одном экране он меняется и на других экранах.
+
+Опция «Блокировать» — (доступна только для машинной политики) запрещает изменение настройки пользователем. Блокировка политики делает её приоритетнее аналогичной политики для пользователя.
+    </string>
 
 
     <string id="gnome-time-1-minute">1 Минута</string>
@@ -147,6 +156,9 @@ Spanned:
 
     <string id="gnome-desktop-dynamic">Динамические</string>
     <string id="gnome-desktop-static">Фиксированные</string>
+
+    <string id="gnome-workspaces-main-display">На основном дисплее</string>
+    <string id="gnome-workspaces-all-displays">На всех дисплеях</string>
 
 
     </stringTable>
@@ -261,6 +273,10 @@ Spanned:
       <presentation id="gnome-desktops-user-pr">
         <dropdownList noSort="true" defaultItem="0" refId="gnome-desktop_setter">Рабочие столы:</dropdownList>
         <decimalTextBox refId="gnome-desktopnumber_setter" defaultValue="4">Количество рабочих столов:</decimalTextBox>
+      </presentation>
+      <presentation id="OrgGnomeMutterWorkspacesOnlyOnPrimary-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="gnome-workspaces_setter">Рабочие столы:</dropdownList>
+        <checkBox refId="gnome-workspaces_blocker">Блокировать</checkBox>
       </presentation>
     </presentationTable>
   </resources>

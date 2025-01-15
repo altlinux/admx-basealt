@@ -899,5 +899,35 @@
         <decimal id="gnome-desktopnumber_setter" valueName="org.gnome.desktop.wm.preferences.num-workspaces" minValue="1" maxValue="36" />
       </elements>
     </policy>
-  </policies>
+    <policy name="OrgGnomeMutterWorkspacesOnlyOnPrimary" class="Machine"
+        displayName="$(string.org-gnome-mutter-workspaces-only-on-primary)"
+        explainText="$(string.org-gnome-mutter-workspaces-only-on-primary_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        presentation="$(presentation.OrgGnomeMutterWorkspacesOnlyOnPrimary-pr)">
+      <parentCategory ref="system:ALT_Settings_Gnome" />
+      <supportedOn ref="system:SUPPORTED_AltP11" />
+      <elements>
+        <enum id="gnome-workspaces_setter" required="true" valueName="org.gnome.mutter.workspaces-only-on-primary">
+          <item displayName="$(string.gnome-workspaces-main-display)">
+            <value>
+              <decimal value="1" />
+            </value>
+          </item>
+          <item displayName="$(string.gnome-workspaces-all-displays)">
+            <value>
+              <decimal value="0" />
+            </value>
+          </item>
+        </enum>
+        <boolean id="gnome-workspaces_blocker" key="Software\BaseALT\Policies\GSettingsLocks" valueName="org.gnome.mutter.workspaces-only-on-primary">
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+        </boolean>
+      </elements>
+    </policy>
+ </policies>
 </policyDefinitions>
