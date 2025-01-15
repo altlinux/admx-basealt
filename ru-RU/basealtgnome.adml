@@ -278,6 +278,9 @@ Spanned:
         <dropdownList noSort="true" defaultItem="0" refId="gnome-workspaces_setter">Рабочие столы:</dropdownList>
         <checkBox refId="gnome-workspaces_blocker">Блокировать</checkBox>
       </presentation>
+      <presentation id="OrgGnomeMutterWorkspacesOnlyOnPrimaryUser-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="gnome-workspaces_setter">Рабочие столы:</dropdownList>
+      </presentation>
     </presentationTable>
   </resources>
 </policyDefinitionResources>
