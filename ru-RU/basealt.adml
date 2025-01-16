@@ -59,6 +59,10 @@
       <string id="ALT_Enviroment_Gnome_Help">Настройка поведения рабочей среды Gnome.</string>
       <string id="ALT_PowerManagement_Gnome">Управление электропитанием</string>
       <string id="ALT_PowerManagement_Gnome_Help">Управление электропитанием.</string>
+      <string id="ALT_Multitasking_Gnome">Многозадачность</string>
+      <string id="ALT_Multitasking_Gnome_Help">Управление многозадачностью.</string>
+      <string id="ALT_Accessibility_Gnome">Специальные возможности</string>
+      <string id="ALT_Accessibility_Gnome_Help">Управление специальными возможностями.</string>
       <string id="ALT_Settings_KDE">Настройки KDE</string>
       <string id="ALT_Settings_KDE_Help">Настройки KDE.</string>
       <string id="ALT_PowerManagement_KDE">Управление электропитанием</string>

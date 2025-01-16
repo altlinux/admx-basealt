@@ -129,6 +129,12 @@
     <category name="ALT_PowerManagement_Gnome" displayName="$(string.ALT_PowerManagement_Gnome)" explainText="$(string.ALT_PowerManagement_Gnome_Help)">
       <parentCategory ref="ALT_Settings_Gnome" />
     </category>
+    <category name="ALT_Multitasking_Gnome" displayName="$(string.ALT_Multitasking_Gnome)" explainText="$(string.ALT_Multitasking_Gnome_Help)">
+      <parentCategory ref="ALT_Settings_Gnome" />
+    </category>
+    <category name="ALT_Accessibility_Gnome" displayName="$(string.ALT_Accessibility_Gnome)" explainText="$(string.ALT_Accessibility_Gnome_Help)">
+      <parentCategory ref="ALT_Settings_Gnome" />
+    </category>
     <category name="ALT_Network" displayName="$(string.ALT_Network)" explainText="$(string.ALT_Network_Help)">
       <parentCategory ref="ALT_System" />
     </category>

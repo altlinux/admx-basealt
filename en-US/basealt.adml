@@ -59,6 +59,10 @@
       <string id="ALT_Enviroment_Gnome_Help">Configure the behavior of the Gnome desktop.</string>
       <string id="ALT_PowerManagement_Gnome">Power Management</string>
       <string id="ALT_PowerManagement_Gnome_Help">Power Management.</string>
+      <string id="ALT_Multitasking_Gnome">Multitasking</string>
+      <string id="ALT_Multitasking_Gnome_Help">Manage multitasking.</string>
+      <string id="ALT_Accessibility_Gnome">Accessibility</string>
+      <string id="ALT_Accessibility_Gnome_Help">Manage accessibility.</string>
       <string id="ALT_Settings_KDE">KDE settings</string>
       <string id="ALT_Settings_KDE_Help">KDE settings.</string>
       <string id="ALT_PowerManagement_KDE">Power management</string>
