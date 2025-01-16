@@ -130,6 +130,12 @@ Spanned:
 Опция «Блокировать» — (доступна только для машинной политики) запрещает изменение настройки пользователем. Блокировка политики делает её приоритетнее аналогичной политики для пользователя.
     </string>
 
+    <string id="org-gnome-desktop-a11y-always-show-universal-access-status">Меню специальных возможностей</string>
+    <string id="org-gnome-desktop-a11y-always-show-universal-access-status_help">Политика позволяет включить отображение значка «Меню специальных возможностей» в верхней панели.
+
+Опция «Блокировать» — (доступна только для машинной политики) запрещает изменение настройки пользователем. Блокировка политики делает её приоритетнее аналогичной политики для пользователя.
+    </string>
+
 
     <string id="gnome-time-1-minute">1 Минута</string>
     <string id="gnome-time-2-minute">2 Минуты</string>
@@ -280,6 +286,10 @@ Spanned:
       </presentation>
       <presentation id="OrgGnomeMutterWorkspacesOnlyOnPrimaryUser-pr">
         <dropdownList noSort="true" defaultItem="0" refId="gnome-workspaces_setter">Рабочие столы:</dropdownList>
+      </presentation>
+      <presentation id="OrgGnomeDesktopA11YAlwaysShowUniversalAccessStatusMachine-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="gnome-state_setter">Меню специальных возможностей:</dropdownList>
+        <checkBox refId="gnome-state_blocker">Блокировать</checkBox>
       </presentation>
     </presentationTable>
   </resources>

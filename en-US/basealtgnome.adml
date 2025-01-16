@@ -130,6 +130,11 @@ Workspaces on all displays — desktops are synchronized across all connected di
 The "Block" option — (available only for the machine policy) prevents the user from changing the setting. Locking a policy makes it take precedence over a similar policy for the user.
     </string>
 
+    <string id="org-gnome-desktop-a11y-always-show-universal-access-status">Accessibility Menu</string>
+    <string id="org-gnome-desktop-a11y-always-show-universal-access-status_help">The policy allows you to enable the display of the "Accessibility Menu" icon in the top panel.
+
+The "Block" option — (available only for the machine policy) prevents the user from changing the setting. Blocking a policy makes it take precedence over a similar policy for the user.
+    </string>
 
 
     <string id="gnome-time-1-minute">1 Minute</string>
@@ -281,6 +286,10 @@ The "Block" option — (available only for the machine policy) prevents the user
       </presentation>
       <presentation id="OrgGnomeMutterWorkspacesOnlyOnPrimaryUser-pr">
         <dropdownList noSort="true" defaultItem="0" refId="gnome-workspaces_setter">Workspaces:</dropdownList>
+      </presentation>
+      <presentation id="OrgGnomeDesktopA11YAlwaysShowUniversalAccessStatusMachine-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="gnome-state_setter">Accessibility Menu:</dropdownList>
+        <checkBox refId="gnome-state_blocker">Block</checkBox>
       </presentation>
     </presentationTable>
   </resources>
