@@ -288,8 +288,11 @@ The "Block" option — (available only for the machine policy) prevents the user
         <dropdownList noSort="true" defaultItem="0" refId="gnome-workspaces_setter">Workspaces:</dropdownList>
       </presentation>
       <presentation id="OrgGnomeDesktopA11YAlwaysShowUniversalAccessStatusMachine-pr">
-        <dropdownList noSort="true" defaultItem="0" refId="gnome-state_setter">Accessibility Menu:</dropdownList>
+        <dropdownList noSort="true" defaultItem="0" refId="gnome-state_setter">Accessibility menu:</dropdownList>
         <checkBox refId="gnome-state_blocker">Block</checkBox>
+      </presentation>
+      <presentation id="OrgGnomeDesktopA11YAlwaysShowUniversalAccessStatusMachine-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="gnome-state_setter">Accessibility menu:</dropdownList>
       </presentation>
     </presentationTable>
   </resources>

@@ -291,6 +291,9 @@ Spanned:
         <dropdownList noSort="true" defaultItem="0" refId="gnome-state_setter">Меню специальных возможностей:</dropdownList>
         <checkBox refId="gnome-state_blocker">Блокировать</checkBox>
       </presentation>
+      <presentation id="OrgGnomeDesktopA11YAlwaysShowUniversalAccessStatusMachine-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="gnome-state_setter">Меню специальных возможностей:</dropdownList>
+      </presentation>
     </presentationTable>
   </resources>
 </policyDefinitionResources>
