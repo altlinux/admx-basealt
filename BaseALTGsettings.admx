@@ -2619,5 +2619,35 @@
       </elements>
     </policy>
 
+    <policy name="WinbindDNSUpdateIPv4" class="Machine"
+        displayName="$(string.org-altlinux-winbind-dnsupdate-ipv4)"
+        explainText="$(string.org-altlinux-winbind-dnsupdate-ipv4_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        presentation="$(presentation.WinbindDNSUpdateIPv4-pr)">
+      <parentCategory ref="system:ALT_WinbindDNSupdateOptions" />
+      <supportedOn ref="system:SUPPORTED_AltP10" />
+      <elements>
+        <enum id="WinbindDNSUpdateIPv4_setter" required="true" valueName="org.altlinux.winbind.dnsupdate.enable-update-ipv4">
+          <item displayName="$(string.WinbindDNSUpdate-true)">
+            <value>
+              <decimal value="1" />
+            </value>
+          </item>
+          <item displayName="$(string.WinbindDNSUpdate-false)">
+            <value>
+              <decimal value="0" />
+            </value>
+          </item>
+        </enum>
+        <boolean id="WinbindDNSUpdateIPv4ptr_setter" valueName="org.altlinux.winbind.dnsupdate.ipv4_ptr_update ">
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+        </boolean>
+      </elements>
+    </policy>
   </policies>
 </policyDefinitions>

@@ -642,6 +642,16 @@ Cтрока типа rgb(0,0,0).
       <string id="org-mate-session-show-hidden-apps-true">Включено</string>
       <string id="org-mate-session-show-hidden-apps-false">Отключено</string>
 
+
+      <string id="org-altlinux-winbind-dnsupdate-ipv4">Обновление IPv4 DNS записей</string>
+      <string id="org-altlinux-winbind-dnsupdate-ipv4_help">Политика позволяет включить обновление прямой и обратной IPv4 DNS записи компьютера.
+
+Примечание: включение параметра «Обновление обратной IPv4 DNS записи» имеет смысл только при включённом параметре «Обновление прямой IPv4 DNS записи».
+
+      </string>
+      <string id="WinbindDNSUpdate-true">Включено</string>
+      <string id="WinbindDNSUpdate-false">Отключено</string>
+
     </stringTable>
 
     <presentationTable>
@@ -1058,6 +1068,11 @@ Cтрока типа rgb(0,0,0).
       <presentation id="OrgMateSessionShowHiddenAppsMachine-pr">
         <dropdownList noSort="true" defaultItem="0" refId="OrgMateSessionShowHiddenApps_setter">Отображение скрытых автоматически запускаемых приложений:</dropdownList>
         <checkBox refId="OrgMateSessionShowHiddenApps_setter_blocker">Блокировать</checkBox>
+      </presentation>
+
+      <presentation id="WinbindDNSUpdateIPv4-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="WinbindDNSUpdateIPv4_setter">Обновление прямой IPv4 DNS записи:</dropdownList>
+        <checkBox refId="WinbindDNSUpdateIPv4ptr_setter">Обновление обратной IPv4 DNS записи:</checkBox>
       </presentation>
 
     </presentationTable>

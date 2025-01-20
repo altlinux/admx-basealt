@@ -642,6 +642,15 @@ The "Block" option — (available only for machine policy) prevents the user fro
       <string id="org-mate-session-show-hidden-apps-true">Enabled</string>
       <string id="org-mate-session-show-hidden-apps-false">Disabled</string>
 
+      <string id="org-altlinux-winbind-dnsupdate-ipv4">Update IPv4 DNS records</string>
+      <string id="org-altlinux-winbind-dnsupdate-ipv4_help">The policy allows you to enable the update of the forward and reverse IPv4 DNS records of the computer.
+
+Note: Enabling the "Update reverse IPv4 DNS record" option only makes sense when the "Update forward IPv4 DNS record" option is enabled.
+
+      </string>
+      <string id="WinbindDNSUpdate-true">Enabled</string>
+      <string id="WinbindDNSUpdate-false">Disabled</string>
+
      </stringTable>
 
     <presentationTable>
@@ -1058,6 +1067,11 @@ The "Block" option — (available only for machine policy) prevents the user fro
       <presentation id="OrgMateSessionShowHiddenAppsMachine-pr">
         <dropdownList noSort="true" defaultItem="0" refId="OrgMateSessionShowHiddenApps_setter">Show hidden startup applications:</dropdownList>
         <checkBox refId="OrgMateSessionShowHiddenApps_setter_blocker">Block</checkBox>
+      </presentation>
+
+      <presentation id="WinbindDNSUpdateIPv4-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="WinbindDNSUpdateIPv4_setter">Updating forward IPv4 DNS record:</dropdownList>
+        <checkBox refId="WinbindDNSUpdateIPv4ptr_setter">Updating reverse IPv4 DNS record:</checkBox>
       </presentation>
 
     </presentationTable>
