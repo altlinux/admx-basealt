@@ -657,6 +657,11 @@ Note: Enabling the "Update reverse IPv6 DNS record" option only makes sense when
       <string id="WinbindDNSUpdate-true">Enabled</string>
       <string id="WinbindDNSUpdate-false">Disabled</string>
 
+      <string id="org-altlinux-winbind-dnsupdate-ttl">DNS record storage time</string>
+      <string id="org-altlinux-winbind-dnsupdate-ttl_help">The policy allows you to set the DNS record storage time in the cache.
+
+      </string>
+
      </stringTable>
 
     <presentationTable>
@@ -1081,10 +1086,13 @@ Note: Enabling the "Update reverse IPv6 DNS record" option only makes sense when
       </presentation>
 
       <presentation id="WinbindDNSUpdateIPv6-pr">
-        <dropdownList noSort="true" defaultItem="0" refId="WinbindDNSUpdateIPv6_setter">Updating forward IPv6 DNS record:</dropdownList>
-        <checkBox refId="WinbindDNSUpdateIPv4ptr_setter">Updating reverse IPv6 DNS record:</checkBox>
+        <dropdownList noSort="true" defaultItem="1" refId="WinbindDNSUpdateIPv6_setter">Updating forward IPv6 DNS record:</dropdownList>
+        <checkBox refId="WinbindDNSUpdateIPv6ptr_setter">Updating reverse IPv6 DNS record:</checkBox>
       </presentation>
 
+      <presentation id="WinbindDNSUpdateTTL-pr">
+        <decimalTextBox refId="WinbindDNSUpdateTTL_setter" defaultValue="3600">Time in seconds:</decimalTextBox>
+      </presentation>
     </presentationTable>
   </resources>
 </policyDefinitionResources>

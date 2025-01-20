@@ -2639,7 +2639,7 @@
             </value>
           </item>
         </enum>
-        <boolean id="WinbindDNSUpdateIPv4ptr_setter" valueName="org.altlinux.winbind.dnsupdate.ipv4_ptr_update ">
+        <boolean id="WinbindDNSUpdateIPv4ptr_setter" valueName="org.altlinux.winbind.dnsupdate.ipv4-ptr-update">
           <trueValue>
             <decimal value="1" />
           </trueValue>
@@ -2670,7 +2670,7 @@
             </value>
           </item>
         </enum>
-        <boolean id="WinbindDNSUpdateIPv6ptr_setter" valueName="org.altlinux.winbind.dnsupdate.ipv6_ptr_update ">
+        <boolean id="WinbindDNSUpdateIPv6ptr_setter" valueName="org.altlinux.winbind.dnsupdate.ipv6-ptr-update">
           <trueValue>
             <decimal value="1" />
           </trueValue>
@@ -2681,5 +2681,16 @@
       </elements>
     </policy>
 
+    <policy name="WinbindDNSUpdateTTL" class="Machine"
+        displayName="$(string.org-altlinux-winbind-dnsupdate-ttl)"
+        explainText="$(string.org-altlinux-winbind-dnsupdate-ttl_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        presentation="$(presentation.WinbindDNSUpdateTTL-pr)">
+      <parentCategory ref="system:ALT_WinbindDNSupdateOptions" />
+      <supportedOn ref="system:SUPPORTED_AltP10" />
+      <elements>
+        <decimal id="WinbindDNSUpdateTTL_setter" valueName="org.altlinux.winbind.dnsupdate.ttl" minValue="0" maxValue="604800" />
+      </elements>
+    </policy>
   </policies>
 </policyDefinitions>

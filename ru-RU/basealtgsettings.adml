@@ -659,6 +659,11 @@ Cтрока типа rgb(0,0,0).
       <string id="WinbindDNSUpdate-true">Включено</string>
       <string id="WinbindDNSUpdate-false">Отключено</string>
 
+      <string id="org-altlinux-winbind-dnsupdate-ttl">Время хранения DNS записи</string>
+      <string id="org-altlinux-winbind-dnsupdate-ttl_help">Политика позволяет задать время хранения DNS записи в кэшэ.
+
+      </string>
+
     </stringTable>
 
     <presentationTable>
@@ -1083,8 +1088,12 @@ Cтрока типа rgb(0,0,0).
       </presentation>
 
       <presentation id="WinbindDNSUpdateIPv6-pr">
-        <dropdownList noSort="true" defaultItem="0" refId="WinbindDNSUpdateIPv6_setter">Обновление прямой IPv6 DNS записи:</dropdownList>
+        <dropdownList noSort="true" defaultItem="1" refId="WinbindDNSUpdateIPv6_setter">Обновление прямой IPv6 DNS записи:</dropdownList>
         <checkBox refId="WinbindDNSUpdateIPv6ptr_setter">Обновление обратной IPv6 DNS записи:</checkBox>
+      </presentation>
+
+      <presentation id="WinbindDNSUpdateTTL-pr">
+        <decimalTextBox refId="WinbindDNSUpdateTTL_setter" defaultValue="3600">Время в секундах:</decimalTextBox>
       </presentation>
 
     </presentationTable>
