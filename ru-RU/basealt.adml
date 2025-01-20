@@ -29,6 +29,8 @@
       <string id="ALT_Systemd_Help">Настройка опций Systemd.</string>
       <string id="ALT_SambaOptions">Samba опции</string>
       <string id="ALT_SambaOptions_Help">Настройка опций Samba.</string>
+      <string id="ALT_WinbindDNSupdateOptions">Опции Winbind DNSupdate</string>
+      <string id="ALT_WinbindDNSupdateOptions_Help">Настройка параметров службы Winbind DNSupdate.</string>
 
       <string id="ALT_Network">Сетевые приложения</string>
       <string id="ALT_Network_Help">Настройка параметров сетевых приложений.</string>

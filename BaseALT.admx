@@ -93,6 +93,9 @@
     <category name="ALT_SambaOptions" displayName="$(string.ALT_SambaOptions)"  explainText="$(string.ALT_SambaOptions_Help)" >
       <parentCategory ref="ALT_Services" />
     </category>
+    <category name="ALT_WinbindDNSupdateOptions" displayName="$(string.ALT_WinbindDNSupdateOptions)"  explainText="$(string.ALT_WinbindDNSupdateOptions_Help)" >
+      <parentCategory ref="ALT_Services" />
+    </category>
     <category name="ALT_Settings_KDE" displayName="$(string.ALT_Settings_KDE)" explainText="$(string.ALT_Settings_KDE_Help)">
       <parentCategory ref="ALT_System" />
     </category>

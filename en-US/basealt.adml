@@ -29,6 +29,8 @@
       <string id="ALT_Systemd_Help">Systemd options configuration.</string>
       <string id="ALT_SambaOptions">Samba</string>
       <string id="ALT_SambaOptions_Help">Samba options configuration.</string>
+      <string id="ALT_WinbindDNSupdateOptions">Winbind DNSupdate Options</string>
+      <string id="ALT_WinbindDNSupdateOptions_Help">Configuring Winbind DNSupdate service options.</string>
 
       <string id="ALT_Network">Network Applications</string>
       <string id="ALT_Network_Help">Configuration of system.</string>
