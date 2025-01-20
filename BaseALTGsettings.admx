@@ -2649,5 +2649,37 @@
         </boolean>
       </elements>
     </policy>
+
+    <policy name="WinbindDNSUpdateIPv6" class="Machine"
+        displayName="$(string.org-altlinux-winbind-dnsupdate-ipv6)"
+        explainText="$(string.org-altlinux-winbind-dnsupdate-ipv6_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        presentation="$(presentation.WinbindDNSUpdateIPv6-pr)">
+      <parentCategory ref="system:ALT_WinbindDNSupdateOptions" />
+      <supportedOn ref="system:SUPPORTED_AltP10" />
+      <elements>
+        <enum id="WinbindDNSUpdateIPv6_setter" required="true" valueName="org.altlinux.winbind.dnsupdate.enable-update-ipv6">
+          <item displayName="$(string.WinbindDNSUpdate-true)">
+            <value>
+              <decimal value="1" />
+            </value>
+          </item>
+          <item displayName="$(string.WinbindDNSUpdate-false)">
+            <value>
+              <decimal value="0" />
+            </value>
+          </item>
+        </enum>
+        <boolean id="WinbindDNSUpdateIPv6ptr_setter" valueName="org.altlinux.winbind.dnsupdate.ipv6_ptr_update ">
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+        </boolean>
+      </elements>
+    </policy>
+
   </policies>
 </policyDefinitions>

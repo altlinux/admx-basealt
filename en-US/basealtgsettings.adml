@@ -648,6 +648,12 @@ The "Block" option — (available only for machine policy) prevents the user fro
 Note: Enabling the "Update reverse IPv4 DNS record" option only makes sense when the "Update forward IPv4 DNS record" option is enabled.
 
       </string>
+      <string id="org-altlinux-winbind-dnsupdate-ipv6">Update IPv6 DNS records</string>
+      <string id="org-altlinux-winbind-dnsupdate-ipv6_help">The policy allows you to enable the update of the forward and reverse IPv6 DNS records of the computer.
+
+Note: Enabling the "Update reverse IPv6 DNS record" option only makes sense when the "Update forward IPv6 DNS record" option is enabled.
+
+      </string>
       <string id="WinbindDNSUpdate-true">Enabled</string>
       <string id="WinbindDNSUpdate-false">Disabled</string>
 
@@ -1072,6 +1078,11 @@ Note: Enabling the "Update reverse IPv4 DNS record" option only makes sense when
       <presentation id="WinbindDNSUpdateIPv4-pr">
         <dropdownList noSort="true" defaultItem="0" refId="WinbindDNSUpdateIPv4_setter">Updating forward IPv4 DNS record:</dropdownList>
         <checkBox refId="WinbindDNSUpdateIPv4ptr_setter">Updating reverse IPv4 DNS record:</checkBox>
+      </presentation>
+
+      <presentation id="WinbindDNSUpdateIPv6-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="WinbindDNSUpdateIPv6_setter">Updating forward IPv6 DNS record:</dropdownList>
+        <checkBox refId="WinbindDNSUpdateIPv4ptr_setter">Updating reverse IPv6 DNS record:</checkBox>
       </presentation>
 
     </presentationTable>
