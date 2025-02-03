@@ -15,6 +15,9 @@
       <string id="ALT_GPLocalUsers">Group policies for local users</string>
       <string id="ALT_GPLocalUsers_Help">If enabled, group policies will be applied to local users.</string>
 
+      <string id="gpupdate_force_update">Force download of Group Policy templates</string>
+      <string id="gpupdate_force_update_help">This policy disables Group Policy Template (GPT) version matching when downloading.</string>
+
       <string id="gpupdate_global_experimental">Experimental Group Policies</string>
       <string id="gpupdate_global_experimental_help">This policy enables experimental group policy appliers features globally.</string>
 
