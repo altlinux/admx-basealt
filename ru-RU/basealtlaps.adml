@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  (c) 2025 BaseALT, Ltd.  -->
+<policyDefinitionResources xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.microsoft.com/GroupPolicy/2006/07/PolicyDefinitions" revision="1.0" schemaVersion="1.0">
+  <displayName>Определения политик LAPS операционной системы «Альт»</displayName>
+  <description>Этот файл содержит определения политик для управления LAPS в операционной системе «Альт».</description>
+
+  <resources>
+    <stringTable>
+    </stringTable>
+    <presentationTable>
+    </presentationTable>
+  </resources>
+</policyDefinitionResources>
