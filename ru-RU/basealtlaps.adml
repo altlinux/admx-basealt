@@ -58,6 +58,25 @@
 
 Если политика не настроена, пароль управляемой учётной записи шифруется.
       </string>
+      <string id="LAPS_ADPasswordEncryptionPrincipal">Расшифрование паролей</string>
+      <string id="LAPS_ADPasswordEncryptionPrincipal_Help">Политика позволяет задать пользователя или группу, которым разрешено расшифровывать зашифрованные пароли.
+
+Настройка политики не действует, если не включено шифрование паролкей.
+
+Если политика включена, зашифрованные пароли могут быть расшифрованы указанной группой или пользователем.
+
+Если политика отключена или не настроена, зашифрованные пароли могут быть расшифрованы только группой администраторов домена.
+
+Примечание:
+
+Строка, хранящаяся в этом параметре, представляет собой идентификатор безопасности в строковой форме или полное имя пользователя или группы.
+
+Примеры:
+
+- S-1-5-21-2127521184-1604012920-1887927527-35197
+- contoso\LAPSAdmins
+- lapsadmins@contoso.com
+      </string>
 
 
       <string id="LAPS_PwdComplexity_Item_1">Заглавные буквы</string>
@@ -75,6 +94,11 @@
       <presentation id="LAPS_AdminName">
         <textBox refId="TEXT_AdminAccountName">
           <label>Имя локальной учетной записи:</label>
+        </textBox>
+      </presentation>
+      <presentation id="LAPS_ADPasswordEncryptionPrincipal">
+        <textBox refId="TEXT_ADPasswordEncryptionPrincipal">
+          <label>Идентификатор или имя группы/пользователя:</label>
         </textBox>
       </presentation>
     </presentationTable>

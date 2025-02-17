@@ -53,7 +53,7 @@
     </policy>
     <policy name="LAPS_ADPasswordEncryptionEnabled" class="Machine" displayName="$(string.LAPS_ADPasswordEncryptionEnabled)"
         explainText="$(string.LAPS_ADPasswordEncryptionEnabled_Help)"
-        key="SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\LAPS"
+        key="Software\BaseALT\Policies\Laps"
         valueName="ADPasswordEncryptionEnabled">
       <parentCategory ref="ALT_LAPS"/>
       <supportedOn ref="SUPPORTED_AltP10"/>
@@ -63,6 +63,16 @@
       <disabledValue>
         <decimal value="0" />
       </disabledValue>
+    </policy>
+    <policy name="LAPS_ADPasswordEncryptionPrincipal" class="Machine" displayName="$(string.LAPS_ADPasswordEncryptionPrincipal)"
+        explainText="$(string.LAPS_ADPasswordEncryptionPrincipal_Help)"
+        key="Software\BaseALT\Policies\Laps"
+        presentation="$(presentation.LAPS_ADPasswordEncryptionPrincipal)">
+      <parentCategory ref="ALT_LAPS"/>
+      <supportedOn ref="SUPPORTED_AltP10"/>
+      <elements>
+        <text id="TEXT_ADPasswordEncryptionPrincipal" valueName="ADPasswordEncryptionPrincipal" maxLength="128"/>
+      </elements>
     </policy>
   </policies>
 </policyDefinitions>

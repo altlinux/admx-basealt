@@ -58,6 +58,25 @@ If the policy is disabled, the managed account password is not encrypted.
 
 If the policy is not configured, the managed account password is encrypted.
     </string>
+    <string id="LAPS_ADPasswordEncryptionPrincipal">Password Decryption</string>
+    <string id="LAPS_ADPasswordEncryptionPrincipal_Help">This policy allows you to specify a user or group that is allowed to decrypt encrypted passwords.
+
+The policy setting has no effect if password encryption is not enabled.
+
+If the policy is enabled, encrypted passwords can be decrypted by the specified group or user.
+
+If the policy is disabled or not configured, encrypted passwords can only be decrypted by the Domain Admins group.
+
+Note:
+
+The string stored in this setting is a security identifier in string form or the full name of the user or group.
+
+Examples:
+
+- S-1-5-21-2127521184-1604012920-1887927527-35197
+- contoso\LAPSAdmins
+- lapsadmins@contoso.com
+    </string>
 
 
     </stringTable>
