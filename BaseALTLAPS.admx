@@ -8,7 +8,38 @@
   </policyNamespaces>
   <resources minRequiredRevision="1.0" />
   <policies>
-
-  
+    <policy name="LAPS_PasswordSettings" class="Machine" displayName="$(string.LAPS_PasswordSettings)"
+        explainText="$(string.LAPS_PasswordSettings_Help)"
+        key="Software\BaseALT\Policies\Laps"
+        presentation="$(presentation.LAPS_PasswordSettings)">
+      <parentCategory ref="LAPS_CAT"/>
+      <supportedOn ref="SUPPORTED_Windows10"/>
+      <elements>
+        <enum id="LAPS_PasswordComplexity" valueName="PasswordComplexity">
+          <item displayName="$(string.LAPS_PwdComplexity_Item_1)">
+            <value>
+              <decimal value="1"/>
+            </value>
+          </item>
+          <item displayName="$(string.LAPS_PwdComplexity_Item_2)">
+            <value>
+              <decimal value="2"/>
+            </value>
+          </item>
+          <item displayName="$(string.LAPS_PwdComplexity_Item_3)">
+            <value>
+              <decimal value="3"/>
+            </value>
+          </item>
+          <item displayName="$(string.LAPS_PwdComplexity_Item_4)">
+            <value>
+              <decimal value="4"/>
+            </value>
+          </item>
+        </enum>
+        <decimal id="LAPS_PasswordLength" valueName="PasswordLength" minValue="8" maxValue="64"/>
+        <decimal id="LAPS_PasswordAgeDays" valueName="PasswordAgeDays" minValue="1" maxValue="365"/>
+      </elements>
+    </policy>
   </policies>
 </policyDefinitions>

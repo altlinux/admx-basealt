@@ -6,8 +6,38 @@
 
   <resources>
     <stringTable>
+    <string id="LAPS_PasswordSettings">Password Settings</string>
+    <string id="LAPS_PasswordSettings_Help">This policy allows you to configure the complexity, length, and expiration date of passwords.
+
+The "Password Complexity" parameter — the characters that can be used when creating a new password.
+
+Default: "Uppercase letters, lowercase letters, numbers, special characters."
+
+Password Length — the number of characters in the password.
+
+Minimum: 8 characters;
+
+Maximum: 64 characters;
+
+Default: 14 characters.
+
+Password expiration date in days
+
+Minimum: 1 day;
+
+Maximum: 365 days;
+
+Default: 30 days.
+
+
+
     </stringTable>
     <presentationTable>
+    <presentation id="LAPS_PasswordSettings">
+        <dropdownList refId="LAPS_PasswordComplexity" defaultItem="3">Сложность пароля:</dropdownList>
+        <decimalTextBox refId="LAPS_PasswordLength" defaultValue="14">Длина пароля:</decimalTextBox>
+        <decimalTextBox refId="LAPS_PasswordAgeDays" defaultValue="30">Срок действия пароля (в днях):</decimalTextBox>
+      </presentation>
     </presentationTable>
   </resources>
 </policyDefinitionResources>

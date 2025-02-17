@@ -6,8 +6,48 @@
 
   <resources>
     <stringTable>
+
+    <string id="LAPS_PasswordSettings">Параметры паролей</string>
+    <string id="LAPS_PasswordSettings_Help">Политика позволяет настроить сложность, длину и срок действия паролей.
+
+
+Параметр «Сложность пароля» — допустимые к использованию символы при создании нового пароля.
+
+По умолчанию: «Большие буквы, строчные буквы, цифры, специальные символы».
+
+
+Длина пароля — количество символов в пароле.
+
+Минимум: 8 символов;
+
+Максимум: 64 символа;
+
+По умолчанию: 14 символов.
+
+
+
+Срок действия пароля в днях
+
+Минимум: 1 день;
+
+Максимум: 365 дней;
+
+По умолчанию: 30 дней.
+
+
+      </string>
+      <string id="LAPS_PwdComplexity_Item_1">Большие буквы</string>
+      <string id="LAPS_PwdComplexity_Item_2">Большие и маленькие буквы</string>
+      <string id="LAPS_PwdComplexity_Item_3">Большие буквы + маленькие буквы + цифры</string>
+      <string id="LAPS_PwdComplexity_Item_4">Большие буквы + маленькие буквы + цифры + специальные знаки</string>
+
     </stringTable>
     <presentationTable>
+    <presentation id="LAPS_PasswordSettings">
+        <dropdownList refId="LAPS_PasswordComplexity" defaultItem="3">Сложность пароля:</dropdownList>
+        <decimalTextBox refId="LAPS_PasswordLength" defaultValue="14">Длина пароля:</decimalTextBox>
+        <decimalTextBox refId="LAPS_PasswordAgeDays" defaultValue="30">Срок действия пароля (в днях):</decimalTextBox>
+      </presentation>
     </presentationTable>
   </resources>
 </policyDefinitionResources>
