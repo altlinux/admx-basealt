@@ -114,6 +114,9 @@
     <category name="ALT_Environment_KDE" displayName="$(string.ALT_Environment_KDE)" explainText="$(string.ALT_Environment_KDE_Help)">
       <parentCategory ref="ALT_Settings_KDE" />
     </category>
+    <category name="ALT_LAPS" displayName="$(string.ALT_LAPS)" explainText="$(string.ALT_LAPS_Help)">
+      <parentCategory ref="ALT_System" />
+    </category>
     <category name="ALT_Network" displayName="$(string.ALT_Network)" explainText="$(string.ALT_Network_Help)">
       <parentCategory ref="ALT_System" />
     </category>

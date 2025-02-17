@@ -46,6 +46,8 @@
       <string id="ALT_Hardware_Help">Configuration of hardware settings.</string>
       <string id="ALT_Databases">Databases</string>
       <string id="ALT_Databases_Help">Configuration of database settings.</string>
+      <string id="ALT_LAPS">LAPS</string>
+      <string id="ALT_LAPS_Help">LAPS settings.</string>
 
       <string id="LinuxComponents">Linux Components</string>
       <string id="LinuxComponents_Help">Contains settings for Kernel components.</string>
