@@ -74,5 +74,15 @@
         <text id="TEXT_ADPasswordEncryptionPrincipal" valueName="ADPasswordEncryptionPrincipal" maxLength="128"/>
       </elements>
     </policy>
+    <policy name="LAPS_ADEncryptedPasswordHistorySize" class="Machine" displayName="$(string.LAPS_ADEncryptedPasswordHistorySize)"
+        explainText="$(string.LAPS_ADEncryptedPasswordHistorySize_Help)"
+        key="Software\BaseALT\Policies\Laps"
+        presentation="$(presentation.LAPS_ADEncryptedPasswordHistorySize)">
+      <parentCategory ref="ALT_LAPS"/>
+      <supportedOn ref="SUPPORTED_AltP10"/>
+      <elements>
+        <decimal id="LAPS_ADEncryptedPasswordHistorySize_INT" valueName="ADEncryptedPasswordHistorySize" minValue="0" maxValue="12"/>
+      </elements>
+    </policy>
   </policies>
 </policyDefinitions>

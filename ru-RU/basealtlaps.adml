@@ -41,9 +41,7 @@
 
 Если политика включена, LAPS будет управлять паролем для локальной учетной записи с этим именем.
 
-Если политика отключена или не настроена, LAPS будет управлять паролем для известной учетной записи администратора.
-
-Примечание: Не включайте данную политику для управления встроенной учетной записью администратора. Встроенная учетная запись администратора определяется автоматически по известному SID и не зависит от имени учетной записи.
+Если политика отключена или не настроена, LAPS будет управлять паролем локального администратора — root.
       </string>
       <string id="LAPS_ADPasswordEncryptionEnabled">Шифрование паролей</string>
       <string id="LAPS_ADPasswordEncryptionEnabled_Help">Политика позволяет включить шифрование управляемым паролем перед отправкой в Active Directory.
@@ -77,6 +75,21 @@
 - contoso\LAPSAdmins
 - lapsadmins@contoso.com
       </string>
+      <string id="LAPS_ADEncryptedPasswordHistorySize">Размер журнала зашифрованных паролей</string>
+      <string id="LAPS_ADEncryptedPasswordHistorySize_Help">Политика позволяет настроить размер указать количество зашифрованных паролей, хранящихся Active Directory.
+
+Настройка этого параметра не действует, если:
+
+1) пароль не настроен для резервного копирования в Active Directory;
+
+2) не включено шифрование пароля.
+
+Допустимый диапазон значений колиества хранимых паролей — 0 - 12;
+
+Если политика включена, указанное количество старых паролей будет храниться в Active Directory.
+
+Если политика отключена или не настроена, в Active Directory не будет храниться ни одного старого пароля.
+      </string>
 
 
       <string id="LAPS_PwdComplexity_Item_1">Заглавные буквы</string>
@@ -100,6 +113,9 @@
         <textBox refId="TEXT_ADPasswordEncryptionPrincipal">
           <label>Идентификатор или имя группы/пользователя:</label>
         </textBox>
+      </presentation>
+      <presentation id="LAPS_ADEncryptedPasswordHistorySize">
+        <decimalTextBox refId="LAPS_ADEncryptedPasswordHistorySize_INT" defaultValue="0">Размер журнала зашифрованных паролей:</decimalTextBox>
       </presentation>
     </presentationTable>
   </resources>

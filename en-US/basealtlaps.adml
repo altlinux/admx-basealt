@@ -41,9 +41,7 @@ Default: 30 days.
 
 If the policy is enabled, LAPS will manage the password for the local account with this name.
 
-If the policy is disabled or not configured, LAPS will manage the password for the known administrator account.
-
-Note: Do not enable this policy to manage the built-in administrator account. The built-in administrator account is determined automatically by the known SID and is independent of the account name.
+If the policy is disabled or not configured, LAPS will manage the local administrator password - root.
     </string>
     <string id="LAPS_ADPasswordEncryptionEnabled">Password encryption</string>
     <string id="LAPS_ADPasswordEncryptionEnabled_Help">This policy allows you to enable encryption of the managed password before sending it to Active Directory.
@@ -76,21 +74,49 @@ Examples:
 - S-1-5-21-2127521184-1604012920-1887927527-35197
 - contoso\LAPSAdmins
 - lapsadmins@contoso.com
-    </string>
+        </string>
+        <string id="LAPS_ADEncryptedPasswordHistorySize">Encrypted Password History Size</string>
+        <string id="LAPS_ADEncryptedPasswordHistorySize_Help">The policy allows you to configure the size of the number of encrypted passwords stored in Active Directory.
+
+Configuring this parameter has no effect if:
+
+1) the password is not configured to be backed up to Active Directory;
+
+2) password encryption is not enabled.
+
+The valid range for the number of stored passwords is 0 - 12;
+
+If the policy is enabled, the specified number of old passwords will be stored in Active Directory.
+
+If the policy is disabled or not configured, no old passwords will be stored in Active Directory.
+        </string>
 
 
-    </stringTable>
+        <string id="LAPS_PwdComplexity_Item_1">Uppercase letters</string>
+        <string id="LAPS_PwdComplexity_Item_2">Uppercase and lowercase letters</string>
+        <string id="LAPS_PwdComplexity_Item_3">Uppercase letters, lowercase letters, numbers</string>
+        <string id="LAPS_PwdComplexity_Item_4">Uppercase letters, lowercase letters, numbers, special characters</string>
+
+        </stringTable>
     <presentationTable>
-    <presentation id="LAPS_PasswordSettings">
-        <dropdownList refId="LAPS_PasswordComplexity" defaultItem="3">Сложность пароля:</dropdownList>
-        <decimalTextBox refId="LAPS_PasswordLength" defaultValue="14">Длина пароля:</decimalTextBox>
-        <decimalTextBox refId="LAPS_PasswordAgeDays" defaultValue="30">Срок действия пароля (в днях):</decimalTextBox>
-      </presentation>
-      <presentation id="LAPS_AdminName">
-        <textBox refId="TEXT_AdminAccountName">
-        <label>Local account name:</label>
-        </textBox>
-      </presentation>
+        <presentation id="LAPS_PasswordSettings">
+            <dropdownList refId="LAPS_PasswordComplexity" defaultItem="3">Password Complexity:</dropdownList>
+            <decimalTextBox refId="LAPS_PasswordLength" defaultValue="14">Password Length:</decimalTextBox>
+            <decimalTextBox refId="LAPS_PasswordAgeDays" defaultValue="30">Password age (in days):</decimalTextBox>
+        </presentation>
+        <presentation id="LAPS_AdminName">
+            <textBox refId="TEXT_AdminAccountName">
+            <label>Local account name:</label>
+            </textBox>
+        </presentation>
+        <presentation id="LAPS_ADPasswordEncryptionPrincipal">
+            <textBox refId="TEXT_ADPasswordEncryptionPrincipal">
+            <label>Group/user name or ID:</label>
+            </textBox>
+        </presentation>
+        <presentation id="LAPS_ADEncryptedPasswordHistorySize">
+            <decimalTextBox refId="LAPS_ADEncryptedPasswordHistorySize_INT" defaultValue="0">Log size encrypted passwords:</decimalTextBox>
+        </presentation>
     </presentationTable>
-  </resources>
+    </resources>
 </policyDefinitionResources>
