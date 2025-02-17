@@ -13,7 +13,7 @@
 
 Параметр «Сложность пароля» — допустимые к использованию символы при создании нового пароля.
 
-По умолчанию: «Большие буквы, строчные буквы, цифры, специальные символы».
+По умолчанию: «Заглавные буквы, строчные буквы, цифры, специальные символы».
 
 
 Длина пароля — количество символов в пароле.
@@ -36,10 +36,21 @@
 
 
       </string>
-      <string id="LAPS_PwdComplexity_Item_1">Большие буквы</string>
-      <string id="LAPS_PwdComplexity_Item_2">Большие и маленькие буквы</string>
-      <string id="LAPS_PwdComplexity_Item_3">Большие буквы + маленькие буквы + цифры</string>
-      <string id="LAPS_PwdComplexity_Item_4">Большие буквы + маленькие буквы + цифры + специальные знаки</string>
+      <string id="LAPS_AdminName">Имя учетной записи администратора</string>
+      <string id="LAPS_AdminName_Help">Политика позволяет указать имя локальной учетной записи, пароль которой будет управляться.
+
+Если политика включена, LAPS будет управлять паролем для локальной учетной записи с этим именем.
+
+Если политика отключена или не настроена, LAPS будет управлять паролем для известной учетной записи администратора.
+
+Примечание: Не включайте данную политику для управления встроенной учетной записью администратора. Встроенная учетная запись администратора определяется автоматически по известному SID и не зависит от имени учетной записи.
+      </string>
+
+
+      <string id="LAPS_PwdComplexity_Item_1">Заглавные буквы</string>
+      <string id="LAPS_PwdComplexity_Item_2">Заглавные и строчные буквы</string>
+      <string id="LAPS_PwdComplexity_Item_3">Заглавные буквы, строчные буквы, цифры</string>
+      <string id="LAPS_PwdComplexity_Item_4">Заглавные буквы, строчные буквы, цифры, специальные символы</string>
 
     </stringTable>
     <presentationTable>
@@ -47,6 +58,11 @@
         <dropdownList refId="LAPS_PasswordComplexity" defaultItem="3">Сложность пароля:</dropdownList>
         <decimalTextBox refId="LAPS_PasswordLength" defaultValue="14">Длина пароля:</decimalTextBox>
         <decimalTextBox refId="LAPS_PasswordAgeDays" defaultValue="30">Срок действия пароля (в днях):</decimalTextBox>
+      </presentation>
+      <presentation id="LAPS_AdminName">
+        <textBox refId="TEXT_AdminAccountName">
+          <label>Имя локальной учетной записи:</label>
+        </textBox>
       </presentation>
     </presentationTable>
   </resources>

@@ -12,8 +12,8 @@
         explainText="$(string.LAPS_PasswordSettings_Help)"
         key="Software\BaseALT\Policies\Laps"
         presentation="$(presentation.LAPS_PasswordSettings)">
-      <parentCategory ref="LAPS_CAT"/>
-      <supportedOn ref="SUPPORTED_Windows10"/>
+      <parentCategory ref="ALT_LAPS"/>
+      <supportedOn ref="SUPPORTED_AltP10"/>
       <elements>
         <enum id="LAPS_PasswordComplexity" valueName="PasswordComplexity">
           <item displayName="$(string.LAPS_PwdComplexity_Item_1)">
@@ -39,6 +39,17 @@
         </enum>
         <decimal id="LAPS_PasswordLength" valueName="PasswordLength" minValue="8" maxValue="64"/>
         <decimal id="LAPS_PasswordAgeDays" valueName="PasswordAgeDays" minValue="1" maxValue="365"/>
+      </elements>
+    </policy>
+
+    <policy name="LAPS_AdminName" class="Machine" displayName="$(string.LAPS_AdminName)"
+        explainText="$(string.LAPS_AdminName_Help)"
+        key="Software\BaseALT\Policies\Laps"
+        presentation="$(presentation.LAPS_AdminName)">
+      <parentCategory ref="ALT_LAPS"/>
+      <supportedOn ref="SUPPORTED_AltP10"/>
+      <elements>
+        <text id="TEXT_AdminAccountName" valueName="AdministratorAccountName" maxLength="64"/>
       </elements>
     </policy>
   </policies>

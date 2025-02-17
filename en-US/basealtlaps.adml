@@ -6,12 +6,15 @@
 
   <resources>
     <stringTable>
+
     <string id="LAPS_PasswordSettings">Password Settings</string>
     <string id="LAPS_PasswordSettings_Help">This policy allows you to configure the complexity, length, and expiration date of passwords.
+
 
 The "Password Complexity" parameter — the characters that can be used when creating a new password.
 
 Default: "Uppercase letters, lowercase letters, numbers, special characters."
+
 
 Password Length — the number of characters in the password.
 
@@ -20,6 +23,8 @@ Minimum: 8 characters;
 Maximum: 64 characters;
 
 Default: 14 characters.
+
+
 
 Password expiration date in days
 
@@ -30,6 +35,17 @@ Maximum: 365 days;
 Default: 30 days.
 
 
+    </string>
+    <string id="LAPS_AdminName">Administrator Account Name</string>
+    <string id="LAPS_AdminName_Help">This policy allows you to specify the name of the local account whose password will be managed.
+
+If the policy is enabled, LAPS will manage the password for the local account with this name.
+
+If the policy is disabled or not configured, LAPS will manage the password for the known administrator account.
+
+Note: Do not enable this policy to manage the built-in administrator account. The built-in administrator account is determined automatically by the known SID and is independent of the account name.
+    </string>
+
 
     </stringTable>
     <presentationTable>
@@ -37,6 +53,11 @@ Default: 30 days.
         <dropdownList refId="LAPS_PasswordComplexity" defaultItem="3">Сложность пароля:</dropdownList>
         <decimalTextBox refId="LAPS_PasswordLength" defaultValue="14">Длина пароля:</decimalTextBox>
         <decimalTextBox refId="LAPS_PasswordAgeDays" defaultValue="30">Срок действия пароля (в днях):</decimalTextBox>
+      </presentation>
+      <presentation id="LAPS_AdminName">
+        <textBox refId="TEXT_AdminAccountName">
+        <label>Local account name:</label>
+        </textBox>
       </presentation>
     </presentationTable>
   </resources>
