@@ -41,7 +41,6 @@
         <decimal id="LAPS_PasswordAgeDays" valueName="PasswordAgeDays" minValue="1" maxValue="365"/>
       </elements>
     </policy>
-
     <policy name="LAPS_AdminName" class="Machine" displayName="$(string.LAPS_AdminName)"
         explainText="$(string.LAPS_AdminName_Help)"
         key="Software\BaseALT\Policies\Laps"
@@ -51,6 +50,19 @@
       <elements>
         <text id="TEXT_AdminAccountName" valueName="AdministratorAccountName" maxLength="64"/>
       </elements>
+    </policy>
+    <policy name="LAPS_ADPasswordEncryptionEnabled" class="Machine" displayName="$(string.LAPS_ADPasswordEncryptionEnabled)"
+        explainText="$(string.LAPS_ADPasswordEncryptionEnabled_Help)"
+        key="SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\LAPS"
+        valueName="ADPasswordEncryptionEnabled">
+      <parentCategory ref="ALT_LAPS"/>
+      <supportedOn ref="SUPPORTED_AltP10"/>
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
     </policy>
   </policies>
 </policyDefinitions>

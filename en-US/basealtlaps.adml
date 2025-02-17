@@ -45,6 +45,19 @@ If the policy is disabled or not configured, LAPS will manage the password for t
 
 Note: Do not enable this policy to manage the built-in administrator account. The built-in administrator account is determined automatically by the known SID and is independent of the account name.
     </string>
+    <string id="LAPS_ADPasswordEncryptionEnabled">Password encryption</string>
+    <string id="LAPS_ADPasswordEncryptionEnabled_Help">This policy allows you to enable encryption of the managed password before sending it to Active Directory.
+
+The password will not be encrypted if:
+
+1) the password is not configured to be backed up to Active Directory;
+
+2) the Active Directory domain functional level is lower than Windows Server 2016.
+
+If the policy is disabled, the managed account password is not encrypted.
+
+If the policy is not configured, the managed account password is encrypted.
+    </string>
 
 
     </stringTable>
