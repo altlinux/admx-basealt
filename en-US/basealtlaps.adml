@@ -90,6 +90,15 @@ If the policy is enabled, the specified number of old passwords will be stored i
 
 If the policy is disabled or not configured, no old passwords will be stored in Active Directory.
         </string>
+        <string id="LAPS_ADBackupDSRMPassword">Enable DSRM account password backup</string>
+        <string id="LAPS_ADBackupDSRMPassword_Help">This policy allows you to manage and backup the DSRM administrator account password in Active Directory.
+
+Enabling the policy has no effect if the device is not a domain controller and password encryption is not enabled.
+
+If the policy is enabled, the DSRM administrator account password on the domain controller will be saved in Active Directory.
+
+If the policy is disabled or not configured, the DSRM administrator account password on the domain controller will not be backed up in Active Directory.
+        </string>
 
 
         <string id="LAPS_PwdComplexity_Item_1">Uppercase letters</string>

@@ -84,5 +84,18 @@
         <decimal id="LAPS_ADEncryptedPasswordHistorySize_INT" valueName="ADEncryptedPasswordHistorySize" minValue="0" maxValue="12"/>
       </elements>
     </policy>
+    <policy name="LAPS_ADBackupDSRMPassword" class="Machine" displayName="$(string.LAPS_ADBackupDSRMPassword)"
+        explainText="$(string.LAPS_ADBackupDSRMPassword_Help)"
+        key="Software\BaseALT\Policies\Laps"
+        valueName="ADBackupDSRMPassword">
+      <parentCategory ref="ALT_LAPS"/>
+      <supportedOn ref="SUPPORTED_AltP10"/>
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+    </policy>
   </policies>
 </policyDefinitions>
