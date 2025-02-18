@@ -99,12 +99,27 @@ If the policy is enabled, the DSRM administrator account password on the domain 
 
 If the policy is disabled or not configured, the DSRM administrator account password on the domain controller will not be backed up in Active Directory.
         </string>
+        <string id="LAPS_BackupDirectory">Password Backup</string>
+        <string id="LAPS_BackupDirectory_Help">This policy allows you to specify how the local administrator account password is backed up.
+
+Available options:
+
+Disabled - Backup is disabled
+Active Directory - Backup the password to Active Directory
+
+If this option is set to "Backup password to Active Directory" and the managed device is not joined to Active Directory, the local administrator password will not be backed up.
+
+If the policy is disabled or not configured, the local administrator password is not managed.
+
+        </string>
 
 
         <string id="LAPS_PwdComplexity_Item_1">Uppercase letters</string>
         <string id="LAPS_PwdComplexity_Item_2">Uppercase and lowercase letters</string>
         <string id="LAPS_PwdComplexity_Item_3">Uppercase letters, lowercase letters, numbers</string>
         <string id="LAPS_PwdComplexity_Item_4">Uppercase letters, lowercase letters, numbers, special characters</string>
+        <string id="LAPS_BackupDirectoryDisabled">Disabled</string>
+        <string id="LAPS_BackupDirectoryAD">Active Directory</string>
 
         </stringTable>
     <presentationTable>
@@ -125,6 +140,9 @@ If the policy is disabled or not configured, the DSRM administrator account pass
         </presentation>
         <presentation id="LAPS_ADEncryptedPasswordHistorySize">
             <decimalTextBox refId="LAPS_ADEncryptedPasswordHistorySize_INT" defaultValue="0">Log size encrypted passwords:</decimalTextBox>
+        </presentation>
+        <presentation id="LAPS_BackupDirectory">
+            <dropdownList refId="LAPS_BackupDirectory" defaultItem="0">Backup:</dropdownList>
         </presentation>
     </presentationTable>
     </resources>

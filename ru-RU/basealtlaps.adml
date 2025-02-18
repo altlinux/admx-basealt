@@ -99,12 +99,27 @@
 
 Если политика отключена или не настроена, пароль учетной записи администратора DSRM на контроллере домена не будет резервироваться в Active Directory.
       </string>
+      <string id="LAPS_BackupDirectory">Резервное копирование паролей</string>
+      <string id="LAPS_BackupDirectory_Help">Политика позволяет указать способ резервного копирования пароля локальной учётной записи администратора.
+
+Допустимые параметры:
+
+Отключено — резервное копирование отключено
+Active Directory — резервное копирование пароля в Active Directory
+
+Если для этого параметра установлено значение «Резервное копирование пароля в Active Directory», а управляемое устройство не присоединено к Active Directory, пароль локального администратора не будет резервироваться.
+
+Если политика отключена или не настроена, пароль локального администратора не управляется.
+
+      </string>
 
 
       <string id="LAPS_PwdComplexity_Item_1">Заглавные буквы</string>
       <string id="LAPS_PwdComplexity_Item_2">Заглавные и строчные буквы</string>
       <string id="LAPS_PwdComplexity_Item_3">Заглавные буквы, строчные буквы, цифры</string>
       <string id="LAPS_PwdComplexity_Item_4">Заглавные буквы, строчные буквы, цифры, специальные символы</string>
+      <string id="LAPS_BackupDirectoryDisabled">Отключено</string>
+      <string id="LAPS_BackupDirectoryAD">Active Directory</string>
 
     </stringTable>
     <presentationTable>
@@ -125,6 +140,9 @@
       </presentation>
       <presentation id="LAPS_ADEncryptedPasswordHistorySize">
         <decimalTextBox refId="LAPS_ADEncryptedPasswordHistorySize_INT" defaultValue="0">Размер журнала зашифрованных паролей:</decimalTextBox>
+      </presentation>
+      <presentation id="LAPS_BackupDirectory">
+        <dropdownList refId="LAPS_BackupDirectory" defaultItem="0">Резервное копирование:</dropdownList>
       </presentation>
     </presentationTable>
   </resources>
