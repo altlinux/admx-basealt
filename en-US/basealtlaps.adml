@@ -113,6 +113,15 @@ If the policy is disabled or not configured, the local administrator password is
 
         </string>
 
+        <string id="LAPS_DontAllowPwdExpirationBehindPolicy">Password Expiration</string>
+        <string id="LAPS_DontAllowPwdExpirationBehindPolicy_Help">This policy allows you to configure a password change if it has expired beyond the value specified by the Password Options policy.
+
+If the policy is enabled or not configured, the password is not allowed to expire beyond the value specified by the Password Options policy. If an expiration is detected, the password is immediately changed and the password expiration is set according to the policy.
+
+If the policy is disabled, the password expiration can be greater than the value specified by the Password Options policy.
+
+        </string>
+
 
         <string id="LAPS_PwdComplexity_Item_1">Uppercase letters</string>
         <string id="LAPS_PwdComplexity_Item_2">Uppercase and lowercase letters</string>

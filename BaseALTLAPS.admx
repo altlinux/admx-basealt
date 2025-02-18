@@ -118,5 +118,21 @@
         </enum>
       </elements>
     </policy>
+
+    <policy name="LAPS_DontAllowPwdExpirationBehindPolicy" class="Machine" displayName="$(string.LAPS_DontAllowPwdExpirationBehindPolicy)"
+        explainText="$(string.LAPS_DontAllowPwdExpirationBehindPolicy_Help)"
+        key="Software\BaseALT\Policies\Laps"
+        valueName="PasswordExpirationProtectionEnabled">
+      <parentCategory ref="ALT_LAPS"/>
+      <supportedOn ref="SUPPORTED_AltP10"/>
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+    </policy>
+
+
   </policies>
 </policyDefinitions>
