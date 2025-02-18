@@ -133,6 +133,39 @@
       </disabledValue>
     </policy>
 
+    <policy name="LAPS_PostAuthenticationActions" class="Machine" displayName="$(string.LAPS_PostAuthenticationActions)"
+        explainText="$(string.LAPS_PostAuthenticationActions_Help)"
+        key="Software\BaseALT\Policies\Laps"
+        presentation="$(presentation.LAPS_PostAuthenticationActions)">
+      <parentCategory ref="ALT_LAPS"/>
+      <supportedOn ref="SUPPORTED_AltP10"/>
+      <elements>
+        <decimal id="LAPS_PostAuthenticationResetDelay_INT" valueName="PostAuthenticationResetDelay" minValue="0" maxValue="24"/>
+        <enum id="LAPS_PostAuthenticationActions" valueName="PostAuthenticationActions">
+          <item displayName="$(string.PostAuthenticationActions_Item0)">
+            <value>
+              <decimal value="0"/>
+            </value>
+          </item>
+          <item displayName="$(string.PostAuthenticationActions_Item1)">
+            <value>
+              <decimal value="1"/>
+            </value>
+          </item>
+          <item displayName="$(string.PostAuthenticationActions_Item3)">
+            <value>
+              <decimal value="3"/>
+            </value>
+          </item>
+          <item displayName="$(string.PostAuthenticationActions_Item5)">
+            <value>
+              <decimal value="5"/>
+            </value>
+          </item>
+        </enum>
+      </elements>
+    </policy>
+
 
   </policies>
 </policyDefinitions>

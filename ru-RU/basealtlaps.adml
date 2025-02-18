@@ -122,6 +122,35 @@ Active Directory — резервное копирование пароля в A
 
       </string>
 
+      <string id="LAPS_PostAuthenticationActions">Действия после проверки подлинности</string>
+      <string id="LAPS_PostAuthenticationActions_Help">Политика позволяет настроить автоматические действия, выполняемые после входа в систему под учетной записью, управляемой LAPS.
+
+Льготный период — время (в часах), в течение которого после входа в систему никакие действия не выполняются;
+
+Если значение больше 0, LAPS выполнит указанные действия по истечении этого времени;
+
+Если значение равно 0, действия не выполняются;
+
+Если политика не настроена, применяется значение по умолчанию – 24 часа.
+
+
+
+Действия после входа в систему:
+
+Сбросить пароль — по окончании льготного периода LAPS меняет пароль учетной записи;
+
+Сбросить пароль и выйти из системы (поведение по умолчанию, если политика не настроена) — LAPS меняет пароль и завершает все активные интерактивные сеансы пользователя (локальные и RDP);
+
+Сбросить пароль и перезагрузить устройство — LAPS меняет пароль и выполняет немедленную перезагрузку компьютера.
+
+
+Примечания:
+
+Эта политика не применяется к учетной записи DSRM на контроллерах домена;
+
+По умолчанию, если политика не настроена, выполняется «Сбросить пароль и выйти из системы» через 24 часа.
+      </string>
+
 
       <string id="LAPS_PwdComplexity_Item_1">Заглавные буквы</string>
       <string id="LAPS_PwdComplexity_Item_2">Заглавные и строчные буквы</string>
@@ -129,6 +158,11 @@ Active Directory — резервное копирование пароля в A
       <string id="LAPS_PwdComplexity_Item_4">Заглавные буквы, строчные буквы, цифры, специальные символы</string>
       <string id="LAPS_BackupDirectoryDisabled">Отключено</string>
       <string id="LAPS_BackupDirectoryAD">Active Directory</string>
+
+      <string id="PostAuthenticationActions_Item0">Отключено — не выполнять никаких действий</string>
+      <string id="PostAuthenticationActions_Item1">Сброс пароля</string>
+      <string id="PostAuthenticationActions_Item3">Сброс пароля и выход из управляемой учетной записи</string>
+      <string id="PostAuthenticationActions_Item5">Сброс пароля и перезагрузка устройства</string>
 
     </stringTable>
     <presentationTable>
@@ -152,6 +186,10 @@ Active Directory — резервное копирование пароля в A
       </presentation>
       <presentation id="LAPS_BackupDirectory">
         <dropdownList refId="LAPS_BackupDirectory" defaultItem="0">Резервное копирование:</dropdownList>
+      </presentation>
+      <presentation id="LAPS_PostAuthenticationActions">
+        <decimalTextBox refId="LAPS_PostAuthenticationResetDelay_INT" defaultValue="24">Льготный период (часы):</decimalTextBox>
+        <dropdownList refId="LAPS_PostAuthenticationActions" defaultItem="3">Действие:</dropdownList>
       </presentation>
     </presentationTable>
   </resources>

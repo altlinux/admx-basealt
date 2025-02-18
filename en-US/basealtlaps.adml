@@ -121,6 +121,32 @@ If the policy is enabled or not configured, the password is not allowed to expir
 If the policy is disabled, the password expiration can be greater than the value specified by the Password Options policy.
 
         </string>
+        <string id="LAPS_PostAuthenticationActions">Post Authentication Actions</string>
+        <string id="LAPS_PostAuthenticationActions_Help">This policy allows you to configure automatic actions performed after logging in to an account managed by LAPS.
+
+Grace Period — the time (in hours) during which no actions are performed after logging in;
+
+If the value is greater than 0, LAPS will perform the specified actions after this time;
+
+If the value is 0, no actions are performed;
+
+If the policy is not configured, the default value of 24 hours is applied.
+
+Post Login Actions:
+
+Reset Password — after the grace period ends, LAPS changes the account password;
+
+Reset password and logout (default behavior if policy is not configured) - LAPS changes the password and terminates all active interactive user sessions (local and RDP);
+
+Reset password and reboot device - LAPS changes the password and immediately reboots the computer.
+
+Notes:
+
+This policy does not apply to the DSRM account on domain controllers;
+
+By default, if policy is not configured, "Reset password and logout" occurs after 24 hours.
+
+        </string>
 
 
         <string id="LAPS_PwdComplexity_Item_1">Uppercase letters</string>
@@ -129,6 +155,10 @@ If the policy is disabled, the password expiration can be greater than the value
         <string id="LAPS_PwdComplexity_Item_4">Uppercase letters, lowercase letters, numbers, special characters</string>
         <string id="LAPS_BackupDirectoryDisabled">Disabled</string>
         <string id="LAPS_BackupDirectoryAD">Active Directory</string>
+        <string id="PostAuthenticationActions_Item0">Disabled - do nothing</string>
+        <string id="PostAuthenticationActions_Item1">Reset password</string>
+        <string id="PostAuthenticationActions_Item3">Reset password and sign out of managed account</string>
+        <string id="PostAuthenticationActions_Item5">Reset password and reboot device</string>
 
         </stringTable>
     <presentationTable>
@@ -152,6 +182,10 @@ If the policy is disabled, the password expiration can be greater than the value
         </presentation>
         <presentation id="LAPS_BackupDirectory">
             <dropdownList refId="LAPS_BackupDirectory" defaultItem="0">Backup:</dropdownList>
+        </presentation>
+        <presentation id="LAPS_PostAuthenticationActions">
+            <decimalTextBox refId="LAPS_PostAuthenticationResetDelay_INT" defaultValue="24">Grace Period (hours):</decimalTextBox>
+            <dropdownList refId="LAPS_PostAuthenticationActions" defaultItem="3">Action:</dropdownList>
         </presentation>
     </presentationTable>
     </resources>
