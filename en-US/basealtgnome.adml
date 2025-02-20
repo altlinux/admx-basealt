@@ -339,6 +339,10 @@ The "Lock" option — (available only for the machine policy) prevents the user 
         <dropdownList noSort="true" defaultItem="0" refId="gnome-lock-delay_setter">Delay:</dropdownList>
         <checkBox refId="gnome-lock-delay_blocker">Block delay setting</checkBox>
       </presentation>
+      <presentation id="GnomeScreensaverLockEnabledUser-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="gnome-lock-enabled_setter">Automatic screen lock:</dropdownList>
+        <dropdownList noSort="true" defaultItem="0" refId="gnome-lock-delay_setter">Delay:</dropdownList>
+      </presentation>
     </presentationTable>
   </resources>
 </policyDefinitionResources>
