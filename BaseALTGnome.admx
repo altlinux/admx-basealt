@@ -790,7 +790,7 @@
         explainText="$(string.org-gnome-desktop-interface-enable-hot-corners_help)"
         key="Software\BaseALT\Policies\gsettings"
         presentation="$(presentation.OrgGnomeDesktopInterfaceEnableHotCornersMachine-pr)" >
-      <parentCategory ref="system:ALT_Enviroment_Gnome" />
+      <parentCategory ref="system:ALT_Multitasking_Gnome" />
       <supportedOn ref="system:SUPPORTED_AltP11" />
       <elements>
         <enum id="gnome-state_setter" required="true" valueName="org.gnome.desktop.interface.enable-hot-corners">
@@ -820,7 +820,7 @@
         explainText="$(string.org-gnome-desktop-interface-enable-hot-corners_help)"
         key="Software\BaseALT\Policies\gsettings"
         presentation="$(presentation.OrgGnomeDesktopInterfaceEnableHotCornersUser-pr)" >
-      <parentCategory ref="system:ALT_Enviroment_Gnome" />
+      <parentCategory ref="system:ALT_Multitasking_Gnome" />
       <supportedOn ref="system:SUPPORTED_AltP11" />
       <elements>
         <enum id="gnome-state_setter" required="true" valueName="org.gnome.desktop.interface.enable-hot-corners">
@@ -842,7 +842,7 @@
         explainText="$(string.gnome-desktops_help)"
         key="Software\BaseALT\Policies\gsettings"
         presentation="$(presentation.gnome-desktops-pr)">
-      <parentCategory ref="system:ALT_Settings_Gnome" />
+      <parentCategory ref="system:ALT_Multitasking_Gnome" />
       <supportedOn ref="system:SUPPORTED_AltP11" />
       <elements>
         <enum id="gnome-desktop_setter" required="true" valueName="org.gnome.mutter.dynamic-workspaces">
@@ -881,7 +881,7 @@
         explainText="$(string.gnome-desktops_help)"
         key="Software\BaseALT\Policies\gsettings"
         presentation="$(presentation.gnome-desktops-user-pr)">
-      <parentCategory ref="system:ALT_Settings_Gnome" />
+      <parentCategory ref="system:ALT_Multitasking_Gnome" />
       <supportedOn ref="system:SUPPORTED_AltP11" />
       <elements>
         <enum id="gnome-desktop_setter" required="true" valueName="org.gnome.mutter.dynamic-workspaces">
@@ -904,7 +904,7 @@
         explainText="$(string.org-gnome-mutter-workspaces-only-on-primary_help)"
         key="Software\BaseALT\Policies\gsettings"
         presentation="$(presentation.OrgGnomeMutterWorkspacesOnlyOnPrimary-pr)">
-      <parentCategory ref="system:ALT_Settings_Gnome" />
+      <parentCategory ref="system:ALT_Multitasking_Gnome" />
       <supportedOn ref="system:SUPPORTED_AltP11" />
       <elements>
         <enum id="gnome-workspaces_setter" required="true" valueName="org.gnome.mutter.workspaces-only-on-primary">
@@ -934,7 +934,7 @@
         explainText="$(string.org-gnome-mutter-workspaces-only-on-primary_help)"
         key="Software\BaseALT\Policies\gsettings"
         presentation="$(presentation.OrgGnomeMutterWorkspacesOnlyOnPrimaryUser-pr)">
-      <parentCategory ref="system:ALT_Settings_Gnome" />
+      <parentCategory ref="system:ALT_Multitasking_Gnome" />
       <supportedOn ref="system:SUPPORTED_AltP11" />
       <elements>
         <enum id="gnome-workspaces_setter" required="true" valueName="org.gnome.mutter.workspaces-only-on-primary">
