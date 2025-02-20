@@ -1003,7 +1003,7 @@
         </enum>
       </elements>
     </policy>
-    <policy name="OrgGnomeSettingsDaemonPowerButtonAction" class="Machine"
+    <policy name="OrgGnomeSettingsDaemonPowerButtonActionMachine" class="Machine"
         displayName="$(string.org-gnome-settings-daemon-power-button-action)"
         explainText="$(string.org-gnome-settings-daemon-power-button-action_help)"
         key="Software\BaseALT\Policies\gsettings"
@@ -1041,6 +1041,38 @@
             <decimal value="0" />
           </falseValue>
         </boolean>
+      </elements>
+    </policy>
+    <policy name="OrgGnomeSettingsDaemonPowerButtonActionUser" class="User"
+        displayName="$(string.org-gnome-settings-daemon-power-button-action)"
+        explainText="$(string.org-gnome-settings-daemon-power-button-action_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        presentation="$(presentation.OrgGnomeSettingsDaemonPowerButtonActionUser-pr)" >
+      <parentCategory ref="system:ALT_PowerManagement_Gnome" />
+      <supportedOn ref="system:SUPPORTED_AltP11" />
+      <elements>
+        <enum id="power-button-action_setter" required="true" valueName="org.gnome.settings-daemon.plugins.power.power-button-action">
+          <item displayName="$(string.power-button-action-suspend)">
+            <value>
+              <string>suspend</string>
+            </value>
+          </item>
+          <item displayName="$(string.power-button-action-interactive)">
+            <value>
+              <string>interactive</string>
+            </value>
+          </item>
+          <item displayName="$(string.power-button-action-hibernate)">
+            <value>
+              <string>hibernate</string>
+            </value>
+          </item>
+          <item displayName="$(string.power-button-action-nothing)">
+            <value>
+              <string>nothing</string>
+            </value>
+          </item>
+        </enum>
       </elements>
     </policy>
  </policies>

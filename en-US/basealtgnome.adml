@@ -316,6 +316,9 @@ The "Block" option (available only for the machine policy) prohibits the user fr
         <dropdownList noSort="true" defaultItem="0" refId="power-button-action_setter">Power button action:</dropdownList>
         <checkBox refId="power-button-action_blocker">Block</checkBox>
       </presentation>
+      <presentation id="OrgGnomeSettingsDaemonPowerButtonActionUser-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="power-button-action_setter">Power button action:</dropdownList>
+      </presentation>
     </presentationTable>
   </resources>
 </policyDefinitionResources>
