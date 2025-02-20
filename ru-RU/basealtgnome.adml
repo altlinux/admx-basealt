@@ -136,6 +136,20 @@ Spanned:
 Опция «Блокировать» — (доступна только для машинной политики) запрещает изменение настройки пользователем. Блокировка политики делает её приоритетнее аналогичной политики для пользователя.
     </string>
 
+    <string id="org-gnome-settings-daemon-power-button-action">Действие кнопки питания устройства</string>
+    <string id="org-gnome-settings-daemon-power-button-action_help">Политика позволяет настроить поведение устройства после нажатия кнопки питания.
+
+Допустимые значения:
+
+- Режим ожидания;
+- Выключить;
+- Гибернация;
+- Ничего не делать.
+
+Опция «Блокировать» — (доступна только для машинной политики) запрещает изменение настройки пользователем. Блокировка политики делает её приоритетнее аналогичной политики для пользователя.
+    </string>
+
+
 
     <string id="gnome-time-1-minute">1 Минута</string>
     <string id="gnome-time-2-minute">2 Минуты</string>
@@ -165,6 +179,11 @@ Spanned:
 
     <string id="gnome-workspaces-main-display">На основном дисплее</string>
     <string id="gnome-workspaces-all-displays">На всех дисплеях</string>
+
+    <string id="power-button-action-suspend">Режим ожидания</string>
+    <string id="power-button-action-interactive">Выключить</string>
+    <string id="power-button-action-hibernate">Режим гибернации</string>
+    <string id="power-button-action-nothing">Ничего не делать</string>
 
 
     </stringTable>
@@ -293,6 +312,10 @@ Spanned:
       </presentation>
       <presentation id="OrgGnomeDesktopA11YAlwaysShowUniversalAccessStatusMachine-pr">
         <dropdownList noSort="true" defaultItem="0" refId="gnome-state_setter">Меню специальных возможностей:</dropdownList>
+      </presentation>
+      <presentation id="OrgGnomeSettingsDaemonPowerButtonActionMachine-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="power-button-action_setter">Действие кнопки питания:</dropdownList>
+        <checkBox refId="power-button-action_blocker">Блокировать</checkBox>
       </presentation>
     </presentationTable>
   </resources>

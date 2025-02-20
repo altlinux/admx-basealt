@@ -136,6 +136,19 @@ The "Block" option — (available only for the machine policy) prevents the user
 The "Block" option — (available only for the machine policy) prevents the user from changing the setting. Blocking a policy makes it take precedence over a similar policy for the user.
     </string>
 
+    <string id="org-gnome-settings-daemon-power-button-action">Device power button action</string>
+    <string id="org-gnome-settings-daemon-power-button-action_help">The policy allows you to configure the device's behavior after pressing the power button.
+
+Possible values:
+
+- Standby;
+- Turn off;
+- Hibernate;
+- Do nothing.
+
+The "Block" option (available only for the machine policy) prohibits the user from changing the setting. Blocking a policy makes it take precedence over a similar policy for the user.
+    </string>
+
 
     <string id="gnome-time-1-minute">1 Minute</string>
     <string id="gnome-time-2-minute">2 Minutes</string>
@@ -165,6 +178,11 @@ The "Block" option — (available only for the machine policy) prevents the user
 
     <string id="gnome-workspaces-main-display">On the main display</string>
     <string id="gnome-workspaces-all-displays">On all displays</string>
+
+    <string id="power-button-action-suspend">Sleep</string>
+    <string id="power-button-action-interactive">Power off</string>
+    <string id="power-button-action-hibernate">Hibernate</string>
+    <string id="power-button-action-nothing">Do nothing</string>
 
 
     </stringTable>
@@ -293,6 +311,10 @@ The "Block" option — (available only for the machine policy) prevents the user
       </presentation>
       <presentation id="OrgGnomeDesktopA11YAlwaysShowUniversalAccessStatusMachine-pr">
         <dropdownList noSort="true" defaultItem="0" refId="gnome-state_setter">Accessibility menu:</dropdownList>
+      </presentation>
+      <presentation id="OrgGnomeSettingsDaemonPowerButtonActionMachine-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="power-button-action_setter">Power button action:</dropdownList>
+        <checkBox refId="power-button-action_blocker">Block</checkBox>
       </presentation>
     </presentationTable>
   </resources>
