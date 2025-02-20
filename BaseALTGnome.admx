@@ -1075,5 +1075,85 @@
         </enum>
       </elements>
     </policy>
+    <policy name="GnomeScreensaverLockEnabledMachine" class="Machine"
+        displayName="$(string.org-gnome-desktop-screensaver-lock-enabled)"
+        explainText="$(string.org-gnome-desktop-screensaver-lock-enabled_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        presentation="$(presentation.GnomeScreensaverLockEnabledMachine-pr)">
+      <parentCategory ref="system:ALT_LockScreen_Gnome" />
+      <supportedOn ref="system:SUPPORTED_AltP11" />
+      <elements>
+        <enum id="gnome-lock-enabled_setter" valueName="org.gnome.desktop.screensaver.lock-enabled" required="true">
+          <item displayName="$(string.gnome-state-on)">
+            <value>
+              <decimal value="1" />
+            </value>
+          </item>
+          <item displayName="$(string.gnome-state-off)">
+            <value>
+              <decimal value="0" />
+            </value>
+          </item>
+        </enum>
+        <boolean id="gnome-lock-enabled_blocker" key="Software\BaseALT\Policies\GSettingsLocks" valueName="org.gnome.desktop.screensaver.lock-enabled">
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+        </boolean>
+        <enum id="gnome-lock-delay_setter" valueName="org.gnome.desktop.screensaver.lock-delay" required="true">
+          <item displayName="$(string.gnome-screen-off)">
+            <value>
+              <decimal value="0" />
+            </value>
+          </item>
+          <item displayName="$(string.gnome-time-30-seconds)">
+            <value>
+              <decimal value="30" />
+            </value>
+          </item>
+          <item displayName="$(string.gnome-time-1-minute)">
+            <value>
+              <decimal value="60" />
+            </value>
+          </item>
+          <item displayName="$(string.gnome-time-2-minute)">
+            <value>
+              <decimal value="120" />
+            </value>
+          </item>
+          <item displayName="$(string.gnome-time-3-minute)">
+            <value>
+              <decimal value="180" />
+            </value>
+          </item>
+          <item displayName="$(string.gnome-time-5-minute)">
+            <value>
+              <decimal value="300" />
+            </value>
+          </item>
+          <item displayName="$(string.gnome-time-30-minute)">
+            <value>
+              <decimal value="1800" />
+            </value>
+          </item>
+          <item displayName="$(string.gnome-time-60-minute)">
+            <value>
+              <decimal value="3600" />
+            </value>
+          </item>
+        </enum>
+        <boolean id="gnome-lock-delay_blocker" key="Software\BaseALT\Policies\GSettingsLocks" valueName="org.gnome.desktop.screensaver.lock-delay">
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+          </boolean>
+      </elements>
+    </policy>
  </policies>
 </policyDefinitions>

@@ -149,14 +149,28 @@ Spanned:
 Опция «Блокировать» — (доступна только для машинной политики) запрещает изменение настройки пользователем. Блокировка политики делает её приоритетнее аналогичной политики для пользователя.
     </string>
 
+    <string id="org-gnome-desktop-screensaver-lock-enabled">Автоматическая блокировка экрана</string>
+    <string id="org-gnome-desktop-screensaver-lock-enabled_help">Политика позволяет настроить автоматическую блокировку экрана и время задержки автоматической блокировки экрана.
+
+Автоматическая блокировка экрана — блокирует экран после того, как он погаснет.
+
+Задержка автоматической блокировки экрана — время от отключения экрана до блокировки экрана. При выборе состояния «Выключения экрана» — задержка равна нулю и экран блокируется мгновенно.
+
+Опция «Блокировать» — (доступна только для машинной политики) запрещает изменение настройки пользователем. Блокировка политики делает её приоритетнее аналогичной политики для пользователя.
+    </string>
 
 
+
+    <string id="gnome-time-30-seconds">30 секунд</string>
     <string id="gnome-time-1-minute">1 Минута</string>
     <string id="gnome-time-2-minute">2 Минуты</string>
+    <string id="gnome-time-3-minute">3 Минуты</string>
     <string id="gnome-time-5-minute">5 Минут</string>
     <string id="gnome-time-10-minute">10 Минут</string>
     <string id="gnome-time-20-minute">20 Минут</string>
+    <string id="gnome-time-30-minute">30 Минут</string>
     <string id="gnome-time-60-minute">1 Час</string>
+    <string id="gnome-screen-off">Выключение экрана</string>
     <string id="gnome-state-on">Включено</string>
     <string id="gnome-state-off">Отключено</string>
     <string id="gnome-color-scheme-light">Светлая тема</string>
@@ -319,6 +333,12 @@ Spanned:
       </presentation>
       <presentation id="OrgGnomeSettingsDaemonPowerButtonActionUser-pr">
         <dropdownList noSort="true" defaultItem="0" refId="power-button-action_setter">Действие кнопки питания:</dropdownList>
+      </presentation>
+      <presentation id="GnomeScreensaverLockEnabledMachine-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="gnome-lock-enabled_setter">Автоматическия блокировка экрана:</dropdownList>
+        <checkBox refId="gnome-lock-enabled_blocker">Блокировать настройку автоматической блокировки</checkBox>
+        <dropdownList noSort="true" defaultItem="0" refId="gnome-lock-delay_setter">Задержка:</dropdownList>
+        <checkBox refId="gnome-lock-delay_blocker">Блокировать настройку задержки</checkBox>
       </presentation>
     </presentationTable>
   </resources>

@@ -149,13 +149,27 @@ Possible values:
 The "Block" option (available only for the machine policy) prohibits the user from changing the setting. Blocking a policy makes it take precedence over a similar policy for the user.
     </string>
 
+    <string id="org-gnome-desktop-screensaver-lock-enabled">Automatic screen lock</string>
+    <string id="org-gnome-desktop-screensaver-lock-enabled_help">The policy allows you to configure automatic screen lock and the delay time for automatic screen lock.
 
+Automatic screen lock — locks the screen after it goes dark.
+
+Automatic screen lock delay — the time from screen off to screen lock. When selecting the "Screen off" state — the delay is zero and the screen locks instantly.
+
+The "Lock" option — (available only for the machine policy) prevents the user from changing the setting. Locking a policy makes it take precedence over a similar policy for the user.
+    </string>
+
+
+    <string id="gnome-time-30-seconds">30 seconds</string>
     <string id="gnome-time-1-minute">1 Minute</string>
     <string id="gnome-time-2-minute">2 Minutes</string>
+    <string id="gnome-time-3-minute">3 Minutes</string>
     <string id="gnome-time-5-minute">5 Minutes</string>
     <string id="gnome-time-10-minute">10 Minutes</string>
     <string id="gnome-time-20-minute">20 Minutes</string>
+    <string id="gnome-time-30-minute">30 Minutes</string>
     <string id="gnome-time-60-minute">1 Hour</string>
+    <string id="gnome-screen-off">Screen off</string>
     <string id="gnome-state-on">Enabled</string>
     <string id="gnome-state-off">Disabled</string>
     <string id="gnome-color-scheme-light">Light theme</string>
@@ -318,6 +332,12 @@ The "Block" option (available only for the machine policy) prohibits the user fr
       </presentation>
       <presentation id="OrgGnomeSettingsDaemonPowerButtonActionUser-pr">
         <dropdownList noSort="true" defaultItem="0" refId="power-button-action_setter">Power button action:</dropdownList>
+      </presentation>
+      <presentation id="GnomeScreensaverLockEnabledMachine-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="gnome-lock-enabled_setter">Automatic screen lock:</dropdownList>
+        <checkBox refId="gnome-lock-enabled_blocker">Block automatic lock setting</checkBox>
+        <dropdownList noSort="true" defaultItem="0" refId="gnome-lock-delay_setter">Delay:</dropdownList>
+        <checkBox refId="gnome-lock-delay_blocker">Block delay setting</checkBox>
       </presentation>
     </presentationTable>
   </resources>
