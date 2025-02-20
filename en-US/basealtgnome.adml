@@ -165,6 +165,12 @@ The "Lock" option — (available only for the machine policy) prevents the user 
 The "Block" option - (available only for the machine policy) prevents the user from changing the setting. Blocking a policy makes it take precedence over a similar policy for the user.
     </string>
 
+    <string id="org-gnome-desktop-notifications-show-in-lock-screen">Notifications on the lock screen</string>
+    <string id="org-gnome-desktop-notifications-show-in-lock-screen_help">The policy allows you to enable/disable the display of notifications on the lock screen.
+
+The "Block" option (available only for the machine policy) prohibits the user from changing the setting. Blocking a policy makes it take precedence over a similar policy for the user.
+    </string>
+
 
     <string id="gnome-time-0-minute">0 Minutes</string>
     <string id="gnome-time-30-seconds">30 seconds</string>
@@ -360,6 +366,10 @@ The "Block" option - (available only for the machine policy) prevents the user f
       </presentation>
       <presentation id="OrgGnomeDesktopSessionIdleDelayUser-pr">
         <dropdownList noSort="true" defaultItem="0" refId="gnome-idle-delay_setter">Inactivity period:</dropdownList>
+      </presentation>
+      <presentation id="OrgGnomeDesktopNotificationsShowInLockScreenMachine-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="gnome-desktop-notifications_setter">Notifications on lock screen:</dropdownList>
+        <checkBox refId="gnome-desktop-notifications_blocker">Block</checkBox>
       </presentation>
     </presentationTable>
   </resources>

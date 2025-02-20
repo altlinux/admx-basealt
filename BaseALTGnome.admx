@@ -1351,5 +1351,35 @@
         </enum>
       </elements>
     </policy>
+    <policy name="OrgGnomeDesktopNotificationsShowInLockScreenMachine" class="Machine"
+        displayName="$(string.org-gnome-desktop-notifications-show-in-lock-screen)"
+        explainText="$(string.org-gnome-desktop-notifications-show-in-lock-screen_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        presentation="$(presentation.OrgGnomeDesktopNotificationsShowInLockScreenMachine-pr)" >
+      <parentCategory ref="system:ALT_LockScreen_Gnome" />
+      <supportedOn ref="system:SUPPORTED_AltP11" />
+      <elements>
+        <enum id="gnome-desktop-notifications_setter" required="true" valueName="org.gnome.desktop.notifications.show-in-lock-screen">
+          <item displayName="$(string.gnome-state-on)">
+            <value>
+              <decimal value="1" />
+            </value>
+          </item>
+          <item displayName="$(string.gnome-state-off)">
+            <value>
+              <decimal value="0" />
+            </value>
+          </item>
+        </enum>
+        <boolean id="gnome-desktop-notifications_blocker" key="Software\BaseALT\Policies\GSettingsLocks" valueName="org.gnome.desktop.notifications.show-in-lock-screen">
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+        </boolean>
+      </elements>
+    </policy>
  </policies>
 </policyDefinitions>

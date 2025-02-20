@@ -165,6 +165,12 @@ Spanned:
 Опция «Блокировать» — (доступна только для машинной политики) запрещает изменение настройки пользователем. Блокировка политики делает её приоритетнее аналогичной политики для пользователя.
     </string>
 
+    <string id="org-gnome-desktop-notifications-show-in-lock-screen">Уведомления на экране блокировки</string>
+    <string id="org-gnome-desktop-notifications-show-in-lock-screen_help">Политика позволяет включить/отключить показ уведомлений на экране блокировки.
+
+Опция «Блокировать» — (доступна только для машинной политики) запрещает изменение настройки пользователем. Блокировка политики делает её приоритетнее аналогичной политики для пользователя.
+    </string>
+
 
 
     <string id="gnome-time-0-minute">0 Минут</string>
@@ -361,6 +367,10 @@ Spanned:
       </presentation>
       <presentation id="OrgGnomeDesktopSessionIdleDelayUser-pr">
         <dropdownList noSort="true" defaultItem="0" refId="gnome-idle-delay_setter">Период бездействия:</dropdownList>
+      </presentation>
+      <presentation id="OrgGnomeDesktopNotificationsShowInLockScreenMachine-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="gnome-desktop-notifications_setter">Уведомления на экране блокировки:</dropdownList>
+        <checkBox refId="gnome-desktop-notifications_blocker">Блокировать</checkBox>
       </presentation>
     </presentationTable>
   </resources>
