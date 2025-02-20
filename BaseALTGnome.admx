@@ -1289,5 +1289,67 @@
           </boolean>
       </elements>
     </policy>
+    <policy name="OrgGnomeDesktopSessionIdleDelayUser" class="User"
+        displayName="$(string.org-gnome-desktop-session-idle-delay)"
+        explainText="$(string.org-gnome-desktop-session-idle-delay_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        presentation="$(presentation.OrgGnomeDesktopSessionIdleDelayUser-pr)">
+      <parentCategory ref="system:ALT_LockScreen_Gnome" />
+      <supportedOn ref="system:SUPPORTED_AltP11" />
+      <elements>
+        <enum id="gnome-idle-delay_setter" valueName="org.gnome.desktop.session.idle-delay" required="true">
+          <item displayName="$(string.gnome-time-1-minute)">
+            <value>
+              <decimal value="60" />
+            </value>
+          </item>
+          <item displayName="$(string.gnome-time-2-minute)">
+            <value>
+              <decimal value="120" />
+            </value>
+          </item>
+          <item displayName="$(string.gnome-time-3-minute)">
+            <value>
+              <decimal value="180" />
+            </value>
+          </item>
+          <item displayName="$(string.gnome-time-4-minute)">
+            <value>
+              <decimal value="240" />
+            </value>
+          </item>
+          <item displayName="$(string.gnome-time-5-minute)">
+            <value>
+              <decimal value="300" />
+            </value>
+          </item>
+          <item displayName="$(string.gnome-time-8-minute)">
+            <value>
+              <decimal value="480" />
+            </value>
+          </item>
+          <item displayName="$(string.gnome-time-10-minute)">
+            <value>
+              <decimal value="600" />
+            </value>
+          </item>
+          <item displayName="$(string.gnome-time-12-minute)">
+            <value>
+              <decimal value="720" />
+            </value>
+          </item>
+          <item displayName="$(string.gnome-time-15-minute)">
+            <value>
+              <decimal value="900" />
+            </value>
+          </item>
+          <item displayName="$(string.gnome-time-0-minute)">
+            <value>
+              <decimal value="0" />
+            </value>
+          </item>
+        </enum>
+      </elements>
+    </policy>
  </policies>
 </policyDefinitions>

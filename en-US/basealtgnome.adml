@@ -358,6 +358,9 @@ The "Block" option - (available only for the machine policy) prevents the user f
         <dropdownList noSort="true" defaultItem="0" refId="gnome-idle-delay_setter">Inactivity period:</dropdownList>
         <checkBox refId="gnome-idle-delay_blocker">Block</checkBox>
       </presentation>
+      <presentation id="OrgGnomeDesktopSessionIdleDelayUser-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="gnome-idle-delay_setter">Inactivity period:</dropdownList>
+      </presentation>
     </presentationTable>
   </resources>
 </policyDefinitionResources>

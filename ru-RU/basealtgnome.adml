@@ -359,6 +359,9 @@ Spanned:
         <dropdownList noSort="true" defaultItem="0" refId="gnome-idle-delay_setter">Период бездействия:</dropdownList>
         <checkBox refId="gnome-idle-delay_blocker">Блокировать</checkBox>
       </presentation>
+      <presentation id="OrgGnomeDesktopSessionIdleDelayUser-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="gnome-idle-delay_setter">Период бездействия:</dropdownList>
+      </presentation>
     </presentationTable>
   </resources>
 </policyDefinitionResources>
