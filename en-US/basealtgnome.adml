@@ -371,6 +371,9 @@ The "Block" option (available only for the machine policy) prohibits the user fr
         <dropdownList noSort="true" defaultItem="0" refId="gnome-desktop-notifications_setter">Notifications on lock screen:</dropdownList>
         <checkBox refId="gnome-desktop-notifications_blocker">Block</checkBox>
       </presentation>
+      <presentation id="OrgGnomeDesktopNotificationsShowInLockScreenUser-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="gnome-desktop-notifications_setter">Notifications on lock screen:</dropdownList>
+      </presentation>
     </presentationTable>
   </resources>
 </policyDefinitionResources>

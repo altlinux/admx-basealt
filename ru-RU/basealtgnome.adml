@@ -372,6 +372,9 @@ Spanned:
         <dropdownList noSort="true" defaultItem="0" refId="gnome-desktop-notifications_setter">Уведомления на экране блокировки:</dropdownList>
         <checkBox refId="gnome-desktop-notifications_blocker">Блокировать</checkBox>
       </presentation>
+      <presentation id="OrgGnomeDesktopNotificationsShowInLockScreenUser-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="gnome-desktop-notifications_setter">Уведомления на экране блокировки:</dropdownList>
+      </presentation>
     </presentationTable>
   </resources>
 </policyDefinitionResources>
