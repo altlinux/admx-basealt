@@ -48,9 +48,9 @@
       <string id="ALT_Databases_Help">Configuration of database settings.</string>
       <string id="ALT_LAPS">LAPS</string>
       <string id="ALT_LAPS_Help">LAPS settings.</string>
-
       <string id="LinuxComponents">Linux Components</string>
       <string id="LinuxComponents_Help">Contains settings for Kernel components.</string>
+
       <string id="ALT_Settings_Gnome">Gnome Settings</string>
       <string id="ALT_Settings_Gnome_Help">Gnome Settings.</string>
       <string id="ALT_Apperance_Gnome">Appearance</string>
@@ -63,6 +63,9 @@
       <string id="ALT_Multitasking_Gnome_Help">Manage multitasking.</string>
       <string id="ALT_Accessibility_Gnome">Accessibility</string>
       <string id="ALT_Accessibility_Gnome_Help">Manage accessibility.</string>
+      <string id="ALT_LockScreen_Gnome">Lock Screen</string>
+      <string id="ALT_LockScreen_Gnome_Help">Manage screen lock settings.</string>
+
       <string id="ALT_Settings_KDE">KDE settings</string>
       <string id="ALT_Settings_KDE_Help">KDE settings.</string>
       <string id="ALT_PowerManagement_KDE">Power management</string>
@@ -75,6 +78,7 @@
       <string id="ALT_Devices_KDE_Help">Input devices.</string>
       <string id="ALT_Environment_KDE">Work environment behavior</string>
       <string id="ALT_Environment_KDE_Help">Customizing the behavior of the KDE Plasma environment.</string>
+
       <string id="ALT_Settings_Mate">Mate settings</string>
       <string id="ALT_Settings_Mate_Help">Mate settings.</string>
       <string id="ALT_Background_Mate">Desktop background</string>

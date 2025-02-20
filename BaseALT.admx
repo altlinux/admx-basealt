@@ -135,6 +135,9 @@
     <category name="ALT_Accessibility_Gnome" displayName="$(string.ALT_Accessibility_Gnome)" explainText="$(string.ALT_Accessibility_Gnome_Help)">
       <parentCategory ref="ALT_Settings_Gnome" />
     </category>
+    <category name="ALT_LockScreen_Gnome" displayName="$(string.ALT_LockScreen_Gnome)" explainText="$(string.ALT_LockScreen_Gnome_Help)">
+      <parentCategory ref="ALT_Settings_Gnome" />
+    </category>
     <category name="ALT_Network" displayName="$(string.ALT_Network)" explainText="$(string.ALT_Network_Help)">
       <parentCategory ref="ALT_System" />
     </category>
