@@ -159,14 +159,25 @@ Spanned:
 Опция «Блокировать» — (доступна только для машинной политики) запрещает изменение настройки пользователем. Блокировка политики делает её приоритетнее аналогичной политики для пользователя.
     </string>
 
+    <string id="org-gnome-desktop-session-idle-delay">Задержка выключения экрана</string>
+    <string id="org-gnome-desktop-session-idle-delay_help">Политика позволяет настроить период бездействия (в минутах) до отключения экрана.
+
+Опция «Блокировать» — (доступна только для машинной политики) запрещает изменение настройки пользователем. Блокировка политики делает её приоритетнее аналогичной политики для пользователя.
+    </string>
 
 
+
+    <string id="gnome-time-0-minute">0 Минут</string>
     <string id="gnome-time-30-seconds">30 секунд</string>
     <string id="gnome-time-1-minute">1 Минута</string>
     <string id="gnome-time-2-minute">2 Минуты</string>
     <string id="gnome-time-3-minute">3 Минуты</string>
+    <string id="gnome-time-4-minute">4 Минуты</string>
     <string id="gnome-time-5-minute">5 Минут</string>
+    <string id="gnome-time-8-minute">8 Минут</string>
     <string id="gnome-time-10-minute">10 Минут</string>
+    <string id="gnome-time-12-minute">12 Минут</string>
+    <string id="gnome-time-15-minute">15 Минут</string>
     <string id="gnome-time-20-minute">20 Минут</string>
     <string id="gnome-time-30-minute">30 Минут</string>
     <string id="gnome-time-60-minute">1 Час</string>
@@ -343,6 +354,10 @@ Spanned:
       <presentation id="GnomeScreensaverLockEnabledUser-pr">
         <dropdownList noSort="true" defaultItem="0" refId="gnome-lock-enabled_setter">Автоматическия блокировка экрана:</dropdownList>
         <dropdownList noSort="true" defaultItem="0" refId="gnome-lock-delay_setter">Задержка:</dropdownList>
+      </presentation>
+      <presentation id="OrgGnomeDesktopSessionIdleDelayMachine-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="gnome-idle-delay_setter">Период бездействия:</dropdownList>
+        <checkBox refId="gnome-idle-delay_blocker">Блокировать</checkBox>
       </presentation>
     </presentationTable>
   </resources>

@@ -159,13 +159,24 @@ Automatic screen lock delay — the time from screen off to screen lock. When se
 The "Lock" option — (available only for the machine policy) prevents the user from changing the setting. Locking a policy makes it take precedence over a similar policy for the user.
     </string>
 
+    <string id="org-gnome-desktop-session-idle-delay">Screen off delay</string>
+    <string id="org-gnome-desktop-session-idle-delay_help">The policy allows you to configure the period of inactivity (in minutes) before the screen turns off.
 
+The "Block" option - (available only for the machine policy) prevents the user from changing the setting. Blocking a policy makes it take precedence over a similar policy for the user.
+    </string>
+
+
+    <string id="gnome-time-0-minute">0 Minutes</string>
     <string id="gnome-time-30-seconds">30 seconds</string>
     <string id="gnome-time-1-minute">1 Minute</string>
     <string id="gnome-time-2-minute">2 Minutes</string>
     <string id="gnome-time-3-minute">3 Minutes</string>
+    <string id="gnome-time-4-minute">4 Minutes</string>
     <string id="gnome-time-5-minute">5 Minutes</string>
+    <string id="gnome-time-8-minute">8 Minutes</string>
     <string id="gnome-time-10-minute">10 Minutes</string>
+    <string id="gnome-time-12-minute">12 Minutes</string>
+    <string id="gnome-time-15-minute">15 Minutes</string>
     <string id="gnome-time-20-minute">20 Minutes</string>
     <string id="gnome-time-30-minute">30 Minutes</string>
     <string id="gnome-time-60-minute">1 Hour</string>
@@ -342,6 +353,10 @@ The "Lock" option — (available only for the machine policy) prevents the user 
       <presentation id="GnomeScreensaverLockEnabledUser-pr">
         <dropdownList noSort="true" defaultItem="0" refId="gnome-lock-enabled_setter">Automatic screen lock:</dropdownList>
         <dropdownList noSort="true" defaultItem="0" refId="gnome-lock-delay_setter">Delay:</dropdownList>
+      </presentation>
+      <presentation id="OrgGnomeDesktopSessionIdleDelayMachine-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="gnome-idle-delay_setter">Inactivity period:</dropdownList>
+        <checkBox refId="gnome-idle-delay_blocker">Block</checkBox>
       </presentation>
     </presentationTable>
   </resources>
