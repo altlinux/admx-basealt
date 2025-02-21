@@ -1458,5 +1458,44 @@
         </boolean>
       </elements>
     </policy>
+    <policy name="OrgGnomeDesktopFocusModeUser" class="User"
+        displayName="$(string.org-gnome-desktop-wm-preferences-focus-mode)"
+        explainText="$(string.org-gnome-desktop-wm-preferences-focus-mode_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        presentation="$(presentation.OrgGnomeDesktopFocusModeUser-pr)" >
+      <parentCategory ref="system:ALT_Enviroment_Gnome" />
+      <supportedOn ref="system:SUPPORTED_AltP11" />
+      <elements>
+        <enum id="gnome-focus-mode_setter" required="true" valueName="org.gnome.desktop.wm.preferences.focus-mode">
+          <item displayName="$(string.gnome-focus-mode-click)">
+            <value>
+              <string>click</string>
+            </value>
+          </item>
+          <item displayName="$(string.gnome-focus-mode-sloppy)">
+            <value>
+              <string>sloppy</string>
+            </value>
+          </item>
+          <item displayName="$(string.gnome-focus-mode-mouse)">
+            <value>
+              <string>mouse</string>
+            </value>
+          </item>
+        </enum>
+        <enum id="gnome-auto-reise_setter" required="true" valueName="org.gnome.desktop.wm.preferences.auto-raise">
+          <item displayName="$(string.gnome-state-on)">
+            <value>
+              <decimal value="1" />
+            </value>
+          </item>
+          <item displayName="$(string.gnome-state-off)">
+            <value>
+              <decimal value="0" />
+            </value>
+          </item>
+        </enum>
+      </elements>
+    </policy>
  </policies>
 </policyDefinitions>

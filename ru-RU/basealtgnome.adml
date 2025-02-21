@@ -401,6 +401,10 @@ Cрабатывает при наведении — окна становятс�
         <dropdownList noSort="true" defaultItem="0" refId="gnome-auto-reise_setter">Поднимать окно над другими при установке фокуса:</dropdownList>
         <checkBox refId="gnome-auto-reise_blocker">Блокировать настройку поднятия окна</checkBox>
       </presentation>
+      <presentation id="OrgGnomeDesktopFocusModeUser-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="gnome-focus-mode_setter">Фокус окна:</dropdownList>
+        <dropdownList noSort="true" defaultItem="0" refId="gnome-auto-reise_setter">Поднимать окно над другими при установке фокуса:</dropdownList>
+      </presentation>
     </presentationTable>
   </resources>
 </policyDefinitionResources>

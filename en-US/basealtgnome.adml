@@ -400,6 +400,10 @@ The "Block" option (available only for the machine policy) prevents the user fro
         <dropdownList noSort="true" defaultItem="0" refId="gnome-auto-reise_setter">Raise window above others when setting focus:</dropdownList>
         <checkBox refId="gnome-auto-reise_blocker">Block window raise setting</checkBox>
       </presentation>
+      <presentation id="OrgGnomeDesktopFocusModeMachine-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="gnome-focus-mode_setter">Window focus:</dropdownList>
+        <dropdownList noSort="true" defaultItem="0" refId="gnome-auto-reise_setter">Raise window above others when setting focus:</dropdownList>
+      </presentation>
     </presentationTable>
   </resources>
 </policyDefinitionResources>
