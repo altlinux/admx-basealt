@@ -171,6 +171,22 @@ The "Block" option - (available only for the machine policy) prevents the user f
 The "Block" option (available only for the machine policy) prohibits the user from changing the setting. Blocking a policy makes it take precedence over a similar policy for the user.
     </string>
 
+    <string id="org-gnome-desktop-wm-preferences-focus-mode">Window Focus</string>
+    <string id="org-gnome-desktop-wm-preferences-focus-mode_help">This policy allows you to choose how to switch focus between windows.
+
+Available options:
+
+Triggered on click — windows become active when clicked;
+
+Triggered on hover — windows become active when the cursor moves over them. Hovering over the desktop does not change the activity;
+
+Focus follows mouse — windows become active when moved over them. Hovering over the desktop deactivates the previous window.
+
+The "Raise window above others when focus is set" option is only effective if the focus mode is set to "Triggered on hover" or "Focus follows mouse".
+
+The "Block" option (available only for the machine policy) prevents the user from changing the setting. Blocking a policy makes it take precedence over a similar policy for the user.
+    </string>
+
 
     <string id="gnome-time-0-minute">0 Minutes</string>
     <string id="gnome-time-30-seconds">30 seconds</string>
@@ -214,6 +230,10 @@ The "Block" option (available only for the machine policy) prohibits the user fr
     <string id="power-button-action-interactive">Power off</string>
     <string id="power-button-action-hibernate">Hibernate</string>
     <string id="power-button-action-nothing">Do nothing</string>
+
+    <string id="gnome-focus-mode-click">Fires on click</string>
+    <string id="gnome-focus-mode-sloppy">Fires on hover</string>
+    <string id="gnome-focus-mode-mouse">Focus follows mouse</string>
 
 
     </stringTable>
@@ -340,7 +360,7 @@ The "Block" option (available only for the machine policy) prohibits the user fr
         <dropdownList noSort="true" defaultItem="0" refId="gnome-state_setter">Accessibility menu:</dropdownList>
         <checkBox refId="gnome-state_blocker">Block</checkBox>
       </presentation>
-      <presentation id="OrgGnomeDesktopA11YAlwaysShowUniversalAccessStatusMachine-pr">
+      <presentation id="OrgGnomeDesktopA11YAlwaysShowUniversalAccessStatusUser-pr">
         <dropdownList noSort="true" defaultItem="0" refId="gnome-state_setter">Accessibility menu:</dropdownList>
       </presentation>
       <presentation id="OrgGnomeSettingsDaemonPowerButtonActionMachine-pr">
@@ -373,6 +393,12 @@ The "Block" option (available only for the machine policy) prohibits the user fr
       </presentation>
       <presentation id="OrgGnomeDesktopNotificationsShowInLockScreenUser-pr">
         <dropdownList noSort="true" defaultItem="0" refId="gnome-desktop-notifications_setter">Notifications on lock screen:</dropdownList>
+      </presentation>
+      <presentation id="OrgGnomeDesktopFocusModeMachine-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="gnome-focus-mode_setter">Window focus:</dropdownList>
+        <checkBox refId="gnome-focus-mode_blocker">Block window focus setting</checkBox>
+        <dropdownList noSort="true" defaultItem="0" refId="gnome-auto-reise_setter">Raise window above others when setting focus:</dropdownList>
+        <checkBox refId="gnome-auto-reise_blocker">Block window raise setting</checkBox>
       </presentation>
     </presentationTable>
   </resources>

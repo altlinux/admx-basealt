@@ -171,6 +171,22 @@ Spanned:
 Опция «Блокировать» — (доступна только для машинной политики) запрещает изменение настройки пользователем. Блокировка политики делает её приоритетнее аналогичной политики для пользователя.
     </string>
 
+    <string id="org-gnome-desktop-wm-preferences-focus-mode">Фокус окна</string>
+    <string id="org-gnome-desktop-wm-preferences-focus-mode_help">Политика позволяет выбрать способ переключения фокуса между окнами.
+
+Допустимые параметры:
+
+Срабатывает при нажатии — окна становятся активными при нажатии;
+
+Cрабатывает при наведении — окна становятся активными при перемещении курсора над ними. Наведение на рабочий стол не меняет активность;
+
+Фокус следует за мышью — окна становятся активными при перемешении над ними. Наведение на рабочий стол деактивирует предыдущее окно.
+
+Параметр «Поднимать окно над другими при установлении фокуса» действует только в случае выбора режима фокусировки «Срабатывает при наведении» или «Фокус следует за мышью».
+
+Опция «Блокировать» — (доступна только для машинной политики) запрещает изменение настройки пользователем. Блокировка политики делает её приоритетнее аналогичной политики для пользователя.
+    </string>
+
 
 
     <string id="gnome-time-0-minute">0 Минут</string>
@@ -215,6 +231,10 @@ Spanned:
     <string id="power-button-action-interactive">Выключить</string>
     <string id="power-button-action-hibernate">Режим гибернации</string>
     <string id="power-button-action-nothing">Ничего не делать</string>
+
+    <string id="gnome-focus-mode-click">Срабатывает при нажатии</string>
+    <string id="gnome-focus-mode-sloppy">Срабатывает при наведении</string>
+    <string id="gnome-focus-mode-mouse">Фокус следует за мышью</string>
 
 
     </stringTable>
@@ -341,7 +361,7 @@ Spanned:
         <dropdownList noSort="true" defaultItem="0" refId="gnome-state_setter">Меню специальных возможностей:</dropdownList>
         <checkBox refId="gnome-state_blocker">Блокировать</checkBox>
       </presentation>
-      <presentation id="OrgGnomeDesktopA11YAlwaysShowUniversalAccessStatusMachine-pr">
+      <presentation id="OrgGnomeDesktopA11YAlwaysShowUniversalAccessStatusUser-pr">
         <dropdownList noSort="true" defaultItem="0" refId="gnome-state_setter">Меню специальных возможностей:</dropdownList>
       </presentation>
       <presentation id="OrgGnomeSettingsDaemonPowerButtonActionMachine-pr">
@@ -374,6 +394,12 @@ Spanned:
       </presentation>
       <presentation id="OrgGnomeDesktopNotificationsShowInLockScreenUser-pr">
         <dropdownList noSort="true" defaultItem="0" refId="gnome-desktop-notifications_setter">Уведомления на экране блокировки:</dropdownList>
+      </presentation>
+      <presentation id="OrgGnomeDesktopFocusModeMachine-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="gnome-focus-mode_setter">Фокус окна:</dropdownList>
+        <checkBox refId="gnome-focus-mode_blocker">Блокировать настройку фокуса окна</checkBox>
+        <dropdownList noSort="true" defaultItem="0" refId="gnome-auto-reise_setter">Поднимать окно над другими при установке фокуса:</dropdownList>
+        <checkBox refId="gnome-auto-reise_blocker">Блокировать настройку поднятия окна</checkBox>
       </presentation>
     </presentationTable>
   </resources>
