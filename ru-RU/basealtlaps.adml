@@ -59,7 +59,7 @@
       <string id="LAPS_ADPasswordEncryptionPrincipal">Расшифрование паролей</string>
       <string id="LAPS_ADPasswordEncryptionPrincipal_Help">Политика позволяет задать пользователя или группу, которым разрешено расшифровывать зашифрованные пароли.
 
-Настройка политики не действует, если не включено шифрование паролкей.
+Настройка политики не действует, если не включено шифрование паролей.
 
 Если политика включена, зашифрованные пароли могут быть расшифрованы указанной группой или пользователем.
 
@@ -76,7 +76,7 @@
 - lapsadmins@contoso.com
       </string>
       <string id="LAPS_ADEncryptedPasswordHistorySize">Размер журнала зашифрованных паролей</string>
-      <string id="LAPS_ADEncryptedPasswordHistorySize_Help">Политика позволяет настроить размер указать количество зашифрованных паролей, хранящихся Active Directory.
+      <string id="LAPS_ADEncryptedPasswordHistorySize_Help">Политика позволяет настроить размер указать количество зашифрованных паролей, хранящихся в Active Directory.
 
 Настройка этого параметра не действует, если:
 
@@ -91,8 +91,8 @@
 Если политика отключена или не настроена, в Active Directory не будет храниться ни одного старого пароля.
       </string>
       
-      <string id="LAPS_BackupDirectory">Резервное копирование паролей</string>
-      <string id="LAPS_BackupDirectory_Help">Политика позволяет указать способ резервного копирования пароля локальной учётной записи администратора.
+      <string id="LAPS_BackupDirectory">Каталог резервного копирование паролей</string>
+      <string id="LAPS_BackupDirectory_Help">Политика позволяет указать место резервного копирования пароля локальной учётной записи администратора.
 
 Допустимые параметры:
 
@@ -179,7 +179,7 @@ Active Directory — резервное копирование пароля в A
       </presentation>
       <presentation id="LAPS_PostAuthenticationActions">
         <decimalTextBox refId="LAPS_PostAuthenticationResetDelay_INT" defaultValue="24">Льготный период (часы):</decimalTextBox>
-        <dropdownList refId="LAPS_PostAuthenticationActions" defaultItem="3">Действие:</dropdownList>
+        <dropdownList refId="LAPS_PostAuthenticationActions" defaultItem="2">Действие:</dropdownList>
       </presentation>
     </presentationTable>
   </resources>

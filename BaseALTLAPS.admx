@@ -120,7 +120,6 @@
         <decimal value="0" />
       </disabledValue>
     </policy>
-
     <policy name="LAPS_PostAuthenticationActions" class="Machine" displayName="$(string.LAPS_PostAuthenticationActions)"
         explainText="$(string.LAPS_PostAuthenticationActions_Help)"
         key="Software\BaseALT\Policies\Laps"
@@ -153,7 +152,5 @@
         </enum>
       </elements>
     </policy>
-
-
   </policies>
 </policyDefinitions>

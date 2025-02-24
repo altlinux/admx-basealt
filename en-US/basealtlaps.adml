@@ -176,7 +176,7 @@ By default, if policy is not configured, "Reset password and logout" occurs afte
         </presentation>
         <presentation id="LAPS_PostAuthenticationActions">
             <decimalTextBox refId="LAPS_PostAuthenticationResetDelay_INT" defaultValue="24">Grace Period (hours):</decimalTextBox>
-            <dropdownList refId="LAPS_PostAuthenticationActions" defaultItem="3">Action:</dropdownList>
+            <dropdownList refId="LAPS_PostAuthenticationActions" defaultItem="2">Action:</dropdownList>
         </presentation>
     </presentationTable>
     </resources>

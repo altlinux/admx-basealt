@@ -450,6 +450,16 @@
         <decimal value="0"/>
       </disabledValue>
     </policy>
+    <policy class="Machine" displayName="$(string.gpupdate_laps_applier)" explainText="$(string.gpupdate_laps_applier_help)" key="Software\BaseALT\Policies\GPUpdate" name="LapsApplier" valueName="LapsApplier">
+      <parentCategory ref="ALT_GPUpdateAppliers"/>
+      <supportedOn ref="system:SUPPORTED_AltP10"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
     <policy class="Machine" displayName="$(string.gpupdate_cifsacl_disable)"
       explainText="$(string.gpupdate_cifsacl_disable_help)"
       key="Software\BaseALT\Policies\GPUpdate"

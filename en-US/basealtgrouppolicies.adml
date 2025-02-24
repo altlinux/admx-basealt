@@ -146,12 +146,12 @@ Disabled (default) - the cifsacl argument is used when mounting.
 Enabled - the cifsacl argument is disabled when mounting.
 
       </string>
-      <string id="gpupdate_shortcuts_merge">Distribute machine policy shortcuts to users</string>
-      <string id="gpupdate_shortcuts_merge_help">The policy enables the display of shortcuts configured in the machine group policy to the logged-on user.
+      <string id="gpupdate_shortcuts_merge">Use machine policy shortcuts for the user</string>
+      <string id="gpupdate_shortcuts_merge_help">Enabling this policy allows you to use machine policy shortcut settings for the user.
 
-Enabled - shortcuts configured in the machine group policy are displayed to users.
+Enabled - Shortcuts configured in the machine group policy are displayed to users.
 
-Disabled (default) - shortcuts configured in the machine group policy are not displayed to the user.
+Disabled/Not configured - Shortcuts configured in the machine group policy will be added to the /etc/skel directory and will only be applied to new users when they are created.
 
       </string>
       <string id="gpupdate_drive_maps_home_user">Mapping user's network drives in the home directory</string>
@@ -208,6 +208,10 @@ Example: If the suffix ".py" is specified in the suffix list, and the path "/usr
       </string>
       <string id="gpupdate_autofs_timer_user">Time until network directories are unmounted</string>
       <string id="gpupdate_autofs_timer_user_help">The policy allows you to set the time (in seconds) before unmounting network directories mounted using group policies.
+
+      </string>
+      <string id="gpupdate_laps_applier">Configuring LAPS</string>
+      <string id="gpupdate_laps_applier_help">The policy enables a mechanism for managing local administrator passwords.
 
       </string>
       <string id="gpupdate_drive_maps_name">Name of the machine's network drive mount directory</string>
