@@ -414,6 +414,9 @@ Cрабатывает при наведении — окна становятс�
         <dropdownList noSort="true" defaultItem="0" refId="gnome-state_setter">Высокая контрастность:</dropdownList>
         <checkBox refId="gnome-state_blocker">Блокировать</checkBox>
       </presentation>
+      <presentation id="OrgGnomeDesktopA11YInterfaceHighContrastMachine-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="gnome-state_setter">Высокая контрастность:</dropdownList>
+      </presentation>
     </presentationTable>
   </resources>
 </policyDefinitionResources>

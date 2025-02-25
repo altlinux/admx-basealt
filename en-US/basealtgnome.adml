@@ -414,6 +414,9 @@ The "Lock" option (available only for the machine policy) prevents the user from
         <dropdownList noSort="true" defaultItem="0" refId="gnome-state_setter">High Contrast:</dropdownList>
         <checkBox refId="gnome-state_blocker">Block</checkBox>
       </presentation>
+      <presentation id="OrgGnomeDesktopA11YInterfaceHighContrastMachine-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="gnome-state_setter">High Contrast:</dropdownList>
+      </presentation>
     </presentationTable>
   </resources>
 </policyDefinitionResources>
