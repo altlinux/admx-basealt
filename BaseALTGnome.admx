@@ -1497,5 +1497,35 @@
         </enum>
       </elements>
     </policy>
+    <policy name="OrgGnomeDesktopA11YInterfaceHighContrastMachine" class="Machine"
+        displayName="$(string.org-gnome-desktop-a11y-interface-high-contrast)"
+        explainText="$(string.org-gnome-desktop-a11y-interface-high-contrast_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        presentation="$(presentation.OrgGnomeDesktopA11YInterfaceHighContrastMachine-pr)" >
+      <parentCategory ref="system:ALT_Vision_Gnome" />
+      <supportedOn ref="system:SUPPORTED_AltP11" />
+      <elements>
+        <enum id="gnome-state_setter" required="true" valueName="org.gnome.desktop.a11y.interface.high-contrast">
+          <item displayName="$(string.gnome-state-on)">
+            <value>
+              <decimal value="1" />
+            </value>
+          </item>
+          <item displayName="$(string.gnome-state-off)">
+            <value>
+              <decimal value="0" />
+            </value>
+          </item>
+        </enum>
+        <boolean id="gnome-state_blocker" key="Software\BaseALT\Policies\GSettingsLocks" valueName="org.gnome.desktop.notifications.show-in-lock-screen">
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+        </boolean>
+      </elements>
+    </policy>
  </policies>
 </policyDefinitions>

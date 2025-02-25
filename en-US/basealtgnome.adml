@@ -187,6 +187,12 @@ The "Raise window above others when focus is set" option is only effective if th
 The "Block" option (available only for the machine policy) prevents the user from changing the setting. Blocking a policy makes it take precedence over a similar policy for the user.
     </string>
 
+    <string id="org-gnome-desktop-a11y-interface-high-contrast">High Contrast</string>
+    <string id="org-gnome-desktop-a11y-interface-high-contrast_help">The policy allows you to increase the color contrast of the foreground and background interface elements.
+
+The "Lock" option (available only for the machine policy) prevents the user from changing the setting. Locking a policy makes it take precedence over a similar policy for the user.
+    </string>
+
 
     <string id="gnome-time-0-minute">0 Minutes</string>
     <string id="gnome-time-30-seconds">30 seconds</string>
@@ -403,6 +409,10 @@ The "Block" option (available only for the machine policy) prevents the user fro
       <presentation id="OrgGnomeDesktopFocusModeMachine-pr">
         <dropdownList noSort="true" defaultItem="0" refId="gnome-focus-mode_setter">Window focus:</dropdownList>
         <dropdownList noSort="true" defaultItem="0" refId="gnome-auto-reise_setter">Raise window above others when setting focus:</dropdownList>
+      </presentation>
+      <presentation id="OrgGnomeDesktopA11YInterfaceHighContrastMachine-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="gnome-state_setter">High Contrast:</dropdownList>
+        <checkBox refId="gnome-state_blocker">Block</checkBox>
       </presentation>
     </presentationTable>
   </resources>
