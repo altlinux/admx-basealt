@@ -448,6 +448,9 @@ Cрабатывает при наведении — окна становятс�
         <dropdownList noSort="true" defaultItem="0" refId="gnome-cursor-size_setter">Размер курсора:</dropdownList>
         <checkBox refId="gnome-cursor-size_blocker">Блокировать</checkBox>
       </presentation>
+      <presentation id="OrgGnomeDesktopInterfaceCursorSizeUser-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="gnome-cursor-size_setter">Размер курсора:</dropdownList>
+      </presentation>
     </presentationTable>
   </resources>
 </policyDefinitionResources>

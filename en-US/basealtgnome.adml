@@ -448,6 +448,9 @@ The "Lock" option (available only for the machine policy) prevents the user from
         <dropdownList noSort="true" defaultItem="0" refId="gnome-cursor-size_setter">Cursor size:</dropdownList>
         <checkBox refId="gnome-cursor-size_blocker">Block</checkBox>
       </presentation>
+      <presentation id="OrgGnomeDesktopInterfaceCursorSizeUser-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="gnome-cursor-size_setter">Cursor size:</dropdownList>
+      </presentation>
     </presentationTable>
   </resources>
 </policyDefinitionResources>
