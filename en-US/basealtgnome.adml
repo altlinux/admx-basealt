@@ -199,6 +199,14 @@ The "Block" option (available only for the machine policy) prevents the user fro
 The "Block" option (available only for the machine policy) prevents the user from changing the setting. Locking a policy makes it take precedence over a similar policy for the user.
     </string>
 
+    <string id="org-gnome-desktop-interface-cursor-size">Cursor size</string>
+    <string id="org-gnome-desktop-interface-cursor-size_help">The policy allows you to set the cursor size in pixels.
+
+By default, the cursor size is 24 pixels.
+
+The "Lock" option (available only for the machine policy) prevents the user from changing the setting. Locking a policy makes it take precedence over a similar policy for the user.
+    </string>
+
 
     <string id="gnome-time-0-minute">0 Minutes</string>
     <string id="gnome-time-30-seconds">30 seconds</string>
@@ -246,6 +254,12 @@ The "Block" option (available only for the machine policy) prevents the user fro
     <string id="gnome-focus-mode-click">Fires on click</string>
     <string id="gnome-focus-mode-sloppy">Fires on hover</string>
     <string id="gnome-focus-mode-mouse">Focus follows mouse</string>
+
+    <string id="gnome-cursor-24">24px</string>
+    <string id="gnome-cursor-32">32px</string>
+    <string id="gnome-cursor-48">48px</string>
+    <string id="gnome-cursor-64">64px</string>
+    <string id="gnome-cursor-96">96px</string>
 
 
     </stringTable>
@@ -429,6 +443,10 @@ The "Block" option (available only for the machine policy) prevents the user fro
       </presentation>
       <presentation id="OrgGnomeDesktopA11YInterfaceShowStatusShapesUser-pr">
         <dropdownList noSort="true" defaultItem="0" refId="gnome-state_setter">Using shapes:</dropdownList>
+      </presentation>
+      <presentation id="OrgGnomeDesktopInterfaceCursorSizeMachine-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="gnome-cursor-size_setter">Cursor size:</dropdownList>
+        <checkBox refId="gnome-cursor-size_blocker">Block</checkBox>
       </presentation>
     </presentationTable>
   </resources>

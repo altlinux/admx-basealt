@@ -199,6 +199,14 @@ Cрабатывает при наведении — окна становятс�
 Опция «Блокировать» — (доступна только для машинной политики) запрещает изменение настройки пользователем. Блокировка политики делает её приоритетнее аналогичной политики для пользователя.
     </string>
 
+    <string id="org-gnome-desktop-interface-cursor-size">Размер курсора</string>
+    <string id="org-gnome-desktop-interface-cursor-size_help">Политика позволяет установить размер курсора в пикселях.
+
+По умолчанию размер курсора равен 24 пикселям.
+
+Опция «Блокировать» — (доступна только для машинной политики) запрещает изменение настройки пользователем. Блокировка политики делает её приоритетнее аналогичной политики для пользователя.
+    </string>
+
 
     <string id="gnome-time-0-minute">0 Минут</string>
     <string id="gnome-time-30-seconds">30 секунд</string>
@@ -246,6 +254,12 @@ Cрабатывает при наведении — окна становятс�
     <string id="gnome-focus-mode-click">Срабатывает при нажатии</string>
     <string id="gnome-focus-mode-sloppy">Срабатывает при наведении</string>
     <string id="gnome-focus-mode-mouse">Фокус следует за мышью</string>
+
+    <string id="gnome-cursor-24">24px</string>
+    <string id="gnome-cursor-32">32px</string>
+    <string id="gnome-cursor-48">48px</string>
+    <string id="gnome-cursor-64">64px</string>
+    <string id="gnome-cursor-96">96px</string>
 
 
     </stringTable>
@@ -429,6 +443,10 @@ Cрабатывает при наведении — окна становятс�
       </presentation>
       <presentation id="OrgGnomeDesktopA11YInterfaceShowStatusShapesUser-pr">
         <dropdownList noSort="true" defaultItem="0" refId="gnome-state_setter">Использование фигур:</dropdownList>
+      </presentation>
+      <presentation id="OrgGnomeDesktopInterfaceCursorSizeMachine-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="gnome-cursor-size_setter">Размер курсора:</dropdownList>
+        <checkBox refId="gnome-cursor-size_blocker">Блокировать</checkBox>
       </presentation>
     </presentationTable>
   </resources>

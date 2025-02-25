@@ -1601,5 +1601,50 @@
         </enum>
       </elements>
     </policy>
+    <policy name="OrgGnomeDesktopInterfaceCursorSizeMachine" class="Machine"
+        displayName="$(string.org-gnome-desktop-interface-cursor-size)"
+        explainText="$(string.org-gnome-desktop-interface-cursor-size_help)"
+        key="Software\BaseALT\Policies\gsettings"
+        presentation="$(presentation.OrgGnomeDesktopInterfaceCursorSizeMachine-pr)">
+      <parentCategory ref="system:ALT_Vision_Gnome" />
+      <supportedOn ref="system:SUPPORTED_AltP11" />
+      <elements>
+        <enum id="gnome-cursor-size_setter" valueName="org.gnome.desktop.interface.cursor-size" required="true">
+          <item displayName="$(string.gnome-cursor-24)">
+            <value>
+              <decimal value="24" />
+            </value>
+          </item>
+          <item displayName="$(string.gnome-cursor-32)">
+            <value>
+              <decimal value="32" />
+            </value>
+          </item>
+          <item displayName="$(string.gnome-cursor-48)">
+            <value>
+              <decimal value="48" />
+            </value>
+          </item>
+          <item displayName="$(string.gnome-cursor-64)">
+            <value>
+              <decimal value="64" />
+            </value>
+          </item>
+          <item displayName="$(string.gnome-cursor-96)">
+            <value>
+              <decimal value="96" />
+            </value>
+          </item>
+        </enum>
+        <boolean id="gnome-cursor-size_blocker" key="Software\BaseALT\Policies\GSettingsLocks" valueName="org.gnome.desktop.interface.cursor-size">
+          <trueValue>
+            <decimal value="1" />
+          </trueValue>
+          <falseValue>
+            <decimal value="0" />
+          </falseValue>
+        </boolean>
+      </elements>
+    </policy>
  </policies>
 </policyDefinitions>
