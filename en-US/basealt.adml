@@ -65,6 +65,8 @@
       <string id="ALT_Accessibility_Gnome_Help">Manage accessibility.</string>
       <string id="ALT_LockScreen_Gnome">Lock Screen</string>
       <string id="ALT_LockScreen_Gnome_Help">Manage screen lock settings.</string>
+      <string id="ALT_Vision_Gnome">Vision</string>
+      <string id="ALT_Vision_Gnome_Help">Manage accessibility settings designed to improve the visual experience for users with visual impairments.</string>
 
       <string id="ALT_Settings_KDE">KDE settings</string>
       <string id="ALT_Settings_KDE_Help">KDE settings.</string>

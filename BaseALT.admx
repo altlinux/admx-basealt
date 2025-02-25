@@ -96,6 +96,8 @@
     <category name="ALT_WinbindDNSupdateOptions" displayName="$(string.ALT_WinbindDNSupdateOptions)"  explainText="$(string.ALT_WinbindDNSupdateOptions_Help)" >
       <parentCategory ref="ALT_Services" />
     </category>
+
+
     <category name="ALT_Settings_KDE" displayName="$(string.ALT_Settings_KDE)" explainText="$(string.ALT_Settings_KDE_Help)">
       <parentCategory ref="ALT_System" />
     </category>
@@ -138,6 +140,11 @@
     <category name="ALT_LockScreen_Gnome" displayName="$(string.ALT_LockScreen_Gnome)" explainText="$(string.ALT_LockScreen_Gnome_Help)">
       <parentCategory ref="ALT_Settings_Gnome" />
     </category>
+    <category name="ALT_Vision_Gnome" displayName="$(string.ALT_Vision_Gnome)" explainText="$(string.ALT_Vision_Gnome_Help)">
+      <parentCategory ref="ALT_Accessibility_Gnome" />
+    </category>
+
+
     <category name="ALT_Network" displayName="$(string.ALT_Network)" explainText="$(string.ALT_Network_Help)">
       <parentCategory ref="ALT_System" />
     </category>
@@ -160,6 +167,8 @@
       <parentCategory ref="ALT_System" />
     </category>
     <category name="LinuxComponents" displayName="$(string.LinuxComponents)" explainText="$(string.LinuxComponents_Help)" />
+
+
     <category name="ALT_Settings_Mate" displayName="$(string.ALT_Settings_Mate)" explainText="$(string.ALT_Settings_Mate_Help)">
       <parentCategory ref="ALT_System" />
     </category>
@@ -184,6 +193,8 @@
     <category name="ALT_Windows_Manager_Marco_Keyboard" displayName="$(string.ALT_Windows_Manager_Marco_Keyboard)" explainText="$(string.ALT_Windows_Manager_Marco_Keyboard_Help)">
       <parentCategory ref="ALT_Windows_Manager_Marco" />
     </category>
+
+
     <category name="ALT_Polkit" displayName="$(string.ALT_Polkit)" explainText="$(string.ALT_Polkit_Help)">
       <parentCategory ref="ALT_System" />
     </category>
