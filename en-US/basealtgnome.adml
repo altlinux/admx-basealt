@@ -190,7 +190,13 @@ The "Block" option (available only for the machine policy) prevents the user fro
     <string id="org-gnome-desktop-a11y-interface-high-contrast">High Contrast</string>
     <string id="org-gnome-desktop-a11y-interface-high-contrast_help">The policy allows you to increase the color contrast of the foreground and background interface elements.
 
-The "Lock" option (available only for the machine policy) prevents the user from changing the setting. Locking a policy makes it take precedence over a similar policy for the user.
+The "Block" option (available only for the machine policy) prevents the user from changing the setting. Locking a policy makes it take precedence over a similar policy for the user.
+    </string>
+
+    <string id="org-gnome-desktop-a11y-interface-show-status-shapes">Shapes on status icons</string>
+    <string id="org-gnome-desktop-a11y-interface-show-status-shapes_help">The policy allows you to enable the use of shapes to indicate the status of settings in addition to or instead of color.
+
+The "Block" option (available only for the machine policy) prevents the user from changing the setting. Locking a policy makes it take precedence over a similar policy for the user.
     </string>
 
 
@@ -416,6 +422,10 @@ The "Lock" option (available only for the machine policy) prevents the user from
       </presentation>
       <presentation id="OrgGnomeDesktopA11YInterfaceHighContrastMachine-pr">
         <dropdownList noSort="true" defaultItem="0" refId="gnome-state_setter">High Contrast:</dropdownList>
+      </presentation>
+      <presentation id="OrgGnomeDesktopA11YInterfaceShowStatusShapesMachine-pr">
+        <dropdownList noSort="true" defaultItem="0" refId="gnome-state_setter">Using shapes:</dropdownList>
+        <checkBox refId="gnome-state_blocker">Block</checkBox>
       </presentation>
     </presentationTable>
   </resources>
