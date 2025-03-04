@@ -138,6 +138,15 @@
       <string id="gpupdate_envvars_applier_user">Configure environment variables for users</string>
       <string id="gpupdate_envvars_applier_user_help">This policy enables the mechanism for applying environment variable settings for users</string>
 
+      <string id="gpupdate_cifsacl_disable">Disable the cifsacl argument</string>
+      <string id="gpupdate_cifsacl_disable_help">The policy allows you to disable the cifsacl argument for autofsf when mounting network drives via group policies.
+
+Disabled (default) - the cifsacl argument is used when mounting.
+
+Enabled - the cifsacl argument is disabled when mounting.
+
+      </string>
+
       <string id="gpupdate_drive_maps_home_user">Mapping user's network drives in the home directory</string>
       <string id="gpupdate_drive_maps_home_user_help">Mapping user's network drives in the home directory
 
