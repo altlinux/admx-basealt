@@ -146,7 +146,14 @@ Disabled (default) - the cifsacl argument is used when mounting.
 Enabled - the cifsacl argument is disabled when mounting.
 
       </string>
+      <string id="gpupdate_shortcuts_merge">Distribute machine policy shortcuts to users</string>
+      <string id="gpupdate_shortcuts_merge_help">The policy enables the display of shortcuts configured in the machine group policy to the logged-on user.
 
+Enabled - shortcuts configured in the machine group policy are displayed to users.
+
+Disabled (default) - shortcuts configured in the machine group policy are not displayed to the user.
+
+      </string>
       <string id="gpupdate_drive_maps_home_user">Mapping user's network drives in the home directory</string>
       <string id="gpupdate_drive_maps_home_user_help">Mapping user's network drives in the home directory
 
