@@ -48,7 +48,7 @@
       <parentCategory ref="ALT_LAPS"/>
       <supportedOn ref="SUPPORTED_AltP10"/>
       <elements>
-        <text id="TEXT_AdminAccountName" valueName="AdministratorAccountName" maxLength="64"/>
+        <text id="TEXT_AdminAccountName" valueName="AdministratorAccountName" maxLength="64" required="true"/>
       </elements>
     </policy>
     <policy name="LAPS_ADPasswordEncryptionEnabled" class="Machine" displayName="$(string.LAPS_ADPasswordEncryptionEnabled)"
