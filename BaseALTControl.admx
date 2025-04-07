@@ -730,6 +730,16 @@
         <string>disabled</string>
       </disabledValue>
     </policy>
+    <policy class="Machine" displayName="$(string.pam_canonicalize_user)" explainText="$(string.pam_canonicalize_user_help)" key="Software\BaseALT\Policies\Control" valueName="pam_canonicalize_user" name="pam_canonicalize_user">
+      <parentCategory ref="system:ALT_Security"/>
+      <supportedOn ref="system:SUPPORTED_AltP10"/>
+      <enabledValue>
+        <string>enabled</string>
+      </enabledValue>
+      <disabledValue>
+        <string>disabled</string>
+      </disabledValue>
+    </policy>
     <policy class="Machine" displayName="$(string.sshd-allow-groups)" explainText="$(string.sshd-allow-groups_help)" key="Software\BaseALT\Policies\Control" valueName="sshd-allow-groups" name="sshd-allow-groups">
       <parentCategory ref="system:ALT_SSHD"/>
       <supportedOn ref="system:SUPPORTED_AltP8"/>

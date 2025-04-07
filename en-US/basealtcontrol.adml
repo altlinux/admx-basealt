@@ -418,6 +418,16 @@ Disabled — Disable SFTP support on the OpenSSH server
 Enabled — Enable SFTP support on the OpenSSH server
       </string>
 
+      <string id="pam_canonicalize_user">Manage username canonicalization in PAM</string>
+      <string id="pam_canonicalize_user_help">The policy determines whether the system will automatically convert usernames to the standard format during authentication
+
+Enabled - entered usernames are automatically converted to the standard format;
+
+Example: Admin —> admin, User@DOMAIN —> user;
+
+Disabled - entered usernames are accepted in their original format.
+      </string>
+
       <string id="sshd-allow-groups">Group access control to OpenSSH server</string>
       <string id="sshd-allow-groups_help">This policy enables access control by the list of allowed groups on the OpenSSH server
 
