@@ -224,7 +224,7 @@
 
 Включено — перевести юнит во включенное состояние (выполнить команду systemctl enable NetworkManager.service)
 
-Отключено — перевести юнит в состояние «выключено» (выполнить команду systemctl отключить NetworkManager.service)
+Отключено — перевести юнит в состояние «выключено» (выполнить команду systemctl disable NetworkManager.service)
       </string>
 
       <string id="nmb_service">Samba NMB Сервис</string>
