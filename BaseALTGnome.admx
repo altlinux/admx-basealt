@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--  (c) 2023 BaseALT, Ltd.  -->
+<!--  (c) 2025 BaseALT, Ltd.  -->
 <policyDefinitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
       revision="1.0" schemaVersion="1.0" xmlns="http://schemas.microsoft.com/GroupPolicy/2006/07/PolicyDefinitions">
   <policyNamespaces>
@@ -876,7 +876,7 @@
         </boolean>
       </elements>
     </policy>
-    <policy name="gnome-desktops" class="User"
+    <policy name="gnome-desktops-user" class="User"
         displayName="$(string.gnome-desktops)"
         explainText="$(string.gnome-desktops_help)"
         key="Software\BaseALT\Policies\gsettings"

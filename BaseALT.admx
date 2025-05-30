@@ -70,6 +70,22 @@
           <range ref="products:Branch" minVersionIndex="3" maxVersionIndex="3"/>
         </or>
       </definition>
+
+ <!--ALT Platform 11-->
+      <definition name="SUPPORTED_AltP11" displayName="$(string.SUPPORTED_AltP11)">
+        <or>
+          <reference ref="products:BranchP11"/>
+          <range ref="products:Branch" minVersionIndex="4"/>
+        </or>
+      </definition>
+
+      <!--ALT Platform 11 only-->
+      <definition name="SUPPORTED_AltP11_Only" displayName="$(string.SUPPORTED_AltP11_Only)">
+        <or>
+          <reference ref="products:BranchP11"/>
+          <range ref="products:Branch" minVersionIndex="4" maxVersionIndex="4"/>
+        </or>
+      </definition>
     </definitions>
 
   </supportedOn>

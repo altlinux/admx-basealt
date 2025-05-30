@@ -13,6 +13,7 @@
       <string id="BranchP8">Branch of Platfrom 8</string>
       <string id="BranchP9">Branch of Platfrom 9</string>
       <string id="BranchP10">Branch of Platfrom 10</string>
+      <string id="BranchP11">Branch of Platfrom 11</string>
 
       <string id="ALTWorkstation8">ALT Workstation 8 family</string>
       <string id="ALTWorkstation8_8">ALT Workstation 8</string>
@@ -79,6 +80,9 @@
 
       <string id="SimplyLinux10">Simply Linux 10 family</string>
       <string id="SimplyLinux10_10">Simply Linux 10</string>
+
+      <string id="ALTWorkstation11">ALT Workstation 11 family</string>
+      <string id="ALTWorkstation11_11">ALT Workstation 11</string>
     </stringTable>
   </resources>
 </policyDefinitionResources>

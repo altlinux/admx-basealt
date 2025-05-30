@@ -14,6 +14,8 @@
       <string id="SUPPORTED_AltP9_Only">Только 9 Платформа ALT</string>
       <string id="SUPPORTED_AltP10">10 Платформа ALT как минимум</string>
       <string id="SUPPORTED_AltP10_Only">Только 10 Платформа ALT</string>
+      <string id="SUPPORTED_AltP11">11 Платформа ALT как минимум</string>
+      <string id="SUPPORTED_AltP11_Only">Только 11 Платформа ALT</string>
 
       <string id="ALT_System">Система ALT</string>
       <string id="ALT_System_Help">Настройки решений на базе операционной системы «Альт».</string>

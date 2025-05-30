@@ -13,6 +13,7 @@
       <string id="BranchP8">Ветка Восьмой Платформы</string>
       <string id="BranchP9">Ветка Девятой Платформы</string>
       <string id="BranchP10">Ветка Десятой Платформы</string>
+      <string id="BranchP11">Ветка Одиннадцатой Платформы</string>
 
       <string id="ALTWorkstation8">Семейство Альт Рабочая Станция 8</string>
       <string id="ALTWorkstation8_8">Альт Рабочая Станция 8</string>
@@ -79,6 +80,9 @@
 
       <string id="SimplyLinux10">Семейство Симпли Линукс 10</string>
       <string id="SimplyLinux10_10">Симпли Линукс 10</string>
+
+      <string id="ALTWorkstation11">Семейство Альт Рабочая Станция 11</string>
+      <string id="ALTWorkstation11_11">Альт Рабочая Станция 11</string>
     </stringTable>
   </resources>
 </policyDefinitionResources>

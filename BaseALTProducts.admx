@@ -17,6 +17,7 @@
           <minorVersion name="BranchP8" displayName="$(string.BranchP8)" versionIndex="1"/>
           <minorVersion name="BranchP9" displayName="$(string.BranchP9)" versionIndex="2"/>
           <minorVersion name="BranchP10" displayName="$(string.BranchP10)" versionIndex="3"/>
+          <minorVersion name="BranchP11" displayName="$(string.BranchP11)" versionIndex="4"/>
         </majorVersion>
         <majorVersion name="ALTWorkstation8" displayName="$(string.ALTWorkstation8)" versionIndex="2">
           <minorVersion name="ALTWorkstation8_8" displayName="$(string.ALTWorkstation8_8)" versionIndex="0"/>
@@ -83,6 +84,9 @@
         </majorVersion>
         <majorVersion name="SimplyLinux10" displayName="$(string.SimplyLinux10)" versionIndex="16">
           <minorVersion name="SimplyLinux10_10" displayName="$(string.SimplyLinux10_10)" versionIndex="0"/>
+        </majorVersion>
+        <majorVersion name="ALTWorkstation11" displayName="$(string.ALTWorkstation11)" versionIndex="17">
+          <minorVersion name="ALTWorkstation11_11" displayName="$(string.ALTWorkstation11_11)" versionIndex="0"/>
         </majorVersion>
       </product>
     </products>
