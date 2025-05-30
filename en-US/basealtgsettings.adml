@@ -113,8 +113,6 @@ The "Block" option — (available only for machine policy) prevents the user fro
 
 Possible values:
 
-"Disabled" — the screen saver is disabled;
-
 "Blank screen" — do not show any images, only a black screen;
 
 "Random themes" — select a screen saver theme randomly;
@@ -124,7 +122,6 @@ Possible values:
 The "Block" option — (available only for machine policy) prevents the user from changing this setting. Blocking a policy makes it a priority over a similar policy for the user.
 
       </string>
-      <string id="org-mate-screensaver-mode_disabled">Disabled</string>
       <string id="org-mate-screensaver-mode_blank_only">Blank screen</string>
       <string id="org-mate-screensaver-mode_random">Random themes</string>
       <string id="org-mate-screensaver-mode_single">Selected theme</string>
