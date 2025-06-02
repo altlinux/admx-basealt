@@ -7,41 +7,41 @@
   <resources>
     <stringTable>
     <string id="GnomeSleepInactiveBattery">Sleep on battery</string>
-    <string id="GnomeSleepInactiveBattery_help">Policy allows you to manage the condition for the device to go to sleep when on battery
+    <string id="GnomeSleepInactiveBattery_help">Policy allows you to manage the condition for the device to go to sleep when on battery.
 
-The "Time before going to sleep when on battery" parameter is only meaningful if the "Sleep when on battery" parameter is enabled
+The "Time before going to sleep when on battery" parameter is only meaningful if the "Sleep when on battery" parameter is enabled.
 
 The "Block" option (available only for the machine policy) prevents the user from changing this setting. Blocking a policy makes it take precedence over a similar policy for the user.
 
     </string>
     <string id="GnomeSleepInactiveAC">Sleep when plugged in</string>
-    <string id="GnomeSleepInactiveAC_help">Policy allows you to manage the condition for the device to go to sleep when plugged in
+    <string id="GnomeSleepInactiveAC_help">Policy allows you to manage the condition for the device to go to sleep when plugged in.
 
-The "Time before going to sleep when plugged in" parameter is only meaningful when the "Go to sleep when plugged in" parameter is enabled
+The "Time before going to sleep when plugged in" parameter is only meaningful when the "Go to sleep when plugged in" parameter is enabled.
 
 The "Block" option (available only for the machine policy) prevents the user from changing this setting. Blocking a policy makes it take precedence over a similar policy for the user.
 
     </string>
     <string id="org-gnome-desktop-interface-clock-show-weekday">Show day of the week on the quick settings panel</string>
-    <string id="org-gnome-desktop-interface-clock-show-weekday_help">Policy allows you to customize the display of the day of the week on the quick settings panel
+    <string id="org-gnome-desktop-interface-clock-show-weekday_help">Policy allows you to customize the display of the day of the week on the quick settings panel.
 
 The "Block" option (available only for the machine policy) prevents the user from changing this setting. Blocking a policy makes it take precedence over a similar policy for the user.
 
     </string>
     <string id="org-gnome-desktop-interface-clock-show-date">Show date on quick settings panel</string>
-    <string id="org-gnome-desktop-interface-clock-show-date_help">Policy allows you to customize the display of the date on the quick settings panel
+    <string id="org-gnome-desktop-interface-clock-show-date_help">Policy allows you to customize the display of the date on the quick settings panel.
 
 The "Block" option (available only for the machine policy) prevents the user from changing this setting. Blocking the policy makes it have priority over the similar policy for the user.
 
     </string>
     <string id="org-gnome-desktop-interface-clock-show-seconds">Show seconds on quick settings panel</string>
-    <string id="org-gnome-desktop-interface-clock-show-seconds_help">Policy allows you to customize the display of seconds on the quick settings panel
+    <string id="org-gnome-desktop-interface-clock-show-seconds_help">Policy allows you to customize the display of seconds on the quick settings panel.
 
 The "Block" option (available only for the machine policy) prevents the user from changing this setting. Blocking a policy makes it have priority over a similar policy for the user.
 
     </string>
     <string id="org-gnome-desktop-interface-show-battery-percentage">Display battery percentage</string>
-    <string id="org-gnome-desktop-interface-show-battery-percentage_help">Policy allows you to customize the display of the battery percentage in the quick settings panel
+    <string id="org-gnome-desktop-interface-show-battery-percentage_help">Policy allows you to customize the display of the battery percentage in the quick settings panel.
 
 The "Block" option (available only for the machine policy) prevents the user from changing this setting. Blocking a policy makes it have priority over a similar policy for the user.
 
@@ -53,7 +53,7 @@ The "Block" option (available only for the machine policy) prevents the user fro
 
     </string>
     <string id="org-gnome-desktop-interface-color-scheme">Theme style</string>
-    <string id="org-gnome-desktop-interface-color-scheme_help">Policy allows you to choose the theme for the appearance of applications
+    <string id="org-gnome-desktop-interface-color-scheme_help">Policy allows you to choose the theme for the appearance of applications.
 
 The "Block" option (available only for the machine policy) prevents the user from changing this setting. Blocking a policy makes it take precedence over a similar policy for the user.
 
