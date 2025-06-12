@@ -367,5 +367,15 @@
         <decimal value="0"/>
       </disabledValue>
     </policy>
+    <policy class="Machine" displayName="$(string.zabbix_agentd_service)" explainText="$(string.zabbix_agentd_service_help)" key="Software\BaseALT\Policies\SystemdUnits" valueName="zabbix_agentd.service" name="zabbix_agentd.service">
+      <parentCategory ref="system:ALT_Systemd"/>
+      <supportedOn ref="system:SUPPORTED_AltP9"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
   </policies>
 </policyDefinitions>
