@@ -57,6 +57,9 @@
       Additional configuration of the mechanism can be performed using the policies "Time before unmounting network directories", "Mapping network drives of the machine/user in the home directory" and "Name of the directory for mounting network drives of the machine/user".
       </string>
 
+      <string id="gpupdate_cifs_applier">Network drives mounting </string>
+      <string id="gpupdate_cifs_applier_help">This policy enables group policy CIFS applier feature.</string>
+
       <string id="gpupdate_gsettings_applier">GSettings configuration</string>
       <string id="gpupdate_gsettings_applier_help">This policy enables group policy GSettings applier feature.</string>
 
