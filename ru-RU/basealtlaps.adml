@@ -44,11 +44,11 @@
 Если политика отключена или не настроена, LAPS будет управлять паролем локального администратора — root.
       </string>
       <string id="LAPS_ADPasswordEncryptionEnabled">Шифрование паролей</string>
-      <string id="LAPS_ADPasswordEncryptionEnabled_Help">Политика позволяет включить шифрование управляемым паролем перед отправкой в Active Directory.
+      <string id="LAPS_ADPasswordEncryptionEnabled_Help">Политика позволяет включить шифрование пароля перед отправкой в Active Directory.
 
 Пароль не будет зашифрован, если:
 
-1) пароль не настроен для резервного копирования в Active Directory;
+1) не настроено резервное копирование пароля в Active Directory;
 
 2) функциональный уровень домена Active Directory ниже Windows Server 2016.
 
@@ -76,11 +76,11 @@
 - lapsadmins@contoso.com
       </string>
       <string id="LAPS_ADEncryptedPasswordHistorySize">Размер журнала зашифрованных паролей</string>
-      <string id="LAPS_ADEncryptedPasswordHistorySize_Help">Политика позволяет настроить размер указать количество зашифрованных паролей, хранящихся в Active Directory.
+      <string id="LAPS_ADEncryptedPasswordHistorySize_Help">Политика позволяет указать количество зашифрованных паролей, хранящихся в Active Directory.
 
 Настройка этого параметра не действует, если:
 
-1) пароль не настроен для резервного копирования в Active Directory;
+1) не настроено резервное копирование пароля в Active Directory;
 
 2) не включено шифрование пароля.
 
@@ -99,7 +99,7 @@
 Отключено — резервное копирование отключено
 Active Directory — резервное копирование пароля в Active Directory
 
-Если для этого параметра установлено значение «Резервное копирование пароля в Active Directory», а управляемое устройство не присоединено к Active Directory, пароль локального администратора не будет резервироваться.
+Если для этого параметра установлено значение «Active Directory», а управляемое устройство не присоединено к Active Directory, пароль локального администратора не будет резервироваться.
 
 Если политика отключена или не настроена, пароль локального администратора не управляется.
 
