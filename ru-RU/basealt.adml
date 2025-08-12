@@ -53,12 +53,12 @@
       <string id="LinuxComponents">Компоненты Linux</string>
       <string id="LinuxComponents_Help">Содержит настройки ядра операционной системы.</string>
 
-      <string id="ALT_Settings_Gnome">Настройки Gnome</string>
-      <string id="ALT_Settings_Gnome_Help">Настройки Gnome.</string>
+      <string id="ALT_Settings_Gnome">Настройки GNOME</string>
+      <string id="ALT_Settings_Gnome_Help">Настройки GNOME.</string>
       <string id="ALT_Apperance_Gnome">Внешний вид</string>
       <string id="ALT_Apperance_Gnome_Help">Внешний вид.</string>
       <string id="ALT_Enviroment_Gnome">Поведение рабочей среды</string>
-      <string id="ALT_Enviroment_Gnome_Help">Настройка поведения рабочей среды Gnome.</string>
+      <string id="ALT_Enviroment_Gnome_Help">Настройка поведения рабочей среды GNOME.</string>
       <string id="ALT_PowerManagement_Gnome">Управление электропитанием</string>
       <string id="ALT_PowerManagement_Gnome_Help">Управление электропитанием.</string>
       <string id="ALT_Multitasking_Gnome">Многозадачность</string>
