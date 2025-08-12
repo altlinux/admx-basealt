@@ -127,16 +127,6 @@
         <decimal value="0"/>
       </disabledValue>
     </policy>
-    <policy class="Machine" displayName="$(string.dbus_service)" explainText="$(string.dbus_service_help)" key="Software\BaseALT\Policies\SystemdUnits" valueName="dbus.service" name="dbus.service">
-      <parentCategory ref="system:ALT_Systemd"/>
-      <supportedOn ref="system:SUPPORTED_AltP9"/>
-      <enabledValue>
-        <decimal value="1"/>
-      </enabledValue>
-      <disabledValue>
-        <decimal value="0"/>
-      </disabledValue>
-    </policy>
     <policy class="Machine" displayName="$(string.dnsmasq_service)" explainText="$(string.dnsmasq_service_help)" key="Software\BaseALT\Policies\SystemdUnits" valueName="dnsmasq.service" name="dnsmasq.service">
       <parentCategory ref="system:ALT_Systemd"/>
       <supportedOn ref="system:SUPPORTED_AltP9"/>

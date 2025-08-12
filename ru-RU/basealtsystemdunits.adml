@@ -125,16 +125,6 @@
 Отключено — перевести юнит в состояние «выключено» (выполнить команду systemctl disable crond.service)
       </string>
 
-      <string id="dbus_service">Шина системных сообщений D-Bus</string>
-      <string id="dbus_service_help">Эта политика определяет, включен ли systemd юнит шины системных сообщений D-Bus
-
-Не сконфигурировано — не изменять системное состояние юнита
-
-Включено — перевести юнит во включенное состояние (выполнить команду systemctl enable dbus.service)
-
-Отключено — перевести юнит в состояние «выключено» (выполнить команду systemctl disable dbus.service)
-      </string>
-
       <string id="dnsmasq_service">Служба Dnsmasq</string>
       <string id="dnsmasq_service_help">Эта политика определяет, включен ли systemd юнит Службы Dnsmasq (облегченный DHCP и кэширующий DNS-сервер, а также TFTP-сервер для поддержки загрузки по сети)
 

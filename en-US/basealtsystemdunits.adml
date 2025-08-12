@@ -126,16 +126,6 @@ Enabled — Turn the unit into enabled (execute the command systemctl enable cro
 Disabled — Turn the unit into off state (execute the command systemctl disable crond.service)
       </string>
 
-      <string id="dbus_service">D-Bus System Message Bus</string>
-      <string id="dbus_service_help">This policy determines whether the systemd unit of the D-Bus System Message Bus is enabled
-
-Not Configuration — Do not change unit systemd state
-
-Enabled — Turn the unit into enabled (execute the command systemctl enable dbus.service)
-
-Disabled — Turn the unit into off state (execute the command systemctl disable dbus.service)
-      </string>
-
       <string id="dnsmasq_service">Service Dnsmasq</string>
       <string id="dnsmasq_service_help">This policy determines whether the systemd unit of the Service Dnsmasq (lightweight DHCP and caching DNS server, as well as TFTP server to support netboot) is enabled
 
