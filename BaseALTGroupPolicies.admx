@@ -474,6 +474,20 @@
         <decimal value="0"/>
       </disabledValue>
     </policy>
+    <policy class="User" displayName="$(string.gpupdate_cifsacl_user_disable)"
+      explainText="$(string.gpupdate_cifsacl_user_disable_help)"
+      key="Software\BaseALT\Policies\GPUpdate"
+      name="CifsaclDisableUser"
+      valueName="CifsaclDisable">
+      <parentCategory ref="system:ALT_Mounting"/>
+      <supportedOn ref="system:SUPPORTED_AltP10"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
     <policy class="Machine" displayName="$(string.gpupdate_shortcuts_merge)"
       explainText="$(string.gpupdate_shortcuts_merge_help)"
       key="Software\BaseALT\Policies\GPUpdate"

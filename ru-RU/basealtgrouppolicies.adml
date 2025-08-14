@@ -138,7 +138,15 @@
       <string id="gpupdate_envvars_applier_user_help">Политика включает механизм применения настроек переменных окружения для пользователей</string>
 
       <string id="gpupdate_cifsacl_disable">Отключение аргумента cifsacl</string>
-      <string id="gpupdate_cifsacl_disable_help">Политика позволяет отключить аргумент cifsacl для autofsf при монтировании сетевых дисков через групповые политики.
+      <string id="gpupdate_cifsacl_disable_help">Политика позволяет отключить аргумент cifsacl для autofs при монтировании сетевых дисков через групповые политики.
+
+Отключено (по умолчанию) — при монтировании используется аргумент cifsacl.
+
+Включено — при монтировании аргумент cifsacl отключается.
+
+      </string>
+      <string id="gpupdate_cifsacl_user_disable">Отключение аргумента cifsacl</string>
+      <string id="gpupdate_cifsacl_user_disable_help">Политика позволяет отключить аргумент cifsacl для autofs при монтировании пользовательских сетевых дисков через групповые политики.
 
 Отключено (по умолчанию) — при монтировании используется аргумент cifsacl.
 
