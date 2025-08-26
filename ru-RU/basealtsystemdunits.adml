@@ -337,6 +337,16 @@
 Отключено — перевести юнит в состояние «выключено» (выполнить команду systemctl disable winbind.service)
        </string>
 
+       <string id="zabbix_agentd_service">Zabbix Agent Сервис</string>
+       <string id="zabbix_agentd_service_help">Эта политика определяет, включен ли systemd юнит Zabbix Agent
+
+Не сконфигурировано — не изменять системное состояние юнита
+
+Включено — перевести юнит во включенное состояние (выполнить команду systemctl enable zabbix_agentd.service)
+
+Отключено — перевести юнит в состояние «выключено» (выполнить команду systemctl disable zabbix_agentd.service)
+       </string>
+
        <string id="postfix_service">Агент передачи почты Postfix</string>
        <string id="postfix_service_help">Эта политика определяет, включен ли systemd юнит агента передачи почты Postfix
 

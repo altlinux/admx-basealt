@@ -338,6 +338,16 @@ Enabled — Turn the unit into enabled (execute the command systemctl enable win
 Disabled — Turn the unit into off state (execute the command systemctl disable winbind.service)
       </string>
 
+      <string id="zabbix_agentd_service">Zabbix Agent Daemon</string>
+      <string id="zabbix_agentd_service_help">This policy determines whether the systemd unit of the Zabbix Agent Daemon is enabled
+
+Not Configuration — Do not change unit systemd state
+
+Enabled — Turn the unit into enabled (execute the command systemctl enable zabbix_agentd.service)
+
+Disabled — Turn the unit into off state (execute the command systemctl disable zabbix_agentd.service)
+      </string>
+
        <string id="postfix_service">Postfix Mail Transport Agent</string>
        <string id="postfix_service_help">This policy determines whether the systemd unit of the Postfix Mail Transport Agent is enabled
 
