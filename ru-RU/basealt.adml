@@ -44,6 +44,8 @@
       <string id="ALT_Virtualization_Help">Настройка параметров виртуализации.</string>
       <string id="ALT_Graphics">Графическая подсистема</string>
       <string id="ALT_Graphics_Help">Настройка параметров графической подсистемы.</string>
+      <string id="ALT_DisplayManager">Дисплейный менеджер</string>
+      <string id="ALT_DisplayManager_Help">Настройка параметров дисплейных менеджеров.</string>
       <string id="ALT_Hardware">Аппаратные средства</string>
       <string id="ALT_Hardware_Help">Настройка параметров аппаратных средств.</string>
       <string id="ALT_Databases">СУБД</string>

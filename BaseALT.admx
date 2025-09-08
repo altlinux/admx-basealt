@@ -176,6 +176,9 @@
     <category name="ALT_Graphics" displayName="$(string.ALT_Graphics)" explainText="$(string.ALT_Graphics_Help)">
       <parentCategory ref="ALT_System" />
     </category>
+    <category name="ALT_DisplayManager" displayName="$(string.ALT_DisplayManager)" explainText="$(string.ALT_DisplayManager_Help)">
+      <parentCategory ref="ALT_Graphics" />
+    </category>
     <category name="ALT_Hardware" displayName="$(string.ALT_Hardware)" explainText="$(string.ALT_Hardware_Help)">
       <parentCategory ref="ALT_System" />
     </category>

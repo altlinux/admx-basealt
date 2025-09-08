@@ -44,6 +44,8 @@
       <string id="ALT_Virtualization_Help">Configuration of virtualization access settings.</string>
       <string id="ALT_Graphics">Graphics</string>
       <string id="ALT_Graphics_Help">Configuration of graphic subsystem settings.</string>
+      <string id="ALT_DisplayManager">Display Manager</string>
+      <string id="ALT_DisplayManager_Help">Configuring display manager settings.</string>
       <string id="ALT_Hardware">Hardware</string>
       <string id="ALT_Hardware_Help">Configuration of hardware settings.</string>
       <string id="ALT_Databases">Databases</string>
