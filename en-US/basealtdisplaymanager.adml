@@ -158,6 +158,18 @@ Note: the possession of administrative rights in a PolicyKit context is determin
 
 
       </string>
+      <string id="displaymanager-greeter-background">Greeter background</string>
+      <string id="displaymanager-greeter-background_help">The policy allows you to specify the path to the Greeter background image.
+
+Examples of paths:
+
+/usr/share/wallpapers/image.png — local path to the image;
+
+smb://computername/share/image.png — Linux path to the image in the shared directory on the server;
+
+\\computername\share\image.png — Windows path to the image in the shared directory on the server.
+
+      </string>
 
       <string id="org-freedesktop-displaymanager-No">No</string>
       <string id="org-freedesktop-displaymanager-Yes">Yes</string>
@@ -176,6 +188,11 @@ Note: the possession of administrative rights in a PolicyKit context is determin
       </presentation>
       <presentation id="org-freedesktop-DisplayManagerPolkit-user-pr">
        <dropdownList noSort="true" defaultItem="1" refId="OrgFreedesktopDisplayManager_setter">Restriction Options:</dropdownList>
+      </presentation>
+      <presentation id="DisplayManager_GreeterBackground-pr">
+        <textBox refId="DisplayManager_GreeterBackground_setter">
+          <label>File:</label>
+        </textBox>
       </presentation>
     </presentationTable>
   </resources>

@@ -290,5 +290,16 @@
         </enum>
       </elements>
     </policy>
+    <policy name="DisplayManager_GreeterBackground" class="Machine"
+        displayName="$(string.displaymanager-greeter-background)"
+        explainText="$(string.displaymanager-greeter-background_help)"
+        presentation="$(presentation.DisplayManager_GreeterBackground-pr)"
+        key="Software\BaseALT\Policies\DisplayManager">
+      <parentCategory ref="system:ALT_DisplayManager" />
+      <supportedOn ref="system:SUPPORTED_AltP11" />
+      <elements>
+        <text id="DisplayManager_GreeterBackground_setter" valueName="Greeter.Background" />
+      </elements>
+    </policy>
   </policies>
 </policyDefinitions>

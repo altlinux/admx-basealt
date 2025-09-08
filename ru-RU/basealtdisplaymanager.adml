@@ -157,6 +157,18 @@
 
 
       </string>
+      <string id="displaymanager-greeter-background">Фон экрана приветствия (Greeter)</string>
+      <string id="displaymanager-greeter-background_help">Политика позволяет указать путь до изображения фона экрана приветствия (Greeter).
+
+Примеры путей:
+
+/usr/share/wallpapers/image.png — локальный путь к изображению;
+
+smb://computername/share/image.png — путь в формате Linux к изображению в общем каталоге на сервере;
+
+\\computername\share\image.png — путь в формате Windows к изображению в общем каталоге на сервере.
+
+      </string>
 
       <string id="org-freedesktop-displaymanager-No">No</string>
       <string id="org-freedesktop-displaymanager-Yes">Yes</string>
@@ -175,6 +187,12 @@
       <presentation id="org-freedesktop-DisplayManagerPolkit-user-pr">
        <dropdownList noSort="true" defaultItem="1" refId="OrgFreedesktopDisplayManager_setter">Варианты ограничений:</dropdownList>
       </presentation>
+      <presentation id="DisplayManager_GreeterBackground-pr">
+        <textBox refId="DisplayManager_GreeterBackground_setter">
+          <label>Файл:</label>
+        </textBox>
+      </presentation>
+
     </presentationTable>
   </resources>
 </policyDefinitionResources>
