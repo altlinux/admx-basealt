@@ -219,6 +219,10 @@
       <string id="gpupdate_laps_applier_help">Политика включает механизм управления паролями локальных администраторов.
 
       </string>
+      <string id="gpupdate_plugins">Включение плагинов</string>
+      <string id="gpupdate_plugins_help">Политика позволяет включить использование плагинов.
+
+      </string>
       <string id="gpupdate_drive_maps_name">Имя каталога монтирования сетевых дисков машины</string>
       <string id="gpupdate_drive_maps_name_help">Политика позволяет задать имя символической ссылки на каталог монтирования сетевых дисков машины
 

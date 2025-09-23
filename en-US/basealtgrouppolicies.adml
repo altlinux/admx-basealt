@@ -138,6 +138,10 @@
       <string id="gpupdate_envvars_applier_user">Configure environment variables for users</string>
       <string id="gpupdate_envvars_applier_user_help">This policy enables the mechanism for applying environment variable settings for users</string>
 
+      <string id="gpupdate_plugins">Enabling Plugins</string>
+      <string id="gpupdate_plugins_help">This policy allows to enable plugins.
+
+      </string>
       <string id="gpupdate_cifsacl_disable">Disable the cifsacl argument</string>
       <string id="gpupdate_cifsacl_disable_help">The policy allows you to disable the cifsacl argument for autofs when mounting network drives via group policies.
 
