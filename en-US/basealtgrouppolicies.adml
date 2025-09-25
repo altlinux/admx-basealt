@@ -150,6 +150,14 @@ Note: This setting is only effective if the "Enabling Plugins" policy is enabled
 Example: dm_applier
 
       </string>
+      <string id="gpupdate_plugins_list_user">Plugin List</string>
+      <string id="gpupdate_plugins_list_user_help">This policy allows you to configure a list of allowed plug-ins for applying Group Policy to a user.
+
+Note: This setting is only effective if the "Enabling Plugins" policy is enabled.
+
+Example: dm_applier
+
+      </string>
       <string id="gpupdate_cifsacl_disable">Disable the cifsacl argument</string>
       <string id="gpupdate_cifsacl_disable_help">The policy allows you to disable the cifsacl argument for autofs when mounting network drives via group policies.
 

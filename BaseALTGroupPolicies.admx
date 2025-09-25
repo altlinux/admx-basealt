@@ -590,12 +590,22 @@
             explainText="$(string.gpupdate_plugins_list_help)"
             name="PluginsList"
             key="Software\BaseALT\Policies\GPUpdate"
-            valueName="PluginsList"
+            presentation="$(presentation.PluginsList-pr)">
+      <parentCategory ref="ALT_GroupPolicies"/>
+      <supportedOn ref="system:SUPPORTED_AltP11"/>
+      <elements>
+        <list id="PluginsListSetter" key="Software\BaseALT\Policies\GPUpdate\PluginsList" additive="true"/>
+      </elements>
+    </policy>
+    <policy class="User" displayName="$(string.gpupdate_plugins_list_user)"
+            explainText="$(string.gpupdate_plugins_list_user_help)"
+            name="PluginsList"
+            key="Software\BaseALT\Policies\GPUpdate"
             presentation="$(presentation.PluginsList-pr)">
       <parentCategory ref="system:ALT_GroupPolicies"/>
       <supportedOn ref="system:SUPPORTED_AltP11"/>
       <elements>
-        <list id="PluginsListSetter" additive="true"/>
+        <list id="PluginsListSetter" key="Software\BaseALT\Policies\GPUpdate\Pluginslist" additive="true"/>
       </elements>
     </policy>
     <policy class="Machine" displayName="$(string.gpupdate_filescopy_applier)"
