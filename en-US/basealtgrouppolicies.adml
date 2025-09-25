@@ -142,6 +142,14 @@
       <string id="gpupdate_plugins_help">This policy allows to enable plugins.
 
       </string>
+      <string id="gpupdate_plugins_list">Plugin List</string>
+      <string id="gpupdate_plugins_list_help">This policy allows you to configure a list of allowed plug-ins for applying Group Policy to a machine.
+
+Note: This setting is only effective if the "Enabling Plugins" policy is enabled.
+
+Example: dm_applier
+
+      </string>
       <string id="gpupdate_cifsacl_disable">Disable the cifsacl argument</string>
       <string id="gpupdate_cifsacl_disable_help">The policy allows you to disable the cifsacl argument for autofs when mounting network drives via group policies.
 
@@ -308,6 +316,9 @@ If you disable this setting or do not configure it, the user's Group Policy Obje
       <presentation id="GPUpdateDriveMapsDisableNet-pr">
         <checkBox refId="DriveMapsHomeDisableNet-setter">Remove "net." prefix from directory link names for machine network drives</checkBox>
         <checkBox refId="DriveMapsHomeDisableNetUser-setter">Remove "net." prefix from directory link names for user network drives</checkBox>
+      </presentation>
+      <presentation id="PluginsList-pr">
+        <listBox refId="PluginsListSetter">Plugins list:</listBox>
       </presentation>
     </presentationTable>
   </resources>
