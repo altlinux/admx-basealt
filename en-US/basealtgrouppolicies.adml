@@ -138,24 +138,37 @@
       <string id="gpupdate_envvars_applier_user">Configure environment variables for users</string>
       <string id="gpupdate_envvars_applier_user_help">This policy enables the mechanism for applying environment variable settings for users</string>
 
-      <string id="gpupdate_plugins">Enabling Plugins</string>
-      <string id="gpupdate_plugins_help">This policy allows to enable plugins.
+      <string id="gpupdate_plugins">Enabling GPUpdate plugins</string>
+      <string id="gpupdate_plugins_help">This policy allows you to enable the use of GPUpdate plugins for applying group policies.</string>
+
+      <string id="gpupdate_plugins_list">GPUpdate Plugins List</string>
+      <string id="gpupdate_plugins_list_help">This policy allows you to configure a list of allowed GPUpdate plugins for applying Group Policy to a machine.
+
+Enabled — the plugins specified in the list are used;
+
+Disabled/Not configured — all plugins located in the /usr/lib/gpupdate/plugins/ and /gpoa/frontend_plugins/ directories are used.
+
+Example: DMApplier
+
+Note: This setting is only used when the "Enabling GPUpdate plugins" policy is enabled.
 
       </string>
-      <string id="gpupdate_plugins_list">Plugin List</string>
-      <string id="gpupdate_plugins_list_help">This policy allows you to configure a list of allowed plug-ins for applying Group Policy to a machine.
+      <string id="gpupdate_plugins_list_user">GPUpdate Plugins List</string>
+      <string id="gpupdate_plugins_list_user_help">This policy allows you to configure a list of allowed GPUpdate plugins for applying Group Policy to a user.
 
-Note: This setting is only effective if the "Enabling Plugins" policy is enabled.
+Enabled — the plugins specified in the list are used;
 
-Example: dm_applier
+Disabled/Not configured — all plugins located in the /usr/lib/gpupdate/plugins/ and /gpoa/frontend_plugins/ directories are used.
+
+Example: DMApplier
+
+Note: This setting is only used when the "Enabling GPUpdate plugins" policy is enabled.
 
       </string>
-      <string id="gpupdate_plugins_list_user">Plugin List</string>
-      <string id="gpupdate_plugins_list_user_help">This policy allows you to configure a list of allowed plug-ins for applying Group Policy to a user.
+      <string id="gpupdate_allow_trust_user_policy">Allow user policies from trusted domains to be applied</string>
+      <string id="gpupdate_allow_trust_user_policy_help">This policy allows you to enable the application of user policies for accounts from trusted domains.
 
-Note: This setting is only effective if the "Enabling Plugins" policy is enabled.
-
-Example: dm_applier
+If the policy is disabled or not configured, user policies for accounts from trusted domains will not be applied.
 
       </string>
       <string id="gpupdate_cifsacl_disable">Disable the cifsacl argument</string>

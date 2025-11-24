@@ -577,7 +577,7 @@
       key="Software\BaseALT\Policies\GPUpdate"
       name="Plugins"
       valueName="Plugins">
-      <parentCategory ref="system:ALT_GroupPolicies"/>
+      <parentCategory ref="ALT_GroupPolicies"/>
       <supportedOn ref="system:SUPPORTED_AltP11"/>
       <enabledValue>
         <decimal value="1"/>
@@ -599,10 +599,10 @@
     </policy>
     <policy class="User" displayName="$(string.gpupdate_plugins_list_user)"
             explainText="$(string.gpupdate_plugins_list_user_help)"
-            name="PluginsList"
+            name="PluginsListUser"
             key="Software\BaseALT\Policies\GPUpdate"
             presentation="$(presentation.PluginsList-pr)">
-      <parentCategory ref="system:ALT_GroupPolicies"/>
+      <parentCategory ref="ALT_GroupPolicies"/>
       <supportedOn ref="system:SUPPORTED_AltP11"/>
       <elements>
         <list id="PluginsListSetter" key="Software\BaseALT\Policies\GPUpdate\Pluginslist" additive="true"/>
@@ -642,6 +642,20 @@
           </item>
         </enum>
       </elements>
+    </policy>
+    <policy class="Machine" displayName="$(string.gpupdate_allow_trust_user_policy)"
+        explainText="$(string.gpupdate_allow_trust_user_policy_help)"
+        key="Software\BaseALT\Policies\GPUpdate"
+        valueName="AllowTrustUserPolicy"
+        name="AllowTrustUserPolicy">
+      <parentCategory ref="ALT_GroupPolicies"/>
+      <supportedOn ref="system:SUPPORTED_AltP11"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
     </policy>
   </policies>
 </policyDefinitions>

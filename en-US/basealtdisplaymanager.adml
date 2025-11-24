@@ -159,7 +159,7 @@ Note: the possession of administrative rights in a PolicyKit context is determin
 
       </string>
       <string id="displaymanager-greeter-background">Greeter background</string>
-      <string id="displaymanager-greeter-background_help">The policy allows you to specify the path to the Greeter background image.
+      <string id="displaymanager-greeter-background_help">The policy allows to set the Greeter background by specifying the path to the image.
 
 Examples of paths:
 
@@ -169,6 +169,13 @@ smb://computername/share/image.png — Linux path to the image in the shared dir
 
 \\computername\share\image.png — Windows path to the image in the shared directory on the server.
 
+In LightDM, background changes are supported for the following welcome screens:
+
+— lightdm-gtk-greeter;
+— lightdm-kde-greeter;
+— slick-greeter.
+
+Note: A backup copy of the GDM configuration is created automatically. Restoration occurs when you specify "backup" in the path field.
       </string>
 
       <string id="org-freedesktop-displaymanager-No">No</string>
