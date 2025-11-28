@@ -71,7 +71,7 @@ The "Block" option is necessary to prevent the user from changing this setting.
 
 "Automatically mount media that has never been manually mounted before".
 
-Note: The options “At login”, “At connected”, and “Automatically mount media that have never been manually mounted before” only make sense when the “Automatically mount devices” option is enabled.
+Note: The options “At login”, “At connected”, and “Automatically mount media that have never been manually mounted before” only is only used when the “Automatically mount devices” option is enabled.
 
 The "Block" option is necessary to prevent the user from changing this setting.
 
@@ -86,7 +86,7 @@ The "Block" option is necessary to prevent the user from changing this setting.
 
 “Enable indexing of hidden files and folders”
 
-Note: The “Enable indexing of file contents” and “Enable indexing of hidden files and folders” options only make sense if the “Enable File Search Service” option is enabled.
+Note: The “Enable indexing of file contents” and “Enable indexing of hidden files and folders” options only is only used if the “Enable File Search Service” option is enabled.
 
 The "Block" option is necessary to prevent the user from changing this setting.
 

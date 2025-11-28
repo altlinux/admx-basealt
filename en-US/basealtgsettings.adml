@@ -58,7 +58,7 @@ The "Block" option — (available only for machine policy) prevents the user fro
 
 "Solid Fill"—fill the desktop background with one color.
 
-This option only makes sense if the Desktop Background Picture option is not set.
+This option is only user if the Desktop Background Picture option is not set.
 
 The "Block" option — (available only for machine policy) prevents the user from changing this setting. Blocking a policy makes it a priority over a similar policy for the user.
 
@@ -100,7 +100,7 @@ The "Block" option — (available only for machine policy) prevents the user fro
       <string id="org-mate-screensaver-lock-enabled">Lock your computer</string>
       <string id="org-mate-screensaver-lock-enabled_help">Enables the computer to be locked when the screensaver is activated. The lock will be enabled after the time interval set in the "Time until password lock" parameter.
 
-This option only makes sense if the Enable Screen Saver option is activated.
+This option is only user if the Enable Screen Saver option is activated.
 
 The "Block" option — (available only for machine policy) prevents the user from changing this setting. Blocking a policy makes it a priority over a similar policy for the user.
 
@@ -109,7 +109,7 @@ The "Block" option — (available only for machine policy) prevents the user fro
       <string id="org-mate-screensaver-lock-enabled-false">Disabled</string>
 
       <string id="org-mate-screensaver-mode">Operating mode</string>
-      <string id="org-mate-screensaver-mode_help">Sets the screen saver mode. This option only makes sense if the Enable Screen Saver option is activated.
+      <string id="org-mate-screensaver-mode_help">Sets the screen saver mode. This option is only user if the Enable Screen Saver option is activated.
 
 Possible values:
 
@@ -129,7 +129,7 @@ The "Block" option — (available only for machine policy) prevents the user fro
       <string id="org-mate-screensaver-lock-delay">Time before password lock</string>
       <string id="org-mate-screensaver-lock-delay_help">Sets the number of minutes after which the computer will be locked after activating the screen saver.
 
-This option only makes sense if the "Turn on screen saver" and "Lock your computer" options are activated.
+This option is only user if the "Turn on screen saver" and "Lock your computer" options are activated.
 
 The "Block" option — (available only for machine policy) prevents the user from changing this setting. Blocking a policy makes it a priority over a similar policy for the user.
 
@@ -138,7 +138,7 @@ The "Block" option — (available only for machine policy) prevents the user fro
       <string id="org-mate-screensaver-logout-delay">Time before logout</string>
       <string id="org-mate-screensaver-logout-delay_help">Sets the number of minutes after the screen saver is activated, the user will be given the opportunity to log out of the session.
 
-This option only makes sense if the "Enable screen saver" and "Log out after lock" options are activated.
+This option is only user if the "Enable screen saver" and "Log out after lock" options are activated.
 
 The "Block" option — (available only for machine policy) prevents the user from changing this setting. Blocking a policy makes it a priority over a similar policy for the user.
 
@@ -147,7 +147,7 @@ The "Block" option — (available only for machine policy) prevents the user fro
       <string id="org-mate-screensaver-cycle-delay">Theme change time</string>
       <string id="org-mate-screensaver-cycle-delay_help">Sets the interval (in minutes) between changing screensaver themes.
 
-This option only makes sense if the Enable Screen Saver option is activated and if the Operation Mode option is set to Random Themes.
+This option is only user if the Enable Screen Saver option is activated and if the Operation Mode option is set to Random Themes.
 
 The "Block" option — (available only for machine policy) prevents the user from changing this setting. Blocking a policy makes it a priority over a similar policy for the user.
 
@@ -156,7 +156,7 @@ The "Block" option — (available only for machine policy) prevents the user fro
       <string id="org-mate-screensaver-user-switch-enabled">Switch user after blocking</string>
       <string id="org-mate-screensaver-user-switch-enabled_help">Adds a Switch User button to the screen unlock dialog.
 
-This option only makes sense if the Turn on screen saver and Lock your computer option is activated.
+This option is only user if the Turn on screen saver and Lock your computer option is activated.
 
 The "Block" option — (available only for machine policy) prevents the user from changing this setting. Blocking a policy makes it a priority over a similar policy for the user.
 
@@ -167,7 +167,7 @@ The "Block" option — (available only for machine policy) prevents the user fro
       <string id="org-mate-screensaver-logout-enabled">Logout after being locked</string>
       <string id="org-mate-screensaver-logout-enabled_help">After some delay, adds a logout button ("End session") to the screen unlock dialog. The delay time is specified in the "Session exit time" parameter.
 
-This option only makes sense if the "Turn on screen saver" and "Lock your computer" options are activated.
+This option is only user if the "Turn on screen saver" and "Lock your computer" options are activated.
 
 The "Block" option — (available only for machine policy) prevents the user from changing this setting. Blocking a policy makes it a priority over a similar policy for the user.
 
@@ -319,7 +319,7 @@ The "Block" option — (available only for machine policy) prevents the user fro
       <string id="org-mate-marco-general-show-tab-border-false">Disabled</string>
 
       <string id="org-mate-marco-general-allow-top-tiling">Unfold while dragging</string>
-      <string id="org-mate-marco-general-allow-top-tiling_help">Enables a window to expand to full screen when dragged to the top center of the screen. This option only makes sense if the Resize window as you drag option is activated.
+      <string id="org-mate-marco-general-allow-top-tiling_help">Enables a window to expand to full screen when dragged to the top center of the screen. This option is only user if the Resize window as you drag option is activated.
 
 The "Block" option — (available only for machine policy) prevents the user from changing this setting. Blocking a policy makes it a priority over a similar policy for the user.
 
@@ -541,7 +541,7 @@ The "Block" option — (available only for machine policy) prevents the user fro
       <string id="org-mate-marco-general-auto-raise-delay">Recovery delay</string>
       <string id="org-mate-marco-general-auto-raise-delay_help">Time interval in milliseconds after which the window in focus will be raised above the others.
     
-This option only makes sense if the "Automatically raise window that receives focus" option is activated.
+This option is only user if the "Automatically raise window that receives focus" option is activated.
 
 The "Block" option — (available only for machine policy) prevents the user from changing this setting. Blocking a policy makes it a priority over a similar policy for the user.
 
@@ -597,7 +597,7 @@ The "Block" option — (available only for machine policy) prevents the user fro
       <string id="org-mate-session-idle-delay">The interval of inactivity after which the session is considered idle</string>
       <string id="org-mate-session-idle-delay_help">This policy allows you to set the time in minutes after which the session will be considered idle.
 
-This option only makes sense if the "Enable screen saver" and "Log out after lock" options are activated.
+This option is only user if the "Enable screen saver" and "Log out after lock" options are activated.
 
 The "Block" option — (available only for machine policy) prevents the user from changing this setting. Blocking a policy makes it a priority over a similar policy for the user.
 
@@ -606,7 +606,7 @@ The "Block" option — (available only for machine policy) prevents the user fro
       <string id="org-mate-session-logout-timeout">Session exit timeout</string>
       <string id="org-mate-session-logout-timeout_help">This policy allows you to set the time in seconds after which the logout will occur.
 
-This option makes sense if the "Request when exiting session" policy is enabled.
+This option is only used if the "Request when exiting session" policy is enabled.
 
 The "Block" option — (available only for machine policy) prevents the user from changing this setting. Blocking a policy makes it a priority over a similar policy for the user.
 
@@ -642,13 +642,13 @@ The "Block" option — (available only for machine policy) prevents the user fro
       <string id="org-altlinux-winbind-dnsupdate-ipv4">Update IPv4 DNS records</string>
       <string id="org-altlinux-winbind-dnsupdate-ipv4_help">The policy allows you to enable the update of the forward and reverse IPv4 DNS records of the computer.
 
-Note: Enabling the "Update reverse IPv4 DNS record" option only makes sense when the "Update forward IPv4 DNS record" option is enabled.
+Note: Enabling the "Update reverse IPv4 DNS record" option is only user when the "Update forward IPv4 DNS record" option is enabled.
 
       </string>
       <string id="org-altlinux-winbind-dnsupdate-ipv6">Update IPv6 DNS records</string>
       <string id="org-altlinux-winbind-dnsupdate-ipv6_help">The policy allows you to enable the update of the forward and reverse IPv6 DNS records of the computer.
 
-Note: Enabling the "Update reverse IPv6 DNS record" option only makes sense when the "Update forward IPv6 DNS record" option is enabled.
+Note: Enabling the "Update reverse IPv6 DNS record" option is only user when the "Update forward IPv6 DNS record" option is enabled.
 
       </string>
       <string id="WinbindDNSUpdate-true">Enabled</string>
