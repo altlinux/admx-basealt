@@ -158,7 +158,7 @@
 
       </string>
       <string id="displaymanager-greeter-background">Фон экрана приветствия (Greeter)</string>
-      <string id="displaymanager-greeter-background_help">Политика позволяет установить фон экрана приветствия (Greeter), указав путь до изобажения.
+      <string id="displaymanager-greeter-background_help">Политика позволяет установить фон экрана приветствия (Greeter), указав путь к изобажению.
 
 Примеры путей:
 
@@ -196,7 +196,7 @@ smb://computername/share/image.png — путь в формате Linux к из�
       </presentation>
       <presentation id="DisplayManager_GreeterBackground-pr">
         <textBox refId="DisplayManager_GreeterBackground_setter">
-          <label>Файл:</label>
+          <label>Путь к изображению:</label>
         </textBox>
       </presentation>
 

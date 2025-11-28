@@ -382,7 +382,7 @@ The “Block” option is necessary to prevent the user from changing this setti
       </presentation>
       <presentation id="kde-wallpaper-pr">
         <textBox refId="kde-wallpaper_setter">
-          <label>File:</label>
+          <label>Path to image:</label>
         </textBox>
       </presentation>
       <presentation id="kde-colorscheme-pr">

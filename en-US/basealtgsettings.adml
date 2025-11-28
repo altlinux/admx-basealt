@@ -695,13 +695,13 @@ Note: Enabling the "Update reverse IPv6 DNS record" option is only user when the
 
       <presentation id="OrgMateBackgroundPictureFilenameUser-pr">
         <textBox refId="OrgMateBackgroundPictureFilename_setter">
-          <label>File:</label>
+          <label>Path to image:</label>
         </textBox>
       </presentation>
 
       <presentation id="OrgMateBackgroundPictureFilenameMachine-pr">
         <textBox refId="OrgMateBackgroundPictureFilename_setter">
-          <label>File:</label>
+          <label>Path to image:</label>
         </textBox>
         <checkBox refId="OrgMateBackgroundPictureFilename_setter_blocker">Block</checkBox>
       </presentation>

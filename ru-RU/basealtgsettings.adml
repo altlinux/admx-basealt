@@ -67,7 +67,7 @@ Cтрока типа rgb(0,0,0).
       <string id="org-mate-background-color-shading-type-solid">Сплошная заливка</string>
 
       <string id="org-mate-background-picture-filename">Картинка фона рабочего стола</string>
-      <string id="org-mate-background-picture-filename_help">Позволяет установить изображение в качестве фона рабочего стола, указав файл (например, /usr/share/backgrounds/mate/nature/Wood.jpg), содержащий изображение.
+      <string id="org-mate-background-picture-filename_help">Позволяет установить изображение в качестве фона рабочего стола, указав путь к изображению (например, /usr/share/backgrounds/mate/nature/Wood.jpg).
 
 Опция «Блокировать» — (доступна только для машинной политики) запрещает изменение данной настройки пользователем. Блокировка политики делает её приоритетнее аналогичной политики для пользователя.
 
@@ -695,13 +695,13 @@ Cтрока типа rgb(0,0,0).
 
       <presentation id="OrgMateBackgroundPictureFilenameUser-pr">
         <textBox refId="OrgMateBackgroundPictureFilename_setter">
-          <label>Файл:</label>
+          <label>Путь к изображению:</label>
         </textBox>
       </presentation>
 
       <presentation id="OrgMateBackgroundPictureFilenameMachine-pr">
         <textBox refId="OrgMateBackgroundPictureFilename_setter">
-          <label>Файл:</label>
+          <label>Путь к изображению:</label>
         </textBox>
         <checkBox refId="OrgMateBackgroundPictureFilename_setter_blocker">Блокировать</checkBox>
       </presentation>

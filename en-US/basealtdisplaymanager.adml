@@ -198,7 +198,7 @@ Note: A backup copy of the GDM configuration is created automatically. Restorati
       </presentation>
       <presentation id="DisplayManager_GreeterBackground-pr">
         <textBox refId="DisplayManager_GreeterBackground_setter">
-          <label>File:</label>
+          <label>Path to image:</label>
         </textBox>
       </presentation>
     </presentationTable>

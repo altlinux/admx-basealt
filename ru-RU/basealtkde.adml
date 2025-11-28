@@ -382,7 +382,7 @@ smb://computername/share/image.png — путь в формате Linux к из�
       </presentation>
       <presentation id="kde-wallpaper-pr">
         <textBox refId="kde-wallpaper_setter">
-          <label>Файл:</label>
+          <label>Путь к изображению:</label>
         </textBox>
       </presentation>
       <presentation id="kde-colorscheme-pr">

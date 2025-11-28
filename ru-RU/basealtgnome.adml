@@ -65,7 +65,7 @@
 
     </string>
     <string id="org-gnome-background-picture-filename">Фон рабочего стола</string>
-    <string id="org-gnome-background-picture-filename_help">Политика позволяет выбрать фон рабочего стола в зависимости от темы оформления внешнего вида, указав путь до изображения в формате file:///home/user/Изображения/picture.jpg
+    <string id="org-gnome-background-picture-filename_help">Политика позволяет выбрать фон рабочего стола в зависимости от темы оформления внешнего вида, указав путь к изображениюв формате file:///home/user/Изображения/picture.jpg
 
 Опция «Блокировать» — (доступна только для машинной политики) запрещает изменение настройки пользователем. Блокировка политики делает её приоритетнее аналогичной политики для пользователя.
 
@@ -335,20 +335,20 @@ Cрабатывает при наведении — окна становятс�
       </presentation>
       <presentation id="OrgGnomeBackgroundPictureFilenameMachine-pr">
         <textBox refId="OrgGnomeBackgroundPictureFilename_light_setter">
-          <label>Путь до изображения для светлой темы:</label>
+          <label>Путь к изображению для светлой темы:</label>
         </textBox>
         <checkBox refId="OrgGnomeBackgroundPictureFilename_light_blocker">Блокировать настройку изображения для светлой темы</checkBox>
         <textBox refId="OrgGnomeBackgroundPictureFilename_dark_setter">
-          <label>Путь до изображения для тёмной темы:</label>
+          <label>Путь к изображению для тёмной темы:</label>
         </textBox>
         <checkBox refId="OrgGnomeBackgroundPictureFilename_dark_blocker">Блокировать настройку изображения для тёмной темы</checkBox>
       </presentation>
       <presentation id="OrgGnomeBackgroundPictureFilenameUser-pr">
         <textBox refId="OrgGnomeBackgroundPictureFilename_light_setter">
-          <label>Путь до изображения для светлой темы:</label>
+          <label>Путь к изображению для светлой темы:</label>
         </textBox>
         <textBox refId="OrgGnomeBackgroundPictureFilename_dark_setter">
-          <label>Путь до изображения для тёмной темы:</label>
+          <label>Путь к изображению для тёмной темы:</label>
         </textBox>
       </presentation>
       <presentation id="OrgGnomeDesktopBackgroundPictureOptionsMachine-pr">
