@@ -72,8 +72,9 @@ The string stored in this setting is a security identifier in string form or the
 Examples:
 
 - S-1-5-21-2127521184-1604012920-1887927527-35197
-- contoso\LAPSAdmins
-- lapsadmins@contoso.com
+- LAPSAdmins
+- lapsuser
+
         </string>
         <string id="LAPS_ADEncryptedPasswordHistorySize">Encrypted Password History Size</string>
         <string id="LAPS_ADEncryptedPasswordHistorySize_Help">The policy allows you to configure the size of the number of encrypted passwords stored in Active Directory.
@@ -106,7 +107,7 @@ If the policy is disabled or not configured, the local administrator password is
         </string>
 
         <string id="LAPS_DontAllowPwdExpirationBehindPolicy">Password Expiration</string>
-        <string id="LAPS_DontAllowPwdExpirationBehindPolicy_Help">This policy allows you to configure a password change if it has expired beyond the value specified by the Password Options policy.
+        <string id="LAPS_DontAllowPwdExpirationBehindPolicy_Help">This policy allows you to enable the use of the password expiration period specified by the Password Options group policy.
 
 If the policy is enabled or not configured, the password is not allowed to expire beyond the value specified by the Password Options policy. If an expiration is detected, the password is immediately changed and the password expiration is set according to the policy.
 
@@ -118,7 +119,7 @@ If the policy is disabled, the password expiration can be greater than the value
 
 Grace Period — the time (in hours) during which no actions are performed after logging in;
 
-If the value is greater than 0, LAPS will perform the specified actions after this time;
+If the value is greater than 0, when the LAPS mechanism is started, a check is made for the expiration of the specified interval; if it is exceeded, the specified actions are applied;
 
 If the value is 0, no actions are performed;
 
