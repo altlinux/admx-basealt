@@ -2070,11 +2070,11 @@ Note: the possession of administrative rights in a PolicyKit context is determin
        <dropdownList noSort="true" defaultItem="1" refId="OrgFreedesktopUdisks2_setter">Restriction options:</dropdownList>
       </presentation>
       <presentation id="org-freedesktop-Policykit-pr">
-       <dropdownList noSort="true" defaultItem="1" refId="OrgFreedesktopPolicykit_setter">Варианты ограничений:</dropdownList>
-       <checkBox refId="OrgFreedesktopPolicykit_blocker">Блокировать</checkBox>
+       <dropdownList noSort="true" defaultItem="1" refId="OrgFreedesktopPolicykit_setter">Restriction options:</dropdownList>
+       <checkBox refId="OrgFreedesktopPolicykit_blocker">Block</checkBox>
       </presentation>
       <presentation id="org-freedesktop-Policykit-user-pr">
-       <dropdownList noSort="true" defaultItem="1" refId="OrgFreedesktopPolicykit_setter">Варианты ограничений:</dropdownList>
+       <dropdownList noSort="true" defaultItem="1" refId="OrgFreedesktopPolicykit_setter">Restriction options:</dropdownList>
       </presentation>
     </presentationTable>
   </resources>
