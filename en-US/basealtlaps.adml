@@ -61,11 +61,22 @@ If the policy is not configured, the managed account password is encrypted.
 
 The policy setting has no effect if password encryption is not enabled.
 
+Note 1:
+
+When encrypting for a group or user without administrative rights, the "All extended rights" security property must be enabled.
+
+Configuring an organizational unit with target computers:
+ADMC -> Organizational Unit -> Properties -> Security -> Add -> Target Group/User;
+ADMC -> Organizational Unit -> Properties -> Security -> Target Group/User -> Child Objects: Computer -> "All extended rights" checkbox;
+
+Or configuring a computer:
+ADMC -> "Computer" Object -> Properties -> Security -> SELF -> "This object" -> "All extended rights" checkbox;
+
 If the policy is enabled, encrypted passwords can be decrypted by the specified group or user.
 
 If the policy is disabled or not configured, encrypted passwords can only be decrypted by the Domain Admins group.
 
-Note:
+Note 2:
 
 The string stored in this setting is a security identifier in string form or the full name of the user or group.
 
