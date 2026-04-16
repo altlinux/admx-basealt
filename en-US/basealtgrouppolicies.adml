@@ -318,6 +318,19 @@ If the settings conflict, the user settings in the computer's Group Policy Objec
 
 If you disable this setting or do not configure it, the user's Group Policy Objects determines which user settings apply.
       </string>
+
+      <string id="IniFilesAllowEmptySections">Interpretation of empty quotation marks in the name of an INI file section (section)</string>
+      <string id="IniFilesAllowEmptySections_help">This policy determines the interpretation of empty quotation marks in the name of a section (section) when processing INI files configured through the Group Policy Editor.
+
+If the policy is enabled, empty quotation marks (single or double) are not considered a section name and are interpreted as the absence of a section—the value is processed as a string outside the section.
+
+If the policy is disabled or not configured, empty quotation marks are interpreted as a section name.
+
+Note: Only a pair of quotation marks with no characters between them ('') is considered an empty value. If there is at least one character between the quotation marks (for example, a space: ' '), the value is interpreted as a section name.
+
+Note: Enabling this policy may cause INI file formats to deviate from the standard specification. This may cause incompatibility with applications that use the classic INI file handling rules and may result in unpredictable behavior.
+      </string>
+
       <string id="UserPolicyMode_Merge">Merge</string>
       <string id="UserPolicyMode_Replace">Replace</string>
     </stringTable>

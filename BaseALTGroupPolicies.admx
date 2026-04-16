@@ -661,5 +661,20 @@
         <decimal value="0"/>
       </disabledValue>
     </policy>
+    <policy class="Machine" displayName="$(string.IniFilesAllowEmptySections)"
+      explainText="$(string.IniFilesAllowEmptySections_help)"
+      key="Software/BaseALT/Policies/GPUpdate"
+      valueName="IniFilesAllowEmptySections"
+      name="IniFilesAllowEmptySections">
+      <parentCategory ref="ALT_IniFiles"/>
+      <supportedOn ref="system:SUPPORTED_AltP11"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+
   </policies>
 </policyDefinitions>
