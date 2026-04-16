@@ -15,6 +15,9 @@
       <string id="ALT_GPLocalUsers">Групповые политики для локальных пользователей</string>
       <string id="ALT_GPLocalUsers_Help">Управление применением групповых политик к локальным пользователям.</string>
 
+      <string id="ALT_IniFiles">Обработка настройки Ini-файлов</string>
+      <string id="ALT_IniFiles_Help">Раздел содержит параметры, определяющие обработку Ini-файлов, настраиваемых через редактор групповых политик.</string>
+
       <string id="gpupdate_global_experimental">Экспериментальные групповые политики</string>
       <string id="gpupdate_global_experimental_help">Политика глобально включает экспериментальные механизмы применения групповых политик.</string>
 

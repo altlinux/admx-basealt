@@ -17,6 +17,10 @@
     <category name="ALT_GPLocalUsers" displayName="$(string.ALT_GPLocalUsers)"  explainText="$(string.ALT_GPLocalUsers_Help)" >
       <parentCategory ref="ALT_GroupPolicies" />
     </category>
+    <category name="ALT_IniFiles" displayName="$(string.ALT_IniFiles)"  explainText="$(string.ALT_IniFiles_Help)" >
+      <parentCategory ref="ALT_GroupPolicies" />
+    </category>
+
   </categories>
 
   <policies>
