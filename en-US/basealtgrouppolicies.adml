@@ -331,6 +331,17 @@ Note: Only a pair of quotation marks with no characters between them ('') is con
 Note: Enabling this policy may cause INI file formats to deviate from the standard specification. This may cause incompatibility with applications that use the classic INI file handling rules and may result in unpredictable behavior.
       </string>
 
+      <string id="IniFilesAllowUnquotedCommas">Handling comma-separated values ​​in INI files</string>
+      <string id="IniFilesAllowUnquotedCommas_help">This policy determines whether values ​​containing commas are required to be enclosed in quotation marks when processing INI files configured through the Group Policy Editor.
+
+If this policy is enabled, values ​​containing commas are written without quotation marks.
+
+If this policy is disabled or not configured, values ​​containing commas are automatically enclosed in quotation marks.
+
+Note: When this policy is enabled, the INI file format may not conform to the standard specification. This may lead to incompatibility with applications that use classic INI file processing rules and cause unpredictable behavior.
+
+      </string>
+
       <string id="UserPolicyMode_Merge">Merge</string>
       <string id="UserPolicyMode_Replace">Replace</string>
     </stringTable>

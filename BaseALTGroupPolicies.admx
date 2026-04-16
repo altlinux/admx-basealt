@@ -675,6 +675,21 @@
         <decimal value="0"/>
       </disabledValue>
     </policy>
+    <policy class="Machine" displayName="$(string.IniFilesAllowUnquotedCommas)"
+      explainText="$(string.IniFilesAllowUnquotedCommas_help)"
+      key="Software/BaseALT/Policies/GPUpdate"
+      valueName="IniFilesAllowUnquotedCommas"
+      name="IniFilesAllowUnquotedCommas">
+      <parentCategory ref="ALT_IniFiles"/>
+      <supportedOn ref="system:SUPPORTED_AltP11"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
+
 
   </policies>
 </policyDefinitions>
