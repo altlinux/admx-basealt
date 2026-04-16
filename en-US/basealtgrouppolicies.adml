@@ -342,6 +342,23 @@ Note: When this policy is enabled, the INI file format may not conform to the st
 
       </string>
 
+      <string id="IniFilesAllowSpecialChars">Processing special characters in .ini file values</string>
+      <string id="IniFilesAllowSpecialChars_help">This policy determines whether special characters are allowed in .ini file values ​​without quotation marks when applying settings through the Group Policy Editor.
+
+If this policy is enabled, values ​​containing special characters can be written without quotation marks.
+
+If this policy is disabled or not configured, values ​​containing special characters are enclosed in quotation marks.
+
+The following special characters are supported:
+
+! @ $ % ^ &amp; * ( ) _ + { } " : ? &lt; &gt; № : * , / -
+
+The characters "#" and ";" are not supported because they are used to denote comments in INI files.
+
+Note: When this policy is enabled, the INI file format may not comply with the standard specification. This may lead to incompatibility with applications that use the classic INI file processing rules and cause unpredictable behavior.
+
+      </string>
+
       <string id="UserPolicyMode_Merge">Merge</string>
       <string id="UserPolicyMode_Replace">Replace</string>
     </stringTable>
