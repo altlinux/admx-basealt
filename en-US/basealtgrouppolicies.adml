@@ -358,6 +358,20 @@ The characters "#" and ";" are not supported because they are used to denote com
 Note: When this policy is enabled, the INI file format may not comply with the standard specification. This may lead to incompatibility with applications that use the classic INI file processing rules and cause unpredictable behavior.
 
       </string>
+      <string id="SecurePermissionsDisabled">Disable enforcement of secure permissions and ownership for files</string>
+      <string id="SecurePermissionsDisabled_help">This policy allows you to disable enforcement of secure permissions (chmod) and ownership (chown) for files deployed through Group Policy.
+
+Disabled — When copying files through the Group Policy Editor, strict permissions and ownership are automatically assigned according to the built-in list of sensitive paths.
+
+Enabled — Secure permissions and ownership are not assigned; files are assigned standard permissions (0o644/0o755) and the default owner.
+
+List of restrictions when this policy is enabled:
+
+For system paths, the owner is root:root (or a specialized group, such as ssl-cert for /etc/ssl/private, ldap for /etc/openldap/slapd.conf), with permissions of 0o440–0o710 depending on the path. For user paths (~/.ssh/id_rsa, ~/.pgpass, etc.), the owner is set to username:primary_group, with permissions of 0o400–0o600.
+
+The full list includes: SSH keys, TLS/SSL certificates, sudoers configurations, crontab, Kerberos, Samba, Kubernetes, VPN, cloud credentials, etc.
+
+      </string>
 
       <string id="UserPolicyMode_Merge">Merge</string>
       <string id="UserPolicyMode_Replace">Replace</string>

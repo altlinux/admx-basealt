@@ -703,5 +703,19 @@
         <decimal value="0"/>
       </disabledValue>
     </policy>
+    <policy class="Machine" displayName="$(string.SecurePermissionsDisabled)"
+      explainText="$(string.SecurePermissionsDisabled_help)"
+      key="Software/BaseALT/Policies/GroupPolicies/Files"
+      valueName="SecurePermissionsDisabled"
+      name="SecurePermissionsDisabled">
+      <parentCategory ref="ALT_GroupPolicies"/>
+      <supportedOn ref="system:SUPPORTED_AltP11"/>
+      <enabledValue>
+        <decimal value="1"/>
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0"/>
+      </disabledValue>
+    </policy>
   </policies>
 </policyDefinitions>
